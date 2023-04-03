@@ -1,6 +1,8 @@
 name: Compare Bun and Node.js
 
 on:
+  schedule:
+    - cron: '0 0 * * MON' # Every Monday
   push:
     branches: [master]
   workflow_dispatch:

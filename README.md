@@ -2,6 +2,7 @@
 
 This is an overview comparison of the [Bun](https://bun.sh) and [Node.js](https://nodejs.org) APIs so it's easy to see what's available in Bun, what's not, and how they differ.
 
+This comparison runs on GitHub Actions every week using the latest Bun Canary and Node.js LTS. See the Actions tab for more info.
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
