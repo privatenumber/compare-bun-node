@@ -85,7 +85,18 @@ const table = (
 		true,
 	);
 
+	const [
+		{ stdout: nodeVersion },
+		{ stdout: bunVersion },
+	] = await Promise.all([
+		execa('node', ['--version']),
+		execa('bun', ['--version']),
+	]);
+
+	const date = (new Date()).toLocaleDateString('en-US', { year:"numeric", month:"short", day: 'numeric' });
+
 	readme = commentMark(readme, {
+		lastUpdated: `${date} with Bun ${bunVersion} Node.js ${nodeVersion}`,
 		builtins,
 		comparison: output.join('\n\n'),
 	});

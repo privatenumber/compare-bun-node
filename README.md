@@ -1,8 +1,12 @@
 # Bun & Node.js comparison
 
-This is an overview comparison of the [Bun](https://bun.sh) and [Node.js](https://nodejs.org) APIs so it's easy to see what's available in Bun, what's not, and how they differ.
+This repository provides a comparative overview of the [Bun](https://bun.sh) and [Node.js](https://nodejs.org) APIs. Making it easy to see what's available in Bun, what's not, and how they differ.
 
-This comparison runs on GitHub Actions every week using the latest Bun Canary and Node.js LTS. See the Actions tab for more info.
+The comparison is performed every week using GitHub Actions, with the latest Bun Canary and Node.js LTS versions. For more details, refer to the Actions tab.
+
+Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
+
+_Last updated on <!-- lastUpdated:start --><!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
