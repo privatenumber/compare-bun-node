@@ -1,4 +1,4 @@
-name: Compare Node.js and Bun
+name: Compare Bun and Node.js
 
 on:
   push:
