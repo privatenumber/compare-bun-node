@@ -1,0 +1,47 @@
+name: Compare Node.js and Bun
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 5
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 'lts/*'
+
+    - name: Install Bun
+      uses: oven-sh/setup-bun@v1
+      with:
+        bun-version: canary
+
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 7
+        run_install: true
+
+    - name: Benchmark
+      run: pnpm start
+
+    - name: Commit readme.md
+      run: |
+        git config user.name 'Hiroki Osame'
+        git config user.email 'hiroki.osame@gmail.com'
+        git add README.md
+        git commit -nm "chore: updated readme"
+        git push

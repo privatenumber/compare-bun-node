@@ -1,0 +1,32 @@
+{
+	"private": true,
+	"license": "MIT",
+	"author": "Hiroki Osame <hiroki.osame@gmail.com>",
+	"scripts": {
+		"start": "tsx index.ts",
+		"lint": "eslint --cache ."
+	},
+	"simple-git-hooks": {
+		"pre-commit": "pnpm lint-staged"
+	},
+	"lint-staged": {
+		"*.{ts,js}": "eslint --cache"
+	},
+	"devDependencies": {
+		"@pvtnbr/eslint-config": "^0.33.0",
+		"@types/node": "^18.15.11",
+		"comment-mark": "^1.1.1",
+		"eslint": "^8.37.0",
+		"execa": "^7.1.1",
+		"fs-fixture": "^1.2.0",
+		"lint-staged": "^13.2.0",
+		"simple-git-hooks": "^2.8.1",
+		"tsx": "^3.12.6"
+	},
+	"eslintConfig": {
+		"extends": "@pvtnbr",
+		"ignorePatterns": [
+			"README.md"
+		]
+	}
+}
