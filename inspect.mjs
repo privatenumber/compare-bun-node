@@ -88,5 +88,8 @@ export const inspect = (
 		return `[${functionType}: ${value.name} { length: ${value.length} }]`;
 	}
 
-	throw new Error('Unknown type: ' + valueType);
+	return '[Unexpected Error: ' + value.toString() + ' (type ' + JSON.stringify(valueType) + ')]';
 };
+
+// import * as _ from 'buffer';
+// console.log(inspect(_));
