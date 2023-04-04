@@ -17,7 +17,7 @@ export const inspect = (
 
 	if (valueType === 'string') {
 		if (value.length > 100) {
-			value = value.slice(0, 100) + '…';
+			value = `${value.slice(0, 100)}…`;
 		}
 		return JSON.stringify(value);
 	}
@@ -38,13 +38,13 @@ export const inspect = (
 
 		if (Array.isArray(value)) {
 			const entries = value.map(
-				(item) => `${indentLevel + indentation}` + inspect(item, indentLevel + indentation, cache),
+				item => `${indentLevel + indentation}${inspect(item, indentLevel + indentation, cache)}`,
 			);
 
 			serialized += '[';
 
 			if (entries.length > 0) {
-				serialized += '\n' + entries.join(',\n') + '\n' + indentLevel;
+				serialized += `\n${entries.join(',\n')}\n${indentLevel}`;
 			}
 
 			serialized += ']';
@@ -55,12 +55,12 @@ export const inspect = (
 				if (!value.constructor) {
 					serialized += '[Object: null prototype] ';
 				} else {
-					serialized += value.constructor.name + ' ';
+					serialized += `${value.constructor.name} `;
 				}
 			}
 
 			const entries = Reflect.ownKeys(value).map(
-				(key) => `${indentLevel}${indentation}${key.toString()}: ${
+				key => `${indentLevel}${indentation}${key.toString()}: ${
 					inspect(value[key], indentLevel + indentation, cache).trim()
 				}`,
 			);
@@ -68,7 +68,7 @@ export const inspect = (
 			serialized += '{';
 
 			if (entries.length > 0) {
-				serialized += '\n' + entries.join(',\n') + '\n' + indentLevel;
+				serialized += `\n${entries.join(',\n')}\n${indentLevel}`;
 			}
 
 			serialized += '}';
@@ -78,17 +78,25 @@ export const inspect = (
 			serialized = `<ref *${objectId}> ${serialized}`;
 		}
 
-		// the `module` core module was using this character in the module path, and was breaking code blocks on GitHub
-		return serialized.replaceAll('\x00','');
+		/**
+		 * The `module` core module was using this character in the module path
+		 * and was breaking code blocks on GitHub
+		 */
+		return serialized.replaceAll('\u0000', '');
 	}
 
 	if (valueType === 'function') {
 		const functionString = value.toString();
-		const functionType = functionString.startsWith('async ') ? 'AsyncFunction' : 'Function';
-		return `[${functionType}: ${value.name} { length: ${value.length} }]`;
+
+		let functionType = 'ƒ';
+		if (functionString.startsWith('async ')) {
+			functionType = `async ${functionType}`;
+		}
+
+		return `[${functionType} ${value.name ? `${value.name} ` : ''}{ length: ${value.length} }]`;
 	}
 
-	return '[Unexpected Error: ' + value.toString() + ' (type ' + JSON.stringify(valueType) + ')]';
+	return `[Unexpected Error: ${value.toString()} (type ${JSON.stringify(valueType)})]`;
 };
 
 // import * as _ from 'buffer';
