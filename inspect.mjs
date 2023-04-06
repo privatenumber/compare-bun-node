@@ -98,7 +98,7 @@ export const inspect = (
 			functionType = `async ${functionType}`;
 		}
 
-		return `[${functionType} ${value.name ? `${value.name} ` : ''}{ length: ${value.length} }]`;
+		return `${functionType} ${value.name ? `${value.name} ` : ''}{ length: ${value.length} }`;
 	}
 
 	return `[Unexpected Error: ${value.toString()} (type ${JSON.stringify(valueType)})]`;
