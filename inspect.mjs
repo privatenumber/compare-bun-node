@@ -34,7 +34,7 @@ export const inspect = (
 		const objectId = cache.size + 1;
 		cache.set(value, objectId);
 
-		let serialized = '';
+		let serialized = `<ref *${objectId}> `;
 
 		if (Array.isArray(value)) {
 			const entries = value.map(
@@ -74,8 +74,13 @@ export const inspect = (
 			serialized += '}';
 		}
 
-		if (serialized.includes(`[Circular: *${objectId}]`)) {
-			serialized = `<ref *${objectId}> ${serialized}`;
+		// Root-level call
+		if (indentLevel === '') {
+			for (const objectId of cache.values()) {
+				if (!serialized.includes(`[Circular: *${objectId}]`)) {
+					serialized = serialized.replaceAll(`<ref *${objectId}> `, '');
+				}
+			}
 		}
 
 		/**
@@ -100,4 +105,5 @@ export const inspect = (
 };
 
 // import * as _ from 'buffer';
-// console.log(inspect(_));
+// const obj = {};
+// console.log(inspect({ a: { b: obj }, b: obj }));
