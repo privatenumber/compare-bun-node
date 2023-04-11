@@ -26,7 +26,10 @@ export const inspect = (
 		return value.toString();
 	}
 
-	if (valueType === 'object') {
+	if (
+		valueType === 'object'
+		|| valueType === 'function'
+	) {
 		if (cache.has(value)) {
 			return `[Circular: *${cache.get(value)}]`;
 		}
@@ -36,7 +39,22 @@ export const inspect = (
 
 		let serialized = `<ref *${objectId}> `;
 
-		if (Array.isArray(value)) {
+		if (valueType === 'function') {
+			const functionString = value.toString();
+
+			if (functionString.startsWith('class') && functionString.endsWith('}')) {
+				serialized += `[class ${value.name}]`;
+			} else {
+				let functionType = 'ƒ';
+				if (functionString.startsWith('async ')) {
+					functionType = `async ${functionType}`;
+				}
+
+				serialized += `${functionType} ${value.name ? `${value.name} ` : ''}(length: ${value.length})`;
+			}
+		} else if (value instanceof RegExp) {
+			serialized += value.toString();
+		} else if (Array.isArray(value)) {
 			const entries = value.map(
 				item => `${indentLevel + indentation}${inspect(item, indentLevel + indentation, cache)}`,
 			);
@@ -48,8 +66,6 @@ export const inspect = (
 			}
 
 			serialized += ']';
-		} else if (value instanceof RegExp) {
-			return value.toString();
 		} else {
 			if (value.constructor !== Object) {
 				if (!value.constructor) {
@@ -59,6 +75,8 @@ export const inspect = (
 				}
 			}
 
+			// const descriptors = Object.getOwnPropertyDescriptors(value);
+			// console.log({ descriptors });
 			const entries = Reflect.ownKeys(value).map(
 				key => `${indentLevel}${indentation}${key.toString()}: ${
 					inspect(value[key], indentLevel + indentation, cache).trim()
@@ -90,20 +108,9 @@ export const inspect = (
 		return serialized.replaceAll('\u0000', '');
 	}
 
-	if (valueType === 'function') {
-		const functionString = value.toString();
-
-		let functionType = 'ƒ';
-		if (functionString.startsWith('async ')) {
-			functionType = `async ${functionType}`;
-		}
-
-		return `${functionType} ${value.name ? value.name : ''}( length: ${value.length} )`;
-	}
-
 	return `[Unexpected Error: ${value.toString()} (type ${JSON.stringify(valueType)})]`;
 };
 
-// import * as _ from 'buffer';
-// const obj = {};
-// console.log(inspect({ a: { b: obj }, b: obj }));
+// import * as _ from 'fs';
+// console.log(_);
+// console.log(inspect(_));
