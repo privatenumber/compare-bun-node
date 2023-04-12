@@ -6,7 +6,7 @@ The comparison is performed every week using GitHub Actions, with the latest Bun
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Apr 11, 2023 with Bun 0.6.0 Node.js v18.15.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v18.15.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -244,7 +244,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 11, 2023 with Bun 0.6.0 Node.js v
     get: ƒ get (length: 3),
     maxHeaderSize: 16384,
     setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    globalAgent: Agent {},
+    get/set globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -379,7 +379,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 11, 2023 with Bun 0.6.0 Node.js v
     get: ƒ get (length: 3),
     maxHeaderSize: 16384,
     setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    globalAgent: Agent {},
+    get/set globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -576,7 +576,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 11, 2023 with Bun 0.6.0 Node.js v
     get: ƒ get (length: 3),
     maxHeaderSize: 16384,
     setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    globalAgent: Agent {},
+    get/set globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -715,7 +715,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 11, 2023 with Bun 0.6.0 Node.js v
     get: ƒ get (length: 3),
     maxHeaderSize: 16384,
     setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    globalAgent: Agent {},
+    get/set globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -858,7 +858,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 11, 2023 with Bun 0.6.0 Node.js v
     get: ƒ get (length: 3),
     maxHeaderSize: 16384,
     setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    globalAgent: Agent {},
+    get/set globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -1069,7 +1069,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 11, 2023 with Bun 0.6.0 Node.js v
     get: ƒ get (length: 3),
     maxHeaderSize: 16384,
     setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    globalAgent: Agent {},
+    get/set globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -1170,7 +1170,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 11, 2023 with Bun 0.6.0 Node.js v
     default: [class JSStreamSocket],
     Symbol(Symbol.toStringTag): "Module"
 }
-(node:1930) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:1992) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -1588,7 +1588,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 11, 2023 with Bun 0.6.0 Node.js v
         btoa: [Circular: *7],
         atob: [Circular: *6],
         constants: [Circular: *8],
-        INSPECT_MAX_BYTES: 50
+        get/set INSPECT_MAX_BYTES: 50
     },
     isAscii: [Circular: *13],
     isUtf8: [Circular: *12],
@@ -1771,7 +1771,7 @@ Cluster {
         profileEnd: <ref *25> ƒ profileEnd (length: 0),
         timeStamp: <ref *26> ƒ timeStamp (length: 0),
         context: [Circular: *5],
-        _stdout: <ref *27> Socket {
+        get/set _stdout: <ref *27> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -1881,7 +1881,7 @@ Cluster {
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        _stderr: <ref *40> Socket {
+        get/set _stderr: <ref *40> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -2061,7 +2061,7 @@ Cluster {
     recordEnd: ƒ recordEnd (length: 0),
     screenshot: ƒ screenshot (length: 0),
     write: ƒ write (length: 1),
-    default: [Circular: *1],
+    get/set default: [Circular: *1],
     Symbol(Symbol.toStringTag): "console",
     Symbol(Symbol.asyncIterator): ƒ [Symbol.asyncIterator] (length: 0),
     Symbol(CommonJSTransformed): true
@@ -2591,7 +2591,7 @@ Cluster {
 ```js
 <ref *1> {
     __esModule: true,
-    default: [Circular: *1],
+    get/set default: [Circular: *1],
     Symbol(CommonJSTransformed): true
 }
 ```
@@ -2693,7 +2693,7 @@ Cluster {
         POINT_CONVERSION_COMPRESSED: 2,
         POINT_CONVERSION_UNCOMPRESSED: 4,
         POINT_CONVERSION_HYBRID: 6,
-        defaultCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…"
+        get/set defaultCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…"
     },
     createCipheriv: <ref *19> ƒ createCipheriv (length: 4),
     createDecipheriv: <ref *20> ƒ createDecipheriv (length: 4),
@@ -2772,15 +2772,15 @@ Cluster {
         secureHeapUsed: <ref *64> ƒ secureHeapUsed (length: 0),
         createCipher: ƒ deprecated (length: 0),
         createDecipher: ƒ deprecated (length: 0),
-        fips: 0,
-        DEFAULT_ENCODING: "buffer",
+        get/set fips: 0,
+        get/set DEFAULT_ENCODING: "buffer",
         constants: [Circular: *18],
-        webcrypto: <ref *67> Crypto {},
-        subtle: <ref *68> SubtleCrypto {},
-        getRandomValues: <ref *69> ƒ getRandomValues (length: 1),
-        prng: [Circular: *51],
-        pseudoRandomBytes: [Circular: *51],
-        rng: [Circular: *51]
+        get/set webcrypto: <ref *67> Crypto {},
+        get/set subtle: <ref *68> SubtleCrypto {},
+        get/set getRandomValues: <ref *69> ƒ getRandomValues (length: 1),
+        get/set prng: [Circular: *51],
+        get/set pseudoRandomBytes: [Circular: *51],
+        get/set rng: [Circular: *51]
     },
     diffieHellman: [Circular: *32],
     generateKey: [Circular: *45],
@@ -2821,7 +2821,7 @@ Cluster {
     webcrypto: [Circular: *67],
     Symbol(Symbol.toStringTag): "Module"
 }
-(node:2102) [DEP0091] DeprecationWarning: crypto.DEFAULT_ENCODING is deprecated.
+(node:2163) [DEP0091] DeprecationWarning: crypto.DEFAULT_ENCODING is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -2864,7 +2864,7 @@ Cluster {
     privateEncrypt: ƒ (length: 2),
     publicDecrypt: ƒ (length: 2),
     privateDecrypt: ƒ (length: 3),
-    getRandomValues: ƒ getRandomValues (length: 1),
+    get/set getRandomValues: ƒ getRandomValues (length: 1),
     randomFill: ƒ randomFill (length: 4),
     randomFillSync: ƒ randomFillSync (length: 3),
     createCredentials: ƒ (length: 0),
@@ -2885,13 +2885,13 @@ Cluster {
         POINT_CONVERSION_UNCOMPRESSED: 4,
         POINT_CONVERSION_HYBRID: 6
     },
-    DEFAULT_ENCODING: "buffer",
-    randomUUID: ƒ randomUUID (length: 0),
-    scrypt: ƒ ::bunternal:: (length: 5),
-    scryptSync: ƒ ::bunternal:: (length: 4),
-    timingSafeEqual: ƒ ::bunternal:: (length: 2),
-    webcrypto: ƒ (length: undefined),
-    subtle: SubtleCrypto {},
+    get/set DEFAULT_ENCODING: "buffer",
+    get/set randomUUID: ƒ randomUUID (length: 0),
+    get/set scrypt: ƒ ::bunternal:: (length: 5),
+    get/set scryptSync: ƒ ::bunternal:: (length: 4),
+    get/set timingSafeEqual: ƒ ::bunternal:: (length: 2),
+    get/set webcrypto: ƒ (length: undefined),
+    get/set subtle: SubtleCrypto {},
     Symbol(CommonJS): 0
 }
 ```
@@ -3048,7 +3048,7 @@ Cluster {
         resolveSrv: <ref *20> ƒ bound querySrv (length: 2),
         resolveTxt: <ref *21> ƒ bound queryTxt (length: 2),
         reverse: <ref *22> ƒ bound getHostByAddr (length: 2),
-        promises: <ref *23> {
+        get/set promises: <ref *23> {
             lookup: ƒ lookup (length: 2),
             lookupService: ƒ lookupService (length: 2),
             Resolver: [class Resolver],
@@ -3349,9 +3349,9 @@ Cluster {
 ```js
 <ref *1> {
     __esModule: true,
-    create: <ref *2> ƒ (length: 0),
-    createDomain: [Circular: *2],
-    default: [Circular: *1],
+    get/set create: <ref *2> ƒ (length: 0),
+    get/set createDomain: [Circular: *2],
+    get/set default: [Circular: *1],
     Symbol(CommonJSTransformed): true
 }
 ```
@@ -3575,17 +3575,17 @@ Cluster {
         Dir: [Circular: *2],
         Dirent: [Circular: *3],
         Stats: [Circular: *6],
-        ReadStream: [Circular: *4],
-        WriteStream: [Circular: *5],
-        FileReadStream: [Circular: *4],
-        FileWriteStream: [Circular: *5],
+        get/set ReadStream: [Circular: *4],
+        get/set WriteStream: [Circular: *5],
+        get/set FileReadStream: [Circular: *4],
+        get/set FileWriteStream: [Circular: *5],
         _toUnixTimestamp: [Circular: *7],
         F_OK: 0,
         R_OK: 4,
         W_OK: 2,
         X_OK: 1,
         constants: [Circular: *18],
-        promises: <ref *97> {
+        get/set promises: <ref *97> {
             access: async ƒ access (length: 1),
             copyFile: async ƒ copyFile (length: 3),
             cp: async ƒ cp (length: 3),
@@ -4231,8 +4231,8 @@ Cluster {
         get: <ref *15> ƒ get (length: 3),
         request: <ref *16> ƒ request (length: 3),
         setMaxIdleHTTPParsers: <ref *17> ƒ setMaxIdleHTTPParsers (length: 1),
-        maxHeaderSize: 16384,
-        globalAgent: <ref *18> Agent {
+        get/set maxHeaderSize: 16384,
+        get/set globalAgent: <ref *18> Agent {
             _events: [Object: null prototype] {
                 free: ƒ (length: 2),
                 newListener: ƒ maybeEnableKeylog (length: 1)
@@ -4383,7 +4383,7 @@ Cluster {
     get: ƒ get (length: 3),
     maxHeaderSize: 16384,
     setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    globalAgent: Agent {},
+    get/set globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -5104,7 +5104,7 @@ Cluster {
     get: ƒ get (length: 3),
     maxHeaderSize: 16384,
     setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    globalAgent: Agent {},
+    get/set globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -5258,7 +5258,7 @@ Cluster {
     _load: ƒ (length: 3),
     _nodeModulePaths: ƒ (length: 1),
     _pathCache: [Object: null prototype] {
-        /tmp/fs-fixture-1681256568768-1/module.mjs: "/tmp/fs-fixture-1681256568768-1/module.mjs"
+        /tmp/fs-fixture-1681260831389-1/module.mjs: "/tmp/fs-fixture-1681260831389-1/module.mjs"
     },
     _preloadModules: ƒ (length: 1),
     _resolveFilename: ƒ (length: 4),
@@ -5405,8 +5405,8 @@ Cluster {
         _createServerHandle: [Circular: *6],
         _normalizeArgs: [Circular: *7],
         _setSimultaneousAccepts: [Circular: *8],
-        BlockList: [Circular: *2],
-        SocketAddress: [Circular: *5],
+        get/set BlockList: [Circular: *2],
+        get/set SocketAddress: [Circular: *5],
         connect: [Circular: *9],
         createConnection: [Circular: *9],
         createServer: [Circular: *10],
@@ -6165,7 +6165,7 @@ Cluster {
 {
     performance: {
         now: ƒ now (length: 0),
-        timeOrigin: 1681256570963.7212
+        timeOrigin: 1681260833343.6536
     },
     PerformanceEntry: [class PerformanceEntry],
     PerformanceNodeTiming: [class PerformanceNodeTiming],
@@ -6395,7 +6395,7 @@ Cluster {
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
-        "/tmp/fs-fixture-1681256568768-1/process.mjs"
+        "/tmp/fs-fixture-1681260831389-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated (length: 0),
@@ -7043,8 +7043,8 @@ Cluster {
         _eventsCount: 4,
         _maxListeners: undefined,
         domain: null,
-        _exiting: false,
-        config: [Circular: *27],
+        get/set _exiting: false,
+        get/set config: [Circular: *27],
         dlopen: <ref *43> ƒ dlopen (length: 0),
         uptime: <ref *44> ƒ uptime (length: 0),
         _getActiveRequests: [Circular: *11],
@@ -7076,7 +7076,7 @@ Cluster {
             tls_sni: true,
             tls_ocsp: true,
             tls: true,
-            cached_builtins: true
+            get/set cached_builtins: true
         },
         _fatalException: [Circular: *9],
         setUncaughtExceptionCaptureCallback: <ref *59> ƒ setUncaughtExceptionCaptureCallback (length: 1),
@@ -7088,7 +7088,7 @@ Cluster {
         _debugEnd: [Circular: *2],
         _startProfilerIdleNotifier: [Circular: *16],
         _stopProfilerIdleNotifier: [Circular: *17],
-        stdout: <ref *63> Socket {
+        get/set stdout: <ref *63> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -7198,7 +7198,7 @@ Cluster {
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        stdin: <ref *76> Socket {
+        get/set stdin: <ref *76> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -7306,7 +7306,7 @@ Cluster {
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        stderr: <ref *87> Socket {
+        get/set stderr: <ref *87> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -7427,7 +7427,7 @@ Cluster {
         setgid: <ref *102> ƒ (length: 1),
         setuid: <ref *103> ƒ (length: 1),
         env: <ref *104>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_4195a86b-c230-48f8-8b14-9eb0e16bcdb1",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_471d02e5-33d0-4743-a3a2-66cc421df349",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -7435,7 +7435,7 @@ Cluster {
             USER: "runner",
             npm_config_user_agent: "pnpm/7.32.0 npm/? node/v18.15.0 linux x64",
             CI: "true",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_4195a86b-c230-48f8-8b14-9eb0e16bcdb1",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_471d02e5-33d0-4743-a3a2-66cc421df349",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
@@ -7457,7 +7457,7 @@ Cluster {
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "667",
+            SYSTEMD_EXEC_PID: "677",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.2/x64",
             NVM_DIR: "/home/runner/.nvm",
@@ -7470,16 +7470,16 @@ Cluster {
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             RUNNER_USER: "runner",
             CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-            JOURNAL_STREAM: "8:16290",
+            JOURNAL_STREAM: "8:17606",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "4672995065",
+            GITHUB_RUN_ID: "4673406589",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "6827e61bc222f09f70e4075648ac17994a21b471",
+            GITHUB_WORKFLOW_SHA: "a7ea866e9a91eaa7f50b8868e4b1333fae3077c2",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -7491,13 +7491,13 @@ Cluster {
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_dbcfebe7-5c1d-43a6-98eb-adb786dddcf1",
-            INVOCATION_ID: "907325688db246db82e6a013f6a15e5b",
+            RUNNER_TRACKING_ID: "github_91f005f9-3dbf-4224-90dc-f8d49abc608c",
+            INVOCATION_ID: "33b3d64f756b4c6fa397f5341756e474",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.7/x64",
             NODE: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "13",
+            GITHUB_RUN_NUMBER: "14",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -7530,7 +7530,7 @@ Cluster {
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "6827e61bc222f09f70e4075648ac17994a21b471",
+            GITHUB_SHA: "a7ea866e9a91eaa7f50b8868e4b1333fae3077c2",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -7538,7 +7538,7 @@ Cluster {
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_4195a86b-c230-48f8-8b14-9eb0e16bcdb1",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_471d02e5-33d0-4743-a3a2-66cc421df349",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -7552,7 +7552,7 @@ Cluster {
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_4195a86b-c230-48f8-8b14-9eb0e16bcdb1",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_471d02e5-33d0-4743-a3a2-66cc421df349",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -7565,30 +7565,30 @@ Cluster {
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.137+2/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_4195a86b-c230-48f8-8b14-9eb0e16bcdb1",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_471d02e5-33d0-4743-a3a2-66cc421df349",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *105> [],
-        pid: 2383,
-        ppid: 1809,
+        pid: 2444,
+        ppid: 1866,
         execPath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
         exitCode: undefined,
         _preload_modules: [Circular: *14],
-        report: <ref *106> {
+        get/set report: <ref *106> {
             writeReport: ƒ writeReport (length: 2),
             getReport: ƒ getReport (length: 1),
-            directory: "",
-            filename: "",
-            compact: false,
-            signal: "SIGUSR2",
-            reportOnFatalError: false,
-            reportOnSignal: false,
-            reportOnUncaughtException: false
+            get/set directory: "",
+            get/set filename: "",
+            get/set compact: false,
+            get/set signal: "SIGUSR2",
+            get/set reportOnFatalError: false,
+            get/set reportOnSignal: false,
+            get/set reportOnUncaughtException: false
         },
         setSourceMapsEnabled: <ref *109> ƒ setSourceMapsEnabled (length: 1),
         Symbol(kCapture): false,
@@ -7617,9 +7617,9 @@ Cluster {
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *62],
     openStdin: [Circular: *52],
-    pid: 2383,
+    pid: 2444,
     platform: "linux",
-    ppid: 1809,
+    ppid: 1866,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *106],
@@ -7647,12 +7647,12 @@ Cluster {
 
 ```js
 EventEmitter {
-    pid: 2396,
-    ppid: 1809,
+    pid: 2451,
+    ppid: 1866,
     title: "bun",
     argv: [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1681256568768-1/process.mjs"
+        "/tmp/fs-fixture-1681260831389-1/process.mjs"
     ],
     revision: "14c6023e1551b76c12464a6213456f844fc2024e",
     nextTick: ƒ nextTick (length: 1),
@@ -7754,147 +7754,147 @@ EventEmitter {
     },
     emitWarning: ƒ emitWarning (length: 1),
     env: {
-        GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_4195a86b-c230-48f8-8b14-9eb0e16bcdb1",
-        npm_package_devDependencies__types_node: "^18.15.11",
-        STATS_TRP: "true",
-        DEPLOYMENT_BASEPATH: "/opt/runner",
-        DOTNET_NOLOGO: "1",
-        USER: "runner",
-        npm_config_user_agent: "pnpm/7.32.0 npm/? node/v18.15.0 linux x64",
-        CI: "true",
-        GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_4195a86b-c230-48f8-8b14-9eb0e16bcdb1",
-        PIPX_HOME: "/opt/pipx",
-        npm_package_devDependencies_execa: "^7.1.1",
-        npm_node_execpath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
-        JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
-        SHLVL: "1",
-        HOME: "/home/runner",
-        RUNNER_TEMP: "/home/runner/work/_temp",
-        GITHUB_EVENT_PATH: "/home/runner/work/_temp/_github_workflow/event.json",
-        JAVA_HOME_11_X64: "/usr/lib/jvm/temurin-11-jdk-amd64",
-        PIPX_BIN_DIR: "/opt/pipx_bin",
-        GRAALVM_11_ROOT: "/usr/local/graalvm/graalvm-ce-java11-22.3.1",
-        GITHUB_REPOSITORY_OWNER: "privatenumber",
-        npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
-        GRADLE_HOME: "/usr/share/gradle-8.0.2",
-        ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        STATS_RDCL: "true",
-        GITHUB_RETENTION_DAYS: "90",
-        GITHUB_REPOSITORY_OWNER_ID: "1075694",
-        POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
-        AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
-        GITHUB_HEAD_REF: undefined,
-        SYSTEMD_EXEC_PID: "667",
-        GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-        GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.2/x64",
-        NVM_DIR: "/home/runner/.nvm",
-        DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
-        JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-        ImageVersion: "20230402.1",
-        npm_package_eslintConfig_ignorePatterns_0: "README.md",
-        RUNNER_OS: "Linux",
-        GITHUB_API_URL: "https://api.github.com",
-        SWIFT_PATH: "/usr/share/swift/usr/bin",
-        RUNNER_USER: "runner",
-        CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-        JOURNAL_STREAM: "8:16290",
-        GITHUB_WORKFLOW: "Compare Bun and Node.js",
-        _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
-        npm_package_private: "true",
-        npm_package_scripts_lint: "eslint --cache .",
-        npm_config_registry: "https://registry.npmjs.org/",
-        GITHUB_RUN_ID: "4672995065",
-        GITHUB_REF_TYPE: "branch",
-        BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-        GITHUB_WORKFLOW_SHA: "6827e61bc222f09f70e4075648ac17994a21b471",
-        GITHUB_BASE_REF: undefined,
-        ImageOS: "ubuntu22",
-        npm_package_scripts_start: "tsx index.ts",
-        GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
-        PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
-        GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
-        GITHUB_ACTION_REPOSITORY: undefined,
-        npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/dist/node_modules/node-gyp/…",
-        PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
-        ANT_HOME: "/usr/share/ant",
-        DOTNET_MULTILEVEL_LOOKUP: "0",
-        RUNNER_TRACKING_ID: "github_dbcfebe7-5c1d-43a6-98eb-adb786dddcf1",
-        INVOCATION_ID: "907325688db246db82e6a013f6a15e5b",
-        RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-        GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.7/x64",
-        NODE: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
-        GITHUB_ACTION: "__run",
-        GITHUB_RUN_NUMBER: "13",
-        GITHUB_TRIGGERING_ACTOR: "privatenumber",
-        RUNNER_ARCH: "X64",
-        XDG_RUNTIME_DIR: "/run/user/1001",
-        AGENT_TOOLSDIRECTORY: "/opt/hostedtoolcache",
-        npm_package_devDependencies_comment_mark: "^1.1.1",
-        LANG: "C.UTF-8",
-        VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
-        npm_package_devDependencies_eslint: "^8.37.0",
-        CONDA: "/usr/share/miniconda",
-        RUNNER_NAME: "GitHub Actions 2",
-        XDG_CONFIG_HOME: "/home/runner/.config",
-        GITHUB_REF_NAME: "master",
-        GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
-        npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
-        npm_lifecycle_script: "tsx index.ts",
-        ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        GITHUB_ACTION_REF: undefined,
-        DEBIAN_FRONTEND: "noninteractive",
-        GITHUB_REPOSITORY_ID: "622996871",
-        GITHUB_ACTIONS: "true",
-        STATS_NM: "true",
-        NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/bin/node_modules:/home/runn…",
-        npm_package_devDependencies_fs_fixture: "^1.2.0",
-        npm_lifecycle_event: "start",
-        GITHUB_REF_PROTECTED: "false",
-        npm_package_devDependencies_lint_staged: "^13.2.0",
-        npm_package_devDependencies_simple_git_hooks: "^2.8.1",
-        GITHUB_WORKSPACE: "/home/runner/work/compare-bun-node/compare-bun-node",
-        ACCEPT_EULA: "Y",
-        GITHUB_JOB: "build",
-        RUNNER_PERFLOG: "/home/runner/perflog",
-        npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-        GITHUB_SHA: "6827e61bc222f09f70e4075648ac17994a21b471",
-        GITHUB_RUN_ATTEMPT: "1",
-        GITHUB_REF: "refs/heads/master",
-        GITHUB_ACTOR: "privatenumber",
-        ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
-        npm_package_license: "MIT",
-        LEIN_HOME: "/usr/local/lib/lein",
-        npm_package_devDependencies_tsx: "^3.12.6",
-        GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_4195a86b-c230-48f8-8b14-9eb0e16bcdb1",
-        JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
-        PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
-        GITHUB_ACTOR_ID: "1075694",
-        RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-        npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/bin/pnpm.cjs",
-        HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
-        GITHUB_EVENT_NAME: "push",
-        HOMEBREW_NO_AUTO_UPDATE: "1",
-        ANDROID_HOME: "/usr/local/lib/android/sdk",
-        GITHUB_SERVER_URL: "https://github.com",
-        GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
-        LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
-        GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-        GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_4195a86b-c230-48f8-8b14-9eb0e16bcdb1",
-        EDGEWEBDRIVER: "/usr/local/share/edge_driver",
-        STATS_EXT: "true",
-        npm_command: "run-script",
-        PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
-        ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        SGX_AESM_ADDR: "1",
-        CHROME_BIN: "/usr/bin/google-chrome",
-        SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
-        PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-        STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.137+2/provjobd.data",
-        npm_package_lint_staged____ts_js_: "eslint --cache",
-        ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_4195a86b-c230-48f8-8b14-9eb0e16bcdb1",
-        npm_package_eslintConfig_extends: "@pvtnbr",
-        INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
+        get/set GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_471d02e5-33d0-4743-a3a2-66cc421df349",
+        get/set npm_package_devDependencies__types_node: "^18.15.11",
+        get/set STATS_TRP: "true",
+        get/set DEPLOYMENT_BASEPATH: "/opt/runner",
+        get/set DOTNET_NOLOGO: "1",
+        get/set USER: "runner",
+        get/set npm_config_user_agent: "pnpm/7.32.0 npm/? node/v18.15.0 linux x64",
+        get/set CI: "true",
+        get/set GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_471d02e5-33d0-4743-a3a2-66cc421df349",
+        get/set PIPX_HOME: "/opt/pipx",
+        get/set npm_package_devDependencies_execa: "^7.1.1",
+        get/set npm_node_execpath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
+        get/set JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
+        get/set SHLVL: "1",
+        get/set HOME: "/home/runner",
+        get/set RUNNER_TEMP: "/home/runner/work/_temp",
+        get/set GITHUB_EVENT_PATH: "/home/runner/work/_temp/_github_workflow/event.json",
+        get/set JAVA_HOME_11_X64: "/usr/lib/jvm/temurin-11-jdk-amd64",
+        get/set PIPX_BIN_DIR: "/opt/pipx_bin",
+        get/set GRAALVM_11_ROOT: "/usr/local/graalvm/graalvm-ce-java11-22.3.1",
+        get/set GITHUB_REPOSITORY_OWNER: "privatenumber",
+        get/set npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
+        get/set GRADLE_HOME: "/usr/share/gradle-8.0.2",
+        get/set ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+        get/set STATS_RDCL: "true",
+        get/set GITHUB_RETENTION_DAYS: "90",
+        get/set GITHUB_REPOSITORY_OWNER_ID: "1075694",
+        get/set POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
+        get/set AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
+        get/set GITHUB_HEAD_REF: undefined,
+        get/set SYSTEMD_EXEC_PID: "677",
+        get/set GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
+        get/set GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.2/x64",
+        get/set NVM_DIR: "/home/runner/.nvm",
+        get/set DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
+        get/set JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
+        get/set ImageVersion: "20230402.1",
+        get/set npm_package_eslintConfig_ignorePatterns_0: "README.md",
+        get/set RUNNER_OS: "Linux",
+        get/set GITHUB_API_URL: "https://api.github.com",
+        get/set SWIFT_PATH: "/usr/share/swift/usr/bin",
+        get/set RUNNER_USER: "runner",
+        get/set CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
+        get/set JOURNAL_STREAM: "8:17606",
+        get/set GITHUB_WORKFLOW: "Compare Bun and Node.js",
+        get/set _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
+        get/set npm_package_private: "true",
+        get/set npm_package_scripts_lint: "eslint --cache .",
+        get/set npm_config_registry: "https://registry.npmjs.org/",
+        get/set GITHUB_RUN_ID: "4673406589",
+        get/set GITHUB_REF_TYPE: "branch",
+        get/set BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
+        get/set GITHUB_WORKFLOW_SHA: "a7ea866e9a91eaa7f50b8868e4b1333fae3077c2",
+        get/set GITHUB_BASE_REF: undefined,
+        get/set ImageOS: "ubuntu22",
+        get/set npm_package_scripts_start: "tsx index.ts",
+        get/set GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
+        get/set PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
+        get/set GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
+        get/set GITHUB_ACTION_REPOSITORY: undefined,
+        get/set npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/dist/node_modules/node-gyp/…",
+        get/set PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
+        get/set ANT_HOME: "/usr/share/ant",
+        get/set DOTNET_MULTILEVEL_LOOKUP: "0",
+        get/set RUNNER_TRACKING_ID: "github_91f005f9-3dbf-4224-90dc-f8d49abc608c",
+        get/set INVOCATION_ID: "33b3d64f756b4c6fa397f5341756e474",
+        get/set RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
+        get/set GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.7/x64",
+        get/set NODE: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
+        get/set GITHUB_ACTION: "__run",
+        get/set GITHUB_RUN_NUMBER: "14",
+        get/set GITHUB_TRIGGERING_ACTOR: "privatenumber",
+        get/set RUNNER_ARCH: "X64",
+        get/set XDG_RUNTIME_DIR: "/run/user/1001",
+        get/set AGENT_TOOLSDIRECTORY: "/opt/hostedtoolcache",
+        get/set npm_package_devDependencies_comment_mark: "^1.1.1",
+        get/set LANG: "C.UTF-8",
+        get/set VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
+        get/set npm_package_devDependencies_eslint: "^8.37.0",
+        get/set CONDA: "/usr/share/miniconda",
+        get/set RUNNER_NAME: "GitHub Actions 2",
+        get/set XDG_CONFIG_HOME: "/home/runner/.config",
+        get/set GITHUB_REF_NAME: "master",
+        get/set GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
+        get/set npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
+        get/set npm_lifecycle_script: "tsx index.ts",
+        get/set ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+        get/set GITHUB_ACTION_REF: undefined,
+        get/set DEBIAN_FRONTEND: "noninteractive",
+        get/set GITHUB_REPOSITORY_ID: "622996871",
+        get/set GITHUB_ACTIONS: "true",
+        get/set STATS_NM: "true",
+        get/set NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/bin/node_modules:/home/runn…",
+        get/set npm_package_devDependencies_fs_fixture: "^1.2.0",
+        get/set npm_lifecycle_event: "start",
+        get/set GITHUB_REF_PROTECTED: "false",
+        get/set npm_package_devDependencies_lint_staged: "^13.2.0",
+        get/set npm_package_devDependencies_simple_git_hooks: "^2.8.1",
+        get/set GITHUB_WORKSPACE: "/home/runner/work/compare-bun-node/compare-bun-node",
+        get/set ACCEPT_EULA: "Y",
+        get/set GITHUB_JOB: "build",
+        get/set RUNNER_PERFLOG: "/home/runner/perflog",
+        get/set npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
+        get/set GITHUB_SHA: "a7ea866e9a91eaa7f50b8868e4b1333fae3077c2",
+        get/set GITHUB_RUN_ATTEMPT: "1",
+        get/set GITHUB_REF: "refs/heads/master",
+        get/set GITHUB_ACTOR: "privatenumber",
+        get/set ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
+        get/set npm_package_license: "MIT",
+        get/set LEIN_HOME: "/usr/local/lib/lein",
+        get/set npm_package_devDependencies_tsx: "^3.12.6",
+        get/set GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_471d02e5-33d0-4743-a3a2-66cc421df349",
+        get/set JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
+        get/set PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
+        get/set GITHUB_ACTOR_ID: "1075694",
+        get/set RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
+        get/set npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/bin/pnpm.cjs",
+        get/set HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
+        get/set GITHUB_EVENT_NAME: "push",
+        get/set HOMEBREW_NO_AUTO_UPDATE: "1",
+        get/set ANDROID_HOME: "/usr/local/lib/android/sdk",
+        get/set GITHUB_SERVER_URL: "https://github.com",
+        get/set GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
+        get/set LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
+        get/set GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
+        get/set GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_471d02e5-33d0-4743-a3a2-66cc421df349",
+        get/set EDGEWEBDRIVER: "/usr/local/share/edge_driver",
+        get/set STATS_EXT: "true",
+        get/set npm_command: "run-script",
+        get/set PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
+        get/set ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+        get/set SGX_AESM_ADDR: "1",
+        get/set CHROME_BIN: "/usr/bin/google-chrome",
+        get/set SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
+        get/set PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
+        get/set STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.137+2/provjobd.data",
+        get/set npm_package_lint_staged____ts_js_: "eslint --cache",
+        get/set ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+        get/set GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_471d02e5-33d0-4743-a3a2-66cc421df349",
+        get/set npm_package_eslintConfig_extends: "@pvtnbr",
+        get/set INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
     },
     Symbol(Symbol.toStringTag): "process"
 }
@@ -7934,16 +7934,16 @@ EventEmitter {
 ```js
 <ref *1> {
     __esModule: true,
-    version: "2.1.0",
-    ucs2: {
+    get/set version: "2.1.0",
+    get/set ucs2: {
         decode: ƒ j (length: 1),
         encode: ƒ tt (length: 1)
     },
-    decode: ƒ V (length: 1),
-    encode: ƒ q (length: 1),
-    toASCII: ƒ et (length: 1),
-    toUnicode: ƒ nt (length: 1),
-    default: [Circular: *1],
+    get/set decode: ƒ V (length: 1),
+    get/set encode: ƒ q (length: 1),
+    get/set toASCII: ƒ et (length: 1),
+    get/set toUnicode: ƒ nt (length: 1),
+    get/set default: [Circular: *1],
     Symbol(CommonJSTransformed): true
 }
 ```
@@ -7981,14 +7981,14 @@ EventEmitter {
 ```js
 <ref *1> {
     __esModule: true,
-    unescapeBuffer: ƒ Nt (length: 2),
-    unescape: ƒ $r (length: 2),
-    escape: ƒ Pt (length: 1),
-    stringify: <ref *5> ƒ Gr (length: 4),
-    encode: [Circular: *5],
-    parse: <ref *6> ƒ Wr (length: 4),
-    decode: [Circular: *6],
-    default: [Circular: *1],
+    get/set unescapeBuffer: ƒ Nt (length: 2),
+    get/set unescape: ƒ $r (length: 2),
+    get/set escape: ƒ Pt (length: 1),
+    get/set stringify: <ref *5> ƒ Gr (length: 4),
+    get/set encode: [Circular: *5],
+    get/set parse: <ref *6> ƒ Wr (length: 4),
+    get/set decode: [Circular: *6],
+    get/set default: [Circular: *1],
     Symbol(CommonJSTransformed): true
 }
 ```
@@ -8158,8 +8158,8 @@ EventEmitter {
         REPL_MODE_SLOPPY: Symbol(repl-sloppy),
         REPL_MODE_STRICT: Symbol(repl-strict),
         Recoverable: [Circular: *3],
-        builtinModules: [Circular: *4],
-        _builtinLibs: [Circular: *4]
+        get/set builtinModules: [Circular: *4],
+        get/set _builtinLibs: [Circular: *4]
     },
     start: [Circular: *6],
     writer: [Circular: *7],
@@ -8170,23 +8170,23 @@ EventEmitter {
 </td><td valign="top">
 
 ```js
-79 | 			// console.log({ descriptors });
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				key => `${indentLevel}${indentation}${key.toString()}: ${
-82 | 					inspect(value[key], indentLevel + indentation, cache).trim()
-83 | 				}`,
-84 | 			);
-      ^
+75 | 				}
+76 | 			}
+77 | 
+78 | 			const entries = Reflect.ownKeys(value).map(
+79 | 				key => {
+80 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
+                            ^
 ReferenceError: Static function property defined with NULL callAsFunction callback.
-      at /tmp/fs-fixture-1681256568768-1/inspect.mjs:84:3
-      at /tmp/fs-fixture-1681256568768-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1681256568768-1/inspect.mjs:82:59
-      at /tmp/fs-fixture-1681256568768-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1681256568768-1/inspect.mjs:82:59
-      at /tmp/fs-fixture-1681256568768-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1681256568768-1/inspect.mjs:82:59
-      at /tmp/fs-fixture-1681256568768-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1681256568768-1/repl.mjs:4:15
+      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:80:24
+      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:78:19
+      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:92:6
+      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:78:19
+      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:92:6
+      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:78:19
+      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:92:6
+      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:78:19
+      at /tmp/fs-fixture-1681260831389-1/repl.mjs:4:15
 ```
 
 </td></tr></table>
@@ -8443,8 +8443,8 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         toUSVString: <ref *39> ƒ toUSVString (length: 1),
         TextDecoder: [Circular: *4],
         TextEncoder: [Circular: *5],
-        transferableAbortSignal: <ref *40> ƒ transferableAbortSignal (length: 1),
-        transferableAbortController: <ref *41> ƒ transferableAbortController (length: 0),
+        get/set transferableAbortSignal: <ref *40> ƒ transferableAbortSignal (length: 1),
+        get/set transferableAbortController: <ref *41> ƒ transferableAbortController (length: 0),
         types: <ref *42> {
             isExternal: ƒ isExternal (length: 0),
             isDate: [Circular: *31],
@@ -8523,7 +8523,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
     types: [Circular: *42],
     Symbol(Symbol.toStringTag): "Module"
 }
-(node:2545) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2614) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -8532,11 +8532,11 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 ```js
 <ref *1> {
     __esModule: true,
-    format: ƒ (length: 1),
-    deprecate: ƒ (length: 2),
-    debuglog: ƒ (length: 1),
-    inspect: ƒ S (length: 2),
-    types: {
+    get/set format: ƒ (length: 1),
+    get/set deprecate: ƒ (length: 2),
+    get/set debuglog: ƒ (length: 1),
+    get/set inspect: ƒ S (length: 2),
+    get/set types: {
         isArgumentsObject: ƒ Z (length: 1),
         isGeneratorFunction: ƒ (length: 1),
         isTypedArray: ƒ (length: 1),
@@ -8579,27 +8579,27 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         isDate: <ref *46> ƒ yr (length: 1),
         isNativeError: <ref *47> ƒ G (length: 1)
     },
-    isArray: ƒ He (length: 1),
-    isBoolean: ƒ Dr (length: 1),
-    isNull: ƒ ar (length: 1),
-    isNullOrUndefined: ƒ Tn (length: 1),
-    isNumber: ƒ Le (length: 1),
-    isString: ƒ fr (length: 1),
-    isSymbol: ƒ Fn (length: 1),
-    isUndefined: ƒ P (length: 1),
-    isRegExp: [Circular: *45],
-    isObject: ƒ k (length: 1),
-    isDate: [Circular: *46],
-    isError: [Circular: *47],
-    isFunction: ƒ ur (length: 1),
-    isPrimitive: ƒ Bn (length: 1),
-    isBuffer: ƒ (length: 1),
-    log: ƒ (length: 0),
-    inherits: ƒ (length: 2),
-    _extend: ƒ (length: 2),
-    promisify: ƒ (length: 1),
-    callbackify: ƒ Dn (length: 1),
-    default: [Circular: *1],
+    get/set isArray: ƒ He (length: 1),
+    get/set isBoolean: ƒ Dr (length: 1),
+    get/set isNull: ƒ ar (length: 1),
+    get/set isNullOrUndefined: ƒ Tn (length: 1),
+    get/set isNumber: ƒ Le (length: 1),
+    get/set isString: ƒ fr (length: 1),
+    get/set isSymbol: ƒ Fn (length: 1),
+    get/set isUndefined: ƒ P (length: 1),
+    get/set isRegExp: [Circular: *45],
+    get/set isObject: ƒ k (length: 1),
+    get/set isDate: [Circular: *46],
+    get/set isError: [Circular: *47],
+    get/set isFunction: ƒ ur (length: 1),
+    get/set isPrimitive: ƒ Bn (length: 1),
+    get/set isBuffer: ƒ (length: 1),
+    get/set log: ƒ (length: 0),
+    get/set inherits: ƒ (length: 2),
+    get/set _extend: ƒ (length: 2),
+    get/set promisify: ƒ (length: 1),
+    get/set callbackify: ƒ Dn (length: 1),
+    get/set default: [Circular: *1],
     Symbol(CommonJSTransformed): true
 }
 ```
@@ -8717,7 +8717,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         DEFAULT_MIN_VERSION: "TLSv1.2",
         DEFAULT_MAX_VERSION: "TLSv1.3",
         getCiphers: <ref *12> ƒ (length: 0),
-        rootCertificates: <ref *13> [
+        get/set rootCertificates: <ref *13> [
             "-----BEGIN CERTIFICATE-----\nMIIDdTCCAl2gAwIBAgILBAAAAAABFUtaw5QwDQYJKoZIhvcNAQEFBQAwVzELMAkGA1UEBhMC…",
             "-----BEGIN CERTIFICATE-----\nMIIEKjCCAxKgAwIBAgIEOGPe+DANBgkqhkiG9w0BAQUFADCBtDEUMBIGA1UEChMLRW50cnVz…",
             "-----BEGIN CERTIFICATE-----\nMIIDdzCCAl+gAwIBAgIEAgAAuTANBgkqhkiG9w0BAQUFADBaMQswCQYDVQQGEwJJRTESMBAG…",
@@ -9082,8 +9082,8 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         toUSVString: <ref *39> ƒ toUSVString (length: 1),
         TextDecoder: [Circular: *4],
         TextEncoder: [Circular: *5],
-        transferableAbortSignal: <ref *40> ƒ transferableAbortSignal (length: 1),
-        transferableAbortController: <ref *41> ƒ transferableAbortController (length: 0),
+        get/set transferableAbortSignal: <ref *40> ƒ transferableAbortSignal (length: 1),
+        get/set transferableAbortController: <ref *41> ƒ transferableAbortController (length: 0),
         types: <ref *42> {
             isExternal: ƒ isExternal (length: 0),
             isDate: [Circular: *31],
