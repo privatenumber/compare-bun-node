@@ -135,8 +135,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent]{},
-    Server: [class Server]{},
+    Agent: class Agent extends EventEmitter {},
+    Server: class Server extends EventEmitter {},
     METHODS: [
         "ACL",
         "BIND",
@@ -239,8 +239,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         511: "Network Authentication Required"
     },
     createServer: ƒ createServer(length: 2) {},
-    ServerResponse: [class ServerResponse]{},
-    IncomingMessage: [class IncomingMessage]{},
+    ServerResponse: class ServerResponse extends Writable {},
+    IncomingMessage: class IncomingMessage extends Readable {},
     request: ƒ request(length: 3) {},
     get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
@@ -269,8 +269,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent]{},
-    Server: [class Server]{},
+    Agent: class Agent extends EventEmitter {},
+    Server: class Server extends EventEmitter {},
     METHODS: [
         "ACL",
         "BIND",
@@ -373,8 +373,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         511: "Network Authentication Required"
     },
     createServer: ƒ createServer(length: 2) {},
-    ServerResponse: [class ServerResponse]{},
-    IncomingMessage: [class IncomingMessage]{},
+    ServerResponse: class ServerResponse extends Writable {},
+    IncomingMessage: class IncomingMessage extends Readable {},
     request: ƒ request(length: 3) {},
     get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
@@ -480,8 +480,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent]{},
-    Server: [class Server]{},
+    Agent: class Agent extends EventEmitter {},
+    Server: class Server extends EventEmitter {},
     METHODS: [
         "ACL",
         "BIND",
@@ -584,8 +584,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         511: "Network Authentication Required"
     },
     createServer: ƒ createServer(length: 2) {},
-    ServerResponse: [class ServerResponse]{},
-    IncomingMessage: [class IncomingMessage]{},
+    ServerResponse: class ServerResponse extends Writable {},
+    IncomingMessage: class IncomingMessage extends Readable {},
     request: ƒ request(length: 3) {},
     get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
@@ -618,8 +618,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent]{},
-    Server: [class Server]{},
+    Agent: class Agent extends EventEmitter {},
+    Server: class Server extends EventEmitter {},
     METHODS: [
         "ACL",
         "BIND",
@@ -722,8 +722,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         511: "Network Authentication Required"
     },
     createServer: ƒ createServer(length: 2) {},
-    ServerResponse: [class ServerResponse]{},
-    IncomingMessage: [class IncomingMessage]{},
+    ServerResponse: class ServerResponse extends Writable {},
+    IncomingMessage: class IncomingMessage extends Readable {},
     request: ƒ request(length: 3) {},
     get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
@@ -760,8 +760,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent]{},
-    Server: [class Server]{},
+    Agent: class Agent extends EventEmitter {},
+    Server: class Server extends EventEmitter {},
     METHODS: [
         "ACL",
         "BIND",
@@ -864,8 +864,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         511: "Network Authentication Required"
     },
     createServer: ƒ createServer(length: 2) {},
-    ServerResponse: [class ServerResponse]{},
-    IncomingMessage: [class IncomingMessage]{},
+    ServerResponse: class ServerResponse extends Writable {},
+    IncomingMessage: class IncomingMessage extends Readable {},
     request: ƒ request(length: 3) {},
     get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
@@ -970,8 +970,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent]{},
-    Server: [class Server]{},
+    Agent: class Agent extends EventEmitter {},
+    Server: class Server extends EventEmitter {},
     METHODS: [
         "ACL",
         "BIND",
@@ -1074,8 +1074,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         511: "Network Authentication Required"
     },
     createServer: ƒ createServer(length: 2) {},
-    ServerResponse: [class ServerResponse]{},
-    IncomingMessage: [class IncomingMessage]{},
+    ServerResponse: class ServerResponse extends Writable {},
+    IncomingMessage: class IncomingMessage extends Readable {},
     request: ƒ request(length: 3) {},
     get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
@@ -1148,12 +1148,12 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
     _isUint8Array: ƒ isUint8Array(length: 1) {},
     _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
     _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
-    NativeWritable: [class NativeWritable]{},
+    NativeWritable: class NativeWritable extends Writable {},
     default: [Circular: *1],
     eos: ƒ __require2(length: 0) {},
     Symbol(CommonJS): 0,
     Symbol(::bunternal::): {
-        _ReadableFromWeb: [class ReadableFromWeb]{}
+        _ReadableFromWeb: class ReadableFromWeb extends Readable {}
     }
 }
 ```
@@ -1214,12 +1214,12 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
     _isUint8Array: ƒ isUint8Array(length: 1) {},
     _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
     _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
-    NativeWritable: [class NativeWritable]{},
+    NativeWritable: class NativeWritable extends Writable {},
     default: [Circular: *1],
     eos: ƒ __require2(length: 0) {},
     Symbol(CommonJS): 0,
     Symbol(::bunternal::): {
-        _ReadableFromWeb: [class ReadableFromWeb]{}
+        _ReadableFromWeb: class ReadableFromWeb extends Readable {}
     }
 }
 ```
@@ -1293,12 +1293,12 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
     _isUint8Array: ƒ isUint8Array(length: 1) {},
     _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
     _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
-    NativeWritable: [class NativeWritable]{},
+    NativeWritable: class NativeWritable extends Writable {},
     default: [Circular: *1],
     eos: ƒ __require2(length: 0) {},
     Symbol(CommonJS): 0,
     Symbol(::bunternal::): {
-        _ReadableFromWeb: [class ReadableFromWeb]{}
+        _ReadableFromWeb: class ReadableFromWeb extends Readable {}
     }
 }
 ```
@@ -1359,12 +1359,12 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
     _isUint8Array: ƒ isUint8Array(length: 1) {},
     _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
     _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
-    NativeWritable: [class NativeWritable]{},
+    NativeWritable: class NativeWritable extends Writable {},
     default: [Circular: *1],
     eos: ƒ __require2(length: 0) {},
     Symbol(CommonJS): 0,
     Symbol(::bunternal::): {
-        _ReadableFromWeb: [class ReadableFromWeb]{}
+        _ReadableFromWeb: class ReadableFromWeb extends Readable {}
     }
 }
 ```
@@ -1377,9 +1377,9 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    default: [class JSStreamSocket]{}
+    default: class JSStreamSocket extends Socket {}
 }
-(node:1903) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:1981) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -1427,12 +1427,12 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
     _isUint8Array: ƒ isUint8Array(length: 1) {},
     _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
     _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
-    NativeWritable: [class NativeWritable]{},
+    NativeWritable: class NativeWritable extends Writable {},
     default: [Circular: *1],
     eos: ƒ __require2(length: 0) {},
     Symbol(CommonJS): 0,
     Symbol(::bunternal::): {
-        _ReadableFromWeb: [class ReadableFromWeb]{}
+        _ReadableFromWeb: class ReadableFromWeb extends Readable {}
     }
 }
 ```
@@ -1500,12 +1500,12 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
     _isUint8Array: ƒ isUint8Array(length: 1) {},
     _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
     _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
-    NativeWritable: [class NativeWritable]{},
+    NativeWritable: class NativeWritable extends Writable {},
     default: [Circular: *1],
     eos: ƒ __require2(length: 0) {},
     Symbol(CommonJS): 0,
     Symbol(::bunternal::): {
-        _ReadableFromWeb: [class ReadableFromWeb]{}
+        _ReadableFromWeb: class ReadableFromWeb extends Readable {}
     }
 }
 ```
@@ -1548,7 +1548,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
     DEFAULT_MAX_VERSION: "TLSv1.3",
     connect: <ref *9> ƒ createConnection(length: 3) {},
     createConnection: [Circular: *9],
-    Server: [class Server]{},
+    Server: class Server extends NetServer {},
     createServer: ƒ createServer(length: 2) {},
     Symbol(CommonJS): 0
 }
@@ -1594,7 +1594,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
     DEFAULT_MAX_VERSION: "TLSv1.3",
     connect: <ref *9> ƒ createConnection(length: 3) {},
     createConnection: [Circular: *9],
-    Server: [class Server]{},
+    Server: class Server extends NetServer {},
     createServer: ƒ createServer(length: 2) {},
     Symbol(CommonJS): 0
 }
@@ -1608,8 +1608,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    AssertionError: <ref *2> [class AssertionError]{},
-    CallTracker: <ref *3> [class CallTracker]{},
+    AssertionError: <ref *2> class AssertionError extends Error {},
+    CallTracker: <ref *3> class CallTracker {},
     deepEqual: <ref *4> ƒ deepEqual(length: 3) {},
     deepStrictEqual: <ref *5> ƒ deepStrictEqual(length: 3) {},
     default: <ref *6> ƒ ok(length: 0) {
@@ -1728,8 +1728,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    AssertionError: <ref *2> [class AssertionError]{},
-    CallTracker: <ref *3> [class CallTracker]{},
+    AssertionError: <ref *2> class AssertionError extends Error {},
+    CallTracker: <ref *3> class CallTracker {},
     deepEqual: <ref *4> ƒ deepStrictEqual(length: 3) {},
     deepStrictEqual: [Circular: *4],
     default: <ref *5> ƒ strict(length: 0) {
@@ -1869,8 +1869,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    AsyncLocalStorage: <ref *2> [class AsyncLocalStorage]{},
-    AsyncResource: <ref *3> [class AsyncResource]{},
+    AsyncLocalStorage: <ref *2> class AsyncLocalStorage {},
+    AsyncResource: <ref *3> class AsyncResource {},
     asyncWrapProviders: <ref *4> [Object: null prototype] {
         NONE: 0,
         DIRHANDLE: 1,
@@ -1951,7 +1951,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    AsyncLocalStorage: [class AsyncLocalStorage]{},
+    AsyncLocalStorage: class AsyncLocalStorage {},
     createHook: ƒ createHook(length: 0) {},
     executionAsyncId: ƒ executionAsyncId(length: 0) {},
     triggerAsyncId: ƒ triggerAsyncId(length: 0) {},
@@ -2016,7 +2016,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         VERIFYREQUEST: 56,
         INSPECTORJSBINDING: 57
     },
-    AsyncResource: [class AsyncResource]{
+    AsyncResource: class AsyncResource {
         allowedRunInAsyncScope: Set {}
     },
     Symbol(Symbol.toStringTag): "Module (not implemented yet)",
@@ -2032,7 +2032,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    Blob: <ref *2> [class Blob]{},
+    Blob: <ref *2> class Blob {},
     Buffer: <ref *3> ƒ Buffer(length: 3) {
         poolSize: 8192,
         from: ƒ from(length: 3) {},
@@ -2047,7 +2047,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         byteLength: ƒ byteLength(length: 2) {},
         Symbol(kIsEncodingSymbol): [Circular: *11]
     },
-    File: <ref *14> [class File]{},
+    File: <ref *14> class File extends Blob {},
     INSPECT_MAX_BYTES: 50,
     SlowBuffer: <ref *15> ƒ SlowBuffer(length: 1) {},
     atob: <ref *16> ƒ atob(length: 1) {},
@@ -2150,7 +2150,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    ChildProcess: [class ChildProcess]{},
+    ChildProcess: class ChildProcess extends EventEmitter {},
     spawn: ƒ spawn(length: 3) {},
     execFile: ƒ execFile(length: 4) {},
     exec: ƒ exec(length: 3) {},
@@ -2864,10 +2864,10 @@ Cluster {
     },
     Hash: <ref *14> ƒ Hash(length: 2) {},
     Hmac: <ref *15> ƒ Hmac(length: 3) {},
-    KeyObject: <ref *16> [class KeyObject]{},
+    KeyObject: <ref *16> class KeyObject extends NativeKeyObject {},
     Sign: <ref *17> ƒ Sign(length: 2) {},
     Verify: <ref *18> ƒ Verify(length: 2) {},
-    X509Certificate: <ref *19> [class X509Certificate]{},
+    X509Certificate: <ref *19> class X509Certificate extends JSTransferable {},
     checkPrime: <ref *20> ƒ checkPrime(length: 1) {},
     checkPrimeSync: <ref *21> ƒ checkPrimeSync(length: 1) {},
     constants: <ref *22> [Object: null prototype] {
@@ -3068,19 +3068,19 @@ Cluster {
 </td><td valign="top">
 
 ```js
-76 | 			}
-77 | 
-78 | 			const entries = Reflect.ownKeys(value).map(
-79 | 				(key) => {
-80 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-81 | 					if (!descriptor.enumerable) {
+78 | 			}
+79 | 
+80 | 			const entries = Reflect.ownKeys(value).map(
+81 | 				(key) => {
+82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
+83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:81:10
-      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:78:19
-      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:97:6
-      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:78:19
-      at /tmp/fs-fixture-1681286724511-1/crypto.mjs:4:15
+      at /tmp/fs-fixture-1681287045945-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1681287045945-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1681287045945-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1681287045945-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1681287045945-1/crypto.mjs:4:15
 ```
 
 </td></tr></table>
@@ -3121,7 +3121,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    Channel: <ref *2> [class Channel]{},
+    Channel: <ref *2> class Channel {},
     channel: <ref *3> ƒ channel(length: 1) {},
     default: {
         channel: [Circular: *3],
@@ -3144,7 +3144,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     hasSubscribers: ƒ ::bunternal::(length: 0) {},
     subscribe: ƒ ::bunternal::(length: 0) {},
     unsubscribe: ƒ ::bunternal::(length: 0) {},
-    Channel: [class ::bunternal::]{},
+    Channel: class Channel {},
     Symbol(CommonJS): 0
 }
 ```
@@ -3181,7 +3181,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     NOTIMP: "ENOTIMP",
     NOTINITIALIZED: "ENOTINITIALIZED",
     REFUSED: "EREFUSED",
-    Resolver: <ref *2> [class Resolver]{},
+    Resolver: <ref *2> class Resolver extends ResolverBase {},
     SERVFAIL: "ESERVFAIL",
     TIMEOUT: "ETIMEOUT",
     V4MAPPED: 8,
@@ -3236,7 +3236,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         [get/set] promises: <ref *23> {
             lookup: ƒ lookup(length: 2) {},
             lookupService: ƒ lookupService(length: 2) {},
-            Resolver: [class Resolver]{},
+            Resolver: class Resolver extends ResolverBase {},
             setDefaultResultOrder: [Circular: *6],
             setServers: ƒ defaultResolverSetServers(length: 1) {},
             NODATA: "ENODATA",
@@ -3368,7 +3368,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         resolveNs: ƒ resolveNs(length: 1) {},
         resolvePtr: ƒ resolvePtr(length: 1) {},
         resolveCname: ƒ resolveCname(length: 1) {},
-        Resolver: [class Resolver]{},
+        Resolver: class Resolver {},
         resolveAny: ƒ (length: 0) {},
         reverse: ƒ (length: 0) {}
     },
@@ -3406,7 +3406,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     NOTIMP: "ENOTIMP",
     NOTINITIALIZED: "ENOTINITIALIZED",
     REFUSED: "EREFUSED",
-    Resolver: <ref *2> [class Resolver]{},
+    Resolver: <ref *2> class Resolver extends ResolverBase {},
     SERVFAIL: "ESERVFAIL",
     TIMEOUT: "ETIMEOUT",
     default: {
@@ -3496,7 +3496,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     resolveSrv: ƒ resolveSrv(length: 1) {},
     resolveTxt: ƒ resolveTxt(length: 1) {},
     reverse: ƒ (length: 0) {},
-    Resolver: [class Resolver]{},
+    Resolver: class Resolver {},
     setServers: undefined,
     setDefaultResultOrder: undefined,
     Symbol(CommonJS): 0
@@ -3511,7 +3511,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    Domain: <ref *2> [class Domain]{},
+    Domain: <ref *2> class Domain extends EventEmitter {},
     _stack: <ref *3> [],
     active: null,
     create: <ref *4> ƒ createDomain(length: 0) {},
@@ -3551,7 +3551,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
         [get/set] captureRejections: false,
-        [get/set] EventEmitterAsyncResource: <ref *6> [class EventEmitterAsyncResource]{},
+        [get/set] EventEmitterAsyncResource: <ref *6> class EventEmitterAsyncResource extends EventEmitter {},
         errorMonitor: Symbol(events.errorMonitor),
         [get/set] defaultMaxListeners: 10,
         setMaxListeners: <ref *7> ƒ (length: 0) {},
@@ -3597,8 +3597,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    Dir: <ref *2> [class Dir]{},
-    Dirent: <ref *3> [class Dirent]{},
+    Dir: <ref *2> class Dir {},
+    Dirent: <ref *3> class Dirent {},
     F_OK: 0,
     FileReadStream: <ref *4> ƒ ReadStream(length: 2) {},
     FileWriteStream: <ref *5> ƒ WriteStream(length: 2) {},
@@ -4076,8 +4076,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     ReadStream: ƒ ReadStream(length: 2) {},
     Symbol(CommonJS): 0,
     Symbol(::bunternal::): {
-        ReadStreamClass: [class ReadStream]{},
-        WriteStreamClass: [class WriteStream]{}
+        ReadStreamClass: class ReadStream extends NativeReadable {},
+        WriteStreamClass: class WriteStream extends NativeWritable {}
     }
 }
 ```
@@ -4481,8 +4481,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Agent: [class Agent]{},
-    Server: [class Server]{},
+    Agent: class Agent extends EventEmitter {},
+    Server: class Server extends EventEmitter {},
     METHODS: [
         "ACL",
         "BIND",
@@ -4585,8 +4585,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         511: "Network Authentication Required"
     },
     createServer: ƒ createServer(length: 2) {},
-    ServerResponse: [class ServerResponse]{},
-    IncomingMessage: [class IncomingMessage]{},
+    ServerResponse: class ServerResponse extends Writable {},
+    IncomingMessage: class IncomingMessage extends Readable {},
     request: ƒ request(length: 3) {},
     get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
@@ -4604,8 +4604,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    Http2ServerRequest: <ref *2> [class Http2ServerRequest]{},
-    Http2ServerResponse: <ref *3> [class Http2ServerResponse]{},
+    Http2ServerRequest: <ref *2> class Http2ServerRequest extends Readable {},
+    Http2ServerResponse: <ref *3> class Http2ServerResponse extends Stream {},
     connect: <ref *4> ƒ connect(length: 3) {},
     constants: <ref *5> {
         NGHTTP2_ERR_FRAME_SIZE_ERROR: -522,
@@ -5187,8 +5187,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Agent: [class Agent]{},
-    Server: [class Server]{},
+    Agent: class Agent extends EventEmitter {},
+    Server: class Server extends EventEmitter {},
     METHODS: [
         "ACL",
         "BIND",
@@ -5291,8 +5291,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         511: "Network Authentication Required"
     },
     createServer: ƒ createServer(length: 2) {},
-    ServerResponse: [class ServerResponse]{},
-    IncomingMessage: [class IncomingMessage]{},
+    ServerResponse: class ServerResponse extends Writable {},
+    IncomingMessage: class IncomingMessage extends Readable {},
     request: ƒ request(length: 3) {},
     get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
@@ -5310,7 +5310,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    Session: <ref *2> [class Session]{},
+    Session: <ref *2> class Session extends EventEmitter {},
     close: <ref *3> ƒ _debugEnd(length: 0) {},
     console: <ref *4> {
         debug: ƒ debug(length: 0) {},
@@ -5421,7 +5421,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     close: ƒ ::bunternal::(length: 0) {},
     url: ƒ ::bunternal::(length: 0) {},
     waitForDebugger: ƒ ::bunternal::(length: 0) {},
-    Session: [class ::bunternal::]{},
+    Session: class Session extends EventEmitter {},
     Symbol(CommonJS): 0
 }
 ```
@@ -5505,7 +5505,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         ],
         _cache: <ref *4> [Object: null prototype] {},
         _pathCache: <ref *5> [Object: null prototype] {
-            /tmp/fs-fixture-1681286724511-1/module.mjs: "/tmp/fs-fixture-1681286724511-1/module.mjs"
+            /tmp/fs-fixture-1681287045945-1/module.mjs: "/tmp/fs-fixture-1681287045945-1/module.mjs"
         },
         _extensions: <ref *6> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -5541,7 +5541,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         Module: [Circular: *2],
         runMain: <ref *22> ƒ executeUserEntryPoint(length: 0) {},
         findSourceMap: <ref *23> ƒ findSourceMap(length: 1) {},
-        SourceMap: <ref *24> [class SourceMap]{}
+        SourceMap: <ref *24> class SourceMap {}
     },
     SourceMap: [Circular: *24],
     _cache: [Circular: *4],
@@ -5599,10 +5599,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    BlockList: <ref *2> [class BlockList]{},
+    BlockList: <ref *2> class BlockList extends JSTransferable {},
     Server: <ref *3> ƒ Server(length: 2) {},
     Socket: <ref *4> ƒ Socket(length: 1) {},
-    SocketAddress: <ref *5> [class SocketAddress]{},
+    SocketAddress: <ref *5> class SocketAddress extends JSTransferable {},
     Stream: [Circular: *4],
     _createServerHandle: <ref *6> ƒ createServerHandle(length: 5) {},
     _normalizeArgs: <ref *7> ƒ normalizeArgs(length: 1) {},
@@ -5637,7 +5637,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 ```js
 {
     createServer: ƒ createServer(length: 2) {},
-    Server: [class Server]{},
+    Server: class Server extends EventEmitter {},
     createConnection: <ref *4> ƒ createConnection(length: 3) {},
     connect: [Circular: *4],
     isIP: ƒ isIP(length: 1) {},
@@ -5645,7 +5645,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     isIPv6: ƒ isIPv6(length: 1) {},
     Socket: ƒ Socket(length: 1) {},
     Symbol(CommonJS): 0,
-    Symbol(::bunternal::): [class Socket]{
+    Symbol(::bunternal::): class Socket extends Duplex {
         Symbol(::bunsocket_serverhandlers::): {
             data: ƒ data(length: 2) {},
             close: ƒ close(length: 1) {},
@@ -6348,13 +6348,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    Performance: <ref *2> [class Performance]{},
-    PerformanceEntry: <ref *3> [class PerformanceEntry]{},
-    PerformanceMark: <ref *4> [class PerformanceMark]{},
-    PerformanceMeasure: <ref *5> [class PerformanceMeasure]{},
-    PerformanceObserver: <ref *6> [class PerformanceObserver]{},
-    PerformanceObserverEntryList: <ref *7> [class PerformanceObserverEntryList]{},
-    PerformanceResourceTiming: <ref *8> [class PerformanceResourceTiming]{},
+    Performance: <ref *2> class Performance extends EventTarget {},
+    PerformanceEntry: <ref *3> class PerformanceEntry {},
+    PerformanceMark: <ref *4> class PerformanceMark extends InternalPerformanceEntry {},
+    PerformanceMeasure: <ref *5> class PerformanceMeasure extends InternalPerformanceEntry {},
+    PerformanceObserver: <ref *6> class PerformanceObserver {},
+    PerformanceObserverEntryList: <ref *7> class PerformanceObserverEntryList {},
+    PerformanceResourceTiming: <ref *8> class PerformanceResourceTiming extends InternalPerformanceResourceTiming {},
     constants: <ref *9> {
         NODE_PERFORMANCE_GC_MAJOR: 4,
         NODE_PERFORMANCE_GC_MINOR: 1,
@@ -6397,10 +6397,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 {
     performance: {
         now: ƒ now(length: 0) {},
-        timeOrigin: 1681286726763.518
+        timeOrigin: 1681287048357.191
     },
-    PerformanceEntry: [class PerformanceEntry]{},
-    PerformanceNodeTiming: [class PerformanceNodeTiming]{},
+    PerformanceEntry: class PerformanceEntry {},
+    PerformanceNodeTiming: class PerformanceNodeTiming {},
     Symbol(CommonJS): 0
 }
 ```
@@ -6627,7 +6627,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
-        "/tmp/fs-fixture-1681286724511-1/process.mjs"
+        "/tmp/fs-fixture-1681287045945-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -7663,7 +7663,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         setgid: <ref *104> ƒ (length: 1) {},
         setuid: <ref *105> ƒ (length: 1) {},
         env: <ref *106>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_514f087f-5ec1-4c0e-8889-c388eb08772f",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_19be4277-a0e4-4db8-9173-47e6356c076a",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -7671,7 +7671,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             USER: "runner",
             npm_config_user_agent: "pnpm/7.32.0 npm/? node/v18.15.0 linux x64",
             CI: "true",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_514f087f-5ec1-4c0e-8889-c388eb08772f",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_19be4277-a0e4-4db8-9173-47e6356c076a",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
@@ -7693,7 +7693,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "667",
+            SYSTEMD_EXEC_PID: "666",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.2/x64",
             NVM_DIR: "/home/runner/.nvm",
@@ -7706,16 +7706,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             RUNNER_USER: "runner",
             CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-            JOURNAL_STREAM: "8:17426",
+            JOURNAL_STREAM: "8:17139",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "4676031987",
+            GITHUB_RUN_ID: "4676079855",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "5f176fe96561756b0451f3270a3ae5d46dcda78a",
+            GITHUB_WORKFLOW_SHA: "3a37a4df857fd950a2875b80454acf88ddb943d5",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -7727,13 +7727,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_65783939-c03f-4ebe-8008-71363e48c9b0",
-            INVOCATION_ID: "8ce3fecf3e3549c3bceaa8165563528f",
+            RUNNER_TRACKING_ID: "github_2b68e9d5-1e01-483d-b866-259eb521dadb",
+            INVOCATION_ID: "32b91dd915744bfd92f04f428973b3e8",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.7/x64",
             NODE: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "15",
+            GITHUB_RUN_NUMBER: "16",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -7766,7 +7766,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "5f176fe96561756b0451f3270a3ae5d46dcda78a",
+            GITHUB_SHA: "3a37a4df857fd950a2875b80454acf88ddb943d5",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -7774,7 +7774,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_514f087f-5ec1-4c0e-8889-c388eb08772f",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_19be4277-a0e4-4db8-9173-47e6356c076a",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -7788,7 +7788,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_514f087f-5ec1-4c0e-8889-c388eb08772f",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_19be4277-a0e4-4db8-9173-47e6356c076a",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -7801,15 +7801,15 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.137+2/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_514f087f-5ec1-4c0e-8889-c388eb08772f",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_19be4277-a0e4-4db8-9173-47e6356c076a",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *107> [],
-        pid: 2377,
-        ppid: 1786,
+        pid: 2455,
+        ppid: 1866,
         execPath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -7852,9 +7852,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *64],
     openStdin: [Circular: *54],
-    pid: 2377,
+    pid: 2455,
     platform: "linux",
-    ppid: 1786,
+    ppid: 1866,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *108],
@@ -7881,12 +7881,12 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 EventEmitter {
-    pid: 2383,
-    ppid: 1786,
+    pid: 2458,
+    ppid: 1866,
     title: "bun",
     argv: [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1681286724511-1/process.mjs"
+        "/tmp/fs-fixture-1681287045945-1/process.mjs"
     ],
     revision: "519f9aac8081d961f8e79062f4c0f26ef256027b",
     nextTick: ƒ nextTick(length: 1) {},
@@ -7990,7 +7990,7 @@ EventEmitter {
     },
     emitWarning: ƒ emitWarning(length: 1) {},
     env: {
-        [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_514f087f-5ec1-4c0e-8889-c388eb08772f",
+        [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_19be4277-a0e4-4db8-9173-47e6356c076a",
         [get/set] npm_package_devDependencies__types_node: "^18.15.11",
         [get/set] STATS_TRP: "true",
         [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -7998,7 +7998,7 @@ EventEmitter {
         [get/set] USER: "runner",
         [get/set] npm_config_user_agent: "pnpm/7.32.0 npm/? node/v18.15.0 linux x64",
         [get/set] CI: "true",
-        [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_514f087f-5ec1-4c0e-8889-c388eb08772f",
+        [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_19be4277-a0e4-4db8-9173-47e6356c076a",
         [get/set] PIPX_HOME: "/opt/pipx",
         [get/set] npm_package_devDependencies_execa: "^7.1.1",
         [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
@@ -8020,7 +8020,7 @@ EventEmitter {
         [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
         [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
         [get/set] GITHUB_HEAD_REF: undefined,
-        [get/set] SYSTEMD_EXEC_PID: "667",
+        [get/set] SYSTEMD_EXEC_PID: "666",
         [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
         [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.2/x64",
         [get/set] NVM_DIR: "/home/runner/.nvm",
@@ -8033,16 +8033,16 @@ EventEmitter {
         [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
         [get/set] RUNNER_USER: "runner",
         [get/set] CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-        [get/set] JOURNAL_STREAM: "8:17426",
+        [get/set] JOURNAL_STREAM: "8:17139",
         [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
         [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
         [get/set] npm_package_private: "true",
         [get/set] npm_package_scripts_lint: "eslint --cache .",
         [get/set] npm_config_registry: "https://registry.npmjs.org/",
-        [get/set] GITHUB_RUN_ID: "4676031987",
+        [get/set] GITHUB_RUN_ID: "4676079855",
         [get/set] GITHUB_REF_TYPE: "branch",
         [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-        [get/set] GITHUB_WORKFLOW_SHA: "5f176fe96561756b0451f3270a3ae5d46dcda78a",
+        [get/set] GITHUB_WORKFLOW_SHA: "3a37a4df857fd950a2875b80454acf88ddb943d5",
         [get/set] GITHUB_BASE_REF: undefined,
         [get/set] ImageOS: "ubuntu22",
         [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -8054,13 +8054,13 @@ EventEmitter {
         [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
         [get/set] ANT_HOME: "/usr/share/ant",
         [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-        [get/set] RUNNER_TRACKING_ID: "github_65783939-c03f-4ebe-8008-71363e48c9b0",
-        [get/set] INVOCATION_ID: "8ce3fecf3e3549c3bceaa8165563528f",
+        [get/set] RUNNER_TRACKING_ID: "github_2b68e9d5-1e01-483d-b866-259eb521dadb",
+        [get/set] INVOCATION_ID: "32b91dd915744bfd92f04f428973b3e8",
         [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
         [get/set] GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.7/x64",
         [get/set] NODE: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
         [get/set] GITHUB_ACTION: "__run",
-        [get/set] GITHUB_RUN_NUMBER: "15",
+        [get/set] GITHUB_RUN_NUMBER: "16",
         [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
         [get/set] RUNNER_ARCH: "X64",
         [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -8093,7 +8093,7 @@ EventEmitter {
         [get/set] GITHUB_JOB: "build",
         [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
         [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-        [get/set] GITHUB_SHA: "5f176fe96561756b0451f3270a3ae5d46dcda78a",
+        [get/set] GITHUB_SHA: "3a37a4df857fd950a2875b80454acf88ddb943d5",
         [get/set] GITHUB_RUN_ATTEMPT: "1",
         [get/set] GITHUB_REF: "refs/heads/master",
         [get/set] GITHUB_ACTOR: "privatenumber",
@@ -8101,7 +8101,7 @@ EventEmitter {
         [get/set] npm_package_license: "MIT",
         [get/set] LEIN_HOME: "/usr/local/lib/lein",
         [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-        [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_514f087f-5ec1-4c0e-8889-c388eb08772f",
+        [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_19be4277-a0e4-4db8-9173-47e6356c076a",
         [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
         [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
         [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -8115,7 +8115,7 @@ EventEmitter {
         [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
         [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
         [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-        [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_514f087f-5ec1-4c0e-8889-c388eb08772f",
+        [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_19be4277-a0e4-4db8-9173-47e6356c076a",
         [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
         [get/set] STATS_EXT: "true",
         [get/set] npm_command: "run-script",
@@ -8128,7 +8128,7 @@ EventEmitter {
         [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.137+2/provjobd.data",
         [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
         [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_514f087f-5ec1-4c0e-8889-c388eb08772f",
+        [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_19be4277-a0e4-4db8-9173-47e6356c076a",
         [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
         [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
     },
@@ -8243,8 +8243,8 @@ EventEmitter {
         emitKeypressEvents: <ref *8> ƒ emitKeypressEvents(length: 1) {},
         moveCursor: <ref *9> ƒ moveCursor(length: 4) {},
         promises: <ref *10> {
-            Interface: [class Interface]{},
-            Readline: [class Readline]{},
+            Interface: class Interface extends _Interface {},
+            Readline: class Readline {},
             createInterface: ƒ createInterface(length: 4) {}
         }
     },
@@ -8266,8 +8266,8 @@ EventEmitter {
     emitKeypressEvents: ƒ emitKeypressEvents(length: 1) {},
     moveCursor: ƒ moveCursor(length: 4) {},
     promises: {
-        Readline: [class Readline]{},
-        Interface: [class Interface]{},
+        Readline: class Readline {},
+        Interface: class Interface extends _Interface {},
         createInterface: ƒ createInterface(length: 4) {}
     },
     Symbol(__BUN_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED__): {
@@ -8295,8 +8295,8 @@ EventEmitter {
 
 ```js
 [Object: null prototype] {
-    Interface: <ref *2> [class Interface]{},
-    Readline: <ref *3> [class Readline]{},
+    Interface: <ref *2> class Interface extends _Interface {},
+    Readline: <ref *3> class Readline {},
     createInterface: <ref *4> ƒ createInterface(length: 4) {},
     default: {
         Interface: [Circular: *2],
@@ -8310,8 +8310,8 @@ EventEmitter {
 
 ```js
 {
-    Readline: [class Readline]{},
-    Interface: [class Interface]{},
+    Readline: class Readline {},
+    Interface: class Interface extends _Interface {},
     createInterface: ƒ createInterface(length: 4) {},
     Symbol(CommonJS): 0
 }
@@ -8415,21 +8415,21 @@ EventEmitter {
 </td><td valign="top">
 
 ```js
-76 | 			}
-77 | 
-78 | 			const entries = Reflect.ownKeys(value).map(
-79 | 				(key) => {
-80 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-81 | 					if (!descriptor.enumerable) {
+78 | 			}
+79 | 
+80 | 			const entries = Reflect.ownKeys(value).map(
+81 | 				(key) => {
+82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
+83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:81:10
-      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:78:19
-      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:97:6
-      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:78:19
-      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:97:6
-      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:78:19
-      at /tmp/fs-fixture-1681286724511-1/repl.mjs:4:15
+      at /tmp/fs-fixture-1681287045945-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1681287045945-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1681287045945-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1681287045945-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1681287045945-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1681287045945-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1681287045945-1/repl.mjs:4:15
 ```
 
 </td></tr></table>
@@ -8546,12 +8546,12 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     _isUint8Array: ƒ isUint8Array(length: 1) {},
     _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
     _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
-    NativeWritable: [class NativeWritable]{},
+    NativeWritable: class NativeWritable extends Writable {},
     default: [Circular: *1],
     eos: ƒ __require2(length: 0) {},
     Symbol(CommonJS): 0,
     Symbol(::bunternal::): {
-        _ReadableFromWeb: [class ReadableFromWeb]{}
+        _ReadableFromWeb: class ReadableFromWeb extends Readable {}
     }
 }
 ```
@@ -8627,23 +8627,23 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    ByteLengthQueuingStrategy: <ref *2> [class ByteLengthQueuingStrategy]{},
-    CompressionStream: <ref *3> [class CompressionStream]{},
-    CountQueuingStrategy: <ref *4> [class CountQueuingStrategy]{},
-    DecompressionStream: <ref *5> [class DecompressionStream]{},
-    ReadableByteStreamController: <ref *6> [class ReadableByteStreamController]{},
-    ReadableStream: <ref *7> [class ReadableStream]{},
-    ReadableStreamBYOBReader: <ref *8> [class ReadableStreamBYOBReader]{},
-    ReadableStreamBYOBRequest: <ref *9> [class ReadableStreamBYOBRequest]{},
-    ReadableStreamDefaultController: <ref *10> [class ReadableStreamDefaultController]{},
-    ReadableStreamDefaultReader: <ref *11> [class ReadableStreamDefaultReader]{},
-    TextDecoderStream: <ref *12> [class TextDecoderStream]{},
-    TextEncoderStream: <ref *13> [class TextEncoderStream]{},
-    TransformStream: <ref *14> [class TransformStream]{},
-    TransformStreamDefaultController: <ref *15> [class TransformStreamDefaultController]{},
-    WritableStream: <ref *16> [class WritableStream]{},
-    WritableStreamDefaultController: <ref *17> [class WritableStreamDefaultController]{},
-    WritableStreamDefaultWriter: <ref *18> [class WritableStreamDefaultWriter]{},
+    ByteLengthQueuingStrategy: <ref *2> class ByteLengthQueuingStrategy {},
+    CompressionStream: <ref *3> class CompressionStream {},
+    CountQueuingStrategy: <ref *4> class CountQueuingStrategy {},
+    DecompressionStream: <ref *5> class DecompressionStream {},
+    ReadableByteStreamController: <ref *6> class ReadableByteStreamController {},
+    ReadableStream: <ref *7> class ReadableStream {},
+    ReadableStreamBYOBReader: <ref *8> class ReadableStreamBYOBReader {},
+    ReadableStreamBYOBRequest: <ref *9> class ReadableStreamBYOBRequest {},
+    ReadableStreamDefaultController: <ref *10> class ReadableStreamDefaultController {},
+    ReadableStreamDefaultReader: <ref *11> class ReadableStreamDefaultReader {},
+    TextDecoderStream: <ref *12> class TextDecoderStream {},
+    TextEncoderStream: <ref *13> class TextEncoderStream {},
+    TransformStream: <ref *14> class TransformStream {},
+    TransformStreamDefaultController: <ref *15> class TransformStreamDefaultController {},
+    WritableStream: <ref *16> class WritableStream {},
+    WritableStreamDefaultController: <ref *17> class WritableStreamDefaultController {},
+    WritableStreamDefaultWriter: <ref *18> class WritableStreamDefaultWriter {},
     default: {
         ReadableStream: [Circular: *7],
         ReadableStreamDefaultReader: [Circular: *11],
@@ -8718,10 +8718,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    MIMEParams: <ref *2> [class MIMEParams]{},
-    MIMEType: <ref *3> [class MIMEType]{},
-    TextDecoder: <ref *4> [class TextDecoder]{},
-    TextEncoder: <ref *5> [class TextEncoder]{},
+    MIMEParams: <ref *2> class MIMEParams {},
+    MIMEType: <ref *3> class MIMEType {},
+    TextDecoder: <ref *4> class TextDecoder {},
+    TextEncoder: <ref *5> class TextEncoder {},
     _errnoException: <ref *6> ƒ __node_internal_errnoException(length: 3) {},
     _exceptionWithHostPort: <ref *7> ƒ __node_internal_exceptionWithHostPort(length: 5) {},
     _extend: <ref *8> ƒ _extend(length: 2) {},
@@ -9041,7 +9041,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     transferableAbortSignal: [Circular: *86],
     types: [Circular: *88]
 }
-(node:2522) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2621) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -9475,7 +9475,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     DEFAULT_MAX_VERSION: "TLSv1.3",
     connect: <ref *9> ƒ createConnection(length: 3) {},
     createConnection: [Circular: *9],
-    Server: [class Server]{},
+    Server: class Server extends NetServer {},
     createServer: ƒ createServer(length: 2) {},
     Symbol(CommonJS): 0
 }
@@ -9546,11 +9546,11 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    URL: <ref *2> [class URL]{
+    URL: <ref *2> class URL {
         createObjectURL: ƒ createObjectURL(length: 1) {},
         revokeObjectURL: ƒ revokeObjectURL(length: 1) {}
     },
-    URLSearchParams: <ref *5> [class URLSearchParams]{},
+    URLSearchParams: <ref *5> class URLSearchParams {},
     Url: <ref *6> ƒ Url(length: 0) {},
     default: {
         Url: [Circular: *6],
@@ -9616,10 +9616,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    MIMEParams: <ref *2> [class MIMEParams]{},
-    MIMEType: <ref *3> [class MIMEType]{},
-    TextDecoder: <ref *4> [class TextDecoder]{},
-    TextEncoder: <ref *5> [class TextEncoder]{},
+    MIMEParams: <ref *2> class MIMEParams {},
+    MIMEType: <ref *3> class MIMEType {},
+    TextDecoder: <ref *4> class TextDecoder {},
+    TextEncoder: <ref *5> class TextEncoder {},
     _errnoException: <ref *6> ƒ __node_internal_errnoException(length: 3) {},
     _exceptionWithHostPort: <ref *7> ƒ __node_internal_exceptionWithHostPort(length: 5) {},
     _extend: <ref *8> ƒ _extend(length: 2) {},
@@ -10243,10 +10243,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    DefaultDeserializer: <ref *2> [class DefaultDeserializer]{},
-    DefaultSerializer: <ref *3> [class DefaultSerializer]{},
+    DefaultDeserializer: <ref *2> class DefaultDeserializer extends Deserializer {},
+    DefaultSerializer: <ref *3> class DefaultSerializer extends Serializer {},
     Deserializer: <ref *4> ƒ Deserializer(length: 1) {},
-    GCProfiler: <ref *5> [class GCProfiler]{},
+    GCProfiler: <ref *5> class GCProfiler {},
     Serializer: <ref *6> ƒ Serializer(length: 0) {},
     cachedDataVersionTag: <ref *7> ƒ cachedDataVersionTag(length: 0) {},
     default: {
@@ -10326,8 +10326,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         setDeserializeMainFunction: ƒ setDeserializeMainFunction(length: 0) {},
         isBuildingSnapshot: ƒ isBuildingSnapshot(length: 0) {}
     },
-    Deserializer: [class ::bunternal::]{},
-    Serializer: [class ::bunternal::]{},
+    Deserializer: class Deserializer {},
+    Serializer: class Serializer {},
     Symbol(CommonJS): 0
 }
 ```
@@ -10340,7 +10340,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    Script: <ref *2> [class Script]{},
+    Script: <ref *2> class Script extends ContextifyScript {},
     compileFunction: <ref *3> ƒ compileFunction(length: 2) {},
     createContext: <ref *4> ƒ createContext(length: 0) {},
     createScript: <ref *5> ƒ createScript(length: 2) {},
@@ -10375,7 +10375,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     isContext: ƒ ::bunternal::(length: 0) {},
     compileFunction: ƒ ::bunternal::(length: 0) {},
     measureMemory: ƒ ::bunternal::(length: 0) {},
-    Script: [class ::bunternal::]{},
+    Script: class Script {},
     Symbol(CommonJS): 0
 }
 ```
@@ -10388,11 +10388,11 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 [Object: null prototype] {
-    BroadcastChannel: <ref *2> [class BroadcastChannel]{},
+    BroadcastChannel: <ref *2> class BroadcastChannel extends EventTarget {},
     MessageChannel: <ref *3> ƒ MessageChannel(length: 0) {},
     MessagePort: <ref *4> ƒ MessagePort(length: 0) {},
     SHARE_ENV: Symbol(nodejs.worker_threads.SHARE_ENV),
-    Worker: <ref *5> [class Worker]{},
+    Worker: <ref *5> class Worker extends EventEmitter {},
     default: {
         isMainThread: true,
         MessagePort: [Circular: *4],
