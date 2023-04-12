@@ -57,8 +57,10 @@ export const inspect = (
 			if (valueType === 'function') {
 				const functionString = value.toString();
 
-				if (functionString.startsWith('class') && functionString.endsWith('}')) {
-					serialized += `[class ${value.name}]`;
+				const classPrefix = 'class ';
+				if (functionString.startsWith(classPrefix) && functionString.endsWith('}')) {
+					const className = functionString.slice(classPrefix.length, functionString.indexOf('{')).trim();
+					serialized += `class ${className} `;
 				} else {
 					let functionType = 'ƒ';
 					if (functionString.startsWith('async ')) {
@@ -127,6 +129,6 @@ export const inspect = (
 	return `[Unexpected Error: ${value.toString()} (type ${JSON.stringify(valueType)})]`;
 };
 
-// import * as _ from 'http';
+// import * as _ from 'events';
 // console.log(_);
 // console.log(inspect(_));
