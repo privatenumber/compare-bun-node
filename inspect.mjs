@@ -75,12 +75,23 @@ export const inspect = (
 				}
 			}
 
-			// const descriptors = Object.getOwnPropertyDescriptors(value);
-			// console.log({ descriptors });
 			const entries = Reflect.ownKeys(value).map(
-				key => `${indentLevel}${indentation}${key.toString()}: ${
-					inspect(value[key], indentLevel + indentation, cache).trim()
-				}`,
+				key => {
+					const descriptor = Object.getOwnPropertyDescriptor(value, key);
+					const getSet = [];
+					if ('get' in descriptor) {
+						getSet.push('get');
+					}
+					if ('set' in descriptor) {
+						getSet.push('set');
+					}
+
+					return `${indentLevel}${indentation}${
+						getSet.length > 0 ? `${getSet.join('/')} ` : ''
+					}${key.toString()}: ${
+						inspect(value[key], indentLevel + indentation, cache).trim()
+					}`;
+				},
 			);
 
 			serialized += '{';
@@ -111,6 +122,6 @@ export const inspect = (
 	return `[Unexpected Error: ${value.toString()} (type ${JSON.stringify(valueType)})]`;
 };
 
-// import * as _ from 'fs';
+// import * as _ from 'events';
 // console.log(_);
 // console.log(inspect(_));
