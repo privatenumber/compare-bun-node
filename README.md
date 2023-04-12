@@ -96,13 +96,15 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    Agent: <ref *2> ƒ Agent (length: 1),
+    Agent: <ref *2> ƒ Agent(length: 1) {
+        defaultMaxSockets: Infinity
+    },
     default: {
         Agent: [Circular: *2],
         globalAgent: <ref *4> Agent {
             _events: [Object: null prototype] {
-                free: ƒ (length: 2),
-                newListener: ƒ maybeEnableKeylog (length: 1)
+                free: ƒ (length: 2) {},
+                newListener: ƒ maybeEnableKeylog(length: 1) {}
             },
             _eventsCount: 2,
             _maxListeners: undefined,
@@ -125,8 +127,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
             Symbol(kCapture): false
         }
     },
-    globalAgent: [Circular: *4],
-    Symbol(Symbol.toStringTag): "Module"
+    globalAgent: [Circular: *4]
 }
 ```
 
@@ -134,8 +135,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent],
-    Server: [class Server],
+    Agent: [class Agent]{},
+    Server: [class Server]{},
     METHODS: [
         "ACL",
         "BIND",
@@ -237,14 +238,14 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer (length: 2),
-    ServerResponse: [class ServerResponse],
-    IncomingMessage: [class IncomingMessage],
-    request: ƒ request (length: 3),
-    get: ƒ get (length: 3),
+    createServer: ƒ createServer(length: 2) {},
+    ServerResponse: [class ServerResponse]{},
+    IncomingMessage: [class IncomingMessage]{},
+    request: ƒ request(length: 3) {},
+    get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    get/set globalAgent: Agent {},
+    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+    [get/set] globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -257,11 +258,10 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    ClientRequest: <ref *2> ƒ ClientRequest (length: 3),
+    ClientRequest: <ref *2> ƒ ClientRequest(length: 3) {},
     default: {
         ClientRequest: [Circular: *2]
-    },
-    Symbol(Symbol.toStringTag): "Module"
+    }
 }
 ```
 
@@ -269,8 +269,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent],
-    Server: [class Server],
+    Agent: [class Agent]{},
+    Server: [class Server]{},
     METHODS: [
         "ACL",
         "BIND",
@@ -372,14 +372,14 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer (length: 2),
-    ServerResponse: [class ServerResponse],
-    IncomingMessage: [class IncomingMessage],
-    request: ƒ request (length: 3),
-    get: ƒ get (length: 3),
+    createServer: ƒ createServer(length: 2) {},
+    ServerResponse: [class ServerResponse]{},
+    IncomingMessage: [class IncomingMessage]{},
+    request: ƒ request(length: 3) {},
+    get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    get/set globalAgent: Agent {},
+    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+    [get/set] globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -393,9 +393,24 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 ```js
 [Object: null prototype] {
     CRLF: "\r\n",
-    HTTPParser: <ref *2> ƒ HTTPParser (length: 0),
-    _checkInvalidHeaderChar: <ref *3> ƒ checkInvalidHeaderChar (length: 1),
-    _checkIsHttpToken: <ref *4> ƒ checkIsHttpToken (length: 1),
+    HTTPParser: <ref *2> ƒ HTTPParser(length: 0) {
+        REQUEST: 1,
+        RESPONSE: 2,
+        kOnMessageBegin: 0,
+        kOnHeaders: 1,
+        kOnHeadersComplete: 2,
+        kOnBody: 3,
+        kOnMessageComplete: 4,
+        kOnExecute: 5,
+        kOnTimeout: 6,
+        kLenientNone: 0,
+        kLenientHeaders: 1,
+        kLenientChunkedLength: 2,
+        kLenientKeepAlive: 4,
+        kLenientAll: 7
+    },
+    _checkInvalidHeaderChar: <ref *3> ƒ checkInvalidHeaderChar(length: 1) {},
+    _checkIsHttpToken: <ref *4> ƒ checkIsHttpToken(length: 1) {},
     chunkExpression: <ref *5> /(?:^|\W)chunked(?:$|\W)/i,
     continueExpression: <ref *6> /(?:^|\W)100-continue(?:$|\W)/i,
     default: {
@@ -404,7 +419,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         chunkExpression: [Circular: *5],
         continueExpression: [Circular: *6],
         CRLF: "\r\n",
-        freeParser: <ref *8> ƒ freeParser (length: 3),
+        freeParser: <ref *8> ƒ freeParser(length: 3) {},
         methods: <ref *9> [
             "DELETE",
             "GET",
@@ -443,22 +458,21 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         ],
         parsers: <ref *10> FreeList {
             name: "parsers",
-            ctor: ƒ parsersCb (length: 0),
+            ctor: ƒ parsersCb(length: 0) {},
             max: 1000,
             list: []
         },
         kIncomingMessage: Symbol(IncomingMessage),
         HTTPParser: [Circular: *2],
-        isLenient: <ref *13> ƒ isLenient (length: 0),
-        prepareError: <ref *14> ƒ prepareError (length: 3)
+        isLenient: <ref *13> ƒ isLenient(length: 0) {},
+        prepareError: <ref *14> ƒ prepareError(length: 3) {}
     },
     freeParser: [Circular: *8],
     isLenient: [Circular: *13],
     kIncomingMessage: Symbol(IncomingMessage),
     methods: [Circular: *9],
     parsers: [Circular: *10],
-    prepareError: [Circular: *14],
-    Symbol(Symbol.toStringTag): "Module"
+    prepareError: [Circular: *14]
 }
 ```
 
@@ -466,8 +480,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent],
-    Server: [class Server],
+    Agent: [class Agent]{},
+    Server: [class Server]{},
     METHODS: [
         "ACL",
         "BIND",
@@ -569,14 +583,14 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer (length: 2),
-    ServerResponse: [class ServerResponse],
-    IncomingMessage: [class IncomingMessage],
-    request: ƒ request (length: 3),
-    get: ƒ get (length: 3),
+    createServer: ƒ createServer(length: 2) {},
+    ServerResponse: [class ServerResponse]{},
+    IncomingMessage: [class IncomingMessage]{},
+    request: ƒ request(length: 3) {},
+    get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    get/set globalAgent: Agent {},
+    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+    [get/set] globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -589,15 +603,14 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    IncomingMessage: <ref *2> ƒ IncomingMessage (length: 1),
+    IncomingMessage: <ref *2> ƒ IncomingMessage(length: 1) {},
     default: {
         IncomingMessage: [Circular: *2],
-        readStart: <ref *4> ƒ readStart (length: 1),
-        readStop: <ref *5> ƒ readStop (length: 1)
+        readStart: <ref *4> ƒ readStart(length: 1) {},
+        readStop: <ref *5> ƒ readStop(length: 1) {}
     },
     readStart: [Circular: *4],
-    readStop: [Circular: *5],
-    Symbol(Symbol.toStringTag): "Module"
+    readStop: [Circular: *5]
 }
 ```
 
@@ -605,8 +618,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent],
-    Server: [class Server],
+    Agent: [class Agent]{},
+    Server: [class Server]{},
     METHODS: [
         "ACL",
         "BIND",
@@ -708,14 +721,14 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer (length: 2),
-    ServerResponse: [class ServerResponse],
-    IncomingMessage: [class IncomingMessage],
-    request: ƒ request (length: 3),
-    get: ƒ get (length: 3),
+    createServer: ƒ createServer(length: 2) {},
+    ServerResponse: [class ServerResponse]{},
+    IncomingMessage: [class IncomingMessage]{},
+    request: ƒ request(length: 3) {},
+    get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    get/set globalAgent: Agent {},
+    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+    [get/set] globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -728,19 +741,18 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    OutgoingMessage: <ref *2> ƒ OutgoingMessage (length: 0),
+    OutgoingMessage: <ref *2> ƒ OutgoingMessage(length: 0) {},
     default: {
         kUniqueHeaders: Symbol(kUniqueHeaders),
-        parseUniqueHeadersOption: <ref *4> ƒ parseUniqueHeadersOption (length: 1),
-        validateHeaderName: <ref *5> ƒ __node_internal_ (length: 2),
-        validateHeaderValue: <ref *6> ƒ __node_internal_ (length: 2),
+        parseUniqueHeadersOption: <ref *4> ƒ parseUniqueHeadersOption(length: 1) {},
+        validateHeaderName: <ref *5> ƒ __node_internal_(length: 2) {},
+        validateHeaderValue: <ref *6> ƒ __node_internal_(length: 2) {},
         OutgoingMessage: [Circular: *2]
     },
     kUniqueHeaders: Symbol(kUniqueHeaders),
     parseUniqueHeadersOption: [Circular: *4],
     validateHeaderName: [Circular: *5],
-    validateHeaderValue: [Circular: *6],
-    Symbol(Symbol.toStringTag): "Module"
+    validateHeaderValue: [Circular: *6]
 }
 ```
 
@@ -748,8 +760,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent],
-    Server: [class Server],
+    Agent: [class Agent]{},
+    Server: [class Server]{},
     METHODS: [
         "ACL",
         "BIND",
@@ -851,14 +863,14 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer (length: 2),
-    ServerResponse: [class ServerResponse],
-    IncomingMessage: [class IncomingMessage],
-    request: ƒ request (length: 3),
-    get: ƒ get (length: 3),
+    createServer: ƒ createServer(length: 2) {},
+    ServerResponse: [class ServerResponse]{},
+    IncomingMessage: [class IncomingMessage]{},
+    request: ƒ request(length: 3) {},
+    get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    get/set globalAgent: Agent {},
+    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+    [get/set] globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -936,22 +948,21 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *3> ƒ Server (length: 2),
-    ServerResponse: <ref *4> ƒ ServerResponse (length: 1),
-    _connectionListener: <ref *5> ƒ connectionListener (length: 1),
+    Server: <ref *3> ƒ Server(length: 2) {},
+    ServerResponse: <ref *4> ƒ ServerResponse(length: 1) {},
+    _connectionListener: <ref *5> ƒ connectionListener(length: 1) {},
     default: {
         STATUS_CODES: [Circular: *2],
         Server: [Circular: *3],
         ServerResponse: [Circular: *4],
-        setupConnectionsTracking: <ref *7> ƒ setupConnectionsTracking (length: 1),
-        storeHTTPOptions: <ref *8> ƒ storeHTTPOptions (length: 1),
+        setupConnectionsTracking: <ref *7> ƒ setupConnectionsTracking(length: 1) {},
+        storeHTTPOptions: <ref *8> ƒ storeHTTPOptions(length: 1) {},
         _connectionListener: [Circular: *5],
         kServerResponse: Symbol(ServerResponse)
     },
     kServerResponse: Symbol(ServerResponse),
     setupConnectionsTracking: [Circular: *7],
-    storeHTTPOptions: [Circular: *8],
-    Symbol(Symbol.toStringTag): "Module"
+    storeHTTPOptions: [Circular: *8]
 }
 ```
 
@@ -959,8 +970,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Agent: [class Agent],
-    Server: [class Server],
+    Agent: [class Agent]{},
+    Server: [class Server]{},
     METHODS: [
         "ACL",
         "BIND",
@@ -1062,14 +1073,14 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer (length: 2),
-    ServerResponse: [class ServerResponse],
-    IncomingMessage: [class IncomingMessage],
-    request: ƒ request (length: 3),
-    get: ƒ get (length: 3),
+    createServer: ƒ createServer(length: 2) {},
+    ServerResponse: [class ServerResponse]{},
+    IncomingMessage: [class IncomingMessage]{},
+    request: ƒ request(length: 3) {},
+    get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    get/set globalAgent: Agent {},
+    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+    [get/set] globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -1082,18 +1093,69 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    default: ƒ Duplex (length: 1),
-    from: ƒ (length: 1),
-    fromWeb: ƒ (length: 2),
-    toWeb: ƒ (length: 1),
-    Symbol(Symbol.toStringTag): "Module"
+    default: ƒ Duplex(length: 1) {
+        fromWeb: <ref *3> ƒ (length: 2) {},
+        toWeb: <ref *4> ƒ (length: 1) {},
+        from: <ref *5> ƒ (length: 1) {}
+    },
+    from: [Circular: *5],
+    fromWeb: [Circular: *3],
+    toWeb: [Circular: *4]
 }
 ```
 
 </td><td valign="top">
 
 ```js
-ƒ Stream (length: 1)
+<ref *1> ƒ Stream(length: 1) {
+    isDisturbed: ƒ isDisturbed(length: 1) {},
+    isErrored: ƒ isErrored(length: 1) {},
+    isWritable: ƒ isWritable(length: 1) {},
+    isReadable: ƒ isReadable(length: 1) {},
+    Readable: ƒ Readable(length: 1) {
+        _fromList: ƒ fromList(length: 2) {},
+        from: ƒ (length: 2) {},
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        wrap: ƒ (length: 2) {}
+    },
+    Writable: ƒ Writable(length: 0) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {}
+    },
+    Duplex: ƒ Duplex(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    Transform: ƒ Transform(length: 1) {},
+    PassThrough: ƒ PassThrough(length: 1) {},
+    pipeline: ƒ pipeline(length: 0) {
+        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ pipeline(length: 0) {}
+    },
+    addAbortSignal: ƒ addAbortSignal(length: 2) {},
+    finished: ƒ eos(length: 3) {
+        finished: <ref *25> ƒ finished(length: 2) {},
+        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
+    },
+    destroy: ƒ destroyer(length: 2) {},
+    compose: ƒ compose(length: 0) {},
+    [get/set] promises: {
+        finished: [Circular: *25],
+        pipeline: [Circular: *22]
+    },
+    Stream: [Circular: *1],
+    _isUint8Array: ƒ isUint8Array(length: 1) {},
+    _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
+    _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
+    NativeWritable: [class NativeWritable]{},
+    default: [Circular: *1],
+    eos: ƒ __require2(length: 0) {},
+    Symbol(CommonJS): 0,
+    Symbol(::bunternal::): {
+        _ReadableFromWeb: [class ReadableFromWeb]{}
+    }
+}
 ```
 
 </td></tr></table>
@@ -1104,15 +1166,62 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    default: ƒ PassThrough (length: 1),
-    Symbol(Symbol.toStringTag): "Module"
+    default: ƒ PassThrough(length: 1) {}
 }
 ```
 
 </td><td valign="top">
 
 ```js
-ƒ Stream (length: 1)
+<ref *1> ƒ Stream(length: 1) {
+    isDisturbed: ƒ isDisturbed(length: 1) {},
+    isErrored: ƒ isErrored(length: 1) {},
+    isWritable: ƒ isWritable(length: 1) {},
+    isReadable: ƒ isReadable(length: 1) {},
+    Readable: ƒ Readable(length: 1) {
+        _fromList: ƒ fromList(length: 2) {},
+        from: ƒ (length: 2) {},
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        wrap: ƒ (length: 2) {}
+    },
+    Writable: ƒ Writable(length: 0) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {}
+    },
+    Duplex: ƒ Duplex(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    Transform: ƒ Transform(length: 1) {},
+    PassThrough: ƒ PassThrough(length: 1) {},
+    pipeline: ƒ pipeline(length: 0) {
+        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ pipeline(length: 0) {}
+    },
+    addAbortSignal: ƒ addAbortSignal(length: 2) {},
+    finished: ƒ eos(length: 3) {
+        finished: <ref *25> ƒ finished(length: 2) {},
+        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
+    },
+    destroy: ƒ destroyer(length: 2) {},
+    compose: ƒ compose(length: 0) {},
+    [get/set] promises: {
+        finished: [Circular: *25],
+        pipeline: [Circular: *22]
+    },
+    Stream: [Circular: *1],
+    _isUint8Array: ƒ isUint8Array(length: 1) {},
+    _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
+    _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
+    NativeWritable: [class NativeWritable]{},
+    default: [Circular: *1],
+    eos: ƒ __require2(length: 0) {},
+    Symbol(CommonJS): 0,
+    Symbol(::bunternal::): {
+        _ReadableFromWeb: [class ReadableFromWeb]{}
+    }
+}
 ```
 
 </td></tr></table>
@@ -1123,21 +1232,75 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    ReadableState: ƒ ReadableState (length: 3),
-    _fromList: ƒ fromList (length: 2),
-    default: ƒ Readable (length: 1),
-    from: ƒ (length: 2),
-    fromWeb: ƒ (length: 2),
-    toWeb: ƒ (length: 2),
-    wrap: ƒ (length: 2),
-    Symbol(Symbol.toStringTag): "Module"
+    ReadableState: <ref *2> ƒ ReadableState(length: 3) {},
+    _fromList: <ref *3> ƒ fromList(length: 2) {},
+    default: ƒ Readable(length: 1) {
+        ReadableState: [Circular: *2],
+        _fromList: [Circular: *3],
+        from: <ref *5> ƒ (length: 2) {},
+        fromWeb: <ref *6> ƒ (length: 2) {},
+        toWeb: <ref *7> ƒ (length: 2) {},
+        wrap: <ref *8> ƒ (length: 2) {}
+    },
+    from: [Circular: *5],
+    fromWeb: [Circular: *6],
+    toWeb: [Circular: *7],
+    wrap: [Circular: *8]
 }
 ```
 
 </td><td valign="top">
 
 ```js
-ƒ Stream (length: 1)
+<ref *1> ƒ Stream(length: 1) {
+    isDisturbed: ƒ isDisturbed(length: 1) {},
+    isErrored: ƒ isErrored(length: 1) {},
+    isWritable: ƒ isWritable(length: 1) {},
+    isReadable: ƒ isReadable(length: 1) {},
+    Readable: ƒ Readable(length: 1) {
+        _fromList: ƒ fromList(length: 2) {},
+        from: ƒ (length: 2) {},
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        wrap: ƒ (length: 2) {}
+    },
+    Writable: ƒ Writable(length: 0) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {}
+    },
+    Duplex: ƒ Duplex(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    Transform: ƒ Transform(length: 1) {},
+    PassThrough: ƒ PassThrough(length: 1) {},
+    pipeline: ƒ pipeline(length: 0) {
+        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ pipeline(length: 0) {}
+    },
+    addAbortSignal: ƒ addAbortSignal(length: 2) {},
+    finished: ƒ eos(length: 3) {
+        finished: <ref *25> ƒ finished(length: 2) {},
+        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
+    },
+    destroy: ƒ destroyer(length: 2) {},
+    compose: ƒ compose(length: 0) {},
+    [get/set] promises: {
+        finished: [Circular: *25],
+        pipeline: [Circular: *22]
+    },
+    Stream: [Circular: *1],
+    _isUint8Array: ƒ isUint8Array(length: 1) {},
+    _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
+    _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
+    NativeWritable: [class NativeWritable]{},
+    default: [Circular: *1],
+    eos: ƒ __require2(length: 0) {},
+    Symbol(CommonJS): 0,
+    Symbol(::bunternal::): {
+        _ReadableFromWeb: [class ReadableFromWeb]{}
+    }
+}
 ```
 
 </td></tr></table>
@@ -1148,15 +1311,62 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    default: ƒ Transform (length: 1),
-    Symbol(Symbol.toStringTag): "Module"
+    default: ƒ Transform(length: 1) {}
 }
 ```
 
 </td><td valign="top">
 
 ```js
-ƒ Stream (length: 1)
+<ref *1> ƒ Stream(length: 1) {
+    isDisturbed: ƒ isDisturbed(length: 1) {},
+    isErrored: ƒ isErrored(length: 1) {},
+    isWritable: ƒ isWritable(length: 1) {},
+    isReadable: ƒ isReadable(length: 1) {},
+    Readable: ƒ Readable(length: 1) {
+        _fromList: ƒ fromList(length: 2) {},
+        from: ƒ (length: 2) {},
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        wrap: ƒ (length: 2) {}
+    },
+    Writable: ƒ Writable(length: 0) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {}
+    },
+    Duplex: ƒ Duplex(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    Transform: ƒ Transform(length: 1) {},
+    PassThrough: ƒ PassThrough(length: 1) {},
+    pipeline: ƒ pipeline(length: 0) {
+        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ pipeline(length: 0) {}
+    },
+    addAbortSignal: ƒ addAbortSignal(length: 2) {},
+    finished: ƒ eos(length: 3) {
+        finished: <ref *25> ƒ finished(length: 2) {},
+        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
+    },
+    destroy: ƒ destroyer(length: 2) {},
+    compose: ƒ compose(length: 0) {},
+    [get/set] promises: {
+        finished: [Circular: *25],
+        pipeline: [Circular: *22]
+    },
+    Stream: [Circular: *1],
+    _isUint8Array: ƒ isUint8Array(length: 1) {},
+    _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
+    _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
+    NativeWritable: [class NativeWritable]{},
+    default: [Circular: *1],
+    eos: ƒ __require2(length: 0) {},
+    Symbol(CommonJS): 0,
+    Symbol(::bunternal::): {
+        _ReadableFromWeb: [class ReadableFromWeb]{}
+    }
+}
 ```
 
 </td></tr></table>
@@ -1167,17 +1377,64 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    default: [class JSStreamSocket],
-    Symbol(Symbol.toStringTag): "Module"
+    default: [class JSStreamSocket]{}
 }
-(node:1992) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:1903) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
 </td><td valign="top">
 
 ```js
-ƒ Stream (length: 1)
+<ref *1> ƒ Stream(length: 1) {
+    isDisturbed: ƒ isDisturbed(length: 1) {},
+    isErrored: ƒ isErrored(length: 1) {},
+    isWritable: ƒ isWritable(length: 1) {},
+    isReadable: ƒ isReadable(length: 1) {},
+    Readable: ƒ Readable(length: 1) {
+        _fromList: ƒ fromList(length: 2) {},
+        from: ƒ (length: 2) {},
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        wrap: ƒ (length: 2) {}
+    },
+    Writable: ƒ Writable(length: 0) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {}
+    },
+    Duplex: ƒ Duplex(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    Transform: ƒ Transform(length: 1) {},
+    PassThrough: ƒ PassThrough(length: 1) {},
+    pipeline: ƒ pipeline(length: 0) {
+        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ pipeline(length: 0) {}
+    },
+    addAbortSignal: ƒ addAbortSignal(length: 2) {},
+    finished: ƒ eos(length: 3) {
+        finished: <ref *25> ƒ finished(length: 2) {},
+        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
+    },
+    destroy: ƒ destroyer(length: 2) {},
+    compose: ƒ compose(length: 0) {},
+    [get/set] promises: {
+        finished: [Circular: *25],
+        pipeline: [Circular: *22]
+    },
+    Stream: [Circular: *1],
+    _isUint8Array: ƒ isUint8Array(length: 1) {},
+    _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
+    _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
+    NativeWritable: [class NativeWritable]{},
+    default: [Circular: *1],
+    eos: ƒ __require2(length: 0) {},
+    Symbol(CommonJS): 0,
+    Symbol(::bunternal::): {
+        _ReadableFromWeb: [class ReadableFromWeb]{}
+    }
+}
 ```
 
 </td></tr></table>
@@ -1188,18 +1445,69 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    WritableState: ƒ WritableState (length: 3),
-    default: ƒ Writable (length: 1),
-    fromWeb: ƒ (length: 2),
-    toWeb: ƒ (length: 1),
-    Symbol(Symbol.toStringTag): "Module"
+    WritableState: <ref *2> ƒ WritableState(length: 3) {},
+    default: ƒ Writable(length: 1) {
+        WritableState: [Circular: *2],
+        fromWeb: <ref *4> ƒ (length: 2) {},
+        toWeb: <ref *5> ƒ (length: 1) {}
+    },
+    fromWeb: [Circular: *4],
+    toWeb: [Circular: *5]
 }
 ```
 
 </td><td valign="top">
 
 ```js
-ƒ Stream (length: 1)
+<ref *1> ƒ Stream(length: 1) {
+    isDisturbed: ƒ isDisturbed(length: 1) {},
+    isErrored: ƒ isErrored(length: 1) {},
+    isWritable: ƒ isWritable(length: 1) {},
+    isReadable: ƒ isReadable(length: 1) {},
+    Readable: ƒ Readable(length: 1) {
+        _fromList: ƒ fromList(length: 2) {},
+        from: ƒ (length: 2) {},
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        wrap: ƒ (length: 2) {}
+    },
+    Writable: ƒ Writable(length: 0) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {}
+    },
+    Duplex: ƒ Duplex(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    Transform: ƒ Transform(length: 1) {},
+    PassThrough: ƒ PassThrough(length: 1) {},
+    pipeline: ƒ pipeline(length: 0) {
+        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ pipeline(length: 0) {}
+    },
+    addAbortSignal: ƒ addAbortSignal(length: 2) {},
+    finished: ƒ eos(length: 3) {
+        finished: <ref *25> ƒ finished(length: 2) {},
+        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
+    },
+    destroy: ƒ destroyer(length: 2) {},
+    compose: ƒ compose(length: 0) {},
+    [get/set] promises: {
+        finished: [Circular: *25],
+        pipeline: [Circular: *22]
+    },
+    Stream: [Circular: *1],
+    _isUint8Array: ƒ isUint8Array(length: 1) {},
+    _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
+    _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
+    NativeWritable: [class NativeWritable]{},
+    default: [Circular: *1],
+    eos: ƒ __require2(length: 0) {},
+    Symbol(CommonJS): 0,
+    Symbol(::bunternal::): {
+        _ReadableFromWeb: [class ReadableFromWeb]{}
+    }
+}
 ```
 
 </td></tr></table>
@@ -1210,15 +1518,14 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    SecureContext: <ref *2> ƒ SecureContext (length: 4),
-    createSecureContext: <ref *3> ƒ createSecureContext (length: 1),
+    SecureContext: <ref *2> ƒ SecureContext(length: 4) {},
+    createSecureContext: <ref *3> ƒ createSecureContext(length: 1) {},
     default: {
         SecureContext: [Circular: *2],
         createSecureContext: [Circular: *3],
-        translatePeerCertificate: <ref *5> ƒ translatePeerCertificate (length: 1)
+        translatePeerCertificate: <ref *5> ƒ translatePeerCertificate(length: 1) {}
     },
-    translatePeerCertificate: [Circular: *5],
-    Symbol(Symbol.toStringTag): "Module"
+    translatePeerCertificate: [Circular: *5]
 }
 ```
 
@@ -1226,23 +1533,23 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    createSecureContext: ƒ createSecureContext (length: 1),
-    parseCertString: ƒ parseCertString (length: 0),
-    getCiphers: ƒ getCiphers (length: 0),
-    getCurves: ƒ getCurves (length: 0),
-    convertALPNProtocols: ƒ convertALPNProtocols (length: 2),
-    TLSSocket: ƒ Socket (length: 1),
-    SecureContext: ƒ SecureContext (length: 0),
+    createSecureContext: ƒ createSecureContext(length: 1) {},
+    parseCertString: ƒ parseCertString(length: 0) {},
+    getCiphers: ƒ getCiphers(length: 0) {},
+    getCurves: ƒ getCurves(length: 0) {},
+    convertALPNProtocols: ƒ convertALPNProtocols(length: 2) {},
+    TLSSocket: ƒ Socket(length: 1) {},
+    SecureContext: ƒ SecureContext(length: 0) {},
     CLIENT_RENEG_LIMIT: 3,
     CLIENT_RENEG_WINDOW: 600,
     DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
     DEFAULT_MIN_VERSION: "TLSv1.2",
     DEFAULT_MAX_VERSION: "TLSv1.3",
-    connect: <ref *9> ƒ createConnection (length: 3),
+    connect: <ref *9> ƒ createConnection(length: 3) {},
     createConnection: [Circular: *9],
-    Server: [class Server],
-    createServer: ƒ createServer (length: 2),
+    Server: [class Server]{},
+    createServer: ƒ createServer(length: 2) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -1255,17 +1562,16 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    Server: <ref *2> ƒ Server (length: 2),
-    TLSSocket: <ref *3> ƒ TLSSocket (length: 2),
-    connect: <ref *4> ƒ connect (length: 0),
-    createServer: <ref *5> ƒ createServer (length: 2),
+    Server: <ref *2> ƒ Server(length: 2) {},
+    TLSSocket: <ref *3> ƒ TLSSocket(length: 2) {},
+    connect: <ref *4> ƒ connect(length: 0) {},
+    createServer: <ref *5> ƒ createServer(length: 2) {},
     default: {
         TLSSocket: [Circular: *3],
         Server: [Circular: *2],
         createServer: [Circular: *5],
         connect: [Circular: *4]
-    },
-    Symbol(Symbol.toStringTag): "Module"
+    }
 }
 ```
 
@@ -1273,23 +1579,23 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    createSecureContext: ƒ createSecureContext (length: 1),
-    parseCertString: ƒ parseCertString (length: 0),
-    getCiphers: ƒ getCiphers (length: 0),
-    getCurves: ƒ getCurves (length: 0),
-    convertALPNProtocols: ƒ convertALPNProtocols (length: 2),
-    TLSSocket: ƒ Socket (length: 1),
-    SecureContext: ƒ SecureContext (length: 0),
+    createSecureContext: ƒ createSecureContext(length: 1) {},
+    parseCertString: ƒ parseCertString(length: 0) {},
+    getCiphers: ƒ getCiphers(length: 0) {},
+    getCurves: ƒ getCurves(length: 0) {},
+    convertALPNProtocols: ƒ convertALPNProtocols(length: 2) {},
+    TLSSocket: ƒ Socket(length: 1) {},
+    SecureContext: ƒ SecureContext(length: 0) {},
     CLIENT_RENEG_LIMIT: 3,
     CLIENT_RENEG_WINDOW: 600,
     DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
     DEFAULT_MIN_VERSION: "TLSv1.2",
     DEFAULT_MAX_VERSION: "TLSv1.3",
-    connect: <ref *9> ƒ createConnection (length: 3),
+    connect: <ref *9> ƒ createConnection(length: 3) {},
     createConnection: [Circular: *9],
-    Server: [class Server],
-    createServer: ƒ createServer (length: 2),
+    Server: [class Server]{},
+    createServer: ƒ createServer(length: 2) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -1302,35 +1608,116 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    AssertionError: [class AssertionError],
-    CallTracker: [class CallTracker],
-    deepEqual: ƒ deepEqual (length: 3),
-    deepStrictEqual: ƒ deepStrictEqual (length: 3),
-    default: <ref *6> ƒ ok (length: 0),
-    doesNotMatch: ƒ doesNotMatch (length: 3),
-    doesNotReject: async ƒ doesNotReject (length: 1),
-    doesNotThrow: ƒ doesNotThrow (length: 1),
-    equal: ƒ equal (length: 3),
-    fail: ƒ fail (length: 5),
-    ifError: ƒ ifError (length: 1),
-    match: ƒ match (length: 3),
-    notDeepEqual: ƒ notDeepEqual (length: 3),
-    notDeepStrictEqual: ƒ notDeepStrictEqual (length: 3),
-    notEqual: ƒ notEqual (length: 3),
-    notStrictEqual: ƒ notStrictEqual (length: 3),
+    AssertionError: <ref *2> [class AssertionError]{},
+    CallTracker: <ref *3> [class CallTracker]{},
+    deepEqual: <ref *4> ƒ deepEqual(length: 3) {},
+    deepStrictEqual: <ref *5> ƒ deepStrictEqual(length: 3) {},
+    default: <ref *6> ƒ ok(length: 0) {
+        fail: <ref *7> ƒ fail(length: 5) {},
+        AssertionError: [Circular: *2],
+        ok: [Circular: *6],
+        equal: <ref *8> ƒ equal(length: 3) {},
+        notEqual: <ref *9> ƒ notEqual(length: 3) {},
+        deepEqual: [Circular: *4],
+        notDeepEqual: <ref *10> ƒ notDeepEqual(length: 3) {},
+        deepStrictEqual: [Circular: *5],
+        notDeepStrictEqual: <ref *11> ƒ notDeepStrictEqual(length: 3) {},
+        strictEqual: <ref *12> ƒ strictEqual(length: 3) {},
+        notStrictEqual: <ref *13> ƒ notStrictEqual(length: 3) {},
+        throws: <ref *14> ƒ throws(length: 1) {},
+        rejects: <ref *15> async ƒ rejects(length: 1) {},
+        doesNotThrow: <ref *16> ƒ doesNotThrow(length: 1) {},
+        doesNotReject: <ref *17> async ƒ doesNotReject(length: 1) {},
+        ifError: <ref *18> ƒ ifError(length: 1) {},
+        match: <ref *19> ƒ match(length: 3) {},
+        doesNotMatch: <ref *20> ƒ doesNotMatch(length: 3) {},
+        CallTracker: [Circular: *3],
+        strict: <ref *21> ƒ strict(length: 0) {
+            fail: [Circular: *7],
+            AssertionError: [Circular: *2],
+            ok: [Circular: *6],
+            equal: [Circular: *12],
+            notEqual: [Circular: *13],
+            deepEqual: [Circular: *5],
+            notDeepEqual: [Circular: *11],
+            deepStrictEqual: [Circular: *5],
+            notDeepStrictEqual: [Circular: *11],
+            strictEqual: [Circular: *12],
+            notStrictEqual: [Circular: *13],
+            throws: [Circular: *14],
+            rejects: [Circular: *15],
+            doesNotThrow: [Circular: *16],
+            doesNotReject: [Circular: *17],
+            ifError: [Circular: *18],
+            match: [Circular: *19],
+            doesNotMatch: [Circular: *20],
+            CallTracker: [Circular: *3],
+            strict: [Circular: *21]
+        }
+    },
+    doesNotMatch: [Circular: *20],
+    doesNotReject: [Circular: *17],
+    doesNotThrow: [Circular: *16],
+    equal: [Circular: *8],
+    fail: [Circular: *7],
+    ifError: [Circular: *18],
+    match: [Circular: *19],
+    notDeepEqual: [Circular: *10],
+    notDeepStrictEqual: [Circular: *11],
+    notEqual: [Circular: *9],
+    notStrictEqual: [Circular: *13],
     ok: [Circular: *6],
-    rejects: async ƒ rejects (length: 1),
-    strict: ƒ strict (length: 0),
-    strictEqual: ƒ strictEqual (length: 3),
-    throws: ƒ throws (length: 1),
-    Symbol(Symbol.toStringTag): "Module"
+    rejects: [Circular: *15],
+    strict: [Circular: *21],
+    strictEqual: [Circular: *12],
+    throws: [Circular: *14]
 }
 ```
 
 </td><td valign="top">
 
 ```js
-ƒ ok (length: 0)
+<ref *1> ƒ ok(length: 0) {
+    fail: <ref *2> ƒ fail(length: 5) {},
+    AssertionError: <ref *3> ƒ AssertionError2(length: 1) {},
+    ok: [Circular: *1],
+    equal: ƒ equal(length: 3) {},
+    notEqual: ƒ notEqual(length: 3) {},
+    deepEqual: ƒ deepEqual(length: 3) {},
+    notDeepEqual: ƒ notDeepEqual(length: 3) {},
+    deepStrictEqual: <ref *8> ƒ deepStrictEqual(length: 3) {},
+    notDeepStrictEqual: <ref *9> ƒ notDeepStrictEqual(length: 3) {},
+    strictEqual: <ref *10> ƒ strictEqual(length: 3) {},
+    notStrictEqual: <ref *11> ƒ notStrictEqual(length: 3) {},
+    match: <ref *12> ƒ match(length: 3) {},
+    throws: <ref *13> ƒ throws(length: 1) {},
+    rejects: <ref *14> ƒ rejects(length: 1) {},
+    doesNotThrow: <ref *15> ƒ doesNotThrow(length: 1) {},
+    doesNotReject: <ref *16> ƒ doesNotReject(length: 1) {},
+    ifError: <ref *17> ƒ ifError(length: 1) {},
+    strict: <ref *18> ƒ strict(length: 0) {
+        fail: [Circular: *2],
+        AssertionError: [Circular: *3],
+        ok: [Circular: *1],
+        equal: [Circular: *10],
+        notEqual: [Circular: *11],
+        deepEqual: [Circular: *8],
+        notDeepEqual: [Circular: *9],
+        deepStrictEqual: [Circular: *8],
+        notDeepStrictEqual: [Circular: *9],
+        strictEqual: [Circular: *10],
+        notStrictEqual: [Circular: *11],
+        match: [Circular: *12],
+        throws: [Circular: *13],
+        rejects: [Circular: *14],
+        doesNotThrow: [Circular: *15],
+        doesNotReject: [Circular: *16],
+        ifError: [Circular: *17],
+        strict: [Circular: *18]
+    },
+    CallTracker: ƒ CallTracker(length: 0) {},
+    Symbol(CommonJS): 0
+}
 ```
 
 </td></tr></table>
@@ -1341,28 +1728,69 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    AssertionError: [class AssertionError],
-    CallTracker: [class CallTracker],
-    deepEqual: <ref *4> ƒ deepStrictEqual (length: 3),
+    AssertionError: <ref *2> [class AssertionError]{},
+    CallTracker: <ref *3> [class CallTracker]{},
+    deepEqual: <ref *4> ƒ deepStrictEqual(length: 3) {},
     deepStrictEqual: [Circular: *4],
-    default: <ref *5> ƒ strict (length: 0),
-    doesNotMatch: ƒ doesNotMatch (length: 3),
-    doesNotReject: async ƒ doesNotReject (length: 1),
-    doesNotThrow: ƒ doesNotThrow (length: 1),
-    equal: <ref *9> ƒ strictEqual (length: 3),
-    fail: ƒ fail (length: 5),
-    ifError: ƒ ifError (length: 1),
-    match: ƒ match (length: 3),
-    notDeepEqual: <ref *13> ƒ notDeepStrictEqual (length: 3),
-    notDeepStrictEqual: [Circular: *13],
-    notEqual: <ref *14> ƒ notStrictEqual (length: 3),
+    default: <ref *5> ƒ strict(length: 0) {
+        fail: <ref *6> ƒ fail(length: 5) {},
+        AssertionError: [Circular: *2],
+        ok: <ref *7> ƒ ok(length: 0) {
+            fail: [Circular: *6],
+            AssertionError: [Circular: *2],
+            ok: [Circular: *7],
+            equal: ƒ equal(length: 3) {},
+            notEqual: ƒ notEqual(length: 3) {},
+            deepEqual: ƒ deepEqual(length: 3) {},
+            notDeepEqual: ƒ notDeepEqual(length: 3) {},
+            deepStrictEqual: [Circular: *4],
+            notDeepStrictEqual: <ref *12> ƒ notDeepStrictEqual(length: 3) {},
+            strictEqual: <ref *13> ƒ strictEqual(length: 3) {},
+            notStrictEqual: <ref *14> ƒ notStrictEqual(length: 3) {},
+            throws: <ref *15> ƒ throws(length: 1) {},
+            rejects: <ref *16> async ƒ rejects(length: 1) {},
+            doesNotThrow: <ref *17> ƒ doesNotThrow(length: 1) {},
+            doesNotReject: <ref *18> async ƒ doesNotReject(length: 1) {},
+            ifError: <ref *19> ƒ ifError(length: 1) {},
+            match: <ref *20> ƒ match(length: 3) {},
+            doesNotMatch: <ref *21> ƒ doesNotMatch(length: 3) {},
+            CallTracker: [Circular: *3],
+            strict: [Circular: *5]
+        },
+        equal: [Circular: *13],
+        notEqual: [Circular: *14],
+        deepEqual: [Circular: *4],
+        notDeepEqual: [Circular: *12],
+        deepStrictEqual: [Circular: *4],
+        notDeepStrictEqual: [Circular: *12],
+        strictEqual: [Circular: *13],
+        notStrictEqual: [Circular: *14],
+        throws: [Circular: *15],
+        rejects: [Circular: *16],
+        doesNotThrow: [Circular: *17],
+        doesNotReject: [Circular: *18],
+        ifError: [Circular: *19],
+        match: [Circular: *20],
+        doesNotMatch: [Circular: *21],
+        CallTracker: [Circular: *3],
+        strict: [Circular: *5]
+    },
+    doesNotMatch: [Circular: *21],
+    doesNotReject: [Circular: *18],
+    doesNotThrow: [Circular: *17],
+    equal: [Circular: *13],
+    fail: [Circular: *6],
+    ifError: [Circular: *19],
+    match: [Circular: *20],
+    notDeepEqual: [Circular: *12],
+    notDeepStrictEqual: [Circular: *12],
+    notEqual: [Circular: *14],
     notStrictEqual: [Circular: *14],
-    ok: ƒ ok (length: 0),
-    rejects: async ƒ rejects (length: 1),
+    ok: [Circular: *7],
+    rejects: [Circular: *16],
     strict: [Circular: *5],
-    strictEqual: [Circular: *9],
-    throws: ƒ throws (length: 1),
-    Symbol(Symbol.toStringTag): "Module"
+    strictEqual: [Circular: *13],
+    throws: [Circular: *15]
 }
 ```
 
@@ -1370,23 +1798,63 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    fail: ƒ fail (length: 5),
-    AssertionError: ƒ AssertionError2 (length: 1),
-    ok: ƒ ok (length: 0),
-    equal: <ref *5> ƒ strictEqual (length: 3),
-    notEqual: <ref *6> ƒ notStrictEqual (length: 3),
-    deepEqual: <ref *7> ƒ deepStrictEqual (length: 3),
-    notDeepEqual: <ref *8> ƒ notDeepStrictEqual (length: 3),
-    deepStrictEqual: [Circular: *7],
-    notDeepStrictEqual: [Circular: *8],
-    strictEqual: [Circular: *5],
-    notStrictEqual: [Circular: *6],
-    throws: ƒ throws (length: 1),
-    rejects: ƒ rejects (length: 1),
-    doesNotThrow: ƒ doesNotThrow (length: 1),
-    doesNotReject: ƒ doesNotReject (length: 1),
-    ifError: ƒ ifError (length: 1),
-    match: ƒ match (length: 3),
+    fail: <ref *2> ƒ fail(length: 5) {},
+    AssertionError: <ref *3> ƒ AssertionError2(length: 1) {},
+    ok: <ref *4> ƒ ok(length: 0) {
+        fail: [Circular: *2],
+        AssertionError: [Circular: *3],
+        ok: [Circular: *4],
+        equal: ƒ equal(length: 3) {},
+        notEqual: ƒ notEqual(length: 3) {},
+        deepEqual: ƒ deepEqual(length: 3) {},
+        notDeepEqual: ƒ notDeepEqual(length: 3) {},
+        deepStrictEqual: <ref *9> ƒ deepStrictEqual(length: 3) {},
+        notDeepStrictEqual: <ref *10> ƒ notDeepStrictEqual(length: 3) {},
+        strictEqual: <ref *11> ƒ strictEqual(length: 3) {},
+        notStrictEqual: <ref *12> ƒ notStrictEqual(length: 3) {},
+        match: <ref *13> ƒ match(length: 3) {},
+        throws: <ref *14> ƒ throws(length: 1) {},
+        rejects: <ref *15> ƒ rejects(length: 1) {},
+        doesNotThrow: <ref *16> ƒ doesNotThrow(length: 1) {},
+        doesNotReject: <ref *17> ƒ doesNotReject(length: 1) {},
+        ifError: <ref *18> ƒ ifError(length: 1) {},
+        strict: <ref *19> ƒ strict(length: 0) {
+            fail: [Circular: *2],
+            AssertionError: [Circular: *3],
+            ok: [Circular: *4],
+            equal: [Circular: *11],
+            notEqual: [Circular: *12],
+            deepEqual: [Circular: *9],
+            notDeepEqual: [Circular: *10],
+            deepStrictEqual: [Circular: *9],
+            notDeepStrictEqual: [Circular: *10],
+            strictEqual: [Circular: *11],
+            notStrictEqual: [Circular: *12],
+            match: [Circular: *13],
+            throws: [Circular: *14],
+            rejects: [Circular: *15],
+            doesNotThrow: [Circular: *16],
+            doesNotReject: [Circular: *17],
+            ifError: [Circular: *18],
+            strict: [Circular: *19]
+        },
+        CallTracker: ƒ CallTracker(length: 0) {},
+        Symbol(CommonJS): 0
+    },
+    equal: [Circular: *11],
+    notEqual: [Circular: *12],
+    deepEqual: [Circular: *9],
+    notDeepEqual: [Circular: *10],
+    deepStrictEqual: [Circular: *9],
+    notDeepStrictEqual: [Circular: *10],
+    strictEqual: [Circular: *11],
+    notStrictEqual: [Circular: *12],
+    throws: [Circular: *14],
+    rejects: [Circular: *15],
+    doesNotThrow: [Circular: *16],
+    doesNotReject: [Circular: *17],
+    ifError: [Circular: *18],
+    match: [Circular: *13],
     doesNotMatch: undefined,
     CallTracker: undefined,
     Symbol(CommonJS): 0
@@ -1401,8 +1869,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    AsyncLocalStorage: <ref *2> [class AsyncLocalStorage],
-    AsyncResource: <ref *3> [class AsyncResource],
+    AsyncLocalStorage: <ref *2> [class AsyncLocalStorage]{},
+    AsyncResource: <ref *3> [class AsyncResource]{},
     asyncWrapProviders: <ref *4> [Object: null prototype] {
         NONE: 0,
         DIRHANDLE: 1,
@@ -1463,20 +1931,19 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         VERIFYREQUEST: 56,
         INSPECTORJSBINDING: 57
     },
-    createHook: <ref *5> ƒ createHook (length: 1),
+    createHook: <ref *5> ƒ createHook(length: 1) {},
     default: {
         AsyncLocalStorage: [Circular: *2],
         createHook: [Circular: *5],
-        executionAsyncId: <ref *7> ƒ executionAsyncId (length: 0),
-        triggerAsyncId: <ref *8> ƒ triggerAsyncId (length: 0),
-        executionAsyncResource: <ref *9> ƒ executionAsyncResource (length: 0),
+        executionAsyncId: <ref *7> ƒ executionAsyncId(length: 0) {},
+        triggerAsyncId: <ref *8> ƒ triggerAsyncId(length: 0) {},
+        executionAsyncResource: <ref *9> ƒ executionAsyncResource(length: 0) {},
         asyncWrapProviders: [Circular: *4],
         AsyncResource: [Circular: *3]
     },
     executionAsyncId: [Circular: *7],
     executionAsyncResource: [Circular: *9],
-    triggerAsyncId: [Circular: *8],
-    Symbol(Symbol.toStringTag): "Module"
+    triggerAsyncId: [Circular: *8]
 }
 ```
 
@@ -1484,11 +1951,11 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    AsyncLocalStorage: [class AsyncLocalStorage],
-    createHook: ƒ createHook (length: 0),
-    executionAsyncId: ƒ executionAsyncId (length: 0),
-    triggerAsyncId: ƒ triggerAsyncId (length: 0),
-    executionAsyncResource: ƒ executionAsyncResource (length: 0),
+    AsyncLocalStorage: [class AsyncLocalStorage]{},
+    createHook: ƒ createHook(length: 0) {},
+    executionAsyncId: ƒ executionAsyncId(length: 0) {},
+    triggerAsyncId: ƒ triggerAsyncId(length: 0) {},
+    executionAsyncResource: ƒ executionAsyncResource(length: 0) {},
     asyncWrapProviders: {
         NONE: 0,
         DIRHANDLE: 1,
@@ -1549,7 +2016,9 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         VERIFYREQUEST: 56,
         INSPECTORJSBINDING: 57
     },
-    AsyncResource: [class AsyncResource],
+    AsyncResource: [class AsyncResource]{
+        allowedRunInAsyncScope: Set {}
+    },
     Symbol(Symbol.toStringTag): "Module (not implemented yet)",
     Symbol(CommonJS): 0
 }
@@ -1563,40 +2032,52 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    Blob: <ref *2> [class Blob],
-    Buffer: <ref *3> ƒ Buffer (length: 3),
-    File: <ref *4> [class File],
+    Blob: <ref *2> [class Blob]{},
+    Buffer: <ref *3> ƒ Buffer(length: 3) {
+        poolSize: 8192,
+        from: ƒ from(length: 3) {},
+        of: ƒ of(length: 0) {},
+        alloc: ƒ alloc(length: 3) {},
+        allocUnsafe: ƒ allocUnsafe(length: 1) {},
+        allocUnsafeSlow: ƒ allocUnsafeSlow(length: 1) {},
+        isBuffer: ƒ isBuffer(length: 1) {},
+        compare: ƒ compare(length: 2) {},
+        isEncoding: <ref *11> ƒ isEncoding(length: 1) {},
+        concat: ƒ concat(length: 2) {},
+        byteLength: ƒ byteLength(length: 2) {},
+        Symbol(kIsEncodingSymbol): [Circular: *11]
+    },
+    File: <ref *14> [class File]{},
     INSPECT_MAX_BYTES: 50,
-    SlowBuffer: <ref *5> ƒ SlowBuffer (length: 1),
-    atob: <ref *6> ƒ atob (length: 1),
-    btoa: <ref *7> ƒ btoa (length: 1),
-    constants: <ref *8> {
+    SlowBuffer: <ref *15> ƒ SlowBuffer(length: 1) {},
+    atob: <ref *16> ƒ atob(length: 1) {},
+    btoa: <ref *17> ƒ btoa(length: 1) {},
+    constants: <ref *18> {
         MAX_LENGTH: 4294967296,
         MAX_STRING_LENGTH: 536870888
     },
     default: {
         Blob: [Circular: *2],
-        File: [Circular: *4],
-        resolveObjectURL: <ref *10> ƒ resolveObjectURL (length: 1),
+        File: [Circular: *14],
+        resolveObjectURL: <ref *20> ƒ resolveObjectURL(length: 1) {},
         Buffer: [Circular: *3],
-        SlowBuffer: [Circular: *5],
-        transcode: <ref *11> ƒ transcode (length: 3),
-        isUtf8: <ref *12> ƒ isUtf8 (length: 1),
-        isAscii: <ref *13> ƒ isAscii (length: 1),
+        SlowBuffer: [Circular: *15],
+        transcode: <ref *21> ƒ transcode(length: 3) {},
+        isUtf8: <ref *22> ƒ isUtf8(length: 1) {},
+        isAscii: <ref *23> ƒ isAscii(length: 1) {},
         kMaxLength: 4294967296,
         kStringMaxLength: 536870888,
-        btoa: [Circular: *7],
-        atob: [Circular: *6],
-        constants: [Circular: *8],
-        get/set INSPECT_MAX_BYTES: 50
+        btoa: [Circular: *17],
+        atob: [Circular: *16],
+        constants: [Circular: *18],
+        [get/set] INSPECT_MAX_BYTES: 50
     },
-    isAscii: [Circular: *13],
-    isUtf8: [Circular: *12],
+    isAscii: [Circular: *23],
+    isUtf8: [Circular: *22],
     kMaxLength: 4294967296,
     kStringMaxLength: 536870888,
-    resolveObjectURL: [Circular: *10],
-    transcode: [Circular: *11],
-    Symbol(Symbol.toStringTag): "Module"
+    resolveObjectURL: [Circular: *20],
+    transcode: [Circular: *21]
 }
 ```
 
@@ -1604,10 +2085,21 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    Buffer: ƒ Buffer (length: 3),
-    SlowBuffer: ƒ SlowBuffer (length: 0),
-    Blob: <ref *4> ƒ Blob (length: 0),
-    File: [Circular: *4],
+    Buffer: ƒ Buffer(length: 3) {
+        alloc: ƒ alloc(length: 1) {},
+        allocUnsafe: ƒ allocUnsafe(length: 1) {},
+        allocUnsafeSlow: ƒ allocUnsafeSlow(length: 1) {},
+        byteLength: ƒ byteLength(length: 2) {},
+        compare: ƒ compare(length: 2) {},
+        concat: ƒ concat(length: 2) {},
+        from: ƒ from(length: 1) {},
+        isBuffer: ƒ isBuffer(length: 1) {},
+        toBuffer: ƒ toBuffer(length: 1) {},
+        isEncoding: ƒ isEncoding(length: 1) {}
+    },
+    SlowBuffer: ƒ SlowBuffer(length: 0) {},
+    Blob: <ref *14> ƒ Blob(length: 0) {},
+    File: [Circular: *14],
     INSPECT_MAX_BYTES: 50,
     kMaxLength: 4294967296,
     kStringMaxLength: 536870888,
@@ -1615,8 +2107,8 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         MAX_LENGTH: 4294967296,
         MAX_STRING_LENGTH: 536870888
     },
-    atob: ƒ atob (length: 1),
-    btoa: ƒ btoa (length: 1),
+    atob: ƒ atob(length: 1) {},
+    btoa: ƒ btoa(length: 1) {},
     transcode: [Unexpected Error: [object Function] (type "undefined")],
     resolveObjectURL: [Unexpected Error: [object Function] (type "undefined")],
     Symbol(CommonJS): 0
@@ -1631,18 +2123,18 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    ChildProcess: <ref *2> ƒ ChildProcess (length: 0),
-    _forkChild: <ref *3> ƒ _forkChild (length: 2),
+    ChildProcess: <ref *2> ƒ ChildProcess(length: 0) {},
+    _forkChild: <ref *3> ƒ _forkChild(length: 2) {},
     default: {
         _forkChild: [Circular: *3],
         ChildProcess: [Circular: *2],
-        exec: <ref *5> ƒ exec (length: 3),
-        execFile: <ref *6> ƒ execFile (length: 4),
-        execFileSync: <ref *7> ƒ execFileSync (length: 3),
-        execSync: <ref *8> ƒ execSync (length: 2),
-        fork: <ref *9> ƒ fork (length: 1),
-        spawn: <ref *10> ƒ spawn (length: 3),
-        spawnSync: <ref *11> ƒ spawnSync (length: 3)
+        exec: <ref *5> ƒ exec(length: 3) {},
+        execFile: <ref *6> ƒ execFile(length: 4) {},
+        execFileSync: <ref *7> ƒ execFileSync(length: 3) {},
+        execSync: <ref *8> ƒ execSync(length: 2) {},
+        fork: <ref *9> ƒ fork(length: 1) {},
+        spawn: <ref *10> ƒ spawn(length: 3) {},
+        spawnSync: <ref *11> ƒ spawnSync(length: 3) {}
     },
     exec: [Circular: *5],
     execFile: [Circular: *6],
@@ -1650,8 +2142,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
     execSync: [Circular: *8],
     fork: [Circular: *9],
     spawn: [Circular: *10],
-    spawnSync: [Circular: *11],
-    Symbol(Symbol.toStringTag): "Module"
+    spawnSync: [Circular: *11]
 }
 ```
 
@@ -1659,14 +2150,14 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 
 ```js
 {
-    ChildProcess: [class ChildProcess],
-    spawn: ƒ spawn (length: 3),
-    execFile: ƒ execFile (length: 4),
-    exec: ƒ exec (length: 3),
-    fork: ƒ fork (length: 0),
-    spawnSync: ƒ spawnSync (length: 3),
-    execFileSync: ƒ execFileSync (length: 3),
-    execSync: ƒ execSync (length: 2),
+    ChildProcess: [class ChildProcess]{},
+    spawn: ƒ spawn(length: 3) {},
+    execFile: ƒ execFile(length: 4) {},
+    exec: ƒ exec(length: 3) {},
+    fork: ƒ fork(length: 0) {},
+    spawnSync: ƒ spawnSync(length: 3) {},
+    execFileSync: ƒ execFileSync(length: 3) {},
+    execSync: ƒ execSync(length: 2) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -1681,7 +2172,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
 [Object: null prototype] {
     SCHED_NONE: 1,
     SCHED_RR: 2,
-    Worker: <ref *2> ƒ Worker (length: 1),
+    Worker: <ref *2> ƒ Worker(length: 1) {},
     _events: <ref *3> [Object: null prototype] {},
     _eventsCount: 0,
     _maxListeners: undefined,
@@ -1698,10 +2189,10 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
         SCHED_NONE: 1,
         SCHED_RR: 2,
         schedulingPolicy: 2,
-        setupPrimary: <ref *7> ƒ (length: 1),
+        setupPrimary: <ref *7> ƒ (length: 1) {},
         setupMaster: [Circular: *7],
-        fork: <ref *8> ƒ (length: 1),
-        disconnect: <ref *9> ƒ (length: 1),
+        fork: <ref *8> ƒ (length: 1) {},
+        disconnect: <ref *9> ƒ (length: 1) {},
         Symbol(kCapture): false
     },
     disconnect: [Circular: *9],
@@ -1713,8 +2204,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 12, 2023 with Bun 0.6.0 Node.js v
     settings: [Circular: *6],
     setupMaster: [Circular: *7],
     setupPrimary: [Circular: *7],
-    workers: [Circular: *5],
-    Symbol(Symbol.toStringTag): "Module"
+    workers: [Circular: *5]
 }
 ```
 
@@ -1739,275 +2229,38 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Console: <ref *2> ƒ Console (length: 1),
-    assert: <ref *3> ƒ assert (length: 0),
-    clear: <ref *4> ƒ clear (length: 0),
-    context: <ref *5> ƒ context (length: 1),
-    count: <ref *6> ƒ count (length: 0),
-    countReset: <ref *7> ƒ countReset (length: 0),
-    debug: <ref *8> ƒ debug (length: 0),
+    Console: <ref *2> ƒ Console(length: 1) {},
+    assert: <ref *3> ƒ assert(length: 0) {},
+    clear: <ref *4> ƒ clear(length: 0) {},
+    context: <ref *5> ƒ context(length: 1) {},
+    count: <ref *6> ƒ count(length: 0) {},
+    countReset: <ref *7> ƒ countReset(length: 0) {},
+    debug: <ref *8> ƒ debug(length: 0) {},
     default: {
-        log: <ref *10> ƒ log (length: 0),
-        warn: <ref *11> ƒ warn (length: 0),
-        dir: <ref *12> ƒ dir (length: 0),
-        time: <ref *13> ƒ time (length: 0),
-        timeEnd: <ref *14> ƒ timeEnd (length: 0),
-        timeLog: <ref *15> ƒ timeLog (length: 0),
-        trace: <ref *16> ƒ trace (length: 0),
+        log: <ref *10> ƒ log(length: 0) {},
+        warn: <ref *11> ƒ warn(length: 0) {},
+        dir: <ref *12> ƒ dir(length: 0) {},
+        time: <ref *13> ƒ time(length: 0) {},
+        timeEnd: <ref *14> ƒ timeEnd(length: 0) {},
+        timeLog: <ref *15> ƒ timeLog(length: 0) {},
+        trace: <ref *16> ƒ trace(length: 0) {},
         assert: [Circular: *3],
         clear: [Circular: *4],
         count: [Circular: *6],
         countReset: [Circular: *7],
-        group: <ref *17> ƒ group (length: 0),
-        groupEnd: <ref *18> ƒ groupEnd (length: 0),
-        table: <ref *19> ƒ table (length: 0),
+        group: <ref *17> ƒ group(length: 0) {},
+        groupEnd: <ref *18> ƒ groupEnd(length: 0) {},
+        table: <ref *19> ƒ table(length: 0) {},
         debug: [Circular: *8],
-        info: <ref *20> ƒ info (length: 0),
-        dirxml: <ref *21> ƒ dirxml (length: 0),
-        error: <ref *22> ƒ error (length: 0),
-        groupCollapsed: <ref *23> ƒ groupCollapsed (length: 0),
+        info: <ref *20> ƒ info(length: 0) {},
+        dirxml: <ref *21> ƒ dirxml(length: 0) {},
+        error: <ref *22> ƒ error(length: 0) {},
+        groupCollapsed: <ref *23> ƒ groupCollapsed(length: 0) {},
         Console: [Circular: *2],
-        profile: <ref *24> ƒ profile (length: 0),
-        profileEnd: <ref *25> ƒ profileEnd (length: 0),
-        timeStamp: <ref *26> ƒ timeStamp (length: 0),
-        context: [Circular: *5],
-        get/set _stdout: <ref *27> Socket {
-            connecting: false,
-            _hadError: false,
-            _parent: null,
-            _host: null,
-            _closeAfterHandlingError: false,
-            _readableState: ReadableState {
-                objectMode: false,
-                highWaterMark: 16384,
-                buffer: BufferList {
-                    head: null,
-                    tail: null,
-                    length: 0
-                },
-                length: 0,
-                pipes: [],
-                flowing: null,
-                ended: true,
-                endEmitted: true,
-                reading: false,
-                constructed: true,
-                sync: true,
-                needReadable: false,
-                emittedReadable: false,
-                readableListening: false,
-                resumeScheduled: false,
-                errorEmitted: false,
-                emitClose: false,
-                autoDestroy: true,
-                destroyed: false,
-                errored: null,
-                closed: false,
-                closeEmitted: false,
-                defaultEncoding: "utf8",
-                awaitDrainWriters: null,
-                multiAwaitDrain: false,
-                readingMore: false,
-                dataEmitted: false,
-                decoder: null,
-                encoding: null,
-                readable: false,
-                Symbol(kPaused): null
-            },
-            _events: [Object: null prototype] {
-                end: <ref *32> ƒ onReadableStreamEnd (length: 0)
-            },
-            _eventsCount: 1,
-            _maxListeners: undefined,
-            _writableState: WritableState {
-                objectMode: false,
-                highWaterMark: 16384,
-                finalCalled: false,
-                needDrain: false,
-                ending: false,
-                ended: false,
-                finished: false,
-                destroyed: false,
-                decodeStrings: false,
-                defaultEncoding: "utf8",
-                length: 0,
-                writing: false,
-                corked: 0,
-                sync: true,
-                bufferProcessing: false,
-                onwrite: ƒ bound onwrite (length: 1),
-                writecb: null,
-                writelen: 0,
-                afterWriteTickInfo: null,
-                buffered: [],
-                bufferedIndex: 0,
-                allBuffers: true,
-                allNoop: true,
-                pendingcb: 0,
-                constructed: true,
-                prefinished: false,
-                errorEmitted: false,
-                emitClose: false,
-                autoDestroy: true,
-                errored: null,
-                closed: false,
-                closeEmitted: false,
-                Symbol(kOnFinished): []
-            },
-            allowHalfOpen: false,
-            _sockname: null,
-            _pendingData: null,
-            _pendingEncoding: "",
-            server: null,
-            _server: null,
-            _type: "pipe",
-            fd: 1,
-            _isStdio: true,
-            destroySoon: <ref *37> ƒ destroy (length: 2),
-            _destroy: <ref *38> ƒ dummyDestroy (length: 2),
-            Symbol(async_id_symbol): 12,
-            Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *27]
-            },
-            Symbol(lastWriteQueueSize): 0,
-            Symbol(timeout): null,
-            Symbol(kBuffer): null,
-            Symbol(kBufferCb): null,
-            Symbol(kBufferGen): null,
-            Symbol(kCapture): false,
-            Symbol(kSetNoDelay): false,
-            Symbol(kSetKeepAlive): false,
-            Symbol(kSetKeepAliveInitialDelay): 0,
-            Symbol(kBytesRead): 0,
-            Symbol(kBytesWritten): 0
-        },
-        get/set _stderr: <ref *40> Socket {
-            connecting: false,
-            _hadError: false,
-            _parent: null,
-            _host: null,
-            _closeAfterHandlingError: false,
-            _readableState: ReadableState {
-                objectMode: false,
-                highWaterMark: 16384,
-                buffer: BufferList {
-                    head: null,
-                    tail: null,
-                    length: 0
-                },
-                length: 0,
-                pipes: [],
-                flowing: null,
-                ended: true,
-                endEmitted: true,
-                reading: false,
-                constructed: true,
-                sync: true,
-                needReadable: false,
-                emittedReadable: false,
-                readableListening: false,
-                resumeScheduled: false,
-                errorEmitted: false,
-                emitClose: false,
-                autoDestroy: true,
-                destroyed: false,
-                errored: null,
-                closed: false,
-                closeEmitted: false,
-                defaultEncoding: "utf8",
-                awaitDrainWriters: null,
-                multiAwaitDrain: false,
-                readingMore: false,
-                dataEmitted: false,
-                decoder: null,
-                encoding: null,
-                readable: false,
-                Symbol(kPaused): null
-            },
-            _events: [Object: null prototype] {
-                end: [Circular: *32]
-            },
-            _eventsCount: 1,
-            _maxListeners: undefined,
-            _writableState: WritableState {
-                objectMode: false,
-                highWaterMark: 16384,
-                finalCalled: false,
-                needDrain: false,
-                ending: false,
-                ended: false,
-                finished: false,
-                destroyed: false,
-                decodeStrings: false,
-                defaultEncoding: "utf8",
-                length: 0,
-                writing: false,
-                corked: 0,
-                sync: true,
-                bufferProcessing: false,
-                onwrite: ƒ bound onwrite (length: 1),
-                writecb: null,
-                writelen: 0,
-                afterWriteTickInfo: null,
-                buffered: [],
-                bufferedIndex: 0,
-                allBuffers: true,
-                allNoop: true,
-                pendingcb: 0,
-                constructed: true,
-                prefinished: false,
-                errorEmitted: false,
-                emitClose: false,
-                autoDestroy: true,
-                errored: null,
-                closed: false,
-                closeEmitted: false,
-                Symbol(kOnFinished): []
-            },
-            allowHalfOpen: false,
-            _sockname: null,
-            _pendingData: null,
-            _pendingEncoding: "",
-            server: null,
-            _server: null,
-            _type: "pipe",
-            fd: 2,
-            _isStdio: true,
-            destroySoon: [Circular: *37],
-            _destroy: [Circular: *38],
-            Symbol(async_id_symbol): 13,
-            Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *40]
-            },
-            Symbol(lastWriteQueueSize): 0,
-            Symbol(timeout): null,
-            Symbol(kBuffer): null,
-            Symbol(kBufferCb): null,
-            Symbol(kBufferGen): null,
-            Symbol(kCapture): false,
-            Symbol(kSetNoDelay): false,
-            Symbol(kSetKeepAlive): false,
-            Symbol(kSetKeepAliveInitialDelay): 0,
-            Symbol(kBytesRead): 0,
-            Symbol(kBytesWritten): 0
-        },
-        _stdoutErrorHandler: ƒ (length: 1),
-        _stderrErrorHandler: ƒ (length: 1),
-        _ignoreErrors: true,
-        _times: SafeMap {},
-        Symbol(kBindStreamsEager): ƒ value (length: 2),
-        Symbol(kBindStreamsLazy): ƒ value (length: 1),
-        Symbol(kBindProperties): ƒ value (length: 2),
-        Symbol(kWriteToConsole): ƒ value (length: 2),
-        Symbol(kGetInspectOptions): ƒ value (length: 1),
-        Symbol(kFormatForStdout): ƒ value (length: 1),
-        Symbol(kFormatForStderr): ƒ value (length: 1),
-        Symbol(counts): SafeMap {},
-        Symbol(kColorMode): "auto",
-        Symbol(kIsConsole): true,
-        Symbol(kGroupIndent): "",
-        Symbol(kGroupIndentWidth): 2,
-        Symbol(Symbol.toStringTag): "console"
+        profile: <ref *24> ƒ profile(length: 0) {},
+        profileEnd: <ref *25> ƒ profileEnd(length: 0) {},
+        timeStamp: <ref *26> ƒ timeStamp(length: 0) {},
+        context: [Circular: *5]
     },
     dir: [Circular: *12],
     dirxml: [Circular: *21],
@@ -2025,46 +2278,42 @@ Cluster {
     timeLog: [Circular: *15],
     timeStamp: [Circular: *26],
     trace: [Circular: *16],
-    warn: [Circular: *11],
-    Symbol(Symbol.toStringTag): "Module"
+    warn: [Circular: *11]
 }
 ```
 
 </td><td valign="top">
 
 ```js
-<ref *1> {
-    debug: ƒ debug (length: 0),
-    error: ƒ error (length: 0),
-    log: ƒ log (length: 0),
-    info: ƒ info (length: 0),
-    warn: ƒ warn (length: 0),
-    clear: ƒ clear (length: 0),
-    dir: ƒ dir (length: 0),
-    dirxml: ƒ dirxml (length: 0),
-    table: ƒ table (length: 0),
-    trace: ƒ trace (length: 0),
-    assert: ƒ assert (length: 0),
-    count: ƒ count (length: 0),
-    countReset: ƒ countReset (length: 0),
-    profile: ƒ profile (length: 0),
-    profileEnd: ƒ profileEnd (length: 0),
-    time: ƒ time (length: 0),
-    timeLog: ƒ timeLog (length: 0),
-    timeEnd: ƒ timeEnd (length: 0),
-    timeStamp: ƒ timeStamp (length: 0),
-    takeHeapSnapshot: ƒ takeHeapSnapshot (length: 0),
-    group: ƒ group (length: 0),
-    groupCollapsed: ƒ groupCollapsed (length: 0),
-    groupEnd: ƒ groupEnd (length: 0),
-    record: ƒ record (length: 0),
-    recordEnd: ƒ recordEnd (length: 0),
-    screenshot: ƒ screenshot (length: 0),
-    write: ƒ write (length: 1),
-    get/set default: [Circular: *1],
-    Symbol(Symbol.toStringTag): "console",
-    Symbol(Symbol.asyncIterator): ƒ [Symbol.asyncIterator] (length: 0),
-    Symbol(CommonJSTransformed): true
+{
+    debug: ƒ debug(length: 0) {},
+    error: ƒ error(length: 0) {},
+    log: ƒ log(length: 0) {},
+    info: ƒ info(length: 0) {},
+    warn: ƒ warn(length: 0) {},
+    clear: ƒ clear(length: 0) {},
+    dir: ƒ dir(length: 0) {},
+    dirxml: ƒ dirxml(length: 0) {},
+    table: ƒ table(length: 0) {},
+    trace: ƒ trace(length: 0) {},
+    assert: ƒ assert(length: 0) {},
+    count: ƒ count(length: 0) {},
+    countReset: ƒ countReset(length: 0) {},
+    profile: ƒ profile(length: 0) {},
+    profileEnd: ƒ profileEnd(length: 0) {},
+    time: ƒ time(length: 0) {},
+    timeLog: ƒ timeLog(length: 0) {},
+    timeEnd: ƒ timeEnd(length: 0) {},
+    timeStamp: ƒ timeStamp(length: 0) {},
+    takeHeapSnapshot: ƒ takeHeapSnapshot(length: 0) {},
+    group: ƒ group(length: 0) {},
+    groupCollapsed: ƒ groupCollapsed(length: 0) {},
+    groupEnd: ƒ groupEnd(length: 0) {},
+    record: ƒ record(length: 0) {},
+    recordEnd: ƒ recordEnd(length: 0) {},
+    screenshot: ƒ screenshot(length: 0) {},
+    write: ƒ write(length: 1) {},
+    Symbol(Symbol.asyncIterator): ƒ [Symbol.asyncIterator](length: 0) {}
 }
 ```
 
@@ -2581,19 +2830,14 @@ Cluster {
         defaultCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…"
     },
     defaultCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…",
-    defaultCoreCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…",
-    Symbol(Symbol.toStringTag): "Module"
+    defaultCoreCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…"
 }
 ```
 
 </td><td valign="top">
 
 ```js
-<ref *1> {
-    __esModule: true,
-    get/set default: [Circular: *1],
-    Symbol(CommonJSTransformed): true
-}
+{}
 ```
 
 </td></tr></table>
@@ -2604,23 +2848,29 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Certificate: <ref *2> ƒ Certificate (length: 0),
-    Cipher: <ref *3> ƒ Cipher (length: 3),
-    Cipheriv: <ref *4> ƒ Cipheriv (length: 4),
-    Decipher: <ref *5> ƒ Decipher (length: 3),
-    Decipheriv: <ref *6> ƒ Decipheriv (length: 4),
-    DiffieHellman: <ref *7> ƒ DiffieHellman (length: 4),
-    DiffieHellmanGroup: <ref *8> ƒ DiffieHellmanGroup (length: 1),
-    ECDH: <ref *9> ƒ ECDH (length: 1),
-    Hash: <ref *10> ƒ Hash (length: 2),
-    Hmac: <ref *11> ƒ Hmac (length: 3),
-    KeyObject: <ref *12> [class KeyObject],
-    Sign: <ref *13> ƒ Sign (length: 2),
-    Verify: <ref *14> ƒ Verify (length: 2),
-    X509Certificate: <ref *15> [class X509Certificate],
-    checkPrime: <ref *16> ƒ checkPrime (length: 1),
-    checkPrimeSync: <ref *17> ƒ checkPrimeSync (length: 1),
-    constants: <ref *18> [Object: null prototype] {
+    Certificate: <ref *2> ƒ Certificate(length: 0) {
+        exportChallenge: ƒ exportChallenge(length: 2) {},
+        exportPublicKey: ƒ exportPublicKey(length: 2) {},
+        verifySpkac: ƒ verifySpkac(length: 2) {}
+    },
+    Cipher: <ref *6> ƒ Cipher(length: 3) {},
+    Cipheriv: <ref *7> ƒ Cipheriv(length: 4) {},
+    Decipher: <ref *8> ƒ Decipher(length: 3) {},
+    Decipheriv: <ref *9> ƒ Decipheriv(length: 4) {},
+    DiffieHellman: <ref *10> ƒ DiffieHellman(length: 4) {},
+    DiffieHellmanGroup: <ref *11> ƒ DiffieHellmanGroup(length: 1) {},
+    ECDH: <ref *12> ƒ ECDH(length: 1) {
+        convertKey: ƒ convertKey(length: 5) {}
+    },
+    Hash: <ref *14> ƒ Hash(length: 2) {},
+    Hmac: <ref *15> ƒ Hmac(length: 3) {},
+    KeyObject: <ref *16> [class KeyObject]{},
+    Sign: <ref *17> ƒ Sign(length: 2) {},
+    Verify: <ref *18> ƒ Verify(length: 2) {},
+    X509Certificate: <ref *19> [class X509Certificate]{},
+    checkPrime: <ref *20> ƒ checkPrime(length: 1) {},
+    checkPrimeSync: <ref *21> ƒ checkPrimeSync(length: 1) {},
+    constants: <ref *22> [Object: null prototype] {
         OPENSSL_VERSION_NUMBER: 805306496,
         SSL_OP_ALL: 2147485776,
         SSL_OP_ALLOW_NO_DHE_KEX: 1024,
@@ -2693,207 +2943,144 @@ Cluster {
         POINT_CONVERSION_COMPRESSED: 2,
         POINT_CONVERSION_UNCOMPRESSED: 4,
         POINT_CONVERSION_HYBRID: 6,
-        get/set defaultCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…"
+        [get/set] defaultCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…"
     },
-    createCipheriv: <ref *19> ƒ createCipheriv (length: 4),
-    createDecipheriv: <ref *20> ƒ createDecipheriv (length: 4),
-    createDiffieHellman: <ref *21> ƒ createDiffieHellman (length: 4),
-    createDiffieHellmanGroup: <ref *22> ƒ createDiffieHellmanGroup (length: 1),
-    createECDH: <ref *23> ƒ createECDH (length: 1),
-    createHash: <ref *24> ƒ createHash (length: 2),
-    createHmac: <ref *25> ƒ createHmac (length: 3),
-    createPrivateKey: <ref *26> ƒ createPrivateKey (length: 1),
-    createPublicKey: <ref *27> ƒ createPublicKey (length: 1),
-    createSecretKey: <ref *28> ƒ createSecretKey (length: 2),
-    createSign: <ref *29> ƒ createSign (length: 2),
-    createVerify: <ref *30> ƒ createVerify (length: 2),
+    createCipheriv: <ref *23> ƒ createCipheriv(length: 4) {},
+    createDecipheriv: <ref *24> ƒ createDecipheriv(length: 4) {},
+    createDiffieHellman: <ref *25> ƒ createDiffieHellman(length: 4) {},
+    createDiffieHellmanGroup: <ref *26> ƒ createDiffieHellmanGroup(length: 1) {},
+    createECDH: <ref *27> ƒ createECDH(length: 1) {},
+    createHash: <ref *28> ƒ createHash(length: 2) {},
+    createHmac: <ref *29> ƒ createHmac(length: 3) {},
+    createPrivateKey: <ref *30> ƒ createPrivateKey(length: 1) {},
+    createPublicKey: <ref *31> ƒ createPublicKey(length: 1) {},
+    createSecretKey: <ref *32> ƒ createSecretKey(length: 2) {},
+    createSign: <ref *33> ƒ createSign(length: 2) {},
+    createVerify: <ref *34> ƒ createVerify(length: 2) {},
     default: {
-        checkPrime: [Circular: *16],
-        checkPrimeSync: [Circular: *17],
-        createCipheriv: [Circular: *19],
-        createDecipheriv: [Circular: *20],
-        createDiffieHellman: [Circular: *21],
-        createDiffieHellmanGroup: [Circular: *22],
-        createECDH: [Circular: *23],
-        createHash: [Circular: *24],
-        createHmac: [Circular: *25],
-        createPrivateKey: [Circular: *26],
-        createPublicKey: [Circular: *27],
-        createSecretKey: [Circular: *28],
-        createSign: [Circular: *29],
-        createVerify: [Circular: *30],
-        diffieHellman: <ref *32> ƒ diffieHellman (length: 1),
-        generatePrime: <ref *33> ƒ generatePrime (length: 3),
-        generatePrimeSync: <ref *34> ƒ generatePrimeSync (length: 1),
-        getCiphers: <ref *35> ƒ (length: 0),
-        getCipherInfo: <ref *36> ƒ getCipherInfo (length: 2),
-        getCurves: <ref *37> ƒ (length: 0),
-        getDiffieHellman: [Circular: *22],
-        getHashes: <ref *38> ƒ (length: 0),
-        hkdf: <ref *39> ƒ hkdf (length: 6),
-        hkdfSync: <ref *40> ƒ hkdfSync (length: 5),
-        pbkdf2: <ref *41> ƒ pbkdf2 (length: 6),
-        pbkdf2Sync: <ref *42> ƒ pbkdf2Sync (length: 5),
-        generateKeyPair: <ref *43> ƒ generateKeyPair (length: 3),
-        generateKeyPairSync: <ref *44> ƒ generateKeyPairSync (length: 2),
-        generateKey: <ref *45> ƒ generateKey (length: 3),
-        generateKeySync: <ref *46> ƒ generateKeySync (length: 2),
-        privateDecrypt: <ref *47> ƒ (length: 2),
-        privateEncrypt: <ref *48> ƒ (length: 2),
-        publicDecrypt: <ref *49> ƒ (length: 2),
-        publicEncrypt: <ref *50> ƒ (length: 2),
-        randomBytes: <ref *51> ƒ randomBytes (length: 2),
-        randomFill: <ref *52> ƒ randomFill (length: 4),
-        randomFillSync: <ref *53> ƒ randomFillSync (length: 1),
-        randomInt: <ref *54> ƒ randomInt (length: 3),
-        randomUUID: <ref *55> ƒ randomUUID (length: 1),
-        scrypt: <ref *56> ƒ scrypt (length: 4),
-        scryptSync: <ref *57> ƒ scryptSync (length: 3),
-        sign: <ref *58> ƒ signOneShot (length: 4),
-        setEngine: <ref *59> ƒ setEngine (length: 2),
-        timingSafeEqual: <ref *60> ƒ timingSafeEqual (length: 0),
-        getFips: <ref *61> ƒ getFips (length: 0),
-        setFips: <ref *62> ƒ setFips (length: 1),
-        verify: <ref *63> ƒ verifyOneShot (length: 5),
+        checkPrime: [Circular: *20],
+        checkPrimeSync: [Circular: *21],
+        createCipheriv: [Circular: *23],
+        createDecipheriv: [Circular: *24],
+        createDiffieHellman: [Circular: *25],
+        createDiffieHellmanGroup: [Circular: *26],
+        createECDH: [Circular: *27],
+        createHash: [Circular: *28],
+        createHmac: [Circular: *29],
+        createPrivateKey: [Circular: *30],
+        createPublicKey: [Circular: *31],
+        createSecretKey: [Circular: *32],
+        createSign: [Circular: *33],
+        createVerify: [Circular: *34],
+        diffieHellman: <ref *36> ƒ diffieHellman(length: 1) {},
+        generatePrime: <ref *37> ƒ generatePrime(length: 3) {},
+        generatePrimeSync: <ref *38> ƒ generatePrimeSync(length: 1) {},
+        getCiphers: <ref *39> ƒ (length: 0) {},
+        getCipherInfo: <ref *40> ƒ getCipherInfo(length: 2) {},
+        getCurves: <ref *41> ƒ (length: 0) {},
+        getDiffieHellman: [Circular: *26],
+        getHashes: <ref *42> ƒ (length: 0) {},
+        hkdf: <ref *43> ƒ hkdf(length: 6) {},
+        hkdfSync: <ref *44> ƒ hkdfSync(length: 5) {},
+        pbkdf2: <ref *45> ƒ pbkdf2(length: 6) {},
+        pbkdf2Sync: <ref *46> ƒ pbkdf2Sync(length: 5) {},
+        generateKeyPair: <ref *47> ƒ generateKeyPair(length: 3) {},
+        generateKeyPairSync: <ref *48> ƒ generateKeyPairSync(length: 2) {},
+        generateKey: <ref *49> ƒ generateKey(length: 3) {},
+        generateKeySync: <ref *50> ƒ generateKeySync(length: 2) {},
+        privateDecrypt: <ref *51> ƒ (length: 2) {},
+        privateEncrypt: <ref *52> ƒ (length: 2) {},
+        publicDecrypt: <ref *53> ƒ (length: 2) {},
+        publicEncrypt: <ref *54> ƒ (length: 2) {},
+        randomBytes: <ref *55> ƒ randomBytes(length: 2) {},
+        randomFill: <ref *56> ƒ randomFill(length: 4) {},
+        randomFillSync: <ref *57> ƒ randomFillSync(length: 1) {},
+        randomInt: <ref *58> ƒ randomInt(length: 3) {},
+        randomUUID: <ref *59> ƒ randomUUID(length: 1) {},
+        scrypt: <ref *60> ƒ scrypt(length: 4) {},
+        scryptSync: <ref *61> ƒ scryptSync(length: 3) {},
+        sign: <ref *62> ƒ signOneShot(length: 4) {},
+        setEngine: <ref *63> ƒ setEngine(length: 2) {},
+        timingSafeEqual: <ref *64> ƒ timingSafeEqual(length: 0) {},
+        getFips: <ref *65> ƒ getFips(length: 0) {},
+        setFips: <ref *66> ƒ setFips(length: 1) {},
+        verify: <ref *67> ƒ verifyOneShot(length: 5) {},
         Certificate: [Circular: *2],
-        Cipher: [Circular: *3],
-        Cipheriv: [Circular: *4],
-        Decipher: [Circular: *5],
-        Decipheriv: [Circular: *6],
-        DiffieHellman: [Circular: *7],
-        DiffieHellmanGroup: [Circular: *8],
-        ECDH: [Circular: *9],
-        Hash: [Circular: *10],
-        Hmac: [Circular: *11],
-        KeyObject: [Circular: *12],
-        Sign: [Circular: *13],
-        Verify: [Circular: *14],
-        X509Certificate: [Circular: *15],
-        secureHeapUsed: <ref *64> ƒ secureHeapUsed (length: 0),
-        createCipher: ƒ deprecated (length: 0),
-        createDecipher: ƒ deprecated (length: 0),
-        get/set fips: 0,
-        get/set DEFAULT_ENCODING: "buffer",
-        constants: [Circular: *18],
-        get/set webcrypto: <ref *67> Crypto {},
-        get/set subtle: <ref *68> SubtleCrypto {},
-        get/set getRandomValues: <ref *69> ƒ getRandomValues (length: 1),
-        get/set prng: [Circular: *51],
-        get/set pseudoRandomBytes: [Circular: *51],
-        get/set rng: [Circular: *51]
+        Cipher: [Circular: *6],
+        Cipheriv: [Circular: *7],
+        Decipher: [Circular: *8],
+        Decipheriv: [Circular: *9],
+        DiffieHellman: [Circular: *10],
+        DiffieHellmanGroup: [Circular: *11],
+        ECDH: [Circular: *12],
+        Hash: [Circular: *14],
+        Hmac: [Circular: *15],
+        KeyObject: [Circular: *16],
+        Sign: [Circular: *17],
+        Verify: [Circular: *18],
+        X509Certificate: [Circular: *19],
+        secureHeapUsed: <ref *68> ƒ secureHeapUsed(length: 0) {},
+        constants: [Circular: *22],
+        [get/set] webcrypto: <ref *69> Crypto {},
+        [get/set] subtle: <ref *70> SubtleCrypto {},
+        [get/set] getRandomValues: <ref *71> ƒ getRandomValues(length: 1) {}
     },
-    diffieHellman: [Circular: *32],
-    generateKey: [Circular: *45],
-    generateKeyPair: [Circular: *43],
-    generateKeyPairSync: [Circular: *44],
-    generateKeySync: [Circular: *46],
-    generatePrime: [Circular: *33],
-    generatePrimeSync: [Circular: *34],
-    getCipherInfo: [Circular: *36],
-    getCiphers: [Circular: *35],
-    getCurves: [Circular: *37],
-    getDiffieHellman: [Circular: *22],
-    getFips: [Circular: *61],
-    getHashes: [Circular: *38],
-    getRandomValues: [Circular: *69],
-    hkdf: [Circular: *39],
-    hkdfSync: [Circular: *40],
-    pbkdf2: [Circular: *41],
-    pbkdf2Sync: [Circular: *42],
-    privateDecrypt: [Circular: *47],
-    privateEncrypt: [Circular: *48],
-    publicDecrypt: [Circular: *49],
-    publicEncrypt: [Circular: *50],
-    randomBytes: [Circular: *51],
-    randomFill: [Circular: *52],
-    randomFillSync: [Circular: *53],
-    randomInt: [Circular: *54],
-    randomUUID: [Circular: *55],
-    scrypt: [Circular: *56],
-    scryptSync: [Circular: *57],
-    secureHeapUsed: [Circular: *64],
-    setEngine: [Circular: *59],
-    setFips: [Circular: *62],
-    sign: [Circular: *58],
-    subtle: [Circular: *68],
-    timingSafeEqual: [Circular: *60],
-    verify: [Circular: *63],
-    webcrypto: [Circular: *67],
-    Symbol(Symbol.toStringTag): "Module"
+    diffieHellman: [Circular: *36],
+    generateKey: [Circular: *49],
+    generateKeyPair: [Circular: *47],
+    generateKeyPairSync: [Circular: *48],
+    generateKeySync: [Circular: *50],
+    generatePrime: [Circular: *37],
+    generatePrimeSync: [Circular: *38],
+    getCipherInfo: [Circular: *40],
+    getCiphers: [Circular: *39],
+    getCurves: [Circular: *41],
+    getDiffieHellman: [Circular: *26],
+    getFips: [Circular: *65],
+    getHashes: [Circular: *42],
+    getRandomValues: [Circular: *71],
+    hkdf: [Circular: *43],
+    hkdfSync: [Circular: *44],
+    pbkdf2: [Circular: *45],
+    pbkdf2Sync: [Circular: *46],
+    privateDecrypt: [Circular: *51],
+    privateEncrypt: [Circular: *52],
+    publicDecrypt: [Circular: *53],
+    publicEncrypt: [Circular: *54],
+    randomBytes: [Circular: *55],
+    randomFill: [Circular: *56],
+    randomFillSync: [Circular: *57],
+    randomInt: [Circular: *58],
+    randomUUID: [Circular: *59],
+    scrypt: [Circular: *60],
+    scryptSync: [Circular: *61],
+    secureHeapUsed: [Circular: *68],
+    setEngine: [Circular: *63],
+    setFips: [Circular: *66],
+    sign: [Circular: *62],
+    subtle: [Circular: *70],
+    timingSafeEqual: [Circular: *64],
+    verify: [Circular: *67],
+    webcrypto: [Circular: *69]
 }
-(node:2163) [DEP0091] DeprecationWarning: crypto.DEFAULT_ENCODING is deprecated.
-(Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
 </td><td valign="top">
 
 ```js
-{
-    prng: <ref *2> ƒ randomBytes (length: 2),
-    pseudoRandomBytes: [Circular: *2],
-    rng: [Circular: *2],
-    randomBytes: [Circular: *2],
-    createHash: ƒ createHash (length: 1),
-    Hash: [class Hash],
-    Hmac: <ref *5> ƒ (length: 2),
-    createHmac: [Circular: *5],
-    getHashes: ƒ (length: 0),
-    pbkdf2: ƒ (length: 6),
-    pbkdf2Sync: ƒ pbkdf2 (length: 5),
-    Cipher: <ref *9> ƒ createCipher (length: 2),
-    createCipher: [Circular: *9],
-    Cipheriv: <ref *10> ƒ createCipheriv (length: 3),
-    createCipheriv: [Circular: *10],
-    Decipher: <ref *11> ƒ createDecipher (length: 2),
-    createDecipher: [Circular: *11],
-    Decipheriv: <ref *12> ƒ createDecipheriv (length: 3),
-    createDecipheriv: [Circular: *12],
-    getCiphers: <ref *13> ƒ getCiphers (length: 0),
-    listCiphers: [Circular: *13],
-    DiffieHellmanGroup: <ref *14> ƒ getDiffieHellman (length: 1),
-    createDiffieHellmanGroup: [Circular: *14],
-    getDiffieHellman: [Circular: *14],
-    createDiffieHellman: <ref *15> ƒ createDiffieHellman (length: 4),
-    DiffieHellman: [Circular: *15],
-    createSign: <ref *16> ƒ createSign (length: 1),
-    Sign: [Circular: *16],
-    createVerify: <ref *17> ƒ createVerify (length: 1),
-    Verify: [Circular: *17],
-    createECDH: ƒ (length: 1),
-    publicEncrypt: ƒ (length: 3),
-    privateEncrypt: ƒ (length: 2),
-    publicDecrypt: ƒ (length: 2),
-    privateDecrypt: ƒ (length: 3),
-    get/set getRandomValues: ƒ getRandomValues (length: 1),
-    randomFill: ƒ randomFill (length: 4),
-    randomFillSync: ƒ randomFillSync (length: 3),
-    createCredentials: ƒ (length: 0),
-    constants: {
-        DH_CHECK_P_NOT_SAFE_PRIME: 2,
-        DH_CHECK_P_NOT_PRIME: 1,
-        DH_UNABLE_TO_CHECK_GENERATOR: 4,
-        DH_NOT_SUITABLE_GENERATOR: 8,
-        NPN_ENABLED: 1,
-        ALPN_ENABLED: 1,
-        RSA_PKCS1_PADDING: 1,
-        RSA_SSLV23_PADDING: 2,
-        RSA_NO_PADDING: 3,
-        RSA_PKCS1_OAEP_PADDING: 4,
-        RSA_X931_PADDING: 5,
-        RSA_PKCS1_PSS_PADDING: 6,
-        POINT_CONVERSION_COMPRESSED: 2,
-        POINT_CONVERSION_UNCOMPRESSED: 4,
-        POINT_CONVERSION_HYBRID: 6
-    },
-    get/set DEFAULT_ENCODING: "buffer",
-    get/set randomUUID: ƒ randomUUID (length: 0),
-    get/set scrypt: ƒ ::bunternal:: (length: 5),
-    get/set scryptSync: ƒ ::bunternal:: (length: 4),
-    get/set timingSafeEqual: ƒ ::bunternal:: (length: 2),
-    get/set webcrypto: ƒ (length: undefined),
-    get/set subtle: SubtleCrypto {},
-    Symbol(CommonJS): 0
-}
+76 | 			}
+77 | 
+78 | 			const entries = Reflect.ownKeys(value).map(
+79 | 				(key) => {
+80 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
+81 | 					if (!descriptor.enumerable) {
+             ^
+TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
+      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:81:10
+      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:78:19
+      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:97:6
+      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:78:19
+      at /tmp/fs-fixture-1681286724511-1/crypto.mjs:4:15
 ```
 
 </td></tr></table>
@@ -2904,15 +3091,14 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Socket: <ref *2> ƒ Socket (length: 2),
-    _createSocketHandle: <ref *3> ƒ deprecated (length: 0),
-    createSocket: <ref *4> ƒ createSocket (length: 2),
+    Socket: <ref *2> ƒ Socket(length: 2) {},
+    _createSocketHandle: <ref *3> ƒ deprecated(length: 0) {},
+    createSocket: <ref *4> ƒ createSocket(length: 2) {},
     default: {
         _createSocketHandle: [Circular: *3],
         createSocket: [Circular: *4],
         Socket: [Circular: *2]
-    },
-    Symbol(Symbol.toStringTag): "Module"
+    }
 }
 ```
 
@@ -2920,9 +3106,9 @@ Cluster {
 
 ```js
 {
-    createSocket: ƒ ::bunternal:: (length: 0),
-    Socket: ƒ ::bunternal:: (length: 0),
-    _createSocketHandle: ƒ ::bunternal:: (length: 0),
+    createSocket: ƒ ::bunternal::(length: 0) {},
+    Socket: ƒ ::bunternal::(length: 0) {},
+    _createSocketHandle: ƒ ::bunternal::(length: 0) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -2935,19 +3121,18 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Channel: <ref *2> [class Channel],
-    channel: <ref *3> ƒ channel (length: 1),
+    Channel: <ref *2> [class Channel]{},
+    channel: <ref *3> ƒ channel(length: 1) {},
     default: {
         channel: [Circular: *3],
-        hasSubscribers: <ref *5> ƒ hasSubscribers (length: 1),
-        subscribe: <ref *6> ƒ subscribe (length: 2),
-        unsubscribe: <ref *7> ƒ unsubscribe (length: 2),
+        hasSubscribers: <ref *5> ƒ hasSubscribers(length: 1) {},
+        subscribe: <ref *6> ƒ subscribe(length: 2) {},
+        unsubscribe: <ref *7> ƒ unsubscribe(length: 2) {},
         Channel: [Circular: *2]
     },
     hasSubscribers: [Circular: *5],
     subscribe: [Circular: *6],
-    unsubscribe: [Circular: *7],
-    Symbol(Symbol.toStringTag): "Module"
+    unsubscribe: [Circular: *7]
 }
 ```
 
@@ -2955,11 +3140,11 @@ Cluster {
 
 ```js
 {
-    channel: ƒ ::bunternal:: (length: 0),
-    hasSubscribers: ƒ ::bunternal:: (length: 0),
-    subscribe: ƒ ::bunternal:: (length: 0),
-    unsubscribe: ƒ ::bunternal:: (length: 0),
-    Channel: [class ::bunternal::],
+    channel: ƒ ::bunternal::(length: 0) {},
+    hasSubscribers: ƒ ::bunternal::(length: 0) {},
+    subscribe: ƒ ::bunternal::(length: 0) {},
+    unsubscribe: ƒ ::bunternal::(length: 0) {},
+    Channel: [class ::bunternal::]{},
     Symbol(CommonJS): 0
 }
 ```
@@ -2996,16 +3181,16 @@ Cluster {
     NOTIMP: "ENOTIMP",
     NOTINITIALIZED: "ENOTINITIALIZED",
     REFUSED: "EREFUSED",
-    Resolver: <ref *2> [class Resolver],
+    Resolver: <ref *2> [class Resolver]{},
     SERVFAIL: "ESERVFAIL",
     TIMEOUT: "ETIMEOUT",
     V4MAPPED: 8,
     default: {
-        lookup: <ref *4> ƒ lookup (length: 3),
-        lookupService: <ref *5> ƒ lookupService (length: 3),
+        lookup: <ref *4> ƒ lookup(length: 3) {},
+        lookupService: <ref *5> ƒ lookupService(length: 3) {},
         Resolver: [Circular: *2],
-        setDefaultResultOrder: <ref *6> ƒ setDefaultResultOrder (length: 1),
-        setServers: <ref *7> ƒ defaultResolverSetServers (length: 1),
+        setDefaultResultOrder: <ref *6> ƒ setDefaultResultOrder(length: 1) {},
+        setServers: <ref *7> ƒ defaultResolverSetServers(length: 1) {},
         ADDRCONFIG: 32,
         ALL: 16,
         V4MAPPED: 8,
@@ -3033,27 +3218,27 @@ Cluster {
         LOADIPHLPAPI: "ELOADIPHLPAPI",
         ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
         CANCELLED: "ECANCELLED",
-        getServers: <ref *8> ƒ bound getServers (length: 0),
-        resolve: <ref *9> ƒ bound resolve (length: 3),
-        resolve4: <ref *10> ƒ bound queryA (length: 2),
-        resolve6: <ref *11> ƒ bound queryAaaa (length: 2),
-        resolveAny: <ref *12> ƒ bound queryAny (length: 2),
-        resolveCaa: <ref *13> ƒ bound queryCaa (length: 2),
-        resolveCname: <ref *14> ƒ bound queryCname (length: 2),
-        resolveMx: <ref *15> ƒ bound queryMx (length: 2),
-        resolveNaptr: <ref *16> ƒ bound queryNaptr (length: 2),
-        resolveNs: <ref *17> ƒ bound queryNs (length: 2),
-        resolvePtr: <ref *18> ƒ bound queryPtr (length: 2),
-        resolveSoa: <ref *19> ƒ bound querySoa (length: 2),
-        resolveSrv: <ref *20> ƒ bound querySrv (length: 2),
-        resolveTxt: <ref *21> ƒ bound queryTxt (length: 2),
-        reverse: <ref *22> ƒ bound getHostByAddr (length: 2),
-        get/set promises: <ref *23> {
-            lookup: ƒ lookup (length: 2),
-            lookupService: ƒ lookupService (length: 2),
-            Resolver: [class Resolver],
+        getServers: <ref *8> ƒ bound getServers(length: 0) {},
+        resolve: <ref *9> ƒ bound resolve(length: 3) {},
+        resolve4: <ref *10> ƒ bound queryA(length: 2) {},
+        resolve6: <ref *11> ƒ bound queryAaaa(length: 2) {},
+        resolveAny: <ref *12> ƒ bound queryAny(length: 2) {},
+        resolveCaa: <ref *13> ƒ bound queryCaa(length: 2) {},
+        resolveCname: <ref *14> ƒ bound queryCname(length: 2) {},
+        resolveMx: <ref *15> ƒ bound queryMx(length: 2) {},
+        resolveNaptr: <ref *16> ƒ bound queryNaptr(length: 2) {},
+        resolveNs: <ref *17> ƒ bound queryNs(length: 2) {},
+        resolvePtr: <ref *18> ƒ bound queryPtr(length: 2) {},
+        resolveSoa: <ref *19> ƒ bound querySoa(length: 2) {},
+        resolveSrv: <ref *20> ƒ bound querySrv(length: 2) {},
+        resolveTxt: <ref *21> ƒ bound queryTxt(length: 2) {},
+        reverse: <ref *22> ƒ bound getHostByAddr(length: 2) {},
+        [get/set] promises: <ref *23> {
+            lookup: ƒ lookup(length: 2) {},
+            lookupService: ƒ lookupService(length: 2) {},
+            Resolver: [class Resolver]{},
             setDefaultResultOrder: [Circular: *6],
-            setServers: ƒ defaultResolverSetServers (length: 1),
+            setServers: ƒ defaultResolverSetServers(length: 1) {},
             NODATA: "ENODATA",
             FORMERR: "EFORMERR",
             SERVFAIL: "ESERVFAIL",
@@ -3078,21 +3263,21 @@ Cluster {
             LOADIPHLPAPI: "ELOADIPHLPAPI",
             ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
             CANCELLED: "ECANCELLED",
-            getServers: ƒ bound getServers (length: 0),
-            resolve: ƒ bound resolve (length: 2),
-            resolve4: ƒ bound queryA (length: 2),
-            resolve6: ƒ bound queryAaaa (length: 2),
-            resolveAny: ƒ bound queryAny (length: 2),
-            resolveCaa: ƒ bound queryCaa (length: 2),
-            resolveCname: ƒ bound queryCname (length: 2),
-            resolveMx: ƒ bound queryMx (length: 2),
-            resolveNaptr: ƒ bound queryNaptr (length: 2),
-            resolveNs: ƒ bound queryNs (length: 2),
-            resolvePtr: ƒ bound queryPtr (length: 2),
-            resolveSoa: ƒ bound querySoa (length: 2),
-            resolveSrv: ƒ bound querySrv (length: 2),
-            resolveTxt: ƒ bound queryTxt (length: 2),
-            reverse: ƒ bound getHostByAddr (length: 2)
+            getServers: ƒ bound getServers(length: 0) {},
+            resolve: ƒ bound resolve(length: 2) {},
+            resolve4: ƒ bound queryA(length: 2) {},
+            resolve6: ƒ bound queryAaaa(length: 2) {},
+            resolveAny: ƒ bound queryAny(length: 2) {},
+            resolveCaa: ƒ bound queryCaa(length: 2) {},
+            resolveCname: ƒ bound queryCname(length: 2) {},
+            resolveMx: ƒ bound queryMx(length: 2) {},
+            resolveNaptr: ƒ bound queryNaptr(length: 2) {},
+            resolveNs: ƒ bound queryNs(length: 2) {},
+            resolvePtr: ƒ bound queryPtr(length: 2) {},
+            resolveSoa: ƒ bound querySoa(length: 2) {},
+            resolveSrv: ƒ bound querySrv(length: 2) {},
+            resolveTxt: ƒ bound queryTxt(length: 2) {},
+            reverse: ƒ bound getHostByAddr(length: 2) {}
         }
     },
     getServers: [Circular: *8],
@@ -3114,8 +3299,7 @@ Cluster {
     resolveTxt: [Circular: *21],
     reverse: [Circular: *22],
     setDefaultResultOrder: [Circular: *6],
-    setServers: [Circular: *7],
-    Symbol(Symbol.toStringTag): "Module"
+    setServers: [Circular: *7]
 }
 ```
 
@@ -3150,43 +3334,43 @@ Cluster {
     LOADIPHLPAPI: "DNS_ELOADIPHLPAPI",
     ADDRGETNETWORKPARAMS: "DNS_EADDRGETNETWORKPARAMS",
     CANCELLED: "DNS_ECANCELLED",
-    lookup: ƒ lookup (length: 3),
-    lookupService: ƒ lookupService (length: 3),
-    Resolver: ƒ Resolver (length: 1),
-    setServers: ƒ setServers (length: 0),
-    setDefaultResultOrder: ƒ setDefaultResultOrder (length: 0),
-    resolve: ƒ resolve (length: 3),
-    reverse: ƒ reverse (length: 2),
-    resolve4: ƒ resolve4 (length: 3),
-    resolve6: ƒ resolve6 (length: 3),
-    resolveAny: ƒ resolveAny (length: 2),
-    resolveCname: ƒ resolveCname (length: 2),
-    resolveCaa: ƒ resolveCaa (length: 2),
-    resolveMx: ƒ resolveMx (length: 2),
-    resolveNs: ƒ resolveNs (length: 2),
-    resolvePtr: ƒ resolvePtr (length: 2),
-    resolveSoa: ƒ resolveSoa (length: 2),
-    resolveSrv: ƒ resolveSrv (length: 2),
-    resolveTxt: ƒ resolveTxt (length: 2),
-    resolveNaptr: ƒ resolveNaptr (length: 2),
+    lookup: ƒ lookup(length: 3) {},
+    lookupService: ƒ lookupService(length: 3) {},
+    Resolver: ƒ Resolver(length: 1) {},
+    setServers: ƒ setServers(length: 0) {},
+    setDefaultResultOrder: ƒ setDefaultResultOrder(length: 0) {},
+    resolve: ƒ resolve(length: 3) {},
+    reverse: ƒ reverse(length: 2) {},
+    resolve4: ƒ resolve4(length: 3) {},
+    resolve6: ƒ resolve6(length: 3) {},
+    resolveAny: ƒ resolveAny(length: 2) {},
+    resolveCname: ƒ resolveCname(length: 2) {},
+    resolveCaa: ƒ resolveCaa(length: 2) {},
+    resolveMx: ƒ resolveMx(length: 2) {},
+    resolveNs: ƒ resolveNs(length: 2) {},
+    resolvePtr: ƒ resolvePtr(length: 2) {},
+    resolveSoa: ƒ resolveSoa(length: 2) {},
+    resolveSrv: ƒ resolveSrv(length: 2) {},
+    resolveTxt: ƒ resolveTxt(length: 2) {},
+    resolveNaptr: ƒ resolveNaptr(length: 2) {},
     promises: {
-        lookup: ƒ lookup (length: 2),
-        lookupService: ƒ lookupService (length: 2),
-        resolve: ƒ resolve (length: 2),
-        resolve4: ƒ resolve4 (length: 2),
-        resolve6: ƒ resolve6 (length: 2),
-        resolveSrv: ƒ resolveSrv (length: 1),
-        resolveTxt: ƒ resolveTxt (length: 1),
-        resolveSoa: ƒ resolveSoa (length: 1),
-        resolveNaptr: ƒ resolveNaptr (length: 1),
-        resolveMx: ƒ resolveMx (length: 1),
-        resolveCaa: ƒ resolveCaa (length: 1),
-        resolveNs: ƒ resolveNs (length: 1),
-        resolvePtr: ƒ resolvePtr (length: 1),
-        resolveCname: ƒ resolveCname (length: 1),
-        Resolver: [class Resolver],
-        resolveAny: ƒ (length: 0),
-        reverse: ƒ (length: 0)
+        lookup: ƒ lookup(length: 2) {},
+        lookupService: ƒ lookupService(length: 2) {},
+        resolve: ƒ resolve(length: 2) {},
+        resolve4: ƒ resolve4(length: 2) {},
+        resolve6: ƒ resolve6(length: 2) {},
+        resolveSrv: ƒ resolveSrv(length: 1) {},
+        resolveTxt: ƒ resolveTxt(length: 1) {},
+        resolveSoa: ƒ resolveSoa(length: 1) {},
+        resolveNaptr: ƒ resolveNaptr(length: 1) {},
+        resolveMx: ƒ resolveMx(length: 1) {},
+        resolveCaa: ƒ resolveCaa(length: 1) {},
+        resolveNs: ƒ resolveNs(length: 1) {},
+        resolvePtr: ƒ resolvePtr(length: 1) {},
+        resolveCname: ƒ resolveCname(length: 1) {},
+        Resolver: [class Resolver]{},
+        resolveAny: ƒ (length: 0) {},
+        reverse: ƒ (length: 0) {}
     },
     Symbol(CommonJS): 0
 }
@@ -3222,15 +3406,15 @@ Cluster {
     NOTIMP: "ENOTIMP",
     NOTINITIALIZED: "ENOTINITIALIZED",
     REFUSED: "EREFUSED",
-    Resolver: <ref *2> [class Resolver],
+    Resolver: <ref *2> [class Resolver]{},
     SERVFAIL: "ESERVFAIL",
     TIMEOUT: "ETIMEOUT",
     default: {
-        lookup: <ref *4> ƒ lookup (length: 2),
-        lookupService: <ref *5> ƒ lookupService (length: 2),
+        lookup: <ref *4> ƒ lookup(length: 2) {},
+        lookupService: <ref *5> ƒ lookupService(length: 2) {},
         Resolver: [Circular: *2],
-        setDefaultResultOrder: <ref *6> ƒ setDefaultResultOrder (length: 1),
-        setServers: <ref *7> ƒ defaultResolverSetServers (length: 1),
+        setDefaultResultOrder: <ref *6> ƒ setDefaultResultOrder(length: 1) {},
+        setServers: <ref *7> ƒ defaultResolverSetServers(length: 1) {},
         NODATA: "ENODATA",
         FORMERR: "EFORMERR",
         SERVFAIL: "ESERVFAIL",
@@ -3255,21 +3439,21 @@ Cluster {
         LOADIPHLPAPI: "ELOADIPHLPAPI",
         ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
         CANCELLED: "ECANCELLED",
-        getServers: <ref *8> ƒ bound getServers (length: 0),
-        resolve: <ref *9> ƒ bound resolve (length: 2),
-        resolve4: <ref *10> ƒ bound queryA (length: 2),
-        resolve6: <ref *11> ƒ bound queryAaaa (length: 2),
-        resolveAny: <ref *12> ƒ bound queryAny (length: 2),
-        resolveCaa: <ref *13> ƒ bound queryCaa (length: 2),
-        resolveCname: <ref *14> ƒ bound queryCname (length: 2),
-        resolveMx: <ref *15> ƒ bound queryMx (length: 2),
-        resolveNaptr: <ref *16> ƒ bound queryNaptr (length: 2),
-        resolveNs: <ref *17> ƒ bound queryNs (length: 2),
-        resolvePtr: <ref *18> ƒ bound queryPtr (length: 2),
-        resolveSoa: <ref *19> ƒ bound querySoa (length: 2),
-        resolveSrv: <ref *20> ƒ bound querySrv (length: 2),
-        resolveTxt: <ref *21> ƒ bound queryTxt (length: 2),
-        reverse: <ref *22> ƒ bound getHostByAddr (length: 2)
+        getServers: <ref *8> ƒ bound getServers(length: 0) {},
+        resolve: <ref *9> ƒ bound resolve(length: 2) {},
+        resolve4: <ref *10> ƒ bound queryA(length: 2) {},
+        resolve6: <ref *11> ƒ bound queryAaaa(length: 2) {},
+        resolveAny: <ref *12> ƒ bound queryAny(length: 2) {},
+        resolveCaa: <ref *13> ƒ bound queryCaa(length: 2) {},
+        resolveCname: <ref *14> ƒ bound queryCname(length: 2) {},
+        resolveMx: <ref *15> ƒ bound queryMx(length: 2) {},
+        resolveNaptr: <ref *16> ƒ bound queryNaptr(length: 2) {},
+        resolveNs: <ref *17> ƒ bound queryNs(length: 2) {},
+        resolvePtr: <ref *18> ƒ bound queryPtr(length: 2) {},
+        resolveSoa: <ref *19> ƒ bound querySoa(length: 2) {},
+        resolveSrv: <ref *20> ƒ bound querySrv(length: 2) {},
+        resolveTxt: <ref *21> ƒ bound queryTxt(length: 2) {},
+        reverse: <ref *22> ƒ bound getHostByAddr(length: 2) {}
     },
     getServers: [Circular: *8],
     lookup: [Circular: *4],
@@ -3289,8 +3473,7 @@ Cluster {
     resolveTxt: [Circular: *21],
     reverse: [Circular: *22],
     setDefaultResultOrder: [Circular: *6],
-    setServers: [Circular: *7],
-    Symbol(Symbol.toStringTag): "Module"
+    setServers: [Circular: *7]
 }
 ```
 
@@ -3298,22 +3481,22 @@ Cluster {
 
 ```js
 {
-    lookup: ƒ lookup (length: 2),
-    lookupService: ƒ lookupService (length: 2),
-    resolve: ƒ resolve (length: 2),
-    resolve4: ƒ resolve4 (length: 2),
-    resolveAny: ƒ (length: 0),
-    resolveCname: ƒ resolveCname (length: 1),
-    resolveCaa: ƒ resolveCaa (length: 1),
-    resolveMx: ƒ resolveMx (length: 1),
-    resolveNaptr: ƒ resolveNaptr (length: 1),
-    resolveNs: ƒ resolveNs (length: 1),
-    resolvePtr: ƒ resolvePtr (length: 1),
-    resolveSoa: ƒ resolveSoa (length: 1),
-    resolveSrv: ƒ resolveSrv (length: 1),
-    resolveTxt: ƒ resolveTxt (length: 1),
-    reverse: ƒ (length: 0),
-    Resolver: [class Resolver],
+    lookup: ƒ lookup(length: 2) {},
+    lookupService: ƒ lookupService(length: 2) {},
+    resolve: ƒ resolve(length: 2) {},
+    resolve4: ƒ resolve4(length: 2) {},
+    resolveAny: ƒ (length: 0) {},
+    resolveCname: ƒ resolveCname(length: 1) {},
+    resolveCaa: ƒ resolveCaa(length: 1) {},
+    resolveMx: ƒ resolveMx(length: 1) {},
+    resolveNaptr: ƒ resolveNaptr(length: 1) {},
+    resolveNs: ƒ resolveNs(length: 1) {},
+    resolvePtr: ƒ resolvePtr(length: 1) {},
+    resolveSoa: ƒ resolveSoa(length: 1) {},
+    resolveSrv: ƒ resolveSrv(length: 1) {},
+    resolveTxt: ƒ resolveTxt(length: 1) {},
+    reverse: ƒ (length: 0) {},
+    Resolver: [class Resolver]{},
     setServers: undefined,
     setDefaultResultOrder: undefined,
     Symbol(CommonJS): 0
@@ -3328,10 +3511,10 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Domain: <ref *2> [class Domain],
+    Domain: <ref *2> [class Domain]{},
     _stack: <ref *3> [],
     active: null,
-    create: <ref *4> ƒ createDomain (length: 0),
+    create: <ref *4> ƒ createDomain(length: 0) {},
     createDomain: [Circular: *4],
     default: {
         _stack: [Circular: *3],
@@ -3339,20 +3522,16 @@ Cluster {
         createDomain: [Circular: *4],
         create: [Circular: *4],
         active: null
-    },
-    Symbol(Symbol.toStringTag): "Module"
+    }
 }
 ```
 
 </td><td valign="top">
 
 ```js
-<ref *1> {
-    __esModule: true,
-    get/set create: <ref *2> ƒ (length: 0),
-    get/set createDomain: [Circular: *2],
-    get/set default: [Circular: *1],
-    Symbol(CommonJSTransformed): true
+{
+    [get/set] create: <ref *2> ƒ (length: 0) {},
+    [get/set] createDomain: [Circular: *2]
 }
 ```
 
@@ -3364,28 +3543,50 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    EventEmitter: <ref *2> ƒ EventEmitter (length: 1),
-    EventEmitterAsyncResource: [class EventEmitterAsyncResource],
+    EventEmitter: <ref *2> ƒ EventEmitter(length: 1) {
+        once: <ref *3> async ƒ once(length: 2) {},
+        on: <ref *4> ƒ on(length: 2) {},
+        getEventListeners: <ref *5> ƒ getEventListeners(length: 2) {},
+        EventEmitter: [Circular: *2],
+        usingDomains: false,
+        captureRejectionSymbol: Symbol(nodejs.rejection),
+        [get/set] captureRejections: false,
+        [get/set] EventEmitterAsyncResource: <ref *6> [class EventEmitterAsyncResource]{},
+        errorMonitor: Symbol(events.errorMonitor),
+        [get/set] defaultMaxListeners: 10,
+        setMaxListeners: <ref *7> ƒ (length: 0) {},
+        init: <ref *8> ƒ (length: 1) {},
+        listenerCount: <ref *9> ƒ (length: 2) {}
+    },
+    EventEmitterAsyncResource: [Circular: *6],
     captureRejectionSymbol: Symbol(nodejs.rejection),
     captureRejections: false,
     default: [Circular: *2],
     defaultMaxListeners: 10,
     errorMonitor: Symbol(events.errorMonitor),
-    getEventListeners: ƒ getEventListeners (length: 2),
-    init: ƒ (length: 1),
-    listenerCount: ƒ (length: 2),
-    on: ƒ on (length: 2),
-    once: async ƒ once (length: 2),
-    setMaxListeners: ƒ (length: 0),
-    usingDomains: false,
-    Symbol(Symbol.toStringTag): "Module"
+    getEventListeners: [Circular: *5],
+    init: [Circular: *8],
+    listenerCount: [Circular: *9],
+    on: [Circular: *4],
+    once: [Circular: *3],
+    setMaxListeners: [Circular: *7],
+    usingDomains: false
 }
 ```
 
 </td><td valign="top">
 
 ```js
-ƒ EventEmitter (length: 0)
+<ref *1> ƒ EventEmitter(length: 0) {
+    defaultMaxListeners: 10,
+    EventEmitter: [Circular: *1],
+    getEventListeners: ƒ getEventListeners(length: 0) {},
+    listenerCount: ƒ listenerCount(length: 0) {},
+    once: ƒ once(length: 0) {},
+    on: ƒ on(length: 0) {},
+    captureRejectionSymbol: Symbol(nodejs.rejection),
+    Symbol(CommonJS): 0
+}
 ```
 
 </td></tr></table>
@@ -3396,28 +3597,28 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Dir: <ref *2> [class Dir],
-    Dirent: <ref *3> [class Dirent],
+    Dir: <ref *2> [class Dir]{},
+    Dirent: <ref *3> [class Dirent]{},
     F_OK: 0,
-    FileReadStream: <ref *4> ƒ ReadStream (length: 2),
-    FileWriteStream: <ref *5> ƒ WriteStream (length: 2),
+    FileReadStream: <ref *4> ƒ ReadStream(length: 2) {},
+    FileWriteStream: <ref *5> ƒ WriteStream(length: 2) {},
     R_OK: 4,
     ReadStream: [Circular: *4],
-    Stats: <ref *6> ƒ Stats (length: 14),
+    Stats: <ref *6> ƒ Stats(length: 14) {},
     W_OK: 2,
     WriteStream: [Circular: *5],
     X_OK: 1,
-    _toUnixTimestamp: <ref *7> ƒ toUnixTimestamp (length: 1),
-    access: <ref *8> ƒ access (length: 3),
-    accessSync: <ref *9> ƒ accessSync (length: 2),
-    appendFile: <ref *10> ƒ appendFile (length: 4),
-    appendFileSync: <ref *11> ƒ appendFileSync (length: 3),
-    chmod: <ref *12> ƒ chmod (length: 3),
-    chmodSync: <ref *13> ƒ chmodSync (length: 2),
-    chown: <ref *14> ƒ chown (length: 4),
-    chownSync: <ref *15> ƒ chownSync (length: 3),
-    close: <ref *16> ƒ close (length: 1),
-    closeSync: <ref *17> ƒ closeSync (length: 1),
+    _toUnixTimestamp: <ref *7> ƒ toUnixTimestamp(length: 1) {},
+    access: <ref *8> ƒ access(length: 3) {},
+    accessSync: <ref *9> ƒ accessSync(length: 2) {},
+    appendFile: <ref *10> ƒ appendFile(length: 4) {},
+    appendFileSync: <ref *11> ƒ appendFileSync(length: 3) {},
+    chmod: <ref *12> ƒ chmod(length: 3) {},
+    chmodSync: <ref *13> ƒ chmodSync(length: 2) {},
+    chown: <ref *14> ƒ chown(length: 4) {},
+    chownSync: <ref *15> ƒ chownSync(length: 3) {},
+    close: <ref *16> ƒ close(length: 1) {},
+    closeSync: <ref *17> ƒ closeSync(length: 1) {},
     constants: <ref *18> [Object: null prototype] {
         UV_FS_SYMLINK_DIR: 1,
         UV_FS_SYMLINK_JUNCTION: 2,
@@ -3476,12 +3677,12 @@ Cluster {
         UV_FS_COPYFILE_FICLONE_FORCE: 4,
         COPYFILE_FICLONE_FORCE: 4
     },
-    copyFile: <ref *19> ƒ copyFile (length: 4),
-    copyFileSync: <ref *20> ƒ copyFileSync (length: 3),
-    cp: <ref *21> ƒ cp (length: 4),
-    cpSync: <ref *22> ƒ cpSync (length: 3),
-    createReadStream: <ref *23> ƒ createReadStream (length: 2),
-    createWriteStream: <ref *24> ƒ createWriteStream (length: 2),
+    copyFile: <ref *19> ƒ copyFile(length: 4) {},
+    copyFileSync: <ref *20> ƒ copyFileSync(length: 3) {},
+    cp: <ref *21> ƒ cp(length: 4) {},
+    cpSync: <ref *22> ƒ cpSync(length: 3) {},
+    createReadStream: <ref *23> ƒ createReadStream(length: 2) {},
+    createWriteStream: <ref *24> ƒ createWriteStream(length: 2) {},
     default: {
         appendFile: [Circular: *10],
         appendFileSync: [Circular: *11],
@@ -3499,123 +3700,127 @@ Cluster {
         cpSync: [Circular: *22],
         createReadStream: [Circular: *23],
         createWriteStream: [Circular: *24],
-        exists: <ref *26> ƒ exists (length: 2),
-        existsSync: <ref *27> ƒ existsSync (length: 1),
-        fchown: <ref *28> ƒ fchown (length: 4),
-        fchownSync: <ref *29> ƒ fchownSync (length: 3),
-        fchmod: <ref *30> ƒ fchmod (length: 3),
-        fchmodSync: <ref *31> ƒ fchmodSync (length: 2),
-        fdatasync: <ref *32> ƒ fdatasync (length: 2),
-        fdatasyncSync: <ref *33> ƒ fdatasyncSync (length: 1),
-        fstat: <ref *34> ƒ fstat (length: 1),
-        fstatSync: <ref *35> ƒ fstatSync (length: 1),
-        fsync: <ref *36> ƒ fsync (length: 2),
-        fsyncSync: <ref *37> ƒ fsyncSync (length: 1),
-        ftruncate: <ref *38> ƒ ftruncate (length: 1),
-        ftruncateSync: <ref *39> ƒ ftruncateSync (length: 1),
-        futimes: <ref *40> ƒ futimes (length: 4),
-        futimesSync: <ref *41> ƒ futimesSync (length: 3),
-        lchown: <ref *42> ƒ lchown (length: 4),
-        lchownSync: <ref *43> ƒ lchownSync (length: 3),
+        exists: <ref *26> ƒ exists(length: 2) {},
+        existsSync: <ref *27> ƒ existsSync(length: 1) {},
+        fchown: <ref *28> ƒ fchown(length: 4) {},
+        fchownSync: <ref *29> ƒ fchownSync(length: 3) {},
+        fchmod: <ref *30> ƒ fchmod(length: 3) {},
+        fchmodSync: <ref *31> ƒ fchmodSync(length: 2) {},
+        fdatasync: <ref *32> ƒ fdatasync(length: 2) {},
+        fdatasyncSync: <ref *33> ƒ fdatasyncSync(length: 1) {},
+        fstat: <ref *34> ƒ fstat(length: 1) {},
+        fstatSync: <ref *35> ƒ fstatSync(length: 1) {},
+        fsync: <ref *36> ƒ fsync(length: 2) {},
+        fsyncSync: <ref *37> ƒ fsyncSync(length: 1) {},
+        ftruncate: <ref *38> ƒ ftruncate(length: 1) {},
+        ftruncateSync: <ref *39> ƒ ftruncateSync(length: 1) {},
+        futimes: <ref *40> ƒ futimes(length: 4) {},
+        futimesSync: <ref *41> ƒ futimesSync(length: 3) {},
+        lchown: <ref *42> ƒ lchown(length: 4) {},
+        lchownSync: <ref *43> ƒ lchownSync(length: 3) {},
         lchmod: undefined,
         lchmodSync: undefined,
-        link: <ref *44> ƒ link (length: 3),
-        linkSync: <ref *45> ƒ linkSync (length: 2),
-        lstat: <ref *46> ƒ lstat (length: 1),
-        lstatSync: <ref *47> ƒ lstatSync (length: 1),
-        lutimes: <ref *48> ƒ lutimes (length: 4),
-        lutimesSync: <ref *49> ƒ lutimesSync (length: 3),
-        mkdir: <ref *50> ƒ mkdir (length: 3),
-        mkdirSync: <ref *51> ƒ mkdirSync (length: 2),
-        mkdtemp: <ref *52> ƒ mkdtemp (length: 3),
-        mkdtempSync: <ref *53> ƒ mkdtempSync (length: 2),
-        open: <ref *54> ƒ open (length: 4),
-        openSync: <ref *55> ƒ openSync (length: 3),
-        opendir: <ref *56> ƒ opendir (length: 3),
-        opendirSync: <ref *57> ƒ opendirSync (length: 2),
-        readdir: <ref *58> ƒ readdir (length: 3),
-        readdirSync: <ref *59> ƒ readdirSync (length: 2),
-        read: <ref *60> ƒ read (length: 6),
-        readSync: <ref *61> ƒ readSync (length: 5),
-        readv: <ref *62> ƒ readv (length: 4),
-        readvSync: <ref *63> ƒ readvSync (length: 3),
-        readFile: <ref *64> ƒ readFile (length: 3),
-        readFileSync: <ref *65> ƒ readFileSync (length: 2),
-        readlink: <ref *66> ƒ readlink (length: 3),
-        readlinkSync: <ref *67> ƒ readlinkSync (length: 2),
-        realpath: <ref *68> ƒ realpath (length: 3),
-        realpathSync: <ref *69> ƒ realpathSync (length: 2),
-        rename: <ref *70> ƒ rename (length: 3),
-        renameSync: <ref *71> ƒ renameSync (length: 2),
-        rm: <ref *72> ƒ rm (length: 3),
-        rmSync: <ref *73> ƒ rmSync (length: 2),
-        rmdir: <ref *74> ƒ rmdir (length: 3),
-        rmdirSync: <ref *75> ƒ rmdirSync (length: 2),
-        stat: <ref *76> ƒ stat (length: 1),
-        statfs: <ref *77> ƒ statfs (length: 1),
-        statSync: <ref *78> ƒ statSync (length: 1),
-        statfsSync: <ref *79> ƒ statfsSync (length: 1),
-        symlink: <ref *80> ƒ symlink (length: 4),
-        symlinkSync: <ref *81> ƒ symlinkSync (length: 3),
-        truncate: <ref *82> ƒ truncate (length: 3),
-        truncateSync: <ref *83> ƒ truncateSync (length: 2),
-        unwatchFile: <ref *84> ƒ unwatchFile (length: 2),
-        unlink: <ref *85> ƒ unlink (length: 2),
-        unlinkSync: <ref *86> ƒ unlinkSync (length: 1),
-        utimes: <ref *87> ƒ utimes (length: 4),
-        utimesSync: <ref *88> ƒ utimesSync (length: 3),
-        watch: <ref *89> ƒ watch (length: 3),
-        watchFile: <ref *90> ƒ watchFile (length: 3),
-        writeFile: <ref *91> ƒ writeFile (length: 4),
-        writeFileSync: <ref *92> ƒ writeFileSync (length: 3),
-        write: <ref *93> ƒ write (length: 6),
-        writeSync: <ref *94> ƒ writeSync (length: 5),
-        writev: <ref *95> ƒ writev (length: 4),
-        writevSync: <ref *96> ƒ writevSync (length: 3),
+        link: <ref *44> ƒ link(length: 3) {},
+        linkSync: <ref *45> ƒ linkSync(length: 2) {},
+        lstat: <ref *46> ƒ lstat(length: 1) {},
+        lstatSync: <ref *47> ƒ lstatSync(length: 1) {},
+        lutimes: <ref *48> ƒ lutimes(length: 4) {},
+        lutimesSync: <ref *49> ƒ lutimesSync(length: 3) {},
+        mkdir: <ref *50> ƒ mkdir(length: 3) {},
+        mkdirSync: <ref *51> ƒ mkdirSync(length: 2) {},
+        mkdtemp: <ref *52> ƒ mkdtemp(length: 3) {},
+        mkdtempSync: <ref *53> ƒ mkdtempSync(length: 2) {},
+        open: <ref *54> ƒ open(length: 4) {},
+        openSync: <ref *55> ƒ openSync(length: 3) {},
+        opendir: <ref *56> ƒ opendir(length: 3) {},
+        opendirSync: <ref *57> ƒ opendirSync(length: 2) {},
+        readdir: <ref *58> ƒ readdir(length: 3) {},
+        readdirSync: <ref *59> ƒ readdirSync(length: 2) {},
+        read: <ref *60> ƒ read(length: 6) {},
+        readSync: <ref *61> ƒ readSync(length: 5) {},
+        readv: <ref *62> ƒ readv(length: 4) {},
+        readvSync: <ref *63> ƒ readvSync(length: 3) {},
+        readFile: <ref *64> ƒ readFile(length: 3) {},
+        readFileSync: <ref *65> ƒ readFileSync(length: 2) {},
+        readlink: <ref *66> ƒ readlink(length: 3) {},
+        readlinkSync: <ref *67> ƒ readlinkSync(length: 2) {},
+        realpath: <ref *68> ƒ realpath(length: 3) {
+            native: ƒ (length: 3) {}
+        },
+        realpathSync: <ref *70> ƒ realpathSync(length: 2) {
+            native: ƒ (length: 2) {}
+        },
+        rename: <ref *72> ƒ rename(length: 3) {},
+        renameSync: <ref *73> ƒ renameSync(length: 2) {},
+        rm: <ref *74> ƒ rm(length: 3) {},
+        rmSync: <ref *75> ƒ rmSync(length: 2) {},
+        rmdir: <ref *76> ƒ rmdir(length: 3) {},
+        rmdirSync: <ref *77> ƒ rmdirSync(length: 2) {},
+        stat: <ref *78> ƒ stat(length: 1) {},
+        statfs: <ref *79> ƒ statfs(length: 1) {},
+        statSync: <ref *80> ƒ statSync(length: 1) {},
+        statfsSync: <ref *81> ƒ statfsSync(length: 1) {},
+        symlink: <ref *82> ƒ symlink(length: 4) {},
+        symlinkSync: <ref *83> ƒ symlinkSync(length: 3) {},
+        truncate: <ref *84> ƒ truncate(length: 3) {},
+        truncateSync: <ref *85> ƒ truncateSync(length: 2) {},
+        unwatchFile: <ref *86> ƒ unwatchFile(length: 2) {},
+        unlink: <ref *87> ƒ unlink(length: 2) {},
+        unlinkSync: <ref *88> ƒ unlinkSync(length: 1) {},
+        utimes: <ref *89> ƒ utimes(length: 4) {},
+        utimesSync: <ref *90> ƒ utimesSync(length: 3) {},
+        watch: <ref *91> ƒ watch(length: 3) {},
+        watchFile: <ref *92> ƒ watchFile(length: 3) {},
+        writeFile: <ref *93> ƒ writeFile(length: 4) {},
+        writeFileSync: <ref *94> ƒ writeFileSync(length: 3) {},
+        write: <ref *95> ƒ write(length: 6) {},
+        writeSync: <ref *96> ƒ writeSync(length: 5) {},
+        writev: <ref *97> ƒ writev(length: 4) {},
+        writevSync: <ref *98> ƒ writevSync(length: 3) {},
         Dir: [Circular: *2],
         Dirent: [Circular: *3],
         Stats: [Circular: *6],
-        get/set ReadStream: [Circular: *4],
-        get/set WriteStream: [Circular: *5],
-        get/set FileReadStream: [Circular: *4],
-        get/set FileWriteStream: [Circular: *5],
+        [get/set] ReadStream: [Circular: *4],
+        [get/set] WriteStream: [Circular: *5],
+        [get/set] FileReadStream: [Circular: *4],
+        [get/set] FileWriteStream: [Circular: *5],
         _toUnixTimestamp: [Circular: *7],
         F_OK: 0,
         R_OK: 4,
         W_OK: 2,
         X_OK: 1,
         constants: [Circular: *18],
-        get/set promises: <ref *97> {
-            access: async ƒ access (length: 1),
-            copyFile: async ƒ copyFile (length: 3),
-            cp: async ƒ cp (length: 3),
-            open: async ƒ open (length: 3),
-            opendir: ƒ opendir (length: 3),
-            rename: async ƒ rename (length: 2),
-            truncate: async ƒ truncate (length: 1),
-            rm: async ƒ rm (length: 2),
-            rmdir: async ƒ rmdir (length: 2),
-            mkdir: async ƒ mkdir (length: 2),
-            readdir: async ƒ readdir (length: 2),
-            readlink: async ƒ readlink (length: 2),
-            symlink: async ƒ symlink (length: 3),
-            lstat: async ƒ lstat (length: 1),
-            stat: async ƒ stat (length: 1),
-            statfs: async ƒ statfs (length: 1),
-            link: async ƒ link (length: 2),
-            unlink: async ƒ unlink (length: 1),
-            chmod: async ƒ chmod (length: 2),
-            lchmod: async ƒ lchmod (length: 2),
-            lchown: async ƒ lchown (length: 3),
-            chown: async ƒ chown (length: 3),
-            utimes: async ƒ utimes (length: 3),
-            lutimes: async ƒ lutimes (length: 3),
-            realpath: async ƒ realpath (length: 2),
-            mkdtemp: async ƒ mkdtemp (length: 2),
-            writeFile: async ƒ writeFile (length: 3),
-            appendFile: async ƒ appendFile (length: 3),
-            readFile: async ƒ readFile (length: 2),
-            watch: async ƒ watch (length: 1),
+        [get/set] promises: <ref *99> {
+            access: async ƒ access(length: 1) {},
+            copyFile: async ƒ copyFile(length: 3) {},
+            cp: async ƒ cp(length: 3) {},
+            open: async ƒ open(length: 3) {},
+            opendir: ƒ opendir(length: 3) {},
+            rename: async ƒ rename(length: 2) {},
+            truncate: async ƒ truncate(length: 1) {},
+            rm: async ƒ rm(length: 2) {},
+            rmdir: async ƒ rmdir(length: 2) {},
+            mkdir: async ƒ mkdir(length: 2) {},
+            readdir: async ƒ readdir(length: 2) {},
+            readlink: async ƒ readlink(length: 2) {},
+            symlink: async ƒ symlink(length: 3) {},
+            lstat: async ƒ lstat(length: 1) {},
+            stat: async ƒ stat(length: 1) {},
+            statfs: async ƒ statfs(length: 1) {},
+            link: async ƒ link(length: 2) {},
+            unlink: async ƒ unlink(length: 1) {},
+            chmod: async ƒ chmod(length: 2) {},
+            lchmod: async ƒ lchmod(length: 2) {},
+            lchown: async ƒ lchown(length: 3) {},
+            chown: async ƒ chown(length: 3) {},
+            utimes: async ƒ utimes(length: 3) {},
+            lutimes: async ƒ lutimes(length: 3) {},
+            realpath: async ƒ realpath(length: 2) {},
+            mkdtemp: async ƒ mkdtemp(length: 2) {},
+            writeFile: async ƒ writeFile(length: 3) {},
+            appendFile: async ƒ appendFile(length: 3) {},
+            readFile: async ƒ readFile(length: 2) {},
+            watch: async ƒ watch(length: 1) {},
             constants: [Circular: *18]
         }
     },
@@ -3653,7 +3858,7 @@ Cluster {
     openSync: [Circular: *55],
     opendir: [Circular: *56],
     opendirSync: [Circular: *57],
-    promises: [Circular: *97],
+    promises: [Circular: *99],
     read: [Circular: *60],
     readFile: [Circular: *64],
     readFileSync: [Circular: *65],
@@ -3665,35 +3870,34 @@ Cluster {
     readv: [Circular: *62],
     readvSync: [Circular: *63],
     realpath: [Circular: *68],
-    realpathSync: [Circular: *69],
-    rename: [Circular: *70],
-    renameSync: [Circular: *71],
-    rm: [Circular: *72],
-    rmSync: [Circular: *73],
-    rmdir: [Circular: *74],
-    rmdirSync: [Circular: *75],
-    stat: [Circular: *76],
-    statSync: [Circular: *78],
-    statfs: [Circular: *77],
-    statfsSync: [Circular: *79],
-    symlink: [Circular: *80],
-    symlinkSync: [Circular: *81],
-    truncate: [Circular: *82],
-    truncateSync: [Circular: *83],
-    unlink: [Circular: *85],
-    unlinkSync: [Circular: *86],
-    unwatchFile: [Circular: *84],
-    utimes: [Circular: *87],
-    utimesSync: [Circular: *88],
-    watch: [Circular: *89],
-    watchFile: [Circular: *90],
-    write: [Circular: *93],
-    writeFile: [Circular: *91],
-    writeFileSync: [Circular: *92],
-    writeSync: [Circular: *94],
-    writev: [Circular: *95],
-    writevSync: [Circular: *96],
-    Symbol(Symbol.toStringTag): "Module"
+    realpathSync: [Circular: *70],
+    rename: [Circular: *72],
+    renameSync: [Circular: *73],
+    rm: [Circular: *74],
+    rmSync: [Circular: *75],
+    rmdir: [Circular: *76],
+    rmdirSync: [Circular: *77],
+    stat: [Circular: *78],
+    statSync: [Circular: *80],
+    statfs: [Circular: *79],
+    statfsSync: [Circular: *81],
+    symlink: [Circular: *82],
+    symlinkSync: [Circular: *83],
+    truncate: [Circular: *84],
+    truncateSync: [Circular: *85],
+    unlink: [Circular: *87],
+    unlinkSync: [Circular: *88],
+    unwatchFile: [Circular: *86],
+    utimes: [Circular: *89],
+    utimesSync: [Circular: *90],
+    watch: [Circular: *91],
+    watchFile: [Circular: *92],
+    write: [Circular: *95],
+    writeFile: [Circular: *93],
+    writeFileSync: [Circular: *94],
+    writeSync: [Circular: *96],
+    writev: [Circular: *97],
+    writevSync: [Circular: *98]
 }
 ```
 
@@ -3701,16 +3905,16 @@ Cluster {
 
 ```js
 {
-    access: ƒ access (length: 0),
-    accessSync: ƒ bound accessSync (length: 2),
-    appendFile: ƒ appendFile (length: 0),
-    appendFileSync: ƒ bound appendFileSync (length: 3),
-    chmod: ƒ chmod (length: 0),
-    chmodSync: ƒ bound chmodSync (length: 2),
-    chown: ƒ chown (length: 0),
-    chownSync: ƒ bound chownSync (length: 3),
-    close: ƒ close (length: 0),
-    closeSync: ƒ bound closeSync (length: 1),
+    access: ƒ access(length: 0) {},
+    accessSync: ƒ bound accessSync(length: 2) {},
+    appendFile: ƒ appendFile(length: 0) {},
+    appendFileSync: ƒ bound appendFileSync(length: 3) {},
+    chmod: ƒ chmod(length: 0) {},
+    chmodSync: ƒ bound chmodSync(length: 2) {},
+    chown: ƒ chown(length: 0) {},
+    chownSync: ƒ bound chownSync(length: 3) {},
+    close: ƒ close(length: 0) {},
+    closeSync: ƒ bound closeSync(length: 1) {},
     constants: <ref *12> {
         F_OK: 0,
         R_OK: 4,
@@ -3757,119 +3961,123 @@ Cluster {
         S_IXOTH: 1,
         UV_FS_O_FILEMAP: 49152
     },
-    copyFile: ƒ copyFile (length: 0),
-    copyFileSync: ƒ bound copyFileSync (length: 3),
-    createReadStream: ƒ createReadStream (length: 2),
-    createWriteStream: ƒ createWriteStream (length: 2),
-    Dirent: ƒ Dirent (length: 0),
-    exists: ƒ exists (length: 0),
-    existsSync: ƒ bound existsSync (length: 1),
-    fchmod: ƒ fchmod (length: 0),
-    fchmodSync: ƒ bound fchmodSync (length: 2),
-    fchown: ƒ fchown (length: 0),
-    fchownSync: ƒ bound fchownSync (length: 3),
-    fstat: ƒ fstat (length: 0),
-    fstatSync: ƒ bound fstatSync (length: 1),
-    fsync: ƒ fsync (length: 0),
-    fsyncSync: ƒ bound fsyncSync (length: 1),
-    ftruncate: ƒ ftruncate (length: 0),
-    ftruncateSync: ƒ bound ftruncateSync (length: 1),
-    futimes: ƒ futimes (length: 0),
-    futimesSync: ƒ bound futimesSync (length: 3),
-    lchmod: ƒ lchmod (length: 0),
-    lchmodSync: ƒ bound lchmodSync (length: 2),
-    lchown: ƒ lchown (length: 0),
-    lchownSync: ƒ bound lchownSync (length: 3),
-    link: ƒ link (length: 0),
-    linkSync: ƒ bound linkSync (length: 2),
-    lstat: ƒ lstat (length: 0),
-    lstatSync: ƒ bound lstatSync (length: 1),
-    lutimes: ƒ lutimes (length: 0),
-    lutimesSync: ƒ bound lutimesSync (length: 3),
-    mkdir: ƒ mkdir (length: 0),
-    mkdirSync: ƒ bound mkdirSync (length: 2),
-    mkdtemp: ƒ mkdtemp (length: 0),
-    mkdtempSync: ƒ bound mkdtempSync (length: 2),
-    open: ƒ open (length: 0),
-    openSync: ƒ bound openSync (length: 3),
+    copyFile: ƒ copyFile(length: 0) {},
+    copyFileSync: ƒ bound copyFileSync(length: 3) {},
+    createReadStream: ƒ createReadStream(length: 2) {},
+    createWriteStream: ƒ createWriteStream(length: 2) {},
+    Dirent: ƒ Dirent(length: 0) {},
+    exists: ƒ exists(length: 0) {},
+    existsSync: ƒ bound existsSync(length: 1) {},
+    fchmod: ƒ fchmod(length: 0) {},
+    fchmodSync: ƒ bound fchmodSync(length: 2) {},
+    fchown: ƒ fchown(length: 0) {},
+    fchownSync: ƒ bound fchownSync(length: 3) {},
+    fstat: ƒ fstat(length: 0) {},
+    fstatSync: ƒ bound fstatSync(length: 1) {},
+    fsync: ƒ fsync(length: 0) {},
+    fsyncSync: ƒ bound fsyncSync(length: 1) {},
+    ftruncate: ƒ ftruncate(length: 0) {},
+    ftruncateSync: ƒ bound ftruncateSync(length: 1) {},
+    futimes: ƒ futimes(length: 0) {},
+    futimesSync: ƒ bound futimesSync(length: 3) {},
+    lchmod: ƒ lchmod(length: 0) {},
+    lchmodSync: ƒ bound lchmodSync(length: 2) {},
+    lchown: ƒ lchown(length: 0) {},
+    lchownSync: ƒ bound lchownSync(length: 3) {},
+    link: ƒ link(length: 0) {},
+    linkSync: ƒ bound linkSync(length: 2) {},
+    lstat: ƒ lstat(length: 0) {},
+    lstatSync: ƒ bound lstatSync(length: 1) {},
+    lutimes: ƒ lutimes(length: 0) {},
+    lutimesSync: ƒ bound lutimesSync(length: 3) {},
+    mkdir: ƒ mkdir(length: 0) {},
+    mkdirSync: ƒ bound mkdirSync(length: 2) {},
+    mkdtemp: ƒ mkdtemp(length: 0) {},
+    mkdtempSync: ƒ bound mkdtempSync(length: 2) {},
+    open: ƒ open(length: 0) {},
+    openSync: ƒ bound openSync(length: 3) {},
     promises: {
-        access: async ƒ (length: 0),
-        appendFile: async ƒ (length: 0),
-        close: async ƒ (length: 0),
-        copyFile: async ƒ (length: 0),
-        exists: async ƒ (length: 0),
-        chown: async ƒ (length: 0),
-        chmod: async ƒ (length: 0),
-        fchmod: async ƒ (length: 0),
-        fchown: async ƒ (length: 0),
-        fstat: async ƒ (length: 0),
-        fsync: async ƒ (length: 0),
-        ftruncate: async ƒ (length: 0),
-        futimes: async ƒ (length: 0),
-        lchmod: async ƒ (length: 0),
-        lchown: async ƒ (length: 0),
-        link: async ƒ (length: 0),
-        lstat: async ƒ (length: 0),
-        mkdir: async ƒ (length: 0),
-        mkdtemp: async ƒ (length: 0),
-        open: async ƒ (length: 0),
-        read: async ƒ (length: 0),
-        write: async ƒ (length: 0),
-        readdir: async ƒ (length: 0),
-        readFile: <ref *72> async ƒ (length: 0),
+        access: async ƒ (length: 0) {},
+        appendFile: async ƒ (length: 0) {},
+        close: async ƒ (length: 0) {},
+        copyFile: async ƒ (length: 0) {},
+        exists: async ƒ (length: 0) {},
+        chown: async ƒ (length: 0) {},
+        chmod: async ƒ (length: 0) {},
+        fchmod: async ƒ (length: 0) {},
+        fchown: async ƒ (length: 0) {},
+        fstat: async ƒ (length: 0) {},
+        fsync: async ƒ (length: 0) {},
+        ftruncate: async ƒ (length: 0) {},
+        futimes: async ƒ (length: 0) {},
+        lchmod: async ƒ (length: 0) {},
+        lchown: async ƒ (length: 0) {},
+        link: async ƒ (length: 0) {},
+        lstat: async ƒ (length: 0) {},
+        mkdir: async ƒ (length: 0) {},
+        mkdtemp: async ƒ (length: 0) {},
+        open: async ƒ (length: 0) {},
+        read: async ƒ (length: 0) {},
+        write: async ƒ (length: 0) {},
+        readdir: async ƒ (length: 0) {},
+        readFile: <ref *72> async ƒ (length: 0) {},
         readfile: [Circular: *72],
-        writeFile: async ƒ (length: 0),
-        readlink: async ƒ (length: 0),
-        realpath: async ƒ (length: 0),
-        rename: async ƒ (length: 0),
-        stat: async ƒ (length: 0),
-        symlink: async ƒ (length: 0),
-        truncate: async ƒ (length: 0),
-        unlink: async ƒ (length: 0),
-        utimes: async ƒ (length: 0),
-        lutimes: async ƒ (length: 0),
-        rm: async ƒ (length: 0),
-        rmdir: async ƒ (length: 0),
+        writeFile: async ƒ (length: 0) {},
+        readlink: async ƒ (length: 0) {},
+        realpath: async ƒ (length: 0) {},
+        rename: async ƒ (length: 0) {},
+        stat: async ƒ (length: 0) {},
+        symlink: async ƒ (length: 0) {},
+        truncate: async ƒ (length: 0) {},
+        unlink: async ƒ (length: 0) {},
+        utimes: async ƒ (length: 0) {},
+        lutimes: async ƒ (length: 0) {},
+        rm: async ƒ (length: 0) {},
+        rmdir: async ƒ (length: 0) {},
         constants: [Circular: *12],
         Symbol(CommonJS): 0
     },
-    read: ƒ read (length: 0),
-    readFile: ƒ readFile (length: 0),
-    readFileSync: ƒ bound readFileSync (length: 2),
-    readSync: ƒ bound readSync (length: 5),
-    readdir: ƒ readdir (length: 0),
-    readdirSync: ƒ bound readdirSync (length: 2),
-    readlink: ƒ readlink (length: 0),
-    readlinkSync: ƒ bound readlinkSync (length: 2),
-    realpath: ƒ realpath (length: 0),
-    realpathSync: ƒ bound realpathSync (length: 2),
-    rename: ƒ rename (length: 0),
-    renameSync: ƒ bound renameSync (length: 2),
-    rm: ƒ rm (length: 0),
-    rmSync: ƒ bound rmSync (length: 2),
-    rmdir: ƒ rmdir (length: 0),
-    rmdirSync: ƒ bound rmdirSync (length: 2),
-    stat: ƒ stat (length: 0),
-    statSync: ƒ bound statSync (length: 1),
-    Stats: ƒ Stats (length: 0),
-    symlink: ƒ symlink (length: 0),
-    symlinkSync: ƒ bound symlinkSync (length: 3),
-    truncate: ƒ truncate (length: 0),
-    truncateSync: ƒ bound truncateSync (length: 2),
-    unlink: ƒ unlink (length: 0),
-    unlinkSync: ƒ bound unlinkSync (length: 1),
-    utimes: ƒ utimes (length: 0),
-    utimesSync: ƒ bound utimesSync (length: 3),
-    write: ƒ write (length: 0),
-    writeFile: ƒ writeFile (length: 0),
-    writeFileSync: ƒ bound writeFileSync (length: 3),
-    writeSync: ƒ bound writeSync (length: 5),
-    WriteStream: ƒ WriteStream (length: 1),
-    ReadStream: ƒ ReadStream (length: 2),
+    read: ƒ read(length: 0) {},
+    readFile: ƒ readFile(length: 0) {},
+    readFileSync: ƒ bound readFileSync(length: 2) {},
+    readSync: ƒ bound readSync(length: 5) {},
+    readdir: ƒ readdir(length: 0) {},
+    readdirSync: ƒ bound readdirSync(length: 2) {},
+    readlink: ƒ readlink(length: 0) {},
+    readlinkSync: ƒ bound readlinkSync(length: 2) {},
+    realpath: <ref *93> ƒ realpath(length: 0) {
+        native: [Circular: *93]
+    },
+    realpathSync: <ref *94> ƒ bound realpathSync(length: 2) {
+        native: [Circular: *94]
+    },
+    rename: ƒ rename(length: 0) {},
+    renameSync: ƒ bound renameSync(length: 2) {},
+    rm: ƒ rm(length: 0) {},
+    rmSync: ƒ bound rmSync(length: 2) {},
+    rmdir: ƒ rmdir(length: 0) {},
+    rmdirSync: ƒ bound rmdirSync(length: 2) {},
+    stat: ƒ stat(length: 0) {},
+    statSync: ƒ bound statSync(length: 1) {},
+    Stats: ƒ Stats(length: 0) {},
+    symlink: ƒ symlink(length: 0) {},
+    symlinkSync: ƒ bound symlinkSync(length: 3) {},
+    truncate: ƒ truncate(length: 0) {},
+    truncateSync: ƒ bound truncateSync(length: 2) {},
+    unlink: ƒ unlink(length: 0) {},
+    unlinkSync: ƒ bound unlinkSync(length: 1) {},
+    utimes: ƒ utimes(length: 0) {},
+    utimesSync: ƒ bound utimesSync(length: 3) {},
+    write: ƒ write(length: 0) {},
+    writeFile: ƒ writeFile(length: 0) {},
+    writeFileSync: ƒ bound writeFileSync(length: 3) {},
+    writeSync: ƒ bound writeSync(length: 5) {},
+    WriteStream: ƒ WriteStream(length: 1) {},
+    ReadStream: ƒ ReadStream(length: 2) {},
     Symbol(CommonJS): 0,
     Symbol(::bunternal::): {
-        ReadStreamClass: [class ReadStream],
-        WriteStreamClass: [class WriteStream]
+        ReadStreamClass: [class ReadStream]{},
+        WriteStreamClass: [class WriteStream]{}
     }
 }
 ```
@@ -3882,10 +4090,10 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    access: <ref *2> async ƒ access (length: 1),
-    appendFile: <ref *3> async ƒ appendFile (length: 3),
-    chmod: <ref *4> async ƒ chmod (length: 2),
-    chown: <ref *5> async ƒ chown (length: 3),
+    access: <ref *2> async ƒ access(length: 1) {},
+    appendFile: <ref *3> async ƒ appendFile(length: 3) {},
+    chmod: <ref *4> async ƒ chmod(length: 2) {},
+    chown: <ref *5> async ƒ chown(length: 3) {},
     constants: <ref *6> [Object: null prototype] {
         UV_FS_SYMLINK_DIR: 1,
         UV_FS_SYMLINK_JUNCTION: 2,
@@ -3944,39 +4152,39 @@ Cluster {
         UV_FS_COPYFILE_FICLONE_FORCE: 4,
         COPYFILE_FICLONE_FORCE: 4
     },
-    copyFile: <ref *7> async ƒ copyFile (length: 3),
-    cp: <ref *8> async ƒ cp (length: 3),
+    copyFile: <ref *7> async ƒ copyFile(length: 3) {},
+    cp: <ref *8> async ƒ cp(length: 3) {},
     default: {
         access: [Circular: *2],
         copyFile: [Circular: *7],
         cp: [Circular: *8],
-        open: <ref *10> async ƒ open (length: 3),
-        opendir: <ref *11> ƒ opendir (length: 3),
-        rename: <ref *12> async ƒ rename (length: 2),
-        truncate: <ref *13> async ƒ truncate (length: 1),
-        rm: <ref *14> async ƒ rm (length: 2),
-        rmdir: <ref *15> async ƒ rmdir (length: 2),
-        mkdir: <ref *16> async ƒ mkdir (length: 2),
-        readdir: <ref *17> async ƒ readdir (length: 2),
-        readlink: <ref *18> async ƒ readlink (length: 2),
-        symlink: <ref *19> async ƒ symlink (length: 3),
-        lstat: <ref *20> async ƒ lstat (length: 1),
-        stat: <ref *21> async ƒ stat (length: 1),
-        statfs: <ref *22> async ƒ statfs (length: 1),
-        link: <ref *23> async ƒ link (length: 2),
-        unlink: <ref *24> async ƒ unlink (length: 1),
+        open: <ref *10> async ƒ open(length: 3) {},
+        opendir: <ref *11> ƒ opendir(length: 3) {},
+        rename: <ref *12> async ƒ rename(length: 2) {},
+        truncate: <ref *13> async ƒ truncate(length: 1) {},
+        rm: <ref *14> async ƒ rm(length: 2) {},
+        rmdir: <ref *15> async ƒ rmdir(length: 2) {},
+        mkdir: <ref *16> async ƒ mkdir(length: 2) {},
+        readdir: <ref *17> async ƒ readdir(length: 2) {},
+        readlink: <ref *18> async ƒ readlink(length: 2) {},
+        symlink: <ref *19> async ƒ symlink(length: 3) {},
+        lstat: <ref *20> async ƒ lstat(length: 1) {},
+        stat: <ref *21> async ƒ stat(length: 1) {},
+        statfs: <ref *22> async ƒ statfs(length: 1) {},
+        link: <ref *23> async ƒ link(length: 2) {},
+        unlink: <ref *24> async ƒ unlink(length: 1) {},
         chmod: [Circular: *4],
-        lchmod: <ref *25> async ƒ lchmod (length: 2),
-        lchown: <ref *26> async ƒ lchown (length: 3),
+        lchmod: <ref *25> async ƒ lchmod(length: 2) {},
+        lchown: <ref *26> async ƒ lchown(length: 3) {},
         chown: [Circular: *5],
-        utimes: <ref *27> async ƒ utimes (length: 3),
-        lutimes: <ref *28> async ƒ lutimes (length: 3),
-        realpath: <ref *29> async ƒ realpath (length: 2),
-        mkdtemp: <ref *30> async ƒ mkdtemp (length: 2),
-        writeFile: <ref *31> async ƒ writeFile (length: 3),
+        utimes: <ref *27> async ƒ utimes(length: 3) {},
+        lutimes: <ref *28> async ƒ lutimes(length: 3) {},
+        realpath: <ref *29> async ƒ realpath(length: 2) {},
+        mkdtemp: <ref *30> async ƒ mkdtemp(length: 2) {},
+        writeFile: <ref *31> async ƒ writeFile(length: 3) {},
         appendFile: [Circular: *3],
-        readFile: <ref *32> async ƒ readFile (length: 2),
-        watch: <ref *33> async ƒ watch (length: 1),
+        readFile: <ref *32> async ƒ readFile(length: 2) {},
+        watch: <ref *33> async ƒ watch(length: 1) {},
         constants: [Circular: *6]
     },
     lchmod: [Circular: *25],
@@ -4002,8 +4210,7 @@ Cluster {
     unlink: [Circular: *24],
     utimes: [Circular: *27],
     watch: [Circular: *33],
-    writeFile: [Circular: *31],
-    Symbol(Symbol.toStringTag): "Module"
+    writeFile: [Circular: *31]
 }
 ```
 
@@ -4011,43 +4218,43 @@ Cluster {
 
 ```js
 {
-    access: async ƒ (length: 0),
-    appendFile: async ƒ (length: 0),
-    close: async ƒ (length: 0),
-    copyFile: async ƒ (length: 0),
-    exists: async ƒ (length: 0),
-    chown: async ƒ (length: 0),
-    chmod: async ƒ (length: 0),
-    fchmod: async ƒ (length: 0),
-    fchown: async ƒ (length: 0),
-    fstat: async ƒ (length: 0),
-    fsync: async ƒ (length: 0),
-    ftruncate: async ƒ (length: 0),
-    futimes: async ƒ (length: 0),
-    lchmod: async ƒ (length: 0),
-    lchown: async ƒ (length: 0),
-    link: async ƒ (length: 0),
-    lstat: async ƒ (length: 0),
-    mkdir: async ƒ (length: 0),
-    mkdtemp: async ƒ (length: 0),
-    open: async ƒ (length: 0),
-    read: async ƒ (length: 0),
-    write: async ƒ (length: 0),
-    readdir: async ƒ (length: 0),
-    readFile: <ref *25> async ƒ (length: 0),
+    access: async ƒ (length: 0) {},
+    appendFile: async ƒ (length: 0) {},
+    close: async ƒ (length: 0) {},
+    copyFile: async ƒ (length: 0) {},
+    exists: async ƒ (length: 0) {},
+    chown: async ƒ (length: 0) {},
+    chmod: async ƒ (length: 0) {},
+    fchmod: async ƒ (length: 0) {},
+    fchown: async ƒ (length: 0) {},
+    fstat: async ƒ (length: 0) {},
+    fsync: async ƒ (length: 0) {},
+    ftruncate: async ƒ (length: 0) {},
+    futimes: async ƒ (length: 0) {},
+    lchmod: async ƒ (length: 0) {},
+    lchown: async ƒ (length: 0) {},
+    link: async ƒ (length: 0) {},
+    lstat: async ƒ (length: 0) {},
+    mkdir: async ƒ (length: 0) {},
+    mkdtemp: async ƒ (length: 0) {},
+    open: async ƒ (length: 0) {},
+    read: async ƒ (length: 0) {},
+    write: async ƒ (length: 0) {},
+    readdir: async ƒ (length: 0) {},
+    readFile: <ref *25> async ƒ (length: 0) {},
     readfile: [Circular: *25],
-    writeFile: async ƒ (length: 0),
-    readlink: async ƒ (length: 0),
-    realpath: async ƒ (length: 0),
-    rename: async ƒ (length: 0),
-    stat: async ƒ (length: 0),
-    symlink: async ƒ (length: 0),
-    truncate: async ƒ (length: 0),
-    unlink: async ƒ (length: 0),
-    utimes: async ƒ (length: 0),
-    lutimes: async ƒ (length: 0),
-    rm: async ƒ (length: 0),
-    rmdir: async ƒ (length: 0),
+    writeFile: async ƒ (length: 0) {},
+    readlink: async ƒ (length: 0) {},
+    realpath: async ƒ (length: 0) {},
+    rename: async ƒ (length: 0) {},
+    stat: async ƒ (length: 0) {},
+    symlink: async ƒ (length: 0) {},
+    truncate: async ƒ (length: 0) {},
+    unlink: async ƒ (length: 0) {},
+    utimes: async ƒ (length: 0) {},
+    lutimes: async ƒ (length: 0) {},
+    rm: async ƒ (length: 0) {},
+    rmdir: async ƒ (length: 0) {},
     constants: {
         F_OK: 0,
         R_OK: 4,
@@ -4106,9 +4313,11 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Agent: <ref *2> ƒ Agent (length: 1),
-    ClientRequest: <ref *3> ƒ ClientRequest (length: 3),
-    IncomingMessage: <ref *4> ƒ IncomingMessage (length: 1),
+    Agent: <ref *2> ƒ Agent(length: 1) {
+        defaultMaxSockets: Infinity
+    },
+    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 1) {},
     METHODS: <ref *5> [
         "ACL",
         "BIND",
@@ -4145,7 +4354,7 @@ Cluster {
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *6> ƒ OutgoingMessage (length: 0),
+    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 0) {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -4211,10 +4420,10 @@ Cluster {
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *8> ƒ Server (length: 2),
-    ServerResponse: <ref *9> ƒ ServerResponse (length: 1),
-    _connectionListener: <ref *10> ƒ connectionListener (length: 1),
-    createServer: <ref *11> ƒ createServer (length: 2),
+    Server: <ref *8> ƒ Server(length: 2) {},
+    ServerResponse: <ref *9> ƒ ServerResponse(length: 1) {},
+    _connectionListener: <ref *10> ƒ connectionListener(length: 1) {},
+    createServer: <ref *11> ƒ createServer(length: 2) {},
     default: {
         _connectionListener: [Circular: *10],
         METHODS: [Circular: *5],
@@ -4226,16 +4435,16 @@ Cluster {
         Server: [Circular: *8],
         ServerResponse: [Circular: *9],
         createServer: [Circular: *11],
-        validateHeaderName: <ref *13> ƒ __node_internal_ (length: 2),
-        validateHeaderValue: <ref *14> ƒ __node_internal_ (length: 2),
-        get: <ref *15> ƒ get (length: 3),
-        request: <ref *16> ƒ request (length: 3),
-        setMaxIdleHTTPParsers: <ref *17> ƒ setMaxIdleHTTPParsers (length: 1),
-        get/set maxHeaderSize: 16384,
-        get/set globalAgent: <ref *18> Agent {
+        validateHeaderName: <ref *13> ƒ __node_internal_(length: 2) {},
+        validateHeaderValue: <ref *14> ƒ __node_internal_(length: 2) {},
+        get: <ref *15> ƒ get(length: 3) {},
+        request: <ref *16> ƒ request(length: 3) {},
+        setMaxIdleHTTPParsers: <ref *17> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        [get/set] maxHeaderSize: 16384,
+        [get/set] globalAgent: <ref *18> Agent {
             _events: [Object: null prototype] {
-                free: ƒ (length: 2),
-                newListener: ƒ maybeEnableKeylog (length: 1)
+                free: ƒ (length: 2) {},
+                newListener: ƒ maybeEnableKeylog(length: 1) {}
             },
             _eventsCount: 2,
             _maxListeners: undefined,
@@ -4264,8 +4473,7 @@ Cluster {
     request: [Circular: *16],
     setMaxIdleHTTPParsers: [Circular: *17],
     validateHeaderName: [Circular: *13],
-    validateHeaderValue: [Circular: *14],
-    Symbol(Symbol.toStringTag): "Module"
+    validateHeaderValue: [Circular: *14]
 }
 ```
 
@@ -4273,8 +4481,8 @@ Cluster {
 
 ```js
 {
-    Agent: [class Agent],
-    Server: [class Server],
+    Agent: [class Agent]{},
+    Server: [class Server]{},
     METHODS: [
         "ACL",
         "BIND",
@@ -4376,14 +4584,14 @@ Cluster {
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer (length: 2),
-    ServerResponse: [class ServerResponse],
-    IncomingMessage: [class IncomingMessage],
-    request: ƒ request (length: 3),
-    get: ƒ get (length: 3),
+    createServer: ƒ createServer(length: 2) {},
+    ServerResponse: [class ServerResponse]{},
+    IncomingMessage: [class IncomingMessage]{},
+    request: ƒ request(length: 3) {},
+    get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    get/set globalAgent: Agent {},
+    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+    [get/set] globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -4396,23 +4604,10 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Http2ServerRequest: <ref *2> [class Http2ServerRequest],
-    Http2ServerResponse: <ref *3> [class Http2ServerResponse],
-    connect: <ref *4> ƒ connect (length: 3),
+    Http2ServerRequest: <ref *2> [class Http2ServerRequest]{},
+    Http2ServerResponse: <ref *3> [class Http2ServerResponse]{},
+    connect: <ref *4> ƒ connect(length: 3) {},
     constants: <ref *5> {
-        NGHTTP2_HCAT_REQUEST: 0,
-        NGHTTP2_HCAT_RESPONSE: 1,
-        NGHTTP2_HCAT_PUSH_RESPONSE: 2,
-        NGHTTP2_HCAT_HEADERS: 3,
-        NGHTTP2_NV_FLAG_NONE: 0,
-        NGHTTP2_NV_FLAG_NO_INDEX: 1,
-        NGHTTP2_ERR_DEFERRED: -508,
-        NGHTTP2_ERR_STREAM_ID_NOT_AVAILABLE: -509,
-        NGHTTP2_ERR_INVALID_ARGUMENT: -501,
-        NGHTTP2_ERR_STREAM_CLOSED: -510,
-        NGHTTP2_ERR_NOMEM: -901,
-        STREAM_OPTION_EMPTY_PAYLOAD: 1,
-        STREAM_OPTION_GET_TRAILERS: 2,
         NGHTTP2_ERR_FRAME_SIZE_ERROR: -522,
         NGHTTP2_SESSION_SERVER: 0,
         NGHTTP2_SESSION_CLIENT: 1,
@@ -4654,16 +4849,16 @@ Cluster {
         HTTP_STATUS_NOT_EXTENDED: 510,
         HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED: 511
     },
-    createSecureServer: <ref *6> ƒ createSecureServer (length: 2),
-    createServer: <ref *7> ƒ createServer (length: 2),
+    createSecureServer: <ref *6> ƒ createSecureServer(length: 2) {},
+    createServer: <ref *7> ƒ createServer(length: 2) {},
     default: {
         connect: [Circular: *4],
         constants: [Circular: *5],
         createServer: [Circular: *7],
         createSecureServer: [Circular: *6],
-        getDefaultSettings: <ref *9> ƒ getDefaultSettings (length: 0),
-        getPackedSettings: <ref *10> ƒ getPackedSettings (length: 1),
-        getUnpackedSettings: <ref *11> ƒ getUnpackedSettings (length: 1),
+        getDefaultSettings: <ref *9> ƒ getDefaultSettings(length: 0) {},
+        getPackedSettings: <ref *10> ƒ getPackedSettings(length: 1) {},
+        getUnpackedSettings: <ref *11> ƒ getUnpackedSettings(length: 1) {},
         sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders),
         Http2ServerRequest: [Circular: *2],
         Http2ServerResponse: [Circular: *3]
@@ -4671,8 +4866,7 @@ Cluster {
     getDefaultSettings: [Circular: *9],
     getPackedSettings: [Circular: *10],
     getUnpackedSettings: [Circular: *11],
-    sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders),
-    Symbol(Symbol.toStringTag): "Module"
+    sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders)
 }
 ```
 
@@ -4922,15 +5116,15 @@ Cluster {
         HTTP_STATUS_NOT_EXTENDED: 510,
         HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED: 511
     },
-    createServer: ƒ ::bunternal:: (length: 0),
-    createSecureServer: ƒ ::bunternal:: (length: 0),
-    getDefaultSettings: ƒ ::bunternal:: (length: 0),
-    getPackedSettings: ƒ ::bunternal:: (length: 0),
-    getUnpackedSettings: ƒ ::bunternal:: (length: 0),
+    createServer: ƒ ::bunternal::(length: 0) {},
+    createSecureServer: ƒ ::bunternal::(length: 0) {},
+    getDefaultSettings: ƒ ::bunternal::(length: 0) {},
+    getPackedSettings: ƒ ::bunternal::(length: 0) {},
+    getUnpackedSettings: ƒ ::bunternal::(length: 0) {},
     sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders),
-    Http2ServerRequest: ƒ ::bunternal:: (length: 0),
-    Http2ServerResponse: ƒ ::bunternal:: (length: 0),
-    connect: ƒ ::bunternal:: (length: 0),
+    Http2ServerRequest: ƒ ::bunternal::(length: 0) {},
+    Http2ServerResponse: ƒ ::bunternal::(length: 0) {},
+    connect: ƒ ::bunternal::(length: 0) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -4943,15 +5137,15 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Agent: <ref *2> ƒ Agent (length: 1),
-    Server: <ref *3> ƒ Server (length: 2),
-    createServer: <ref *4> ƒ createServer (length: 2),
+    Agent: <ref *2> ƒ Agent(length: 1) {},
+    Server: <ref *3> ƒ Server(length: 2) {},
+    createServer: <ref *4> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
         globalAgent: <ref *6> Agent {
             _events: [Object: null prototype] {
-                free: ƒ (length: 2),
-                newListener: ƒ maybeEnableKeylog (length: 1)
+                free: ƒ (length: 2) {},
+                newListener: ƒ maybeEnableKeylog(length: 1) {}
             },
             _eventsCount: 2,
             _maxListeners: undefined,
@@ -4980,13 +5174,12 @@ Cluster {
         },
         Server: [Circular: *3],
         createServer: [Circular: *4],
-        get: <ref *17> ƒ get (length: 3),
-        request: <ref *18> ƒ request (length: 0)
+        get: <ref *17> ƒ get(length: 3) {},
+        request: <ref *18> ƒ request(length: 0) {}
     },
     get: [Circular: *17],
     globalAgent: [Circular: *6],
-    request: [Circular: *18],
-    Symbol(Symbol.toStringTag): "Module"
+    request: [Circular: *18]
 }
 ```
 
@@ -4994,8 +5187,8 @@ Cluster {
 
 ```js
 {
-    Agent: [class Agent],
-    Server: [class Server],
+    Agent: [class Agent]{},
+    Server: [class Server]{},
     METHODS: [
         "ACL",
         "BIND",
@@ -5097,14 +5290,14 @@ Cluster {
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer (length: 2),
-    ServerResponse: [class ServerResponse],
-    IncomingMessage: [class IncomingMessage],
-    request: ƒ request (length: 3),
-    get: ƒ get (length: 3),
+    createServer: ƒ createServer(length: 2) {},
+    ServerResponse: [class ServerResponse]{},
+    IncomingMessage: [class IncomingMessage]{},
+    request: ƒ request(length: 3) {},
+    get: ƒ get(length: 3) {},
     maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers (length: 1),
-    get/set globalAgent: Agent {},
+    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+    [get/set] globalAgent: Agent {},
     Symbol(CommonJS): 0
 }
 ```
@@ -5117,46 +5310,44 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Session: <ref *2> [class Session],
-    close: <ref *3> ƒ _debugEnd (length: 0),
+    Session: <ref *2> [class Session]{},
+    close: <ref *3> ƒ _debugEnd(length: 0) {},
     console: <ref *4> {
-        debug: ƒ debug (length: 0),
-        error: ƒ error (length: 0),
-        info: ƒ info (length: 0),
-        log: ƒ log (length: 0),
-        warn: ƒ warn (length: 0),
-        dir: ƒ dir (length: 0),
-        dirxml: ƒ dirxml (length: 0),
-        table: ƒ table (length: 0),
-        trace: ƒ trace (length: 0),
-        group: ƒ group (length: 0),
-        groupCollapsed: ƒ groupCollapsed (length: 0),
-        groupEnd: ƒ groupEnd (length: 0),
-        clear: ƒ clear (length: 0),
-        count: ƒ count (length: 0),
-        countReset: ƒ countReset (length: 0),
-        assert: ƒ assert (length: 0),
-        profile: ƒ profile (length: 0),
-        profileEnd: ƒ profileEnd (length: 0),
-        time: ƒ time (length: 0),
-        timeLog: ƒ timeLog (length: 0),
-        timeEnd: ƒ timeEnd (length: 0),
-        timeStamp: ƒ timeStamp (length: 0),
-        context: ƒ context (length: 1),
-        Symbol(Symbol.toStringTag): "Object"
+        debug: ƒ debug(length: 0) {},
+        error: ƒ error(length: 0) {},
+        info: ƒ info(length: 0) {},
+        log: ƒ log(length: 0) {},
+        warn: ƒ warn(length: 0) {},
+        dir: ƒ dir(length: 0) {},
+        dirxml: ƒ dirxml(length: 0) {},
+        table: ƒ table(length: 0) {},
+        trace: ƒ trace(length: 0) {},
+        group: ƒ group(length: 0) {},
+        groupCollapsed: ƒ groupCollapsed(length: 0) {},
+        groupEnd: ƒ groupEnd(length: 0) {},
+        clear: ƒ clear(length: 0) {},
+        count: ƒ count(length: 0) {},
+        countReset: ƒ countReset(length: 0) {},
+        assert: ƒ assert(length: 0) {},
+        profile: ƒ profile(length: 0) {},
+        profileEnd: ƒ profileEnd(length: 0) {},
+        time: ƒ time(length: 0) {},
+        timeLog: ƒ timeLog(length: 0) {},
+        timeEnd: ƒ timeEnd(length: 0) {},
+        timeStamp: ƒ timeStamp(length: 0) {},
+        context: ƒ context(length: 1) {}
     },
     default: {
-        open: <ref *29> ƒ inspectorOpen (length: 3),
+        open: <ref *29> ƒ inspectorOpen(length: 3) {},
         close: [Circular: *3],
-        url: <ref *30> ƒ url (length: 0),
-        waitForDebugger: <ref *31> ƒ inspectorWaitForDebugger (length: 0),
+        url: <ref *30> ƒ url(length: 0) {},
+        waitForDebugger: <ref *31> ƒ inspectorWaitForDebugger(length: 0) {},
         console: [Circular: *4],
         Session: [Circular: *2]
     },
     open: [Circular: *29],
     url: [Circular: *30],
-    waitForDebugger: [Circular: *31],
-    Symbol(Symbol.toStringTag): "Module"
+    waitForDebugger: [Circular: *31]
 }
 ```
 
@@ -5165,33 +5356,33 @@ Cluster {
 ```js
 {
     console: {
-        debug: <ref *3> ƒ debug (length: 0),
-        error: <ref *4> ƒ error (length: 0),
-        log: <ref *5> ƒ log (length: 0),
-        info: <ref *6> ƒ info (length: 0),
-        warn: <ref *7> ƒ warn (length: 0),
-        clear: <ref *8> ƒ clear (length: 0),
-        dir: <ref *9> ƒ dir (length: 0),
-        dirxml: <ref *10> ƒ dirxml (length: 0),
-        table: <ref *11> ƒ table (length: 0),
-        trace: <ref *12> ƒ trace (length: 0),
-        assert: <ref *13> ƒ assert (length: 0),
-        count: <ref *14> ƒ count (length: 0),
-        countReset: <ref *15> ƒ countReset (length: 0),
-        profile: <ref *16> ƒ profile (length: 0),
-        profileEnd: <ref *17> ƒ profileEnd (length: 0),
-        time: <ref *18> ƒ time (length: 0),
-        timeLog: <ref *19> ƒ timeLog (length: 0),
-        timeEnd: <ref *20> ƒ timeEnd (length: 0),
-        timeStamp: <ref *21> ƒ timeStamp (length: 0),
-        takeHeapSnapshot: <ref *22> ƒ takeHeapSnapshot (length: 0),
-        group: <ref *23> ƒ group (length: 0),
-        groupCollapsed: <ref *24> ƒ groupCollapsed (length: 0),
-        groupEnd: <ref *25> ƒ groupEnd (length: 0),
-        record: <ref *26> ƒ record (length: 0),
-        recordEnd: <ref *27> ƒ recordEnd (length: 0),
-        screenshot: <ref *28> ƒ screenshot (length: 0),
-        write: <ref *29> ƒ write (length: 1),
+        debug: <ref *3> ƒ debug(length: 0) {},
+        error: <ref *4> ƒ error(length: 0) {},
+        log: <ref *5> ƒ log(length: 0) {},
+        info: <ref *6> ƒ info(length: 0) {},
+        warn: <ref *7> ƒ warn(length: 0) {},
+        clear: <ref *8> ƒ clear(length: 0) {},
+        dir: <ref *9> ƒ dir(length: 0) {},
+        dirxml: <ref *10> ƒ dirxml(length: 0) {},
+        table: <ref *11> ƒ table(length: 0) {},
+        trace: <ref *12> ƒ trace(length: 0) {},
+        assert: <ref *13> ƒ assert(length: 0) {},
+        count: <ref *14> ƒ count(length: 0) {},
+        countReset: <ref *15> ƒ countReset(length: 0) {},
+        profile: <ref *16> ƒ profile(length: 0) {},
+        profileEnd: <ref *17> ƒ profileEnd(length: 0) {},
+        time: <ref *18> ƒ time(length: 0) {},
+        timeLog: <ref *19> ƒ timeLog(length: 0) {},
+        timeEnd: <ref *20> ƒ timeEnd(length: 0) {},
+        timeStamp: <ref *21> ƒ timeStamp(length: 0) {},
+        takeHeapSnapshot: <ref *22> ƒ takeHeapSnapshot(length: 0) {},
+        group: <ref *23> ƒ group(length: 0) {},
+        groupCollapsed: <ref *24> ƒ groupCollapsed(length: 0) {},
+        groupEnd: <ref *25> ƒ groupEnd(length: 0) {},
+        record: <ref *26> ƒ record(length: 0) {},
+        recordEnd: <ref *27> ƒ recordEnd(length: 0) {},
+        screenshot: <ref *28> ƒ screenshot(length: 0) {},
+        write: <ref *29> ƒ write(length: 1) {},
         context: {
             console: {
                 debug: [Circular: *3],
@@ -5221,17 +5412,16 @@ Cluster {
                 recordEnd: [Circular: *27],
                 screenshot: [Circular: *28],
                 write: [Circular: *29],
-                Symbol(Symbol.toStringTag): "console",
-                Symbol(Symbol.asyncIterator): <ref *32> ƒ [Symbol.asyncIterator] (length: 0)
+                Symbol(Symbol.asyncIterator): <ref *32> ƒ [Symbol.asyncIterator](length: 0) {}
             }
         },
         Symbol(Symbol.asyncIterator): [Circular: *32]
     },
-    open: ƒ ::bunternal:: (length: 0),
-    close: ƒ ::bunternal:: (length: 0),
-    url: ƒ ::bunternal:: (length: 0),
-    waitForDebugger: ƒ ::bunternal:: (length: 0),
-    Session: [class ::bunternal::],
+    open: ƒ ::bunternal::(length: 0) {},
+    close: ƒ ::bunternal::(length: 0) {},
+    url: ƒ ::bunternal::(length: 0) {},
+    waitForDebugger: ƒ ::bunternal::(length: 0) {},
+    Session: [class ::bunternal::]{},
     Symbol(CommonJS): 0
 }
 ```
@@ -5244,115 +5434,135 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Module: <ref *2> ƒ Module (length: 0),
-    SourceMap: [class SourceMap],
-    _cache: [Object: null prototype] {},
-    _debug: ƒ deprecated (length: 0),
-    _extensions: [Object: null prototype] {
-        .js: ƒ (length: 2),
-        .json: ƒ (length: 2),
-        .node: ƒ (length: 2)
+    Module: <ref *2> ƒ Module(length: 0) {
+        builtinModules: <ref *3> [
+            "_http_agent",
+            "_http_client",
+            "_http_common",
+            "_http_incoming",
+            "_http_outgoing",
+            "_http_server",
+            "_stream_duplex",
+            "_stream_passthrough",
+            "_stream_readable",
+            "_stream_transform",
+            "_stream_wrap",
+            "_stream_writable",
+            "_tls_common",
+            "_tls_wrap",
+            "assert",
+            "assert/strict",
+            "async_hooks",
+            "buffer",
+            "child_process",
+            "cluster",
+            "console",
+            "constants",
+            "crypto",
+            "dgram",
+            "diagnostics_channel",
+            "dns",
+            "dns/promises",
+            "domain",
+            "events",
+            "fs",
+            "fs/promises",
+            "http",
+            "http2",
+            "https",
+            "inspector",
+            "module",
+            "net",
+            "os",
+            "path",
+            "path/posix",
+            "path/win32",
+            "perf_hooks",
+            "process",
+            "punycode",
+            "querystring",
+            "readline",
+            "readline/promises",
+            "repl",
+            "stream",
+            "stream/consumers",
+            "stream/promises",
+            "stream/web",
+            "string_decoder",
+            "sys",
+            "timers",
+            "timers/promises",
+            "tls",
+            "trace_events",
+            "tty",
+            "url",
+            "util",
+            "util/types",
+            "v8",
+            "vm",
+            "worker_threads",
+            "zlib"
+        ],
+        _cache: <ref *4> [Object: null prototype] {},
+        _pathCache: <ref *5> [Object: null prototype] {
+            /tmp/fs-fixture-1681286724511-1/module.mjs: "/tmp/fs-fixture-1681286724511-1/module.mjs"
+        },
+        _extensions: <ref *6> [Object: null prototype] {
+            .js: ƒ (length: 2) {},
+            .json: ƒ (length: 2) {},
+            .node: ƒ (length: 2) {}
+        },
+        globalPaths: <ref *10> [
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/bin/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/node_modules",
+            "/home/runner/setup-pnpm/node_modules",
+            "/home/runner/node_modules",
+            "/home/node_modules",
+            "/node_modules",
+            "/home/runner/setup-pnpm/node_modules/pnpm/bin/node_modules",
+            "/home/runner/setup-pnpm/node_modules/pnpm/node_modules",
+            "/home/runner/.node_modules",
+            "/home/runner/.node_libraries",
+            "/opt/hostedtoolcache/node/18.15.0/x64/lib/node"
+        ],
+        _debug: <ref *11> ƒ deprecated(length: 0) {},
+        _findPath: <ref *12> ƒ (length: 3) {},
+        _nodeModulePaths: <ref *13> ƒ (length: 1) {},
+        _resolveLookupPaths: <ref *14> ƒ (length: 2) {},
+        _load: <ref *15> ƒ (length: 3) {},
+        _resolveFilename: <ref *16> ƒ (length: 4) {},
+        createRequire: <ref *17> ƒ createRequire(length: 1) {},
+        _initPaths: <ref *18> ƒ (length: 0) {},
+        _preloadModules: <ref *19> ƒ (length: 1) {},
+        syncBuiltinESMExports: <ref *20> ƒ syncBuiltinESMExports(length: 0) {},
+        isBuiltin: <ref *21> ƒ isBuiltin(length: 1) {},
+        Module: [Circular: *2],
+        runMain: <ref *22> ƒ executeUserEntryPoint(length: 0) {},
+        findSourceMap: <ref *23> ƒ findSourceMap(length: 1) {},
+        SourceMap: <ref *24> [class SourceMap]{}
     },
-    _findPath: ƒ (length: 3),
-    _initPaths: ƒ (length: 0),
-    _load: ƒ (length: 3),
-    _nodeModulePaths: ƒ (length: 1),
-    _pathCache: [Object: null prototype] {
-        /tmp/fs-fixture-1681260831389-1/module.mjs: "/tmp/fs-fixture-1681260831389-1/module.mjs"
-    },
-    _preloadModules: ƒ (length: 1),
-    _resolveFilename: ƒ (length: 4),
-    _resolveLookupPaths: ƒ (length: 2),
-    builtinModules: [
-        "_http_agent",
-        "_http_client",
-        "_http_common",
-        "_http_incoming",
-        "_http_outgoing",
-        "_http_server",
-        "_stream_duplex",
-        "_stream_passthrough",
-        "_stream_readable",
-        "_stream_transform",
-        "_stream_wrap",
-        "_stream_writable",
-        "_tls_common",
-        "_tls_wrap",
-        "assert",
-        "assert/strict",
-        "async_hooks",
-        "buffer",
-        "child_process",
-        "cluster",
-        "console",
-        "constants",
-        "crypto",
-        "dgram",
-        "diagnostics_channel",
-        "dns",
-        "dns/promises",
-        "domain",
-        "events",
-        "fs",
-        "fs/promises",
-        "http",
-        "http2",
-        "https",
-        "inspector",
-        "module",
-        "net",
-        "os",
-        "path",
-        "path/posix",
-        "path/win32",
-        "perf_hooks",
-        "process",
-        "punycode",
-        "querystring",
-        "readline",
-        "readline/promises",
-        "repl",
-        "stream",
-        "stream/consumers",
-        "stream/promises",
-        "stream/web",
-        "string_decoder",
-        "sys",
-        "timers",
-        "timers/promises",
-        "tls",
-        "trace_events",
-        "tty",
-        "url",
-        "util",
-        "util/types",
-        "v8",
-        "vm",
-        "worker_threads",
-        "zlib"
-    ],
-    createRequire: ƒ createRequire (length: 1),
+    SourceMap: [Circular: *24],
+    _cache: [Circular: *4],
+    _debug: [Circular: *11],
+    _extensions: [Circular: *6],
+    _findPath: [Circular: *12],
+    _initPaths: [Circular: *18],
+    _load: [Circular: *15],
+    _nodeModulePaths: [Circular: *13],
+    _pathCache: [Circular: *5],
+    _preloadModules: [Circular: *19],
+    _resolveFilename: [Circular: *16],
+    _resolveLookupPaths: [Circular: *14],
+    builtinModules: [Circular: *3],
+    createRequire: [Circular: *17],
     default: [Circular: *2],
-    findSourceMap: ƒ findSourceMap (length: 1),
-    globalPaths: [
-        "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/bin/node_modules",
-        "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/node_modules",
-        "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules",
-        "/home/runner/setup-pnpm/node_modules/.pnpm/node_modules",
-        "/home/runner/setup-pnpm/node_modules",
-        "/home/runner/node_modules",
-        "/home/node_modules",
-        "/node_modules",
-        "/home/runner/setup-pnpm/node_modules/pnpm/bin/node_modules",
-        "/home/runner/setup-pnpm/node_modules/pnpm/node_modules",
-        "/home/runner/.node_modules",
-        "/home/runner/.node_libraries",
-        "/opt/hostedtoolcache/node/18.15.0/x64/lib/node"
-    ],
-    isBuiltin: ƒ isBuiltin (length: 1),
-    runMain: ƒ executeUserEntryPoint (length: 0),
-    syncBuiltinESMExports: ƒ syncBuiltinESMExports (length: 0),
-    Symbol(Symbol.toStringTag): "Module"
+    findSourceMap: [Circular: *23],
+    globalPaths: [Circular: *10],
+    isBuiltin: [Circular: *21],
+    runMain: [Circular: *22],
+    syncBuiltinESMExports: [Circular: *20]
 }
 ```
 
@@ -5360,13 +5570,13 @@ Cluster {
 
 ```js
 {
-    SourceMap: ƒ SourceMap (length: 1),
+    SourceMap: ƒ SourceMap(length: 1) {},
     _cache: {},
-    _nodeModulePaths: ƒ _nodeModulePaths (length: 0),
-    _resolveFileName: ƒ _resolveFileName (length: 3),
+    _nodeModulePaths: ƒ _nodeModulePaths(length: 0) {},
+    _resolveFileName: ƒ _resolveFileName(length: 3) {},
     builtinModules: [],
-    createRequire: ƒ createRequire (length: 1),
-    findSourceMap: ƒ findSourceMap (length: 1),
+    createRequire: ƒ createRequire(length: 1) {},
+    findSourceMap: ƒ findSourceMap(length: 1) {},
     globalPaths: [
         "node:assert",
         "node:buffer",
@@ -5376,9 +5586,8 @@ Cluster {
         "bun:ffi",
         "bun:sqlite"
     ],
-    paths: ƒ paths (length: 1),
-    syncBuiltinExports: ƒ syncBuiltinExports (length: 0),
-    Symbol(Symbol.toStringTag): "Module"
+    paths: ƒ paths(length: 1) {},
+    syncBuiltinExports: ƒ syncBuiltinExports(length: 0) {}
 }
 ```
 
@@ -5390,37 +5599,36 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    BlockList: <ref *2> [class BlockList],
-    Server: <ref *3> ƒ Server (length: 2),
-    Socket: <ref *4> ƒ Socket (length: 1),
-    SocketAddress: <ref *5> [class SocketAddress],
+    BlockList: <ref *2> [class BlockList]{},
+    Server: <ref *3> ƒ Server(length: 2) {},
+    Socket: <ref *4> ƒ Socket(length: 1) {},
+    SocketAddress: <ref *5> [class SocketAddress]{},
     Stream: [Circular: *4],
-    _createServerHandle: <ref *6> ƒ createServerHandle (length: 5),
-    _normalizeArgs: <ref *7> ƒ normalizeArgs (length: 1),
-    _setSimultaneousAccepts: <ref *8> ƒ _setSimultaneousAccepts (length: 0),
-    connect: <ref *9> ƒ connect (length: 0),
+    _createServerHandle: <ref *6> ƒ createServerHandle(length: 5) {},
+    _normalizeArgs: <ref *7> ƒ normalizeArgs(length: 1) {},
+    _setSimultaneousAccepts: <ref *8> ƒ _setSimultaneousAccepts(length: 0) {},
+    connect: <ref *9> ƒ connect(length: 0) {},
     createConnection: [Circular: *9],
-    createServer: <ref *10> ƒ createServer (length: 2),
+    createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
         _createServerHandle: [Circular: *6],
         _normalizeArgs: [Circular: *7],
         _setSimultaneousAccepts: [Circular: *8],
-        get/set BlockList: [Circular: *2],
-        get/set SocketAddress: [Circular: *5],
+        [get/set] BlockList: [Circular: *2],
+        [get/set] SocketAddress: [Circular: *5],
         connect: [Circular: *9],
         createConnection: [Circular: *9],
         createServer: [Circular: *10],
-        isIP: <ref *12> ƒ isIP (length: 1),
-        isIPv4: <ref *13> ƒ isIPv4 (length: 1),
-        isIPv6: <ref *14> ƒ isIPv6 (length: 1),
+        isIP: <ref *12> ƒ isIP(length: 1) {},
+        isIPv4: <ref *13> ƒ isIPv4(length: 1) {},
+        isIPv6: <ref *14> ƒ isIPv6(length: 1) {},
         Server: [Circular: *3],
         Socket: [Circular: *4],
         Stream: [Circular: *4]
     },
     isIP: [Circular: *12],
     isIPv4: [Circular: *13],
-    isIPv6: [Circular: *14],
-    Symbol(Symbol.toStringTag): "Module"
+    isIPv6: [Circular: *14]
 }
 ```
 
@@ -5428,16 +5636,29 @@ Cluster {
 
 ```js
 {
-    createServer: ƒ createServer (length: 2),
-    Server: [class Server],
-    createConnection: <ref *4> ƒ createConnection (length: 3),
+    createServer: ƒ createServer(length: 2) {},
+    Server: [class Server]{},
+    createConnection: <ref *4> ƒ createConnection(length: 3) {},
     connect: [Circular: *4],
-    isIP: ƒ isIP (length: 1),
-    isIPv4: ƒ isIPv4 (length: 1),
-    isIPv6: ƒ isIPv6 (length: 1),
-    Socket: ƒ Socket (length: 1),
+    isIP: ƒ isIP(length: 1) {},
+    isIPv4: ƒ isIPv4(length: 1) {},
+    isIPv6: ƒ isIPv6(length: 1) {},
+    Socket: ƒ Socket(length: 1) {},
     Symbol(CommonJS): 0,
-    Symbol(::bunternal::): [class Socket]
+    Symbol(::bunternal::): [class Socket]{
+        Symbol(::bunsocket_serverhandlers::): {
+            data: ƒ data(length: 2) {},
+            close: ƒ close(length: 1) {},
+            end: ƒ end(length: 1) {},
+            open: ƒ open(length: 1) {},
+            handshake: ƒ handshake(length: 3) {},
+            error: ƒ error(length: 2) {},
+            timeout: ƒ timeout(length: 1) {},
+            connectError: ƒ connectError(length: 2) {},
+            drain: ƒ #Drain(length: 1) {},
+            binaryType: "buffer"
+        }
+    }
 }
 ```
 
@@ -5450,9 +5671,13 @@ Cluster {
 ```js
 [Object: null prototype] {
     EOL: "\n",
-    arch: <ref *2> ƒ arch (length: 0),
-    availableParallelism: <ref *3> ƒ getAvailableParallelism (length: 0),
-    constants: <ref *4> [Object: null prototype] {
+    arch: <ref *2> ƒ arch(length: 0) {
+        Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+    },
+    availableParallelism: <ref *4> ƒ getAvailableParallelism(length: 0) {
+        Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+    },
+    constants: <ref *6> [Object: null prototype] {
         UV_UDP_REUSEADDR: 4,
         dlopen: [Object: null prototype] {
             RTLD_LAZY: 1,
@@ -5586,51 +5811,74 @@ Cluster {
             PRIORITY_HIGHEST: -20
         }
     },
-    cpus: <ref *9> ƒ cpus (length: 0),
+    cpus: <ref *11> ƒ cpus(length: 0) {},
     default: {
         arch: [Circular: *2],
-        availableParallelism: [Circular: *3],
-        cpus: [Circular: *9],
-        endianness: <ref *11> ƒ endianness (length: 0),
-        freemem: <ref *12> ƒ getFreeMem (length: 0),
-        getPriority: <ref *13> ƒ getPriority (length: 1),
-        homedir: <ref *14> ƒ __node_internal_checkError (length: 0),
-        hostname: <ref *15> ƒ __node_internal_checkError (length: 0),
-        loadavg: <ref *16> ƒ loadavg (length: 0),
-        networkInterfaces: <ref *17> ƒ networkInterfaces (length: 0),
-        platform: <ref *18> ƒ platform (length: 0),
-        release: <ref *19> ƒ getOSRelease (length: 0),
-        setPriority: <ref *20> ƒ setPriority (length: 2),
-        tmpdir: <ref *21> ƒ tmpdir (length: 0),
-        totalmem: <ref *22> ƒ getTotalMem (length: 0),
-        type: <ref *23> ƒ getOSType (length: 0),
-        userInfo: <ref *24> ƒ userInfo (length: 1),
-        uptime: <ref *25> ƒ __node_internal_checkError (length: 0),
-        version: <ref *26> ƒ getOSVersion (length: 0),
-        machine: <ref *27> ƒ getMachine (length: 0),
-        constants: [Circular: *4],
+        availableParallelism: [Circular: *4],
+        cpus: [Circular: *11],
+        endianness: <ref *13> ƒ endianness(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        freemem: <ref *15> ƒ getFreeMem(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        getPriority: <ref *17> ƒ getPriority(length: 1) {},
+        homedir: <ref *18> ƒ __node_internal_checkError(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        hostname: <ref *20> ƒ __node_internal_checkError(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        loadavg: <ref *22> ƒ loadavg(length: 0) {},
+        networkInterfaces: <ref *23> ƒ networkInterfaces(length: 0) {},
+        platform: <ref *24> ƒ platform(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        release: <ref *26> ƒ getOSRelease(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        setPriority: <ref *28> ƒ setPriority(length: 2) {},
+        tmpdir: <ref *29> ƒ tmpdir(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        totalmem: <ref *31> ƒ getTotalMem(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        type: <ref *33> ƒ getOSType(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        userInfo: <ref *35> ƒ userInfo(length: 1) {},
+        uptime: <ref *36> ƒ __node_internal_checkError(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        version: <ref *38> ƒ getOSVersion(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        machine: <ref *40> ƒ getMachine(length: 0) {
+            Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
+        },
+        constants: [Circular: *6],
         EOL: "\n",
         devNull: "/dev/null"
     },
     devNull: "/dev/null",
-    endianness: [Circular: *11],
-    freemem: [Circular: *12],
-    getPriority: [Circular: *13],
-    homedir: [Circular: *14],
-    hostname: [Circular: *15],
-    loadavg: [Circular: *16],
-    machine: [Circular: *27],
-    networkInterfaces: [Circular: *17],
-    platform: [Circular: *18],
-    release: [Circular: *19],
-    setPriority: [Circular: *20],
-    tmpdir: [Circular: *21],
-    totalmem: [Circular: *22],
-    type: [Circular: *23],
-    uptime: [Circular: *25],
-    userInfo: [Circular: *24],
-    version: [Circular: *26],
-    Symbol(Symbol.toStringTag): "Module"
+    endianness: [Circular: *13],
+    freemem: [Circular: *15],
+    getPriority: [Circular: *17],
+    homedir: [Circular: *18],
+    hostname: [Circular: *20],
+    loadavg: [Circular: *22],
+    machine: [Circular: *40],
+    networkInterfaces: [Circular: *23],
+    platform: [Circular: *24],
+    release: [Circular: *26],
+    setPriority: [Circular: *28],
+    tmpdir: [Circular: *29],
+    totalmem: [Circular: *31],
+    type: [Circular: *33],
+    uptime: [Circular: *36],
+    userInfo: [Circular: *35],
+    version: [Circular: *38]
 }
 ```
 
@@ -5638,25 +5886,25 @@ Cluster {
 
 ```js
 {
-    arch: ƒ bound arch (length: 0),
-    cpus: ƒ bound cpus (length: 0),
-    endianness: ƒ bound endianness (length: 0),
-    freemem: ƒ bound freemem (length: 0),
-    getPriority: ƒ bound getPriority (length: 1),
-    homedir: ƒ bound homedir (length: 0),
-    hostname: ƒ bound hostname (length: 0),
-    loadavg: ƒ bound loadavg (length: 0),
-    networkInterfaces: ƒ bound networkInterfaces (length: 0),
-    platform: ƒ bound platform (length: 0),
-    release: ƒ bound release (length: 0),
-    setPriority: ƒ bound setPriority (length: 2),
-    tmpdir: ƒ bound tmpdir (length: 0),
-    totalmem: ƒ bound totalmem (length: 0),
-    type: ƒ bound type (length: 0),
-    uptime: ƒ bound uptime (length: 0),
-    userInfo: ƒ bound userInfo (length: 0),
-    version: ƒ bound version (length: 0),
-    machine: ƒ bound machine (length: 0),
+    arch: ƒ bound arch(length: 0) {},
+    cpus: ƒ bound cpus(length: 0) {},
+    endianness: ƒ bound endianness(length: 0) {},
+    freemem: ƒ bound freemem(length: 0) {},
+    getPriority: ƒ bound getPriority(length: 1) {},
+    homedir: ƒ bound homedir(length: 0) {},
+    hostname: ƒ bound hostname(length: 0) {},
+    loadavg: ƒ bound loadavg(length: 0) {},
+    networkInterfaces: ƒ bound networkInterfaces(length: 0) {},
+    platform: ƒ bound platform(length: 0) {},
+    release: ƒ bound release(length: 0) {},
+    setPriority: ƒ bound setPriority(length: 2) {},
+    tmpdir: ƒ bound tmpdir(length: 0) {},
+    totalmem: ƒ bound totalmem(length: 0) {},
+    type: ƒ bound type(length: 0) {},
+    uptime: ƒ bound uptime(length: 0) {},
+    userInfo: ƒ bound userInfo(length: 0) {},
+    version: ƒ bound version(length: 0) {},
+    machine: ƒ bound machine(length: 0) {},
     devNull: "/dev/null",
     EOL: "\n",
     constants: {
@@ -5803,34 +6051,34 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    _makeLong: <ref *2> ƒ toNamespacedPath (length: 1),
-    basename: <ref *3> ƒ basename (length: 2),
+    _makeLong: <ref *2> ƒ toNamespacedPath(length: 1) {},
+    basename: <ref *3> ƒ basename(length: 2) {},
     default: <ref *4> {
-        resolve: <ref *5> ƒ resolve (length: 0),
-        normalize: <ref *6> ƒ normalize (length: 1),
-        isAbsolute: <ref *7> ƒ isAbsolute (length: 1),
-        join: <ref *8> ƒ join (length: 0),
-        relative: <ref *9> ƒ relative (length: 2),
+        resolve: <ref *5> ƒ resolve(length: 0) {},
+        normalize: <ref *6> ƒ normalize(length: 1) {},
+        isAbsolute: <ref *7> ƒ isAbsolute(length: 1) {},
+        join: <ref *8> ƒ join(length: 0) {},
+        relative: <ref *9> ƒ relative(length: 2) {},
         toNamespacedPath: [Circular: *2],
-        dirname: <ref *10> ƒ dirname (length: 1),
+        dirname: <ref *10> ƒ dirname(length: 1) {},
         basename: [Circular: *3],
-        extname: <ref *11> ƒ extname (length: 1),
-        format: <ref *12> ƒ bound _format (length: 1),
-        parse: <ref *13> ƒ parse (length: 1),
+        extname: <ref *11> ƒ extname(length: 1) {},
+        format: <ref *12> ƒ bound _format(length: 1) {},
+        parse: <ref *13> ƒ parse(length: 1) {},
         sep: "/",
         delimiter: ":",
         win32: <ref *14> {
-            resolve: ƒ resolve (length: 0),
-            normalize: ƒ normalize (length: 1),
-            isAbsolute: ƒ isAbsolute (length: 1),
-            join: ƒ join (length: 0),
-            relative: ƒ relative (length: 2),
-            toNamespacedPath: <ref *20> ƒ toNamespacedPath (length: 1),
-            dirname: ƒ dirname (length: 1),
-            basename: ƒ basename (length: 2),
-            extname: ƒ extname (length: 1),
-            format: ƒ bound _format (length: 1),
-            parse: ƒ parse (length: 1),
+            resolve: ƒ resolve(length: 0) {},
+            normalize: ƒ normalize(length: 1) {},
+            isAbsolute: ƒ isAbsolute(length: 1) {},
+            join: ƒ join(length: 0) {},
+            relative: ƒ relative(length: 2) {},
+            toNamespacedPath: <ref *20> ƒ toNamespacedPath(length: 1) {},
+            dirname: ƒ dirname(length: 1) {},
+            basename: ƒ basename(length: 2) {},
+            extname: ƒ extname(length: 1) {},
+            format: ƒ bound _format(length: 1) {},
+            parse: ƒ parse(length: 1) {},
             sep: "\\",
             delimiter: ";",
             win32: [Circular: *14],
@@ -5853,8 +6101,7 @@ Cluster {
     resolve: [Circular: *5],
     sep: "/",
     toNamespacedPath: [Circular: *2],
-    win32: [Circular: *14],
-    Symbol(Symbol.toStringTag): "Module"
+    win32: [Circular: *14]
 }
 ```
 
@@ -5862,48 +6109,48 @@ Cluster {
 
 ```js
 <ref *1> [Object: null prototype] {
-    basename: ƒ bound basename (length: 0),
-    dirname: ƒ bound dirname (length: 0),
-    extname: ƒ bound extname (length: 0),
-    format: ƒ bound format (length: 0),
-    isAbsolute: ƒ bound isAbsolute (length: 0),
-    join: ƒ bound join (length: 0),
-    normalize: ƒ bound normalize (length: 0),
-    parse: ƒ bound parse (length: 0),
-    relative: ƒ bound relative (length: 0),
-    resolve: ƒ bound resolve (length: 0),
-    toNamespacedPath: ƒ bound toNamespacedPath (length: 0),
+    basename: ƒ bound basename(length: 0) {},
+    dirname: ƒ bound dirname(length: 0) {},
+    extname: ƒ bound extname(length: 0) {},
+    format: ƒ bound format(length: 0) {},
+    isAbsolute: ƒ bound isAbsolute(length: 0) {},
+    join: ƒ bound join(length: 0) {},
+    normalize: ƒ bound normalize(length: 0) {},
+    parse: ƒ bound parse(length: 0) {},
+    relative: ƒ bound relative(length: 0) {},
+    resolve: ƒ bound resolve(length: 0) {},
+    toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
     sep: "/",
     delimiter: ":",
     default: [Circular: *1],
     win32: <ref *13> [Object: null prototype] {
-        basename: ƒ bound basename (length: 0),
-        dirname: ƒ bound dirname (length: 0),
-        extname: ƒ bound extname (length: 0),
-        format: ƒ bound format (length: 0),
-        isAbsolute: ƒ bound isAbsolute (length: 0),
-        join: ƒ bound join (length: 0),
-        normalize: ƒ bound normalize (length: 0),
-        parse: ƒ bound parse (length: 0),
-        relative: ƒ bound relative (length: 0),
-        resolve: ƒ bound resolve (length: 0),
-        toNamespacedPath: ƒ bound toNamespacedPath (length: 0),
+        basename: ƒ bound basename(length: 0) {},
+        dirname: ƒ bound dirname(length: 0) {},
+        extname: ƒ bound extname(length: 0) {},
+        format: ƒ bound format(length: 0) {},
+        isAbsolute: ƒ bound isAbsolute(length: 0) {},
+        join: ƒ bound join(length: 0) {},
+        normalize: ƒ bound normalize(length: 0) {},
+        parse: ƒ bound parse(length: 0) {},
+        relative: ƒ bound relative(length: 0) {},
+        resolve: ƒ bound resolve(length: 0) {},
+        toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
         sep: "\\",
         delimiter: ";",
         default: [Circular: *13]
     },
     posix: <ref *25> [Object: null prototype] {
-        basename: ƒ bound basename (length: 0),
-        dirname: ƒ bound dirname (length: 0),
-        extname: ƒ bound extname (length: 0),
-        format: ƒ bound format (length: 0),
-        isAbsolute: ƒ bound isAbsolute (length: 0),
-        join: ƒ bound join (length: 0),
-        normalize: ƒ bound normalize (length: 0),
-        parse: ƒ bound parse (length: 0),
-        relative: ƒ bound relative (length: 0),
-        resolve: ƒ bound resolve (length: 0),
-        toNamespacedPath: ƒ bound toNamespacedPath (length: 0),
+        basename: ƒ bound basename(length: 0) {},
+        dirname: ƒ bound dirname(length: 0) {},
+        extname: ƒ bound extname(length: 0) {},
+        format: ƒ bound format(length: 0) {},
+        isAbsolute: ƒ bound isAbsolute(length: 0) {},
+        join: ƒ bound join(length: 0) {},
+        normalize: ƒ bound normalize(length: 0) {},
+        parse: ƒ bound parse(length: 0) {},
+        relative: ƒ bound relative(length: 0) {},
+        resolve: ƒ bound resolve(length: 0) {},
+        toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
         sep: "/",
         delimiter: ":",
         default: [Circular: *25]
@@ -5921,34 +6168,34 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    _makeLong: <ref *2> ƒ toNamespacedPath (length: 1),
-    basename: <ref *3> ƒ basename (length: 2),
+    _makeLong: <ref *2> ƒ toNamespacedPath(length: 1) {},
+    basename: <ref *3> ƒ basename(length: 2) {},
     default: <ref *4> {
-        resolve: <ref *5> ƒ resolve (length: 0),
-        normalize: <ref *6> ƒ normalize (length: 1),
-        isAbsolute: <ref *7> ƒ isAbsolute (length: 1),
-        join: <ref *8> ƒ join (length: 0),
-        relative: <ref *9> ƒ relative (length: 2),
+        resolve: <ref *5> ƒ resolve(length: 0) {},
+        normalize: <ref *6> ƒ normalize(length: 1) {},
+        isAbsolute: <ref *7> ƒ isAbsolute(length: 1) {},
+        join: <ref *8> ƒ join(length: 0) {},
+        relative: <ref *9> ƒ relative(length: 2) {},
         toNamespacedPath: [Circular: *2],
-        dirname: <ref *10> ƒ dirname (length: 1),
+        dirname: <ref *10> ƒ dirname(length: 1) {},
         basename: [Circular: *3],
-        extname: <ref *11> ƒ extname (length: 1),
-        format: <ref *12> ƒ bound _format (length: 1),
-        parse: <ref *13> ƒ parse (length: 1),
+        extname: <ref *11> ƒ extname(length: 1) {},
+        format: <ref *12> ƒ bound _format(length: 1) {},
+        parse: <ref *13> ƒ parse(length: 1) {},
         sep: "/",
         delimiter: ":",
         win32: <ref *14> {
-            resolve: ƒ resolve (length: 0),
-            normalize: ƒ normalize (length: 1),
-            isAbsolute: ƒ isAbsolute (length: 1),
-            join: ƒ join (length: 0),
-            relative: ƒ relative (length: 2),
-            toNamespacedPath: <ref *20> ƒ toNamespacedPath (length: 1),
-            dirname: ƒ dirname (length: 1),
-            basename: ƒ basename (length: 2),
-            extname: ƒ extname (length: 1),
-            format: ƒ bound _format (length: 1),
-            parse: ƒ parse (length: 1),
+            resolve: ƒ resolve(length: 0) {},
+            normalize: ƒ normalize(length: 1) {},
+            isAbsolute: ƒ isAbsolute(length: 1) {},
+            join: ƒ join(length: 0) {},
+            relative: ƒ relative(length: 2) {},
+            toNamespacedPath: <ref *20> ƒ toNamespacedPath(length: 1) {},
+            dirname: ƒ dirname(length: 1) {},
+            basename: ƒ basename(length: 2) {},
+            extname: ƒ extname(length: 1) {},
+            format: ƒ bound _format(length: 1) {},
+            parse: ƒ parse(length: 1) {},
             sep: "\\",
             delimiter: ";",
             win32: [Circular: *14],
@@ -5971,8 +6218,7 @@ Cluster {
     resolve: [Circular: *5],
     sep: "/",
     toNamespacedPath: [Circular: *2],
-    win32: [Circular: *14],
-    Symbol(Symbol.toStringTag): "Module"
+    win32: [Circular: *14]
 }
 ```
 
@@ -5980,17 +6226,17 @@ Cluster {
 
 ```js
 {
-    basename: ƒ bound basename (length: 0),
-    dirname: ƒ bound dirname (length: 0),
-    extname: ƒ bound extname (length: 0),
-    format: ƒ bound format (length: 0),
-    isAbsolute: ƒ bound isAbsolute (length: 0),
-    join: ƒ bound join (length: 0),
-    normalize: ƒ bound normalize (length: 0),
-    parse: ƒ bound parse (length: 0),
-    relative: ƒ bound relative (length: 0),
-    resolve: ƒ bound resolve (length: 0),
-    toNamespacedPath: ƒ bound toNamespacedPath (length: 0),
+    basename: ƒ bound basename(length: 0) {},
+    dirname: ƒ bound dirname(length: 0) {},
+    extname: ƒ bound extname(length: 0) {},
+    format: ƒ bound format(length: 0) {},
+    isAbsolute: ƒ bound isAbsolute(length: 0) {},
+    join: ƒ bound join(length: 0) {},
+    normalize: ƒ bound normalize(length: 0) {},
+    parse: ƒ bound parse(length: 0) {},
+    relative: ƒ bound relative(length: 0) {},
+    resolve: ƒ bound resolve(length: 0) {},
+    toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
     sep: "/",
     delimiter: ":",
     Symbol(CommonJS): 0
@@ -6005,35 +6251,35 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    _makeLong: <ref *2> ƒ toNamespacedPath (length: 1),
-    basename: <ref *3> ƒ basename (length: 2),
+    _makeLong: <ref *2> ƒ toNamespacedPath(length: 1) {},
+    basename: <ref *3> ƒ basename(length: 2) {},
     default: <ref *4> {
-        resolve: <ref *5> ƒ resolve (length: 0),
-        normalize: <ref *6> ƒ normalize (length: 1),
-        isAbsolute: <ref *7> ƒ isAbsolute (length: 1),
-        join: <ref *8> ƒ join (length: 0),
-        relative: <ref *9> ƒ relative (length: 2),
+        resolve: <ref *5> ƒ resolve(length: 0) {},
+        normalize: <ref *6> ƒ normalize(length: 1) {},
+        isAbsolute: <ref *7> ƒ isAbsolute(length: 1) {},
+        join: <ref *8> ƒ join(length: 0) {},
+        relative: <ref *9> ƒ relative(length: 2) {},
         toNamespacedPath: [Circular: *2],
-        dirname: <ref *10> ƒ dirname (length: 1),
+        dirname: <ref *10> ƒ dirname(length: 1) {},
         basename: [Circular: *3],
-        extname: <ref *11> ƒ extname (length: 1),
-        format: <ref *12> ƒ bound _format (length: 1),
-        parse: <ref *13> ƒ parse (length: 1),
+        extname: <ref *11> ƒ extname(length: 1) {},
+        format: <ref *12> ƒ bound _format(length: 1) {},
+        parse: <ref *13> ƒ parse(length: 1) {},
         sep: "\\",
         delimiter: ";",
         win32: [Circular: *4],
         posix: <ref *14> {
-            resolve: ƒ resolve (length: 0),
-            normalize: ƒ normalize (length: 1),
-            isAbsolute: ƒ isAbsolute (length: 1),
-            join: ƒ join (length: 0),
-            relative: ƒ relative (length: 2),
-            toNamespacedPath: <ref *20> ƒ toNamespacedPath (length: 1),
-            dirname: ƒ dirname (length: 1),
-            basename: ƒ basename (length: 2),
-            extname: ƒ extname (length: 1),
-            format: ƒ bound _format (length: 1),
-            parse: ƒ parse (length: 1),
+            resolve: ƒ resolve(length: 0) {},
+            normalize: ƒ normalize(length: 1) {},
+            isAbsolute: ƒ isAbsolute(length: 1) {},
+            join: ƒ join(length: 0) {},
+            relative: ƒ relative(length: 2) {},
+            toNamespacedPath: <ref *20> ƒ toNamespacedPath(length: 1) {},
+            dirname: ƒ dirname(length: 1) {},
+            basename: ƒ basename(length: 2) {},
+            extname: ƒ extname(length: 1) {},
+            format: ƒ bound _format(length: 1) {},
+            parse: ƒ parse(length: 1) {},
             sep: "/",
             delimiter: ":",
             win32: [Circular: *4],
@@ -6055,8 +6301,7 @@ Cluster {
     resolve: [Circular: *5],
     sep: "\\",
     toNamespacedPath: [Circular: *2],
-    win32: [Circular: *4],
-    Symbol(Symbol.toStringTag): "Module"
+    win32: [Circular: *4]
 }
 ```
 
@@ -6064,19 +6309,19 @@ Cluster {
 
 ```js
 {
-    basename: <ref *2> ƒ bound basename (length: 0),
+    basename: <ref *2> ƒ bound basename(length: 0) {},
     default: {
         basename: [Circular: *2],
-        dirname: <ref *4> ƒ bound dirname (length: 0),
-        extname: <ref *5> ƒ bound extname (length: 0),
-        format: <ref *6> ƒ bound format (length: 0),
-        isAbsolute: <ref *7> ƒ bound isAbsolute (length: 0),
-        join: <ref *8> ƒ bound join (length: 0),
-        normalize: <ref *9> ƒ bound normalize (length: 0),
-        parse: <ref *10> ƒ bound parse (length: 0),
-        relative: <ref *11> ƒ bound relative (length: 0),
-        resolve: <ref *12> ƒ bound resolve (length: 0),
-        toNamespacedPath: <ref *13> ƒ bound toNamespacedPath (length: 0),
+        dirname: <ref *4> ƒ bound dirname(length: 0) {},
+        extname: <ref *5> ƒ bound extname(length: 0) {},
+        format: <ref *6> ƒ bound format(length: 0) {},
+        isAbsolute: <ref *7> ƒ bound isAbsolute(length: 0) {},
+        join: <ref *8> ƒ bound join(length: 0) {},
+        normalize: <ref *9> ƒ bound normalize(length: 0) {},
+        parse: <ref *10> ƒ bound parse(length: 0) {},
+        relative: <ref *11> ƒ bound relative(length: 0) {},
+        resolve: <ref *12> ƒ bound resolve(length: 0) {},
+        toNamespacedPath: <ref *13> ƒ bound toNamespacedPath(length: 0) {},
         sep: "\\",
         delimiter: ";"
     },
@@ -6091,8 +6336,7 @@ Cluster {
     relative: [Circular: *11],
     resolve: [Circular: *12],
     sep: "\\",
-    toNamespacedPath: [Circular: *13],
-    Symbol(Symbol.toStringTag): "Module"
+    toNamespacedPath: [Circular: *13]
 }
 ```
 
@@ -6104,13 +6348,13 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    Performance: <ref *2> [class Performance],
-    PerformanceEntry: <ref *3> [class PerformanceEntry],
-    PerformanceMark: <ref *4> [class PerformanceMark],
-    PerformanceMeasure: <ref *5> [class PerformanceMeasure],
-    PerformanceObserver: <ref *6> [class PerformanceObserver],
-    PerformanceObserverEntryList: <ref *7> [class PerformanceObserverEntryList],
-    PerformanceResourceTiming: <ref *8> [class PerformanceResourceTiming],
+    Performance: <ref *2> [class Performance]{},
+    PerformanceEntry: <ref *3> [class PerformanceEntry]{},
+    PerformanceMark: <ref *4> [class PerformanceMark]{},
+    PerformanceMeasure: <ref *5> [class PerformanceMeasure]{},
+    PerformanceObserver: <ref *6> [class PerformanceObserver]{},
+    PerformanceObserverEntryList: <ref *7> [class PerformanceObserverEntryList]{},
+    PerformanceResourceTiming: <ref *8> [class PerformanceResourceTiming]{},
     constants: <ref *9> {
         NODE_PERFORMANCE_GC_MAJOR: 4,
         NODE_PERFORMANCE_GC_MINOR: 1,
@@ -6122,20 +6366,9 @@ Cluster {
         NODE_PERFORMANCE_GC_FLAGS_SYNCHRONOUS_PHANTOM_PROCESSING: 8,
         NODE_PERFORMANCE_GC_FLAGS_ALL_AVAILABLE_GARBAGE: 16,
         NODE_PERFORMANCE_GC_FLAGS_ALL_EXTERNAL_MEMORY: 32,
-        NODE_PERFORMANCE_GC_FLAGS_SCHEDULE_IDLE: 64,
-        NODE_PERFORMANCE_ENTRY_TYPE_GC: 0,
-        NODE_PERFORMANCE_ENTRY_TYPE_HTTP: 1,
-        NODE_PERFORMANCE_ENTRY_TYPE_HTTP2: 2,
-        NODE_PERFORMANCE_ENTRY_TYPE_NET: 3,
-        NODE_PERFORMANCE_ENTRY_TYPE_DNS: 4,
-        NODE_PERFORMANCE_MILESTONE_ENVIRONMENT: 0,
-        NODE_PERFORMANCE_MILESTONE_NODE_START: 1,
-        NODE_PERFORMANCE_MILESTONE_V8_START: 2,
-        NODE_PERFORMANCE_MILESTONE_LOOP_START: 3,
-        NODE_PERFORMANCE_MILESTONE_LOOP_EXIT: 4,
-        NODE_PERFORMANCE_MILESTONE_BOOTSTRAP_COMPLETE: 5
+        NODE_PERFORMANCE_GC_FLAGS_SCHEDULE_IDLE: 64
     },
-    createHistogram: <ref *10> ƒ createHistogram (length: 0),
+    createHistogram: <ref *10> ƒ createHistogram(length: 0) {},
     default: {
         Performance: [Circular: *2],
         PerformanceEntry: [Circular: *3],
@@ -6144,7 +6377,7 @@ Cluster {
         PerformanceObserver: [Circular: *6],
         PerformanceObserverEntryList: [Circular: *7],
         PerformanceResourceTiming: [Circular: *8],
-        monitorEventLoopDelay: <ref *12> ƒ monitorEventLoopDelay (length: 0),
+        monitorEventLoopDelay: <ref *12> ƒ monitorEventLoopDelay(length: 0) {},
         createHistogram: [Circular: *10],
         performance: <ref *13> Performance {
             Symbol(kEvents): SafeMap {},
@@ -6154,8 +6387,7 @@ Cluster {
         constants: [Circular: *9]
     },
     monitorEventLoopDelay: [Circular: *12],
-    performance: [Circular: *13],
-    Symbol(Symbol.toStringTag): "Module"
+    performance: [Circular: *13]
 }
 ```
 
@@ -6164,11 +6396,11 @@ Cluster {
 ```js
 {
     performance: {
-        now: ƒ now (length: 0),
-        timeOrigin: 1681260833343.6536
+        now: ƒ now(length: 0) {},
+        timeOrigin: 1681286726763.518
     },
-    PerformanceEntry: [class PerformanceEntry],
-    PerformanceNodeTiming: [class PerformanceNodeTiming],
+    PerformanceEntry: [class PerformanceEntry]{},
+    PerformanceNodeTiming: [class PerformanceNodeTiming]{},
     Symbol(CommonJS): 0
 }
 ```
@@ -6181,28 +6413,28 @@ Cluster {
 
 ```js
 [Object: null prototype] {
-    _debugEnd: <ref *2> ƒ _debugEnd (length: 0),
-    _debugProcess: <ref *3> ƒ _debugProcess (length: 0),
+    _debugEnd: <ref *2> ƒ _debugEnd(length: 0) {},
+    _debugProcess: <ref *3> ƒ _debugProcess(length: 0) {},
     _events: <ref *4> [Object: null prototype] {
-        newListener: ƒ startListeningIfSignal (length: 1),
-        removeListener: ƒ stopListeningIfSignal (length: 1),
-        warning: ƒ onWarning (length: 1),
-        exit: ƒ handleProcessExit (length: 0)
+        newListener: ƒ startListeningIfSignal(length: 1) {},
+        removeListener: ƒ stopListeningIfSignal(length: 1) {},
+        warning: ƒ onWarning(length: 1) {},
+        exit: ƒ handleProcessExit(length: 0) {}
     },
     _eventsCount: 4,
     _exiting: false,
-    _fatalException: <ref *9> ƒ (length: 2),
-    _getActiveHandles: <ref *10> ƒ _getActiveHandles (length: 0),
-    _getActiveRequests: <ref *11> ƒ _getActiveRequests (length: 0),
-    _kill: <ref *12> ƒ _kill (length: 0),
-    _linkedBinding: <ref *13> ƒ _linkedBinding (length: 1),
+    _fatalException: <ref *9> ƒ (length: 2) {},
+    _getActiveHandles: <ref *10> ƒ _getActiveHandles(length: 0) {},
+    _getActiveRequests: <ref *11> ƒ _getActiveRequests(length: 0) {},
+    _kill: <ref *12> ƒ _kill(length: 0) {},
+    _linkedBinding: <ref *13> ƒ _linkedBinding(length: 1) {},
     _maxListeners: undefined,
     _preload_modules: <ref *14> [],
-    _rawDebug: <ref *15> ƒ _rawDebug (length: 0),
-    _startProfilerIdleNotifier: <ref *16> ƒ (length: 0),
-    _stopProfilerIdleNotifier: <ref *17> ƒ (length: 0),
-    _tickCallback: <ref *18> ƒ runNextTicks (length: 0),
-    abort: <ref *19> ƒ abort (length: 0),
+    _rawDebug: <ref *15> ƒ _rawDebug(length: 0) {},
+    _startProfilerIdleNotifier: <ref *16> ƒ (length: 0) {},
+    _stopProfilerIdleNotifier: <ref *17> ƒ (length: 0) {},
+    _tickCallback: <ref *18> ƒ runNextTicks(length: 0) {},
+    abort: <ref *19> ƒ abort(length: 0) {},
     allowedNodeEnvironmentFlags: <ref *20> NodeEnvironmentFlagsSet {
         Symbol(internal properties): {
             array: [
@@ -6395,12 +6627,12 @@ Cluster {
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
-        "/tmp/fs-fixture-1681260831389-1/process.mjs"
+        "/tmp/fs-fixture-1681286724511-1/process.mjs"
     ],
     argv0: "node",
-    assert: <ref *24> ƒ deprecated (length: 0),
-    binding: <ref *25> ƒ binding (length: 1),
-    chdir: <ref *26> ƒ wrappedChdir (length: 1),
+    assert: <ref *24> ƒ deprecated(length: 0) {},
+    binding: <ref *25> ƒ binding(length: 1) {},
+    chdir: <ref *26> ƒ wrappedChdir(length: 1) {},
     config: <ref *27> {
         target_defaults: {
             cflags: [],
@@ -6805,9 +7037,9 @@ Cluster {
             want_separate_host_toolset: 0
         }
     },
-    constrainedMemory: <ref *36> ƒ constrainedMemory (length: 0),
-    cpuUsage: <ref *37> ƒ cpuUsage (length: 1),
-    cwd: <ref *38> ƒ wrappedCwd (length: 0),
+    constrainedMemory: <ref *36> ƒ constrainedMemory(length: 0) {},
+    cpuUsage: <ref *37> ƒ cpuUsage(length: 1) {},
+    cwd: <ref *38> ƒ wrappedCwd(length: 0) {},
     debugPort: 9229,
     default: process {
         version: "v18.15.0",
@@ -7043,31 +7275,35 @@ Cluster {
         _eventsCount: 4,
         _maxListeners: undefined,
         domain: null,
-        get/set _exiting: false,
-        get/set config: [Circular: *27],
-        dlopen: <ref *43> ƒ dlopen (length: 0),
-        uptime: <ref *44> ƒ uptime (length: 0),
+        [get/set] _exiting: false,
+        [get/set] config: [Circular: *27],
+        dlopen: <ref *43> ƒ dlopen(length: 0) {},
+        uptime: <ref *44> ƒ uptime(length: 0) {},
         _getActiveRequests: [Circular: *11],
         _getActiveHandles: [Circular: *10],
-        getActiveResourcesInfo: <ref *45> ƒ getActiveResourcesInfo (length: 0),
-        reallyExit: <ref *46> ƒ reallyExit (length: 0),
+        getActiveResourcesInfo: <ref *45> ƒ getActiveResourcesInfo(length: 0) {},
+        reallyExit: <ref *46> ƒ reallyExit(length: 0) {},
         _kill: [Circular: *12],
         cpuUsage: [Circular: *37],
-        resourceUsage: <ref *47> ƒ resourceUsage (length: 0),
-        memoryUsage: <ref *48> ƒ memoryUsage (length: 0),
+        resourceUsage: <ref *47> ƒ resourceUsage(length: 0) {},
+        memoryUsage: <ref *48> ƒ memoryUsage(length: 0) {
+            rss: ƒ rss(length: 0) {}
+        },
         constrainedMemory: [Circular: *36],
-        kill: <ref *49> ƒ kill (length: 2),
-        exit: <ref *50> ƒ exit (length: 1),
-        hrtime: <ref *51> ƒ hrtime (length: 1),
-        openStdin: <ref *52> ƒ (length: 0),
-        getuid: <ref *53> ƒ getuid (length: 0),
-        geteuid: <ref *54> ƒ geteuid (length: 0),
-        getgid: <ref *55> ƒ getgid (length: 0),
-        getegid: <ref *56> ƒ getegid (length: 0),
-        getgroups: <ref *57> ƒ getgroups (length: 0),
+        kill: <ref *50> ƒ kill(length: 2) {},
+        exit: <ref *51> ƒ exit(length: 1) {},
+        hrtime: <ref *52> ƒ hrtime(length: 1) {
+            bigint: ƒ hrtimeBigInt(length: 0) {}
+        },
+        openStdin: <ref *54> ƒ (length: 0) {},
+        getuid: <ref *55> ƒ getuid(length: 0) {},
+        geteuid: <ref *56> ƒ geteuid(length: 0) {},
+        getgid: <ref *57> ƒ getgid(length: 0) {},
+        getegid: <ref *58> ƒ getegid(length: 0) {},
+        getgroups: <ref *59> ƒ getgroups(length: 0) {},
         allowedNodeEnvironmentFlags: [Circular: *20],
         assert: [Circular: *24],
-        features: <ref *58> {
+        features: <ref *60> {
             inspector: true,
             debug: false,
             uv: true,
@@ -7076,19 +7312,19 @@ Cluster {
             tls_sni: true,
             tls_ocsp: true,
             tls: true,
-            get/set cached_builtins: true
+            [get/set] cached_builtins: true
         },
         _fatalException: [Circular: *9],
-        setUncaughtExceptionCaptureCallback: <ref *59> ƒ setUncaughtExceptionCaptureCallback (length: 1),
-        hasUncaughtExceptionCaptureCallback: <ref *60> ƒ hasUncaughtExceptionCaptureCallback (length: 0),
-        emitWarning: <ref *61> ƒ emitWarning (length: 4),
-        nextTick: <ref *62> ƒ nextTick (length: 1),
+        setUncaughtExceptionCaptureCallback: <ref *61> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
+        hasUncaughtExceptionCaptureCallback: <ref *62> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
+        emitWarning: <ref *63> ƒ emitWarning(length: 4) {},
+        nextTick: <ref *64> ƒ nextTick(length: 1) {},
         _tickCallback: [Circular: *18],
         _debugProcess: [Circular: *3],
         _debugEnd: [Circular: *2],
         _startProfilerIdleNotifier: [Circular: *16],
         _stopProfilerIdleNotifier: [Circular: *17],
-        get/set stdout: <ref *63> Socket {
+        [get/set] stdout: <ref *65> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -7132,7 +7368,7 @@ Cluster {
                 Symbol(kPaused): null
             },
             _events: [Object: null prototype] {
-                end: <ref *68> ƒ onReadableStreamEnd (length: 0)
+                end: <ref *70> ƒ onReadableStreamEnd(length: 0) {}
             },
             _eventsCount: 1,
             _maxListeners: undefined,
@@ -7152,7 +7388,7 @@ Cluster {
                 corked: 0,
                 sync: true,
                 bufferProcessing: false,
-                onwrite: ƒ bound onwrite (length: 1),
+                onwrite: ƒ bound onwrite(length: 1) {},
                 writecb: null,
                 writelen: 0,
                 afterWriteTickInfo: null,
@@ -7180,11 +7416,11 @@ Cluster {
             _type: "pipe",
             fd: 1,
             _isStdio: true,
-            destroySoon: <ref *73> ƒ destroy (length: 2),
-            _destroy: <ref *74> ƒ dummyDestroy (length: 2),
+            destroySoon: <ref *75> ƒ destroy(length: 2) {},
+            _destroy: <ref *76> ƒ dummyDestroy(length: 2) {},
             Symbol(async_id_symbol): 8,
             Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *63]
+                Symbol(owner_symbol): [Circular: *65]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -7198,7 +7434,7 @@ Cluster {
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        get/set stdin: <ref *76> Socket {
+        [get/set] stdin: <ref *78> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -7241,8 +7477,8 @@ Cluster {
                 Symbol(kPaused): null
             },
             _events: [Object: null prototype] {
-                end: [Circular: *68],
-                pause: ƒ (length: 0)
+                end: [Circular: *70],
+                pause: ƒ (length: 0) {}
             },
             _eventsCount: 2,
             _maxListeners: undefined,
@@ -7262,7 +7498,7 @@ Cluster {
                 corked: 0,
                 sync: true,
                 bufferProcessing: false,
-                onwrite: ƒ bound onwrite (length: 1),
+                onwrite: ƒ bound onwrite(length: 1) {},
                 writecb: null,
                 writelen: 0,
                 afterWriteTickInfo: null,
@@ -7292,7 +7528,7 @@ Cluster {
             Symbol(async_id_symbol): 9,
             Symbol(kHandle): Pipe {
                 reading: false,
-                Symbol(owner_symbol): [Circular: *76]
+                Symbol(owner_symbol): [Circular: *78]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -7306,7 +7542,7 @@ Cluster {
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        get/set stderr: <ref *87> Socket {
+        [get/set] stderr: <ref *89> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -7350,7 +7586,7 @@ Cluster {
                 Symbol(kPaused): null
             },
             _events: [Object: null prototype] {
-                end: [Circular: *68]
+                end: [Circular: *70]
             },
             _eventsCount: 1,
             _maxListeners: undefined,
@@ -7370,7 +7606,7 @@ Cluster {
                 corked: 0,
                 sync: true,
                 bufferProcessing: false,
-                onwrite: ƒ bound onwrite (length: 1),
+                onwrite: ƒ bound onwrite(length: 1) {},
                 writecb: null,
                 writelen: 0,
                 afterWriteTickInfo: null,
@@ -7398,11 +7634,11 @@ Cluster {
             _type: "pipe",
             fd: 2,
             _isStdio: true,
-            destroySoon: [Circular: *73],
-            _destroy: [Circular: *74],
+            destroySoon: [Circular: *75],
+            _destroy: [Circular: *76],
             Symbol(async_id_symbol): 10,
             Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *87]
+                Symbol(owner_symbol): [Circular: *89]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -7417,17 +7653,17 @@ Cluster {
             Symbol(kBytesWritten): 0
         },
         abort: [Circular: *19],
-        umask: <ref *97> ƒ wrappedUmask (length: 1),
+        umask: <ref *99> ƒ wrappedUmask(length: 1) {},
         chdir: [Circular: *26],
         cwd: [Circular: *38],
-        initgroups: <ref *98> ƒ initgroups (length: 2),
-        setgroups: <ref *99> ƒ setgroups (length: 1),
-        setegid: <ref *100> ƒ (length: 1),
-        seteuid: <ref *101> ƒ (length: 1),
-        setgid: <ref *102> ƒ (length: 1),
-        setuid: <ref *103> ƒ (length: 1),
-        env: <ref *104>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_471d02e5-33d0-4743-a3a2-66cc421df349",
+        initgroups: <ref *100> ƒ initgroups(length: 2) {},
+        setgroups: <ref *101> ƒ setgroups(length: 1) {},
+        setegid: <ref *102> ƒ (length: 1) {},
+        seteuid: <ref *103> ƒ (length: 1) {},
+        setgid: <ref *104> ƒ (length: 1) {},
+        setuid: <ref *105> ƒ (length: 1) {},
+        env: <ref *106>  {
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_514f087f-5ec1-4c0e-8889-c388eb08772f",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -7435,7 +7671,7 @@ Cluster {
             USER: "runner",
             npm_config_user_agent: "pnpm/7.32.0 npm/? node/v18.15.0 linux x64",
             CI: "true",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_471d02e5-33d0-4743-a3a2-66cc421df349",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_514f087f-5ec1-4c0e-8889-c388eb08772f",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
@@ -7457,7 +7693,7 @@ Cluster {
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "677",
+            SYSTEMD_EXEC_PID: "667",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.2/x64",
             NVM_DIR: "/home/runner/.nvm",
@@ -7470,16 +7706,16 @@ Cluster {
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             RUNNER_USER: "runner",
             CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-            JOURNAL_STREAM: "8:17606",
+            JOURNAL_STREAM: "8:17426",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "4673406589",
+            GITHUB_RUN_ID: "4676031987",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "a7ea866e9a91eaa7f50b8868e4b1333fae3077c2",
+            GITHUB_WORKFLOW_SHA: "5f176fe96561756b0451f3270a3ae5d46dcda78a",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -7491,13 +7727,13 @@ Cluster {
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_91f005f9-3dbf-4224-90dc-f8d49abc608c",
-            INVOCATION_ID: "33b3d64f756b4c6fa397f5341756e474",
+            RUNNER_TRACKING_ID: "github_65783939-c03f-4ebe-8008-71363e48c9b0",
+            INVOCATION_ID: "8ce3fecf3e3549c3bceaa8165563528f",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.7/x64",
             NODE: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "14",
+            GITHUB_RUN_NUMBER: "15",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -7530,7 +7766,7 @@ Cluster {
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "a7ea866e9a91eaa7f50b8868e4b1333fae3077c2",
+            GITHUB_SHA: "5f176fe96561756b0451f3270a3ae5d46dcda78a",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -7538,7 +7774,7 @@ Cluster {
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_471d02e5-33d0-4743-a3a2-66cc421df349",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_514f087f-5ec1-4c0e-8889-c388eb08772f",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -7552,7 +7788,7 @@ Cluster {
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_471d02e5-33d0-4743-a3a2-66cc421df349",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_514f087f-5ec1-4c0e-8889-c388eb08772f",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -7565,81 +7801,79 @@ Cluster {
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.137+2/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_471d02e5-33d0-4743-a3a2-66cc421df349",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_514f087f-5ec1-4c0e-8889-c388eb08772f",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
-        execArgv: <ref *105> [],
-        pid: 2444,
-        ppid: 1866,
+        execArgv: <ref *107> [],
+        pid: 2377,
+        ppid: 1786,
         execPath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
         exitCode: undefined,
         _preload_modules: [Circular: *14],
-        get/set report: <ref *106> {
-            writeReport: ƒ writeReport (length: 2),
-            getReport: ƒ getReport (length: 1),
-            get/set directory: "",
-            get/set filename: "",
-            get/set compact: false,
-            get/set signal: "SIGUSR2",
-            get/set reportOnFatalError: false,
-            get/set reportOnSignal: false,
-            get/set reportOnUncaughtException: false
+        [get/set] report: <ref *108> {
+            writeReport: ƒ writeReport(length: 2) {},
+            getReport: ƒ getReport(length: 1) {},
+            [get/set] directory: "",
+            [get/set] filename: "",
+            [get/set] compact: false,
+            [get/set] signal: "SIGUSR2",
+            [get/set] reportOnFatalError: false,
+            [get/set] reportOnSignal: false,
+            [get/set] reportOnUncaughtException: false
         },
-        setSourceMapsEnabled: <ref *109> ƒ setSourceMapsEnabled (length: 1),
-        Symbol(kCapture): false,
-        Symbol(Symbol.toStringTag): "process"
+        setSourceMapsEnabled: <ref *111> ƒ setSourceMapsEnabled(length: 1) {},
+        Symbol(kCapture): false
     },
     dlopen: [Circular: *43],
     domain: null,
-    emitWarning: [Circular: *61],
-    env: [Circular: *104],
-    execArgv: [Circular: *105],
+    emitWarning: [Circular: *63],
+    env: [Circular: *106],
+    execArgv: [Circular: *107],
     execPath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
-    exit: [Circular: *50],
+    exit: [Circular: *51],
     exitCode: undefined,
-    features: [Circular: *58],
+    features: [Circular: *60],
     getActiveResourcesInfo: [Circular: *45],
-    getegid: [Circular: *56],
-    geteuid: [Circular: *54],
-    getgid: [Circular: *55],
-    getgroups: [Circular: *57],
-    getuid: [Circular: *53],
-    hasUncaughtExceptionCaptureCallback: [Circular: *60],
-    hrtime: [Circular: *51],
-    initgroups: [Circular: *98],
-    kill: [Circular: *49],
+    getegid: [Circular: *58],
+    geteuid: [Circular: *56],
+    getgid: [Circular: *57],
+    getgroups: [Circular: *59],
+    getuid: [Circular: *55],
+    hasUncaughtExceptionCaptureCallback: [Circular: *62],
+    hrtime: [Circular: *52],
+    initgroups: [Circular: *100],
+    kill: [Circular: *50],
     memoryUsage: [Circular: *48],
     moduleLoadList: [Circular: *42],
-    nextTick: [Circular: *62],
-    openStdin: [Circular: *52],
-    pid: 2444,
+    nextTick: [Circular: *64],
+    openStdin: [Circular: *54],
+    pid: 2377,
     platform: "linux",
-    ppid: 1866,
+    ppid: 1786,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
-    report: [Circular: *106],
+    report: [Circular: *108],
     resourceUsage: [Circular: *47],
-    setSourceMapsEnabled: [Circular: *109],
-    setUncaughtExceptionCaptureCallback: [Circular: *59],
-    setegid: [Circular: *100],
-    seteuid: [Circular: *101],
-    setgid: [Circular: *102],
-    setgroups: [Circular: *99],
-    setuid: [Circular: *103],
-    stderr: [Circular: *87],
-    stdin: [Circular: *76],
-    stdout: [Circular: *63],
+    setSourceMapsEnabled: [Circular: *111],
+    setUncaughtExceptionCaptureCallback: [Circular: *61],
+    setegid: [Circular: *102],
+    seteuid: [Circular: *103],
+    setgid: [Circular: *104],
+    setgroups: [Circular: *101],
+    setuid: [Circular: *105],
+    stderr: [Circular: *89],
+    stdin: [Circular: *78],
+    stdout: [Circular: *65],
     title: "node",
-    umask: [Circular: *97],
+    umask: [Circular: *99],
     uptime: [Circular: *44],
     version: "v18.15.0",
-    versions: [Circular: *40],
-    Symbol(Symbol.toStringTag): "Module"
+    versions: [Circular: *40]
 }
 ```
 
@@ -7647,19 +7881,19 @@ Cluster {
 
 ```js
 EventEmitter {
-    pid: 2451,
-    ppid: 1866,
+    pid: 2383,
+    ppid: 1786,
     title: "bun",
     argv: [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1681260831389-1/process.mjs"
+        "/tmp/fs-fixture-1681286724511-1/process.mjs"
     ],
-    revision: "14c6023e1551b76c12464a6213456f844fc2024e",
-    nextTick: ƒ nextTick (length: 1),
-    dlopen: ƒ dlopen (length: 1),
-    cwd: ƒ cwd (length: 0),
-    chdir: ƒ chdir (length: 0),
-    exit: ƒ exit (length: 0),
+    revision: "519f9aac8081d961f8e79062f4c0f26ef256027b",
+    nextTick: ƒ nextTick(length: 1) {},
+    dlopen: ƒ dlopen(length: 1) {},
+    cwd: ƒ cwd(length: 0) {},
+    chdir: ƒ chdir(length: 0) {},
+    exit: ƒ exit(length: 0) {},
     versions: {
         node: "18.15.0",
         bun: "0.6.0",
@@ -7686,7 +7920,9 @@ EventEmitter {
     isBun: 1,
     platform: "linux",
     arch: "x64",
-    hrtime: ƒ hrtime (length: 0),
+    hrtime: ƒ hrtime(length: 0) {
+        bigint: ƒ bigint(length: 0) {}
+    },
     release: {
         name: "bun",
         lts: false,
@@ -7718,7 +7954,7 @@ EventEmitter {
             corked: 0,
             sync: true,
             bufferProcessing: false,
-            onwrite: ƒ bound onwrite (length: 1),
+            onwrite: ƒ bound onwrite(length: 1) {},
             writecb: null,
             writelen: 0,
             afterWriteTickInfo: null,
@@ -7739,162 +7975,162 @@ EventEmitter {
         },
         allowHalfOpen: true
     },
-    abort: ƒ abort (length: 0),
+    abort: ƒ abort(length: 0) {},
     argv0: "bun",
     execPath: "/home/runner/.bun/bin/bun",
     execArgv: [],
-    uptime: ƒ uptime (length: 0),
-    umask: ƒ umask (length: 1),
-    binding: ƒ binding (length: 1),
+    uptime: ƒ uptime(length: 0) {},
+    umask: ƒ umask(length: 1) {},
+    binding: ƒ binding(length: 1) {},
     config: {
         target_defaults: {},
         variables: {
             v8_enable_i8n_support: 1
         }
     },
-    emitWarning: ƒ emitWarning (length: 1),
+    emitWarning: ƒ emitWarning(length: 1) {},
     env: {
-        get/set GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_471d02e5-33d0-4743-a3a2-66cc421df349",
-        get/set npm_package_devDependencies__types_node: "^18.15.11",
-        get/set STATS_TRP: "true",
-        get/set DEPLOYMENT_BASEPATH: "/opt/runner",
-        get/set DOTNET_NOLOGO: "1",
-        get/set USER: "runner",
-        get/set npm_config_user_agent: "pnpm/7.32.0 npm/? node/v18.15.0 linux x64",
-        get/set CI: "true",
-        get/set GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_471d02e5-33d0-4743-a3a2-66cc421df349",
-        get/set PIPX_HOME: "/opt/pipx",
-        get/set npm_package_devDependencies_execa: "^7.1.1",
-        get/set npm_node_execpath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
-        get/set JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
-        get/set SHLVL: "1",
-        get/set HOME: "/home/runner",
-        get/set RUNNER_TEMP: "/home/runner/work/_temp",
-        get/set GITHUB_EVENT_PATH: "/home/runner/work/_temp/_github_workflow/event.json",
-        get/set JAVA_HOME_11_X64: "/usr/lib/jvm/temurin-11-jdk-amd64",
-        get/set PIPX_BIN_DIR: "/opt/pipx_bin",
-        get/set GRAALVM_11_ROOT: "/usr/local/graalvm/graalvm-ce-java11-22.3.1",
-        get/set GITHUB_REPOSITORY_OWNER: "privatenumber",
-        get/set npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
-        get/set GRADLE_HOME: "/usr/share/gradle-8.0.2",
-        get/set ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        get/set STATS_RDCL: "true",
-        get/set GITHUB_RETENTION_DAYS: "90",
-        get/set GITHUB_REPOSITORY_OWNER_ID: "1075694",
-        get/set POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
-        get/set AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
-        get/set GITHUB_HEAD_REF: undefined,
-        get/set SYSTEMD_EXEC_PID: "677",
-        get/set GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-        get/set GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.2/x64",
-        get/set NVM_DIR: "/home/runner/.nvm",
-        get/set DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
-        get/set JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-        get/set ImageVersion: "20230402.1",
-        get/set npm_package_eslintConfig_ignorePatterns_0: "README.md",
-        get/set RUNNER_OS: "Linux",
-        get/set GITHUB_API_URL: "https://api.github.com",
-        get/set SWIFT_PATH: "/usr/share/swift/usr/bin",
-        get/set RUNNER_USER: "runner",
-        get/set CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-        get/set JOURNAL_STREAM: "8:17606",
-        get/set GITHUB_WORKFLOW: "Compare Bun and Node.js",
-        get/set _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
-        get/set npm_package_private: "true",
-        get/set npm_package_scripts_lint: "eslint --cache .",
-        get/set npm_config_registry: "https://registry.npmjs.org/",
-        get/set GITHUB_RUN_ID: "4673406589",
-        get/set GITHUB_REF_TYPE: "branch",
-        get/set BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-        get/set GITHUB_WORKFLOW_SHA: "a7ea866e9a91eaa7f50b8868e4b1333fae3077c2",
-        get/set GITHUB_BASE_REF: undefined,
-        get/set ImageOS: "ubuntu22",
-        get/set npm_package_scripts_start: "tsx index.ts",
-        get/set GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
-        get/set PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
-        get/set GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
-        get/set GITHUB_ACTION_REPOSITORY: undefined,
-        get/set npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/dist/node_modules/node-gyp/…",
-        get/set PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
-        get/set ANT_HOME: "/usr/share/ant",
-        get/set DOTNET_MULTILEVEL_LOOKUP: "0",
-        get/set RUNNER_TRACKING_ID: "github_91f005f9-3dbf-4224-90dc-f8d49abc608c",
-        get/set INVOCATION_ID: "33b3d64f756b4c6fa397f5341756e474",
-        get/set RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-        get/set GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.7/x64",
-        get/set NODE: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
-        get/set GITHUB_ACTION: "__run",
-        get/set GITHUB_RUN_NUMBER: "14",
-        get/set GITHUB_TRIGGERING_ACTOR: "privatenumber",
-        get/set RUNNER_ARCH: "X64",
-        get/set XDG_RUNTIME_DIR: "/run/user/1001",
-        get/set AGENT_TOOLSDIRECTORY: "/opt/hostedtoolcache",
-        get/set npm_package_devDependencies_comment_mark: "^1.1.1",
-        get/set LANG: "C.UTF-8",
-        get/set VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
-        get/set npm_package_devDependencies_eslint: "^8.37.0",
-        get/set CONDA: "/usr/share/miniconda",
-        get/set RUNNER_NAME: "GitHub Actions 2",
-        get/set XDG_CONFIG_HOME: "/home/runner/.config",
-        get/set GITHUB_REF_NAME: "master",
-        get/set GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
-        get/set npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
-        get/set npm_lifecycle_script: "tsx index.ts",
-        get/set ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        get/set GITHUB_ACTION_REF: undefined,
-        get/set DEBIAN_FRONTEND: "noninteractive",
-        get/set GITHUB_REPOSITORY_ID: "622996871",
-        get/set GITHUB_ACTIONS: "true",
-        get/set STATS_NM: "true",
-        get/set NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/bin/node_modules:/home/runn…",
-        get/set npm_package_devDependencies_fs_fixture: "^1.2.0",
-        get/set npm_lifecycle_event: "start",
-        get/set GITHUB_REF_PROTECTED: "false",
-        get/set npm_package_devDependencies_lint_staged: "^13.2.0",
-        get/set npm_package_devDependencies_simple_git_hooks: "^2.8.1",
-        get/set GITHUB_WORKSPACE: "/home/runner/work/compare-bun-node/compare-bun-node",
-        get/set ACCEPT_EULA: "Y",
-        get/set GITHUB_JOB: "build",
-        get/set RUNNER_PERFLOG: "/home/runner/perflog",
-        get/set npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-        get/set GITHUB_SHA: "a7ea866e9a91eaa7f50b8868e4b1333fae3077c2",
-        get/set GITHUB_RUN_ATTEMPT: "1",
-        get/set GITHUB_REF: "refs/heads/master",
-        get/set GITHUB_ACTOR: "privatenumber",
-        get/set ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
-        get/set npm_package_license: "MIT",
-        get/set LEIN_HOME: "/usr/local/lib/lein",
-        get/set npm_package_devDependencies_tsx: "^3.12.6",
-        get/set GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_471d02e5-33d0-4743-a3a2-66cc421df349",
-        get/set JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
-        get/set PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
-        get/set GITHUB_ACTOR_ID: "1075694",
-        get/set RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-        get/set npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/bin/pnpm.cjs",
-        get/set HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
-        get/set GITHUB_EVENT_NAME: "push",
-        get/set HOMEBREW_NO_AUTO_UPDATE: "1",
-        get/set ANDROID_HOME: "/usr/local/lib/android/sdk",
-        get/set GITHUB_SERVER_URL: "https://github.com",
-        get/set GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
-        get/set LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
-        get/set GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-        get/set GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_471d02e5-33d0-4743-a3a2-66cc421df349",
-        get/set EDGEWEBDRIVER: "/usr/local/share/edge_driver",
-        get/set STATS_EXT: "true",
-        get/set npm_command: "run-script",
-        get/set PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
-        get/set ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        get/set SGX_AESM_ADDR: "1",
-        get/set CHROME_BIN: "/usr/bin/google-chrome",
-        get/set SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
-        get/set PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-        get/set STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.137+2/provjobd.data",
-        get/set npm_package_lint_staged____ts_js_: "eslint --cache",
-        get/set ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        get/set GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_471d02e5-33d0-4743-a3a2-66cc421df349",
-        get/set npm_package_eslintConfig_extends: "@pvtnbr",
-        get/set INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
+        [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_514f087f-5ec1-4c0e-8889-c388eb08772f",
+        [get/set] npm_package_devDependencies__types_node: "^18.15.11",
+        [get/set] STATS_TRP: "true",
+        [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
+        [get/set] DOTNET_NOLOGO: "1",
+        [get/set] USER: "runner",
+        [get/set] npm_config_user_agent: "pnpm/7.32.0 npm/? node/v18.15.0 linux x64",
+        [get/set] CI: "true",
+        [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_514f087f-5ec1-4c0e-8889-c388eb08772f",
+        [get/set] PIPX_HOME: "/opt/pipx",
+        [get/set] npm_package_devDependencies_execa: "^7.1.1",
+        [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
+        [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
+        [get/set] SHLVL: "1",
+        [get/set] HOME: "/home/runner",
+        [get/set] RUNNER_TEMP: "/home/runner/work/_temp",
+        [get/set] GITHUB_EVENT_PATH: "/home/runner/work/_temp/_github_workflow/event.json",
+        [get/set] JAVA_HOME_11_X64: "/usr/lib/jvm/temurin-11-jdk-amd64",
+        [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
+        [get/set] GRAALVM_11_ROOT: "/usr/local/graalvm/graalvm-ce-java11-22.3.1",
+        [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
+        [get/set] npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
+        [get/set] GRADLE_HOME: "/usr/share/gradle-8.0.2",
+        [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+        [get/set] STATS_RDCL: "true",
+        [get/set] GITHUB_RETENTION_DAYS: "90",
+        [get/set] GITHUB_REPOSITORY_OWNER_ID: "1075694",
+        [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
+        [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
+        [get/set] GITHUB_HEAD_REF: undefined,
+        [get/set] SYSTEMD_EXEC_PID: "667",
+        [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
+        [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.2/x64",
+        [get/set] NVM_DIR: "/home/runner/.nvm",
+        [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
+        [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
+        [get/set] ImageVersion: "20230402.1",
+        [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
+        [get/set] RUNNER_OS: "Linux",
+        [get/set] GITHUB_API_URL: "https://api.github.com",
+        [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
+        [get/set] RUNNER_USER: "runner",
+        [get/set] CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
+        [get/set] JOURNAL_STREAM: "8:17426",
+        [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
+        [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
+        [get/set] npm_package_private: "true",
+        [get/set] npm_package_scripts_lint: "eslint --cache .",
+        [get/set] npm_config_registry: "https://registry.npmjs.org/",
+        [get/set] GITHUB_RUN_ID: "4676031987",
+        [get/set] GITHUB_REF_TYPE: "branch",
+        [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
+        [get/set] GITHUB_WORKFLOW_SHA: "5f176fe96561756b0451f3270a3ae5d46dcda78a",
+        [get/set] GITHUB_BASE_REF: undefined,
+        [get/set] ImageOS: "ubuntu22",
+        [get/set] npm_package_scripts_start: "tsx index.ts",
+        [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
+        [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
+        [get/set] GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
+        [get/set] GITHUB_ACTION_REPOSITORY: undefined,
+        [get/set] npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/dist/node_modules/node-gyp/…",
+        [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
+        [get/set] ANT_HOME: "/usr/share/ant",
+        [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
+        [get/set] RUNNER_TRACKING_ID: "github_65783939-c03f-4ebe-8008-71363e48c9b0",
+        [get/set] INVOCATION_ID: "8ce3fecf3e3549c3bceaa8165563528f",
+        [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
+        [get/set] GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.7/x64",
+        [get/set] NODE: "/opt/hostedtoolcache/node/18.15.0/x64/bin/node",
+        [get/set] GITHUB_ACTION: "__run",
+        [get/set] GITHUB_RUN_NUMBER: "15",
+        [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
+        [get/set] RUNNER_ARCH: "X64",
+        [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
+        [get/set] AGENT_TOOLSDIRECTORY: "/opt/hostedtoolcache",
+        [get/set] npm_package_devDependencies_comment_mark: "^1.1.1",
+        [get/set] LANG: "C.UTF-8",
+        [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
+        [get/set] npm_package_devDependencies_eslint: "^8.37.0",
+        [get/set] CONDA: "/usr/share/miniconda",
+        [get/set] RUNNER_NAME: "GitHub Actions 2",
+        [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
+        [get/set] GITHUB_REF_NAME: "master",
+        [get/set] GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
+        [get/set] npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
+        [get/set] npm_lifecycle_script: "tsx index.ts",
+        [get/set] ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+        [get/set] GITHUB_ACTION_REF: undefined,
+        [get/set] DEBIAN_FRONTEND: "noninteractive",
+        [get/set] GITHUB_REPOSITORY_ID: "622996871",
+        [get/set] GITHUB_ACTIONS: "true",
+        [get/set] STATS_NM: "true",
+        [get/set] NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/bin/node_modules:/home/runn…",
+        [get/set] npm_package_devDependencies_fs_fixture: "^1.2.0",
+        [get/set] npm_lifecycle_event: "start",
+        [get/set] GITHUB_REF_PROTECTED: "false",
+        [get/set] npm_package_devDependencies_lint_staged: "^13.2.0",
+        [get/set] npm_package_devDependencies_simple_git_hooks: "^2.8.1",
+        [get/set] GITHUB_WORKSPACE: "/home/runner/work/compare-bun-node/compare-bun-node",
+        [get/set] ACCEPT_EULA: "Y",
+        [get/set] GITHUB_JOB: "build",
+        [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
+        [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
+        [get/set] GITHUB_SHA: "5f176fe96561756b0451f3270a3ae5d46dcda78a",
+        [get/set] GITHUB_RUN_ATTEMPT: "1",
+        [get/set] GITHUB_REF: "refs/heads/master",
+        [get/set] GITHUB_ACTOR: "privatenumber",
+        [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
+        [get/set] npm_package_license: "MIT",
+        [get/set] LEIN_HOME: "/usr/local/lib/lein",
+        [get/set] npm_package_devDependencies_tsx: "^3.12.6",
+        [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_514f087f-5ec1-4c0e-8889-c388eb08772f",
+        [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
+        [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
+        [get/set] GITHUB_ACTOR_ID: "1075694",
+        [get/set] RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
+        [get/set] npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.32.0/node_modules/pnpm/bin/pnpm.cjs",
+        [get/set] HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
+        [get/set] GITHUB_EVENT_NAME: "push",
+        [get/set] HOMEBREW_NO_AUTO_UPDATE: "1",
+        [get/set] ANDROID_HOME: "/usr/local/lib/android/sdk",
+        [get/set] GITHUB_SERVER_URL: "https://github.com",
+        [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
+        [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
+        [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
+        [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_514f087f-5ec1-4c0e-8889-c388eb08772f",
+        [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
+        [get/set] STATS_EXT: "true",
+        [get/set] npm_command: "run-script",
+        [get/set] PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
+        [get/set] ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+        [get/set] SGX_AESM_ADDR: "1",
+        [get/set] CHROME_BIN: "/usr/bin/google-chrome",
+        [get/set] SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
+        [get/set] PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
+        [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.137+2/provjobd.data",
+        [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
+        [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+        [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_514f087f-5ec1-4c0e-8889-c388eb08772f",
+        [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
+        [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
     },
     Symbol(Symbol.toStringTag): "process"
 }
@@ -7908,43 +8144,39 @@ EventEmitter {
 
 ```js
 [Object: null prototype] {
-    decode: <ref *2> ƒ decode (length: 1),
+    decode: <ref *2> ƒ decode(length: 1) {},
     default: {
         version: "2.1.0",
         ucs2: <ref *4> {
-            decode: ƒ ucs2decode (length: 1),
-            encode: ƒ ucs2encode (length: 1)
+            decode: ƒ ucs2decode(length: 1) {},
+            encode: ƒ ucs2encode(length: 1) {}
         },
         decode: [Circular: *2],
-        encode: <ref *7> ƒ encode (length: 1),
-        toASCII: <ref *8> ƒ toASCII (length: 1),
-        toUnicode: <ref *9> ƒ toUnicode (length: 1)
+        encode: <ref *7> ƒ encode(length: 1) {},
+        toASCII: <ref *8> ƒ toASCII(length: 1) {},
+        toUnicode: <ref *9> ƒ toUnicode(length: 1) {}
     },
     encode: [Circular: *7],
     toASCII: [Circular: *8],
     toUnicode: [Circular: *9],
     ucs2: [Circular: *4],
-    version: "2.1.0",
-    Symbol(Symbol.toStringTag): "Module"
+    version: "2.1.0"
 }
 ```
 
 </td><td valign="top">
 
 ```js
-<ref *1> {
-    __esModule: true,
-    get/set version: "2.1.0",
-    get/set ucs2: {
-        decode: ƒ j (length: 1),
-        encode: ƒ tt (length: 1)
+{
+    [get/set] version: "2.1.0",
+    [get/set] ucs2: {
+        decode: ƒ j(length: 1) {},
+        encode: ƒ tt(length: 1) {}
     },
-    get/set decode: ƒ V (length: 1),
-    get/set encode: ƒ q (length: 1),
-    get/set toASCII: ƒ et (length: 1),
-    get/set toUnicode: ƒ nt (length: 1),
-    get/set default: [Circular: *1],
-    Symbol(CommonJSTransformed): true
+    [get/set] decode: ƒ V(length: 1) {},
+    [get/set] encode: ƒ q(length: 1) {},
+    [get/set] toASCII: ƒ et(length: 1) {},
+    [get/set] toUnicode: ƒ nt(length: 1) {}
 }
 ```
 
@@ -7956,12 +8188,12 @@ EventEmitter {
 
 ```js
 [Object: null prototype] {
-    decode: <ref *2> ƒ parse (length: 4),
+    decode: <ref *2> ƒ parse(length: 4) {},
     default: {
-        unescapeBuffer: <ref *4> ƒ unescapeBuffer (length: 2),
-        unescape: <ref *5> ƒ qsUnescape (length: 2),
-        escape: <ref *6> ƒ qsEscape (length: 1),
-        stringify: <ref *7> ƒ stringify (length: 4),
+        unescapeBuffer: <ref *4> ƒ unescapeBuffer(length: 2) {},
+        unescape: <ref *5> ƒ qsUnescape(length: 2) {},
+        escape: <ref *6> ƒ qsEscape(length: 1) {},
+        stringify: <ref *7> ƒ stringify(length: 4) {},
         encode: [Circular: *7],
         parse: [Circular: *2],
         decode: [Circular: *2]
@@ -7971,25 +8203,21 @@ EventEmitter {
     parse: [Circular: *2],
     stringify: [Circular: *7],
     unescape: [Circular: *5],
-    unescapeBuffer: [Circular: *4],
-    Symbol(Symbol.toStringTag): "Module"
+    unescapeBuffer: [Circular: *4]
 }
 ```
 
 </td><td valign="top">
 
 ```js
-<ref *1> {
-    __esModule: true,
-    get/set unescapeBuffer: ƒ Nt (length: 2),
-    get/set unescape: ƒ $r (length: 2),
-    get/set escape: ƒ Pt (length: 1),
-    get/set stringify: <ref *5> ƒ Gr (length: 4),
-    get/set encode: [Circular: *5],
-    get/set parse: <ref *6> ƒ Wr (length: 4),
-    get/set decode: [Circular: *6],
-    get/set default: [Circular: *1],
-    Symbol(CommonJSTransformed): true
+{
+    [get/set] unescapeBuffer: ƒ Nt(length: 2) {},
+    [get/set] unescape: ƒ $r(length: 2) {},
+    [get/set] escape: ƒ Pt(length: 1) {},
+    [get/set] stringify: <ref *5> ƒ Gr(length: 4) {},
+    [get/set] encode: [Circular: *5],
+    [get/set] parse: <ref *6> ƒ Wr(length: 4) {},
+    [get/set] decode: [Circular: *6]
 }
 ```
 
@@ -8001,29 +8229,28 @@ EventEmitter {
 
 ```js
 [Object: null prototype] {
-    Interface: <ref *2> ƒ Interface (length: 4),
-    clearLine: <ref *3> ƒ clearLine (length: 3),
-    clearScreenDown: <ref *4> ƒ clearScreenDown (length: 2),
-    createInterface: <ref *5> ƒ createInterface (length: 4),
-    cursorTo: <ref *6> ƒ cursorTo (length: 4),
+    Interface: <ref *2> ƒ Interface(length: 4) {},
+    clearLine: <ref *3> ƒ clearLine(length: 3) {},
+    clearScreenDown: <ref *4> ƒ clearScreenDown(length: 2) {},
+    createInterface: <ref *5> ƒ createInterface(length: 4) {},
+    cursorTo: <ref *6> ƒ cursorTo(length: 4) {},
     default: {
         Interface: [Circular: *2],
         clearLine: [Circular: *3],
         clearScreenDown: [Circular: *4],
         createInterface: [Circular: *5],
         cursorTo: [Circular: *6],
-        emitKeypressEvents: <ref *8> ƒ emitKeypressEvents (length: 1),
-        moveCursor: <ref *9> ƒ moveCursor (length: 4),
+        emitKeypressEvents: <ref *8> ƒ emitKeypressEvents(length: 1) {},
+        moveCursor: <ref *9> ƒ moveCursor(length: 4) {},
         promises: <ref *10> {
-            Interface: [class Interface],
-            Readline: [class Readline],
-            createInterface: ƒ createInterface (length: 4)
+            Interface: [class Interface]{},
+            Readline: [class Readline]{},
+            createInterface: ƒ createInterface(length: 4) {}
         }
     },
     emitKeypressEvents: [Circular: *8],
     moveCursor: [Circular: *9],
-    promises: [Circular: *10],
-    Symbol(Symbol.toStringTag): "Module"
+    promises: [Circular: *10]
 }
 ```
 
@@ -8031,23 +8258,29 @@ EventEmitter {
 
 ```js
 {
-    Interface: ƒ Interface (length: 4),
-    clearLine: ƒ clearLine (length: 3),
-    clearScreenDown: ƒ clearScreenDown (length: 2),
-    createInterface: ƒ createInterface (length: 4),
-    cursorTo: ƒ cursorTo (length: 4),
-    emitKeypressEvents: ƒ emitKeypressEvents (length: 1),
-    moveCursor: ƒ moveCursor (length: 4),
+    Interface: ƒ Interface(length: 4) {},
+    clearLine: ƒ clearLine(length: 3) {},
+    clearScreenDown: ƒ clearScreenDown(length: 2) {},
+    createInterface: ƒ createInterface(length: 4) {},
+    cursorTo: ƒ cursorTo(length: 4) {},
+    emitKeypressEvents: ƒ emitKeypressEvents(length: 1) {},
+    moveCursor: ƒ moveCursor(length: 4) {},
     promises: {
-        Readline: [class Readline],
-        Interface: [class Interface],
-        createInterface: ƒ createInterface (length: 4)
+        Readline: [class Readline]{},
+        Interface: [class Interface]{},
+        createInterface: ƒ createInterface(length: 4) {}
     },
     Symbol(__BUN_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED__): {
-        CSI: ƒ CSI (length: 1),
+        CSI: ƒ CSI(length: 1) {
+            kEscape: "\u001b",
+            kClearLine: "\u001b[2K",
+            kClearScreenDown: "\u001b[0J",
+            kClearToLineBeginning: "\u001b[1K",
+            kClearToLineEnd: "\u001b[0K"
+        },
         utils: {
-            getStringWidth: ƒ getStringWidth (length: 1),
-            stripVTControlCharacters: ƒ stripVTControlCharacters (length: 1)
+            getStringWidth: ƒ getStringWidth(length: 1) {},
+            stripVTControlCharacters: ƒ stripVTControlCharacters(length: 1) {}
         }
     },
     Symbol(CommonJS): 0
@@ -8062,15 +8295,14 @@ EventEmitter {
 
 ```js
 [Object: null prototype] {
-    Interface: <ref *2> [class Interface],
-    Readline: <ref *3> [class Readline],
-    createInterface: <ref *4> ƒ createInterface (length: 4),
+    Interface: <ref *2> [class Interface]{},
+    Readline: <ref *3> [class Readline]{},
+    createInterface: <ref *4> ƒ createInterface(length: 4) {},
     default: {
         Interface: [Circular: *2],
         Readline: [Circular: *3],
         createInterface: [Circular: *4]
-    },
-    Symbol(Symbol.toStringTag): "Module"
+    }
 }
 ```
 
@@ -8078,9 +8310,9 @@ EventEmitter {
 
 ```js
 {
-    Readline: [class Readline],
-    Interface: [class Interface],
-    createInterface: ƒ createInterface (length: 4),
+    Readline: [class Readline]{},
+    Interface: [class Interface]{},
+    createInterface: ƒ createInterface(length: 4) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -8093,10 +8325,10 @@ EventEmitter {
 
 ```js
 [Object: null prototype] {
-    REPLServer: <ref *2> ƒ REPLServer (length: 6),
+    REPLServer: <ref *2> ƒ REPLServer(length: 6) {},
     REPL_MODE_SLOPPY: Symbol(repl-sloppy),
     REPL_MODE_STRICT: Symbol(repl-strict),
-    Recoverable: <ref *3> ƒ Recoverable (length: 1),
+    Recoverable: <ref *3> ƒ Recoverable(length: 1) {},
     builtinModules: <ref *4> [
         "assert",
         "assert/strict",
@@ -8152,41 +8384,52 @@ EventEmitter {
         "zlib"
     ],
     default: {
-        start: <ref *6> ƒ start (length: 6),
-        writer: <ref *7> ƒ writer (length: 1),
+        start: <ref *6> ƒ start(length: 6) {},
+        writer: <ref *7> ƒ writer(length: 1) {
+            options: {
+                showHidden: false,
+                depth: 2,
+                colors: false,
+                customInspect: true,
+                showProxy: true,
+                maxArrayLength: 100,
+                maxStringLength: 10000,
+                breakLength: 80,
+                compact: 3,
+                sorted: false,
+                getters: false,
+                numericSeparator: false
+            }
+        },
         REPLServer: [Circular: *2],
         REPL_MODE_SLOPPY: Symbol(repl-sloppy),
         REPL_MODE_STRICT: Symbol(repl-strict),
         Recoverable: [Circular: *3],
-        get/set builtinModules: [Circular: *4],
-        get/set _builtinLibs: [Circular: *4]
+        [get/set] builtinModules: [Circular: *4]
     },
     start: [Circular: *6],
-    writer: [Circular: *7],
-    Symbol(Symbol.toStringTag): "Module"
+    writer: [Circular: *7]
 }
 ```
 
 </td><td valign="top">
 
 ```js
-75 | 				}
 76 | 			}
 77 | 
 78 | 			const entries = Reflect.ownKeys(value).map(
-79 | 				key => {
+79 | 				(key) => {
 80 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-                            ^
-ReferenceError: Static function property defined with NULL callAsFunction callback.
-      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:80:24
-      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:78:19
-      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:92:6
-      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:78:19
-      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:92:6
-      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:78:19
-      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:92:6
-      at /tmp/fs-fixture-1681260831389-1/inspect.mjs:78:19
-      at /tmp/fs-fixture-1681260831389-1/repl.mjs:4:15
+81 | 					if (!descriptor.enumerable) {
+             ^
+TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
+      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:81:10
+      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:78:19
+      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:97:6
+      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:78:19
+      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:97:6
+      at /tmp/fs-fixture-1681286724511-1/inspect.mjs:78:19
+      at /tmp/fs-fixture-1681286724511-1/repl.mjs:4:15
 ```
 
 </td></tr></table>
@@ -8197,35 +8440,120 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    Duplex: ƒ Duplex (length: 1),
-    PassThrough: ƒ PassThrough (length: 1),
-    Readable: ƒ Readable (length: 1),
-    Stream: <ref *5> ƒ Stream (length: 1),
-    Transform: ƒ Transform (length: 1),
-    Writable: ƒ Writable (length: 1),
-    _isUint8Array: ƒ isUint8Array (length: 1),
-    _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer (length: 1),
-    addAbortSignal: ƒ addAbortSignal (length: 2),
-    compose: ƒ compose (length: 0),
-    default: [Circular: *5],
-    destroy: ƒ destroyer (length: 2),
-    finished: ƒ eos (length: 3),
-    isDisturbed: ƒ isDisturbed (length: 1),
-    isErrored: ƒ isErrored (length: 1),
-    isReadable: ƒ isReadable (length: 1),
-    pipeline: ƒ pipeline (length: 0),
-    promises: {
-        finished: ƒ finished (length: 2),
-        pipeline: ƒ pipeline (length: 0)
+    Duplex: <ref *2> ƒ Duplex(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
     },
-    Symbol(Symbol.toStringTag): "Module"
+    PassThrough: <ref *6> ƒ PassThrough(length: 1) {},
+    Readable: <ref *7> ƒ Readable(length: 1) {
+        ReadableState: ƒ ReadableState(length: 3) {},
+        _fromList: ƒ fromList(length: 2) {},
+        from: ƒ (length: 2) {},
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 2) {},
+        wrap: ƒ (length: 2) {}
+    },
+    Stream: <ref *14> ƒ Stream(length: 1) {
+        isDisturbed: <ref *15> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *16> ƒ isErrored(length: 1) {},
+        isReadable: <ref *17> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *7],
+        Writable: <ref *18> ƒ Writable(length: 1) {
+            WritableState: ƒ WritableState(length: 3) {},
+            fromWeb: ƒ (length: 2) {},
+            toWeb: ƒ (length: 1) {}
+        },
+        Duplex: [Circular: *2],
+        Transform: <ref *22> ƒ Transform(length: 1) {},
+        PassThrough: [Circular: *6],
+        pipeline: <ref *23> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ pipeline(length: 0) {}
+        },
+        addAbortSignal: <ref *25> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *26> ƒ eos(length: 3) {
+            finished: <ref *27> ƒ finished(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        },
+        destroy: <ref *28> ƒ destroyer(length: 2) {},
+        compose: <ref *29> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *30> {
+            finished: [Circular: *27],
+            pipeline: [Circular: *24]
+        },
+        Stream: [Circular: *14],
+        _isUint8Array: <ref *31> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ _uint8ArrayToBuffer(length: 1) {}
+    },
+    Transform: [Circular: *22],
+    Writable: [Circular: *18],
+    _isUint8Array: [Circular: *31],
+    _uint8ArrayToBuffer: [Circular: *32],
+    addAbortSignal: [Circular: *25],
+    compose: [Circular: *29],
+    default: [Circular: *14],
+    destroy: [Circular: *28],
+    finished: [Circular: *26],
+    isDisturbed: [Circular: *15],
+    isErrored: [Circular: *16],
+    isReadable: [Circular: *17],
+    pipeline: [Circular: *23],
+    promises: [Circular: *30]
 }
 ```
 
 </td><td valign="top">
 
 ```js
-ƒ Stream (length: 1)
+<ref *1> ƒ Stream(length: 1) {
+    isDisturbed: ƒ isDisturbed(length: 1) {},
+    isErrored: ƒ isErrored(length: 1) {},
+    isWritable: ƒ isWritable(length: 1) {},
+    isReadable: ƒ isReadable(length: 1) {},
+    Readable: ƒ Readable(length: 1) {
+        _fromList: ƒ fromList(length: 2) {},
+        from: ƒ (length: 2) {},
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        wrap: ƒ (length: 2) {}
+    },
+    Writable: ƒ Writable(length: 0) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {}
+    },
+    Duplex: ƒ Duplex(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    Transform: ƒ Transform(length: 1) {},
+    PassThrough: ƒ PassThrough(length: 1) {},
+    pipeline: ƒ pipeline(length: 0) {
+        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ pipeline(length: 0) {}
+    },
+    addAbortSignal: ƒ addAbortSignal(length: 2) {},
+    finished: ƒ eos(length: 3) {
+        finished: <ref *25> ƒ finished(length: 2) {},
+        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
+    },
+    destroy: ƒ destroyer(length: 2) {},
+    compose: ƒ compose(length: 0) {},
+    [get/set] promises: {
+        finished: [Circular: *25],
+        pipeline: [Circular: *22]
+    },
+    Stream: [Circular: *1],
+    _isUint8Array: ƒ isUint8Array(length: 1) {},
+    _uint8ArrayToBuffer: ƒ _uint8ArrayToBuffer(length: 1) {},
+    _getNativeReadableStreamPrototype: ƒ getNativeReadableStreamPrototype(length: 2) {},
+    NativeWritable: [class NativeWritable]{},
+    default: [Circular: *1],
+    eos: ƒ __require2(length: 0) {},
+    Symbol(CommonJS): 0,
+    Symbol(::bunternal::): {
+        _ReadableFromWeb: [class ReadableFromWeb]{}
+    }
+}
 ```
 
 </td></tr></table>
@@ -8236,19 +8564,18 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    arrayBuffer: <ref *2> async ƒ arrayBuffer (length: 1),
-    blob: <ref *3> async ƒ blob (length: 1),
-    buffer: <ref *4> async ƒ buffer (length: 1),
+    arrayBuffer: <ref *2> async ƒ arrayBuffer(length: 1) {},
+    blob: <ref *3> async ƒ blob(length: 1) {},
+    buffer: <ref *4> async ƒ buffer(length: 1) {},
     default: {
         arrayBuffer: [Circular: *2],
         blob: [Circular: *3],
         buffer: [Circular: *4],
-        text: <ref *6> async ƒ text (length: 1),
-        json: <ref *7> async ƒ json (length: 1)
+        text: <ref *6> async ƒ text(length: 1) {},
+        json: <ref *7> async ƒ json(length: 1) {}
     },
     json: [Circular: *7],
-    text: [Circular: *6],
-    Symbol(Symbol.toStringTag): "Module"
+    text: [Circular: *6]
 }
 ```
 
@@ -8256,11 +8583,11 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    arrayBuffer: ƒ readableStreamToArrayBuffer (length: 1),
-    text: ƒ readableStreamToText (length: 1),
-    json: ƒ json (length: 1),
-    buffer: async ƒ buffer (length: 1),
-    blob: ƒ readableStreamToBlob (length: 1),
+    arrayBuffer: ƒ readableStreamToArrayBuffer(length: 1) {},
+    text: ƒ readableStreamToText(length: 1) {},
+    json: ƒ json(length: 1) {},
+    buffer: async ƒ buffer(length: 1) {},
+    blob: ƒ readableStreamToBlob(length: 1) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -8274,12 +8601,11 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 ```js
 [Object: null prototype] {
     default: {
-        finished: <ref *3> ƒ finished (length: 2),
-        pipeline: <ref *4> ƒ pipeline (length: 0)
+        finished: <ref *3> ƒ finished(length: 2) {},
+        pipeline: <ref *4> ƒ pipeline(length: 0) {}
     },
     finished: [Circular: *3],
-    pipeline: [Circular: *4],
-    Symbol(Symbol.toStringTag): "Module"
+    pipeline: [Circular: *4]
 }
 ```
 
@@ -8287,8 +8613,8 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    pipeline: ƒ pipeline (length: 0),
-    finished: ƒ finished (length: 2),
+    pipeline: ƒ pipeline(length: 0) {},
+    finished: ƒ finished(length: 2) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -8301,23 +8627,23 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    ByteLengthQueuingStrategy: <ref *2> [class ByteLengthQueuingStrategy],
-    CompressionStream: <ref *3> [class CompressionStream],
-    CountQueuingStrategy: <ref *4> [class CountQueuingStrategy],
-    DecompressionStream: <ref *5> [class DecompressionStream],
-    ReadableByteStreamController: <ref *6> [class ReadableByteStreamController],
-    ReadableStream: <ref *7> [class ReadableStream],
-    ReadableStreamBYOBReader: <ref *8> [class ReadableStreamBYOBReader],
-    ReadableStreamBYOBRequest: <ref *9> [class ReadableStreamBYOBRequest],
-    ReadableStreamDefaultController: <ref *10> [class ReadableStreamDefaultController],
-    ReadableStreamDefaultReader: <ref *11> [class ReadableStreamDefaultReader],
-    TextDecoderStream: <ref *12> [class TextDecoderStream],
-    TextEncoderStream: <ref *13> [class TextEncoderStream],
-    TransformStream: <ref *14> [class TransformStream],
-    TransformStreamDefaultController: <ref *15> [class TransformStreamDefaultController],
-    WritableStream: <ref *16> [class WritableStream],
-    WritableStreamDefaultController: <ref *17> [class WritableStreamDefaultController],
-    WritableStreamDefaultWriter: <ref *18> [class WritableStreamDefaultWriter],
+    ByteLengthQueuingStrategy: <ref *2> [class ByteLengthQueuingStrategy]{},
+    CompressionStream: <ref *3> [class CompressionStream]{},
+    CountQueuingStrategy: <ref *4> [class CountQueuingStrategy]{},
+    DecompressionStream: <ref *5> [class DecompressionStream]{},
+    ReadableByteStreamController: <ref *6> [class ReadableByteStreamController]{},
+    ReadableStream: <ref *7> [class ReadableStream]{},
+    ReadableStreamBYOBReader: <ref *8> [class ReadableStreamBYOBReader]{},
+    ReadableStreamBYOBRequest: <ref *9> [class ReadableStreamBYOBRequest]{},
+    ReadableStreamDefaultController: <ref *10> [class ReadableStreamDefaultController]{},
+    ReadableStreamDefaultReader: <ref *11> [class ReadableStreamDefaultReader]{},
+    TextDecoderStream: <ref *12> [class TextDecoderStream]{},
+    TextEncoderStream: <ref *13> [class TextEncoderStream]{},
+    TransformStream: <ref *14> [class TransformStream]{},
+    TransformStreamDefaultController: <ref *15> [class TransformStreamDefaultController]{},
+    WritableStream: <ref *16> [class WritableStream]{},
+    WritableStreamDefaultController: <ref *17> [class WritableStreamDefaultController]{},
+    WritableStreamDefaultWriter: <ref *18> [class WritableStreamDefaultWriter]{},
     default: {
         ReadableStream: [Circular: *7],
         ReadableStreamDefaultReader: [Circular: *11],
@@ -8336,8 +8662,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         TextDecoderStream: [Circular: *12],
         CompressionStream: [Circular: *3],
         DecompressionStream: [Circular: *5]
-    },
-    Symbol(Symbol.toStringTag): "Module"
+    }
 }
 ```
 
@@ -8345,18 +8670,18 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    ReadableStream: ƒ ReadableStream (length: 0),
-    ReadableStreamDefaultController: ƒ ReadableStreamDefaultController (length: 4),
-    WritableStream: ƒ WritableStream (length: 0),
-    WritableStreamDefaultController: ƒ WritableStreamDefaultController (length: 0),
-    WritableStreamDefaultWriter: ƒ WritableStreamDefaultWriter (length: 1),
-    TransformStream: ƒ TransformStream (length: 0),
-    TransformStreamDefaultController: ƒ TransformStreamDefaultController (length: 0),
-    ByteLengthQueuingStrategy: ƒ ByteLengthQueuingStrategy (length: 1),
-    CountQueuingStrategy: ƒ CountQueuingStrategy (length: 1),
-    ReadableStreamBYOBReader: ƒ ReadableStreamBYOBReader (length: 1),
-    ReadableStreamBYOBRequest: ƒ ReadableStreamBYOBRequest (length: 2),
-    ReadableStreamDefaultReader: ƒ ReadableStreamDefaultReader (length: 1),
+    ReadableStream: ƒ ReadableStream(length: 0) {},
+    ReadableStreamDefaultController: ƒ ReadableStreamDefaultController(length: 4) {},
+    WritableStream: ƒ WritableStream(length: 0) {},
+    WritableStreamDefaultController: ƒ WritableStreamDefaultController(length: 0) {},
+    WritableStreamDefaultWriter: ƒ WritableStreamDefaultWriter(length: 1) {},
+    TransformStream: ƒ TransformStream(length: 0) {},
+    TransformStreamDefaultController: ƒ TransformStreamDefaultController(length: 0) {},
+    ByteLengthQueuingStrategy: ƒ ByteLengthQueuingStrategy(length: 1) {},
+    CountQueuingStrategy: ƒ CountQueuingStrategy(length: 1) {},
+    ReadableStreamBYOBReader: ƒ ReadableStreamBYOBReader(length: 1) {},
+    ReadableStreamBYOBRequest: ƒ ReadableStreamBYOBRequest(length: 2) {},
+    ReadableStreamDefaultReader: ƒ ReadableStreamDefaultReader(length: 1) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -8369,11 +8694,10 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    StringDecoder: <ref *2> ƒ StringDecoder (length: 1),
+    StringDecoder: <ref *2> ƒ StringDecoder(length: 1) {},
     default: {
         StringDecoder: [Circular: *2]
-    },
-    Symbol(Symbol.toStringTag): "Module"
+    }
 }
 ```
 
@@ -8381,7 +8705,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    StringDecoder: ƒ StringDecoder (length: 0),
+    StringDecoder: ƒ StringDecoder(length: 0) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -8394,15 +8718,15 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    MIMEParams: <ref *2> [class MIMEParams],
-    MIMEType: <ref *3> [class MIMEType],
-    TextDecoder: <ref *4> [class TextDecoder],
-    TextEncoder: <ref *5> [class TextEncoder],
-    _errnoException: <ref *6> ƒ __node_internal_errnoException (length: 3),
-    _exceptionWithHostPort: <ref *7> ƒ __node_internal_exceptionWithHostPort (length: 5),
-    _extend: <ref *8> ƒ _extend (length: 2),
-    callbackify: <ref *9> ƒ callbackify (length: 1),
-    debug: <ref *10> ƒ debuglog (length: 2),
+    MIMEParams: <ref *2> [class MIMEParams]{},
+    MIMEType: <ref *3> [class MIMEType]{},
+    TextDecoder: <ref *4> [class TextDecoder]{},
+    TextEncoder: <ref *5> [class TextEncoder]{},
+    _errnoException: <ref *6> ƒ __node_internal_errnoException(length: 3) {},
+    _exceptionWithHostPort: <ref *7> ƒ __node_internal_exceptionWithHostPort(length: 5) {},
+    _extend: <ref *8> ƒ _extend(length: 2) {},
+    callbackify: <ref *9> ƒ callbackify(length: 1) {},
+    debug: <ref *10> ƒ debuglog(length: 2) {},
     debuglog: [Circular: *10],
     default: {
         _errnoException: [Circular: *6],
@@ -8411,83 +8735,278 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         callbackify: [Circular: *9],
         debug: [Circular: *10],
         debuglog: [Circular: *10],
-        deprecate: <ref *12> ƒ deprecate (length: 3),
-        format: <ref *13> ƒ format (length: 0),
-        formatWithOptions: <ref *14> ƒ formatWithOptions (length: 1),
-        getSystemErrorMap: <ref *15> ƒ getSystemErrorMap (length: 0),
-        getSystemErrorName: <ref *16> ƒ getSystemErrorName (length: 1),
-        inherits: <ref *17> ƒ inherits (length: 2),
-        inspect: <ref *18> ƒ inspect (length: 2),
-        isArray: <ref *19> ƒ isArray (length: 1),
-        isBoolean: <ref *20> ƒ isBoolean (length: 1),
-        isBuffer: <ref *21> ƒ isBuffer (length: 1),
-        isDeepStrictEqual: <ref *22> ƒ isDeepStrictEqual (length: 2),
-        isNull: <ref *23> ƒ isNull (length: 1),
-        isNullOrUndefined: <ref *24> ƒ isNullOrUndefined (length: 1),
-        isNumber: <ref *25> ƒ isNumber (length: 1),
-        isString: <ref *26> ƒ isString (length: 1),
-        isSymbol: <ref *27> ƒ isSymbol (length: 1),
-        isUndefined: <ref *28> ƒ isUndefined (length: 1),
-        isRegExp: <ref *29> ƒ isRegExp (length: 0),
-        isObject: <ref *30> ƒ isObject (length: 1),
-        isDate: <ref *31> ƒ isDate (length: 0),
-        isError: <ref *32> ƒ isError (length: 1),
-        isFunction: <ref *33> ƒ isFunction (length: 1),
-        isPrimitive: <ref *34> ƒ isPrimitive (length: 1),
-        log: <ref *35> ƒ log (length: 0),
+        deprecate: <ref *12> ƒ deprecate(length: 3) {},
+        format: <ref *13> ƒ format(length: 0) {},
+        formatWithOptions: <ref *14> ƒ formatWithOptions(length: 1) {},
+        getSystemErrorMap: <ref *15> ƒ getSystemErrorMap(length: 0) {},
+        getSystemErrorName: <ref *16> ƒ getSystemErrorName(length: 1) {},
+        inherits: <ref *17> ƒ inherits(length: 2) {},
+        inspect: <ref *18> ƒ inspect(length: 2) {
+            custom: Symbol(nodejs.util.inspect.custom),
+            colors: [Object: null prototype] {
+                reset: [
+                    0,
+                    0
+                ],
+                bold: [
+                    1,
+                    22
+                ],
+                dim: [
+                    2,
+                    22
+                ],
+                italic: [
+                    3,
+                    23
+                ],
+                underline: [
+                    4,
+                    24
+                ],
+                blink: [
+                    5,
+                    25
+                ],
+                inverse: [
+                    7,
+                    27
+                ],
+                hidden: [
+                    8,
+                    28
+                ],
+                strikethrough: [
+                    9,
+                    29
+                ],
+                doubleunderline: [
+                    21,
+                    24
+                ],
+                black: [
+                    30,
+                    39
+                ],
+                red: [
+                    31,
+                    39
+                ],
+                green: [
+                    32,
+                    39
+                ],
+                yellow: [
+                    33,
+                    39
+                ],
+                blue: [
+                    34,
+                    39
+                ],
+                magenta: [
+                    35,
+                    39
+                ],
+                cyan: [
+                    36,
+                    39
+                ],
+                white: [
+                    37,
+                    39
+                ],
+                bgBlack: [
+                    40,
+                    49
+                ],
+                bgRed: [
+                    41,
+                    49
+                ],
+                bgGreen: [
+                    42,
+                    49
+                ],
+                bgYellow: [
+                    43,
+                    49
+                ],
+                bgBlue: [
+                    44,
+                    49
+                ],
+                bgMagenta: [
+                    45,
+                    49
+                ],
+                bgCyan: [
+                    46,
+                    49
+                ],
+                bgWhite: [
+                    47,
+                    49
+                ],
+                framed: [
+                    51,
+                    54
+                ],
+                overlined: [
+                    53,
+                    55
+                ],
+                gray: [
+                    90,
+                    39
+                ],
+                redBright: [
+                    91,
+                    39
+                ],
+                greenBright: [
+                    92,
+                    39
+                ],
+                yellowBright: [
+                    93,
+                    39
+                ],
+                blueBright: [
+                    94,
+                    39
+                ],
+                magentaBright: [
+                    95,
+                    39
+                ],
+                cyanBright: [
+                    96,
+                    39
+                ],
+                whiteBright: [
+                    97,
+                    39
+                ],
+                bgGray: [
+                    100,
+                    49
+                ],
+                bgRedBright: [
+                    101,
+                    49
+                ],
+                bgGreenBright: [
+                    102,
+                    49
+                ],
+                bgYellowBright: [
+                    103,
+                    49
+                ],
+                bgBlueBright: [
+                    104,
+                    49
+                ],
+                bgMagentaBright: [
+                    105,
+                    49
+                ],
+                bgCyanBright: [
+                    106,
+                    49
+                ],
+                bgWhiteBright: [
+                    107,
+                    49
+                ]
+            },
+            styles: [Object: null prototype] {
+                special: "cyan",
+                number: "yellow",
+                bigint: "yellow",
+                boolean: "yellow",
+                undefined: "grey",
+                null: "bold",
+                string: "green",
+                symbol: "green",
+                date: "magenta",
+                regexp: "red",
+                module: "underline"
+            }
+        },
+        isArray: <ref *65> ƒ isArray(length: 1) {},
+        isBoolean: <ref *66> ƒ isBoolean(length: 1) {},
+        isBuffer: <ref *67> ƒ isBuffer(length: 1) {},
+        isDeepStrictEqual: <ref *68> ƒ isDeepStrictEqual(length: 2) {},
+        isNull: <ref *69> ƒ isNull(length: 1) {},
+        isNullOrUndefined: <ref *70> ƒ isNullOrUndefined(length: 1) {},
+        isNumber: <ref *71> ƒ isNumber(length: 1) {},
+        isString: <ref *72> ƒ isString(length: 1) {},
+        isSymbol: <ref *73> ƒ isSymbol(length: 1) {},
+        isUndefined: <ref *74> ƒ isUndefined(length: 1) {},
+        isRegExp: <ref *75> ƒ isRegExp(length: 0) {},
+        isObject: <ref *76> ƒ isObject(length: 1) {},
+        isDate: <ref *77> ƒ isDate(length: 0) {},
+        isError: <ref *78> ƒ isError(length: 1) {},
+        isFunction: <ref *79> ƒ isFunction(length: 1) {},
+        isPrimitive: <ref *80> ƒ isPrimitive(length: 1) {},
+        log: <ref *81> ƒ log(length: 0) {},
         MIMEType: [Circular: *3],
         MIMEParams: [Circular: *2],
-        parseArgs: <ref *36> ƒ parseArgs (length: 0),
-        promisify: <ref *37> ƒ promisify (length: 1),
-        stripVTControlCharacters: <ref *38> ƒ stripVTControlCharacters (length: 1),
-        toUSVString: <ref *39> ƒ toUSVString (length: 1),
+        parseArgs: <ref *82> ƒ parseArgs(length: 0) {},
+        promisify: <ref *83> ƒ promisify(length: 1) {
+            custom: Symbol(nodejs.util.promisify.custom)
+        },
+        stripVTControlCharacters: <ref *84> ƒ stripVTControlCharacters(length: 1) {},
+        toUSVString: <ref *85> ƒ toUSVString(length: 1) {},
         TextDecoder: [Circular: *4],
         TextEncoder: [Circular: *5],
-        get/set transferableAbortSignal: <ref *40> ƒ transferableAbortSignal (length: 1),
-        get/set transferableAbortController: <ref *41> ƒ transferableAbortController (length: 0),
-        types: <ref *42> {
-            isExternal: ƒ isExternal (length: 0),
-            isDate: [Circular: *31],
-            isArgumentsObject: ƒ isArgumentsObject (length: 0),
-            isBigIntObject: ƒ isBigIntObject (length: 0),
-            isBooleanObject: ƒ isBooleanObject (length: 0),
-            isNumberObject: ƒ isNumberObject (length: 0),
-            isStringObject: ƒ isStringObject (length: 0),
-            isSymbolObject: ƒ isSymbolObject (length: 0),
-            isNativeError: ƒ isNativeError (length: 0),
-            isRegExp: [Circular: *29],
-            isAsyncFunction: ƒ isAsyncFunction (length: 0),
-            isGeneratorFunction: ƒ isGeneratorFunction (length: 0),
-            isGeneratorObject: ƒ isGeneratorObject (length: 0),
-            isPromise: ƒ isPromise (length: 0),
-            isMap: ƒ isMap (length: 0),
-            isSet: ƒ isSet (length: 0),
-            isMapIterator: ƒ isMapIterator (length: 0),
-            isSetIterator: ƒ isSetIterator (length: 0),
-            isWeakMap: ƒ isWeakMap (length: 0),
-            isWeakSet: ƒ isWeakSet (length: 0),
-            isArrayBuffer: ƒ isArrayBuffer (length: 0),
-            isDataView: ƒ isDataView (length: 0),
-            isSharedArrayBuffer: ƒ isSharedArrayBuffer (length: 0),
-            isProxy: ƒ isProxy (length: 0),
-            isModuleNamespaceObject: ƒ isModuleNamespaceObject (length: 0),
-            isAnyArrayBuffer: ƒ isAnyArrayBuffer (length: 0),
-            isBoxedPrimitive: ƒ isBoxedPrimitive (length: 0),
-            isArrayBufferView: ƒ isView (length: 1),
-            isTypedArray: ƒ isTypedArray (length: 1),
-            isUint8Array: ƒ isUint8Array (length: 1),
-            isUint8ClampedArray: ƒ isUint8ClampedArray (length: 1),
-            isUint16Array: ƒ isUint16Array (length: 1),
-            isUint32Array: ƒ isUint32Array (length: 1),
-            isInt8Array: ƒ isInt8Array (length: 1),
-            isInt16Array: ƒ isInt16Array (length: 1),
-            isInt32Array: ƒ isInt32Array (length: 1),
-            isFloat32Array: ƒ isFloat32Array (length: 1),
-            isFloat64Array: ƒ isFloat64Array (length: 1),
-            isBigInt64Array: ƒ isBigInt64Array (length: 1),
-            isBigUint64Array: ƒ isBigUint64Array (length: 1),
-            isKeyObject: ƒ value (length: 1),
-            isCryptoKey: ƒ value (length: 1)
+        [get/set] transferableAbortSignal: <ref *86> ƒ transferableAbortSignal(length: 1) {},
+        [get/set] transferableAbortController: <ref *87> ƒ transferableAbortController(length: 0) {},
+        types: <ref *88> {
+            isExternal: ƒ isExternal(length: 0) {},
+            isDate: [Circular: *77],
+            isArgumentsObject: ƒ isArgumentsObject(length: 0) {},
+            isBigIntObject: ƒ isBigIntObject(length: 0) {},
+            isBooleanObject: ƒ isBooleanObject(length: 0) {},
+            isNumberObject: ƒ isNumberObject(length: 0) {},
+            isStringObject: ƒ isStringObject(length: 0) {},
+            isSymbolObject: ƒ isSymbolObject(length: 0) {},
+            isNativeError: ƒ isNativeError(length: 0) {},
+            isRegExp: [Circular: *75],
+            isAsyncFunction: ƒ isAsyncFunction(length: 0) {},
+            isGeneratorFunction: ƒ isGeneratorFunction(length: 0) {},
+            isGeneratorObject: ƒ isGeneratorObject(length: 0) {},
+            isPromise: ƒ isPromise(length: 0) {},
+            isMap: ƒ isMap(length: 0) {},
+            isSet: ƒ isSet(length: 0) {},
+            isMapIterator: ƒ isMapIterator(length: 0) {},
+            isSetIterator: ƒ isSetIterator(length: 0) {},
+            isWeakMap: ƒ isWeakMap(length: 0) {},
+            isWeakSet: ƒ isWeakSet(length: 0) {},
+            isArrayBuffer: ƒ isArrayBuffer(length: 0) {},
+            isDataView: ƒ isDataView(length: 0) {},
+            isSharedArrayBuffer: ƒ isSharedArrayBuffer(length: 0) {},
+            isProxy: ƒ isProxy(length: 0) {},
+            isModuleNamespaceObject: ƒ isModuleNamespaceObject(length: 0) {},
+            isAnyArrayBuffer: ƒ isAnyArrayBuffer(length: 0) {},
+            isBoxedPrimitive: ƒ isBoxedPrimitive(length: 0) {},
+            isArrayBufferView: ƒ isView(length: 1) {},
+            isTypedArray: ƒ isTypedArray(length: 1) {},
+            isUint8Array: ƒ isUint8Array(length: 1) {},
+            isUint8ClampedArray: ƒ isUint8ClampedArray(length: 1) {},
+            isUint16Array: ƒ isUint16Array(length: 1) {},
+            isUint32Array: ƒ isUint32Array(length: 1) {},
+            isInt8Array: ƒ isInt8Array(length: 1) {},
+            isInt16Array: ƒ isInt16Array(length: 1) {},
+            isInt32Array: ƒ isInt32Array(length: 1) {},
+            isFloat32Array: ƒ isFloat32Array(length: 1) {},
+            isFloat64Array: ƒ isFloat64Array(length: 1) {},
+            isBigInt64Array: ƒ isBigInt64Array(length: 1) {},
+            isBigUint64Array: ƒ isBigUint64Array(length: 1) {},
+            isKeyObject: ƒ value(length: 1) {},
+            isCryptoKey: ƒ value(length: 1) {}
         }
     },
     deprecate: [Circular: *12],
@@ -8497,110 +9016,172 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
     getSystemErrorName: [Circular: *16],
     inherits: [Circular: *17],
     inspect: [Circular: *18],
-    isArray: [Circular: *19],
-    isBoolean: [Circular: *20],
-    isBuffer: [Circular: *21],
-    isDate: [Circular: *31],
-    isDeepStrictEqual: [Circular: *22],
-    isError: [Circular: *32],
-    isFunction: [Circular: *33],
-    isNull: [Circular: *23],
-    isNullOrUndefined: [Circular: *24],
-    isNumber: [Circular: *25],
-    isObject: [Circular: *30],
-    isPrimitive: [Circular: *34],
-    isRegExp: [Circular: *29],
-    isString: [Circular: *26],
-    isSymbol: [Circular: *27],
-    isUndefined: [Circular: *28],
-    log: [Circular: *35],
-    parseArgs: [Circular: *36],
-    promisify: [Circular: *37],
-    stripVTControlCharacters: [Circular: *38],
-    toUSVString: [Circular: *39],
-    transferableAbortController: [Circular: *41],
-    transferableAbortSignal: [Circular: *40],
-    types: [Circular: *42],
-    Symbol(Symbol.toStringTag): "Module"
+    isArray: [Circular: *65],
+    isBoolean: [Circular: *66],
+    isBuffer: [Circular: *67],
+    isDate: [Circular: *77],
+    isDeepStrictEqual: [Circular: *68],
+    isError: [Circular: *78],
+    isFunction: [Circular: *79],
+    isNull: [Circular: *69],
+    isNullOrUndefined: [Circular: *70],
+    isNumber: [Circular: *71],
+    isObject: [Circular: *76],
+    isPrimitive: [Circular: *80],
+    isRegExp: [Circular: *75],
+    isString: [Circular: *72],
+    isSymbol: [Circular: *73],
+    isUndefined: [Circular: *74],
+    log: [Circular: *81],
+    parseArgs: [Circular: *82],
+    promisify: [Circular: *83],
+    stripVTControlCharacters: [Circular: *84],
+    toUSVString: [Circular: *85],
+    transferableAbortController: [Circular: *87],
+    transferableAbortSignal: [Circular: *86],
+    types: [Circular: *88]
 }
-(node:2614) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2522) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
 </td><td valign="top">
 
 ```js
-<ref *1> {
-    __esModule: true,
-    get/set format: ƒ (length: 1),
-    get/set deprecate: ƒ (length: 2),
-    get/set debuglog: ƒ (length: 1),
-    get/set inspect: ƒ S (length: 2),
-    get/set types: {
-        isArgumentsObject: ƒ Z (length: 1),
-        isGeneratorFunction: ƒ (length: 1),
-        isTypedArray: ƒ (length: 1),
-        isPromise: ƒ Yt (length: 1),
-        isArrayBufferView: ƒ Kt (length: 1),
-        isUint8Array: ƒ Qt (length: 1),
-        isUint8ClampedArray: ƒ Xt (length: 1),
-        isUint16Array: ƒ rn (length: 1),
-        isUint32Array: ƒ en (length: 1),
-        isInt8Array: ƒ tn (length: 1),
-        isInt16Array: ƒ nn (length: 1),
-        isInt32Array: ƒ on (length: 1),
-        isFloat32Array: ƒ an (length: 1),
-        isFloat64Array: ƒ fn (length: 1),
-        isBigInt64Array: ƒ yn (length: 1),
-        isBigUint64Array: ƒ un (length: 1),
-        isMap: ƒ sn (length: 1),
-        isSet: ƒ pn (length: 1),
-        isWeakMap: ƒ cn (length: 1),
-        isWeakSet: ƒ ln (length: 1),
-        isArrayBuffer: ƒ Re (length: 1),
-        isDataView: ƒ De (length: 1),
-        isSharedArrayBuffer: ƒ Ne (length: 1),
-        isAsyncFunction: ƒ gn (length: 1),
-        isMapIterator: ƒ dn (length: 1),
-        isSetIterator: ƒ bn (length: 1),
-        isGeneratorObject: ƒ mn (length: 1),
-        isWebAssemblyCompiledModule: ƒ An (length: 1),
-        isNumberObject: ƒ xe (length: 1),
-        isStringObject: ƒ Me (length: 1),
-        isBooleanObject: ƒ qe (length: 1),
-        isBigIntObject: ƒ Ge (length: 1),
-        isSymbolObject: ƒ $e (length: 1),
-        isBoxedPrimitive: ƒ Sn (length: 1),
-        isAnyArrayBuffer: ƒ vn (length: 1),
-        isProxy: ƒ value (length: 0),
-        isExternal: ƒ value (length: 0),
-        isModuleNamespaceObject: ƒ value (length: 0),
-        isRegExp: <ref *45> ƒ q (length: 1),
-        isDate: <ref *46> ƒ yr (length: 1),
-        isNativeError: <ref *47> ƒ G (length: 1)
+{
+    [get/set] format: ƒ (length: 1) {},
+    [get/set] deprecate: ƒ (length: 2) {},
+    [get/set] debuglog: ƒ (length: 1) {},
+    [get/set] inspect: ƒ S(length: 2) {
+        colors: {
+            bold: [
+                1,
+                22
+            ],
+            italic: [
+                3,
+                23
+            ],
+            underline: [
+                4,
+                24
+            ],
+            inverse: [
+                7,
+                27
+            ],
+            white: [
+                37,
+                39
+            ],
+            grey: [
+                90,
+                39
+            ],
+            black: [
+                30,
+                39
+            ],
+            blue: [
+                34,
+                39
+            ],
+            cyan: [
+                36,
+                39
+            ],
+            green: [
+                32,
+                39
+            ],
+            magenta: [
+                35,
+                39
+            ],
+            red: [
+                31,
+                39
+            ],
+            yellow: [
+                33,
+                39
+            ]
+        },
+        styles: {
+            special: "cyan",
+            number: "yellow",
+            boolean: "yellow",
+            undefined: "grey",
+            null: "bold",
+            string: "green",
+            date: "magenta",
+            regexp: "red"
+        }
     },
-    get/set isArray: ƒ He (length: 1),
-    get/set isBoolean: ƒ Dr (length: 1),
-    get/set isNull: ƒ ar (length: 1),
-    get/set isNullOrUndefined: ƒ Tn (length: 1),
-    get/set isNumber: ƒ Le (length: 1),
-    get/set isString: ƒ fr (length: 1),
-    get/set isSymbol: ƒ Fn (length: 1),
-    get/set isUndefined: ƒ P (length: 1),
-    get/set isRegExp: [Circular: *45],
-    get/set isObject: ƒ k (length: 1),
-    get/set isDate: [Circular: *46],
-    get/set isError: [Circular: *47],
-    get/set isFunction: ƒ ur (length: 1),
-    get/set isPrimitive: ƒ Bn (length: 1),
-    get/set isBuffer: ƒ (length: 1),
-    get/set log: ƒ (length: 0),
-    get/set inherits: ƒ (length: 2),
-    get/set _extend: ƒ (length: 2),
-    get/set promisify: ƒ (length: 1),
-    get/set callbackify: ƒ Dn (length: 1),
-    get/set default: [Circular: *1],
-    Symbol(CommonJSTransformed): true
+    [get/set] types: {
+        isArgumentsObject: ƒ Z(length: 1) {
+            isLegacyArguments: ƒ fe(length: 1) {}
+        },
+        isGeneratorFunction: ƒ (length: 1) {},
+        isTypedArray: ƒ (length: 1) {},
+        isPromise: ƒ Yt(length: 1) {},
+        isArrayBufferView: ƒ Kt(length: 1) {},
+        isUint8Array: ƒ Qt(length: 1) {},
+        isUint8ClampedArray: ƒ Xt(length: 1) {},
+        isUint16Array: ƒ rn(length: 1) {},
+        isUint32Array: ƒ en(length: 1) {},
+        isInt8Array: ƒ tn(length: 1) {},
+        isInt16Array: ƒ nn(length: 1) {},
+        isInt32Array: ƒ on(length: 1) {},
+        isFloat32Array: ƒ an(length: 1) {},
+        isFloat64Array: ƒ fn(length: 1) {},
+        isBigInt64Array: ƒ yn(length: 1) {},
+        isBigUint64Array: ƒ un(length: 1) {},
+        isMap: ƒ sn(length: 1) {},
+        isSet: ƒ pn(length: 1) {},
+        isWeakMap: ƒ cn(length: 1) {},
+        isWeakSet: ƒ ln(length: 1) {},
+        isArrayBuffer: ƒ Re(length: 1) {},
+        isDataView: ƒ De(length: 1) {},
+        isSharedArrayBuffer: ƒ Ne(length: 1) {},
+        isAsyncFunction: ƒ gn(length: 1) {},
+        isMapIterator: ƒ dn(length: 1) {},
+        isSetIterator: ƒ bn(length: 1) {},
+        isGeneratorObject: ƒ mn(length: 1) {},
+        isWebAssemblyCompiledModule: ƒ An(length: 1) {},
+        isNumberObject: ƒ xe(length: 1) {},
+        isStringObject: ƒ Me(length: 1) {},
+        isBooleanObject: ƒ qe(length: 1) {},
+        isBigIntObject: ƒ Ge(length: 1) {},
+        isSymbolObject: ƒ $e(length: 1) {},
+        isBoxedPrimitive: ƒ Sn(length: 1) {},
+        isAnyArrayBuffer: ƒ vn(length: 1) {},
+        isRegExp: <ref *58> ƒ q(length: 1) {},
+        isDate: <ref *59> ƒ yr(length: 1) {},
+        isNativeError: <ref *60> ƒ G(length: 1) {}
+    },
+    [get/set] isArray: ƒ He(length: 1) {},
+    [get/set] isBoolean: ƒ Dr(length: 1) {},
+    [get/set] isNull: ƒ ar(length: 1) {},
+    [get/set] isNullOrUndefined: ƒ Tn(length: 1) {},
+    [get/set] isNumber: ƒ Le(length: 1) {},
+    [get/set] isString: ƒ fr(length: 1) {},
+    [get/set] isSymbol: ƒ Fn(length: 1) {},
+    [get/set] isUndefined: ƒ P(length: 1) {},
+    [get/set] isRegExp: [Circular: *58],
+    [get/set] isObject: ƒ k(length: 1) {},
+    [get/set] isDate: [Circular: *59],
+    [get/set] isError: [Circular: *60],
+    [get/set] isFunction: ƒ ur(length: 1) {},
+    [get/set] isPrimitive: ƒ Bn(length: 1) {},
+    [get/set] isBuffer: ƒ (length: 1) {},
+    [get/set] log: ƒ (length: 0) {},
+    [get/set] inherits: ƒ (length: 2) {},
+    [get/set] _extend: ƒ (length: 2) {},
+    [get/set] promisify: ƒ (length: 1) {
+        custom: Symbol(util.promisify.custom)
+    },
+    [get/set] callbackify: ƒ Dn(length: 1) {}
 }
 ```
 
@@ -8612,29 +9193,32 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    _unrefActive: <ref *2> ƒ deprecated (length: 0),
-    active: <ref *3> ƒ deprecated (length: 0),
-    clearImmediate: <ref *4> ƒ clearImmediate (length: 1),
-    clearInterval: <ref *5> ƒ clearInterval (length: 1),
-    clearTimeout: <ref *6> ƒ clearTimeout (length: 1),
+    _unrefActive: <ref *2> ƒ deprecated(length: 0) {},
+    active: <ref *3> ƒ deprecated(length: 0) {},
+    clearImmediate: <ref *4> ƒ clearImmediate(length: 1) {},
+    clearInterval: <ref *5> ƒ clearInterval(length: 1) {},
+    clearTimeout: <ref *6> ƒ clearTimeout(length: 1) {},
     default: {
-        setTimeout: <ref *8> ƒ setTimeout (length: 5),
+        setTimeout: <ref *8> ƒ setTimeout(length: 5) {
+            [get/set] Symbol(nodejs.util.promisify.custom): ƒ setTimeout(length: 2) {}
+        },
         clearTimeout: [Circular: *6],
-        setImmediate: <ref *9> ƒ setImmediate (length: 4),
+        setImmediate: <ref *10> ƒ setImmediate(length: 4) {
+            [get/set] Symbol(nodejs.util.promisify.custom): ƒ setImmediate(length: 1) {}
+        },
         clearImmediate: [Circular: *4],
-        setInterval: <ref *10> ƒ setInterval (length: 5),
+        setInterval: <ref *12> ƒ setInterval(length: 5) {},
         clearInterval: [Circular: *5],
         _unrefActive: [Circular: *2],
         active: [Circular: *3],
-        unenroll: <ref *11> ƒ deprecated (length: 0),
-        enroll: <ref *12> ƒ deprecated (length: 0)
+        unenroll: <ref *13> ƒ deprecated(length: 0) {},
+        enroll: <ref *14> ƒ deprecated(length: 0) {}
     },
-    enroll: [Circular: *12],
-    setImmediate: [Circular: *9],
-    setInterval: [Circular: *10],
+    enroll: [Circular: *14],
+    setImmediate: [Circular: *10],
+    setInterval: [Circular: *12],
     setTimeout: [Circular: *8],
-    unenroll: [Circular: *11],
-    Symbol(Symbol.toStringTag): "Module"
+    unenroll: [Circular: *13]
 }
 ```
 
@@ -8642,11 +9226,11 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    setInterval: ƒ setInterval (length: 1),
-    setImmediate: ƒ setImmediate (length: 1),
-    setTimeout: ƒ setTimeout (length: 1),
-    clearInterval: ƒ clearInterval (length: 1),
-    clearTimeout: ƒ clearTimeout (length: 1),
+    setInterval: ƒ setInterval(length: 1) {},
+    setImmediate: ƒ setImmediate(length: 1) {},
+    setTimeout: ƒ setTimeout(length: 1) {},
+    clearInterval: ƒ clearInterval(length: 1) {},
+    clearTimeout: ƒ clearTimeout(length: 1) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -8660,9 +9244,9 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 ```js
 [Object: null prototype] {
     default: {
-        setTimeout: <ref *3> ƒ setTimeout (length: 2),
-        setImmediate: <ref *4> ƒ setImmediate (length: 1),
-        setInterval: <ref *5> async ƒ setInterval (length: 2),
+        setTimeout: <ref *3> ƒ setTimeout(length: 2) {},
+        setImmediate: <ref *4> ƒ setImmediate(length: 1) {},
+        setInterval: <ref *5> async ƒ setInterval(length: 2) {},
         scheduler: <ref *6> Scheduler {
             Symbol(kScheduler): true
         }
@@ -8670,8 +9254,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
     scheduler: [Circular: *6],
     setImmediate: [Circular: *4],
     setInterval: [Circular: *5],
-    setTimeout: [Circular: *3],
-    Symbol(Symbol.toStringTag): "Module"
+    setTimeout: [Circular: *3]
 }
 ```
 
@@ -8679,10 +9262,9 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    setImmediate: ƒ setImmediatePromise (length: 1),
-    setInterval: ƒ setIntervalPromise (length: 0),
-    setTimeout: ƒ setTimeoutPromise (length: 0),
-    Symbol(Symbol.toStringTag): "Module"
+    setImmediate: ƒ setImmediatePromise(length: 1) {},
+    setInterval: ƒ setIntervalPromise(length: 0) {},
+    setTimeout: ƒ setTimeoutPromise(length: 0) {}
 }
 ```
 
@@ -8700,15 +9282,15 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
     DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_MAX_VERSION: "TLSv1.3",
     DEFAULT_MIN_VERSION: "TLSv1.2",
-    SecureContext: <ref *2> ƒ SecureContext (length: 4),
-    Server: <ref *3> ƒ Server (length: 2),
-    TLSSocket: <ref *4> ƒ TLSSocket (length: 2),
-    checkServerIdentity: <ref *5> ƒ checkServerIdentity (length: 2),
-    connect: <ref *6> ƒ connect (length: 0),
-    convertALPNProtocols: <ref *7> ƒ convertALPNProtocols (length: 2),
-    createSecureContext: <ref *8> ƒ createSecureContext (length: 1),
-    createSecurePair: <ref *9> ƒ deprecated (length: 0),
-    createServer: <ref *10> ƒ createServer (length: 2),
+    SecureContext: <ref *2> ƒ SecureContext(length: 4) {},
+    Server: <ref *3> ƒ Server(length: 2) {},
+    TLSSocket: <ref *4> ƒ TLSSocket(length: 2) {},
+    checkServerIdentity: <ref *5> ƒ checkServerIdentity(length: 2) {},
+    connect: <ref *6> ƒ connect(length: 0) {},
+    convertALPNProtocols: <ref *7> ƒ convertALPNProtocols(length: 2) {},
+    createSecureContext: <ref *8> ƒ createSecureContext(length: 1) {},
+    createSecurePair: <ref *9> ƒ deprecated(length: 0) {},
+    createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
         CLIENT_RENEG_LIMIT: 3,
         CLIENT_RENEG_WINDOW: 600,
@@ -8716,8 +9298,8 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         DEFAULT_ECDH_CURVE: "auto",
         DEFAULT_MIN_VERSION: "TLSv1.2",
         DEFAULT_MAX_VERSION: "TLSv1.3",
-        getCiphers: <ref *12> ƒ (length: 0),
-        get/set rootCertificates: <ref *13> [
+        getCiphers: <ref *12> ƒ (length: 0) {},
+        [get/set] rootCertificates: <ref *13> [
             "-----BEGIN CERTIFICATE-----\nMIIDdTCCAl2gAwIBAgILBAAAAAABFUtaw5QwDQYJKoZIhvcNAQEFBQAwVzELMAkGA1UEBhMC…",
             "-----BEGIN CERTIFICATE-----\nMIIEKjCCAxKgAwIBAgIEOGPe+DANBgkqhkiG9w0BAQUFADCBtDEUMBIGA1UEChMLRW50cnVz…",
             "-----BEGIN CERTIFICATE-----\nMIIDdzCCAl+gAwIBAgIEAgAAuTANBgkqhkiG9w0BAQUFADBaMQswCQYDVQQGEwJJRTESMBAG…",
@@ -8870,8 +9452,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         createSecurePair: [Circular: *9]
     },
     getCiphers: [Circular: *12],
-    rootCertificates: [Circular: *13],
-    Symbol(Symbol.toStringTag): "Module"
+    rootCertificates: [Circular: *13]
 }
 ```
 
@@ -8879,23 +9460,23 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    createSecureContext: ƒ createSecureContext (length: 1),
-    parseCertString: ƒ parseCertString (length: 0),
-    getCiphers: ƒ getCiphers (length: 0),
-    getCurves: ƒ getCurves (length: 0),
-    convertALPNProtocols: ƒ convertALPNProtocols (length: 2),
-    TLSSocket: ƒ Socket (length: 1),
-    SecureContext: ƒ SecureContext (length: 0),
+    createSecureContext: ƒ createSecureContext(length: 1) {},
+    parseCertString: ƒ parseCertString(length: 0) {},
+    getCiphers: ƒ getCiphers(length: 0) {},
+    getCurves: ƒ getCurves(length: 0) {},
+    convertALPNProtocols: ƒ convertALPNProtocols(length: 2) {},
+    TLSSocket: ƒ Socket(length: 1) {},
+    SecureContext: ƒ SecureContext(length: 0) {},
     CLIENT_RENEG_LIMIT: 3,
     CLIENT_RENEG_WINDOW: 600,
     DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
     DEFAULT_MIN_VERSION: "TLSv1.2",
     DEFAULT_MAX_VERSION: "TLSv1.3",
-    connect: <ref *9> ƒ createConnection (length: 3),
+    connect: <ref *9> ƒ createConnection(length: 3) {},
     createConnection: [Circular: *9],
-    Server: [class Server],
-    createServer: ƒ createServer (length: 2),
+    Server: [class Server]{},
+    createServer: ƒ createServer(length: 2) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -8908,13 +9489,12 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    createTracing: <ref *2> ƒ createTracing (length: 1),
+    createTracing: <ref *2> ƒ createTracing(length: 1) {},
     default: {
         createTracing: [Circular: *2],
-        getEnabledCategories: <ref *4> ƒ getEnabledCategories (length: 0)
+        getEnabledCategories: <ref *4> ƒ getEnabledCategories(length: 0) {}
     },
-    getEnabledCategories: [Circular: *4],
-    Symbol(Symbol.toStringTag): "Module"
+    getEnabledCategories: [Circular: *4]
 }
 ```
 
@@ -8922,8 +9502,8 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    createTracing: ƒ createTracing (length: 1),
-    getEnabledCategories: ƒ getEnabledCategories (length: 0),
+    createTracing: ƒ createTracing(length: 1) {},
+    getEnabledCategories: ƒ getEnabledCategories(length: 0) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -8936,15 +9516,14 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    ReadStream: <ref *2> ƒ ReadStream (length: 2),
-    WriteStream: <ref *3> ƒ WriteStream (length: 1),
+    ReadStream: <ref *2> ƒ ReadStream(length: 2) {},
+    WriteStream: <ref *3> ƒ WriteStream(length: 1) {},
     default: {
-        isatty: <ref *5> ƒ isatty (length: 1),
+        isatty: <ref *5> ƒ isatty(length: 1) {},
         ReadStream: [Circular: *2],
         WriteStream: [Circular: *3]
     },
-    isatty: [Circular: *5],
-    Symbol(Symbol.toStringTag): "Module"
+    isatty: [Circular: *5]
 }
 ```
 
@@ -8952,9 +9531,9 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    ReadStream: <ref *2> ƒ notimpl (length: 0),
+    ReadStream: <ref *2> ƒ notimpl(length: 0) {},
     WriteStream: [Circular: *2],
-    isatty: ƒ isatty (length: 1),
+    isatty: ƒ isatty(length: 1) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -8967,33 +9546,35 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    URL: <ref *2> [class URL],
-    URLSearchParams: <ref *3> [class URLSearchParams],
-    Url: <ref *4> ƒ Url (length: 0),
-    default: {
-        Url: [Circular: *4],
-        parse: <ref *6> ƒ urlParse (length: 3),
-        resolve: <ref *7> ƒ urlResolve (length: 2),
-        resolveObject: <ref *8> ƒ urlResolveObject (length: 2),
-        format: <ref *9> ƒ urlFormat (length: 2),
-        URL: [Circular: *2],
-        URLSearchParams: [Circular: *3],
-        domainToASCII: <ref *10> ƒ domainToASCII (length: 1),
-        domainToUnicode: <ref *11> ƒ domainToUnicode (length: 1),
-        pathToFileURL: <ref *12> ƒ pathToFileURL (length: 1),
-        fileURLToPath: <ref *13> ƒ fileURLToPath (length: 1),
-        urlToHttpOptions: <ref *14> ƒ urlToHttpOptions (length: 1)
+    URL: <ref *2> [class URL]{
+        createObjectURL: ƒ createObjectURL(length: 1) {},
+        revokeObjectURL: ƒ revokeObjectURL(length: 1) {}
     },
-    domainToASCII: [Circular: *10],
-    domainToUnicode: [Circular: *11],
-    fileURLToPath: [Circular: *13],
-    format: [Circular: *9],
-    parse: [Circular: *6],
-    pathToFileURL: [Circular: *12],
-    resolve: [Circular: *7],
-    resolveObject: [Circular: *8],
-    urlToHttpOptions: [Circular: *14],
-    Symbol(Symbol.toStringTag): "Module"
+    URLSearchParams: <ref *5> [class URLSearchParams]{},
+    Url: <ref *6> ƒ Url(length: 0) {},
+    default: {
+        Url: [Circular: *6],
+        parse: <ref *8> ƒ urlParse(length: 3) {},
+        resolve: <ref *9> ƒ urlResolve(length: 2) {},
+        resolveObject: <ref *10> ƒ urlResolveObject(length: 2) {},
+        format: <ref *11> ƒ urlFormat(length: 2) {},
+        URL: [Circular: *2],
+        URLSearchParams: [Circular: *5],
+        domainToASCII: <ref *12> ƒ domainToASCII(length: 1) {},
+        domainToUnicode: <ref *13> ƒ domainToUnicode(length: 1) {},
+        pathToFileURL: <ref *14> ƒ pathToFileURL(length: 1) {},
+        fileURLToPath: <ref *15> ƒ fileURLToPath(length: 1) {},
+        urlToHttpOptions: <ref *16> ƒ urlToHttpOptions(length: 1) {}
+    },
+    domainToASCII: [Circular: *12],
+    domainToUnicode: [Circular: *13],
+    fileURLToPath: [Circular: *15],
+    format: [Circular: *11],
+    parse: [Circular: *8],
+    pathToFileURL: [Circular: *14],
+    resolve: [Circular: *9],
+    resolveObject: [Circular: *10],
+    urlToHttpOptions: [Circular: *16]
 }
 ```
 
@@ -9001,27 +9582,29 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    URL: <ref *2> ƒ URL (length: 1),
-    URLSearchParams: <ref *3> ƒ URLSearchParams (length: 0),
-    Url: <ref *4> ƒ m (length: 0),
-    default: {
-        parse: <ref *6> ƒ A (length: 3),
-        resolve: <ref *7> ƒ W (length: 2),
-        resolveObject: <ref *8> ƒ X (length: 2),
-        format: <ref *9> ƒ V (length: 1),
-        Url: [Circular: *4],
-        pathToFileURL: <ref *10> ƒ pathToFileURL (length: 1),
-        fileURLToPath: <ref *11> ƒ fileURLToPath (length: 1),
-        URL: [Circular: *2],
-        URLSearchParams: [Circular: *3]
+    URL: <ref *2> ƒ URL(length: 1) {
+        createObjectURL: ƒ createObjectURL(length: 1) {},
+        revokeObjectURL: ƒ revokeObjectURL(length: 1) {}
     },
-    fileURLToPath: [Circular: *11],
-    format: [Circular: *9],
-    parse: [Circular: *6],
-    pathToFileURL: [Circular: *10],
-    resolve: [Circular: *7],
-    resolveObject: [Circular: *8],
-    Symbol(Symbol.toStringTag): "Module"
+    URLSearchParams: <ref *5> ƒ URLSearchParams(length: 0) {},
+    Url: <ref *6> ƒ m(length: 0) {},
+    default: {
+        parse: <ref *8> ƒ A(length: 3) {},
+        resolve: <ref *9> ƒ W(length: 2) {},
+        resolveObject: <ref *10> ƒ X(length: 2) {},
+        format: <ref *11> ƒ V(length: 1) {},
+        Url: [Circular: *6],
+        pathToFileURL: <ref *12> ƒ pathToFileURL(length: 1) {},
+        fileURLToPath: <ref *13> ƒ fileURLToPath(length: 1) {},
+        URL: [Circular: *2],
+        URLSearchParams: [Circular: *5]
+    },
+    fileURLToPath: [Circular: *13],
+    format: [Circular: *11],
+    parse: [Circular: *8],
+    pathToFileURL: [Circular: *12],
+    resolve: [Circular: *9],
+    resolveObject: [Circular: *10]
 }
 ```
 
@@ -9033,15 +9616,15 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    MIMEParams: <ref *2> [class MIMEParams],
-    MIMEType: <ref *3> [class MIMEType],
-    TextDecoder: <ref *4> [class TextDecoder],
-    TextEncoder: <ref *5> [class TextEncoder],
-    _errnoException: <ref *6> ƒ __node_internal_errnoException (length: 3),
-    _exceptionWithHostPort: <ref *7> ƒ __node_internal_exceptionWithHostPort (length: 5),
-    _extend: <ref *8> ƒ _extend (length: 2),
-    callbackify: <ref *9> ƒ callbackify (length: 1),
-    debug: <ref *10> ƒ debuglog (length: 2),
+    MIMEParams: <ref *2> [class MIMEParams]{},
+    MIMEType: <ref *3> [class MIMEType]{},
+    TextDecoder: <ref *4> [class TextDecoder]{},
+    TextEncoder: <ref *5> [class TextEncoder]{},
+    _errnoException: <ref *6> ƒ __node_internal_errnoException(length: 3) {},
+    _exceptionWithHostPort: <ref *7> ƒ __node_internal_exceptionWithHostPort(length: 5) {},
+    _extend: <ref *8> ƒ _extend(length: 2) {},
+    callbackify: <ref *9> ƒ callbackify(length: 1) {},
+    debug: <ref *10> ƒ debuglog(length: 2) {},
     debuglog: [Circular: *10],
     default: {
         _errnoException: [Circular: *6],
@@ -9050,83 +9633,278 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         callbackify: [Circular: *9],
         debug: [Circular: *10],
         debuglog: [Circular: *10],
-        deprecate: <ref *12> ƒ deprecate (length: 3),
-        format: <ref *13> ƒ format (length: 0),
-        formatWithOptions: <ref *14> ƒ formatWithOptions (length: 1),
-        getSystemErrorMap: <ref *15> ƒ getSystemErrorMap (length: 0),
-        getSystemErrorName: <ref *16> ƒ getSystemErrorName (length: 1),
-        inherits: <ref *17> ƒ inherits (length: 2),
-        inspect: <ref *18> ƒ inspect (length: 2),
-        isArray: <ref *19> ƒ isArray (length: 1),
-        isBoolean: <ref *20> ƒ isBoolean (length: 1),
-        isBuffer: <ref *21> ƒ isBuffer (length: 1),
-        isDeepStrictEqual: <ref *22> ƒ isDeepStrictEqual (length: 2),
-        isNull: <ref *23> ƒ isNull (length: 1),
-        isNullOrUndefined: <ref *24> ƒ isNullOrUndefined (length: 1),
-        isNumber: <ref *25> ƒ isNumber (length: 1),
-        isString: <ref *26> ƒ isString (length: 1),
-        isSymbol: <ref *27> ƒ isSymbol (length: 1),
-        isUndefined: <ref *28> ƒ isUndefined (length: 1),
-        isRegExp: <ref *29> ƒ isRegExp (length: 0),
-        isObject: <ref *30> ƒ isObject (length: 1),
-        isDate: <ref *31> ƒ isDate (length: 0),
-        isError: <ref *32> ƒ isError (length: 1),
-        isFunction: <ref *33> ƒ isFunction (length: 1),
-        isPrimitive: <ref *34> ƒ isPrimitive (length: 1),
-        log: <ref *35> ƒ log (length: 0),
+        deprecate: <ref *12> ƒ deprecate(length: 3) {},
+        format: <ref *13> ƒ format(length: 0) {},
+        formatWithOptions: <ref *14> ƒ formatWithOptions(length: 1) {},
+        getSystemErrorMap: <ref *15> ƒ getSystemErrorMap(length: 0) {},
+        getSystemErrorName: <ref *16> ƒ getSystemErrorName(length: 1) {},
+        inherits: <ref *17> ƒ inherits(length: 2) {},
+        inspect: <ref *18> ƒ inspect(length: 2) {
+            custom: Symbol(nodejs.util.inspect.custom),
+            colors: [Object: null prototype] {
+                reset: [
+                    0,
+                    0
+                ],
+                bold: [
+                    1,
+                    22
+                ],
+                dim: [
+                    2,
+                    22
+                ],
+                italic: [
+                    3,
+                    23
+                ],
+                underline: [
+                    4,
+                    24
+                ],
+                blink: [
+                    5,
+                    25
+                ],
+                inverse: [
+                    7,
+                    27
+                ],
+                hidden: [
+                    8,
+                    28
+                ],
+                strikethrough: [
+                    9,
+                    29
+                ],
+                doubleunderline: [
+                    21,
+                    24
+                ],
+                black: [
+                    30,
+                    39
+                ],
+                red: [
+                    31,
+                    39
+                ],
+                green: [
+                    32,
+                    39
+                ],
+                yellow: [
+                    33,
+                    39
+                ],
+                blue: [
+                    34,
+                    39
+                ],
+                magenta: [
+                    35,
+                    39
+                ],
+                cyan: [
+                    36,
+                    39
+                ],
+                white: [
+                    37,
+                    39
+                ],
+                bgBlack: [
+                    40,
+                    49
+                ],
+                bgRed: [
+                    41,
+                    49
+                ],
+                bgGreen: [
+                    42,
+                    49
+                ],
+                bgYellow: [
+                    43,
+                    49
+                ],
+                bgBlue: [
+                    44,
+                    49
+                ],
+                bgMagenta: [
+                    45,
+                    49
+                ],
+                bgCyan: [
+                    46,
+                    49
+                ],
+                bgWhite: [
+                    47,
+                    49
+                ],
+                framed: [
+                    51,
+                    54
+                ],
+                overlined: [
+                    53,
+                    55
+                ],
+                gray: [
+                    90,
+                    39
+                ],
+                redBright: [
+                    91,
+                    39
+                ],
+                greenBright: [
+                    92,
+                    39
+                ],
+                yellowBright: [
+                    93,
+                    39
+                ],
+                blueBright: [
+                    94,
+                    39
+                ],
+                magentaBright: [
+                    95,
+                    39
+                ],
+                cyanBright: [
+                    96,
+                    39
+                ],
+                whiteBright: [
+                    97,
+                    39
+                ],
+                bgGray: [
+                    100,
+                    49
+                ],
+                bgRedBright: [
+                    101,
+                    49
+                ],
+                bgGreenBright: [
+                    102,
+                    49
+                ],
+                bgYellowBright: [
+                    103,
+                    49
+                ],
+                bgBlueBright: [
+                    104,
+                    49
+                ],
+                bgMagentaBright: [
+                    105,
+                    49
+                ],
+                bgCyanBright: [
+                    106,
+                    49
+                ],
+                bgWhiteBright: [
+                    107,
+                    49
+                ]
+            },
+            styles: [Object: null prototype] {
+                special: "cyan",
+                number: "yellow",
+                bigint: "yellow",
+                boolean: "yellow",
+                undefined: "grey",
+                null: "bold",
+                string: "green",
+                symbol: "green",
+                date: "magenta",
+                regexp: "red",
+                module: "underline"
+            }
+        },
+        isArray: <ref *65> ƒ isArray(length: 1) {},
+        isBoolean: <ref *66> ƒ isBoolean(length: 1) {},
+        isBuffer: <ref *67> ƒ isBuffer(length: 1) {},
+        isDeepStrictEqual: <ref *68> ƒ isDeepStrictEqual(length: 2) {},
+        isNull: <ref *69> ƒ isNull(length: 1) {},
+        isNullOrUndefined: <ref *70> ƒ isNullOrUndefined(length: 1) {},
+        isNumber: <ref *71> ƒ isNumber(length: 1) {},
+        isString: <ref *72> ƒ isString(length: 1) {},
+        isSymbol: <ref *73> ƒ isSymbol(length: 1) {},
+        isUndefined: <ref *74> ƒ isUndefined(length: 1) {},
+        isRegExp: <ref *75> ƒ isRegExp(length: 0) {},
+        isObject: <ref *76> ƒ isObject(length: 1) {},
+        isDate: <ref *77> ƒ isDate(length: 0) {},
+        isError: <ref *78> ƒ isError(length: 1) {},
+        isFunction: <ref *79> ƒ isFunction(length: 1) {},
+        isPrimitive: <ref *80> ƒ isPrimitive(length: 1) {},
+        log: <ref *81> ƒ log(length: 0) {},
         MIMEType: [Circular: *3],
         MIMEParams: [Circular: *2],
-        parseArgs: <ref *36> ƒ parseArgs (length: 0),
-        promisify: <ref *37> ƒ promisify (length: 1),
-        stripVTControlCharacters: <ref *38> ƒ stripVTControlCharacters (length: 1),
-        toUSVString: <ref *39> ƒ toUSVString (length: 1),
+        parseArgs: <ref *82> ƒ parseArgs(length: 0) {},
+        promisify: <ref *83> ƒ promisify(length: 1) {
+            custom: Symbol(nodejs.util.promisify.custom)
+        },
+        stripVTControlCharacters: <ref *84> ƒ stripVTControlCharacters(length: 1) {},
+        toUSVString: <ref *85> ƒ toUSVString(length: 1) {},
         TextDecoder: [Circular: *4],
         TextEncoder: [Circular: *5],
-        get/set transferableAbortSignal: <ref *40> ƒ transferableAbortSignal (length: 1),
-        get/set transferableAbortController: <ref *41> ƒ transferableAbortController (length: 0),
-        types: <ref *42> {
-            isExternal: ƒ isExternal (length: 0),
-            isDate: [Circular: *31],
-            isArgumentsObject: ƒ isArgumentsObject (length: 0),
-            isBigIntObject: ƒ isBigIntObject (length: 0),
-            isBooleanObject: ƒ isBooleanObject (length: 0),
-            isNumberObject: ƒ isNumberObject (length: 0),
-            isStringObject: ƒ isStringObject (length: 0),
-            isSymbolObject: ƒ isSymbolObject (length: 0),
-            isNativeError: ƒ isNativeError (length: 0),
-            isRegExp: [Circular: *29],
-            isAsyncFunction: ƒ isAsyncFunction (length: 0),
-            isGeneratorFunction: ƒ isGeneratorFunction (length: 0),
-            isGeneratorObject: ƒ isGeneratorObject (length: 0),
-            isPromise: ƒ isPromise (length: 0),
-            isMap: ƒ isMap (length: 0),
-            isSet: ƒ isSet (length: 0),
-            isMapIterator: ƒ isMapIterator (length: 0),
-            isSetIterator: ƒ isSetIterator (length: 0),
-            isWeakMap: ƒ isWeakMap (length: 0),
-            isWeakSet: ƒ isWeakSet (length: 0),
-            isArrayBuffer: ƒ isArrayBuffer (length: 0),
-            isDataView: ƒ isDataView (length: 0),
-            isSharedArrayBuffer: ƒ isSharedArrayBuffer (length: 0),
-            isProxy: ƒ isProxy (length: 0),
-            isModuleNamespaceObject: ƒ isModuleNamespaceObject (length: 0),
-            isAnyArrayBuffer: ƒ isAnyArrayBuffer (length: 0),
-            isBoxedPrimitive: ƒ isBoxedPrimitive (length: 0),
-            isArrayBufferView: ƒ isView (length: 1),
-            isTypedArray: ƒ isTypedArray (length: 1),
-            isUint8Array: ƒ isUint8Array (length: 1),
-            isUint8ClampedArray: ƒ isUint8ClampedArray (length: 1),
-            isUint16Array: ƒ isUint16Array (length: 1),
-            isUint32Array: ƒ isUint32Array (length: 1),
-            isInt8Array: ƒ isInt8Array (length: 1),
-            isInt16Array: ƒ isInt16Array (length: 1),
-            isInt32Array: ƒ isInt32Array (length: 1),
-            isFloat32Array: ƒ isFloat32Array (length: 1),
-            isFloat64Array: ƒ isFloat64Array (length: 1),
-            isBigInt64Array: ƒ isBigInt64Array (length: 1),
-            isBigUint64Array: ƒ isBigUint64Array (length: 1),
-            isKeyObject: ƒ value (length: 1),
-            isCryptoKey: ƒ value (length: 1)
+        [get/set] transferableAbortSignal: <ref *86> ƒ transferableAbortSignal(length: 1) {},
+        [get/set] transferableAbortController: <ref *87> ƒ transferableAbortController(length: 0) {},
+        types: <ref *88> {
+            isExternal: ƒ isExternal(length: 0) {},
+            isDate: [Circular: *77],
+            isArgumentsObject: ƒ isArgumentsObject(length: 0) {},
+            isBigIntObject: ƒ isBigIntObject(length: 0) {},
+            isBooleanObject: ƒ isBooleanObject(length: 0) {},
+            isNumberObject: ƒ isNumberObject(length: 0) {},
+            isStringObject: ƒ isStringObject(length: 0) {},
+            isSymbolObject: ƒ isSymbolObject(length: 0) {},
+            isNativeError: ƒ isNativeError(length: 0) {},
+            isRegExp: [Circular: *75],
+            isAsyncFunction: ƒ isAsyncFunction(length: 0) {},
+            isGeneratorFunction: ƒ isGeneratorFunction(length: 0) {},
+            isGeneratorObject: ƒ isGeneratorObject(length: 0) {},
+            isPromise: ƒ isPromise(length: 0) {},
+            isMap: ƒ isMap(length: 0) {},
+            isSet: ƒ isSet(length: 0) {},
+            isMapIterator: ƒ isMapIterator(length: 0) {},
+            isSetIterator: ƒ isSetIterator(length: 0) {},
+            isWeakMap: ƒ isWeakMap(length: 0) {},
+            isWeakSet: ƒ isWeakSet(length: 0) {},
+            isArrayBuffer: ƒ isArrayBuffer(length: 0) {},
+            isDataView: ƒ isDataView(length: 0) {},
+            isSharedArrayBuffer: ƒ isSharedArrayBuffer(length: 0) {},
+            isProxy: ƒ isProxy(length: 0) {},
+            isModuleNamespaceObject: ƒ isModuleNamespaceObject(length: 0) {},
+            isAnyArrayBuffer: ƒ isAnyArrayBuffer(length: 0) {},
+            isBoxedPrimitive: ƒ isBoxedPrimitive(length: 0) {},
+            isArrayBufferView: ƒ isView(length: 1) {},
+            isTypedArray: ƒ isTypedArray(length: 1) {},
+            isUint8Array: ƒ isUint8Array(length: 1) {},
+            isUint8ClampedArray: ƒ isUint8ClampedArray(length: 1) {},
+            isUint16Array: ƒ isUint16Array(length: 1) {},
+            isUint32Array: ƒ isUint32Array(length: 1) {},
+            isInt8Array: ƒ isInt8Array(length: 1) {},
+            isInt16Array: ƒ isInt16Array(length: 1) {},
+            isInt32Array: ƒ isInt32Array(length: 1) {},
+            isFloat32Array: ƒ isFloat32Array(length: 1) {},
+            isFloat64Array: ƒ isFloat64Array(length: 1) {},
+            isBigInt64Array: ƒ isBigInt64Array(length: 1) {},
+            isBigUint64Array: ƒ isBigUint64Array(length: 1) {},
+            isKeyObject: ƒ value(length: 1) {},
+            isCryptoKey: ƒ value(length: 1) {}
         }
     },
     deprecate: [Circular: *12],
@@ -9136,31 +9914,30 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
     getSystemErrorName: [Circular: *16],
     inherits: [Circular: *17],
     inspect: [Circular: *18],
-    isArray: [Circular: *19],
-    isBoolean: [Circular: *20],
-    isBuffer: [Circular: *21],
-    isDate: [Circular: *31],
-    isDeepStrictEqual: [Circular: *22],
-    isError: [Circular: *32],
-    isFunction: [Circular: *33],
-    isNull: [Circular: *23],
-    isNullOrUndefined: [Circular: *24],
-    isNumber: [Circular: *25],
-    isObject: [Circular: *30],
-    isPrimitive: [Circular: *34],
-    isRegExp: [Circular: *29],
-    isString: [Circular: *26],
-    isSymbol: [Circular: *27],
-    isUndefined: [Circular: *28],
-    log: [Circular: *35],
-    parseArgs: [Circular: *36],
-    promisify: [Circular: *37],
-    stripVTControlCharacters: [Circular: *38],
-    toUSVString: [Circular: *39],
-    transferableAbortController: [Circular: *41],
-    transferableAbortSignal: [Circular: *40],
-    types: [Circular: *42],
-    Symbol(Symbol.toStringTag): "Module"
+    isArray: [Circular: *65],
+    isBoolean: [Circular: *66],
+    isBuffer: [Circular: *67],
+    isDate: [Circular: *77],
+    isDeepStrictEqual: [Circular: *68],
+    isError: [Circular: *78],
+    isFunction: [Circular: *79],
+    isNull: [Circular: *69],
+    isNullOrUndefined: [Circular: *70],
+    isNumber: [Circular: *71],
+    isObject: [Circular: *76],
+    isPrimitive: [Circular: *80],
+    isRegExp: [Circular: *75],
+    isString: [Circular: *72],
+    isSymbol: [Circular: *73],
+    isUndefined: [Circular: *74],
+    log: [Circular: *81],
+    parseArgs: [Circular: *82],
+    promisify: [Circular: *83],
+    stripVTControlCharacters: [Circular: *84],
+    toUSVString: [Circular: *85],
+    transferableAbortController: [Circular: *87],
+    transferableAbortSignal: [Circular: *86],
+    types: [Circular: *88]
 }
 ```
 
@@ -9168,78 +9945,145 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    isDeepStrictEqual: ƒ isDeepStrictEqual (length: 2),
-    format: ƒ format (length: 1),
-    deprecate: ƒ deprecate (length: 2),
-    debuglog: ƒ debuglog (length: 1),
-    inspect: ƒ inspect (length: 2),
+    isDeepStrictEqual: ƒ isDeepStrictEqual(length: 2) {},
+    format: ƒ format(length: 1) {},
+    deprecate: ƒ deprecate(length: 2) {},
+    debuglog: ƒ debuglog(length: 1) {},
+    inspect: ƒ inspect(length: 2) {
+        colors: {
+            bold: [
+                1,
+                22
+            ],
+            italic: [
+                3,
+                23
+            ],
+            underline: [
+                4,
+                24
+            ],
+            inverse: [
+                7,
+                27
+            ],
+            white: [
+                37,
+                39
+            ],
+            grey: [
+                90,
+                39
+            ],
+            black: [
+                30,
+                39
+            ],
+            blue: [
+                34,
+                39
+            ],
+            cyan: [
+                36,
+                39
+            ],
+            green: [
+                32,
+                39
+            ],
+            magenta: [
+                35,
+                39
+            ],
+            red: [
+                31,
+                39
+            ],
+            yellow: [
+                33,
+                39
+            ]
+        },
+        styles: {
+            special: "cyan",
+            number: "yellow",
+            boolean: "yellow",
+            undefined: "grey",
+            null: "bold",
+            string: "green",
+            date: "magenta",
+            regexp: "red"
+        }
+    },
     types: {
-        isExternal: ƒ isExternal (length: 1),
-        isDate: <ref *9> ƒ isDate (length: 1),
-        isArgumentsObject: ƒ isArgumentsObject (length: 1),
-        isBigIntObject: ƒ isBigIntObject (length: 1),
-        isBooleanObject: ƒ isBooleanObject (length: 1),
-        isNumberObject: ƒ isNumberObject (length: 1),
-        isStringObject: ƒ isStringObject (length: 1),
-        isSymbolObject: ƒ isSymbolObject (length: 1),
-        isNativeError: <ref *16> ƒ isNativeError (length: 1),
-        isRegExp: <ref *17> ƒ isRegExp (length: 1),
-        isAsyncFunction: ƒ isAsyncFunction (length: 1),
-        isGeneratorFunction: ƒ isGeneratorFunction (length: 1),
-        isGeneratorObject: ƒ isGeneratorObject (length: 1),
-        isPromise: ƒ isPromise (length: 1),
-        isMap: ƒ isMap (length: 1),
-        isSet: ƒ isSet (length: 1),
-        isMapIterator: ƒ isMapIterator (length: 1),
-        isSetIterator: ƒ isSetIterator (length: 1),
-        isWeakMap: ƒ isWeakMap (length: 1),
-        isWeakSet: ƒ isWeakSet (length: 1),
-        isArrayBuffer: ƒ isArrayBuffer (length: 1),
-        isDataView: ƒ isDataView (length: 1),
-        isSharedArrayBuffer: ƒ isSharedArrayBuffer (length: 1),
-        isProxy: ƒ isProxy (length: 1),
-        isModuleNamespaceObject: ƒ isModuleNamespaceObject (length: 1),
-        isAnyArrayBuffer: ƒ isAnyArrayBuffer (length: 1),
-        isBoxedPrimitive: ƒ isBoxedPrimitive (length: 1),
-        isArrayBufferView: ƒ isArrayBufferView (length: 1),
-        isTypedArray: ƒ isTypedArray (length: 1),
-        isUint8Array: ƒ isUint8Array (length: 1),
-        isUint8ClampedArray: ƒ isUint8ClampedArray (length: 1),
-        isUint16Array: ƒ isUint16Array (length: 1),
-        isUint32Array: ƒ isUint32Array (length: 1),
-        isInt8Array: ƒ isInt8Array (length: 1),
-        isInt16Array: ƒ isInt16Array (length: 1),
-        isInt32Array: ƒ isInt32Array (length: 1),
-        isFloat32Array: ƒ isFloat32Array (length: 1),
-        isFloat64Array: ƒ isFloat64Array (length: 1),
-        isBigInt64Array: ƒ isBigInt64Array (length: 1),
-        isBigUint64Array: ƒ isBigUint64Array (length: 1),
-        isKeyObject: ƒ isKeyObject (length: 1),
-        isCryptoKey: ƒ isCryptoKey (length: 1),
+        isExternal: ƒ isExternal(length: 1) {},
+        isDate: <ref *24> ƒ isDate(length: 1) {},
+        isArgumentsObject: ƒ isArgumentsObject(length: 1) {},
+        isBigIntObject: ƒ isBigIntObject(length: 1) {},
+        isBooleanObject: ƒ isBooleanObject(length: 1) {},
+        isNumberObject: ƒ isNumberObject(length: 1) {},
+        isStringObject: ƒ isStringObject(length: 1) {},
+        isSymbolObject: ƒ isSymbolObject(length: 1) {},
+        isNativeError: <ref *31> ƒ isNativeError(length: 1) {},
+        isRegExp: <ref *32> ƒ isRegExp(length: 1) {},
+        isAsyncFunction: ƒ isAsyncFunction(length: 1) {},
+        isGeneratorFunction: ƒ isGeneratorFunction(length: 1) {},
+        isGeneratorObject: ƒ isGeneratorObject(length: 1) {},
+        isPromise: ƒ isPromise(length: 1) {},
+        isMap: ƒ isMap(length: 1) {},
+        isSet: ƒ isSet(length: 1) {},
+        isMapIterator: ƒ isMapIterator(length: 1) {},
+        isSetIterator: ƒ isSetIterator(length: 1) {},
+        isWeakMap: ƒ isWeakMap(length: 1) {},
+        isWeakSet: ƒ isWeakSet(length: 1) {},
+        isArrayBuffer: ƒ isArrayBuffer(length: 1) {},
+        isDataView: ƒ isDataView(length: 1) {},
+        isSharedArrayBuffer: ƒ isSharedArrayBuffer(length: 1) {},
+        isProxy: ƒ isProxy(length: 1) {},
+        isModuleNamespaceObject: ƒ isModuleNamespaceObject(length: 1) {},
+        isAnyArrayBuffer: ƒ isAnyArrayBuffer(length: 1) {},
+        isBoxedPrimitive: ƒ isBoxedPrimitive(length: 1) {},
+        isArrayBufferView: ƒ isArrayBufferView(length: 1) {},
+        isTypedArray: ƒ isTypedArray(length: 1) {},
+        isUint8Array: ƒ isUint8Array(length: 1) {},
+        isUint8ClampedArray: ƒ isUint8ClampedArray(length: 1) {},
+        isUint16Array: ƒ isUint16Array(length: 1) {},
+        isUint32Array: ƒ isUint32Array(length: 1) {},
+        isInt8Array: ƒ isInt8Array(length: 1) {},
+        isInt16Array: ƒ isInt16Array(length: 1) {},
+        isInt32Array: ƒ isInt32Array(length: 1) {},
+        isFloat32Array: ƒ isFloat32Array(length: 1) {},
+        isFloat64Array: ƒ isFloat64Array(length: 1) {},
+        isBigInt64Array: ƒ isBigInt64Array(length: 1) {},
+        isBigUint64Array: ƒ isBigUint64Array(length: 1) {},
+        isKeyObject: ƒ isKeyObject(length: 1) {},
+        isCryptoKey: ƒ isCryptoKey(length: 1) {},
         Symbol(CommonJS): 0
     },
-    isArray: ƒ isArray (length: 1),
-    isBoolean: ƒ isBoolean (length: 1),
-    isNull: ƒ isNull (length: 1),
-    isNullOrUndefined: ƒ isNullOrUndefined (length: 1),
-    isNumber: ƒ isNumber (length: 1),
-    isString: ƒ isString (length: 1),
-    isSymbol: ƒ isSymbol (length: 1),
-    isUndefined: ƒ isUndefined (length: 1),
-    isRegExp: [Circular: *17],
-    isObject: ƒ isObject (length: 1),
-    isDate: [Circular: *9],
-    isError: [Circular: *16],
-    isFunction: ƒ isFunction (length: 1),
-    isPrimitive: ƒ isPrimitive (length: 1),
-    isBuffer: ƒ isBuffer (length: 1),
-    log: ƒ (length: 0),
-    inherits: ƒ inherits (length: 2),
-    _extend: ƒ (length: 2),
-    promisify: ƒ promisify (length: 1),
-    callbackify: ƒ callbackify (length: 1),
-    TextDecoder: ƒ TextDecoder (length: 0),
-    TextEncoder: ƒ TextEncoder (length: 0),
+    isArray: ƒ isArray(length: 1) {},
+    isBoolean: ƒ isBoolean(length: 1) {},
+    isNull: ƒ isNull(length: 1) {},
+    isNullOrUndefined: ƒ isNullOrUndefined(length: 1) {},
+    isNumber: ƒ isNumber(length: 1) {},
+    isString: ƒ isString(length: 1) {},
+    isSymbol: ƒ isSymbol(length: 1) {},
+    isUndefined: ƒ isUndefined(length: 1) {},
+    isRegExp: [Circular: *32],
+    isObject: ƒ isObject(length: 1) {},
+    isDate: [Circular: *24],
+    isError: [Circular: *31],
+    isFunction: ƒ isFunction(length: 1) {},
+    isPrimitive: ƒ isPrimitive(length: 1) {},
+    isBuffer: ƒ isBuffer(length: 1) {},
+    log: ƒ (length: 0) {},
+    inherits: ƒ inherits(length: 2) {},
+    _extend: ƒ (length: 2) {},
+    promisify: ƒ promisify(length: 1) {
+        custom: Symbol(util.promisify.custom)
+    },
+    callbackify: ƒ callbackify(length: 1) {},
+    TextDecoder: ƒ TextDecoder(length: 0) {},
+    TextEncoder: ƒ TextEncoder(length: 0) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -9253,48 +10097,48 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 ```js
 [Object: null prototype] {
     default: {
-        isExternal: <ref *3> ƒ isExternal (length: 0),
-        isDate: <ref *4> ƒ isDate (length: 0),
-        isArgumentsObject: <ref *5> ƒ isArgumentsObject (length: 0),
-        isBigIntObject: <ref *6> ƒ isBigIntObject (length: 0),
-        isBooleanObject: <ref *7> ƒ isBooleanObject (length: 0),
-        isNumberObject: <ref *8> ƒ isNumberObject (length: 0),
-        isStringObject: <ref *9> ƒ isStringObject (length: 0),
-        isSymbolObject: <ref *10> ƒ isSymbolObject (length: 0),
-        isNativeError: <ref *11> ƒ isNativeError (length: 0),
-        isRegExp: <ref *12> ƒ isRegExp (length: 0),
-        isAsyncFunction: <ref *13> ƒ isAsyncFunction (length: 0),
-        isGeneratorFunction: <ref *14> ƒ isGeneratorFunction (length: 0),
-        isGeneratorObject: <ref *15> ƒ isGeneratorObject (length: 0),
-        isPromise: <ref *16> ƒ isPromise (length: 0),
-        isMap: <ref *17> ƒ isMap (length: 0),
-        isSet: <ref *18> ƒ isSet (length: 0),
-        isMapIterator: <ref *19> ƒ isMapIterator (length: 0),
-        isSetIterator: <ref *20> ƒ isSetIterator (length: 0),
-        isWeakMap: <ref *21> ƒ isWeakMap (length: 0),
-        isWeakSet: <ref *22> ƒ isWeakSet (length: 0),
-        isArrayBuffer: <ref *23> ƒ isArrayBuffer (length: 0),
-        isDataView: <ref *24> ƒ isDataView (length: 0),
-        isSharedArrayBuffer: <ref *25> ƒ isSharedArrayBuffer (length: 0),
-        isProxy: <ref *26> ƒ isProxy (length: 0),
-        isModuleNamespaceObject: <ref *27> ƒ isModuleNamespaceObject (length: 0),
-        isAnyArrayBuffer: <ref *28> ƒ isAnyArrayBuffer (length: 0),
-        isBoxedPrimitive: <ref *29> ƒ isBoxedPrimitive (length: 0),
-        isArrayBufferView: <ref *30> ƒ isView (length: 1),
-        isTypedArray: <ref *31> ƒ isTypedArray (length: 1),
-        isUint8Array: <ref *32> ƒ isUint8Array (length: 1),
-        isUint8ClampedArray: <ref *33> ƒ isUint8ClampedArray (length: 1),
-        isUint16Array: <ref *34> ƒ isUint16Array (length: 1),
-        isUint32Array: <ref *35> ƒ isUint32Array (length: 1),
-        isInt8Array: <ref *36> ƒ isInt8Array (length: 1),
-        isInt16Array: <ref *37> ƒ isInt16Array (length: 1),
-        isInt32Array: <ref *38> ƒ isInt32Array (length: 1),
-        isFloat32Array: <ref *39> ƒ isFloat32Array (length: 1),
-        isFloat64Array: <ref *40> ƒ isFloat64Array (length: 1),
-        isBigInt64Array: <ref *41> ƒ isBigInt64Array (length: 1),
-        isBigUint64Array: <ref *42> ƒ isBigUint64Array (length: 1),
-        isKeyObject: <ref *43> ƒ value (length: 1),
-        isCryptoKey: <ref *44> ƒ value (length: 1)
+        isExternal: <ref *3> ƒ isExternal(length: 0) {},
+        isDate: <ref *4> ƒ isDate(length: 0) {},
+        isArgumentsObject: <ref *5> ƒ isArgumentsObject(length: 0) {},
+        isBigIntObject: <ref *6> ƒ isBigIntObject(length: 0) {},
+        isBooleanObject: <ref *7> ƒ isBooleanObject(length: 0) {},
+        isNumberObject: <ref *8> ƒ isNumberObject(length: 0) {},
+        isStringObject: <ref *9> ƒ isStringObject(length: 0) {},
+        isSymbolObject: <ref *10> ƒ isSymbolObject(length: 0) {},
+        isNativeError: <ref *11> ƒ isNativeError(length: 0) {},
+        isRegExp: <ref *12> ƒ isRegExp(length: 0) {},
+        isAsyncFunction: <ref *13> ƒ isAsyncFunction(length: 0) {},
+        isGeneratorFunction: <ref *14> ƒ isGeneratorFunction(length: 0) {},
+        isGeneratorObject: <ref *15> ƒ isGeneratorObject(length: 0) {},
+        isPromise: <ref *16> ƒ isPromise(length: 0) {},
+        isMap: <ref *17> ƒ isMap(length: 0) {},
+        isSet: <ref *18> ƒ isSet(length: 0) {},
+        isMapIterator: <ref *19> ƒ isMapIterator(length: 0) {},
+        isSetIterator: <ref *20> ƒ isSetIterator(length: 0) {},
+        isWeakMap: <ref *21> ƒ isWeakMap(length: 0) {},
+        isWeakSet: <ref *22> ƒ isWeakSet(length: 0) {},
+        isArrayBuffer: <ref *23> ƒ isArrayBuffer(length: 0) {},
+        isDataView: <ref *24> ƒ isDataView(length: 0) {},
+        isSharedArrayBuffer: <ref *25> ƒ isSharedArrayBuffer(length: 0) {},
+        isProxy: <ref *26> ƒ isProxy(length: 0) {},
+        isModuleNamespaceObject: <ref *27> ƒ isModuleNamespaceObject(length: 0) {},
+        isAnyArrayBuffer: <ref *28> ƒ isAnyArrayBuffer(length: 0) {},
+        isBoxedPrimitive: <ref *29> ƒ isBoxedPrimitive(length: 0) {},
+        isArrayBufferView: <ref *30> ƒ isView(length: 1) {},
+        isTypedArray: <ref *31> ƒ isTypedArray(length: 1) {},
+        isUint8Array: <ref *32> ƒ isUint8Array(length: 1) {},
+        isUint8ClampedArray: <ref *33> ƒ isUint8ClampedArray(length: 1) {},
+        isUint16Array: <ref *34> ƒ isUint16Array(length: 1) {},
+        isUint32Array: <ref *35> ƒ isUint32Array(length: 1) {},
+        isInt8Array: <ref *36> ƒ isInt8Array(length: 1) {},
+        isInt16Array: <ref *37> ƒ isInt16Array(length: 1) {},
+        isInt32Array: <ref *38> ƒ isInt32Array(length: 1) {},
+        isFloat32Array: <ref *39> ƒ isFloat32Array(length: 1) {},
+        isFloat64Array: <ref *40> ƒ isFloat64Array(length: 1) {},
+        isBigInt64Array: <ref *41> ƒ isBigInt64Array(length: 1) {},
+        isBigUint64Array: <ref *42> ƒ isBigUint64Array(length: 1) {},
+        isKeyObject: <ref *43> ƒ value(length: 1) {},
+        isCryptoKey: <ref *44> ƒ value(length: 1) {}
     },
     isAnyArrayBuffer: [Circular: *28],
     isArgumentsObject: [Circular: *5],
@@ -9337,8 +10181,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
     isUint8Array: [Circular: *32],
     isUint8ClampedArray: [Circular: *33],
     isWeakMap: [Circular: *21],
-    isWeakSet: [Circular: *22],
-    Symbol(Symbol.toStringTag): "Module"
+    isWeakSet: [Circular: *22]
 }
 ```
 
@@ -9346,48 +10189,48 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    isExternal: ƒ isExternal (length: 1),
-    isDate: ƒ isDate (length: 1),
-    isArgumentsObject: ƒ isArgumentsObject (length: 1),
-    isBigIntObject: ƒ isBigIntObject (length: 1),
-    isBooleanObject: ƒ isBooleanObject (length: 1),
-    isNumberObject: ƒ isNumberObject (length: 1),
-    isStringObject: ƒ isStringObject (length: 1),
-    isSymbolObject: ƒ isSymbolObject (length: 1),
-    isNativeError: ƒ isNativeError (length: 1),
-    isRegExp: ƒ isRegExp (length: 1),
-    isAsyncFunction: ƒ isAsyncFunction (length: 1),
-    isGeneratorFunction: ƒ isGeneratorFunction (length: 1),
-    isGeneratorObject: ƒ isGeneratorObject (length: 1),
-    isPromise: ƒ isPromise (length: 1),
-    isMap: ƒ isMap (length: 1),
-    isSet: ƒ isSet (length: 1),
-    isMapIterator: ƒ isMapIterator (length: 1),
-    isSetIterator: ƒ isSetIterator (length: 1),
-    isWeakMap: ƒ isWeakMap (length: 1),
-    isWeakSet: ƒ isWeakSet (length: 1),
-    isArrayBuffer: ƒ isArrayBuffer (length: 1),
-    isDataView: ƒ isDataView (length: 1),
-    isSharedArrayBuffer: ƒ isSharedArrayBuffer (length: 1),
-    isProxy: ƒ isProxy (length: 1),
-    isModuleNamespaceObject: ƒ isModuleNamespaceObject (length: 1),
-    isAnyArrayBuffer: ƒ isAnyArrayBuffer (length: 1),
-    isBoxedPrimitive: ƒ isBoxedPrimitive (length: 1),
-    isArrayBufferView: ƒ isArrayBufferView (length: 1),
-    isTypedArray: ƒ isTypedArray (length: 1),
-    isUint8Array: ƒ isUint8Array (length: 1),
-    isUint8ClampedArray: ƒ isUint8ClampedArray (length: 1),
-    isUint16Array: ƒ isUint16Array (length: 1),
-    isUint32Array: ƒ isUint32Array (length: 1),
-    isInt8Array: ƒ isInt8Array (length: 1),
-    isInt16Array: ƒ isInt16Array (length: 1),
-    isInt32Array: ƒ isInt32Array (length: 1),
-    isFloat32Array: ƒ isFloat32Array (length: 1),
-    isFloat64Array: ƒ isFloat64Array (length: 1),
-    isBigInt64Array: ƒ isBigInt64Array (length: 1),
-    isBigUint64Array: ƒ isBigUint64Array (length: 1),
-    isKeyObject: ƒ isKeyObject (length: 1),
-    isCryptoKey: ƒ isCryptoKey (length: 1),
+    isExternal: ƒ isExternal(length: 1) {},
+    isDate: ƒ isDate(length: 1) {},
+    isArgumentsObject: ƒ isArgumentsObject(length: 1) {},
+    isBigIntObject: ƒ isBigIntObject(length: 1) {},
+    isBooleanObject: ƒ isBooleanObject(length: 1) {},
+    isNumberObject: ƒ isNumberObject(length: 1) {},
+    isStringObject: ƒ isStringObject(length: 1) {},
+    isSymbolObject: ƒ isSymbolObject(length: 1) {},
+    isNativeError: ƒ isNativeError(length: 1) {},
+    isRegExp: ƒ isRegExp(length: 1) {},
+    isAsyncFunction: ƒ isAsyncFunction(length: 1) {},
+    isGeneratorFunction: ƒ isGeneratorFunction(length: 1) {},
+    isGeneratorObject: ƒ isGeneratorObject(length: 1) {},
+    isPromise: ƒ isPromise(length: 1) {},
+    isMap: ƒ isMap(length: 1) {},
+    isSet: ƒ isSet(length: 1) {},
+    isMapIterator: ƒ isMapIterator(length: 1) {},
+    isSetIterator: ƒ isSetIterator(length: 1) {},
+    isWeakMap: ƒ isWeakMap(length: 1) {},
+    isWeakSet: ƒ isWeakSet(length: 1) {},
+    isArrayBuffer: ƒ isArrayBuffer(length: 1) {},
+    isDataView: ƒ isDataView(length: 1) {},
+    isSharedArrayBuffer: ƒ isSharedArrayBuffer(length: 1) {},
+    isProxy: ƒ isProxy(length: 1) {},
+    isModuleNamespaceObject: ƒ isModuleNamespaceObject(length: 1) {},
+    isAnyArrayBuffer: ƒ isAnyArrayBuffer(length: 1) {},
+    isBoxedPrimitive: ƒ isBoxedPrimitive(length: 1) {},
+    isArrayBufferView: ƒ isArrayBufferView(length: 1) {},
+    isTypedArray: ƒ isTypedArray(length: 1) {},
+    isUint8Array: ƒ isUint8Array(length: 1) {},
+    isUint8ClampedArray: ƒ isUint8ClampedArray(length: 1) {},
+    isUint16Array: ƒ isUint16Array(length: 1) {},
+    isUint32Array: ƒ isUint32Array(length: 1) {},
+    isInt8Array: ƒ isInt8Array(length: 1) {},
+    isInt16Array: ƒ isInt16Array(length: 1) {},
+    isInt32Array: ƒ isInt32Array(length: 1) {},
+    isFloat32Array: ƒ isFloat32Array(length: 1) {},
+    isFloat64Array: ƒ isFloat64Array(length: 1) {},
+    isBigInt64Array: ƒ isBigInt64Array(length: 1) {},
+    isBigUint64Array: ƒ isBigUint64Array(length: 1) {},
+    isKeyObject: ƒ isKeyObject(length: 1) {},
+    isCryptoKey: ƒ isCryptoKey(length: 1) {},
     Symbol(CommonJS): 0
 }
 ```
@@ -9400,42 +10243,42 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    DefaultDeserializer: <ref *2> [class DefaultDeserializer],
-    DefaultSerializer: <ref *3> [class DefaultSerializer],
-    Deserializer: <ref *4> ƒ Deserializer (length: 1),
-    GCProfiler: <ref *5> [class GCProfiler],
-    Serializer: <ref *6> ƒ Serializer (length: 0),
-    cachedDataVersionTag: <ref *7> ƒ cachedDataVersionTag (length: 0),
+    DefaultDeserializer: <ref *2> [class DefaultDeserializer]{},
+    DefaultSerializer: <ref *3> [class DefaultSerializer]{},
+    Deserializer: <ref *4> ƒ Deserializer(length: 1) {},
+    GCProfiler: <ref *5> [class GCProfiler]{},
+    Serializer: <ref *6> ƒ Serializer(length: 0) {},
+    cachedDataVersionTag: <ref *7> ƒ cachedDataVersionTag(length: 0) {},
     default: {
         cachedDataVersionTag: [Circular: *7],
-        getHeapSnapshot: <ref *9> ƒ getHeapSnapshot (length: 0),
-        getHeapStatistics: <ref *10> ƒ getHeapStatistics (length: 0),
-        getHeapSpaceStatistics: <ref *11> ƒ getHeapSpaceStatistics (length: 0),
-        getHeapCodeStatistics: <ref *12> ƒ getHeapCodeStatistics (length: 0),
-        setFlagsFromString: <ref *13> ƒ setFlagsFromString (length: 1),
+        getHeapSnapshot: <ref *9> ƒ getHeapSnapshot(length: 0) {},
+        getHeapStatistics: <ref *10> ƒ getHeapStatistics(length: 0) {},
+        getHeapSpaceStatistics: <ref *11> ƒ getHeapSpaceStatistics(length: 0) {},
+        getHeapCodeStatistics: <ref *12> ƒ getHeapCodeStatistics(length: 0) {},
+        setFlagsFromString: <ref *13> ƒ setFlagsFromString(length: 1) {},
         Serializer: [Circular: *6],
         Deserializer: [Circular: *4],
         DefaultSerializer: [Circular: *3],
         DefaultDeserializer: [Circular: *2],
-        deserialize: <ref *14> ƒ deserialize (length: 1),
-        takeCoverage: <ref *15> ƒ takeCoverage (length: 0),
-        stopCoverage: <ref *16> ƒ stopCoverage (length: 0),
-        serialize: <ref *17> ƒ serialize (length: 1),
-        writeHeapSnapshot: <ref *18> ƒ writeHeapSnapshot (length: 1),
+        deserialize: <ref *14> ƒ deserialize(length: 1) {},
+        takeCoverage: <ref *15> ƒ takeCoverage(length: 0) {},
+        stopCoverage: <ref *16> ƒ stopCoverage(length: 0) {},
+        serialize: <ref *17> ƒ serialize(length: 1) {},
+        writeHeapSnapshot: <ref *18> ƒ writeHeapSnapshot(length: 1) {},
         promiseHooks: <ref *19> {
-            createHook: ƒ createHook (length: 0),
-            onInit: ƒ (length: 1),
-            onBefore: ƒ (length: 1),
-            onAfter: ƒ (length: 1),
-            onSettled: ƒ (length: 1)
+            createHook: ƒ createHook(length: 0) {},
+            onInit: ƒ (length: 1) {},
+            onBefore: ƒ (length: 1) {},
+            onAfter: ƒ (length: 1) {},
+            onSettled: ƒ (length: 1) {}
         },
         startupSnapshot: <ref *25> {
-            addDeserializeCallback: ƒ addDeserializeCallback (length: 2),
-            addSerializeCallback: ƒ addSerializeCallback (length: 2),
-            setDeserializeMainFunction: ƒ setDeserializeMainFunction (length: 2),
-            isBuildingSnapshot: ƒ isBuildingSnapshot (length: 0)
+            addDeserializeCallback: ƒ addDeserializeCallback(length: 2) {},
+            addSerializeCallback: ƒ addSerializeCallback(length: 2) {},
+            setDeserializeMainFunction: ƒ setDeserializeMainFunction(length: 2) {},
+            isBuildingSnapshot: ƒ isBuildingSnapshot(length: 0) {}
         },
-        setHeapSnapshotNearHeapLimit: <ref *30> ƒ setHeapSnapshotNearHeapLimit (length: 1),
+        setHeapSnapshotNearHeapLimit: <ref *30> ƒ setHeapSnapshotNearHeapLimit(length: 1) {},
         GCProfiler: [Circular: *5]
     },
     deserialize: [Circular: *14],
@@ -9450,8 +10293,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
     startupSnapshot: [Circular: *25],
     stopCoverage: [Circular: *16],
     takeCoverage: [Circular: *15],
-    writeHeapSnapshot: [Circular: *18],
-    Symbol(Symbol.toStringTag): "Module"
+    writeHeapSnapshot: [Circular: *18]
 }
 ```
 
@@ -9459,33 +10301,33 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    cachedDataVersionTag: ƒ ::bunternal:: (length: 0),
-    getHeapSnapshot: ƒ ::bunternal:: (length: 0),
-    getHeapStatistics: ƒ ::bunternal:: (length: 0),
-    getHeapSpaceStatistics: ƒ ::bunternal:: (length: 0),
-    getHeapCodeStatistics: ƒ ::bunternal:: (length: 0),
-    setFlagsFromString: ƒ ::bunternal:: (length: 0),
-    deserialize: ƒ ::bunternal:: (length: 0),
-    takeCoverage: ƒ ::bunternal:: (length: 0),
-    stopCoverage: ƒ ::bunternal:: (length: 0),
-    serialize: ƒ ::bunternal:: (length: 0),
-    writeHeapSnapshot: ƒ ::bunternal:: (length: 0),
-    setHeapSnapshotNearHeapLimit: ƒ ::bunternal:: (length: 0),
+    cachedDataVersionTag: ƒ ::bunternal::(length: 0) {},
+    getHeapSnapshot: ƒ ::bunternal::(length: 0) {},
+    getHeapStatistics: ƒ ::bunternal::(length: 0) {},
+    getHeapSpaceStatistics: ƒ ::bunternal::(length: 0) {},
+    getHeapCodeStatistics: ƒ ::bunternal::(length: 0) {},
+    setFlagsFromString: ƒ ::bunternal::(length: 0) {},
+    deserialize: ƒ ::bunternal::(length: 0) {},
+    takeCoverage: ƒ ::bunternal::(length: 0) {},
+    stopCoverage: ƒ ::bunternal::(length: 0) {},
+    serialize: ƒ ::bunternal::(length: 0) {},
+    writeHeapSnapshot: ƒ ::bunternal::(length: 0) {},
+    setHeapSnapshotNearHeapLimit: ƒ ::bunternal::(length: 0) {},
     promiseHooks: {
-        createHook: ƒ createHook (length: 0),
-        onInit: ƒ onInit (length: 0),
-        onBefore: ƒ onBefore (length: 0),
-        onAfter: ƒ onAfter (length: 0),
-        onSettled: ƒ onSettled (length: 0)
+        createHook: ƒ createHook(length: 0) {},
+        onInit: ƒ onInit(length: 0) {},
+        onBefore: ƒ onBefore(length: 0) {},
+        onAfter: ƒ onAfter(length: 0) {},
+        onSettled: ƒ onSettled(length: 0) {}
     },
     startupSnapshot: {
-        addDeserializeCallback: ƒ addDeserializeCallback (length: 0),
-        addSerializeCallback: ƒ addSerializeCallback (length: 0),
-        setDeserializeMainFunction: ƒ setDeserializeMainFunction (length: 0),
-        isBuildingSnapshot: ƒ isBuildingSnapshot (length: 0)
+        addDeserializeCallback: ƒ addDeserializeCallback(length: 0) {},
+        addSerializeCallback: ƒ addSerializeCallback(length: 0) {},
+        setDeserializeMainFunction: ƒ setDeserializeMainFunction(length: 0) {},
+        isBuildingSnapshot: ƒ isBuildingSnapshot(length: 0) {}
     },
-    Deserializer: [class ::bunternal::],
-    Serializer: [class ::bunternal::],
+    Deserializer: [class ::bunternal::]{},
+    Serializer: [class ::bunternal::]{},
     Symbol(CommonJS): 0
 }
 ```
@@ -9498,27 +10340,26 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    Script: <ref *2> [class Script],
-    compileFunction: <ref *3> ƒ compileFunction (length: 2),
-    createContext: <ref *4> ƒ createContext (length: 0),
-    createScript: <ref *5> ƒ createScript (length: 2),
+    Script: <ref *2> [class Script]{},
+    compileFunction: <ref *3> ƒ compileFunction(length: 2) {},
+    createContext: <ref *4> ƒ createContext(length: 0) {},
+    createScript: <ref *5> ƒ createScript(length: 2) {},
     default: {
         Script: [Circular: *2],
         createContext: [Circular: *4],
         createScript: [Circular: *5],
-        runInContext: <ref *7> ƒ runInContext (length: 3),
-        runInNewContext: <ref *8> ƒ runInNewContext (length: 3),
-        runInThisContext: <ref *9> ƒ runInThisContext (length: 2),
-        isContext: <ref *10> ƒ isContext (length: 1),
+        runInContext: <ref *7> ƒ runInContext(length: 3) {},
+        runInNewContext: <ref *8> ƒ runInNewContext(length: 3) {},
+        runInThisContext: <ref *9> ƒ runInThisContext(length: 2) {},
+        isContext: <ref *10> ƒ isContext(length: 1) {},
         compileFunction: [Circular: *3],
-        measureMemory: <ref *11> ƒ measureMemory (length: 0)
+        measureMemory: <ref *11> ƒ measureMemory(length: 0) {}
     },
     isContext: [Circular: *10],
     measureMemory: [Circular: *11],
     runInContext: [Circular: *7],
     runInNewContext: [Circular: *8],
-    runInThisContext: [Circular: *9],
-    Symbol(Symbol.toStringTag): "Module"
+    runInThisContext: [Circular: *9]
 }
 ```
 
@@ -9526,15 +10367,15 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 {
-    createContext: ƒ ::bunternal:: (length: 0),
-    createScript: ƒ ::bunternal:: (length: 0),
-    runInContext: ƒ ::bunternal:: (length: 0),
-    runInNewContext: ƒ ::bunternal:: (length: 0),
-    runInThisContext: ƒ ::bunternal:: (length: 0),
-    isContext: ƒ ::bunternal:: (length: 0),
-    compileFunction: ƒ ::bunternal:: (length: 0),
-    measureMemory: ƒ ::bunternal:: (length: 0),
-    Script: [class ::bunternal::],
+    createContext: ƒ ::bunternal::(length: 0) {},
+    createScript: ƒ ::bunternal::(length: 0) {},
+    runInContext: ƒ ::bunternal::(length: 0) {},
+    runInNewContext: ƒ ::bunternal::(length: 0) {},
+    runInThisContext: ƒ ::bunternal::(length: 0) {},
+    isContext: ƒ ::bunternal::(length: 0) {},
+    compileFunction: ƒ ::bunternal::(length: 0) {},
+    measureMemory: ƒ ::bunternal::(length: 0) {},
+    Script: [class ::bunternal::]{},
     Symbol(CommonJS): 0
 }
 ```
@@ -9547,18 +10388,18 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    BroadcastChannel: <ref *2> [class BroadcastChannel],
-    MessageChannel: <ref *3> ƒ MessageChannel (length: 0),
-    MessagePort: <ref *4> ƒ MessagePort (length: 0),
+    BroadcastChannel: <ref *2> [class BroadcastChannel]{},
+    MessageChannel: <ref *3> ƒ MessageChannel(length: 0) {},
+    MessagePort: <ref *4> ƒ MessagePort(length: 0) {},
     SHARE_ENV: Symbol(nodejs.worker_threads.SHARE_ENV),
-    Worker: <ref *5> [class Worker],
+    Worker: <ref *5> [class Worker]{},
     default: {
         isMainThread: true,
         MessagePort: [Circular: *4],
         MessageChannel: [Circular: *3],
-        markAsUntransferable: <ref *7> ƒ markAsUntransferable (length: 1),
-        moveMessagePortToContext: <ref *8> ƒ moveMessagePortToContext (length: 0),
-        receiveMessageOnPort: <ref *9> ƒ receiveMessageOnPort (length: 1),
+        markAsUntransferable: <ref *7> ƒ markAsUntransferable(length: 1) {},
+        moveMessagePortToContext: <ref *8> ƒ moveMessagePortToContext(length: 0) {},
+        receiveMessageOnPort: <ref *9> ƒ receiveMessageOnPort(length: 1) {},
         resourceLimits: <ref *10> {},
         threadId: 0,
         SHARE_ENV: Symbol(nodejs.worker_threads.SHARE_ENV),
@@ -9566,8 +10407,8 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         parentPort: null,
         workerData: null,
         BroadcastChannel: [Circular: *2],
-        setEnvironmentData: <ref *11> ƒ setEnvironmentData (length: 2),
-        getEnvironmentData: <ref *12> ƒ getEnvironmentData (length: 1)
+        setEnvironmentData: <ref *11> ƒ setEnvironmentData(length: 2) {},
+        getEnvironmentData: <ref *12> ƒ getEnvironmentData(length: 1) {}
     },
     getEnvironmentData: [Circular: *12],
     isMainThread: true,
@@ -9578,8 +10419,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
     resourceLimits: [Circular: *10],
     setEnvironmentData: [Circular: *11],
     threadId: 0,
-    workerData: null,
-    Symbol(Symbol.toStringTag): "Module"
+    workerData: null
 }
 ```
 
@@ -9597,19 +10437,19 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
 
 ```js
 [Object: null prototype] {
-    BrotliCompress: <ref *2> ƒ BrotliCompress (length: 1),
-    BrotliDecompress: <ref *3> ƒ BrotliDecompress (length: 1),
-    Deflate: <ref *4> ƒ Deflate (length: 1),
-    DeflateRaw: <ref *5> ƒ DeflateRaw (length: 1),
-    Gunzip: <ref *6> ƒ Gunzip (length: 1),
-    Gzip: <ref *7> ƒ Gzip (length: 1),
-    Inflate: <ref *8> ƒ Inflate (length: 1),
-    InflateRaw: <ref *9> ƒ InflateRaw (length: 1),
-    Unzip: <ref *10> ƒ Unzip (length: 1),
-    brotliCompress: <ref *11> ƒ asyncBufferWrapper (length: 3),
-    brotliCompressSync: <ref *12> ƒ syncBufferWrapper (length: 2),
-    brotliDecompress: <ref *13> ƒ asyncBufferWrapper (length: 3),
-    brotliDecompressSync: <ref *14> ƒ syncBufferWrapper (length: 2),
+    BrotliCompress: <ref *2> ƒ BrotliCompress(length: 1) {},
+    BrotliDecompress: <ref *3> ƒ BrotliDecompress(length: 1) {},
+    Deflate: <ref *4> ƒ Deflate(length: 1) {},
+    DeflateRaw: <ref *5> ƒ DeflateRaw(length: 1) {},
+    Gunzip: <ref *6> ƒ Gunzip(length: 1) {},
+    Gzip: <ref *7> ƒ Gzip(length: 1) {},
+    Inflate: <ref *8> ƒ Inflate(length: 1) {},
+    InflateRaw: <ref *9> ƒ InflateRaw(length: 1) {},
+    Unzip: <ref *10> ƒ Unzip(length: 1) {},
+    brotliCompress: <ref *11> ƒ asyncBufferWrapper(length: 3) {},
+    brotliCompressSync: <ref *12> ƒ syncBufferWrapper(length: 2) {},
+    brotliDecompress: <ref *13> ƒ asyncBufferWrapper(length: 3) {},
+    brotliDecompressSync: <ref *14> ƒ syncBufferWrapper(length: 2) {},
     codes: <ref *15> {
         0: "Z_OK",
         1: "Z_STREAM_END",
@@ -9739,15 +10579,15 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         BROTLI_DECODER_ERROR_ALLOC_BLOCK_TYPE_TREES: -30,
         BROTLI_DECODER_ERROR_UNREACHABLE: -31
     },
-    createBrotliCompress: <ref *17> ƒ value (length: 1),
-    createBrotliDecompress: <ref *18> ƒ value (length: 1),
-    createDeflate: <ref *19> ƒ value (length: 1),
-    createDeflateRaw: <ref *20> ƒ value (length: 1),
-    createGunzip: <ref *21> ƒ value (length: 1),
-    createGzip: <ref *22> ƒ value (length: 1),
-    createInflate: <ref *23> ƒ value (length: 1),
-    createInflateRaw: <ref *24> ƒ value (length: 1),
-    createUnzip: <ref *25> ƒ value (length: 1),
+    createBrotliCompress: <ref *17> ƒ value(length: 1) {},
+    createBrotliDecompress: <ref *18> ƒ value(length: 1) {},
+    createDeflate: <ref *19> ƒ value(length: 1) {},
+    createDeflateRaw: <ref *20> ƒ value(length: 1) {},
+    createGunzip: <ref *21> ƒ value(length: 1) {},
+    createGzip: <ref *22> ƒ value(length: 1) {},
+    createInflate: <ref *23> ƒ value(length: 1) {},
+    createInflateRaw: <ref *24> ƒ value(length: 1) {},
+    createUnzip: <ref *25> ƒ value(length: 1) {},
     default: {
         Deflate: [Circular: *4],
         Inflate: [Circular: *8],
@@ -9758,20 +10598,20 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         Unzip: [Circular: *10],
         BrotliCompress: [Circular: *2],
         BrotliDecompress: [Circular: *3],
-        deflate: <ref *27> ƒ asyncBufferWrapper (length: 3),
-        deflateSync: <ref *28> ƒ syncBufferWrapper (length: 2),
-        gzip: <ref *29> ƒ asyncBufferWrapper (length: 3),
-        gzipSync: <ref *30> ƒ syncBufferWrapper (length: 2),
-        deflateRaw: <ref *31> ƒ asyncBufferWrapper (length: 3),
-        deflateRawSync: <ref *32> ƒ syncBufferWrapper (length: 2),
-        unzip: <ref *33> ƒ asyncBufferWrapper (length: 3),
-        unzipSync: <ref *34> ƒ syncBufferWrapper (length: 2),
-        inflate: <ref *35> ƒ asyncBufferWrapper (length: 3),
-        inflateSync: <ref *36> ƒ syncBufferWrapper (length: 2),
-        gunzip: <ref *37> ƒ asyncBufferWrapper (length: 3),
-        gunzipSync: <ref *38> ƒ syncBufferWrapper (length: 2),
-        inflateRaw: <ref *39> ƒ asyncBufferWrapper (length: 3),
-        inflateRawSync: <ref *40> ƒ syncBufferWrapper (length: 2),
+        deflate: <ref *27> ƒ asyncBufferWrapper(length: 3) {},
+        deflateSync: <ref *28> ƒ syncBufferWrapper(length: 2) {},
+        gzip: <ref *29> ƒ asyncBufferWrapper(length: 3) {},
+        gzipSync: <ref *30> ƒ syncBufferWrapper(length: 2) {},
+        deflateRaw: <ref *31> ƒ asyncBufferWrapper(length: 3) {},
+        deflateRawSync: <ref *32> ƒ syncBufferWrapper(length: 2) {},
+        unzip: <ref *33> ƒ asyncBufferWrapper(length: 3) {},
+        unzipSync: <ref *34> ƒ syncBufferWrapper(length: 2) {},
+        inflate: <ref *35> ƒ asyncBufferWrapper(length: 3) {},
+        inflateSync: <ref *36> ƒ syncBufferWrapper(length: 2) {},
+        gunzip: <ref *37> ƒ asyncBufferWrapper(length: 3) {},
+        gunzipSync: <ref *38> ƒ syncBufferWrapper(length: 2) {},
+        inflateRaw: <ref *39> ƒ asyncBufferWrapper(length: 3) {},
+        inflateRawSync: <ref *40> ƒ syncBufferWrapper(length: 2) {},
         brotliCompress: [Circular: *11],
         brotliCompressSync: [Circular: *12],
         brotliDecompress: [Circular: *13],
@@ -9786,51 +10626,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         createBrotliCompress: [Circular: *17],
         createBrotliDecompress: [Circular: *18],
         constants: [Circular: *16],
-        codes: [Circular: *15],
-        Z_NO_FLUSH: 0,
-        Z_PARTIAL_FLUSH: 1,
-        Z_SYNC_FLUSH: 2,
-        Z_FULL_FLUSH: 3,
-        Z_FINISH: 4,
-        Z_BLOCK: 5,
-        Z_OK: 0,
-        Z_STREAM_END: 1,
-        Z_NEED_DICT: 2,
-        Z_ERRNO: -1,
-        Z_STREAM_ERROR: -2,
-        Z_DATA_ERROR: -3,
-        Z_MEM_ERROR: -4,
-        Z_BUF_ERROR: -5,
-        Z_VERSION_ERROR: -6,
-        Z_NO_COMPRESSION: 0,
-        Z_BEST_SPEED: 1,
-        Z_BEST_COMPRESSION: 9,
-        Z_DEFAULT_COMPRESSION: -1,
-        Z_FILTERED: 1,
-        Z_HUFFMAN_ONLY: 2,
-        Z_RLE: 3,
-        Z_FIXED: 4,
-        Z_DEFAULT_STRATEGY: 0,
-        ZLIB_VERNUM: 4816,
-        DEFLATE: 1,
-        INFLATE: 2,
-        GZIP: 3,
-        GUNZIP: 4,
-        DEFLATERAW: 5,
-        INFLATERAW: 6,
-        UNZIP: 7,
-        Z_MIN_WINDOWBITS: 8,
-        Z_MAX_WINDOWBITS: 15,
-        Z_DEFAULT_WINDOWBITS: 15,
-        Z_MIN_CHUNK: 64,
-        Z_MAX_CHUNK: Infinity,
-        Z_DEFAULT_CHUNK: 16384,
-        Z_MIN_MEMLEVEL: 1,
-        Z_MAX_MEMLEVEL: 9,
-        Z_DEFAULT_MEMLEVEL: 8,
-        Z_MIN_LEVEL: -1,
-        Z_MAX_LEVEL: 9,
-        Z_DEFAULT_LEVEL: -1
+        codes: [Circular: *15]
     },
     deflate: [Circular: *27],
     deflateRaw: [Circular: *31],
@@ -9845,8 +10641,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
     inflateRawSync: [Circular: *40],
     inflateSync: [Circular: *36],
     unzip: [Circular: *33],
-    unzipSync: [Circular: *34],
-    Symbol(Symbol.toStringTag): "Module"
+    unzipSync: [Circular: *34]
 }
 ```
 
@@ -9881,7 +10676,7 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
     Z_TEXT: 1,
     Z_UNKNOWN: 2,
     Z_DEFLATED: 8,
-    Zlib: ƒ Zlib (length: 1),
+    Zlib: ƒ Zlib(length: 1) {},
     Z_MIN_WINDOWBITS: 8,
     Z_MAX_WINDOWBITS: 15,
     Z_DEFAULT_WINDOWBITS: 15,
@@ -9942,34 +10737,50 @@ ReferenceError: Static function property defined with NULL callAsFunction callba
         Z_UNKNOWN: 2,
         Z_DEFLATED: 8
     },
-    Deflate: ƒ Deflate (length: 1),
-    Inflate: ƒ Inflate (length: 1),
-    Gzip: ƒ Gzip (length: 1),
-    Gunzip: ƒ Gunzip (length: 1),
-    DeflateRaw: ƒ DeflateRaw (length: 1),
-    InflateRaw: ƒ InflateRaw (length: 1),
-    Unzip: ƒ Unzip (length: 1),
-    createDeflate: ƒ (length: 1),
-    createInflate: ƒ (length: 1),
-    createDeflateRaw: ƒ (length: 1),
-    createInflateRaw: ƒ (length: 1),
-    createGzip: ƒ (length: 1),
-    createGunzip: ƒ (length: 1),
-    createUnzip: ƒ (length: 1),
-    deflate: ƒ (length: 3),
-    deflateSync: ƒ (length: 2),
-    gzip: ƒ (length: 3),
-    gzipSync: ƒ (length: 2),
-    deflateRaw: ƒ (length: 3),
-    deflateRawSync: ƒ (length: 2),
-    unzip: ƒ (length: 3),
-    unzipSync: ƒ (length: 2),
-    inflate: ƒ (length: 3),
-    inflateSync: ƒ (length: 2),
-    gunzip: ƒ (length: 3),
-    gunzipSync: ƒ (length: 2),
-    inflateRaw: ƒ (length: 3),
-    inflateRawSync: ƒ (length: 2),
+    Deflate: ƒ Deflate(length: 1) {
+        super_: <ref *6> ƒ Zlib(length: 2) {
+            super_: ƒ Transform(length: 1) {}
+        }
+    },
+    Inflate: ƒ Inflate(length: 1) {
+        super_: [Circular: *6]
+    },
+    Gzip: ƒ Gzip(length: 1) {
+        super_: [Circular: *6]
+    },
+    Gunzip: ƒ Gunzip(length: 1) {
+        super_: [Circular: *6]
+    },
+    DeflateRaw: ƒ DeflateRaw(length: 1) {
+        super_: [Circular: *6]
+    },
+    InflateRaw: ƒ InflateRaw(length: 1) {
+        super_: [Circular: *6]
+    },
+    Unzip: ƒ Unzip(length: 1) {
+        super_: [Circular: *6]
+    },
+    createDeflate: ƒ (length: 1) {},
+    createInflate: ƒ (length: 1) {},
+    createDeflateRaw: ƒ (length: 1) {},
+    createInflateRaw: ƒ (length: 1) {},
+    createGzip: ƒ (length: 1) {},
+    createGunzip: ƒ (length: 1) {},
+    createUnzip: ƒ (length: 1) {},
+    deflate: ƒ (length: 3) {},
+    deflateSync: ƒ (length: 2) {},
+    gzip: ƒ (length: 3) {},
+    gzipSync: ƒ (length: 2) {},
+    deflateRaw: ƒ (length: 3) {},
+    deflateRawSync: ƒ (length: 2) {},
+    unzip: ƒ (length: 3) {},
+    unzipSync: ƒ (length: 2) {},
+    inflate: ƒ (length: 3) {},
+    inflateSync: ƒ (length: 2) {},
+    gunzip: ƒ (length: 3) {},
+    gunzipSync: ƒ (length: 2) {},
+    inflateRaw: ƒ (length: 3) {},
+    inflateRawSync: ƒ (length: 2) {},
     Symbol(CommonJS): 0
 }
 ```
