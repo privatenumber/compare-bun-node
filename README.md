@@ -6,7 +6,7 @@ The comparison is performed every week using GitHub Actions, with the latest Bun
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jun 12, 2023 with Bun 0.6.8 Node.js v18.16.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js v18.16.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -1409,7 +1409,7 @@ _Last updated on <!-- lastUpdated:start -->Jun 12, 2023 with Bun 0.6.8 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2008) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:1947) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -2328,9 +2328,9 @@ Cluster {
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/console.mjs:4:15
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/console.mjs:4:15
 ```
 
 </td></tr></table>
@@ -2861,9 +2861,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/constants.mjs:4:15
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/constants.mjs:4:15
 ```
 
 </td></tr></table>
@@ -3102,11 +3102,11 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:99:6
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/crypto.mjs:4:15
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/crypto.mjs:4:15
 ```
 
 </td></tr></table>
@@ -3563,9 +3563,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/domain.mjs:4:15
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/domain.mjs:4:15
 ```
 
 </td></tr></table>
@@ -5552,7 +5552,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         ],
         _cache: <ref *4> [Object: null prototype] {},
         _pathCache: <ref *5> [Object: null prototype] {
-            /tmp/fs-fixture-1686528814985-1/module.mjs: "/tmp/fs-fixture-1686528814985-1/module.mjs"
+            /tmp/fs-fixture-1687133604372-1/module.mjs: "/tmp/fs-fixture-1687133604372-1/module.mjs"
         },
         _extensions: <ref *6> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -5560,9 +5560,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             .node: ƒ (length: 2) {}
         },
         globalPaths: <ref *10> [
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.0/node_modules/pnpm/bin/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.0/node_modules/pnpm/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.0/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/bin/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules",
             "/home/runner/setup-pnpm/node_modules/.pnpm/node_modules",
             "/home/runner/setup-pnpm/node_modules",
             "/home/runner/node_modules",
@@ -6444,7 +6444,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 {
     performance: {
         now: ƒ now(length: 0) {},
-        timeOrigin: 1686528817256.1328
+        timeOrigin: 1687133606632.1245
     },
     PerformanceEntry: class PerformanceEntry {},
     PerformanceNodeTiming: class PerformanceNodeTiming {},
@@ -6674,7 +6674,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
-        "/tmp/fs-fixture-1686528814985-1/process.mjs"
+        "/tmp/fs-fixture-1687133604372-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -7714,15 +7714,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         setgid: <ref *104> ƒ (length: 1) {},
         setuid: <ref *105> ƒ (length: 1) {},
         env: <ref *106>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_69732cec-9f0a-414c-a8e0-b1b3c7e78798",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_602f8543-2546-406f-a2b6-faeeaca4c37d",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/7.33.0 npm/? node/v18.16.0 linux x64",
+            npm_config_user_agent: "pnpm/7.33.1 npm/? node/v18.16.0 linux x64",
             CI: "true",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_69732cec-9f0a-414c-a8e0-b1b3c7e78798",
+            RUNNER_ENVIRONMENT: "github-hosted",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_602f8543-2546-406f-a2b6-faeeaca4c37d",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
@@ -7743,29 +7744,29 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "663",
+            SYSTEMD_EXEC_PID: "666",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-            GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.4/x64",
+            GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.5/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20230517.1",
+            ImageVersion: "20230611.1",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             RUNNER_USER: "runner",
             CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-            JOURNAL_STREAM: "8:17661",
+            JOURNAL_STREAM: "8:17441",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "5238212349",
+            GITHUB_RUN_ID: "5306446636",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "6b613c73421c7981e7726ece1203a6e58fd60a13",
+            GITHUB_WORKFLOW_SHA: "3c38864801162ecea862b64207bf6cee1a8a5436",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -7773,17 +7774,17 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
             GITHUB_ACTION_REPOSITORY: "",
-            npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.0/node_modules/pnpm/dist/node_modules/node-gyp/…",
+            npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/dist/node_modules/node-gyp/…",
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_e3bdd2f4-0cd5-4cd6-a191-714f44ed08c3",
-            INVOCATION_ID: "10d2a67e49684b5293fdeb451b9b4e43",
+            RUNNER_TRACKING_ID: "github_14a28a65-fcfb-4a2d-979c-e64600b31217",
+            INVOCATION_ID: "a8d28a6aa1164ef9999900f11038774b",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.9/x64",
+            GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.10/x64",
             NODE: "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "25",
+            GITHUB_RUN_NUMBER: "26",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -7805,8 +7806,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             DEBIAN_FRONTEND: "noninteractive",
             GITHUB_REPOSITORY_ID: "622996871",
             GITHUB_ACTIONS: "true",
-            STATS_NM: "true",
-            NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.0/node_modules/pnpm/bin/node_modules:/home/runn…",
+            NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/bin/node_modules:/home/runn…",
             npm_package_devDependencies_fs_fixture: "^1.2.0",
             npm_lifecycle_event: "start",
             GITHUB_REF_PROTECTED: "false",
@@ -7817,7 +7817,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "6b613c73421c7981e7726ece1203a6e58fd60a13",
+            GITHUB_SHA: "3c38864801162ecea862b64207bf6cee1a8a5436",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -7825,12 +7825,12 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_69732cec-9f0a-414c-a8e0-b1b3c7e78798",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_602f8543-2546-406f-a2b6-faeeaca4c37d",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
             RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-            npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.0/node_modules/pnpm/bin/pnpm.cjs",
+            npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/bin/pnpm.cjs",
             HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
             STATS_TIS: "mining",
             GITHUB_EVENT_NAME: "schedule",
@@ -7840,9 +7840,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_69732cec-9f0a-414c-a8e0-b1b3c7e78798",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_602f8543-2546-406f-a2b6-faeeaca4c37d",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
-            STATS_EXT: "true",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
             ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
@@ -7850,18 +7849,17 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             CHROME_BIN: "/usr/bin/google-chrome",
             SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-            STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.137+2/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_69732cec-9f0a-414c-a8e0-b1b3c7e78798",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_602f8543-2546-406f-a2b6-faeeaca4c37d",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *107> [],
-        pid: 2480,
-        ppid: 1884,
+        pid: 2404,
+        ppid: 1823,
         execPath: "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -7904,9 +7902,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *64],
     openStdin: [Circular: *54],
-    pid: 2480,
+    pid: 2404,
     platform: "linux",
-    ppid: 1884,
+    ppid: 1823,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *108],
@@ -7933,14 +7931,14 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 EventEmitter {
-    pid: 2482,
-    ppid: 1884,
+    pid: 2417,
+    ppid: 1823,
     title: "bun",
     argv: [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1686528814985-1/process.mjs"
+        "/tmp/fs-fixture-1687133604372-1/process.mjs"
     ],
-    revision: "ef65f3c305e989bd7d7fe6f0e73822bdbe0e91dd",
+    revision: "fdb7940c4e435a5b7f5a368f4168d748baf6b5b6",
     nextTick: ƒ nextTick(length: 1) {},
     dlopen: ƒ dlopen(length: 1) {},
     cwd: ƒ cwd(length: 0) {},
@@ -7948,7 +7946,7 @@ EventEmitter {
     exit: ƒ exit(length: 0) {},
     versions: {
         node: "18.15.0",
-        bun: "0.6.8",
+        bun: "0.6.10",
         webkit: "60d11703a533fd694cd1d6ddda04813eecb5d69f",
         boringssl: "b275c5ce1c88bc06f5a967026d3c0ce1df2be815",
         libarchive: "dc321febde83dd0f31158e1be61a7aedda65e7a2",
@@ -7978,7 +7976,7 @@ EventEmitter {
     release: {
         name: "bun",
         lts: false,
-        sourceUrl: "https://github.com/oven-sh/bun/release/bun-v0.6.8/bun-linux-x64-baseline.zip",
+        sourceUrl: "https://github.com/oven-sh/bun/release/bun-v0.6.10/bun-linux-x64-baseline.zip",
         headersUrl: "",
         libUrl: ""
     },
@@ -8050,15 +8048,16 @@ EventEmitter {
     },
     emitWarning: ƒ emitWarning(length: 1) {},
     env: {
-        [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_69732cec-9f0a-414c-a8e0-b1b3c7e78798",
+        [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_602f8543-2546-406f-a2b6-faeeaca4c37d",
         [get/set] npm_package_devDependencies__types_node: "^18.15.11",
         [get/set] STATS_TRP: "true",
         [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
         [get/set] DOTNET_NOLOGO: "1",
         [get/set] USER: "runner",
-        [get/set] npm_config_user_agent: "pnpm/7.33.0 npm/? node/v18.16.0 linux x64",
+        [get/set] npm_config_user_agent: "pnpm/7.33.1 npm/? node/v18.16.0 linux x64",
         [get/set] CI: "true",
-        [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_69732cec-9f0a-414c-a8e0-b1b3c7e78798",
+        [get/set] RUNNER_ENVIRONMENT: "github-hosted",
+        [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_602f8543-2546-406f-a2b6-faeeaca4c37d",
         [get/set] PIPX_HOME: "/opt/pipx",
         [get/set] npm_package_devDependencies_execa: "^7.1.1",
         [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
@@ -8079,29 +8078,29 @@ EventEmitter {
         [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
         [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
         [get/set] GITHUB_HEAD_REF: undefined,
-        [get/set] SYSTEMD_EXEC_PID: "663",
+        [get/set] SYSTEMD_EXEC_PID: "666",
         [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-        [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.4/x64",
+        [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.5/x64",
         [get/set] NVM_DIR: "/home/runner/.nvm",
         [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
         [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-        [get/set] ImageVersion: "20230517.1",
+        [get/set] ImageVersion: "20230611.1",
         [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
         [get/set] RUNNER_OS: "Linux",
         [get/set] GITHUB_API_URL: "https://api.github.com",
         [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
         [get/set] RUNNER_USER: "runner",
         [get/set] CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-        [get/set] JOURNAL_STREAM: "8:17661",
+        [get/set] JOURNAL_STREAM: "8:17441",
         [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
         [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
         [get/set] npm_package_private: "true",
         [get/set] npm_package_scripts_lint: "eslint --cache .",
         [get/set] npm_config_registry: "https://registry.npmjs.org/",
-        [get/set] GITHUB_RUN_ID: "5238212349",
+        [get/set] GITHUB_RUN_ID: "5306446636",
         [get/set] GITHUB_REF_TYPE: "branch",
         [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-        [get/set] GITHUB_WORKFLOW_SHA: "6b613c73421c7981e7726ece1203a6e58fd60a13",
+        [get/set] GITHUB_WORKFLOW_SHA: "3c38864801162ecea862b64207bf6cee1a8a5436",
         [get/set] GITHUB_BASE_REF: undefined,
         [get/set] ImageOS: "ubuntu22",
         [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -8109,17 +8108,17 @@ EventEmitter {
         [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
         [get/set] GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
         [get/set] GITHUB_ACTION_REPOSITORY: undefined,
-        [get/set] npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.0/node_modules/pnpm/dist/node_modules/node-gyp/…",
+        [get/set] npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/dist/node_modules/node-gyp/…",
         [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
         [get/set] ANT_HOME: "/usr/share/ant",
         [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-        [get/set] RUNNER_TRACKING_ID: "github_e3bdd2f4-0cd5-4cd6-a191-714f44ed08c3",
-        [get/set] INVOCATION_ID: "10d2a67e49684b5293fdeb451b9b4e43",
+        [get/set] RUNNER_TRACKING_ID: "github_14a28a65-fcfb-4a2d-979c-e64600b31217",
+        [get/set] INVOCATION_ID: "a8d28a6aa1164ef9999900f11038774b",
         [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-        [get/set] GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.9/x64",
+        [get/set] GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.10/x64",
         [get/set] NODE: "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
         [get/set] GITHUB_ACTION: "__run",
-        [get/set] GITHUB_RUN_NUMBER: "25",
+        [get/set] GITHUB_RUN_NUMBER: "26",
         [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
         [get/set] RUNNER_ARCH: "X64",
         [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -8141,8 +8140,7 @@ EventEmitter {
         [get/set] DEBIAN_FRONTEND: "noninteractive",
         [get/set] GITHUB_REPOSITORY_ID: "622996871",
         [get/set] GITHUB_ACTIONS: "true",
-        [get/set] STATS_NM: "true",
-        [get/set] NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.0/node_modules/pnpm/bin/node_modules:/home/runn…",
+        [get/set] NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/bin/node_modules:/home/runn…",
         [get/set] npm_package_devDependencies_fs_fixture: "^1.2.0",
         [get/set] npm_lifecycle_event: "start",
         [get/set] GITHUB_REF_PROTECTED: "false",
@@ -8153,7 +8151,7 @@ EventEmitter {
         [get/set] GITHUB_JOB: "build",
         [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
         [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-        [get/set] GITHUB_SHA: "6b613c73421c7981e7726ece1203a6e58fd60a13",
+        [get/set] GITHUB_SHA: "3c38864801162ecea862b64207bf6cee1a8a5436",
         [get/set] GITHUB_RUN_ATTEMPT: "1",
         [get/set] GITHUB_REF: "refs/heads/master",
         [get/set] GITHUB_ACTOR: "privatenumber",
@@ -8161,12 +8159,12 @@ EventEmitter {
         [get/set] npm_package_license: "MIT",
         [get/set] LEIN_HOME: "/usr/local/lib/lein",
         [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-        [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_69732cec-9f0a-414c-a8e0-b1b3c7e78798",
+        [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_602f8543-2546-406f-a2b6-faeeaca4c37d",
         [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
         [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
         [get/set] GITHUB_ACTOR_ID: "1075694",
         [get/set] RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-        [get/set] npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.0/node_modules/pnpm/bin/pnpm.cjs",
+        [get/set] npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/bin/pnpm.cjs",
         [get/set] HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
         [get/set] STATS_TIS: "mining",
         [get/set] GITHUB_EVENT_NAME: "schedule",
@@ -8176,9 +8174,8 @@ EventEmitter {
         [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
         [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
         [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-        [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_69732cec-9f0a-414c-a8e0-b1b3c7e78798",
+        [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_602f8543-2546-406f-a2b6-faeeaca4c37d",
         [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
-        [get/set] STATS_EXT: "true",
         [get/set] npm_command: "run-script",
         [get/set] PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
         [get/set] ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
@@ -8186,10 +8183,9 @@ EventEmitter {
         [get/set] CHROME_BIN: "/usr/bin/google-chrome",
         [get/set] SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
         [get/set] PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-        [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.137+2/provjobd.data",
         [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
         [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_69732cec-9f0a-414c-a8e0-b1b3c7e78798",
+        [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_602f8543-2546-406f-a2b6-faeeaca4c37d",
         [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
         [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
     },
@@ -8236,9 +8232,9 @@ EventEmitter {
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/punycode.mjs:4:15
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/punycode.mjs:4:15
 ```
 
 </td></tr></table>
@@ -8279,9 +8275,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/querystring.mjs:4:15
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/querystring.mjs:4:15
 ```
 
 </td></tr></table>
@@ -8486,13 +8482,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:99:6
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:99:6
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/repl.mjs:4:15
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/repl.mjs:4:15
 ```
 
 </td></tr></table>
@@ -9106,7 +9102,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2638) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2560) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -9121,9 +9117,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1686528814985-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1686528814985-1/sys.mjs:4:15
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687133604372-1/sys.mjs:4:15
 ```
 
 </td></tr></table>
