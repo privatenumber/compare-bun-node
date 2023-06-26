@@ -6,7 +6,7 @@ The comparison is performed every week using GitHub Actions, with the latest Bun
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js v18.16.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jun 26, 2023 with Bun 0.6.10 Node.js v18.16.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -135,9 +135,10 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    Agent: class Agent extends EventEmitter {},
-    Server: class Server extends EventEmitter {},
-    METHODS: [
+    Agent: <ref *2> class Agent extends EventEmitter {},
+    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    METHODS: <ref *5> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -173,7 +174,8 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    STATUS_CODES: {
+    OutgoingMessage: class OutgoingMessage extends Writable {},
+    STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -238,20 +240,32 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer(length: 2) {},
-    ServerResponse: class ServerResponse extends Writable {},
-    IncomingMessage: class IncomingMessage extends Readable {},
-    request: ƒ request(length: 3) {},
-    get: ƒ get(length: 3) {},
-    maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
-    [get/set] globalAgent: Agent {
-        _events: [Object: null prototype] {},
-        _eventsCount: 0,
-        _maxListeners: undefined,
-        Symbol(kCapture): false
+    Server: <ref *8> class Server extends EventEmitter {},
+    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    createServer: <ref *10> ƒ createServer(length: 2) {},
+    default: {
+        Agent: [Circular: *2],
+        Server: [Circular: *8],
+        METHODS: [Circular: *5],
+        STATUS_CODES: [Circular: *7],
+        createServer: [Circular: *10],
+        ServerResponse: [Circular: *9],
+        IncomingMessage: [Circular: *4],
+        request: <ref *12> ƒ request(length: 3) {},
+        get: <ref *13> ƒ get(length: 3) {},
+        maxHeaderSize: 16384,
+        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        [get/set] globalAgent: <ref *15> Agent {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            Symbol(kCapture): false
+        },
+        Symbol(CommonJS): 0
     },
-    Symbol(CommonJS): 0
+    get: [Circular: *13],
+    globalAgent: [Circular: *15],
+    request: [Circular: *12]
 }
 ```
 
@@ -274,9 +288,10 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    Agent: class Agent extends EventEmitter {},
-    Server: class Server extends EventEmitter {},
-    METHODS: [
+    Agent: <ref *2> class Agent extends EventEmitter {},
+    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    METHODS: <ref *5> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -312,7 +327,8 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    STATUS_CODES: {
+    OutgoingMessage: class OutgoingMessage extends Writable {},
+    STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -377,20 +393,32 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer(length: 2) {},
-    ServerResponse: class ServerResponse extends Writable {},
-    IncomingMessage: class IncomingMessage extends Readable {},
-    request: ƒ request(length: 3) {},
-    get: ƒ get(length: 3) {},
-    maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
-    [get/set] globalAgent: Agent {
-        _events: [Object: null prototype] {},
-        _eventsCount: 0,
-        _maxListeners: undefined,
-        Symbol(kCapture): false
+    Server: <ref *8> class Server extends EventEmitter {},
+    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    createServer: <ref *10> ƒ createServer(length: 2) {},
+    default: {
+        Agent: [Circular: *2],
+        Server: [Circular: *8],
+        METHODS: [Circular: *5],
+        STATUS_CODES: [Circular: *7],
+        createServer: [Circular: *10],
+        ServerResponse: [Circular: *9],
+        IncomingMessage: [Circular: *4],
+        request: <ref *12> ƒ request(length: 3) {},
+        get: <ref *13> ƒ get(length: 3) {},
+        maxHeaderSize: 16384,
+        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        [get/set] globalAgent: <ref *15> Agent {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            Symbol(kCapture): false
+        },
+        Symbol(CommonJS): 0
     },
-    Symbol(CommonJS): 0
+    get: [Circular: *13],
+    globalAgent: [Circular: *15],
+    request: [Circular: *12]
 }
 ```
 
@@ -490,9 +518,10 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    Agent: class Agent extends EventEmitter {},
-    Server: class Server extends EventEmitter {},
-    METHODS: [
+    Agent: <ref *2> class Agent extends EventEmitter {},
+    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    METHODS: <ref *5> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -528,7 +557,8 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    STATUS_CODES: {
+    OutgoingMessage: class OutgoingMessage extends Writable {},
+    STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -593,20 +623,32 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer(length: 2) {},
-    ServerResponse: class ServerResponse extends Writable {},
-    IncomingMessage: class IncomingMessage extends Readable {},
-    request: ƒ request(length: 3) {},
-    get: ƒ get(length: 3) {},
-    maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
-    [get/set] globalAgent: Agent {
-        _events: [Object: null prototype] {},
-        _eventsCount: 0,
-        _maxListeners: undefined,
-        Symbol(kCapture): false
+    Server: <ref *8> class Server extends EventEmitter {},
+    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    createServer: <ref *10> ƒ createServer(length: 2) {},
+    default: {
+        Agent: [Circular: *2],
+        Server: [Circular: *8],
+        METHODS: [Circular: *5],
+        STATUS_CODES: [Circular: *7],
+        createServer: [Circular: *10],
+        ServerResponse: [Circular: *9],
+        IncomingMessage: [Circular: *4],
+        request: <ref *12> ƒ request(length: 3) {},
+        get: <ref *13> ƒ get(length: 3) {},
+        maxHeaderSize: 16384,
+        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        [get/set] globalAgent: <ref *15> Agent {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            Symbol(kCapture): false
+        },
+        Symbol(CommonJS): 0
     },
-    Symbol(CommonJS): 0
+    get: [Circular: *13],
+    globalAgent: [Circular: *15],
+    request: [Circular: *12]
 }
 ```
 
@@ -633,9 +675,10 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    Agent: class Agent extends EventEmitter {},
-    Server: class Server extends EventEmitter {},
-    METHODS: [
+    Agent: <ref *2> class Agent extends EventEmitter {},
+    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    METHODS: <ref *5> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -671,7 +714,8 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    STATUS_CODES: {
+    OutgoingMessage: class OutgoingMessage extends Writable {},
+    STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -736,20 +780,32 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer(length: 2) {},
-    ServerResponse: class ServerResponse extends Writable {},
-    IncomingMessage: class IncomingMessage extends Readable {},
-    request: ƒ request(length: 3) {},
-    get: ƒ get(length: 3) {},
-    maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
-    [get/set] globalAgent: Agent {
-        _events: [Object: null prototype] {},
-        _eventsCount: 0,
-        _maxListeners: undefined,
-        Symbol(kCapture): false
+    Server: <ref *8> class Server extends EventEmitter {},
+    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    createServer: <ref *10> ƒ createServer(length: 2) {},
+    default: {
+        Agent: [Circular: *2],
+        Server: [Circular: *8],
+        METHODS: [Circular: *5],
+        STATUS_CODES: [Circular: *7],
+        createServer: [Circular: *10],
+        ServerResponse: [Circular: *9],
+        IncomingMessage: [Circular: *4],
+        request: <ref *12> ƒ request(length: 3) {},
+        get: <ref *13> ƒ get(length: 3) {},
+        maxHeaderSize: 16384,
+        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        [get/set] globalAgent: <ref *15> Agent {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            Symbol(kCapture): false
+        },
+        Symbol(CommonJS): 0
     },
-    Symbol(CommonJS): 0
+    get: [Circular: *13],
+    globalAgent: [Circular: *15],
+    request: [Circular: *12]
 }
 ```
 
@@ -780,9 +836,10 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    Agent: class Agent extends EventEmitter {},
-    Server: class Server extends EventEmitter {},
-    METHODS: [
+    Agent: <ref *2> class Agent extends EventEmitter {},
+    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    METHODS: <ref *5> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -818,7 +875,8 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    STATUS_CODES: {
+    OutgoingMessage: class OutgoingMessage extends Writable {},
+    STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -883,20 +941,32 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer(length: 2) {},
-    ServerResponse: class ServerResponse extends Writable {},
-    IncomingMessage: class IncomingMessage extends Readable {},
-    request: ƒ request(length: 3) {},
-    get: ƒ get(length: 3) {},
-    maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
-    [get/set] globalAgent: Agent {
-        _events: [Object: null prototype] {},
-        _eventsCount: 0,
-        _maxListeners: undefined,
-        Symbol(kCapture): false
+    Server: <ref *8> class Server extends EventEmitter {},
+    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    createServer: <ref *10> ƒ createServer(length: 2) {},
+    default: {
+        Agent: [Circular: *2],
+        Server: [Circular: *8],
+        METHODS: [Circular: *5],
+        STATUS_CODES: [Circular: *7],
+        createServer: [Circular: *10],
+        ServerResponse: [Circular: *9],
+        IncomingMessage: [Circular: *4],
+        request: <ref *12> ƒ request(length: 3) {},
+        get: <ref *13> ƒ get(length: 3) {},
+        maxHeaderSize: 16384,
+        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        [get/set] globalAgent: <ref *15> Agent {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            Symbol(kCapture): false
+        },
+        Symbol(CommonJS): 0
     },
-    Symbol(CommonJS): 0
+    get: [Circular: *13],
+    globalAgent: [Circular: *15],
+    request: [Circular: *12]
 }
 ```
 
@@ -995,9 +1065,10 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    Agent: class Agent extends EventEmitter {},
-    Server: class Server extends EventEmitter {},
-    METHODS: [
+    Agent: <ref *2> class Agent extends EventEmitter {},
+    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    METHODS: <ref *5> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -1033,7 +1104,8 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    STATUS_CODES: {
+    OutgoingMessage: class OutgoingMessage extends Writable {},
+    STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -1098,20 +1170,32 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer(length: 2) {},
-    ServerResponse: class ServerResponse extends Writable {},
-    IncomingMessage: class IncomingMessage extends Readable {},
-    request: ƒ request(length: 3) {},
-    get: ƒ get(length: 3) {},
-    maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
-    [get/set] globalAgent: Agent {
-        _events: [Object: null prototype] {},
-        _eventsCount: 0,
-        _maxListeners: undefined,
-        Symbol(kCapture): false
+    Server: <ref *8> class Server extends EventEmitter {},
+    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    createServer: <ref *10> ƒ createServer(length: 2) {},
+    default: {
+        Agent: [Circular: *2],
+        Server: [Circular: *8],
+        METHODS: [Circular: *5],
+        STATUS_CODES: [Circular: *7],
+        createServer: [Circular: *10],
+        ServerResponse: [Circular: *9],
+        IncomingMessage: [Circular: *4],
+        request: <ref *12> ƒ request(length: 3) {},
+        get: <ref *13> ƒ get(length: 3) {},
+        maxHeaderSize: 16384,
+        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        [get/set] globalAgent: <ref *15> Agent {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            Symbol(kCapture): false
+        },
+        Symbol(CommonJS): 0
     },
-    Symbol(CommonJS): 0
+    get: [Circular: *13],
+    globalAgent: [Circular: *15],
+    request: [Circular: *12]
 }
 ```
 
@@ -1137,54 +1221,78 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 </td><td valign="top">
 
 ```js
-<ref *1> ƒ K(length: 1) {
-    isDisturbed: ƒ D(length: 1) {},
-    isErrored: ƒ _(length: 1) {},
-    isWritable: ƒ P(length: 1) {},
-    isReadable: ƒ W(length: 1) {},
-    Readable: ƒ L(length: 1) {
-        _fromList: ƒ a(length: 2) {},
+{
+    Duplex: <ref *2> ƒ B(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    NativeWritable: <ref *6> class q extends Eq {},
+    PassThrough: <ref *7> ƒ H(length: 1) {},
+    Readable: <ref *8> ƒ F(length: 1) {
+        _fromList: ƒ o(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Writable: ƒ E(length: 0) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {}
+    Stream: <ref *14> ƒ H(length: 1) {
+        isDisturbed: <ref *15> ƒ D(length: 1) {},
+        isErrored: <ref *16> ƒ w(length: 1) {},
+        isWritable: <ref *17> ƒ A(length: 1) {},
+        isReadable: <ref *18> ƒ N(length: 1) {},
+        Readable: [Circular: *8],
+        Writable: <ref *19> ƒ O(length: 0) {
+            fromWeb: ƒ (length: 2) {},
+            toWeb: ƒ (length: 1) {}
+        },
+        Duplex: [Circular: *2],
+        Transform: <ref *22> ƒ Z(length: 1) {},
+        PassThrough: [Circular: *7],
+        pipeline: <ref *23> ƒ C(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        },
+        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
+        finished: <ref *26> ƒ P(length: 3) {
+            finished: <ref *27> ƒ x(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        },
+        destroy: <ref *28> ƒ O(length: 2) {},
+        compose: <ref *29> ƒ V(length: 0) {},
+        [get/set] promises: <ref *30> {
+            finished: [Circular: *27],
+            pipeline: [Circular: *24]
+        },
+        Stream: [Circular: *14],
+        _isUint8Array: <ref *31> ƒ L(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        NativeWritable: [Circular: *6],
+        default: [Circular: *14],
+        eos: <ref *34> ƒ X(length: 0) {},
+        Symbol(CommonJS): 0,
+        Symbol(::bunternal::): {
+            _ReadableFromWeb: ƒ j(length: 1) {},
+            _ReadableFromWebForUndici: class L extends F {}
+        }
     },
-    Duplex: ƒ B(length: 1) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
-        from: ƒ (length: 1) {}
-    },
-    Transform: ƒ K(length: 1) {},
-    PassThrough: ƒ H(length: 1) {},
-    pipeline: ƒ D(length: 0) {
-        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ Y(length: 0) {}
-    },
-    addAbortSignal: ƒ Y(length: 2) {},
-    finished: ƒ A(length: 3) {
-        finished: <ref *25> ƒ O(length: 2) {},
-        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
-    },
-    destroy: ƒ C(length: 2) {},
-    compose: ƒ V(length: 0) {},
-    [get/set] promises: {
-        finished: [Circular: *25],
-        pipeline: [Circular: *22]
-    },
-    Stream: [Circular: *1],
-    _isUint8Array: ƒ L(length: 1) {},
-    _uint8ArrayToBuffer: ƒ L(length: 1) {},
-    _getNativeReadableStreamPrototype: ƒ NQ(length: 2) {},
-    NativeWritable: class q extends Tq {},
-    default: [Circular: *1],
-    eos: ƒ X(length: 0) {},
-    Symbol(CommonJS): 0,
-    Symbol(::bunternal::): {
-        _ReadableFromWeb: class N extends L {}
-    }
+    Transform: [Circular: *22],
+    Writable: [Circular: *19],
+    _getNativeReadableStreamPrototype: [Circular: *33],
+    _isUint8Array: [Circular: *31],
+    _uint8ArrayToBuffer: [Circular: *32],
+    addAbortSignal: [Circular: *25],
+    compose: [Circular: *29],
+    default: [Circular: *14],
+    destroy: [Circular: *28],
+    eos: [Circular: *34],
+    finished: [Circular: *26],
+    isDisturbed: [Circular: *15],
+    isErrored: [Circular: *16],
+    isReadable: [Circular: *18],
+    isWritable: [Circular: *17],
+    pipeline: [Circular: *23],
+    promises: [Circular: *30]
 }
 ```
 
@@ -1203,54 +1311,78 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 </td><td valign="top">
 
 ```js
-<ref *1> ƒ K(length: 1) {
-    isDisturbed: ƒ D(length: 1) {},
-    isErrored: ƒ _(length: 1) {},
-    isWritable: ƒ P(length: 1) {},
-    isReadable: ƒ W(length: 1) {},
-    Readable: ƒ L(length: 1) {
-        _fromList: ƒ a(length: 2) {},
+{
+    Duplex: <ref *2> ƒ B(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    NativeWritable: <ref *6> class q extends Eq {},
+    PassThrough: <ref *7> ƒ H(length: 1) {},
+    Readable: <ref *8> ƒ F(length: 1) {
+        _fromList: ƒ o(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Writable: ƒ E(length: 0) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {}
+    Stream: <ref *14> ƒ H(length: 1) {
+        isDisturbed: <ref *15> ƒ D(length: 1) {},
+        isErrored: <ref *16> ƒ w(length: 1) {},
+        isWritable: <ref *17> ƒ A(length: 1) {},
+        isReadable: <ref *18> ƒ N(length: 1) {},
+        Readable: [Circular: *8],
+        Writable: <ref *19> ƒ O(length: 0) {
+            fromWeb: ƒ (length: 2) {},
+            toWeb: ƒ (length: 1) {}
+        },
+        Duplex: [Circular: *2],
+        Transform: <ref *22> ƒ Z(length: 1) {},
+        PassThrough: [Circular: *7],
+        pipeline: <ref *23> ƒ C(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        },
+        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
+        finished: <ref *26> ƒ P(length: 3) {
+            finished: <ref *27> ƒ x(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        },
+        destroy: <ref *28> ƒ O(length: 2) {},
+        compose: <ref *29> ƒ V(length: 0) {},
+        [get/set] promises: <ref *30> {
+            finished: [Circular: *27],
+            pipeline: [Circular: *24]
+        },
+        Stream: [Circular: *14],
+        _isUint8Array: <ref *31> ƒ L(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        NativeWritable: [Circular: *6],
+        default: [Circular: *14],
+        eos: <ref *34> ƒ X(length: 0) {},
+        Symbol(CommonJS): 0,
+        Symbol(::bunternal::): {
+            _ReadableFromWeb: ƒ j(length: 1) {},
+            _ReadableFromWebForUndici: class L extends F {}
+        }
     },
-    Duplex: ƒ B(length: 1) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
-        from: ƒ (length: 1) {}
-    },
-    Transform: ƒ K(length: 1) {},
-    PassThrough: ƒ H(length: 1) {},
-    pipeline: ƒ D(length: 0) {
-        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ Y(length: 0) {}
-    },
-    addAbortSignal: ƒ Y(length: 2) {},
-    finished: ƒ A(length: 3) {
-        finished: <ref *25> ƒ O(length: 2) {},
-        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
-    },
-    destroy: ƒ C(length: 2) {},
-    compose: ƒ V(length: 0) {},
-    [get/set] promises: {
-        finished: [Circular: *25],
-        pipeline: [Circular: *22]
-    },
-    Stream: [Circular: *1],
-    _isUint8Array: ƒ L(length: 1) {},
-    _uint8ArrayToBuffer: ƒ L(length: 1) {},
-    _getNativeReadableStreamPrototype: ƒ NQ(length: 2) {},
-    NativeWritable: class q extends Tq {},
-    default: [Circular: *1],
-    eos: ƒ X(length: 0) {},
-    Symbol(CommonJS): 0,
-    Symbol(::bunternal::): {
-        _ReadableFromWeb: class N extends L {}
-    }
+    Transform: [Circular: *22],
+    Writable: [Circular: *19],
+    _getNativeReadableStreamPrototype: [Circular: *33],
+    _isUint8Array: [Circular: *31],
+    _uint8ArrayToBuffer: [Circular: *32],
+    addAbortSignal: [Circular: *25],
+    compose: [Circular: *29],
+    default: [Circular: *14],
+    destroy: [Circular: *28],
+    eos: [Circular: *34],
+    finished: [Circular: *26],
+    isDisturbed: [Circular: *15],
+    isErrored: [Circular: *16],
+    isReadable: [Circular: *18],
+    isWritable: [Circular: *17],
+    pipeline: [Circular: *23],
+    promises: [Circular: *30]
 }
 ```
 
@@ -1282,54 +1414,78 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 </td><td valign="top">
 
 ```js
-<ref *1> ƒ K(length: 1) {
-    isDisturbed: ƒ D(length: 1) {},
-    isErrored: ƒ _(length: 1) {},
-    isWritable: ƒ P(length: 1) {},
-    isReadable: ƒ W(length: 1) {},
-    Readable: ƒ L(length: 1) {
-        _fromList: ƒ a(length: 2) {},
+{
+    Duplex: <ref *2> ƒ B(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    NativeWritable: <ref *6> class q extends Eq {},
+    PassThrough: <ref *7> ƒ H(length: 1) {},
+    Readable: <ref *8> ƒ F(length: 1) {
+        _fromList: ƒ o(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Writable: ƒ E(length: 0) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {}
+    Stream: <ref *14> ƒ H(length: 1) {
+        isDisturbed: <ref *15> ƒ D(length: 1) {},
+        isErrored: <ref *16> ƒ w(length: 1) {},
+        isWritable: <ref *17> ƒ A(length: 1) {},
+        isReadable: <ref *18> ƒ N(length: 1) {},
+        Readable: [Circular: *8],
+        Writable: <ref *19> ƒ O(length: 0) {
+            fromWeb: ƒ (length: 2) {},
+            toWeb: ƒ (length: 1) {}
+        },
+        Duplex: [Circular: *2],
+        Transform: <ref *22> ƒ Z(length: 1) {},
+        PassThrough: [Circular: *7],
+        pipeline: <ref *23> ƒ C(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        },
+        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
+        finished: <ref *26> ƒ P(length: 3) {
+            finished: <ref *27> ƒ x(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        },
+        destroy: <ref *28> ƒ O(length: 2) {},
+        compose: <ref *29> ƒ V(length: 0) {},
+        [get/set] promises: <ref *30> {
+            finished: [Circular: *27],
+            pipeline: [Circular: *24]
+        },
+        Stream: [Circular: *14],
+        _isUint8Array: <ref *31> ƒ L(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        NativeWritable: [Circular: *6],
+        default: [Circular: *14],
+        eos: <ref *34> ƒ X(length: 0) {},
+        Symbol(CommonJS): 0,
+        Symbol(::bunternal::): {
+            _ReadableFromWeb: ƒ j(length: 1) {},
+            _ReadableFromWebForUndici: class L extends F {}
+        }
     },
-    Duplex: ƒ B(length: 1) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
-        from: ƒ (length: 1) {}
-    },
-    Transform: ƒ K(length: 1) {},
-    PassThrough: ƒ H(length: 1) {},
-    pipeline: ƒ D(length: 0) {
-        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ Y(length: 0) {}
-    },
-    addAbortSignal: ƒ Y(length: 2) {},
-    finished: ƒ A(length: 3) {
-        finished: <ref *25> ƒ O(length: 2) {},
-        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
-    },
-    destroy: ƒ C(length: 2) {},
-    compose: ƒ V(length: 0) {},
-    [get/set] promises: {
-        finished: [Circular: *25],
-        pipeline: [Circular: *22]
-    },
-    Stream: [Circular: *1],
-    _isUint8Array: ƒ L(length: 1) {},
-    _uint8ArrayToBuffer: ƒ L(length: 1) {},
-    _getNativeReadableStreamPrototype: ƒ NQ(length: 2) {},
-    NativeWritable: class q extends Tq {},
-    default: [Circular: *1],
-    eos: ƒ X(length: 0) {},
-    Symbol(CommonJS): 0,
-    Symbol(::bunternal::): {
-        _ReadableFromWeb: class N extends L {}
-    }
+    Transform: [Circular: *22],
+    Writable: [Circular: *19],
+    _getNativeReadableStreamPrototype: [Circular: *33],
+    _isUint8Array: [Circular: *31],
+    _uint8ArrayToBuffer: [Circular: *32],
+    addAbortSignal: [Circular: *25],
+    compose: [Circular: *29],
+    default: [Circular: *14],
+    destroy: [Circular: *28],
+    eos: [Circular: *34],
+    finished: [Circular: *26],
+    isDisturbed: [Circular: *15],
+    isErrored: [Circular: *16],
+    isReadable: [Circular: *18],
+    isWritable: [Circular: *17],
+    pipeline: [Circular: *23],
+    promises: [Circular: *30]
 }
 ```
 
@@ -1348,54 +1504,78 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 </td><td valign="top">
 
 ```js
-<ref *1> ƒ K(length: 1) {
-    isDisturbed: ƒ D(length: 1) {},
-    isErrored: ƒ _(length: 1) {},
-    isWritable: ƒ P(length: 1) {},
-    isReadable: ƒ W(length: 1) {},
-    Readable: ƒ L(length: 1) {
-        _fromList: ƒ a(length: 2) {},
+{
+    Duplex: <ref *2> ƒ B(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    NativeWritable: <ref *6> class q extends Eq {},
+    PassThrough: <ref *7> ƒ H(length: 1) {},
+    Readable: <ref *8> ƒ F(length: 1) {
+        _fromList: ƒ o(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Writable: ƒ E(length: 0) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {}
+    Stream: <ref *14> ƒ H(length: 1) {
+        isDisturbed: <ref *15> ƒ D(length: 1) {},
+        isErrored: <ref *16> ƒ w(length: 1) {},
+        isWritable: <ref *17> ƒ A(length: 1) {},
+        isReadable: <ref *18> ƒ N(length: 1) {},
+        Readable: [Circular: *8],
+        Writable: <ref *19> ƒ O(length: 0) {
+            fromWeb: ƒ (length: 2) {},
+            toWeb: ƒ (length: 1) {}
+        },
+        Duplex: [Circular: *2],
+        Transform: <ref *22> ƒ Z(length: 1) {},
+        PassThrough: [Circular: *7],
+        pipeline: <ref *23> ƒ C(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        },
+        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
+        finished: <ref *26> ƒ P(length: 3) {
+            finished: <ref *27> ƒ x(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        },
+        destroy: <ref *28> ƒ O(length: 2) {},
+        compose: <ref *29> ƒ V(length: 0) {},
+        [get/set] promises: <ref *30> {
+            finished: [Circular: *27],
+            pipeline: [Circular: *24]
+        },
+        Stream: [Circular: *14],
+        _isUint8Array: <ref *31> ƒ L(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        NativeWritable: [Circular: *6],
+        default: [Circular: *14],
+        eos: <ref *34> ƒ X(length: 0) {},
+        Symbol(CommonJS): 0,
+        Symbol(::bunternal::): {
+            _ReadableFromWeb: ƒ j(length: 1) {},
+            _ReadableFromWebForUndici: class L extends F {}
+        }
     },
-    Duplex: ƒ B(length: 1) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
-        from: ƒ (length: 1) {}
-    },
-    Transform: ƒ K(length: 1) {},
-    PassThrough: ƒ H(length: 1) {},
-    pipeline: ƒ D(length: 0) {
-        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ Y(length: 0) {}
-    },
-    addAbortSignal: ƒ Y(length: 2) {},
-    finished: ƒ A(length: 3) {
-        finished: <ref *25> ƒ O(length: 2) {},
-        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
-    },
-    destroy: ƒ C(length: 2) {},
-    compose: ƒ V(length: 0) {},
-    [get/set] promises: {
-        finished: [Circular: *25],
-        pipeline: [Circular: *22]
-    },
-    Stream: [Circular: *1],
-    _isUint8Array: ƒ L(length: 1) {},
-    _uint8ArrayToBuffer: ƒ L(length: 1) {},
-    _getNativeReadableStreamPrototype: ƒ NQ(length: 2) {},
-    NativeWritable: class q extends Tq {},
-    default: [Circular: *1],
-    eos: ƒ X(length: 0) {},
-    Symbol(CommonJS): 0,
-    Symbol(::bunternal::): {
-        _ReadableFromWeb: class N extends L {}
-    }
+    Transform: [Circular: *22],
+    Writable: [Circular: *19],
+    _getNativeReadableStreamPrototype: [Circular: *33],
+    _isUint8Array: [Circular: *31],
+    _uint8ArrayToBuffer: [Circular: *32],
+    addAbortSignal: [Circular: *25],
+    compose: [Circular: *29],
+    default: [Circular: *14],
+    destroy: [Circular: *28],
+    eos: [Circular: *34],
+    finished: [Circular: *26],
+    isDisturbed: [Circular: *15],
+    isErrored: [Circular: *16],
+    isReadable: [Circular: *18],
+    isWritable: [Circular: *17],
+    pipeline: [Circular: *23],
+    promises: [Circular: *30]
 }
 ```
 
@@ -1409,61 +1589,85 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:1947) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:1972) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
 </td><td valign="top">
 
 ```js
-<ref *1> ƒ K(length: 1) {
-    isDisturbed: ƒ D(length: 1) {},
-    isErrored: ƒ _(length: 1) {},
-    isWritable: ƒ P(length: 1) {},
-    isReadable: ƒ W(length: 1) {},
-    Readable: ƒ L(length: 1) {
-        _fromList: ƒ a(length: 2) {},
+{
+    Duplex: <ref *2> ƒ B(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    NativeWritable: <ref *6> class q extends Eq {},
+    PassThrough: <ref *7> ƒ H(length: 1) {},
+    Readable: <ref *8> ƒ F(length: 1) {
+        _fromList: ƒ o(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Writable: ƒ E(length: 0) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {}
+    Stream: <ref *14> ƒ H(length: 1) {
+        isDisturbed: <ref *15> ƒ D(length: 1) {},
+        isErrored: <ref *16> ƒ w(length: 1) {},
+        isWritable: <ref *17> ƒ A(length: 1) {},
+        isReadable: <ref *18> ƒ N(length: 1) {},
+        Readable: [Circular: *8],
+        Writable: <ref *19> ƒ O(length: 0) {
+            fromWeb: ƒ (length: 2) {},
+            toWeb: ƒ (length: 1) {}
+        },
+        Duplex: [Circular: *2],
+        Transform: <ref *22> ƒ Z(length: 1) {},
+        PassThrough: [Circular: *7],
+        pipeline: <ref *23> ƒ C(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        },
+        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
+        finished: <ref *26> ƒ P(length: 3) {
+            finished: <ref *27> ƒ x(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        },
+        destroy: <ref *28> ƒ O(length: 2) {},
+        compose: <ref *29> ƒ V(length: 0) {},
+        [get/set] promises: <ref *30> {
+            finished: [Circular: *27],
+            pipeline: [Circular: *24]
+        },
+        Stream: [Circular: *14],
+        _isUint8Array: <ref *31> ƒ L(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        NativeWritable: [Circular: *6],
+        default: [Circular: *14],
+        eos: <ref *34> ƒ X(length: 0) {},
+        Symbol(CommonJS): 0,
+        Symbol(::bunternal::): {
+            _ReadableFromWeb: ƒ j(length: 1) {},
+            _ReadableFromWebForUndici: class L extends F {}
+        }
     },
-    Duplex: ƒ B(length: 1) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
-        from: ƒ (length: 1) {}
-    },
-    Transform: ƒ K(length: 1) {},
-    PassThrough: ƒ H(length: 1) {},
-    pipeline: ƒ D(length: 0) {
-        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ Y(length: 0) {}
-    },
-    addAbortSignal: ƒ Y(length: 2) {},
-    finished: ƒ A(length: 3) {
-        finished: <ref *25> ƒ O(length: 2) {},
-        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
-    },
-    destroy: ƒ C(length: 2) {},
-    compose: ƒ V(length: 0) {},
-    [get/set] promises: {
-        finished: [Circular: *25],
-        pipeline: [Circular: *22]
-    },
-    Stream: [Circular: *1],
-    _isUint8Array: ƒ L(length: 1) {},
-    _uint8ArrayToBuffer: ƒ L(length: 1) {},
-    _getNativeReadableStreamPrototype: ƒ NQ(length: 2) {},
-    NativeWritable: class q extends Tq {},
-    default: [Circular: *1],
-    eos: ƒ X(length: 0) {},
-    Symbol(CommonJS): 0,
-    Symbol(::bunternal::): {
-        _ReadableFromWeb: class N extends L {}
-    }
+    Transform: [Circular: *22],
+    Writable: [Circular: *19],
+    _getNativeReadableStreamPrototype: [Circular: *33],
+    _isUint8Array: [Circular: *31],
+    _uint8ArrayToBuffer: [Circular: *32],
+    addAbortSignal: [Circular: *25],
+    compose: [Circular: *29],
+    default: [Circular: *14],
+    destroy: [Circular: *28],
+    eos: [Circular: *34],
+    finished: [Circular: *26],
+    isDisturbed: [Circular: *15],
+    isErrored: [Circular: *16],
+    isReadable: [Circular: *18],
+    isWritable: [Circular: *17],
+    pipeline: [Circular: *23],
+    promises: [Circular: *30]
 }
 ```
 
@@ -1489,54 +1693,78 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 </td><td valign="top">
 
 ```js
-<ref *1> ƒ K(length: 1) {
-    isDisturbed: ƒ D(length: 1) {},
-    isErrored: ƒ _(length: 1) {},
-    isWritable: ƒ P(length: 1) {},
-    isReadable: ƒ W(length: 1) {},
-    Readable: ƒ L(length: 1) {
-        _fromList: ƒ a(length: 2) {},
+{
+    Duplex: <ref *2> ƒ B(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    NativeWritable: <ref *6> class q extends Eq {},
+    PassThrough: <ref *7> ƒ H(length: 1) {},
+    Readable: <ref *8> ƒ F(length: 1) {
+        _fromList: ƒ o(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Writable: ƒ E(length: 0) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {}
+    Stream: <ref *14> ƒ H(length: 1) {
+        isDisturbed: <ref *15> ƒ D(length: 1) {},
+        isErrored: <ref *16> ƒ w(length: 1) {},
+        isWritable: <ref *17> ƒ A(length: 1) {},
+        isReadable: <ref *18> ƒ N(length: 1) {},
+        Readable: [Circular: *8],
+        Writable: <ref *19> ƒ O(length: 0) {
+            fromWeb: ƒ (length: 2) {},
+            toWeb: ƒ (length: 1) {}
+        },
+        Duplex: [Circular: *2],
+        Transform: <ref *22> ƒ Z(length: 1) {},
+        PassThrough: [Circular: *7],
+        pipeline: <ref *23> ƒ C(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        },
+        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
+        finished: <ref *26> ƒ P(length: 3) {
+            finished: <ref *27> ƒ x(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        },
+        destroy: <ref *28> ƒ O(length: 2) {},
+        compose: <ref *29> ƒ V(length: 0) {},
+        [get/set] promises: <ref *30> {
+            finished: [Circular: *27],
+            pipeline: [Circular: *24]
+        },
+        Stream: [Circular: *14],
+        _isUint8Array: <ref *31> ƒ L(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        NativeWritable: [Circular: *6],
+        default: [Circular: *14],
+        eos: <ref *34> ƒ X(length: 0) {},
+        Symbol(CommonJS): 0,
+        Symbol(::bunternal::): {
+            _ReadableFromWeb: ƒ j(length: 1) {},
+            _ReadableFromWebForUndici: class L extends F {}
+        }
     },
-    Duplex: ƒ B(length: 1) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
-        from: ƒ (length: 1) {}
-    },
-    Transform: ƒ K(length: 1) {},
-    PassThrough: ƒ H(length: 1) {},
-    pipeline: ƒ D(length: 0) {
-        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ Y(length: 0) {}
-    },
-    addAbortSignal: ƒ Y(length: 2) {},
-    finished: ƒ A(length: 3) {
-        finished: <ref *25> ƒ O(length: 2) {},
-        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
-    },
-    destroy: ƒ C(length: 2) {},
-    compose: ƒ V(length: 0) {},
-    [get/set] promises: {
-        finished: [Circular: *25],
-        pipeline: [Circular: *22]
-    },
-    Stream: [Circular: *1],
-    _isUint8Array: ƒ L(length: 1) {},
-    _uint8ArrayToBuffer: ƒ L(length: 1) {},
-    _getNativeReadableStreamPrototype: ƒ NQ(length: 2) {},
-    NativeWritable: class q extends Tq {},
-    default: [Circular: *1],
-    eos: ƒ X(length: 0) {},
-    Symbol(CommonJS): 0,
-    Symbol(::bunternal::): {
-        _ReadableFromWeb: class N extends L {}
-    }
+    Transform: [Circular: *22],
+    Writable: [Circular: *19],
+    _getNativeReadableStreamPrototype: [Circular: *33],
+    _isUint8Array: [Circular: *31],
+    _uint8ArrayToBuffer: [Circular: *32],
+    addAbortSignal: [Circular: *25],
+    compose: [Circular: *29],
+    default: [Circular: *14],
+    destroy: [Circular: *28],
+    eos: [Circular: *34],
+    finished: [Circular: *26],
+    isDisturbed: [Circular: *15],
+    isErrored: [Circular: *16],
+    isReadable: [Circular: *18],
+    isWritable: [Circular: *17],
+    pipeline: [Circular: *23],
+    promises: [Circular: *30]
 }
 ```
 
@@ -1563,24 +1791,43 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    createSecureContext: ƒ createSecureContext(length: 1) {},
-    parseCertString: ƒ parseCertString(length: 0) {},
-    getCiphers: ƒ getCiphers(length: 0) {},
-    getCurves: ƒ getCurves(length: 0) {},
-    convertALPNProtocols: ƒ convertALPNProtocols(length: 2) {},
-    TLSSocket: ƒ Socket(length: 1) {},
-    SecureContext: ƒ SecureContext(length: 1) {},
     CLIENT_RENEG_LIMIT: 3,
     CLIENT_RENEG_WINDOW: 600,
-    DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
-    DEFAULT_MIN_VERSION: "TLSv1.2",
+    DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_MAX_VERSION: "TLSv1.3",
-    connect: <ref *9> ƒ createConnection(length: 3) {},
-    createConnection: [Circular: *9],
-    Server: class Server extends NetServer {},
-    createServer: ƒ createServer(length: 2) {},
-    Symbol(CommonJS): 0
+    DEFAULT_MIN_VERSION: "TLSv1.2",
+    SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
+    Server: <ref *3> class Server extends NetServer {},
+    TLSSocket: <ref *4> ƒ Socket(length: 1) {},
+    connect: <ref *5> ƒ createConnection(length: 3) {},
+    convertALPNProtocols: <ref *6> ƒ convertALPNProtocols(length: 2) {},
+    createConnection: [Circular: *5],
+    createSecureContext: <ref *7> ƒ createSecureContext(length: 1) {},
+    createServer: <ref *8> ƒ createServer(length: 2) {},
+    default: {
+        CLIENT_RENEG_LIMIT: 3,
+        CLIENT_RENEG_WINDOW: 600,
+        connect: [Circular: *5],
+        convertALPNProtocols: [Circular: *6],
+        createConnection: [Circular: *5],
+        createSecureContext: [Circular: *7],
+        createServer: [Circular: *8],
+        DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
+        DEFAULT_ECDH_CURVE: "auto",
+        DEFAULT_MAX_VERSION: "TLSv1.3",
+        DEFAULT_MIN_VERSION: "TLSv1.2",
+        getCiphers: <ref *10> ƒ getCiphers(length: 0) {},
+        getCurves: <ref *11> ƒ getCurves(length: 0) {},
+        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
+        SecureContext: [Circular: *2],
+        Server: [Circular: *3],
+        TLSSocket: [Circular: *4],
+        Symbol(CommonJS): 0
+    },
+    getCiphers: [Circular: *10],
+    getCurves: [Circular: *11],
+    parseCertString: [Circular: *12]
 }
 ```
 
@@ -1609,24 +1856,43 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    createSecureContext: ƒ createSecureContext(length: 1) {},
-    parseCertString: ƒ parseCertString(length: 0) {},
-    getCiphers: ƒ getCiphers(length: 0) {},
-    getCurves: ƒ getCurves(length: 0) {},
-    convertALPNProtocols: ƒ convertALPNProtocols(length: 2) {},
-    TLSSocket: ƒ Socket(length: 1) {},
-    SecureContext: ƒ SecureContext(length: 1) {},
     CLIENT_RENEG_LIMIT: 3,
     CLIENT_RENEG_WINDOW: 600,
-    DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
-    DEFAULT_MIN_VERSION: "TLSv1.2",
+    DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_MAX_VERSION: "TLSv1.3",
-    connect: <ref *9> ƒ createConnection(length: 3) {},
-    createConnection: [Circular: *9],
-    Server: class Server extends NetServer {},
-    createServer: ƒ createServer(length: 2) {},
-    Symbol(CommonJS): 0
+    DEFAULT_MIN_VERSION: "TLSv1.2",
+    SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
+    Server: <ref *3> class Server extends NetServer {},
+    TLSSocket: <ref *4> ƒ Socket(length: 1) {},
+    connect: <ref *5> ƒ createConnection(length: 3) {},
+    convertALPNProtocols: <ref *6> ƒ convertALPNProtocols(length: 2) {},
+    createConnection: [Circular: *5],
+    createSecureContext: <ref *7> ƒ createSecureContext(length: 1) {},
+    createServer: <ref *8> ƒ createServer(length: 2) {},
+    default: {
+        CLIENT_RENEG_LIMIT: 3,
+        CLIENT_RENEG_WINDOW: 600,
+        connect: [Circular: *5],
+        convertALPNProtocols: [Circular: *6],
+        createConnection: [Circular: *5],
+        createSecureContext: [Circular: *7],
+        createServer: [Circular: *8],
+        DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
+        DEFAULT_ECDH_CURVE: "auto",
+        DEFAULT_MAX_VERSION: "TLSv1.3",
+        DEFAULT_MIN_VERSION: "TLSv1.2",
+        getCiphers: <ref *10> ƒ getCiphers(length: 0) {},
+        getCurves: <ref *11> ƒ getCurves(length: 0) {},
+        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
+        SecureContext: [Circular: *2],
+        Server: [Circular: *3],
+        TLSSocket: [Circular: *4],
+        Symbol(CommonJS): 0
+    },
+    getCiphers: [Circular: *10],
+    getCurves: [Circular: *11],
+    parseCertString: [Circular: *12]
 }
 ```
 
@@ -1707,46 +1973,66 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 </td><td valign="top">
 
 ```js
-<ref *1> ƒ S(length: 0) {
-    fail: <ref *2> ƒ I(length: 5) {},
-    AssertionError: <ref *3> ƒ h(length: 1) {},
-    ok: [Circular: *1],
-    equal: ƒ y(length: 3) {},
-    notEqual: ƒ y(length: 3) {},
-    deepEqual: ƒ y(length: 3) {},
-    notDeepEqual: ƒ y(length: 3) {},
-    deepStrictEqual: <ref *8> ƒ y(length: 3) {},
-    notDeepStrictEqual: <ref *9> ƒ j(length: 3) {},
-    strictEqual: <ref *10> ƒ y(length: 3) {},
-    notStrictEqual: <ref *11> ƒ y(length: 3) {},
-    match: <ref *12> ƒ y(length: 3) {},
-    throws: <ref *13> ƒ y(length: 1) {},
-    rejects: <ref *14> ƒ y(length: 1) {},
-    doesNotThrow: <ref *15> ƒ y(length: 1) {},
-    doesNotReject: <ref *16> ƒ y(length: 1) {},
-    ifError: <ref *17> ƒ y(length: 1) {},
-    strict: <ref *18> ƒ x(length: 0) {
-        fail: [Circular: *2],
-        AssertionError: [Circular: *3],
-        ok: [Circular: *1],
-        equal: [Circular: *10],
-        notEqual: [Circular: *11],
-        deepEqual: [Circular: *8],
-        notDeepEqual: [Circular: *9],
-        deepStrictEqual: [Circular: *8],
-        notDeepStrictEqual: [Circular: *9],
-        strictEqual: [Circular: *10],
-        notStrictEqual: [Circular: *11],
-        match: [Circular: *12],
-        throws: [Circular: *13],
-        rejects: [Circular: *14],
-        doesNotThrow: [Circular: *15],
-        doesNotReject: [Circular: *16],
-        ifError: [Circular: *17],
-        strict: [Circular: *18]
+{
+    AssertionError: <ref *2> ƒ b(length: 1) {},
+    assert: undefined,
+    deepEqual: <ref *3> ƒ x(length: 3) {},
+    deepStrictEqual: <ref *4> ƒ x(length: 3) {},
+    default: <ref *5> ƒ S(length: 0) {
+        fail: <ref *6> ƒ P(length: 5) {},
+        AssertionError: [Circular: *2],
+        ok: [Circular: *5],
+        equal: <ref *7> ƒ x(length: 3) {},
+        notEqual: <ref *8> ƒ x(length: 3) {},
+        deepEqual: [Circular: *3],
+        notDeepEqual: <ref *9> ƒ x(length: 3) {},
+        deepStrictEqual: [Circular: *4],
+        notDeepStrictEqual: <ref *10> ƒ j(length: 3) {},
+        strictEqual: <ref *11> ƒ x(length: 3) {},
+        notStrictEqual: <ref *12> ƒ x(length: 3) {},
+        match: <ref *13> ƒ x(length: 3) {},
+        throws: <ref *14> ƒ x(length: 1) {},
+        rejects: <ref *15> ƒ x(length: 1) {},
+        doesNotThrow: <ref *16> ƒ x(length: 1) {},
+        doesNotReject: <ref *17> ƒ x(length: 1) {},
+        ifError: <ref *18> ƒ x(length: 1) {},
+        strict: <ref *19> ƒ m(length: 0) {
+            fail: [Circular: *6],
+            AssertionError: [Circular: *2],
+            ok: [Circular: *5],
+            equal: [Circular: *11],
+            notEqual: [Circular: *12],
+            deepEqual: [Circular: *4],
+            notDeepEqual: [Circular: *10],
+            deepStrictEqual: [Circular: *4],
+            notDeepStrictEqual: [Circular: *10],
+            strictEqual: [Circular: *11],
+            notStrictEqual: [Circular: *12],
+            match: [Circular: *13],
+            throws: [Circular: *14],
+            rejects: [Circular: *15],
+            doesNotThrow: [Circular: *16],
+            doesNotReject: [Circular: *17],
+            ifError: [Circular: *18],
+            strict: [Circular: *19]
+        },
+        CallTracker: ƒ D1(length: 0) {},
+        Symbol(CommonJS): 0
     },
-    CallTracker: ƒ V0(length: 0) {},
-    Symbol(CommonJS): 0
+    doesNotReject: [Circular: *17],
+    doesNotThrow: [Circular: *16],
+    equal: [Circular: *7],
+    fail: [Circular: *6],
+    ifError: [Circular: *18],
+    notDeepEqual: [Circular: *9],
+    notDeepStrictEqual: [Circular: *10],
+    notEqual: [Circular: *8],
+    notStrictEqual: [Circular: *12],
+    ok: [Circular: *5],
+    rejects: [Circular: *15],
+    strict: [Circular: *19],
+    strictEqual: [Circular: *11],
+    throws: [Circular: *14]
 }
 ```
 
@@ -1828,66 +2114,88 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    fail: <ref *2> ƒ I(length: 5) {},
-    AssertionError: <ref *3> ƒ h(length: 1) {},
-    ok: <ref *4> ƒ S(length: 0) {
-        fail: [Circular: *2],
-        AssertionError: [Circular: *3],
-        ok: [Circular: *4],
-        equal: ƒ y(length: 3) {},
-        notEqual: ƒ y(length: 3) {},
-        deepEqual: ƒ y(length: 3) {},
-        notDeepEqual: ƒ y(length: 3) {},
-        deepStrictEqual: <ref *9> ƒ y(length: 3) {},
-        notDeepStrictEqual: <ref *10> ƒ j(length: 3) {},
-        strictEqual: <ref *11> ƒ y(length: 3) {},
-        notStrictEqual: <ref *12> ƒ y(length: 3) {},
-        match: <ref *13> ƒ y(length: 3) {},
-        throws: <ref *14> ƒ y(length: 1) {},
-        rejects: <ref *15> ƒ y(length: 1) {},
-        doesNotThrow: <ref *16> ƒ y(length: 1) {},
-        doesNotReject: <ref *17> ƒ y(length: 1) {},
-        ifError: <ref *18> ƒ y(length: 1) {},
-        strict: <ref *19> ƒ x(length: 0) {
-            fail: [Circular: *2],
-            AssertionError: [Circular: *3],
-            ok: [Circular: *4],
-            equal: [Circular: *11],
-            notEqual: [Circular: *12],
-            deepEqual: [Circular: *9],
-            notDeepEqual: [Circular: *10],
-            deepStrictEqual: [Circular: *9],
-            notDeepStrictEqual: [Circular: *10],
-            strictEqual: [Circular: *11],
-            notStrictEqual: [Circular: *12],
-            match: [Circular: *13],
-            throws: [Circular: *14],
-            rejects: [Circular: *15],
-            doesNotThrow: [Circular: *16],
-            doesNotReject: [Circular: *17],
-            ifError: [Circular: *18],
-            strict: [Circular: *19]
+    AssertionError: <ref *2> ƒ b(length: 1) {},
+    CallTracker: undefined,
+    deepEqual: <ref *3> ƒ x(length: 3) {},
+    deepStrictEqual: [Circular: *3],
+    default: {
+        fail: <ref *5> ƒ P(length: 5) {},
+        AssertionError: [Circular: *2],
+        ok: <ref *6> ƒ S(length: 0) {
+            fail: [Circular: *5],
+            AssertionError: [Circular: *2],
+            ok: [Circular: *6],
+            equal: ƒ x(length: 3) {},
+            notEqual: ƒ x(length: 3) {},
+            deepEqual: ƒ x(length: 3) {},
+            notDeepEqual: ƒ x(length: 3) {},
+            deepStrictEqual: [Circular: *3],
+            notDeepStrictEqual: <ref *11> ƒ j(length: 3) {},
+            strictEqual: <ref *12> ƒ x(length: 3) {},
+            notStrictEqual: <ref *13> ƒ x(length: 3) {},
+            match: <ref *14> ƒ x(length: 3) {},
+            throws: <ref *15> ƒ x(length: 1) {},
+            rejects: <ref *16> ƒ x(length: 1) {},
+            doesNotThrow: <ref *17> ƒ x(length: 1) {},
+            doesNotReject: <ref *18> ƒ x(length: 1) {},
+            ifError: <ref *19> ƒ x(length: 1) {},
+            strict: <ref *20> ƒ m(length: 0) {
+                fail: [Circular: *5],
+                AssertionError: [Circular: *2],
+                ok: [Circular: *6],
+                equal: [Circular: *12],
+                notEqual: [Circular: *13],
+                deepEqual: [Circular: *3],
+                notDeepEqual: [Circular: *11],
+                deepStrictEqual: [Circular: *3],
+                notDeepStrictEqual: [Circular: *11],
+                strictEqual: [Circular: *12],
+                notStrictEqual: [Circular: *13],
+                match: [Circular: *14],
+                throws: [Circular: *15],
+                rejects: [Circular: *16],
+                doesNotThrow: [Circular: *17],
+                doesNotReject: [Circular: *18],
+                ifError: [Circular: *19],
+                strict: [Circular: *20]
+            },
+            CallTracker: ƒ D1(length: 0) {},
+            Symbol(CommonJS): 0
         },
-        CallTracker: ƒ V0(length: 0) {},
+        equal: [Circular: *12],
+        notEqual: [Circular: *13],
+        deepEqual: [Circular: *3],
+        notDeepEqual: [Circular: *11],
+        deepStrictEqual: [Circular: *3],
+        notDeepStrictEqual: [Circular: *11],
+        strictEqual: [Circular: *12],
+        notStrictEqual: [Circular: *13],
+        throws: [Circular: *15],
+        rejects: [Circular: *16],
+        doesNotThrow: [Circular: *17],
+        doesNotReject: [Circular: *18],
+        ifError: [Circular: *19],
+        match: [Circular: *14],
+        doesNotMatch: undefined,
+        CallTracker: undefined,
         Symbol(CommonJS): 0
     },
-    equal: [Circular: *11],
-    notEqual: [Circular: *12],
-    deepEqual: [Circular: *9],
-    notDeepEqual: [Circular: *10],
-    deepStrictEqual: [Circular: *9],
-    notDeepStrictEqual: [Circular: *10],
-    strictEqual: [Circular: *11],
-    notStrictEqual: [Circular: *12],
-    throws: [Circular: *14],
-    rejects: [Circular: *15],
-    doesNotThrow: [Circular: *16],
-    doesNotReject: [Circular: *17],
-    ifError: [Circular: *18],
-    match: [Circular: *13],
     doesNotMatch: undefined,
-    CallTracker: undefined,
-    Symbol(CommonJS): 0
+    doesNotReject: [Circular: *18],
+    doesNotThrow: [Circular: *17],
+    equal: [Circular: *12],
+    fail: [Circular: *5],
+    ifError: [Circular: *19],
+    match: [Circular: *14],
+    notDeepEqual: [Circular: *11],
+    notDeepStrictEqual: [Circular: *11],
+    notEqual: [Circular: *13],
+    notStrictEqual: [Circular: *13],
+    ok: [Circular: *6],
+    rejects: [Circular: *16],
+    strict: [Circular: *20],
+    strictEqual: [Circular: *12],
+    throws: [Circular: *15]
 }
 ```
 
@@ -1981,12 +2289,11 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    AsyncLocalStorage: class AsyncLocalStorage {},
-    createHook: ƒ createHook(length: 0) {},
-    executionAsyncId: ƒ executionAsyncId(length: 0) {},
-    triggerAsyncId: ƒ triggerAsyncId(length: 0) {},
-    executionAsyncResource: ƒ executionAsyncResource(length: 0) {},
-    asyncWrapProviders: {
+    AsyncLocalStorage: <ref *2> class AsyncLocalStorage {},
+    AsyncResource: <ref *3> class AsyncResource {
+        allowedRunInAsyncScope: Set {}
+    },
+    asyncWrapProviders: <ref *5> {
         NONE: 0,
         DIRHANDLE: 1,
         DNSCHANNEL: 2,
@@ -2046,11 +2353,21 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
         VERIFYREQUEST: 56,
         INSPECTORJSBINDING: 57
     },
-    AsyncResource: class AsyncResource {
-        allowedRunInAsyncScope: Set {}
+    createHook: <ref *6> ƒ createHook(length: 0) {},
+    default: {
+        AsyncLocalStorage: [Circular: *2],
+        createHook: [Circular: *6],
+        executionAsyncId: <ref *8> ƒ executionAsyncId(length: 0) {},
+        triggerAsyncId: <ref *9> ƒ triggerAsyncId(length: 0) {},
+        executionAsyncResource: <ref *10> ƒ executionAsyncResource(length: 0) {},
+        asyncWrapProviders: [Circular: *5],
+        AsyncResource: [Circular: *3],
+        Symbol(Symbol.toStringTag): "Module (not implemented yet)",
+        Symbol(CommonJS): 0
     },
-    Symbol(Symbol.toStringTag): "Module (not implemented yet)",
-    Symbol(CommonJS): 0
+    executionAsyncId: [Circular: *8],
+    executionAsyncResource: [Circular: *10],
+    triggerAsyncId: [Circular: *9]
 }
 ```
 
@@ -2115,35 +2432,17 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 </td><td valign="top">
 
 ```js
-{
-    Buffer: ƒ Buffer(length: 3) {
-        alloc: ƒ alloc(length: 1) {},
-        allocUnsafe: ƒ allocUnsafe(length: 1) {},
-        allocUnsafeSlow: ƒ allocUnsafeSlow(length: 1) {},
-        byteLength: ƒ byteLength(length: 2) {},
-        compare: ƒ compare(length: 2) {},
-        concat: ƒ concat(length: 2) {},
-        from: ƒ from(length: 1) {},
-        isBuffer: ƒ isBuffer(length: 1) {},
-        toBuffer: ƒ toBuffer(length: 1) {},
-        isEncoding: ƒ isEncoding(length: 1) {}
-    },
-    SlowBuffer: ƒ SlowBuffer(length: 0) {},
-    Blob: <ref *14> ƒ Blob(length: 0) {},
-    File: [Circular: *14],
-    INSPECT_MAX_BYTES: 50,
-    kMaxLength: 4294967296,
-    kStringMaxLength: 536870888,
-    constants: {
-        MAX_LENGTH: 4294967296,
-        MAX_STRING_LENGTH: 536870888
-    },
-    atob: ƒ atob(length: 1) {},
-    btoa: ƒ btoa(length: 1) {},
-    transcode: [Unexpected Error: [object Function] (type "undefined")],
-    resolveObjectURL: [Unexpected Error: [object Function] (type "undefined")],
-    Symbol(CommonJS): 0
-}
+78 | 			}
+79 | 
+80 | 			const entries = Reflect.ownKeys(value).map(
+81 | 				(key) => {
+82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
+83 | 					if (!descriptor.enumerable) {
+             ^
+TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/buffer.mjs:4:15
 ```
 
 </td></tr></table>
@@ -2181,15 +2480,25 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 
 ```js
 {
-    ChildProcess: class ChildProcess extends EventEmitter {},
-    spawn: ƒ spawn(length: 3) {},
-    execFile: ƒ execFile(length: 4) {},
-    exec: ƒ exec(length: 3) {},
-    fork: ƒ fork(length: 0) {},
-    spawnSync: ƒ spawnSync(length: 3) {},
-    execFileSync: ƒ execFileSync(length: 3) {},
-    execSync: ƒ execSync(length: 2) {},
-    Symbol(CommonJS): 0
+    ChildProcess: <ref *2> class ChildProcess extends EventEmitter {},
+    default: {
+        ChildProcess: [Circular: *2],
+        spawn: <ref *4> ƒ spawn(length: 3) {},
+        execFile: <ref *5> ƒ execFile(length: 4) {},
+        exec: <ref *6> ƒ exec(length: 3) {},
+        fork: <ref *7> ƒ fork(length: 0) {},
+        spawnSync: <ref *8> ƒ spawnSync(length: 3) {},
+        execFileSync: <ref *9> ƒ execFileSync(length: 3) {},
+        execSync: <ref *10> ƒ execSync(length: 2) {},
+        Symbol(CommonJS): 0
+    },
+    exec: [Circular: *6],
+    execFile: [Circular: *5],
+    execFileSync: [Circular: *9],
+    execSync: [Circular: *10],
+    fork: [Circular: *7],
+    spawn: [Circular: *4],
+    spawnSync: [Circular: *8]
 }
 ```
 
@@ -2242,17 +2551,27 @@ _Last updated on <!-- lastUpdated:start -->Jun 19, 2023 with Bun 0.6.10 Node.js 
 </td><td valign="top">
 
 ```js
-Cluster {
-    _events: [Object: null prototype] {},
-    _eventsCount: 0,
-    _maxListeners: undefined,
-    settings: {},
-    workers: {},
+{
     SCHED_NONE: 0,
     SCHED_RR: 1,
-    schedulingPolicy: 2,
-    Symbol(kCapture): false,
-    Symbol(CommonJS): 0
+    Worker: ƒ Worker2(length: 0) {},
+    cluster: <ref *3> Cluster {
+        _events: [Object: null prototype] {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        settings: {},
+        workers: {},
+        SCHED_NONE: 0,
+        SCHED_RR: 1,
+        schedulingPolicy: 2,
+        Symbol(kCapture): false,
+        Symbol(CommonJS): 0
+    },
+    default: [Circular: *3],
+    isMaster: true,
+    isPrimary: true,
+    isWorker: false,
+    schedulingPolicy: 2
 }
 ```
 
@@ -2320,17 +2639,38 @@ Cluster {
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/console.mjs:4:15
+{
+    default: {
+        debug: ƒ debug(length: 0) {},
+        error: ƒ error(length: 0) {},
+        log: ƒ log(length: 0) {},
+        info: ƒ info(length: 0) {},
+        warn: ƒ warn(length: 0) {},
+        clear: ƒ clear(length: 0) {},
+        dir: ƒ dir(length: 0) {},
+        dirxml: ƒ dirxml(length: 0) {},
+        table: ƒ table(length: 0) {},
+        trace: ƒ trace(length: 0) {},
+        assert: ƒ assert(length: 0) {},
+        count: ƒ count(length: 0) {},
+        countReset: ƒ countReset(length: 0) {},
+        profile: ƒ profile(length: 0) {},
+        profileEnd: ƒ profileEnd(length: 0) {},
+        time: ƒ time(length: 0) {},
+        timeLog: ƒ timeLog(length: 0) {},
+        timeEnd: ƒ timeEnd(length: 0) {},
+        timeStamp: ƒ timeStamp(length: 0) {},
+        takeHeapSnapshot: ƒ takeHeapSnapshot(length: 0) {},
+        group: ƒ group(length: 0) {},
+        groupCollapsed: ƒ groupCollapsed(length: 0) {},
+        groupEnd: ƒ groupEnd(length: 0) {},
+        record: ƒ record(length: 0) {},
+        recordEnd: ƒ recordEnd(length: 0) {},
+        screenshot: ƒ screenshot(length: 0) {},
+        write: ƒ write(length: 1) {},
+        Symbol(Symbol.asyncIterator): ƒ [Symbol.asyncIterator](length: 0) {}
+    }
+}
 ```
 
 </td></tr></table>
@@ -2853,17 +3193,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/constants.mjs:4:15
+{}
 ```
 
 </td></tr></table>
@@ -3102,11 +3432,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:99:6
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/crypto.mjs:4:15
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/crypto.mjs:4:15
 ```
 
 </td></tr></table>
@@ -3132,10 +3464,15 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    createSocket: ƒ ::bunternal::(length: 0) {},
-    Socket: ƒ ::bunternal::(length: 0) {},
-    _createSocketHandle: ƒ ::bunternal::(length: 0) {},
-    Symbol(CommonJS): 0
+    Socket: <ref *2> ƒ ::bunternal::(length: 0) {},
+    _createSocketHandle: <ref *3> ƒ ::bunternal::(length: 0) {},
+    createSocket: <ref *4> ƒ ::bunternal::(length: 0) {},
+    default: {
+        createSocket: [Circular: *4],
+        Socket: [Circular: *2],
+        _createSocketHandle: [Circular: *3],
+        Symbol(CommonJS): 0
+    }
 }
 ```
 
@@ -3166,12 +3503,19 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    channel: ƒ channel(length: 0) {},
-    hasSubscribers: ƒ hasSubscribers(length: 0) {},
-    subscribe: ƒ subscribe(length: 0) {},
-    unsubscribe: ƒ unsubscribe(length: 0) {},
-    Channel: class Channel {},
-    Symbol(CommonJS): 0
+    Channel: <ref *2> class Channel {},
+    channel: <ref *3> ƒ channel(length: 0) {},
+    default: {
+        channel: [Circular: *3],
+        hasSubscribers: <ref *5> ƒ hasSubscribers(length: 0) {},
+        subscribe: <ref *6> ƒ subscribe(length: 0) {},
+        unsubscribe: <ref *7> ƒ unsubscribe(length: 0) {},
+        Channel: [Circular: *2],
+        Symbol(CommonJS): 0
+    },
+    hasSubscribers: [Circular: *5],
+    subscribe: [Circular: *6],
+    unsubscribe: [Circular: *7]
 }
 ```
 
@@ -3334,71 +3678,120 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 ```js
 {
     ADDRCONFIG: 0,
+    ADDRGETNETWORKPARAMS: "DNS_EADDRGETNETWORKPARAMS",
     ALL: 1,
-    V4MAPPED: 2,
-    NODATA: "DNS_ENODATA",
-    FORMERR: "DNS_EFORMERR",
-    SERVFAIL: "DNS_ESERVFAIL",
-    NOTFOUND: "DNS_ENOTFOUND",
-    NOTIMP: "DNS_ENOTIMP",
-    REFUSED: "DNS_EREFUSED",
-    BADQUERY: "DNS_EBADQUERY",
-    BADNAME: "DNS_EBADNAME",
     BADFAMILY: "DNS_EBADFAMILY",
+    BADFLAGS: "DNS_EBADFLAGS",
+    BADHINTS: "DNS_EBADHINTS",
+    BADNAME: "DNS_EBADNAME",
+    BADQUERY: "DNS_EBADQUERY",
     BADRESP: "DNS_EBADRESP",
+    BADSTR: "DNS_EBADSTR",
+    CANCELLED: "DNS_ECANCELLED",
     CONNREFUSED: "DNS_ECONNREFUSED",
-    TIMEOUT: "DNS_ETIMEOUT",
+    DESTRUCTION: "DNS_EDESTRUCTION",
     EOF: "DNS_EEOF",
     FILE: "DNS_EFILE",
-    NOMEM: "DNS_ENOMEM",
-    DESTRUCTION: "DNS_EDESTRUCTION",
-    BADSTR: "DNS_EBADSTR",
-    BADFLAGS: "DNS_EBADFLAGS",
-    NONAME: "DNS_ENONAME",
-    BADHINTS: "DNS_EBADHINTS",
-    NOTINITIALIZED: "DNS_ENOTINITIALIZED",
+    FORMERR: "DNS_EFORMERR",
     LOADIPHLPAPI: "DNS_ELOADIPHLPAPI",
-    ADDRGETNETWORKPARAMS: "DNS_EADDRGETNETWORKPARAMS",
-    CANCELLED: "DNS_ECANCELLED",
-    lookup: ƒ lookup(length: 3) {},
-    lookupService: ƒ lookupService(length: 3) {},
-    Resolver: ƒ Resolver(length: 1) {},
-    setServers: ƒ setServers(length: 0) {},
-    setDefaultResultOrder: ƒ setDefaultResultOrder(length: 0) {},
-    resolve: ƒ resolve(length: 3) {},
-    reverse: ƒ reverse(length: 2) {},
-    resolve4: ƒ resolve4(length: 3) {},
-    resolve6: ƒ resolve6(length: 3) {},
-    resolveAny: ƒ resolveAny(length: 2) {},
-    resolveCname: ƒ resolveCname(length: 2) {},
-    resolveCaa: ƒ resolveCaa(length: 2) {},
-    resolveMx: ƒ resolveMx(length: 2) {},
-    resolveNs: ƒ resolveNs(length: 2) {},
-    resolvePtr: ƒ resolvePtr(length: 2) {},
-    resolveSoa: ƒ resolveSoa(length: 2) {},
-    resolveSrv: ƒ resolveSrv(length: 2) {},
-    resolveTxt: ƒ resolveTxt(length: 2) {},
-    resolveNaptr: ƒ resolveNaptr(length: 2) {},
-    promises: {
-        lookup: ƒ lookup(length: 2) {},
-        lookupService: ƒ lookupService(length: 2) {},
-        resolve: ƒ resolve(length: 2) {},
-        resolve4: ƒ resolve4(length: 2) {},
-        resolve6: ƒ resolve6(length: 2) {},
-        resolveSrv: ƒ resolveSrv(length: 1) {},
-        resolveTxt: ƒ resolveTxt(length: 1) {},
-        resolveSoa: ƒ resolveSoa(length: 1) {},
-        resolveNaptr: ƒ resolveNaptr(length: 1) {},
-        resolveMx: ƒ resolveMx(length: 1) {},
-        resolveCaa: ƒ resolveCaa(length: 1) {},
-        resolveNs: ƒ resolveNs(length: 1) {},
-        resolvePtr: ƒ resolvePtr(length: 1) {},
-        resolveCname: ƒ resolveCname(length: 1) {},
-        Resolver: class Resolver3 {},
-        resolveAny: ƒ (length: 0) {},
-        reverse: ƒ (length: 0) {}
+    NODATA: "DNS_ENODATA",
+    NOMEM: "DNS_ENOMEM",
+    NONAME: "DNS_ENONAME",
+    NOTFOUND: "DNS_ENOTFOUND",
+    NOTIMP: "DNS_ENOTIMP",
+    NOTINITIALIZED: "DNS_ENOTINITIALIZED",
+    REFUSED: "DNS_EREFUSED",
+    Resolver: <ref *2> ƒ Resolver(length: 1) {},
+    SERVFAIL: "DNS_ESERVFAIL",
+    TIMEOUT: "DNS_ETIMEOUT",
+    V4MAPPED: 2,
+    default: {
+        ADDRCONFIG: 0,
+        ALL: 1,
+        V4MAPPED: 2,
+        NODATA: "DNS_ENODATA",
+        FORMERR: "DNS_EFORMERR",
+        SERVFAIL: "DNS_ESERVFAIL",
+        NOTFOUND: "DNS_ENOTFOUND",
+        NOTIMP: "DNS_ENOTIMP",
+        REFUSED: "DNS_EREFUSED",
+        BADQUERY: "DNS_EBADQUERY",
+        BADNAME: "DNS_EBADNAME",
+        BADFAMILY: "DNS_EBADFAMILY",
+        BADRESP: "DNS_EBADRESP",
+        CONNREFUSED: "DNS_ECONNREFUSED",
+        TIMEOUT: "DNS_ETIMEOUT",
+        EOF: "DNS_EEOF",
+        FILE: "DNS_EFILE",
+        NOMEM: "DNS_ENOMEM",
+        DESTRUCTION: "DNS_EDESTRUCTION",
+        BADSTR: "DNS_EBADSTR",
+        BADFLAGS: "DNS_EBADFLAGS",
+        NONAME: "DNS_ENONAME",
+        BADHINTS: "DNS_EBADHINTS",
+        NOTINITIALIZED: "DNS_ENOTINITIALIZED",
+        LOADIPHLPAPI: "DNS_ELOADIPHLPAPI",
+        ADDRGETNETWORKPARAMS: "DNS_EADDRGETNETWORKPARAMS",
+        CANCELLED: "DNS_ECANCELLED",
+        lookup: <ref *4> ƒ lookup(length: 3) {},
+        lookupService: <ref *5> ƒ lookupService(length: 3) {},
+        Resolver: [Circular: *2],
+        setServers: <ref *6> ƒ setServers(length: 0) {},
+        setDefaultResultOrder: <ref *7> ƒ setDefaultResultOrder(length: 0) {},
+        resolve: <ref *8> ƒ resolve(length: 3) {},
+        reverse: <ref *9> ƒ reverse(length: 2) {},
+        resolve4: <ref *10> ƒ resolve4(length: 3) {},
+        resolve6: <ref *11> ƒ resolve6(length: 3) {},
+        resolveAny: <ref *12> ƒ resolveAny(length: 2) {},
+        resolveCname: <ref *13> ƒ resolveCname(length: 2) {},
+        resolveCaa: <ref *14> ƒ resolveCaa(length: 2) {},
+        resolveMx: <ref *15> ƒ resolveMx(length: 2) {},
+        resolveNs: <ref *16> ƒ resolveNs(length: 2) {},
+        resolvePtr: <ref *17> ƒ resolvePtr(length: 2) {},
+        resolveSoa: <ref *18> ƒ resolveSoa(length: 2) {},
+        resolveSrv: <ref *19> ƒ resolveSrv(length: 2) {},
+        resolveTxt: <ref *20> ƒ resolveTxt(length: 2) {},
+        resolveNaptr: <ref *21> ƒ resolveNaptr(length: 2) {},
+        promises: <ref *22> {
+            lookup: ƒ lookup(length: 2) {},
+            lookupService: ƒ lookupService(length: 2) {},
+            resolve: ƒ resolve(length: 2) {},
+            resolve4: ƒ resolve4(length: 2) {},
+            resolve6: ƒ resolve6(length: 2) {},
+            resolveSrv: ƒ resolveSrv(length: 1) {},
+            resolveTxt: ƒ resolveTxt(length: 1) {},
+            resolveSoa: ƒ resolveSoa(length: 1) {},
+            resolveNaptr: ƒ resolveNaptr(length: 1) {},
+            resolveMx: ƒ resolveMx(length: 1) {},
+            resolveCaa: ƒ resolveCaa(length: 1) {},
+            resolveNs: ƒ resolveNs(length: 1) {},
+            resolvePtr: ƒ resolvePtr(length: 1) {},
+            resolveCname: ƒ resolveCname(length: 1) {},
+            Resolver: class Resolver3 {},
+            resolveAny: ƒ (length: 0) {},
+            reverse: ƒ (length: 0) {}
+        },
+        Symbol(CommonJS): 0
     },
-    Symbol(CommonJS): 0
+    lookup: [Circular: *4],
+    lookupService: [Circular: *5],
+    promises: [Circular: *22],
+    resolve: [Circular: *8],
+    resolve4: [Circular: *10],
+    resolve6: [Circular: *11],
+    resolveAny: [Circular: *12],
+    resolveCaa: [Circular: *14],
+    resolveCname: [Circular: *13],
+    resolveMx: [Circular: *15],
+    resolveNaptr: [Circular: *21],
+    resolveNs: [Circular: *16],
+    resolvePtr: [Circular: *17],
+    resolveSoa: [Circular: *18],
+    resolveSrv: [Circular: *19],
+    resolveTxt: [Circular: *20],
+    reverse: [Circular: *9],
+    setDefaultResultOrder: [Circular: *7],
+    setServers: [Circular: *6]
 }
 ```
 
@@ -3507,25 +3900,45 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    lookup: ƒ lookup(length: 2) {},
-    lookupService: ƒ lookupService(length: 2) {},
-    resolve: ƒ resolve(length: 2) {},
-    resolve4: ƒ resolve4(length: 2) {},
-    resolveAny: ƒ (length: 0) {},
-    resolveCname: ƒ resolveCname(length: 1) {},
-    resolveCaa: ƒ resolveCaa(length: 1) {},
-    resolveMx: ƒ resolveMx(length: 1) {},
-    resolveNaptr: ƒ resolveNaptr(length: 1) {},
-    resolveNs: ƒ resolveNs(length: 1) {},
-    resolvePtr: ƒ resolvePtr(length: 1) {},
-    resolveSoa: ƒ resolveSoa(length: 1) {},
-    resolveSrv: ƒ resolveSrv(length: 1) {},
-    resolveTxt: ƒ resolveTxt(length: 1) {},
-    reverse: ƒ (length: 0) {},
-    Resolver: class Resolver3 {},
-    setServers: undefined,
+    Resolver: <ref *2> class Resolver3 {},
+    default: {
+        lookup: <ref *4> ƒ lookup(length: 2) {},
+        lookupService: <ref *5> ƒ lookupService(length: 2) {},
+        resolve: <ref *6> ƒ resolve(length: 2) {},
+        resolve4: <ref *7> ƒ resolve4(length: 2) {},
+        resolveAny: <ref *8> ƒ (length: 0) {},
+        resolveCname: <ref *9> ƒ resolveCname(length: 1) {},
+        resolveCaa: <ref *10> ƒ resolveCaa(length: 1) {},
+        resolveMx: <ref *11> ƒ resolveMx(length: 1) {},
+        resolveNaptr: <ref *12> ƒ resolveNaptr(length: 1) {},
+        resolveNs: <ref *13> ƒ resolveNs(length: 1) {},
+        resolvePtr: <ref *14> ƒ resolvePtr(length: 1) {},
+        resolveSoa: <ref *15> ƒ resolveSoa(length: 1) {},
+        resolveSrv: <ref *16> ƒ resolveSrv(length: 1) {},
+        resolveTxt: <ref *17> ƒ resolveTxt(length: 1) {},
+        reverse: <ref *18> ƒ (length: 0) {},
+        Resolver: [Circular: *2],
+        setServers: undefined,
+        setDefaultResultOrder: undefined,
+        Symbol(CommonJS): 0
+    },
+    lookup: [Circular: *4],
+    lookupService: [Circular: *5],
+    resolve: [Circular: *6],
+    resolve4: [Circular: *7],
+    resolveAny: [Circular: *8],
+    resolveCaa: [Circular: *10],
+    resolveCname: [Circular: *9],
+    resolveMx: [Circular: *11],
+    resolveNaptr: [Circular: *12],
+    resolveNs: [Circular: *13],
+    resolvePtr: [Circular: *14],
+    resolveSoa: [Circular: *15],
+    resolveSrv: [Circular: *16],
+    resolveTxt: [Circular: *17],
+    reverse: [Circular: *18],
     setDefaultResultOrder: undefined,
-    Symbol(CommonJS): 0
+    setServers: undefined
 }
 ```
 
@@ -3555,17 +3968,14 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/domain.mjs:4:15
+{
+    create: <ref *2> ƒ (length: 0) {},
+    createDomain: [Circular: *2],
+    default: {
+        create: [Circular: *2],
+        createDomain: [Circular: *2]
+    }
+}
 ```
 
 </td></tr></table>
@@ -3610,21 +4020,31 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-<ref *1> ƒ EventEmitter(length: 1) {
-    once: ƒ once(length: 3) {},
-    on: ƒ on(length: 3) {},
-    getEventListeners: ƒ getEventListeners(length: 2) {},
-    setMaxListeners: ƒ setMaxListeners(length: 1) {},
-    listenerCount: ƒ listenerCount(length: 2) {},
-    EventEmitter: [Circular: *1],
-    usingDomains: false,
+{
+    EventEmitter: <ref *2> ƒ EventEmitter(length: 1) {
+        once: <ref *3> ƒ once(length: 3) {},
+        on: <ref *4> ƒ on(length: 3) {},
+        getEventListeners: <ref *5> ƒ getEventListeners(length: 2) {},
+        setMaxListeners: <ref *6> ƒ setMaxListeners(length: 1) {},
+        listenerCount: <ref *7> ƒ listenerCount(length: 2) {},
+        EventEmitter: [Circular: *2],
+        usingDomains: false,
+        captureRejectionSymbol: Symbol(nodejs.rejection),
+        [get/set] captureRejections: false,
+        errorMonitor: Symbol(events.errorMonitor),
+        [get/set] defaultMaxListeners: 10,
+        init: [Circular: *2],
+        EventEmitterAsyncResource: class EventEmitterAsyncResource extends EventEmitter {},
+        Symbol(CommonJS): 0
+    },
     captureRejectionSymbol: Symbol(nodejs.rejection),
-    [get/set] captureRejections: false,
-    errorMonitor: Symbol(events.errorMonitor),
-    [get/set] defaultMaxListeners: 10,
-    init: [Circular: *1],
-    EventEmitterAsyncResource: class EventEmitterAsyncResource extends EventEmitter {},
-    Symbol(CommonJS): 0
+    default: [Circular: *2],
+    getEventListeners: [Circular: *5],
+    listenerCount: [Circular: *7],
+    on: [Circular: *4],
+    once: [Circular: *3],
+    setMaxListeners: [Circular: *6],
+    usingDomains: false
 }
 ```
 
@@ -3944,17 +4364,21 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    access: ƒ access2(length: 0) {},
-    accessSync: ƒ bound accessSync(length: 2) {},
-    appendFile: ƒ appendFile2(length: 0) {},
-    appendFileSync: ƒ bound appendFileSync(length: 3) {},
-    chmod: ƒ chmod2(length: 0) {},
-    chmodSync: ƒ bound chmodSync(length: 2) {},
-    chown: ƒ chown2(length: 0) {},
-    chownSync: ƒ bound chownSync(length: 3) {},
-    close: ƒ close2(length: 0) {},
-    closeSync: ƒ bound closeSync(length: 1) {},
-    constants: <ref *12> {
+    Dirent: <ref *2> ƒ Dirent(length: 0) {},
+    ReadStream: <ref *3> ƒ ReadStream(length: 2) {},
+    Stats: <ref *4> ƒ Stats(length: 0) {},
+    WriteStream: <ref *5> ƒ WriteStream(length: 1) {},
+    access: <ref *6> ƒ access2(length: 0) {},
+    accessSync: <ref *7> ƒ bound accessSync(length: 2) {},
+    appendFile: <ref *8> ƒ appendFile2(length: 0) {},
+    appendFileSync: <ref *9> ƒ bound appendFileSync(length: 3) {},
+    chmod: <ref *10> ƒ chmod2(length: 0) {},
+    chmodSync: <ref *11> ƒ bound chmodSync(length: 2) {},
+    chown: <ref *12> ƒ chown2(length: 0) {},
+    chownSync: <ref *13> ƒ bound chownSync(length: 3) {},
+    close: <ref *14> ƒ close2(length: 0) {},
+    closeSync: <ref *15> ƒ bound closeSync(length: 1) {},
+    constants: <ref *16> {
         F_OK: 0,
         R_OK: 4,
         W_OK: 2,
@@ -4000,123 +4424,205 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         S_IXOTH: 1,
         UV_FS_O_FILEMAP: 49152
     },
-    copyFile: ƒ copyFile2(length: 0) {},
-    copyFileSync: ƒ bound copyFileSync(length: 3) {},
-    createReadStream: ƒ createReadStream(length: 2) {},
-    createWriteStream: ƒ createWriteStream(length: 2) {},
-    Dirent: ƒ Dirent(length: 0) {},
-    exists: ƒ exists2(length: 0) {},
-    existsSync: ƒ bound existsSync(length: 1) {},
-    fchmod: ƒ fchmod2(length: 0) {},
-    fchmodSync: ƒ bound fchmodSync(length: 2) {},
-    fchown: ƒ fchown2(length: 0) {},
-    fchownSync: ƒ bound fchownSync(length: 3) {},
-    fstat: ƒ fstat2(length: 0) {},
-    fstatSync: ƒ bound fstatSync(length: 1) {},
-    fsync: ƒ fsync2(length: 0) {},
-    fsyncSync: ƒ bound fsyncSync(length: 1) {},
-    ftruncate: ƒ ftruncate2(length: 0) {},
-    ftruncateSync: ƒ bound ftruncateSync(length: 1) {},
-    futimes: ƒ futimes2(length: 0) {},
-    futimesSync: ƒ bound futimesSync(length: 3) {},
-    lchmod: ƒ lchmod2(length: 0) {},
-    lchmodSync: ƒ bound lchmodSync(length: 2) {},
-    lchown: ƒ lchown2(length: 0) {},
-    lchownSync: ƒ bound lchownSync(length: 3) {},
-    link: ƒ link2(length: 0) {},
-    linkSync: ƒ bound linkSync(length: 2) {},
-    lstat: ƒ lstat2(length: 0) {},
-    lstatSync: ƒ bound lstatSync(length: 1) {},
-    lutimes: ƒ lutimes2(length: 0) {},
-    lutimesSync: ƒ bound lutimesSync(length: 3) {},
-    mkdir: ƒ mkdir2(length: 0) {},
-    mkdirSync: ƒ bound mkdirSync(length: 2) {},
-    mkdtemp: ƒ mkdtemp2(length: 0) {},
-    mkdtempSync: ƒ bound mkdtempSync(length: 2) {},
-    open: ƒ open2(length: 0) {},
-    openSync: ƒ bound openSync(length: 3) {},
-    promises: {
-        access: async ƒ (length: 0) {},
-        appendFile: async ƒ (length: 0) {},
-        close: async ƒ (length: 0) {},
-        copyFile: async ƒ (length: 0) {},
-        exists: async ƒ (length: 0) {},
-        chown: async ƒ (length: 0) {},
-        chmod: async ƒ (length: 0) {},
-        fchmod: async ƒ (length: 0) {},
-        fchown: async ƒ (length: 0) {},
-        fstat: async ƒ (length: 0) {},
-        fsync: async ƒ (length: 0) {},
-        ftruncate: async ƒ (length: 0) {},
-        futimes: async ƒ (length: 0) {},
-        lchmod: async ƒ (length: 0) {},
-        lchown: async ƒ (length: 0) {},
-        link: async ƒ (length: 0) {},
-        lstat: async ƒ (length: 0) {},
-        mkdir: async ƒ (length: 0) {},
-        mkdtemp: async ƒ (length: 0) {},
-        open: async ƒ (length: 0) {},
-        read: async ƒ (length: 0) {},
-        write: async ƒ (length: 0) {},
-        readdir: async ƒ (length: 0) {},
-        readFile: async ƒ (length: 0) {},
-        writeFile: async ƒ (length: 0) {},
-        readlink: async ƒ (length: 0) {},
-        realpath: async ƒ (length: 0) {},
-        rename: async ƒ (length: 0) {},
-        stat: async ƒ (length: 0) {},
-        symlink: async ƒ (length: 0) {},
-        truncate: async ƒ (length: 0) {},
-        unlink: async ƒ (length: 0) {},
-        utimes: async ƒ (length: 0) {},
-        lutimes: async ƒ (length: 0) {},
-        rm: async ƒ (length: 0) {},
-        rmdir: async ƒ (length: 0) {},
-        constants: [Circular: *12],
-        Symbol(CommonJS): 0
+    copyFile: <ref *17> ƒ copyFile2(length: 0) {},
+    copyFileSync: <ref *18> ƒ bound copyFileSync(length: 3) {},
+    createReadStream: <ref *19> ƒ createReadStream(length: 2) {},
+    createWriteStream: <ref *20> ƒ createWriteStream(length: 2) {},
+    default: {
+        access: [Circular: *6],
+        accessSync: [Circular: *7],
+        appendFile: [Circular: *8],
+        appendFileSync: [Circular: *9],
+        chmod: [Circular: *10],
+        chmodSync: [Circular: *11],
+        chown: [Circular: *12],
+        chownSync: [Circular: *13],
+        close: [Circular: *14],
+        closeSync: [Circular: *15],
+        constants: [Circular: *16],
+        copyFile: [Circular: *17],
+        copyFileSync: [Circular: *18],
+        createReadStream: [Circular: *19],
+        createWriteStream: [Circular: *20],
+        Dirent: [Circular: *2],
+        exists: <ref *22> ƒ exists2(length: 0) {},
+        existsSync: <ref *23> ƒ bound existsSync(length: 1) {},
+        fchmod: <ref *24> ƒ fchmod2(length: 0) {},
+        fchmodSync: <ref *25> ƒ bound fchmodSync(length: 2) {},
+        fchown: <ref *26> ƒ fchown2(length: 0) {},
+        fchownSync: <ref *27> ƒ bound fchownSync(length: 3) {},
+        fstat: <ref *28> ƒ fstat2(length: 0) {},
+        fstatSync: <ref *29> ƒ bound fstatSync(length: 1) {},
+        fsync: <ref *30> ƒ fsync2(length: 0) {},
+        fsyncSync: <ref *31> ƒ bound fsyncSync(length: 1) {},
+        ftruncate: <ref *32> ƒ ftruncate2(length: 0) {},
+        ftruncateSync: <ref *33> ƒ bound ftruncateSync(length: 1) {},
+        futimes: <ref *34> ƒ futimes2(length: 0) {},
+        futimesSync: <ref *35> ƒ bound futimesSync(length: 3) {},
+        lchmod: <ref *36> ƒ lchmod2(length: 0) {},
+        lchmodSync: <ref *37> ƒ bound lchmodSync(length: 2) {},
+        lchown: <ref *38> ƒ lchown2(length: 0) {},
+        lchownSync: <ref *39> ƒ bound lchownSync(length: 3) {},
+        link: <ref *40> ƒ link2(length: 0) {},
+        linkSync: <ref *41> ƒ bound linkSync(length: 2) {},
+        lstat: <ref *42> ƒ lstat2(length: 0) {},
+        lstatSync: <ref *43> ƒ bound lstatSync(length: 1) {},
+        lutimes: <ref *44> ƒ lutimes2(length: 0) {},
+        lutimesSync: <ref *45> ƒ bound lutimesSync(length: 3) {},
+        mkdir: <ref *46> ƒ mkdir2(length: 0) {},
+        mkdirSync: <ref *47> ƒ bound mkdirSync(length: 2) {},
+        mkdtemp: <ref *48> ƒ mkdtemp2(length: 0) {},
+        mkdtempSync: <ref *49> ƒ bound mkdtempSync(length: 2) {},
+        open: <ref *50> ƒ open2(length: 0) {},
+        openSync: <ref *51> ƒ bound openSync(length: 3) {},
+        promises: <ref *52> {
+            access: async ƒ (length: 0) {},
+            appendFile: async ƒ (length: 0) {},
+            close: async ƒ (length: 0) {},
+            copyFile: async ƒ (length: 0) {},
+            exists: async ƒ (length: 0) {},
+            chown: async ƒ (length: 0) {},
+            chmod: async ƒ (length: 0) {},
+            fchmod: async ƒ (length: 0) {},
+            fchown: async ƒ (length: 0) {},
+            fstat: async ƒ (length: 0) {},
+            fsync: async ƒ (length: 0) {},
+            ftruncate: async ƒ (length: 0) {},
+            futimes: async ƒ (length: 0) {},
+            lchmod: async ƒ (length: 0) {},
+            lchown: async ƒ (length: 0) {},
+            link: async ƒ (length: 0) {},
+            lstat: async ƒ (length: 0) {},
+            mkdir: async ƒ (length: 0) {},
+            mkdtemp: async ƒ (length: 0) {},
+            open: async ƒ (length: 0) {},
+            read: async ƒ (length: 0) {},
+            write: async ƒ (length: 0) {},
+            readdir: async ƒ (length: 0) {},
+            readFile: async ƒ (length: 0) {},
+            writeFile: async ƒ (length: 0) {},
+            readlink: async ƒ (length: 0) {},
+            realpath: async ƒ (length: 0) {},
+            rename: async ƒ (length: 0) {},
+            stat: async ƒ (length: 0) {},
+            symlink: async ƒ (length: 0) {},
+            truncate: async ƒ (length: 0) {},
+            unlink: async ƒ (length: 0) {},
+            utimes: async ƒ (length: 0) {},
+            lutimes: async ƒ (length: 0) {},
+            rm: async ƒ (length: 0) {},
+            rmdir: async ƒ (length: 0) {},
+            watch: ƒ H(length: 1) {},
+            constants: [Circular: *16],
+            Symbol(CommonJS): 0
+        },
+        read: <ref *90> ƒ read2(length: 0) {},
+        readFile: <ref *91> ƒ readFile2(length: 0) {},
+        readFileSync: <ref *92> ƒ bound readFileSync(length: 2) {},
+        readSync: <ref *93> ƒ bound readSync(length: 5) {},
+        readdir: <ref *94> ƒ readdir2(length: 0) {},
+        readdirSync: <ref *95> ƒ bound readdirSync(length: 2) {},
+        readlink: <ref *96> ƒ readlink2(length: 0) {},
+        readlinkSync: <ref *97> ƒ bound readlinkSync(length: 2) {},
+        realpath: <ref *98> ƒ realpath2(length: 0) {
+            native: [Circular: *98]
+        },
+        realpathSync: <ref *99> ƒ bound realpathSync(length: 2) {
+            native: [Circular: *99]
+        },
+        rename: <ref *100> ƒ rename2(length: 0) {},
+        renameSync: <ref *101> ƒ bound renameSync(length: 2) {},
+        rm: <ref *102> ƒ rm2(length: 0) {},
+        rmSync: <ref *103> ƒ bound rmSync(length: 2) {},
+        rmdir: <ref *104> ƒ rmdir2(length: 0) {},
+        rmdirSync: <ref *105> ƒ bound rmdirSync(length: 2) {},
+        stat: <ref *106> ƒ stat2(length: 0) {},
+        statSync: <ref *107> ƒ bound statSync(length: 1) {},
+        Stats: [Circular: *4],
+        symlink: <ref *108> ƒ symlink2(length: 0) {},
+        symlinkSync: <ref *109> ƒ bound symlinkSync(length: 3) {},
+        truncate: <ref *110> ƒ truncate2(length: 0) {},
+        truncateSync: <ref *111> ƒ bound truncateSync(length: 2) {},
+        unlink: <ref *112> ƒ unlink2(length: 0) {},
+        unlinkSync: <ref *113> ƒ bound unlinkSync(length: 1) {},
+        utimes: <ref *114> ƒ utimes2(length: 0) {},
+        utimesSync: <ref *115> ƒ bound utimesSync(length: 3) {},
+        write: <ref *116> ƒ write2(length: 0) {},
+        writeFile: <ref *117> ƒ writeFile2(length: 0) {},
+        writeFileSync: <ref *118> ƒ bound writeFileSync(length: 3) {},
+        writeSync: <ref *119> ƒ bound writeSync(length: 5) {},
+        WriteStream: [Circular: *5],
+        ReadStream: [Circular: *3],
+        watch: <ref *120> ƒ watch2(length: 3) {},
+        FSWatcher: class FSWatcher extends EventEmitter {},
+        Symbol(CommonJS): 0,
+        Symbol(::bunternal::): {
+            ReadStreamClass: class ReadStream2 extends Stream._getNativeReadableStreamPrototype(2, Stream.Readable) {},
+            WriteStreamClass: class WriteStream2 extends Stream.NativeWritable {}
+        }
     },
-    read: ƒ read2(length: 0) {},
-    readFile: ƒ readFile2(length: 0) {},
-    readFileSync: ƒ bound readFileSync(length: 2) {},
-    readSync: ƒ bound readSync(length: 5) {},
-    readdir: ƒ readdir2(length: 0) {},
-    readdirSync: ƒ bound readdirSync(length: 2) {},
-    readlink: ƒ readlink2(length: 0) {},
-    readlinkSync: ƒ bound readlinkSync(length: 2) {},
-    realpath: <ref *93> ƒ realpath2(length: 0) {
-        native: [Circular: *93]
-    },
-    realpathSync: <ref *94> ƒ bound realpathSync(length: 2) {
-        native: [Circular: *94]
-    },
-    rename: ƒ rename2(length: 0) {},
-    renameSync: ƒ bound renameSync(length: 2) {},
-    rm: ƒ rm2(length: 0) {},
-    rmSync: ƒ bound rmSync(length: 2) {},
-    rmdir: ƒ rmdir2(length: 0) {},
-    rmdirSync: ƒ bound rmdirSync(length: 2) {},
-    stat: ƒ stat2(length: 0) {},
-    statSync: ƒ bound statSync(length: 1) {},
-    Stats: ƒ Stats(length: 0) {},
-    symlink: ƒ symlink2(length: 0) {},
-    symlinkSync: ƒ bound symlinkSync(length: 3) {},
-    truncate: ƒ truncate2(length: 0) {},
-    truncateSync: ƒ bound truncateSync(length: 2) {},
-    unlink: ƒ unlink2(length: 0) {},
-    unlinkSync: ƒ bound unlinkSync(length: 1) {},
-    utimes: ƒ utimes2(length: 0) {},
-    utimesSync: ƒ bound utimesSync(length: 3) {},
-    write: ƒ write2(length: 0) {},
-    writeFile: ƒ writeFile2(length: 0) {},
-    writeFileSync: ƒ bound writeFileSync(length: 3) {},
-    writeSync: ƒ bound writeSync(length: 5) {},
-    WriteStream: ƒ WriteStream(length: 1) {},
-    ReadStream: ƒ ReadStream(length: 2) {},
-    Symbol(CommonJS): 0,
-    Symbol(::bunternal::): {
-        ReadStreamClass: class ReadStream2 extends NativeReadable {},
-        WriteStreamClass: class WriteStream2 extends NativeWritable {}
-    }
+    exists: [Circular: *22],
+    existsSync: [Circular: *23],
+    fchmod: [Circular: *24],
+    fchmodSync: [Circular: *25],
+    fchown: [Circular: *26],
+    fchownSync: [Circular: *27],
+    fstat: [Circular: *28],
+    fstatSync: [Circular: *29],
+    fsync: [Circular: *30],
+    fsyncSync: [Circular: *31],
+    ftruncate: [Circular: *32],
+    ftruncateSync: [Circular: *33],
+    futimes: [Circular: *34],
+    futimesSync: [Circular: *35],
+    lchmod: [Circular: *36],
+    lchmodSync: [Circular: *37],
+    lchown: [Circular: *38],
+    lchownSync: [Circular: *39],
+    link: [Circular: *40],
+    linkSync: [Circular: *41],
+    lstat: [Circular: *42],
+    lstatSync: [Circular: *43],
+    lutimes: [Circular: *44],
+    lutimesSync: [Circular: *45],
+    mkdir: [Circular: *46],
+    mkdirSync: [Circular: *47],
+    mkdtemp: [Circular: *48],
+    mkdtempSync: [Circular: *49],
+    open: [Circular: *50],
+    openSync: [Circular: *51],
+    promises: [Circular: *52],
+    read: [Circular: *90],
+    readFile: [Circular: *91],
+    readFileSync: [Circular: *92],
+    readSync: [Circular: *93],
+    readdir: [Circular: *94],
+    readdirSync: [Circular: *95],
+    readlink: [Circular: *96],
+    readlinkSync: [Circular: *97],
+    realpath: [Circular: *98],
+    realpathSync: [Circular: *99],
+    rename: [Circular: *100],
+    renameSync: [Circular: *101],
+    rm: [Circular: *102],
+    rmSync: [Circular: *103],
+    rmdir: [Circular: *104],
+    rmdirSync: [Circular: *105],
+    stat: [Circular: *106],
+    statSync: [Circular: *107],
+    symlink: [Circular: *108],
+    symlinkSync: [Circular: *109],
+    truncate: [Circular: *110],
+    truncateSync: [Circular: *111],
+    unlink: [Circular: *112],
+    unlinkSync: [Circular: *113],
+    utimes: [Circular: *114],
+    utimesSync: [Circular: *115],
+    watch: [Circular: *120],
+    write: [Circular: *116],
+    writeFile: [Circular: *117],
+    writeFileSync: [Circular: *118],
+    writeSync: [Circular: *119]
 }
 ```
 
@@ -4256,43 +4762,12 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    access: async ƒ (length: 0) {},
-    appendFile: async ƒ (length: 0) {},
-    close: async ƒ (length: 0) {},
-    copyFile: async ƒ (length: 0) {},
-    exists: async ƒ (length: 0) {},
-    chown: async ƒ (length: 0) {},
-    chmod: async ƒ (length: 0) {},
-    fchmod: async ƒ (length: 0) {},
-    fchown: async ƒ (length: 0) {},
-    fstat: async ƒ (length: 0) {},
-    fsync: async ƒ (length: 0) {},
-    ftruncate: async ƒ (length: 0) {},
-    futimes: async ƒ (length: 0) {},
-    lchmod: async ƒ (length: 0) {},
-    lchown: async ƒ (length: 0) {},
-    link: async ƒ (length: 0) {},
-    lstat: async ƒ (length: 0) {},
-    mkdir: async ƒ (length: 0) {},
-    mkdtemp: async ƒ (length: 0) {},
-    open: async ƒ (length: 0) {},
-    read: async ƒ (length: 0) {},
-    write: async ƒ (length: 0) {},
-    readdir: async ƒ (length: 0) {},
-    readFile: async ƒ (length: 0) {},
-    writeFile: async ƒ (length: 0) {},
-    readlink: async ƒ (length: 0) {},
-    realpath: async ƒ (length: 0) {},
-    rename: async ƒ (length: 0) {},
-    stat: async ƒ (length: 0) {},
-    symlink: async ƒ (length: 0) {},
-    truncate: async ƒ (length: 0) {},
-    unlink: async ƒ (length: 0) {},
-    utimes: async ƒ (length: 0) {},
-    lutimes: async ƒ (length: 0) {},
-    rm: async ƒ (length: 0) {},
-    rmdir: async ƒ (length: 0) {},
-    constants: {
+    access: <ref *2> async ƒ (length: 0) {},
+    appendFile: <ref *3> async ƒ (length: 0) {},
+    chmod: <ref *4> async ƒ (length: 0) {},
+    chown: <ref *5> async ƒ (length: 0) {},
+    close: <ref *6> async ƒ (length: 0) {},
+    constants: <ref *7> {
         F_OK: 0,
         R_OK: 4,
         W_OK: 2,
@@ -4338,7 +4813,79 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         S_IXOTH: 1,
         UV_FS_O_FILEMAP: 49152
     },
-    Symbol(CommonJS): 0
+    copyFile: <ref *8> async ƒ (length: 0) {},
+    default: {
+        access: [Circular: *2],
+        appendFile: [Circular: *3],
+        close: [Circular: *6],
+        copyFile: [Circular: *8],
+        exists: <ref *10> async ƒ (length: 0) {},
+        chown: [Circular: *5],
+        chmod: [Circular: *4],
+        fchmod: <ref *11> async ƒ (length: 0) {},
+        fchown: <ref *12> async ƒ (length: 0) {},
+        fstat: <ref *13> async ƒ (length: 0) {},
+        fsync: <ref *14> async ƒ (length: 0) {},
+        ftruncate: <ref *15> async ƒ (length: 0) {},
+        futimes: <ref *16> async ƒ (length: 0) {},
+        lchmod: <ref *17> async ƒ (length: 0) {},
+        lchown: <ref *18> async ƒ (length: 0) {},
+        link: <ref *19> async ƒ (length: 0) {},
+        lstat: <ref *20> async ƒ (length: 0) {},
+        mkdir: <ref *21> async ƒ (length: 0) {},
+        mkdtemp: <ref *22> async ƒ (length: 0) {},
+        open: <ref *23> async ƒ (length: 0) {},
+        read: <ref *24> async ƒ (length: 0) {},
+        write: <ref *25> async ƒ (length: 0) {},
+        readdir: <ref *26> async ƒ (length: 0) {},
+        readFile: <ref *27> async ƒ (length: 0) {},
+        writeFile: <ref *28> async ƒ (length: 0) {},
+        readlink: <ref *29> async ƒ (length: 0) {},
+        realpath: <ref *30> async ƒ (length: 0) {},
+        rename: <ref *31> async ƒ (length: 0) {},
+        stat: <ref *32> async ƒ (length: 0) {},
+        symlink: <ref *33> async ƒ (length: 0) {},
+        truncate: <ref *34> async ƒ (length: 0) {},
+        unlink: <ref *35> async ƒ (length: 0) {},
+        utimes: <ref *36> async ƒ (length: 0) {},
+        lutimes: <ref *37> async ƒ (length: 0) {},
+        rm: <ref *38> async ƒ (length: 0) {},
+        rmdir: <ref *39> async ƒ (length: 0) {},
+        watch: <ref *40> ƒ H(length: 1) {},
+        constants: [Circular: *7],
+        Symbol(CommonJS): 0
+    },
+    exists: [Circular: *10],
+    fchmod: [Circular: *11],
+    fchown: [Circular: *12],
+    fstat: [Circular: *13],
+    fsync: [Circular: *14],
+    ftruncate: [Circular: *15],
+    futimes: [Circular: *16],
+    lchmod: [Circular: *17],
+    lchown: [Circular: *18],
+    link: [Circular: *19],
+    lstat: [Circular: *20],
+    lutimes: [Circular: *37],
+    mkdir: [Circular: *21],
+    mkdtemp: [Circular: *22],
+    open: [Circular: *23],
+    read: [Circular: *24],
+    readFile: [Circular: *27],
+    readdir: [Circular: *26],
+    readlink: [Circular: *29],
+    realpath: [Circular: *30],
+    rename: [Circular: *31],
+    rm: [Circular: *38],
+    rmdir: [Circular: *39],
+    stat: [Circular: *32],
+    symlink: [Circular: *33],
+    truncate: [Circular: *34],
+    unlink: [Circular: *35],
+    utimes: [Circular: *36],
+    watch: [Circular: *40],
+    write: [Circular: *25],
+    writeFile: [Circular: *28]
 }
 ```
 
@@ -4518,9 +5065,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Agent: class Agent extends EventEmitter {},
-    Server: class Server extends EventEmitter {},
-    METHODS: [
+    Agent: <ref *2> class Agent extends EventEmitter {},
+    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    METHODS: <ref *5> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -4556,7 +5104,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    STATUS_CODES: {
+    OutgoingMessage: class OutgoingMessage extends Writable {},
+    STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -4621,20 +5170,32 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer(length: 2) {},
-    ServerResponse: class ServerResponse extends Writable {},
-    IncomingMessage: class IncomingMessage extends Readable {},
-    request: ƒ request(length: 3) {},
-    get: ƒ get(length: 3) {},
-    maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
-    [get/set] globalAgent: Agent {
-        _events: [Object: null prototype] {},
-        _eventsCount: 0,
-        _maxListeners: undefined,
-        Symbol(kCapture): false
+    Server: <ref *8> class Server extends EventEmitter {},
+    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    createServer: <ref *10> ƒ createServer(length: 2) {},
+    default: {
+        Agent: [Circular: *2],
+        Server: [Circular: *8],
+        METHODS: [Circular: *5],
+        STATUS_CODES: [Circular: *7],
+        createServer: [Circular: *10],
+        ServerResponse: [Circular: *9],
+        IncomingMessage: [Circular: *4],
+        request: <ref *12> ƒ request(length: 3) {},
+        get: <ref *13> ƒ get(length: 3) {},
+        maxHeaderSize: 16384,
+        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        [get/set] globalAgent: <ref *15> Agent {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            Symbol(kCapture): false
+        },
+        Symbol(CommonJS): 0
     },
-    Symbol(CommonJS): 0
+    get: [Circular: *13],
+    globalAgent: [Circular: *15],
+    request: [Circular: *12]
 }
 ```
 
@@ -4916,7 +5477,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    constants: {
+    Http2ServerRequest: <ref *2> ƒ Http2ServerRequest(length: 0) {},
+    Http2ServerResponse: <ref *3> ƒ Http2ServerResponse(length: 0) {},
+    connect: <ref *4> ƒ connect(length: 0) {},
+    constants: <ref *5> {
         NGHTTP2_ERR_FRAME_SIZE_ERROR: -522,
         NGHTTP2_SESSION_SERVER: 0,
         NGHTTP2_SESSION_CLIENT: 1,
@@ -5158,16 +5722,25 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         HTTP_STATUS_NOT_EXTENDED: 510,
         HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED: 511
     },
-    createServer: ƒ createServer(length: 0) {},
-    createSecureServer: ƒ createSecureServer(length: 0) {},
-    getDefaultSettings: ƒ getDefaultSettings(length: 0) {},
-    getPackedSettings: ƒ getPackedSettings(length: 0) {},
-    getUnpackedSettings: ƒ getUnpackedSettings(length: 0) {},
-    sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders),
-    Http2ServerRequest: ƒ Http2ServerRequest(length: 0) {},
-    Http2ServerResponse: ƒ Http2ServerResponse(length: 0) {},
-    connect: ƒ connect(length: 0) {},
-    Symbol(CommonJS): 0
+    createSecureServer: <ref *6> ƒ createSecureServer(length: 0) {},
+    createServer: <ref *7> ƒ createServer(length: 0) {},
+    default: {
+        constants: [Circular: *5],
+        createServer: [Circular: *7],
+        createSecureServer: [Circular: *6],
+        getDefaultSettings: <ref *9> ƒ getDefaultSettings(length: 0) {},
+        getPackedSettings: <ref *10> ƒ getPackedSettings(length: 0) {},
+        getUnpackedSettings: <ref *11> ƒ getUnpackedSettings(length: 0) {},
+        sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders),
+        Http2ServerRequest: [Circular: *2],
+        Http2ServerResponse: [Circular: *3],
+        connect: [Circular: *4],
+        Symbol(CommonJS): 0
+    },
+    getDefaultSettings: [Circular: *9],
+    getPackedSettings: [Circular: *10],
+    getUnpackedSettings: [Circular: *11],
+    sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders)
 }
 ```
 
@@ -5229,9 +5802,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Agent: class Agent extends EventEmitter {},
-    Server: class Server extends EventEmitter {},
-    METHODS: [
+    Agent: <ref *2> class Agent extends EventEmitter {},
+    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    METHODS: <ref *5> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -5267,7 +5841,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    STATUS_CODES: {
+    OutgoingMessage: class OutgoingMessage extends Writable {},
+    STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -5332,20 +5907,32 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    createServer: ƒ createServer(length: 2) {},
-    ServerResponse: class ServerResponse extends Writable {},
-    IncomingMessage: class IncomingMessage extends Readable {},
-    request: ƒ request(length: 3) {},
-    get: ƒ get(length: 3) {},
-    maxHeaderSize: 16384,
-    setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
-    [get/set] globalAgent: Agent {
-        _events: [Object: null prototype] {},
-        _eventsCount: 0,
-        _maxListeners: undefined,
-        Symbol(kCapture): false
+    Server: <ref *8> class Server extends EventEmitter {},
+    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    createServer: <ref *10> ƒ createServer(length: 2) {},
+    default: {
+        Agent: [Circular: *2],
+        Server: [Circular: *8],
+        METHODS: [Circular: *5],
+        STATUS_CODES: [Circular: *7],
+        createServer: [Circular: *10],
+        ServerResponse: [Circular: *9],
+        IncomingMessage: [Circular: *4],
+        request: <ref *12> ƒ request(length: 3) {},
+        get: <ref *13> ƒ get(length: 3) {},
+        maxHeaderSize: 16384,
+        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        [get/set] globalAgent: <ref *15> Agent {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            Symbol(kCapture): false
+        },
+        Symbol(CommonJS): 0
     },
-    Symbol(CommonJS): 0
+    get: [Circular: *13],
+    globalAgent: [Circular: *15],
+    request: [Circular: *12]
 }
 ```
 
@@ -5402,74 +5989,82 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    console: {
-        debug: <ref *3> ƒ debug(length: 0) {},
-        error: <ref *4> ƒ error(length: 0) {},
-        log: <ref *5> ƒ log(length: 0) {},
-        info: <ref *6> ƒ info(length: 0) {},
-        warn: <ref *7> ƒ warn(length: 0) {},
-        clear: <ref *8> ƒ clear(length: 0) {},
-        dir: <ref *9> ƒ dir(length: 0) {},
-        dirxml: <ref *10> ƒ dirxml(length: 0) {},
-        table: <ref *11> ƒ table(length: 0) {},
-        trace: <ref *12> ƒ trace(length: 0) {},
-        assert: <ref *13> ƒ assert(length: 0) {},
-        count: <ref *14> ƒ count(length: 0) {},
-        countReset: <ref *15> ƒ countReset(length: 0) {},
-        profile: <ref *16> ƒ profile(length: 0) {},
-        profileEnd: <ref *17> ƒ profileEnd(length: 0) {},
-        time: <ref *18> ƒ time(length: 0) {},
-        timeLog: <ref *19> ƒ timeLog(length: 0) {},
-        timeEnd: <ref *20> ƒ timeEnd(length: 0) {},
-        timeStamp: <ref *21> ƒ timeStamp(length: 0) {},
-        takeHeapSnapshot: <ref *22> ƒ takeHeapSnapshot(length: 0) {},
-        group: <ref *23> ƒ group(length: 0) {},
-        groupCollapsed: <ref *24> ƒ groupCollapsed(length: 0) {},
-        groupEnd: <ref *25> ƒ groupEnd(length: 0) {},
-        record: <ref *26> ƒ record(length: 0) {},
-        recordEnd: <ref *27> ƒ recordEnd(length: 0) {},
-        screenshot: <ref *28> ƒ screenshot(length: 0) {},
-        write: <ref *29> ƒ write(length: 1) {},
+    Session: <ref *2> class Session extends EventEmitter {},
+    close: <ref *3> ƒ ::bunternal::(length: 0) {},
+    console: <ref *4> {
+        debug: <ref *5> ƒ debug(length: 0) {},
+        error: <ref *6> ƒ error(length: 0) {},
+        log: <ref *7> ƒ log(length: 0) {},
+        info: <ref *8> ƒ info(length: 0) {},
+        warn: <ref *9> ƒ warn(length: 0) {},
+        clear: <ref *10> ƒ clear(length: 0) {},
+        dir: <ref *11> ƒ dir(length: 0) {},
+        dirxml: <ref *12> ƒ dirxml(length: 0) {},
+        table: <ref *13> ƒ table(length: 0) {},
+        trace: <ref *14> ƒ trace(length: 0) {},
+        assert: <ref *15> ƒ assert(length: 0) {},
+        count: <ref *16> ƒ count(length: 0) {},
+        countReset: <ref *17> ƒ countReset(length: 0) {},
+        profile: <ref *18> ƒ profile(length: 0) {},
+        profileEnd: <ref *19> ƒ profileEnd(length: 0) {},
+        time: <ref *20> ƒ time(length: 0) {},
+        timeLog: <ref *21> ƒ timeLog(length: 0) {},
+        timeEnd: <ref *22> ƒ timeEnd(length: 0) {},
+        timeStamp: <ref *23> ƒ timeStamp(length: 0) {},
+        takeHeapSnapshot: <ref *24> ƒ takeHeapSnapshot(length: 0) {},
+        group: <ref *25> ƒ group(length: 0) {},
+        groupCollapsed: <ref *26> ƒ groupCollapsed(length: 0) {},
+        groupEnd: <ref *27> ƒ groupEnd(length: 0) {},
+        record: <ref *28> ƒ record(length: 0) {},
+        recordEnd: <ref *29> ƒ recordEnd(length: 0) {},
+        screenshot: <ref *30> ƒ screenshot(length: 0) {},
+        write: <ref *31> ƒ write(length: 1) {},
         context: {
             console: {
-                debug: [Circular: *3],
-                error: [Circular: *4],
-                log: [Circular: *5],
-                info: [Circular: *6],
-                warn: [Circular: *7],
-                clear: [Circular: *8],
-                dir: [Circular: *9],
-                dirxml: [Circular: *10],
-                table: [Circular: *11],
-                trace: [Circular: *12],
-                assert: [Circular: *13],
-                count: [Circular: *14],
-                countReset: [Circular: *15],
-                profile: [Circular: *16],
-                profileEnd: [Circular: *17],
-                time: [Circular: *18],
-                timeLog: [Circular: *19],
-                timeEnd: [Circular: *20],
-                timeStamp: [Circular: *21],
-                takeHeapSnapshot: [Circular: *22],
-                group: [Circular: *23],
-                groupCollapsed: [Circular: *24],
-                groupEnd: [Circular: *25],
-                record: [Circular: *26],
-                recordEnd: [Circular: *27],
-                screenshot: [Circular: *28],
-                write: [Circular: *29],
-                Symbol(Symbol.asyncIterator): <ref *32> ƒ [Symbol.asyncIterator](length: 0) {}
+                debug: [Circular: *5],
+                error: [Circular: *6],
+                log: [Circular: *7],
+                info: [Circular: *8],
+                warn: [Circular: *9],
+                clear: [Circular: *10],
+                dir: [Circular: *11],
+                dirxml: [Circular: *12],
+                table: [Circular: *13],
+                trace: [Circular: *14],
+                assert: [Circular: *15],
+                count: [Circular: *16],
+                countReset: [Circular: *17],
+                profile: [Circular: *18],
+                profileEnd: [Circular: *19],
+                time: [Circular: *20],
+                timeLog: [Circular: *21],
+                timeEnd: [Circular: *22],
+                timeStamp: [Circular: *23],
+                takeHeapSnapshot: [Circular: *24],
+                group: [Circular: *25],
+                groupCollapsed: [Circular: *26],
+                groupEnd: [Circular: *27],
+                record: [Circular: *28],
+                recordEnd: [Circular: *29],
+                screenshot: [Circular: *30],
+                write: [Circular: *31],
+                Symbol(Symbol.asyncIterator): <ref *34> ƒ [Symbol.asyncIterator](length: 0) {}
             }
         },
-        Symbol(Symbol.asyncIterator): [Circular: *32]
+        Symbol(Symbol.asyncIterator): [Circular: *34]
     },
-    open: ƒ ::bunternal::(length: 0) {},
-    close: ƒ ::bunternal::(length: 0) {},
-    url: ƒ ::bunternal::(length: 0) {},
-    waitForDebugger: ƒ ::bunternal::(length: 0) {},
-    Session: class Session extends EventEmitter {},
-    Symbol(CommonJS): 0
+    default: {
+        console: [Circular: *4],
+        open: <ref *36> ƒ ::bunternal::(length: 0) {},
+        close: [Circular: *3],
+        url: <ref *37> ƒ ::bunternal::(length: 0) {},
+        waitForDebugger: <ref *38> ƒ ::bunternal::(length: 0) {},
+        Session: [Circular: *2],
+        Symbol(CommonJS): 0
+    },
+    open: [Circular: *36],
+    url: [Circular: *37],
+    waitForDebugger: [Circular: *38]
 }
 ```
 
@@ -5552,7 +6147,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         ],
         _cache: <ref *4> [Object: null prototype] {},
         _pathCache: <ref *5> [Object: null prototype] {
-            /tmp/fs-fixture-1687133604372-1/module.mjs: "/tmp/fs-fixture-1687133604372-1/module.mjs"
+            /tmp/fs-fixture-1687738502423-1/module.mjs: "/tmp/fs-fixture-1687738502423-1/module.mjs"
         },
         _extensions: <ref *6> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -5560,9 +6155,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             .node: ƒ (length: 2) {}
         },
         globalPaths: <ref *10> [
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/bin/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.2/node_modules/pnpm/bin/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.2/node_modules/pnpm/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.2/node_modules",
             "/home/runner/setup-pnpm/node_modules/.pnpm/node_modules",
             "/home/runner/setup-pnpm/node_modules",
             "/home/runner/node_modules",
@@ -5683,29 +6278,39 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    createServer: ƒ createServer(length: 2) {},
-    Server: class Server extends EventEmitter {},
-    createConnection: <ref *4> ƒ createConnection(length: 3) {},
-    connect: [Circular: *4],
-    isIP: ƒ isIP(length: 1) {},
-    isIPv4: ƒ isIPv4(length: 1) {},
-    isIPv6: ƒ isIPv6(length: 1) {},
-    Socket: ƒ Socket(length: 1) {},
-    Symbol(CommonJS): 0,
-    Symbol(::bunternal::): class Socket2 extends Duplex {
-        Symbol(::bunsocket_serverhandlers::): {
-            data: ƒ data(length: 2) {},
-            close: ƒ close(length: 1) {},
-            end: ƒ end(length: 1) {},
-            open: ƒ open(length: 1) {},
-            handshake: ƒ handshake(length: 3) {},
-            error: ƒ error(length: 2) {},
-            timeout: ƒ timeout(length: 1) {},
-            connectError: ƒ connectError(length: 2) {},
-            drain: ƒ #Drain(length: 1) {},
-            binaryType: "buffer"
+    Server: <ref *2> class Server extends EventEmitter {},
+    Socket: <ref *3> ƒ Socket(length: 1) {},
+    connect: <ref *4> ƒ createConnection(length: 3) {},
+    createConnection: [Circular: *4],
+    createServer: <ref *5> ƒ createServer(length: 2) {},
+    default: {
+        createServer: [Circular: *5],
+        Server: [Circular: *2],
+        createConnection: [Circular: *4],
+        connect: [Circular: *4],
+        isIP: <ref *7> ƒ isIP(length: 1) {},
+        isIPv4: <ref *8> ƒ isIPv4(length: 1) {},
+        isIPv6: <ref *9> ƒ isIPv6(length: 1) {},
+        Socket: [Circular: *3],
+        Symbol(CommonJS): 0,
+        Symbol(::bunternal::): class Socket2 extends Duplex {
+            Symbol(::bunsocket_serverhandlers::): {
+                data: ƒ data(length: 2) {},
+                close: ƒ close(length: 1) {},
+                end: ƒ end(length: 1) {},
+                open: ƒ open(length: 1) {},
+                handshake: ƒ handshake(length: 3) {},
+                error: ƒ error(length: 2) {},
+                timeout: ƒ timeout(length: 1) {},
+                connectError: ƒ connectError(length: 2) {},
+                drain: ƒ #Drain(length: 1) {},
+                binaryType: "buffer"
+            }
         }
-    }
+    },
+    isIP: [Circular: *7],
+    isIPv4: [Circular: *8],
+    isIPv6: [Circular: *9]
 }
 ```
 
@@ -5933,28 +6538,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    arch: ƒ bound arch(length: 0) {},
-    cpus: ƒ bound cpus(length: 0) {},
-    endianness: ƒ bound endianness(length: 0) {},
-    freemem: ƒ bound freemem(length: 0) {},
-    getPriority: ƒ bound getPriority(length: 1) {},
-    homedir: ƒ bound homedir(length: 0) {},
-    hostname: ƒ bound hostname(length: 0) {},
-    loadavg: ƒ bound loadavg(length: 0) {},
-    networkInterfaces: ƒ bound networkInterfaces(length: 0) {},
-    platform: ƒ bound platform(length: 0) {},
-    release: ƒ bound release(length: 0) {},
-    setPriority: ƒ bound setPriority(length: 2) {},
-    tmpdir: ƒ bound tmpdir(length: 0) {},
-    totalmem: ƒ bound totalmem(length: 0) {},
-    type: ƒ bound type(length: 0) {},
-    uptime: ƒ bound uptime(length: 0) {},
-    userInfo: ƒ bound userInfo(length: 0) {},
-    version: ƒ bound version(length: 0) {},
-    machine: ƒ bound machine(length: 0) {},
-    devNull: "/dev/null",
     EOL: "\n",
-    constants: {
+    arch: <ref *2> ƒ bound arch(length: 0) {},
+    constants: <ref *3> {
         errno: {
             E2BIG: 7,
             EACCES: 13,
@@ -6086,7 +6672,50 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         },
         UV_UDP_REUSEADDR: 4
     },
-    Symbol(CommonJS): 0
+    cpus: <ref *8> ƒ bound cpus(length: 0) {},
+    default: {
+        arch: [Circular: *2],
+        cpus: [Circular: *8],
+        endianness: <ref *10> ƒ bound endianness(length: 0) {},
+        freemem: <ref *11> ƒ bound freemem(length: 0) {},
+        getPriority: <ref *12> ƒ bound getPriority(length: 1) {},
+        homedir: <ref *13> ƒ bound homedir(length: 0) {},
+        hostname: <ref *14> ƒ bound hostname(length: 0) {},
+        loadavg: <ref *15> ƒ bound loadavg(length: 0) {},
+        networkInterfaces: <ref *16> ƒ bound networkInterfaces(length: 0) {},
+        platform: <ref *17> ƒ bound platform(length: 0) {},
+        release: <ref *18> ƒ bound release(length: 0) {},
+        setPriority: <ref *19> ƒ bound setPriority(length: 2) {},
+        tmpdir: <ref *20> ƒ bound tmpdir(length: 0) {},
+        totalmem: <ref *21> ƒ bound totalmem(length: 0) {},
+        type: <ref *22> ƒ bound type(length: 0) {},
+        uptime: <ref *23> ƒ bound uptime(length: 0) {},
+        userInfo: <ref *24> ƒ bound userInfo(length: 0) {},
+        version: <ref *25> ƒ bound version(length: 0) {},
+        machine: <ref *26> ƒ bound machine(length: 0) {},
+        devNull: "/dev/null",
+        EOL: "\n",
+        constants: [Circular: *3],
+        Symbol(CommonJS): 0
+    },
+    devNull: "/dev/null",
+    endianness: [Circular: *10],
+    freemem: [Circular: *11],
+    getPriority: [Circular: *12],
+    homedir: [Circular: *13],
+    hostname: [Circular: *14],
+    loadavg: [Circular: *15],
+    machine: [Circular: *26],
+    networkInterfaces: [Circular: *16],
+    platform: [Circular: *17],
+    release: [Circular: *18],
+    setPriority: [Circular: *19],
+    tmpdir: [Circular: *20],
+    totalmem: [Circular: *21],
+    type: [Circular: *22],
+    uptime: [Circular: *23],
+    userInfo: [Circular: *24],
+    version: [Circular: *25]
 }
 ```
 
@@ -6155,55 +6784,74 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-<ref *1> [Object: null prototype] {
-    basename: ƒ bound basename(length: 0) {},
-    dirname: ƒ bound dirname(length: 0) {},
-    extname: ƒ bound extname(length: 0) {},
-    format: ƒ bound format(length: 0) {},
-    isAbsolute: ƒ bound isAbsolute(length: 0) {},
-    join: ƒ bound join(length: 0) {},
-    normalize: ƒ bound normalize(length: 0) {},
-    parse: ƒ bound parse(length: 0) {},
-    relative: ƒ bound relative(length: 0) {},
-    resolve: ƒ bound resolve(length: 0) {},
-    toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
-    sep: "/",
-    delimiter: ":",
-    default: [Circular: *1],
-    win32: <ref *13> [Object: null prototype] {
-        basename: ƒ bound basename(length: 0) {},
-        dirname: ƒ bound dirname(length: 0) {},
-        extname: ƒ bound extname(length: 0) {},
-        format: ƒ bound format(length: 0) {},
-        isAbsolute: ƒ bound isAbsolute(length: 0) {},
-        join: ƒ bound join(length: 0) {},
-        normalize: ƒ bound normalize(length: 0) {},
-        parse: ƒ bound parse(length: 0) {},
-        relative: ƒ bound relative(length: 0) {},
-        resolve: ƒ bound resolve(length: 0) {},
-        toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
-        sep: "\\",
-        delimiter: ";",
-        default: [Circular: *13]
-    },
-    posix: <ref *25> [Object: null prototype] {
-        basename: ƒ bound basename(length: 0) {},
-        dirname: ƒ bound dirname(length: 0) {},
-        extname: ƒ bound extname(length: 0) {},
-        format: ƒ bound format(length: 0) {},
-        isAbsolute: ƒ bound isAbsolute(length: 0) {},
-        join: ƒ bound join(length: 0) {},
-        normalize: ƒ bound normalize(length: 0) {},
-        parse: ƒ bound parse(length: 0) {},
-        relative: ƒ bound relative(length: 0) {},
-        resolve: ƒ bound resolve(length: 0) {},
-        toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
+{
+    __esModule: undefined,
+    basename: <ref *2> ƒ bound basename(length: 0) {},
+    createModule: ƒ m(length: 1) {},
+    default: <ref *4> [Object: null prototype] {
+        basename: [Circular: *2],
+        dirname: <ref *5> ƒ bound dirname(length: 0) {},
+        extname: <ref *6> ƒ bound extname(length: 0) {},
+        format: <ref *7> ƒ bound format(length: 0) {},
+        isAbsolute: <ref *8> ƒ bound isAbsolute(length: 0) {},
+        join: <ref *9> ƒ bound join(length: 0) {},
+        normalize: <ref *10> ƒ bound normalize(length: 0) {},
+        parse: <ref *11> ƒ bound parse(length: 0) {},
+        relative: <ref *12> ƒ bound relative(length: 0) {},
+        resolve: <ref *13> ƒ bound resolve(length: 0) {},
+        toNamespacedPath: <ref *14> ƒ bound toNamespacedPath(length: 0) {},
         sep: "/",
         delimiter: ":",
-        default: [Circular: *25]
+        default: [Circular: *4],
+        win32: <ref *15> [Object: null prototype] {
+            basename: ƒ bound basename(length: 0) {},
+            dirname: ƒ bound dirname(length: 0) {},
+            extname: ƒ bound extname(length: 0) {},
+            format: ƒ bound format(length: 0) {},
+            isAbsolute: ƒ bound isAbsolute(length: 0) {},
+            join: ƒ bound join(length: 0) {},
+            normalize: ƒ bound normalize(length: 0) {},
+            parse: ƒ bound parse(length: 0) {},
+            relative: ƒ bound relative(length: 0) {},
+            resolve: ƒ bound resolve(length: 0) {},
+            toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
+            sep: "\\",
+            delimiter: ";",
+            default: [Circular: *15]
+        },
+        posix: <ref *27> [Object: null prototype] {
+            basename: ƒ bound basename(length: 0) {},
+            dirname: ƒ bound dirname(length: 0) {},
+            extname: ƒ bound extname(length: 0) {},
+            format: ƒ bound format(length: 0) {},
+            isAbsolute: ƒ bound isAbsolute(length: 0) {},
+            join: ƒ bound join(length: 0) {},
+            normalize: ƒ bound normalize(length: 0) {},
+            parse: ƒ bound parse(length: 0) {},
+            relative: ƒ bound relative(length: 0) {},
+            resolve: ƒ bound resolve(length: 0) {},
+            toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
+            sep: "/",
+            delimiter: ":",
+            default: [Circular: *27]
+        },
+        __esModule: true,
+        Symbol(CommonJS): 0
     },
-    __esModule: true,
-    Symbol(CommonJS): 0
+    delimiter: ":",
+    dirname: [Circular: *5],
+    extname: [Circular: *6],
+    format: [Circular: *7],
+    isAbsolute: [Circular: *8],
+    join: [Circular: *9],
+    normalize: [Circular: *10],
+    parse: [Circular: *11],
+    posix: [Circular: *27],
+    relative: [Circular: *12],
+    resolve: [Circular: *13],
+    sep: "/",
+    toNamespacedPath: [Circular: *14],
+    win32: [Circular: *15]
 }
 ```
 
@@ -6273,20 +6921,35 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    basename: ƒ bound basename(length: 0) {},
-    dirname: ƒ bound dirname(length: 0) {},
-    extname: ƒ bound extname(length: 0) {},
-    format: ƒ bound format(length: 0) {},
-    isAbsolute: ƒ bound isAbsolute(length: 0) {},
-    join: ƒ bound join(length: 0) {},
-    normalize: ƒ bound normalize(length: 0) {},
-    parse: ƒ bound parse(length: 0) {},
-    relative: ƒ bound relative(length: 0) {},
-    resolve: ƒ bound resolve(length: 0) {},
-    toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
-    sep: "/",
+    basename: <ref *2> ƒ bound basename(length: 0) {},
+    default: {
+        basename: [Circular: *2],
+        dirname: <ref *4> ƒ bound dirname(length: 0) {},
+        extname: <ref *5> ƒ bound extname(length: 0) {},
+        format: <ref *6> ƒ bound format(length: 0) {},
+        isAbsolute: <ref *7> ƒ bound isAbsolute(length: 0) {},
+        join: <ref *8> ƒ bound join(length: 0) {},
+        normalize: <ref *9> ƒ bound normalize(length: 0) {},
+        parse: <ref *10> ƒ bound parse(length: 0) {},
+        relative: <ref *11> ƒ bound relative(length: 0) {},
+        resolve: <ref *12> ƒ bound resolve(length: 0) {},
+        toNamespacedPath: <ref *13> ƒ bound toNamespacedPath(length: 0) {},
+        sep: "/",
+        delimiter: ":",
+        Symbol(CommonJS): 0
+    },
     delimiter: ":",
-    Symbol(CommonJS): 0
+    dirname: [Circular: *4],
+    extname: [Circular: *5],
+    format: [Circular: *6],
+    isAbsolute: [Circular: *7],
+    join: [Circular: *8],
+    normalize: [Circular: *9],
+    parse: [Circular: *10],
+    relative: [Circular: *11],
+    resolve: [Circular: *12],
+    sep: "/",
+    toNamespacedPath: [Circular: *13]
 }
 ```
 
@@ -6442,13 +7105,19 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    performance: {
-        now: ƒ now(length: 0) {},
-        timeOrigin: 1687133606632.1245
+    PerformanceEntry: <ref *2> class PerformanceEntry {},
+    PerformanceNodeTiming: <ref *3> class PerformanceNodeTiming {},
+    PerformanceObserver: class PerformanceObserver {},
+    default: {
+        performance: <ref *6> {
+            now: ƒ now(length: 0) {},
+            timeOrigin: 1687738504323.5615
+        },
+        PerformanceEntry: [Circular: *2],
+        PerformanceNodeTiming: [Circular: *3],
+        Symbol(CommonJS): 0
     },
-    PerformanceEntry: class PerformanceEntry {},
-    PerformanceNodeTiming: class PerformanceNodeTiming {},
-    Symbol(CommonJS): 0
+    performance: [Circular: *6]
 }
 ```
 
@@ -6674,7 +7343,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
-        "/tmp/fs-fixture-1687133604372-1/process.mjs"
+        "/tmp/fs-fixture-1687738502423-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -7714,16 +8383,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         setgid: <ref *104> ƒ (length: 1) {},
         setuid: <ref *105> ƒ (length: 1) {},
         env: <ref *106>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_602f8543-2546-406f-a2b6-faeeaca4c37d",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_9054d545-7d81-46c5-b174-c4c25febca64",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/7.33.1 npm/? node/v18.16.0 linux x64",
+            npm_config_user_agent: "pnpm/7.33.2 npm/? node/v18.16.0 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_602f8543-2546-406f-a2b6-faeeaca4c37d",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_9054d545-7d81-46c5-b174-c4c25febca64",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
@@ -7744,29 +8413,29 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "666",
+            SYSTEMD_EXEC_PID: "669",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.5/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20230611.1",
+            ImageVersion: "20230619.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             RUNNER_USER: "runner",
             CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-            JOURNAL_STREAM: "8:17441",
+            JOURNAL_STREAM: "8:16981",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "5306446636",
+            GITHUB_RUN_ID: "5372506261",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "3c38864801162ecea862b64207bf6cee1a8a5436",
+            GITHUB_WORKFLOW_SHA: "3fe7b27267ec0db06098de46888c516e0f17b36e",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -7774,17 +8443,17 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
             GITHUB_ACTION_REPOSITORY: "",
-            npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/dist/node_modules/node-gyp/…",
+            npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.2/node_modules/pnpm/dist/node_modules/node-gyp/…",
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_14a28a65-fcfb-4a2d-979c-e64600b31217",
-            INVOCATION_ID: "a8d28a6aa1164ef9999900f11038774b",
+            RUNNER_TRACKING_ID: "github_5befdec8-3426-4d7a-82fb-f9744100058b",
+            INVOCATION_ID: "5930140b5923496ca1e9c9a9a2d559d3",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.10/x64",
             NODE: "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "26",
+            GITHUB_RUN_NUMBER: "27",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -7806,7 +8475,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             DEBIAN_FRONTEND: "noninteractive",
             GITHUB_REPOSITORY_ID: "622996871",
             GITHUB_ACTIONS: "true",
-            NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/bin/node_modules:/home/runn…",
+            STATS_NM: "true",
+            NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.2/node_modules/pnpm/bin/node_modules:/home/runn…",
             npm_package_devDependencies_fs_fixture: "^1.2.0",
             npm_lifecycle_event: "start",
             GITHUB_REF_PROTECTED: "false",
@@ -7817,7 +8487,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "3c38864801162ecea862b64207bf6cee1a8a5436",
+            GITHUB_SHA: "3fe7b27267ec0db06098de46888c516e0f17b36e",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -7825,12 +8495,12 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_602f8543-2546-406f-a2b6-faeeaca4c37d",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_9054d545-7d81-46c5-b174-c4c25febca64",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
             RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-            npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/bin/pnpm.cjs",
+            npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.2/node_modules/pnpm/bin/pnpm.cjs",
             HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
             STATS_TIS: "mining",
             GITHUB_EVENT_NAME: "schedule",
@@ -7840,8 +8510,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_602f8543-2546-406f-a2b6-faeeaca4c37d",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_9054d545-7d81-46c5-b174-c4c25febca64",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
+            STATS_EXT: "true",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
             ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
@@ -7849,17 +8520,18 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             CHROME_BIN: "/usr/bin/google-chrome",
             SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
+            STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.146+9/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_602f8543-2546-406f-a2b6-faeeaca4c37d",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_9054d545-7d81-46c5-b174-c4c25febca64",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *107> [],
-        pid: 2404,
-        ppid: 1823,
+        pid: 2453,
+        ppid: 1857,
         execPath: "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -7902,9 +8574,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *64],
     openStdin: [Circular: *54],
-    pid: 2404,
+    pid: 2453,
     platform: "linux",
-    ppid: 1823,
+    ppid: 1857,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *108],
@@ -7930,267 +8602,17 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-EventEmitter {
-    pid: 2417,
-    ppid: 1823,
-    title: "bun",
-    argv: [
-        "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1687133604372-1/process.mjs"
-    ],
-    revision: "fdb7940c4e435a5b7f5a368f4168d748baf6b5b6",
-    nextTick: ƒ nextTick(length: 1) {},
-    dlopen: ƒ dlopen(length: 1) {},
-    cwd: ƒ cwd(length: 0) {},
-    chdir: ƒ chdir(length: 0) {},
-    exit: ƒ exit(length: 0) {},
-    versions: {
-        node: "18.15.0",
-        bun: "0.6.10",
-        webkit: "60d11703a533fd694cd1d6ddda04813eecb5d69f",
-        boringssl: "b275c5ce1c88bc06f5a967026d3c0ce1df2be815",
-        libarchive: "dc321febde83dd0f31158e1be61a7aedda65e7a2",
-        mimalloc: "3c7079967a269027e438a2aac83197076d9fe09d",
-        picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-        uwebsockets: "70b1b9fc1341e8b791b42c5447f90505c2abe156",
-        zig: "0.11.0-dev.2571+31738de28",
-        zlib: "885674026394870b7e7a05b7bf1ec5eb7bd8a9c0",
-        tinycc: "2d3ad9e0d32194ad7fd867b66ebe218dcc8cb5cd",
-        lolhtml: "2eed349dcdfa4ff5c19fe7c6e501cfd687601033",
-        ares: "0e7a5dee0fbb04080750cf6eabbe89d8bae87faa",
-        usockets: "fafc241e8664243fc0c51d69684d5d02b9805134",
-        v8: "10.8.168.20-node.8",
-        uv: "1.44.2",
-        napi: "8",
-        modules: "108"
-    },
-    browser: 0,
-    exitCode: 0,
-    version: "v18.15.0",
-    isBun: 1,
-    platform: "linux",
-    arch: "x64",
-    hrtime: ƒ hrtime(length: 0) {
-        bigint: ƒ bigint(length: 0) {}
-    },
-    release: {
-        name: "bun",
-        lts: false,
-        sourceUrl: "https://github.com/oven-sh/bun/release/bun-v0.6.10/bun-linux-x64-baseline.zip",
-        headersUrl: "",
-        libUrl: ""
-    },
-    stdout: N {
-        _events: [Object: null prototype] {},
-        _eventsCount: 0,
-        _maxListeners: undefined,
-        bytesWritten: 0,
-        Symbol(kCapture): false
-    },
-    stderr: N {
-        _events: [Object: null prototype] {},
-        _eventsCount: 0,
-        _maxListeners: undefined,
-        bytesWritten: 0,
-        Symbol(kCapture): false
-    },
-    stdin: M {
-        _readableState: ReadableState {},
-        _writableState: _ {
-            objectMode: false,
-            highWaterMark: 16384,
-            finalCalled: false,
-            needDrain: false,
-            ending: false,
-            ended: false,
-            finished: false,
-            destroyed: false,
-            decodeStrings: true,
-            defaultEncoding: "utf8",
-            length: 0,
-            writing: false,
-            corked: 0,
-            sync: true,
-            bufferProcessing: false,
-            onwrite: ƒ bound f(length: 1) {},
-            writecb: null,
-            writelen: 0,
-            afterWriteTickInfo: null,
-            buffered: [],
-            bufferedIndex: 0,
-            allBuffers: true,
-            allNoop: true,
-            pendingcb: 0,
-            constructed: true,
-            prefinished: false,
-            errorEmitted: false,
-            emitClose: true,
-            autoDestroy: true,
-            errored: null,
-            closed: false,
-            closeEmitted: false,
-            Symbol(kOnFinished): []
-        },
-        allowHalfOpen: true
-    },
-    abort: ƒ abort(length: 0) {},
-    argv0: "bun",
-    execPath: "/home/runner/.bun/bin/bun",
-    execArgv: [],
-    uptime: ƒ uptime(length: 0) {},
-    umask: ƒ umask(length: 1) {},
-    binding: ƒ binding(length: 1) {},
-    config: {
-        target_defaults: {},
-        variables: {
-            v8_enable_i8n_support: 1
-        }
-    },
-    emitWarning: ƒ emitWarning(length: 1) {},
-    env: {
-        [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_602f8543-2546-406f-a2b6-faeeaca4c37d",
-        [get/set] npm_package_devDependencies__types_node: "^18.15.11",
-        [get/set] STATS_TRP: "true",
-        [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
-        [get/set] DOTNET_NOLOGO: "1",
-        [get/set] USER: "runner",
-        [get/set] npm_config_user_agent: "pnpm/7.33.1 npm/? node/v18.16.0 linux x64",
-        [get/set] CI: "true",
-        [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-        [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_602f8543-2546-406f-a2b6-faeeaca4c37d",
-        [get/set] PIPX_HOME: "/opt/pipx",
-        [get/set] npm_package_devDependencies_execa: "^7.1.1",
-        [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
-        [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
-        [get/set] SHLVL: "1",
-        [get/set] HOME: "/home/runner",
-        [get/set] RUNNER_TEMP: "/home/runner/work/_temp",
-        [get/set] GITHUB_EVENT_PATH: "/home/runner/work/_temp/_github_workflow/event.json",
-        [get/set] JAVA_HOME_11_X64: "/usr/lib/jvm/temurin-11-jdk-amd64",
-        [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
-        [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
-        [get/set] npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
-        [get/set] GRADLE_HOME: "/usr/share/gradle-8.1.1",
-        [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        [get/set] STATS_RDCL: "true",
-        [get/set] GITHUB_RETENTION_DAYS: "90",
-        [get/set] GITHUB_REPOSITORY_OWNER_ID: "1075694",
-        [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
-        [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
-        [get/set] GITHUB_HEAD_REF: undefined,
-        [get/set] SYSTEMD_EXEC_PID: "666",
-        [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-        [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.5/x64",
-        [get/set] NVM_DIR: "/home/runner/.nvm",
-        [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
-        [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-        [get/set] ImageVersion: "20230611.1",
-        [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
-        [get/set] RUNNER_OS: "Linux",
-        [get/set] GITHUB_API_URL: "https://api.github.com",
-        [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
-        [get/set] RUNNER_USER: "runner",
-        [get/set] CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-        [get/set] JOURNAL_STREAM: "8:17441",
-        [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
-        [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
-        [get/set] npm_package_private: "true",
-        [get/set] npm_package_scripts_lint: "eslint --cache .",
-        [get/set] npm_config_registry: "https://registry.npmjs.org/",
-        [get/set] GITHUB_RUN_ID: "5306446636",
-        [get/set] GITHUB_REF_TYPE: "branch",
-        [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-        [get/set] GITHUB_WORKFLOW_SHA: "3c38864801162ecea862b64207bf6cee1a8a5436",
-        [get/set] GITHUB_BASE_REF: undefined,
-        [get/set] ImageOS: "ubuntu22",
-        [get/set] npm_package_scripts_start: "tsx index.ts",
-        [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
-        [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
-        [get/set] GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
-        [get/set] GITHUB_ACTION_REPOSITORY: undefined,
-        [get/set] npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/dist/node_modules/node-gyp/…",
-        [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
-        [get/set] ANT_HOME: "/usr/share/ant",
-        [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-        [get/set] RUNNER_TRACKING_ID: "github_14a28a65-fcfb-4a2d-979c-e64600b31217",
-        [get/set] INVOCATION_ID: "a8d28a6aa1164ef9999900f11038774b",
-        [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-        [get/set] GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.10/x64",
-        [get/set] NODE: "/opt/hostedtoolcache/node/18.16.0/x64/bin/node",
-        [get/set] GITHUB_ACTION: "__run",
-        [get/set] GITHUB_RUN_NUMBER: "26",
-        [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
-        [get/set] RUNNER_ARCH: "X64",
-        [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
-        [get/set] AGENT_TOOLSDIRECTORY: "/opt/hostedtoolcache",
-        [get/set] npm_package_devDependencies_comment_mark: "^1.1.1",
-        [get/set] LANG: "C.UTF-8",
-        [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
-        [get/set] npm_package_devDependencies_eslint: "^8.37.0",
-        [get/set] CONDA: "/usr/share/miniconda",
-        [get/set] RUNNER_NAME: "GitHub Actions 2",
-        [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
-        [get/set] STATS_VMD: "true",
-        [get/set] GITHUB_REF_NAME: "master",
-        [get/set] GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
-        [get/set] npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
-        [get/set] npm_lifecycle_script: "tsx index.ts",
-        [get/set] ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        [get/set] GITHUB_ACTION_REF: undefined,
-        [get/set] DEBIAN_FRONTEND: "noninteractive",
-        [get/set] GITHUB_REPOSITORY_ID: "622996871",
-        [get/set] GITHUB_ACTIONS: "true",
-        [get/set] NODE_PATH: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/bin/node_modules:/home/runn…",
-        [get/set] npm_package_devDependencies_fs_fixture: "^1.2.0",
-        [get/set] npm_lifecycle_event: "start",
-        [get/set] GITHUB_REF_PROTECTED: "false",
-        [get/set] npm_package_devDependencies_lint_staged: "^13.2.0",
-        [get/set] npm_package_devDependencies_simple_git_hooks: "^2.8.1",
-        [get/set] GITHUB_WORKSPACE: "/home/runner/work/compare-bun-node/compare-bun-node",
-        [get/set] ACCEPT_EULA: "Y",
-        [get/set] GITHUB_JOB: "build",
-        [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
-        [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-        [get/set] GITHUB_SHA: "3c38864801162ecea862b64207bf6cee1a8a5436",
-        [get/set] GITHUB_RUN_ATTEMPT: "1",
-        [get/set] GITHUB_REF: "refs/heads/master",
-        [get/set] GITHUB_ACTOR: "privatenumber",
-        [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
-        [get/set] npm_package_license: "MIT",
-        [get/set] LEIN_HOME: "/usr/local/lib/lein",
-        [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-        [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_602f8543-2546-406f-a2b6-faeeaca4c37d",
-        [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
-        [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
-        [get/set] GITHUB_ACTOR_ID: "1075694",
-        [get/set] RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-        [get/set] npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.1/node_modules/pnpm/bin/pnpm.cjs",
-        [get/set] HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
-        [get/set] STATS_TIS: "mining",
-        [get/set] GITHUB_EVENT_NAME: "schedule",
-        [get/set] HOMEBREW_NO_AUTO_UPDATE: "1",
-        [get/set] ANDROID_HOME: "/usr/local/lib/android/sdk",
-        [get/set] GITHUB_SERVER_URL: "https://github.com",
-        [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
-        [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
-        [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-        [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_602f8543-2546-406f-a2b6-faeeaca4c37d",
-        [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
-        [get/set] npm_command: "run-script",
-        [get/set] PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
-        [get/set] ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        [get/set] SGX_AESM_ADDR: "1",
-        [get/set] CHROME_BIN: "/usr/bin/google-chrome",
-        [get/set] SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
-        [get/set] PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-        [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
-        [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-        [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_602f8543-2546-406f-a2b6-faeeaca4c37d",
-        [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
-        [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
-    },
-    Symbol(Symbol.toStringTag): "process"
-}
+78 | 			}
+79 | 
+80 | 			const entries = Reflect.ownKeys(value).map(
+81 | 				(key) => {
+82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
+83 | 					if (!descriptor.enumerable) {
+             ^
+TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/process.mjs:4:15
 ```
 
 </td></tr></table>
@@ -8224,17 +8646,14 @@ EventEmitter {
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/punycode.mjs:4:15
+{
+    decode: ƒ E(length: 1) {},
+    encode: ƒ L(length: 1) {},
+    toASCII: ƒ O(length: 1) {},
+    toUnicode: ƒ j(length: 1) {},
+    ucs2decode: ƒ T(length: 1) {},
+    ucs2encode: ƒ N(length: 1) {}
+}
 ```
 
 </td></tr></table>
@@ -8267,17 +8686,24 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/querystring.mjs:4:15
+{
+    decode: <ref *2> ƒ $r(length: 4) {},
+    default: {
+        unescapeBuffer: <ref *4> ƒ Lt(length: 2) {},
+        unescape: <ref *5> ƒ Wr(length: 2) {},
+        escape: <ref *6> ƒ Nt(length: 1) {},
+        stringify: <ref *7> ƒ Pr(length: 4) {},
+        encode: [Circular: *7],
+        parse: [Circular: *2],
+        decode: [Circular: *2]
+    },
+    encode: [Circular: *7],
+    escape: [Circular: *6],
+    parse: [Circular: *2],
+    stringify: [Circular: *7],
+    unescape: [Circular: *5],
+    unescapeBuffer: [Circular: *4]
+}
 ```
 
 </td></tr></table>
@@ -8317,32 +8743,42 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Interface: ƒ Interface(length: 4) {},
-    clearLine: ƒ clearLine(length: 3) {},
-    clearScreenDown: ƒ clearScreenDown(length: 2) {},
-    createInterface: ƒ createInterface(length: 4) {},
-    cursorTo: ƒ cursorTo(length: 4) {},
-    emitKeypressEvents: ƒ emitKeypressEvents(length: 1) {},
-    moveCursor: ƒ moveCursor(length: 4) {},
-    promises: {
-        Readline: class Readline {},
-        Interface: class Interface3 extends _Interface {},
-        createInterface: ƒ createInterface(length: 4) {}
-    },
-    Symbol(__BUN_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED__): {
-        CSI: ƒ CSI(length: 1) {
-            kEscape: "\u001b",
-            kClearLine: "\u001b[2K",
-            kClearScreenDown: "\u001b[0J",
-            kClearToLineBeginning: "\u001b[1K",
-            kClearToLineEnd: "\u001b[0K"
+    Interface: <ref *2> ƒ Interface(length: 4) {},
+    clearLine: <ref *3> ƒ clearLine(length: 3) {},
+    clearScreenDown: <ref *4> ƒ clearScreenDown(length: 2) {},
+    createInterface: <ref *5> ƒ createInterface(length: 4) {},
+    cursorTo: <ref *6> ƒ cursorTo(length: 4) {},
+    default: {
+        Interface: [Circular: *2],
+        clearLine: [Circular: *3],
+        clearScreenDown: [Circular: *4],
+        createInterface: [Circular: *5],
+        cursorTo: [Circular: *6],
+        emitKeypressEvents: <ref *8> ƒ emitKeypressEvents(length: 1) {},
+        moveCursor: <ref *9> ƒ moveCursor(length: 4) {},
+        promises: <ref *10> {
+            Readline: class Readline {},
+            Interface: class Interface3 extends _Interface {},
+            createInterface: ƒ createInterface(length: 4) {}
         },
-        utils: {
-            getStringWidth: ƒ getStringWidth2(length: 1) {},
-            stripVTControlCharacters: ƒ stripVTControlCharacters(length: 1) {}
-        }
+        Symbol(__BUN_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED__): {
+            CSI: ƒ CSI(length: 1) {
+                kEscape: "\u001b",
+                kClearLine: "\u001b[2K",
+                kClearScreenDown: "\u001b[0J",
+                kClearToLineBeginning: "\u001b[1K",
+                kClearToLineEnd: "\u001b[0K"
+            },
+            utils: {
+                getStringWidth: ƒ getStringWidth2(length: 1) {},
+                stripVTControlCharacters: ƒ stripVTControlCharacters(length: 1) {}
+            }
+        },
+        Symbol(CommonJS): 0
     },
-    Symbol(CommonJS): 0
+    emitKeypressEvents: [Circular: *8],
+    moveCursor: [Circular: *9],
+    promises: [Circular: *10]
 }
 ```
 
@@ -8369,10 +8805,15 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Readline: class Readline {},
-    Interface: class Interface3 extends _Interface {},
-    createInterface: ƒ createInterface(length: 4) {},
-    Symbol(CommonJS): 0
+    Interface: <ref *2> class Interface3 extends _Interface {},
+    Readline: <ref *3> class Readline {},
+    createInterface: <ref *4> ƒ createInterface(length: 4) {},
+    default: {
+        Readline: [Circular: *3],
+        Interface: [Circular: *2],
+        createInterface: [Circular: *4],
+        Symbol(CommonJS): 0
+    }
 }
 ```
 
@@ -8482,13 +8923,15 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:99:6
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:99:6
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/repl.mjs:4:15
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/repl.mjs:4:15
 ```
 
 </td></tr></table>
@@ -8564,54 +9007,78 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-<ref *1> ƒ K(length: 1) {
-    isDisturbed: ƒ D(length: 1) {},
-    isErrored: ƒ _(length: 1) {},
-    isWritable: ƒ P(length: 1) {},
-    isReadable: ƒ W(length: 1) {},
-    Readable: ƒ L(length: 1) {
-        _fromList: ƒ a(length: 2) {},
+{
+    Duplex: <ref *2> ƒ B(length: 1) {
+        fromWeb: ƒ (length: 2) {},
+        toWeb: ƒ (length: 1) {},
+        from: ƒ (length: 1) {}
+    },
+    NativeWritable: <ref *6> class q extends Eq {},
+    PassThrough: <ref *7> ƒ H(length: 1) {},
+    Readable: <ref *8> ƒ F(length: 1) {
+        _fromList: ƒ o(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Writable: ƒ E(length: 0) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {}
+    Stream: <ref *14> ƒ H(length: 1) {
+        isDisturbed: <ref *15> ƒ D(length: 1) {},
+        isErrored: <ref *16> ƒ w(length: 1) {},
+        isWritable: <ref *17> ƒ A(length: 1) {},
+        isReadable: <ref *18> ƒ N(length: 1) {},
+        Readable: [Circular: *8],
+        Writable: <ref *19> ƒ O(length: 0) {
+            fromWeb: ƒ (length: 2) {},
+            toWeb: ƒ (length: 1) {}
+        },
+        Duplex: [Circular: *2],
+        Transform: <ref *22> ƒ Z(length: 1) {},
+        PassThrough: [Circular: *7],
+        pipeline: <ref *23> ƒ C(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        },
+        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
+        finished: <ref *26> ƒ P(length: 3) {
+            finished: <ref *27> ƒ x(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        },
+        destroy: <ref *28> ƒ O(length: 2) {},
+        compose: <ref *29> ƒ V(length: 0) {},
+        [get/set] promises: <ref *30> {
+            finished: [Circular: *27],
+            pipeline: [Circular: *24]
+        },
+        Stream: [Circular: *14],
+        _isUint8Array: <ref *31> ƒ L(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        NativeWritable: [Circular: *6],
+        default: [Circular: *14],
+        eos: <ref *34> ƒ X(length: 0) {},
+        Symbol(CommonJS): 0,
+        Symbol(::bunternal::): {
+            _ReadableFromWeb: ƒ j(length: 1) {},
+            _ReadableFromWebForUndici: class L extends F {}
+        }
     },
-    Duplex: ƒ B(length: 1) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
-        from: ƒ (length: 1) {}
-    },
-    Transform: ƒ K(length: 1) {},
-    PassThrough: ƒ H(length: 1) {},
-    pipeline: ƒ D(length: 0) {
-        [get/set] Symbol(nodejs.util.promisify.custom): <ref *22> ƒ Y(length: 0) {}
-    },
-    addAbortSignal: ƒ Y(length: 2) {},
-    finished: ƒ A(length: 3) {
-        finished: <ref *25> ƒ O(length: 2) {},
-        [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *25]
-    },
-    destroy: ƒ C(length: 2) {},
-    compose: ƒ V(length: 0) {},
-    [get/set] promises: {
-        finished: [Circular: *25],
-        pipeline: [Circular: *22]
-    },
-    Stream: [Circular: *1],
-    _isUint8Array: ƒ L(length: 1) {},
-    _uint8ArrayToBuffer: ƒ L(length: 1) {},
-    _getNativeReadableStreamPrototype: ƒ NQ(length: 2) {},
-    NativeWritable: class q extends Tq {},
-    default: [Circular: *1],
-    eos: ƒ X(length: 0) {},
-    Symbol(CommonJS): 0,
-    Symbol(::bunternal::): {
-        _ReadableFromWeb: class N extends L {}
-    }
+    Transform: [Circular: *22],
+    Writable: [Circular: *19],
+    _getNativeReadableStreamPrototype: [Circular: *33],
+    _isUint8Array: [Circular: *31],
+    _uint8ArrayToBuffer: [Circular: *32],
+    addAbortSignal: [Circular: *25],
+    compose: [Circular: *29],
+    default: [Circular: *14],
+    destroy: [Circular: *28],
+    eos: [Circular: *34],
+    finished: [Circular: *26],
+    isDisturbed: [Circular: *15],
+    isErrored: [Circular: *16],
+    isReadable: [Circular: *18],
+    isWritable: [Circular: *17],
+    pipeline: [Circular: *23],
+    promises: [Circular: *30]
 }
 ```
 
@@ -8642,12 +9109,19 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    arrayBuffer: ƒ readableStreamToArrayBuffer(length: 1) {},
-    text: ƒ readableStreamToText(length: 1) {},
-    json: ƒ h(length: 1) {},
-    buffer: async ƒ i(length: 1) {},
-    blob: ƒ readableStreamToBlob(length: 1) {},
-    Symbol(CommonJS): 0
+    arrayBuffer: <ref *2> ƒ readableStreamToArrayBuffer(length: 1) {},
+    blob: <ref *3> ƒ readableStreamToBlob(length: 1) {},
+    buffer: <ref *4> async ƒ i(length: 1) {},
+    default: {
+        arrayBuffer: [Circular: *2],
+        text: <ref *6> ƒ readableStreamToText(length: 1) {},
+        json: <ref *7> ƒ g(length: 1) {},
+        buffer: [Circular: *4],
+        blob: [Circular: *3],
+        Symbol(CommonJS): 0
+    },
+    json: [Circular: *7],
+    text: [Circular: *6]
 }
 ```
 
@@ -8672,9 +9146,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    pipeline: ƒ Y(length: 0) {},
-    finished: ƒ O(length: 2) {},
-    Symbol(CommonJS): 0
+    default: {
+        pipeline: <ref *3> ƒ Y(length: 0) {},
+        finished: <ref *4> ƒ x(length: 2) {},
+        Symbol(CommonJS): 0
+    },
+    finished: [Circular: *4],
+    pipeline: [Circular: *3]
 }
 ```
 
@@ -8729,19 +9207,33 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    ReadableStream: ƒ ReadableStream(length: 0) {},
-    ReadableStreamDefaultController: ƒ ReadableStreamDefaultController(length: 4) {},
-    WritableStream: ƒ WritableStream(length: 0) {},
-    WritableStreamDefaultController: ƒ WritableStreamDefaultController(length: 0) {},
-    WritableStreamDefaultWriter: ƒ WritableStreamDefaultWriter(length: 1) {},
-    TransformStream: ƒ TransformStream(length: 0) {},
-    TransformStreamDefaultController: ƒ TransformStreamDefaultController(length: 0) {},
-    ByteLengthQueuingStrategy: ƒ ByteLengthQueuingStrategy(length: 1) {},
-    CountQueuingStrategy: ƒ CountQueuingStrategy(length: 1) {},
-    ReadableStreamBYOBReader: ƒ ReadableStreamBYOBReader(length: 1) {},
-    ReadableStreamBYOBRequest: ƒ ReadableStreamBYOBRequest(length: 2) {},
-    ReadableStreamDefaultReader: ƒ ReadableStreamDefaultReader(length: 1) {},
-    Symbol(CommonJS): 0
+    ByteLengthQueuingStrategy: <ref *2> ƒ ByteLengthQueuingStrategy(length: 1) {},
+    CountQueuingStrategy: <ref *3> ƒ CountQueuingStrategy(length: 1) {},
+    ReadableStream: <ref *4> ƒ ReadableStream(length: 0) {},
+    ReadableStreamBYOBReader: <ref *5> ƒ ReadableStreamBYOBReader(length: 1) {},
+    ReadableStreamBYOBRequest: <ref *6> ƒ ReadableStreamBYOBRequest(length: 2) {},
+    ReadableStreamDefaultController: <ref *7> ƒ ReadableStreamDefaultController(length: 4) {},
+    ReadableStreamDefaultReader: <ref *8> ƒ ReadableStreamDefaultReader(length: 1) {},
+    TransformStream: <ref *9> ƒ TransformStream(length: 0) {},
+    TransformStreamDefaultController: <ref *10> ƒ TransformStreamDefaultController(length: 0) {},
+    WritableStream: <ref *11> ƒ WritableStream(length: 0) {},
+    WritableStreamDefaultController: <ref *12> ƒ WritableStreamDefaultController(length: 0) {},
+    WritableStreamDefaultWriter: <ref *13> ƒ WritableStreamDefaultWriter(length: 1) {},
+    default: {
+        ReadableStream: [Circular: *4],
+        ReadableStreamDefaultController: [Circular: *7],
+        WritableStream: [Circular: *11],
+        WritableStreamDefaultController: [Circular: *12],
+        WritableStreamDefaultWriter: [Circular: *13],
+        TransformStream: [Circular: *9],
+        TransformStreamDefaultController: [Circular: *10],
+        ByteLengthQueuingStrategy: [Circular: *2],
+        CountQueuingStrategy: [Circular: *3],
+        ReadableStreamBYOBReader: [Circular: *5],
+        ReadableStreamBYOBRequest: [Circular: *6],
+        ReadableStreamDefaultReader: [Circular: *8],
+        Symbol(CommonJS): 0
+    }
 }
 ```
 
@@ -8763,10 +9255,17 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-{
-    StringDecoder: ƒ StringDecoder(length: 0) {},
-    Symbol(CommonJS): 0
-}
+78 | 			}
+79 | 
+80 | 			const entries = Reflect.ownKeys(value).map(
+81 | 				(key) => {
+82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
+83 | 					if (!descriptor.enumerable) {
+             ^
+TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/string_decoder.mjs:4:15
 ```
 
 </td></tr></table>
@@ -9102,24 +9601,177 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2560) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2608) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:83:10
-      at /tmp/fs-fixture-1687133604372-1/inspect.mjs:80:19
-      at /tmp/fs-fixture-1687133604372-1/sys.mjs:4:15
+{
+    default: {
+        default: {
+            format: <ref *4> ƒ (length: 1) {},
+            deprecate: <ref *5> ƒ (length: 2) {},
+            debuglog: <ref *6> ƒ (length: 1) {},
+            inspect: <ref *7> ƒ h(length: 2) {
+                colors: {
+                    bold: [
+                        1,
+                        22
+                    ],
+                    italic: [
+                        3,
+                        23
+                    ],
+                    underline: [
+                        4,
+                        24
+                    ],
+                    inverse: [
+                        7,
+                        27
+                    ],
+                    white: [
+                        37,
+                        39
+                    ],
+                    grey: [
+                        90,
+                        39
+                    ],
+                    black: [
+                        30,
+                        39
+                    ],
+                    blue: [
+                        34,
+                        39
+                    ],
+                    cyan: [
+                        36,
+                        39
+                    ],
+                    green: [
+                        32,
+                        39
+                    ],
+                    magenta: [
+                        35,
+                        39
+                    ],
+                    red: [
+                        31,
+                        39
+                    ],
+                    yellow: [
+                        33,
+                        39
+                    ]
+                },
+                styles: {
+                    special: "cyan",
+                    number: "yellow",
+                    boolean: "yellow",
+                    undefined: "grey",
+                    null: "bold",
+                    string: "green",
+                    date: "magenta",
+                    regexp: "red"
+                }
+            },
+            types: <ref *23> {
+                isArgumentsObject: ƒ K(length: 1) {
+                    isLegacyArguments: ƒ Se(length: 1) {}
+                },
+                isGeneratorFunction: ƒ (length: 1) {},
+                isTypedArray: ƒ (length: 1) {},
+                isPromise: ƒ In(length: 1) {},
+                isArrayBufferView: ƒ Bn(length: 1) {},
+                isUint8Array: ƒ Un(length: 1) {},
+                isUint8ClampedArray: ƒ Rn(length: 1) {},
+                isUint16Array: ƒ Dn(length: 1) {},
+                isUint32Array: ƒ kn(length: 1) {},
+                isInt8Array: ƒ xn(length: 1) {},
+                isInt16Array: ƒ Mn(length: 1) {},
+                isInt32Array: ƒ Nn(length: 1) {},
+                isFloat32Array: ƒ Cn(length: 1) {},
+                isFloat64Array: ƒ $n(length: 1) {},
+                isBigInt64Array: ƒ qn(length: 1) {},
+                isBigUint64Array: ƒ Gn(length: 1) {},
+                isMap: ƒ _n(length: 1) {},
+                isSet: ƒ Wn(length: 1) {},
+                isWeakMap: ƒ zn(length: 1) {},
+                isWeakSet: ƒ Vn(length: 1) {},
+                isArrayBuffer: ƒ Ke(length: 1) {},
+                isDataView: ƒ Qe(length: 1) {},
+                isSharedArrayBuffer: ƒ Xe(length: 1) {},
+                isAsyncFunction: ƒ Jn(length: 1) {},
+                isMapIterator: ƒ Ln(length: 1) {},
+                isSetIterator: ƒ Hn(length: 1) {},
+                isGeneratorObject: ƒ Zn(length: 1) {},
+                isWebAssemblyCompiledModule: ƒ Yn(length: 1) {},
+                isNumberObject: ƒ rt(length: 1) {},
+                isStringObject: ƒ et(length: 1) {},
+                isBooleanObject: ƒ tt(length: 1) {},
+                isBigIntObject: ƒ nt(length: 1) {},
+                isSymbolObject: ƒ ot(length: 1) {},
+                isBoxedPrimitive: ƒ Kn(length: 1) {},
+                isAnyArrayBuffer: ƒ Qn(length: 1) {},
+                isRegExp: <ref *60> ƒ $(length: 1) {},
+                isDate: <ref *61> ƒ cr(length: 1) {},
+                isNativeError: <ref *62> ƒ q(length: 1) {}
+            },
+            isArray: <ref *63> ƒ ct(length: 1) {},
+            isBoolean: <ref *64> ƒ Wr(length: 1) {},
+            isNull: <ref *65> ƒ pr(length: 1) {},
+            isNullOrUndefined: <ref *66> ƒ ao(length: 1) {},
+            isNumber: <ref *67> ƒ pt(length: 1) {},
+            isString: <ref *68> ƒ lr(length: 1) {},
+            isSymbol: <ref *69> ƒ fo(length: 1) {},
+            isUndefined: <ref *70> ƒ w(length: 1) {},
+            isRegExp: [Circular: *60],
+            isObject: <ref *71> ƒ k(length: 1) {},
+            isDate: [Circular: *61],
+            isError: [Circular: *62],
+            isFunction: <ref *72> ƒ sr(length: 1) {},
+            isPrimitive: <ref *73> ƒ uo(length: 1) {},
+            isBuffer: <ref *74> ƒ (length: 1) {},
+            log: <ref *75> ƒ (length: 0) {},
+            inherits: <ref *76> ƒ (length: 2) {},
+            _extend: <ref *77> ƒ (length: 2) {},
+            promisify: <ref *78> ƒ (length: 1) {
+                custom: Symbol(util.promisify.custom)
+            },
+            callbackify: <ref *79> ƒ po(length: 1) {}
+        },
+        [get/set] format: [Circular: *4],
+        [get/set] deprecate: [Circular: *5],
+        [get/set] debuglog: [Circular: *6],
+        [get/set] inspect: [Circular: *7],
+        [get/set] types: [Circular: *23],
+        [get/set] isArray: [Circular: *63],
+        [get/set] isBoolean: [Circular: *64],
+        [get/set] isNull: [Circular: *65],
+        [get/set] isNullOrUndefined: [Circular: *66],
+        [get/set] isNumber: [Circular: *67],
+        [get/set] isString: [Circular: *68],
+        [get/set] isSymbol: [Circular: *69],
+        [get/set] isUndefined: [Circular: *70],
+        [get/set] isRegExp: [Circular: *60],
+        [get/set] isObject: [Circular: *71],
+        [get/set] isDate: [Circular: *61],
+        [get/set] isError: [Circular: *62],
+        [get/set] isFunction: [Circular: *72],
+        [get/set] isPrimitive: [Circular: *73],
+        [get/set] isBuffer: [Circular: *74],
+        [get/set] log: [Circular: *75],
+        [get/set] inherits: [Circular: *76],
+        [get/set] _extend: [Circular: *77],
+        [get/set] promisify: [Circular: *78],
+        [get/set] callbackify: [Circular: *79]
+    }
+}
 ```
 
 </td></tr></table>
@@ -9163,12 +9815,20 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    setInterval: ƒ setInterval(length: 1) {},
-    setImmediate: ƒ setImmediate(length: 1) {},
-    setTimeout: ƒ setTimeout(length: 1) {},
-    clearInterval: ƒ clearInterval(length: 1) {},
-    clearTimeout: ƒ clearTimeout(length: 1) {},
-    Symbol(CommonJS): 0
+    clearImmediate: ƒ clearImmediate(length: 1) {},
+    clearInterval: <ref *3> ƒ clearInterval(length: 1) {},
+    clearTimeout: <ref *4> ƒ clearTimeout(length: 1) {},
+    default: {
+        setInterval: <ref *6> ƒ setInterval(length: 1) {},
+        setImmediate: <ref *7> ƒ setImmediate(length: 1) {},
+        setTimeout: <ref *8> ƒ setTimeout(length: 1) {},
+        clearInterval: [Circular: *3],
+        clearTimeout: [Circular: *4],
+        Symbol(CommonJS): 0
+    },
+    setImmediate: [Circular: *7],
+    setInterval: [Circular: *6],
+    setTimeout: [Circular: *8]
 }
 ```
 
@@ -9199,9 +9859,14 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    setImmediate: ƒ setImmediatePromise(length: 1) {},
-    setInterval: ƒ setIntervalPromise(length: 0) {},
-    setTimeout: ƒ setTimeoutPromise(length: 0) {}
+    default: {
+        setTimeout: <ref *3> ƒ setTimeoutPromise(length: 0) {},
+        setImmediate: <ref *4> ƒ setImmediatePromise(length: 1) {},
+        setInterval: <ref *5> ƒ setIntervalPromise(length: 0) {}
+    },
+    setImmediate: [Circular: *4],
+    setInterval: [Circular: *5],
+    setTimeout: [Circular: *3]
 }
 ```
 
@@ -9397,24 +10062,43 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    createSecureContext: ƒ createSecureContext(length: 1) {},
-    parseCertString: ƒ parseCertString(length: 0) {},
-    getCiphers: ƒ getCiphers(length: 0) {},
-    getCurves: ƒ getCurves(length: 0) {},
-    convertALPNProtocols: ƒ convertALPNProtocols(length: 2) {},
-    TLSSocket: ƒ Socket(length: 1) {},
-    SecureContext: ƒ SecureContext(length: 1) {},
     CLIENT_RENEG_LIMIT: 3,
     CLIENT_RENEG_WINDOW: 600,
-    DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
-    DEFAULT_MIN_VERSION: "TLSv1.2",
+    DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_MAX_VERSION: "TLSv1.3",
-    connect: <ref *9> ƒ createConnection(length: 3) {},
-    createConnection: [Circular: *9],
-    Server: class Server extends NetServer {},
-    createServer: ƒ createServer(length: 2) {},
-    Symbol(CommonJS): 0
+    DEFAULT_MIN_VERSION: "TLSv1.2",
+    SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
+    Server: <ref *3> class Server extends NetServer {},
+    TLSSocket: <ref *4> ƒ Socket(length: 1) {},
+    connect: <ref *5> ƒ createConnection(length: 3) {},
+    convertALPNProtocols: <ref *6> ƒ convertALPNProtocols(length: 2) {},
+    createConnection: [Circular: *5],
+    createSecureContext: <ref *7> ƒ createSecureContext(length: 1) {},
+    createServer: <ref *8> ƒ createServer(length: 2) {},
+    default: {
+        CLIENT_RENEG_LIMIT: 3,
+        CLIENT_RENEG_WINDOW: 600,
+        connect: [Circular: *5],
+        convertALPNProtocols: [Circular: *6],
+        createConnection: [Circular: *5],
+        createSecureContext: [Circular: *7],
+        createServer: [Circular: *8],
+        DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
+        DEFAULT_ECDH_CURVE: "auto",
+        DEFAULT_MAX_VERSION: "TLSv1.3",
+        DEFAULT_MIN_VERSION: "TLSv1.2",
+        getCiphers: <ref *10> ƒ getCiphers(length: 0) {},
+        getCurves: <ref *11> ƒ getCurves(length: 0) {},
+        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
+        SecureContext: [Circular: *2],
+        Server: [Circular: *3],
+        TLSSocket: [Circular: *4],
+        Symbol(CommonJS): 0
+    },
+    getCiphers: [Circular: *10],
+    getCurves: [Circular: *11],
+    parseCertString: [Circular: *12]
 }
 ```
 
@@ -9439,9 +10123,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    createTracing: ƒ createTracing(length: 1) {},
-    getEnabledCategories: ƒ getEnabledCategories(length: 0) {},
-    Symbol(CommonJS): 0
+    createTracing: <ref *2> ƒ createTracing(length: 1) {},
+    default: {
+        createTracing: [Circular: *2],
+        getEnabledCategories: <ref *4> ƒ getEnabledCategories(length: 0) {},
+        Symbol(CommonJS): 0
+    },
+    getEnabledCategories: [Circular: *4]
 }
 ```
 
@@ -9467,12 +10155,17 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-{
-    ReadStream: <ref *2> ƒ notimpl(length: 0) {},
-    WriteStream: [Circular: *2],
-    isatty: ƒ isatty(length: 1) {},
-    Symbol(CommonJS): 0
-}
+78 | 			}
+79 | 
+80 | 			const entries = Reflect.ownKeys(value).map(
+81 | 				(key) => {
+82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
+83 | 					if (!descriptor.enumerable) {
+             ^
+TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:83:10
+      at /tmp/fs-fixture-1687738502423-1/inspect.mjs:80:19
+      at /tmp/fs-fixture-1687738502423-1/tty.mjs:4:15
 ```
 
 </td></tr></table>
@@ -9524,24 +10217,26 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         revokeObjectURL: ƒ revokeObjectURL(length: 1) {}
     },
     URLSearchParams: <ref *5> ƒ URLSearchParams(length: 0) {},
-    Url: <ref *6> ƒ m(length: 0) {},
+    Url: <ref *6> ƒ Url(length: 0) {},
     default: {
-        parse: <ref *8> ƒ A(length: 3) {},
-        resolve: <ref *9> ƒ W(length: 2) {},
-        resolveObject: <ref *10> ƒ X(length: 2) {},
-        format: <ref *11> ƒ V(length: 1) {},
+        parse: <ref *8> ƒ urlParse(length: 3) {},
+        resolve: <ref *9> ƒ urlResolve(length: 2) {},
+        resolveObject: <ref *10> ƒ urlResolveObject(length: 2) {},
+        format: <ref *11> ƒ urlFormat(length: 1) {},
         Url: [Circular: *6],
+        URLSearchParams: [Circular: *5],
+        URL: [Circular: *2],
         pathToFileURL: <ref *12> ƒ pathToFileURL(length: 1) {},
         fileURLToPath: <ref *13> ƒ fileURLToPath(length: 1) {},
-        URL: [Circular: *2],
-        URLSearchParams: [Circular: *5]
+        urlToHttpOptions: <ref *14> ƒ urlToHttpOptions(length: 1) {}
     },
     fileURLToPath: [Circular: *13],
     format: [Circular: *11],
     parse: [Circular: *8],
     pathToFileURL: [Circular: *12],
     resolve: [Circular: *9],
-    resolveObject: [Circular: *10]
+    resolveObject: [Circular: *10],
+    urlToHttpOptions: [Circular: *14]
 }
 ```
 
@@ -9884,146 +10579,219 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    isDeepStrictEqual: ƒ isDeepStrictEqual(length: 2) {},
-    format: ƒ format(length: 1) {},
-    deprecate: ƒ deprecate(length: 2) {},
-    debuglog: ƒ debuglog(length: 1) {},
-    inspect: ƒ inspect(length: 2) {
-        colors: {
-            bold: [
-                1,
-                22
-            ],
-            italic: [
-                3,
-                23
-            ],
-            underline: [
-                4,
-                24
-            ],
-            inverse: [
-                7,
-                27
-            ],
-            white: [
-                37,
-                39
-            ],
-            grey: [
-                90,
-                39
-            ],
-            black: [
-                30,
-                39
-            ],
-            blue: [
-                34,
-                39
-            ],
-            cyan: [
-                36,
-                39
-            ],
-            green: [
-                32,
-                39
-            ],
-            magenta: [
-                35,
-                39
-            ],
-            red: [
-                31,
-                39
-            ],
-            yellow: [
-                33,
-                39
-            ]
+    TextDecoder: <ref *2> ƒ TextDecoder(length: 0) {},
+    TextEncoder: <ref *3> ƒ TextEncoder(length: 0) {},
+    callbackify: <ref *4> ƒ callbackify(length: 1) {},
+    debuglog: <ref *5> ƒ debuglog(length: 1) {},
+    default: {
+        format: <ref *7> ƒ format(length: 1) {},
+        deprecate: <ref *8> ƒ deprecate(length: 3) {},
+        debuglog: [Circular: *5],
+        _extend: ƒ _extend(length: 2) {},
+        inspect: <ref *10> ƒ inspect(length: 2) {
+            colors: {
+                bold: [
+                    1,
+                    22
+                ],
+                italic: [
+                    3,
+                    23
+                ],
+                underline: [
+                    4,
+                    24
+                ],
+                inverse: [
+                    7,
+                    27
+                ],
+                white: [
+                    37,
+                    39
+                ],
+                grey: [
+                    90,
+                    39
+                ],
+                black: [
+                    30,
+                    39
+                ],
+                blue: [
+                    34,
+                    39
+                ],
+                cyan: [
+                    36,
+                    39
+                ],
+                green: [
+                    32,
+                    39
+                ],
+                magenta: [
+                    35,
+                    39
+                ],
+                red: [
+                    31,
+                    39
+                ],
+                yellow: [
+                    33,
+                    39
+                ]
+            },
+            styles: {
+                special: "cyan",
+                number: "yellow",
+                boolean: "yellow",
+                undefined: "grey",
+                null: "bold",
+                string: "green",
+                date: "magenta",
+                regexp: "red"
+            }
         },
-        styles: {
-            special: "cyan",
-            number: "yellow",
-            boolean: "yellow",
-            undefined: "grey",
-            null: "bold",
-            string: "green",
-            date: "magenta",
-            regexp: "red"
-        }
-    },
-    types: {
-        isExternal: ƒ isExternal(length: 1) {},
-        isDate: <ref *24> ƒ isDate(length: 1) {},
-        isArgumentsObject: ƒ isArgumentsObject(length: 1) {},
-        isBigIntObject: ƒ isBigIntObject(length: 1) {},
-        isBooleanObject: ƒ isBooleanObject(length: 1) {},
-        isNumberObject: ƒ isNumberObject(length: 1) {},
-        isStringObject: ƒ isStringObject(length: 1) {},
-        isSymbolObject: ƒ isSymbolObject(length: 1) {},
-        isNativeError: <ref *31> ƒ isNativeError(length: 1) {},
-        isRegExp: <ref *32> ƒ isRegExp(length: 1) {},
-        isAsyncFunction: ƒ isAsyncFunction(length: 1) {},
-        isGeneratorFunction: ƒ isGeneratorFunction(length: 1) {},
-        isGeneratorObject: ƒ isGeneratorObject(length: 1) {},
-        isPromise: ƒ isPromise(length: 1) {},
-        isMap: ƒ isMap(length: 1) {},
-        isSet: ƒ isSet(length: 1) {},
-        isMapIterator: ƒ isMapIterator(length: 1) {},
-        isSetIterator: ƒ isSetIterator(length: 1) {},
-        isWeakMap: ƒ isWeakMap(length: 1) {},
-        isWeakSet: ƒ isWeakSet(length: 1) {},
-        isArrayBuffer: ƒ isArrayBuffer(length: 1) {},
-        isDataView: ƒ isDataView(length: 1) {},
-        isSharedArrayBuffer: ƒ isSharedArrayBuffer(length: 1) {},
-        isProxy: ƒ isProxy(length: 1) {},
-        isModuleNamespaceObject: ƒ isModuleNamespaceObject(length: 1) {},
-        isAnyArrayBuffer: ƒ isAnyArrayBuffer(length: 1) {},
-        isBoxedPrimitive: ƒ isBoxedPrimitive(length: 1) {},
-        isArrayBufferView: ƒ isArrayBufferView(length: 1) {},
-        isTypedArray: ƒ isTypedArray(length: 1) {},
-        isUint8Array: ƒ isUint8Array(length: 1) {},
-        isUint8ClampedArray: ƒ isUint8ClampedArray(length: 1) {},
-        isUint16Array: ƒ isUint16Array(length: 1) {},
-        isUint32Array: ƒ isUint32Array(length: 1) {},
-        isInt8Array: ƒ isInt8Array(length: 1) {},
-        isInt16Array: ƒ isInt16Array(length: 1) {},
-        isInt32Array: ƒ isInt32Array(length: 1) {},
-        isFloat32Array: ƒ isFloat32Array(length: 1) {},
-        isFloat64Array: ƒ isFloat64Array(length: 1) {},
-        isBigInt64Array: ƒ isBigInt64Array(length: 1) {},
-        isBigUint64Array: ƒ isBigUint64Array(length: 1) {},
-        isKeyObject: ƒ isKeyObject(length: 1) {},
-        isCryptoKey: ƒ isCryptoKey(length: 1) {},
+        types: {
+            default: <ref *27> {
+                isExternal: <ref *28> ƒ isExternal(length: 1) {},
+                isDate: <ref *29> ƒ isDate(length: 1) {},
+                isArgumentsObject: <ref *30> ƒ isArgumentsObject(length: 1) {},
+                isBigIntObject: <ref *31> ƒ isBigIntObject(length: 1) {},
+                isBooleanObject: <ref *32> ƒ isBooleanObject(length: 1) {},
+                isNumberObject: <ref *33> ƒ isNumberObject(length: 1) {},
+                isStringObject: <ref *34> ƒ isStringObject(length: 1) {},
+                isSymbolObject: <ref *35> ƒ isSymbolObject(length: 1) {},
+                isNativeError: <ref *36> ƒ isNativeError(length: 1) {},
+                isRegExp: <ref *37> ƒ isRegExp(length: 1) {},
+                isAsyncFunction: <ref *38> ƒ isAsyncFunction(length: 1) {},
+                isGeneratorFunction: <ref *39> ƒ isGeneratorFunction(length: 1) {},
+                isGeneratorObject: <ref *40> ƒ isGeneratorObject(length: 1) {},
+                isPromise: <ref *41> ƒ isPromise(length: 1) {},
+                isMap: <ref *42> ƒ isMap(length: 1) {},
+                isSet: <ref *43> ƒ isSet(length: 1) {},
+                isMapIterator: <ref *44> ƒ isMapIterator(length: 1) {},
+                isSetIterator: <ref *45> ƒ isSetIterator(length: 1) {},
+                isWeakMap: <ref *46> ƒ isWeakMap(length: 1) {},
+                isWeakSet: <ref *47> ƒ isWeakSet(length: 1) {},
+                isArrayBuffer: <ref *48> ƒ isArrayBuffer(length: 1) {},
+                isDataView: <ref *49> ƒ isDataView(length: 1) {},
+                isSharedArrayBuffer: <ref *50> ƒ isSharedArrayBuffer(length: 1) {},
+                isProxy: <ref *51> ƒ isProxy(length: 1) {},
+                isModuleNamespaceObject: <ref *52> ƒ isModuleNamespaceObject(length: 1) {},
+                isAnyArrayBuffer: <ref *53> ƒ isAnyArrayBuffer(length: 1) {},
+                isBoxedPrimitive: <ref *54> ƒ isBoxedPrimitive(length: 1) {},
+                isArrayBufferView: <ref *55> ƒ isArrayBufferView(length: 1) {},
+                isTypedArray: <ref *56> ƒ isTypedArray(length: 1) {},
+                isUint8Array: <ref *57> ƒ isUint8Array(length: 1) {},
+                isUint8ClampedArray: <ref *58> ƒ isUint8ClampedArray(length: 1) {},
+                isUint16Array: <ref *59> ƒ isUint16Array(length: 1) {},
+                isUint32Array: <ref *60> ƒ isUint32Array(length: 1) {},
+                isInt8Array: <ref *61> ƒ isInt8Array(length: 1) {},
+                isInt16Array: <ref *62> ƒ isInt16Array(length: 1) {},
+                isInt32Array: <ref *63> ƒ isInt32Array(length: 1) {},
+                isFloat32Array: <ref *64> ƒ isFloat32Array(length: 1) {},
+                isFloat64Array: <ref *65> ƒ isFloat64Array(length: 1) {},
+                isBigInt64Array: <ref *66> ƒ isBigInt64Array(length: 1) {},
+                isBigUint64Array: <ref *67> ƒ isBigUint64Array(length: 1) {},
+                isKeyObject: <ref *68> ƒ isKeyObject(length: 1) {},
+                isCryptoKey: <ref *69> ƒ isCryptoKey(length: 1) {},
+                Symbol(CommonJS): 0
+            },
+            isAnyArrayBuffer: [Circular: *53],
+            isArgumentsObject: [Circular: *30],
+            isArrayBuffer: [Circular: *48],
+            isArrayBufferView: [Circular: *55],
+            isAsyncFunction: [Circular: *38],
+            isBigInt64Array: [Circular: *66],
+            isBigIntObject: [Circular: *31],
+            isBigUint64Array: [Circular: *67],
+            isBooleanObject: [Circular: *32],
+            isBoxedPrimitive: [Circular: *54],
+            isCryptoKey: [Circular: *69],
+            isDataView: [Circular: *49],
+            isDate: [Circular: *29],
+            isExternal: [Circular: *28],
+            isFloat32Array: [Circular: *64],
+            isFloat64Array: [Circular: *65],
+            isGeneratorFunction: [Circular: *39],
+            isGeneratorObject: [Circular: *40],
+            isInt16Array: [Circular: *62],
+            isInt32Array: [Circular: *63],
+            isInt8Array: [Circular: *61],
+            isKeyObject: [Circular: *68],
+            isMap: [Circular: *42],
+            isMapIterator: [Circular: *44],
+            isModuleNamespaceObject: [Circular: *52],
+            isNativeError: [Circular: *36],
+            isNumberObject: [Circular: *33],
+            isPromise: [Circular: *41],
+            isProxy: [Circular: *51],
+            isRegExp: [Circular: *37],
+            isSet: [Circular: *43],
+            isSetIterator: [Circular: *45],
+            isSharedArrayBuffer: [Circular: *50],
+            isStringObject: [Circular: *34],
+            isSymbolObject: [Circular: *35],
+            isTypedArray: [Circular: *56],
+            isUint16Array: [Circular: *59],
+            isUint32Array: [Circular: *60],
+            isUint8Array: [Circular: *57],
+            isUint8ClampedArray: [Circular: *58],
+            isWeakMap: [Circular: *46],
+            isWeakSet: [Circular: *47]
+        },
+        isArray: <ref *70> ƒ isArray(length: 1) {},
+        isBoolean: <ref *71> ƒ isBoolean(length: 1) {},
+        isNull: <ref *72> ƒ isNull(length: 1) {},
+        isNullOrUndefined: <ref *73> ƒ isNullOrUndefined(length: 1) {},
+        isNumber: <ref *74> ƒ isNumber(length: 1) {},
+        isString: <ref *75> ƒ isString(length: 1) {},
+        isSymbol: <ref *76> ƒ isSymbol(length: 1) {},
+        isUndefined: <ref *77> ƒ isUndefined(length: 1) {},
+        isRegExp: [Circular: *37],
+        isObject: <ref *78> ƒ isObject(length: 1) {},
+        isDate: [Circular: *29],
+        isFunction: <ref *79> ƒ isFunction(length: 1) {},
+        isError: [Circular: *36],
+        isPrimitive: <ref *80> ƒ isPrimitive(length: 1) {},
+        isBuffer: <ref *81> ƒ isBuffer(length: 1) {},
+        log: <ref *82> ƒ log2(length: 0) {},
+        inherits: <ref *83> ƒ inherits(length: 2) {},
+        promisify: <ref *84> ƒ promisify2(length: 1) {
+            custom: Symbol(util.promisify.custom)
+        },
+        callbackify: [Circular: *4],
+        isDeepStrictEqual: <ref *85> ƒ isDeepStrictEqual(length: 2) {},
+        TextDecoder: [Circular: *2],
+        TextEncoder: [Circular: *3],
         Symbol(CommonJS): 0
     },
-    isArray: ƒ isArray(length: 1) {},
-    isBoolean: ƒ isBoolean(length: 1) {},
-    isNull: ƒ isNull(length: 1) {},
-    isNullOrUndefined: ƒ isNullOrUndefined(length: 1) {},
-    isNumber: ƒ isNumber(length: 1) {},
-    isString: ƒ isString(length: 1) {},
-    isSymbol: ƒ isSymbol(length: 1) {},
-    isUndefined: ƒ isUndefined(length: 1) {},
-    isRegExp: [Circular: *32],
-    isObject: ƒ isObject(length: 1) {},
-    isDate: [Circular: *24],
-    isError: [Circular: *31],
-    isFunction: ƒ isFunction(length: 1) {},
-    isPrimitive: ƒ isPrimitive(length: 1) {},
-    isBuffer: ƒ isBuffer(length: 1) {},
-    log: ƒ (length: 0) {},
-    inherits: ƒ inherits(length: 2) {},
-    _extend: ƒ (length: 2) {},
-    promisify: ƒ promisify2(length: 1) {
-        custom: Symbol(util.promisify.custom)
-    },
-    callbackify: ƒ callbackify(length: 1) {},
-    TextDecoder: ƒ TextDecoder(length: 0) {},
-    TextEncoder: ƒ TextEncoder(length: 0) {},
-    Symbol(CommonJS): 0
+    deprecate: [Circular: *8],
+    format: [Circular: *7],
+    inherits: [Circular: *83],
+    inspect: [Circular: *10],
+    isArray: [Circular: *70],
+    isBoolean: [Circular: *71],
+    isBuffer: [Circular: *81],
+    isDate: [Circular: *29],
+    isDeepStrictEqual: [Circular: *85],
+    isError: [Circular: *36],
+    isFunction: [Circular: *79],
+    isNull: [Circular: *72],
+    isNullOrUndefined: [Circular: *73],
+    isNumber: [Circular: *74],
+    isObject: [Circular: *78],
+    isPrimitive: [Circular: *80],
+    isRegExp: [Circular: *37],
+    isString: [Circular: *75],
+    isSymbol: [Circular: *76],
+    isUndefined: [Circular: *77],
+    log: [Circular: *82],
+    promisify: [Circular: *84],
+    types: [Circular: *27]
 }
 ```
 
@@ -10128,49 +10896,93 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    isExternal: ƒ isExternal(length: 1) {},
-    isDate: ƒ isDate(length: 1) {},
-    isArgumentsObject: ƒ isArgumentsObject(length: 1) {},
-    isBigIntObject: ƒ isBigIntObject(length: 1) {},
-    isBooleanObject: ƒ isBooleanObject(length: 1) {},
-    isNumberObject: ƒ isNumberObject(length: 1) {},
-    isStringObject: ƒ isStringObject(length: 1) {},
-    isSymbolObject: ƒ isSymbolObject(length: 1) {},
-    isNativeError: ƒ isNativeError(length: 1) {},
-    isRegExp: ƒ isRegExp(length: 1) {},
-    isAsyncFunction: ƒ isAsyncFunction(length: 1) {},
-    isGeneratorFunction: ƒ isGeneratorFunction(length: 1) {},
-    isGeneratorObject: ƒ isGeneratorObject(length: 1) {},
-    isPromise: ƒ isPromise(length: 1) {},
-    isMap: ƒ isMap(length: 1) {},
-    isSet: ƒ isSet(length: 1) {},
-    isMapIterator: ƒ isMapIterator(length: 1) {},
-    isSetIterator: ƒ isSetIterator(length: 1) {},
-    isWeakMap: ƒ isWeakMap(length: 1) {},
-    isWeakSet: ƒ isWeakSet(length: 1) {},
-    isArrayBuffer: ƒ isArrayBuffer(length: 1) {},
-    isDataView: ƒ isDataView(length: 1) {},
-    isSharedArrayBuffer: ƒ isSharedArrayBuffer(length: 1) {},
-    isProxy: ƒ isProxy(length: 1) {},
-    isModuleNamespaceObject: ƒ isModuleNamespaceObject(length: 1) {},
-    isAnyArrayBuffer: ƒ isAnyArrayBuffer(length: 1) {},
-    isBoxedPrimitive: ƒ isBoxedPrimitive(length: 1) {},
-    isArrayBufferView: ƒ isArrayBufferView(length: 1) {},
-    isTypedArray: ƒ isTypedArray(length: 1) {},
-    isUint8Array: ƒ isUint8Array(length: 1) {},
-    isUint8ClampedArray: ƒ isUint8ClampedArray(length: 1) {},
-    isUint16Array: ƒ isUint16Array(length: 1) {},
-    isUint32Array: ƒ isUint32Array(length: 1) {},
-    isInt8Array: ƒ isInt8Array(length: 1) {},
-    isInt16Array: ƒ isInt16Array(length: 1) {},
-    isInt32Array: ƒ isInt32Array(length: 1) {},
-    isFloat32Array: ƒ isFloat32Array(length: 1) {},
-    isFloat64Array: ƒ isFloat64Array(length: 1) {},
-    isBigInt64Array: ƒ isBigInt64Array(length: 1) {},
-    isBigUint64Array: ƒ isBigUint64Array(length: 1) {},
-    isKeyObject: ƒ isKeyObject(length: 1) {},
-    isCryptoKey: ƒ isCryptoKey(length: 1) {},
-    Symbol(CommonJS): 0
+    default: {
+        isExternal: <ref *3> ƒ isExternal(length: 1) {},
+        isDate: <ref *4> ƒ isDate(length: 1) {},
+        isArgumentsObject: <ref *5> ƒ isArgumentsObject(length: 1) {},
+        isBigIntObject: <ref *6> ƒ isBigIntObject(length: 1) {},
+        isBooleanObject: <ref *7> ƒ isBooleanObject(length: 1) {},
+        isNumberObject: <ref *8> ƒ isNumberObject(length: 1) {},
+        isStringObject: <ref *9> ƒ isStringObject(length: 1) {},
+        isSymbolObject: <ref *10> ƒ isSymbolObject(length: 1) {},
+        isNativeError: <ref *11> ƒ isNativeError(length: 1) {},
+        isRegExp: <ref *12> ƒ isRegExp(length: 1) {},
+        isAsyncFunction: <ref *13> ƒ isAsyncFunction(length: 1) {},
+        isGeneratorFunction: <ref *14> ƒ isGeneratorFunction(length: 1) {},
+        isGeneratorObject: <ref *15> ƒ isGeneratorObject(length: 1) {},
+        isPromise: <ref *16> ƒ isPromise(length: 1) {},
+        isMap: <ref *17> ƒ isMap(length: 1) {},
+        isSet: <ref *18> ƒ isSet(length: 1) {},
+        isMapIterator: <ref *19> ƒ isMapIterator(length: 1) {},
+        isSetIterator: <ref *20> ƒ isSetIterator(length: 1) {},
+        isWeakMap: <ref *21> ƒ isWeakMap(length: 1) {},
+        isWeakSet: <ref *22> ƒ isWeakSet(length: 1) {},
+        isArrayBuffer: <ref *23> ƒ isArrayBuffer(length: 1) {},
+        isDataView: <ref *24> ƒ isDataView(length: 1) {},
+        isSharedArrayBuffer: <ref *25> ƒ isSharedArrayBuffer(length: 1) {},
+        isProxy: <ref *26> ƒ isProxy(length: 1) {},
+        isModuleNamespaceObject: <ref *27> ƒ isModuleNamespaceObject(length: 1) {},
+        isAnyArrayBuffer: <ref *28> ƒ isAnyArrayBuffer(length: 1) {},
+        isBoxedPrimitive: <ref *29> ƒ isBoxedPrimitive(length: 1) {},
+        isArrayBufferView: <ref *30> ƒ isArrayBufferView(length: 1) {},
+        isTypedArray: <ref *31> ƒ isTypedArray(length: 1) {},
+        isUint8Array: <ref *32> ƒ isUint8Array(length: 1) {},
+        isUint8ClampedArray: <ref *33> ƒ isUint8ClampedArray(length: 1) {},
+        isUint16Array: <ref *34> ƒ isUint16Array(length: 1) {},
+        isUint32Array: <ref *35> ƒ isUint32Array(length: 1) {},
+        isInt8Array: <ref *36> ƒ isInt8Array(length: 1) {},
+        isInt16Array: <ref *37> ƒ isInt16Array(length: 1) {},
+        isInt32Array: <ref *38> ƒ isInt32Array(length: 1) {},
+        isFloat32Array: <ref *39> ƒ isFloat32Array(length: 1) {},
+        isFloat64Array: <ref *40> ƒ isFloat64Array(length: 1) {},
+        isBigInt64Array: <ref *41> ƒ isBigInt64Array(length: 1) {},
+        isBigUint64Array: <ref *42> ƒ isBigUint64Array(length: 1) {},
+        isKeyObject: <ref *43> ƒ isKeyObject(length: 1) {},
+        isCryptoKey: <ref *44> ƒ isCryptoKey(length: 1) {},
+        Symbol(CommonJS): 0
+    },
+    isAnyArrayBuffer: [Circular: *28],
+    isArgumentsObject: [Circular: *5],
+    isArrayBuffer: [Circular: *23],
+    isArrayBufferView: [Circular: *30],
+    isAsyncFunction: [Circular: *13],
+    isBigInt64Array: [Circular: *41],
+    isBigIntObject: [Circular: *6],
+    isBigUint64Array: [Circular: *42],
+    isBooleanObject: [Circular: *7],
+    isBoxedPrimitive: [Circular: *29],
+    isCryptoKey: [Circular: *44],
+    isDataView: [Circular: *24],
+    isDate: [Circular: *4],
+    isExternal: [Circular: *3],
+    isFloat32Array: [Circular: *39],
+    isFloat64Array: [Circular: *40],
+    isGeneratorFunction: [Circular: *14],
+    isGeneratorObject: [Circular: *15],
+    isInt16Array: [Circular: *37],
+    isInt32Array: [Circular: *38],
+    isInt8Array: [Circular: *36],
+    isKeyObject: [Circular: *43],
+    isMap: [Circular: *17],
+    isMapIterator: [Circular: *19],
+    isModuleNamespaceObject: [Circular: *27],
+    isNativeError: [Circular: *11],
+    isNumberObject: [Circular: *8],
+    isPromise: [Circular: *16],
+    isProxy: [Circular: *26],
+    isRegExp: [Circular: *12],
+    isSet: [Circular: *18],
+    isSetIterator: [Circular: *20],
+    isSharedArrayBuffer: [Circular: *25],
+    isStringObject: [Circular: *9],
+    isSymbolObject: [Circular: *10],
+    isTypedArray: [Circular: *31],
+    isUint16Array: [Circular: *34],
+    isUint32Array: [Circular: *35],
+    isUint8Array: [Circular: *32],
+    isUint8ClampedArray: [Circular: *33],
+    isWeakMap: [Circular: *21],
+    isWeakSet: [Circular: *22]
 }
 ```
 
@@ -10240,34 +11052,55 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    cachedDataVersionTag: ƒ ::bunternal::(length: 0) {},
-    getHeapSnapshot: ƒ ::bunternal::(length: 0) {},
-    getHeapStatistics: ƒ ::bunternal::(length: 0) {},
-    getHeapSpaceStatistics: ƒ ::bunternal::(length: 0) {},
-    getHeapCodeStatistics: ƒ ::bunternal::(length: 0) {},
-    setFlagsFromString: ƒ ::bunternal::(length: 0) {},
-    deserialize: ƒ ::bunternal::(length: 0) {},
-    takeCoverage: ƒ ::bunternal::(length: 0) {},
-    stopCoverage: ƒ ::bunternal::(length: 0) {},
-    serialize: ƒ ::bunternal::(length: 0) {},
-    writeHeapSnapshot: ƒ ::bunternal::(length: 0) {},
-    setHeapSnapshotNearHeapLimit: ƒ ::bunternal::(length: 0) {},
-    promiseHooks: {
-        createHook: ƒ createHook(length: 0) {},
-        onInit: ƒ onInit(length: 0) {},
-        onBefore: ƒ onBefore(length: 0) {},
-        onAfter: ƒ onAfter(length: 0) {},
-        onSettled: ƒ onSettled(length: 0) {}
+    DefaultDeserializer: class DefaultDeserializer extends Deserializer {},
+    DefaultSerializer: class DefaultSerializer extends Serializer {},
+    Deserializer: <ref *4> class Deserializer {},
+    GCProfiler: class GCProfiler {},
+    Serializer: <ref *6> class Serializer {},
+    cachedDataVersionTag: <ref *7> ƒ ::bunternal::(length: 0) {},
+    default: {
+        cachedDataVersionTag: [Circular: *7],
+        getHeapSnapshot: <ref *9> ƒ ::bunternal::(length: 0) {},
+        getHeapStatistics: <ref *10> ƒ ::bunternal::(length: 0) {},
+        getHeapSpaceStatistics: <ref *11> ƒ ::bunternal::(length: 0) {},
+        getHeapCodeStatistics: <ref *12> ƒ ::bunternal::(length: 0) {},
+        setFlagsFromString: <ref *13> ƒ ::bunternal::(length: 0) {},
+        deserialize: <ref *14> ƒ ::bunternal::(length: 0) {},
+        takeCoverage: <ref *15> ƒ ::bunternal::(length: 0) {},
+        stopCoverage: <ref *16> ƒ ::bunternal::(length: 0) {},
+        serialize: <ref *17> ƒ ::bunternal::(length: 0) {},
+        writeHeapSnapshot: <ref *18> ƒ ::bunternal::(length: 0) {},
+        setHeapSnapshotNearHeapLimit: <ref *19> ƒ ::bunternal::(length: 0) {},
+        promiseHooks: <ref *20> {
+            createHook: ƒ createHook(length: 0) {},
+            onInit: ƒ onInit(length: 0) {},
+            onBefore: ƒ onBefore(length: 0) {},
+            onAfter: ƒ onAfter(length: 0) {},
+            onSettled: ƒ onSettled(length: 0) {}
+        },
+        startupSnapshot: <ref *26> {
+            addDeserializeCallback: ƒ addDeserializeCallback(length: 0) {},
+            addSerializeCallback: ƒ addSerializeCallback(length: 0) {},
+            setDeserializeMainFunction: ƒ setDeserializeMainFunction(length: 0) {},
+            isBuildingSnapshot: ƒ isBuildingSnapshot(length: 0) {}
+        },
+        Deserializer: [Circular: *4],
+        Serializer: [Circular: *6],
+        Symbol(CommonJS): 0
     },
-    startupSnapshot: {
-        addDeserializeCallback: ƒ addDeserializeCallback(length: 0) {},
-        addSerializeCallback: ƒ addSerializeCallback(length: 0) {},
-        setDeserializeMainFunction: ƒ setDeserializeMainFunction(length: 0) {},
-        isBuildingSnapshot: ƒ isBuildingSnapshot(length: 0) {}
-    },
-    Deserializer: class Deserializer {},
-    Serializer: class Serializer {},
-    Symbol(CommonJS): 0
+    deserialize: [Circular: *14],
+    getHeapCodeStatistics: [Circular: *12],
+    getHeapSnapshot: [Circular: *9],
+    getHeapSpaceStatistics: [Circular: *11],
+    getHeapStatistics: [Circular: *10],
+    promiseHooks: [Circular: *20],
+    serialize: [Circular: *17],
+    setFlagsFromString: [Circular: *13],
+    setHeapSnapshotNearHeapLimit: [Circular: *19],
+    startupSnapshot: [Circular: *26],
+    stopCoverage: [Circular: *16],
+    takeCoverage: [Circular: *15],
+    writeHeapSnapshot: [Circular: *18]
 }
 ```
 
@@ -10306,15 +11139,25 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    createContext: ƒ createContext(length: 0) {},
-    runInContext: ƒ runInContext(length: 3) {},
-    runInNewContext: ƒ runInNewContext(length: 0) {},
-    runInThisContext: ƒ runInThisContext(length: 0) {},
-    isContext: ƒ isContext(length: 0) {},
-    compileFunction: ƒ compileFunction(length: 0) {},
-    measureMemory: ƒ measureMemory(length: 0) {},
-    Script: ƒ Script(length: 1) {},
-    Symbol(CommonJS): 0
+    Script: <ref *2> ƒ Script(length: 1) {},
+    compileFunction: <ref *3> ƒ compileFunction(length: 0) {},
+    createContext: <ref *4> ƒ createContext(length: 0) {},
+    default: {
+        createContext: [Circular: *4],
+        runInContext: <ref *6> ƒ runInContext(length: 3) {},
+        runInNewContext: <ref *7> ƒ runInNewContext(length: 0) {},
+        runInThisContext: <ref *8> ƒ runInThisContext(length: 0) {},
+        isContext: <ref *9> ƒ isContext(length: 0) {},
+        compileFunction: [Circular: *3],
+        measureMemory: <ref *10> ƒ measureMemory(length: 0) {},
+        Script: [Circular: *2],
+        Symbol(CommonJS): 0
+    },
+    isContext: [Circular: *9],
+    measureMemory: [Circular: *10],
+    runInContext: [Circular: *6],
+    runInNewContext: [Circular: *7],
+    runInThisContext: [Circular: *8]
 }
 ```
 
@@ -10364,7 +11207,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-[Unexpected Error: [object Function] (type "undefined")]
+{
+    default: [Unexpected Error: [object Function] (type "undefined")]
+}
 ```
 
 </td></tr></table>
@@ -10587,66 +11432,30 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Z_NO_FLUSH: 0,
-    Z_PARTIAL_FLUSH: 1,
-    Z_SYNC_FLUSH: 2,
-    Z_FULL_FLUSH: 3,
-    Z_FINISH: 4,
-    Z_BLOCK: 5,
-    Z_TREES: 6,
-    Z_OK: 0,
-    Z_STREAM_END: 1,
-    Z_NEED_DICT: 2,
-    Z_ERRNO: -1,
-    Z_STREAM_ERROR: -2,
-    Z_DATA_ERROR: -3,
-    Z_BUF_ERROR: -5,
-    Z_NO_COMPRESSION: 0,
-    Z_BEST_SPEED: 1,
-    Z_BEST_COMPRESSION: 9,
-    Z_DEFAULT_COMPRESSION: -1,
-    Z_FILTERED: 1,
-    Z_HUFFMAN_ONLY: 2,
-    Z_RLE: 3,
-    Z_FIXED: 4,
-    Z_DEFAULT_STRATEGY: 0,
-    Z_BINARY: 0,
-    Z_TEXT: 1,
-    Z_UNKNOWN: 2,
-    Z_DEFLATED: 8,
-    Zlib: ƒ Zlib(length: 1) {},
-    Z_MIN_WINDOWBITS: 8,
-    Z_MAX_WINDOWBITS: 15,
-    Z_DEFAULT_WINDOWBITS: 15,
-    Z_MIN_CHUNK: 64,
-    Z_MAX_CHUNK: Infinity,
-    Z_DEFAULT_CHUNK: 16384,
-    Z_MIN_MEMLEVEL: 1,
-    Z_MAX_MEMLEVEL: 9,
-    Z_DEFAULT_MEMLEVEL: 8,
-    Z_MIN_LEVEL: -1,
-    Z_MAX_LEVEL: 9,
-    Z_DEFAULT_LEVEL: -1,
-    codes: {
-        0: "Z_OK",
-        1: "Z_STREAM_END",
-        2: "Z_NEED_DICT",
-        Z_OK: 0,
-        Z_STREAM_END: 1,
-        Z_NEED_DICT: 2,
-        Z_ERRNO: -1,
-        Z_STREAM_ERROR: -2,
-        Z_DATA_ERROR: -3,
-        Z_MEM_ERROR: undefined,
-        Z_BUF_ERROR: -5,
-        Z_VERSION_ERROR: undefined,
-        -1: "Z_ERRNO",
-        -2: "Z_STREAM_ERROR",
-        -3: "Z_DATA_ERROR",
-        undefined: "Z_VERSION_ERROR",
-        -5: "Z_BUF_ERROR"
+    Deflate: <ref *2> ƒ Deflate2(length: 1) {
+        super_: <ref *3> ƒ Zlib(length: 2) {
+            super_: ƒ Z(length: 1) {}
+        }
     },
-    constants: {
+    DeflateRaw: <ref *5> ƒ DeflateRaw2(length: 1) {
+        super_: [Circular: *3]
+    },
+    Gunzip: <ref *6> ƒ Gunzip2(length: 1) {
+        super_: [Circular: *3]
+    },
+    Gzip: <ref *7> ƒ Gzip2(length: 1) {
+        super_: [Circular: *3]
+    },
+    Inflate: <ref *8> ƒ Inflate2(length: 1) {
+        super_: [Circular: *3]
+    },
+    InflateRaw: <ref *9> ƒ InflateRaw2(length: 1) {
+        super_: [Circular: *3]
+    },
+    Unzip: <ref *10> ƒ Unzip2(length: 1) {
+        super_: [Circular: *3]
+    },
+    constants: <ref *11> {
         Z_NO_FLUSH: 0,
         Z_PARTIAL_FLUSH: 1,
         Z_SYNC_FLUSH: 2,
@@ -10675,51 +11484,118 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         Z_UNKNOWN: 2,
         Z_DEFLATED: 8
     },
-    Deflate: ƒ Deflate(length: 1) {
-        super_: <ref *6> ƒ Zlib(length: 2) {
-            super_: ƒ K(length: 1) {}
-        }
+    createDeflate: <ref *12> ƒ (length: 1) {},
+    createDeflateRaw: <ref *13> ƒ (length: 1) {},
+    createGunzip: <ref *14> ƒ (length: 1) {},
+    createGzip: <ref *15> ƒ (length: 1) {},
+    createInflate: <ref *16> ƒ (length: 1) {},
+    createInflateRaw: <ref *17> ƒ (length: 1) {},
+    createUnzip: <ref *18> ƒ (length: 1) {},
+    default: {
+        Z_NO_FLUSH: 0,
+        Z_PARTIAL_FLUSH: 1,
+        Z_SYNC_FLUSH: 2,
+        Z_FULL_FLUSH: 3,
+        Z_FINISH: 4,
+        Z_BLOCK: 5,
+        Z_TREES: 6,
+        Z_OK: 0,
+        Z_STREAM_END: 1,
+        Z_NEED_DICT: 2,
+        Z_ERRNO: -1,
+        Z_STREAM_ERROR: -2,
+        Z_DATA_ERROR: -3,
+        Z_BUF_ERROR: -5,
+        Z_NO_COMPRESSION: 0,
+        Z_BEST_SPEED: 1,
+        Z_BEST_COMPRESSION: 9,
+        Z_DEFAULT_COMPRESSION: -1,
+        Z_FILTERED: 1,
+        Z_HUFFMAN_ONLY: 2,
+        Z_RLE: 3,
+        Z_FIXED: 4,
+        Z_DEFAULT_STRATEGY: 0,
+        Z_BINARY: 0,
+        Z_TEXT: 1,
+        Z_UNKNOWN: 2,
+        Z_DEFLATED: 8,
+        Zlib: ƒ Zlib(length: 1) {},
+        Z_MIN_WINDOWBITS: 8,
+        Z_MAX_WINDOWBITS: 15,
+        Z_DEFAULT_WINDOWBITS: 15,
+        Z_MIN_CHUNK: 64,
+        Z_MAX_CHUNK: Infinity,
+        Z_DEFAULT_CHUNK: 16384,
+        Z_MIN_MEMLEVEL: 1,
+        Z_MAX_MEMLEVEL: 9,
+        Z_DEFAULT_MEMLEVEL: 8,
+        Z_MIN_LEVEL: -1,
+        Z_MAX_LEVEL: 9,
+        Z_DEFAULT_LEVEL: -1,
+        codes: {
+            0: "Z_OK",
+            1: "Z_STREAM_END",
+            2: "Z_NEED_DICT",
+            Z_OK: 0,
+            Z_STREAM_END: 1,
+            Z_NEED_DICT: 2,
+            Z_ERRNO: -1,
+            Z_STREAM_ERROR: -2,
+            Z_DATA_ERROR: -3,
+            Z_MEM_ERROR: undefined,
+            Z_BUF_ERROR: -5,
+            Z_VERSION_ERROR: undefined,
+            -1: "Z_ERRNO",
+            -2: "Z_STREAM_ERROR",
+            -3: "Z_DATA_ERROR",
+            undefined: "Z_VERSION_ERROR",
+            -5: "Z_BUF_ERROR"
+        },
+        constants: [Circular: *11],
+        Deflate: [Circular: *2],
+        Inflate: [Circular: *8],
+        Gzip: [Circular: *7],
+        Gunzip: [Circular: *6],
+        DeflateRaw: [Circular: *5],
+        InflateRaw: [Circular: *9],
+        Unzip: [Circular: *10],
+        createDeflate: [Circular: *12],
+        createInflate: [Circular: *16],
+        createDeflateRaw: [Circular: *13],
+        createInflateRaw: [Circular: *17],
+        createGzip: [Circular: *15],
+        createGunzip: [Circular: *14],
+        createUnzip: [Circular: *18],
+        deflate: <ref *22> ƒ (length: 3) {},
+        deflateSync: <ref *23> ƒ (length: 2) {},
+        gzip: <ref *24> ƒ (length: 3) {},
+        gzipSync: <ref *25> ƒ (length: 2) {},
+        deflateRaw: <ref *26> ƒ (length: 3) {},
+        deflateRawSync: <ref *27> ƒ (length: 2) {},
+        unzip: <ref *28> ƒ (length: 3) {},
+        unzipSync: <ref *29> ƒ (length: 2) {},
+        inflate: <ref *30> ƒ (length: 3) {},
+        inflateSync: <ref *31> ƒ (length: 2) {},
+        gunzip: <ref *32> ƒ (length: 3) {},
+        gunzipSync: <ref *33> ƒ (length: 2) {},
+        inflateRaw: <ref *34> ƒ (length: 3) {},
+        inflateRawSync: <ref *35> ƒ (length: 2) {},
+        Symbol(CommonJS): 0
     },
-    Inflate: ƒ Inflate(length: 1) {
-        super_: [Circular: *6]
-    },
-    Gzip: ƒ Gzip(length: 1) {
-        super_: [Circular: *6]
-    },
-    Gunzip: ƒ Gunzip(length: 1) {
-        super_: [Circular: *6]
-    },
-    DeflateRaw: ƒ DeflateRaw(length: 1) {
-        super_: [Circular: *6]
-    },
-    InflateRaw: ƒ InflateRaw(length: 1) {
-        super_: [Circular: *6]
-    },
-    Unzip: ƒ Unzip(length: 1) {
-        super_: [Circular: *6]
-    },
-    createDeflate: ƒ (length: 1) {},
-    createInflate: ƒ (length: 1) {},
-    createDeflateRaw: ƒ (length: 1) {},
-    createInflateRaw: ƒ (length: 1) {},
-    createGzip: ƒ (length: 1) {},
-    createGunzip: ƒ (length: 1) {},
-    createUnzip: ƒ (length: 1) {},
-    deflate: ƒ (length: 3) {},
-    deflateSync: ƒ (length: 2) {},
-    gzip: ƒ (length: 3) {},
-    gzipSync: ƒ (length: 2) {},
-    deflateRaw: ƒ (length: 3) {},
-    deflateRawSync: ƒ (length: 2) {},
-    unzip: ƒ (length: 3) {},
-    unzipSync: ƒ (length: 2) {},
-    inflate: ƒ (length: 3) {},
-    inflateSync: ƒ (length: 2) {},
-    gunzip: ƒ (length: 3) {},
-    gunzipSync: ƒ (length: 2) {},
-    inflateRaw: ƒ (length: 3) {},
-    inflateRawSync: ƒ (length: 2) {},
-    Symbol(CommonJS): 0
+    deflate: [Circular: *22],
+    deflateRaw: [Circular: *26],
+    deflateRawSync: [Circular: *27],
+    deflateSync: [Circular: *23],
+    gunzip: [Circular: *32],
+    gunzipSync: [Circular: *33],
+    gzip: [Circular: *24],
+    gzipSync: [Circular: *25],
+    inflate: [Circular: *30],
+    inflateRaw: [Circular: *34],
+    inflateRawSync: [Circular: *35],
+    inflateSync: [Circular: *31],
+    unzip: [Circular: *28],
+    unzipSync: [Circular: *29]
 }
 ```
 
