@@ -6,7 +6,7 @@ The comparison is performed every week using GitHub Actions, with the latest Bun
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v18.16.1<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js v18.16.1<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -136,7 +136,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 ```js
 {
     Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
     IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
     METHODS: <ref *5> [
         "ACL",
@@ -174,7 +174,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -279,6 +279,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
+        ClientRequest: [Circular: *3],
+        OutgoingMessage: [Circular: *6],
         Symbol(CommonJS): 0
     },
     get: [Circular: *13],
@@ -309,7 +311,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 ```js
 {
     Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
     IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
     METHODS: <ref *5> [
         "ACL",
@@ -347,7 +349,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -452,6 +454,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
+        ClientRequest: [Circular: *3],
+        OutgoingMessage: [Circular: *6],
         Symbol(CommonJS): 0
     },
     get: [Circular: *13],
@@ -559,7 +563,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 ```js
 {
     Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
     IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
     METHODS: <ref *5> [
         "ACL",
@@ -597,7 +601,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -702,6 +706,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
+        ClientRequest: [Circular: *3],
+        OutgoingMessage: [Circular: *6],
         Symbol(CommonJS): 0
     },
     get: [Circular: *13],
@@ -736,7 +742,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 ```js
 {
     Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
     IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
     METHODS: <ref *5> [
         "ACL",
@@ -774,7 +780,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -879,6 +885,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
+        ClientRequest: [Circular: *3],
+        OutgoingMessage: [Circular: *6],
         Symbol(CommonJS): 0
     },
     get: [Circular: *13],
@@ -917,7 +925,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 ```js
 {
     Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
     IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
     METHODS: <ref *5> [
         "ACL",
@@ -955,7 +963,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -1060,6 +1068,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
+        ClientRequest: [Circular: *3],
+        OutgoingMessage: [Circular: *6],
         Symbol(CommonJS): 0
     },
     get: [Circular: *13],
@@ -1166,7 +1176,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 ```js
 {
     Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
     IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
     METHODS: <ref *5> [
         "ACL",
@@ -1204,7 +1214,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -1309,6 +1319,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
+        ClientRequest: [Circular: *3],
+        OutgoingMessage: [Circular: *6],
         Symbol(CommonJS): 0
     },
     get: [Circular: *13],
@@ -1342,58 +1354,58 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ B(length: 1) {
+    Duplex: <ref *2> ƒ R(length: 1) {
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class q extends Eq {},
-    PassThrough: <ref *7> ƒ H(length: 1) {},
-    Readable: <ref *8> ƒ F(length: 1) {
-        _fromList: ƒ o(length: 2) {},
+    NativeWritable: <ref *6> class t extends Gq {},
+    PassThrough: <ref *7> ƒ y(length: 1) {},
+    Readable: <ref *8> ƒ P(length: 1) {
+        _fromList: ƒ X(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ H(length: 1) {
-        isDisturbed: <ref *15> ƒ D(length: 1) {},
-        isErrored: <ref *16> ƒ w(length: 1) {},
-        isWritable: <ref *17> ƒ A(length: 1) {},
-        isReadable: <ref *18> ƒ N(length: 1) {},
+    Stream: <ref *14> ƒ y(length: 1) {
+        isDisturbed: <ref *15> ƒ m(length: 1) {},
+        isErrored: <ref *16> ƒ u(length: 1) {},
+        isWritable: <ref *17> ƒ T(length: 1) {},
+        isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
-        Writable: <ref *19> ƒ O(length: 0) {
+        Writable: <ref *19> ƒ Y(length: 0) {
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ Z(length: 1) {},
+        Transform: <ref *22> ƒ j(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ C(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        pipeline: <ref *23> ƒ N(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
-        finished: <ref *26> ƒ P(length: 3) {
-            finished: <ref *27> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        finished: <ref *26> ƒ $(length: 3) {
+            finished: <ref *27> ƒ s(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
-        destroy: <ref *28> ƒ O(length: 2) {},
-        compose: <ref *29> ƒ V(length: 0) {},
+        destroy: <ref *28> ƒ Y(length: 2) {},
+        compose: <ref *29> ƒ c(length: 0) {},
         [get/set] promises: <ref *30> {
             finished: [Circular: *27],
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ L(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        _isUint8Array: <ref *31> ƒ A(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
-        eos: <ref *34> ƒ X(length: 0) {},
+        eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ j(length: 1) {},
-            _ReadableFromWebForUndici: class L extends F {}
+            _ReadableFromWeb: ƒ K(length: 1) {},
+            _ReadableFromWebForUndici: class A extends P {}
         }
     },
     Transform: [Circular: *22],
@@ -1432,58 +1444,58 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ B(length: 1) {
+    Duplex: <ref *2> ƒ R(length: 1) {
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class q extends Eq {},
-    PassThrough: <ref *7> ƒ H(length: 1) {},
-    Readable: <ref *8> ƒ F(length: 1) {
-        _fromList: ƒ o(length: 2) {},
+    NativeWritable: <ref *6> class t extends Gq {},
+    PassThrough: <ref *7> ƒ y(length: 1) {},
+    Readable: <ref *8> ƒ P(length: 1) {
+        _fromList: ƒ X(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ H(length: 1) {
-        isDisturbed: <ref *15> ƒ D(length: 1) {},
-        isErrored: <ref *16> ƒ w(length: 1) {},
-        isWritable: <ref *17> ƒ A(length: 1) {},
-        isReadable: <ref *18> ƒ N(length: 1) {},
+    Stream: <ref *14> ƒ y(length: 1) {
+        isDisturbed: <ref *15> ƒ m(length: 1) {},
+        isErrored: <ref *16> ƒ u(length: 1) {},
+        isWritable: <ref *17> ƒ T(length: 1) {},
+        isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
-        Writable: <ref *19> ƒ O(length: 0) {
+        Writable: <ref *19> ƒ Y(length: 0) {
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ Z(length: 1) {},
+        Transform: <ref *22> ƒ j(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ C(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        pipeline: <ref *23> ƒ N(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
-        finished: <ref *26> ƒ P(length: 3) {
-            finished: <ref *27> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        finished: <ref *26> ƒ $(length: 3) {
+            finished: <ref *27> ƒ s(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
-        destroy: <ref *28> ƒ O(length: 2) {},
-        compose: <ref *29> ƒ V(length: 0) {},
+        destroy: <ref *28> ƒ Y(length: 2) {},
+        compose: <ref *29> ƒ c(length: 0) {},
         [get/set] promises: <ref *30> {
             finished: [Circular: *27],
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ L(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        _isUint8Array: <ref *31> ƒ A(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
-        eos: <ref *34> ƒ X(length: 0) {},
+        eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ j(length: 1) {},
-            _ReadableFromWebForUndici: class L extends F {}
+            _ReadableFromWeb: ƒ K(length: 1) {},
+            _ReadableFromWebForUndici: class A extends P {}
         }
     },
     Transform: [Circular: *22],
@@ -1535,58 +1547,58 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ B(length: 1) {
+    Duplex: <ref *2> ƒ R(length: 1) {
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class q extends Eq {},
-    PassThrough: <ref *7> ƒ H(length: 1) {},
-    Readable: <ref *8> ƒ F(length: 1) {
-        _fromList: ƒ o(length: 2) {},
+    NativeWritable: <ref *6> class t extends Gq {},
+    PassThrough: <ref *7> ƒ y(length: 1) {},
+    Readable: <ref *8> ƒ P(length: 1) {
+        _fromList: ƒ X(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ H(length: 1) {
-        isDisturbed: <ref *15> ƒ D(length: 1) {},
-        isErrored: <ref *16> ƒ w(length: 1) {},
-        isWritable: <ref *17> ƒ A(length: 1) {},
-        isReadable: <ref *18> ƒ N(length: 1) {},
+    Stream: <ref *14> ƒ y(length: 1) {
+        isDisturbed: <ref *15> ƒ m(length: 1) {},
+        isErrored: <ref *16> ƒ u(length: 1) {},
+        isWritable: <ref *17> ƒ T(length: 1) {},
+        isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
-        Writable: <ref *19> ƒ O(length: 0) {
+        Writable: <ref *19> ƒ Y(length: 0) {
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ Z(length: 1) {},
+        Transform: <ref *22> ƒ j(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ C(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        pipeline: <ref *23> ƒ N(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
-        finished: <ref *26> ƒ P(length: 3) {
-            finished: <ref *27> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        finished: <ref *26> ƒ $(length: 3) {
+            finished: <ref *27> ƒ s(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
-        destroy: <ref *28> ƒ O(length: 2) {},
-        compose: <ref *29> ƒ V(length: 0) {},
+        destroy: <ref *28> ƒ Y(length: 2) {},
+        compose: <ref *29> ƒ c(length: 0) {},
         [get/set] promises: <ref *30> {
             finished: [Circular: *27],
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ L(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        _isUint8Array: <ref *31> ƒ A(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
-        eos: <ref *34> ƒ X(length: 0) {},
+        eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ j(length: 1) {},
-            _ReadableFromWebForUndici: class L extends F {}
+            _ReadableFromWeb: ƒ K(length: 1) {},
+            _ReadableFromWebForUndici: class A extends P {}
         }
     },
     Transform: [Circular: *22],
@@ -1625,58 +1637,58 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ B(length: 1) {
+    Duplex: <ref *2> ƒ R(length: 1) {
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class q extends Eq {},
-    PassThrough: <ref *7> ƒ H(length: 1) {},
-    Readable: <ref *8> ƒ F(length: 1) {
-        _fromList: ƒ o(length: 2) {},
+    NativeWritable: <ref *6> class t extends Gq {},
+    PassThrough: <ref *7> ƒ y(length: 1) {},
+    Readable: <ref *8> ƒ P(length: 1) {
+        _fromList: ƒ X(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ H(length: 1) {
-        isDisturbed: <ref *15> ƒ D(length: 1) {},
-        isErrored: <ref *16> ƒ w(length: 1) {},
-        isWritable: <ref *17> ƒ A(length: 1) {},
-        isReadable: <ref *18> ƒ N(length: 1) {},
+    Stream: <ref *14> ƒ y(length: 1) {
+        isDisturbed: <ref *15> ƒ m(length: 1) {},
+        isErrored: <ref *16> ƒ u(length: 1) {},
+        isWritable: <ref *17> ƒ T(length: 1) {},
+        isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
-        Writable: <ref *19> ƒ O(length: 0) {
+        Writable: <ref *19> ƒ Y(length: 0) {
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ Z(length: 1) {},
+        Transform: <ref *22> ƒ j(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ C(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        pipeline: <ref *23> ƒ N(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
-        finished: <ref *26> ƒ P(length: 3) {
-            finished: <ref *27> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        finished: <ref *26> ƒ $(length: 3) {
+            finished: <ref *27> ƒ s(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
-        destroy: <ref *28> ƒ O(length: 2) {},
-        compose: <ref *29> ƒ V(length: 0) {},
+        destroy: <ref *28> ƒ Y(length: 2) {},
+        compose: <ref *29> ƒ c(length: 0) {},
         [get/set] promises: <ref *30> {
             finished: [Circular: *27],
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ L(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        _isUint8Array: <ref *31> ƒ A(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
-        eos: <ref *34> ƒ X(length: 0) {},
+        eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ j(length: 1) {},
-            _ReadableFromWebForUndici: class L extends F {}
+            _ReadableFromWeb: ƒ K(length: 1) {},
+            _ReadableFromWebForUndici: class A extends P {}
         }
     },
     Transform: [Circular: *22],
@@ -1709,7 +1721,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2047) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2006) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -1717,58 +1729,58 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ B(length: 1) {
+    Duplex: <ref *2> ƒ R(length: 1) {
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class q extends Eq {},
-    PassThrough: <ref *7> ƒ H(length: 1) {},
-    Readable: <ref *8> ƒ F(length: 1) {
-        _fromList: ƒ o(length: 2) {},
+    NativeWritable: <ref *6> class t extends Gq {},
+    PassThrough: <ref *7> ƒ y(length: 1) {},
+    Readable: <ref *8> ƒ P(length: 1) {
+        _fromList: ƒ X(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ H(length: 1) {
-        isDisturbed: <ref *15> ƒ D(length: 1) {},
-        isErrored: <ref *16> ƒ w(length: 1) {},
-        isWritable: <ref *17> ƒ A(length: 1) {},
-        isReadable: <ref *18> ƒ N(length: 1) {},
+    Stream: <ref *14> ƒ y(length: 1) {
+        isDisturbed: <ref *15> ƒ m(length: 1) {},
+        isErrored: <ref *16> ƒ u(length: 1) {},
+        isWritable: <ref *17> ƒ T(length: 1) {},
+        isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
-        Writable: <ref *19> ƒ O(length: 0) {
+        Writable: <ref *19> ƒ Y(length: 0) {
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ Z(length: 1) {},
+        Transform: <ref *22> ƒ j(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ C(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        pipeline: <ref *23> ƒ N(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
-        finished: <ref *26> ƒ P(length: 3) {
-            finished: <ref *27> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        finished: <ref *26> ƒ $(length: 3) {
+            finished: <ref *27> ƒ s(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
-        destroy: <ref *28> ƒ O(length: 2) {},
-        compose: <ref *29> ƒ V(length: 0) {},
+        destroy: <ref *28> ƒ Y(length: 2) {},
+        compose: <ref *29> ƒ c(length: 0) {},
         [get/set] promises: <ref *30> {
             finished: [Circular: *27],
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ L(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        _isUint8Array: <ref *31> ƒ A(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
-        eos: <ref *34> ƒ X(length: 0) {},
+        eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ j(length: 1) {},
-            _ReadableFromWebForUndici: class L extends F {}
+            _ReadableFromWeb: ƒ K(length: 1) {},
+            _ReadableFromWebForUndici: class A extends P {}
         }
     },
     Transform: [Circular: *22],
@@ -1814,58 +1826,58 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ B(length: 1) {
+    Duplex: <ref *2> ƒ R(length: 1) {
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class q extends Eq {},
-    PassThrough: <ref *7> ƒ H(length: 1) {},
-    Readable: <ref *8> ƒ F(length: 1) {
-        _fromList: ƒ o(length: 2) {},
+    NativeWritable: <ref *6> class t extends Gq {},
+    PassThrough: <ref *7> ƒ y(length: 1) {},
+    Readable: <ref *8> ƒ P(length: 1) {
+        _fromList: ƒ X(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ H(length: 1) {
-        isDisturbed: <ref *15> ƒ D(length: 1) {},
-        isErrored: <ref *16> ƒ w(length: 1) {},
-        isWritable: <ref *17> ƒ A(length: 1) {},
-        isReadable: <ref *18> ƒ N(length: 1) {},
+    Stream: <ref *14> ƒ y(length: 1) {
+        isDisturbed: <ref *15> ƒ m(length: 1) {},
+        isErrored: <ref *16> ƒ u(length: 1) {},
+        isWritable: <ref *17> ƒ T(length: 1) {},
+        isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
-        Writable: <ref *19> ƒ O(length: 0) {
+        Writable: <ref *19> ƒ Y(length: 0) {
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ Z(length: 1) {},
+        Transform: <ref *22> ƒ j(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ C(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        pipeline: <ref *23> ƒ N(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
-        finished: <ref *26> ƒ P(length: 3) {
-            finished: <ref *27> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        finished: <ref *26> ƒ $(length: 3) {
+            finished: <ref *27> ƒ s(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
-        destroy: <ref *28> ƒ O(length: 2) {},
-        compose: <ref *29> ƒ V(length: 0) {},
+        destroy: <ref *28> ƒ Y(length: 2) {},
+        compose: <ref *29> ƒ c(length: 0) {},
         [get/set] promises: <ref *30> {
             finished: [Circular: *27],
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ L(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        _isUint8Array: <ref *31> ƒ A(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
-        eos: <ref *34> ƒ X(length: 0) {},
+        eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ j(length: 1) {},
-            _ReadableFromWebForUndici: class L extends F {}
+            _ReadableFromWeb: ƒ K(length: 1) {},
+            _ReadableFromWebForUndici: class A extends P {}
         }
     },
     Transform: [Circular: *22],
@@ -1920,34 +1932,35 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
     SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
     Server: <ref *3> class Server extends NetServer {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {},
-    connect: <ref *5> ƒ createConnection(length: 3) {},
-    convertALPNProtocols: <ref *6> ƒ convertALPNProtocols(length: 2) {},
-    createConnection: [Circular: *5],
-    createSecureContext: <ref *7> ƒ createSecureContext(length: 1) {},
-    createServer: <ref *8> ƒ createServer(length: 2) {},
+    checkServerIdentity: ƒ checkServerIdentity(length: 2) {},
+    connect: <ref *6> ƒ createConnection(length: 3) {},
+    convertALPNProtocols: <ref *7> ƒ convertALPNProtocols(length: 2) {},
+    createConnection: [Circular: *6],
+    createSecureContext: <ref *8> ƒ createSecureContext(length: 1) {},
+    createServer: <ref *9> ƒ createServer(length: 2) {},
     default: {
         CLIENT_RENEG_LIMIT: 3,
         CLIENT_RENEG_WINDOW: 600,
-        connect: [Circular: *5],
-        convertALPNProtocols: [Circular: *6],
-        createConnection: [Circular: *5],
-        createSecureContext: [Circular: *7],
-        createServer: [Circular: *8],
+        connect: [Circular: *6],
+        convertALPNProtocols: [Circular: *7],
+        createConnection: [Circular: *6],
+        createSecureContext: [Circular: *8],
+        createServer: [Circular: *9],
         DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
         DEFAULT_ECDH_CURVE: "auto",
         DEFAULT_MAX_VERSION: "TLSv1.3",
         DEFAULT_MIN_VERSION: "TLSv1.2",
-        getCiphers: <ref *10> ƒ getCiphers(length: 0) {},
-        getCurves: <ref *11> ƒ getCurves(length: 0) {},
-        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
+        getCiphers: <ref *11> ƒ getCiphers(length: 0) {},
+        getCurves: <ref *12> ƒ getCurves(length: 0) {},
+        parseCertString: <ref *13> ƒ parseCertString(length: 0) {},
         SecureContext: [Circular: *2],
         Server: [Circular: *3],
         TLSSocket: [Circular: *4],
         Symbol(CommonJS): 0
     },
-    getCiphers: [Circular: *10],
-    getCurves: [Circular: *11],
-    parseCertString: [Circular: *12]
+    getCiphers: [Circular: *11],
+    getCurves: [Circular: *12],
+    parseCertString: [Circular: *13]
 }
 ```
 
@@ -1985,34 +1998,35 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
     SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
     Server: <ref *3> class Server extends NetServer {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {},
-    connect: <ref *5> ƒ createConnection(length: 3) {},
-    convertALPNProtocols: <ref *6> ƒ convertALPNProtocols(length: 2) {},
-    createConnection: [Circular: *5],
-    createSecureContext: <ref *7> ƒ createSecureContext(length: 1) {},
-    createServer: <ref *8> ƒ createServer(length: 2) {},
+    checkServerIdentity: ƒ checkServerIdentity(length: 2) {},
+    connect: <ref *6> ƒ createConnection(length: 3) {},
+    convertALPNProtocols: <ref *7> ƒ convertALPNProtocols(length: 2) {},
+    createConnection: [Circular: *6],
+    createSecureContext: <ref *8> ƒ createSecureContext(length: 1) {},
+    createServer: <ref *9> ƒ createServer(length: 2) {},
     default: {
         CLIENT_RENEG_LIMIT: 3,
         CLIENT_RENEG_WINDOW: 600,
-        connect: [Circular: *5],
-        convertALPNProtocols: [Circular: *6],
-        createConnection: [Circular: *5],
-        createSecureContext: [Circular: *7],
-        createServer: [Circular: *8],
+        connect: [Circular: *6],
+        convertALPNProtocols: [Circular: *7],
+        createConnection: [Circular: *6],
+        createSecureContext: [Circular: *8],
+        createServer: [Circular: *9],
         DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
         DEFAULT_ECDH_CURVE: "auto",
         DEFAULT_MAX_VERSION: "TLSv1.3",
         DEFAULT_MIN_VERSION: "TLSv1.2",
-        getCiphers: <ref *10> ƒ getCiphers(length: 0) {},
-        getCurves: <ref *11> ƒ getCurves(length: 0) {},
-        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
+        getCiphers: <ref *11> ƒ getCiphers(length: 0) {},
+        getCurves: <ref *12> ƒ getCurves(length: 0) {},
+        parseCertString: <ref *13> ƒ parseCertString(length: 0) {},
         SecureContext: [Circular: *2],
         Server: [Circular: *3],
         TLSSocket: [Circular: *4],
         Symbol(CommonJS): 0
     },
-    getCiphers: [Circular: *10],
-    getCurves: [Circular: *11],
-    parseCertString: [Circular: *12]
+    getCiphers: [Circular: *11],
+    getCurves: [Circular: *12],
+    parseCertString: [Circular: *13]
 }
 ```
 
@@ -2094,29 +2108,29 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 
 ```js
 {
-    AssertionError: <ref *2> ƒ b(length: 1) {},
+    AssertionError: <ref *2> ƒ J(length: 1) {},
     assert: undefined,
-    deepEqual: <ref *3> ƒ x(length: 3) {},
-    deepStrictEqual: <ref *4> ƒ x(length: 3) {},
+    deepEqual: <ref *3> ƒ Z(length: 3) {},
+    deepStrictEqual: <ref *4> ƒ Z(length: 3) {},
     default: <ref *5> ƒ S(length: 0) {
-        fail: <ref *6> ƒ P(length: 5) {},
+        fail: <ref *6> ƒ f(length: 5) {},
         AssertionError: [Circular: *2],
         ok: [Circular: *5],
-        equal: <ref *7> ƒ x(length: 3) {},
-        notEqual: <ref *8> ƒ x(length: 3) {},
+        equal: <ref *7> ƒ Z(length: 3) {},
+        notEqual: <ref *8> ƒ Z(length: 3) {},
         deepEqual: [Circular: *3],
-        notDeepEqual: <ref *9> ƒ x(length: 3) {},
+        notDeepEqual: <ref *9> ƒ Z(length: 3) {},
         deepStrictEqual: [Circular: *4],
-        notDeepStrictEqual: <ref *10> ƒ j(length: 3) {},
-        strictEqual: <ref *11> ƒ x(length: 3) {},
-        notStrictEqual: <ref *12> ƒ x(length: 3) {},
-        match: <ref *13> ƒ x(length: 3) {},
-        throws: <ref *14> ƒ x(length: 1) {},
-        rejects: <ref *15> ƒ x(length: 1) {},
-        doesNotThrow: <ref *16> ƒ x(length: 1) {},
-        doesNotReject: <ref *17> ƒ x(length: 1) {},
-        ifError: <ref *18> ƒ x(length: 1) {},
-        strict: <ref *19> ƒ m(length: 0) {
+        notDeepStrictEqual: <ref *10> ƒ y(length: 3) {},
+        strictEqual: <ref *11> ƒ Z(length: 3) {},
+        notStrictEqual: <ref *12> ƒ Z(length: 3) {},
+        match: <ref *13> ƒ Z(length: 3) {},
+        throws: <ref *14> ƒ Z(length: 1) {},
+        rejects: <ref *15> ƒ Z(length: 1) {},
+        doesNotThrow: <ref *16> ƒ Z(length: 1) {},
+        doesNotReject: <ref *17> ƒ Z(length: 1) {},
+        ifError: <ref *18> ƒ Z(length: 1) {},
+        strict: <ref *19> ƒ v(length: 0) {
             fail: [Circular: *6],
             AssertionError: [Circular: *2],
             ok: [Circular: *5],
@@ -2136,7 +2150,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
             ifError: [Circular: *18],
             strict: [Circular: *19]
         },
-        CallTracker: ƒ D1(length: 0) {},
+        CallTracker: ƒ V1(length: 0) {},
         Symbol(CommonJS): 0
     },
     doesNotReject: [Circular: *17],
@@ -2234,32 +2248,32 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 
 ```js
 {
-    AssertionError: <ref *2> ƒ b(length: 1) {},
+    AssertionError: <ref *2> ƒ J(length: 1) {},
     CallTracker: undefined,
-    deepEqual: <ref *3> ƒ x(length: 3) {},
+    deepEqual: <ref *3> ƒ Z(length: 3) {},
     deepStrictEqual: [Circular: *3],
     default: {
-        fail: <ref *5> ƒ P(length: 5) {},
+        fail: <ref *5> ƒ f(length: 5) {},
         AssertionError: [Circular: *2],
         ok: <ref *6> ƒ S(length: 0) {
             fail: [Circular: *5],
             AssertionError: [Circular: *2],
             ok: [Circular: *6],
-            equal: ƒ x(length: 3) {},
-            notEqual: ƒ x(length: 3) {},
-            deepEqual: ƒ x(length: 3) {},
-            notDeepEqual: ƒ x(length: 3) {},
+            equal: ƒ Z(length: 3) {},
+            notEqual: ƒ Z(length: 3) {},
+            deepEqual: ƒ Z(length: 3) {},
+            notDeepEqual: ƒ Z(length: 3) {},
             deepStrictEqual: [Circular: *3],
-            notDeepStrictEqual: <ref *11> ƒ j(length: 3) {},
-            strictEqual: <ref *12> ƒ x(length: 3) {},
-            notStrictEqual: <ref *13> ƒ x(length: 3) {},
-            match: <ref *14> ƒ x(length: 3) {},
-            throws: <ref *15> ƒ x(length: 1) {},
-            rejects: <ref *16> ƒ x(length: 1) {},
-            doesNotThrow: <ref *17> ƒ x(length: 1) {},
-            doesNotReject: <ref *18> ƒ x(length: 1) {},
-            ifError: <ref *19> ƒ x(length: 1) {},
-            strict: <ref *20> ƒ m(length: 0) {
+            notDeepStrictEqual: <ref *11> ƒ y(length: 3) {},
+            strictEqual: <ref *12> ƒ Z(length: 3) {},
+            notStrictEqual: <ref *13> ƒ Z(length: 3) {},
+            match: <ref *14> ƒ Z(length: 3) {},
+            throws: <ref *15> ƒ Z(length: 1) {},
+            rejects: <ref *16> ƒ Z(length: 1) {},
+            doesNotThrow: <ref *17> ƒ Z(length: 1) {},
+            doesNotReject: <ref *18> ƒ Z(length: 1) {},
+            ifError: <ref *19> ƒ Z(length: 1) {},
+            strict: <ref *20> ƒ v(length: 0) {
                 fail: [Circular: *5],
                 AssertionError: [Circular: *2],
                 ok: [Circular: *6],
@@ -2279,7 +2293,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
                 ifError: [Circular: *19],
                 strict: [Circular: *20]
             },
-            CallTracker: ƒ D1(length: 0) {},
+            CallTracker: ƒ V1(length: 0) {},
             Symbol(CommonJS): 0
         },
         equal: [Circular: *12],
@@ -2560,9 +2574,9 @@ _Last updated on <!-- lastUpdated:start -->Jul 3, 2023 with Bun 0.6.13 Node.js v
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688343272956-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688343272956-1/buffer.mjs:4:15
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1688948082185-1/buffer.mjs:4:15
 ```
 
 </td></tr></table>
@@ -3552,13 +3566,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688343272956-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1688343272956-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1688343272956-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688343272956-1/crypto.mjs:4:15
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1688948082185-1/crypto.mjs:4:15
 ```
 
 </td></tr></table>
@@ -5204,7 +5218,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 ```js
 {
     Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: class ClientRequest extends OutgoingMessage {},
+    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
     IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
     METHODS: <ref *5> [
         "ACL",
@@ -5242,7 +5256,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -5347,6 +5361,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
+        ClientRequest: [Circular: *3],
+        OutgoingMessage: [Circular: *6],
         Symbol(CommonJS): 0
     },
     get: [Circular: *13],
@@ -6322,7 +6338,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         ],
         _cache: <ref *4> [Object: null prototype] {},
         _pathCache: <ref *5> [Object: null prototype] {
-            /tmp/fs-fixture-1688343272956-1/module.mjs: "/tmp/fs-fixture-1688343272956-1/module.mjs"
+            /tmp/fs-fixture-1688948082185-1/module.mjs: "/tmp/fs-fixture-1688948082185-1/module.mjs"
         },
         _extensions: <ref *6> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -6396,13 +6412,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         bun:main: {
             exports: {}
         },
-        /tmp/fs-fixture-1688343272956-1/module.mjs: {
+        /tmp/fs-fixture-1688948082185-1/module.mjs: {
             exports: {}
         },
         node:module: {
             exports: [Circular: *1]
         },
-        /tmp/fs-fixture-1688343272956-1/inspect.mjs: {
+        /tmp/fs-fixture-1688948082185-1/inspect.mjs: {
             exports: {
                 inspect: ƒ inspect(length: 1) {}
             }
@@ -6996,7 +7012,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 {
     __esModule: undefined,
     basename: <ref *2> ƒ bound basename(length: 0) {},
-    createModule: ƒ g(length: 1) {},
+    createModule: ƒ k(length: 1) {},
     default: <ref *4> [Object: null prototype] {
         basename: [Circular: *2],
         dirname: <ref *5> ƒ bound dirname(length: 0) {},
@@ -7333,7 +7349,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     default: {
         performance: <ref *7> {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1688343275407.8608
+            timeOrigin: 1688948084238.2974
         },
         constants: [Circular: *5],
         PerformanceEntry: [Circular: *2],
@@ -7566,7 +7582,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
-        "/tmp/fs-fixture-1688343272956-1/process.mjs"
+        "/tmp/fs-fixture-1688948082185-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -8606,7 +8622,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         setgid: <ref *104> ƒ (length: 1) {},
         setuid: <ref *105> ƒ (length: 1) {},
         env: <ref *106>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_2bb6af46-b152-4df8-8484-f4613ce950b7",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_a57f3d80-3abb-4205-8911-fcfc15c69606",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -8615,7 +8631,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             npm_config_user_agent: "pnpm/7.33.3 npm/? node/v18.16.1 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_2bb6af46-b152-4df8-8484-f4613ce950b7",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_a57f3d80-3abb-4205-8911-fcfc15c69606",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
@@ -8628,7 +8644,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             PIPX_BIN_DIR: "/opt/pipx_bin",
             GITHUB_REPOSITORY_OWNER: "privatenumber",
             npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
-            GRADLE_HOME: "/usr/share/gradle-8.1.1",
+            GRADLE_HOME: "/usr/share/gradle-8.2",
             ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
             STATS_RDCL: "true",
             GITHUB_RETENTION_DAYS: "90",
@@ -8636,13 +8652,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "678",
+            SYSTEMD_EXEC_PID: "663",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.5/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20230625.1.0",
+            ImageVersion: "20230702.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -8650,16 +8666,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-            JOURNAL_STREAM: "8:16994",
+            JOURNAL_STREAM: "8:17428",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "5439264490",
+            GITHUB_RUN_ID: "5502673454",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "341e5fbf2527e0425a69170971f66f06551d6ee9",
+            GITHUB_WORKFLOW_SHA: "b4eafe64565389b7e513b7cec2a62622cad013a6",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -8671,13 +8687,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_34ee32b5-5b19-420b-9b79-f8b7779716a1",
-            INVOCATION_ID: "5dc5afa859a8484abbafbfd34c693c10",
+            RUNNER_TRACKING_ID: "github_bd8bfea4-961f-4cfe-9411-88ed2364fe48",
+            INVOCATION_ID: "15396bfcf1e5449587c46003a5c9c0cb",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.10/x64",
             NODE: "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "28",
+            GITHUB_RUN_NUMBER: "29",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -8711,7 +8727,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "341e5fbf2527e0425a69170971f66f06551d6ee9",
+            GITHUB_SHA: "b4eafe64565389b7e513b7cec2a62622cad013a6",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -8719,7 +8735,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_2bb6af46-b152-4df8-8484-f4613ce950b7",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_a57f3d80-3abb-4205-8911-fcfc15c69606",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -8734,7 +8750,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_2bb6af46-b152-4df8-8484-f4613ce950b7",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_a57f3d80-3abb-4205-8911-fcfc15c69606",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -8747,15 +8763,15 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.146+9/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_2bb6af46-b152-4df8-8484-f4613ce950b7",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_a57f3d80-3abb-4205-8911-fcfc15c69606",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *107> [],
-        pid: 2524,
-        ppid: 1928,
+        pid: 2488,
+        ppid: 1885,
         execPath: "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -8798,9 +8814,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *64],
     openStdin: [Circular: *54],
-    pid: 2524,
+    pid: 2488,
     platform: "linux",
-    ppid: 1928,
+    ppid: 1885,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *108],
@@ -8834,9 +8850,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688343272956-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688343272956-1/process.mjs:4:15
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1688948082185-1/process.mjs:4:15
 ```
 
 </td></tr></table>
@@ -9147,13 +9163,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688343272956-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1688343272956-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1688343272956-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:99:6
 ```
 
 </td></tr></table>
@@ -9230,58 +9246,58 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Duplex: <ref *2> ƒ B(length: 1) {
+    Duplex: <ref *2> ƒ R(length: 1) {
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class q extends Eq {},
-    PassThrough: <ref *7> ƒ H(length: 1) {},
-    Readable: <ref *8> ƒ F(length: 1) {
-        _fromList: ƒ o(length: 2) {},
+    NativeWritable: <ref *6> class t extends Gq {},
+    PassThrough: <ref *7> ƒ y(length: 1) {},
+    Readable: <ref *8> ƒ P(length: 1) {
+        _fromList: ƒ X(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ H(length: 1) {
-        isDisturbed: <ref *15> ƒ D(length: 1) {},
-        isErrored: <ref *16> ƒ w(length: 1) {},
-        isWritable: <ref *17> ƒ A(length: 1) {},
-        isReadable: <ref *18> ƒ N(length: 1) {},
+    Stream: <ref *14> ƒ y(length: 1) {
+        isDisturbed: <ref *15> ƒ m(length: 1) {},
+        isErrored: <ref *16> ƒ u(length: 1) {},
+        isWritable: <ref *17> ƒ T(length: 1) {},
+        isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
-        Writable: <ref *19> ƒ O(length: 0) {
+        Writable: <ref *19> ƒ Y(length: 0) {
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ Z(length: 1) {},
+        Transform: <ref *22> ƒ j(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ C(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ Y(length: 0) {}
+        pipeline: <ref *23> ƒ N(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ Y(length: 2) {},
-        finished: <ref *26> ƒ P(length: 3) {
-            finished: <ref *27> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        finished: <ref *26> ƒ $(length: 3) {
+            finished: <ref *27> ƒ s(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
-        destroy: <ref *28> ƒ O(length: 2) {},
-        compose: <ref *29> ƒ V(length: 0) {},
+        destroy: <ref *28> ƒ Y(length: 2) {},
+        compose: <ref *29> ƒ c(length: 0) {},
         [get/set] promises: <ref *30> {
             finished: [Circular: *27],
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ L(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ L(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ jQ(length: 2) {},
+        _isUint8Array: <ref *31> ƒ A(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
-        eos: <ref *34> ƒ X(length: 0) {},
+        eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ j(length: 1) {},
-            _ReadableFromWebForUndici: class L extends F {}
+            _ReadableFromWeb: ƒ K(length: 1) {},
+            _ReadableFromWebForUndici: class A extends P {}
         }
     },
     Transform: [Circular: *22],
@@ -9369,8 +9385,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 ```js
 {
     default: {
-        pipeline: <ref *3> ƒ Y(length: 0) {},
-        finished: <ref *4> ƒ x(length: 2) {},
+        pipeline: <ref *3> ƒ x(length: 0) {},
+        finished: <ref *4> ƒ s(length: 2) {},
         Symbol(CommonJS): 0
     },
     finished: [Circular: *4],
@@ -9485,9 +9501,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688343272956-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688343272956-1/string_decoder.mjs:4:15
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1688948082185-1/string_decoder.mjs:4:15
 ```
 
 </td></tr></table>
@@ -9823,7 +9839,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2679) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2644) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -10293,34 +10309,35 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
     Server: <ref *3> class Server extends NetServer {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {},
-    connect: <ref *5> ƒ createConnection(length: 3) {},
-    convertALPNProtocols: <ref *6> ƒ convertALPNProtocols(length: 2) {},
-    createConnection: [Circular: *5],
-    createSecureContext: <ref *7> ƒ createSecureContext(length: 1) {},
-    createServer: <ref *8> ƒ createServer(length: 2) {},
+    checkServerIdentity: ƒ checkServerIdentity(length: 2) {},
+    connect: <ref *6> ƒ createConnection(length: 3) {},
+    convertALPNProtocols: <ref *7> ƒ convertALPNProtocols(length: 2) {},
+    createConnection: [Circular: *6],
+    createSecureContext: <ref *8> ƒ createSecureContext(length: 1) {},
+    createServer: <ref *9> ƒ createServer(length: 2) {},
     default: {
         CLIENT_RENEG_LIMIT: 3,
         CLIENT_RENEG_WINDOW: 600,
-        connect: [Circular: *5],
-        convertALPNProtocols: [Circular: *6],
-        createConnection: [Circular: *5],
-        createSecureContext: [Circular: *7],
-        createServer: [Circular: *8],
+        connect: [Circular: *6],
+        convertALPNProtocols: [Circular: *7],
+        createConnection: [Circular: *6],
+        createSecureContext: [Circular: *8],
+        createServer: [Circular: *9],
         DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
         DEFAULT_ECDH_CURVE: "auto",
         DEFAULT_MAX_VERSION: "TLSv1.3",
         DEFAULT_MIN_VERSION: "TLSv1.2",
-        getCiphers: <ref *10> ƒ getCiphers(length: 0) {},
-        getCurves: <ref *11> ƒ getCurves(length: 0) {},
-        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
+        getCiphers: <ref *11> ƒ getCiphers(length: 0) {},
+        getCurves: <ref *12> ƒ getCurves(length: 0) {},
+        parseCertString: <ref *13> ƒ parseCertString(length: 0) {},
         SecureContext: [Circular: *2],
         Server: [Circular: *3],
         TLSSocket: [Circular: *4],
         Symbol(CommonJS): 0
     },
-    getCiphers: [Circular: *10],
-    getCurves: [Circular: *11],
-    parseCertString: [Circular: *12]
+    getCiphers: [Circular: *11],
+    getCurves: [Circular: *12],
+    parseCertString: [Circular: *13]
 }
 ```
 
@@ -10385,9 +10402,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688343272956-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688343272956-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688343272956-1/tty.mjs:4:15
+      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1688948082185-1/tty.mjs:4:15
 ```
 
 </td></tr></table>
@@ -10439,18 +10456,19 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         revokeObjectURL: ƒ revokeObjectURL(length: 1) {}
     },
     URLSearchParams: <ref *5> ƒ URLSearchParams(length: 0) {},
-    Url: <ref *6> ƒ Url(length: 0) {},
+    Url: <ref *6> ƒ $(length: 0) {},
     default: {
-        parse: <ref *8> ƒ urlParse(length: 3) {},
-        resolve: <ref *9> ƒ urlResolve(length: 2) {},
-        resolveObject: <ref *10> ƒ urlResolveObject(length: 2) {},
-        format: <ref *11> ƒ urlFormat(length: 1) {},
+        parse: <ref *8> ƒ g(length: 3) {},
+        resolve: <ref *9> ƒ ff(length: 2) {},
+        resolveObject: <ref *10> ƒ Nf(length: 2) {},
+        format: <ref *11> ƒ t(length: 1) {},
         Url: [Circular: *6],
         URLSearchParams: [Circular: *5],
         URL: [Circular: *2],
         pathToFileURL: <ref *12> ƒ pathToFileURL(length: 1) {},
         fileURLToPath: <ref *13> ƒ fileURLToPath(length: 1) {},
-        urlToHttpOptions: <ref *14> ƒ urlToHttpOptions(length: 1) {}
+        urlToHttpOptions: <ref *14> ƒ Bf(length: 1) {},
+        Symbol(CommonJS): 0
     },
     fileURLToPath: [Circular: *13],
     format: [Circular: *11],
@@ -10982,11 +11000,12 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         isBuffer: <ref *81> ƒ isBuffer(length: 1) {},
         log: <ref *82> ƒ log2(length: 0) {},
         inherits: <ref *83> ƒ inherits(length: 2) {},
-        promisify: <ref *84> ƒ promisify2(length: 1) {
+        toUSVString: <ref *84> ƒ toUSVString(length: 1) {},
+        promisify: <ref *85> ƒ promisify2(length: 1) {
             custom: Symbol(util.promisify.custom)
         },
         callbackify: [Circular: *4],
-        isDeepStrictEqual: <ref *85> ƒ isDeepStrictEqual(length: 2) {},
+        isDeepStrictEqual: <ref *86> ƒ isDeepStrictEqual(length: 2) {},
         TextDecoder: [Circular: *2],
         TextEncoder: [Circular: *3],
         Symbol(CommonJS): 0
@@ -10999,7 +11018,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     isBoolean: [Circular: *71],
     isBuffer: [Circular: *81],
     isDate: [Circular: *29],
-    isDeepStrictEqual: [Circular: *85],
+    isDeepStrictEqual: [Circular: *86],
     isError: [Circular: *36],
     isFunction: [Circular: *79],
     isNull: [Circular: *72],
@@ -11012,7 +11031,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     isSymbol: [Circular: *76],
     isUndefined: [Circular: *77],
     log: [Circular: *82],
-    promisify: [Circular: *84],
+    promisify: [Circular: *85],
+    toUSVString: [Circular: *84],
     types: [Circular: *27]
 }
 ```
@@ -11654,27 +11674,27 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Deflate: <ref *2> ƒ Deflate2(length: 1) {
-        super_: <ref *3> ƒ Zlib(length: 2) {
-            super_: ƒ Z(length: 1) {}
+    Deflate: <ref *2> ƒ W0(length: 1) {
+        super_: <ref *3> ƒ z(length: 2) {
+            super_: ƒ j(length: 1) {}
         }
     },
-    DeflateRaw: <ref *5> ƒ DeflateRaw2(length: 1) {
+    DeflateRaw: <ref *5> ƒ G0(length: 1) {
         super_: [Circular: *3]
     },
-    Gunzip: <ref *6> ƒ Gunzip2(length: 1) {
+    Gunzip: <ref *6> ƒ J0(length: 1) {
         super_: [Circular: *3]
     },
-    Gzip: <ref *7> ƒ Gzip2(length: 1) {
+    Gzip: <ref *7> ƒ S(length: 1) {
         super_: [Circular: *3]
     },
-    Inflate: <ref *8> ƒ Inflate2(length: 1) {
+    Inflate: <ref *8> ƒ E(length: 1) {
         super_: [Circular: *3]
     },
-    InflateRaw: <ref *9> ƒ InflateRaw2(length: 1) {
+    InflateRaw: <ref *9> ƒ F0(length: 1) {
         super_: [Circular: *3]
     },
-    Unzip: <ref *10> ƒ Unzip2(length: 1) {
+    Unzip: <ref *10> ƒ f(length: 1) {
         super_: [Circular: *3]
     },
     constants: <ref *11> {
@@ -11741,7 +11761,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         Z_TEXT: 1,
         Z_UNKNOWN: 2,
         Z_DEFLATED: 8,
-        Zlib: ƒ Zlib(length: 1) {},
+        Zlib: ƒ k(length: 1) {},
         Z_MIN_WINDOWBITS: 8,
         Z_MAX_WINDOWBITS: 15,
         Z_DEFAULT_WINDOWBITS: 15,
