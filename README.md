@@ -6,7 +6,7 @@ The comparison is performed every week using GitHub Actions, with the latest Bun
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js v18.16.1<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jul 17, 2023 with Bun 0.6.15 Node.js v18.16.1<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -1359,10 +1359,10 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class t extends Gq {},
+    NativeWritable: <ref *6> class a extends Uq {},
     PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ P(length: 1) {
-        _fromList: ƒ X(length: 2) {},
+    Readable: <ref *8> ƒ E(length: 1) {
+        _fromList: ƒ Q(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -1371,7 +1371,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
     Stream: <ref *14> ƒ y(length: 1) {
         isDisturbed: <ref *15> ƒ m(length: 1) {},
         isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ T(length: 1) {},
+        isWritable: <ref *17> ƒ I(length: 1) {},
         isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
         Writable: <ref *19> ƒ Y(length: 0) {
@@ -1379,14 +1379,14 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ j(length: 1) {},
+        Transform: <ref *22> ƒ M(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ N(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
+        pipeline: <ref *23> ƒ F(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ T(length: 2) {},
         finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ s(length: 2) {},
+            finished: <ref *27> ƒ n(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
         destroy: <ref *28> ƒ Y(length: 2) {},
@@ -1396,16 +1396,16 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ A(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
+        _isUint8Array: <ref *31> ƒ P(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
         eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ K(length: 1) {},
-            _ReadableFromWebForUndici: class A extends P {}
+            _ReadableFromWeb: ƒ Z(length: 1) {},
+            _ReadableFromWebForUndici: class P extends E {}
         }
     },
     Transform: [Circular: *22],
@@ -1449,10 +1449,10 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class t extends Gq {},
+    NativeWritable: <ref *6> class a extends Uq {},
     PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ P(length: 1) {
-        _fromList: ƒ X(length: 2) {},
+    Readable: <ref *8> ƒ E(length: 1) {
+        _fromList: ƒ Q(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -1461,7 +1461,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
     Stream: <ref *14> ƒ y(length: 1) {
         isDisturbed: <ref *15> ƒ m(length: 1) {},
         isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ T(length: 1) {},
+        isWritable: <ref *17> ƒ I(length: 1) {},
         isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
         Writable: <ref *19> ƒ Y(length: 0) {
@@ -1469,14 +1469,14 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ j(length: 1) {},
+        Transform: <ref *22> ƒ M(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ N(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
+        pipeline: <ref *23> ƒ F(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ T(length: 2) {},
         finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ s(length: 2) {},
+            finished: <ref *27> ƒ n(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
         destroy: <ref *28> ƒ Y(length: 2) {},
@@ -1486,16 +1486,16 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ A(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
+        _isUint8Array: <ref *31> ƒ P(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
         eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ K(length: 1) {},
-            _ReadableFromWebForUndici: class A extends P {}
+            _ReadableFromWeb: ƒ Z(length: 1) {},
+            _ReadableFromWebForUndici: class P extends E {}
         }
     },
     Transform: [Circular: *22],
@@ -1552,10 +1552,10 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class t extends Gq {},
+    NativeWritable: <ref *6> class a extends Uq {},
     PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ P(length: 1) {
-        _fromList: ƒ X(length: 2) {},
+    Readable: <ref *8> ƒ E(length: 1) {
+        _fromList: ƒ Q(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -1564,7 +1564,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
     Stream: <ref *14> ƒ y(length: 1) {
         isDisturbed: <ref *15> ƒ m(length: 1) {},
         isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ T(length: 1) {},
+        isWritable: <ref *17> ƒ I(length: 1) {},
         isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
         Writable: <ref *19> ƒ Y(length: 0) {
@@ -1572,14 +1572,14 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ j(length: 1) {},
+        Transform: <ref *22> ƒ M(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ N(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
+        pipeline: <ref *23> ƒ F(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ T(length: 2) {},
         finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ s(length: 2) {},
+            finished: <ref *27> ƒ n(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
         destroy: <ref *28> ƒ Y(length: 2) {},
@@ -1589,16 +1589,16 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ A(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
+        _isUint8Array: <ref *31> ƒ P(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
         eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ K(length: 1) {},
-            _ReadableFromWebForUndici: class A extends P {}
+            _ReadableFromWeb: ƒ Z(length: 1) {},
+            _ReadableFromWebForUndici: class P extends E {}
         }
     },
     Transform: [Circular: *22],
@@ -1642,10 +1642,10 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class t extends Gq {},
+    NativeWritable: <ref *6> class a extends Uq {},
     PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ P(length: 1) {
-        _fromList: ƒ X(length: 2) {},
+    Readable: <ref *8> ƒ E(length: 1) {
+        _fromList: ƒ Q(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -1654,7 +1654,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
     Stream: <ref *14> ƒ y(length: 1) {
         isDisturbed: <ref *15> ƒ m(length: 1) {},
         isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ T(length: 1) {},
+        isWritable: <ref *17> ƒ I(length: 1) {},
         isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
         Writable: <ref *19> ƒ Y(length: 0) {
@@ -1662,14 +1662,14 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ j(length: 1) {},
+        Transform: <ref *22> ƒ M(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ N(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
+        pipeline: <ref *23> ƒ F(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ T(length: 2) {},
         finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ s(length: 2) {},
+            finished: <ref *27> ƒ n(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
         destroy: <ref *28> ƒ Y(length: 2) {},
@@ -1679,16 +1679,16 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ A(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
+        _isUint8Array: <ref *31> ƒ P(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
         eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ K(length: 1) {},
-            _ReadableFromWebForUndici: class A extends P {}
+            _ReadableFromWeb: ƒ Z(length: 1) {},
+            _ReadableFromWebForUndici: class P extends E {}
         }
     },
     Transform: [Circular: *22],
@@ -1721,7 +1721,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2006) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:1971) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -1734,10 +1734,10 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class t extends Gq {},
+    NativeWritable: <ref *6> class a extends Uq {},
     PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ P(length: 1) {
-        _fromList: ƒ X(length: 2) {},
+    Readable: <ref *8> ƒ E(length: 1) {
+        _fromList: ƒ Q(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -1746,7 +1746,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
     Stream: <ref *14> ƒ y(length: 1) {
         isDisturbed: <ref *15> ƒ m(length: 1) {},
         isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ T(length: 1) {},
+        isWritable: <ref *17> ƒ I(length: 1) {},
         isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
         Writable: <ref *19> ƒ Y(length: 0) {
@@ -1754,14 +1754,14 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ j(length: 1) {},
+        Transform: <ref *22> ƒ M(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ N(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
+        pipeline: <ref *23> ƒ F(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ T(length: 2) {},
         finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ s(length: 2) {},
+            finished: <ref *27> ƒ n(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
         destroy: <ref *28> ƒ Y(length: 2) {},
@@ -1771,16 +1771,16 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ A(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
+        _isUint8Array: <ref *31> ƒ P(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
         eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ K(length: 1) {},
-            _ReadableFromWebForUndici: class A extends P {}
+            _ReadableFromWeb: ƒ Z(length: 1) {},
+            _ReadableFromWebForUndici: class P extends E {}
         }
     },
     Transform: [Circular: *22],
@@ -1831,10 +1831,10 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class t extends Gq {},
+    NativeWritable: <ref *6> class a extends Uq {},
     PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ P(length: 1) {
-        _fromList: ƒ X(length: 2) {},
+    Readable: <ref *8> ƒ E(length: 1) {
+        _fromList: ƒ Q(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -1843,7 +1843,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
     Stream: <ref *14> ƒ y(length: 1) {
         isDisturbed: <ref *15> ƒ m(length: 1) {},
         isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ T(length: 1) {},
+        isWritable: <ref *17> ƒ I(length: 1) {},
         isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
         Writable: <ref *19> ƒ Y(length: 0) {
@@ -1851,14 +1851,14 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ j(length: 1) {},
+        Transform: <ref *22> ƒ M(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ N(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
+        pipeline: <ref *23> ƒ F(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ T(length: 2) {},
         finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ s(length: 2) {},
+            finished: <ref *27> ƒ n(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
         destroy: <ref *28> ƒ Y(length: 2) {},
@@ -1868,16 +1868,16 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ A(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
+        _isUint8Array: <ref *31> ƒ P(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
         eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ K(length: 1) {},
-            _ReadableFromWebForUndici: class A extends P {}
+            _ReadableFromWeb: ƒ Z(length: 1) {},
+            _ReadableFromWebForUndici: class P extends E {}
         }
     },
     Transform: [Circular: *22],
@@ -2130,7 +2130,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
         doesNotThrow: <ref *16> ƒ Z(length: 1) {},
         doesNotReject: <ref *17> ƒ Z(length: 1) {},
         ifError: <ref *18> ƒ Z(length: 1) {},
-        strict: <ref *19> ƒ v(length: 0) {
+        strict: <ref *19> ƒ q(length: 0) {
             fail: [Circular: *6],
             AssertionError: [Circular: *2],
             ok: [Circular: *5],
@@ -2150,7 +2150,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             ifError: [Circular: *18],
             strict: [Circular: *19]
         },
-        CallTracker: ƒ V1(length: 0) {},
+        CallTracker: ƒ V0(length: 0) {},
         Symbol(CommonJS): 0
     },
     doesNotReject: [Circular: *17],
@@ -2273,7 +2273,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
             doesNotThrow: <ref *17> ƒ Z(length: 1) {},
             doesNotReject: <ref *18> ƒ Z(length: 1) {},
             ifError: <ref *19> ƒ Z(length: 1) {},
-            strict: <ref *20> ƒ v(length: 0) {
+            strict: <ref *20> ƒ q(length: 0) {
                 fail: [Circular: *5],
                 AssertionError: [Circular: *2],
                 ok: [Circular: *6],
@@ -2293,7 +2293,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
                 ifError: [Circular: *19],
                 strict: [Circular: *20]
             },
-            CallTracker: ƒ V1(length: 0) {},
+            CallTracker: ƒ V0(length: 0) {},
             Symbol(CommonJS): 0
         },
         equal: [Circular: *12],
@@ -2574,9 +2574,9 @@ _Last updated on <!-- lastUpdated:start -->Jul 10, 2023 with Bun 0.6.14 Node.js 
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688948082185-1/buffer.mjs:4:15
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1689552917679-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1689552917679-1/buffer.mjs:4:15
 ```
 
 </td></tr></table>
@@ -3566,13 +3566,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688948082185-1/crypto.mjs:4:15
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1689552917679-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1689552917679-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1689552917679-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1689552917679-1/crypto.mjs:4:15
 ```
 
 </td></tr></table>
@@ -6338,7 +6338,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         ],
         _cache: <ref *4> [Object: null prototype] {},
         _pathCache: <ref *5> [Object: null prototype] {
-            /tmp/fs-fixture-1688948082185-1/module.mjs: "/tmp/fs-fixture-1688948082185-1/module.mjs"
+            /tmp/fs-fixture-1689552917679-1/module.mjs: "/tmp/fs-fixture-1689552917679-1/module.mjs"
         },
         _extensions: <ref *6> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -6412,13 +6412,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         bun:main: {
             exports: {}
         },
-        /tmp/fs-fixture-1688948082185-1/module.mjs: {
+        /tmp/fs-fixture-1689552917679-1/module.mjs: {
             exports: {}
         },
         node:module: {
             exports: [Circular: *1]
         },
-        /tmp/fs-fixture-1688948082185-1/inspect.mjs: {
+        /tmp/fs-fixture-1689552917679-1/inspect.mjs: {
             exports: {
                 inspect: ƒ inspect(length: 1) {}
             }
@@ -7349,7 +7349,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     default: {
         performance: <ref *7> {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1688948084238.2974
+            timeOrigin: 1689552920352.704
         },
         constants: [Circular: *5],
         PerformanceEntry: [Circular: *2],
@@ -7582,7 +7582,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
-        "/tmp/fs-fixture-1688948082185-1/process.mjs"
+        "/tmp/fs-fixture-1689552917679-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -8622,7 +8622,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         setgid: <ref *104> ƒ (length: 1) {},
         setuid: <ref *105> ƒ (length: 1) {},
         env: <ref *106>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_a57f3d80-3abb-4205-8911-fcfc15c69606",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_a9a70f22-5687-4ffd-859e-f24173911a6a",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -8631,7 +8631,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             npm_config_user_agent: "pnpm/7.33.3 npm/? node/v18.16.1 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_a57f3d80-3abb-4205-8911-fcfc15c69606",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_a9a70f22-5687-4ffd-859e-f24173911a6a",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
@@ -8652,13 +8652,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "663",
+            SYSTEMD_EXEC_PID: "666",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.5/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20230702.1.0",
+            ImageVersion: "20230710.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -8666,16 +8666,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-            JOURNAL_STREAM: "8:17428",
+            JOURNAL_STREAM: "8:16690",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "5502673454",
+            GITHUB_RUN_ID: "5570517362",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "b4eafe64565389b7e513b7cec2a62622cad013a6",
+            GITHUB_WORKFLOW_SHA: "934b42550058b9cbdcad5e6d2e759a904c46d220",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -8687,13 +8687,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_bd8bfea4-961f-4cfe-9411-88ed2364fe48",
-            INVOCATION_ID: "15396bfcf1e5449587c46003a5c9c0cb",
+            RUNNER_TRACKING_ID: "github_32052367-d95d-4623-ad7f-7e0fd6fdfcad",
+            INVOCATION_ID: "c8c84c82b1f94b55b631e3d45b132307",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.10/x64",
             NODE: "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "29",
+            GITHUB_RUN_NUMBER: "30",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -8727,7 +8727,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "b4eafe64565389b7e513b7cec2a62622cad013a6",
+            GITHUB_SHA: "934b42550058b9cbdcad5e6d2e759a904c46d220",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -8735,7 +8735,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_a57f3d80-3abb-4205-8911-fcfc15c69606",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_a9a70f22-5687-4ffd-859e-f24173911a6a",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -8750,7 +8750,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_a57f3d80-3abb-4205-8911-fcfc15c69606",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_a9a70f22-5687-4ffd-859e-f24173911a6a",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -8760,18 +8760,18 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             CHROME_BIN: "/usr/bin/google-chrome",
             SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-            STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.146+9/provjobd.data",
+            STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.154/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_a57f3d80-3abb-4205-8911-fcfc15c69606",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_a9a70f22-5687-4ffd-859e-f24173911a6a",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *107> [],
-        pid: 2488,
-        ppid: 1885,
+        pid: 2459,
+        ppid: 1862,
         execPath: "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -8814,9 +8814,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *64],
     openStdin: [Circular: *54],
-    pid: 2488,
+    pid: 2459,
     platform: "linux",
-    ppid: 1885,
+    ppid: 1862,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *108],
@@ -8850,9 +8850,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688948082185-1/process.mjs:4:15
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1689552917679-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1689552917679-1/process.mjs:4:15
 ```
 
 </td></tr></table>
@@ -9163,13 +9163,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1689552917679-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1689552917679-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1689552917679-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:99:6
 ```
 
 </td></tr></table>
@@ -9251,10 +9251,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class t extends Gq {},
+    NativeWritable: <ref *6> class a extends Uq {},
     PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ P(length: 1) {
-        _fromList: ƒ X(length: 2) {},
+    Readable: <ref *8> ƒ E(length: 1) {
+        _fromList: ƒ Q(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -9263,7 +9263,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     Stream: <ref *14> ƒ y(length: 1) {
         isDisturbed: <ref *15> ƒ m(length: 1) {},
         isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ T(length: 1) {},
+        isWritable: <ref *17> ƒ I(length: 1) {},
         isReadable: <ref *18> ƒ U(length: 1) {},
         Readable: [Circular: *8],
         Writable: <ref *19> ƒ Y(length: 0) {
@@ -9271,14 +9271,14 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ j(length: 1) {},
+        Transform: <ref *22> ƒ M(length: 1) {},
         PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ N(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ x(length: 0) {}
+        pipeline: <ref *23> ƒ F(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ x(length: 2) {},
+        addAbortSignal: <ref *25> ƒ T(length: 2) {},
         finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ s(length: 2) {},
+            finished: <ref *27> ƒ n(length: 2) {},
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
         },
         destroy: <ref *28> ƒ Y(length: 2) {},
@@ -9288,16 +9288,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             pipeline: [Circular: *24]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ A(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ A(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ iq(length: 2) {},
+        _isUint8Array: <ref *31> ƒ P(length: 1) {},
+        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
         NativeWritable: [Circular: *6],
         default: [Circular: *14],
         eos: <ref *34> ƒ B(length: 0) {},
         Symbol(CommonJS): 0,
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ K(length: 1) {},
-            _ReadableFromWebForUndici: class A extends P {}
+            _ReadableFromWeb: ƒ Z(length: 1) {},
+            _ReadableFromWebForUndici: class P extends E {}
         }
     },
     Transform: [Circular: *22],
@@ -9349,7 +9349,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 {
     arrayBuffer: <ref *2> ƒ readableStreamToArrayBuffer(length: 1) {},
     blob: <ref *3> ƒ readableStreamToBlob(length: 1) {},
-    buffer: <ref *4> async ƒ i(length: 1) {},
+    buffer: <ref *4> async ƒ h(length: 1) {},
     default: {
         arrayBuffer: [Circular: *2],
         text: <ref *6> ƒ readableStreamToText(length: 1) {},
@@ -9385,8 +9385,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 ```js
 {
     default: {
-        pipeline: <ref *3> ƒ x(length: 0) {},
-        finished: <ref *4> ƒ s(length: 2) {},
+        pipeline: <ref *3> ƒ T(length: 0) {},
+        finished: <ref *4> ƒ n(length: 2) {},
         Symbol(CommonJS): 0
     },
     finished: [Circular: *4],
@@ -9501,9 +9501,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688948082185-1/string_decoder.mjs:4:15
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1689552917679-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1689552917679-1/string_decoder.mjs:4:15
 ```
 
 </td></tr></table>
@@ -9839,7 +9839,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2644) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2618) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -9924,56 +9924,56 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 },
                 isGeneratorFunction: ƒ (length: 1) {},
                 isTypedArray: ƒ (length: 1) {},
-                isPromise: ƒ In(length: 1) {},
-                isArrayBufferView: ƒ Bn(length: 1) {},
-                isUint8Array: ƒ Un(length: 1) {},
-                isUint8ClampedArray: ƒ Rn(length: 1) {},
-                isUint16Array: ƒ Dn(length: 1) {},
-                isUint32Array: ƒ kn(length: 1) {},
-                isInt8Array: ƒ xn(length: 1) {},
-                isInt16Array: ƒ Mn(length: 1) {},
-                isInt32Array: ƒ Nn(length: 1) {},
-                isFloat32Array: ƒ Cn(length: 1) {},
-                isFloat64Array: ƒ $n(length: 1) {},
-                isBigInt64Array: ƒ qn(length: 1) {},
+                isPromise: ƒ Bn(length: 1) {},
+                isArrayBufferView: ƒ Un(length: 1) {},
+                isUint8Array: ƒ Rn(length: 1) {},
+                isUint8ClampedArray: ƒ Dn(length: 1) {},
+                isUint16Array: ƒ kn(length: 1) {},
+                isUint32Array: ƒ xn(length: 1) {},
+                isInt8Array: ƒ Mn(length: 1) {},
+                isInt16Array: ƒ Nn(length: 1) {},
+                isInt32Array: ƒ Cn(length: 1) {},
+                isFloat32Array: ƒ qn(length: 1) {},
+                isFloat64Array: ƒ _n(length: 1) {},
+                isBigInt64Array: ƒ $n(length: 1) {},
                 isBigUint64Array: ƒ Gn(length: 1) {},
-                isMap: ƒ _n(length: 1) {},
-                isSet: ƒ Wn(length: 1) {},
-                isWeakMap: ƒ zn(length: 1) {},
-                isWeakSet: ƒ Vn(length: 1) {},
+                isMap: ƒ Wn(length: 1) {},
+                isSet: ƒ zn(length: 1) {},
+                isWeakMap: ƒ Vn(length: 1) {},
+                isWeakSet: ƒ Jn(length: 1) {},
                 isArrayBuffer: ƒ Ke(length: 1) {},
                 isDataView: ƒ Qe(length: 1) {},
                 isSharedArrayBuffer: ƒ Xe(length: 1) {},
-                isAsyncFunction: ƒ Jn(length: 1) {},
-                isMapIterator: ƒ Ln(length: 1) {},
-                isSetIterator: ƒ Hn(length: 1) {},
-                isGeneratorObject: ƒ Zn(length: 1) {},
-                isWebAssemblyCompiledModule: ƒ Yn(length: 1) {},
+                isAsyncFunction: ƒ Ln(length: 1) {},
+                isMapIterator: ƒ Hn(length: 1) {},
+                isSetIterator: ƒ Zn(length: 1) {},
+                isGeneratorObject: ƒ Yn(length: 1) {},
+                isWebAssemblyCompiledModule: ƒ Kn(length: 1) {},
                 isNumberObject: ƒ rt(length: 1) {},
                 isStringObject: ƒ et(length: 1) {},
                 isBooleanObject: ƒ tt(length: 1) {},
                 isBigIntObject: ƒ nt(length: 1) {},
                 isSymbolObject: ƒ ot(length: 1) {},
-                isBoxedPrimitive: ƒ Kn(length: 1) {},
-                isAnyArrayBuffer: ƒ Qn(length: 1) {},
-                isRegExp: <ref *60> ƒ $(length: 1) {},
+                isBoxedPrimitive: ƒ Qn(length: 1) {},
+                isAnyArrayBuffer: ƒ Xn(length: 1) {},
+                isRegExp: <ref *60> ƒ q(length: 1) {},
                 isDate: <ref *61> ƒ cr(length: 1) {},
-                isNativeError: <ref *62> ƒ q(length: 1) {}
+                isNativeError: <ref *62> ƒ _(length: 1) {}
             },
             isArray: <ref *63> ƒ ct(length: 1) {},
-            isBoolean: <ref *64> ƒ Wr(length: 1) {},
+            isBoolean: <ref *64> ƒ zr(length: 1) {},
             isNull: <ref *65> ƒ pr(length: 1) {},
-            isNullOrUndefined: <ref *66> ƒ ao(length: 1) {},
+            isNullOrUndefined: <ref *66> ƒ fo(length: 1) {},
             isNumber: <ref *67> ƒ pt(length: 1) {},
             isString: <ref *68> ƒ lr(length: 1) {},
-            isSymbol: <ref *69> ƒ fo(length: 1) {},
+            isSymbol: <ref *69> ƒ uo(length: 1) {},
             isUndefined: <ref *70> ƒ w(length: 1) {},
             isRegExp: [Circular: *60],
             isObject: <ref *71> ƒ k(length: 1) {},
             isDate: [Circular: *61],
             isError: [Circular: *62],
             isFunction: <ref *72> ƒ sr(length: 1) {},
-            isPrimitive: <ref *73> ƒ uo(length: 1) {},
+            isPrimitive: <ref *73> ƒ so(length: 1) {},
             isBuffer: <ref *74> ƒ (length: 1) {},
             log: <ref *75> ƒ (length: 0) {},
             inherits: <ref *76> ƒ (length: 2) {},
@@ -9981,7 +9981,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             promisify: <ref *78> ƒ (length: 1) {
                 custom: Symbol(util.promisify.custom)
             },
-            callbackify: <ref *79> ƒ po(length: 1) {}
+            callbackify: <ref *79> ƒ lo(length: 1) {}
         },
         [get/set] format: [Circular: *4],
         [get/set] deprecate: [Circular: *5],
@@ -10402,9 +10402,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1688948082185-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1688948082185-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1688948082185-1/tty.mjs:4:15
+      at /tmp/fs-fixture-1689552917679-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1689552917679-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1689552917679-1/tty.mjs:4:15
 ```
 
 </td></tr></table>
@@ -11676,7 +11676,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 {
     Deflate: <ref *2> ƒ W0(length: 1) {
         super_: <ref *3> ƒ z(length: 2) {
-            super_: ƒ j(length: 1) {}
+            super_: ƒ M(length: 1) {}
         }
     },
     DeflateRaw: <ref *5> ƒ G0(length: 1) {
