@@ -6,7 +6,7 @@ The comparison is performed every week using GitHub Actions, with the latest Bun
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jul 24, 2023 with Bun 0.7.1 Node.js v18.16.1<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v18.17.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -82,6 +82,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 24, 2023 with Bun 0.7.1 Node.js v
 - [`util/types`](#utiltypes)
 - [`v8`](#v8)
 - [`vm`](#vm)
+- [`wasi`](#wasi)
 - [`worker_threads`](#worker_threads)
 - [`zlib`](#zlib)
 
@@ -905,14 +906,16 @@ _Last updated on <!-- lastUpdated:start -->Jul 24, 2023 with Bun 0.7.1 Node.js v
 
 ```js
 [Object: null prototype] {
-    OutgoingMessage: <ref *2> ƒ OutgoingMessage(length: 0) {},
+    OutgoingMessage: <ref *2> ƒ OutgoingMessage(length: 1) {},
     default: {
+        kHighWaterMark: Symbol(kHighWaterMark),
         kUniqueHeaders: Symbol(kUniqueHeaders),
         parseUniqueHeadersOption: <ref *4> ƒ parseUniqueHeadersOption(length: 1) {},
         validateHeaderName: <ref *5> ƒ __node_internal_(length: 2) {},
         validateHeaderValue: <ref *6> ƒ __node_internal_(length: 2) {},
         OutgoingMessage: [Circular: *2]
     },
+    kHighWaterMark: Symbol(kHighWaterMark),
     kUniqueHeaders: Symbol(kUniqueHeaders),
     parseUniqueHeadersOption: [Circular: *4],
     validateHeaderName: [Circular: *5],
@@ -1154,7 +1157,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 24, 2023 with Bun 0.7.1 Node.js v
         511: "Network Authentication Required"
     },
     Server: <ref *3> ƒ Server(length: 2) {},
-    ServerResponse: <ref *4> ƒ ServerResponse(length: 1) {},
+    ServerResponse: <ref *4> ƒ ServerResponse(length: 2) {},
     _connectionListener: <ref *5> ƒ connectionListener(length: 1) {},
     default: {
         STATUS_CODES: [Circular: *2],
@@ -1721,7 +1724,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 24, 2023 with Bun 0.7.1 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:1966) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:1989) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -2658,36 +2661,38 @@ _Last updated on <!-- lastUpdated:start -->Jul 24, 2023 with Bun 0.7.1 Node.js v
         PROCESSWRAP: 25,
         PROMISE: 26,
         QUERYWRAP: 27,
-        SHUTDOWNWRAP: 28,
-        SIGNALWRAP: 29,
-        STATWATCHER: 30,
-        STREAMPIPE: 31,
-        TCPCONNECTWRAP: 32,
-        TCPSERVERWRAP: 33,
-        TCPWRAP: 34,
-        TTYWRAP: 35,
-        UDPSENDWRAP: 36,
-        UDPWRAP: 37,
-        SIGINTWATCHDOG: 38,
-        WORKER: 39,
-        WORKERHEAPSNAPSHOT: 40,
-        WRITEWRAP: 41,
-        ZLIB: 42,
-        CHECKPRIMEREQUEST: 43,
-        PBKDF2REQUEST: 44,
-        KEYPAIRGENREQUEST: 45,
-        KEYGENREQUEST: 46,
-        KEYEXPORTREQUEST: 47,
-        CIPHERREQUEST: 48,
-        DERIVEBITSREQUEST: 49,
-        HASHREQUEST: 50,
-        RANDOMBYTESREQUEST: 51,
-        RANDOMPRIMEREQUEST: 52,
-        SCRYPTREQUEST: 53,
-        SIGNREQUEST: 54,
-        TLSWRAP: 55,
-        VERIFYREQUEST: 56,
-        INSPECTORJSBINDING: 57
+        QUIC_LOGSTREAM: 28,
+        QUIC_PACKET: 29,
+        SHUTDOWNWRAP: 30,
+        SIGNALWRAP: 31,
+        STATWATCHER: 32,
+        STREAMPIPE: 33,
+        TCPCONNECTWRAP: 34,
+        TCPSERVERWRAP: 35,
+        TCPWRAP: 36,
+        TTYWRAP: 37,
+        UDPSENDWRAP: 38,
+        UDPWRAP: 39,
+        SIGINTWATCHDOG: 40,
+        WORKER: 41,
+        WORKERHEAPSNAPSHOT: 42,
+        WRITEWRAP: 43,
+        ZLIB: 44,
+        CHECKPRIMEREQUEST: 45,
+        PBKDF2REQUEST: 46,
+        KEYPAIRGENREQUEST: 47,
+        KEYGENREQUEST: 48,
+        KEYEXPORTREQUEST: 49,
+        CIPHERREQUEST: 50,
+        DERIVEBITSREQUEST: 51,
+        HASHREQUEST: 52,
+        RANDOMBYTESREQUEST: 53,
+        RANDOMPRIMEREQUEST: 54,
+        SCRYPTREQUEST: 55,
+        SIGNREQUEST: 56,
+        TLSWRAP: 57,
+        VERIFYREQUEST: 58,
+        INSPECTORJSBINDING: 59
     },
     createHook: <ref *5> ƒ createHook(length: 1) {},
     default: {
@@ -2857,9 +2862,9 @@ _Last updated on <!-- lastUpdated:start -->Jul 24, 2023 with Bun 0.7.1 Node.js v
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690157610535-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690157610535-1/buffer.mjs:4:15
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1690762389698-1/buffer.mjs:4:15
 ```
 
 </td></tr></table>
@@ -2903,7 +2908,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         spawn: <ref *4> ƒ spawn(length: 3) {},
         execFile: <ref *5> ƒ execFile(length: 4) {},
         exec: <ref *6> ƒ exec(length: 3) {},
-        fork: <ref *7> ƒ fork(length: 0) {},
+        fork: <ref *7> ƒ fork(length: 1) {},
         spawnSync: <ref *8> ƒ spawnSync(length: 3) {},
         execFileSync: <ref *9> ƒ execFileSync(length: 3) {},
         execSync: <ref *10> ƒ execSync(length: 2) {},
@@ -4320,13 +4325,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690157610535-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1690157610535-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1690157610535-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690157610535-1/crypto.mjs:4:15
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1690762389698-1/crypto.mjs:4:15
 ```
 
 </td></tr></table>
@@ -4447,8 +4452,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         lookup: <ref *4> ƒ lookup(length: 3) {},
         lookupService: <ref *5> ƒ lookupService(length: 3) {},
         Resolver: [Circular: *2],
-        setDefaultResultOrder: <ref *6> ƒ setDefaultResultOrder(length: 1) {},
-        setServers: <ref *7> ƒ defaultResolverSetServers(length: 1) {},
+        getDefaultResultOrder: <ref *6> ƒ getDefaultResultOrder(length: 0) {},
+        setDefaultResultOrder: <ref *7> ƒ setDefaultResultOrder(length: 1) {},
+        setServers: <ref *8> ƒ defaultResolverSetServers(length: 1) {},
         ADDRCONFIG: 32,
         ALL: 16,
         V4MAPPED: 8,
@@ -4476,26 +4482,27 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         LOADIPHLPAPI: "ELOADIPHLPAPI",
         ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
         CANCELLED: "ECANCELLED",
-        getServers: <ref *8> ƒ bound getServers(length: 0) {},
-        resolve: <ref *9> ƒ bound resolve(length: 3) {},
-        resolve4: <ref *10> ƒ bound queryA(length: 2) {},
-        resolve6: <ref *11> ƒ bound queryAaaa(length: 2) {},
-        resolveAny: <ref *12> ƒ bound queryAny(length: 2) {},
-        resolveCaa: <ref *13> ƒ bound queryCaa(length: 2) {},
-        resolveCname: <ref *14> ƒ bound queryCname(length: 2) {},
-        resolveMx: <ref *15> ƒ bound queryMx(length: 2) {},
-        resolveNaptr: <ref *16> ƒ bound queryNaptr(length: 2) {},
-        resolveNs: <ref *17> ƒ bound queryNs(length: 2) {},
-        resolvePtr: <ref *18> ƒ bound queryPtr(length: 2) {},
-        resolveSoa: <ref *19> ƒ bound querySoa(length: 2) {},
-        resolveSrv: <ref *20> ƒ bound querySrv(length: 2) {},
-        resolveTxt: <ref *21> ƒ bound queryTxt(length: 2) {},
-        reverse: <ref *22> ƒ bound getHostByAddr(length: 2) {},
-        [get/set] promises: <ref *23> {
+        getServers: <ref *9> ƒ bound getServers(length: 0) {},
+        resolve: <ref *10> ƒ bound resolve(length: 3) {},
+        resolve4: <ref *11> ƒ bound queryA(length: 2) {},
+        resolve6: <ref *12> ƒ bound queryAaaa(length: 2) {},
+        resolveAny: <ref *13> ƒ bound queryAny(length: 2) {},
+        resolveCaa: <ref *14> ƒ bound queryCaa(length: 2) {},
+        resolveCname: <ref *15> ƒ bound queryCname(length: 2) {},
+        resolveMx: <ref *16> ƒ bound queryMx(length: 2) {},
+        resolveNaptr: <ref *17> ƒ bound queryNaptr(length: 2) {},
+        resolveNs: <ref *18> ƒ bound queryNs(length: 2) {},
+        resolvePtr: <ref *19> ƒ bound queryPtr(length: 2) {},
+        resolveSoa: <ref *20> ƒ bound querySoa(length: 2) {},
+        resolveSrv: <ref *21> ƒ bound querySrv(length: 2) {},
+        resolveTxt: <ref *22> ƒ bound queryTxt(length: 2) {},
+        reverse: <ref *23> ƒ bound getHostByAddr(length: 2) {},
+        [get/set] promises: <ref *24> {
             lookup: ƒ lookup(length: 2) {},
             lookupService: ƒ lookupService(length: 2) {},
             Resolver: class Resolver extends ResolverBase {},
-            setDefaultResultOrder: [Circular: *6],
+            getDefaultResultOrder: [Circular: *6],
+            setDefaultResultOrder: [Circular: *7],
             setServers: ƒ defaultResolverSetServers(length: 1) {},
             NODATA: "ENODATA",
             FORMERR: "EFORMERR",
@@ -4538,26 +4545,27 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             reverse: ƒ bound getHostByAddr(length: 2) {}
         }
     },
-    getServers: [Circular: *8],
+    getDefaultResultOrder: [Circular: *6],
+    getServers: [Circular: *9],
     lookup: [Circular: *4],
     lookupService: [Circular: *5],
-    promises: [Circular: *23],
-    resolve: [Circular: *9],
-    resolve4: [Circular: *10],
-    resolve6: [Circular: *11],
-    resolveAny: [Circular: *12],
-    resolveCaa: [Circular: *13],
-    resolveCname: [Circular: *14],
-    resolveMx: [Circular: *15],
-    resolveNaptr: [Circular: *16],
-    resolveNs: [Circular: *17],
-    resolvePtr: [Circular: *18],
-    resolveSoa: [Circular: *19],
-    resolveSrv: [Circular: *20],
-    resolveTxt: [Circular: *21],
-    reverse: [Circular: *22],
-    setDefaultResultOrder: [Circular: *6],
-    setServers: [Circular: *7]
+    promises: [Circular: *24],
+    resolve: [Circular: *10],
+    resolve4: [Circular: *11],
+    resolve6: [Circular: *12],
+    resolveAny: [Circular: *13],
+    resolveCaa: [Circular: *14],
+    resolveCname: [Circular: *15],
+    resolveMx: [Circular: *16],
+    resolveNaptr: [Circular: *17],
+    resolveNs: [Circular: *18],
+    resolvePtr: [Circular: *19],
+    resolveSoa: [Circular: *20],
+    resolveSrv: [Circular: *21],
+    resolveTxt: [Circular: *22],
+    reverse: [Circular: *23],
+    setDefaultResultOrder: [Circular: *7],
+    setServers: [Circular: *8]
 }
 ```
 
@@ -4720,8 +4728,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         lookup: <ref *4> ƒ lookup(length: 2) {},
         lookupService: <ref *5> ƒ lookupService(length: 2) {},
         Resolver: [Circular: *2],
-        setDefaultResultOrder: <ref *6> ƒ setDefaultResultOrder(length: 1) {},
-        setServers: <ref *7> ƒ defaultResolverSetServers(length: 1) {},
+        getDefaultResultOrder: <ref *6> ƒ getDefaultResultOrder(length: 0) {},
+        setDefaultResultOrder: <ref *7> ƒ setDefaultResultOrder(length: 1) {},
+        setServers: <ref *8> ƒ defaultResolverSetServers(length: 1) {},
         NODATA: "ENODATA",
         FORMERR: "EFORMERR",
         SERVFAIL: "ESERVFAIL",
@@ -4746,41 +4755,42 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         LOADIPHLPAPI: "ELOADIPHLPAPI",
         ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
         CANCELLED: "ECANCELLED",
-        getServers: <ref *8> ƒ bound getServers(length: 0) {},
-        resolve: <ref *9> ƒ bound resolve(length: 2) {},
-        resolve4: <ref *10> ƒ bound queryA(length: 2) {},
-        resolve6: <ref *11> ƒ bound queryAaaa(length: 2) {},
-        resolveAny: <ref *12> ƒ bound queryAny(length: 2) {},
-        resolveCaa: <ref *13> ƒ bound queryCaa(length: 2) {},
-        resolveCname: <ref *14> ƒ bound queryCname(length: 2) {},
-        resolveMx: <ref *15> ƒ bound queryMx(length: 2) {},
-        resolveNaptr: <ref *16> ƒ bound queryNaptr(length: 2) {},
-        resolveNs: <ref *17> ƒ bound queryNs(length: 2) {},
-        resolvePtr: <ref *18> ƒ bound queryPtr(length: 2) {},
-        resolveSoa: <ref *19> ƒ bound querySoa(length: 2) {},
-        resolveSrv: <ref *20> ƒ bound querySrv(length: 2) {},
-        resolveTxt: <ref *21> ƒ bound queryTxt(length: 2) {},
-        reverse: <ref *22> ƒ bound getHostByAddr(length: 2) {}
+        getServers: <ref *9> ƒ bound getServers(length: 0) {},
+        resolve: <ref *10> ƒ bound resolve(length: 2) {},
+        resolve4: <ref *11> ƒ bound queryA(length: 2) {},
+        resolve6: <ref *12> ƒ bound queryAaaa(length: 2) {},
+        resolveAny: <ref *13> ƒ bound queryAny(length: 2) {},
+        resolveCaa: <ref *14> ƒ bound queryCaa(length: 2) {},
+        resolveCname: <ref *15> ƒ bound queryCname(length: 2) {},
+        resolveMx: <ref *16> ƒ bound queryMx(length: 2) {},
+        resolveNaptr: <ref *17> ƒ bound queryNaptr(length: 2) {},
+        resolveNs: <ref *18> ƒ bound queryNs(length: 2) {},
+        resolvePtr: <ref *19> ƒ bound queryPtr(length: 2) {},
+        resolveSoa: <ref *20> ƒ bound querySoa(length: 2) {},
+        resolveSrv: <ref *21> ƒ bound querySrv(length: 2) {},
+        resolveTxt: <ref *22> ƒ bound queryTxt(length: 2) {},
+        reverse: <ref *23> ƒ bound getHostByAddr(length: 2) {}
     },
-    getServers: [Circular: *8],
+    getDefaultResultOrder: [Circular: *6],
+    getServers: [Circular: *9],
     lookup: [Circular: *4],
     lookupService: [Circular: *5],
-    resolve: [Circular: *9],
-    resolve4: [Circular: *10],
-    resolve6: [Circular: *11],
-    resolveAny: [Circular: *12],
-    resolveCaa: [Circular: *13],
-    resolveCname: [Circular: *14],
-    resolveMx: [Circular: *15],
-    resolveNaptr: [Circular: *16],
-    resolveNs: [Circular: *17],
-    resolvePtr: [Circular: *18],
-    resolveSoa: [Circular: *19],
-    resolveSrv: [Circular: *20],
-    resolveTxt: [Circular: *21],
-    reverse: [Circular: *22],
-    setDefaultResultOrder: [Circular: *6],
-    setServers: [Circular: *7]
+    resolve: [Circular: *10],
+    resolve4: [Circular: *11],
+    resolve6: [Circular: *12],
+    resolveAny: [Circular: *13],
+    resolveCaa: [Circular: *14],
+    resolveCname: [Circular: *15],
+    resolveMx: [Circular: *16],
+    resolveNaptr: [Circular: *17],
+    resolveNs: [Circular: *18],
+    resolvePtr: [Circular: *19],
+    resolveSoa: [Circular: *20],
+    resolveSrv: [Circular: *21],
+    resolveTxt: [Circular: *22],
+    reverse: [Circular: *23],
+    setDefaultResultOrder: [Circular: *7],
+    setServers: [Circular: *8]
 }
 ```
 
@@ -4880,29 +4890,31 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         once: <ref *3> async ƒ once(length: 2) {},
         on: <ref *4> ƒ on(length: 2) {},
         getEventListeners: <ref *5> ƒ getEventListeners(length: 2) {},
+        getMaxListeners: <ref *6> ƒ getMaxListeners(length: 1) {},
         EventEmitter: [Circular: *2],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
         [get/set] captureRejections: false,
-        [get/set] EventEmitterAsyncResource: <ref *6> class EventEmitterAsyncResource extends EventEmitter {},
+        [get/set] EventEmitterAsyncResource: <ref *7> class EventEmitterAsyncResource extends EventEmitter {},
         errorMonitor: Symbol(events.errorMonitor),
         [get/set] defaultMaxListeners: 10,
-        setMaxListeners: <ref *7> ƒ (length: 0) {},
-        init: <ref *8> ƒ (length: 1) {},
-        listenerCount: <ref *9> ƒ (length: 2) {}
+        setMaxListeners: <ref *8> ƒ (length: 0) {},
+        init: <ref *9> ƒ (length: 1) {},
+        listenerCount: <ref *10> ƒ (length: 2) {}
     },
-    EventEmitterAsyncResource: [Circular: *6],
+    EventEmitterAsyncResource: [Circular: *7],
     captureRejectionSymbol: Symbol(nodejs.rejection),
     captureRejections: false,
     default: [Circular: *2],
     defaultMaxListeners: 10,
     errorMonitor: Symbol(events.errorMonitor),
     getEventListeners: [Circular: *5],
-    init: [Circular: *8],
-    listenerCount: [Circular: *9],
+    getMaxListeners: [Circular: *6],
+    init: [Circular: *9],
+    listenerCount: [Circular: *10],
     on: [Circular: *4],
     once: [Circular: *3],
-    setMaxListeners: [Circular: *7],
+    setMaxListeners: [Circular: *8],
     usingDomains: false
 }
 ```
@@ -5384,19 +5396,19 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             lchmod: async ƒ (length: 0) {},
             lchown: async ƒ (length: 0) {},
             link: async ƒ (length: 0) {},
-            lstat: async ƒ (length: 0) {},
+            lstat: ƒ bound lstat(length: 1) {},
             mkdir: async ƒ (length: 0) {},
             mkdtemp: async ƒ (length: 0) {},
             open: async ƒ (length: 0) {},
             read: async ƒ (length: 0) {},
             write: async ƒ (length: 0) {},
-            readdir: async ƒ (length: 0) {},
-            readFile: async ƒ (length: 0) {},
+            readdir: ƒ bound readdir(length: 3) {},
+            readFile: ƒ bound readFile(length: 3) {},
             writeFile: async ƒ (length: 0) {},
             readlink: async ƒ (length: 0) {},
             realpath: async ƒ (length: 0) {},
             rename: async ƒ (length: 0) {},
-            stat: async ƒ (length: 0) {},
+            stat: ƒ bound stat(length: 1) {},
             symlink: async ƒ (length: 0) {},
             truncate: async ƒ (length: 0) {},
             unlink: async ƒ (length: 0) {},
@@ -5404,9 +5416,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             lutimes: async ƒ (length: 0) {},
             rm: async ƒ (length: 0) {},
             rmdir: async ƒ (length: 0) {},
-            watch: ƒ J(length: 1) {},
-            writev: ƒ t(length: 3) {},
-            readv: ƒ o(length: 3) {},
+            watch: ƒ N(length: 1) {},
+            writev: ƒ f(length: 3) {},
+            readv: ƒ i(length: 3) {},
             constants: [Circular: *16],
             Symbol(CommonJS): 0
         },
@@ -5733,19 +5745,19 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         lchmod: <ref *17> async ƒ (length: 0) {},
         lchown: <ref *18> async ƒ (length: 0) {},
         link: <ref *19> async ƒ (length: 0) {},
-        lstat: <ref *20> async ƒ (length: 0) {},
+        lstat: <ref *20> ƒ bound lstat(length: 1) {},
         mkdir: <ref *21> async ƒ (length: 0) {},
         mkdtemp: <ref *22> async ƒ (length: 0) {},
         open: <ref *23> async ƒ (length: 0) {},
         read: <ref *24> async ƒ (length: 0) {},
         write: <ref *25> async ƒ (length: 0) {},
-        readdir: <ref *26> async ƒ (length: 0) {},
-        readFile: <ref *27> async ƒ (length: 0) {},
+        readdir: <ref *26> ƒ bound readdir(length: 3) {},
+        readFile: <ref *27> ƒ bound readFile(length: 3) {},
         writeFile: <ref *28> async ƒ (length: 0) {},
         readlink: <ref *29> async ƒ (length: 0) {},
         realpath: <ref *30> async ƒ (length: 0) {},
         rename: <ref *31> async ƒ (length: 0) {},
-        stat: <ref *32> async ƒ (length: 0) {},
+        stat: <ref *32> ƒ bound stat(length: 1) {},
         symlink: <ref *33> async ƒ (length: 0) {},
         truncate: <ref *34> async ƒ (length: 0) {},
         unlink: <ref *35> async ƒ (length: 0) {},
@@ -5753,9 +5765,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         lutimes: <ref *37> async ƒ (length: 0) {},
         rm: <ref *38> async ƒ (length: 0) {},
         rmdir: <ref *39> async ƒ (length: 0) {},
-        watch: <ref *40> ƒ J(length: 1) {},
-        writev: <ref *41> ƒ t(length: 3) {},
-        readv: <ref *42> ƒ o(length: 3) {},
+        watch: <ref *40> ƒ N(length: 1) {},
+        writev: <ref *41> ƒ f(length: 3) {},
+        readv: <ref *42> ƒ i(length: 3) {},
         constants: [Circular: *7],
         Symbol(CommonJS): 0
     },
@@ -5844,7 +5856,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 0) {},
+    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 1) {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -5911,7 +5923,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         511: "Network Authentication Required"
     },
     Server: <ref *8> ƒ Server(length: 2) {},
-    ServerResponse: <ref *9> ƒ ServerResponse(length: 1) {},
+    ServerResponse: <ref *9> ƒ ServerResponse(length: 2) {},
     _connectionListener: <ref *10> ƒ connectionListener(length: 1) {},
     createServer: <ref *11> ƒ createServer(length: 2) {},
     default: {
@@ -7087,12 +7099,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             "util/types",
             "v8",
             "vm",
+            "wasi",
             "worker_threads",
             "zlib"
         ],
         _cache: <ref *4> [Object: null prototype] {},
         _pathCache: <ref *5> [Object: null prototype] {
-            /tmp/fs-fixture-1690157610535-1/module.mjs: "/tmp/fs-fixture-1690157610535-1/module.mjs"
+            /tmp/fs-fixture-1690762389698-1/module.mjs: "/tmp/fs-fixture-1690762389698-1/module.mjs"
         },
         _extensions: <ref *6> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -7116,7 +7129,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             "/home/runner/setup-pnpm/node_modules/pnpm/node_modules",
             "/home/runner/.node_modules",
             "/home/runner/.node_libraries",
-            "/opt/hostedtoolcache/node/18.16.1/x64/lib/node"
+            "/opt/hostedtoolcache/node/18.17.0/x64/lib/node"
         ],
         _debug: <ref *11> ƒ deprecated(length: 0) {},
         _findPath: <ref *12> ƒ (length: 3) {},
@@ -7166,13 +7179,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         bun:main: {
             exports: {}
         },
-        /tmp/fs-fixture-1690157610535-1/module.mjs: {
+        /tmp/fs-fixture-1690762389698-1/module.mjs: {
             exports: {}
         },
         node:module: {
             exports: [Circular: *1]
         },
-        /tmp/fs-fixture-1690157610535-1/inspect.mjs: {
+        /tmp/fs-fixture-1690762389698-1/inspect.mjs: {
             exports: {
                 inspect: ƒ inspect(length: 1) {}
             }
@@ -7723,7 +7736,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         },
         UV_UDP_REUSEADDR: 4
     },
-    cpus: <ref *8> ƒ bound cpus(length: 0) {},
+    cpus: <ref *8> ƒ (length: 0) {},
     default: {
         arch: [Circular: *2],
         cpus: [Circular: *8],
@@ -8175,7 +8188,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     default: {
         performance: <ref *7> {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1690157612845.124
+            timeOrigin: 1690762391683.2808
         },
         constants: [Circular: *5],
         PerformanceEntry: [Circular: *2],
@@ -8305,6 +8318,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 "--tls-cipher-list",
                 "--watch-path",
                 "--use-largepages",
+                "--test-reporter",
                 "--secure-heap",
                 "--experimental-loader",
                 "--heapsnapshot-near-heap-limit",
@@ -8352,6 +8366,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 "--perf-basic-prof",
                 "--max-old-space-size",
                 "--trace-event-file-pattern",
+                "--test-reporter-destination",
                 "--report-on-signal",
                 "--no-report-on-signal",
                 "--trace-atomics-wait",
@@ -8391,7 +8406,6 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 "--stack-trace-limit",
                 "--require",
                 "--experimental-wasi-unstable-preview1",
-                "--no-experimental-wasi-unstable-preview1",
                 "--debug-port",
                 "--inspect",
                 "--inspect-brk",
@@ -8407,8 +8421,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     },
     arch: "x64",
     argv: <ref *23> [
-        "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
-        "/tmp/fs-fixture-1690157610535-1/process.mjs"
+        "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
+        "/tmp/fs-fixture-1690762389698-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -8439,16 +8453,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             force_dynamic_crt: 0,
             gas_version: "2.30",
             host_arch: "x64",
-            icu_data_in: "../../deps/icu-tmp/icudt72l.dat",
+            icu_data_in: "../../deps/icu-tmp/icudt73l.dat",
             icu_endianness: "l",
             icu_gyp_path: "tools/icu/icu-generic.gyp",
             icu_path: "deps/icu-small",
             icu_small: false,
-            icu_ver_major: "72",
+            icu_ver_major: "73",
             is_debug: 0,
             libdir: "lib",
             llvm_version: "0.0",
-            napi_build_version: "8",
+            napi_build_version: "9",
             node_builtin_shareable_builtins: [
                 "deps/cjs-module-lexer/lexer.js",
                 "deps/cjs-module-lexer/dist/lexer.js",
@@ -8543,6 +8557,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 "lib/internal/crypto/sig.js",
                 "lib/internal/crypto/util.js",
                 "lib/internal/crypto/webcrypto.js",
+                "lib/internal/crypto/webidl.js",
                 "lib/internal/crypto/x509.js",
                 "lib/internal/debugger/inspect.js",
                 "lib/internal/debugger/inspect_client.js",
@@ -8689,14 +8704,11 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 "lib/internal/test_runner/reporter/dot.js",
                 "lib/internal/test_runner/reporter/spec.js",
                 "lib/internal/test_runner/reporter/tap.js",
+                "lib/internal/test_runner/reporter/v8-serializer.js",
                 "lib/internal/test_runner/runner.js",
-                "lib/internal/test_runner/tap_checker.js",
-                "lib/internal/test_runner/tap_lexer.js",
-                "lib/internal/test_runner/tap_parser.js",
                 "lib/internal/test_runner/test.js",
                 "lib/internal/test_runner/tests_stream.js",
                 "lib/internal/test_runner/utils.js",
-                "lib/internal/test_runner/yaml_to_js.js",
                 "lib/internal/timers.js",
                 "lib/internal/tls/secure-context.js",
                 "lib/internal/tls/secure-pair.js",
@@ -8722,6 +8734,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 "lib/internal/wasm_web_api.js",
                 "lib/internal/watch_mode/files_watcher.js",
                 "lib/internal/watchdog.js",
+                "lib/internal/webidl.js",
                 "lib/internal/webstreams/adapters.js",
                 "lib/internal/webstreams/compression.js",
                 "lib/internal/webstreams/encoding.js",
@@ -8754,6 +8767,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 "lib/string_decoder.js",
                 "lib/sys.js",
                 "lib/test.js",
+                "lib/test/reporters.js",
                 "lib/timers.js",
                 "lib/timers/promises.js",
                 "lib/tls.js",
@@ -8826,38 +8840,38 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     cwd: <ref *38> ƒ wrappedCwd(length: 0) {},
     debugPort: 9229,
     default: process {
-        version: "v18.16.1",
+        version: "v18.17.0",
         versions: <ref *40> {
-            node: "18.16.1",
+            node: "18.17.0",
             acorn: "8.8.2",
-            ada: "1.0.4",
+            ada: "2.5.0",
             ares: "1.19.1",
             brotli: "1.0.9",
-            cldr: "42.0",
-            icu: "72.1",
+            cldr: "43.0",
+            icu: "73.1",
             llhttp: "6.0.11",
             modules: "108",
-            napi: "8",
+            napi: "9",
             nghttp2: "1.52.0",
             nghttp3: "0.7.0",
             ngtcp2: "0.8.1",
             openssl: "3.0.9+quic",
-            simdutf: "3.2.2",
-            tz: "2022g",
-            undici: "5.21.0",
+            simdutf: "3.2.12",
+            tz: "2023c",
+            undici: "5.22.1",
             unicode: "15.0",
             uv: "1.44.2",
-            uvwasi: "0.0.15",
+            uvwasi: "0.0.18",
             v8: "10.2.154.26-node.26",
-            zlib: "1.2.13"
+            zlib: "1.2.13.1-motley"
         },
         arch: "x64",
         platform: "linux",
         release: <ref *41> {
             name: "node",
             lts: "Hydrogen",
-            sourceUrl: "https://nodejs.org/download/release/v18.16.1/node-v18.16.1.tar.gz",
-            headersUrl: "https://nodejs.org/download/release/v18.16.1/node-v18.16.1-headers.tar.gz"
+            sourceUrl: "https://nodejs.org/download/release/v18.17.0/node-v18.17.0.tar.gz",
+            headersUrl: "https://nodejs.org/download/release/v18.17.0/node-v18.17.0-headers.tar.gz"
         },
         _rawDebug: [Circular: *15],
         moduleLoadList: <ref *42> [
@@ -8909,6 +8923,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             "NativeModule internal/util/parse_args/parse_args",
             "NativeModule internal/mime",
             "NativeModule util",
+            "NativeModule internal/webidl",
             "Internal Binding performance",
             "NativeModule internal/perf/utils",
             "NativeModule internal/event_target",
@@ -9448,19 +9463,19 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         setgid: <ref *104> ƒ (length: 1) {},
         setuid: <ref *105> ƒ (length: 1) {},
         env: <ref *106>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_7807d250-889b-4655-9559-5827556efdf1",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_5922c947-6c86-41cc-9249-3176bcc87004",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/7.33.5 npm/? node/v18.16.1 linux x64",
+            npm_config_user_agent: "pnpm/7.33.5 npm/? node/v18.17.0 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_7807d250-889b-4655-9559-5827556efdf1",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_5922c947-6c86-41cc-9249-3176bcc87004",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
-            npm_node_execpath: "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
+            npm_node_execpath: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             SHLVL: "1",
             HOME: "/home/runner",
@@ -9478,30 +9493,30 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "670",
+            SYSTEMD_EXEC_PID: "666",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.6/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20230716.1.0",
+            ImageVersion: "20230724.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
-            CHROMEWEBDRIVER: "/usr/local/share/chrome_driver",
-            JOURNAL_STREAM: "8:17588",
+            CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
+            JOURNAL_STREAM: "8:16783",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "5639359313",
+            GITHUB_RUN_ID: "5709113755",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "1d5b51dc5863ecdde44a7ca52737bfc5ed0419fc",
+            GITHUB_WORKFLOW_SHA: "18ce4c708017411d6a81157c17ab26f5f2d67d15",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -9513,13 +9528,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_9fe9ba18-4af2-46e3-bf3d-702b8abb5848",
-            INVOCATION_ID: "ee9ceb01f5a74fdd8cd6bab4bf39c336",
+            RUNNER_TRACKING_ID: "github_50f5febd-cbc5-4bb9-88ea-738093067d41",
+            INVOCATION_ID: "b719b80c47344414b1e9d7fa507e657c",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.11/x64",
-            NODE: "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
+            NODE: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "31",
+            GITHUB_RUN_NUMBER: "32",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9536,11 +9551,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
             npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
             npm_lifecycle_script: "tsx index.ts",
+            STATS_UE: "true",
             ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
             GITHUB_ACTION_REF: "",
             DEBIAN_FRONTEND: "noninteractive",
             GITHUB_REPOSITORY_ID: "622996871",
             GITHUB_ACTIONS: "true",
+            STATS_NM: "true",
             NODE_PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.12.6/node_modules/tsx/d…",
             npm_package_devDependencies_fs_fixture: "^1.2.0",
             npm_lifecycle_event: "start",
@@ -9552,7 +9569,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "1d5b51dc5863ecdde44a7ca52737bfc5ed0419fc",
+            GITHUB_SHA: "18ce4c708017411d6a81157c17ab26f5f2d67d15",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -9560,7 +9577,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_7807d250-889b-4655-9559-5827556efdf1",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_5922c947-6c86-41cc-9249-3176bcc87004",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9575,7 +9592,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_7807d250-889b-4655-9559-5827556efdf1",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_5922c947-6c86-41cc-9249-3176bcc87004",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -9588,16 +9605,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.154/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_7807d250-889b-4655-9559-5827556efdf1",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_5922c947-6c86-41cc-9249-3176bcc87004",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *107> [],
-        pid: 2434,
-        ppid: 1837,
-        execPath: "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
+        pid: 2473,
+        ppid: 1875,
+        execPath: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
         exitCode: undefined,
@@ -9621,7 +9638,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     emitWarning: [Circular: *63],
     env: [Circular: *106],
     execArgv: [Circular: *107],
-    execPath: "/opt/hostedtoolcache/node/18.16.1/x64/bin/node",
+    execPath: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
     exit: [Circular: *51],
     exitCode: undefined,
     features: [Circular: *60],
@@ -9639,9 +9656,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *64],
     openStdin: [Circular: *54],
-    pid: 2434,
+    pid: 2473,
     platform: "linux",
-    ppid: 1837,
+    ppid: 1875,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *108],
@@ -9659,7 +9676,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     title: "node",
     umask: [Circular: *99],
     uptime: [Circular: *44],
-    version: "v18.16.1",
+    version: "v18.17.0",
     versions: [Circular: *40]
 }
 ```
@@ -9675,9 +9692,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690157610535-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690157610535-1/process.mjs:4:15
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1690762389698-1/process.mjs:4:15
 ```
 
 </td></tr></table>
@@ -9945,6 +9962,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         "util/types",
         "v8",
         "vm",
+        "wasi",
         "worker_threads",
         "zlib"
     ],
@@ -9988,13 +10006,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690157610535-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1690157610535-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1690157610535-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:99:6
 ```
 
 </td></tr></table>
@@ -10020,50 +10038,58 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         wrap: ƒ (length: 2) {}
     },
     Stream: <ref *14> ƒ Stream(length: 1) {
-        isDisturbed: <ref *15> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *16> ƒ isErrored(length: 1) {},
-        isReadable: <ref *17> ƒ isReadable(length: 1) {},
+        isDestroyed: <ref *15> ƒ isDestroyed(length: 1) {},
+        isDisturbed: <ref *16> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *17> ƒ isErrored(length: 1) {},
+        isReadable: <ref *18> ƒ isReadable(length: 1) {},
+        isWritable: <ref *19> ƒ isWritable(length: 1) {},
         Readable: [Circular: *7],
-        Writable: <ref *18> ƒ Writable(length: 1) {
+        Writable: <ref *20> ƒ Writable(length: 1) {
             WritableState: ƒ WritableState(length: 3) {},
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ Transform(length: 1) {},
+        Transform: <ref *24> ƒ Transform(length: 1) {},
         PassThrough: [Circular: *6],
-        pipeline: <ref *23> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ pipeline(length: 0) {}
+        pipeline: <ref *25> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *26> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *25> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *26> ƒ eos(length: 3) {
-            finished: <ref *27> ƒ finished(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        addAbortSignal: <ref *27> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *28> ƒ eos(length: 3) {
+            finished: <ref *29> ƒ finished(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *29]
         },
-        destroy: <ref *28> ƒ destroyer(length: 2) {},
-        compose: <ref *29> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *30> {
-            finished: [Circular: *27],
-            pipeline: [Circular: *24]
+        destroy: <ref *30> ƒ destroyer(length: 2) {},
+        compose: <ref *31> ƒ compose(length: 0) {},
+        setDefaultHighWaterMark: <ref *32> ƒ setDefaultHighWaterMark(length: 2) {},
+        getDefaultHighWaterMark: <ref *33> ƒ getDefaultHighWaterMark(length: 1) {},
+        [get/set] promises: <ref *34> {
+            finished: [Circular: *29],
+            pipeline: [Circular: *26]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ _uint8ArrayToBuffer(length: 1) {}
+        _isUint8Array: <ref *35> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *36> ƒ _uint8ArrayToBuffer(length: 1) {}
     },
-    Transform: [Circular: *22],
-    Writable: [Circular: *18],
-    _isUint8Array: [Circular: *31],
-    _uint8ArrayToBuffer: [Circular: *32],
-    addAbortSignal: [Circular: *25],
-    compose: [Circular: *29],
+    Transform: [Circular: *24],
+    Writable: [Circular: *20],
+    _isUint8Array: [Circular: *35],
+    _uint8ArrayToBuffer: [Circular: *36],
+    addAbortSignal: [Circular: *27],
+    compose: [Circular: *31],
     default: [Circular: *14],
-    destroy: [Circular: *28],
-    finished: [Circular: *26],
-    isDisturbed: [Circular: *15],
-    isErrored: [Circular: *16],
-    isReadable: [Circular: *17],
-    pipeline: [Circular: *23],
-    promises: [Circular: *30]
+    destroy: [Circular: *30],
+    finished: [Circular: *28],
+    getDefaultHighWaterMark: [Circular: *33],
+    isDestroyed: [Circular: *15],
+    isDisturbed: [Circular: *16],
+    isErrored: [Circular: *17],
+    isReadable: [Circular: *18],
+    isWritable: [Circular: *19],
+    pipeline: [Circular: *25],
+    promises: [Circular: *34],
+    setDefaultHighWaterMark: [Circular: *32]
 }
 ```
 
@@ -10174,7 +10200,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 {
     arrayBuffer: <ref *2> ƒ readableStreamToArrayBuffer(length: 1) {},
     blob: <ref *3> ƒ readableStreamToBlob(length: 1) {},
-    buffer: <ref *4> async ƒ h(length: 1) {},
+    buffer: <ref *4> ƒ h(length: 1) {},
     default: {
         arrayBuffer: [Circular: *2],
         text: <ref *6> ƒ readableStreamToText(length: 1) {},
@@ -10336,9 +10362,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690157610535-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690157610535-1/string_decoder.mjs:4:15
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1690762389698-1/string_decoder.mjs:4:15
 ```
 
 </td></tr></table>
@@ -10674,7 +10700,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2597) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2629) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -10994,7 +11020,6 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             "-----BEGIN CERTIFICATE-----\nMIIDuDCCAqCgAwIBAgIQDPCOXAgWpa1Cf/DrJxhZ0DANBgkqhkiG9w0BAQUFADBIMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIIDvDCCAqSgAwIBAgIQB1YipOjUiolN9BPI8PjqpTANBgkqhkiG9w0BAQUFADBKMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIIEHTCCAwWgAwIBAgIQToEtioJl4AsC7j41AkblPTANBgkqhkiG9w0BAQUFADCBgTELMAkG…",
-            "-----BEGIN CERTIFICATE-----\nMIID5jCCAs6gAwIBAgIQV8szb8JcFuZHFhfjkDFo4DANBgkqhkiG9w0BAQUFADBiMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIICiTCCAg+gAwIBAgIQH0evqmIAcFBUTAGem2OZKjAKBggqhkjOPQQDAzCBhTELMAkGA1UE…",
             "-----BEGIN CERTIFICATE-----\nMIIDqDCCApCgAwIBAgIJAP7c4wEPyUj/MA0GCSqGSIb3DQEBBQUAMDQxCzAJBgNVBAYTAkZS…",
             "-----BEGIN CERTIFICATE-----\nMIIFsDCCA5igAwIBAgIQFci9ZUdcr7iXAF7kBtK8nTANBgkqhkiG9w0BAQUFADBeMQswCQYD…",
@@ -11016,7 +11041,6 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             "-----BEGIN CERTIFICATE-----\nMIIDuzCCAqOgAwIBAgIDBETAMA0GCSqGSIb3DQEBBQUAMH4xCzAJBgNVBAYTAlBMMSIwIAYD…",
             "-----BEGIN CERTIFICATE-----\nMIIDezCCAmOgAwIBAgIBATANBgkqhkiG9w0BAQUFADBfMQswCQYDVQQGEwJUVzESMBAGA1UE…",
             "-----BEGIN CERTIFICATE-----\nMIIDdzCCAl+gAwIBAgIBADANBgkqhkiG9w0BAQsFADBdMQswCQYDVQQGEwJKUDElMCMGA1UE…",
-            "-----BEGIN CERTIFICATE-----\nMIIFVjCCBD6gAwIBAgIQ7is969Qh3hSoYqwE893EATANBgkqhkiG9w0BAQUFADCB8zELMAkG…",
             "-----BEGIN CERTIFICATE-----\nMIIFuzCCA6OgAwIBAgIIVwoRl0LE48wwDQYJKoZIhvcNAQELBQAwazELMAkGA1UEBhMCSVQx…",
             "-----BEGIN CERTIFICATE-----\nMIIFWTCCA0GgAwIBAgIBAjANBgkqhkiG9w0BAQsFADBOMQswCQYDVQQGEwJOTzEdMBsGA1UE…",
             "-----BEGIN CERTIFICATE-----\nMIIFWTCCA0GgAwIBAgIBAjANBgkqhkiG9w0BAQsFADBOMQswCQYDVQQGEwJOTzEdMBsGA1UE…",
@@ -11042,7 +11066,6 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             "-----BEGIN CERTIFICATE-----\nMIIF3jCCA8agAwIBAgIQAf1tMPyjylGoG7xkDjUDLTANBgkqhkiG9w0BAQwFADCBiDELMAkG…",
             "-----BEGIN CERTIFICATE-----\nMIICjzCCAhWgAwIBAgIQXIuZxVqUxdJxVt7NiYDMJjAKBggqhkjOPQQDAzCBiDELMAkGA1UE…",
             "-----BEGIN CERTIFICATE-----\nMIICHjCCAaSgAwIBAgIRYFlJ4CYuu1X5CneKcflK2GwwCgYIKoZIzj0EAwMwUDEkMCIGA1UE…",
-            "-----BEGIN CERTIFICATE-----\nMIIFcDCCA1igAwIBAgIEAJiWjTANBgkqhkiG9w0BAQsFADBYMQswCQYDVQQGEwJOTDEeMBwG…",
             "-----BEGIN CERTIFICATE-----\nMIIFYDCCA0igAwIBAgIQCgFCgAAAAUUjyES1AAAAAjANBgkqhkiG9w0BAQsFADBKMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIIFZjCCA06gAwIBAgIQCgFCgAAAAUUjz0Z8AAAAAjANBgkqhkiG9w0BAQsFADBNMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIIEPjCCAyagAwIBAgIESlOMKDANBgkqhkiG9w0BAQsFADCBvjELMAkGA1UEBhMCVVMxFjAU…",
@@ -11380,9 +11403,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690157610535-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690157610535-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690157610535-1/tty.mjs:4:15
+      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
+      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1690762389698-1/tty.mjs:4:15
 ```
 
 </td></tr></table>
@@ -11394,34 +11417,35 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 ```js
 [Object: null prototype] {
     URL: <ref *2> class URL {
+        canParse: ƒ canParse(length: 1) {},
         createObjectURL: ƒ createObjectURL(length: 1) {},
         revokeObjectURL: ƒ revokeObjectURL(length: 1) {}
     },
-    URLSearchParams: <ref *5> class URLSearchParams {},
-    Url: <ref *6> ƒ Url(length: 0) {},
+    URLSearchParams: <ref *6> class URLSearchParams {},
+    Url: <ref *7> ƒ Url(length: 0) {},
     default: {
-        Url: [Circular: *6],
-        parse: <ref *8> ƒ urlParse(length: 3) {},
-        resolve: <ref *9> ƒ urlResolve(length: 2) {},
-        resolveObject: <ref *10> ƒ urlResolveObject(length: 2) {},
-        format: <ref *11> ƒ urlFormat(length: 2) {},
+        Url: [Circular: *7],
+        parse: <ref *9> ƒ urlParse(length: 3) {},
+        resolve: <ref *10> ƒ urlResolve(length: 2) {},
+        resolveObject: <ref *11> ƒ urlResolveObject(length: 2) {},
+        format: <ref *12> ƒ urlFormat(length: 2) {},
         URL: [Circular: *2],
-        URLSearchParams: [Circular: *5],
-        domainToASCII: <ref *12> ƒ domainToASCII(length: 1) {},
-        domainToUnicode: <ref *13> ƒ domainToUnicode(length: 1) {},
-        pathToFileURL: <ref *14> ƒ pathToFileURL(length: 1) {},
-        fileURLToPath: <ref *15> ƒ fileURLToPath(length: 1) {},
-        urlToHttpOptions: <ref *16> ƒ urlToHttpOptions(length: 1) {}
+        URLSearchParams: [Circular: *6],
+        domainToASCII: <ref *13> ƒ domainToASCII(length: 1) {},
+        domainToUnicode: <ref *14> ƒ domainToUnicode(length: 1) {},
+        pathToFileURL: <ref *15> ƒ pathToFileURL(length: 1) {},
+        fileURLToPath: <ref *16> ƒ fileURLToPath(length: 1) {},
+        urlToHttpOptions: <ref *17> ƒ urlToHttpOptions(length: 1) {}
     },
-    domainToASCII: [Circular: *12],
-    domainToUnicode: [Circular: *13],
-    fileURLToPath: [Circular: *15],
-    format: [Circular: *11],
-    parse: [Circular: *8],
-    pathToFileURL: [Circular: *14],
-    resolve: [Circular: *9],
-    resolveObject: [Circular: *10],
-    urlToHttpOptions: [Circular: *16]
+    domainToASCII: [Circular: *13],
+    domainToUnicode: [Circular: *14],
+    fileURLToPath: [Circular: *16],
+    format: [Circular: *12],
+    parse: [Circular: *9],
+    pathToFileURL: [Circular: *15],
+    resolve: [Circular: *10],
+    resolveObject: [Circular: *11],
+    urlToHttpOptions: [Circular: *17]
 }
 ```
 
@@ -12383,6 +12407,32 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 </td></tr></table>
 
+## wasi
+
+<table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
+
+```js
+[Object: null prototype] {
+    WASI: <ref *2> class WASI {},
+    default: {
+        WASI: [Circular: *2]
+    }
+}
+(node:2780) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+```
+
+</td><td valign="top">
+
+```js
+1 | var nodeFsConstants = constants, __getOwnPropNames = Object.getOwnPropertyNames, __commonJS = (cb, mod) => function __require2() {
+                         ^
+ReferenceError: Can't find variable: constants
+      at node:wasi:1:22
+```
+
+</td></tr></table>
+
 ## worker_threads
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
@@ -12498,7 +12548,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         Z_RLE: 3,
         Z_FIXED: 4,
         Z_DEFAULT_STRATEGY: 0,
-        ZLIB_VERNUM: 4816,
+        ZLIB_VERNUM: 4817,
         DEFLATE: 1,
         INFLATE: 2,
         GZIP: 3,
