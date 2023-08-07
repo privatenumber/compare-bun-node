@@ -6,7 +6,7 @@ The comparison is performed every week using GitHub Actions, with the latest Bun
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v18.17.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Aug 7, 2023 with Bun 0.7.3 Node.js v18.17.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -136,9 +136,9 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    Agent: <ref *2> ƒ Agent(length: 0) {},
+    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {},
     METHODS: <ref *5> [
         "ACL",
         "BIND",
@@ -175,7 +175,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 0) {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -241,8 +241,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *8> class Server extends EventEmitter {},
-    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    Server: <ref *8> ƒ Server(length: 2) {},
+    ServerResponse: <ref *9> ƒ ServerResponse(length: 1) {},
     createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
@@ -257,7 +257,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         maxHeaderSize: 16384,
         validateHeaderName: <ref *14> ƒ validateHeaderName(length: 2) {},
         validateHeaderValue: <ref *15> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        setMaxIdleHTTPParsers: <ref *16> ƒ setMaxIdleHTTPParsers(length: 1) {},
         globalAgent: <ref *17> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
@@ -281,12 +281,13 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *6],
-        Symbol(CommonJS): 0
+        OutgoingMessage: [Circular: *6]
     },
     get: [Circular: *13],
     globalAgent: [Circular: *17],
+    maxHeaderSize: 16384,
     request: [Circular: *12],
+    setMaxIdleHTTPParsers: [Circular: *16],
     validateHeaderName: [Circular: *14],
     validateHeaderValue: [Circular: *15]
 }
@@ -311,9 +312,9 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    Agent: <ref *2> ƒ Agent(length: 0) {},
+    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {},
     METHODS: <ref *5> [
         "ACL",
         "BIND",
@@ -350,7 +351,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 0) {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -416,8 +417,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *8> class Server extends EventEmitter {},
-    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    Server: <ref *8> ƒ Server(length: 2) {},
+    ServerResponse: <ref *9> ƒ ServerResponse(length: 1) {},
     createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
@@ -432,7 +433,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         maxHeaderSize: 16384,
         validateHeaderName: <ref *14> ƒ validateHeaderName(length: 2) {},
         validateHeaderValue: <ref *15> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        setMaxIdleHTTPParsers: <ref *16> ƒ setMaxIdleHTTPParsers(length: 1) {},
         globalAgent: <ref *17> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
@@ -456,12 +457,13 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *6],
-        Symbol(CommonJS): 0
+        OutgoingMessage: [Circular: *6]
     },
     get: [Circular: *13],
     globalAgent: [Circular: *17],
+    maxHeaderSize: 16384,
     request: [Circular: *12],
+    setMaxIdleHTTPParsers: [Circular: *16],
     validateHeaderName: [Circular: *14],
     validateHeaderValue: [Circular: *15]
 }
@@ -563,9 +565,9 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    Agent: <ref *2> ƒ Agent(length: 0) {},
+    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {},
     METHODS: <ref *5> [
         "ACL",
         "BIND",
@@ -602,7 +604,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 0) {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -668,8 +670,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *8> class Server extends EventEmitter {},
-    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    Server: <ref *8> ƒ Server(length: 2) {},
+    ServerResponse: <ref *9> ƒ ServerResponse(length: 1) {},
     createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
@@ -684,7 +686,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         maxHeaderSize: 16384,
         validateHeaderName: <ref *14> ƒ validateHeaderName(length: 2) {},
         validateHeaderValue: <ref *15> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        setMaxIdleHTTPParsers: <ref *16> ƒ setMaxIdleHTTPParsers(length: 1) {},
         globalAgent: <ref *17> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
@@ -708,12 +710,13 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *6],
-        Symbol(CommonJS): 0
+        OutgoingMessage: [Circular: *6]
     },
     get: [Circular: *13],
     globalAgent: [Circular: *17],
+    maxHeaderSize: 16384,
     request: [Circular: *12],
+    setMaxIdleHTTPParsers: [Circular: *16],
     validateHeaderName: [Circular: *14],
     validateHeaderValue: [Circular: *15]
 }
@@ -742,9 +745,9 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    Agent: <ref *2> ƒ Agent(length: 0) {},
+    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {},
     METHODS: <ref *5> [
         "ACL",
         "BIND",
@@ -781,7 +784,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 0) {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -847,8 +850,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *8> class Server extends EventEmitter {},
-    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    Server: <ref *8> ƒ Server(length: 2) {},
+    ServerResponse: <ref *9> ƒ ServerResponse(length: 1) {},
     createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
@@ -863,7 +866,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         maxHeaderSize: 16384,
         validateHeaderName: <ref *14> ƒ validateHeaderName(length: 2) {},
         validateHeaderValue: <ref *15> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        setMaxIdleHTTPParsers: <ref *16> ƒ setMaxIdleHTTPParsers(length: 1) {},
         globalAgent: <ref *17> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
@@ -887,12 +890,13 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *6],
-        Symbol(CommonJS): 0
+        OutgoingMessage: [Circular: *6]
     },
     get: [Circular: *13],
     globalAgent: [Circular: *17],
+    maxHeaderSize: 16384,
     request: [Circular: *12],
+    setMaxIdleHTTPParsers: [Circular: *16],
     validateHeaderName: [Circular: *14],
     validateHeaderValue: [Circular: *15]
 }
@@ -927,9 +931,9 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    Agent: <ref *2> ƒ Agent(length: 0) {},
+    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {},
     METHODS: <ref *5> [
         "ACL",
         "BIND",
@@ -966,7 +970,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 0) {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -1032,8 +1036,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *8> class Server extends EventEmitter {},
-    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    Server: <ref *8> ƒ Server(length: 2) {},
+    ServerResponse: <ref *9> ƒ ServerResponse(length: 1) {},
     createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
@@ -1048,7 +1052,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         maxHeaderSize: 16384,
         validateHeaderName: <ref *14> ƒ validateHeaderName(length: 2) {},
         validateHeaderValue: <ref *15> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        setMaxIdleHTTPParsers: <ref *16> ƒ setMaxIdleHTTPParsers(length: 1) {},
         globalAgent: <ref *17> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
@@ -1072,12 +1076,13 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *6],
-        Symbol(CommonJS): 0
+        OutgoingMessage: [Circular: *6]
     },
     get: [Circular: *13],
     globalAgent: [Circular: *17],
+    maxHeaderSize: 16384,
     request: [Circular: *12],
+    setMaxIdleHTTPParsers: [Circular: *16],
     validateHeaderName: [Circular: *14],
     validateHeaderValue: [Circular: *15]
 }
@@ -1178,9 +1183,9 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    Agent: <ref *2> ƒ Agent(length: 0) {},
+    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {},
     METHODS: <ref *5> [
         "ACL",
         "BIND",
@@ -1217,7 +1222,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 0) {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -1283,8 +1288,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *8> class Server extends EventEmitter {},
-    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    Server: <ref *8> ƒ Server(length: 2) {},
+    ServerResponse: <ref *9> ƒ ServerResponse(length: 1) {},
     createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
@@ -1299,7 +1304,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         maxHeaderSize: 16384,
         validateHeaderName: <ref *14> ƒ validateHeaderName(length: 2) {},
         validateHeaderValue: <ref *15> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        setMaxIdleHTTPParsers: <ref *16> ƒ setMaxIdleHTTPParsers(length: 1) {},
         globalAgent: <ref *17> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
@@ -1323,12 +1328,13 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *6],
-        Symbol(CommonJS): 0
+        OutgoingMessage: [Circular: *6]
     },
     get: [Circular: *13],
     globalAgent: [Circular: *17],
+    maxHeaderSize: 16384,
     request: [Circular: *12],
+    setMaxIdleHTTPParsers: [Circular: *16],
     validateHeaderName: [Circular: *14],
     validateHeaderValue: [Circular: *15]
 }
@@ -1357,77 +1363,138 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ R(length: 1) {
+    Duplex: <ref *2> ƒ Duplex(length: 1) {
+        prototype: EventEmitter {
+            write: <ref *4> ƒ (length: 3) {},
+            cork: <ref *5> ƒ (length: 0) {},
+            uncork: <ref *6> ƒ (length: 0) {},
+            setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
+            _write: <ref *8> ƒ (length: 3) {},
+            _writev: null,
+            end: <ref *9> ƒ (length: 3) {}
+        },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class a extends Uq {},
-    PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ E(length: 1) {
-        _fromList: ƒ Q(length: 2) {},
+    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+        prototype: EventEmitter {
+            _transform: ƒ (length: 3) {}
+        }
+    },
+    Readable: <ref *17> ƒ Readable(length: 1) {
+        prototype: EventEmitter {
+            on: <ref *19> ƒ (length: 2) {},
+            destroy: ƒ destroy2(length: 2) {},
+            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _destroy: ƒ (length: 2) {},
+            undefined: ƒ (length: 1) {},
+            push: ƒ (length: 2) {},
+            unshift: ƒ (length: 2) {},
+            isPaused: ƒ (length: 0) {},
+            setEncoding: ƒ (length: 1) {},
+            read: ƒ (length: 1) {},
+            _read: ƒ (length: 1) {},
+            pipe: ƒ (length: 2) {},
+            unpipe: ƒ (length: 1) {},
+            addListener: [Circular: *19],
+            removeListener: <ref *32> ƒ (length: 2) {},
+            off: [Circular: *32],
+            removeAllListeners: ƒ (length: 1) {},
+            resume: ƒ (length: 0) {},
+            pause: ƒ (length: 0) {},
+            wrap: ƒ (length: 1) {},
+            iterator: ƒ (length: 1) {},
+            Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
+        toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ y(length: 1) {
-        isDisturbed: <ref *15> ƒ m(length: 1) {},
-        isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ I(length: 1) {},
-        isReadable: <ref *18> ƒ U(length: 1) {},
-        Readable: [Circular: *8],
-        Writable: <ref *19> ƒ Y(length: 0) {
+    Stream: <ref *44> ƒ Stream(length: 1) {
+        prototype: <ref *45> EventEmitter {
+            pipe: ƒ (length: 2) {}
+        },
+        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *48> ƒ isErrored(length: 1) {},
+        isWritable: <ref *49> ƒ isWritable(length: 1) {},
+        isReadable: <ref *50> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *17],
+        Writable: <ref *51> ƒ Writable2(length: 0) {
+            prototype: EventEmitter {
+                pipe: ƒ (length: 0) {},
+                write: [Circular: *4],
+                cork: [Circular: *5],
+                uncork: [Circular: *6],
+                setDefaultEncoding: [Circular: *7],
+                _write: [Circular: *8],
+                _writev: null,
+                end: [Circular: *9],
+                destroy: ƒ (length: 2) {},
+                _undestroy: [Circular: *21],
+                _destroy: ƒ (length: 2) {},
+                undefined: ƒ (length: 1) {}
+            },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ M(length: 1) {},
-        PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ F(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
+        Transform: <ref *59> ƒ Transform(length: 1) {
+            prototype: EventEmitter {
+                _final: ƒ final(length: 1) {},
+                _transform: ƒ (length: 3) {},
+                _write: ƒ (length: 3) {},
+                _read: ƒ (length: 0) {}
+            }
         },
-        addAbortSignal: <ref *25> ƒ T(length: 2) {},
-        finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ n(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        PassThrough: [Circular: *14],
+        pipeline: <ref *65> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
         },
-        destroy: <ref *28> ƒ Y(length: 2) {},
-        compose: <ref *29> ƒ c(length: 0) {},
-        [get/set] promises: <ref *30> {
-            finished: [Circular: *27],
-            pipeline: [Circular: *24]
+        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *68> ƒ eos(length: 3) {
+            finished: <ref *69> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
         },
-        Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ P(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
-        NativeWritable: [Circular: *6],
-        default: [Circular: *14],
-        eos: <ref *34> ƒ B(length: 0) {},
-        Symbol(CommonJS): 0,
+        destroy: <ref *70> ƒ destroyer(length: 2) {},
+        compose: <ref *71> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *72> {
+            finished: [Circular: *69],
+            pipeline: [Circular: *66]
+        },
+        Stream: [Circular: *44],
+        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *13],
+        eos: [Circular: *68],
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ Z(length: 1) {},
-            _ReadableFromWebForUndici: class P extends E {}
+            _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
+            _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *22],
-    Writable: [Circular: *19],
-    _getNativeReadableStreamPrototype: [Circular: *33],
-    _isUint8Array: [Circular: *31],
-    _uint8ArrayToBuffer: [Circular: *32],
-    addAbortSignal: [Circular: *25],
-    compose: [Circular: *29],
-    default: [Circular: *14],
-    destroy: [Circular: *28],
-    eos: [Circular: *34],
-    finished: [Circular: *26],
-    isDisturbed: [Circular: *15],
-    isErrored: [Circular: *16],
-    isReadable: [Circular: *18],
-    isWritable: [Circular: *17],
-    pipeline: [Circular: *23],
-    promises: [Circular: *30]
+    Transform: [Circular: *59],
+    Writable: [Circular: *51],
+    _getNativeReadableStreamPrototype: [Circular: *75],
+    _isUint8Array: [Circular: *73],
+    _uint8ArrayToBuffer: [Circular: *74],
+    addAbortSignal: [Circular: *67],
+    compose: [Circular: *71],
+    default: [Circular: *44],
+    defaultMaxListeners: 10,
+    destroy: [Circular: *70],
+    eos: [Circular: *68],
+    finished: [Circular: *68],
+    isDisturbed: [Circular: *47],
+    isErrored: [Circular: *48],
+    isReadable: [Circular: *50],
+    isWritable: [Circular: *49],
+    pipeline: [Circular: *65],
+    promises: [Circular: *72],
+    prototype: [Circular: *45]
 }
 ```
 
@@ -1447,77 +1514,138 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ R(length: 1) {
+    Duplex: <ref *2> ƒ Duplex(length: 1) {
+        prototype: EventEmitter {
+            write: <ref *4> ƒ (length: 3) {},
+            cork: <ref *5> ƒ (length: 0) {},
+            uncork: <ref *6> ƒ (length: 0) {},
+            setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
+            _write: <ref *8> ƒ (length: 3) {},
+            _writev: null,
+            end: <ref *9> ƒ (length: 3) {}
+        },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class a extends Uq {},
-    PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ E(length: 1) {
-        _fromList: ƒ Q(length: 2) {},
+    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+        prototype: EventEmitter {
+            _transform: ƒ (length: 3) {}
+        }
+    },
+    Readable: <ref *17> ƒ Readable(length: 1) {
+        prototype: EventEmitter {
+            on: <ref *19> ƒ (length: 2) {},
+            destroy: ƒ destroy2(length: 2) {},
+            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _destroy: ƒ (length: 2) {},
+            undefined: ƒ (length: 1) {},
+            push: ƒ (length: 2) {},
+            unshift: ƒ (length: 2) {},
+            isPaused: ƒ (length: 0) {},
+            setEncoding: ƒ (length: 1) {},
+            read: ƒ (length: 1) {},
+            _read: ƒ (length: 1) {},
+            pipe: ƒ (length: 2) {},
+            unpipe: ƒ (length: 1) {},
+            addListener: [Circular: *19],
+            removeListener: <ref *32> ƒ (length: 2) {},
+            off: [Circular: *32],
+            removeAllListeners: ƒ (length: 1) {},
+            resume: ƒ (length: 0) {},
+            pause: ƒ (length: 0) {},
+            wrap: ƒ (length: 1) {},
+            iterator: ƒ (length: 1) {},
+            Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
+        toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ y(length: 1) {
-        isDisturbed: <ref *15> ƒ m(length: 1) {},
-        isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ I(length: 1) {},
-        isReadable: <ref *18> ƒ U(length: 1) {},
-        Readable: [Circular: *8],
-        Writable: <ref *19> ƒ Y(length: 0) {
+    Stream: <ref *44> ƒ Stream(length: 1) {
+        prototype: <ref *45> EventEmitter {
+            pipe: ƒ (length: 2) {}
+        },
+        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *48> ƒ isErrored(length: 1) {},
+        isWritable: <ref *49> ƒ isWritable(length: 1) {},
+        isReadable: <ref *50> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *17],
+        Writable: <ref *51> ƒ Writable2(length: 0) {
+            prototype: EventEmitter {
+                pipe: ƒ (length: 0) {},
+                write: [Circular: *4],
+                cork: [Circular: *5],
+                uncork: [Circular: *6],
+                setDefaultEncoding: [Circular: *7],
+                _write: [Circular: *8],
+                _writev: null,
+                end: [Circular: *9],
+                destroy: ƒ (length: 2) {},
+                _undestroy: [Circular: *21],
+                _destroy: ƒ (length: 2) {},
+                undefined: ƒ (length: 1) {}
+            },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ M(length: 1) {},
-        PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ F(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
+        Transform: <ref *59> ƒ Transform(length: 1) {
+            prototype: EventEmitter {
+                _final: ƒ final(length: 1) {},
+                _transform: ƒ (length: 3) {},
+                _write: ƒ (length: 3) {},
+                _read: ƒ (length: 0) {}
+            }
         },
-        addAbortSignal: <ref *25> ƒ T(length: 2) {},
-        finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ n(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        PassThrough: [Circular: *14],
+        pipeline: <ref *65> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
         },
-        destroy: <ref *28> ƒ Y(length: 2) {},
-        compose: <ref *29> ƒ c(length: 0) {},
-        [get/set] promises: <ref *30> {
-            finished: [Circular: *27],
-            pipeline: [Circular: *24]
+        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *68> ƒ eos(length: 3) {
+            finished: <ref *69> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
         },
-        Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ P(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
-        NativeWritable: [Circular: *6],
-        default: [Circular: *14],
-        eos: <ref *34> ƒ B(length: 0) {},
-        Symbol(CommonJS): 0,
+        destroy: <ref *70> ƒ destroyer(length: 2) {},
+        compose: <ref *71> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *72> {
+            finished: [Circular: *69],
+            pipeline: [Circular: *66]
+        },
+        Stream: [Circular: *44],
+        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *13],
+        eos: [Circular: *68],
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ Z(length: 1) {},
-            _ReadableFromWebForUndici: class P extends E {}
+            _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
+            _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *22],
-    Writable: [Circular: *19],
-    _getNativeReadableStreamPrototype: [Circular: *33],
-    _isUint8Array: [Circular: *31],
-    _uint8ArrayToBuffer: [Circular: *32],
-    addAbortSignal: [Circular: *25],
-    compose: [Circular: *29],
-    default: [Circular: *14],
-    destroy: [Circular: *28],
-    eos: [Circular: *34],
-    finished: [Circular: *26],
-    isDisturbed: [Circular: *15],
-    isErrored: [Circular: *16],
-    isReadable: [Circular: *18],
-    isWritable: [Circular: *17],
-    pipeline: [Circular: *23],
-    promises: [Circular: *30]
+    Transform: [Circular: *59],
+    Writable: [Circular: *51],
+    _getNativeReadableStreamPrototype: [Circular: *75],
+    _isUint8Array: [Circular: *73],
+    _uint8ArrayToBuffer: [Circular: *74],
+    addAbortSignal: [Circular: *67],
+    compose: [Circular: *71],
+    default: [Circular: *44],
+    defaultMaxListeners: 10,
+    destroy: [Circular: *70],
+    eos: [Circular: *68],
+    finished: [Circular: *68],
+    isDisturbed: [Circular: *47],
+    isErrored: [Circular: *48],
+    isReadable: [Circular: *50],
+    isWritable: [Circular: *49],
+    pipeline: [Circular: *65],
+    promises: [Circular: *72],
+    prototype: [Circular: *45]
 }
 ```
 
@@ -1550,77 +1678,138 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ R(length: 1) {
+    Duplex: <ref *2> ƒ Duplex(length: 1) {
+        prototype: EventEmitter {
+            write: <ref *4> ƒ (length: 3) {},
+            cork: <ref *5> ƒ (length: 0) {},
+            uncork: <ref *6> ƒ (length: 0) {},
+            setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
+            _write: <ref *8> ƒ (length: 3) {},
+            _writev: null,
+            end: <ref *9> ƒ (length: 3) {}
+        },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class a extends Uq {},
-    PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ E(length: 1) {
-        _fromList: ƒ Q(length: 2) {},
+    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+        prototype: EventEmitter {
+            _transform: ƒ (length: 3) {}
+        }
+    },
+    Readable: <ref *17> ƒ Readable(length: 1) {
+        prototype: EventEmitter {
+            on: <ref *19> ƒ (length: 2) {},
+            destroy: ƒ destroy2(length: 2) {},
+            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _destroy: ƒ (length: 2) {},
+            undefined: ƒ (length: 1) {},
+            push: ƒ (length: 2) {},
+            unshift: ƒ (length: 2) {},
+            isPaused: ƒ (length: 0) {},
+            setEncoding: ƒ (length: 1) {},
+            read: ƒ (length: 1) {},
+            _read: ƒ (length: 1) {},
+            pipe: ƒ (length: 2) {},
+            unpipe: ƒ (length: 1) {},
+            addListener: [Circular: *19],
+            removeListener: <ref *32> ƒ (length: 2) {},
+            off: [Circular: *32],
+            removeAllListeners: ƒ (length: 1) {},
+            resume: ƒ (length: 0) {},
+            pause: ƒ (length: 0) {},
+            wrap: ƒ (length: 1) {},
+            iterator: ƒ (length: 1) {},
+            Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
+        toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ y(length: 1) {
-        isDisturbed: <ref *15> ƒ m(length: 1) {},
-        isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ I(length: 1) {},
-        isReadable: <ref *18> ƒ U(length: 1) {},
-        Readable: [Circular: *8],
-        Writable: <ref *19> ƒ Y(length: 0) {
+    Stream: <ref *44> ƒ Stream(length: 1) {
+        prototype: <ref *45> EventEmitter {
+            pipe: ƒ (length: 2) {}
+        },
+        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *48> ƒ isErrored(length: 1) {},
+        isWritable: <ref *49> ƒ isWritable(length: 1) {},
+        isReadable: <ref *50> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *17],
+        Writable: <ref *51> ƒ Writable2(length: 0) {
+            prototype: EventEmitter {
+                pipe: ƒ (length: 0) {},
+                write: [Circular: *4],
+                cork: [Circular: *5],
+                uncork: [Circular: *6],
+                setDefaultEncoding: [Circular: *7],
+                _write: [Circular: *8],
+                _writev: null,
+                end: [Circular: *9],
+                destroy: ƒ (length: 2) {},
+                _undestroy: [Circular: *21],
+                _destroy: ƒ (length: 2) {},
+                undefined: ƒ (length: 1) {}
+            },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ M(length: 1) {},
-        PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ F(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
+        Transform: <ref *59> ƒ Transform(length: 1) {
+            prototype: EventEmitter {
+                _final: ƒ final(length: 1) {},
+                _transform: ƒ (length: 3) {},
+                _write: ƒ (length: 3) {},
+                _read: ƒ (length: 0) {}
+            }
         },
-        addAbortSignal: <ref *25> ƒ T(length: 2) {},
-        finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ n(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        PassThrough: [Circular: *14],
+        pipeline: <ref *65> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
         },
-        destroy: <ref *28> ƒ Y(length: 2) {},
-        compose: <ref *29> ƒ c(length: 0) {},
-        [get/set] promises: <ref *30> {
-            finished: [Circular: *27],
-            pipeline: [Circular: *24]
+        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *68> ƒ eos(length: 3) {
+            finished: <ref *69> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
         },
-        Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ P(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
-        NativeWritable: [Circular: *6],
-        default: [Circular: *14],
-        eos: <ref *34> ƒ B(length: 0) {},
-        Symbol(CommonJS): 0,
+        destroy: <ref *70> ƒ destroyer(length: 2) {},
+        compose: <ref *71> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *72> {
+            finished: [Circular: *69],
+            pipeline: [Circular: *66]
+        },
+        Stream: [Circular: *44],
+        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *13],
+        eos: [Circular: *68],
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ Z(length: 1) {},
-            _ReadableFromWebForUndici: class P extends E {}
+            _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
+            _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *22],
-    Writable: [Circular: *19],
-    _getNativeReadableStreamPrototype: [Circular: *33],
-    _isUint8Array: [Circular: *31],
-    _uint8ArrayToBuffer: [Circular: *32],
-    addAbortSignal: [Circular: *25],
-    compose: [Circular: *29],
-    default: [Circular: *14],
-    destroy: [Circular: *28],
-    eos: [Circular: *34],
-    finished: [Circular: *26],
-    isDisturbed: [Circular: *15],
-    isErrored: [Circular: *16],
-    isReadable: [Circular: *18],
-    isWritable: [Circular: *17],
-    pipeline: [Circular: *23],
-    promises: [Circular: *30]
+    Transform: [Circular: *59],
+    Writable: [Circular: *51],
+    _getNativeReadableStreamPrototype: [Circular: *75],
+    _isUint8Array: [Circular: *73],
+    _uint8ArrayToBuffer: [Circular: *74],
+    addAbortSignal: [Circular: *67],
+    compose: [Circular: *71],
+    default: [Circular: *44],
+    defaultMaxListeners: 10,
+    destroy: [Circular: *70],
+    eos: [Circular: *68],
+    finished: [Circular: *68],
+    isDisturbed: [Circular: *47],
+    isErrored: [Circular: *48],
+    isReadable: [Circular: *50],
+    isWritable: [Circular: *49],
+    pipeline: [Circular: *65],
+    promises: [Circular: *72],
+    prototype: [Circular: *45]
 }
 ```
 
@@ -1640,77 +1829,138 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ R(length: 1) {
+    Duplex: <ref *2> ƒ Duplex(length: 1) {
+        prototype: EventEmitter {
+            write: <ref *4> ƒ (length: 3) {},
+            cork: <ref *5> ƒ (length: 0) {},
+            uncork: <ref *6> ƒ (length: 0) {},
+            setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
+            _write: <ref *8> ƒ (length: 3) {},
+            _writev: null,
+            end: <ref *9> ƒ (length: 3) {}
+        },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class a extends Uq {},
-    PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ E(length: 1) {
-        _fromList: ƒ Q(length: 2) {},
+    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+        prototype: EventEmitter {
+            _transform: ƒ (length: 3) {}
+        }
+    },
+    Readable: <ref *17> ƒ Readable(length: 1) {
+        prototype: EventEmitter {
+            on: <ref *19> ƒ (length: 2) {},
+            destroy: ƒ destroy2(length: 2) {},
+            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _destroy: ƒ (length: 2) {},
+            undefined: ƒ (length: 1) {},
+            push: ƒ (length: 2) {},
+            unshift: ƒ (length: 2) {},
+            isPaused: ƒ (length: 0) {},
+            setEncoding: ƒ (length: 1) {},
+            read: ƒ (length: 1) {},
+            _read: ƒ (length: 1) {},
+            pipe: ƒ (length: 2) {},
+            unpipe: ƒ (length: 1) {},
+            addListener: [Circular: *19],
+            removeListener: <ref *32> ƒ (length: 2) {},
+            off: [Circular: *32],
+            removeAllListeners: ƒ (length: 1) {},
+            resume: ƒ (length: 0) {},
+            pause: ƒ (length: 0) {},
+            wrap: ƒ (length: 1) {},
+            iterator: ƒ (length: 1) {},
+            Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
+        toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ y(length: 1) {
-        isDisturbed: <ref *15> ƒ m(length: 1) {},
-        isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ I(length: 1) {},
-        isReadable: <ref *18> ƒ U(length: 1) {},
-        Readable: [Circular: *8],
-        Writable: <ref *19> ƒ Y(length: 0) {
+    Stream: <ref *44> ƒ Stream(length: 1) {
+        prototype: <ref *45> EventEmitter {
+            pipe: ƒ (length: 2) {}
+        },
+        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *48> ƒ isErrored(length: 1) {},
+        isWritable: <ref *49> ƒ isWritable(length: 1) {},
+        isReadable: <ref *50> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *17],
+        Writable: <ref *51> ƒ Writable2(length: 0) {
+            prototype: EventEmitter {
+                pipe: ƒ (length: 0) {},
+                write: [Circular: *4],
+                cork: [Circular: *5],
+                uncork: [Circular: *6],
+                setDefaultEncoding: [Circular: *7],
+                _write: [Circular: *8],
+                _writev: null,
+                end: [Circular: *9],
+                destroy: ƒ (length: 2) {},
+                _undestroy: [Circular: *21],
+                _destroy: ƒ (length: 2) {},
+                undefined: ƒ (length: 1) {}
+            },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ M(length: 1) {},
-        PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ F(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
+        Transform: <ref *59> ƒ Transform(length: 1) {
+            prototype: EventEmitter {
+                _final: ƒ final(length: 1) {},
+                _transform: ƒ (length: 3) {},
+                _write: ƒ (length: 3) {},
+                _read: ƒ (length: 0) {}
+            }
         },
-        addAbortSignal: <ref *25> ƒ T(length: 2) {},
-        finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ n(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        PassThrough: [Circular: *14],
+        pipeline: <ref *65> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
         },
-        destroy: <ref *28> ƒ Y(length: 2) {},
-        compose: <ref *29> ƒ c(length: 0) {},
-        [get/set] promises: <ref *30> {
-            finished: [Circular: *27],
-            pipeline: [Circular: *24]
+        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *68> ƒ eos(length: 3) {
+            finished: <ref *69> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
         },
-        Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ P(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
-        NativeWritable: [Circular: *6],
-        default: [Circular: *14],
-        eos: <ref *34> ƒ B(length: 0) {},
-        Symbol(CommonJS): 0,
+        destroy: <ref *70> ƒ destroyer(length: 2) {},
+        compose: <ref *71> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *72> {
+            finished: [Circular: *69],
+            pipeline: [Circular: *66]
+        },
+        Stream: [Circular: *44],
+        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *13],
+        eos: [Circular: *68],
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ Z(length: 1) {},
-            _ReadableFromWebForUndici: class P extends E {}
+            _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
+            _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *22],
-    Writable: [Circular: *19],
-    _getNativeReadableStreamPrototype: [Circular: *33],
-    _isUint8Array: [Circular: *31],
-    _uint8ArrayToBuffer: [Circular: *32],
-    addAbortSignal: [Circular: *25],
-    compose: [Circular: *29],
-    default: [Circular: *14],
-    destroy: [Circular: *28],
-    eos: [Circular: *34],
-    finished: [Circular: *26],
-    isDisturbed: [Circular: *15],
-    isErrored: [Circular: *16],
-    isReadable: [Circular: *18],
-    isWritable: [Circular: *17],
-    pipeline: [Circular: *23],
-    promises: [Circular: *30]
+    Transform: [Circular: *59],
+    Writable: [Circular: *51],
+    _getNativeReadableStreamPrototype: [Circular: *75],
+    _isUint8Array: [Circular: *73],
+    _uint8ArrayToBuffer: [Circular: *74],
+    addAbortSignal: [Circular: *67],
+    compose: [Circular: *71],
+    default: [Circular: *44],
+    defaultMaxListeners: 10,
+    destroy: [Circular: *70],
+    eos: [Circular: *68],
+    finished: [Circular: *68],
+    isDisturbed: [Circular: *47],
+    isErrored: [Circular: *48],
+    isReadable: [Circular: *50],
+    isWritable: [Circular: *49],
+    pipeline: [Circular: *65],
+    promises: [Circular: *72],
+    prototype: [Circular: *45]
 }
 ```
 
@@ -1724,7 +1974,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:1989) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:1995) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -1732,77 +1982,138 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ R(length: 1) {
+    Duplex: <ref *2> ƒ Duplex(length: 1) {
+        prototype: EventEmitter {
+            write: <ref *4> ƒ (length: 3) {},
+            cork: <ref *5> ƒ (length: 0) {},
+            uncork: <ref *6> ƒ (length: 0) {},
+            setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
+            _write: <ref *8> ƒ (length: 3) {},
+            _writev: null,
+            end: <ref *9> ƒ (length: 3) {}
+        },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class a extends Uq {},
-    PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ E(length: 1) {
-        _fromList: ƒ Q(length: 2) {},
+    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+        prototype: EventEmitter {
+            _transform: ƒ (length: 3) {}
+        }
+    },
+    Readable: <ref *17> ƒ Readable(length: 1) {
+        prototype: EventEmitter {
+            on: <ref *19> ƒ (length: 2) {},
+            destroy: ƒ destroy2(length: 2) {},
+            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _destroy: ƒ (length: 2) {},
+            undefined: ƒ (length: 1) {},
+            push: ƒ (length: 2) {},
+            unshift: ƒ (length: 2) {},
+            isPaused: ƒ (length: 0) {},
+            setEncoding: ƒ (length: 1) {},
+            read: ƒ (length: 1) {},
+            _read: ƒ (length: 1) {},
+            pipe: ƒ (length: 2) {},
+            unpipe: ƒ (length: 1) {},
+            addListener: [Circular: *19],
+            removeListener: <ref *32> ƒ (length: 2) {},
+            off: [Circular: *32],
+            removeAllListeners: ƒ (length: 1) {},
+            resume: ƒ (length: 0) {},
+            pause: ƒ (length: 0) {},
+            wrap: ƒ (length: 1) {},
+            iterator: ƒ (length: 1) {},
+            Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
+        toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ y(length: 1) {
-        isDisturbed: <ref *15> ƒ m(length: 1) {},
-        isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ I(length: 1) {},
-        isReadable: <ref *18> ƒ U(length: 1) {},
-        Readable: [Circular: *8],
-        Writable: <ref *19> ƒ Y(length: 0) {
+    Stream: <ref *44> ƒ Stream(length: 1) {
+        prototype: <ref *45> EventEmitter {
+            pipe: ƒ (length: 2) {}
+        },
+        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *48> ƒ isErrored(length: 1) {},
+        isWritable: <ref *49> ƒ isWritable(length: 1) {},
+        isReadable: <ref *50> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *17],
+        Writable: <ref *51> ƒ Writable2(length: 0) {
+            prototype: EventEmitter {
+                pipe: ƒ (length: 0) {},
+                write: [Circular: *4],
+                cork: [Circular: *5],
+                uncork: [Circular: *6],
+                setDefaultEncoding: [Circular: *7],
+                _write: [Circular: *8],
+                _writev: null,
+                end: [Circular: *9],
+                destroy: ƒ (length: 2) {},
+                _undestroy: [Circular: *21],
+                _destroy: ƒ (length: 2) {},
+                undefined: ƒ (length: 1) {}
+            },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ M(length: 1) {},
-        PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ F(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
+        Transform: <ref *59> ƒ Transform(length: 1) {
+            prototype: EventEmitter {
+                _final: ƒ final(length: 1) {},
+                _transform: ƒ (length: 3) {},
+                _write: ƒ (length: 3) {},
+                _read: ƒ (length: 0) {}
+            }
         },
-        addAbortSignal: <ref *25> ƒ T(length: 2) {},
-        finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ n(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        PassThrough: [Circular: *14],
+        pipeline: <ref *65> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
         },
-        destroy: <ref *28> ƒ Y(length: 2) {},
-        compose: <ref *29> ƒ c(length: 0) {},
-        [get/set] promises: <ref *30> {
-            finished: [Circular: *27],
-            pipeline: [Circular: *24]
+        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *68> ƒ eos(length: 3) {
+            finished: <ref *69> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
         },
-        Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ P(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
-        NativeWritable: [Circular: *6],
-        default: [Circular: *14],
-        eos: <ref *34> ƒ B(length: 0) {},
-        Symbol(CommonJS): 0,
+        destroy: <ref *70> ƒ destroyer(length: 2) {},
+        compose: <ref *71> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *72> {
+            finished: [Circular: *69],
+            pipeline: [Circular: *66]
+        },
+        Stream: [Circular: *44],
+        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *13],
+        eos: [Circular: *68],
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ Z(length: 1) {},
-            _ReadableFromWebForUndici: class P extends E {}
+            _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
+            _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *22],
-    Writable: [Circular: *19],
-    _getNativeReadableStreamPrototype: [Circular: *33],
-    _isUint8Array: [Circular: *31],
-    _uint8ArrayToBuffer: [Circular: *32],
-    addAbortSignal: [Circular: *25],
-    compose: [Circular: *29],
-    default: [Circular: *14],
-    destroy: [Circular: *28],
-    eos: [Circular: *34],
-    finished: [Circular: *26],
-    isDisturbed: [Circular: *15],
-    isErrored: [Circular: *16],
-    isReadable: [Circular: *18],
-    isWritable: [Circular: *17],
-    pipeline: [Circular: *23],
-    promises: [Circular: *30]
+    Transform: [Circular: *59],
+    Writable: [Circular: *51],
+    _getNativeReadableStreamPrototype: [Circular: *75],
+    _isUint8Array: [Circular: *73],
+    _uint8ArrayToBuffer: [Circular: *74],
+    addAbortSignal: [Circular: *67],
+    compose: [Circular: *71],
+    default: [Circular: *44],
+    defaultMaxListeners: 10,
+    destroy: [Circular: *70],
+    eos: [Circular: *68],
+    finished: [Circular: *68],
+    isDisturbed: [Circular: *47],
+    isErrored: [Circular: *48],
+    isReadable: [Circular: *50],
+    isWritable: [Circular: *49],
+    pipeline: [Circular: *65],
+    promises: [Circular: *72],
+    prototype: [Circular: *45]
 }
 ```
 
@@ -1829,77 +2140,138 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    Duplex: <ref *2> ƒ R(length: 1) {
+    Duplex: <ref *2> ƒ Duplex(length: 1) {
+        prototype: EventEmitter {
+            write: <ref *4> ƒ (length: 3) {},
+            cork: <ref *5> ƒ (length: 0) {},
+            uncork: <ref *6> ƒ (length: 0) {},
+            setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
+            _write: <ref *8> ƒ (length: 3) {},
+            _writev: null,
+            end: <ref *9> ƒ (length: 3) {}
+        },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class a extends Uq {},
-    PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ E(length: 1) {
-        _fromList: ƒ Q(length: 2) {},
+    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+        prototype: EventEmitter {
+            _transform: ƒ (length: 3) {}
+        }
+    },
+    Readable: <ref *17> ƒ Readable(length: 1) {
+        prototype: EventEmitter {
+            on: <ref *19> ƒ (length: 2) {},
+            destroy: ƒ destroy2(length: 2) {},
+            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _destroy: ƒ (length: 2) {},
+            undefined: ƒ (length: 1) {},
+            push: ƒ (length: 2) {},
+            unshift: ƒ (length: 2) {},
+            isPaused: ƒ (length: 0) {},
+            setEncoding: ƒ (length: 1) {},
+            read: ƒ (length: 1) {},
+            _read: ƒ (length: 1) {},
+            pipe: ƒ (length: 2) {},
+            unpipe: ƒ (length: 1) {},
+            addListener: [Circular: *19],
+            removeListener: <ref *32> ƒ (length: 2) {},
+            off: [Circular: *32],
+            removeAllListeners: ƒ (length: 1) {},
+            resume: ƒ (length: 0) {},
+            pause: ƒ (length: 0) {},
+            wrap: ƒ (length: 1) {},
+            iterator: ƒ (length: 1) {},
+            Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
+        toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ y(length: 1) {
-        isDisturbed: <ref *15> ƒ m(length: 1) {},
-        isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ I(length: 1) {},
-        isReadable: <ref *18> ƒ U(length: 1) {},
-        Readable: [Circular: *8],
-        Writable: <ref *19> ƒ Y(length: 0) {
+    Stream: <ref *44> ƒ Stream(length: 1) {
+        prototype: <ref *45> EventEmitter {
+            pipe: ƒ (length: 2) {}
+        },
+        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *48> ƒ isErrored(length: 1) {},
+        isWritable: <ref *49> ƒ isWritable(length: 1) {},
+        isReadable: <ref *50> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *17],
+        Writable: <ref *51> ƒ Writable2(length: 0) {
+            prototype: EventEmitter {
+                pipe: ƒ (length: 0) {},
+                write: [Circular: *4],
+                cork: [Circular: *5],
+                uncork: [Circular: *6],
+                setDefaultEncoding: [Circular: *7],
+                _write: [Circular: *8],
+                _writev: null,
+                end: [Circular: *9],
+                destroy: ƒ (length: 2) {},
+                _undestroy: [Circular: *21],
+                _destroy: ƒ (length: 2) {},
+                undefined: ƒ (length: 1) {}
+            },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ M(length: 1) {},
-        PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ F(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
+        Transform: <ref *59> ƒ Transform(length: 1) {
+            prototype: EventEmitter {
+                _final: ƒ final(length: 1) {},
+                _transform: ƒ (length: 3) {},
+                _write: ƒ (length: 3) {},
+                _read: ƒ (length: 0) {}
+            }
         },
-        addAbortSignal: <ref *25> ƒ T(length: 2) {},
-        finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ n(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        PassThrough: [Circular: *14],
+        pipeline: <ref *65> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
         },
-        destroy: <ref *28> ƒ Y(length: 2) {},
-        compose: <ref *29> ƒ c(length: 0) {},
-        [get/set] promises: <ref *30> {
-            finished: [Circular: *27],
-            pipeline: [Circular: *24]
+        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *68> ƒ eos(length: 3) {
+            finished: <ref *69> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
         },
-        Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ P(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
-        NativeWritable: [Circular: *6],
-        default: [Circular: *14],
-        eos: <ref *34> ƒ B(length: 0) {},
-        Symbol(CommonJS): 0,
+        destroy: <ref *70> ƒ destroyer(length: 2) {},
+        compose: <ref *71> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *72> {
+            finished: [Circular: *69],
+            pipeline: [Circular: *66]
+        },
+        Stream: [Circular: *44],
+        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *13],
+        eos: [Circular: *68],
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ Z(length: 1) {},
-            _ReadableFromWebForUndici: class P extends E {}
+            _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
+            _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *22],
-    Writable: [Circular: *19],
-    _getNativeReadableStreamPrototype: [Circular: *33],
-    _isUint8Array: [Circular: *31],
-    _uint8ArrayToBuffer: [Circular: *32],
-    addAbortSignal: [Circular: *25],
-    compose: [Circular: *29],
-    default: [Circular: *14],
-    destroy: [Circular: *28],
-    eos: [Circular: *34],
-    finished: [Circular: *26],
-    isDisturbed: [Circular: *15],
-    isErrored: [Circular: *16],
-    isReadable: [Circular: *18],
-    isWritable: [Circular: *17],
-    pipeline: [Circular: *23],
-    promises: [Circular: *30]
+    Transform: [Circular: *59],
+    Writable: [Circular: *51],
+    _getNativeReadableStreamPrototype: [Circular: *75],
+    _isUint8Array: [Circular: *73],
+    _uint8ArrayToBuffer: [Circular: *74],
+    addAbortSignal: [Circular: *67],
+    compose: [Circular: *71],
+    default: [Circular: *44],
+    defaultMaxListeners: 10,
+    destroy: [Circular: *70],
+    eos: [Circular: *68],
+    finished: [Circular: *68],
+    isDisturbed: [Circular: *47],
+    isErrored: [Circular: *48],
+    isReadable: [Circular: *50],
+    isWritable: [Circular: *49],
+    pipeline: [Circular: *65],
+    promises: [Circular: *72],
+    prototype: [Circular: *45]
 }
 ```
 
@@ -1933,7 +2305,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
     DEFAULT_MAX_VERSION: "TLSv1.3",
     DEFAULT_MIN_VERSION: "TLSv1.2",
     SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
-    Server: <ref *3> class Server extends NetServer {},
+    Server: <ref *3> ƒ Server(length: 2) {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {},
     checkServerIdentity: <ref *5> ƒ checkServerIdentity(length: 2) {},
     connect: <ref *6> ƒ createConnection(length: 3) {},
@@ -1954,13 +2326,12 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         DEFAULT_MAX_VERSION: "TLSv1.3",
         DEFAULT_MIN_VERSION: "TLSv1.2",
         getCiphers: <ref *11> ƒ getCiphers(length: 0) {},
-        getCurves: <ref *12> ƒ getCurves(length: 0) {},
-        parseCertString: <ref *13> ƒ parseCertString(length: 0) {},
+        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
         SecureContext: [Circular: *2],
         Server: [Circular: *3],
         TLSSocket: [Circular: *4],
         checkServerIdentity: [Circular: *5],
-        rootCertificates: <ref *14> [
+        rootCertificates: <ref *13> [
             "-----BEGIN CERTIFICATE-----\nMIIDdTCCAl2gAwIBAgILBAAAAAABFUtaw5QwDQYJKoZIhvcNAQEFBQAwVzELMAkGA1UEBhMC…",
             "-----BEGIN CERTIFICATE-----\nMIIEKjCCAxKgAwIBAgIEOGPe+DANBgkqhkiG9w0BAQUFADCBtDEUMBIGA1UEChMLRW50cnVz…",
             "-----BEGIN CERTIFICATE-----\nMIIDdzCCAl+gAwIBAgIEAgAAuTANBgkqhkiG9w0BAQUFADBaMQswCQYDVQQGEwJJRTESMBAG…",
@@ -2100,13 +2471,11 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
             "-----BEGIN CERTIFICATE-----\nMIICODCCAb6gAwIBAgIJANZdm7N4gS7rMAoGCCqGSM49BAMDMGExCzAJBgNVBAYTAkpQMSUw…",
             "-----BEGIN CERTIFICATE-----\nMIIFdDCCA1ygAwIBAgIQVW9l47TZkGobCdFsPsBsIDANBgkqhkiG9w0BAQsFADBUMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIICJTCCAaugAwIBAgIQLBcIfWQqwP6FGFkGz7RK6zAKBggqhkjOPQQDAzBUMQswCQYDVQQG…"
-        ],
-        Symbol(CommonJS): 0
+        ]
     },
     getCiphers: [Circular: *11],
-    getCurves: [Circular: *12],
-    parseCertString: [Circular: *13],
-    rootCertificates: [Circular: *14]
+    parseCertString: [Circular: *12],
+    rootCertificates: [Circular: *13]
 }
 ```
 
@@ -2142,7 +2511,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
     DEFAULT_MAX_VERSION: "TLSv1.3",
     DEFAULT_MIN_VERSION: "TLSv1.2",
     SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
-    Server: <ref *3> class Server extends NetServer {},
+    Server: <ref *3> ƒ Server(length: 2) {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {},
     checkServerIdentity: <ref *5> ƒ checkServerIdentity(length: 2) {},
     connect: <ref *6> ƒ createConnection(length: 3) {},
@@ -2163,13 +2532,12 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         DEFAULT_MAX_VERSION: "TLSv1.3",
         DEFAULT_MIN_VERSION: "TLSv1.2",
         getCiphers: <ref *11> ƒ getCiphers(length: 0) {},
-        getCurves: <ref *12> ƒ getCurves(length: 0) {},
-        parseCertString: <ref *13> ƒ parseCertString(length: 0) {},
+        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
         SecureContext: [Circular: *2],
         Server: [Circular: *3],
         TLSSocket: [Circular: *4],
         checkServerIdentity: [Circular: *5],
-        rootCertificates: <ref *14> [
+        rootCertificates: <ref *13> [
             "-----BEGIN CERTIFICATE-----\nMIIDdTCCAl2gAwIBAgILBAAAAAABFUtaw5QwDQYJKoZIhvcNAQEFBQAwVzELMAkGA1UEBhMC…",
             "-----BEGIN CERTIFICATE-----\nMIIEKjCCAxKgAwIBAgIEOGPe+DANBgkqhkiG9w0BAQUFADCBtDEUMBIGA1UEChMLRW50cnVz…",
             "-----BEGIN CERTIFICATE-----\nMIIDdzCCAl+gAwIBAgIEAgAAuTANBgkqhkiG9w0BAQUFADBaMQswCQYDVQQGEwJJRTESMBAG…",
@@ -2309,13 +2677,11 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
             "-----BEGIN CERTIFICATE-----\nMIICODCCAb6gAwIBAgIJANZdm7N4gS7rMAoGCCqGSM49BAMDMGExCzAJBgNVBAYTAkpQMSUw…",
             "-----BEGIN CERTIFICATE-----\nMIIFdDCCA1ygAwIBAgIQVW9l47TZkGobCdFsPsBsIDANBgkqhkiG9w0BAQsFADBUMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIICJTCCAaugAwIBAgIQLBcIfWQqwP6FGFkGz7RK6zAKBggqhkjOPQQDAzBUMQswCQYDVQQG…"
-        ],
-        Symbol(CommonJS): 0
+        ]
     },
     getCiphers: [Circular: *11],
-    getCurves: [Circular: *12],
-    parseCertString: [Circular: *13],
-    rootCertificates: [Circular: *14]
+    parseCertString: [Circular: *12],
+    rootCertificates: [Circular: *13]
 }
 ```
 
@@ -2397,65 +2763,67 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    AssertionError: <ref *2> ƒ J(length: 1) {},
-    assert: undefined,
-    deepEqual: <ref *3> ƒ Z(length: 3) {},
-    deepStrictEqual: <ref *4> ƒ Z(length: 3) {},
-    default: <ref *5> ƒ S(length: 0) {
-        fail: <ref *6> ƒ f(length: 5) {},
-        AssertionError: [Circular: *2],
-        ok: [Circular: *5],
-        equal: <ref *7> ƒ Z(length: 3) {},
-        notEqual: <ref *8> ƒ Z(length: 3) {},
-        deepEqual: [Circular: *3],
-        notDeepEqual: <ref *9> ƒ Z(length: 3) {},
-        deepStrictEqual: [Circular: *4],
-        notDeepStrictEqual: <ref *10> ƒ y(length: 3) {},
-        strictEqual: <ref *11> ƒ Z(length: 3) {},
-        notStrictEqual: <ref *12> ƒ Z(length: 3) {},
-        match: <ref *13> ƒ Z(length: 3) {},
-        throws: <ref *14> ƒ Z(length: 1) {},
-        rejects: <ref *15> ƒ Z(length: 1) {},
-        doesNotThrow: <ref *16> ƒ Z(length: 1) {},
-        doesNotReject: <ref *17> ƒ Z(length: 1) {},
-        ifError: <ref *18> ƒ Z(length: 1) {},
-        strict: <ref *19> ƒ q(length: 0) {
-            fail: [Circular: *6],
-            AssertionError: [Circular: *2],
-            ok: [Circular: *5],
-            equal: [Circular: *11],
-            notEqual: [Circular: *12],
-            deepEqual: [Circular: *4],
-            notDeepEqual: [Circular: *10],
-            deepStrictEqual: [Circular: *4],
-            notDeepStrictEqual: [Circular: *10],
-            strictEqual: [Circular: *11],
-            notStrictEqual: [Circular: *12],
-            match: [Circular: *13],
-            throws: [Circular: *14],
-            rejects: [Circular: *15],
-            doesNotThrow: [Circular: *16],
-            doesNotReject: [Circular: *17],
-            ifError: [Circular: *18],
-            strict: [Circular: *19]
-        },
-        CallTracker: ƒ V0(length: 0) {},
-        Symbol(CommonJS): 0
+    AssertionError: <ref *2> ƒ AssertionError2(length: 1) {
+        prototype: AssertionError2 {}
     },
-    doesNotReject: [Circular: *17],
-    doesNotThrow: [Circular: *16],
-    equal: [Circular: *7],
-    fail: [Circular: *6],
-    ifError: [Circular: *18],
-    notDeepEqual: [Circular: *9],
-    notDeepStrictEqual: [Circular: *10],
-    notEqual: [Circular: *8],
-    notStrictEqual: [Circular: *12],
-    ok: [Circular: *5],
-    rejects: [Circular: *15],
-    strict: [Circular: *19],
-    strictEqual: [Circular: *11],
-    throws: [Circular: *14]
+    CallTracker: <ref *4> ƒ CallTracker(length: 0) {},
+    deepEqual: <ref *5> ƒ deepEqual(length: 3) {},
+    deepStrictEqual: <ref *6> ƒ deepStrictEqual(length: 3) {},
+    default: <ref *7> ƒ ok(length: 0) {
+        fail: <ref *8> ƒ fail(length: 5) {},
+        AssertionError: [Circular: *2],
+        ok: [Circular: *7],
+        equal: <ref *9> ƒ equal(length: 3) {},
+        notEqual: <ref *10> ƒ notEqual(length: 3) {},
+        deepEqual: [Circular: *5],
+        notDeepEqual: <ref *11> ƒ notDeepEqual(length: 3) {},
+        deepStrictEqual: [Circular: *6],
+        notDeepStrictEqual: <ref *12> ƒ notDeepStrictEqual(length: 3) {},
+        strictEqual: <ref *13> ƒ strictEqual(length: 3) {},
+        notStrictEqual: <ref *14> ƒ notStrictEqual(length: 3) {},
+        match: <ref *15> ƒ match(length: 3) {},
+        throws: <ref *16> ƒ throws(length: 1) {},
+        rejects: <ref *17> ƒ rejects(length: 1) {},
+        doesNotThrow: <ref *18> ƒ doesNotThrow(length: 1) {},
+        doesNotReject: <ref *19> ƒ doesNotReject(length: 1) {},
+        ifError: <ref *20> ƒ ifError(length: 1) {},
+        strict: <ref *21> ƒ strict(length: 0) {
+            fail: [Circular: *8],
+            AssertionError: [Circular: *2],
+            ok: [Circular: *7],
+            equal: [Circular: *13],
+            notEqual: [Circular: *14],
+            deepEqual: [Circular: *6],
+            notDeepEqual: [Circular: *12],
+            deepStrictEqual: [Circular: *6],
+            notDeepStrictEqual: [Circular: *12],
+            strictEqual: [Circular: *13],
+            notStrictEqual: [Circular: *14],
+            match: [Circular: *15],
+            throws: [Circular: *16],
+            rejects: [Circular: *17],
+            doesNotThrow: [Circular: *18],
+            doesNotReject: [Circular: *19],
+            ifError: [Circular: *20],
+            strict: [Circular: *21]
+        },
+        CallTracker: [Circular: *4]
+    },
+    doesNotReject: [Circular: *19],
+    doesNotThrow: [Circular: *18],
+    equal: [Circular: *9],
+    fail: [Circular: *8],
+    ifError: [Circular: *20],
+    match: [Circular: *15],
+    notDeepEqual: [Circular: *11],
+    notDeepStrictEqual: [Circular: *12],
+    notEqual: [Circular: *10],
+    notStrictEqual: [Circular: *14],
+    ok: [Circular: *7],
+    rejects: [Circular: *17],
+    strict: [Circular: *21],
+    strictEqual: [Circular: *13],
+    throws: [Circular: *16]
 }
 ```
 
@@ -2537,88 +2905,66 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    AssertionError: <ref *2> ƒ J(length: 1) {},
-    CallTracker: undefined,
-    deepEqual: <ref *3> ƒ Z(length: 3) {},
-    deepStrictEqual: [Circular: *3],
-    default: {
-        fail: <ref *5> ƒ f(length: 5) {},
-        AssertionError: [Circular: *2],
-        ok: <ref *6> ƒ S(length: 0) {
-            fail: [Circular: *5],
-            AssertionError: [Circular: *2],
-            ok: [Circular: *6],
-            equal: ƒ Z(length: 3) {},
-            notEqual: ƒ Z(length: 3) {},
-            deepEqual: ƒ Z(length: 3) {},
-            notDeepEqual: ƒ Z(length: 3) {},
-            deepStrictEqual: [Circular: *3],
-            notDeepStrictEqual: <ref *11> ƒ y(length: 3) {},
-            strictEqual: <ref *12> ƒ Z(length: 3) {},
-            notStrictEqual: <ref *13> ƒ Z(length: 3) {},
-            match: <ref *14> ƒ Z(length: 3) {},
-            throws: <ref *15> ƒ Z(length: 1) {},
-            rejects: <ref *16> ƒ Z(length: 1) {},
-            doesNotThrow: <ref *17> ƒ Z(length: 1) {},
-            doesNotReject: <ref *18> ƒ Z(length: 1) {},
-            ifError: <ref *19> ƒ Z(length: 1) {},
-            strict: <ref *20> ƒ q(length: 0) {
-                fail: [Circular: *5],
-                AssertionError: [Circular: *2],
-                ok: [Circular: *6],
-                equal: [Circular: *12],
-                notEqual: [Circular: *13],
-                deepEqual: [Circular: *3],
-                notDeepEqual: [Circular: *11],
-                deepStrictEqual: [Circular: *3],
-                notDeepStrictEqual: [Circular: *11],
-                strictEqual: [Circular: *12],
-                notStrictEqual: [Circular: *13],
-                match: [Circular: *14],
-                throws: [Circular: *15],
-                rejects: [Circular: *16],
-                doesNotThrow: [Circular: *17],
-                doesNotReject: [Circular: *18],
-                ifError: [Circular: *19],
-                strict: [Circular: *20]
-            },
-            CallTracker: ƒ V0(length: 0) {},
-            Symbol(CommonJS): 0
-        },
-        equal: [Circular: *12],
-        notEqual: [Circular: *13],
-        deepEqual: [Circular: *3],
-        notDeepEqual: [Circular: *11],
-        deepStrictEqual: [Circular: *3],
-        notDeepStrictEqual: [Circular: *11],
-        strictEqual: [Circular: *12],
-        notStrictEqual: [Circular: *13],
-        throws: [Circular: *15],
-        rejects: [Circular: *16],
-        doesNotThrow: [Circular: *17],
-        doesNotReject: [Circular: *18],
-        ifError: [Circular: *19],
-        match: [Circular: *14],
-        doesNotMatch: undefined,
-        CallTracker: undefined,
-        Symbol(CommonJS): 0
+    AssertionError: <ref *2> ƒ AssertionError2(length: 1) {
+        prototype: AssertionError2 {}
     },
-    doesNotMatch: undefined,
-    doesNotReject: [Circular: *18],
-    doesNotThrow: [Circular: *17],
-    equal: [Circular: *12],
-    fail: [Circular: *5],
-    ifError: [Circular: *19],
-    match: [Circular: *14],
-    notDeepEqual: [Circular: *11],
-    notDeepStrictEqual: [Circular: *11],
-    notEqual: [Circular: *13],
-    notStrictEqual: [Circular: *13],
-    ok: [Circular: *6],
-    rejects: [Circular: *16],
-    strict: [Circular: *20],
-    strictEqual: [Circular: *12],
-    throws: [Circular: *15]
+    deepEqual: <ref *4> ƒ deepStrictEqual(length: 3) {},
+    deepStrictEqual: [Circular: *4],
+    default: <ref *5> ƒ strict(length: 0) {
+        fail: <ref *6> ƒ fail(length: 5) {},
+        AssertionError: [Circular: *2],
+        ok: <ref *7> ƒ ok(length: 0) {
+            fail: [Circular: *6],
+            AssertionError: [Circular: *2],
+            ok: [Circular: *7],
+            equal: ƒ equal(length: 3) {},
+            notEqual: ƒ notEqual(length: 3) {},
+            deepEqual: ƒ deepEqual(length: 3) {},
+            notDeepEqual: ƒ notDeepEqual(length: 3) {},
+            deepStrictEqual: [Circular: *4],
+            notDeepStrictEqual: <ref *12> ƒ notDeepStrictEqual(length: 3) {},
+            strictEqual: <ref *13> ƒ strictEqual(length: 3) {},
+            notStrictEqual: <ref *14> ƒ notStrictEqual(length: 3) {},
+            match: <ref *15> ƒ match(length: 3) {},
+            throws: <ref *16> ƒ throws(length: 1) {},
+            rejects: <ref *17> ƒ rejects(length: 1) {},
+            doesNotThrow: <ref *18> ƒ doesNotThrow(length: 1) {},
+            doesNotReject: <ref *19> ƒ doesNotReject(length: 1) {},
+            ifError: <ref *20> ƒ ifError(length: 1) {},
+            strict: [Circular: *5],
+            CallTracker: ƒ CallTracker(length: 0) {}
+        },
+        equal: [Circular: *13],
+        notEqual: [Circular: *14],
+        deepEqual: [Circular: *4],
+        notDeepEqual: [Circular: *12],
+        deepStrictEqual: [Circular: *4],
+        notDeepStrictEqual: [Circular: *12],
+        strictEqual: [Circular: *13],
+        notStrictEqual: [Circular: *14],
+        match: [Circular: *15],
+        throws: [Circular: *16],
+        rejects: [Circular: *17],
+        doesNotThrow: [Circular: *18],
+        doesNotReject: [Circular: *19],
+        ifError: [Circular: *20],
+        strict: [Circular: *5]
+    },
+    doesNotReject: [Circular: *19],
+    doesNotThrow: [Circular: *18],
+    equal: [Circular: *13],
+    fail: [Circular: *6],
+    ifError: [Circular: *20],
+    match: [Circular: *15],
+    notDeepEqual: [Circular: *12],
+    notDeepStrictEqual: [Circular: *12],
+    notEqual: [Circular: *14],
+    notStrictEqual: [Circular: *14],
+    ok: [Circular: *7],
+    rejects: [Circular: *17],
+    strict: [Circular: *5],
+    strictEqual: [Circular: *13],
+    throws: [Circular: *16]
 }
 ```
 
@@ -2714,8 +3060,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 
 ```js
 {
-    AsyncLocalStorage: <ref *2> class AsyncLocalStorage {},
-    AsyncResource: <ref *3> class AsyncResource {},
+    AsyncLocalStorage: <ref *2> ƒ AsyncLocalStorage(length: 0) {},
+    AsyncResource: <ref *3> ƒ AsyncResource(length: 2) {},
     asyncWrapProviders: <ref *4> {
         NONE: 0,
         DIRHANDLE: 1,
@@ -2784,8 +3130,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
         triggerAsyncId: <ref *8> ƒ triggerAsyncId(length: 0) {},
         executionAsyncResource: <ref *9> ƒ executionAsyncResource(length: 0) {},
         asyncWrapProviders: [Circular: *4],
-        AsyncResource: [Circular: *3],
-        Symbol(CommonJS): 0
+        AsyncResource: [Circular: *3]
     },
     executionAsyncId: [Circular: *7],
     executionAsyncResource: [Circular: *9],
@@ -2854,17 +3199,52 @@ _Last updated on <!-- lastUpdated:start -->Jul 31, 2023 with Bun 0.7.2 Node.js v
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690762389698-1/buffer.mjs:4:15
+{
+    Blob: <ref *2> ƒ Blob(length: 0) {},
+    Buffer: <ref *3> ƒ Buffer(length: 3) {
+        alloc: ƒ alloc(length: 1) {},
+        allocUnsafe: ƒ allocUnsafe(length: 1) {},
+        allocUnsafeSlow: ƒ allocUnsafeSlow(length: 1) {},
+        byteLength: ƒ byteLength(length: 2) {},
+        compare: ƒ compare(length: 2) {},
+        concat: ƒ concat(length: 2) {},
+        from: ƒ from(length: 1) {},
+        isBuffer: ƒ isBuffer(length: 1) {},
+        toBuffer: ƒ toBuffer(length: 1) {},
+        isEncoding: ƒ isEncoding(length: 1) {}
+    },
+    File: [Circular: *2],
+    INSPECT_MAX_BYTES: 50,
+    SlowBuffer: <ref *14> ƒ SlowBuffer(length: 0) {},
+    atob: <ref *15> ƒ atob(length: 1) {},
+    btoa: <ref *16> ƒ btoa(length: 1) {},
+    constants: <ref *17> {
+        MAX_LENGTH: 4294967296,
+        MAX_STRING_LENGTH: 536870888
+    },
+    default: {
+        Buffer: [Circular: *3],
+        SlowBuffer: [Circular: *14],
+        Blob: [Circular: *2],
+        File: [Circular: *2],
+        INSPECT_MAX_BYTES: 50,
+        kMaxLength: 4294967296,
+        kStringMaxLength: 536870888,
+        constants: [Circular: *17],
+        atob: [Circular: *15],
+        btoa: [Circular: *16],
+        transcode: [Unexpected Error: [object Function] (type "undefined")],
+        resolveObjectURL: [Unexpected Error: [object Function] (type "undefined")],
+        isAscii: <ref *19> ƒ isAscii(length: 1) {},
+        isUtf8: <ref *20> ƒ isUtf8(length: 1) {}
+    },
+    isAscii: [Circular: *19],
+    isUtf8: [Circular: *20],
+    kMaxLength: 4294967296,
+    kStringMaxLength: 536870888,
+    resolveObjectURL: [Unexpected Error: [object Function] (type "undefined")],
+    transcode: [Unexpected Error: [object Function] (type "undefined")]
+}
 ```
 
 </td></tr></table>
@@ -2902,7 +3282,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    ChildProcess: <ref *2> class ChildProcess extends EventEmitter {},
+    ChildProcess: <ref *2> ƒ ChildProcess(length: 0) {},
     default: {
         ChildProcess: [Circular: *2],
         spawn: <ref *4> ƒ spawn(length: 3) {},
@@ -2911,8 +3291,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         fork: <ref *7> ƒ fork(length: 1) {},
         spawnSync: <ref *8> ƒ spawnSync(length: 3) {},
         execFileSync: <ref *9> ƒ execFileSync(length: 3) {},
-        execSync: <ref *10> ƒ execSync(length: 2) {},
-        Symbol(CommonJS): 0
+        execSync: <ref *10> ƒ execSync(length: 2) {}
     },
     exec: [Circular: *6],
     execFile: [Circular: *5],
@@ -2974,26 +3353,48 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    SCHED_NONE: 0,
-    SCHED_RR: 1,
-    Worker: ƒ Worker2(length: 0) {},
-    cluster: <ref *3> Cluster {
-        _events: [Object: null prototype] {},
+    SCHED_NONE: 1,
+    SCHED_RR: 2,
+    Worker: <ref *2> ƒ Worker(length: 0) {},
+    _events: <ref *3> [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    addListener: <ref *4> ƒ addListener(length: 2) {},
+    default: Cluster {
+        _events: [Circular: *3],
         _eventsCount: 0,
         _maxListeners: undefined,
-        settings: {},
-        workers: {},
-        SCHED_NONE: 0,
-        SCHED_RR: 1,
+        isWorker: false,
+        isPrimary: true,
+        isMaster: true,
+        workers: <ref *6> {},
+        settings: <ref *7> {},
+        SCHED_NONE: 1,
+        SCHED_RR: 2,
         schedulingPolicy: 2,
-        Symbol(kCapture): false,
-        Symbol(CommonJS): 0
+        Worker: [Circular: *2],
+        Symbol(kCapture): false
     },
-    default: [Circular: *3],
+    emit: ƒ emit(length: 1) {},
+    eventNames: ƒ eventNames(length: 0) {},
+    getMaxListeners: ƒ getMaxListeners(length: 0) {},
     isMaster: true,
     isPrimary: true,
     isWorker: false,
-    schedulingPolicy: 2
+    listenerCount: ƒ listenerCount(length: 1) {},
+    listeners: ƒ listeners(length: 1) {},
+    off: <ref *13> ƒ removeListener(length: 2) {},
+    on: [Circular: *4],
+    once: ƒ once(length: 2) {},
+    prependListener: ƒ prependListener(length: 2) {},
+    prependOnceListener: ƒ prependOnceListener(length: 2) {},
+    rawListeners: ƒ rawListeners(length: 1) {},
+    removeAllListeners: ƒ removeAllListeners(length: 1) {},
+    removeListener: [Circular: *13],
+    schedulingPolicy: 2,
+    setMaxListeners: ƒ setMaxListeners(length: 1) {},
+    settings: [Circular: *7],
+    workers: [Circular: *6]
 }
 ```
 
@@ -3664,17 +4065,6 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     ENETRESET: 102,
     ENETUNREACH: 101,
     ENFILE: 23,
-    ENGINE_METHOD_ALL: 65535,
-    ENGINE_METHOD_CIPHERS: 64,
-    ENGINE_METHOD_DH: 4,
-    ENGINE_METHOD_DIGESTS: 128,
-    ENGINE_METHOD_DSA: 2,
-    ENGINE_METHOD_EC: 2048,
-    ENGINE_METHOD_NONE: 0,
-    ENGINE_METHOD_PKEY_ASN1_METHS: 1024,
-    ENGINE_METHOD_PKEY_METHS: 512,
-    ENGINE_METHOD_RAND: 8,
-    ENGINE_METHOD_RSA: 1,
     ENOBUFS: 105,
     ENODATA: 61,
     ENODEV: 19,
@@ -3714,7 +4104,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     EWOULDBLOCK: 11,
     EXDEV: 18,
     F_OK: 0,
-    OPENSSL_VERSION_NUMBER: 805306496,
+    OPENSSL_VERSION_NUMBER: 269488255,
     O_APPEND: 1024,
     O_CREAT: 64,
     O_DIRECT: 16384,
@@ -3743,10 +4133,6 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     RSA_PKCS1_OAEP_PADDING: 4,
     RSA_PKCS1_PADDING: 1,
     RSA_PKCS1_PSS_PADDING: 6,
-    RSA_PSS_SALTLEN_AUTO: -2,
-    RSA_PSS_SALTLEN_DIGEST: -1,
-    RSA_PSS_SALTLEN_MAX_SIGN: -2,
-    RSA_X931_PADDING: 5,
     RTLD_DEEPBIND: 8,
     RTLD_GLOBAL: 256,
     RTLD_LAZY: 1,
@@ -3786,29 +4172,23 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     SIGWINCH: 28,
     SIGXCPU: 24,
     SIGXFSZ: 25,
-    SSL_OP_ALL: 2147485776,
-    SSL_OP_ALLOW_NO_DHE_KEX: 1024,
-    SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: 262144,
+    SSL_OP_ALL: 0,
+    SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: 0,
     SSL_OP_CIPHER_SERVER_PREFERENCE: 4194304,
-    SSL_OP_CISCO_ANYCONNECT: 32768,
-    SSL_OP_COOKIE_EXCHANGE: 8192,
-    SSL_OP_CRYPTOPRO_TLSEXT_BUG: 2147483648,
-    SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: 2048,
-    SSL_OP_LEGACY_SERVER_CONNECT: 4,
-    SSL_OP_NO_COMPRESSION: 131072,
-    SSL_OP_NO_ENCRYPT_THEN_MAC: 524288,
+    SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: 0,
+    SSL_OP_LEGACY_SERVER_CONNECT: 0,
+    SSL_OP_NO_COMPRESSION: 0,
     SSL_OP_NO_QUERY_MTU: 4096,
-    SSL_OP_NO_RENEGOTIATION: 1073741824,
-    SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION: 65536,
+    SSL_OP_NO_RENEGOTIATION: 0,
+    SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION: 0,
     SSL_OP_NO_SSLv2: 0,
-    SSL_OP_NO_SSLv3: 33554432,
+    SSL_OP_NO_SSLv3: 0,
     SSL_OP_NO_TICKET: 16384,
     SSL_OP_NO_TLSv1: 67108864,
     SSL_OP_NO_TLSv1_1: 268435456,
     SSL_OP_NO_TLSv1_2: 134217728,
     SSL_OP_NO_TLSv1_3: 536870912,
-    SSL_OP_PRIORITIZE_CHACHA: 2097152,
-    SSL_OP_TLS_ROLLBACK_BUG: 8388608,
+    SSL_OP_TLS_ROLLBACK_BUG: 0,
     S_IFBLK: 24576,
     S_IFCHR: 8192,
     S_IFDIR: 16384,
@@ -4029,41 +4409,24 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         COPYFILE_FICLONE: 2,
         UV_FS_COPYFILE_FICLONE_FORCE: 4,
         COPYFILE_FICLONE_FORCE: 4,
-        OPENSSL_VERSION_NUMBER: 805306496,
-        SSL_OP_ALL: 2147485776,
-        SSL_OP_ALLOW_NO_DHE_KEX: 1024,
-        SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: 262144,
+        OPENSSL_VERSION_NUMBER: 269488255,
+        SSL_OP_ALL: 0,
+        SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: 0,
         SSL_OP_CIPHER_SERVER_PREFERENCE: 4194304,
-        SSL_OP_CISCO_ANYCONNECT: 32768,
-        SSL_OP_COOKIE_EXCHANGE: 8192,
-        SSL_OP_CRYPTOPRO_TLSEXT_BUG: 2147483648,
-        SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: 2048,
-        SSL_OP_LEGACY_SERVER_CONNECT: 4,
-        SSL_OP_NO_COMPRESSION: 131072,
-        SSL_OP_NO_ENCRYPT_THEN_MAC: 524288,
+        SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: 0,
+        SSL_OP_LEGACY_SERVER_CONNECT: 0,
+        SSL_OP_NO_COMPRESSION: 0,
         SSL_OP_NO_QUERY_MTU: 4096,
-        SSL_OP_NO_RENEGOTIATION: 1073741824,
-        SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION: 65536,
+        SSL_OP_NO_RENEGOTIATION: 0,
+        SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION: 0,
         SSL_OP_NO_SSLv2: 0,
-        SSL_OP_NO_SSLv3: 33554432,
+        SSL_OP_NO_SSLv3: 0,
         SSL_OP_NO_TICKET: 16384,
         SSL_OP_NO_TLSv1: 67108864,
         SSL_OP_NO_TLSv1_1: 268435456,
         SSL_OP_NO_TLSv1_2: 134217728,
         SSL_OP_NO_TLSv1_3: 536870912,
-        SSL_OP_PRIORITIZE_CHACHA: 2097152,
-        SSL_OP_TLS_ROLLBACK_BUG: 8388608,
-        ENGINE_METHOD_RSA: 1,
-        ENGINE_METHOD_DSA: 2,
-        ENGINE_METHOD_DH: 4,
-        ENGINE_METHOD_RAND: 8,
-        ENGINE_METHOD_EC: 2048,
-        ENGINE_METHOD_CIPHERS: 64,
-        ENGINE_METHOD_DIGESTS: 128,
-        ENGINE_METHOD_PKEY_METHS: 512,
-        ENGINE_METHOD_PKEY_ASN1_METHS: 1024,
-        ENGINE_METHOD_ALL: 65535,
-        ENGINE_METHOD_NONE: 0,
+        SSL_OP_TLS_ROLLBACK_BUG: 0,
         DH_CHECK_P_NOT_SAFE_PRIME: 2,
         DH_CHECK_P_NOT_PRIME: 1,
         DH_UNABLE_TO_CHECK_GENERATOR: 4,
@@ -4071,12 +4434,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         RSA_PKCS1_PADDING: 1,
         RSA_NO_PADDING: 3,
         RSA_PKCS1_OAEP_PADDING: 4,
-        RSA_X931_PADDING: 5,
         RSA_PKCS1_PSS_PADDING: 6,
-        RSA_PSS_SALTLEN_DIGEST: -1,
-        RSA_PSS_SALTLEN_MAX_SIGN: -2,
-        RSA_PSS_SALTLEN_AUTO: -2,
-        defaultCoreCipherList: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
+        defaultCoreCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…",
+        defaultCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…",
         TLS1_VERSION: 769,
         TLS1_1_VERSION: 770,
         TLS1_2_VERSION: 771,
@@ -4085,7 +4445,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         POINT_CONVERSION_UNCOMPRESSED: 4,
         POINT_CONVERSION_HYBRID: 6
     },
-    defaultCoreCipherList: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…"
+    defaultCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…",
+    defaultCoreCipherList: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…"
 }
 ```
 
@@ -4317,21 +4678,20 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690762389698-1/crypto.mjs:4:15
+1 | 
+2 | `;super(message);this.name="AggregateError",this.errors=errors}};module.exports={AggregateError,once(callback){let called=!1;return function(...args){if(called)return;called=!0,callback.apply(this,args)}},createDeferredPromise:function(){let resolve,reject;return{promise:new Promise((res,rej)=>{resolve=res,reject=rej}),resolve,reject}},promisify(fn){return new Promise((resolve,reject)=>{fn((err,...args)=>{if(err)return reject(err);return resolve(...args)})})},debuglog(){return function(){}},format(format,...args){return format.replace(/%([sdifj])/g,function(...[_unused,type]){const replacement=args.shift();if(type==="f")return replacement.toFixed(6);else if(type==="j")return JSON.stringify(replacement);else if(type==="s"&&typeof replacement==="object")return`${replacement.constructor!==Object?replacement.constructor.name:""} {}`.trim();else return replacement.toString()})},inspect(value){switch(typeof value){case"string":if(value.includes("'")){if(!value.includes('"'))return`"${value}"`;else if(!value.includes("`")&&!value.includes("${"))return`\`${value}\``}return`'${value}'`;case"number":if(isNaN(value))return"NaN";else if(Object.is(value,-0))return String(value);return value;case"bigint":return`${String(value)}n`;case"boolean":case"undefined":return String(value);case"object":return"{}"}},types:{isAsyncFunction(fn){return fn instanceof AsyncFunction},isArrayBufferView(arr){return ArrayBuffer.isView(arr)}},isBlob},module.exports.promisify.custom=Symbol.for("nodejs.util.promisify.custom")}}),require_errors=__commonJS({"node_modules/readable-stream/lib/ours/errors.js"(exports2,module){var{format,inspect,AggregateError:CustomAggregateError}=require_util(),AggregateError=globalThis.AggregateError||CustomAggregateError,kIsNodeError=Symbol("kIsNodeError"),kTypes=["string","function","number","object","Function","Object","boolean","bigint","symbol"],classRegExp=/^([A-Z][a-z0-9]*)+$/,nodeInternalPrefix="__node_internal_",codes={};function assert(value,message){if(!value)throw new codes.ERR_INTERNAL_ASSERTION(message)}function addNumericalSeparator(val){let res="",i=val.length;const start=val[0]==="-"?1:0;for(;i>=start+4;i-=3)res=`_${val.slice(i-3,i)}${res}`;return`${val.slice(0,i)}${res}`}function getMessage(key,msg,args){if(typeof msg==="function")return assert(msg.length<=args.length,`Code: ${key}; The provided arguments length (${args.length}) does not match the required ones (${msg.length}).`),msg(...args);const expectedLength=(msg.match(/%[dfijoOs]/g)||[]).length;if(assert(expectedLength===args.length,`Code: ${key}; The provided arguments length (${args.length}) does not match the required ones (${expectedLength}).`),args.length===0)return msg;return format(msg,...args)}function E(code,message,Base){if(!Base)Base=Error;class NodeError extends Base{constructor(...args){super(getMessage(code,message,args))}toString(){return`${this.name} [${code}]: ${this.message}`}}Object.defineProperties(NodeError.prototype,{name:{value:Base.name,writable:!0,enumerable:!1,configurable:!0},toString:{value(){return`${this.name} [${code}]: ${this.message}`},writable:!0,enumerable:!1,configurable:!0}}),NodeError.prototype.code=code,NodeError.prototype[kIsNodeError]=!0,codes[code]=NodeError}function hideStackFrames(fn){const hidden=nodeInternalPrefix+fn.name;return Object.defineProperty(fn,"name",{value:hidden}),fn}function aggregateTwoErrors(innerError,outerError){if(innerError&&outerError&&innerError!==outerError){if(Array.isArray(outerError.errors))return outerError.errors.push(innerError),outerError;const err=new AggregateError([outerError,innerError],outerError.message);return err.code=outerError.code,err}return innerError||outerError}var AbortError2=class extends Error{constructor(message="The operation was aborted",options=void 0){if(options!==void 0&&typeof options!=="object")throw new codes.ERR_INVALID_ARG_TYPE("options","Object",options);super(message,options);this.code="ABORT_ERR",this.name="AbortError"}};E("ERR_ASSERTION","%s",Error),E("ERR_INVALID_ARG_TYPE",(name,expected,actual)=>{if(assert(typeof name==="string","'name' must be a string"),!Array.isArray(expected))expected=[expected];let msg="The ";if(name.endsWith(" argument"))msg+=`${name} `;else msg+=`"${name}" ${name.includes(".")?"property":"argument"} `;msg+="must be ";const types=[],instances=[],other=[];for(let value of expected)if(assert(typeof value==="string","All expected entries have to be of type string"),kTypes.includes(value))types.push(value.toLowerCase());else if(classRegExp.test(value))instances.push(value);else assert(value!=="object",'The value "object" should be written as "Object"'),other.push(value);if(instances.length>0){const pos=types.indexOf("object");if(pos!==-1)types.splice(types,pos,1),instances.push("Object")}if(types.length>0){switch(types.length){case 1:msg+=`of type ${types[0]}`;break;case 2:msg+=`one of type ${types[0]} or ${types[1]}`;break;default:{const last=types.pop();msg+=`one of type ${types.join(", ")}, or ${last}`}}if(instances.length>0||other.length>0)msg+=" or "}if(instances.length>0){switch(instances.length){case 1:msg+=`an instance of ${instances[0]}`;break;case 2:msg+=`an instance of ${instances[0]} or ${instances[1]}`;break;default:{const last=instances.pop();msg+=`an instance of ${instances.join(", ")}, or ${last}`}}if(other.length>0)msg+=" or "}switch(other.length){case 0:break;case 1:if(other[0].toLowerCase()!==other[0])msg+="an ";msg+=`${other[0]}`;break;case 2:msg+=`one of ${other[0]} or ${other[1]}`;break;default:{const last=other.pop();msg+=`one of ${other.join(", ")}, or ${last}`}}if(actual==null)msg+=`. Received ${actual}`;else if(typeof actual==="function"&&actual.name)msg+=`. Received function ${actual.name}`;else if(typeof actual==="object"){var _actual$constructor;if((_actual$constructor=actual.constructor)!==null&&_actual$constructor!==void 0&&_actual$constructor.name)msg+=`. Received an instance of ${actual.constructor.name}`;else{const inspected=inspect(actual,{depth:-1});msg+=`. Received ${inspected}`}}else{let inspected=inspect(actual,{colors:!1});if(inspected.length>25)inspected=`${inspected.slice(0,25)}...`;msg+=`. Received type ${typeof actual} (${inspected})`}return msg},TypeError),E("ERR_INVALID_ARG_VALUE",(name,value,reason="is invalid")=>{let inspected=inspect(value);if(inspected.length>128)inspected=inspected.slice(0,128)+"...";return`The ${name.includes(".")?"property":"argument"} '${name}' ${reason}. Received ${inspected}`},TypeError),E("ERR_INVALID_RETURN_VALUE",(input,name,value)=>{var _value$constructor;const type=value!==null&&value!==void 0&&(_value$constructor=value.constructor)!==null&&_value$constructor!==void 0&&_value$constructor.name?`instance of ${value.constructor.name}`:`type ${typeof value}`;return`Expected ${input} to be returned from the "${name}" function but got ${type}.`},TypeError),E("ERR_MISSING_ARGS",(...args)=>{assert(args.length>0,"At least one arg needs to be specified");let msg;const len=args.length;switch(args=(Array.isArray(args)?args:[args]).map((a)=>`"${a}"`).join(" or "),len){case 1:msg+=`The ${args[0]} argument`;break;case 2:msg+=`The ${args[0]} and ${args[1]} arguments`;break;default:{const last=args.pop();msg+=`The ${args.join(", ")}, and ${last} arguments`}break}return`${msg} must be specified`},TypeError),E("ERR_OUT_OF_RANGE",(str,range,input)=>{assert(range,'Missing "range" argument');let received;if(Number.isInteger(input)&&Math.abs(input)>4294967296)received=addNumericalSeparator(String(input));else if(typeof input==="bigint"){if(received=String(input),input>2n**32n||input<-(2n**32n))received=addNumericalSeparator(received);received+="n"}else received=inspect(input);return`The value of "${str}" is out of range. It must be ${range}. Received ${received}`},RangeError),E("ERR_MULTIPLE_CALLBACK","Callback called multiple times",Error),E("ERR_METHOD_NOT_IMPLEMENTED","The %s method is not implemented",Error),E("ERR_STREAM_ALREADY_FINISHED","Cannot call %s after a stream was finished",Error),E("ERR_STREAM_CANNOT_PIPE","Cannot pipe, not readable",Error),E("ERR_STREAM_DESTROYED","Cannot call %s after a stream was destroyed",Error),E("ERR_STREAM_NULL_VALUES","May not write null values to stream",TypeError),E("ERR_STREAM_PREMATURE_CLOSE","Premature close",Error),E("ERR_STREAM_PUSH_AFTER_EOF","stream.push() after EOF",Error),E("ERR_STREAM_UNSHIFT_AFTER_END_EVENT","stream.unshift() after end event",Error),E("ERR_STREAM_WRITE_AFTER_END","write after end",Error),E("ERR_UNKNOWN_ENCODING","Unknown encoding: %s",TypeError),module.exports={AbortError:AbortError2,aggregateTwoErrors:hideStackFrames(aggregateTwoErrors),hideStackFrames,codes}}}),require_validators=__commonJS({"node_modules/readable-stream/lib/internal/validators.js"(exports2,module){var{ArrayIsArray:ArrayIsArray2,ArrayPrototypeIncludes,ArrayPrototypeJoin,ArrayPrototypeMap,NumberIsInteger,NumberMAX_SAFE_INTEGER,NumberMIN_SAFE_INTEGER,NumberParseInt,RegExpPrototypeTest,String:String2,StringPrototypeToUpperCase,StringPrototypeTrim}=require_primordials(),{hideStackFrames,codes:{ERR_SOCKET_BAD_PORT,ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_INVALID_ARG_VALUE:ERR_INVALID_ARG_VALUE2,ERR_OUT_OF_RANGE,ERR_UNKNOWN_SIGNAL}}=require_errors(),{normalizeEncoding}=require_util(),{isAsyncFunction,isArrayBufferView}=require_util().types,signals={};function isInt32(value){return value===(value|0)}function isUint32(value){return value===value>>>0}var octalReg=/^[0-7]+$/,modeDesc="must be a 32-bit unsigned integer or an octal string";function parseFileMode(value,name,def){if(typeof value==="undefined")value=def;if(typeof value==="string"){if(!RegExpPrototypeTest(octalReg,value))throw new ERR_INVALID_ARG_VALUE2(name,value,modeDesc);value=NumberParseInt(value,8)}return validateInt32(value,name,0,4294967295),value}var validateInteger=hideStackFrames((value,name,min=NumberMIN_SAFE_INTEGER,max=NumberMAX_SAFE_INTEGER)=>{if(typeof value!=="number")throw new ERR_INVALID_ARG_TYPE2(name,"number",value);if(!NumberIsInteger(value))throw new ERR_OUT_OF_RANGE(name,"an integer",value);if(value<min||value>max)throw new ERR_OUT_OF_RANGE(name,`>= ${min} && <= ${max}`,value)}),validateInt32=hideStackFrames((value,name,min=-2147483648,max=2147483647)=>{if(typeof value!=="number")throw new ERR_INVALID_ARG_TYPE2(name,"number",value);if(!isInt32(value)){if(!NumberIsInteger(value))throw new ERR_OUT_OF_RANGE(name,"an integer",value);throw new ERR_OUT_OF_RANGE(name,`>= ${min} && <= ${max}`,value)}if(value<min||value>max)throw new ERR_OUT_OF_RANGE(name,`>= ${min} && <= ${max}`,value)}),validateUint32=hideStackFrames((value,name,positive)=>{if(typeof value!=="number")throw new ERR_INVALID_ARG_TYPE2(name,"number",value);if(!isUint32(value)){if(!NumberIsInteger(value))throw new ERR_OUT_OF_RANGE(name,"an integer",value);throw new ERR_OUT_OF_RANGE(name,`>= ${positive?1:0} && < 4294967296`,value)}if(positive&&value===0)throw new ERR_OUT_OF_RANGE(name,">= 1 && < 4294967296",value)});function validateString2(value,name){if(typeof value!=="string")throw new ERR_INVALID_ARG_TYPE2(name,"string",value)}function validateNumber(value,name){if(typeof value!=="number")throw new ERR_INVALID_ARG_TYPE2(name,"number",value)}var validateOneOf=hideStackFrames((value,name,oneOf)=>{if(!ArrayPrototypeIncludes(oneOf,value)){const reason="must be one of: "+ArrayPrototypeJoin(ArrayPrototypeMap(oneOf,(v)=>typeof v==="string"?`'${v}'`:String2(v)),", ");throw new ERR_INVALID_ARG_VALUE2(name,value,reason)}});function validateBoolean2(value,name){if(typeof value!=="boolean")throw new ERR_INVALID_ARG_TYPE2(name,"boolean",value)}var validateObject2=hideStackFrames((value,name,options)=>{const useDefaultOptions=options==null,allowArray=useDefaultOptions?!1:options.allowArray,allowFunction=useDefaultOptions?!1:options.allowFunction;if(!(useDefaultOptions?!1:options.nullable)&&value===null||!allowArray&&ArrayIsArray2(value)||typeof value!=="object"&&(!allowFunction||typeof value!=="function"))throw new ERR_INVALID_ARG_TYPE2(name,"Object",value)}),validateArray=hideStackFrames((value,name,minLength=0)=>{if(!ArrayIsArray2(value))throw new ERR_INVALID_ARG_TYPE2(name,"Array",value);if(value.length<minLength){const reason=`must be longer than ${minLength}`;throw new ERR_INVALID_ARG_VALUE2(name,value,reason)}});function validateSignalName(signal,name="signal"){if(validateString2(signal,name),signals[signal]===void 0){if(signals[StringPrototypeToUpperCase(signal)]!==void 0)throw new ERR_UNKNOWN_SIGNAL(signal+" (signals must use all capital letters)");throw new ERR_UNKNOWN_SIGNAL(signal)}}var validateBuffer=hideStackFrames((buffer,name="buffer")=>{if(!isArrayBufferView(buffer))throw new ERR_INVALID_ARG_TYPE2(name,["Buffer","TypedArray","DataView"],buffer)});function validateEncoding(data,encoding){const normalizedEncoding=normalizeEncoding(encoding),length=data.length;if(normalizedEncoding==="hex"&&length%2!==0)throw new ERR_INVALID_ARG_VALUE2("encoding",encoding,`is invalid for data of length ${length}`)}function validatePort(port,name="Port",allowZero=!0){if(typeof port!=="number"&&typeof port!=="string"||typeof port==="string"&&StringPrototypeTrim(port).length===0||+port!==+port>>>0||port>65535||port===0&&!allowZero)throw new ERR_SOCKET_BAD_PORT(name,port,allowZero);return port|0}var validateAbortSignal=hideStackFrames((signal,name)=>{if(signal!==void 0&&(signal===null||typeof signal!=="object"||!("aborted"in signal)))throw new ERR_INVALID_ARG_TYPE2(name,"AbortSignal",signal)}),validateFunction=hideStackFrames((value,name)=>{if(typeof value!=="function")throw new ERR_INVALID_ARG_TYPE2(name,"Function",value)}),validatePlainFunction=hideStackFrames((value,name)=>{if(typeof value!=="function"||isAsyncFunction(value))throw new ERR_INVALID_ARG_TYPE2(name,"Function",value)}),validateUndefined=hideStackFrames((value,name)=>{if(value!==void 0)throw new ERR_INVALID_ARG_TYPE2(name,"undefined",value)});module.exports={isInt32,isUint32,parseFileMode,validateArray,validateBoolean:validateBoolean2,validateBuffer,validateEncoding,validateFunction,validateInt32,validateInteger,validateNumber,validateObject:validateObject2,validateOneOf,validatePlainFunction,validatePort,validateSignalName,validateString:validateString2,validateUint32,validateUndefined,validateAbortSignal}}}),require_utils=__commonJS({"node_modules/readable-stream/lib/internal/streams/utils.js"(exports2,module){var{Symbol:Symbol2,SymbolAsyncIterator,SymbolIterator}=require_primordials(),kDestroyed=Symbol2("kDestroyed"),kIsErrored=Symbol2("kIsErrored"),kIsReadable=Symbol2("kIsReadable"),kIsDisturbed=Symbol2("kIsDisturbed");function isReadableNodeStream(obj,strict=!1){var _obj$_readableState;return!!(obj&&typeof obj.pipe==="function"&&typeof obj.on==="function"&&(!strict||typeof obj.pause==="function"&&typeof obj.resume==="function")&&(!obj._writableState||((_obj$_readableState=obj._readableState)===null||_obj$_readableState===void 0?void 0:_obj$_readableState.readable)!==!1)&&(!obj._writableState||obj._readableState))}function isWritableNodeStream(obj){var _obj$_writableState;return!!(obj&&typeof obj.write==="function"&&typeof obj.on==="function"&&(!obj._readableState||((_obj$_writableState=obj._writableState)===null||_obj$_writableState===void 0?void 0:_obj$_writableState.writable)!==!1))}function isDuplexNodeStream(obj){return!!(obj&&typeof obj.pipe==="function"&&obj._readableState&&typeof obj.on==="function"&&typeof obj.write==="function")}function isNodeStream(obj){return obj&&(obj._readableState||obj._writableState||typeof obj.write==="function"&&typeof obj.on==="function"||typeof obj.pipe==="function"&&typeof obj.on==="function")}function isIterable(obj,isAsync){if(obj==null)return!1;if(isAsync===!0)return typeof obj[SymbolAsyncIterator]==="function";if(isAsync===!1)return typeof obj[SymbolIterator]==="function";return typeof obj[SymbolAsyncIterator]==="function"||typeof obj[SymbolIterator]==="function"}function isDestroyed(stream){if(!isNodeStream(stream))return null;const{_writableState:wState,_readableState:rState}=stream,state=wState||rState;return!!(stream.destroyed||stream[kDestroyed]||state!==null&&state!==void 0&&state.destroyed)}function isWritableEnded(stream){if(!isWritableNodeStream(stream))return null;if(stream.writableEnded===!0)return!0;const wState=stream._writableState;if(wState!==null&&wState!==void 0&&wState.errored)return!1;if(typeof(wState===null||wState===void 0?void 0:wState.ended)!=="boolean")return null;return wState.ended}function isWritableFinished(stream,strict){if(!isWritableNodeStream(stream))return null;if(stream.writableFinished===!0)return!0;const wState=stream._writableState;if(wState!==null&&wState!==void 0&&wState.errored)return!1;if(typeof(wState===null||wState===void 0?void 0:wState.finished)!=="boolean")return null;return!!(wState.finished||strict===!1&&wState.ended===!0&&wState.length===0)}function isReadableEnded(stream){if(!isReadableNodeStream(stream))return null;if(stream.readableEnded===!0)return!0;const rState=stream._readableState;if(!rState||rState.errored)return!1;if(typeof(rState===null||rState===void 0?void 0:rState.ended)!=="boolean")return null;return rState.ended}function isReadableFinished(stream,strict){if(!isReadableNodeStream(stream))return null;const rState=stream._readableState;if(rState!==null&&rState!==void 0&&rState.errored)return!1;if(typeof(rState===null||rState===void 0?void 0:rState.endEmitted)!=="boolean")return null;return!!(rState.endEmitted||strict===!1&&rState.ended===!0&&rState.length===0)}function isReadable(stream){if(stream&&stream[kIsReadable]!=null)return stream[kIsReadable];if(typeof(stream===null||stream===void 0?void 0:stream.readable)!=="boolean")return null;if(isDestroyed(stream))return!1;return isReadableNodeStream(stream)&&stream.readable&&!isReadableFinished(stream)}function isWritable(stream){if(typeof(stream===null||stream===void 0?void 0:stream.writable)!=="boolean")return null;if(isDestroyed(stream))return!1;return isWritableNodeStream(stream)&&stream.writable&&!isWritableEnded(stream)}function isFinished(stream,opts){if(!isNodeStream(stream))return null;if(isDestroyed(stream))return!0;if((opts===null||opts===void 0?void 0:opts.readable)!==!1&&isReadable(stream))return!1;if((opts===null||opts===void 0?void 0:opts.writable)!==!1&&isWritable(stream))return!1;return!0}function isWritableErrored(stream){var _stream$_writableStat,_stream$_writableStat2;if(!isNodeStream(stream))return null;if(stream.writableErrored)return stream.writableErrored;return(_stream$_writableStat=(_stream$_writableStat2=stream._writableState)===null||_stream$_writableStat2===void 0?void 0:_stream$_writableStat2.errored)!==null&&_stream$_writableStat!==void 0?_stream$_writableStat:null}function isReadableErrored(stream){var _stream$_readableStat,_stream$_readableStat2;if(!isNodeStream(stream))return null;if(stream.readableErrored)return stream.readableErrored;return(_stream$_readableStat=(_stream$_readableStat2=stream._readableState)===null||_stream$_readableStat2===void 0?void 0:_stream$_readableStat2.errored)!==null&&_stream$_readableStat!==void 0?_stream$_readableStat:null}function isClosed(stream){if(!isNodeStream(stream))return null;if(typeof stream.closed==="boolean")return stream.closed;const{_writableState:wState,_readableState:rState}=stream;if(typeof(wState===null||wState===void 0?void 0:wState.closed)==="boolean"||typeof(rState===null||rState===void 0?void 0:rState.closed)==="boolean")return(wState===null||wState===void 0?void 0:wState.closed)||(rState===null||rState===void 0?void 0:rState.closed);if(typeof stream._closed==="boolean"&&isOutgoingMessage(stream))return stream._closed;return null}function isOutgoingMessage(stream){return typeof stream._closed==="boolean"&&typeof stream._defaultKeepAlive==="boolean"&&typeof stream._removedConnection==="boolean"&&typeof stream._removedContLen==="boolean"}function isServerResponse(stream){return typeof stream._sent100==="boolean"&&isOutgoingMessage(stream)}function isServerRequest(stream){var _stream$req;return typeof stream._consuming==="boolean"&&typeof stream._dumped==="boolean"&&((_stream$req=stream.req)===null||_stream$req===void 0?void 0:_stream$req.upgradeOrConnect)===void 0}function willEmitClose(stream){if(!isNodeStream(stream))return null;const{_writableState:wState,_readableState:rState}=stream,state=wState||rState;return!state&&isServerResponse(stream)||!!(state&&state.autoDestroy&&state.emitClose&&state.closed===!1)}function isDisturbed(stream){var _stream$kIsDisturbed;return!!(stream&&((_stream$kIsDisturbed=stream[kIsDisturbed])!==null&&_stream$kIsDisturbed!==void 0?_stream$kIsDisturbed:stream.readableDidRead||stream.readableAborted))}function isErrored(stream){var _ref,_ref2,_ref3,_ref4,_ref5,_stream$kIsErrored,_stream$_readableStat3,_stream$_writableStat3,_stream$_readableStat4,_stream$_writableStat4;return!!(stream&&((_ref=(_ref2=(_ref3=(_ref4=(_ref5=(_stream$kIsErrored=stream[kIsErrored])!==null&&_stream$kIsErrored!==void 0?_stream$kIsErrored:stream.readableErrored)!==null&&_ref5!==void 0?_ref5:stream.writableErrored)!==null&&_ref4!==void 0?_ref4:(_stream$_readableStat3=stream._readableState)===null||_stream$_readableStat3===void 0?void 0:_stream$_readableStat3.errorEmitted)!==null&&_ref3!==void 0?_ref3:(_stream$_writableStat3=stream._writableState)===null||_stream$_writableStat3===void 0?void 0:_stream$_writableStat3.errorEmitted)!==null&&_ref2!==void 0?_ref2:(_stream$_readableStat4=stream._readableState)===null||_stream$_readableStat4===void 0?void 0:_stream$_readableStat4.errored)!==null&&_ref!==void 0?_ref:(_stream$_writableStat4=stream._writableState)===null||_stream$_writableStat4===void 0?void 0:_stream$_writableStat4.errored))}module.exports={kDestroyed,isDisturbed,kIsDisturbed,isErrored,kIsErrored,isReadable,kIsReadable,isClosed,isDestroyed,isDuplexNodeStream,isFinished,isIterable,isReadableNodeStream,isReadableEnded,isReadableFinished,isReadableErrored,isNodeStream,isWritable,isWritableNodeStream,isWritableEnded,isWritableFinished,isWritableErrored,isServerRequest,isServerResponse,willEmitClose}}}),require_end_of_stream=__commonJS({"node_modules/readable-stream/lib/internal/streams/end-of-stream.js"(exports2,module){var{AbortError:AbortError2,codes}=require_errors(),{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_STREAM_PREMATURE_CLOSE}=codes,{once}=require_util(),{validateAbortSignal,validateFunction,validateObject:validateObject2}=require_validators(),{Promise:Promise2}=require_primordials(),{isClosed,isReadable,isReadableNodeStream,isReadableFinished,isReadableErrored,isWritable,isWritableNodeStream,isWritableFinished,isWritableErrored,isNodeStream,willEmitClose:_willEmitClose}=require_utils();function isRequest(stream){return stream.setHeader&&typeof stream.abort==="function"}var nop=()=>{};function eos(stream,options,callback){var _options$readable,_options$writable;if(arguments.length===2)callback=options,options={};else if(options==null)options={};else validateObject2(options,"options");validateFunction(callback,"callback"),validateAbortSignal(options.signal,"options.signal"),callback=once(callback);const readable=(_options$readable=options.readable)!==null&&_options$readable!==void 0?_options$readable:isReadableNodeStream(stream),writable=(_options$writable=options.writable)!==null&&_options$writable!==void 0?_options$writable:isWritableNodeStream(stream);if(!isNodeStream(stream))throw new ERR_INVALID_ARG_TYPE2("stream","Stream",stream);const{_writableState:wState,_readableState:rState}=stream,onlegacyfinish=()=>{if(!stream.writable)onfinish()};let willEmitClose=_willEmitClose(stream)&&isReadableNodeStream(stream)===readable&&isWritableNodeStream(stream)===writable,writableFinished=isWritableFinished(stream,!1);const onfinish=()=>{if(writableFinished=!0,stream.destroyed)willEmitClose=!1;if(willEmitClose&&(!stream.readable||readable))return;if(!readable||readableFinished)callback.call(stream)};let readableFinished=isReadableFinished(stream,!1);const onend=()=>{if(readableFinished=!0,stream.destroyed)willEmitClose=!1;if(willEmitClose&&(!stream.writable||writable))return;if(!writable||writableFinished)callback.call(stream)},onerror=(err)=>{callback.call(stream,err)};let closed=isClosed(stream);const onclose=()=>{closed=!0;const errored=isWritableErrored(stream)||isReadableErrored(stream);if(errored&&typeof errored!=="boolean")return callback.call(stream,errored);if(readable&&!readableFinished&&isReadableNodeStream(stream,!0)){if(!isReadableFinished(stream,!1))return callback.call(stream,new ERR_STREAM_PREMATURE_CLOSE)}if(writable&&!writableFinished){if(!isWritableFinished(stream,!1))return callback.call(stream,new ERR_STREAM_PREMATURE_CLOSE)}callback.call(stream)},onrequest=()=>{stream.req.on("finish",onfinish)};if(isRequest(stream)){if(stream.on("complete",onfinish),!willEmitClose)stream.on("abort",onclose);if(stream.req)onrequest();else stream.on("request",onrequest)}else if(writable&&!wState)stream.on("end",onlegacyfinish),stream.on("close",onlegacyfinish);if(!willEmitClose&&typeof stream.aborted==="boolean")stream.on("aborted",onclose);if(stream.on("end",onend),stream.on("finish",onfinish),options.error!==!1)stream.on("error",onerror);if(stream.on("close",onclose),closed)runOnNextTick(onclose);else if(wState!==null&&wState!==void 0&&wState.errorEmitted||rState!==null&&rState!==void 0&&rState.errorEmitted){if(!willEmitClose)runOnNextTick(onclose)}else if(!readable&&(!willEmitClose||isReadable(stream))&&(writableFinished||isWritable(stream)===!1))runOnNextTick(onclose);else if(!writable&&(!willEmitClose||isWritable(stream))&&(readableFinished||isReadable(stream)===!1))runOnNextTick(onclose);else if(rState&&stream.req&&stream.aborted)runOnNextTick(onclose);const cleanup=()=>{if(callback=nop,stream.removeListener("aborted",onclose),stream.removeListener("complete",onfinish),stream.removeListener("abort",onclose),stream.removeListener("request",onrequest),stream.req)stream.req.removeListener("finish",onfinish);stream.removeListener("end",onlegacyfinish),stream.removeListener("close",onlegacyfinish),stream.removeListener("finish",onfinish),stream.removeListener("end",onend),stream.removeListener("error",onerror),stream.removeListener("close",onclose)};if(options.signal&&!closed){const abort=()=>{const endCallback=callback;cleanup(),endCallback.call(stream,new AbortError2(void 0,{cause:options.signal.reason}))};if(options.signal.aborted)runOnNextTick(abort);else{const originalCallback=callback;callback=once((...args)=>{options.signal.removeEventListener("abort",abort),originalCallback.apply(stream,args)}),options.signal.addEventListener("abort",abort)}}return cleanup}function finished2(stream,opts){return new Promise2((resolve,reject)=>{eos(stream,opts,(err)=>{if(err)reject(err);else resolve()})})}module.exports=eos,module.exports.finished=finished2}}),require_operators=__commonJS({"node_modules/readable-stream/lib/internal/streams/operators.js"(exports2,module){var{codes:{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_MISSING_ARGS,ERR_OUT_OF_RANGE},AbortError:AbortError2}=require_errors(),{validateAbortSignal,validateInteger,validateObject:validateObject2}=require_validators(),kWeakHandler=require_primordials().Symbol("kWeak"),{finished:finished2}=require_end_of_stream(),{ArrayPrototypePush,MathFloor,Number:Number2,NumberIsNaN,Promise:Promise2,PromiseReject,PromisePrototypeCatch,Symbol:Symbol2}=require_primordials(),kEmpty=Symbol2("kEmpty"),kEof=Symbol2("kEof");function map(fn,options){if(typeof fn!=="function")throw new ERR_INVALID_ARG_TYPE2("fn",["Function","AsyncFunction"],fn);if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");let concurrency=1;if((options===null||options===void 0?void 0:options.concurrency)!=null)concurrency=MathFloor(options.concurrency);return validateInteger(concurrency,"concurrency",1),async function*map2(){var _options$signal,_options$signal2;const ac=new AbortController,stream=this,queue=[],signal=ac.signal,signalOpt={signal},abort=()=>ac.abort();if(options!==null&&options!==void 0&&(_options$signal=options.signal)!==null&&_options$signal!==void 0&&_options$signal.aborted)abort();options===null||options===void 0||(_options$signal2=options.signal)===null||_options$signal2===void 0||_options$signal2.addEventListener("abort",abort);let next,resume,done=!1;function onDone(){done=!0}async function pump(){try{for await(let val of stream){var _val;if(done)return;if(signal.aborted)throw new AbortError2;try{val=fn(val,signalOpt)}catch(err){val=PromiseReject(err)}if(val===kEmpty)continue;if(typeof((_val=val)===null||_val===void 0?void 0:_val.catch)==="function")val.catch(onDone);if(queue.push(val),next)next(),next=null;if(!done&&queue.length&&queue.length>=concurrency)await new Promise2((resolve)=>{resume=resolve})}queue.push(kEof)}catch(err){const val=PromiseReject(err);PromisePrototypeCatch(val,onDone),queue.push(val)}finally{var _options$signal3;if(done=!0,next)next(),next=null;options===null||options===void 0||(_options$signal3=options.signal)===null||_options$signal3===void 0||_options$signal3.removeEventListener("abort",abort)}}pump();try{while(!0){while(queue.length>0){const val=await queue[0];if(val===kEof)return;if(signal.aborted)throw new AbortError2;if(val!==kEmpty)yield val;if(queue.shift(),resume)resume(),resume=null}await new Promise2((resolve)=>{next=resolve})}}finally{if(ac.abort(),done=!0,resume)resume(),resume=null}}.call(this)}function asIndexedPairs(options=void 0){if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");return async function*asIndexedPairs2(){let index=0;for await(let val of this){var _options$signal4;if(options!==null&&options!==void 0&&(_options$signal4=options.signal)!==null&&_options$signal4!==void 0&&_options$signal4.aborted)throw new AbortError2({cause:options.signal.reason});yield[index++,val]}}.call(this)}async function some(fn,options=void 0){for await(let unused of filter.call(this,fn,options))return!0;return!1}async function every(fn,options=void 0){if(typeof fn!=="function")throw new ERR_INVALID_ARG_TYPE2("fn",["Function","AsyncFunction"],fn);return!await some.call(this,async(...args)=>{return!await fn(...args)},options)}async function find(fn,options){for await(let result of filter.call(this,fn,options))return result;return}async function forEach(fn,options){if(typeof fn!=="function")throw new ERR_INVALID_ARG_TYPE2("fn",["Function","AsyncFunction"],fn);async function forEachFn(value,options2){return await fn(value,options2),kEmpty}for await(let unused of map.call(this,forEachFn,options));}function filter(fn,options){if(typeof fn!=="function")throw new ERR_INVALID_ARG_TYPE2("fn",["Function","AsyncFunction"],fn);async function filterFn(value,options2){if(await fn(value,options2))return value;return kEmpty}return map.call(this,filterFn,options)}var ReduceAwareErrMissingArgs=class extends ERR_MISSING_ARGS{constructor(){super("reduce");this.message="Reduce of an empty stream requires an initial value"}};async function reduce(reducer,initialValue,options){var _options$signal5;if(typeof reducer!=="function")throw new ERR_INVALID_ARG_TYPE2("reducer",["Function","AsyncFunction"],reducer);if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");let hasInitialValue=arguments.length>1;if(options!==null&&options!==void 0&&(_options$signal5=options.signal)!==null&&_options$signal5!==void 0&&_options$signal5.aborted){const err=new AbortError2(void 0,{cause:options.signal.reason});throw this.once("error",()=>{}),await finished2(this.destroy(err)),err}const ac=new AbortController,signal=ac.signal;if(options!==null&&options!==void 0&&options.signal){const opts={once:!0,[kWeakHandler]:this};options.signal.addEventListener("abort",()=>ac.abort(),opts)}let gotAnyItemFromStream=!1;try{for await(let value of this){var _options$signal6;if(gotAnyItemFromStream=!0,options!==null&&options!==void 0&&(_options$signal6=options.signal)!==null&&_options$signal6!==void 0&&_options$signal6.aborted)throw new AbortError2;if(!hasInitialValue)initialValue=value,hasInitialValue=!0;else initialValue=await reducer(initialValue,value,{signal})}if(!gotAnyItemFromStream&&!hasInitialValue)throw new ReduceAwareErrMissingArgs}finally{ac.abort()}return initialValue}async function toArray(options){if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");const result=[];for await(let val of this){var _options$signal7;if(options!==null&&options!==void 0&&(_options$signal7=options.signal)!==null&&_options$signal7!==void 0&&_options$signal7.aborted)throw new AbortError2(void 0,{cause:options.signal.reason});ArrayPrototypePush(result,val)}return result}function flatMap(fn,options){const values=map.call(this,fn,options);return async function*flatMap2(){for await(let val of values)yield*val}.call(this)}function toIntegerOrInfinity(number){if(number=Number2(number),NumberIsNaN(number))return 0;if(number<0)throw new ERR_OUT_OF_RANGE("number",">= 0",number);return number}function drop(number,options=void 0){if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");return number=toIntegerOrInfinity(number),async function*drop2(){var _options$signal8;if(options!==null&&options!==void 0&&(_options$signal8=options.signal)!==null&&_options$signal8!==void 0&&_options$signal8.aborted)throw new AbortError2;for await(let val of this){var _options$signal9;if(options!==null&&options!==void 0&&(_options$signal9=options.signal)!==null&&_options$signal9!==void 0&&_options$signal9.aborted)throw new AbortError2;if(number--<=0)yield val}}.call(this)}function take(number,options=void 0){if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");return number=toIntegerOrInfinity(number),async function*take2(){var _options$signal10;if(options!==null&&options!==void 0&&(_options$signal10=options.signal)!==null&&_options$signal10!==void 0&&_options$signal10.aborted)throw new AbortError2;for await(let val of this){var _options$signal11;if(options!==null&&options!==void 0&&(_options$signal11=options.signal)!==null&&_options$signal11!==void 0&&_options$signal11.aborted)throw new AbortError2;if(number-- >0)yield val;else return}}.call(this)}module.exports.streamReturningOperators={asIndexedPairs,drop,filter,flatMap,map,take},module.exports.promiseReturningOperators={every,forEach,reduce,toArray,some,find}}}),require_destroy=__commonJS({"node_modules/readable-stream/lib/internal/streams/destroy.js"(exports2,module){var{aggregateTwoErrors,codes:{ERR_MULTIPLE_CALLBACK},AbortError:AbortError2}=require_errors(),{Symbol:Symbol2}=require_primordials(),{kDestroyed,isDestroyed,isFinished,isServerRequest}=require_utils(),kDestroy="#kDestroy",kConstruct="#kConstruct";function checkError(err,w,r){if(err){if(err.stack,w&&!w.errored)w.errored=err;if(r&&!r.errored)r.errored=err}}function destroy2(err,cb){const r=this._readableState,w=this._writableState,s=w||r;if(w&&w.destroyed||r&&r.destroyed){if(typeof cb==="function")cb();return this}if(checkError(err,w,r),w)w.destroyed=!0;if(r)r.destroyed=!0;if(!s.constructed)this.once(kDestroy,(er)=>{_destroy(this,aggregateTwoErrors(er,err),cb)});else _destroy(this,err,cb);return this}function _destroy(self,err,cb){let called=!1;function onDestroy(err2){if(called)return;called=!0;const{_readableState:r,_writableState:w}=self;if(checkError(err2,w,r),w)w.closed=!0;if(r)r.closed=!0;if(typeof cb==="function")cb(err2);if(err2)runOnNextTick(emitErrorCloseNT,self,err2);else runOnNextTick(emitCloseNT,self)}try{self._destroy(err||null,onDestroy)}catch(err2){onDestroy(err2)}}function emitErrorCloseNT(self,err){emitErrorNT(self,err),emitCloseNT(self)}function emitCloseNT(self){const{_readableState:r,_writableState:w}=self;if(w)w.closeEmitted=!0;if(r)r.closeEmitted=!0;if(w&&w.emitClose||r&&r.emitClose)self.emit("close")}function emitErrorNT(self,err){const r=self?._readableState,w=self?._writableState;if(w?.errorEmitted||r?.errorEmitted)return;if(w)w.errorEmitted=!0;if(r)r.errorEmitted=!0;self?.emit?.("error",err)}function undestroy(){const r=this._readableState,w=this._writableState;if(r)r.constructed=!0,r.closed=!1,r.closeEmitted=!1,r.destroyed=!1,r.errored=null,r.errorEmitted=!1,r.reading=!1,r.ended=r.readable===!1,r.endEmitted=r.readable===!1;if(w)w.constructed=!0,w.destroyed=!1,w.closed=!1,w.closeEmitted=!1,w.errored=null,w.errorEmitted=!1,w.finalCalled=!1,w.prefinished=!1,w.ended=w.writable===!1,w.ending=w.writable===!1,w.finished=w.writable===!1}function errorOrDestroy2(stream,err,sync){const r=stream?._readableState,w=stream?._writableState;if(w&&w.destroyed||r&&r.destroyed)return this;if(r&&r.autoDestroy||w&&w.autoDestroy)stream.destroy(err);else if(err){if(Error.captureStackTrace(err),w&&!w.errored)w.errored=err;if(r&&!r.errored)r.errored=err;if(sync)runOnNextTick(emitErrorNT,stream,err);else emitErrorNT(stream,err)}}function construct(stream,cb){if(typeof stream._construct!=="function")return;const{_readableState:r,_writableState:w}=stream;if(r)r.constructed=!1;if(w)w.constructed=!1;if(stream.once(kConstruct,cb),stream.listenerCount(kConstruct)>1)return;runOnNextTick(constructNT,stream)}function constructNT(stream){let called=!1;function onConstruct(err){if(called){errorOrDestroy2(stream,err!==null&&err!==void 0?err:new ERR_MULTIPLE_CALLBACK);return}called=!0;const{_readableState:r,_writableState:w}=stream,s=w||r;if(r)r.constructed=!0;if(w)w.constructed=!0;if(s.destroyed)stream.emit(kDestroy,err);else if(err)errorOrDestroy2(stream,err,!0);else runOnNextTick(emitConstructNT,stream)}try{stream._construct(onConstruct)}catch(err){onConstruct(err)}}function emitConstructNT(stream){stream.emit(kConstruct)}function isRequest(stream){return stream&&stream.setHeader&&typeof stream.abort==="function"}function emitCloseLegacy(stream){stream.emit("close")}function emitErrorCloseLegacy(stream,err){stream.emit("error",err),runOnNextTick(emitCloseLegacy,stream)}function destroyer(stream,err){if(!stream||isDestroyed(stream))return;if(!err&&!isFinished(stream))err=new AbortError2;if(isServerRequest(stream))stream.socket=null,stream.destroy(err);else if(isRequest(stream))stream.abort();else if(isRequest(stream.req))stream.req.abort();else if(typeof stream.destroy==="function")stream.destroy(err);else if(typeof stream.close==="function")stream.close();else if(err)runOnNextTick(emitErrorCloseLegacy,stream);else runOnNextTick(emitCloseLegacy,stream);if(!stream.destroyed)stream[kDestroyed]=!0}module.exports={construct,destroyer,destroy:destroy2,undestroy,errorOrDestroy:errorOrDestroy2}}}),require_legacy=__commonJS({"node_modules/readable-stream/lib/internal/streams/legacy.js"(exports2,module){var{ArrayIsArray:ArrayIsArray2,ObjectSetPrototypeOf}=require_primordials();function Stream(options){if(!(this instanceof Stream))return new Stream(options);EE.call(this,options)}Stream.prototype={},ObjectSetPrototypeOf(Stream.prototype,EE.prototype),ObjectSetPrototypeOf(Stream,EE),Stream.prototype.pipe=function(dest,options){const source=this;function ondata(chunk){if(dest.writable&&dest.write(chunk)===!1&&source.pause)source.pause()}source.on("data",ondata);function ondrain(){if(source.readable&&source.resume)source.resume()}if(dest.on("drain",ondrain),!dest._isStdio&&(!options||options.end!==!1))source.on("end",onend),source.on("close",onclose);let didOnEnd=!1;function onend(){if(didOnEnd)return;didOnEnd=!0,dest.end()}function onclose(){if(didOnEnd)return;if(didOnEnd=!0,typeof dest.destroy==="function")dest.destroy()}function onerror(er){if(cleanup(),EE.listenerCount(this,"error")===0)this.emit("error",er)}prependListener(source,"error",onerror),prependListener(dest,"error",onerror);function cleanup(){source.removeListener("data",ondata),dest.removeListener("drain",ondrain),source.removeListener("end",onend),source.removeListener("close",onclose),source.removeListener("error",onerror),dest.removeListener("error",onerror),source.removeListener("end",cleanup),source.removeListener("close",cleanup),dest.removeListener("close",cleanup)}return source.on("end",cleanup),source.on("close",cleanup),dest.on("close",cleanup),dest.emit("pipe",source),dest};function prependListener(emitter,event,fn){if(typeof emitter.prependListener==="function")return emitter.prependListener(event,fn);if(!emitter._events||!emitter._events[event])emitter.on(event,fn);else if(ArrayIsArray2(emitter._events[event]))emitter._events[event].unshift(fn);else emitter._events[event]=[fn,emitter._events[event]]}module.exports={Stream,prependListener}}}),require_add_abort_signal=__commonJS({"node_modules/readable-stream/lib/internal/streams/add-abort-signal.js"(exports2,module){var{AbortError:AbortError2,codes}=require_errors(),eos=require_end_of_stream(),{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2}=codes,validateAbortSignal=(signal,name)=>{if(typeof signal!=="object"||!("aborted"in signal))throw new ERR_INVALID_ARG_TYPE2(name,"AbortSignal",signal)};function isNodeStream(obj){return!!(obj&&typeof obj.pipe==="function")}module.exports.addAbortSignal=function addAbortSignal(signal,stream){if(validateAbortSignal(signal,"signal"),!isNodeStream(stream))throw new ERR_INVALID_ARG_TYPE2("stream","stream.Stream",stream);return module.exports.addAbortSignalNoValidate(signal,stream)},module.exports.addAbortSignalNoValidate=function(signal,stream){if(typeof signal!=="object"||!("aborted"in signal))return stream;const onAbort=()=>{stream.destroy(new AbortError2(void 0,{cause:signal.reason}))};if(signal.aborted)onAbort();else signal.addEventListener("abort",onAbort),eos(stream,()=>signal.removeEventListener("abort",onAbort));return stream}}}),require_state=__commonJS({"node_modules/readable-stream/lib/internal/streams/state.js"(exports2,module){var{MathFloor,NumberIsInteger}=require_primordials(),{ERR_INVALID_ARG_VALUE:ERR_INVALID_ARG_VALUE2}=require_errors().codes;function highWaterMarkFrom(options,isDuplex,duplexKey){return options.highWaterMark!=null?options.highWaterMark:isDuplex?options[duplexKey]:null}function getDefaultHighWaterMark(objectMode){return objectMode?16:16384}function getHighWaterMark(state,options,duplexKey,isDuplex){const hwm=highWaterMarkFrom(options,isDuplex,duplexKey);if(hwm!=null){if(!NumberIsInteger(hwm)||hwm<0){const name=isDuplex?`options.${duplexKey}`:"options.highWaterMark";throw new ERR_INVALID_ARG_VALUE2(name,hwm)}return MathFloor(hwm)}return getDefaultHighWaterMark(state.objectMode)}module.exports={getHighWaterMark,getDefaultHighWaterMark}}}),require_from=__commonJS({"node_modules/readable-stream/lib/internal/streams/from.js"(exports2,module){var{PromisePrototypeThen,SymbolAsyncIterator,SymbolIterator}=require_primordials(),{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_STREAM_NULL_VALUES}=require_errors().codes;function from(Readable,iterable,opts){let iterator;if(typeof iterable==="string"||iterable instanceof Buffer)return new Readable({objectMode:!0,...opts,read(){this.push(iterable),this.push(null)}});let isAsync;if(iterable&&iterable[SymbolAsyncIterator])isAsync=!0,iterator=iterable[SymbolAsyncIterator]();else if(iterable&&iterable[SymbolIterator])isAsync=!1,iterator=iterable[SymbolIterator]();else throw new ERR_INVALID_ARG_TYPE2("iterable",["Iterable"],iterable);const readable=new Readable({objectMode:!0,highWaterMark:1,...opts});let reading=!1;readable._read=function(){if(!reading)reading=!0,next()},readable._destroy=function(error,cb){PromisePrototypeThen(close(error),()=>runOnNextTick(cb,error),(e)=>runOnNextTick(cb,e||error))};async function close(error){const hadError=error!==void 0&&error!==null,hasThrow=typeof iterator.throw==="function";if(hadError&&hasThrow){const{value,done}=await iterator.throw(error);if(await value,done)return}if(typeof iterator.return==="function"){const{value}=await iterator.return();await value}}async function next(){for(;;){try{const{value,done}=isAsync?await iterator.next():iterator.next();if(done)readable.push(null);else{const res=value&&typeof value.then==="function"?await value:value;if(res===null)throw reading=!1,new ERR_STREAM_NULL_VALUES;else if(readable.push(res))continue;else reading=!1}}catch(err){readable.destroy(err)}break}}return readable}module.exports=from}}),_ReadableFromWeb,_ReadableFromWebForUndici,require_readable=__commonJS({"node_modules/readable-stream/lib/internal/streams/readable.js"(exports2,module){var{ArrayPrototypeIndexOf,NumberIsInteger,NumberIsNaN,NumberParseInt,ObjectDefineProperties,ObjectKeys,ObjectSetPrototypeOf,Promise:Promise2,SafeSet,SymbolAsyncIterator,Symbol:Symbol2}=require_primordials(),ReadableState=globalThis[globalThis.Symbol.for('Bun.lazy')]("bun:stream").ReadableState,{Stream,prependListener}=require_legacy();function Readable(options){if(!(this instanceof Readable))return new Readable(options);const isDuplex=this instanceof require_duplex();if(this._readableState=new ReadableState(options,this,isDuplex),options){const{read,destroy:destroy2,construct,signal}=options;if(typeof read==="function")this._read=read;if(typeof destroy2==="function")this._destroy=destroy2;if(typeof construct==="function")this._construct=construct;if(signal&&!isDuplex)addAbortSignal(signal,this)}Stream.call(this,options),destroyImpl.construct(this,()=>{if(this._readableState.needReadable)maybeReadMore(this,this._readableState)})}Readable.prototype={},ObjectSetPrototypeOf(Readable.prototype,Stream.prototype),ObjectSetPrototypeOf(Readable,Stream),Readable.prototype.on=function(ev,fn){const res=Stream.prototype.on.call(this,ev,fn),state=this._readableState;if(ev==="data"){if(state.readableListening=this.listenerCount("readable")>0,state.flowing!==!1)this.resume()}else if(ev==="readable"){if(!state.endEmitted&&!state.readableListening){if(state.readableListening=state.needReadable=!0,state.flowing=!1,state.emittedReadable=!1,state.length)emitReadable(this,state);else if(!state.reading)runOnNextTick(nReadingNextTick,this)}else if(state.endEmitted);}return res};class ReadableFromWeb extends Readable{#reader;#closed;#pendingChunks;#stream;constructor(options,stream){const{objectMode,highWaterMark,encoding,signal}=options;super({objectMode,highWaterMark,encoding,signal});this.#pendingChunks=[],this.#reader=void 0,this.#stream=stream,this.#closed=!1}#drainPending(){var pendingChunks=this.#pendingChunks,pendingChunksI=0,pendingChunksCount=pendingChunks.length;for(;pendingChunksI<pendingChunksCount;pendingChunksI++){const chunk=pendingChunks[pendingChunksI];if(pendingChunks[pendingChunksI]=void 0,!this.push(chunk,void 0))return this.#pendingChunks=pendingChunks.slice(pendingChunksI+1),!0}if(pendingChunksCount>0)this.#pendingChunks=[];return!1}#handleDone(reader){reader.releaseLock(),this.#reader=void 0,this.#closed=!0,this.push(null);return}async _read(){var stream=this.#stream,reader=this.#reader;if(stream)reader=this.#reader=stream.getReader(),this.#stream=void 0;else if(this.#drainPending())return;var deferredError;try{do{var done=!1,value;const firstResult=reader.readMany();if(@isPromise(firstResult)){if({done,value}=await firstResult,this.#closed){this.#pendingChunks.push(...value);return}}else({done,value}=firstResult);if(done){this.#handleDone(reader);return}if(!this.push(value[0])){this.#pendingChunks=value.slice(1);return}for(let i=1,count=value.length;i<count;i++)if(!this.push(value[i])){this.#pendingChunks=value.slice(i+1);return}}while(!this.#closed)}catch(e){deferredError=e}finally{if(deferredError)throw deferredError}}_destroy(error,callback){if(!this.#closed){var reader=this.#reader;if(reader)this.#reader=void 0,reader.cancel(error).finally(()=>{this.#closed=!0,callback(error)});return}try{callback(error)}catch(error2){globalThis.reportError(error2)}}}_ReadableFromWebForUndici=ReadableFromWeb;function newStreamReadableFromReadableStream(readableStream,options={}){if(!isReadableStream(readableStream))throw new ERR_INVALID_ARG_TYPE2("readableStream","ReadableStream",readableStream);validateObject2(options,"options");const{highWaterMark,encoding,objectMode=!1,signal}=options;if(encoding!==void 0&&!Buffer.isEncoding(encoding))throw new ERR_INVALID_ARG_VALUE(encoding,"options.encoding");return validateBoolean(objectMode,"options.objectMode"),getNativeReadableStream(Readable,readableStream,options)||new ReadableFromWeb({highWaterMark,encoding,objectMode,signal},readableStream)}module.exports=Readable,_ReadableFromWeb=newStreamReadableFromReadableStream;var{addAbortSignal}=require_add_abort_signal(),eos=require_end_of_stream();const{maybeReadMore:_maybeReadMore,resume,emitReadable:_emitReadable,onEofChunk}=globalThis[globalThis.Symbol.for('Bun.lazy')]("bun:stream");function maybeReadMore(stream,state){process.nextTick(_maybeReadMore,stream,state)}function emitReadable(stream,state){_emitReadable(stream,state)}var destroyImpl=require_destroy(),{aggregateTwoErrors,codes:{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_METHOD_NOT_IMPLEMENTED,ERR_OUT_OF_RANGE,ERR_STREAM_PUSH_AFTER_EOF,ERR_STREAM_UNSHIFT_AFTER_END_EVENT}}=require_errors(),{validateObject:validateObject2}=require_validators(),from=require_from(),nop=()=>{},{errorOrDestroy:errorOrDestroy2}=destroyImpl;Readable.prototype.destroy=destroyImpl.destroy,Readable.prototype._undestroy=destroyImpl.undestroy,Readable.prototype._destroy=function(err,cb){cb(err)},Readable.prototype[EE.captureRejectionSymbol]=function(err){this.destroy(err)},Readable.prototype.push=function(chunk,encoding){return readableAddChunk(this,chunk,encoding,!1)},Readable.prototype.unshift=function(chunk,encoding){return readableAddChunk(this,chunk,encoding,!0)};function readableAddChunk(stream,chunk,encoding,addToFront){const state=stream._readableState;let err;if(!state.objectMode){if(typeof chunk==="string"){if(encoding=encoding||state.defaultEncoding,state.encoding!==encoding)if(addToFront&&state.encoding)chunk=Buffer.from(chunk,encoding).toString(state.encoding);else chunk=Buffer.from(chunk,encoding),encoding=""}else if(chunk instanceof Buffer)encoding="";else if(Stream._isUint8Array(chunk)){if(addToFront||!state.decoder)chunk=Stream._uint8ArrayToBuffer(chunk);encoding=""}else if(chunk!=null)err=new ERR_INVALID_ARG_TYPE2("chunk",["string","Buffer","Uint8Array"],chunk)}if(err)errorOrDestroy2(stream,err);else if(chunk===null)state.reading=!1,onEofChunk(stream,state);else if(state.objectMode||chunk&&chunk.length>0)if(addToFront)if(state.endEmitted)errorOrDestroy2(stream,new ERR_STREAM_UNSHIFT_AFTER_END_EVENT);else if(state.destroyed||state.errored)return!1;else addChunk(stream,state,chunk,!0);else if(state.ended)errorOrDestroy2(stream,new ERR_STREAM_PUSH_AFTER_EOF);else if(state.destroyed||state.errored)return!1;else if(state.reading=!1,state.decoder&&!encoding)if(chunk=state.decoder.write(chunk),state.objectMode||chunk.length!==0)addChunk(stream,state,chunk,!1);else maybeReadMore(stream,state);else addChunk(stream,state,chunk,!1);else if(!addToFront)state.reading=!1,maybeReadMore(stream,state);return!state.ended&&(state.length<state.highWaterMark||state.length===0)}function addChunk(stream,state,chunk,addToFront){if(state.flowing&&state.length===0&&!state.sync&&stream.listenerCount("data")>0){if(state.multiAwaitDrain)state.awaitDrainWriters.clear();else state.awaitDrainWriters=null;state.dataEmitted=!0,stream.emit("data",chunk)}else{if(state.length+=state.objectMode?1:chunk.length,addToFront)state.buffer.unshift(chunk);else state.buffer.push(chunk);if(state.needReadable)emitReadable(stream,state)}maybeReadMore(stream,state)}Readable.prototype.isPaused=function(){const state=this._readableState;return state.paused===!0||state.flowing===!1},Readable.prototype.setEncoding=function(enc){const decoder=new StringDecoder(enc);this._readableState.decoder=decoder,this._readableState.encoding=this._readableState.decoder.encoding;const buffer=this._readableState.buffer;let content="";for(let i=buffer.length;i>0;i--)content+=decoder.write(buffer.shift());if(content!=="")buffer.push(content);return this._readableState.length=content.length,this};var MAX_HWM=1073741824;function computeNewHighWaterMark(n){if(n>MAX_HWM)throw new ERR_OUT_OF_RANGE("size","<= 1GiB",n);else n--,n|=n>>>1,n|=n>>>2,n|=n>>>4,n|=n>>>8,n|=n>>>16,n++;return n}function howMuchToRead(n,state){if(n<=0||state.length===0&&state.ended)return 0;if(state.objectMode)return 1;if(NumberIsNaN(n)){if(state.flowing&&state.length)return state.buffer.first().length;return state.length}if(n<=state.length)return n;return state.ended?state.length:0}Readable.prototype.read=function(n){if(!NumberIsInteger(n))n=NumberParseInt(n,10);const state=this._readableState,nOrig=n;if(n>state.highWaterMark)state.highWaterMark=computeNewHighWaterMark(n);if(n!==0)state.emittedReadable=!1;if(n===0&&state.needReadable&&((state.highWaterMark!==0?state.length>=state.highWaterMark:state.length>0)||state.ended)){if(state.length===0&&state.ended)endReadable(this);else emitReadable(this,state);return null}if(n=howMuchToRead(n,state),n===0&&state.ended){if(state.length===0)endReadable(this);return null}let doRead=state.needReadable;if(state.length===0||state.length-n<state.highWaterMark)doRead=!0;if(state.ended||state.reading||state.destroyed||state.errored||!state.constructed)doRead=!1;else if(doRead){if(state.reading=!0,state.sync=!0,state.length===0)state.needReadable=!0;try{var result=this._read(state.highWaterMark);if(@isPromise(result)){const peeked=Bun.peek(result);if(peeked!==result)result=peeked}if(@isPromise(result)&&result?.then&&@isCallable(result.then))result.then(nop,function(err){errorOrDestroy2(this,err)})}catch(err){errorOrDestroy2(this,err)}if(state.sync=!1,!state.reading)n=howMuchToRead(nOrig,state)}let ret;if(n>0)ret=fromList(n,state);else ret=null;if(ret===null)state.needReadable=state.length<=state.highWaterMark,n=0;else if(state.length-=n,state.multiAwaitDrain)state.awaitDrainWriters.clear();else state.awaitDrainWriters=null;if(state.length===0){if(!state.ended)state.needReadable=!0;if(nOrig!==n&&state.ended)endReadable(this)}if(ret!==null&&!state.errorEmitted&&!state.closeEmitted)state.dataEmitted=!0,this.emit("data",ret);return ret},Readable.prototype._read=function(n){throw new ERR_METHOD_NOT_IMPLEMENTED("_read()")},Readable.prototype.pipe=function(dest,pipeOpts){const src=this,state=this._readableState;if(state.pipes.length===1){if(!state.multiAwaitDrain)state.multiAwaitDrain=!0,state.awaitDrainWriters=new SafeSet(state.awaitDrainWriters?[state.awaitDrainWriters]:[])}state.pipes.push(dest);const endFn=(!pipeOpts||pipeOpts.end!==!1)&&dest!==process.stdout&&dest!==process.stderr?onend:unpipe;if(state.endEmitted)runOnNextTick(endFn);else src.once("end",endFn);dest.on("unpipe",onunpipe);function onunpipe(readable,unpipeInfo){if(readable===src){if(unpipeInfo&&unpipeInfo.hasUnpiped===!1)unpipeInfo.hasUnpiped=!0,cleanup()}}function onend(){dest.end()}let ondrain,cleanedUp=!1;function cleanup(){if(dest.removeListener("close",onclose),dest.removeListener("finish",onfinish),ondrain)dest.removeListener("drain",ondrain);if(dest.removeListener("error",onerror),dest.removeListener("unpipe",onunpipe),src.removeListener("end",onend),src.removeListener("end",unpipe),src.removeListener("data",ondata),cleanedUp=!0,ondrain&&state.awaitDrainWriters&&(!dest._writableState||dest._writableState.needDrain))ondrain()}function pause(){if(!cleanedUp){if(state.pipes.length===1&&state.pipes[0]===dest)state.awaitDrainWriters=dest,state.multiAwaitDrain=!1;else if(state.pipes.length>1&&state.pipes.includes(dest))state.awaitDrainWriters.add(dest);src.pause()}if(!ondrain)ondrain=pipeOnDrain(src,dest),dest.on("drain",ondrain)}src.on("data",ondata);function ondata(chunk){if(dest.write(chunk)===!1)pause()}function onerror(er){if(unpipe(),dest.removeListener("error",onerror),dest.listenerCount("error")===0){const s=dest._writableState||dest._readableState;if(s&&!s.errorEmitted)errorOrDestroy2(dest,er);else dest.emit("error",er)}}prependListener(dest,"error",onerror);function onclose(){dest.removeListener("finish",onfinish),unpipe()}dest.once("close",onclose);function onfinish(){dest.removeListener("close",onclose),unpipe()}dest.once("finish",onfinish);function unpipe(){src.unpipe(dest)}if(dest.emit("pipe",src),dest.writableNeedDrain===!0){if(state.flowing)pause()}else if(!state.flowing)src.resume();return dest};function pipeOnDrain(src,dest){return function pipeOnDrainFunctionResult(){const state=src._readableState;if(state.awaitDrainWriters===dest)state.awaitDrainWriters=null;else if(state.multiAwaitDrain)state.awaitDrainWriters.delete(dest);if((!state.awaitDrainWriters||state.awaitDrainWriters.size===0)&&src.listenerCount("data"))src.resume()}}Readable.prototype.unpipe=function(dest){const state=this._readableState,unpipeInfo={hasUnpiped:!1};if(state.pipes.length===0)return this;if(!dest){const dests=state.pipes;state.pipes=[],this.pause();for(let i=0;i<dests.length;i++)dests[i].emit("unpipe",this,{hasUnpiped:!1});return this}const index=ArrayPrototypeIndexOf(state.pipes,dest);if(index===-1)return this;if(state.pipes.splice(index,1),state.pipes.length===0)this.pause();return dest.emit("unpipe",this,unpipeInfo),this},Readable.prototype.addListener=Readable.prototype.on,Readable.prototype.removeListener=function(ev,fn){const res=Stream.prototype.removeListener.call(this,ev,fn);if(ev==="readable")runOnNextTick(updateReadableListening,this);return res},Readable.prototype.off=Readable.prototype.removeListener,Readable.prototype.removeAllListeners=function(ev){const res=Stream.prototype.removeAllListeners.apply(this,arguments);if(ev==="readable"||ev===void 0)runOnNextTick(updateReadableListening,this);return res};function updateReadableListening(self){const state=self._readableState;if(state.readableListening=self.listenerCount("readable")>0,state.resumeScheduled&&state.paused===!1)state.flowing=!0;else if(self.listenerCount("data")>0)self.resume();else if(!state.readableListening)state.flowing=null}function nReadingNextTick(self){self.read(0)}Readable.prototype.resume=function(){const state=this._readableState;if(!state.flowing)state.flowing=!state.readableListening,resume(this,state);return state.paused=!1,this},Readable.prototype.pause=function(){if(this._readableState.flowing!==!1)this._readableState.flowing=!1,this.emit("pause");return this._readableState.paused=!0,this},Readable.prototype.wrap=function(stream){let paused=!1;stream.on("data",(chunk)=>{if(!this.push(chunk)&&stream.pause)paused=!0,stream.pause()}),stream.on("end",()=>{this.push(null)}),stream.on("error",(err)=>{errorOrDestroy2(this,err)}),stream.on("close",()=>{this.destroy()}),stream.on("destroy",()=>{this.destroy()}),this._read=()=>{if(paused&&stream.resume)paused=!1,stream.resume()};const streamKeys=ObjectKeys(stream);for(let j=1;j<streamKeys.length;j++){const i=streamKeys[j];if(this[i]===void 0&&typeof stream[i]==="function")this[i]=stream[i].bind(stream)}return this},Readable.prototype[SymbolAsyncIterator]=function(){return streamToAsyncIterator(this)},Readable.prototype.iterator=function(options){if(options!==void 0)validateObject2(options,"options");return streamToAsyncIterator(this,options)};function streamToAsyncIterator(stream,options){if(typeof stream.read!=="function")stream=Readable.wrap(stream,{objectMode:!0});const iter=createAsyncIterator(stream,options);return iter.stream=stream,iter}async function*createAsyncIterator(stream,options){let callback=nop;function next(resolve){if(this===stream)callback(),callback=nop;else callback=resolve}stream.on("readable",next);let error;const cleanup=eos(stream,{writable:!1},(err)=>{error=err?aggregateTwoErrors(error,err):null,callback(),callback=nop});try{while(!0){const chunk=stream.destroyed?null:stream.read();if(chunk!==null)yield chunk;else if(error)throw error;else if(error===null)return;else await new Promise2(next)}}catch(err){throw error=aggregateTwoErrors(error,err),error}finally{if((error||(options===null||options===void 0?void 0:options.destroyOnReturn)!==!1)&&(error===void 0||stream._readableState.autoDestroy))destroyImpl.destroyer(stream,null);else stream.off("readable",next),cleanup()}}ObjectDefineProperties(Readable.prototype,{readable:{get(){const r=this._readableState;return!!r&&r.readable!==!1&&!r.destroyed&&!r.errorEmitted&&!r.endEmitted},set(val){if(this._readableState)this._readableState.readable=!!val}},readableDidRead:{enumerable:!1,get:function(){return this._readableState.dataEmitted}},readableAborted:{enumerable:!1,get:function(){return!!(this._readableState.readable!==!1&&(this._readableState.destroyed||this._readableState.errored)&&!this._readableState.endEmitted)}},readableHighWaterMark:{enumerable:!1,get:function(){return this._readableState.highWaterMark}},readableBuffer:{enumerable:!1,get:function(){return this._readableState&&this._readableState.buffer}},readableFlowing:{enumerable:!1,get:function(){return this._readableState.flowing},set:function(state){if(this._readableState)this._readableState.flowing=state}},readableLength:{enumerable:!1,get(){return this._readableState.length}},readableObjectMode:{enumerable:!1,get(){return this._readableState?this._readableState.objectMode:!1}},readableEncoding:{enumerable:!1,get(){return this._readableState?this._readableState.encoding:null}},errored:{enumerable:!1,get(){return this._readableState?this._readableState.errored:null}},closed:{get(){return this._readableState?this._readableState.closed:!1}},destroyed:{enumerable:!1,get(){return this._readableState?this._readableState.destroyed:!1},set(value){if(!this._readableState)return;this._readableState.destroyed=value}},readableEnded:{enumerable:!1,get(){return this._readableState?this._readableState.endEmitted:!1}}}),Readable._fromList=fromList;function fromList(n,state){if(state.length===0)return null;let ret;if(state.objectMode)ret=state.buffer.shift();else if(!n||n>=state.length){if(state.decoder)ret=state.buffer.join("");else if(state.buffer.length===1)ret=state.buffer.first();else ret=state.buffer.concat(state.length);state.buffer.clear()}else ret=state.buffer.consume(n,state.decoder);return ret}function endReadable(stream){const state=stream._readableState;if(!state.endEmitted)state.ended=!0,runOnNextTick(endReadableNT,state,stream)}function endReadableNT(state,stream){if(!state.errored&&!state.closeEmitted&&!state.endEmitted&&state.length===0){if(state.endEmitted=!0,stream.emit("end"),stream.writable&&stream.allowHalfOpen===!1)runOnNextTick(endWritableNT,stream);else if(state.autoDestroy){const wState=stream._writableState;if(!wState||wState.autoDestroy&&(wState.finished||wState.writable===!1))stream.destroy()}}}function endWritableNT(stream){if(stream.writable&&!stream.writableEnded&&!stream.destroyed)stream.end()}Readable.from=function(iterable,opts){return from(Readable,iterable,opts)};var webStreamsAdapters={newStreamReadableFromReadableStream,newReadableStreamFromStreamReadable(streamReadable,options={}){if(typeof streamReadable?._readableState!=="object")throw new ERR_INVALID_ARG_TYPE2("streamReadable","stream.Readable",streamReadable);var{isDestroyed,isReadable}=require_utils();if(isDestroyed(streamReadable)||!isReadable(streamReadable)){const readable=new ReadableStream;return readable.cancel(),readable}const{readableObjectMode:objectMode,readableHighWaterMark:highWaterMark}=streamReadable,strategy=((strategy2)=>{if(strategy2)return strategy2;if(objectMode)return new CountQueuingStrategy({highWaterMark});return{highWaterMark}})(options?.strategy);let controller;function onData(chunk){if(controller.enqueue(chunk),controller.desiredSize<=0)streamReadable.pause()}streamReadable.pause();const cleanup=finished(streamReadable,(error)=>{if(error?.code==="ERR_STREAM_PREMATURE_CLOSE")error=new AbortError(void 0,{cause:error});if(cleanup(),streamReadable.on("error",()=>{}),error)return controller.error(error);controller.close()});return streamReadable.on("data",onData),new ReadableStream({start(c){controller=c},pull(){streamReadable.resume()},cancel(reason){destroy(streamReadable,reason)}},strategy)}};Readable.fromWeb=function(readableStream,options){return webStreamsAdapters.newStreamReadableFromReadableStream(readableStream,options)},Readable.toWeb=function(streamReadable,options){return webStreamsAdapters.newReadableStreamFromStreamReadable(streamReadable,options)},Readable.wrap=function(src,options){var _ref,_src$readableObjectMo;return new Readable({objectMode:(_ref=(_src$readableObjectMo=src.readableObjectMode)!==null&&_src$readableObjectMo!==void 0?_src$readableObjectMo:src.objectMode)!==null&&_ref!==void 0?_ref:!0,...options,destroy(err,callback){destroyImpl.destroyer(src,err),callback(err)}}).wrap(src)}}}),require_writable=__commonJS({"node_modules/readable-stream/lib/internal/streams/writable.js"(exports2,module){var{ArrayPrototypeSlice,Error:Error2,FunctionPrototypeSymbolHasInstance,ObjectDefineProperty,ObjectDefineProperties,ObjectSetPrototypeOf,StringPrototypeToLowerCase,Symbol:Symbol2,SymbolHasInstance}=require_primordials(),Stream=require_legacy().Stream,destroyImpl=require_destroy(),{addAbortSignal}=require_add_abort_signal(),{getHighWaterMark,getDefaultHighWaterMark}=require_state(),{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_METHOD_NOT_IMPLEMENTED,ERR_MULTIPLE_CALLBACK,ERR_STREAM_CANNOT_PIPE,ERR_STREAM_DESTROYED,ERR_STREAM_ALREADY_FINISHED,ERR_STREAM_NULL_VALUES,ERR_STREAM_WRITE_AFTER_END,ERR_UNKNOWN_ENCODING}=require_errors().codes,{errorOrDestroy:errorOrDestroy2}=destroyImpl;function Writable2(options={}){const isDuplex=this instanceof require_duplex();if(!isDuplex&&!FunctionPrototypeSymbolHasInstance(Writable2,this))return new Writable2(options);if(this._writableState=new WritableState(options,this,isDuplex),options){if(typeof options.write==="function")this._write=options.write;if(typeof options.writev==="function")this._writev=options.writev;if(typeof options.destroy==="function")this._destroy=options.destroy;if(typeof options.final==="function")this._final=options.final;if(typeof options.construct==="function")this._construct=options.construct;if(options.signal)addAbortSignal(options.signal,this)}Stream.call(this,options),destroyImpl.construct(this,()=>{const state=this._writableState;if(!state.writing)clearBuffer(this,state);finishMaybe(this,state)})}Writable2.prototype={},ObjectSetPrototypeOf(Writable2.prototype,Stream.prototype),ObjectSetPrototypeOf(Writable2,Stream),module.exports=Writable2;function nop(){}var kOnFinished=Symbol2("kOnFinished");function WritableState(options,stream,isDuplex){if(typeof isDuplex!=="boolean")isDuplex=stream instanceof require_duplex();if(this.objectMode=!!(options&&options.objectMode),isDuplex)this.objectMode=this.objectMode||!!(options&&options.writableObjectMode);this.highWaterMark=options?getHighWaterMark(this,options,"writableHighWaterMark",isDuplex):getDefaultHighWaterMark(!1),this.finalCalled=!1,this.needDrain=!1,this.ending=!1,this.ended=!1,this.finished=!1,this.destroyed=!1;const noDecode=!!(options&&options.decodeStrings===!1);this.decodeStrings=!noDecode,this.defaultEncoding=options&&options.defaultEncoding||"utf8",this.length=0,this.writing=!1,this.corked=0,this.sync=!0,this.bufferProcessing=!1,this.onwrite=onwrite.bind(void 0,stream),this.writecb=null,this.writelen=0,this.afterWriteTickInfo=null,resetBuffer(this),this.pendingcb=0,this.constructed=!0,this.prefinished=!1,this.errorEmitted=!1,this.emitClose=!options||options.emitClose!==!1,this.autoDestroy=!options||options.autoDestroy!==!1,this.errored=null,this.closed=!1,this.closeEmitted=!1,this[kOnFinished]=[]}WritableState.prototype={};function resetBuffer(state){state.buffered=[],state.bufferedIndex=0,state.allBuffers=!0,state.allNoop=!0}WritableState.prototype.getBuffer=function getBuffer(){return ArrayPrototypeSlice(this.buffered,this.bufferedIndex)},ObjectDefineProperty(WritableState.prototype,"bufferedRequestCount",{get(){return this.buffered.length-this.bufferedIndex}}),ObjectDefineProperty(Writable2,SymbolHasInstance,{value:function(object){if(FunctionPrototypeSymbolHasInstance(this,object))return!0;if(this!==Writable2)return!1;return object&&object._writableState instanceof WritableState}}),Writable2.prototype.pipe=function(){errorOrDestroy2(this,new ERR_STREAM_CANNOT_PIPE)};function _write(stream,chunk,encoding,cb){const state=stream._writableState;if(typeof encoding==="function")cb=encoding,encoding=state.defaultEncoding;else{if(!encoding)encoding=state.defaultEncoding;else if(encoding!=="buffer"&&!Buffer.isEncoding(encoding))throw new ERR_UNKNOWN_ENCODING(encoding);if(typeof cb!=="function")cb=nop}if(chunk===null)throw new ERR_STREAM_NULL_VALUES;else if(!state.objectMode)if(typeof chunk==="string"){if(state.decodeStrings!==!1)chunk=Buffer.from(chunk,encoding),encoding="buffer"}else if(chunk instanceof Buffer)encoding="buffer";else if(Stream._isUint8Array(chunk))chunk=Stream._uint8ArrayToBuffer(chunk),encoding="buffer";else throw new ERR_INVALID_ARG_TYPE2("chunk",["string","Buffer","Uint8Array"],chunk);let err;if(state.ending)err=new ERR_STREAM_WRITE_AFTER_END;else if(state.destroyed)err=new ERR_STREAM_DESTROYED("write");if(err)return runOnNextTick(cb,err),errorOrDestroy2(stream,err,!0),err;return state.pendingcb++,writeOrBuffer(stream,state,chunk,encoding,cb)}Writable2.prototype.write=function(chunk,encoding,cb){return _write(this,chunk,encoding,cb)===!0},Writable2.prototype.cork=function(){this._writableState.corked++},Writable2.prototype.uncork=function(){const state=this._writableState;if(state.corked){if(state.corked--,!state.writing)clearBuffer(this,state)}},Writable2.prototype.setDefaultEncoding=function setDefaultEncoding(encoding){if(typeof encoding==="string")encoding=StringPrototypeToLowerCase(encoding);if(!Buffer.isEncoding(encoding))throw new ERR_UNKNOWN_ENCODING(encoding);return this._writableState.defaultEncoding=encoding,this};function writeOrBuffer(stream,state,chunk,encoding,callback){const len=state.objectMode?1:chunk.length;state.length+=len;const ret=state.length<state.highWaterMark;if(!ret)state.needDrain=!0;if(state.writing||state.corked||state.errored||!state.constructed){if(state.buffered.push({chunk,encoding,callback}),state.allBuffers&&encoding!=="buffer")state.allBuffers=!1;if(state.allNoop&&callback!==nop)state.allNoop=!1}else state.writelen=len,state.writecb=callback,state.writing=!0,state.sync=!0,stream._write(chunk,encoding,state.onwrite),state.sync=!1;return ret&&!state.errored&&!state.destroyed}function doWrite(stream,state,writev,len,chunk,encoding,cb){if(state.writelen=len,state.writecb=cb,state.writing=!0,state.sync=!0,state.destroyed)state.onwrite(new ERR_STREAM_DESTROYED("write"));else if(writev)stream._writev(chunk,state.onwrite);else stream._write(chunk,encoding,state.onwrite);state.sync=!1}function onwriteError(stream,state,er,cb){--state.pendingcb,cb(er),errorBuffer(state),errorOrDestroy2(stream,er)}function onwrite(stream,er){const state=stream._writableState,sync=state.sync,cb=state.writecb;if(typeof cb!=="function"){errorOrDestroy2(stream,new ERR_MULTIPLE_CALLBACK);return}if(state.writing=!1,state.writecb=null,state.length-=state.writelen,state.writelen=0,er){if(Error.captureStackTrace(er),!state.errored)state.errored=er;if(stream._readableState&&!stream._readableState.errored)stream._readableState.errored=er;if(sync)runOnNextTick(onwriteError,stream,state,er,cb);else onwriteError(stream,state,er,cb)}else{if(state.buffered.length>state.bufferedIndex)clearBuffer(stream,state);if(sync)if(state.afterWriteTickInfo!==null&&state.afterWriteTickInfo.cb===cb)state.afterWriteTickInfo.count++;else state.afterWriteTickInfo={count:1,cb,stream,state},runOnNextTick(afterWriteTick,state.afterWriteTickInfo);else afterWrite(stream,state,1,cb)}}function afterWriteTick({stream,state,count,cb}){return state.afterWriteTickInfo=null,afterWrite(stream,state,count,cb)}function afterWrite(stream,state,count,cb){if(!state.ending&&!stream.destroyed&&state.length===0&&state.needDrain)state.needDrain=!1,stream.emit("drain");while(count-- >0)state.pendingcb--,cb();if(state.destroyed)errorBuffer(state);finishMaybe(stream,state)}function errorBuffer(state){if(state.writing)return;for(let n=state.bufferedIndex;n<state.buffered.length;++n){var _state$errored;const{chunk,callback}=state.buffered[n],len=state.objectMode?1:chunk.length;state.length-=len,callback((_state$errored=state.errored)!==null&&_state$errored!==void 0?_state$errored:new ERR_STREAM_DESTROYED("write"))}const onfinishCallbacks=state[kOnFinished].splice(0);for(let i=0;i<onfinishCallbacks.length;i++){var _state$errored2;onfinishCallbacks[i]((_state$errored2=state.errored)!==null&&_state$errored2!==void 0?_state$errored2:new ERR_STREAM_DESTROYED("end"))}resetBuffer(state)}function clearBuffer(stream,state){if(state.corked||state.bufferProcessing||state.destroyed||!state.constructed)return;const{buffered,bufferedIndex,objectMode}=state,bufferedLength=buffered.length-bufferedIndex;if(!bufferedLength)return;let i=bufferedIndex;if(state.bufferProcessing=!0,bufferedLength>1&&stream._writev){state.pendingcb-=bufferedLength-1;const callback=state.allNoop?nop:(err)=>{for(let n=i;n<buffered.length;++n)buffered[n].callback(err)},chunks=state.allNoop&&i===0?buffered:ArrayPrototypeSlice(buffered,i);chunks.allBuffers=state.allBuffers,doWrite(stream,state,!0,state.length,chunks,"",callback),resetBuffer(state)}else{do{const{chunk,encoding,callback}=buffered[i];buffered[i++]=null;const len=objectMode?1:chunk.length;doWrite(stream,state,!1,len,chunk,encoding,callback)}while(i<buffered.length&&!state.writing);if(i===buffered.length)resetBuffer(state);else if(i>256)buffered.splice(0,i),state.bufferedIndex=0;else state.bufferedIndex=i}state.bufferProcessing=!1}Writable2.prototype._write=function(chunk,encoding,cb){if(this._writev)this._writev([{chunk,encoding}],cb);else throw new ERR_METHOD_NOT_IMPLEMENTED("_write()")},Writable2.prototype._writev=null,Writable2.prototype.end=function(chunk,encoding,cb,native=!1){const state=this._writableState;if(typeof chunk==="function")cb=chunk,chunk=null,encoding=null;else if(typeof encoding==="function")cb=encoding,encoding=null;let err;if(chunk!==null&&chunk!==void 0){let ret;if(!native)ret=_write(this,chunk,encoding);else ret=this.write(chunk,encoding);if(ret instanceof Error2)err=ret}if(state.corked)state.corked=1,this.uncork();if(err)this.emit("error",err);else if(!state.errored&&!state.ending)state.ending=!0,finishMaybe(this,state,!0),state.ended=!0;else if(state.finished)err=new ERR_STREAM_ALREADY_FINISHED("end");else if(state.destroyed)err=new ERR_STREAM_DESTROYED("end");if(typeof cb==="function")if(err||state.finished)runOnNextTick(cb,err);else state[kOnFinished].push(cb);return this};function needFinish(state,tag){var needFinish2=state.ending&&!state.destroyed&&state.constructed&&state.length===0&&!state.errored&&state.buffered.length===0&&!state.finished&&!state.writing&&!state.errorEmitted&&!state.closeEmitted;return needFinish2}function callFinal(stream,state){let called=!1;function onFinish(err){if(called){errorOrDestroy2(stream,err!==null&&err!==void 0?err:ERR_MULTIPLE_CALLBACK());return}if(called=!0,state.pendingcb--,err){const onfinishCallbacks=state[kOnFinished].splice(0);for(let i=0;i<onfinishCallbacks.length;i++)onfinishCallbacks[i](err);errorOrDestroy2(stream,err,state.sync)}else if(needFinish(state))state.prefinished=!0,stream.emit("prefinish"),state.pendingcb++,runOnNextTick(finish,stream,state)}state.sync=!0,state.pendingcb++;try{stream._final(onFinish)}catch(err){onFinish(err)}state.sync=!1}function prefinish(stream,state){if(!state.prefinished&&!state.finalCalled)if(typeof stream._final==="function"&&!state.destroyed)state.finalCalled=!0,callFinal(stream,state);else state.prefinished=!0,stream.emit("prefinish")}function finishMaybe(stream,state,sync){if(!needFinish(state,stream.__id))return;if(prefinish(stream,state),state.pendingcb===0){if(sync)state.pendingcb++,runOnNextTick((stream2,state2)=>{if(needFinish(state2))finish(stream2,state2);else state2.pendingcb--},stream,state);else if(needFinish(state))state.pendingcb++,finish(stream,state)}}function finish(stream,state){state.pendingcb--,state.finished=!0;const onfinishCallbacks=state[kOnFinished].splice(0);for(let i=0;i<onfinishCallbacks.length;i++)onfinishCallbacks[i]();if(stream.emit("finish"),state.autoDestroy){const rState=stream._readableState;if(!rState||rState.autoDestroy&&(rState.endEmitted||rState.readable===!1))stream.destroy()}}ObjectDefineProperties(Writable2.prototype,{closed:{get(){return this._writableState?this._writableState.closed:!1}},destroyed:{get(){return this._writableState?this._writableState.destroyed:!1},set(value){if(this._writableState)this._writableState.destroyed=value}},writable:{get(){const w=this._writableState;return!!w&&w.writable!==!1&&!w.destroyed&&!w.errored&&!w.ending&&!w.ended},set(val){if(this._writableState)this._writableState.writable=!!val}},writableFinished:{get(){return this._writableState?this._writableState.finished:!1}},writableObjectMode:{get(){return this._writableState?this._writableState.objectMode:!1}},writableBuffer:{get(){return this._writableState&&this._writableState.getBuffer()}},writableEnded:{get(){return this._writableState?this._writableState.ending:!1}},writableNeedDrain:{get(){const wState=this._writableState;if(!wState)return!1;return!wState.destroyed&&!wState.ending&&wState.needDrain}},writableHighWaterMark:{get(){return this._writableState&&this._writableState.highWaterMark}},writableCorked:{get(){return this._writableState?this._writableState.corked:0}},writableLength:{get(){return this._writableState&&this._writableState.length}},errored:{enumerable:!1,get(){return this._writableState?this._writableState.errored:null}},writableAborted:{enumerable:!1,get:function(){return!!(this._writableState.writable!==!1&&(this._writableState.destroyed||this._writableState.errored)&&!this._writableState.finished)}}});var destroy2=destroyImpl.destroy;Writable2.prototype.destroy=function(err,cb){const state=this._writableState;if(!state.destroyed&&(state.bufferedIndex<state.buffered.length||state[kOnFinished].length))runOnNextTick(errorBuffer,state);return destroy2.call(this,err,cb),this},Writable2.prototype._undestroy=destroyImpl.undestroy,Writable2.prototype._destroy=function(err,cb){cb(err)},Writable2.prototype[EE.captureRejectionSymbol]=function(err){this.destroy(err)};var webStreamsAdapters;function lazyWebStreams(){if(webStreamsAdapters===void 0)webStreamsAdapters={};return webStreamsAdapters}Writable2.fromWeb=function(writableStream,options){return lazyWebStreams().newStreamWritableFromWritableStream(writableStream,options)},Writable2.toWeb=function(streamWritable){return lazyWebStreams().newWritableStreamFromStreamWritable(streamWritable)}}}),require_duplexify=__commonJS({"node_modules/readable-stream/lib/internal/streams/duplexify.js"(exports2,module){var{isReadable,isWritable,isIterable,isNodeStream,isReadableNodeStream,isWritableNodeStream,isDuplexNodeStream}=require_utils(),eos=require_end_of_stream(),{AbortError:AbortError2,codes:{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_INVALID_RETURN_VALUE}}=require_errors(),{destroyer}=require_destroy(),Duplex=require_duplex(),Readable=require_readable(),{createDeferredPromise}=require_util(),from=require_from(),isBlob=typeof Blob!=="undefined"?function isBlob2(b){return b instanceof Blob}:function isBlob2(b){return!1},{FunctionPrototypeCall}=require_primordials();class Duplexify extends Duplex{constructor(options){super(options);if((options===null||options===void 0?void 0:options.readable)===!1)this._readableState.readable=!1,this._readableState.ended=!0,this._readableState.endEmitted=!0;if((options===null||options===void 0?void 0:options.writable)===!1)this._writableState.writable=!1,this._writableState.ending=!0,this._writableState.ended=!0,this._writableState.finished=!0}}module.exports=function duplexify(body,name){if(isDuplexNodeStream(body))return body;if(isReadableNodeStream(body))return _duplexify({readable:body});if(isWritableNodeStream(body))return _duplexify({writable:body});if(isNodeStream(body))return _duplexify({writable:!1,readable:!1});if(typeof body==="function"){const{value,write,final,destroy:destroy2}=fromAsyncGen(body);if(isIterable(value))return from(Duplexify,value,{objectMode:!0,write,final,destroy:destroy2});const then2=value===null||value===void 0?void 0:value.then;if(typeof then2==="function"){let d;const promise=FunctionPrototypeCall(then2,value,(val)=>{if(val!=null)throw new ERR_INVALID_RETURN_VALUE("nully","body",val)},(err)=>{destroyer(d,err)});return d=new Duplexify({objectMode:!0,readable:!1,write,final(cb){final(async()=>{try{await promise,runOnNextTick(cb,null)}catch(err){runOnNextTick(cb,err)}})},destroy:destroy2})}throw new ERR_INVALID_RETURN_VALUE("Iterable, AsyncIterable or AsyncFunction",name,value)}if(isBlob(body))return duplexify(body.arrayBuffer());if(isIterable(body))return from(Duplexify,body,{objectMode:!0,writable:!1});if(typeof(body===null||body===void 0?void 0:body.writable)==="object"||typeof(body===null||body===void 0?void 0:body.readable)==="object"){const readable=body!==null&&body!==void 0&&body.readable?isReadableNodeStream(body===null||body===void 0?void 0:body.readable)?body===null||body===void 0?void 0:body.readable:duplexify(body.readable):void 0,writable=body!==null&&body!==void 0&&body.writable?isWritableNodeStream(body===null||body===void 0?void 0:body.writable)?body===null||body===void 0?void 0:body.writable:duplexify(body.writable):void 0;return _duplexify({readable,writable})}const then=body===null||body===void 0?void 0:body.then;if(typeof then==="function"){let d;return FunctionPrototypeCall(then,body,(val)=>{if(val!=null)d.push(val);d.push(null)},(err)=>{destroyer(d,err)}),d=new Duplexify({objectMode:!0,writable:!1,read(){}})}throw new ERR_INVALID_ARG_TYPE2(name,["Blob","ReadableStream","WritableStream","Stream","Iterable","AsyncIterable","Function","{ readable, writable } pair","Promise"],body)};function fromAsyncGen(fn){let{promise,resolve}=createDeferredPromise();const ac=new AbortController,signal=ac.signal;return{value:fn(async function*(){while(!0){const _promise=promise;promise=null;const{chunk,done,cb}=await _promise;if(runOnNextTick(cb),done)return;if(signal.aborted)throw new AbortError2(void 0,{cause:signal.reason});({promise,resolve}=createDeferredPromise()),yield chunk}}(),{signal}),write(chunk,encoding,cb){const _resolve=resolve;resolve=null,_resolve({chunk,done:!1,cb})},final(cb){const _resolve=resolve;resolve=null,_resolve({done:!0,cb})},destroy(err,cb){ac.abort(),cb(err)}}}function _duplexify(pair){const r=pair.readable&&typeof pair.readable.read!=="function"?Readable.wrap(pair.readable):pair.readable,w=pair.writable;let readable=!!isReadable(r),writable=!!isWritable(w),ondrain,onfinish,onreadable,onclose,d;function onfinished(err){const cb=onclose;if(onclose=null,cb)cb(err);else if(err)d.destroy(err);else if(!readable&&!writable)d.destroy()}if(d=new Duplexify({readableObjectMode:!!(r!==null&&r!==void 0&&r.readableObjectMode),writableObjectMode:!!(w!==null&&w!==void 0&&w.writableObjectMode),readable,writable}),writable)eos(w,(err)=>{if(writable=!1,err)destroyer(r,err);onfinished(err)}),d._write=function(chunk,encoding,callback){if(w.write(chunk,encoding))callback();else ondrain=callback},d._final=function(callback){w.end(),onfinish=callback},w.on("drain",function(){if(ondrain){const cb=ondrain;ondrain=null,cb()}}),w.on("finish",function(){if(onfinish){const cb=onfinish;onfinish=null,cb()}});if(readable)eos(r,(err)=>{if(readable=!1,err)destroyer(r,err);onfinished(err)}),r.on("readable",function(){if(onreadable){const cb=onreadable;onreadable=null,cb()}}),r.on("end",function(){d.push(null)}),d._read=function(){while(!0){const buf=r.read();if(buf===null){onreadable=d._read;return}if(!d.push(buf))return}};return d._destroy=function(err,callback){if(!err&&onclose!==null)err=new AbortError2;if(onreadable=null,ondrain=null,onfinish=null,onclose===null)callback(err);else onclose=callback,destroyer(w,err),destroyer(r,err)},d}}}),require_duplex=__commonJS({"node_modules/readable-stream/lib/internal/streams/duplex.js"(exports2,module){var{ObjectDefineProperties,ObjectGetOwnPropertyDescriptor,ObjectKeys,ObjectSetPrototypeOf}=require_primordials(),Readable=require_readable();function Duplex(options){if(!(this instanceof Duplex))return new Duplex(options);if(Readable.call(this,options),Writable.call(this,options),options){if(this.allowHalfOpen=options.allowHalfOpen!==!1,options.readable===!1)this._readableState.readable=!1,this._readableState.ended=!0,this._readableState.endEmitted=!0;if(options.writable===!1)this._writableState.writable=!1,this._writableState.ending=!0,this._writableState.ended=!0,this._writableState.finished=!0}else this.allowHalfOpen=!0}Duplex.prototype={},module.exports=Duplex,ObjectSetPrototypeOf(Duplex.prototype,Readable.prototype),ObjectSetPrototypeOf(Duplex,Readable);for(var method in Writable.prototype)if(!Duplex.prototype[method])Duplex.prototype[method]=Writable.prototype[method];ObjectDefineProperties(Duplex.prototype,{writable:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writable"),writableHighWaterMark:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableHighWaterMark"),writableObjectMode:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableObjectMode"),writableBuffer:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableBuffer"),writableLength:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableLength"),writableFinished:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableFinished"),writableCorked:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableCorked"),writableEnded:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableEnded"),writableNeedDrain:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableNeedDrain"),destroyed:{get(){if(this._readableState===void 0||this._writableState===void 0)return!1;return this._readableState.destroyed&&this._writableState.destroyed},set(value){if(this._readableState&&this._writableState)this._readableState.destroyed=value,this._writableState.destroyed=value}}});var webStreamsAdapters;function lazyWebStreams(){if(webStreamsAdapters===void 0)webStreamsAdapters={};return webStreamsAdapters}Duplex.fromWeb=function(pair,options){return lazyWebStreams().newStreamDuplexFromReadableWritablePair(pair,options)},Duplex.toWeb=function(duplex){return lazyWebStreams().newReadableWritablePairFromDuplex(duplex)};var duplexify;Duplex.from=function(body){if(!duplexify)duplexify=require_duplexify();return duplexify(body,"body")}}}),require_transform=__commonJS({"node_modules/readable-stream/lib/internal/streams/transform.js"(exports2,module){var{ObjectSetPrototypeOf,Symbol:Symbol2}=require_primordials(),{ERR_METHOD_NOT_IMPLEMENTED}=require_errors().codes,Duplex=require_duplex();function Transform(options){if(!(this instanceof Transform))return new Transform(options);if(Duplex.call(this,options),this._readableState.sync=!1,this[kCallback]=null,options){if(typeof options.transform==="function")this._transform=options.transform;if(typeof options.flush==="function")this._flush=options.flush}this.on("prefinish",prefinish.bind(this))}Transform.prototype={},ObjectSetPrototypeOf(Transform.prototype,Duplex.prototype),ObjectSetPrototypeOf(Transform,Duplex),module.exports=Transform;var kCallback=Symbol2("kCallback");function final(cb){if(typeof this._flush==="function"&&!this.destroyed)this._flush((er,data)=>{if(er){if(cb)cb(er);else this.destroy(er);return}if(data!=null)this.push(data);if(this.push(null),cb)cb()});else if(this.push(null),cb)cb()}function prefinish(){if(this._final!==final)final.call(this)}Transform.prototype._final=final,Transform.prototype._transform=function(chunk,encoding,callback){throw new ERR_METHOD_NOT_IMPLEMENTED("_transform()")},Transform.prototype._write=function(chunk,encoding,callback){const rState=this._readableState,wState=this._writableState,length=rState.length;this._transform(chunk,encoding,(err,val)=>{if(err){callback(err);return}if(val!=null)this.push(val);if(wState.ended||length===rState.length||rState.length<rState.highWaterMark||rState.highWaterMark===0||rState.length===0)callback();else this[kCallback]=callback})},Transform.prototype._read=function(){if(this[kCallback]){const callback=this[kCallback];this[kCallback]=null,callback()}}}}),require_passthrough=__commonJS({"node_modules/readable-stream/lib/internal/streams/passthrough.js"(exports2,module){var{ObjectSetPrototypeOf}=require_primordials(),Transform=require_transform();function PassThrough(options){if(!(this instanceof PassThrough))return new PassThrough(options);Transform.call(this,options)}PassThrough.prototype={},ObjectSetPrototypeOf(PassThrough.prototype,Transform.prototype),ObjectSetPrototypeOf(PassThrough,Transform),PassThrough.prototype._transform=function(chunk,encoding,cb){cb(null,chunk)},module.exports=PassThrough}}),require_pipeline=__commonJS({"node_modules/readable-stream/lib/internal/streams/pipeline.js"(exports2,module){var{ArrayIsArray:ArrayIsArray2,Promise:Promise2,SymbolAsyncIterator}=require_primordials(),eos=require_end_of_stream(),{once}=require_util(),destroyImpl=require_destroy(),Duplex=require_duplex(),{aggregateTwoErrors,codes:{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_INVALID_RETURN_VALUE,ERR_MISSING_ARGS,ERR_STREAM_DESTROYED},AbortError:AbortError2}=require_errors(),{validateFunction,validateAbortSignal}=require_validators(),{isIterable,isReadable,isReadableNodeStream,isNodeStream}=require_utils(),PassThrough,Readable;function destroyer(stream,reading,writing){let finished2=!1;stream.on("close",()=>{finished2=!0});const cleanup=eos(stream,{readable:reading,writable:writing},(err)=>{finished2=!err});return{destroy:(err)=>{if(finished2)return;finished2=!0,destroyImpl.destroyer(stream,err||new ERR_STREAM_DESTROYED("pipe"))},cleanup}}function popCallback(streams){return validateFunction(streams[streams.length-1],"streams[stream.length - 1]"),streams.pop()}function makeAsyncIterable(val){if(isIterable(val))return val;else if(isReadableNodeStream(val))return fromReadable(val);throw new ERR_INVALID_ARG_TYPE2("val",["Readable","Iterable","AsyncIterable"],val)}async function*fromReadable(val){if(!Readable)Readable=require_readable();yield*Readable.prototype[SymbolAsyncIterator].call(val)}async function pump(iterable,writable,finish,{end}){let error,onresolve=null;const resume=(err)=>{if(err)error=err;if(onresolve){const callback=onresolve;onresolve=null,callback()}},wait=()=>new Promise2((resolve,reject)=>{if(error)reject(error);else onresolve=()=>{if(error)reject(error);else resolve()}});writable.on("drain",resume);const cleanup=eos(writable,{readable:!1},resume);try{if(writable.writableNeedDrain)await wait();for await(let chunk of iterable)if(!writable.write(chunk))await wait();if(end)writable.end();await wait(),finish()}catch(err){finish(error!==err?aggregateTwoErrors(error,err):err)}finally{cleanup(),writable.off("drain",resume)}}function pipeline(...streams){return pipelineImpl(streams,once(popCallback(streams)))}function pipelineImpl(streams,callback,opts){if(streams.length===1&&ArrayIsArray2(streams[0]))streams=streams[0];if(streams.length<2)throw new ERR_MISSING_ARGS("streams");const ac=new AbortController,signal=ac.signal,outerSignal=opts===null||opts===void 0?void 0:opts.signal,lastStreamCleanup=[];validateAbortSignal(outerSignal,"options.signal");function abort(){finishImpl(new AbortError2)}outerSignal===null||outerSignal===void 0||outerSignal.addEventListener("abort",abort);let error,value;const destroys=[];let finishCount=0;function finish(err){finishImpl(err,--finishCount===0)}function finishImpl(err,final){if(err&&(!error||error.code==="ERR_STREAM_PREMATURE_CLOSE"))error=err;if(!error&&!final)return;while(destroys.length)destroys.shift()(error);if(outerSignal===null||outerSignal===void 0||outerSignal.removeEventListener("abort",abort),ac.abort(),final){if(!error)lastStreamCleanup.forEach((fn)=>fn());runOnNextTick(callback,error,value)}}let ret;for(let i=0;i<streams.length;i++){const stream=streams[i],reading=i<streams.length-1,writing=i>0,end=reading||(opts===null||opts===void 0?void 0:opts.end)!==!1,isLastStream=i===streams.length-1;if(isNodeStream(stream)){let onError=function(err){if(err&&err.name!=="AbortError"&&err.code!=="ERR_STREAM_PREMATURE_CLOSE")finish(err)};if(end){const{destroy:destroy2,cleanup}=destroyer(stream,reading,writing);if(destroys.push(destroy2),isReadable(stream)&&isLastStream)lastStreamCleanup.push(cleanup)}if(stream.on("error",onError),isReadable(stream)&&isLastStream)lastStreamCleanup.push(()=>{stream.removeListener("error",onError)})}if(i===0)if(typeof stream==="function"){if(ret=stream({signal}),!isIterable(ret))throw new ERR_INVALID_RETURN_VALUE("Iterable, AsyncIterable or Stream","source",ret)}else if(isIterable(stream)||isReadableNodeStream(stream))ret=stream;else ret=Duplex.from(stream);else if(typeof stream==="function")if(ret=makeAsyncIterable(ret),ret=stream(ret,{signal}),reading){if(!isIterable(ret,!0))throw new ERR_INVALID_RETURN_VALUE("AsyncIterable",`transform[${i-1}]`,ret)}else{var _ret;if(!PassThrough)PassThrough=require_passthrough();const pt=new PassThrough({objectMode:!0}),then=(_ret=ret)===null||_ret===void 0?void 0:_ret.then;if(typeof then==="function")finishCount++,then.call(ret,(val)=>{if(value=val,val!=null)pt.write(val);if(end)pt.end();runOnNextTick(finish)},(err)=>{pt.destroy(err),runOnNextTick(finish,err)});else if(isIterable(ret,!0))finishCount++,pump(ret,pt,finish,{end});else throw new ERR_INVALID_RETURN_VALUE("AsyncIterable or Promise","destination",ret);ret=pt;const{destroy:destroy2,cleanup}=destroyer(ret,!1,!0);if(destroys.push(destroy2),isLastStream)lastStreamCleanup.push(cleanup)}else if(isNodeStream(stream)){if(isReadableNodeStream(ret)){finishCount+=2;const cleanup=pipe(ret,stream,finish,{end});if(isReadable(stream)&&isLastStream)lastStreamCleanup.push(cleanup)}else if(isIterable(ret))finishCount++,pump(ret,stream,finish,{end});else throw new ERR_INVALID_ARG_TYPE2("val",["Readable","Iterable","AsyncIterable"],ret);ret=stream}else ret=Duplex.from(stream)}if(signal!==null&&signal!==void 0&&signal.aborted||outerSignal!==null&&outerSignal!==void 0&&outerSignal.aborted)runOnNextTick(abort);return ret}function pipe(src,dst,finish,{end}){if(src.pipe(dst,{end}),end)src.once("end",()=>dst.end());else finish();return eos(src,{readable:!0,writable:!1},(err)=>{const rState=src._readableState;if(err&&err.code==="ERR_STREAM_PREMATURE_CLOSE"&&rState&&rState.ended&&!rState.errored&&!rState.errorEmitted)src.once("end",finish).once("error",finish);else finish(err)}),eos(dst,{readable:!1,writable:!0},finish)}module.exports={pipelineImpl,pipeline}}}),require_compose=__commonJS({"node_modules/readable-stream/lib/internal/streams/compose.js"(exports2,module){var{pipeline}=require_pipeline(),Duplex=require_duplex(),{destroyer}=require_destroy(),{isNodeStream,isReadable,isWritable}=require_utils(),{AbortError:AbortError2,codes:{ERR_INVALID_ARG_VALUE:ERR_INVALID_ARG_VALUE2,ERR_MISSING_ARGS}}=require_errors();module.exports=function compose(...streams){if(streams.length===0)throw new ERR_MISSING_ARGS("streams");if(streams.length===1)return Duplex.from(streams[0]);const orgStreams=[...streams];if(typeof streams[0]==="function")streams[0]=Duplex.from(streams[0]);if(typeof streams[streams.length-1]==="function"){const idx=streams.length-1;streams[idx]=Duplex.from(streams[idx])}for(let n=0;n<streams.length;++n){if(!isNodeStream(streams[n]))continue;if(n<streams.length-1&&!isReadable(streams[n]))throw new ERR_INVALID_ARG_VALUE2(`streams[${n}]`,orgStreams[n],"must be readable");if(n>0&&!isWritable(streams[n]))throw new ERR_INVALID_ARG_VALUE2(`streams[${n}]`,orgStreams[n],"must be writable")}let ondrain,onfinish,onreadable,onclose,d;function onfinished(err){const cb=onclose;if(onclose=null,cb)cb(err);else if(err)d.destroy(err);else if(!readable&&!writable)d.destroy()}const head=streams[0],tail=pipeline(streams,onfinished),writable=!!isWritable(head),readable=!!isReadable(tail);if(d=new Duplex({writableObjectMode:!!(head!==null&&head!==void 0&&head.writableObjectMode),readableObjectMode:!!(tail!==null&&tail!==void 0&&tail.writableObjectMode),writable,readable}),writable)d._write=function(chunk,encoding,callback){if(head.write(chunk,encoding))callback();else ondrain=callback},d._final=function(callback){head.end(),onfinish=callback},head.on("drain",function(){if(ondrain){const cb=ondrain;ondrain=null,cb()}}),tail.on("finish",function(){if(onfinish){const cb=onfinish;onfinish=null,cb()}});if(readable)tail.on("readable",function(){if(onreadable){const cb=onreadable;onreadable=null,cb()}}),tail.on("end",function(){d.push(null)}),d._read=function(){while(!0){const buf=tail.read();if(buf===null){onreadable=d._read;return}if(!d.push(buf))return}};return d._destroy=function(err,callback){if(!err&&onclose!==null)err=new AbortError2;if(onreadable=null,ondrain=null,onfinish=null,onclose===null)callback(err);else onclose=callback,destroyer(tail,err)},d}}}),require_promises=__commonJS({"node_modules/readable-stream/lib/stream/promises.js"(exports2,module){var{ArrayPrototypePop,Promise:Promise2}=require_primordials(),{isIterable,isNodeStream}=require_utils(),{pipelineImpl:pl}=require_pipeline(),{finished:finished2}=require_end_of_stream();function pipeline(...streams){return new Promise2((resolve,reject)=>{let signal,end;const lastArg=streams[streams.length-1];if(lastArg&&typeof lastArg==="object"&&!isNodeStream(lastArg)&&!isIterable(lastArg)){const options=ArrayPrototypePop(streams);signal=options.signal,end=options.end}pl(streams,(err,value)=>{if(err)reject(err);else resolve(value)},{signal,end})})}module.exports={finished:finished2,pipeline}}}),require_stream=__commonJS({"node_modules/readable-stream/lib/stream.js"(exports2,module){var{ObjectDefineProperty,ObjectKeys,ReflectApply}=require_primordials(),{promisify:{custom:customPromisify}}=require_util(),{streamReturningOperators,promiseReturningOperators}=require_operators(),{codes:{ERR_ILLEGAL_CONSTRUCTOR}}=require_errors(),compose=require_compose(),{pipeline}=require_pipeline(),{destroyer}=require_destroy(),eos=require_end_of_stream(),promises2=require_promises(),utils=require_utils(),Stream=module.exports=require_legacy().Stream;Stream.isDisturbed=utils.isDisturbed,Stream.isErrored=utils.isErrored,Stream.isWritable=utils.isWritable,Stream.isReadable=utils.isReadable,Stream.Readable=require_readable();for(let key of ObjectKeys(streamReturningOperators)){let fn=function(...args){if(new.target)throw ERR_ILLEGAL_CONSTRUCTOR();return Stream.Readable.from(ReflectApply(op,this,args))};const op=streamReturningOperators[key];ObjectDefineProperty(fn,"name",{value:op.name}),ObjectDefineProperty(fn,"length",{value:op.length}),ObjectDefineProperty(Stream.Readable.prototype,key,{value:fn,enumerable:!1,configurable:!0,writable:!0})}for(let key of ObjectKeys(promiseReturningOperators)){let fn=function(...args){if(new.target)throw ERR_ILLEGAL_CONSTRUCTOR();return ReflectApply(op,this,args)};const op=promiseReturningOperators[key];ObjectDefineProperty(fn,"name",{value:op.name}),ObjectDefineProperty(fn,"length",{value:op.length}),ObjectDefineProperty(Stream.Readable.prototype,key,{value:fn,enumerable:!1,configurable:!0,writable:!0})}Stream.Writable=require_writable(),Stream.Duplex=require_duplex(),Stream.Transform=require_transform(),Stream.PassThrough=require_passthrough(),Stream.pipeline=pipeline;var{addAbortSignal}=require_add_abort_signal();Stream.addAbortSignal=addAbortSignal,Stream.finished=eos,Stream.destroy=destroyer,Stream.compose=compose,ObjectDefineProperty(Stream,"promises",{configurable:!0,enumerable:!0,get(){return promises2}}),ObjectDefineProperty(pipeline,customPromisify,{enumerable:!0,get(){return promises2.pipeline}}),ObjectDefineProperty(eos,customPromisify,{enumerable:!0,get(){return promises2.finished}}),Stream.Stream=Stream,Stream._isUint8Array=function isUint8Array(value){return value instanceof Uint8Array},Stream._uint8ArrayToBuffer=function _uint8ArrayToBuffer(chunk){return new Buffer(chunk.buffer,chunk.byteOffset,chunk.byteLength)}}});function createNativeStreamReadable(nativeType,Readable){var[pull,start,cancel,setClose,deinit,updateRef,drainFn]=globalThis[globalThis.Symbol.for('Bun.lazy')](nativeType),closer=[!1],handleNumberResult=function(nativeReadable,result,view,isClosed){if(result>0){const slice=view.subarray(0,result),remainder=view.subarray(result);if(slice.byteLength>0)nativeReadable.push(slice);if(isClosed)nativeReadable.push(null);return remainder.byteLength>0?remainder:void 0}if(isClosed)nativeReadable.push(null);return view},handleArrayBufferViewResult=function(nativeReadable,result,view,isClosed){if(result.byteLength>0)nativeReadable.push(result);if(isClosed)nativeReadable.push(null);return view},DYNAMICALLY_ADJUST_CHUNK_SIZE=process.env.BUN_DISABLE_DYNAMIC_CHUNK_SIZE!=="1";const finalizer=new FinalizationRegistry((ptr)=>ptr&&deinit(ptr)),MIN_BUFFER_SIZE=512;var NativeReadable=class NativeReadable2 extends Readable{#bunNativePtr;#refCount=1;#constructed=!1;#remainingChunk=void 0;#highWaterMark;#pendingRead=!1;#hasResized=!DYNAMICALLY_ADJUST_CHUNK_SIZE;#unregisterToken;constructor(ptr,options={}){super(options);if(typeof options.highWaterMark==="number")this.#highWaterMark=options.highWaterMark;else this.#highWaterMark=262144;this.#bunNativePtr=ptr,this.#constructed=!1,this.#remainingChunk=void 0,this.#pendingRead=!1,this.#unregisterToken={},finalizer.register(this,this.#bunNativePtr,this.#unregisterToken)}_read(maxToRead){if(this.#pendingRead)return;var ptr=this.#bunNativePtr;if(ptr===0){this.push(null);return}if(!this.#constructed)this.#internalConstruct(ptr);return this.#internalRead(this.#getRemainingChunk(maxToRead),ptr)}#internalConstruct(ptr){this.#constructed=!0;const result=start(ptr,this.#highWaterMark);if(typeof result==="number"&&result>1)this.#hasResized=!0,this.#highWaterMark=Math.min(this.#highWaterMark,result);if(drainFn){const drainResult=drainFn(ptr);if((drainResult?.byteLength??0)>0)this.push(drainResult)}}#getRemainingChunk(maxToRead=this.#highWaterMark){var chunk=this.#remainingChunk;if(chunk?.byteLength??0<MIN_BUFFER_SIZE){var size=maxToRead>MIN_BUFFER_SIZE?maxToRead:MIN_BUFFER_SIZE;this.#remainingChunk=chunk=new Buffer(size)}return chunk}#handleResult(result,view,isClosed){if(typeof result==="number"){if(result>=this.#highWaterMark&&!this.#hasResized&&!isClosed)this.#highWaterMark*=2,this.#hasResized=!0;return handleNumberResult(this,result,view,isClosed)}else if(typeof result==="boolean")return process.nextTick(()=>{this.push(null)}),view?.byteLength??0>0?view:void 0;else if(ArrayBuffer.isView(result)){if(result.byteLength>=this.#highWaterMark&&!this.#hasResized&&!isClosed)this.#highWaterMark*=2,this.#hasResized=!0;return handleArrayBufferViewResult(this,result,view,isClosed)}else throw new Error("Invalid result from pull")}#internalRead(view,ptr){closer[0]=!1;var result=pull(ptr,view,closer);if(@isPromise(result))return this.#pendingRead=!0,result.then((result2)=>{this.#pendingRead=!1,this.#remainingChunk=this.#handleResult(result2,view,closer[0])},(reason)=>{errorOrDestroy(this,reason)});else this.#remainingChunk=this.#handleResult(result,view,closer[0])}_destroy(error,callback){var ptr=this.#bunNativePtr;if(ptr===0){callback(error);return}if(finalizer.unregister(this.#unregisterToken),this.#bunNativePtr=0,updateRef)updateRef(ptr,!1);cancel(ptr,error),callback(error)}ref(){var ptr=this.#bunNativePtr;if(ptr===0)return;if(this.#refCount++===0)updateRef(ptr,!0)}unref(){var ptr=this.#bunNativePtr;if(ptr===0)return;if(this.#refCount--===1)updateRef(ptr,!1)}};if(!updateRef)NativeReadable.prototype.ref=void 0,NativeReadable.prototype.unref=void 0;return NativeReadable}var nativeReadableStreamPrototypes={0:void 0,1:void 0,2:void 0,3:void 0,4:void 0,5:void 0};function getNativeReadableStreamPrototype(nativeType,Readable){return nativeReadableStreamPrototypes[nativeType]||=createNativeStreamReadable(nativeType,Readable)}function getNativeReadableStream(Readable,stream,options){if(!(stream&&typeof stream==="object"&&stream instanceof ReadableStream))return;const native=@direct(stream);if(!native)return;const{stream:ptr,data:type}=native;return new(getNativeReadableStreamPrototype(type,Readable))(ptr,options)}var Writable=require_writable(),NativeWritable=class NativeWritable2 extends Writable{#pathOrFdOrSink;#fileSink;#native=!0;_construct;_destroy;_final;constructor(pathOrFdOrSink,options={}){super(options);this._construct=this.#internalConstruct,this._destroy=this.#internalDestroy,this._final=this.#internalFinal,this.#pathOrFdOrSink=pathOrFdOrSink}#internalConstruct(cb){this._writableState.constructed=!0,this.constructed=!0,cb()}#lazyConstruct(){if(typeof this.#pathOrFdOrSink==="object")if(typeof this.#pathOrFdOrSink.write==="function")this.#fileSink=this.#pathOrFdOrSink;else throw new Error("Invalid FileSink");else this.#fileSink=Bun.file(this.#pathOrFdOrSink).writer()}write(chunk,encoding,cb,native=this.#native){if(!native)return this.#native=!1,super.write(chunk,encoding,cb);if(!this.#fileSink)this.#lazyConstruct();var fileSink=this.#fileSink,result=fileSink.write(chunk);if(@isPromise(result))return result.then(()=>{this.emit("drain"),fileSink.flush(!0)}),!1;if(fileSink.flush(!0),cb)cb(null,chunk.byteLength);return!0}end(chunk,encoding,cb,native=this.#native){return super.end(chunk,encoding,cb,native)}#internalDestroy(error,cb){if(this._writableState.destroyed=!0,cb)cb(error)}#internalFinal(cb){if(this.#fileSink)this.#fileSink.end();if(cb)cb()}ref(){if(!this.#fileSink)this.#lazyConstruct();this.#fileSink.ref()}unref(){if(!this.#fileSink)return;this.#fileSink.unref()}};const exports=require_stream(),promises=require_promises();return exports._getNativeReadableStreamPrototype=getNativeReadableStreamPrototype,exports.NativeWritable=NativeWritable,Object.defineProperty(exports,"promises",{configurable:!0,enumerable:!0,get(){return promises}}),exports[Symbol.for("::bunternal::")]={_ReadableFromWeb,_ReadableFromWebForUndici},exports.eos=require_end_of_stream(),exports})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^
+TypeError: Attempted to assign to readonly property.
+      at Writable2 (node:stream:2:131544)
+      at Duplex (node:stream:2:169196)
+      at Transform (node:stream:2:174306)
+      at get (node:crypto:2:55440)
+      at inspect (/tmp/fs-fixture-1691367203964-1/inspect.mjs:72:14)
+      at /tmp/fs-fixture-1691367203964-1/inspect.mjs:99:6
+      at map (:1:20)
+      at inspect (/tmp/fs-fixture-1691367203964-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1691367203964-1/inspect.mjs:99:6
+      at map (:1:20)
 ```
 
 </td></tr></table>
@@ -4363,8 +4723,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     default: {
         createSocket: [Circular: *4],
         Socket: [Circular: *2],
-        _createSocketHandle: [Circular: *3],
-        Symbol(CommonJS): 0
+        _createSocketHandle: [Circular: *3]
     }
 }
 ```
@@ -4396,19 +4755,20 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Channel: <ref *2> class Channel {},
-    channel: <ref *3> ƒ channel(length: 0) {},
+    Channel: <ref *2> ƒ Channel(length: 1) {},
+    channel: <ref *3> ƒ channel(length: 1) {},
     default: {
         channel: [Circular: *3],
-        hasSubscribers: <ref *5> ƒ hasSubscribers(length: 0) {},
-        subscribe: <ref *6> ƒ subscribe(length: 0) {},
-        unsubscribe: <ref *7> ƒ unsubscribe(length: 0) {},
-        Channel: [Circular: *2],
-        Symbol(CommonJS): 0
+        hasSubscribers: <ref *5> ƒ hasSubscribers(length: 1) {},
+        subscribe: <ref *6> ƒ subscribe(length: 2) {},
+        tracingChannel: <ref *7> ƒ tracingChannel(length: 1) {},
+        unsubscribe: <ref *8> ƒ unsubscribe(length: 2) {},
+        Channel: [Circular: *2]
     },
     hasSubscribers: [Circular: *5],
     subscribe: [Circular: *6],
-    unsubscribe: [Circular: *7]
+    tracingChannel: [Circular: *7],
+    unsubscribe: [Circular: *8]
 }
 ```
 
@@ -4597,7 +4957,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     NOTIMP: "DNS_ENOTIMP",
     NOTINITIALIZED: "DNS_ENOTINITIALIZED",
     REFUSED: "DNS_EREFUSED",
-    Resolver: <ref *2> ƒ Resolver(length: 1) {},
+    Resolver: <ref *2> ƒ Resolver(length: 1) {
+        prototype: Resolver2 {}
+    },
     SERVFAIL: "DNS_ESERVFAIL",
     TIMEOUT: "DNS_ETIMEOUT",
     V4MAPPED: 2,
@@ -4629,26 +4991,26 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         LOADIPHLPAPI: "DNS_ELOADIPHLPAPI",
         ADDRGETNETWORKPARAMS: "DNS_EADDRGETNETWORKPARAMS",
         CANCELLED: "DNS_ECANCELLED",
-        lookup: <ref *4> ƒ lookup(length: 3) {},
-        lookupService: <ref *5> ƒ lookupService(length: 3) {},
+        lookup: <ref *5> ƒ lookup(length: 3) {},
+        lookupService: <ref *6> ƒ lookupService(length: 3) {},
         Resolver: [Circular: *2],
-        setServers: <ref *6> ƒ setServers(length: 0) {},
-        setDefaultResultOrder: <ref *7> ƒ setDefaultResultOrder(length: 0) {},
-        resolve: <ref *8> ƒ resolve(length: 3) {},
-        reverse: <ref *9> ƒ reverse(length: 2) {},
-        resolve4: <ref *10> ƒ resolve4(length: 3) {},
-        resolve6: <ref *11> ƒ resolve6(length: 3) {},
-        resolveAny: <ref *12> ƒ resolveAny(length: 2) {},
-        resolveCname: <ref *13> ƒ resolveCname(length: 2) {},
-        resolveCaa: <ref *14> ƒ resolveCaa(length: 2) {},
-        resolveMx: <ref *15> ƒ resolveMx(length: 2) {},
-        resolveNs: <ref *16> ƒ resolveNs(length: 2) {},
-        resolvePtr: <ref *17> ƒ resolvePtr(length: 2) {},
-        resolveSoa: <ref *18> ƒ resolveSoa(length: 2) {},
-        resolveSrv: <ref *19> ƒ resolveSrv(length: 2) {},
-        resolveTxt: <ref *20> ƒ resolveTxt(length: 2) {},
-        resolveNaptr: <ref *21> ƒ resolveNaptr(length: 2) {},
-        promises: <ref *22> {
+        setServers: <ref *7> ƒ setServers(length: 0) {},
+        setDefaultResultOrder: <ref *8> ƒ setDefaultResultOrder(length: 0) {},
+        resolve: <ref *9> ƒ resolve(length: 3) {},
+        reverse: <ref *10> ƒ reverse(length: 2) {},
+        resolve4: <ref *11> ƒ resolve4(length: 3) {},
+        resolve6: <ref *12> ƒ resolve6(length: 3) {},
+        resolveAny: <ref *13> ƒ resolveAny(length: 2) {},
+        resolveCname: <ref *14> ƒ resolveCname(length: 2) {},
+        resolveCaa: <ref *15> ƒ resolveCaa(length: 2) {},
+        resolveMx: <ref *16> ƒ resolveMx(length: 2) {},
+        resolveNs: <ref *17> ƒ resolveNs(length: 2) {},
+        resolvePtr: <ref *18> ƒ resolvePtr(length: 2) {},
+        resolveSoa: <ref *19> ƒ resolveSoa(length: 2) {},
+        resolveSrv: <ref *20> ƒ resolveSrv(length: 2) {},
+        resolveTxt: <ref *21> ƒ resolveTxt(length: 2) {},
+        resolveNaptr: <ref *22> ƒ resolveNaptr(length: 2) {},
+        promises: <ref *23> {
             lookup: ƒ lookup(length: 2) {},
             lookupService: ƒ lookupService(length: 2) {},
             resolve: ƒ resolve(length: 2) {},
@@ -4663,31 +5025,32 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             resolveNs: ƒ resolveNs(length: 1) {},
             resolvePtr: ƒ resolvePtr(length: 1) {},
             resolveCname: ƒ resolveCname(length: 1) {},
-            Resolver: class Resolver3 {},
+            Resolver: ƒ Resolver2(length: 1) {},
             resolveAny: ƒ (length: 0) {},
             reverse: ƒ (length: 0) {}
         },
-        Symbol(CommonJS): 0
+        getServers: <ref *41> ƒ getServers(length: 0) {}
     },
-    lookup: [Circular: *4],
-    lookupService: [Circular: *5],
-    promises: [Circular: *22],
-    resolve: [Circular: *8],
-    resolve4: [Circular: *10],
-    resolve6: [Circular: *11],
-    resolveAny: [Circular: *12],
-    resolveCaa: [Circular: *14],
-    resolveCname: [Circular: *13],
-    resolveMx: [Circular: *15],
-    resolveNaptr: [Circular: *21],
-    resolveNs: [Circular: *16],
-    resolvePtr: [Circular: *17],
-    resolveSoa: [Circular: *18],
-    resolveSrv: [Circular: *19],
-    resolveTxt: [Circular: *20],
-    reverse: [Circular: *9],
-    setDefaultResultOrder: [Circular: *7],
-    setServers: [Circular: *6]
+    getServers: [Circular: *41],
+    lookup: [Circular: *5],
+    lookupService: [Circular: *6],
+    promises: [Circular: *23],
+    resolve: [Circular: *9],
+    resolve4: [Circular: *11],
+    resolve6: [Circular: *12],
+    resolveAny: [Circular: *13],
+    resolveCaa: [Circular: *15],
+    resolveCname: [Circular: *14],
+    resolveMx: [Circular: *16],
+    resolveNaptr: [Circular: *22],
+    resolveNs: [Circular: *17],
+    resolvePtr: [Circular: *18],
+    resolveSoa: [Circular: *19],
+    resolveSrv: [Circular: *20],
+    resolveTxt: [Circular: *21],
+    reverse: [Circular: *10],
+    setDefaultResultOrder: [Circular: *8],
+    setServers: [Circular: *7]
 }
 ```
 
@@ -4798,47 +5161,42 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Resolver: <ref *2> class Resolver3 {},
+    Resolver: <ref *2> ƒ Resolver2(length: 1) {},
     default: {
         lookup: <ref *4> ƒ lookup(length: 2) {},
         lookupService: <ref *5> ƒ lookupService(length: 2) {},
         resolve: <ref *6> ƒ resolve(length: 2) {},
         resolve4: <ref *7> ƒ resolve4(length: 2) {},
         resolve6: <ref *8> ƒ resolve6(length: 2) {},
-        resolveAny: <ref *9> ƒ (length: 0) {},
-        resolveCname: <ref *10> ƒ resolveCname(length: 1) {},
-        resolveCaa: <ref *11> ƒ resolveCaa(length: 1) {},
-        resolveMx: <ref *12> ƒ resolveMx(length: 1) {},
-        resolveNaptr: <ref *13> ƒ resolveNaptr(length: 1) {},
-        resolveNs: <ref *14> ƒ resolveNs(length: 1) {},
-        resolvePtr: <ref *15> ƒ resolvePtr(length: 1) {},
-        resolveSoa: <ref *16> ƒ resolveSoa(length: 1) {},
-        resolveSrv: <ref *17> ƒ resolveSrv(length: 1) {},
-        resolveTxt: <ref *18> ƒ resolveTxt(length: 1) {},
-        reverse: <ref *19> ƒ (length: 0) {},
+        resolveSrv: <ref *9> ƒ resolveSrv(length: 1) {},
+        resolveTxt: <ref *10> ƒ resolveTxt(length: 1) {},
+        resolveSoa: <ref *11> ƒ resolveSoa(length: 1) {},
+        resolveNaptr: <ref *12> ƒ resolveNaptr(length: 1) {},
+        resolveMx: <ref *13> ƒ resolveMx(length: 1) {},
+        resolveCaa: <ref *14> ƒ resolveCaa(length: 1) {},
+        resolveNs: <ref *15> ƒ resolveNs(length: 1) {},
+        resolvePtr: <ref *16> ƒ resolvePtr(length: 1) {},
+        resolveCname: <ref *17> ƒ resolveCname(length: 1) {},
         Resolver: [Circular: *2],
-        setServers: undefined,
-        setDefaultResultOrder: undefined,
-        Symbol(CommonJS): 0
+        resolveAny: <ref *18> ƒ (length: 0) {},
+        reverse: <ref *19> ƒ (length: 0) {}
     },
     lookup: [Circular: *4],
     lookupService: [Circular: *5],
     resolve: [Circular: *6],
     resolve4: [Circular: *7],
     resolve6: [Circular: *8],
-    resolveAny: [Circular: *9],
-    resolveCaa: [Circular: *11],
-    resolveCname: [Circular: *10],
-    resolveMx: [Circular: *12],
-    resolveNaptr: [Circular: *13],
-    resolveNs: [Circular: *14],
-    resolvePtr: [Circular: *15],
-    resolveSoa: [Circular: *16],
-    resolveSrv: [Circular: *17],
-    resolveTxt: [Circular: *18],
-    reverse: [Circular: *19],
-    setDefaultResultOrder: undefined,
-    setServers: undefined
+    resolveAny: [Circular: *18],
+    resolveCaa: [Circular: *14],
+    resolveCname: [Circular: *17],
+    resolveMx: [Circular: *13],
+    resolveNaptr: [Circular: *12],
+    resolveNs: [Circular: *15],
+    resolvePtr: [Circular: *16],
+    resolveSoa: [Circular: *11],
+    resolveSrv: [Circular: *9],
+    resolveTxt: [Circular: *10],
+    reverse: [Circular: *19]
 }
 ```
 
@@ -4924,30 +5282,54 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 ```js
 {
     EventEmitter: <ref *2> ƒ EventEmitter(length: 1) {
-        once: <ref *3> ƒ once(length: 3) {},
-        on: <ref *4> ƒ on(length: 3) {},
-        getEventListeners: <ref *5> ƒ getEventListeners(length: 2) {},
-        setMaxListeners: <ref *6> ƒ setMaxListeners(length: 1) {},
-        listenerCount: <ref *7> ƒ listenerCount(length: 2) {},
+        prototype: <ref *3> {
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            setMaxListeners: ƒ setMaxListeners(length: 1) {},
+            getMaxListeners: ƒ getMaxListeners(length: 0) {},
+            emit: ƒ emit(length: 1) {},
+            addListener: <ref *7> ƒ addListener(length: 2) {},
+            on: [Circular: *7],
+            prependListener: ƒ prependListener(length: 2) {},
+            once: ƒ once(length: 2) {},
+            prependOnceListener: ƒ prependOnceListener(length: 2) {},
+            removeListener: <ref *11> ƒ removeListener(length: 2) {},
+            off: [Circular: *11],
+            removeAllListeners: ƒ removeAllListeners(length: 1) {},
+            listeners: ƒ listeners(length: 1) {},
+            rawListeners: ƒ rawListeners(length: 1) {},
+            listenerCount: ƒ listenerCount(length: 1) {},
+            eventNames: ƒ eventNames(length: 0) {},
+            Symbol(kCapture): false
+        },
+        [get/set] captureRejections: false,
+        [get/set] defaultMaxListeners: 10,
+        once: <ref *17> ƒ once(length: 3) {},
+        on: <ref *18> ƒ on(length: 3) {},
+        getEventListeners: <ref *19> ƒ getEventListeners(length: 2) {},
+        setMaxListeners: <ref *20> ƒ setMaxListeners(length: 1) {},
         EventEmitter: [Circular: *2],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
-        [get/set] captureRejections: false,
+        EventEmitterAsyncResource: <ref *21> ƒ EventEmitterAsyncResource(length: 1) {},
         errorMonitor: Symbol(events.errorMonitor),
-        [get/set] defaultMaxListeners: 10,
         init: [Circular: *2],
-        EventEmitterAsyncResource: <ref *8> class EventEmitterAsyncResource extends EventEmitter {},
-        Symbol(CommonJS): 0
+        listenerCount: <ref *22> ƒ listenerCount(length: 2) {}
     },
-    EventEmitterAsyncResource: [Circular: *8],
+    EventEmitterAsyncResource: [Circular: *21],
     captureRejectionSymbol: Symbol(nodejs.rejection),
+    captureRejections: false,
     default: [Circular: *2],
+    defaultMaxListeners: 10,
     errorMonitor: Symbol(events.errorMonitor),
-    getEventListeners: [Circular: *5],
-    listenerCount: [Circular: *7],
-    on: [Circular: *4],
-    once: [Circular: *3],
-    setMaxListeners: [Circular: *6],
+    getEventListeners: [Circular: *19],
+    init: [Circular: *2],
+    listenerCount: [Circular: *22],
+    on: [Circular: *18],
+    once: [Circular: *17],
+    prototype: [Circular: *3],
+    setMaxListeners: [Circular: *20],
     usingDomains: false
 }
 ```
@@ -5269,43 +5651,38 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 ```js
 {
     Dirent: <ref *2> ƒ Dirent(length: 0) {},
-    ReadStream: <ref *3> ƒ ReadStream(length: 2) {},
-    Stats: <ref *4> ƒ Stats(length: 0) {},
-    WriteStream: <ref *5> ƒ WriteStream(length: 2) {},
-    access: <ref *6> ƒ access2(length: 0) {},
-    accessSync: <ref *7> ƒ bound accessSync(length: 2) {},
-    appendFile: <ref *8> ƒ appendFile2(length: 0) {},
-    appendFileSync: <ref *9> ƒ bound appendFileSync(length: 3) {},
-    chmod: <ref *10> ƒ chmod2(length: 0) {},
-    chmodSync: <ref *11> ƒ bound chmodSync(length: 2) {},
-    chown: <ref *12> ƒ chown2(length: 0) {},
-    chownSync: <ref *13> ƒ bound chownSync(length: 3) {},
-    close: <ref *14> ƒ close2(length: 0) {},
-    closeSync: <ref *15> ƒ bound closeSync(length: 1) {},
-    constants: <ref *16> {
-        F_OK: 0,
-        R_OK: 4,
-        W_OK: 2,
-        X_OK: 1,
-        COPYFILE_EXCL: 2,
-        COPYFILE_FICLONE: 4,
-        COPYFILE_FICLONE_FORCE: 16,
+    FSWatcher: <ref *3> ƒ FSWatcher(length: 3) {},
+    ReadStream: <ref *4> ƒ ReadStream2(length: 2) {
+        prototype: ReadStream2 {}
+    },
+    Stats: <ref *6> ƒ Stats(length: 0) {},
+    WriteStream: <ref *7> ƒ WriteStream2(length: 2) {
+        prototype: WriteStream2 {}
+    },
+    access: <ref *9> ƒ access(length: 0) {},
+    accessSync: <ref *10> ƒ bound accessSync(length: 2) {},
+    appendFile: <ref *11> ƒ appendFile(length: 0) {},
+    appendFileSync: <ref *12> ƒ bound appendFileSync(length: 3) {},
+    chmod: <ref *13> ƒ chmod(length: 0) {},
+    chmodSync: <ref *14> ƒ bound chmodSync(length: 2) {},
+    chown: <ref *15> ƒ chown(length: 0) {},
+    chownSync: <ref *16> ƒ bound chownSync(length: 3) {},
+    close: <ref *17> ƒ close(length: 0) {},
+    closeSync: <ref *18> ƒ bound closeSync(length: 1) {},
+    constants: <ref *19> {
+        UV_FS_SYMLINK_DIR: 1,
+        UV_FS_SYMLINK_JUNCTION: 2,
         O_RDONLY: 0,
         O_WRONLY: 1,
         O_RDWR: 2,
-        O_CREAT: 64,
-        O_EXCL: 128,
-        O_NOCTTY: 256,
-        O_TRUNC: 512,
-        O_APPEND: 1024,
-        O_DIRECTORY: 65536,
-        O_NOATIME: 262144,
-        O_NOFOLLOW: 131072,
-        O_SYNC: 1052672,
-        O_DSYNC: 4096,
-        O_SYMLINK: 0,
-        O_DIRECT: 16384,
-        O_NONBLOCK: 2048,
+        UV_DIRENT_UNKNOWN: 0,
+        UV_DIRENT_FILE: 1,
+        UV_DIRENT_DIR: 2,
+        UV_DIRENT_LINK: 3,
+        UV_DIRENT_FIFO: 4,
+        UV_DIRENT_SOCKET: 5,
+        UV_DIRENT_CHAR: 6,
+        UV_DIRENT_BLOCK: 7,
         S_IFMT: 61440,
         S_IFREG: 32768,
         S_IFDIR: 16384,
@@ -5314,6 +5691,19 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         S_IFIFO: 4096,
         S_IFLNK: 40960,
         S_IFSOCK: 49152,
+        O_CREAT: 64,
+        O_EXCL: 128,
+        UV_FS_O_FILEMAP: 0,
+        O_NOCTTY: 256,
+        O_TRUNC: 512,
+        O_APPEND: 1024,
+        O_DIRECTORY: 65536,
+        O_NOATIME: 262144,
+        O_NOFOLLOW: 131072,
+        O_SYNC: 1052672,
+        O_DSYNC: 4096,
+        O_DIRECT: 16384,
+        O_NONBLOCK: 2048,
         S_IRWXU: 448,
         S_IRUSR: 256,
         S_IWUSR: 128,
@@ -5326,217 +5716,224 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         S_IROTH: 4,
         S_IWOTH: 2,
         S_IXOTH: 1,
-        UV_FS_O_FILEMAP: 49152
+        F_OK: 0,
+        R_OK: 4,
+        W_OK: 2,
+        X_OK: 1,
+        UV_FS_COPYFILE_EXCL: 1,
+        COPYFILE_EXCL: 1,
+        UV_FS_COPYFILE_FICLONE: 2,
+        COPYFILE_FICLONE: 2,
+        UV_FS_COPYFILE_FICLONE_FORCE: 4,
+        COPYFILE_FICLONE_FORCE: 4
     },
-    copyFile: <ref *17> ƒ copyFile2(length: 0) {},
-    copyFileSync: <ref *18> ƒ bound copyFileSync(length: 3) {},
-    createReadStream: <ref *19> ƒ createReadStream(length: 2) {},
-    createWriteStream: <ref *20> ƒ createWriteStream(length: 2) {},
+    copyFile: <ref *20> ƒ copyFile(length: 0) {},
+    copyFileSync: <ref *21> ƒ bound copyFileSync(length: 3) {},
+    createReadStream: <ref *22> ƒ createReadStream(length: 2) {},
+    createWriteStream: <ref *23> ƒ createWriteStream(length: 2) {},
     default: {
-        access: [Circular: *6],
-        accessSync: [Circular: *7],
-        appendFile: [Circular: *8],
-        appendFileSync: [Circular: *9],
-        chmod: [Circular: *10],
-        chmodSync: [Circular: *11],
-        chown: [Circular: *12],
-        chownSync: [Circular: *13],
-        close: [Circular: *14],
-        closeSync: [Circular: *15],
-        constants: [Circular: *16],
-        copyFile: [Circular: *17],
-        copyFileSync: [Circular: *18],
-        createReadStream: [Circular: *19],
-        createWriteStream: [Circular: *20],
+        access: [Circular: *9],
+        accessSync: [Circular: *10],
+        appendFile: [Circular: *11],
+        appendFileSync: [Circular: *12],
+        chmod: [Circular: *13],
+        chmodSync: [Circular: *14],
+        chown: [Circular: *15],
+        chownSync: [Circular: *16],
+        close: [Circular: *17],
+        closeSync: [Circular: *18],
+        constants: [Circular: *19],
+        copyFile: [Circular: *20],
+        copyFileSync: [Circular: *21],
+        createReadStream: [Circular: *22],
+        createWriteStream: [Circular: *23],
         Dirent: [Circular: *2],
-        exists: <ref *22> ƒ exists2(length: 0) {},
-        existsSync: <ref *23> ƒ bound existsSync(length: 1) {},
-        fchmod: <ref *24> ƒ fchmod2(length: 0) {},
-        fchmodSync: <ref *25> ƒ bound fchmodSync(length: 2) {},
-        fchown: <ref *26> ƒ fchown2(length: 0) {},
-        fchownSync: <ref *27> ƒ bound fchownSync(length: 3) {},
-        fstat: <ref *28> ƒ fstat2(length: 0) {},
-        fstatSync: <ref *29> ƒ bound fstatSync(length: 1) {},
-        fsync: <ref *30> ƒ fsync2(length: 0) {},
-        fsyncSync: <ref *31> ƒ bound fsyncSync(length: 1) {},
-        ftruncate: <ref *32> ƒ ftruncate2(length: 0) {},
-        ftruncateSync: <ref *33> ƒ bound ftruncateSync(length: 1) {},
-        futimes: <ref *34> ƒ futimes2(length: 0) {},
-        futimesSync: <ref *35> ƒ bound futimesSync(length: 3) {},
-        lchmod: <ref *36> ƒ lchmod2(length: 0) {},
-        lchmodSync: <ref *37> ƒ bound lchmodSync(length: 2) {},
-        lchown: <ref *38> ƒ lchown2(length: 0) {},
-        lchownSync: <ref *39> ƒ bound lchownSync(length: 3) {},
-        link: <ref *40> ƒ link2(length: 0) {},
-        linkSync: <ref *41> ƒ bound linkSync(length: 2) {},
-        lstat: <ref *42> ƒ lstat2(length: 0) {},
-        lstatSync: <ref *43> ƒ bound lstatSync(length: 1) {},
-        lutimes: <ref *44> ƒ lutimes2(length: 0) {},
-        lutimesSync: <ref *45> ƒ bound lutimesSync(length: 3) {},
-        mkdir: <ref *46> ƒ mkdir2(length: 0) {},
-        mkdirSync: <ref *47> ƒ bound mkdirSync(length: 2) {},
-        mkdtemp: <ref *48> ƒ mkdtemp2(length: 0) {},
-        mkdtempSync: <ref *49> ƒ bound mkdtempSync(length: 2) {},
-        open: <ref *50> ƒ open2(length: 0) {},
-        openSync: <ref *51> ƒ bound openSync(length: 3) {},
-        promises: <ref *52> {
-            access: async ƒ (length: 0) {},
-            appendFile: async ƒ (length: 0) {},
-            close: async ƒ (length: 0) {},
-            copyFile: async ƒ (length: 0) {},
-            exists: async ƒ (length: 0) {},
-            chown: async ƒ (length: 0) {},
-            chmod: async ƒ (length: 0) {},
-            fchmod: async ƒ (length: 0) {},
-            fchown: async ƒ (length: 0) {},
-            fstat: async ƒ (length: 0) {},
-            fsync: async ƒ (length: 0) {},
-            ftruncate: async ƒ (length: 0) {},
-            futimes: async ƒ (length: 0) {},
-            lchmod: async ƒ (length: 0) {},
-            lchown: async ƒ (length: 0) {},
-            link: async ƒ (length: 0) {},
+        exists: <ref *25> ƒ exists(length: 0) {},
+        existsSync: <ref *26> ƒ bound existsSync(length: 1) {},
+        fchmod: <ref *27> ƒ fchmod(length: 0) {},
+        fchmodSync: <ref *28> ƒ bound fchmodSync(length: 2) {},
+        fchown: <ref *29> ƒ fchown(length: 0) {},
+        fchownSync: <ref *30> ƒ bound fchownSync(length: 3) {},
+        fstat: <ref *31> ƒ fstat(length: 0) {},
+        fstatSync: <ref *32> ƒ bound fstatSync(length: 1) {},
+        fsync: <ref *33> ƒ fsync(length: 0) {},
+        fsyncSync: <ref *34> ƒ bound fsyncSync(length: 1) {},
+        ftruncate: <ref *35> ƒ ftruncate(length: 0) {},
+        ftruncateSync: <ref *36> ƒ bound ftruncateSync(length: 1) {},
+        futimes: <ref *37> ƒ futimes(length: 0) {},
+        futimesSync: <ref *38> ƒ bound futimesSync(length: 3) {},
+        lchmod: <ref *39> ƒ lchmod(length: 0) {},
+        lchmodSync: <ref *40> ƒ bound lchmodSync(length: 2) {},
+        lchown: <ref *41> ƒ lchown(length: 0) {},
+        lchownSync: <ref *42> ƒ bound lchownSync(length: 3) {},
+        link: <ref *43> ƒ link(length: 0) {},
+        linkSync: <ref *44> ƒ bound linkSync(length: 2) {},
+        lstat: <ref *45> ƒ lstat(length: 0) {},
+        lstatSync: <ref *46> ƒ bound lstatSync(length: 1) {},
+        lutimes: <ref *47> ƒ lutimes(length: 0) {},
+        lutimesSync: <ref *48> ƒ bound lutimesSync(length: 3) {},
+        mkdir: <ref *49> ƒ mkdir(length: 0) {},
+        mkdirSync: <ref *50> ƒ bound mkdirSync(length: 2) {},
+        mkdtemp: <ref *51> ƒ mkdtemp(length: 0) {},
+        mkdtempSync: <ref *52> ƒ bound mkdtempSync(length: 2) {},
+        open: <ref *53> ƒ open(length: 0) {},
+        openSync: <ref *54> ƒ bound openSync(length: 3) {},
+        promises: <ref *55> {
+            access: ƒ (length: 0) {},
+            appendFile: ƒ (length: 0) {},
+            close: ƒ (length: 0) {},
+            copyFile: ƒ (length: 0) {},
+            exists: ƒ (length: 0) {},
+            chown: ƒ (length: 0) {},
+            chmod: ƒ (length: 0) {},
+            fchmod: ƒ (length: 0) {},
+            fchown: ƒ (length: 0) {},
+            fstat: ƒ (length: 0) {},
+            fsync: ƒ (length: 0) {},
+            ftruncate: ƒ (length: 0) {},
+            futimes: ƒ (length: 0) {},
+            lchmod: ƒ (length: 0) {},
+            lchown: ƒ (length: 0) {},
+            link: ƒ (length: 0) {},
             lstat: ƒ bound lstat(length: 1) {},
-            mkdir: async ƒ (length: 0) {},
-            mkdtemp: async ƒ (length: 0) {},
-            open: async ƒ (length: 0) {},
-            read: async ƒ (length: 0) {},
-            write: async ƒ (length: 0) {},
+            mkdir: ƒ (length: 0) {},
+            mkdtemp: ƒ (length: 0) {},
+            open: ƒ (length: 0) {},
+            read: ƒ (length: 0) {},
+            write: ƒ (length: 0) {},
             readdir: ƒ bound readdir(length: 3) {},
             readFile: ƒ bound readFile(length: 3) {},
-            writeFile: async ƒ (length: 0) {},
-            readlink: async ƒ (length: 0) {},
-            realpath: async ƒ (length: 0) {},
-            rename: async ƒ (length: 0) {},
+            writeFile: ƒ (length: 0) {},
+            readlink: ƒ (length: 0) {},
+            realpath: ƒ (length: 0) {},
+            rename: ƒ (length: 0) {},
             stat: ƒ bound stat(length: 1) {},
-            symlink: async ƒ (length: 0) {},
-            truncate: async ƒ (length: 0) {},
-            unlink: async ƒ (length: 0) {},
-            utimes: async ƒ (length: 0) {},
-            lutimes: async ƒ (length: 0) {},
-            rm: async ƒ (length: 0) {},
-            rmdir: async ƒ (length: 0) {},
-            watch: ƒ N(length: 1) {},
-            writev: ƒ f(length: 3) {},
-            readv: ƒ i(length: 3) {},
-            constants: [Circular: *16],
-            Symbol(CommonJS): 0
+            symlink: ƒ (length: 0) {},
+            truncate: ƒ (length: 0) {},
+            unlink: ƒ (length: 0) {},
+            utimes: ƒ (length: 0) {},
+            lutimes: ƒ (length: 0) {},
+            rm: ƒ (length: 0) {},
+            rmdir: ƒ (length: 0) {},
+            writev: ƒ writev(length: 3) {},
+            readv: ƒ readv(length: 3) {},
+            constants: [Circular: *19],
+            watch: ƒ watch(length: 1) {}
         },
-        read: <ref *92> ƒ read2(length: 0) {},
-        readFile: <ref *93> ƒ readFile2(length: 0) {},
-        readFileSync: <ref *94> ƒ bound readFileSync(length: 2) {},
-        readSync: <ref *95> ƒ bound readSync(length: 5) {},
-        readdir: <ref *96> ƒ readdir2(length: 0) {},
-        readdirSync: <ref *97> ƒ bound readdirSync(length: 2) {},
-        readlink: <ref *98> ƒ readlink2(length: 0) {},
-        readlinkSync: <ref *99> ƒ bound readlinkSync(length: 2) {},
-        realpath: <ref *100> ƒ realpath2(length: 0) {
-            native: [Circular: *100]
+        read: <ref *95> ƒ read(length: 0) {},
+        readFile: <ref *96> ƒ readFile(length: 0) {},
+        readFileSync: <ref *97> ƒ bound readFileSync(length: 2) {},
+        readSync: <ref *98> ƒ bound readSync(length: 5) {},
+        readdir: <ref *99> ƒ readdir(length: 0) {},
+        readdirSync: <ref *100> ƒ bound readdirSync(length: 2) {},
+        readlink: <ref *101> ƒ readlink(length: 0) {},
+        readlinkSync: <ref *102> ƒ bound readlinkSync(length: 2) {},
+        realpath: <ref *103> ƒ realpath(length: 0) {
+            native: [Circular: *103]
         },
-        realpathSync: <ref *101> ƒ bound realpathSync(length: 2) {
-            native: [Circular: *101]
+        realpathSync: <ref *104> ƒ bound realpathSync(length: 2) {
+            native: [Circular: *104]
         },
-        rename: <ref *102> ƒ rename2(length: 0) {},
-        renameSync: <ref *103> ƒ bound renameSync(length: 2) {},
-        rm: <ref *104> ƒ rm2(length: 0) {},
-        rmSync: <ref *105> ƒ bound rmSync(length: 2) {},
-        rmdir: <ref *106> ƒ rmdir2(length: 0) {},
-        rmdirSync: <ref *107> ƒ bound rmdirSync(length: 2) {},
-        stat: <ref *108> ƒ stat2(length: 0) {},
-        statSync: <ref *109> ƒ bound statSync(length: 1) {},
-        Stats: [Circular: *4],
-        symlink: <ref *110> ƒ symlink2(length: 0) {},
-        symlinkSync: <ref *111> ƒ bound symlinkSync(length: 3) {},
-        truncate: <ref *112> ƒ truncate2(length: 0) {},
-        truncateSync: <ref *113> ƒ bound truncateSync(length: 2) {},
-        unlink: <ref *114> ƒ unlink2(length: 0) {},
-        unlinkSync: <ref *115> ƒ bound unlinkSync(length: 1) {},
-        utimes: <ref *116> ƒ utimes2(length: 0) {},
-        utimesSync: <ref *117> ƒ bound utimesSync(length: 3) {},
-        write: <ref *118> ƒ write2(length: 0) {},
-        writeFile: <ref *119> ƒ writeFile2(length: 0) {},
-        writeFileSync: <ref *120> ƒ bound writeFileSync(length: 3) {},
-        writeSync: <ref *121> ƒ bound writeSync(length: 5) {},
-        WriteStream: [Circular: *5],
-        ReadStream: [Circular: *3],
-        watch: <ref *122> ƒ watch2(length: 3) {},
-        FSWatcher: class FSWatcher extends EventEmitter {},
-        writev: <ref *124> ƒ writev(length: 4) {},
-        writevSync: <ref *125> ƒ bound writevSync(length: 3) {},
-        readv: <ref *126> ƒ readv(length: 4) {},
-        readvSync: <ref *127> ƒ bound readvSync(length: 3) {},
-        Symbol(CommonJS): 0,
+        rename: <ref *105> ƒ rename(length: 0) {},
+        renameSync: <ref *106> ƒ bound renameSync(length: 2) {},
+        rm: <ref *107> ƒ rm(length: 0) {},
+        rmSync: <ref *108> ƒ bound rmSync(length: 2) {},
+        rmdir: <ref *109> ƒ rmdir(length: 0) {},
+        rmdirSync: <ref *110> ƒ bound rmdirSync(length: 2) {},
+        stat: <ref *111> ƒ stat(length: 0) {},
+        statSync: <ref *112> ƒ bound statSync(length: 1) {},
+        Stats: [Circular: *6],
+        symlink: <ref *113> ƒ symlink(length: 0) {},
+        symlinkSync: <ref *114> ƒ bound symlinkSync(length: 3) {},
+        truncate: <ref *115> ƒ truncate(length: 0) {},
+        truncateSync: <ref *116> ƒ bound truncateSync(length: 2) {},
+        unlink: <ref *117> ƒ unlink(length: 0) {},
+        unlinkSync: <ref *118> ƒ bound unlinkSync(length: 1) {},
+        utimes: <ref *119> ƒ utimes(length: 0) {},
+        utimesSync: <ref *120> ƒ bound utimesSync(length: 3) {},
+        write: <ref *121> ƒ write(length: 0) {},
+        writeFile: <ref *122> ƒ writeFile(length: 0) {},
+        writeFileSync: <ref *123> ƒ bound writeFileSync(length: 3) {},
+        writeSync: <ref *124> ƒ bound writeSync(length: 5) {},
+        WriteStream: [Circular: *7],
+        ReadStream: [Circular: *4],
+        watch: <ref *125> ƒ watch(length: 3) {},
+        FSWatcher: [Circular: *3],
+        writev: <ref *126> ƒ writev(length: 4) {},
+        writevSync: <ref *127> ƒ bound writevSync(length: 3) {},
+        readv: <ref *128> ƒ readv(length: 4) {},
+        readvSync: <ref *129> ƒ bound readvSync(length: 3) {},
         Symbol(::bunternal::): {
-            ReadStreamClass: class ReadStream2 extends Stream._getNativeReadableStreamPrototype(2, Stream.Readable) {},
-            WriteStreamClass: class WriteStream2 extends Stream.NativeWritable {}
+            ReadStreamClass: ƒ ReadStream2(length: 1) {},
+            WriteStreamClass: ƒ WriteStream2(length: 1) {}
         }
     },
-    exists: [Circular: *22],
-    existsSync: [Circular: *23],
-    fchmod: [Circular: *24],
-    fchmodSync: [Circular: *25],
-    fchown: [Circular: *26],
-    fchownSync: [Circular: *27],
-    fstat: [Circular: *28],
-    fstatSync: [Circular: *29],
-    fsync: [Circular: *30],
-    fsyncSync: [Circular: *31],
-    ftruncate: [Circular: *32],
-    ftruncateSync: [Circular: *33],
-    futimes: [Circular: *34],
-    futimesSync: [Circular: *35],
-    lchmod: [Circular: *36],
-    lchmodSync: [Circular: *37],
-    lchown: [Circular: *38],
-    lchownSync: [Circular: *39],
-    link: [Circular: *40],
-    linkSync: [Circular: *41],
-    lstat: [Circular: *42],
-    lstatSync: [Circular: *43],
-    lutimes: [Circular: *44],
-    lutimesSync: [Circular: *45],
-    mkdir: [Circular: *46],
-    mkdirSync: [Circular: *47],
-    mkdtemp: [Circular: *48],
-    mkdtempSync: [Circular: *49],
-    open: [Circular: *50],
-    openSync: [Circular: *51],
-    promises: [Circular: *52],
-    read: [Circular: *92],
-    readFile: [Circular: *93],
-    readFileSync: [Circular: *94],
-    readSync: [Circular: *95],
-    readdir: [Circular: *96],
-    readdirSync: [Circular: *97],
-    readlink: [Circular: *98],
-    readlinkSync: [Circular: *99],
-    readv: [Circular: *126],
-    readvSync: [Circular: *127],
-    realpath: [Circular: *100],
-    realpathSync: [Circular: *101],
-    rename: [Circular: *102],
-    renameSync: [Circular: *103],
-    rm: [Circular: *104],
-    rmSync: [Circular: *105],
-    rmdir: [Circular: *106],
-    rmdirSync: [Circular: *107],
-    stat: [Circular: *108],
-    statSync: [Circular: *109],
-    symlink: [Circular: *110],
-    symlinkSync: [Circular: *111],
-    truncate: [Circular: *112],
-    truncateSync: [Circular: *113],
-    unlink: [Circular: *114],
-    unlinkSync: [Circular: *115],
-    utimes: [Circular: *116],
-    utimesSync: [Circular: *117],
-    watch: [Circular: *122],
-    write: [Circular: *118],
-    writeFile: [Circular: *119],
-    writeFileSync: [Circular: *120],
-    writeSync: [Circular: *121],
-    writev: [Circular: *124],
-    writevSync: [Circular: *125]
+    exists: [Circular: *25],
+    existsSync: [Circular: *26],
+    fchmod: [Circular: *27],
+    fchmodSync: [Circular: *28],
+    fchown: [Circular: *29],
+    fchownSync: [Circular: *30],
+    fstat: [Circular: *31],
+    fstatSync: [Circular: *32],
+    fsync: [Circular: *33],
+    fsyncSync: [Circular: *34],
+    ftruncate: [Circular: *35],
+    ftruncateSync: [Circular: *36],
+    futimes: [Circular: *37],
+    futimesSync: [Circular: *38],
+    lchmod: [Circular: *39],
+    lchmodSync: [Circular: *40],
+    lchown: [Circular: *41],
+    lchownSync: [Circular: *42],
+    link: [Circular: *43],
+    linkSync: [Circular: *44],
+    lstat: [Circular: *45],
+    lstatSync: [Circular: *46],
+    lutimes: [Circular: *47],
+    lutimesSync: [Circular: *48],
+    mkdir: [Circular: *49],
+    mkdirSync: [Circular: *50],
+    mkdtemp: [Circular: *51],
+    mkdtempSync: [Circular: *52],
+    open: [Circular: *53],
+    openSync: [Circular: *54],
+    promises: [Circular: *55],
+    read: [Circular: *95],
+    readFile: [Circular: *96],
+    readFileSync: [Circular: *97],
+    readSync: [Circular: *98],
+    readdir: [Circular: *99],
+    readdirSync: [Circular: *100],
+    readlink: [Circular: *101],
+    readlinkSync: [Circular: *102],
+    readv: [Circular: *128],
+    readvSync: [Circular: *129],
+    realpath: [Circular: *103],
+    realpathSync: [Circular: *104],
+    rename: [Circular: *105],
+    renameSync: [Circular: *106],
+    rm: [Circular: *107],
+    rmSync: [Circular: *108],
+    rmdir: [Circular: *109],
+    rmdirSync: [Circular: *110],
+    stat: [Circular: *111],
+    statSync: [Circular: *112],
+    symlink: [Circular: *113],
+    symlinkSync: [Circular: *114],
+    truncate: [Circular: *115],
+    truncateSync: [Circular: *116],
+    unlink: [Circular: *117],
+    unlinkSync: [Circular: *118],
+    utimes: [Circular: *119],
+    utimesSync: [Circular: *120],
+    watch: [Circular: *125],
+    write: [Circular: *121],
+    writeFile: [Circular: *122],
+    writeFileSync: [Circular: *123],
+    writeSync: [Circular: *124],
+    writev: [Circular: *126],
+    writevSync: [Circular: *127]
 }
 ```
 
@@ -5676,35 +6073,25 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    access: <ref *2> async ƒ (length: 0) {},
-    appendFile: <ref *3> async ƒ (length: 0) {},
-    chmod: <ref *4> async ƒ (length: 0) {},
-    chown: <ref *5> async ƒ (length: 0) {},
-    close: <ref *6> async ƒ (length: 0) {},
+    access: <ref *2> ƒ (length: 0) {},
+    appendFile: <ref *3> ƒ (length: 0) {},
+    chmod: <ref *4> ƒ (length: 0) {},
+    chown: <ref *5> ƒ (length: 0) {},
+    close: <ref *6> ƒ (length: 0) {},
     constants: <ref *7> {
-        F_OK: 0,
-        R_OK: 4,
-        W_OK: 2,
-        X_OK: 1,
-        COPYFILE_EXCL: 2,
-        COPYFILE_FICLONE: 4,
-        COPYFILE_FICLONE_FORCE: 16,
+        UV_FS_SYMLINK_DIR: 1,
+        UV_FS_SYMLINK_JUNCTION: 2,
         O_RDONLY: 0,
         O_WRONLY: 1,
         O_RDWR: 2,
-        O_CREAT: 64,
-        O_EXCL: 128,
-        O_NOCTTY: 256,
-        O_TRUNC: 512,
-        O_APPEND: 1024,
-        O_DIRECTORY: 65536,
-        O_NOATIME: 262144,
-        O_NOFOLLOW: 131072,
-        O_SYNC: 1052672,
-        O_DSYNC: 4096,
-        O_SYMLINK: 0,
-        O_DIRECT: 16384,
-        O_NONBLOCK: 2048,
+        UV_DIRENT_UNKNOWN: 0,
+        UV_DIRENT_FILE: 1,
+        UV_DIRENT_DIR: 2,
+        UV_DIRENT_LINK: 3,
+        UV_DIRENT_FIFO: 4,
+        UV_DIRENT_SOCKET: 5,
+        UV_DIRENT_CHAR: 6,
+        UV_DIRENT_BLOCK: 7,
         S_IFMT: 61440,
         S_IFREG: 32768,
         S_IFDIR: 16384,
@@ -5713,6 +6100,19 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         S_IFIFO: 4096,
         S_IFLNK: 40960,
         S_IFSOCK: 49152,
+        O_CREAT: 64,
+        O_EXCL: 128,
+        UV_FS_O_FILEMAP: 0,
+        O_NOCTTY: 256,
+        O_TRUNC: 512,
+        O_APPEND: 1024,
+        O_DIRECTORY: 65536,
+        O_NOATIME: 262144,
+        O_NOFOLLOW: 131072,
+        O_SYNC: 1052672,
+        O_DSYNC: 4096,
+        O_DIRECT: 16384,
+        O_NONBLOCK: 2048,
         S_IRWXU: 448,
         S_IRUSR: 256,
         S_IWUSR: 128,
@@ -5725,51 +6125,59 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         S_IROTH: 4,
         S_IWOTH: 2,
         S_IXOTH: 1,
-        UV_FS_O_FILEMAP: 49152
+        F_OK: 0,
+        R_OK: 4,
+        W_OK: 2,
+        X_OK: 1,
+        UV_FS_COPYFILE_EXCL: 1,
+        COPYFILE_EXCL: 1,
+        UV_FS_COPYFILE_FICLONE: 2,
+        COPYFILE_FICLONE: 2,
+        UV_FS_COPYFILE_FICLONE_FORCE: 4,
+        COPYFILE_FICLONE_FORCE: 4
     },
-    copyFile: <ref *8> async ƒ (length: 0) {},
+    copyFile: <ref *8> ƒ (length: 0) {},
     default: {
         access: [Circular: *2],
         appendFile: [Circular: *3],
         close: [Circular: *6],
         copyFile: [Circular: *8],
-        exists: <ref *10> async ƒ (length: 0) {},
+        exists: <ref *10> ƒ (length: 0) {},
         chown: [Circular: *5],
         chmod: [Circular: *4],
-        fchmod: <ref *11> async ƒ (length: 0) {},
-        fchown: <ref *12> async ƒ (length: 0) {},
-        fstat: <ref *13> async ƒ (length: 0) {},
-        fsync: <ref *14> async ƒ (length: 0) {},
-        ftruncate: <ref *15> async ƒ (length: 0) {},
-        futimes: <ref *16> async ƒ (length: 0) {},
-        lchmod: <ref *17> async ƒ (length: 0) {},
-        lchown: <ref *18> async ƒ (length: 0) {},
-        link: <ref *19> async ƒ (length: 0) {},
+        fchmod: <ref *11> ƒ (length: 0) {},
+        fchown: <ref *12> ƒ (length: 0) {},
+        fstat: <ref *13> ƒ (length: 0) {},
+        fsync: <ref *14> ƒ (length: 0) {},
+        ftruncate: <ref *15> ƒ (length: 0) {},
+        futimes: <ref *16> ƒ (length: 0) {},
+        lchmod: <ref *17> ƒ (length: 0) {},
+        lchown: <ref *18> ƒ (length: 0) {},
+        link: <ref *19> ƒ (length: 0) {},
         lstat: <ref *20> ƒ bound lstat(length: 1) {},
-        mkdir: <ref *21> async ƒ (length: 0) {},
-        mkdtemp: <ref *22> async ƒ (length: 0) {},
-        open: <ref *23> async ƒ (length: 0) {},
-        read: <ref *24> async ƒ (length: 0) {},
-        write: <ref *25> async ƒ (length: 0) {},
+        mkdir: <ref *21> ƒ (length: 0) {},
+        mkdtemp: <ref *22> ƒ (length: 0) {},
+        open: <ref *23> ƒ (length: 0) {},
+        read: <ref *24> ƒ (length: 0) {},
+        write: <ref *25> ƒ (length: 0) {},
         readdir: <ref *26> ƒ bound readdir(length: 3) {},
         readFile: <ref *27> ƒ bound readFile(length: 3) {},
-        writeFile: <ref *28> async ƒ (length: 0) {},
-        readlink: <ref *29> async ƒ (length: 0) {},
-        realpath: <ref *30> async ƒ (length: 0) {},
-        rename: <ref *31> async ƒ (length: 0) {},
+        writeFile: <ref *28> ƒ (length: 0) {},
+        readlink: <ref *29> ƒ (length: 0) {},
+        realpath: <ref *30> ƒ (length: 0) {},
+        rename: <ref *31> ƒ (length: 0) {},
         stat: <ref *32> ƒ bound stat(length: 1) {},
-        symlink: <ref *33> async ƒ (length: 0) {},
-        truncate: <ref *34> async ƒ (length: 0) {},
-        unlink: <ref *35> async ƒ (length: 0) {},
-        utimes: <ref *36> async ƒ (length: 0) {},
-        lutimes: <ref *37> async ƒ (length: 0) {},
-        rm: <ref *38> async ƒ (length: 0) {},
-        rmdir: <ref *39> async ƒ (length: 0) {},
-        watch: <ref *40> ƒ N(length: 1) {},
-        writev: <ref *41> ƒ f(length: 3) {},
-        readv: <ref *42> ƒ i(length: 3) {},
+        symlink: <ref *33> ƒ (length: 0) {},
+        truncate: <ref *34> ƒ (length: 0) {},
+        unlink: <ref *35> ƒ (length: 0) {},
+        utimes: <ref *36> ƒ (length: 0) {},
+        lutimes: <ref *37> ƒ (length: 0) {},
+        rm: <ref *38> ƒ (length: 0) {},
+        rmdir: <ref *39> ƒ (length: 0) {},
+        writev: <ref *40> ƒ writev(length: 3) {},
+        readv: <ref *41> ƒ readv(length: 3) {},
         constants: [Circular: *7],
-        Symbol(CommonJS): 0
+        watch: <ref *42> ƒ watch(length: 1) {}
     },
     exists: [Circular: *10],
     fchmod: [Circular: *11],
@@ -5790,7 +6198,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     readFile: [Circular: *27],
     readdir: [Circular: *26],
     readlink: [Circular: *29],
-    readv: [Circular: *42],
+    readv: [Circular: *41],
     realpath: [Circular: *30],
     rename: [Circular: *31],
     rm: [Circular: *38],
@@ -5800,10 +6208,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     truncate: [Circular: *34],
     unlink: [Circular: *35],
     utimes: [Circular: *36],
-    watch: [Circular: *40],
+    watch: [Circular: *42],
     write: [Circular: *25],
     writeFile: [Circular: *28],
-    writev: [Circular: *41]
+    writev: [Circular: *40]
 }
 ```
 
@@ -5983,9 +6391,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Agent: <ref *2> class Agent extends EventEmitter {},
-    ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> class IncomingMessage extends Readable {},
+    Agent: <ref *2> ƒ Agent(length: 0) {},
+    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {},
     METHODS: <ref *5> [
         "ACL",
         "BIND",
@@ -6022,7 +6430,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *6> class OutgoingMessage extends Writable {},
+    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 0) {},
     STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
@@ -6088,8 +6496,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *8> class Server extends EventEmitter {},
-    ServerResponse: <ref *9> class ServerResponse extends Writable {},
+    Server: <ref *8> ƒ Server(length: 2) {},
+    ServerResponse: <ref *9> ƒ ServerResponse(length: 1) {},
     createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
@@ -6104,7 +6512,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         maxHeaderSize: 16384,
         validateHeaderName: <ref *14> ƒ validateHeaderName(length: 2) {},
         validateHeaderValue: <ref *15> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: ƒ setMaxIdleHTTPParsers(length: 1) {},
+        setMaxIdleHTTPParsers: <ref *16> ƒ setMaxIdleHTTPParsers(length: 1) {},
         globalAgent: <ref *17> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
@@ -6128,12 +6536,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *6],
-        Symbol(CommonJS): 0
+        OutgoingMessage: [Circular: *6]
     },
     get: [Circular: *13],
     globalAgent: [Circular: *17],
+    maxHeaderSize: 16384,
     request: [Circular: *12],
+    setMaxIdleHTTPParsers: [Circular: *16],
     validateHeaderName: [Circular: *14],
     validateHeaderValue: [Circular: *15]
 }
@@ -6674,8 +7083,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders),
         Http2ServerRequest: [Circular: *2],
         Http2ServerResponse: [Circular: *3],
-        connect: [Circular: *4],
-        Symbol(CommonJS): 0
+        connect: [Circular: *4]
     },
     getDefaultSettings: [Circular: *9],
     getPackedSettings: [Circular: *10],
@@ -6742,9 +7150,10 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Agent: <ref *2> class Agent extends EventEmitter {},
-    IncomingMessage: <ref *3> class IncomingMessage extends Readable {},
-    METHODS: <ref *4> [
+    Agent: <ref *2> ƒ Agent(length: 0) {},
+    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {},
+    METHODS: <ref *5> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -6780,7 +7189,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    STATUS_CODES: <ref *5> {
+    OutgoingMessage: <ref *6> ƒ OutgoingMessage(length: 0) {},
+    STATUS_CODES: <ref *7> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -6845,23 +7255,24 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *6> class Server extends EventEmitter {},
-    ServerResponse: <ref *7> class ServerResponse extends Writable {},
-    createServer: <ref *8> ƒ createServer(length: 2) {},
+    Server: <ref *8> ƒ Server(length: 2) {},
+    ServerResponse: <ref *9> ƒ ServerResponse(length: 1) {},
+    createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *6],
-        METHODS: [Circular: *4],
-        STATUS_CODES: [Circular: *5],
-        createServer: [Circular: *8],
-        ServerResponse: [Circular: *7],
-        IncomingMessage: [Circular: *3],
-        request: <ref *10> ƒ request2(length: 3) {},
-        get: <ref *11> ƒ get(length: 3) {},
-        maxHeaderSize: undefined,
-        validateHeaderName: <ref *12> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *13> ƒ validateHeaderValue(length: 2) {},
-        globalAgent: <ref *14> Agent {
+        Server: [Circular: *8],
+        METHODS: [Circular: *5],
+        STATUS_CODES: [Circular: *7],
+        createServer: [Circular: *10],
+        ServerResponse: [Circular: *9],
+        IncomingMessage: [Circular: *4],
+        request: <ref *12> ƒ request(length: 3) {},
+        get: <ref *13> ƒ get(length: 3) {},
+        maxHeaderSize: 16384,
+        validateHeaderName: <ref *14> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *15> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *16> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *17> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -6871,9 +7282,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 path: null,
                 noDelay: true
             },
-            requests: <ref *17> [Object: null prototype] {},
-            sockets: [Circular: *17],
-            freeSockets: [Circular: *17],
+            requests: <ref *20> [Object: null prototype] {},
+            sockets: [Circular: *20],
+            freeSockets: [Circular: *20],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -6882,14 +7293,17 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             maxTotalSockets: undefined,
             totalSocketCount: 0,
             Symbol(kCapture): false
-        }
+        },
+        ClientRequest: [Circular: *3],
+        OutgoingMessage: [Circular: *6]
     },
-    get: [Circular: *11],
-    globalAgent: [Circular: *14],
-    maxHeaderSize: undefined,
-    request: [Circular: *10],
-    validateHeaderName: [Circular: *12],
-    validateHeaderValue: [Circular: *13]
+    get: [Circular: *13],
+    globalAgent: [Circular: *17],
+    maxHeaderSize: 16384,
+    request: [Circular: *12],
+    setMaxIdleHTTPParsers: [Circular: *16],
+    validateHeaderName: [Circular: *14],
+    validateHeaderValue: [Circular: *15]
 }
 ```
 
@@ -6946,7 +7360,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Session: <ref *2> class Session extends EventEmitter {},
+    Session: <ref *2> ƒ ::bunternal::(length: 0) {},
     close: <ref *3> ƒ ::bunternal::(length: 0) {},
     console: <ref *4> {
         debug: <ref *5> ƒ debug(length: 0) {},
@@ -7016,8 +7430,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         close: [Circular: *3],
         url: <ref *37> ƒ ::bunternal::(length: 0) {},
         waitForDebugger: <ref *38> ƒ ::bunternal::(length: 0) {},
-        Session: [Circular: *2],
-        Symbol(CommonJS): 0
+        Session: [Circular: *2]
     },
     open: [Circular: *36],
     url: [Circular: *37],
@@ -7105,7 +7518,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         ],
         _cache: <ref *4> [Object: null prototype] {},
         _pathCache: <ref *5> [Object: null prototype] {
-            /tmp/fs-fixture-1690762389698-1/module.mjs: "/tmp/fs-fixture-1690762389698-1/module.mjs"
+            /tmp/fs-fixture-1691367203964-1/module.mjs: "/tmp/fs-fixture-1691367203964-1/module.mjs"
         },
         _extensions: <ref *6> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -7117,9 +7530,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.12.6/node_modules/tsx/n…",
             "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.12.6/node_modules",
             "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.5/node_modules/pnpm/bin/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.5/node_modules/pnpm/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.5/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.6/node_modules/pnpm/bin/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.6/node_modules/pnpm/node_modules",
+            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.6/node_modules",
             "/home/runner/setup-pnpm/node_modules/.pnpm/node_modules",
             "/home/runner/setup-pnpm/node_modules",
             "/home/runner/node_modules",
@@ -7179,20 +7592,20 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         bun:main: {
             exports: {}
         },
-        /tmp/fs-fixture-1690762389698-1/module.mjs: {
+        /tmp/fs-fixture-1691367203964-1/module.mjs: {
             exports: {}
         },
         node:module: {
             exports: [Circular: *1]
         },
-        /tmp/fs-fixture-1690762389698-1/inspect.mjs: {
+        /tmp/fs-fixture-1691367203964-1/inspect.mjs: {
             exports: {
                 inspect: ƒ inspect(length: 1) {}
             }
         }
     },
-    _nodeModulePaths: <ref *12> ƒ _nodeModulePaths(length: 0) {},
-    _resolveFilename: <ref *13> ƒ _resolveFilename(length: 3) {},
+    _nodeModulePaths: <ref *12> ƒ _nodeModulePaths(length: 1) {},
+    _resolveFilename: <ref *13> ƒ _resolveFilename(length: 1) {},
     builtinModules: <ref *14> [
         "_http_agent",
         "_http_client",
@@ -7213,7 +7626,6 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         "async_hooks",
         "buffer",
         "bun",
-        "bun:events_native",
         "bun:ffi",
         "bun:jsc",
         "bun:sqlite",
@@ -7273,27 +7685,28 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         "zlib"
     ],
     createRequire: <ref *15> ƒ createRequire(length: 1) {},
-    default: [Object: null prototype] {
+    default: ƒ Module(length: 0) {
         createRequire: [Circular: *15],
         paths: <ref *17> ƒ paths(length: 1) {},
         findSourceMap: <ref *18> ƒ findSourceMap(length: 1) {},
-        syncBuiltinExports: <ref *19> ƒ syncBuiltinExports(length: 0) {},
+        syncBuiltinExports: <ref *19> ƒ syncBuiltinExports(length: 1) {},
         SourceMap: [Circular: *2],
         isBuiltin: <ref *20> ƒ isBuiltin(length: 1) {},
         _resolveFilename: [Circular: *13],
         _nodeModulePaths: [Circular: *12],
+        wrap: <ref *21> ƒ wrap(length: 1) {},
         _cache: [Circular: *3],
-        globalPaths: <ref *21> [],
-        prototype: <ref *22> {},
-        builtinModules: [Circular: *14],
-        Symbol(CommonJS): 0
+        globalPaths: <ref *22> [],
+        prototype: <ref *23> {},
+        builtinModules: [Circular: *14]
     },
     findSourceMap: [Circular: *18],
-    globalPaths: [Circular: *21],
+    globalPaths: [Circular: *22],
     isBuiltin: [Circular: *20],
     paths: [Circular: *17],
-    prototype: [Circular: *22],
-    syncBuiltinExports: [Circular: *19]
+    prototype: [Circular: *23],
+    syncBuiltinExports: [Circular: *19],
+    wrap: [Circular: *21]
 }
 ```
 
@@ -7342,7 +7755,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Server: <ref *2> class Server extends EventEmitter {},
+    Server: <ref *2> ƒ Server(length: 2) {},
     Socket: <ref *3> ƒ Socket(length: 1) {},
     connect: <ref *4> ƒ createConnection(length: 3) {},
     createConnection: [Circular: *4],
@@ -7356,8 +7769,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         isIPv4: <ref *8> ƒ isIPv4(length: 1) {},
         isIPv6: <ref *9> ƒ isIPv6(length: 1) {},
         Socket: [Circular: *3],
-        Symbol(CommonJS): 0,
-        Symbol(::bunternal::): class Socket2 extends Duplex {
+        Symbol(::bunternal::): ƒ Socket2(length: 1) {
             Symbol(::bunsocket_serverhandlers::): {
                 data: ƒ data(length: 2) {},
                 close: ƒ close(length: 1) {},
@@ -7605,6 +8017,14 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     EOL: "\n",
     arch: <ref *2> ƒ bound arch(length: 0) {},
     constants: <ref *3> {
+        UV_UDP_REUSEADDR: 4,
+        dlopen: {
+            RTLD_LAZY: 1,
+            RTLD_NOW: 2,
+            RTLD_GLOBAL: 256,
+            RTLD_LOCAL: 0,
+            RTLD_DEEPBIND: 8
+        },
         errno: {
             E2BIG: 7,
             EACCES: 13,
@@ -7665,6 +8085,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             ENOTDIR: 20,
             ENOTEMPTY: 39,
             ENOTSOCK: 88,
+            ENOTSUP: 95,
             ENOTTY: 25,
             ENXIO: 6,
             EOPNOTSUPP: 95,
@@ -7682,6 +8103,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             ETIME: 62,
             ETIMEDOUT: 110,
             ETXTBSY: 26,
+            EWOULDBLOCK: 11,
             EXDEV: 18
         },
         signals: {
@@ -7717,8 +8139,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             SIGIO: 29,
             SIGPOLL: 29,
             SIGPWR: 30,
-            SIGSYS: 31,
-            SIGUNUSED: 31
+            SIGSYS: 31
         },
         priority: {
             PRIORITY_LOW: 19,
@@ -7727,14 +8148,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             PRIORITY_ABOVE_NORMAL: -7,
             PRIORITY_HIGH: -14,
             PRIORITY_HIGHEST: -20
-        },
-        dlopen: {
-            RTLD_LAZY: 1,
-            RTLD_NOW: 2,
-            RTLD_GLOBAL: 256,
-            RTLD_LOCAL: 0
-        },
-        UV_UDP_REUSEADDR: 4
+        }
     },
     cpus: <ref *8> ƒ (length: 0) {},
     default: {
@@ -7759,8 +8173,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         machine: <ref *26> ƒ bound machine(length: 0) {},
         devNull: "/dev/null",
         EOL: "\n",
-        constants: [Circular: *3],
-        Symbol(CommonJS): 0
+        constants: [Circular: *3]
     },
     devNull: "/dev/null",
     endianness: [Circular: *10],
@@ -7849,73 +8262,57 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    __esModule: undefined,
-    basename: <ref *2> ƒ bound basename(length: 0) {},
-    createModule: ƒ createModule(length: 1) {},
-    default: <ref *4> [Object: null prototype] {
-        basename: [Circular: *2],
-        dirname: <ref *5> ƒ bound dirname(length: 0) {},
-        extname: <ref *6> ƒ bound extname(length: 0) {},
-        format: <ref *7> ƒ bound format(length: 0) {},
-        isAbsolute: <ref *8> ƒ bound isAbsolute(length: 0) {},
-        join: <ref *9> ƒ bound join(length: 0) {},
-        normalize: <ref *10> ƒ bound normalize(length: 0) {},
-        parse: <ref *11> ƒ bound parse(length: 0) {},
-        relative: <ref *12> ƒ bound relative(length: 0) {},
-        resolve: <ref *13> ƒ bound resolve(length: 0) {},
-        toNamespacedPath: <ref *14> ƒ bound toNamespacedPath(length: 0) {},
+    _makeLong: <ref *2> ƒ bound toNamespacedPath(length: 0) {},
+    basename: <ref *3> ƒ bound basename(length: 0) {},
+    default: <ref *4> {
+        resolve: <ref *5> ƒ bound resolve(length: 0) {},
+        normalize: <ref *6> ƒ bound normalize(length: 0) {},
+        isAbsolute: <ref *7> ƒ bound isAbsolute(length: 0) {},
+        join: <ref *8> ƒ bound join(length: 0) {},
+        relative: <ref *9> ƒ bound relative(length: 0) {},
+        toNamespacedPath: [Circular: *2],
+        dirname: <ref *10> ƒ bound dirname(length: 0) {},
+        basename: [Circular: *3],
+        extname: <ref *11> ƒ bound extname(length: 0) {},
+        format: <ref *12> ƒ bound format(length: 0) {},
+        parse: <ref *13> ƒ bound parse(length: 0) {},
         sep: "/",
         delimiter: ":",
-        default: [Circular: *4],
-        win32: <ref *15> [Object: null prototype] {
-            basename: ƒ bound basename(length: 0) {},
-            dirname: ƒ bound dirname(length: 0) {},
-            extname: ƒ bound extname(length: 0) {},
-            format: ƒ bound format(length: 0) {},
+        win32: <ref *14> {
+            resolve: ƒ bound resolve(length: 0) {},
+            normalize: ƒ bound normalize(length: 0) {},
             isAbsolute: ƒ bound isAbsolute(length: 0) {},
             join: ƒ bound join(length: 0) {},
-            normalize: ƒ bound normalize(length: 0) {},
-            parse: ƒ bound parse(length: 0) {},
             relative: ƒ bound relative(length: 0) {},
-            resolve: ƒ bound resolve(length: 0) {},
-            toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
+            toNamespacedPath: <ref *20> ƒ bound toNamespacedPath(length: 0) {},
+            dirname: ƒ bound dirname(length: 0) {},
+            basename: ƒ bound basename(length: 0) {},
+            extname: ƒ bound extname(length: 0) {},
+            format: ƒ bound format(length: 0) {},
+            parse: ƒ bound parse(length: 0) {},
             sep: "\\",
             delimiter: ";",
-            default: [Circular: *15]
+            win32: [Circular: *14],
+            posix: [Circular: *4],
+            _makeLong: [Circular: *20]
         },
-        posix: <ref *27> [Object: null prototype] {
-            basename: ƒ bound basename(length: 0) {},
-            dirname: ƒ bound dirname(length: 0) {},
-            extname: ƒ bound extname(length: 0) {},
-            format: ƒ bound format(length: 0) {},
-            isAbsolute: ƒ bound isAbsolute(length: 0) {},
-            join: ƒ bound join(length: 0) {},
-            normalize: ƒ bound normalize(length: 0) {},
-            parse: ƒ bound parse(length: 0) {},
-            relative: ƒ bound relative(length: 0) {},
-            resolve: ƒ bound resolve(length: 0) {},
-            toNamespacedPath: ƒ bound toNamespacedPath(length: 0) {},
-            sep: "/",
-            delimiter: ":",
-            default: [Circular: *27]
-        },
-        __esModule: true,
-        Symbol(CommonJS): 0
+        posix: [Circular: *4],
+        _makeLong: [Circular: *2]
     },
     delimiter: ":",
-    dirname: [Circular: *5],
-    extname: [Circular: *6],
-    format: [Circular: *7],
-    isAbsolute: [Circular: *8],
-    join: [Circular: *9],
-    normalize: [Circular: *10],
-    parse: [Circular: *11],
-    posix: [Circular: *27],
-    relative: [Circular: *12],
-    resolve: [Circular: *13],
+    dirname: [Circular: *10],
+    extname: [Circular: *11],
+    format: [Circular: *12],
+    isAbsolute: [Circular: *7],
+    join: [Circular: *8],
+    normalize: [Circular: *6],
+    parse: [Circular: *13],
+    posix: [Circular: *4],
+    relative: [Circular: *9],
+    resolve: [Circular: *5],
     sep: "/",
-    toNamespacedPath: [Circular: *14],
-    win32: [Circular: *15]
+    toNamespacedPath: [Circular: *2],
+    win32: [Circular: *14]
 }
 ```
 
@@ -7985,35 +8382,57 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    basename: <ref *2> ƒ bound basename(length: 0) {},
-    default: {
-        basename: [Circular: *2],
-        dirname: <ref *4> ƒ bound dirname(length: 0) {},
-        extname: <ref *5> ƒ bound extname(length: 0) {},
-        format: <ref *6> ƒ bound format(length: 0) {},
+    _makeLong: <ref *2> ƒ bound toNamespacedPath(length: 0) {},
+    basename: <ref *3> ƒ bound basename(length: 0) {},
+    default: <ref *4> {
+        resolve: <ref *5> ƒ bound resolve(length: 0) {},
+        normalize: <ref *6> ƒ bound normalize(length: 0) {},
         isAbsolute: <ref *7> ƒ bound isAbsolute(length: 0) {},
         join: <ref *8> ƒ bound join(length: 0) {},
-        normalize: <ref *9> ƒ bound normalize(length: 0) {},
-        parse: <ref *10> ƒ bound parse(length: 0) {},
-        relative: <ref *11> ƒ bound relative(length: 0) {},
-        resolve: <ref *12> ƒ bound resolve(length: 0) {},
-        toNamespacedPath: <ref *13> ƒ bound toNamespacedPath(length: 0) {},
+        relative: <ref *9> ƒ bound relative(length: 0) {},
+        toNamespacedPath: [Circular: *2],
+        dirname: <ref *10> ƒ bound dirname(length: 0) {},
+        basename: [Circular: *3],
+        extname: <ref *11> ƒ bound extname(length: 0) {},
+        format: <ref *12> ƒ bound format(length: 0) {},
+        parse: <ref *13> ƒ bound parse(length: 0) {},
         sep: "/",
         delimiter: ":",
-        Symbol(CommonJS): 0
+        win32: <ref *14> {
+            resolve: ƒ bound resolve(length: 0) {},
+            normalize: ƒ bound normalize(length: 0) {},
+            isAbsolute: ƒ bound isAbsolute(length: 0) {},
+            join: ƒ bound join(length: 0) {},
+            relative: ƒ bound relative(length: 0) {},
+            toNamespacedPath: <ref *20> ƒ bound toNamespacedPath(length: 0) {},
+            dirname: ƒ bound dirname(length: 0) {},
+            basename: ƒ bound basename(length: 0) {},
+            extname: ƒ bound extname(length: 0) {},
+            format: ƒ bound format(length: 0) {},
+            parse: ƒ bound parse(length: 0) {},
+            sep: "\\",
+            delimiter: ";",
+            win32: [Circular: *14],
+            posix: [Circular: *4],
+            _makeLong: [Circular: *20]
+        },
+        posix: [Circular: *4],
+        _makeLong: [Circular: *2]
     },
     delimiter: ":",
-    dirname: [Circular: *4],
-    extname: [Circular: *5],
-    format: [Circular: *6],
+    dirname: [Circular: *10],
+    extname: [Circular: *11],
+    format: [Circular: *12],
     isAbsolute: [Circular: *7],
     join: [Circular: *8],
-    normalize: [Circular: *9],
-    parse: [Circular: *10],
-    relative: [Circular: *11],
-    resolve: [Circular: *12],
+    normalize: [Circular: *6],
+    parse: [Circular: *13],
+    posix: [Circular: *4],
+    relative: [Circular: *9],
+    resolve: [Circular: *5],
     sep: "/",
-    toNamespacedPath: [Circular: *13]
+    toNamespacedPath: [Circular: *2],
+    win32: [Circular: *14]
 }
 ```
 
@@ -8083,34 +8502,57 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    basename: <ref *2> ƒ bound basename(length: 0) {},
-    default: {
-        basename: [Circular: *2],
-        dirname: <ref *4> ƒ bound dirname(length: 0) {},
-        extname: <ref *5> ƒ bound extname(length: 0) {},
-        format: <ref *6> ƒ bound format(length: 0) {},
+    _makeLong: <ref *2> ƒ bound toNamespacedPath(length: 0) {},
+    basename: <ref *3> ƒ bound basename(length: 0) {},
+    default: <ref *4> {
+        resolve: <ref *5> ƒ bound resolve(length: 0) {},
+        normalize: <ref *6> ƒ bound normalize(length: 0) {},
         isAbsolute: <ref *7> ƒ bound isAbsolute(length: 0) {},
         join: <ref *8> ƒ bound join(length: 0) {},
-        normalize: <ref *9> ƒ bound normalize(length: 0) {},
-        parse: <ref *10> ƒ bound parse(length: 0) {},
-        relative: <ref *11> ƒ bound relative(length: 0) {},
-        resolve: <ref *12> ƒ bound resolve(length: 0) {},
-        toNamespacedPath: <ref *13> ƒ bound toNamespacedPath(length: 0) {},
+        relative: <ref *9> ƒ bound relative(length: 0) {},
+        toNamespacedPath: [Circular: *2],
+        dirname: <ref *10> ƒ bound dirname(length: 0) {},
+        basename: [Circular: *3],
+        extname: <ref *11> ƒ bound extname(length: 0) {},
+        format: <ref *12> ƒ bound format(length: 0) {},
+        parse: <ref *13> ƒ bound parse(length: 0) {},
         sep: "\\",
-        delimiter: ";"
+        delimiter: ";",
+        win32: [Circular: *4],
+        posix: <ref *14> {
+            resolve: ƒ bound resolve(length: 0) {},
+            normalize: ƒ bound normalize(length: 0) {},
+            isAbsolute: ƒ bound isAbsolute(length: 0) {},
+            join: ƒ bound join(length: 0) {},
+            relative: ƒ bound relative(length: 0) {},
+            toNamespacedPath: <ref *20> ƒ bound toNamespacedPath(length: 0) {},
+            dirname: ƒ bound dirname(length: 0) {},
+            basename: ƒ bound basename(length: 0) {},
+            extname: ƒ bound extname(length: 0) {},
+            format: ƒ bound format(length: 0) {},
+            parse: ƒ bound parse(length: 0) {},
+            sep: "/",
+            delimiter: ":",
+            win32: [Circular: *4],
+            posix: [Circular: *14],
+            _makeLong: [Circular: *20]
+        },
+        _makeLong: [Circular: *2]
     },
     delimiter: ";",
-    dirname: [Circular: *4],
-    extname: [Circular: *5],
-    format: [Circular: *6],
+    dirname: [Circular: *10],
+    extname: [Circular: *11],
+    format: [Circular: *12],
     isAbsolute: [Circular: *7],
     join: [Circular: *8],
-    normalize: [Circular: *9],
-    parse: [Circular: *10],
-    relative: [Circular: *11],
-    resolve: [Circular: *12],
+    normalize: [Circular: *6],
+    parse: [Circular: *13],
+    posix: [Circular: *14],
+    relative: [Circular: *9],
+    resolve: [Circular: *5],
     sep: "\\",
-    toNamespacedPath: [Circular: *13]
+    toNamespacedPath: [Circular: *2],
+    win32: [Circular: *4]
 }
 ```
 
@@ -8169,10 +8611,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    PerformanceEntry: <ref *2> class PerformanceEntry {},
-    PerformanceNodeTiming: <ref *3> class PerformanceNodeTiming {},
-    PerformanceObserver: class PerformanceObserver {},
-    constants: <ref *5> {
+    PerformanceEntry: <ref *2> ƒ PerformanceEntry(length: 0) {},
+    PerformanceObserver: <ref *3> ƒ PerformanceObserver(length: 0) {},
+    constants: <ref *4> {
         NODE_PERFORMANCE_GC_MAJOR: 4,
         NODE_PERFORMANCE_GC_MINOR: 1,
         NODE_PERFORMANCE_GC_INCREMENTAL: 8,
@@ -8186,16 +8627,15 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         NODE_PERFORMANCE_GC_FLAGS_SCHEDULE_IDLE: 64
     },
     default: {
-        performance: <ref *7> {
+        performance: <ref *6> {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1690762391683.2808
+            timeOrigin: 1691367205926.1885
         },
-        constants: [Circular: *5],
+        constants: [Circular: *4],
         PerformanceEntry: [Circular: *2],
-        PerformanceNodeTiming: [Circular: *3],
-        Symbol(CommonJS): 0
+        PerformanceObserver: [Circular: *3]
     },
-    performance: [Circular: *7]
+    performance: [Circular: *6]
 }
 ```
 
@@ -8422,7 +8862,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
-        "/tmp/fs-fixture-1690762389698-1/process.mjs"
+        "/tmp/fs-fixture-1691367203964-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -9463,16 +9903,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         setgid: <ref *104> ƒ (length: 1) {},
         setuid: <ref *105> ƒ (length: 1) {},
         env: <ref *106>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_5922c947-6c86-41cc-9249-3176bcc87004",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_8064d379-1d3a-497f-b4bf-095f99b82425",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/7.33.5 npm/? node/v18.17.0 linux x64",
+            npm_config_user_agent: "pnpm/7.33.6 npm/? node/v18.17.0 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_5922c947-6c86-41cc-9249-3176bcc87004",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_8064d379-1d3a-497f-b4bf-095f99b82425",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
@@ -9493,13 +9933,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "666",
+            SYSTEMD_EXEC_PID: "661",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.6/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20230724.1.0",
+            ImageVersion: "20230728.3.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -9507,16 +9947,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:16783",
+            JOURNAL_STREAM: "8:17119",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "5709113755",
+            GITHUB_RUN_ID: "5779527109",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "18ce4c708017411d6a81157c17ab26f5f2d67d15",
+            GITHUB_WORKFLOW_SHA: "291460cdfd651d94d660f2a67a97fec5ccdf861b",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -9524,17 +9964,17 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
             GITHUB_ACTION_REPOSITORY: "",
-            npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.5/node_modules/pnpm/dist/node_modules/node-gyp/…",
+            npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.6/node_modules/pnpm/dist/node_modules/node-gyp/…",
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_50f5febd-cbc5-4bb9-88ea-738093067d41",
-            INVOCATION_ID: "b719b80c47344414b1e9d7fa507e657c",
+            RUNNER_TRACKING_ID: "github_a2c82df3-6b86-456d-84b3-0f13bb66e25f",
+            INVOCATION_ID: "78559de0ed0945b2a2ccc4b0e9a670dd",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.11/x64",
             NODE: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "32",
+            GITHUB_RUN_NUMBER: "33",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9569,7 +10009,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "18ce4c708017411d6a81157c17ab26f5f2d67d15",
+            GITHUB_SHA: "291460cdfd651d94d660f2a67a97fec5ccdf861b",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -9577,12 +10017,12 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_5922c947-6c86-41cc-9249-3176bcc87004",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_8064d379-1d3a-497f-b4bf-095f99b82425",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
             RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-            npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.5/node_modules/pnpm/bin/pnpm.cjs",
+            npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.6/node_modules/pnpm/bin/pnpm.cjs",
             HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
             STATS_TIS: "mining",
             GITHUB_EVENT_NAME: "schedule",
@@ -9592,7 +10032,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_5922c947-6c86-41cc-9249-3176bcc87004",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_8064d379-1d3a-497f-b4bf-095f99b82425",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -9605,15 +10045,15 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.154/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_5922c947-6c86-41cc-9249-3176bcc87004",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_8064d379-1d3a-497f-b4bf-095f99b82425",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *107> [],
-        pid: 2473,
-        ppid: 1875,
+        pid: 2462,
+        ppid: 1866,
         execPath: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -9656,9 +10096,9 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *64],
     openStdin: [Circular: *54],
-    pid: 2473,
+    pid: 2462,
     platform: "linux",
-    ppid: 1875,
+    ppid: 1866,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *108],
@@ -9684,17 +10124,393 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690762389698-1/process.mjs:4:15
+{
+    _debugEnd: <ref *2> ƒ _debugEnd(length: 0) {},
+    _debugProcess: <ref *3> ƒ _debugProcess(length: 0) {},
+    _fatalException: <ref *4> ƒ _fatalException(length: 1) {},
+    _getActiveHandles: <ref *5> ƒ _getActiveHandles(length: 0) {},
+    _getActiveRequests: <ref *6> ƒ _getActiveRequests(length: 0) {},
+    _kill: <ref *7> ƒ _kill(length: 2) {},
+    _linkedBinding: <ref *8> ƒ _linkedBinding(length: 0) {},
+    _preload_modules: <ref *9> [],
+    _rawDebug: <ref *10> ƒ _rawDebug(length: 0) {},
+    _startProfilerIdleNotifier: <ref *11> ƒ _startProfilerIdleNotifier(length: 0) {},
+    _stopProfilerIdleNotifier: <ref *12> ƒ _stopProfilerIdleNotifier(length: 0) {},
+    _tickCallback: <ref *13> ƒ _tickCallback(length: 0) {},
+    abort: <ref *14> ƒ abort(length: 1) {},
+    addListener: ƒ addListener(length: 2) {},
+    allowedNodeEnvironmentFlags: <ref *16> Set {},
+    arch: "x64",
+    argv: <ref *17> [
+        "/home/runner/.bun/bin/bun",
+        "/tmp/fs-fixture-1691367203964-1/process.mjs"
+    ],
+    argv0: "bun",
+    assert: <ref *18> ƒ assert(length: 1) {},
+    binding: <ref *19> ƒ binding(length: 1) {},
+    browser: false,
+    chdir: <ref *20> ƒ chdir(length: 1) {},
+    config: <ref *21> {
+        target_defaults: {},
+        variables: {
+            v8_enable_i8n_support: 1
+        }
+    },
+    cpuUsage: <ref *24> ƒ cpuUsage(length: 1) {},
+    cwd: <ref *25> ƒ cwd(length: 1) {},
+    debugPort: 9229,
+    default: EventEmitter {
+        abort: [Circular: *14],
+        allowedNodeEnvironmentFlags: [Circular: *16],
+        arch: "x64",
+        argv: [Circular: *17],
+        argv0: "bun",
+        assert: [Circular: *18],
+        binding: [Circular: *19],
+        browser: false,
+        chdir: [Circular: *20],
+        config: [Circular: *21],
+        cpuUsage: [Circular: *24],
+        cwd: [Circular: *25],
+        [get/set] debugPort: 9229,
+        dlopen: <ref *27> ƒ dlopen(length: 1) {},
+        emitWarning: <ref *28> ƒ emitWarning(length: 1) {},
+        env: <ref *29> {
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_8064d379-1d3a-497f-b4bf-095f99b82425",
+            [get/set] npm_package_devDependencies__types_node: "^18.15.11",
+            [get/set] STATS_TRP: "true",
+            [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
+            [get/set] DOTNET_NOLOGO: "1",
+            [get/set] USER: "runner",
+            [get/set] npm_config_user_agent: "pnpm/7.33.6 npm/? node/v18.17.0 linux x64",
+            [get/set] CI: "true",
+            [get/set] RUNNER_ENVIRONMENT: "github-hosted",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_8064d379-1d3a-497f-b4bf-095f99b82425",
+            [get/set] PIPX_HOME: "/opt/pipx",
+            [get/set] npm_package_devDependencies_execa: "^7.1.1",
+            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
+            [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
+            [get/set] SHLVL: "1",
+            [get/set] HOME: "/home/runner",
+            [get/set] RUNNER_TEMP: "/home/runner/work/_temp",
+            [get/set] GITHUB_EVENT_PATH: "/home/runner/work/_temp/_github_workflow/event.json",
+            [get/set] JAVA_HOME_11_X64: "/usr/lib/jvm/temurin-11-jdk-amd64",
+            [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
+            [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
+            [get/set] npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
+            [get/set] GRADLE_HOME: "/usr/share/gradle-8.2.1",
+            [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+            [get/set] STATS_RDCL: "true",
+            [get/set] GITHUB_RETENTION_DAYS: "90",
+            [get/set] GITHUB_REPOSITORY_OWNER_ID: "1075694",
+            [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
+            [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
+            [get/set] GITHUB_HEAD_REF: "\"\"",
+            [get/set] SYSTEMD_EXEC_PID: "661",
+            [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
+            [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.6/x64",
+            [get/set] NVM_DIR: "/home/runner/.nvm",
+            [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
+            [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
+            [get/set] ImageVersion: "20230728.3.0",
+            [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
+            [get/set] RUNNER_OS: "Linux",
+            [get/set] GITHUB_API_URL: "https://api.github.com",
+            [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
+            [get/set] RUNNER_USER: "runner",
+            [get/set] STATS_V3PS: "true",
+            [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
+            [get/set] JOURNAL_STREAM: "8:17119",
+            [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
+            [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
+            [get/set] npm_package_private: "true",
+            [get/set] npm_package_scripts_lint: "eslint --cache .",
+            [get/set] npm_config_registry: "https://registry.npmjs.org/",
+            [get/set] GITHUB_RUN_ID: "5779527109",
+            [get/set] GITHUB_REF_TYPE: "branch",
+            [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
+            [get/set] GITHUB_WORKFLOW_SHA: "291460cdfd651d94d660f2a67a97fec5ccdf861b",
+            [get/set] GITHUB_BASE_REF: "\"\"",
+            [get/set] ImageOS: "ubuntu22",
+            [get/set] npm_package_scripts_start: "tsx index.ts",
+            [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
+            [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
+            [get/set] GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
+            [get/set] GITHUB_ACTION_REPOSITORY: "\"\"",
+            [get/set] npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.6/node_modules/pnpm/dist/node_modules/node-gyp/…",
+            [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
+            [get/set] ANT_HOME: "/usr/share/ant",
+            [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
+            [get/set] RUNNER_TRACKING_ID: "github_a2c82df3-6b86-456d-84b3-0f13bb66e25f",
+            [get/set] INVOCATION_ID: "78559de0ed0945b2a2ccc4b0e9a670dd",
+            [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
+            [get/set] GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.11/x64",
+            [get/set] NODE: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
+            [get/set] GITHUB_ACTION: "__run",
+            [get/set] GITHUB_RUN_NUMBER: "33",
+            [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
+            [get/set] RUNNER_ARCH: "X64",
+            [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
+            [get/set] AGENT_TOOLSDIRECTORY: "/opt/hostedtoolcache",
+            [get/set] npm_package_devDependencies_comment_mark: "^1.1.1",
+            [get/set] LANG: "C.UTF-8",
+            [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
+            [get/set] npm_package_devDependencies_eslint: "^8.37.0",
+            [get/set] CONDA: "/usr/share/miniconda",
+            [get/set] RUNNER_NAME: "GitHub Actions 2",
+            [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
+            [get/set] STATS_VMD: "true",
+            [get/set] GITHUB_REF_NAME: "master",
+            [get/set] GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
+            [get/set] npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
+            [get/set] npm_lifecycle_script: "tsx index.ts",
+            [get/set] STATS_UE: "true",
+            [get/set] ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+            [get/set] GITHUB_ACTION_REF: "\"\"",
+            [get/set] DEBIAN_FRONTEND: "noninteractive",
+            [get/set] GITHUB_REPOSITORY_ID: "622996871",
+            [get/set] GITHUB_ACTIONS: "true",
+            [get/set] STATS_NM: "true",
+            [get/set] NODE_PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.12.6/node_modules/tsx/d…",
+            [get/set] npm_package_devDependencies_fs_fixture: "^1.2.0",
+            [get/set] npm_lifecycle_event: "start",
+            [get/set] GITHUB_REF_PROTECTED: "false",
+            [get/set] npm_package_devDependencies_lint_staged: "^13.2.0",
+            [get/set] npm_package_devDependencies_simple_git_hooks: "^2.8.1",
+            [get/set] GITHUB_WORKSPACE: "/home/runner/work/compare-bun-node/compare-bun-node",
+            [get/set] ACCEPT_EULA: "Y",
+            [get/set] GITHUB_JOB: "build",
+            [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
+            [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
+            [get/set] GITHUB_SHA: "291460cdfd651d94d660f2a67a97fec5ccdf861b",
+            [get/set] GITHUB_RUN_ATTEMPT: "1",
+            [get/set] GITHUB_REF: "refs/heads/master",
+            [get/set] GITHUB_ACTOR: "privatenumber",
+            [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
+            [get/set] npm_package_license: "MIT",
+            [get/set] LEIN_HOME: "/usr/local/lib/lein",
+            [get/set] npm_package_devDependencies_tsx: "^3.12.6",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_8064d379-1d3a-497f-b4bf-095f99b82425",
+            [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
+            [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
+            [get/set] GITHUB_ACTOR_ID: "1075694",
+            [get/set] RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
+            [get/set] npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.6/node_modules/pnpm/bin/pnpm.cjs",
+            [get/set] HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
+            [get/set] STATS_TIS: "mining",
+            [get/set] GITHUB_EVENT_NAME: "schedule",
+            [get/set] HOMEBREW_NO_AUTO_UPDATE: "1",
+            [get/set] ANDROID_HOME: "/usr/local/lib/android/sdk",
+            [get/set] GITHUB_SERVER_URL: "https://github.com",
+            [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
+            [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
+            [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_8064d379-1d3a-497f-b4bf-095f99b82425",
+            [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
+            [get/set] STATS_EXT: "true",
+            [get/set] npm_command: "run-script",
+            [get/set] PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
+            [get/set] ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+            [get/set] SGX_AESM_ADDR: "1",
+            [get/set] CHROME_BIN: "/usr/bin/google-chrome",
+            [get/set] SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
+            [get/set] PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
+            [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.154/provjobd.data",
+            [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
+            [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_8064d379-1d3a-497f-b4bf-095f99b82425",
+            [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
+            [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
+        },
+        execArgv: <ref *30> [],
+        execPath: "/home/runner/.bun/bin/bun",
+        exit: <ref *31> ƒ exit(length: 1) {},
+        [get/set] exitCode: 0,
+        features: <ref *32> {
+            inspector: true,
+            debug: false,
+            uv: true,
+            ipv6: true,
+            tls_alpn: true,
+            tls_sni: true,
+            tls_ocsp: true,
+            tls: true,
+            cached_builtins: true
+        },
+        getActiveResourcesInfo: <ref *33> ƒ getActiveResourcesInfo(length: 0) {},
+        getegid: <ref *34> ƒ getegid(length: 0) {},
+        geteuid: <ref *35> ƒ geteuid(length: 0) {},
+        getgid: <ref *36> ƒ getgid(length: 0) {},
+        getgroups: <ref *37> ƒ getgroups(length: 0) {},
+        getuid: <ref *38> ƒ getuid(length: 0) {},
+        hrtime: <ref *39> ƒ hrtime(length: 0) {
+            bigint: ƒ bigint(length: 0) {}
+        },
+        isBun: true,
+        kill: <ref *41> ƒ kill(length: 2) {},
+        [get/set] mainModule: undefined,
+        memoryUsage: <ref *42> ƒ memoryUsage(length: 0) {
+            rss: ƒ rss(length: 0) {}
+        },
+        moduleLoadList: <ref *44> [],
+        nextTick: <ref *45> ƒ nextTick(length: 1) {},
+        openStdin: <ref *46> ƒ openStdin(length: 0) {},
+        pid: 2473,
+        platform: "linux",
+        ppid: 1866,
+        reallyExit: <ref *47> ƒ reallyExit(length: 1) {},
+        release: <ref *48> {
+            name: "node",
+            lts: false,
+            sourceUrl: "https://github.com/oven-sh/bun/release/bun-v0.7.3/bun-linux-x64-baseline.zip",
+            headersUrl: "",
+            libUrl: ""
+        },
+        revision: "a9b3d58353061212b7fddfd1ec13dd9f7a414f11",
+        setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
+        stderr: <ref *50> StdioWriteStream {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            bytesWritten: 0,
+            Symbol(kCapture): false
+        },
+        stdin: <ref *52> StdinStream2 {
+            _readableState: ReadableState {},
+            _writableState: {
+                objectMode: false,
+                highWaterMark: 16384,
+                finalCalled: false,
+                needDrain: false,
+                ending: false,
+                ended: false,
+                finished: false,
+                destroyed: false,
+                decodeStrings: true,
+                defaultEncoding: "utf8",
+                length: 0,
+                writing: false,
+                corked: 0,
+                sync: true,
+                bufferProcessing: false,
+                onwrite: ƒ bound onwrite(length: 1) {},
+                writecb: null,
+                writelen: 0,
+                afterWriteTickInfo: null,
+                buffered: [],
+                bufferedIndex: 0,
+                allBuffers: true,
+                allNoop: true,
+                pendingcb: 0,
+                constructed: true,
+                prefinished: false,
+                errorEmitted: false,
+                emitClose: true,
+                autoDestroy: true,
+                errored: null,
+                closed: false,
+                closeEmitted: false,
+                Symbol(kOnFinished): []
+            },
+            allowHalfOpen: true
+        },
+        stdout: <ref *58> StdioWriteStream {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            bytesWritten: 0,
+            Symbol(kCapture): false
+        },
+        [get/set] title: "bun",
+        umask: <ref *60> ƒ umask(length: 1) {},
+        uptime: <ref *61> ƒ uptime(length: 1) {},
+        version: "v18.15.0",
+        versions: <ref *62> {
+            node: "18.15.0",
+            bun: "0.7.3",
+            webkit: "60d11703a533fd694cd1d6ddda04813eecb5d69f",
+            boringssl: "b275c5ce1c88bc06f5a967026d3c0ce1df2be815",
+            libarchive: "dc321febde83dd0f31158e1be61a7aedda65e7a2",
+            mimalloc: "3c7079967a269027e438a2aac83197076d9fe09d",
+            picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+            uwebsockets: "70b1b9fc1341e8b791b42c5447f90505c2abe156",
+            zig: "0.11.0-dev.4006+bf827d0b5",
+            zlib: "885674026394870b7e7a05b7bf1ec5eb7bd8a9c0",
+            tinycc: "2d3ad9e0d32194ad7fd867b66ebe218dcc8cb5cd",
+            lolhtml: "2681dcf0b3e6907111565199df8c43cc9aab7fe8",
+            ares: "0e7a5dee0fbb04080750cf6eabbe89d8bae87faa",
+            usockets: "fafc241e8664243fc0c51d69684d5d02b9805134",
+            v8: "10.8.168.20-node.8",
+            uv: "1.44.2",
+            napi: "8",
+            modules: "108"
+        },
+        _debugEnd: [Circular: *2],
+        _debugProcess: [Circular: *3],
+        _fatalException: [Circular: *4],
+        _getActiveRequests: [Circular: *6],
+        _getActiveHandles: [Circular: *5],
+        _linkedBinding: [Circular: *8],
+        _preload_modules: [Circular: *9],
+        _rawDebug: [Circular: *10],
+        _startProfilerIdleNotifier: [Circular: *11],
+        _stopProfilerIdleNotifier: [Circular: *12],
+        _tickCallback: [Circular: *13],
+        _kill: [Circular: *7],
+        Symbol(Symbol.toStringTag): "process"
+    },
+    dlopen: [Circular: *27],
+    emit: ƒ emit(length: 1) {},
+    emitWarning: [Circular: *28],
+    env: [Circular: *29],
+    eventNames: ƒ eventNames(length: 0) {},
+    execArgv: [Circular: *30],
+    execPath: "/home/runner/.bun/bin/bun",
+    exit: [Circular: *31],
+    exitCode: 0,
+    features: [Circular: *32],
+    getActiveResourcesInfo: [Circular: *33],
+    getMaxListeners: ƒ getMaxListeners(length: 0) {},
+    getegid: [Circular: *34],
+    geteuid: [Circular: *35],
+    getgid: [Circular: *36],
+    getgroups: [Circular: *37],
+    getuid: [Circular: *38],
+    hrtime: [Circular: *39],
+    isBun: true,
+    kill: [Circular: *41],
+    listenerCount: ƒ listenerCount(length: 1) {},
+    listeners: ƒ listeners(length: 1) {},
+    mainModule: undefined,
+    memoryUsage: [Circular: *42],
+    moduleLoadList: [Circular: *44],
+    nextTick: [Circular: *45],
+    off: ƒ off(length: 2) {},
+    on: ƒ on(length: 2) {},
+    once: ƒ once(length: 2) {},
+    openStdin: [Circular: *46],
+    pid: 2473,
+    platform: "linux",
+    ppid: 1866,
+    prependListener: ƒ prependListener(length: 2) {},
+    prependOnceListener: ƒ prependOnceListener(length: 2) {},
+    rawListeners: ƒ rawListeners(length: 1) {},
+    reallyExit: [Circular: *47],
+    release: [Circular: *48],
+    removeAllListeners: ƒ removeAllListeners(length: 1) {},
+    removeListener: ƒ removeListener(length: 2) {},
+    revision: "a9b3d58353061212b7fddfd1ec13dd9f7a414f11",
+    setMaxListeners: ƒ setMaxListeners(length: 1) {},
+    setSourceMapsEnabled: [Circular: *49],
+    stderr: [Circular: *50],
+    stdin: [Circular: *52],
+    stdout: [Circular: *58],
+    title: "bun",
+    umask: [Circular: *60],
+    uptime: [Circular: *61],
+    version: "v18.15.0",
+    versions: [Circular: *62]
+}
 ```
 
 </td></tr></table>
@@ -9729,12 +10545,23 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    decode: ƒ E(length: 1) {},
-    encode: ƒ L(length: 1) {},
-    toASCII: ƒ O(length: 1) {},
-    toUnicode: ƒ j(length: 1) {},
-    ucs2decode: ƒ T(length: 1) {},
-    ucs2encode: ƒ N(length: 1) {}
+    decode: <ref *2> ƒ decode(length: 1) {},
+    default: {
+        version: "2.1.0",
+        ucs2: <ref *4> {
+            decode: ƒ ucs2decode(length: 1) {},
+            encode: ƒ ucs2encode(length: 1) {}
+        },
+        decode: [Circular: *2],
+        encode: <ref *7> ƒ encode(length: 1) {},
+        toASCII: <ref *8> ƒ toASCII(length: 1) {},
+        toUnicode: <ref *9> ƒ toUnicode(length: 1) {}
+    },
+    encode: [Circular: *7],
+    toASCII: [Circular: *8],
+    toUnicode: [Circular: *9],
+    ucs2: [Circular: *4],
+    version: "2.1.0"
 }
 ```
 
@@ -9769,12 +10596,12 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    decode: <ref *2> ƒ $r(length: 4) {},
+    decode: <ref *2> ƒ parse(length: 4) {},
     default: {
-        unescapeBuffer: <ref *4> ƒ Lt(length: 2) {},
-        unescape: <ref *5> ƒ Wr(length: 2) {},
-        escape: <ref *6> ƒ Nt(length: 1) {},
-        stringify: <ref *7> ƒ Pr(length: 4) {},
+        unescapeBuffer: <ref *4> ƒ unescapeBuffer(length: 2) {},
+        unescape: <ref *5> ƒ qsUnescape(length: 2) {},
+        escape: <ref *6> ƒ qsEscape(length: 1) {},
+        stringify: <ref *7> ƒ stringify(length: 4) {},
         encode: [Circular: *7],
         parse: [Circular: *2],
         decode: [Circular: *2]
@@ -9825,22 +10652,51 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Interface: <ref *2> ƒ Interface(length: 4) {},
-    clearLine: <ref *3> ƒ clearLine(length: 3) {},
-    clearScreenDown: <ref *4> ƒ clearScreenDown(length: 2) {},
-    createInterface: <ref *5> ƒ createInterface(length: 4) {},
-    cursorTo: <ref *6> ƒ cursorTo(length: 4) {},
+    Interface: <ref *2> ƒ Interface(length: 4) {
+        prototype: Interface2 {
+            question: ƒ question(length: 3) {
+                Symbol(nodejs.util.promisify.custom): ƒ question(length: 2) {}
+            },
+            _setRawMode: ƒ [_setRawMode](length: 1) {},
+            _onLine: ƒ [_onLine](length: 1) {},
+            _writeToOutput: ƒ [_writeToOutput](length: 1) {},
+            _addHistory: ƒ [_addHistory](length: 0) {},
+            _refreshLine: ƒ [_refreshLine](length: 0) {},
+            _normalWrite: ƒ [_normalWrite](length: 1) {},
+            _insertString: ƒ [_insertString](length: 1) {},
+            _tabComplete: ƒ (length: 1) {},
+            _wordLeft: ƒ [_wordLeft](length: 0) {},
+            _wordRight: ƒ [_wordRight](length: 0) {},
+            _deleteLeft: ƒ [_deleteLeft](length: 0) {},
+            _deleteRight: ƒ [_deleteRight](length: 0) {},
+            _deleteWordLeft: ƒ [_deleteWordLeft](length: 0) {},
+            _deleteWordRight: ƒ [_deleteWordRight](length: 0) {},
+            _deleteLineLeft: ƒ [_deleteLineLeft](length: 0) {},
+            _deleteLineRight: ƒ [_deleteLineRight](length: 0) {},
+            _line: ƒ [_line](length: 0) {},
+            _historyNext: ƒ [_historyNext](length: 0) {},
+            _historyPrev: ƒ [_historyPrev](length: 0) {},
+            _getDisplayPos: ƒ [_getDisplayPos](length: 1) {},
+            _getCursorPos: ƒ getCursorPos(length: 0) {},
+            _moveCursor: ƒ [_moveCursor](length: 1) {},
+            _ttyWrite: ƒ [_ttyWrite](length: 2) {}
+        }
+    },
+    clearLine: <ref *29> ƒ clearLine(length: 3) {},
+    clearScreenDown: <ref *30> ƒ clearScreenDown(length: 2) {},
+    createInterface: <ref *31> ƒ createInterface(length: 4) {},
+    cursorTo: <ref *32> ƒ cursorTo(length: 4) {},
     default: {
         Interface: [Circular: *2],
-        clearLine: [Circular: *3],
-        clearScreenDown: [Circular: *4],
-        createInterface: [Circular: *5],
-        cursorTo: [Circular: *6],
-        emitKeypressEvents: <ref *8> ƒ emitKeypressEvents(length: 1) {},
-        moveCursor: <ref *9> ƒ moveCursor(length: 4) {},
-        promises: <ref *10> {
-            Readline: class Readline {},
-            Interface: class Interface3 extends _Interface {},
+        clearLine: [Circular: *29],
+        clearScreenDown: [Circular: *30],
+        createInterface: [Circular: *31],
+        cursorTo: [Circular: *32],
+        emitKeypressEvents: <ref *34> ƒ emitKeypressEvents(length: 1) {},
+        moveCursor: <ref *35> ƒ moveCursor(length: 4) {},
+        promises: <ref *36> {
+            Readline: ƒ Readline(length: 1) {},
+            Interface: ƒ Interface2(length: 4) {},
             createInterface: ƒ createInterface(length: 4) {}
         },
         Symbol(__BUN_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED__): {
@@ -9852,15 +10708,14 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 kClearToLineEnd: "\u001b[0K"
             },
             utils: {
-                getStringWidth: ƒ getStringWidth2(length: 1) {},
+                getStringWidth: ƒ getStringWidth(length: 1) {},
                 stripVTControlCharacters: ƒ stripVTControlCharacters(length: 1) {}
             }
-        },
-        Symbol(CommonJS): 0
+        }
     },
-    emitKeypressEvents: [Circular: *8],
-    moveCursor: [Circular: *9],
-    promises: [Circular: *10]
+    emitKeypressEvents: [Circular: *34],
+    moveCursor: [Circular: *35],
+    promises: [Circular: *36]
 }
 ```
 
@@ -9887,14 +10742,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Interface: <ref *2> class Interface3 extends _Interface {},
-    Readline: <ref *3> class Readline {},
+    Interface: <ref *2> ƒ Interface2(length: 4) {},
+    Readline: <ref *3> ƒ Readline(length: 1) {},
     createInterface: <ref *4> ƒ createInterface(length: 4) {},
     default: {
         Readline: [Circular: *3],
         Interface: [Circular: *2],
-        createInterface: [Circular: *4],
-        Symbol(CommonJS): 0
+        createInterface: [Circular: *4]
     }
 }
 ```
@@ -10006,13 +10860,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 83 | 					if (!descriptor.enumerable) {
              ^
 TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:99:6
-      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:99:6
+      at /tmp/fs-fixture-1691367203964-1/inspect.mjs:83:10
+      at map (:1:20)
+      at inspect (/tmp/fs-fixture-1691367203964-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1691367203964-1/inspect.mjs:99:6
+      at map (:1:20)
+      at inspect (/tmp/fs-fixture-1691367203964-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1691367203964-1/inspect.mjs:99:6
+      at map (:1:20)
+      at inspect (/tmp/fs-fixture-1691367203964-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1691367203964-1/repl.mjs:4:15
 ```
 
 </td></tr></table>
@@ -10097,77 +10954,138 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Duplex: <ref *2> ƒ R(length: 1) {
+    Duplex: <ref *2> ƒ Duplex(length: 1) {
+        prototype: EventEmitter {
+            write: <ref *4> ƒ (length: 3) {},
+            cork: <ref *5> ƒ (length: 0) {},
+            uncork: <ref *6> ƒ (length: 0) {},
+            setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
+            _write: <ref *8> ƒ (length: 3) {},
+            _writev: null,
+            end: <ref *9> ƒ (length: 3) {}
+        },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *6> class a extends Uq {},
-    PassThrough: <ref *7> ƒ y(length: 1) {},
-    Readable: <ref *8> ƒ E(length: 1) {
-        _fromList: ƒ Q(length: 2) {},
+    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+        prototype: EventEmitter {
+            _transform: ƒ (length: 3) {}
+        }
+    },
+    Readable: <ref *17> ƒ Readable(length: 1) {
+        prototype: EventEmitter {
+            on: <ref *19> ƒ (length: 2) {},
+            destroy: ƒ destroy2(length: 2) {},
+            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _destroy: ƒ (length: 2) {},
+            undefined: ƒ (length: 1) {},
+            push: ƒ (length: 2) {},
+            unshift: ƒ (length: 2) {},
+            isPaused: ƒ (length: 0) {},
+            setEncoding: ƒ (length: 1) {},
+            read: ƒ (length: 1) {},
+            _read: ƒ (length: 1) {},
+            pipe: ƒ (length: 2) {},
+            unpipe: ƒ (length: 1) {},
+            addListener: [Circular: *19],
+            removeListener: <ref *32> ƒ (length: 2) {},
+            off: [Circular: *32],
+            removeAllListeners: ƒ (length: 1) {},
+            resume: ƒ (length: 0) {},
+            pause: ƒ (length: 0) {},
+            wrap: ƒ (length: 1) {},
+            iterator: ƒ (length: 1) {},
+            Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
         fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
+        toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *14> ƒ y(length: 1) {
-        isDisturbed: <ref *15> ƒ m(length: 1) {},
-        isErrored: <ref *16> ƒ u(length: 1) {},
-        isWritable: <ref *17> ƒ I(length: 1) {},
-        isReadable: <ref *18> ƒ U(length: 1) {},
-        Readable: [Circular: *8],
-        Writable: <ref *19> ƒ Y(length: 0) {
+    Stream: <ref *44> ƒ Stream(length: 1) {
+        prototype: <ref *45> EventEmitter {
+            pipe: ƒ (length: 2) {}
+        },
+        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *48> ƒ isErrored(length: 1) {},
+        isWritable: <ref *49> ƒ isWritable(length: 1) {},
+        isReadable: <ref *50> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *17],
+        Writable: <ref *51> ƒ Writable2(length: 0) {
+            prototype: EventEmitter {
+                pipe: ƒ (length: 0) {},
+                write: [Circular: *4],
+                cork: [Circular: *5],
+                uncork: [Circular: *6],
+                setDefaultEncoding: [Circular: *7],
+                _write: [Circular: *8],
+                _writev: null,
+                end: [Circular: *9],
+                destroy: ƒ (length: 2) {},
+                _undestroy: [Circular: *21],
+                _destroy: ƒ (length: 2) {},
+                undefined: ƒ (length: 1) {}
+            },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *22> ƒ M(length: 1) {},
-        PassThrough: [Circular: *7],
-        pipeline: <ref *23> ƒ F(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *24> ƒ T(length: 0) {}
+        Transform: <ref *59> ƒ Transform(length: 1) {
+            prototype: EventEmitter {
+                _final: ƒ final(length: 1) {},
+                _transform: ƒ (length: 3) {},
+                _write: ƒ (length: 3) {},
+                _read: ƒ (length: 0) {}
+            }
         },
-        addAbortSignal: <ref *25> ƒ T(length: 2) {},
-        finished: <ref *26> ƒ $(length: 3) {
-            finished: <ref *27> ƒ n(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *27]
+        PassThrough: [Circular: *14],
+        pipeline: <ref *65> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
         },
-        destroy: <ref *28> ƒ Y(length: 2) {},
-        compose: <ref *29> ƒ c(length: 0) {},
-        [get/set] promises: <ref *30> {
-            finished: [Circular: *27],
-            pipeline: [Circular: *24]
+        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *68> ƒ eos(length: 3) {
+            finished: <ref *69> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
         },
-        Stream: [Circular: *14],
-        _isUint8Array: <ref *31> ƒ P(length: 1) {},
-        _uint8ArrayToBuffer: <ref *32> ƒ P(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *33> ƒ lq(length: 2) {},
-        NativeWritable: [Circular: *6],
-        default: [Circular: *14],
-        eos: <ref *34> ƒ B(length: 0) {},
-        Symbol(CommonJS): 0,
+        destroy: <ref *70> ƒ destroyer(length: 2) {},
+        compose: <ref *71> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *72> {
+            finished: [Circular: *69],
+            pipeline: [Circular: *66]
+        },
+        Stream: [Circular: *44],
+        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *13],
+        eos: [Circular: *68],
         Symbol(::bunternal::): {
-            _ReadableFromWeb: ƒ Z(length: 1) {},
-            _ReadableFromWebForUndici: class P extends E {}
+            _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
+            _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *22],
-    Writable: [Circular: *19],
-    _getNativeReadableStreamPrototype: [Circular: *33],
-    _isUint8Array: [Circular: *31],
-    _uint8ArrayToBuffer: [Circular: *32],
-    addAbortSignal: [Circular: *25],
-    compose: [Circular: *29],
-    default: [Circular: *14],
-    destroy: [Circular: *28],
-    eos: [Circular: *34],
-    finished: [Circular: *26],
-    isDisturbed: [Circular: *15],
-    isErrored: [Circular: *16],
-    isReadable: [Circular: *18],
-    isWritable: [Circular: *17],
-    pipeline: [Circular: *23],
-    promises: [Circular: *30]
+    Transform: [Circular: *59],
+    Writable: [Circular: *51],
+    _getNativeReadableStreamPrototype: [Circular: *75],
+    _isUint8Array: [Circular: *73],
+    _uint8ArrayToBuffer: [Circular: *74],
+    addAbortSignal: [Circular: *67],
+    compose: [Circular: *71],
+    default: [Circular: *44],
+    defaultMaxListeners: 10,
+    destroy: [Circular: *70],
+    eos: [Circular: *68],
+    finished: [Circular: *68],
+    isDisturbed: [Circular: *47],
+    isErrored: [Circular: *48],
+    isReadable: [Circular: *50],
+    isWritable: [Circular: *49],
+    pipeline: [Circular: *65],
+    promises: [Circular: *72],
+    prototype: [Circular: *45]
 }
 ```
 
@@ -10200,14 +11118,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 {
     arrayBuffer: <ref *2> ƒ readableStreamToArrayBuffer(length: 1) {},
     blob: <ref *3> ƒ readableStreamToBlob(length: 1) {},
-    buffer: <ref *4> ƒ h(length: 1) {},
+    buffer: <ref *4> ƒ buffer(length: 1) {},
     default: {
         arrayBuffer: [Circular: *2],
         text: <ref *6> ƒ readableStreamToText(length: 1) {},
-        json: <ref *7> ƒ g(length: 1) {},
+        json: <ref *7> ƒ json(length: 1) {},
         buffer: [Circular: *4],
-        blob: [Circular: *3],
-        Symbol(CommonJS): 0
+        blob: [Circular: *3]
     },
     json: [Circular: *7],
     text: [Circular: *6]
@@ -10236,12 +11153,11 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 ```js
 {
     default: {
-        pipeline: <ref *3> ƒ T(length: 0) {},
-        finished: <ref *4> ƒ n(length: 2) {},
-        Symbol(CommonJS): 0
+        finished: <ref *3> ƒ finished2(length: 2) {},
+        pipeline: <ref *4> ƒ pipeline(length: 0) {}
     },
-    finished: [Circular: *4],
-    pipeline: [Circular: *3]
+    finished: [Circular: *3],
+    pipeline: [Circular: *4]
 }
 ```
 
@@ -10297,17 +11213,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 ```js
 {
     ByteLengthQueuingStrategy: <ref *2> ƒ ByteLengthQueuingStrategy(length: 1) {},
-    CompressionStream: undefined,
     CountQueuingStrategy: <ref *3> ƒ CountQueuingStrategy(length: 1) {},
-    DecompressionStream: undefined,
     ReadableByteStreamController: <ref *4> ƒ ReadableByteStreamController(length: 3) {},
     ReadableStream: <ref *5> ƒ ReadableStream(length: 0) {},
     ReadableStreamBYOBReader: <ref *6> ƒ ReadableStreamBYOBReader(length: 1) {},
     ReadableStreamBYOBRequest: <ref *7> ƒ ReadableStreamBYOBRequest(length: 2) {},
     ReadableStreamDefaultController: <ref *8> ƒ ReadableStreamDefaultController(length: 4) {},
     ReadableStreamDefaultReader: <ref *9> ƒ ReadableStreamDefaultReader(length: 1) {},
-    TextDecoderStream: undefined,
-    TextEncoderStream: undefined,
     TransformStream: <ref *10> ƒ TransformStream(length: 0) {},
     TransformStreamDefaultController: <ref *11> ƒ TransformStreamDefaultController(length: 0) {},
     WritableStream: <ref *12> ƒ WritableStream(length: 0) {},
@@ -10326,12 +11238,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         WritableStreamDefaultWriter: [Circular: *14],
         WritableStreamDefaultController: [Circular: *13],
         ByteLengthQueuingStrategy: [Circular: *2],
-        CountQueuingStrategy: [Circular: *3],
-        TextEncoderStream: undefined,
-        TextDecoderStream: undefined,
-        CompressionStream: undefined,
-        DecompressionStream: undefined,
-        Symbol(CommonJS): 0
+        CountQueuingStrategy: [Circular: *3]
     }
 }
 ```
@@ -10354,17 +11261,12 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690762389698-1/string_decoder.mjs:4:15
+{
+    StringDecoder: <ref *2> ƒ StringDecoder(length: 0) {},
+    default: {
+        StringDecoder: [Circular: *2]
+    }
+}
 ```
 
 </td></tr></table>
@@ -10700,7 +11602,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2629) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2616) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -10708,168 +11610,176 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
+    TextDecoder: <ref *2> ƒ TextDecoder(length: 0) {},
+    TextEncoder: <ref *3> ƒ TextEncoder(length: 0) {},
+    _extend: <ref *4> ƒ _extend(length: 2) {},
+    callbackify: <ref *5> ƒ callbackify(length: 1) {},
+    debuglog: <ref *6> ƒ debuglog(length: 1) {},
     default: {
-        default: {
-            format: <ref *4> ƒ (length: 1) {},
-            deprecate: <ref *5> ƒ (length: 2) {},
-            debuglog: <ref *6> ƒ (length: 1) {},
-            inspect: <ref *7> ƒ h(length: 2) {
-                colors: {
-                    bold: [
-                        1,
-                        22
-                    ],
-                    italic: [
-                        3,
-                        23
-                    ],
-                    underline: [
-                        4,
-                        24
-                    ],
-                    inverse: [
-                        7,
-                        27
-                    ],
-                    white: [
-                        37,
-                        39
-                    ],
-                    grey: [
-                        90,
-                        39
-                    ],
-                    black: [
-                        30,
-                        39
-                    ],
-                    blue: [
-                        34,
-                        39
-                    ],
-                    cyan: [
-                        36,
-                        39
-                    ],
-                    green: [
-                        32,
-                        39
-                    ],
-                    magenta: [
-                        35,
-                        39
-                    ],
-                    red: [
-                        31,
-                        39
-                    ],
-                    yellow: [
-                        33,
-                        39
-                    ]
-                },
-                styles: {
-                    special: "cyan",
-                    number: "yellow",
-                    boolean: "yellow",
-                    undefined: "grey",
-                    null: "bold",
-                    string: "green",
-                    date: "magenta",
-                    regexp: "red"
-                }
+        format: <ref *8> ƒ format(length: 1) {},
+        deprecate: <ref *9> ƒ deprecate(length: 3) {},
+        debuglog: [Circular: *6],
+        _extend: [Circular: *4],
+        inspect: <ref *10> ƒ inspect(length: 2) {
+            colors: {
+                bold: [
+                    1,
+                    22
+                ],
+                italic: [
+                    3,
+                    23
+                ],
+                underline: [
+                    4,
+                    24
+                ],
+                inverse: [
+                    7,
+                    27
+                ],
+                white: [
+                    37,
+                    39
+                ],
+                grey: [
+                    90,
+                    39
+                ],
+                black: [
+                    30,
+                    39
+                ],
+                blue: [
+                    34,
+                    39
+                ],
+                cyan: [
+                    36,
+                    39
+                ],
+                green: [
+                    32,
+                    39
+                ],
+                magenta: [
+                    35,
+                    39
+                ],
+                red: [
+                    31,
+                    39
+                ],
+                yellow: [
+                    33,
+                    39
+                ]
             },
-            types: <ref *23> {
-                isArgumentsObject: ƒ Y(length: 1) {
-                    isLegacyArguments: ƒ he(length: 1) {}
-                },
-                isGeneratorFunction: ƒ (length: 1) {},
-                isTypedArray: ƒ (length: 1) {},
-                isPromise: ƒ hn(length: 1) {},
-                isArrayBufferView: ƒ Sn(length: 1) {},
-                isUint8Array: ƒ vn(length: 1) {},
-                isUint8ClampedArray: ƒ On(length: 1) {},
-                isUint16Array: ƒ jn(length: 1) {},
-                isUint32Array: ƒ Pn(length: 1) {},
-                isInt8Array: ƒ wn(length: 1) {},
-                isInt16Array: ƒ En(length: 1) {},
-                isInt32Array: ƒ Fn(length: 1) {},
-                isFloat32Array: ƒ In(length: 1) {},
-                isFloat64Array: ƒ Bn(length: 1) {},
-                isBigInt64Array: ƒ Tn(length: 1) {},
-                isBigUint64Array: ƒ Un(length: 1) {},
-                isMap: ƒ Rn(length: 1) {},
-                isSet: ƒ Dn(length: 1) {},
-                isWeakMap: ƒ kn(length: 1) {},
-                isWeakSet: ƒ xn(length: 1) {},
-                isArrayBuffer: ƒ Le(length: 1) {},
-                isDataView: ƒ He(length: 1) {},
-                isSharedArrayBuffer: ƒ Ze(length: 1) {},
-                isAsyncFunction: ƒ Mn(length: 1) {},
-                isMapIterator: ƒ Nn(length: 1) {},
-                isSetIterator: ƒ Cn(length: 1) {},
-                isGeneratorObject: ƒ $n(length: 1) {},
-                isWebAssemblyCompiledModule: ƒ _n(length: 1) {},
-                isNumberObject: ƒ Ye(length: 1) {},
-                isStringObject: ƒ Ke(length: 1) {},
-                isBooleanObject: ƒ Qe(length: 1) {},
-                isBigIntObject: ƒ Xe(length: 1) {},
-                isSymbolObject: ƒ rt(length: 1) {},
-                isBoxedPrimitive: ƒ Gn(length: 1) {},
-                isAnyArrayBuffer: ƒ qn(length: 1) {},
-                isRegExp: <ref *60> ƒ C(length: 1) {},
-                isDate: <ref *61> ƒ pr(length: 1) {},
-                isNativeError: <ref *62> ƒ $(length: 1) {}
-            },
-            isArray: <ref *63> ƒ ft(length: 1) {},
-            isBoolean: <ref *64> ƒ Wr(length: 1) {},
-            isNull: <ref *65> ƒ lr(length: 1) {},
-            isNullOrUndefined: <ref *66> ƒ Yn(length: 1) {},
-            isNumber: <ref *67> ƒ ut(length: 1) {},
-            isString: <ref *68> ƒ gr(length: 1) {},
-            isSymbol: <ref *69> ƒ Kn(length: 1) {},
-            isUndefined: <ref *70> ƒ w(length: 1) {},
-            isRegExp: [Circular: *60],
-            isObject: <ref *71> ƒ k(length: 1) {},
-            isDate: [Circular: *61],
-            isError: [Circular: *62],
-            isFunction: <ref *72> ƒ cr(length: 1) {},
-            isPrimitive: <ref *73> ƒ Qn(length: 1) {},
-            isBuffer: <ref *74> ƒ (length: 1) {},
-            log: <ref *75> ƒ (length: 0) {},
-            inherits: <ref *76> ƒ (length: 2) {},
-            _extend: <ref *77> ƒ (length: 2) {},
-            promisify: <ref *78> ƒ (length: 1) {
-                custom: Symbol(util.promisify.custom)
-            },
-            callbackify: <ref *79> ƒ to(length: 1) {}
+            styles: {
+                special: "cyan",
+                number: "yellow",
+                boolean: "yellow",
+                undefined: "grey",
+                null: "bold",
+                string: "green",
+                date: "magenta",
+                regexp: "red"
+            }
         },
-        [get/set] format: [Circular: *4],
-        [get/set] deprecate: [Circular: *5],
-        [get/set] debuglog: [Circular: *6],
-        [get/set] inspect: [Circular: *7],
-        [get/set] types: [Circular: *23],
-        [get/set] isArray: [Circular: *63],
-        [get/set] isBoolean: [Circular: *64],
-        [get/set] isNull: [Circular: *65],
-        [get/set] isNullOrUndefined: [Circular: *66],
-        [get/set] isNumber: [Circular: *67],
-        [get/set] isString: [Circular: *68],
-        [get/set] isSymbol: [Circular: *69],
-        [get/set] isUndefined: [Circular: *70],
-        [get/set] isRegExp: [Circular: *60],
-        [get/set] isObject: [Circular: *71],
-        [get/set] isDate: [Circular: *61],
-        [get/set] isError: [Circular: *62],
-        [get/set] isFunction: [Circular: *72],
-        [get/set] isPrimitive: [Circular: *73],
-        [get/set] isBuffer: [Circular: *74],
-        [get/set] log: [Circular: *75],
-        [get/set] inherits: [Circular: *76],
-        [get/set] _extend: [Circular: *77],
-        [get/set] promisify: [Circular: *78],
-        [get/set] callbackify: [Circular: *79]
-    }
+        types: <ref *26> {
+            isExternal: ƒ isExternal(length: 1) {},
+            isDate: <ref *28> ƒ isDate(length: 1) {},
+            isArgumentsObject: ƒ isArgumentsObject(length: 1) {},
+            isBigIntObject: ƒ isBigIntObject(length: 1) {},
+            isBooleanObject: ƒ isBooleanObject(length: 1) {},
+            isNumberObject: ƒ isNumberObject(length: 1) {},
+            isStringObject: ƒ isStringObject(length: 1) {},
+            isSymbolObject: ƒ isSymbolObject(length: 1) {},
+            isNativeError: <ref *35> ƒ isNativeError(length: 1) {},
+            isRegExp: <ref *36> ƒ isRegExp(length: 1) {},
+            isAsyncFunction: ƒ isAsyncFunction(length: 1) {},
+            isGeneratorFunction: ƒ isGeneratorFunction(length: 1) {},
+            isGeneratorObject: ƒ isGeneratorObject(length: 1) {},
+            isPromise: ƒ isPromise(length: 1) {},
+            isMap: ƒ isMap(length: 1) {},
+            isSet: ƒ isSet(length: 1) {},
+            isMapIterator: ƒ isMapIterator(length: 1) {},
+            isSetIterator: ƒ isSetIterator(length: 1) {},
+            isWeakMap: ƒ isWeakMap(length: 1) {},
+            isWeakSet: ƒ isWeakSet(length: 1) {},
+            isArrayBuffer: ƒ isArrayBuffer(length: 1) {},
+            isDataView: ƒ isDataView(length: 1) {},
+            isSharedArrayBuffer: ƒ isSharedArrayBuffer(length: 1) {},
+            isProxy: ƒ isProxy(length: 1) {},
+            isModuleNamespaceObject: ƒ isModuleNamespaceObject(length: 1) {},
+            isAnyArrayBuffer: ƒ isAnyArrayBuffer(length: 1) {},
+            isBoxedPrimitive: ƒ isBoxedPrimitive(length: 1) {},
+            isArrayBufferView: ƒ isArrayBufferView(length: 1) {},
+            isTypedArray: ƒ isTypedArray(length: 1) {},
+            isUint8Array: ƒ isUint8Array(length: 1) {},
+            isUint8ClampedArray: ƒ isUint8ClampedArray(length: 1) {},
+            isUint16Array: ƒ isUint16Array(length: 1) {},
+            isUint32Array: ƒ isUint32Array(length: 1) {},
+            isInt8Array: ƒ isInt8Array(length: 1) {},
+            isInt16Array: ƒ isInt16Array(length: 1) {},
+            isInt32Array: ƒ isInt32Array(length: 1) {},
+            isFloat32Array: ƒ isFloat32Array(length: 1) {},
+            isFloat64Array: ƒ isFloat64Array(length: 1) {},
+            isBigInt64Array: ƒ isBigInt64Array(length: 1) {},
+            isBigUint64Array: ƒ isBigUint64Array(length: 1) {},
+            isKeyObject: ƒ isKeyObject(length: 1) {},
+            isCryptoKey: ƒ isCryptoKey(length: 1) {}
+        },
+        isArray: <ref *69> ƒ isArray(length: 1) {},
+        isBoolean: <ref *70> ƒ isBoolean(length: 1) {},
+        isNull: <ref *71> ƒ isNull(length: 1) {},
+        isNullOrUndefined: <ref *72> ƒ isNullOrUndefined(length: 1) {},
+        isNumber: <ref *73> ƒ isNumber(length: 1) {},
+        isString: <ref *74> ƒ isString(length: 1) {},
+        isSymbol: <ref *75> ƒ isSymbol(length: 1) {},
+        isUndefined: <ref *76> ƒ isUndefined(length: 1) {},
+        isRegExp: [Circular: *36],
+        isObject: <ref *77> ƒ isObject(length: 1) {},
+        isDate: [Circular: *28],
+        isFunction: <ref *78> ƒ isFunction(length: 1) {},
+        isError: [Circular: *35],
+        isPrimitive: <ref *79> ƒ isPrimitive(length: 1) {},
+        isBuffer: <ref *80> ƒ isBuffer(length: 1) {},
+        log: <ref *81> ƒ log(length: 0) {},
+        inherits: <ref *82> ƒ inherits(length: 2) {},
+        toUSVString: <ref *83> ƒ toUSVString(length: 1) {},
+        promisify: <ref *84> ƒ promisify(length: 1) {
+            custom: Symbol(util.promisify.custom)
+        },
+        callbackify: [Circular: *5],
+        isDeepStrictEqual: <ref *85> ƒ isDeepStrictEqual(length: 2) {},
+        TextDecoder: [Circular: *2],
+        TextEncoder: [Circular: *3]
+    },
+    deprecate: [Circular: *9],
+    format: [Circular: *8],
+    inherits: [Circular: *82],
+    inspect: [Circular: *10],
+    isArray: [Circular: *69],
+    isBoolean: [Circular: *70],
+    isBuffer: [Circular: *80],
+    isDate: [Circular: *28],
+    isDeepStrictEqual: [Circular: *85],
+    isError: [Circular: *35],
+    isFunction: [Circular: *78],
+    isNull: [Circular: *71],
+    isNullOrUndefined: [Circular: *72],
+    isNumber: [Circular: *73],
+    isObject: [Circular: *77],
+    isPrimitive: [Circular: *79],
+    isRegExp: [Circular: *36],
+    isString: [Circular: *74],
+    isSymbol: [Circular: *75],
+    isUndefined: [Circular: *76],
+    log: [Circular: *81],
+    promisify: [Circular: *84],
+    toUSVString: [Circular: *83],
+    types: [Circular: *26]
 }
 ```
 
@@ -10914,20 +11824,20 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    clearImmediate: ƒ clearImmediate(length: 1) {},
+    clearImmediate: <ref *2> ƒ clearImmediate(length: 1) {},
     clearInterval: <ref *3> ƒ clearInterval(length: 1) {},
     clearTimeout: <ref *4> ƒ clearTimeout(length: 1) {},
     default: {
-        setInterval: <ref *6> ƒ setInterval(length: 1) {},
-        setImmediate: <ref *7> ƒ setImmediate(length: 1) {},
-        setTimeout: <ref *8> ƒ setTimeout(length: 1) {},
-        clearInterval: [Circular: *3],
+        setTimeout: <ref *6> ƒ setTimeout(length: 1) {},
         clearTimeout: [Circular: *4],
-        Symbol(CommonJS): 0
+        setInterval: <ref *7> ƒ setInterval(length: 1) {},
+        setImmediate: <ref *8> ƒ setImmediate(length: 1) {},
+        clearInterval: [Circular: *3],
+        clearImmediate: [Circular: *2]
     },
-    setImmediate: [Circular: *7],
-    setInterval: [Circular: *6],
-    setTimeout: [Circular: *8]
+    setImmediate: [Circular: *8],
+    setInterval: [Circular: *7],
+    setTimeout: [Circular: *6]
 }
 ```
 
@@ -10961,8 +11871,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     default: {
         setTimeout: <ref *3> ƒ setTimeoutPromise(length: 0) {},
         setImmediate: <ref *4> ƒ setImmediatePromise(length: 1) {},
-        setInterval: <ref *5> ƒ setIntervalPromise(length: 0) {}
+        setInterval: <ref *5> ƒ setIntervalPromise(length: 0) {},
+        scheduler: <ref *6> {
+            wait: ƒ wait(length: 2) {},
+            yield: [Circular: *4]
+        }
     },
+    scheduler: [Circular: *6],
     setImmediate: [Circular: *4],
     setInterval: [Circular: *5],
     setTimeout: [Circular: *3]
@@ -11165,7 +12080,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     DEFAULT_MAX_VERSION: "TLSv1.3",
     DEFAULT_MIN_VERSION: "TLSv1.2",
     SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
-    Server: <ref *3> class Server extends NetServer {},
+    Server: <ref *3> ƒ Server(length: 2) {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {},
     checkServerIdentity: <ref *5> ƒ checkServerIdentity(length: 2) {},
     connect: <ref *6> ƒ createConnection(length: 3) {},
@@ -11186,13 +12101,12 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         DEFAULT_MAX_VERSION: "TLSv1.3",
         DEFAULT_MIN_VERSION: "TLSv1.2",
         getCiphers: <ref *11> ƒ getCiphers(length: 0) {},
-        getCurves: <ref *12> ƒ getCurves(length: 0) {},
-        parseCertString: <ref *13> ƒ parseCertString(length: 0) {},
+        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
         SecureContext: [Circular: *2],
         Server: [Circular: *3],
         TLSSocket: [Circular: *4],
         checkServerIdentity: [Circular: *5],
-        rootCertificates: <ref *14> [
+        rootCertificates: <ref *13> [
             "-----BEGIN CERTIFICATE-----\nMIIDdTCCAl2gAwIBAgILBAAAAAABFUtaw5QwDQYJKoZIhvcNAQEFBQAwVzELMAkGA1UEBhMC…",
             "-----BEGIN CERTIFICATE-----\nMIIEKjCCAxKgAwIBAgIEOGPe+DANBgkqhkiG9w0BAQUFADCBtDEUMBIGA1UEChMLRW50cnVz…",
             "-----BEGIN CERTIFICATE-----\nMIIDdzCCAl+gAwIBAgIEAgAAuTANBgkqhkiG9w0BAQUFADBaMQswCQYDVQQGEwJJRTESMBAG…",
@@ -11332,13 +12246,11 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             "-----BEGIN CERTIFICATE-----\nMIICODCCAb6gAwIBAgIJANZdm7N4gS7rMAoGCCqGSM49BAMDMGExCzAJBgNVBAYTAkpQMSUw…",
             "-----BEGIN CERTIFICATE-----\nMIIFdDCCA1ygAwIBAgIQVW9l47TZkGobCdFsPsBsIDANBgkqhkiG9w0BAQsFADBUMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIICJTCCAaugAwIBAgIQLBcIfWQqwP6FGFkGz7RK6zAKBggqhkjOPQQDAzBUMQswCQYDVQQG…"
-        ],
-        Symbol(CommonJS): 0
+        ]
     },
     getCiphers: [Circular: *11],
-    getCurves: [Circular: *12],
-    parseCertString: [Circular: *13],
-    rootCertificates: [Circular: *14]
+    parseCertString: [Circular: *12],
+    rootCertificates: [Circular: *13]
 }
 ```
 
@@ -11366,8 +12278,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     createTracing: <ref *2> ƒ createTracing(length: 1) {},
     default: {
         createTracing: [Circular: *2],
-        getEnabledCategories: <ref *4> ƒ getEnabledCategories(length: 0) {},
-        Symbol(CommonJS): 0
+        getEnabledCategories: <ref *4> ƒ getEnabledCategories(length: 0) {}
     },
     getEnabledCategories: [Circular: *4]
 }
@@ -11395,17 +12306,16 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1690762389698-1/inspect.mjs:83:10
-      at inspect (/tmp/fs-fixture-1690762389698-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1690762389698-1/tty.mjs:4:15
+{
+    ReadStream: <ref *2> ƒ notimpl(length: 0) {},
+    WriteStream: [Circular: *2],
+    default: {
+        isatty: <ref *4> ƒ isatty(length: 1) {},
+        ReadStream: [Circular: *2],
+        WriteStream: [Circular: *2]
+    },
+    isatty: [Circular: *4]
+}
 ```
 
 </td></tr></table>
@@ -11458,27 +12368,34 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         revokeObjectURL: ƒ revokeObjectURL(length: 1) {}
     },
     URLSearchParams: <ref *5> ƒ URLSearchParams(length: 0) {},
-    Url: <ref *6> ƒ $(length: 0) {},
+    Url: <ref *6> ƒ Url(length: 0) {
+        prototype: {
+            parse: ƒ (length: 3) {},
+            format: ƒ (length: 0) {},
+            resolve: ƒ (length: 1) {},
+            resolveObject: ƒ (length: 1) {},
+            parseHost: ƒ (length: 0) {}
+        }
+    },
     default: {
-        parse: <ref *8> ƒ g(length: 3) {},
-        resolve: <ref *9> ƒ ff(length: 2) {},
-        resolveObject: <ref *10> ƒ Nf(length: 2) {},
-        format: <ref *11> ƒ t(length: 1) {},
+        parse: <ref *14> ƒ urlParse(length: 3) {},
+        resolve: <ref *15> ƒ urlResolve(length: 2) {},
+        resolveObject: <ref *16> ƒ urlResolveObject(length: 2) {},
+        format: <ref *17> ƒ urlFormat(length: 1) {},
         Url: [Circular: *6],
         URLSearchParams: [Circular: *5],
         URL: [Circular: *2],
-        pathToFileURL: <ref *12> ƒ pathToFileURL(length: 1) {},
-        fileURLToPath: <ref *13> ƒ fileURLToPath(length: 1) {},
-        urlToHttpOptions: <ref *14> ƒ Bf(length: 1) {},
-        Symbol(CommonJS): 0
+        pathToFileURL: <ref *18> ƒ pathToFileURL(length: 1) {},
+        fileURLToPath: <ref *19> ƒ fileURLToPath(length: 1) {},
+        urlToHttpOptions: <ref *20> ƒ urlToHttpOptions(length: 1) {}
     },
-    fileURLToPath: [Circular: *13],
-    format: [Circular: *11],
-    parse: [Circular: *8],
-    pathToFileURL: [Circular: *12],
-    resolve: [Circular: *9],
-    resolveObject: [Circular: *10],
-    urlToHttpOptions: [Circular: *14]
+    fileURLToPath: [Circular: *19],
+    format: [Circular: *17],
+    parse: [Circular: *14],
+    pathToFileURL: [Circular: *18],
+    resolve: [Circular: *15],
+    resolveObject: [Circular: *16],
+    urlToHttpOptions: [Circular: *20]
 }
 ```
 
@@ -11823,13 +12740,14 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 {
     TextDecoder: <ref *2> ƒ TextDecoder(length: 0) {},
     TextEncoder: <ref *3> ƒ TextEncoder(length: 0) {},
-    callbackify: <ref *4> ƒ callbackify(length: 1) {},
-    debuglog: <ref *5> ƒ debuglog(length: 1) {},
+    _extend: <ref *4> ƒ _extend(length: 2) {},
+    callbackify: <ref *5> ƒ callbackify(length: 1) {},
+    debuglog: <ref *6> ƒ debuglog(length: 1) {},
     default: {
-        format: <ref *7> ƒ format(length: 1) {},
-        deprecate: <ref *8> ƒ deprecate(length: 3) {},
-        debuglog: [Circular: *5],
-        _extend: ƒ _extend(length: 2) {},
+        format: <ref *8> ƒ format(length: 1) {},
+        deprecate: <ref *9> ƒ deprecate(length: 3) {},
+        debuglog: [Circular: *6],
+        _extend: [Circular: *4],
         inspect: <ref *10> ƒ inspect(length: 2) {
             colors: {
                 bold: [
@@ -11896,146 +12814,100 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 regexp: "red"
             }
         },
-        types: {
-            default: <ref *27> {
-                isExternal: <ref *28> ƒ isExternal(length: 1) {},
-                isDate: <ref *29> ƒ isDate(length: 1) {},
-                isArgumentsObject: <ref *30> ƒ isArgumentsObject(length: 1) {},
-                isBigIntObject: <ref *31> ƒ isBigIntObject(length: 1) {},
-                isBooleanObject: <ref *32> ƒ isBooleanObject(length: 1) {},
-                isNumberObject: <ref *33> ƒ isNumberObject(length: 1) {},
-                isStringObject: <ref *34> ƒ isStringObject(length: 1) {},
-                isSymbolObject: <ref *35> ƒ isSymbolObject(length: 1) {},
-                isNativeError: <ref *36> ƒ isNativeError(length: 1) {},
-                isRegExp: <ref *37> ƒ isRegExp(length: 1) {},
-                isAsyncFunction: <ref *38> ƒ isAsyncFunction(length: 1) {},
-                isGeneratorFunction: <ref *39> ƒ isGeneratorFunction(length: 1) {},
-                isGeneratorObject: <ref *40> ƒ isGeneratorObject(length: 1) {},
-                isPromise: <ref *41> ƒ isPromise(length: 1) {},
-                isMap: <ref *42> ƒ isMap(length: 1) {},
-                isSet: <ref *43> ƒ isSet(length: 1) {},
-                isMapIterator: <ref *44> ƒ isMapIterator(length: 1) {},
-                isSetIterator: <ref *45> ƒ isSetIterator(length: 1) {},
-                isWeakMap: <ref *46> ƒ isWeakMap(length: 1) {},
-                isWeakSet: <ref *47> ƒ isWeakSet(length: 1) {},
-                isArrayBuffer: <ref *48> ƒ isArrayBuffer(length: 1) {},
-                isDataView: <ref *49> ƒ isDataView(length: 1) {},
-                isSharedArrayBuffer: <ref *50> ƒ isSharedArrayBuffer(length: 1) {},
-                isProxy: <ref *51> ƒ isProxy(length: 1) {},
-                isModuleNamespaceObject: <ref *52> ƒ isModuleNamespaceObject(length: 1) {},
-                isAnyArrayBuffer: <ref *53> ƒ isAnyArrayBuffer(length: 1) {},
-                isBoxedPrimitive: <ref *54> ƒ isBoxedPrimitive(length: 1) {},
-                isArrayBufferView: <ref *55> ƒ isArrayBufferView(length: 1) {},
-                isTypedArray: <ref *56> ƒ isTypedArray(length: 1) {},
-                isUint8Array: <ref *57> ƒ isUint8Array(length: 1) {},
-                isUint8ClampedArray: <ref *58> ƒ isUint8ClampedArray(length: 1) {},
-                isUint16Array: <ref *59> ƒ isUint16Array(length: 1) {},
-                isUint32Array: <ref *60> ƒ isUint32Array(length: 1) {},
-                isInt8Array: <ref *61> ƒ isInt8Array(length: 1) {},
-                isInt16Array: <ref *62> ƒ isInt16Array(length: 1) {},
-                isInt32Array: <ref *63> ƒ isInt32Array(length: 1) {},
-                isFloat32Array: <ref *64> ƒ isFloat32Array(length: 1) {},
-                isFloat64Array: <ref *65> ƒ isFloat64Array(length: 1) {},
-                isBigInt64Array: <ref *66> ƒ isBigInt64Array(length: 1) {},
-                isBigUint64Array: <ref *67> ƒ isBigUint64Array(length: 1) {},
-                isKeyObject: <ref *68> ƒ isKeyObject(length: 1) {},
-                isCryptoKey: <ref *69> ƒ isCryptoKey(length: 1) {},
-                Symbol(CommonJS): 0
-            },
-            isAnyArrayBuffer: [Circular: *53],
-            isArgumentsObject: [Circular: *30],
-            isArrayBuffer: [Circular: *48],
-            isArrayBufferView: [Circular: *55],
-            isAsyncFunction: [Circular: *38],
-            isBigInt64Array: [Circular: *66],
-            isBigIntObject: [Circular: *31],
-            isBigUint64Array: [Circular: *67],
-            isBooleanObject: [Circular: *32],
-            isBoxedPrimitive: [Circular: *54],
-            isCryptoKey: [Circular: *69],
-            isDataView: [Circular: *49],
-            isDate: [Circular: *29],
-            isExternal: [Circular: *28],
-            isFloat32Array: [Circular: *64],
-            isFloat64Array: [Circular: *65],
-            isGeneratorFunction: [Circular: *39],
-            isGeneratorObject: [Circular: *40],
-            isInt16Array: [Circular: *62],
-            isInt32Array: [Circular: *63],
-            isInt8Array: [Circular: *61],
-            isKeyObject: [Circular: *68],
-            isMap: [Circular: *42],
-            isMapIterator: [Circular: *44],
-            isModuleNamespaceObject: [Circular: *52],
-            isNativeError: [Circular: *36],
-            isNumberObject: [Circular: *33],
-            isPromise: [Circular: *41],
-            isProxy: [Circular: *51],
-            isRegExp: [Circular: *37],
-            isSet: [Circular: *43],
-            isSetIterator: [Circular: *45],
-            isSharedArrayBuffer: [Circular: *50],
-            isStringObject: [Circular: *34],
-            isSymbolObject: [Circular: *35],
-            isTypedArray: [Circular: *56],
-            isUint16Array: [Circular: *59],
-            isUint32Array: [Circular: *60],
-            isUint8Array: [Circular: *57],
-            isUint8ClampedArray: [Circular: *58],
-            isWeakMap: [Circular: *46],
-            isWeakSet: [Circular: *47]
+        types: <ref *26> {
+            isExternal: ƒ isExternal(length: 1) {},
+            isDate: <ref *28> ƒ isDate(length: 1) {},
+            isArgumentsObject: ƒ isArgumentsObject(length: 1) {},
+            isBigIntObject: ƒ isBigIntObject(length: 1) {},
+            isBooleanObject: ƒ isBooleanObject(length: 1) {},
+            isNumberObject: ƒ isNumberObject(length: 1) {},
+            isStringObject: ƒ isStringObject(length: 1) {},
+            isSymbolObject: ƒ isSymbolObject(length: 1) {},
+            isNativeError: <ref *35> ƒ isNativeError(length: 1) {},
+            isRegExp: <ref *36> ƒ isRegExp(length: 1) {},
+            isAsyncFunction: ƒ isAsyncFunction(length: 1) {},
+            isGeneratorFunction: ƒ isGeneratorFunction(length: 1) {},
+            isGeneratorObject: ƒ isGeneratorObject(length: 1) {},
+            isPromise: ƒ isPromise(length: 1) {},
+            isMap: ƒ isMap(length: 1) {},
+            isSet: ƒ isSet(length: 1) {},
+            isMapIterator: ƒ isMapIterator(length: 1) {},
+            isSetIterator: ƒ isSetIterator(length: 1) {},
+            isWeakMap: ƒ isWeakMap(length: 1) {},
+            isWeakSet: ƒ isWeakSet(length: 1) {},
+            isArrayBuffer: ƒ isArrayBuffer(length: 1) {},
+            isDataView: ƒ isDataView(length: 1) {},
+            isSharedArrayBuffer: ƒ isSharedArrayBuffer(length: 1) {},
+            isProxy: ƒ isProxy(length: 1) {},
+            isModuleNamespaceObject: ƒ isModuleNamespaceObject(length: 1) {},
+            isAnyArrayBuffer: ƒ isAnyArrayBuffer(length: 1) {},
+            isBoxedPrimitive: ƒ isBoxedPrimitive(length: 1) {},
+            isArrayBufferView: ƒ isArrayBufferView(length: 1) {},
+            isTypedArray: ƒ isTypedArray(length: 1) {},
+            isUint8Array: ƒ isUint8Array(length: 1) {},
+            isUint8ClampedArray: ƒ isUint8ClampedArray(length: 1) {},
+            isUint16Array: ƒ isUint16Array(length: 1) {},
+            isUint32Array: ƒ isUint32Array(length: 1) {},
+            isInt8Array: ƒ isInt8Array(length: 1) {},
+            isInt16Array: ƒ isInt16Array(length: 1) {},
+            isInt32Array: ƒ isInt32Array(length: 1) {},
+            isFloat32Array: ƒ isFloat32Array(length: 1) {},
+            isFloat64Array: ƒ isFloat64Array(length: 1) {},
+            isBigInt64Array: ƒ isBigInt64Array(length: 1) {},
+            isBigUint64Array: ƒ isBigUint64Array(length: 1) {},
+            isKeyObject: ƒ isKeyObject(length: 1) {},
+            isCryptoKey: ƒ isCryptoKey(length: 1) {}
         },
-        isArray: <ref *70> ƒ isArray(length: 1) {},
-        isBoolean: <ref *71> ƒ isBoolean(length: 1) {},
-        isNull: <ref *72> ƒ isNull(length: 1) {},
-        isNullOrUndefined: <ref *73> ƒ isNullOrUndefined(length: 1) {},
-        isNumber: <ref *74> ƒ isNumber(length: 1) {},
-        isString: <ref *75> ƒ isString(length: 1) {},
-        isSymbol: <ref *76> ƒ isSymbol(length: 1) {},
-        isUndefined: <ref *77> ƒ isUndefined(length: 1) {},
-        isRegExp: [Circular: *37],
-        isObject: <ref *78> ƒ isObject(length: 1) {},
-        isDate: [Circular: *29],
-        isFunction: <ref *79> ƒ isFunction(length: 1) {},
-        isError: [Circular: *36],
-        isPrimitive: <ref *80> ƒ isPrimitive(length: 1) {},
-        isBuffer: <ref *81> ƒ isBuffer(length: 1) {},
-        log: <ref *82> ƒ log2(length: 0) {},
-        inherits: <ref *83> ƒ inherits(length: 2) {},
-        toUSVString: <ref *84> ƒ toUSVString(length: 1) {},
-        promisify: <ref *85> ƒ promisify2(length: 1) {
+        isArray: <ref *69> ƒ isArray(length: 1) {},
+        isBoolean: <ref *70> ƒ isBoolean(length: 1) {},
+        isNull: <ref *71> ƒ isNull(length: 1) {},
+        isNullOrUndefined: <ref *72> ƒ isNullOrUndefined(length: 1) {},
+        isNumber: <ref *73> ƒ isNumber(length: 1) {},
+        isString: <ref *74> ƒ isString(length: 1) {},
+        isSymbol: <ref *75> ƒ isSymbol(length: 1) {},
+        isUndefined: <ref *76> ƒ isUndefined(length: 1) {},
+        isRegExp: [Circular: *36],
+        isObject: <ref *77> ƒ isObject(length: 1) {},
+        isDate: [Circular: *28],
+        isFunction: <ref *78> ƒ isFunction(length: 1) {},
+        isError: [Circular: *35],
+        isPrimitive: <ref *79> ƒ isPrimitive(length: 1) {},
+        isBuffer: <ref *80> ƒ isBuffer(length: 1) {},
+        log: <ref *81> ƒ log(length: 0) {},
+        inherits: <ref *82> ƒ inherits(length: 2) {},
+        toUSVString: <ref *83> ƒ toUSVString(length: 1) {},
+        promisify: <ref *84> ƒ promisify(length: 1) {
             custom: Symbol(util.promisify.custom)
         },
-        callbackify: [Circular: *4],
-        isDeepStrictEqual: <ref *86> ƒ isDeepStrictEqual(length: 2) {},
+        callbackify: [Circular: *5],
+        isDeepStrictEqual: <ref *85> ƒ isDeepStrictEqual(length: 2) {},
         TextDecoder: [Circular: *2],
-        TextEncoder: [Circular: *3],
-        Symbol(CommonJS): 0
+        TextEncoder: [Circular: *3]
     },
-    deprecate: [Circular: *8],
-    format: [Circular: *7],
-    inherits: [Circular: *83],
+    deprecate: [Circular: *9],
+    format: [Circular: *8],
+    inherits: [Circular: *82],
     inspect: [Circular: *10],
-    isArray: [Circular: *70],
-    isBoolean: [Circular: *71],
-    isBuffer: [Circular: *81],
-    isDate: [Circular: *29],
-    isDeepStrictEqual: [Circular: *86],
-    isError: [Circular: *36],
-    isFunction: [Circular: *79],
-    isNull: [Circular: *72],
-    isNullOrUndefined: [Circular: *73],
-    isNumber: [Circular: *74],
-    isObject: [Circular: *78],
-    isPrimitive: [Circular: *80],
-    isRegExp: [Circular: *37],
-    isString: [Circular: *75],
-    isSymbol: [Circular: *76],
-    isUndefined: [Circular: *77],
-    log: [Circular: *82],
-    promisify: [Circular: *85],
-    toUSVString: [Circular: *84],
-    types: [Circular: *27]
+    isArray: [Circular: *69],
+    isBoolean: [Circular: *70],
+    isBuffer: [Circular: *80],
+    isDate: [Circular: *28],
+    isDeepStrictEqual: [Circular: *85],
+    isError: [Circular: *35],
+    isFunction: [Circular: *78],
+    isNull: [Circular: *71],
+    isNullOrUndefined: [Circular: *72],
+    isNumber: [Circular: *73],
+    isObject: [Circular: *77],
+    isPrimitive: [Circular: *79],
+    isRegExp: [Circular: *36],
+    isString: [Circular: *74],
+    isSymbol: [Circular: *75],
+    isUndefined: [Circular: *76],
+    log: [Circular: *81],
+    promisify: [Circular: *84],
+    toUSVString: [Circular: *83],
+    types: [Circular: *26]
 }
 ```
 
@@ -12182,8 +13054,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         isBigInt64Array: <ref *41> ƒ isBigInt64Array(length: 1) {},
         isBigUint64Array: <ref *42> ƒ isBigUint64Array(length: 1) {},
         isKeyObject: <ref *43> ƒ isKeyObject(length: 1) {},
-        isCryptoKey: <ref *44> ƒ isCryptoKey(length: 1) {},
-        Symbol(CommonJS): 0
+        isCryptoKey: <ref *44> ƒ isCryptoKey(length: 1) {}
     },
     isAnyArrayBuffer: [Circular: *28],
     isArgumentsObject: [Circular: *5],
@@ -12296,55 +13167,51 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    DefaultDeserializer: class DefaultDeserializer extends Deserializer {},
-    DefaultSerializer: class DefaultSerializer extends Serializer {},
-    Deserializer: <ref *4> class Deserializer {},
-    GCProfiler: class GCProfiler {},
-    Serializer: <ref *6> class Serializer {},
-    cachedDataVersionTag: <ref *7> ƒ ::bunternal::(length: 0) {},
+    Deserializer: <ref *2> ƒ ::bunternal::(length: 0) {},
+    Serializer: <ref *3> ƒ ::bunternal::(length: 0) {},
+    cachedDataVersionTag: <ref *4> ƒ ::bunternal::(length: 0) {},
     default: {
-        cachedDataVersionTag: [Circular: *7],
-        getHeapSnapshot: <ref *9> ƒ ::bunternal::(length: 0) {},
-        getHeapStatistics: <ref *10> ƒ ::bunternal::(length: 0) {},
-        getHeapSpaceStatistics: <ref *11> ƒ ::bunternal::(length: 0) {},
-        getHeapCodeStatistics: <ref *12> ƒ ::bunternal::(length: 0) {},
-        setFlagsFromString: <ref *13> ƒ ::bunternal::(length: 0) {},
-        deserialize: <ref *14> ƒ ::bunternal::(length: 1) {},
-        takeCoverage: <ref *15> ƒ ::bunternal::(length: 0) {},
-        stopCoverage: <ref *16> ƒ ::bunternal::(length: 0) {},
-        serialize: <ref *17> ƒ ::bunternal::(length: 1) {},
-        writeHeapSnapshot: <ref *18> ƒ ::bunternal::(length: 0) {},
-        setHeapSnapshotNearHeapLimit: <ref *19> ƒ ::bunternal::(length: 0) {},
-        promiseHooks: <ref *20> {
+        cachedDataVersionTag: [Circular: *4],
+        getHeapSnapshot: <ref *6> ƒ ::bunternal::(length: 0) {},
+        getHeapStatistics: <ref *7> ƒ ::bunternal::(length: 0) {},
+        getHeapSpaceStatistics: <ref *8> ƒ ::bunternal::(length: 0) {},
+        getHeapCodeStatistics: <ref *9> ƒ ::bunternal::(length: 0) {},
+        setFlagsFromString: <ref *10> ƒ ::bunternal::(length: 0) {},
+        deserialize: <ref *11> ƒ ::bunternal::(length: 1) {},
+        takeCoverage: <ref *12> ƒ ::bunternal::(length: 0) {},
+        stopCoverage: <ref *13> ƒ ::bunternal::(length: 0) {},
+        serialize: <ref *14> ƒ ::bunternal::(length: 1) {},
+        writeHeapSnapshot: <ref *15> ƒ ::bunternal::(length: 0) {},
+        setHeapSnapshotNearHeapLimit: <ref *16> ƒ ::bunternal::(length: 0) {},
+        promiseHooks: <ref *17> {
             createHook: ƒ createHook(length: 0) {},
             onInit: ƒ onInit(length: 0) {},
             onBefore: ƒ onBefore(length: 0) {},
             onAfter: ƒ onAfter(length: 0) {},
             onSettled: ƒ onSettled(length: 0) {}
         },
-        startupSnapshot: <ref *26> {
+        startupSnapshot: <ref *23> {
             addDeserializeCallback: ƒ addDeserializeCallback(length: 0) {},
             addSerializeCallback: ƒ addSerializeCallback(length: 0) {},
             setDeserializeMainFunction: ƒ setDeserializeMainFunction(length: 0) {},
             isBuildingSnapshot: ƒ isBuildingSnapshot(length: 0) {}
         },
-        Deserializer: [Circular: *4],
-        Serializer: [Circular: *6],
-        Symbol(CommonJS): 0
+        Deserializer: [Circular: *2],
+        Serializer: [Circular: *3]
     },
-    deserialize: [Circular: *14],
-    getHeapCodeStatistics: [Circular: *12],
-    getHeapSnapshot: [Circular: *9],
-    getHeapSpaceStatistics: [Circular: *11],
-    getHeapStatistics: [Circular: *10],
-    promiseHooks: [Circular: *20],
-    serialize: [Circular: *17],
-    setFlagsFromString: [Circular: *13],
-    setHeapSnapshotNearHeapLimit: [Circular: *19],
-    startupSnapshot: [Circular: *26],
-    stopCoverage: [Circular: *16],
-    takeCoverage: [Circular: *15],
-    writeHeapSnapshot: [Circular: *18]
+    deserialize: [Circular: *11],
+    getHeapCodeStatistics: [Circular: *9],
+    getHeapSnapshot: [Circular: *6],
+    getHeapSpaceStatistics: [Circular: *8],
+    getHeapStatistics: [Circular: *7],
+    promiseHooks: [Circular: *17],
+    serialize: [Circular: *14],
+    setFlagsFromString: [Circular: *10],
+    setHeapSnapshotNearHeapLimit: [Circular: *16],
+    startupSnapshot: [Circular: *23],
+    stopCoverage: [Circular: *13],
+    takeCoverage: [Circular: *12],
+    writeHeapSnapshot: [Circular: *15]
 }
 ```
 
@@ -12383,25 +13250,30 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    Script: <ref *2> ƒ Script(length: 1) {},
-    compileFunction: <ref *3> ƒ compileFunction(length: 0) {},
-    createContext: <ref *4> ƒ createContext(length: 0) {},
+    Module: <ref *2> ƒ Module(length: 0) {},
+    Script: <ref *3> ƒ Script(length: 1) {},
+    SourceTextModule: <ref *4> ƒ SourceTextModule(length: 0) {},
+    SyntheticModule: <ref *5> ƒ SyntheticModule(length: 0) {},
+    compileFunction: <ref *6> ƒ compileFunction(length: 0) {},
+    createContext: <ref *7> ƒ createContext(length: 0) {},
     default: {
-        createContext: [Circular: *4],
-        runInContext: <ref *6> ƒ runInContext(length: 3) {},
-        runInNewContext: <ref *7> ƒ runInNewContext(length: 0) {},
-        runInThisContext: <ref *8> ƒ runInThisContext(length: 0) {},
-        isContext: <ref *9> ƒ isContext(length: 0) {},
-        compileFunction: [Circular: *3],
-        measureMemory: <ref *10> ƒ measureMemory(length: 0) {},
-        Script: [Circular: *2],
-        Symbol(CommonJS): 0
+        createContext: [Circular: *7],
+        runInContext: <ref *9> ƒ runInContext(length: 3) {},
+        runInNewContext: <ref *10> ƒ runInNewContext(length: 0) {},
+        runInThisContext: <ref *11> ƒ runInThisContext(length: 0) {},
+        isContext: <ref *12> ƒ isContext(length: 0) {},
+        compileFunction: [Circular: *6],
+        measureMemory: <ref *13> ƒ measureMemory(length: 0) {},
+        Script: [Circular: *3],
+        Module: [Circular: *2],
+        SourceTextModule: [Circular: *4],
+        SyntheticModule: [Circular: *5]
     },
-    isContext: [Circular: *9],
-    measureMemory: [Circular: *10],
-    runInContext: [Circular: *6],
-    runInNewContext: [Circular: *7],
-    runInThisContext: [Circular: *8]
+    isContext: [Circular: *12],
+    measureMemory: [Circular: *13],
+    runInContext: [Circular: *9],
+    runInNewContext: [Circular: *10],
+    runInThisContext: [Circular: *11]
 }
 ```
 
@@ -12418,17 +13290,19 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         WASI: [Circular: *2]
     }
 }
-(node:2780) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:2769) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
 </td><td valign="top">
 
 ```js
-1 | var nodeFsConstants = constants, __getOwnPropNames = Object.getOwnPropertyNames, __commonJS = (cb, mod) => function __require2() {
-                         ^
-ReferenceError: Can't find variable: constants
-      at node:wasi:1:22
+{
+    WASI: <ref *2> ƒ WASI2(length: 0) {},
+    default: {
+        WASI: [Circular: *2]
+    }
+}
 ```
 
 </td></tr></table>
@@ -12478,7 +13352,40 @@ ReferenceError: Can't find variable: constants
 
 ```js
 {
-    default: [Unexpected Error: [object Function] (type "undefined")]
+    BroadcastChannel: <ref *2> ƒ BroadcastChannel(length: 1) {},
+    MessageChannel: <ref *3> ƒ MessageChannel(length: 0) {},
+    MessagePort: <ref *4> ƒ MessagePort(length: 0) {},
+    SHARE_ENV: Symbol(nodejs.worker_threads.SHARE_ENV),
+    Worker: <ref *5> ƒ Worker(length: 1) {},
+    default: {
+        Worker: [Circular: *5],
+        workerData: undefined,
+        parentPort: null,
+        resourceLimits: <ref *7> {},
+        isMainThread: true,
+        MessageChannel: [Circular: *3],
+        BroadcastChannel: [Circular: *2],
+        MessagePort: [Circular: *4],
+        getEnvironmentData: <ref *8> ƒ getEnvironmentData(length: 0) {},
+        setEnvironmentData: <ref *9> ƒ setEnvironmentData(length: 1) {},
+        getHeapSnapshot: <ref *10> ƒ getHeapSnapshot(length: 0) {},
+        markAsUntransferable: <ref *11> ƒ markAsUntransferable(length: 0) {},
+        moveMessagePortToContext: <ref *12> ƒ moveMessagePortToContext(length: 0) {},
+        receiveMessageOnPort: <ref *13> ƒ receiveMessageOnPort(length: 1) {},
+        SHARE_ENV: Symbol(nodejs.worker_threads.SHARE_ENV),
+        threadId: 0
+    },
+    getEnvironmentData: [Circular: *8],
+    getHeapSnapshot: [Circular: *10],
+    isMainThread: true,
+    markAsUntransferable: [Circular: *11],
+    moveMessagePortToContext: [Circular: *12],
+    parentPort: null,
+    receiveMessageOnPort: [Circular: *13],
+    resourceLimits: [Circular: *7],
+    setEnvironmentData: [Circular: *9],
+    threadId: 0,
+    workerData: undefined
 }
 ```
 
@@ -12702,30 +13609,130 @@ ReferenceError: Can't find variable: constants
 
 ```js
 {
-    Deflate: <ref *2> ƒ W0(length: 1) {
-        super_: <ref *3> ƒ z(length: 2) {
-            super_: ƒ M(length: 1) {}
+    Deflate: <ref *2> ƒ Deflate(length: 1) {
+        super_: <ref *3> ƒ Zlib(length: 2) {
+            super_: ƒ Transform(length: 1) {
+                prototype: EventEmitter {
+                    _final: ƒ final(length: 1) {},
+                    _transform: ƒ (length: 3) {},
+                    _write: ƒ (length: 3) {},
+                    _read: ƒ (length: 0) {}
+                }
+            },
+            prototype: Zlib {
+                params: ƒ (length: 3) {},
+                reset: ƒ (length: 0) {},
+                _flush: ƒ (length: 1) {},
+                flush: ƒ (length: 2) {},
+                close: ƒ (length: 1) {},
+                _transform: ƒ (length: 3) {},
+                _processChunk: ƒ (length: 3) {}
+            }
+        },
+        prototype: Deflate {}
+    },
+    DeflateRaw: <ref *19> ƒ DeflateRaw(length: 1) {
+        super_: [Circular: *3],
+        prototype: DeflateRaw {}
+    },
+    Gunzip: <ref *21> ƒ Gunzip(length: 1) {
+        super_: [Circular: *3],
+        prototype: Gunzip {}
+    },
+    Gzip: <ref *23> ƒ Gzip(length: 1) {
+        super_: [Circular: *3],
+        prototype: Gzip {}
+    },
+    Inflate: <ref *25> ƒ Inflate(length: 1) {
+        super_: [Circular: *3],
+        prototype: Inflate {}
+    },
+    InflateRaw: <ref *27> ƒ InflateRaw(length: 1) {
+        super_: [Circular: *3],
+        prototype: InflateRaw {}
+    },
+    Unzip: <ref *29> ƒ Unzip(length: 1) {
+        super_: [Circular: *3],
+        prototype: Unzip {}
+    },
+    Z_BEST_COMPRESSION: 9,
+    Z_BEST_SPEED: 1,
+    Z_BINARY: 0,
+    Z_BLOCK: 5,
+    Z_BUF_ERROR: -5,
+    Z_DATA_ERROR: -3,
+    Z_DEFAULT_CHUNK: 16384,
+    Z_DEFAULT_COMPRESSION: -1,
+    Z_DEFAULT_LEVEL: -1,
+    Z_DEFAULT_MEMLEVEL: 8,
+    Z_DEFAULT_STRATEGY: 0,
+    Z_DEFAULT_WINDOWBITS: 15,
+    Z_DEFLATED: 8,
+    Z_ERRNO: -1,
+    Z_FILTERED: 1,
+    Z_FINISH: 4,
+    Z_FIXED: 4,
+    Z_FULL_FLUSH: 3,
+    Z_HUFFMAN_ONLY: 2,
+    Z_MAX_CHUNK: Infinity,
+    Z_MAX_LEVEL: 9,
+    Z_MAX_MEMLEVEL: 9,
+    Z_MAX_WINDOWBITS: 15,
+    Z_MIN_CHUNK: 64,
+    Z_MIN_LEVEL: -1,
+    Z_MIN_MEMLEVEL: 1,
+    Z_MIN_WINDOWBITS: 8,
+    Z_NEED_DICT: 2,
+    Z_NO_COMPRESSION: 0,
+    Z_NO_FLUSH: 0,
+    Z_OK: 0,
+    Z_PARTIAL_FLUSH: 1,
+    Z_RLE: 3,
+    Z_STREAM_END: 1,
+    Z_STREAM_ERROR: -2,
+    Z_SYNC_FLUSH: 2,
+    Z_TEXT: 1,
+    Z_TREES: 6,
+    Z_UNKNOWN: 2,
+    Zlib: <ref *31> ƒ Zlib(length: 1) {
+        prototype: {
+            close: ƒ (length: 0) {},
+            write: ƒ (length: 7) {},
+            writeSync: ƒ (length: 7) {},
+            _write: ƒ (length: 8) {},
+            _afterSync: ƒ (length: 0) {},
+            _process: ƒ (length: 0) {},
+            _checkError: ƒ (length: 0) {},
+            _after: ƒ (length: 0) {},
+            _error: ƒ (length: 1) {},
+            init: ƒ (length: 5) {},
+            params: ƒ (length: 0) {},
+            reset: ƒ (length: 0) {},
+            _init: ƒ (length: 5) {},
+            _setDictionary: ƒ (length: 0) {},
+            _reset: ƒ (length: 0) {}
         }
     },
-    DeflateRaw: <ref *5> ƒ G0(length: 1) {
-        super_: [Circular: *3]
+    codes: <ref *48> {
+        0: "Z_OK",
+        1: "Z_STREAM_END",
+        2: "Z_NEED_DICT",
+        Z_OK: 0,
+        Z_STREAM_END: 1,
+        Z_NEED_DICT: 2,
+        Z_ERRNO: -1,
+        Z_STREAM_ERROR: -2,
+        Z_DATA_ERROR: -3,
+        Z_MEM_ERROR: undefined,
+        Z_BUF_ERROR: -5,
+        Z_VERSION_ERROR: undefined,
+        -1: "Z_ERRNO",
+        -2: "Z_STREAM_ERROR",
+        -3: "Z_DATA_ERROR",
+        undefined: "Z_VERSION_ERROR",
+        -5: "Z_BUF_ERROR"
     },
-    Gunzip: <ref *6> ƒ J0(length: 1) {
-        super_: [Circular: *3]
-    },
-    Gzip: <ref *7> ƒ S(length: 1) {
-        super_: [Circular: *3]
-    },
-    Inflate: <ref *8> ƒ E(length: 1) {
-        super_: [Circular: *3]
-    },
-    InflateRaw: <ref *9> ƒ F0(length: 1) {
-        super_: [Circular: *3]
-    },
-    Unzip: <ref *10> ƒ f(length: 1) {
-        super_: [Circular: *3]
-    },
-    constants: <ref *11> {
+    constants: <ref *49> {
         Z_NO_FLUSH: 0,
         Z_PARTIAL_FLUSH: 1,
         Z_SYNC_FLUSH: 2,
@@ -12754,13 +13761,13 @@ ReferenceError: Can't find variable: constants
         Z_UNKNOWN: 2,
         Z_DEFLATED: 8
     },
-    createDeflate: <ref *12> ƒ (length: 1) {},
-    createDeflateRaw: <ref *13> ƒ (length: 1) {},
-    createGunzip: <ref *14> ƒ (length: 1) {},
-    createGzip: <ref *15> ƒ (length: 1) {},
-    createInflate: <ref *16> ƒ (length: 1) {},
-    createInflateRaw: <ref *17> ƒ (length: 1) {},
-    createUnzip: <ref *18> ƒ (length: 1) {},
+    createDeflate: <ref *50> ƒ (length: 1) {},
+    createDeflateRaw: <ref *51> ƒ (length: 1) {},
+    createGunzip: <ref *52> ƒ (length: 1) {},
+    createGzip: <ref *53> ƒ (length: 1) {},
+    createInflate: <ref *54> ƒ (length: 1) {},
+    createInflateRaw: <ref *55> ƒ (length: 1) {},
+    createUnzip: <ref *56> ƒ (length: 1) {},
     default: {
         Z_NO_FLUSH: 0,
         Z_PARTIAL_FLUSH: 1,
@@ -12789,7 +13796,7 @@ ReferenceError: Can't find variable: constants
         Z_TEXT: 1,
         Z_UNKNOWN: 2,
         Z_DEFLATED: 8,
-        Zlib: ƒ k(length: 1) {},
+        Zlib: [Circular: *31],
         Z_MIN_WINDOWBITS: 8,
         Z_MAX_WINDOWBITS: 15,
         Z_DEFAULT_WINDOWBITS: 15,
@@ -12802,70 +13809,51 @@ ReferenceError: Can't find variable: constants
         Z_MIN_LEVEL: -1,
         Z_MAX_LEVEL: 9,
         Z_DEFAULT_LEVEL: -1,
-        codes: {
-            0: "Z_OK",
-            1: "Z_STREAM_END",
-            2: "Z_NEED_DICT",
-            Z_OK: 0,
-            Z_STREAM_END: 1,
-            Z_NEED_DICT: 2,
-            Z_ERRNO: -1,
-            Z_STREAM_ERROR: -2,
-            Z_DATA_ERROR: -3,
-            Z_MEM_ERROR: undefined,
-            Z_BUF_ERROR: -5,
-            Z_VERSION_ERROR: undefined,
-            -1: "Z_ERRNO",
-            -2: "Z_STREAM_ERROR",
-            -3: "Z_DATA_ERROR",
-            undefined: "Z_VERSION_ERROR",
-            -5: "Z_BUF_ERROR"
-        },
-        constants: [Circular: *11],
+        codes: [Circular: *48],
+        constants: [Circular: *49],
         Deflate: [Circular: *2],
-        Inflate: [Circular: *8],
-        Gzip: [Circular: *7],
-        Gunzip: [Circular: *6],
-        DeflateRaw: [Circular: *5],
-        InflateRaw: [Circular: *9],
-        Unzip: [Circular: *10],
-        createDeflate: [Circular: *12],
-        createInflate: [Circular: *16],
-        createDeflateRaw: [Circular: *13],
-        createInflateRaw: [Circular: *17],
-        createGzip: [Circular: *15],
-        createGunzip: [Circular: *14],
-        createUnzip: [Circular: *18],
-        deflate: <ref *22> ƒ (length: 3) {},
-        deflateSync: <ref *23> ƒ (length: 2) {},
-        gzip: <ref *24> ƒ (length: 3) {},
-        gzipSync: <ref *25> ƒ (length: 2) {},
-        deflateRaw: <ref *26> ƒ (length: 3) {},
-        deflateRawSync: <ref *27> ƒ (length: 2) {},
-        unzip: <ref *28> ƒ (length: 3) {},
-        unzipSync: <ref *29> ƒ (length: 2) {},
-        inflate: <ref *30> ƒ (length: 3) {},
-        inflateSync: <ref *31> ƒ (length: 2) {},
-        gunzip: <ref *32> ƒ (length: 3) {},
-        gunzipSync: <ref *33> ƒ (length: 2) {},
-        inflateRaw: <ref *34> ƒ (length: 3) {},
-        inflateRawSync: <ref *35> ƒ (length: 2) {},
-        Symbol(CommonJS): 0
+        Inflate: [Circular: *25],
+        Gzip: [Circular: *23],
+        Gunzip: [Circular: *21],
+        DeflateRaw: [Circular: *19],
+        InflateRaw: [Circular: *27],
+        Unzip: [Circular: *29],
+        createDeflate: [Circular: *50],
+        createInflate: [Circular: *54],
+        createDeflateRaw: [Circular: *51],
+        createInflateRaw: [Circular: *55],
+        createGzip: [Circular: *53],
+        createGunzip: [Circular: *52],
+        createUnzip: [Circular: *56],
+        deflate: <ref *58> ƒ (length: 3) {},
+        deflateSync: <ref *59> ƒ (length: 2) {},
+        gzip: <ref *60> ƒ (length: 3) {},
+        gzipSync: <ref *61> ƒ (length: 2) {},
+        deflateRaw: <ref *62> ƒ (length: 3) {},
+        deflateRawSync: <ref *63> ƒ (length: 2) {},
+        unzip: <ref *64> ƒ (length: 3) {},
+        unzipSync: <ref *65> ƒ (length: 2) {},
+        inflate: <ref *66> ƒ (length: 3) {},
+        inflateSync: <ref *67> ƒ (length: 2) {},
+        gunzip: <ref *68> ƒ (length: 3) {},
+        gunzipSync: <ref *69> ƒ (length: 2) {},
+        inflateRaw: <ref *70> ƒ (length: 3) {},
+        inflateRawSync: <ref *71> ƒ (length: 2) {}
     },
-    deflate: [Circular: *22],
-    deflateRaw: [Circular: *26],
-    deflateRawSync: [Circular: *27],
-    deflateSync: [Circular: *23],
-    gunzip: [Circular: *32],
-    gunzipSync: [Circular: *33],
-    gzip: [Circular: *24],
-    gzipSync: [Circular: *25],
-    inflate: [Circular: *30],
-    inflateRaw: [Circular: *34],
-    inflateRawSync: [Circular: *35],
-    inflateSync: [Circular: *31],
-    unzip: [Circular: *28],
-    unzipSync: [Circular: *29]
+    deflate: [Circular: *58],
+    deflateRaw: [Circular: *62],
+    deflateRawSync: [Circular: *63],
+    deflateSync: [Circular: *59],
+    gunzip: [Circular: *68],
+    gunzipSync: [Circular: *69],
+    gzip: [Circular: *60],
+    gzipSync: [Circular: *61],
+    inflate: [Circular: *66],
+    inflateRaw: [Circular: *70],
+    inflateRawSync: [Circular: *71],
+    inflateSync: [Circular: *67],
+    unzip: [Circular: *64],
+    unzipSync: [Circular: *65]
 }
 ```
 
