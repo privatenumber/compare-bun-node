@@ -1,6 +1,6 @@
 # Bun & Node.js comparison
 
-This repository provides a comparative overview of the [Bun](https://bun.sh) and [Node.js](https://nodejs.org) APIs. Making it easy to see what's available in Bun, what's not, and how they differ.
+This repository provides a comparative overview of the [Bun](https://bun.sh) and [Node.js](https://nodejs.org) APIs. Making it easy to see what's available in Bun, what's not, and how they differ. The goal of this comparison is to help you determine if Bun is ready for adoption.
 
 The comparison is performed every week using GitHub Actions, with the latest Bun Canary and Node.js LTS versions. For more details, refer to the Actions tab.
 
