@@ -6,7 +6,7 @@ The comparison is performed every week using GitHub Actions, with the latest Bun
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v18.17.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v18.17.1<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -1423,7 +1423,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
         isWritable: <ref *49> ƒ isWritable(length: 1) {},
         isReadable: <ref *50> ƒ isReadable(length: 1) {},
         Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable2(length: 0) {
+        Writable: <ref *51> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -1574,7 +1574,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
         isWritable: <ref *49> ƒ isWritable(length: 1) {},
         isReadable: <ref *50> ƒ isReadable(length: 1) {},
         Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable2(length: 0) {
+        Writable: <ref *51> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -1738,7 +1738,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
         isWritable: <ref *49> ƒ isWritable(length: 1) {},
         isReadable: <ref *50> ƒ isReadable(length: 1) {},
         Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable2(length: 0) {
+        Writable: <ref *51> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -1889,7 +1889,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
         isWritable: <ref *49> ƒ isWritable(length: 1) {},
         isReadable: <ref *50> ƒ isReadable(length: 1) {},
         Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable2(length: 0) {
+        Writable: <ref *51> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -1974,7 +1974,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:1964) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:1994) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -2042,7 +2042,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
         isWritable: <ref *49> ƒ isWritable(length: 1) {},
         isReadable: <ref *50> ƒ isReadable(length: 1) {},
         Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable2(length: 0) {
+        Writable: <ref *51> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -2200,7 +2200,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
         isWritable: <ref *49> ƒ isWritable(length: 1) {},
         isReadable: <ref *50> ƒ isReadable(length: 1) {},
         Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable2(length: 0) {
+        Writable: <ref *51> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -3352,7 +3352,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
 </td><td valign="top">
 
 ```js
-{
+Cluster {
     SCHED_NONE: 1,
     SCHED_RR: 2,
     Worker: <ref *2> ƒ Worker(length: 0) {},
@@ -3360,6 +3360,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
     _eventsCount: 0,
     _maxListeners: undefined,
     addListener: <ref *4> ƒ addListener(length: 2) {},
+    constructor: ƒ Cluster(length: 0) {},
     default: Cluster {
         _events: [Circular: *3],
         _eventsCount: 0,
@@ -3367,8 +3368,8 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
         isWorker: false,
         isPrimary: true,
         isMaster: true,
-        workers: <ref *6> {},
-        settings: <ref *7> {},
+        workers: <ref *7> {},
+        settings: <ref *8> {},
         SCHED_NONE: 1,
         SCHED_RR: 2,
         schedulingPolicy: 2,
@@ -3381,20 +3382,20 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
     isMaster: true,
     isPrimary: true,
     isWorker: false,
-    listenerCount: ƒ listenerCount(length: 1) {},
+    listenerCount: ƒ listenerCount2(length: 1) {},
     listeners: ƒ listeners(length: 1) {},
-    off: <ref *13> ƒ removeListener(length: 2) {},
+    off: <ref *14> ƒ removeListener(length: 2) {},
     on: [Circular: *4],
-    once: ƒ once(length: 2) {},
+    once: ƒ once2(length: 2) {},
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
-    removeListener: [Circular: *13],
+    removeListener: [Circular: *14],
     schedulingPolicy: 2,
-    setMaxListeners: ƒ setMaxListeners(length: 1) {},
-    settings: [Circular: *7],
-    workers: [Circular: *6]
+    setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+    settings: [Circular: *8],
+    workers: [Circular: *7]
 }
 ```
 
@@ -3630,7 +3631,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
     EWOULDBLOCK: 11,
     EXDEV: 18,
     F_OK: 0,
-    OPENSSL_VERSION_NUMBER: 805306512,
+    OPENSSL_VERSION_NUMBER: 805306528,
     O_APPEND: 1024,
     O_CREAT: 64,
     O_DIRECT: 16384,
@@ -3961,7 +3962,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
         COPYFILE_FICLONE: 2,
         UV_FS_COPYFILE_FICLONE_FORCE: 4,
         COPYFILE_FICLONE_FORCE: 4,
-        OPENSSL_VERSION_NUMBER: 805306512,
+        OPENSSL_VERSION_NUMBER: 805306528,
         SSL_OP_ALL: 2147485776,
         SSL_OP_ALLOW_NO_DHE_KEX: 1024,
         SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: 262144,
@@ -4508,7 +4509,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
     checkPrime: <ref *20> ƒ checkPrime(length: 1) {},
     checkPrimeSync: <ref *21> ƒ checkPrimeSync(length: 1) {},
     constants: <ref *22> [Object: null prototype] {
-        OPENSSL_VERSION_NUMBER: 805306512,
+        OPENSSL_VERSION_NUMBER: 805306528,
         SSL_OP_ALL: 2147485776,
         SSL_OP_ALLOW_NO_DHE_KEX: 1024,
         SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: 262144,
@@ -4705,19 +4706,23 @@ _Last updated on <!-- lastUpdated:start -->Aug 14, 2023 with Bun 0.7.4 Node.js v
 </td><td valign="top">
 
 ```js
-1 | 
-2 | `;super(message);this.name="AggregateError",this.errors=errors}};module.exports={AggregateError,once(callback){let called=!1;return function(...args){if(called)return;called=!0,callback.apply(this,args)}},createDeferredPromise:function(){let resolve,reject;return{promise:new Promise((res,rej)=>{resolve=res,reject=rej}),resolve,reject}},promisify(fn){return new Promise((resolve,reject)=>{fn((err,...args)=>{if(err)return reject(err);return resolve(...args)})})},debuglog(){return function(){}},format(format,...args){return format.replace(/%([sdifj])/g,function(...[_unused,type]){const replacement=args.shift();if(type==="f")return replacement.toFixed(6);else if(type==="j")return JSON.stringify(replacement);else if(type==="s"&&typeof replacement==="object")return`${replacement.constructor!==Object?replacement.constructor.name:""} {}`.trim();else return replacement.toString()})},inspect(value){switch(typeof value){case"string":if(value.includes("'")){if(!value.includes('"'))return`"${value}"`;else if(!value.includes("`")&&!value.includes("${"))return`\`${value}\``}return`'${value}'`;case"number":if(isNaN(value))return"NaN";else if(Object.is(value,-0))return String(value);return value;case"bigint":return`${String(value)}n`;case"boolean":case"undefined":return String(value);case"object":return"{}"}},types:{isAsyncFunction(fn){return fn instanceof AsyncFunction},isArrayBufferView(arr){return ArrayBuffer.isView(arr)}},isBlob},module.exports.promisify.custom=Symbol.for("nodejs.util.promisify.custom")}}),require_errors=__commonJS({"node_modules/readable-stream/lib/ours/errors.js"(exports2,module){var{format,inspect,AggregateError:CustomAggregateError}=require_util(),AggregateError=globalThis.AggregateError||CustomAggregateError,kIsNodeError=Symbol("kIsNodeError"),kTypes=["string","function","number","object","Function","Object","boolean","bigint","symbol"],classRegExp=/^([A-Z][a-z0-9]*)+$/,nodeInternalPrefix="__node_internal_",codes={};function assert(value,message){if(!value)throw new codes.ERR_INTERNAL_ASSERTION(message)}function addNumericalSeparator(val){let res="",i=val.length;const start=val[0]==="-"?1:0;for(;i>=start+4;i-=3)res=`_${val.slice(i-3,i)}${res}`;return`${val.slice(0,i)}${res}`}function getMessage(key,msg,args){if(typeof msg==="function")return assert(msg.length<=args.length,`Code: ${key}; The provided arguments length (${args.length}) does not match the required ones (${msg.length}).`),msg(...args);const expectedLength=(msg.match(/%[dfijoOs]/g)||[]).length;if(assert(expectedLength===args.length,`Code: ${key}; The provided arguments length (${args.length}) does not match the required ones (${expectedLength}).`),args.length===0)return msg;return format(msg,...args)}function E(code,message,Base){if(!Base)Base=Error;class NodeError extends Base{constructor(...args){super(getMessage(code,message,args))}toString(){return`${this.name} [${code}]: ${this.message}`}}Object.defineProperties(NodeError.prototype,{name:{value:Base.name,writable:!0,enumerable:!1,configurable:!0},toString:{value(){return`${this.name} [${code}]: ${this.message}`},writable:!0,enumerable:!1,configurable:!0}}),NodeError.prototype.code=code,NodeError.prototype[kIsNodeError]=!0,codes[code]=NodeError}function hideStackFrames(fn){const hidden=nodeInternalPrefix+fn.name;return Object.defineProperty(fn,"name",{value:hidden}),fn}function aggregateTwoErrors(innerError,outerError){if(innerError&&outerError&&innerError!==outerError){if(Array.isArray(outerError.errors))return outerError.errors.push(innerError),outerError;const err=new AggregateError([outerError,innerError],outerError.message);return err.code=outerError.code,err}return innerError||outerError}var AbortError2=class extends Error{constructor(message="The operation was aborted",options=void 0){if(options!==void 0&&typeof options!=="object")throw new codes.ERR_INVALID_ARG_TYPE("options","Object",options);super(message,options);this.code="ABORT_ERR",this.name="AbortError"}};E("ERR_ASSERTION","%s",Error),E("ERR_INVALID_ARG_TYPE",(name,expected,actual)=>{if(assert(typeof name==="string","'name' must be a string"),!Array.isArray(expected))expected=[expected];let msg="The ";if(name.endsWith(" argument"))msg+=`${name} `;else msg+=`"${name}" ${name.includes(".")?"property":"argument"} `;msg+="must be ";const types=[],instances=[],other=[];for(let value of expected)if(assert(typeof value==="string","All expected entries have to be of type string"),kTypes.includes(value))types.push(value.toLowerCase());else if(classRegExp.test(value))instances.push(value);else assert(value!=="object",'The value "object" should be written as "Object"'),other.push(value);if(instances.length>0){const pos=types.indexOf("object");if(pos!==-1)types.splice(types,pos,1),instances.push("Object")}if(types.length>0){switch(types.length){case 1:msg+=`of type ${types[0]}`;break;case 2:msg+=`one of type ${types[0]} or ${types[1]}`;break;default:{const last=types.pop();msg+=`one of type ${types.join(", ")}, or ${last}`}}if(instances.length>0||other.length>0)msg+=" or "}if(instances.length>0){switch(instances.length){case 1:msg+=`an instance of ${instances[0]}`;break;case 2:msg+=`an instance of ${instances[0]} or ${instances[1]}`;break;default:{const last=instances.pop();msg+=`an instance of ${instances.join(", ")}, or ${last}`}}if(other.length>0)msg+=" or "}switch(other.length){case 0:break;case 1:if(other[0].toLowerCase()!==other[0])msg+="an ";msg+=`${other[0]}`;break;case 2:msg+=`one of ${other[0]} or ${other[1]}`;break;default:{const last=other.pop();msg+=`one of ${other.join(", ")}, or ${last}`}}if(actual==null)msg+=`. Received ${actual}`;else if(typeof actual==="function"&&actual.name)msg+=`. Received function ${actual.name}`;else if(typeof actual==="object"){var _actual$constructor;if((_actual$constructor=actual.constructor)!==null&&_actual$constructor!==void 0&&_actual$constructor.name)msg+=`. Received an instance of ${actual.constructor.name}`;else{const inspected=inspect(actual,{depth:-1});msg+=`. Received ${inspected}`}}else{let inspected=inspect(actual,{colors:!1});if(inspected.length>25)inspected=`${inspected.slice(0,25)}...`;msg+=`. Received type ${typeof actual} (${inspected})`}return msg},TypeError),E("ERR_INVALID_ARG_VALUE",(name,value,reason="is invalid")=>{let inspected=inspect(value);if(inspected.length>128)inspected=inspected.slice(0,128)+"...";return`The ${name.includes(".")?"property":"argument"} '${name}' ${reason}. Received ${inspected}`},TypeError),E("ERR_INVALID_RETURN_VALUE",(input,name,value)=>{var _value$constructor;const type=value!==null&&value!==void 0&&(_value$constructor=value.constructor)!==null&&_value$constructor!==void 0&&_value$constructor.name?`instance of ${value.constructor.name}`:`type ${typeof value}`;return`Expected ${input} to be returned from the "${name}" function but got ${type}.`},TypeError),E("ERR_MISSING_ARGS",(...args)=>{assert(args.length>0,"At least one arg needs to be specified");let msg;const len=args.length;switch(args=(Array.isArray(args)?args:[args]).map((a)=>`"${a}"`).join(" or "),len){case 1:msg+=`The ${args[0]} argument`;break;case 2:msg+=`The ${args[0]} and ${args[1]} arguments`;break;default:{const last=args.pop();msg+=`The ${args.join(", ")}, and ${last} arguments`}break}return`${msg} must be specified`},TypeError),E("ERR_OUT_OF_RANGE",(str,range,input)=>{assert(range,'Missing "range" argument');let received;if(Number.isInteger(input)&&Math.abs(input)>4294967296)received=addNumericalSeparator(String(input));else if(typeof input==="bigint"){if(received=String(input),input>2n**32n||input<-(2n**32n))received=addNumericalSeparator(received);received+="n"}else received=inspect(input);return`The value of "${str}" is out of range. It must be ${range}. Received ${received}`},RangeError),E("ERR_MULTIPLE_CALLBACK","Callback called multiple times",Error),E("ERR_METHOD_NOT_IMPLEMENTED","The %s method is not implemented",Error),E("ERR_STREAM_ALREADY_FINISHED","Cannot call %s after a stream was finished",Error),E("ERR_STREAM_CANNOT_PIPE","Cannot pipe, not readable",Error),E("ERR_STREAM_DESTROYED","Cannot call %s after a stream was destroyed",Error),E("ERR_STREAM_NULL_VALUES","May not write null values to stream",TypeError),E("ERR_STREAM_PREMATURE_CLOSE","Premature close",Error),E("ERR_STREAM_PUSH_AFTER_EOF","stream.push() after EOF",Error),E("ERR_STREAM_UNSHIFT_AFTER_END_EVENT","stream.unshift() after end event",Error),E("ERR_STREAM_WRITE_AFTER_END","write after end",Error),E("ERR_UNKNOWN_ENCODING","Unknown encoding: %s",TypeError),module.exports={AbortError:AbortError2,aggregateTwoErrors:hideStackFrames(aggregateTwoErrors),hideStackFrames,codes}}}),require_validators=__commonJS({"node_modules/readable-stream/lib/internal/validators.js"(exports2,module){var{ArrayIsArray:ArrayIsArray2,ArrayPrototypeIncludes,ArrayPrototypeJoin,ArrayPrototypeMap,NumberIsInteger,NumberMAX_SAFE_INTEGER,NumberMIN_SAFE_INTEGER,NumberParseInt,RegExpPrototypeTest,String:String2,StringPrototypeToUpperCase,StringPrototypeTrim}=require_primordials(),{hideStackFrames,codes:{ERR_SOCKET_BAD_PORT,ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_INVALID_ARG_VALUE:ERR_INVALID_ARG_VALUE2,ERR_OUT_OF_RANGE,ERR_UNKNOWN_SIGNAL}}=require_errors(),{normalizeEncoding}=require_util(),{isAsyncFunction,isArrayBufferView}=require_util().types,signals={};function isInt32(value){return value===(value|0)}function isUint32(value){return value===value>>>0}var octalReg=/^[0-7]+$/,modeDesc="must be a 32-bit unsigned integer or an octal string";function parseFileMode(value,name,def){if(typeof value==="undefined")value=def;if(typeof value==="string"){if(!RegExpPrototypeTest(octalReg,value))throw new ERR_INVALID_ARG_VALUE2(name,value,modeDesc);value=NumberParseInt(value,8)}return validateInt32(value,name,0,4294967295),value}var validateInteger=hideStackFrames((value,name,min=NumberMIN_SAFE_INTEGER,max=NumberMAX_SAFE_INTEGER)=>{if(typeof value!=="number")throw new ERR_INVALID_ARG_TYPE2(name,"number",value);if(!NumberIsInteger(value))throw new ERR_OUT_OF_RANGE(name,"an integer",value);if(value<min||value>max)throw new ERR_OUT_OF_RANGE(name,`>= ${min} && <= ${max}`,value)}),validateInt32=hideStackFrames((value,name,min=-2147483648,max=2147483647)=>{if(typeof value!=="number")throw new ERR_INVALID_ARG_TYPE2(name,"number",value);if(!isInt32(value)){if(!NumberIsInteger(value))throw new ERR_OUT_OF_RANGE(name,"an integer",value);throw new ERR_OUT_OF_RANGE(name,`>= ${min} && <= ${max}`,value)}if(value<min||value>max)throw new ERR_OUT_OF_RANGE(name,`>= ${min} && <= ${max}`,value)}),validateUint32=hideStackFrames((value,name,positive)=>{if(typeof value!=="number")throw new ERR_INVALID_ARG_TYPE2(name,"number",value);if(!isUint32(value)){if(!NumberIsInteger(value))throw new ERR_OUT_OF_RANGE(name,"an integer",value);throw new ERR_OUT_OF_RANGE(name,`>= ${positive?1:0} && < 4294967296`,value)}if(positive&&value===0)throw new ERR_OUT_OF_RANGE(name,">= 1 && < 4294967296",value)});function validateString2(value,name){if(typeof value!=="string")throw new ERR_INVALID_ARG_TYPE2(name,"string",value)}function validateNumber(value,name){if(typeof value!=="number")throw new ERR_INVALID_ARG_TYPE2(name,"number",value)}var validateOneOf=hideStackFrames((value,name,oneOf)=>{if(!ArrayPrototypeIncludes(oneOf,value)){const reason="must be one of: "+ArrayPrototypeJoin(ArrayPrototypeMap(oneOf,(v)=>typeof v==="string"?`'${v}'`:String2(v)),", ");throw new ERR_INVALID_ARG_VALUE2(name,value,reason)}});function validateBoolean2(value,name){if(typeof value!=="boolean")throw new ERR_INVALID_ARG_TYPE2(name,"boolean",value)}var validateObject2=hideStackFrames((value,name,options)=>{const useDefaultOptions=options==null,allowArray=useDefaultOptions?!1:options.allowArray,allowFunction=useDefaultOptions?!1:options.allowFunction;if(!(useDefaultOptions?!1:options.nullable)&&value===null||!allowArray&&ArrayIsArray2(value)||typeof value!=="object"&&(!allowFunction||typeof value!=="function"))throw new ERR_INVALID_ARG_TYPE2(name,"Object",value)}),validateArray=hideStackFrames((value,name,minLength=0)=>{if(!ArrayIsArray2(value))throw new ERR_INVALID_ARG_TYPE2(name,"Array",value);if(value.length<minLength){const reason=`must be longer than ${minLength}`;throw new ERR_INVALID_ARG_VALUE2(name,value,reason)}});function validateSignalName(signal,name="signal"){if(validateString2(signal,name),signals[signal]===void 0){if(signals[StringPrototypeToUpperCase(signal)]!==void 0)throw new ERR_UNKNOWN_SIGNAL(signal+" (signals must use all capital letters)");throw new ERR_UNKNOWN_SIGNAL(signal)}}var validateBuffer=hideStackFrames((buffer,name="buffer")=>{if(!isArrayBufferView(buffer))throw new ERR_INVALID_ARG_TYPE2(name,["Buffer","TypedArray","DataView"],buffer)});function validateEncoding(data,encoding){const normalizedEncoding=normalizeEncoding(encoding),length=data.length;if(normalizedEncoding==="hex"&&length%2!==0)throw new ERR_INVALID_ARG_VALUE2("encoding",encoding,`is invalid for data of length ${length}`)}function validatePort(port,name="Port",allowZero=!0){if(typeof port!=="number"&&typeof port!=="string"||typeof port==="string"&&StringPrototypeTrim(port).length===0||+port!==+port>>>0||port>65535||port===0&&!allowZero)throw new ERR_SOCKET_BAD_PORT(name,port,allowZero);return port|0}var validateAbortSignal=hideStackFrames((signal,name)=>{if(signal!==void 0&&(signal===null||typeof signal!=="object"||!("aborted"in signal)))throw new ERR_INVALID_ARG_TYPE2(name,"AbortSignal",signal)}),validateFunction=hideStackFrames((value,name)=>{if(typeof value!=="function")throw new ERR_INVALID_ARG_TYPE2(name,"Function",value)}),validatePlainFunction=hideStackFrames((value,name)=>{if(typeof value!=="function"||isAsyncFunction(value))throw new ERR_INVALID_ARG_TYPE2(name,"Function",value)}),validateUndefined=hideStackFrames((value,name)=>{if(value!==void 0)throw new ERR_INVALID_ARG_TYPE2(name,"undefined",value)});module.exports={isInt32,isUint32,parseFileMode,validateArray,validateBoolean:validateBoolean2,validateBuffer,validateEncoding,validateFunction,validateInt32,validateInteger,validateNumber,validateObject:validateObject2,validateOneOf,validatePlainFunction,validatePort,validateSignalName,validateString:validateString2,validateUint32,validateUndefined,validateAbortSignal}}}),require_utils=__commonJS({"node_modules/readable-stream/lib/internal/streams/utils.js"(exports2,module){var{Symbol:Symbol2,SymbolAsyncIterator,SymbolIterator}=require_primordials(),kDestroyed=Symbol2("kDestroyed"),kIsErrored=Symbol2("kIsErrored"),kIsReadable=Symbol2("kIsReadable"),kIsDisturbed=Symbol2("kIsDisturbed");function isReadableNodeStream(obj,strict=!1){var _obj$_readableState;return!!(obj&&typeof obj.pipe==="function"&&typeof obj.on==="function"&&(!strict||typeof obj.pause==="function"&&typeof obj.resume==="function")&&(!obj._writableState||((_obj$_readableState=obj._readableState)===null||_obj$_readableState===void 0?void 0:_obj$_readableState.readable)!==!1)&&(!obj._writableState||obj._readableState))}function isWritableNodeStream(obj){var _obj$_writableState;return!!(obj&&typeof obj.write==="function"&&typeof obj.on==="function"&&(!obj._readableState||((_obj$_writableState=obj._writableState)===null||_obj$_writableState===void 0?void 0:_obj$_writableState.writable)!==!1))}function isDuplexNodeStream(obj){return!!(obj&&typeof obj.pipe==="function"&&obj._readableState&&typeof obj.on==="function"&&typeof obj.write==="function")}function isNodeStream(obj){return obj&&(obj._readableState||obj._writableState||typeof obj.write==="function"&&typeof obj.on==="function"||typeof obj.pipe==="function"&&typeof obj.on==="function")}function isIterable(obj,isAsync){if(obj==null)return!1;if(isAsync===!0)return typeof obj[SymbolAsyncIterator]==="function";if(isAsync===!1)return typeof obj[SymbolIterator]==="function";return typeof obj[SymbolAsyncIterator]==="function"||typeof obj[SymbolIterator]==="function"}function isDestroyed(stream){if(!isNodeStream(stream))return null;const{_writableState:wState,_readableState:rState}=stream,state=wState||rState;return!!(stream.destroyed||stream[kDestroyed]||state!==null&&state!==void 0&&state.destroyed)}function isWritableEnded(stream){if(!isWritableNodeStream(stream))return null;if(stream.writableEnded===!0)return!0;const wState=stream._writableState;if(wState!==null&&wState!==void 0&&wState.errored)return!1;if(typeof(wState===null||wState===void 0?void 0:wState.ended)!=="boolean")return null;return wState.ended}function isWritableFinished(stream,strict){if(!isWritableNodeStream(stream))return null;if(stream.writableFinished===!0)return!0;const wState=stream._writableState;if(wState!==null&&wState!==void 0&&wState.errored)return!1;if(typeof(wState===null||wState===void 0?void 0:wState.finished)!=="boolean")return null;return!!(wState.finished||strict===!1&&wState.ended===!0&&wState.length===0)}function isReadableEnded(stream){if(!isReadableNodeStream(stream))return null;if(stream.readableEnded===!0)return!0;const rState=stream._readableState;if(!rState||rState.errored)return!1;if(typeof(rState===null||rState===void 0?void 0:rState.ended)!=="boolean")return null;return rState.ended}function isReadableFinished(stream,strict){if(!isReadableNodeStream(stream))return null;const rState=stream._readableState;if(rState!==null&&rState!==void 0&&rState.errored)return!1;if(typeof(rState===null||rState===void 0?void 0:rState.endEmitted)!=="boolean")return null;return!!(rState.endEmitted||strict===!1&&rState.ended===!0&&rState.length===0)}function isReadable(stream){if(stream&&stream[kIsReadable]!=null)return stream[kIsReadable];if(typeof(stream===null||stream===void 0?void 0:stream.readable)!=="boolean")return null;if(isDestroyed(stream))return!1;return isReadableNodeStream(stream)&&stream.readable&&!isReadableFinished(stream)}function isWritable(stream){if(typeof(stream===null||stream===void 0?void 0:stream.writable)!=="boolean")return null;if(isDestroyed(stream))return!1;return isWritableNodeStream(stream)&&stream.writable&&!isWritableEnded(stream)}function isFinished(stream,opts){if(!isNodeStream(stream))return null;if(isDestroyed(stream))return!0;if((opts===null||opts===void 0?void 0:opts.readable)!==!1&&isReadable(stream))return!1;if((opts===null||opts===void 0?void 0:opts.writable)!==!1&&isWritable(stream))return!1;return!0}function isWritableErrored(stream){var _stream$_writableStat,_stream$_writableStat2;if(!isNodeStream(stream))return null;if(stream.writableErrored)return stream.writableErrored;return(_stream$_writableStat=(_stream$_writableStat2=stream._writableState)===null||_stream$_writableStat2===void 0?void 0:_stream$_writableStat2.errored)!==null&&_stream$_writableStat!==void 0?_stream$_writableStat:null}function isReadableErrored(stream){var _stream$_readableStat,_stream$_readableStat2;if(!isNodeStream(stream))return null;if(stream.readableErrored)return stream.readableErrored;return(_stream$_readableStat=(_stream$_readableStat2=stream._readableState)===null||_stream$_readableStat2===void 0?void 0:_stream$_readableStat2.errored)!==null&&_stream$_readableStat!==void 0?_stream$_readableStat:null}function isClosed(stream){if(!isNodeStream(stream))return null;if(typeof stream.closed==="boolean")return stream.closed;const{_writableState:wState,_readableState:rState}=stream;if(typeof(wState===null||wState===void 0?void 0:wState.closed)==="boolean"||typeof(rState===null||rState===void 0?void 0:rState.closed)==="boolean")return(wState===null||wState===void 0?void 0:wState.closed)||(rState===null||rState===void 0?void 0:rState.closed);if(typeof stream._closed==="boolean"&&isOutgoingMessage(stream))return stream._closed;return null}function isOutgoingMessage(stream){return typeof stream._closed==="boolean"&&typeof stream._defaultKeepAlive==="boolean"&&typeof stream._removedConnection==="boolean"&&typeof stream._removedContLen==="boolean"}function isServerResponse(stream){return typeof stream._sent100==="boolean"&&isOutgoingMessage(stream)}function isServerRequest(stream){var _stream$req;return typeof stream._consuming==="boolean"&&typeof stream._dumped==="boolean"&&((_stream$req=stream.req)===null||_stream$req===void 0?void 0:_stream$req.upgradeOrConnect)===void 0}function willEmitClose(stream){if(!isNodeStream(stream))return null;const{_writableState:wState,_readableState:rState}=stream,state=wState||rState;return!state&&isServerResponse(stream)||!!(state&&state.autoDestroy&&state.emitClose&&state.closed===!1)}function isDisturbed(stream){var _stream$kIsDisturbed;return!!(stream&&((_stream$kIsDisturbed=stream[kIsDisturbed])!==null&&_stream$kIsDisturbed!==void 0?_stream$kIsDisturbed:stream.readableDidRead||stream.readableAborted))}function isErrored(stream){var _ref,_ref2,_ref3,_ref4,_ref5,_stream$kIsErrored,_stream$_readableStat3,_stream$_writableStat3,_stream$_readableStat4,_stream$_writableStat4;return!!(stream&&((_ref=(_ref2=(_ref3=(_ref4=(_ref5=(_stream$kIsErrored=stream[kIsErrored])!==null&&_stream$kIsErrored!==void 0?_stream$kIsErrored:stream.readableErrored)!==null&&_ref5!==void 0?_ref5:stream.writableErrored)!==null&&_ref4!==void 0?_ref4:(_stream$_readableStat3=stream._readableState)===null||_stream$_readableStat3===void 0?void 0:_stream$_readableStat3.errorEmitted)!==null&&_ref3!==void 0?_ref3:(_stream$_writableStat3=stream._writableState)===null||_stream$_writableStat3===void 0?void 0:_stream$_writableStat3.errorEmitted)!==null&&_ref2!==void 0?_ref2:(_stream$_readableStat4=stream._readableState)===null||_stream$_readableStat4===void 0?void 0:_stream$_readableStat4.errored)!==null&&_ref!==void 0?_ref:(_stream$_writableStat4=stream._writableState)===null||_stream$_writableStat4===void 0?void 0:_stream$_writableStat4.errored))}module.exports={kDestroyed,isDisturbed,kIsDisturbed,isErrored,kIsErrored,isReadable,kIsReadable,isClosed,isDestroyed,isDuplexNodeStream,isFinished,isIterable,isReadableNodeStream,isReadableEnded,isReadableFinished,isReadableErrored,isNodeStream,isWritable,isWritableNodeStream,isWritableEnded,isWritableFinished,isWritableErrored,isServerRequest,isServerResponse,willEmitClose}}}),require_end_of_stream=__commonJS({"node_modules/readable-stream/lib/internal/streams/end-of-stream.js"(exports2,module){var{AbortError:AbortError2,codes}=require_errors(),{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_STREAM_PREMATURE_CLOSE}=codes,{once}=require_util(),{validateAbortSignal,validateFunction,validateObject:validateObject2}=require_validators(),{Promise:Promise2}=require_primordials(),{isClosed,isReadable,isReadableNodeStream,isReadableFinished,isReadableErrored,isWritable,isWritableNodeStream,isWritableFinished,isWritableErrored,isNodeStream,willEmitClose:_willEmitClose}=require_utils();function isRequest(stream){return stream.setHeader&&typeof stream.abort==="function"}var nop=()=>{};function eos(stream,options,callback){var _options$readable,_options$writable;if(arguments.length===2)callback=options,options={};else if(options==null)options={};else validateObject2(options,"options");validateFunction(callback,"callback"),validateAbortSignal(options.signal,"options.signal"),callback=once(callback);const readable=(_options$readable=options.readable)!==null&&_options$readable!==void 0?_options$readable:isReadableNodeStream(stream),writable=(_options$writable=options.writable)!==null&&_options$writable!==void 0?_options$writable:isWritableNodeStream(stream);if(!isNodeStream(stream))throw new ERR_INVALID_ARG_TYPE2("stream","Stream",stream);const{_writableState:wState,_readableState:rState}=stream,onlegacyfinish=()=>{if(!stream.writable)onfinish()};let willEmitClose=_willEmitClose(stream)&&isReadableNodeStream(stream)===readable&&isWritableNodeStream(stream)===writable,writableFinished=isWritableFinished(stream,!1);const onfinish=()=>{if(writableFinished=!0,stream.destroyed)willEmitClose=!1;if(willEmitClose&&(!stream.readable||readable))return;if(!readable||readableFinished)callback.call(stream)};let readableFinished=isReadableFinished(stream,!1);const onend=()=>{if(readableFinished=!0,stream.destroyed)willEmitClose=!1;if(willEmitClose&&(!stream.writable||writable))return;if(!writable||writableFinished)callback.call(stream)},onerror=(err)=>{callback.call(stream,err)};let closed=isClosed(stream);const onclose=()=>{closed=!0;const errored=isWritableErrored(stream)||isReadableErrored(stream);if(errored&&typeof errored!=="boolean")return callback.call(stream,errored);if(readable&&!readableFinished&&isReadableNodeStream(stream,!0)){if(!isReadableFinished(stream,!1))return callback.call(stream,new ERR_STREAM_PREMATURE_CLOSE)}if(writable&&!writableFinished){if(!isWritableFinished(stream,!1))return callback.call(stream,new ERR_STREAM_PREMATURE_CLOSE)}callback.call(stream)},onrequest=()=>{stream.req.on("finish",onfinish)};if(isRequest(stream)){if(stream.on("complete",onfinish),!willEmitClose)stream.on("abort",onclose);if(stream.req)onrequest();else stream.on("request",onrequest)}else if(writable&&!wState)stream.on("end",onlegacyfinish),stream.on("close",onlegacyfinish);if(!willEmitClose&&typeof stream.aborted==="boolean")stream.on("aborted",onclose);if(stream.on("end",onend),stream.on("finish",onfinish),options.error!==!1)stream.on("error",onerror);if(stream.on("close",onclose),closed)runOnNextTick(onclose);else if(wState!==null&&wState!==void 0&&wState.errorEmitted||rState!==null&&rState!==void 0&&rState.errorEmitted){if(!willEmitClose)runOnNextTick(onclose)}else if(!readable&&(!willEmitClose||isReadable(stream))&&(writableFinished||isWritable(stream)===!1))runOnNextTick(onclose);else if(!writable&&(!willEmitClose||isWritable(stream))&&(readableFinished||isReadable(stream)===!1))runOnNextTick(onclose);else if(rState&&stream.req&&stream.aborted)runOnNextTick(onclose);const cleanup=()=>{if(callback=nop,stream.removeListener("aborted",onclose),stream.removeListener("complete",onfinish),stream.removeListener("abort",onclose),stream.removeListener("request",onrequest),stream.req)stream.req.removeListener("finish",onfinish);stream.removeListener("end",onlegacyfinish),stream.removeListener("close",onlegacyfinish),stream.removeListener("finish",onfinish),stream.removeListener("end",onend),stream.removeListener("error",onerror),stream.removeListener("close",onclose)};if(options.signal&&!closed){const abort=()=>{const endCallback=callback;cleanup(),endCallback.call(stream,new AbortError2(void 0,{cause:options.signal.reason}))};if(options.signal.aborted)runOnNextTick(abort);else{const originalCallback=callback;callback=once((...args)=>{options.signal.removeEventListener("abort",abort),originalCallback.apply(stream,args)}),options.signal.addEventListener("abort",abort)}}return cleanup}function finished2(stream,opts){return new Promise2((resolve,reject)=>{eos(stream,opts,(err)=>{if(err)reject(err);else resolve()})})}module.exports=eos,module.exports.finished=finished2}}),require_operators=__commonJS({"node_modules/readable-stream/lib/internal/streams/operators.js"(exports2,module){var{codes:{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_MISSING_ARGS,ERR_OUT_OF_RANGE},AbortError:AbortError2}=require_errors(),{validateAbortSignal,validateInteger,validateObject:validateObject2}=require_validators(),kWeakHandler=require_primordials().Symbol("kWeak"),{finished:finished2}=require_end_of_stream(),{ArrayPrototypePush,MathFloor,Number:Number2,NumberIsNaN,Promise:Promise2,PromiseReject,PromisePrototypeCatch,Symbol:Symbol2}=require_primordials(),kEmpty=Symbol2("kEmpty"),kEof=Symbol2("kEof");function map(fn,options){if(typeof fn!=="function")throw new ERR_INVALID_ARG_TYPE2("fn",["Function","AsyncFunction"],fn);if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");let concurrency=1;if((options===null||options===void 0?void 0:options.concurrency)!=null)concurrency=MathFloor(options.concurrency);return validateInteger(concurrency,"concurrency",1),async function*map2(){var _options$signal,_options$signal2;const ac=new AbortController,stream=this,queue=[],signal=ac.signal,signalOpt={signal},abort=()=>ac.abort();if(options!==null&&options!==void 0&&(_options$signal=options.signal)!==null&&_options$signal!==void 0&&_options$signal.aborted)abort();options===null||options===void 0||(_options$signal2=options.signal)===null||_options$signal2===void 0||_options$signal2.addEventListener("abort",abort);let next,resume,done=!1;function onDone(){done=!0}async function pump(){try{for await(let val of stream){var _val;if(done)return;if(signal.aborted)throw new AbortError2;try{val=fn(val,signalOpt)}catch(err){val=PromiseReject(err)}if(val===kEmpty)continue;if(typeof((_val=val)===null||_val===void 0?void 0:_val.catch)==="function")val.catch(onDone);if(queue.push(val),next)next(),next=null;if(!done&&queue.length&&queue.length>=concurrency)await new Promise2((resolve)=>{resume=resolve})}queue.push(kEof)}catch(err){const val=PromiseReject(err);PromisePrototypeCatch(val,onDone),queue.push(val)}finally{var _options$signal3;if(done=!0,next)next(),next=null;options===null||options===void 0||(_options$signal3=options.signal)===null||_options$signal3===void 0||_options$signal3.removeEventListener("abort",abort)}}pump();try{while(!0){while(queue.length>0){const val=await queue[0];if(val===kEof)return;if(signal.aborted)throw new AbortError2;if(val!==kEmpty)yield val;if(queue.shift(),resume)resume(),resume=null}await new Promise2((resolve)=>{next=resolve})}}finally{if(ac.abort(),done=!0,resume)resume(),resume=null}}.call(this)}function asIndexedPairs(options=void 0){if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");return async function*asIndexedPairs2(){let index=0;for await(let val of this){var _options$signal4;if(options!==null&&options!==void 0&&(_options$signal4=options.signal)!==null&&_options$signal4!==void 0&&_options$signal4.aborted)throw new AbortError2({cause:options.signal.reason});yield[index++,val]}}.call(this)}async function some(fn,options=void 0){for await(let unused of filter.call(this,fn,options))return!0;return!1}async function every(fn,options=void 0){if(typeof fn!=="function")throw new ERR_INVALID_ARG_TYPE2("fn",["Function","AsyncFunction"],fn);return!await some.call(this,async(...args)=>{return!await fn(...args)},options)}async function find(fn,options){for await(let result of filter.call(this,fn,options))return result;return}async function forEach(fn,options){if(typeof fn!=="function")throw new ERR_INVALID_ARG_TYPE2("fn",["Function","AsyncFunction"],fn);async function forEachFn(value,options2){return await fn(value,options2),kEmpty}for await(let unused of map.call(this,forEachFn,options));}function filter(fn,options){if(typeof fn!=="function")throw new ERR_INVALID_ARG_TYPE2("fn",["Function","AsyncFunction"],fn);async function filterFn(value,options2){if(await fn(value,options2))return value;return kEmpty}return map.call(this,filterFn,options)}var ReduceAwareErrMissingArgs=class extends ERR_MISSING_ARGS{constructor(){super("reduce");this.message="Reduce of an empty stream requires an initial value"}};async function reduce(reducer,initialValue,options){var _options$signal5;if(typeof reducer!=="function")throw new ERR_INVALID_ARG_TYPE2("reducer",["Function","AsyncFunction"],reducer);if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");let hasInitialValue=arguments.length>1;if(options!==null&&options!==void 0&&(_options$signal5=options.signal)!==null&&_options$signal5!==void 0&&_options$signal5.aborted){const err=new AbortError2(void 0,{cause:options.signal.reason});throw this.once("error",()=>{}),await finished2(this.destroy(err)),err}const ac=new AbortController,signal=ac.signal;if(options!==null&&options!==void 0&&options.signal){const opts={once:!0,[kWeakHandler]:this};options.signal.addEventListener("abort",()=>ac.abort(),opts)}let gotAnyItemFromStream=!1;try{for await(let value of this){var _options$signal6;if(gotAnyItemFromStream=!0,options!==null&&options!==void 0&&(_options$signal6=options.signal)!==null&&_options$signal6!==void 0&&_options$signal6.aborted)throw new AbortError2;if(!hasInitialValue)initialValue=value,hasInitialValue=!0;else initialValue=await reducer(initialValue,value,{signal})}if(!gotAnyItemFromStream&&!hasInitialValue)throw new ReduceAwareErrMissingArgs}finally{ac.abort()}return initialValue}async function toArray(options){if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");const result=[];for await(let val of this){var _options$signal7;if(options!==null&&options!==void 0&&(_options$signal7=options.signal)!==null&&_options$signal7!==void 0&&_options$signal7.aborted)throw new AbortError2(void 0,{cause:options.signal.reason});ArrayPrototypePush(result,val)}return result}function flatMap(fn,options){const values=map.call(this,fn,options);return async function*flatMap2(){for await(let val of values)yield*val}.call(this)}function toIntegerOrInfinity(number){if(number=Number2(number),NumberIsNaN(number))return 0;if(number<0)throw new ERR_OUT_OF_RANGE("number",">= 0",number);return number}function drop(number,options=void 0){if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");return number=toIntegerOrInfinity(number),async function*drop2(){var _options$signal8;if(options!==null&&options!==void 0&&(_options$signal8=options.signal)!==null&&_options$signal8!==void 0&&_options$signal8.aborted)throw new AbortError2;for await(let val of this){var _options$signal9;if(options!==null&&options!==void 0&&(_options$signal9=options.signal)!==null&&_options$signal9!==void 0&&_options$signal9.aborted)throw new AbortError2;if(number--<=0)yield val}}.call(this)}function take(number,options=void 0){if(options!=null)validateObject2(options,"options");if((options===null||options===void 0?void 0:options.signal)!=null)validateAbortSignal(options.signal,"options.signal");return number=toIntegerOrInfinity(number),async function*take2(){var _options$signal10;if(options!==null&&options!==void 0&&(_options$signal10=options.signal)!==null&&_options$signal10!==void 0&&_options$signal10.aborted)throw new AbortError2;for await(let val of this){var _options$signal11;if(options!==null&&options!==void 0&&(_options$signal11=options.signal)!==null&&_options$signal11!==void 0&&_options$signal11.aborted)throw new AbortError2;if(number-- >0)yield val;else return}}.call(this)}module.exports.streamReturningOperators={asIndexedPairs,drop,filter,flatMap,map,take},module.exports.promiseReturningOperators={every,forEach,reduce,toArray,some,find}}}),require_destroy=__commonJS({"node_modules/readable-stream/lib/internal/streams/destroy.js"(exports2,module){var{aggregateTwoErrors,codes:{ERR_MULTIPLE_CALLBACK},AbortError:AbortError2}=require_errors(),{Symbol:Symbol2}=require_primordials(),{kDestroyed,isDestroyed,isFinished,isServerRequest}=require_utils(),kDestroy="#kDestroy",kConstruct="#kConstruct";function checkError(err,w,r){if(err){if(err.stack,w&&!w.errored)w.errored=err;if(r&&!r.errored)r.errored=err}}function destroy2(err,cb){const r=this._readableState,w=this._writableState,s=w||r;if(w&&w.destroyed||r&&r.destroyed){if(typeof cb==="function")cb();return this}if(checkError(err,w,r),w)w.destroyed=!0;if(r)r.destroyed=!0;if(!s.constructed)this.once(kDestroy,(er)=>{_destroy(this,aggregateTwoErrors(er,err),cb)});else _destroy(this,err,cb);return this}function _destroy(self,err,cb){let called=!1;function onDestroy(err2){if(called)return;called=!0;const{_readableState:r,_writableState:w}=self;if(checkError(err2,w,r),w)w.closed=!0;if(r)r.closed=!0;if(typeof cb==="function")cb(err2);if(err2)runOnNextTick(emitErrorCloseNT,self,err2);else runOnNextTick(emitCloseNT,self)}try{self._destroy(err||null,onDestroy)}catch(err2){onDestroy(err2)}}function emitErrorCloseNT(self,err){emitErrorNT(self,err),emitCloseNT(self)}function emitCloseNT(self){const{_readableState:r,_writableState:w}=self;if(w)w.closeEmitted=!0;if(r)r.closeEmitted=!0;if(w&&w.emitClose||r&&r.emitClose)self.emit("close")}function emitErrorNT(self,err){const r=self?._readableState,w=self?._writableState;if(w?.errorEmitted||r?.errorEmitted)return;if(w)w.errorEmitted=!0;if(r)r.errorEmitted=!0;self?.emit?.("error",err)}function undestroy(){const r=this._readableState,w=this._writableState;if(r)r.constructed=!0,r.closed=!1,r.closeEmitted=!1,r.destroyed=!1,r.errored=null,r.errorEmitted=!1,r.reading=!1,r.ended=r.readable===!1,r.endEmitted=r.readable===!1;if(w)w.constructed=!0,w.destroyed=!1,w.closed=!1,w.closeEmitted=!1,w.errored=null,w.errorEmitted=!1,w.finalCalled=!1,w.prefinished=!1,w.ended=w.writable===!1,w.ending=w.writable===!1,w.finished=w.writable===!1}function errorOrDestroy2(stream,err,sync){const r=stream?._readableState,w=stream?._writableState;if(w&&w.destroyed||r&&r.destroyed)return this;if(r&&r.autoDestroy||w&&w.autoDestroy)stream.destroy(err);else if(err){if(Error.captureStackTrace(err),w&&!w.errored)w.errored=err;if(r&&!r.errored)r.errored=err;if(sync)runOnNextTick(emitErrorNT,stream,err);else emitErrorNT(stream,err)}}function construct(stream,cb){if(typeof stream._construct!=="function")return;const{_readableState:r,_writableState:w}=stream;if(r)r.constructed=!1;if(w)w.constructed=!1;if(stream.once(kConstruct,cb),stream.listenerCount(kConstruct)>1)return;runOnNextTick(constructNT,stream)}function constructNT(stream){let called=!1;function onConstruct(err){if(called){errorOrDestroy2(stream,err!==null&&err!==void 0?err:new ERR_MULTIPLE_CALLBACK);return}called=!0;const{_readableState:r,_writableState:w}=stream,s=w||r;if(r)r.constructed=!0;if(w)w.constructed=!0;if(s.destroyed)stream.emit(kDestroy,err);else if(err)errorOrDestroy2(stream,err,!0);else runOnNextTick(emitConstructNT,stream)}try{stream._construct(onConstruct)}catch(err){onConstruct(err)}}function emitConstructNT(stream){stream.emit(kConstruct)}function isRequest(stream){return stream&&stream.setHeader&&typeof stream.abort==="function"}function emitCloseLegacy(stream){stream.emit("close")}function emitErrorCloseLegacy(stream,err){stream.emit("error",err),runOnNextTick(emitCloseLegacy,stream)}function destroyer(stream,err){if(!stream||isDestroyed(stream))return;if(!err&&!isFinished(stream))err=new AbortError2;if(isServerRequest(stream))stream.socket=null,stream.destroy(err);else if(isRequest(stream))stream.abort();else if(isRequest(stream.req))stream.req.abort();else if(typeof stream.destroy==="function")stream.destroy(err);else if(typeof stream.close==="function")stream.close();else if(err)runOnNextTick(emitErrorCloseLegacy,stream);else runOnNextTick(emitCloseLegacy,stream);if(!stream.destroyed)stream[kDestroyed]=!0}module.exports={construct,destroyer,destroy:destroy2,undestroy,errorOrDestroy:errorOrDestroy2}}}),require_legacy=__commonJS({"node_modules/readable-stream/lib/internal/streams/legacy.js"(exports2,module){var{ArrayIsArray:ArrayIsArray2,ObjectSetPrototypeOf}=require_primordials();function Stream(options){if(!(this instanceof Stream))return new Stream(options);EE.call(this,options)}Stream.prototype={},ObjectSetPrototypeOf(Stream.prototype,EE.prototype),ObjectSetPrototypeOf(Stream,EE),Stream.prototype.pipe=function(dest,options){const source=this;function ondata(chunk){if(dest.writable&&dest.write(chunk)===!1&&source.pause)source.pause()}source.on("data",ondata);function ondrain(){if(source.readable&&source.resume)source.resume()}if(dest.on("drain",ondrain),!dest._isStdio&&(!options||options.end!==!1))source.on("end",onend),source.on("close",onclose);let didOnEnd=!1;function onend(){if(didOnEnd)return;didOnEnd=!0,dest.end()}function onclose(){if(didOnEnd)return;if(didOnEnd=!0,typeof dest.destroy==="function")dest.destroy()}function onerror(er){if(cleanup(),EE.listenerCount(this,"error")===0)this.emit("error",er)}prependListener(source,"error",onerror),prependListener(dest,"error",onerror);function cleanup(){source.removeListener("data",ondata),dest.removeListener("drain",ondrain),source.removeListener("end",onend),source.removeListener("close",onclose),source.removeListener("error",onerror),dest.removeListener("error",onerror),source.removeListener("end",cleanup),source.removeListener("close",cleanup),dest.removeListener("close",cleanup)}return source.on("end",cleanup),source.on("close",cleanup),dest.on("close",cleanup),dest.emit("pipe",source),dest};function prependListener(emitter,event,fn){if(typeof emitter.prependListener==="function")return emitter.prependListener(event,fn);if(!emitter._events||!emitter._events[event])emitter.on(event,fn);else if(ArrayIsArray2(emitter._events[event]))emitter._events[event].unshift(fn);else emitter._events[event]=[fn,emitter._events[event]]}module.exports={Stream,prependListener}}}),require_add_abort_signal=__commonJS({"node_modules/readable-stream/lib/internal/streams/add-abort-signal.js"(exports2,module){var{AbortError:AbortError2,codes}=require_errors(),eos=require_end_of_stream(),{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2}=codes,validateAbortSignal=(signal,name)=>{if(typeof signal!=="object"||!("aborted"in signal))throw new ERR_INVALID_ARG_TYPE2(name,"AbortSignal",signal)};function isNodeStream(obj){return!!(obj&&typeof obj.pipe==="function")}module.exports.addAbortSignal=function addAbortSignal(signal,stream){if(validateAbortSignal(signal,"signal"),!isNodeStream(stream))throw new ERR_INVALID_ARG_TYPE2("stream","stream.Stream",stream);return module.exports.addAbortSignalNoValidate(signal,stream)},module.exports.addAbortSignalNoValidate=function(signal,stream){if(typeof signal!=="object"||!("aborted"in signal))return stream;const onAbort=()=>{stream.destroy(new AbortError2(void 0,{cause:signal.reason}))};if(signal.aborted)onAbort();else signal.addEventListener("abort",onAbort),eos(stream,()=>signal.removeEventListener("abort",onAbort));return stream}}}),require_state=__commonJS({"node_modules/readable-stream/lib/internal/streams/state.js"(exports2,module){var{MathFloor,NumberIsInteger}=require_primordials(),{ERR_INVALID_ARG_VALUE:ERR_INVALID_ARG_VALUE2}=require_errors().codes;function highWaterMarkFrom(options,isDuplex,duplexKey){return options.highWaterMark!=null?options.highWaterMark:isDuplex?options[duplexKey]:null}function getDefaultHighWaterMark(objectMode){return objectMode?16:16384}function getHighWaterMark(state,options,duplexKey,isDuplex){const hwm=highWaterMarkFrom(options,isDuplex,duplexKey);if(hwm!=null){if(!NumberIsInteger(hwm)||hwm<0){const name=isDuplex?`options.${duplexKey}`:"options.highWaterMark";throw new ERR_INVALID_ARG_VALUE2(name,hwm)}return MathFloor(hwm)}return getDefaultHighWaterMark(state.objectMode)}module.exports={getHighWaterMark,getDefaultHighWaterMark}}}),require_from=__commonJS({"node_modules/readable-stream/lib/internal/streams/from.js"(exports2,module){var{PromisePrototypeThen,SymbolAsyncIterator,SymbolIterator}=require_primordials(),{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_STREAM_NULL_VALUES}=require_errors().codes;function from(Readable,iterable,opts){let iterator;if(typeof iterable==="string"||iterable instanceof Buffer)return new Readable({objectMode:!0,...opts,read(){this.push(iterable),this.push(null)}});let isAsync;if(iterable&&iterable[SymbolAsyncIterator])isAsync=!0,iterator=iterable[SymbolAsyncIterator]();else if(iterable&&iterable[SymbolIterator])isAsync=!1,iterator=iterable[SymbolIterator]();else throw new ERR_INVALID_ARG_TYPE2("iterable",["Iterable"],iterable);const readable=new Readable({objectMode:!0,highWaterMark:1,...opts});let reading=!1;readable._read=function(){if(!reading)reading=!0,next()},readable._destroy=function(error,cb){PromisePrototypeThen(close(error),()=>runOnNextTick(cb,error),(e)=>runOnNextTick(cb,e||error))};async function close(error){const hadError=error!==void 0&&error!==null,hasThrow=typeof iterator.throw==="function";if(hadError&&hasThrow){const{value,done}=await iterator.throw(error);if(await value,done)return}if(typeof iterator.return==="function"){const{value}=await iterator.return();await value}}async function next(){for(;;){try{const{value,done}=isAsync?await iterator.next():iterator.next();if(done)readable.push(null);else{const res=value&&typeof value.then==="function"?await value:value;if(res===null)throw reading=!1,new ERR_STREAM_NULL_VALUES;else if(readable.push(res))continue;else reading=!1}}catch(err){readable.destroy(err)}break}}return readable}module.exports=from}}),_ReadableFromWeb,_ReadableFromWebForUndici,require_readable=__commonJS({"node_modules/readable-stream/lib/internal/streams/readable.js"(exports2,module){var{ArrayPrototypeIndexOf,NumberIsInteger,NumberIsNaN,NumberParseInt,ObjectDefineProperties,ObjectKeys,ObjectSetPrototypeOf,Promise:Promise2,SafeSet,SymbolAsyncIterator,Symbol:Symbol2}=require_primordials(),ReadableState=globalThis[globalThis.Symbol.for('Bun.lazy')]("bun:stream").ReadableState,{Stream,prependListener}=require_legacy();function Readable(options){if(!(this instanceof Readable))return new Readable(options);const isDuplex=this instanceof require_duplex();if(this._readableState=new ReadableState(options,this,isDuplex),options){const{read,destroy:destroy2,construct,signal}=options;if(typeof read==="function")this._read=read;if(typeof destroy2==="function")this._destroy=destroy2;if(typeof construct==="function")this._construct=construct;if(signal&&!isDuplex)addAbortSignal(signal,this)}Stream.call(this,options),destroyImpl.construct(this,()=>{if(this._readableState.needReadable)maybeReadMore(this,this._readableState)})}Readable.prototype={},ObjectSetPrototypeOf(Readable.prototype,Stream.prototype),ObjectSetPrototypeOf(Readable,Stream),Readable.prototype.on=function(ev,fn){const res=Stream.prototype.on.call(this,ev,fn),state=this._readableState;if(ev==="data"){if(state.readableListening=this.listenerCount("readable")>0,state.flowing!==!1)this.resume()}else if(ev==="readable"){if(!state.endEmitted&&!state.readableListening){if(state.readableListening=state.needReadable=!0,state.flowing=!1,state.emittedReadable=!1,state.length)emitReadable(this,state);else if(!state.reading)runOnNextTick(nReadingNextTick,this)}else if(state.endEmitted);}return res};class ReadableFromWeb extends Readable{#reader;#closed;#pendingChunks;#stream;constructor(options,stream){const{objectMode,highWaterMark,encoding,signal}=options;super({objectMode,highWaterMark,encoding,signal});this.#pendingChunks=[],this.#reader=void 0,this.#stream=stream,this.#closed=!1}#drainPending(){var pendingChunks=this.#pendingChunks,pendingChunksI=0,pendingChunksCount=pendingChunks.length;for(;pendingChunksI<pendingChunksCount;pendingChunksI++){const chunk=pendingChunks[pendingChunksI];if(pendingChunks[pendingChunksI]=void 0,!this.push(chunk,void 0))return this.#pendingChunks=pendingChunks.slice(pendingChunksI+1),!0}if(pendingChunksCount>0)this.#pendingChunks=[];return!1}#handleDone(reader){reader.releaseLock(),this.#reader=void 0,this.#closed=!0,this.push(null);return}async _read(){var stream=this.#stream,reader=this.#reader;if(stream)reader=this.#reader=stream.getReader(),this.#stream=void 0;else if(this.#drainPending())return;var deferredError;try{do{var done=!1,value;const firstResult=reader.readMany();if(@isPromise(firstResult)){if({done,value}=await firstResult,this.#closed){this.#pendingChunks.push(...value);return}}else({done,value}=firstResult);if(done){this.#handleDone(reader);return}if(!this.push(value[0])){this.#pendingChunks=value.slice(1);return}for(let i=1,count=value.length;i<count;i++)if(!this.push(value[i])){this.#pendingChunks=value.slice(i+1);return}}while(!this.#closed)}catch(e){deferredError=e}finally{if(deferredError)throw deferredError}}_destroy(error,callback){if(!this.#closed){var reader=this.#reader;if(reader)this.#reader=void 0,reader.cancel(error).finally(()=>{this.#closed=!0,callback(error)});return}try{callback(error)}catch(error2){globalThis.reportError(error2)}}}_ReadableFromWebForUndici=ReadableFromWeb;function newStreamReadableFromReadableStream(readableStream,options={}){if(!isReadableStream(readableStream))throw new ERR_INVALID_ARG_TYPE2("readableStream","ReadableStream",readableStream);validateObject2(options,"options");const{highWaterMark,encoding,objectMode=!1,signal}=options;if(encoding!==void 0&&!Buffer.isEncoding(encoding))throw new ERR_INVALID_ARG_VALUE(encoding,"options.encoding");return validateBoolean(objectMode,"options.objectMode"),getNativeReadableStream(Readable,readableStream,options)||new ReadableFromWeb({highWaterMark,encoding,objectMode,signal},readableStream)}module.exports=Readable,_ReadableFromWeb=newStreamReadableFromReadableStream;var{addAbortSignal}=require_add_abort_signal(),eos=require_end_of_stream();const{maybeReadMore:_maybeReadMore,resume,emitReadable:_emitReadable,onEofChunk}=globalThis[globalThis.Symbol.for('Bun.lazy')]("bun:stream");function maybeReadMore(stream,state){process.nextTick(_maybeReadMore,stream,state)}function emitReadable(stream,state){_emitReadable(stream,state)}var destroyImpl=require_destroy(),{aggregateTwoErrors,codes:{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_METHOD_NOT_IMPLEMENTED,ERR_OUT_OF_RANGE,ERR_STREAM_PUSH_AFTER_EOF,ERR_STREAM_UNSHIFT_AFTER_END_EVENT}}=require_errors(),{validateObject:validateObject2}=require_validators(),from=require_from(),nop=()=>{},{errorOrDestroy:errorOrDestroy2}=destroyImpl;Readable.prototype.destroy=destroyImpl.destroy,Readable.prototype._undestroy=destroyImpl.undestroy,Readable.prototype._destroy=function(err,cb){cb(err)},Readable.prototype[EE.captureRejectionSymbol]=function(err){this.destroy(err)},Readable.prototype.push=function(chunk,encoding){return readableAddChunk(this,chunk,encoding,!1)},Readable.prototype.unshift=function(chunk,encoding){return readableAddChunk(this,chunk,encoding,!0)};function readableAddChunk(stream,chunk,encoding,addToFront){const state=stream._readableState;let err;if(!state.objectMode){if(typeof chunk==="string"){if(encoding=encoding||state.defaultEncoding,state.encoding!==encoding)if(addToFront&&state.encoding)chunk=Buffer.from(chunk,encoding).toString(state.encoding);else chunk=Buffer.from(chunk,encoding),encoding=""}else if(chunk instanceof Buffer)encoding="";else if(Stream._isUint8Array(chunk)){if(addToFront||!state.decoder)chunk=Stream._uint8ArrayToBuffer(chunk);encoding=""}else if(chunk!=null)err=new ERR_INVALID_ARG_TYPE2("chunk",["string","Buffer","Uint8Array"],chunk)}if(err)errorOrDestroy2(stream,err);else if(chunk===null)state.reading=!1,onEofChunk(stream,state);else if(state.objectMode||chunk&&chunk.length>0)if(addToFront)if(state.endEmitted)errorOrDestroy2(stream,new ERR_STREAM_UNSHIFT_AFTER_END_EVENT);else if(state.destroyed||state.errored)return!1;else addChunk(stream,state,chunk,!0);else if(state.ended)errorOrDestroy2(stream,new ERR_STREAM_PUSH_AFTER_EOF);else if(state.destroyed||state.errored)return!1;else if(state.reading=!1,state.decoder&&!encoding)if(chunk=state.decoder.write(chunk),state.objectMode||chunk.length!==0)addChunk(stream,state,chunk,!1);else maybeReadMore(stream,state);else addChunk(stream,state,chunk,!1);else if(!addToFront)state.reading=!1,maybeReadMore(stream,state);return!state.ended&&(state.length<state.highWaterMark||state.length===0)}function addChunk(stream,state,chunk,addToFront){if(state.flowing&&state.length===0&&!state.sync&&stream.listenerCount("data")>0){if(state.multiAwaitDrain)state.awaitDrainWriters.clear();else state.awaitDrainWriters=null;state.dataEmitted=!0,stream.emit("data",chunk)}else{if(state.length+=state.objectMode?1:chunk.length,addToFront)state.buffer.unshift(chunk);else state.buffer.push(chunk);if(state.needReadable)emitReadable(stream,state)}maybeReadMore(stream,state)}Readable.prototype.isPaused=function(){const state=this._readableState;return state.paused===!0||state.flowing===!1},Readable.prototype.setEncoding=function(enc){const decoder=new StringDecoder(enc);this._readableState.decoder=decoder,this._readableState.encoding=this._readableState.decoder.encoding;const buffer=this._readableState.buffer;let content="";for(let i=buffer.length;i>0;i--)content+=decoder.write(buffer.shift());if(content!=="")buffer.push(content);return this._readableState.length=content.length,this};var MAX_HWM=1073741824;function computeNewHighWaterMark(n){if(n>MAX_HWM)throw new ERR_OUT_OF_RANGE("size","<= 1GiB",n);else n--,n|=n>>>1,n|=n>>>2,n|=n>>>4,n|=n>>>8,n|=n>>>16,n++;return n}function howMuchToRead(n,state){if(n<=0||state.length===0&&state.ended)return 0;if(state.objectMode)return 1;if(NumberIsNaN(n)){if(state.flowing&&state.length)return state.buffer.first().length;return state.length}if(n<=state.length)return n;return state.ended?state.length:0}Readable.prototype.read=function(n){if(!NumberIsInteger(n))n=NumberParseInt(n,10);const state=this._readableState,nOrig=n;if(n>state.highWaterMark)state.highWaterMark=computeNewHighWaterMark(n);if(n!==0)state.emittedReadable=!1;if(n===0&&state.needReadable&&((state.highWaterMark!==0?state.length>=state.highWaterMark:state.length>0)||state.ended)){if(state.length===0&&state.ended)endReadable(this);else emitReadable(this,state);return null}if(n=howMuchToRead(n,state),n===0&&state.ended){if(state.length===0)endReadable(this);return null}let doRead=state.needReadable;if(state.length===0||state.length-n<state.highWaterMark)doRead=!0;if(state.ended||state.reading||state.destroyed||state.errored||!state.constructed)doRead=!1;else if(doRead){if(state.reading=!0,state.sync=!0,state.length===0)state.needReadable=!0;try{var result=this._read(state.highWaterMark);if(@isPromise(result)){const peeked=Bun.peek(result);if(peeked!==result)result=peeked}if(@isPromise(result)&&result?.then&&@isCallable(result.then))result.then(nop,function(err){errorOrDestroy2(this,err)})}catch(err){errorOrDestroy2(this,err)}if(state.sync=!1,!state.reading)n=howMuchToRead(nOrig,state)}let ret;if(n>0)ret=fromList(n,state);else ret=null;if(ret===null)state.needReadable=state.length<=state.highWaterMark,n=0;else if(state.length-=n,state.multiAwaitDrain)state.awaitDrainWriters.clear();else state.awaitDrainWriters=null;if(state.length===0){if(!state.ended)state.needReadable=!0;if(nOrig!==n&&state.ended)endReadable(this)}if(ret!==null&&!state.errorEmitted&&!state.closeEmitted)state.dataEmitted=!0,this.emit("data",ret);return ret},Readable.prototype._read=function(n){throw new ERR_METHOD_NOT_IMPLEMENTED("_read()")},Readable.prototype.pipe=function(dest,pipeOpts){const src=this,state=this._readableState;if(state.pipes.length===1){if(!state.multiAwaitDrain)state.multiAwaitDrain=!0,state.awaitDrainWriters=new SafeSet(state.awaitDrainWriters?[state.awaitDrainWriters]:[])}state.pipes.push(dest);const endFn=(!pipeOpts||pipeOpts.end!==!1)&&dest!==process.stdout&&dest!==process.stderr?onend:unpipe;if(state.endEmitted)runOnNextTick(endFn);else src.once("end",endFn);dest.on("unpipe",onunpipe);function onunpipe(readable,unpipeInfo){if(readable===src){if(unpipeInfo&&unpipeInfo.hasUnpiped===!1)unpipeInfo.hasUnpiped=!0,cleanup()}}function onend(){dest.end()}let ondrain,cleanedUp=!1;function cleanup(){if(dest.removeListener("close",onclose),dest.removeListener("finish",onfinish),ondrain)dest.removeListener("drain",ondrain);if(dest.removeListener("error",onerror),dest.removeListener("unpipe",onunpipe),src.removeListener("end",onend),src.removeListener("end",unpipe),src.removeListener("data",ondata),cleanedUp=!0,ondrain&&state.awaitDrainWriters&&(!dest._writableState||dest._writableState.needDrain))ondrain()}function pause(){if(!cleanedUp){if(state.pipes.length===1&&state.pipes[0]===dest)state.awaitDrainWriters=dest,state.multiAwaitDrain=!1;else if(state.pipes.length>1&&state.pipes.includes(dest))state.awaitDrainWriters.add(dest);src.pause()}if(!ondrain)ondrain=pipeOnDrain(src,dest),dest.on("drain",ondrain)}src.on("data",ondata);function ondata(chunk){if(dest.write(chunk)===!1)pause()}function onerror(er){if(unpipe(),dest.removeListener("error",onerror),dest.listenerCount("error")===0){const s=dest._writableState||dest._readableState;if(s&&!s.errorEmitted)errorOrDestroy2(dest,er);else dest.emit("error",er)}}prependListener(dest,"error",onerror);function onclose(){dest.removeListener("finish",onfinish),unpipe()}dest.once("close",onclose);function onfinish(){dest.removeListener("close",onclose),unpipe()}dest.once("finish",onfinish);function unpipe(){src.unpipe(dest)}if(dest.emit("pipe",src),dest.writableNeedDrain===!0){if(state.flowing)pause()}else if(!state.flowing)src.resume();return dest};function pipeOnDrain(src,dest){return function pipeOnDrainFunctionResult(){const state=src._readableState;if(state.awaitDrainWriters===dest)state.awaitDrainWriters=null;else if(state.multiAwaitDrain)state.awaitDrainWriters.delete(dest);if((!state.awaitDrainWriters||state.awaitDrainWriters.size===0)&&src.listenerCount("data"))src.resume()}}Readable.prototype.unpipe=function(dest){const state=this._readableState,unpipeInfo={hasUnpiped:!1};if(state.pipes.length===0)return this;if(!dest){const dests=state.pipes;state.pipes=[],this.pause();for(let i=0;i<dests.length;i++)dests[i].emit("unpipe",this,{hasUnpiped:!1});return this}const index=ArrayPrototypeIndexOf(state.pipes,dest);if(index===-1)return this;if(state.pipes.splice(index,1),state.pipes.length===0)this.pause();return dest.emit("unpipe",this,unpipeInfo),this},Readable.prototype.addListener=Readable.prototype.on,Readable.prototype.removeListener=function(ev,fn){const res=Stream.prototype.removeListener.call(this,ev,fn);if(ev==="readable")runOnNextTick(updateReadableListening,this);return res},Readable.prototype.off=Readable.prototype.removeListener,Readable.prototype.removeAllListeners=function(ev){const res=Stream.prototype.removeAllListeners.apply(this,arguments);if(ev==="readable"||ev===void 0)runOnNextTick(updateReadableListening,this);return res};function updateReadableListening(self){const state=self._readableState;if(state.readableListening=self.listenerCount("readable")>0,state.resumeScheduled&&state.paused===!1)state.flowing=!0;else if(self.listenerCount("data")>0)self.resume();else if(!state.readableListening)state.flowing=null}function nReadingNextTick(self){self.read(0)}Readable.prototype.resume=function(){const state=this._readableState;if(!state.flowing)state.flowing=!state.readableListening,resume(this,state);return state.paused=!1,this},Readable.prototype.pause=function(){if(this._readableState.flowing!==!1)this._readableState.flowing=!1,this.emit("pause");return this._readableState.paused=!0,this},Readable.prototype.wrap=function(stream){let paused=!1;stream.on("data",(chunk)=>{if(!this.push(chunk)&&stream.pause)paused=!0,stream.pause()}),stream.on("end",()=>{this.push(null)}),stream.on("error",(err)=>{errorOrDestroy2(this,err)}),stream.on("close",()=>{this.destroy()}),stream.on("destroy",()=>{this.destroy()}),this._read=()=>{if(paused&&stream.resume)paused=!1,stream.resume()};const streamKeys=ObjectKeys(stream);for(let j=1;j<streamKeys.length;j++){const i=streamKeys[j];if(this[i]===void 0&&typeof stream[i]==="function")this[i]=stream[i].bind(stream)}return this},Readable.prototype[SymbolAsyncIterator]=function(){return streamToAsyncIterator(this)},Readable.prototype.iterator=function(options){if(options!==void 0)validateObject2(options,"options");return streamToAsyncIterator(this,options)};function streamToAsyncIterator(stream,options){if(typeof stream.read!=="function")stream=Readable.wrap(stream,{objectMode:!0});const iter=createAsyncIterator(stream,options);return iter.stream=stream,iter}async function*createAsyncIterator(stream,options){let callback=nop;function next(resolve){if(this===stream)callback(),callback=nop;else callback=resolve}stream.on("readable",next);let error;const cleanup=eos(stream,{writable:!1},(err)=>{error=err?aggregateTwoErrors(error,err):null,callback(),callback=nop});try{while(!0){const chunk=stream.destroyed?null:stream.read();if(chunk!==null)yield chunk;else if(error)throw error;else if(error===null)return;else await new Promise2(next)}}catch(err){throw error=aggregateTwoErrors(error,err),error}finally{if((error||(options===null||options===void 0?void 0:options.destroyOnReturn)!==!1)&&(error===void 0||stream._readableState.autoDestroy))destroyImpl.destroyer(stream,null);else stream.off("readable",next),cleanup()}}ObjectDefineProperties(Readable.prototype,{readable:{get(){const r=this._readableState;return!!r&&r.readable!==!1&&!r.destroyed&&!r.errorEmitted&&!r.endEmitted},set(val){if(this._readableState)this._readableState.readable=!!val}},readableDidRead:{enumerable:!1,get:function(){return this._readableState.dataEmitted}},readableAborted:{enumerable:!1,get:function(){return!!(this._readableState.readable!==!1&&(this._readableState.destroyed||this._readableState.errored)&&!this._readableState.endEmitted)}},readableHighWaterMark:{enumerable:!1,get:function(){return this._readableState.highWaterMark}},readableBuffer:{enumerable:!1,get:function(){return this._readableState&&this._readableState.buffer}},readableFlowing:{enumerable:!1,get:function(){return this._readableState.flowing},set:function(state){if(this._readableState)this._readableState.flowing=state}},readableLength:{enumerable:!1,get(){return this._readableState.length}},readableObjectMode:{enumerable:!1,get(){return this._readableState?this._readableState.objectMode:!1}},readableEncoding:{enumerable:!1,get(){return this._readableState?this._readableState.encoding:null}},errored:{enumerable:!1,get(){return this._readableState?this._readableState.errored:null}},closed:{get(){return this._readableState?this._readableState.closed:!1}},destroyed:{enumerable:!1,get(){return this._readableState?this._readableState.destroyed:!1},set(value){if(!this._readableState)return;this._readableState.destroyed=value}},readableEnded:{enumerable:!1,get(){return this._readableState?this._readableState.endEmitted:!1}}}),Readable._fromList=fromList;function fromList(n,state){if(state.length===0)return null;let ret;if(state.objectMode)ret=state.buffer.shift();else if(!n||n>=state.length){if(state.decoder)ret=state.buffer.join("");else if(state.buffer.length===1)ret=state.buffer.first();else ret=state.buffer.concat(state.length);state.buffer.clear()}else ret=state.buffer.consume(n,state.decoder);return ret}function endReadable(stream){const state=stream._readableState;if(!state.endEmitted)state.ended=!0,runOnNextTick(endReadableNT,state,stream)}function endReadableNT(state,stream){if(!state.errored&&!state.closeEmitted&&!state.endEmitted&&state.length===0){if(state.endEmitted=!0,stream.emit("end"),stream.writable&&stream.allowHalfOpen===!1)runOnNextTick(endWritableNT,stream);else if(state.autoDestroy){const wState=stream._writableState;if(!wState||wState.autoDestroy&&(wState.finished||wState.writable===!1))stream.destroy()}}}function endWritableNT(stream){if(stream.writable&&!stream.writableEnded&&!stream.destroyed)stream.end()}Readable.from=function(iterable,opts){return from(Readable,iterable,opts)};var webStreamsAdapters={newStreamReadableFromReadableStream,newReadableStreamFromStreamReadable(streamReadable,options={}){if(typeof streamReadable?._readableState!=="object")throw new ERR_INVALID_ARG_TYPE2("streamReadable","stream.Readable",streamReadable);var{isDestroyed,isReadable}=require_utils();if(isDestroyed(streamReadable)||!isReadable(streamReadable)){const readable=new ReadableStream;return readable.cancel(),readable}const{readableObjectMode:objectMode,readableHighWaterMark:highWaterMark}=streamReadable,strategy=((strategy2)=>{if(strategy2)return strategy2;if(objectMode)return new CountQueuingStrategy({highWaterMark});return{highWaterMark}})(options?.strategy);let controller;function onData(chunk){if(controller.enqueue(chunk),controller.desiredSize<=0)streamReadable.pause()}streamReadable.pause();const cleanup=finished(streamReadable,(error)=>{if(error?.code==="ERR_STREAM_PREMATURE_CLOSE")error=new AbortError(void 0,{cause:error});if(cleanup(),streamReadable.on("error",()=>{}),error)return controller.error(error);controller.close()});return streamReadable.on("data",onData),new ReadableStream({start(c){controller=c},pull(){streamReadable.resume()},cancel(reason){destroy(streamReadable,reason)}},strategy)}};Readable.fromWeb=function(readableStream,options){return webStreamsAdapters.newStreamReadableFromReadableStream(readableStream,options)},Readable.toWeb=function(streamReadable,options){return webStreamsAdapters.newReadableStreamFromStreamReadable(streamReadable,options)},Readable.wrap=function(src,options){var _ref,_src$readableObjectMo;return new Readable({objectMode:(_ref=(_src$readableObjectMo=src.readableObjectMode)!==null&&_src$readableObjectMo!==void 0?_src$readableObjectMo:src.objectMode)!==null&&_ref!==void 0?_ref:!0,...options,destroy(err,callback){destroyImpl.destroyer(src,err),callback(err)}}).wrap(src)}}}),require_writable=__commonJS({"node_modules/readable-stream/lib/internal/streams/writable.js"(exports2,module){var{ArrayPrototypeSlice,Error:Error2,FunctionPrototypeSymbolHasInstance,ObjectDefineProperty,ObjectDefineProperties,ObjectSetPrototypeOf,StringPrototypeToLowerCase,Symbol:Symbol2,SymbolHasInstance}=require_primordials(),Stream=require_legacy().Stream,destroyImpl=require_destroy(),{addAbortSignal}=require_add_abort_signal(),{getHighWaterMark,getDefaultHighWaterMark}=require_state(),{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_METHOD_NOT_IMPLEMENTED,ERR_MULTIPLE_CALLBACK,ERR_STREAM_CANNOT_PIPE,ERR_STREAM_DESTROYED,ERR_STREAM_ALREADY_FINISHED,ERR_STREAM_NULL_VALUES,ERR_STREAM_WRITE_AFTER_END,ERR_UNKNOWN_ENCODING}=require_errors().codes,{errorOrDestroy:errorOrDestroy2}=destroyImpl;function Writable2(options={}){const isDuplex=this instanceof require_duplex();if(!isDuplex&&!FunctionPrototypeSymbolHasInstance(Writable2,this))return new Writable2(options);if(this._writableState=new WritableState(options,this,isDuplex),options){if(typeof options.write==="function")this._write=options.write;if(typeof options.writev==="function")this._writev=options.writev;if(typeof options.destroy==="function")this._destroy=options.destroy;if(typeof options.final==="function")this._final=options.final;if(typeof options.construct==="function")this._construct=options.construct;if(options.signal)addAbortSignal(options.signal,this)}Stream.call(this,options),destroyImpl.construct(this,()=>{const state=this._writableState;if(!state.writing)clearBuffer(this,state);finishMaybe(this,state)})}Writable2.prototype={},ObjectSetPrototypeOf(Writable2.prototype,Stream.prototype),ObjectSetPrototypeOf(Writable2,Stream),module.exports=Writable2;function nop(){}var kOnFinished=Symbol2("kOnFinished");function WritableState(options,stream,isDuplex){if(typeof isDuplex!=="boolean")isDuplex=stream instanceof require_duplex();if(this.objectMode=!!(options&&options.objectMode),isDuplex)this.objectMode=this.objectMode||!!(options&&options.writableObjectMode);this.highWaterMark=options?getHighWaterMark(this,options,"writableHighWaterMark",isDuplex):getDefaultHighWaterMark(!1),this.finalCalled=!1,this.needDrain=!1,this.ending=!1,this.ended=!1,this.finished=!1,this.destroyed=!1;const noDecode=!!(options&&options.decodeStrings===!1);this.decodeStrings=!noDecode,this.defaultEncoding=options&&options.defaultEncoding||"utf8",this.length=0,this.writing=!1,this.corked=0,this.sync=!0,this.bufferProcessing=!1,this.onwrite=onwrite.bind(void 0,stream),this.writecb=null,this.writelen=0,this.afterWriteTickInfo=null,resetBuffer(this),this.pendingcb=0,this.constructed=!0,this.prefinished=!1,this.errorEmitted=!1,this.emitClose=!options||options.emitClose!==!1,this.autoDestroy=!options||options.autoDestroy!==!1,this.errored=null,this.closed=!1,this.closeEmitted=!1,this[kOnFinished]=[]}WritableState.prototype={};function resetBuffer(state){state.buffered=[],state.bufferedIndex=0,state.allBuffers=!0,state.allNoop=!0}WritableState.prototype.getBuffer=function getBuffer(){return ArrayPrototypeSlice(this.buffered,this.bufferedIndex)},ObjectDefineProperty(WritableState.prototype,"bufferedRequestCount",{get(){return this.buffered.length-this.bufferedIndex}}),ObjectDefineProperty(Writable2,SymbolHasInstance,{value:function(object){if(FunctionPrototypeSymbolHasInstance(this,object))return!0;if(this!==Writable2)return!1;return object&&object._writableState instanceof WritableState}}),Writable2.prototype.pipe=function(){errorOrDestroy2(this,new ERR_STREAM_CANNOT_PIPE)};function _write(stream,chunk,encoding,cb){const state=stream._writableState;if(typeof encoding==="function")cb=encoding,encoding=state.defaultEncoding;else{if(!encoding)encoding=state.defaultEncoding;else if(encoding!=="buffer"&&!Buffer.isEncoding(encoding))throw new ERR_UNKNOWN_ENCODING(encoding);if(typeof cb!=="function")cb=nop}if(chunk===null)throw new ERR_STREAM_NULL_VALUES;else if(!state.objectMode)if(typeof chunk==="string"){if(state.decodeStrings!==!1)chunk=Buffer.from(chunk,encoding),encoding="buffer"}else if(chunk instanceof Buffer)encoding="buffer";else if(Stream._isUint8Array(chunk))chunk=Stream._uint8ArrayToBuffer(chunk),encoding="buffer";else throw new ERR_INVALID_ARG_TYPE2("chunk",["string","Buffer","Uint8Array"],chunk);let err;if(state.ending)err=new ERR_STREAM_WRITE_AFTER_END;else if(state.destroyed)err=new ERR_STREAM_DESTROYED("write");if(err)return runOnNextTick(cb,err),errorOrDestroy2(stream,err,!0),err;return state.pendingcb++,writeOrBuffer(stream,state,chunk,encoding,cb)}Writable2.prototype.write=function(chunk,encoding,cb){return _write(this,chunk,encoding,cb)===!0},Writable2.prototype.cork=function(){this._writableState.corked++},Writable2.prototype.uncork=function(){const state=this._writableState;if(state.corked){if(state.corked--,!state.writing)clearBuffer(this,state)}},Writable2.prototype.setDefaultEncoding=function setDefaultEncoding(encoding){if(typeof encoding==="string")encoding=StringPrototypeToLowerCase(encoding);if(!Buffer.isEncoding(encoding))throw new ERR_UNKNOWN_ENCODING(encoding);return this._writableState.defaultEncoding=encoding,this};function writeOrBuffer(stream,state,chunk,encoding,callback){const len=state.objectMode?1:chunk.length;state.length+=len;const ret=state.length<state.highWaterMark;if(!ret)state.needDrain=!0;if(state.writing||state.corked||state.errored||!state.constructed){if(state.buffered.push({chunk,encoding,callback}),state.allBuffers&&encoding!=="buffer")state.allBuffers=!1;if(state.allNoop&&callback!==nop)state.allNoop=!1}else state.writelen=len,state.writecb=callback,state.writing=!0,state.sync=!0,stream._write(chunk,encoding,state.onwrite),state.sync=!1;return ret&&!state.errored&&!state.destroyed}function doWrite(stream,state,writev,len,chunk,encoding,cb){if(state.writelen=len,state.writecb=cb,state.writing=!0,state.sync=!0,state.destroyed)state.onwrite(new ERR_STREAM_DESTROYED("write"));else if(writev)stream._writev(chunk,state.onwrite);else stream._write(chunk,encoding,state.onwrite);state.sync=!1}function onwriteError(stream,state,er,cb){--state.pendingcb,cb(er),errorBuffer(state),errorOrDestroy2(stream,er)}function onwrite(stream,er){const state=stream._writableState,sync=state.sync,cb=state.writecb;if(typeof cb!=="function"){errorOrDestroy2(stream,new ERR_MULTIPLE_CALLBACK);return}if(state.writing=!1,state.writecb=null,state.length-=state.writelen,state.writelen=0,er){if(Error.captureStackTrace(er),!state.errored)state.errored=er;if(stream._readableState&&!stream._readableState.errored)stream._readableState.errored=er;if(sync)runOnNextTick(onwriteError,stream,state,er,cb);else onwriteError(stream,state,er,cb)}else{if(state.buffered.length>state.bufferedIndex)clearBuffer(stream,state);if(sync)if(state.afterWriteTickInfo!==null&&state.afterWriteTickInfo.cb===cb)state.afterWriteTickInfo.count++;else state.afterWriteTickInfo={count:1,cb,stream,state},runOnNextTick(afterWriteTick,state.afterWriteTickInfo);else afterWrite(stream,state,1,cb)}}function afterWriteTick({stream,state,count,cb}){return state.afterWriteTickInfo=null,afterWrite(stream,state,count,cb)}function afterWrite(stream,state,count,cb){if(!state.ending&&!stream.destroyed&&state.length===0&&state.needDrain)state.needDrain=!1,stream.emit("drain");while(count-- >0)state.pendingcb--,cb();if(state.destroyed)errorBuffer(state);finishMaybe(stream,state)}function errorBuffer(state){if(state.writing)return;for(let n=state.bufferedIndex;n<state.buffered.length;++n){var _state$errored;const{chunk,callback}=state.buffered[n],len=state.objectMode?1:chunk.length;state.length-=len,callback((_state$errored=state.errored)!==null&&_state$errored!==void 0?_state$errored:new ERR_STREAM_DESTROYED("write"))}const onfinishCallbacks=state[kOnFinished].splice(0);for(let i=0;i<onfinishCallbacks.length;i++){var _state$errored2;onfinishCallbacks[i]((_state$errored2=state.errored)!==null&&_state$errored2!==void 0?_state$errored2:new ERR_STREAM_DESTROYED("end"))}resetBuffer(state)}function clearBuffer(stream,state){if(state.corked||state.bufferProcessing||state.destroyed||!state.constructed)return;const{buffered,bufferedIndex,objectMode}=state,bufferedLength=buffered.length-bufferedIndex;if(!bufferedLength)return;let i=bufferedIndex;if(state.bufferProcessing=!0,bufferedLength>1&&stream._writev){state.pendingcb-=bufferedLength-1;const callback=state.allNoop?nop:(err)=>{for(let n=i;n<buffered.length;++n)buffered[n].callback(err)},chunks=state.allNoop&&i===0?buffered:ArrayPrototypeSlice(buffered,i);chunks.allBuffers=state.allBuffers,doWrite(stream,state,!0,state.length,chunks,"",callback),resetBuffer(state)}else{do{const{chunk,encoding,callback}=buffered[i];buffered[i++]=null;const len=objectMode?1:chunk.length;doWrite(stream,state,!1,len,chunk,encoding,callback)}while(i<buffered.length&&!state.writing);if(i===buffered.length)resetBuffer(state);else if(i>256)buffered.splice(0,i),state.bufferedIndex=0;else state.bufferedIndex=i}state.bufferProcessing=!1}Writable2.prototype._write=function(chunk,encoding,cb){if(this._writev)this._writev([{chunk,encoding}],cb);else throw new ERR_METHOD_NOT_IMPLEMENTED("_write()")},Writable2.prototype._writev=null,Writable2.prototype.end=function(chunk,encoding,cb,native=!1){const state=this._writableState;if(typeof chunk==="function")cb=chunk,chunk=null,encoding=null;else if(typeof encoding==="function")cb=encoding,encoding=null;let err;if(chunk!==null&&chunk!==void 0){let ret;if(!native)ret=_write(this,chunk,encoding);else ret=this.write(chunk,encoding);if(ret instanceof Error2)err=ret}if(state.corked)state.corked=1,this.uncork();if(err)this.emit("error",err);else if(!state.errored&&!state.ending)state.ending=!0,finishMaybe(this,state,!0),state.ended=!0;else if(state.finished)err=new ERR_STREAM_ALREADY_FINISHED("end");else if(state.destroyed)err=new ERR_STREAM_DESTROYED("end");if(typeof cb==="function")if(err||state.finished)runOnNextTick(cb,err);else state[kOnFinished].push(cb);return this};function needFinish(state,tag){var needFinish2=state.ending&&!state.destroyed&&state.constructed&&state.length===0&&!state.errored&&state.buffered.length===0&&!state.finished&&!state.writing&&!state.errorEmitted&&!state.closeEmitted;return needFinish2}function callFinal(stream,state){let called=!1;function onFinish(err){if(called){errorOrDestroy2(stream,err!==null&&err!==void 0?err:ERR_MULTIPLE_CALLBACK());return}if(called=!0,state.pendingcb--,err){const onfinishCallbacks=state[kOnFinished].splice(0);for(let i=0;i<onfinishCallbacks.length;i++)onfinishCallbacks[i](err);errorOrDestroy2(stream,err,state.sync)}else if(needFinish(state))state.prefinished=!0,stream.emit("prefinish"),state.pendingcb++,runOnNextTick(finish,stream,state)}state.sync=!0,state.pendingcb++;try{stream._final(onFinish)}catch(err){onFinish(err)}state.sync=!1}function prefinish(stream,state){if(!state.prefinished&&!state.finalCalled)if(typeof stream._final==="function"&&!state.destroyed)state.finalCalled=!0,callFinal(stream,state);else state.prefinished=!0,stream.emit("prefinish")}function finishMaybe(stream,state,sync){if(!needFinish(state,stream.__id))return;if(prefinish(stream,state),state.pendingcb===0){if(sync)state.pendingcb++,runOnNextTick((stream2,state2)=>{if(needFinish(state2))finish(stream2,state2);else state2.pendingcb--},stream,state);else if(needFinish(state))state.pendingcb++,finish(stream,state)}}function finish(stream,state){state.pendingcb--,state.finished=!0;const onfinishCallbacks=state[kOnFinished].splice(0);for(let i=0;i<onfinishCallbacks.length;i++)onfinishCallbacks[i]();if(stream.emit("finish"),state.autoDestroy){const rState=stream._readableState;if(!rState||rState.autoDestroy&&(rState.endEmitted||rState.readable===!1))stream.destroy()}}ObjectDefineProperties(Writable2.prototype,{closed:{get(){return this._writableState?this._writableState.closed:!1}},destroyed:{get(){return this._writableState?this._writableState.destroyed:!1},set(value){if(this._writableState)this._writableState.destroyed=value}},writable:{get(){const w=this._writableState;return!!w&&w.writable!==!1&&!w.destroyed&&!w.errored&&!w.ending&&!w.ended},set(val){if(this._writableState)this._writableState.writable=!!val}},writableFinished:{get(){return this._writableState?this._writableState.finished:!1}},writableObjectMode:{get(){return this._writableState?this._writableState.objectMode:!1}},writableBuffer:{get(){return this._writableState&&this._writableState.getBuffer()}},writableEnded:{get(){return this._writableState?this._writableState.ending:!1}},writableNeedDrain:{get(){const wState=this._writableState;if(!wState)return!1;return!wState.destroyed&&!wState.ending&&wState.needDrain}},writableHighWaterMark:{get(){return this._writableState&&this._writableState.highWaterMark}},writableCorked:{get(){return this._writableState?this._writableState.corked:0}},writableLength:{get(){return this._writableState&&this._writableState.length}},errored:{enumerable:!1,get(){return this._writableState?this._writableState.errored:null}},writableAborted:{enumerable:!1,get:function(){return!!(this._writableState.writable!==!1&&(this._writableState.destroyed||this._writableState.errored)&&!this._writableState.finished)}}});var destroy2=destroyImpl.destroy;Writable2.prototype.destroy=function(err,cb){const state=this._writableState;if(!state.destroyed&&(state.bufferedIndex<state.buffered.length||state[kOnFinished].length))runOnNextTick(errorBuffer,state);return destroy2.call(this,err,cb),this},Writable2.prototype._undestroy=destroyImpl.undestroy,Writable2.prototype._destroy=function(err,cb){cb(err)},Writable2.prototype[EE.captureRejectionSymbol]=function(err){this.destroy(err)};var webStreamsAdapters;function lazyWebStreams(){if(webStreamsAdapters===void 0)webStreamsAdapters={};return webStreamsAdapters}Writable2.fromWeb=function(writableStream,options){return lazyWebStreams().newStreamWritableFromWritableStream(writableStream,options)},Writable2.toWeb=function(streamWritable){return lazyWebStreams().newWritableStreamFromStreamWritable(streamWritable)}}}),require_duplexify=__commonJS({"node_modules/readable-stream/lib/internal/streams/duplexify.js"(exports2,module){var{isReadable,isWritable,isIterable,isNodeStream,isReadableNodeStream,isWritableNodeStream,isDuplexNodeStream}=require_utils(),eos=require_end_of_stream(),{AbortError:AbortError2,codes:{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_INVALID_RETURN_VALUE}}=require_errors(),{destroyer}=require_destroy(),Duplex=require_duplex(),Readable=require_readable(),{createDeferredPromise}=require_util(),from=require_from(),isBlob=typeof Blob!=="undefined"?function isBlob2(b){return b instanceof Blob}:function isBlob2(b){return!1},{FunctionPrototypeCall}=require_primordials();class Duplexify extends Duplex{constructor(options){super(options);if((options===null||options===void 0?void 0:options.readable)===!1)this._readableState.readable=!1,this._readableState.ended=!0,this._readableState.endEmitted=!0;if((options===null||options===void 0?void 0:options.writable)===!1)this._writableState.writable=!1,this._writableState.ending=!0,this._writableState.ended=!0,this._writableState.finished=!0}}module.exports=function duplexify(body,name){if(isDuplexNodeStream(body))return body;if(isReadableNodeStream(body))return _duplexify({readable:body});if(isWritableNodeStream(body))return _duplexify({writable:body});if(isNodeStream(body))return _duplexify({writable:!1,readable:!1});if(typeof body==="function"){const{value,write,final,destroy:destroy2}=fromAsyncGen(body);if(isIterable(value))return from(Duplexify,value,{objectMode:!0,write,final,destroy:destroy2});const then2=value===null||value===void 0?void 0:value.then;if(typeof then2==="function"){let d;const promise=FunctionPrototypeCall(then2,value,(val)=>{if(val!=null)throw new ERR_INVALID_RETURN_VALUE("nully","body",val)},(err)=>{destroyer(d,err)});return d=new Duplexify({objectMode:!0,readable:!1,write,final(cb){final(async()=>{try{await promise,runOnNextTick(cb,null)}catch(err){runOnNextTick(cb,err)}})},destroy:destroy2})}throw new ERR_INVALID_RETURN_VALUE("Iterable, AsyncIterable or AsyncFunction",name,value)}if(isBlob(body))return duplexify(body.arrayBuffer());if(isIterable(body))return from(Duplexify,body,{objectMode:!0,writable:!1});if(typeof(body===null||body===void 0?void 0:body.writable)==="object"||typeof(body===null||body===void 0?void 0:body.readable)==="object"){const readable=body!==null&&body!==void 0&&body.readable?isReadableNodeStream(body===null||body===void 0?void 0:body.readable)?body===null||body===void 0?void 0:body.readable:duplexify(body.readable):void 0,writable=body!==null&&body!==void 0&&body.writable?isWritableNodeStream(body===null||body===void 0?void 0:body.writable)?body===null||body===void 0?void 0:body.writable:duplexify(body.writable):void 0;return _duplexify({readable,writable})}const then=body===null||body===void 0?void 0:body.then;if(typeof then==="function"){let d;return FunctionPrototypeCall(then,body,(val)=>{if(val!=null)d.push(val);d.push(null)},(err)=>{destroyer(d,err)}),d=new Duplexify({objectMode:!0,writable:!1,read(){}})}throw new ERR_INVALID_ARG_TYPE2(name,["Blob","ReadableStream","WritableStream","Stream","Iterable","AsyncIterable","Function","{ readable, writable } pair","Promise"],body)};function fromAsyncGen(fn){let{promise,resolve}=createDeferredPromise();const ac=new AbortController,signal=ac.signal;return{value:fn(async function*(){while(!0){const _promise=promise;promise=null;const{chunk,done,cb}=await _promise;if(runOnNextTick(cb),done)return;if(signal.aborted)throw new AbortError2(void 0,{cause:signal.reason});({promise,resolve}=createDeferredPromise()),yield chunk}}(),{signal}),write(chunk,encoding,cb){const _resolve=resolve;resolve=null,_resolve({chunk,done:!1,cb})},final(cb){const _resolve=resolve;resolve=null,_resolve({done:!0,cb})},destroy(err,cb){ac.abort(),cb(err)}}}function _duplexify(pair){const r=pair.readable&&typeof pair.readable.read!=="function"?Readable.wrap(pair.readable):pair.readable,w=pair.writable;let readable=!!isReadable(r),writable=!!isWritable(w),ondrain,onfinish,onreadable,onclose,d;function onfinished(err){const cb=onclose;if(onclose=null,cb)cb(err);else if(err)d.destroy(err);else if(!readable&&!writable)d.destroy()}if(d=new Duplexify({readableObjectMode:!!(r!==null&&r!==void 0&&r.readableObjectMode),writableObjectMode:!!(w!==null&&w!==void 0&&w.writableObjectMode),readable,writable}),writable)eos(w,(err)=>{if(writable=!1,err)destroyer(r,err);onfinished(err)}),d._write=function(chunk,encoding,callback){if(w.write(chunk,encoding))callback();else ondrain=callback},d._final=function(callback){w.end(),onfinish=callback},w.on("drain",function(){if(ondrain){const cb=ondrain;ondrain=null,cb()}}),w.on("finish",function(){if(onfinish){const cb=onfinish;onfinish=null,cb()}});if(readable)eos(r,(err)=>{if(readable=!1,err)destroyer(r,err);onfinished(err)}),r.on("readable",function(){if(onreadable){const cb=onreadable;onreadable=null,cb()}}),r.on("end",function(){d.push(null)}),d._read=function(){while(!0){const buf=r.read();if(buf===null){onreadable=d._read;return}if(!d.push(buf))return}};return d._destroy=function(err,callback){if(!err&&onclose!==null)err=new AbortError2;if(onreadable=null,ondrain=null,onfinish=null,onclose===null)callback(err);else onclose=callback,destroyer(w,err),destroyer(r,err)},d}}}),require_duplex=__commonJS({"node_modules/readable-stream/lib/internal/streams/duplex.js"(exports2,module){var{ObjectDefineProperties,ObjectGetOwnPropertyDescriptor,ObjectKeys,ObjectSetPrototypeOf}=require_primordials(),Readable=require_readable();function Duplex(options){if(!(this instanceof Duplex))return new Duplex(options);if(Readable.call(this,options),Writable.call(this,options),options){if(this.allowHalfOpen=options.allowHalfOpen!==!1,options.readable===!1)this._readableState.readable=!1,this._readableState.ended=!0,this._readableState.endEmitted=!0;if(options.writable===!1)this._writableState.writable=!1,this._writableState.ending=!0,this._writableState.ended=!0,this._writableState.finished=!0}else this.allowHalfOpen=!0}Duplex.prototype={},module.exports=Duplex,ObjectSetPrototypeOf(Duplex.prototype,Readable.prototype),ObjectSetPrototypeOf(Duplex,Readable);for(var method in Writable.prototype)if(!Duplex.prototype[method])Duplex.prototype[method]=Writable.prototype[method];ObjectDefineProperties(Duplex.prototype,{writable:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writable"),writableHighWaterMark:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableHighWaterMark"),writableObjectMode:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableObjectMode"),writableBuffer:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableBuffer"),writableLength:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableLength"),writableFinished:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableFinished"),writableCorked:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableCorked"),writableEnded:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableEnded"),writableNeedDrain:ObjectGetOwnPropertyDescriptor(Writable.prototype,"writableNeedDrain"),destroyed:{get(){if(this._readableState===void 0||this._writableState===void 0)return!1;return this._readableState.destroyed&&this._writableState.destroyed},set(value){if(this._readableState&&this._writableState)this._readableState.destroyed=value,this._writableState.destroyed=value}}});var webStreamsAdapters;function lazyWebStreams(){if(webStreamsAdapters===void 0)webStreamsAdapters={};return webStreamsAdapters}Duplex.fromWeb=function(pair,options){return lazyWebStreams().newStreamDuplexFromReadableWritablePair(pair,options)},Duplex.toWeb=function(duplex){return lazyWebStreams().newReadableWritablePairFromDuplex(duplex)};var duplexify;Duplex.from=function(body){if(!duplexify)duplexify=require_duplexify();return duplexify(body,"body")}}}),require_transform=__commonJS({"node_modules/readable-stream/lib/internal/streams/transform.js"(exports2,module){var{ObjectSetPrototypeOf,Symbol:Symbol2}=require_primordials(),{ERR_METHOD_NOT_IMPLEMENTED}=require_errors().codes,Duplex=require_duplex();function Transform(options){if(!(this instanceof Transform))return new Transform(options);if(Duplex.call(this,options),this._readableState.sync=!1,this[kCallback]=null,options){if(typeof options.transform==="function")this._transform=options.transform;if(typeof options.flush==="function")this._flush=options.flush}this.on("prefinish",prefinish.bind(this))}Transform.prototype={},ObjectSetPrototypeOf(Transform.prototype,Duplex.prototype),ObjectSetPrototypeOf(Transform,Duplex),module.exports=Transform;var kCallback=Symbol2("kCallback");function final(cb){if(typeof this._flush==="function"&&!this.destroyed)this._flush((er,data)=>{if(er){if(cb)cb(er);else this.destroy(er);return}if(data!=null)this.push(data);if(this.push(null),cb)cb()});else if(this.push(null),cb)cb()}function prefinish(){if(this._final!==final)final.call(this)}Transform.prototype._final=final,Transform.prototype._transform=function(chunk,encoding,callback){throw new ERR_METHOD_NOT_IMPLEMENTED("_transform()")},Transform.prototype._write=function(chunk,encoding,callback){const rState=this._readableState,wState=this._writableState,length=rState.length;this._transform(chunk,encoding,(err,val)=>{if(err){callback(err);return}if(val!=null)this.push(val);if(wState.ended||length===rState.length||rState.length<rState.highWaterMark||rState.highWaterMark===0||rState.length===0)callback();else this[kCallback]=callback})},Transform.prototype._read=function(){if(this[kCallback]){const callback=this[kCallback];this[kCallback]=null,callback()}}}}),require_passthrough=__commonJS({"node_modules/readable-stream/lib/internal/streams/passthrough.js"(exports2,module){var{ObjectSetPrototypeOf}=require_primordials(),Transform=require_transform();function PassThrough(options){if(!(this instanceof PassThrough))return new PassThrough(options);Transform.call(this,options)}PassThrough.prototype={},ObjectSetPrototypeOf(PassThrough.prototype,Transform.prototype),ObjectSetPrototypeOf(PassThrough,Transform),PassThrough.prototype._transform=function(chunk,encoding,cb){cb(null,chunk)},module.exports=PassThrough}}),require_pipeline=__commonJS({"node_modules/readable-stream/lib/internal/streams/pipeline.js"(exports2,module){var{ArrayIsArray:ArrayIsArray2,Promise:Promise2,SymbolAsyncIterator}=require_primordials(),eos=require_end_of_stream(),{once}=require_util(),destroyImpl=require_destroy(),Duplex=require_duplex(),{aggregateTwoErrors,codes:{ERR_INVALID_ARG_TYPE:ERR_INVALID_ARG_TYPE2,ERR_INVALID_RETURN_VALUE,ERR_MISSING_ARGS,ERR_STREAM_DESTROYED},AbortError:AbortError2}=require_errors(),{validateFunction,validateAbortSignal}=require_validators(),{isIterable,isReadable,isReadableNodeStream,isNodeStream}=require_utils(),PassThrough,Readable;function destroyer(stream,reading,writing){let finished2=!1;stream.on("close",()=>{finished2=!0});const cleanup=eos(stream,{readable:reading,writable:writing},(err)=>{finished2=!err});return{destroy:(err)=>{if(finished2)return;finished2=!0,destroyImpl.destroyer(stream,err||new ERR_STREAM_DESTROYED("pipe"))},cleanup}}function popCallback(streams){return validateFunction(streams[streams.length-1],"streams[stream.length - 1]"),streams.pop()}function makeAsyncIterable(val){if(isIterable(val))return val;else if(isReadableNodeStream(val))return fromReadable(val);throw new ERR_INVALID_ARG_TYPE2("val",["Readable","Iterable","AsyncIterable"],val)}async function*fromReadable(val){if(!Readable)Readable=require_readable();yield*Readable.prototype[SymbolAsyncIterator].call(val)}async function pump(iterable,writable,finish,{end}){let error,onresolve=null;const resume=(err)=>{if(err)error=err;if(onresolve){const callback=onresolve;onresolve=null,callback()}},wait=()=>new Promise2((resolve,reject)=>{if(error)reject(error);else onresolve=()=>{if(error)reject(error);else resolve()}});writable.on("drain",resume);const cleanup=eos(writable,{readable:!1},resume);try{if(writable.writableNeedDrain)await wait();for await(let chunk of iterable)if(!writable.write(chunk))await wait();if(end)writable.end();await wait(),finish()}catch(err){finish(error!==err?aggregateTwoErrors(error,err):err)}finally{cleanup(),writable.off("drain",resume)}}function pipeline(...streams){return pipelineImpl(streams,once(popCallback(streams)))}function pipelineImpl(streams,callback,opts){if(streams.length===1&&ArrayIsArray2(streams[0]))streams=streams[0];if(streams.length<2)throw new ERR_MISSING_ARGS("streams");const ac=new AbortController,signal=ac.signal,outerSignal=opts===null||opts===void 0?void 0:opts.signal,lastStreamCleanup=[];validateAbortSignal(outerSignal,"options.signal");function abort(){finishImpl(new AbortError2)}outerSignal===null||outerSignal===void 0||outerSignal.addEventListener("abort",abort);let error,value;const destroys=[];let finishCount=0;function finish(err){finishImpl(err,--finishCount===0)}function finishImpl(err,final){if(err&&(!error||error.code==="ERR_STREAM_PREMATURE_CLOSE"))error=err;if(!error&&!final)return;while(destroys.length)destroys.shift()(error);if(outerSignal===null||outerSignal===void 0||outerSignal.removeEventListener("abort",abort),ac.abort(),final){if(!error)lastStreamCleanup.forEach((fn)=>fn());runOnNextTick(callback,error,value)}}let ret;for(let i=0;i<streams.length;i++){const stream=streams[i],reading=i<streams.length-1,writing=i>0,end=reading||(opts===null||opts===void 0?void 0:opts.end)!==!1,isLastStream=i===streams.length-1;if(isNodeStream(stream)){let onError=function(err){if(err&&err.name!=="AbortError"&&err.code!=="ERR_STREAM_PREMATURE_CLOSE")finish(err)};if(end){const{destroy:destroy2,cleanup}=destroyer(stream,reading,writing);if(destroys.push(destroy2),isReadable(stream)&&isLastStream)lastStreamCleanup.push(cleanup)}if(stream.on("error",onError),isReadable(stream)&&isLastStream)lastStreamCleanup.push(()=>{stream.removeListener("error",onError)})}if(i===0)if(typeof stream==="function"){if(ret=stream({signal}),!isIterable(ret))throw new ERR_INVALID_RETURN_VALUE("Iterable, AsyncIterable or Stream","source",ret)}else if(isIterable(stream)||isReadableNodeStream(stream))ret=stream;else ret=Duplex.from(stream);else if(typeof stream==="function")if(ret=makeAsyncIterable(ret),ret=stream(ret,{signal}),reading){if(!isIterable(ret,!0))throw new ERR_INVALID_RETURN_VALUE("AsyncIterable",`transform[${i-1}]`,ret)}else{var _ret;if(!PassThrough)PassThrough=require_passthrough();const pt=new PassThrough({objectMode:!0}),then=(_ret=ret)===null||_ret===void 0?void 0:_ret.then;if(typeof then==="function")finishCount++,then.call(ret,(val)=>{if(value=val,val!=null)pt.write(val);if(end)pt.end();runOnNextTick(finish)},(err)=>{pt.destroy(err),runOnNextTick(finish,err)});else if(isIterable(ret,!0))finishCount++,pump(ret,pt,finish,{end});else throw new ERR_INVALID_RETURN_VALUE("AsyncIterable or Promise","destination",ret);ret=pt;const{destroy:destroy2,cleanup}=destroyer(ret,!1,!0);if(destroys.push(destroy2),isLastStream)lastStreamCleanup.push(cleanup)}else if(isNodeStream(stream)){if(isReadableNodeStream(ret)){finishCount+=2;const cleanup=pipe(ret,stream,finish,{end});if(isReadable(stream)&&isLastStream)lastStreamCleanup.push(cleanup)}else if(isIterable(ret))finishCount++,pump(ret,stream,finish,{end});else throw new ERR_INVALID_ARG_TYPE2("val",["Readable","Iterable","AsyncIterable"],ret);ret=stream}else ret=Duplex.from(stream)}if(signal!==null&&signal!==void 0&&signal.aborted||outerSignal!==null&&outerSignal!==void 0&&outerSignal.aborted)runOnNextTick(abort);return ret}function pipe(src,dst,finish,{end}){if(src.pipe(dst,{end}),end)src.once("end",()=>dst.end());else finish();return eos(src,{readable:!0,writable:!1},(err)=>{const rState=src._readableState;if(err&&err.code==="ERR_STREAM_PREMATURE_CLOSE"&&rState&&rState.ended&&!rState.errored&&!rState.errorEmitted)src.once("end",finish).once("error",finish);else finish(err)}),eos(dst,{readable:!1,writable:!0},finish)}module.exports={pipelineImpl,pipeline}}}),require_compose=__commonJS({"node_modules/readable-stream/lib/internal/streams/compose.js"(exports2,module){var{pipeline}=require_pipeline(),Duplex=require_duplex(),{destroyer}=require_destroy(),{isNodeStream,isReadable,isWritable}=require_utils(),{AbortError:AbortError2,codes:{ERR_INVALID_ARG_VALUE:ERR_INVALID_ARG_VALUE2,ERR_MISSING_ARGS}}=require_errors();module.exports=function compose(...streams){if(streams.length===0)throw new ERR_MISSING_ARGS("streams");if(streams.length===1)return Duplex.from(streams[0]);const orgStreams=[...streams];if(typeof streams[0]==="function")streams[0]=Duplex.from(streams[0]);if(typeof streams[streams.length-1]==="function"){const idx=streams.length-1;streams[idx]=Duplex.from(streams[idx])}for(let n=0;n<streams.length;++n){if(!isNodeStream(streams[n]))continue;if(n<streams.length-1&&!isReadable(streams[n]))throw new ERR_INVALID_ARG_VALUE2(`streams[${n}]`,orgStreams[n],"must be readable");if(n>0&&!isWritable(streams[n]))throw new ERR_INVALID_ARG_VALUE2(`streams[${n}]`,orgStreams[n],"must be writable")}let ondrain,onfinish,onreadable,onclose,d;function onfinished(err){const cb=onclose;if(onclose=null,cb)cb(err);else if(err)d.destroy(err);else if(!readable&&!writable)d.destroy()}const head=streams[0],tail=pipeline(streams,onfinished),writable=!!isWritable(head),readable=!!isReadable(tail);if(d=new Duplex({writableObjectMode:!!(head!==null&&head!==void 0&&head.writableObjectMode),readableObjectMode:!!(tail!==null&&tail!==void 0&&tail.writableObjectMode),writable,readable}),writable)d._write=function(chunk,encoding,callback){if(head.write(chunk,encoding))callback();else ondrain=callback},d._final=function(callback){head.end(),onfinish=callback},head.on("drain",function(){if(ondrain){const cb=ondrain;ondrain=null,cb()}}),tail.on("finish",function(){if(onfinish){const cb=onfinish;onfinish=null,cb()}});if(readable)tail.on("readable",function(){if(onreadable){const cb=onreadable;onreadable=null,cb()}}),tail.on("end",function(){d.push(null)}),d._read=function(){while(!0){const buf=tail.read();if(buf===null){onreadable=d._read;return}if(!d.push(buf))return}};return d._destroy=function(err,callback){if(!err&&onclose!==null)err=new AbortError2;if(onreadable=null,ondrain=null,onfinish=null,onclose===null)callback(err);else onclose=callback,destroyer(tail,err)},d}}}),require_promises=__commonJS({"node_modules/readable-stream/lib/stream/promises.js"(exports2,module){var{ArrayPrototypePop,Promise:Promise2}=require_primordials(),{isIterable,isNodeStream}=require_utils(),{pipelineImpl:pl}=require_pipeline(),{finished:finished2}=require_end_of_stream();function pipeline(...streams){return new Promise2((resolve,reject)=>{let signal,end;const lastArg=streams[streams.length-1];if(lastArg&&typeof lastArg==="object"&&!isNodeStream(lastArg)&&!isIterable(lastArg)){const options=ArrayPrototypePop(streams);signal=options.signal,end=options.end}pl(streams,(err,value)=>{if(err)reject(err);else resolve(value)},{signal,end})})}module.exports={finished:finished2,pipeline}}}),require_stream=__commonJS({"node_modules/readable-stream/lib/stream.js"(exports2,module){var{ObjectDefineProperty,ObjectKeys,ReflectApply}=require_primordials(),{promisify:{custom:customPromisify}}=require_util(),{streamReturningOperators,promiseReturningOperators}=require_operators(),{codes:{ERR_ILLEGAL_CONSTRUCTOR}}=require_errors(),compose=require_compose(),{pipeline}=require_pipeline(),{destroyer}=require_destroy(),eos=require_end_of_stream(),promises2=require_promises(),utils=require_utils(),Stream=module.exports=require_legacy().Stream;Stream.isDisturbed=utils.isDisturbed,Stream.isErrored=utils.isErrored,Stream.isWritable=utils.isWritable,Stream.isReadable=utils.isReadable,Stream.Readable=require_readable();for(let key of ObjectKeys(streamReturningOperators)){let fn=function(...args){if(new.target)throw ERR_ILLEGAL_CONSTRUCTOR();return Stream.Readable.from(ReflectApply(op,this,args))};const op=streamReturningOperators[key];ObjectDefineProperty(fn,"name",{value:op.name}),ObjectDefineProperty(fn,"length",{value:op.length}),ObjectDefineProperty(Stream.Readable.prototype,key,{value:fn,enumerable:!1,configurable:!0,writable:!0})}for(let key of ObjectKeys(promiseReturningOperators)){let fn=function(...args){if(new.target)throw ERR_ILLEGAL_CONSTRUCTOR();return ReflectApply(op,this,args)};const op=promiseReturningOperators[key];ObjectDefineProperty(fn,"name",{value:op.name}),ObjectDefineProperty(fn,"length",{value:op.length}),ObjectDefineProperty(Stream.Readable.prototype,key,{value:fn,enumerable:!1,configurable:!0,writable:!0})}Stream.Writable=require_writable(),Stream.Duplex=require_duplex(),Stream.Transform=require_transform(),Stream.PassThrough=require_passthrough(),Stream.pipeline=pipeline;var{addAbortSignal}=require_add_abort_signal();Stream.addAbortSignal=addAbortSignal,Stream.finished=eos,Stream.destroy=destroyer,Stream.compose=compose,ObjectDefineProperty(Stream,"promises",{configurable:!0,enumerable:!0,get(){return promises2}}),ObjectDefineProperty(pipeline,customPromisify,{enumerable:!0,get(){return promises2.pipeline}}),ObjectDefineProperty(eos,customPromisify,{enumerable:!0,get(){return promises2.finished}}),Stream.Stream=Stream,Stream._isUint8Array=function isUint8Array(value){return value instanceof Uint8Array},Stream._uint8ArrayToBuffer=function _uint8ArrayToBuffer(chunk){return new Buffer(chunk.buffer,chunk.byteOffset,chunk.byteLength)}}});function createNativeStreamReadable(nativeType,Readable){var[pull,start,cancel,setClose,deinit,updateRef,drainFn]=globalThis[globalThis.Symbol.for('Bun.lazy')](nativeType),closer=[!1],handleNumberResult=function(nativeReadable,result,view,isClosed){if(result>0){const slice=view.subarray(0,result),remainder=view.subarray(result);if(slice.byteLength>0)nativeReadable.push(slice);if(isClosed)nativeReadable.push(null);return remainder.byteLength>0?remainder:void 0}if(isClosed)nativeReadable.push(null);return view},handleArrayBufferViewResult=function(nativeReadable,result,view,isClosed){if(result.byteLength>0)nativeReadable.push(result);if(isClosed)nativeReadable.push(null);return view},DYNAMICALLY_ADJUST_CHUNK_SIZE=process.env.BUN_DISABLE_DYNAMIC_CHUNK_SIZE!=="1";const finalizer=new FinalizationRegistry((ptr)=>ptr&&deinit(ptr)),MIN_BUFFER_SIZE=512;var NativeReadable=class NativeReadable2 extends Readable{#bunNativePtr;#refCount=1;#constructed=!1;#remainingChunk=void 0;#highWaterMark;#pendingRead=!1;#hasResized=!DYNAMICALLY_ADJUST_CHUNK_SIZE;#unregisterToken;constructor(ptr,options={}){super(options);if(typeof options.highWaterMark==="number")this.#highWaterMark=options.highWaterMark;else this.#highWaterMark=262144;this.#bunNativePtr=ptr,this.#constructed=!1,this.#remainingChunk=void 0,this.#pendingRead=!1,this.#unregisterToken={},finalizer.register(this,this.#bunNativePtr,this.#unregisterToken)}_read(maxToRead){if(this.#pendingRead)return;var ptr=this.#bunNativePtr;if(ptr===0){this.push(null);return}if(!this.#constructed)this.#internalConstruct(ptr);return this.#internalRead(this.#getRemainingChunk(maxToRead),ptr)}#internalConstruct(ptr){this.#constructed=!0;const result=start(ptr,this.#highWaterMark);if(typeof result==="number"&&result>1)this.#hasResized=!0,this.#highWaterMark=Math.min(this.#highWaterMark,result);if(drainFn){const drainResult=drainFn(ptr);if((drainResult?.byteLength??0)>0)this.push(drainResult)}}#getRemainingChunk(maxToRead=this.#highWaterMark){var chunk=this.#remainingChunk;if(chunk?.byteLength??0<MIN_BUFFER_SIZE){var size=maxToRead>MIN_BUFFER_SIZE?maxToRead:MIN_BUFFER_SIZE;this.#remainingChunk=chunk=new Buffer(size)}return chunk}#handleResult(result,view,isClosed){if(typeof result==="number"){if(result>=this.#highWaterMark&&!this.#hasResized&&!isClosed)this.#highWaterMark*=2,this.#hasResized=!0;return handleNumberResult(this,result,view,isClosed)}else if(typeof result==="boolean")return process.nextTick(()=>{this.push(null)}),view?.byteLength??0>0?view:void 0;else if(ArrayBuffer.isView(result)){if(result.byteLength>=this.#highWaterMark&&!this.#hasResized&&!isClosed)this.#highWaterMark*=2,this.#hasResized=!0;return handleArrayBufferViewResult(this,result,view,isClosed)}else throw new Error("Invalid result from pull")}#internalRead(view,ptr){closer[0]=!1;var result=pull(ptr,view,closer);if(@isPromise(result))return this.#pendingRead=!0,result.then((result2)=>{this.#pendingRead=!1,this.#remainingChunk=this.#handleResult(result2,view,closer[0])},(reason)=>{errorOrDestroy(this,reason)});else this.#remainingChunk=this.#handleResult(result,view,closer[0])}_destroy(error,callback){var ptr=this.#bunNativePtr;if(ptr===0){callback(error);return}if(finalizer.unregister(this.#unregisterToken),this.#bunNativePtr=0,updateRef)updateRef(ptr,!1);cancel(ptr,error),callback(error)}ref(){var ptr=this.#bunNativePtr;if(ptr===0)return;if(this.#refCount++===0)updateRef(ptr,!0)}unref(){var ptr=this.#bunNativePtr;if(ptr===0)return;if(this.#refCount--===1)updateRef(ptr,!1)}};if(!updateRef)NativeReadable.prototype.ref=void 0,NativeReadable.prototype.unref=void 0;return NativeReadable}var nativeReadableStreamPrototypes={0:void 0,1:void 0,2:void 0,3:void 0,4:void 0,5:void 0};function getNativeReadableStreamPrototype(nativeType,Readable){return nativeReadableStreamPrototypes[nativeType]||=createNativeStreamReadable(nativeType,Readable)}function getNativeReadableStream(Readable,stream,options){if(!(stream&&typeof stream==="object"&&stream instanceof ReadableStream))return;const native=@direct(stream);if(!native)return;const{stream:ptr,data:type}=native;return new(getNativeReadableStreamPrototype(type,Readable))(ptr,options)}var Writable=require_writable(),NativeWritable=class NativeWritable2 extends Writable{#pathOrFdOrSink;#fileSink;#native=!0;_construct;_destroy;_final;constructor(pathOrFdOrSink,options={}){super(options);this._construct=this.#internalConstruct,this._destroy=this.#internalDestroy,this._final=this.#internalFinal,this.#pathOrFdOrSink=pathOrFdOrSink}#internalConstruct(cb){this._writableState.constructed=!0,this.constructed=!0,cb()}#lazyConstruct(){if(typeof this.#pathOrFdOrSink==="object")if(typeof this.#pathOrFdOrSink.write==="function")this.#fileSink=this.#pathOrFdOrSink;else throw new Error("Invalid FileSink");else this.#fileSink=Bun.file(this.#pathOrFdOrSink).writer()}write(chunk,encoding,cb,native=this.#native){if(!native)return this.#native=!1,super.write(chunk,encoding,cb);if(!this.#fileSink)this.#lazyConstruct();var fileSink=this.#fileSink,result=fileSink.write(chunk);if(@isPromise(result))return result.then(()=>{this.emit("drain"),fileSink.flush(!0)}),!1;if(fileSink.flush(!0),cb)cb(null,chunk.byteLength);return!0}end(chunk,encoding,cb,native=this.#native){return super.end(chunk,encoding,cb,native)}#internalDestroy(error,cb){if(this._writableState.destroyed=!0,cb)cb(error)}#internalFinal(cb){if(this.#fileSink)this.#fileSink.end();if(cb)cb()}ref(){if(!this.#fileSink)this.#lazyConstruct();this.#fileSink.ref()}unref(){if(!this.#fileSink)return;this.#fileSink.unref()}};const exports=require_stream(),promises=require_promises();return exports._getNativeReadableStreamPrototype=getNativeReadableStreamPrototype,exports.NativeWritable=NativeWritable,Object.defineProperty(exports,"promises",{configurable:!0,enumerable:!0,get(){return promises}}),exports[Symbol.for("::bunternal::")]={_ReadableFromWeb,_ReadableFromWebForUndici},exports.eos=require_end_of_stream(),exports})
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^
+2449 |       ERR_STREAM_NULL_VALUES,
+2450 |       ERR_STREAM_WRITE_AFTER_END,
+2451 |       ERR_UNKNOWN_ENCODING
+2452 |     } = require_errors().codes, { errorOrDestroy: errorOrDestroy2 } = destroyImpl;
+2453 | 
+2454 |     function Writable(options = {}) {
+                                             ^
 TypeError: Attempted to assign to readonly property.
-      at Writable2 (node:stream:2:131544)
-      at Duplex (node:stream:2:169196)
-      at Transform (node:stream:2:174306)
-      at get (node:crypto:2:55440)
-      at inspect (/tmp/fs-fixture-1691971878760-1/inspect.mjs:72:14)
-      at /tmp/fs-fixture-1691971878760-1/inspect.mjs:99:6
+      at Writable (node:stream:2454:42)
+      at Duplex (node:stream:3128:38)
+      at Transform (node:stream:3186:44)
+      at get (node:crypto:1169:22)
+      at inspect (/tmp/fs-fixture-1692576673352-1/inspect.mjs:72:14)
+      at /tmp/fs-fixture-1692576673352-1/inspect.mjs:99:6
       at map (:1:20)
-      at inspect (/tmp/fs-fixture-1691971878760-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1691971878760-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1692576673352-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1692576673352-1/inspect.mjs:99:6
       at map (:1:20)
 ```
 
@@ -5052,7 +5057,7 @@ TypeError: Attempted to assign to readonly property.
             resolveNs: ƒ resolveNs(length: 1) {},
             resolvePtr: ƒ resolvePtr(length: 1) {},
             resolveCname: ƒ resolveCname(length: 1) {},
-            Resolver: ƒ Resolver2(length: 1) {},
+            Resolver: ƒ Resolver3(length: 1) {},
             resolveAny: ƒ (length: 0) {},
             reverse: ƒ (length: 0) {}
         },
@@ -5188,7 +5193,7 @@ TypeError: Attempted to assign to readonly property.
 
 ```js
 {
-    Resolver: <ref *2> ƒ Resolver2(length: 1) {},
+    Resolver: <ref *2> ƒ Resolver3(length: 1) {},
     default: {
         lookup: <ref *4> ƒ lookup(length: 2) {},
         lookupService: <ref *5> ƒ lookupService(length: 2) {},
@@ -5308,25 +5313,26 @@ TypeError: Attempted to assign to readonly property.
 
 ```js
 {
-    EventEmitter: <ref *2> ƒ EventEmitter(length: 1) {
-        prototype: <ref *3> {
+    EventEmitter: <ref *2> ƒ EventEmitter2(length: 1) {
+        prototype: <ref *3> EventEmitter2 {
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            constructor: [Circular: *2],
             getMaxListeners: ƒ getMaxListeners(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *7> ƒ addListener(length: 2) {},
             on: [Circular: *7],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once(length: 2) {},
+            once: ƒ once2(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *11> ƒ removeListener(length: 2) {},
             off: [Circular: *11],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
@@ -5679,22 +5685,22 @@ TypeError: Attempted to assign to readonly property.
 {
     Dirent: <ref *2> ƒ Dirent(length: 0) {},
     FSWatcher: <ref *3> ƒ FSWatcher(length: 3) {},
-    ReadStream: <ref *4> ƒ ReadStream2(length: 2) {
+    ReadStream: <ref *4> ƒ ReadStream3(length: 2) {
         prototype: ReadStream2 {}
     },
     Stats: <ref *6> ƒ Stats(length: 0) {},
-    WriteStream: <ref *7> ƒ WriteStream2(length: 2) {
+    WriteStream: <ref *7> ƒ WriteStream3(length: 2) {
         prototype: WriteStream2 {}
     },
-    access: <ref *9> ƒ access(length: 0) {},
+    access: <ref *9> ƒ access2(length: 0) {},
     accessSync: <ref *10> ƒ bound accessSync(length: 2) {},
-    appendFile: <ref *11> ƒ appendFile(length: 0) {},
+    appendFile: <ref *11> ƒ appendFile2(length: 0) {},
     appendFileSync: <ref *12> ƒ bound appendFileSync(length: 3) {},
-    chmod: <ref *13> ƒ chmod(length: 0) {},
+    chmod: <ref *13> ƒ chmod2(length: 0) {},
     chmodSync: <ref *14> ƒ bound chmodSync(length: 2) {},
-    chown: <ref *15> ƒ chown(length: 0) {},
+    chown: <ref *15> ƒ chown2(length: 0) {},
     chownSync: <ref *16> ƒ bound chownSync(length: 3) {},
-    close: <ref *17> ƒ close(length: 0) {},
+    close: <ref *17> ƒ close2(length: 0) {},
     closeSync: <ref *18> ƒ bound closeSync(length: 1) {},
     constants: <ref *19> {
         UV_FS_SYMLINK_DIR: 1,
@@ -5754,7 +5760,7 @@ TypeError: Attempted to assign to readonly property.
         UV_FS_COPYFILE_FICLONE_FORCE: 4,
         COPYFILE_FICLONE_FORCE: 4
     },
-    copyFile: <ref *20> ƒ copyFile(length: 0) {},
+    copyFile: <ref *20> ƒ copyFile2(length: 0) {},
     copyFileSync: <ref *21> ƒ bound copyFileSync(length: 3) {},
     createReadStream: <ref *22> ƒ createReadStream(length: 2) {},
     createWriteStream: <ref *23> ƒ createWriteStream(length: 2) {},
@@ -5775,35 +5781,35 @@ TypeError: Attempted to assign to readonly property.
         createReadStream: [Circular: *22],
         createWriteStream: [Circular: *23],
         Dirent: [Circular: *2],
-        exists: <ref *25> ƒ exists(length: 0) {},
+        exists: <ref *25> ƒ exists2(length: 0) {},
         existsSync: <ref *26> ƒ bound existsSync(length: 1) {},
-        fchmod: <ref *27> ƒ fchmod(length: 0) {},
+        fchmod: <ref *27> ƒ fchmod2(length: 0) {},
         fchmodSync: <ref *28> ƒ bound fchmodSync(length: 2) {},
-        fchown: <ref *29> ƒ fchown(length: 0) {},
+        fchown: <ref *29> ƒ fchown2(length: 0) {},
         fchownSync: <ref *30> ƒ bound fchownSync(length: 3) {},
-        fstat: <ref *31> ƒ fstat(length: 0) {},
+        fstat: <ref *31> ƒ fstat2(length: 0) {},
         fstatSync: <ref *32> ƒ bound fstatSync(length: 1) {},
-        fsync: <ref *33> ƒ fsync(length: 0) {},
+        fsync: <ref *33> ƒ fsync2(length: 0) {},
         fsyncSync: <ref *34> ƒ bound fsyncSync(length: 1) {},
-        ftruncate: <ref *35> ƒ ftruncate(length: 0) {},
+        ftruncate: <ref *35> ƒ ftruncate2(length: 0) {},
         ftruncateSync: <ref *36> ƒ bound ftruncateSync(length: 1) {},
-        futimes: <ref *37> ƒ futimes(length: 0) {},
+        futimes: <ref *37> ƒ futimes2(length: 0) {},
         futimesSync: <ref *38> ƒ bound futimesSync(length: 3) {},
-        lchmod: <ref *39> ƒ lchmod(length: 0) {},
+        lchmod: <ref *39> ƒ lchmod2(length: 0) {},
         lchmodSync: <ref *40> ƒ bound lchmodSync(length: 2) {},
-        lchown: <ref *41> ƒ lchown(length: 0) {},
+        lchown: <ref *41> ƒ lchown2(length: 0) {},
         lchownSync: <ref *42> ƒ bound lchownSync(length: 3) {},
-        link: <ref *43> ƒ link(length: 0) {},
+        link: <ref *43> ƒ link2(length: 0) {},
         linkSync: <ref *44> ƒ bound linkSync(length: 2) {},
-        lstat: <ref *45> ƒ lstat(length: 0) {},
+        lstat: <ref *45> ƒ lstat2(length: 0) {},
         lstatSync: <ref *46> ƒ bound lstatSync(length: 1) {},
-        lutimes: <ref *47> ƒ lutimes(length: 0) {},
+        lutimes: <ref *47> ƒ lutimes2(length: 0) {},
         lutimesSync: <ref *48> ƒ bound lutimesSync(length: 3) {},
-        mkdir: <ref *49> ƒ mkdir(length: 0) {},
+        mkdir: <ref *49> ƒ mkdir2(length: 0) {},
         mkdirSync: <ref *50> ƒ bound mkdirSync(length: 2) {},
-        mkdtemp: <ref *51> ƒ mkdtemp(length: 0) {},
+        mkdtemp: <ref *51> ƒ mkdtemp2(length: 0) {},
         mkdtempSync: <ref *52> ƒ bound mkdtempSync(length: 2) {},
-        open: <ref *53> ƒ open(length: 0) {},
+        open: <ref *53> ƒ open2(length: 0) {},
         openSync: <ref *54> ƒ bound openSync(length: 3) {},
         promises: <ref *55> {
             access: ƒ (length: 0) {},
@@ -5847,44 +5853,44 @@ TypeError: Attempted to assign to readonly property.
             constants: [Circular: *19],
             watch: ƒ watch(length: 1) {}
         },
-        read: <ref *95> ƒ read(length: 0) {},
-        readFile: <ref *96> ƒ readFile(length: 0) {},
+        read: <ref *95> ƒ read2(length: 6) {},
+        readFile: <ref *96> ƒ readFile2(length: 0) {},
         readFileSync: <ref *97> ƒ bound readFileSync(length: 2) {},
         readSync: <ref *98> ƒ bound readSync(length: 5) {},
-        readdir: <ref *99> ƒ readdir(length: 0) {},
+        readdir: <ref *99> ƒ readdir2(length: 0) {},
         readdirSync: <ref *100> ƒ bound readdirSync(length: 2) {},
-        readlink: <ref *101> ƒ readlink(length: 0) {},
+        readlink: <ref *101> ƒ readlink2(length: 0) {},
         readlinkSync: <ref *102> ƒ bound readlinkSync(length: 2) {},
-        realpath: <ref *103> ƒ realpath(length: 0) {
+        realpath: <ref *103> ƒ realpath2(length: 0) {
             native: [Circular: *103]
         },
         realpathSync: <ref *104> ƒ bound realpathSync(length: 2) {
             native: [Circular: *104]
         },
-        rename: <ref *105> ƒ rename(length: 0) {},
+        rename: <ref *105> ƒ rename2(length: 0) {},
         renameSync: <ref *106> ƒ bound renameSync(length: 2) {},
-        rm: <ref *107> ƒ rm(length: 0) {},
+        rm: <ref *107> ƒ rm2(length: 0) {},
         rmSync: <ref *108> ƒ bound rmSync(length: 2) {},
-        rmdir: <ref *109> ƒ rmdir(length: 0) {},
+        rmdir: <ref *109> ƒ rmdir2(length: 0) {},
         rmdirSync: <ref *110> ƒ bound rmdirSync(length: 2) {},
-        stat: <ref *111> ƒ stat(length: 0) {},
+        stat: <ref *111> ƒ stat2(length: 0) {},
         statSync: <ref *112> ƒ bound statSync(length: 1) {},
         Stats: [Circular: *6],
-        symlink: <ref *113> ƒ symlink(length: 0) {},
+        symlink: <ref *113> ƒ symlink2(length: 0) {},
         symlinkSync: <ref *114> ƒ bound symlinkSync(length: 3) {},
-        truncate: <ref *115> ƒ truncate(length: 0) {},
+        truncate: <ref *115> ƒ truncate2(length: 0) {},
         truncateSync: <ref *116> ƒ bound truncateSync(length: 2) {},
-        unlink: <ref *117> ƒ unlink(length: 0) {},
+        unlink: <ref *117> ƒ unlink2(length: 0) {},
         unlinkSync: <ref *118> ƒ bound unlinkSync(length: 1) {},
-        utimes: <ref *119> ƒ utimes(length: 0) {},
+        utimes: <ref *119> ƒ utimes2(length: 0) {},
         utimesSync: <ref *120> ƒ bound utimesSync(length: 3) {},
-        write: <ref *121> ƒ write(length: 0) {},
-        writeFile: <ref *122> ƒ writeFile(length: 0) {},
+        write: <ref *121> ƒ write2(length: 0) {},
+        writeFile: <ref *122> ƒ writeFile2(length: 0) {},
         writeFileSync: <ref *123> ƒ bound writeFileSync(length: 3) {},
         writeSync: <ref *124> ƒ bound writeSync(length: 5) {},
         WriteStream: [Circular: *7],
         ReadStream: [Circular: *4],
-        watch: <ref *125> ƒ watch(length: 3) {},
+        watch: <ref *125> ƒ watch2(length: 3) {},
         FSWatcher: [Circular: *3],
         writev: <ref *126> ƒ writev(length: 4) {},
         writevSync: <ref *127> ƒ bound writevSync(length: 3) {},
@@ -7545,7 +7551,7 @@ TypeError: Attempted to assign to readonly property.
         ],
         _cache: <ref *4> [Object: null prototype] {},
         _pathCache: <ref *5> [Object: null prototype] {
-            /tmp/fs-fixture-1691971878760-1/module.mjs: "/tmp/fs-fixture-1691971878760-1/module.mjs"
+            /tmp/fs-fixture-1692576673352-1/module.mjs: "/tmp/fs-fixture-1692576673352-1/module.mjs"
         },
         _extensions: <ref *6> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -7569,7 +7575,7 @@ TypeError: Attempted to assign to readonly property.
             "/home/runner/setup-pnpm/node_modules/pnpm/node_modules",
             "/home/runner/.node_modules",
             "/home/runner/.node_libraries",
-            "/opt/hostedtoolcache/node/18.17.0/x64/lib/node"
+            "/opt/hostedtoolcache/node/18.17.1/x64/lib/node"
         ],
         _debug: <ref *11> ƒ deprecated(length: 0) {},
         _findPath: <ref *12> ƒ (length: 3) {},
@@ -7629,13 +7635,13 @@ TypeError: Attempted to assign to readonly property.
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1691971878760-1/module.mjs: {
+            /tmp/fs-fixture-1692576673352-1/module.mjs: {
                 exports: {}
             },
             node:module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1691971878760-1/inspect.mjs: {
+            /tmp/fs-fixture-1692576673352-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -8658,7 +8664,9 @@ TypeError: Attempted to assign to readonly property.
     default: {
         performance: <ref *6> {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1691971880604.318
+            mark: <ref *8> ƒ noopNotImplemented(length: 0) {},
+            measure: [Circular: *8],
+            timeOrigin: 1692576675748.0781
         },
         constants: [Circular: *4],
         PerformanceEntry: [Circular: *2],
@@ -8890,8 +8898,8 @@ TypeError: Attempted to assign to readonly property.
     },
     arch: "x64",
     argv: <ref *23> [
-        "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
-        "/tmp/fs-fixture-1691971878760-1/process.mjs"
+        "/opt/hostedtoolcache/node/18.17.1/x64/bin/node",
+        "/tmp/fs-fixture-1692576673352-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -9309,9 +9317,9 @@ TypeError: Attempted to assign to readonly property.
     cwd: <ref *38> ƒ wrappedCwd(length: 0) {},
     debugPort: 9229,
     default: process {
-        version: "v18.17.0",
+        version: "v18.17.1",
         versions: <ref *40> {
-            node: "18.17.0",
+            node: "18.17.1",
             acorn: "8.8.2",
             ada: "2.5.0",
             ares: "1.19.1",
@@ -9324,7 +9332,7 @@ TypeError: Attempted to assign to readonly property.
             nghttp2: "1.52.0",
             nghttp3: "0.7.0",
             ngtcp2: "0.8.1",
-            openssl: "3.0.9+quic",
+            openssl: "3.0.10+quic",
             simdutf: "3.2.12",
             tz: "2023c",
             undici: "5.22.1",
@@ -9339,8 +9347,8 @@ TypeError: Attempted to assign to readonly property.
         release: <ref *41> {
             name: "node",
             lts: "Hydrogen",
-            sourceUrl: "https://nodejs.org/download/release/v18.17.0/node-v18.17.0.tar.gz",
-            headersUrl: "https://nodejs.org/download/release/v18.17.0/node-v18.17.0-headers.tar.gz"
+            sourceUrl: "https://nodejs.org/download/release/v18.17.1/node-v18.17.1.tar.gz",
+            headersUrl: "https://nodejs.org/download/release/v18.17.1/node-v18.17.1-headers.tar.gz"
         },
         _rawDebug: [Circular: *15],
         moduleLoadList: <ref *42> [
@@ -9932,19 +9940,19 @@ TypeError: Attempted to assign to readonly property.
         setgid: <ref *104> ƒ (length: 1) {},
         setuid: <ref *105> ƒ (length: 1) {},
         env: <ref *106>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_345f7546-5aa2-400e-af87-4e68ec71662b",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_f21c0261-af7d-4d29-b873-8b095afd4903",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/7.33.6 npm/? node/v18.17.0 linux x64",
+            npm_config_user_agent: "pnpm/7.33.6 npm/? node/v18.17.1 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_345f7546-5aa2-400e-af87-4e68ec71662b",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_f21c0261-af7d-4d29-b873-8b095afd4903",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
-            npm_node_execpath: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
+            npm_node_execpath: "/opt/hostedtoolcache/node/18.17.1/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             SHLVL: "1",
             HOME: "/home/runner",
@@ -9962,13 +9970,14 @@ TypeError: Attempted to assign to readonly property.
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "670",
+            SYSTEMD_EXEC_PID: "660",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.7/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
+            GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.0/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20230806.1.0",
+            ImageVersion: "20230814.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -9976,16 +9985,16 @@ TypeError: Attempted to assign to readonly property.
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:16770",
+            JOURNAL_STREAM: "8:17031",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "5850303525",
+            GITHUB_RUN_ID: "5920376038",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "7629b973582054a193d4553a411b7ae04e8212d6",
+            GITHUB_WORKFLOW_SHA: "4990db287f6707e2f99d40015f94710a9e3b10f1",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -9997,13 +10006,13 @@ TypeError: Attempted to assign to readonly property.
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_17d3c22d-72bc-483f-ad0a-e803b82de2cc",
-            INVOCATION_ID: "2c42da3a8f7545a9bc54ca9e59f1a511",
+            RUNNER_TRACKING_ID: "github_8a9d3b11-136b-4e6e-a373-8a9797765f33",
+            INVOCATION_ID: "6e3605bc3b574aa28d37b65a045cf714",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.12/x64",
-            NODE: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
+            NODE: "/opt/hostedtoolcache/node/18.17.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "35",
+            GITHUB_RUN_NUMBER: "36",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10026,7 +10035,6 @@ TypeError: Attempted to assign to readonly property.
             DEBIAN_FRONTEND: "noninteractive",
             GITHUB_REPOSITORY_ID: "622996871",
             GITHUB_ACTIONS: "true",
-            STATS_NM: "true",
             NODE_PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.12.6/node_modules/tsx/d…",
             npm_package_devDependencies_fs_fixture: "^1.2.0",
             npm_lifecycle_event: "start",
@@ -10038,7 +10046,7 @@ TypeError: Attempted to assign to readonly property.
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "7629b973582054a193d4553a411b7ae04e8212d6",
+            GITHUB_SHA: "4990db287f6707e2f99d40015f94710a9e3b10f1",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -10046,7 +10054,7 @@ TypeError: Attempted to assign to readonly property.
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_345f7546-5aa2-400e-af87-4e68ec71662b",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_f21c0261-af7d-4d29-b873-8b095afd4903",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -10061,7 +10069,7 @@ TypeError: Attempted to assign to readonly property.
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_345f7546-5aa2-400e-af87-4e68ec71662b",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_f21c0261-af7d-4d29-b873-8b095afd4903",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -10074,16 +10082,16 @@ TypeError: Attempted to assign to readonly property.
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.154/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_345f7546-5aa2-400e-af87-4e68ec71662b",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_f21c0261-af7d-4d29-b873-8b095afd4903",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *107> [],
-        pid: 2461,
-        ppid: 1861,
-        execPath: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
+        pid: 2473,
+        ppid: 1870,
+        execPath: "/opt/hostedtoolcache/node/18.17.1/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
         exitCode: undefined,
@@ -10107,7 +10115,7 @@ TypeError: Attempted to assign to readonly property.
     emitWarning: [Circular: *63],
     env: [Circular: *106],
     execArgv: [Circular: *107],
-    execPath: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
+    execPath: "/opt/hostedtoolcache/node/18.17.1/x64/bin/node",
     exit: [Circular: *51],
     exitCode: undefined,
     features: [Circular: *60],
@@ -10125,9 +10133,9 @@ TypeError: Attempted to assign to readonly property.
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *64],
     openStdin: [Circular: *54],
-    pid: 2461,
+    pid: 2473,
     platform: "linux",
-    ppid: 1861,
+    ppid: 1870,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *108],
@@ -10145,7 +10153,7 @@ TypeError: Attempted to assign to readonly property.
     title: "node",
     umask: [Circular: *99],
     uptime: [Circular: *44],
-    version: "v18.17.0",
+    version: "v18.17.1",
     versions: [Circular: *40]
 }
 ```
@@ -10153,393 +10161,23 @@ TypeError: Attempted to assign to readonly property.
 </td><td valign="top">
 
 ```js
-{
-    _debugEnd: <ref *2> ƒ _debugEnd(length: 0) {},
-    _debugProcess: <ref *3> ƒ _debugProcess(length: 0) {},
-    _fatalException: <ref *4> ƒ _fatalException(length: 1) {},
-    _getActiveHandles: <ref *5> ƒ _getActiveHandles(length: 0) {},
-    _getActiveRequests: <ref *6> ƒ _getActiveRequests(length: 0) {},
-    _kill: <ref *7> ƒ _kill(length: 2) {},
-    _linkedBinding: <ref *8> ƒ _linkedBinding(length: 0) {},
-    _preload_modules: <ref *9> [],
-    _rawDebug: <ref *10> ƒ _rawDebug(length: 0) {},
-    _startProfilerIdleNotifier: <ref *11> ƒ _startProfilerIdleNotifier(length: 0) {},
-    _stopProfilerIdleNotifier: <ref *12> ƒ _stopProfilerIdleNotifier(length: 0) {},
-    _tickCallback: <ref *13> ƒ _tickCallback(length: 0) {},
-    abort: <ref *14> ƒ abort(length: 1) {},
-    addListener: ƒ addListener(length: 2) {},
-    allowedNodeEnvironmentFlags: <ref *16> Set {},
-    arch: "x64",
-    argv: <ref *17> [
-        "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1691971878760-1/process.mjs"
-    ],
-    argv0: "bun",
-    assert: <ref *18> ƒ assert(length: 1) {},
-    binding: <ref *19> ƒ binding(length: 1) {},
-    browser: false,
-    chdir: <ref *20> ƒ chdir(length: 1) {},
-    config: <ref *21> {
-        target_defaults: {},
-        variables: {
-            v8_enable_i8n_support: 1
-        }
-    },
-    cpuUsage: <ref *24> ƒ cpuUsage(length: 1) {},
-    cwd: <ref *25> ƒ cwd(length: 1) {},
-    debugPort: 9229,
-    default: EventEmitter {
-        abort: [Circular: *14],
-        allowedNodeEnvironmentFlags: [Circular: *16],
-        arch: "x64",
-        argv: [Circular: *17],
-        argv0: "bun",
-        assert: [Circular: *18],
-        binding: [Circular: *19],
-        browser: false,
-        chdir: [Circular: *20],
-        config: [Circular: *21],
-        cpuUsage: [Circular: *24],
-        cwd: [Circular: *25],
-        [get/set] debugPort: 9229,
-        dlopen: <ref *27> ƒ dlopen(length: 1) {},
-        emitWarning: <ref *28> ƒ emitWarning(length: 1) {},
-        env: <ref *29> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_345f7546-5aa2-400e-af87-4e68ec71662b",
-            [get/set] npm_package_devDependencies__types_node: "^18.15.11",
-            [get/set] STATS_TRP: "true",
-            [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
-            [get/set] DOTNET_NOLOGO: "1",
-            [get/set] USER: "runner",
-            [get/set] npm_config_user_agent: "pnpm/7.33.6 npm/? node/v18.17.0 linux x64",
-            [get/set] CI: "true",
-            [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_345f7546-5aa2-400e-af87-4e68ec71662b",
-            [get/set] PIPX_HOME: "/opt/pipx",
-            [get/set] npm_package_devDependencies_execa: "^7.1.1",
-            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
-            [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
-            [get/set] SHLVL: "1",
-            [get/set] HOME: "/home/runner",
-            [get/set] RUNNER_TEMP: "/home/runner/work/_temp",
-            [get/set] GITHUB_EVENT_PATH: "/home/runner/work/_temp/_github_workflow/event.json",
-            [get/set] JAVA_HOME_11_X64: "/usr/lib/jvm/temurin-11-jdk-amd64",
-            [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
-            [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
-            [get/set] npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
-            [get/set] GRADLE_HOME: "/usr/share/gradle-8.2.1",
-            [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] STATS_RDCL: "true",
-            [get/set] GITHUB_RETENTION_DAYS: "90",
-            [get/set] GITHUB_REPOSITORY_OWNER_ID: "1075694",
-            [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
-            [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
-            [get/set] GITHUB_HEAD_REF: "\"\"",
-            [get/set] SYSTEMD_EXEC_PID: "670",
-            [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-            [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.7/x64",
-            [get/set] NVM_DIR: "/home/runner/.nvm",
-            [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
-            [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20230806.1.0",
-            [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
-            [get/set] RUNNER_OS: "Linux",
-            [get/set] GITHUB_API_URL: "https://api.github.com",
-            [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
-            [get/set] RUNNER_USER: "runner",
-            [get/set] STATS_V3PS: "true",
-            [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] JOURNAL_STREAM: "8:16770",
-            [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
-            [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
-            [get/set] npm_package_private: "true",
-            [get/set] npm_package_scripts_lint: "eslint --cache .",
-            [get/set] npm_config_registry: "https://registry.npmjs.org/",
-            [get/set] GITHUB_RUN_ID: "5850303525",
-            [get/set] GITHUB_REF_TYPE: "branch",
-            [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "7629b973582054a193d4553a411b7ae04e8212d6",
-            [get/set] GITHUB_BASE_REF: "\"\"",
-            [get/set] ImageOS: "ubuntu22",
-            [get/set] npm_package_scripts_start: "tsx index.ts",
-            [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
-            [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
-            [get/set] GOROOT_1_18_X64: "/opt/hostedtoolcache/go/1.18.10/x64",
-            [get/set] GITHUB_ACTION_REPOSITORY: "\"\"",
-            [get/set] npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.6/node_modules/pnpm/dist/node_modules/node-gyp/…",
-            [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
-            [get/set] ANT_HOME: "/usr/share/ant",
-            [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_17d3c22d-72bc-483f-ad0a-e803b82de2cc",
-            [get/set] INVOCATION_ID: "2c42da3a8f7545a9bc54ca9e59f1a511",
-            [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            [get/set] GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.12/x64",
-            [get/set] NODE: "/opt/hostedtoolcache/node/18.17.0/x64/bin/node",
-            [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "35",
-            [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
-            [get/set] RUNNER_ARCH: "X64",
-            [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
-            [get/set] AGENT_TOOLSDIRECTORY: "/opt/hostedtoolcache",
-            [get/set] npm_package_devDependencies_comment_mark: "^1.1.1",
-            [get/set] LANG: "C.UTF-8",
-            [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
-            [get/set] npm_package_devDependencies_eslint: "^8.37.0",
-            [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 2",
-            [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
-            [get/set] STATS_VMD: "true",
-            [get/set] GITHUB_REF_NAME: "master",
-            [get/set] GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
-            [get/set] npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
-            [get/set] npm_lifecycle_script: "tsx index.ts",
-            [get/set] STATS_UE: "true",
-            [get/set] ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] GITHUB_ACTION_REF: "\"\"",
-            [get/set] DEBIAN_FRONTEND: "noninteractive",
-            [get/set] GITHUB_REPOSITORY_ID: "622996871",
-            [get/set] GITHUB_ACTIONS: "true",
-            [get/set] STATS_NM: "true",
-            [get/set] NODE_PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.12.6/node_modules/tsx/d…",
-            [get/set] npm_package_devDependencies_fs_fixture: "^1.2.0",
-            [get/set] npm_lifecycle_event: "start",
-            [get/set] GITHUB_REF_PROTECTED: "false",
-            [get/set] npm_package_devDependencies_lint_staged: "^13.2.0",
-            [get/set] npm_package_devDependencies_simple_git_hooks: "^2.8.1",
-            [get/set] GITHUB_WORKSPACE: "/home/runner/work/compare-bun-node/compare-bun-node",
-            [get/set] ACCEPT_EULA: "Y",
-            [get/set] GITHUB_JOB: "build",
-            [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
-            [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] GITHUB_SHA: "7629b973582054a193d4553a411b7ae04e8212d6",
-            [get/set] GITHUB_RUN_ATTEMPT: "1",
-            [get/set] GITHUB_REF: "refs/heads/master",
-            [get/set] GITHUB_ACTOR: "privatenumber",
-            [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
-            [get/set] npm_package_license: "MIT",
-            [get/set] LEIN_HOME: "/usr/local/lib/lein",
-            [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_345f7546-5aa2-400e-af87-4e68ec71662b",
-            [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
-            [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
-            [get/set] GITHUB_ACTOR_ID: "1075694",
-            [get/set] RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-            [get/set] npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@7.33.6/node_modules/pnpm/bin/pnpm.cjs",
-            [get/set] HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
-            [get/set] STATS_TIS: "mining",
-            [get/set] GITHUB_EVENT_NAME: "schedule",
-            [get/set] HOMEBREW_NO_AUTO_UPDATE: "1",
-            [get/set] ANDROID_HOME: "/usr/local/lib/android/sdk",
-            [get/set] GITHUB_SERVER_URL: "https://github.com",
-            [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
-            [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
-            [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_345f7546-5aa2-400e-af87-4e68ec71662b",
-            [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
-            [get/set] STATS_EXT: "true",
-            [get/set] npm_command: "run-script",
-            [get/set] PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
-            [get/set] ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] SGX_AESM_ADDR: "1",
-            [get/set] CHROME_BIN: "/usr/bin/google-chrome",
-            [get/set] SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
-            [get/set] PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-            [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.154/provjobd.data",
-            [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
-            [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_345f7546-5aa2-400e-af87-4e68ec71662b",
-            [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
-            [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
-        },
-        execArgv: <ref *30> [],
-        execPath: "/home/runner/.bun/bin/bun",
-        exit: <ref *31> ƒ exit(length: 1) {},
-        [get/set] exitCode: 0,
-        features: <ref *32> {
-            inspector: true,
-            debug: false,
-            uv: true,
-            ipv6: true,
-            tls_alpn: true,
-            tls_sni: true,
-            tls_ocsp: true,
-            tls: true,
-            cached_builtins: true
-        },
-        getActiveResourcesInfo: <ref *33> ƒ getActiveResourcesInfo(length: 0) {},
-        getegid: <ref *34> ƒ getegid(length: 0) {},
-        geteuid: <ref *35> ƒ geteuid(length: 0) {},
-        getgid: <ref *36> ƒ getgid(length: 0) {},
-        getgroups: <ref *37> ƒ getgroups(length: 0) {},
-        getuid: <ref *38> ƒ getuid(length: 0) {},
-        hrtime: <ref *39> ƒ hrtime(length: 0) {
-            bigint: ƒ bigint(length: 0) {}
-        },
-        isBun: true,
-        kill: <ref *41> ƒ kill(length: 2) {},
-        [get/set] mainModule: undefined,
-        memoryUsage: <ref *42> ƒ memoryUsage(length: 0) {
-            rss: ƒ rss(length: 0) {}
-        },
-        moduleLoadList: <ref *44> [],
-        nextTick: <ref *45> ƒ nextTick(length: 1) {},
-        openStdin: <ref *46> ƒ openStdin(length: 0) {},
-        pid: 2468,
-        platform: "linux",
-        ppid: 1861,
-        reallyExit: <ref *47> ƒ reallyExit(length: 1) {},
-        release: <ref *48> {
-            name: "node",
-            lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/release/bun-v0.7.4/bun-linux-x64-baseline.zip",
-            headersUrl: "",
-            libUrl: ""
-        },
-        revision: "78defe7a87226b5b10766e24fae458a62811dab2",
-        setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
-        stderr: <ref *50> StdioWriteStream {
-            _events: [Object: null prototype] {},
-            _eventsCount: 0,
-            _maxListeners: undefined,
-            bytesWritten: 0,
-            Symbol(kCapture): false
-        },
-        stdin: <ref *52> StdinStream2 {
-            _readableState: ReadableState {},
-            _writableState: {
-                objectMode: false,
-                highWaterMark: 16384,
-                finalCalled: false,
-                needDrain: false,
-                ending: false,
-                ended: false,
-                finished: false,
-                destroyed: false,
-                decodeStrings: true,
-                defaultEncoding: "utf8",
-                length: 0,
-                writing: false,
-                corked: 0,
-                sync: true,
-                bufferProcessing: false,
-                onwrite: ƒ bound onwrite(length: 1) {},
-                writecb: null,
-                writelen: 0,
-                afterWriteTickInfo: null,
-                buffered: [],
-                bufferedIndex: 0,
-                allBuffers: true,
-                allNoop: true,
-                pendingcb: 0,
-                constructed: true,
-                prefinished: false,
-                errorEmitted: false,
-                emitClose: true,
-                autoDestroy: true,
-                errored: null,
-                closed: false,
-                closeEmitted: false,
-                Symbol(kOnFinished): []
-            },
-            allowHalfOpen: true
-        },
-        stdout: <ref *58> StdioWriteStream {
-            _events: [Object: null prototype] {},
-            _eventsCount: 0,
-            _maxListeners: undefined,
-            bytesWritten: 0,
-            Symbol(kCapture): false
-        },
-        [get/set] title: "bun",
-        umask: <ref *60> ƒ umask(length: 1) {},
-        uptime: <ref *61> ƒ uptime(length: 1) {},
-        version: "v18.15.0",
-        versions: <ref *62> {
-            node: "18.15.0",
-            bun: "0.7.4",
-            webkit: "60d11703a533fd694cd1d6ddda04813eecb5d69f",
-            boringssl: "b275c5ce1c88bc06f5a967026d3c0ce1df2be815",
-            libarchive: "dc321febde83dd0f31158e1be61a7aedda65e7a2",
-            mimalloc: "3c7079967a269027e438a2aac83197076d9fe09d",
-            picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "70b1b9fc1341e8b791b42c5447f90505c2abe156",
-            zig: "0.11.0-dev.4006+bf827d0b5",
-            zlib: "885674026394870b7e7a05b7bf1ec5eb7bd8a9c0",
-            tinycc: "2d3ad9e0d32194ad7fd867b66ebe218dcc8cb5cd",
-            lolhtml: "2681dcf0b3e6907111565199df8c43cc9aab7fe8",
-            ares: "0e7a5dee0fbb04080750cf6eabbe89d8bae87faa",
-            usockets: "fafc241e8664243fc0c51d69684d5d02b9805134",
-            v8: "10.8.168.20-node.8",
-            uv: "1.44.2",
-            napi: "8",
-            modules: "108"
-        },
-        _debugEnd: [Circular: *2],
-        _debugProcess: [Circular: *3],
-        _fatalException: [Circular: *4],
-        _getActiveRequests: [Circular: *6],
-        _getActiveHandles: [Circular: *5],
-        _linkedBinding: [Circular: *8],
-        _preload_modules: [Circular: *9],
-        _rawDebug: [Circular: *10],
-        _startProfilerIdleNotifier: [Circular: *11],
-        _stopProfilerIdleNotifier: [Circular: *12],
-        _tickCallback: [Circular: *13],
-        _kill: [Circular: *7],
-        Symbol(Symbol.toStringTag): "process"
-    },
-    dlopen: [Circular: *27],
-    emit: ƒ emit(length: 1) {},
-    emitWarning: [Circular: *28],
-    env: [Circular: *29],
-    eventNames: ƒ eventNames(length: 0) {},
-    execArgv: [Circular: *30],
-    execPath: "/home/runner/.bun/bin/bun",
-    exit: [Circular: *31],
-    exitCode: 0,
-    features: [Circular: *32],
-    getActiveResourcesInfo: [Circular: *33],
-    getMaxListeners: ƒ getMaxListeners(length: 0) {},
-    getegid: [Circular: *34],
-    geteuid: [Circular: *35],
-    getgid: [Circular: *36],
-    getgroups: [Circular: *37],
-    getuid: [Circular: *38],
-    hrtime: [Circular: *39],
-    isBun: true,
-    kill: [Circular: *41],
-    listenerCount: ƒ listenerCount(length: 1) {},
-    listeners: ƒ listeners(length: 1) {},
-    mainModule: undefined,
-    memoryUsage: [Circular: *42],
-    moduleLoadList: [Circular: *44],
-    nextTick: [Circular: *45],
-    off: ƒ off(length: 2) {},
-    on: ƒ on(length: 2) {},
-    once: ƒ once(length: 2) {},
-    openStdin: [Circular: *46],
-    pid: 2468,
-    platform: "linux",
-    ppid: 1861,
-    prependListener: ƒ prependListener(length: 2) {},
-    prependOnceListener: ƒ prependOnceListener(length: 2) {},
-    rawListeners: ƒ rawListeners(length: 1) {},
-    reallyExit: [Circular: *47],
-    release: [Circular: *48],
-    removeAllListeners: ƒ removeAllListeners(length: 1) {},
-    removeListener: ƒ removeListener(length: 2) {},
-    revision: "78defe7a87226b5b10766e24fae458a62811dab2",
-    setMaxListeners: ƒ setMaxListeners(length: 1) {},
-    setSourceMapsEnabled: [Circular: *49],
-    stderr: [Circular: *50],
-    stdin: [Circular: *52],
-    stdout: [Circular: *58],
-    title: "bun",
-    umask: [Circular: *60],
-    uptime: [Circular: *61],
-    version: "v18.15.0",
-    versions: [Circular: *62]
-}
+423 |       return instance instanceof InternalWriteStream;
+424 |     }
+425 |   });
+426 | }(class WriteStream2 extends Stream.NativeWritable {
+427 | 
+428 |   constructor(path, options = defaultWriteStreamOptions) {
+                             ^
+ENXIO: No such device or address
+   path: "/dev/fd/2"
+ syscall: "open"
+   errno: -6
+
+      at new WriteStream2 (node:fs:428:26)
+      at WriteStream3 (node:fs:419:46)
+      at new  (node:tty:22:50)
+      at node:tty:22:50
+      at getStdioWriteStream (:1:20)
 ```
 
 </td></tr></table>
@@ -10684,7 +10322,7 @@ TypeError: Attempted to assign to readonly property.
     Interface: <ref *2> ƒ Interface(length: 4) {
         prototype: Interface2 {
             question: ƒ question(length: 3) {
-                Symbol(nodejs.util.promisify.custom): ƒ question(length: 2) {}
+                Symbol(nodejs.util.promisify.custom): ƒ question2(length: 2) {}
             },
             _setRawMode: ƒ [_setRawMode](length: 1) {},
             _onLine: ƒ [_onLine](length: 1) {},
@@ -10725,7 +10363,7 @@ TypeError: Attempted to assign to readonly property.
         moveCursor: <ref *35> ƒ moveCursor(length: 4) {},
         promises: <ref *36> {
             Readline: ƒ Readline(length: 1) {},
-            Interface: ƒ Interface2(length: 4) {},
+            Interface: ƒ Interface3(length: 4) {},
             createInterface: ƒ createInterface(length: 4) {}
         },
         Symbol(__BUN_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED__): {
@@ -10737,7 +10375,7 @@ TypeError: Attempted to assign to readonly property.
                 kClearToLineEnd: "\u001b[0K"
             },
             utils: {
-                getStringWidth: ƒ getStringWidth(length: 1) {},
+                getStringWidth: ƒ getStringWidth2(length: 1) {},
                 stripVTControlCharacters: ƒ stripVTControlCharacters(length: 1) {}
             }
         }
@@ -10771,7 +10409,7 @@ TypeError: Attempted to assign to readonly property.
 
 ```js
 {
-    Interface: <ref *2> ƒ Interface2(length: 4) {},
+    Interface: <ref *2> ƒ Interface3(length: 4) {},
     Readline: <ref *3> ƒ Readline(length: 1) {},
     createInterface: <ref *4> ƒ createInterface(length: 4) {},
     default: {
@@ -10881,24 +10519,26 @@ TypeError: Attempted to assign to readonly property.
 </td><td valign="top">
 
 ```js
-78 | 			}
-79 | 
-80 | 			const entries = Reflect.ownKeys(value).map(
-81 | 				(key) => {
-82 | 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
-83 | 					if (!descriptor.enumerable) {
-             ^
-TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
-      at /tmp/fs-fixture-1691971878760-1/inspect.mjs:83:10
+423 |       return instance instanceof InternalWriteStream;
+424 |     }
+425 |   });
+426 | }(class WriteStream2 extends Stream.NativeWritable {
+427 | 
+428 |   constructor(path, options = defaultWriteStreamOptions) {
+                             ^
+ENXIO: No such device or address
+   path: "/dev/fd/2"
+ syscall: "open"
+   errno: -6
+
+      at new WriteStream2 (node:fs:428:26)
+      at WriteStream3 (node:fs:419:46)
+      at new  (node:tty:22:50)
+      at node:tty:22:50
+      at getStdioWriteStream (:1:20)
+      at /tmp/fs-fixture-1692576673352-1/inspect.mjs:82:24
       at map (:1:20)
-      at inspect (/tmp/fs-fixture-1691971878760-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1691971878760-1/inspect.mjs:99:6
-      at map (:1:20)
-      at inspect (/tmp/fs-fixture-1691971878760-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1691971878760-1/inspect.mjs:99:6
-      at map (:1:20)
-      at inspect (/tmp/fs-fixture-1691971878760-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1691971878760-1/repl.mjs:4:15
+      at inspect (/tmp/fs-fixture-1692576673352-1/inspect.mjs:80:19)
 ```
 
 </td></tr></table>
@@ -11043,7 +10683,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         isWritable: <ref *49> ƒ isWritable(length: 1) {},
         isReadable: <ref *50> ƒ isReadable(length: 1) {},
         Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable2(length: 0) {
+        Writable: <ref *51> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -11631,7 +11271,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2619) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2627) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -11714,19 +11354,34 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 string: "green",
                 date: "magenta",
                 regexp: "red"
+            },
+            custom: Symbol(nodejs.util.inspect.custom),
+            defaultOptions: {
+                showHidden: false,
+                depth: 2,
+                colors: false,
+                customInspect: true,
+                showProxy: false,
+                maxArrayLength: 100,
+                maxStringLength: 10000,
+                breakLength: 80,
+                compact: 3,
+                sorted: false,
+                getters: false,
+                numericSeparator: false
             }
         },
-        types: <ref *27> {
+        types: <ref *28> {
             isExternal: ƒ isExternal(length: 1) {},
-            isDate: <ref *29> ƒ isDate(length: 1) {},
+            isDate: <ref *30> ƒ isDate(length: 1) {},
             isArgumentsObject: ƒ isArgumentsObject(length: 1) {},
             isBigIntObject: ƒ isBigIntObject(length: 1) {},
             isBooleanObject: ƒ isBooleanObject(length: 1) {},
             isNumberObject: ƒ isNumberObject(length: 1) {},
             isStringObject: ƒ isStringObject(length: 1) {},
             isSymbolObject: ƒ isSymbolObject(length: 1) {},
-            isNativeError: <ref *36> ƒ isNativeError(length: 1) {},
-            isRegExp: <ref *37> ƒ isRegExp(length: 1) {},
+            isNativeError: <ref *37> ƒ isNativeError(length: 1) {},
+            isRegExp: <ref *38> ƒ isRegExp(length: 1) {},
             isAsyncFunction: ƒ isAsyncFunction(length: 1) {},
             isGeneratorFunction: ƒ isGeneratorFunction(length: 1) {},
             isGeneratorObject: ƒ isGeneratorObject(length: 1) {},
@@ -11760,57 +11415,57 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             isKeyObject: ƒ isKeyObject(length: 1) {},
             isCryptoKey: ƒ isCryptoKey(length: 1) {}
         },
-        isArray: <ref *70> ƒ isArray(length: 1) {},
-        isBoolean: <ref *71> ƒ isBoolean(length: 1) {},
-        isNull: <ref *72> ƒ isNull(length: 1) {},
-        isNullOrUndefined: <ref *73> ƒ isNullOrUndefined(length: 1) {},
-        isNumber: <ref *74> ƒ isNumber(length: 1) {},
-        isString: <ref *75> ƒ isString(length: 1) {},
-        isSymbol: <ref *76> ƒ isSymbol(length: 1) {},
-        isUndefined: <ref *77> ƒ isUndefined(length: 1) {},
-        isRegExp: [Circular: *37],
-        isObject: <ref *78> ƒ isObject(length: 1) {},
-        isDate: [Circular: *29],
-        isFunction: <ref *79> ƒ isFunction(length: 1) {},
-        isError: [Circular: *36],
-        isPrimitive: <ref *80> ƒ isPrimitive(length: 1) {},
-        isBuffer: <ref *81> ƒ isBuffer(length: 1) {},
-        log: <ref *82> ƒ log(length: 0) {},
-        inherits: <ref *83> ƒ inherits(length: 2) {},
-        toUSVString: <ref *84> ƒ toUSVString(length: 1) {},
-        promisify: <ref *85> ƒ promisify(length: 1) {
+        isArray: <ref *71> ƒ isArray(length: 1) {},
+        isBoolean: <ref *72> ƒ isBoolean(length: 1) {},
+        isNull: <ref *73> ƒ isNull(length: 1) {},
+        isNullOrUndefined: <ref *74> ƒ isNullOrUndefined(length: 1) {},
+        isNumber: <ref *75> ƒ isNumber(length: 1) {},
+        isString: <ref *76> ƒ isString(length: 1) {},
+        isSymbol: <ref *77> ƒ isSymbol(length: 1) {},
+        isUndefined: <ref *78> ƒ isUndefined(length: 1) {},
+        isRegExp: [Circular: *38],
+        isObject: <ref *79> ƒ isObject(length: 1) {},
+        isDate: [Circular: *30],
+        isFunction: <ref *80> ƒ isFunction(length: 1) {},
+        isError: [Circular: *37],
+        isPrimitive: <ref *81> ƒ isPrimitive(length: 1) {},
+        isBuffer: <ref *82> ƒ isBuffer(length: 1) {},
+        log: <ref *83> ƒ log2(length: 0) {},
+        inherits: <ref *84> ƒ inherits2(length: 2) {},
+        toUSVString: <ref *85> ƒ toUSVString(length: 1) {},
+        promisify: <ref *86> ƒ promisify2(length: 1) {
             custom: Symbol(util.promisify.custom)
         },
         callbackify: [Circular: *5],
-        isDeepStrictEqual: <ref *86> ƒ isDeepStrictEqual(length: 2) {},
+        isDeepStrictEqual: <ref *87> ƒ isDeepStrictEqual(length: 2) {},
         TextDecoder: [Circular: *2],
         TextEncoder: [Circular: *3]
     },
     deprecate: [Circular: *10],
     format: [Circular: *8],
     formatWithOptions: [Circular: *9],
-    inherits: [Circular: *83],
+    inherits: [Circular: *84],
     inspect: [Circular: *11],
-    isArray: [Circular: *70],
-    isBoolean: [Circular: *71],
-    isBuffer: [Circular: *81],
-    isDate: [Circular: *29],
-    isDeepStrictEqual: [Circular: *86],
-    isError: [Circular: *36],
-    isFunction: [Circular: *79],
-    isNull: [Circular: *72],
-    isNullOrUndefined: [Circular: *73],
-    isNumber: [Circular: *74],
-    isObject: [Circular: *78],
-    isPrimitive: [Circular: *80],
-    isRegExp: [Circular: *37],
-    isString: [Circular: *75],
-    isSymbol: [Circular: *76],
-    isUndefined: [Circular: *77],
-    log: [Circular: *82],
-    promisify: [Circular: *85],
-    toUSVString: [Circular: *84],
-    types: [Circular: *27]
+    isArray: [Circular: *71],
+    isBoolean: [Circular: *72],
+    isBuffer: [Circular: *82],
+    isDate: [Circular: *30],
+    isDeepStrictEqual: [Circular: *87],
+    isError: [Circular: *37],
+    isFunction: [Circular: *80],
+    isNull: [Circular: *73],
+    isNullOrUndefined: [Circular: *74],
+    isNumber: [Circular: *75],
+    isObject: [Circular: *79],
+    isPrimitive: [Circular: *81],
+    isRegExp: [Circular: *38],
+    isString: [Circular: *76],
+    isSymbol: [Circular: *77],
+    isUndefined: [Circular: *78],
+    log: [Circular: *83],
+    promisify: [Circular: *86],
+    toUSVString: [Circular: *85],
+    types: [Circular: *28]
 }
 ```
 
@@ -12338,14 +11993,29 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
 
 ```js
 {
-    ReadStream: <ref *2> ƒ notimpl(length: 0) {},
-    WriteStream: [Circular: *2],
-    default: {
-        isatty: <ref *4> ƒ isatty(length: 1) {},
-        ReadStream: [Circular: *2],
-        WriteStream: [Circular: *2]
+    ReadStream: <ref *2> ƒ ReadStream(length: 1) {
+        [get/set] prototype: ReadStream2 {
+            setRawMode: ƒ (length: 1) {}
+        }
     },
-    isatty: [Circular: *4]
+    WriteStream: <ref *5> ƒ WriteStream(length: 1) {
+        [get/set] prototype: WriteStream2 {
+            _refreshSize: ƒ (length: 0) {},
+            clearLine: ƒ (length: 2) {},
+            clearScreenDown: ƒ (length: 1) {},
+            cursorTo: ƒ (length: 3) {},
+            getColorDepth: ƒ (length: 0) {},
+            getWindowSize: ƒ (length: 0) {},
+            hasColors: ƒ (length: 2) {},
+            moveCursor: ƒ (length: 3) {}
+        }
+    },
+    default: {
+        ReadStream: [Circular: *2],
+        WriteStream: [Circular: *5],
+        isatty: <ref *16> ƒ isatty(length: 0) {}
+    },
+    isatty: [Circular: *16]
 }
 ```
 
@@ -12844,19 +12514,34 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
                 string: "green",
                 date: "magenta",
                 regexp: "red"
+            },
+            custom: Symbol(nodejs.util.inspect.custom),
+            defaultOptions: {
+                showHidden: false,
+                depth: 2,
+                colors: false,
+                customInspect: true,
+                showProxy: false,
+                maxArrayLength: 100,
+                maxStringLength: 10000,
+                breakLength: 80,
+                compact: 3,
+                sorted: false,
+                getters: false,
+                numericSeparator: false
             }
         },
-        types: <ref *27> {
+        types: <ref *28> {
             isExternal: ƒ isExternal(length: 1) {},
-            isDate: <ref *29> ƒ isDate(length: 1) {},
+            isDate: <ref *30> ƒ isDate(length: 1) {},
             isArgumentsObject: ƒ isArgumentsObject(length: 1) {},
             isBigIntObject: ƒ isBigIntObject(length: 1) {},
             isBooleanObject: ƒ isBooleanObject(length: 1) {},
             isNumberObject: ƒ isNumberObject(length: 1) {},
             isStringObject: ƒ isStringObject(length: 1) {},
             isSymbolObject: ƒ isSymbolObject(length: 1) {},
-            isNativeError: <ref *36> ƒ isNativeError(length: 1) {},
-            isRegExp: <ref *37> ƒ isRegExp(length: 1) {},
+            isNativeError: <ref *37> ƒ isNativeError(length: 1) {},
+            isRegExp: <ref *38> ƒ isRegExp(length: 1) {},
             isAsyncFunction: ƒ isAsyncFunction(length: 1) {},
             isGeneratorFunction: ƒ isGeneratorFunction(length: 1) {},
             isGeneratorObject: ƒ isGeneratorObject(length: 1) {},
@@ -12890,57 +12575,57 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             isKeyObject: ƒ isKeyObject(length: 1) {},
             isCryptoKey: ƒ isCryptoKey(length: 1) {}
         },
-        isArray: <ref *70> ƒ isArray(length: 1) {},
-        isBoolean: <ref *71> ƒ isBoolean(length: 1) {},
-        isNull: <ref *72> ƒ isNull(length: 1) {},
-        isNullOrUndefined: <ref *73> ƒ isNullOrUndefined(length: 1) {},
-        isNumber: <ref *74> ƒ isNumber(length: 1) {},
-        isString: <ref *75> ƒ isString(length: 1) {},
-        isSymbol: <ref *76> ƒ isSymbol(length: 1) {},
-        isUndefined: <ref *77> ƒ isUndefined(length: 1) {},
-        isRegExp: [Circular: *37],
-        isObject: <ref *78> ƒ isObject(length: 1) {},
-        isDate: [Circular: *29],
-        isFunction: <ref *79> ƒ isFunction(length: 1) {},
-        isError: [Circular: *36],
-        isPrimitive: <ref *80> ƒ isPrimitive(length: 1) {},
-        isBuffer: <ref *81> ƒ isBuffer(length: 1) {},
-        log: <ref *82> ƒ log(length: 0) {},
-        inherits: <ref *83> ƒ inherits(length: 2) {},
-        toUSVString: <ref *84> ƒ toUSVString(length: 1) {},
-        promisify: <ref *85> ƒ promisify(length: 1) {
+        isArray: <ref *71> ƒ isArray(length: 1) {},
+        isBoolean: <ref *72> ƒ isBoolean(length: 1) {},
+        isNull: <ref *73> ƒ isNull(length: 1) {},
+        isNullOrUndefined: <ref *74> ƒ isNullOrUndefined(length: 1) {},
+        isNumber: <ref *75> ƒ isNumber(length: 1) {},
+        isString: <ref *76> ƒ isString(length: 1) {},
+        isSymbol: <ref *77> ƒ isSymbol(length: 1) {},
+        isUndefined: <ref *78> ƒ isUndefined(length: 1) {},
+        isRegExp: [Circular: *38],
+        isObject: <ref *79> ƒ isObject(length: 1) {},
+        isDate: [Circular: *30],
+        isFunction: <ref *80> ƒ isFunction(length: 1) {},
+        isError: [Circular: *37],
+        isPrimitive: <ref *81> ƒ isPrimitive(length: 1) {},
+        isBuffer: <ref *82> ƒ isBuffer(length: 1) {},
+        log: <ref *83> ƒ log2(length: 0) {},
+        inherits: <ref *84> ƒ inherits2(length: 2) {},
+        toUSVString: <ref *85> ƒ toUSVString(length: 1) {},
+        promisify: <ref *86> ƒ promisify2(length: 1) {
             custom: Symbol(util.promisify.custom)
         },
         callbackify: [Circular: *5],
-        isDeepStrictEqual: <ref *86> ƒ isDeepStrictEqual(length: 2) {},
+        isDeepStrictEqual: <ref *87> ƒ isDeepStrictEqual(length: 2) {},
         TextDecoder: [Circular: *2],
         TextEncoder: [Circular: *3]
     },
     deprecate: [Circular: *10],
     format: [Circular: *8],
     formatWithOptions: [Circular: *9],
-    inherits: [Circular: *83],
+    inherits: [Circular: *84],
     inspect: [Circular: *11],
-    isArray: [Circular: *70],
-    isBoolean: [Circular: *71],
-    isBuffer: [Circular: *81],
-    isDate: [Circular: *29],
-    isDeepStrictEqual: [Circular: *86],
-    isError: [Circular: *36],
-    isFunction: [Circular: *79],
-    isNull: [Circular: *72],
-    isNullOrUndefined: [Circular: *73],
-    isNumber: [Circular: *74],
-    isObject: [Circular: *78],
-    isPrimitive: [Circular: *80],
-    isRegExp: [Circular: *37],
-    isString: [Circular: *75],
-    isSymbol: [Circular: *76],
-    isUndefined: [Circular: *77],
-    log: [Circular: *82],
-    promisify: [Circular: *85],
-    toUSVString: [Circular: *84],
-    types: [Circular: *27]
+    isArray: [Circular: *71],
+    isBoolean: [Circular: *72],
+    isBuffer: [Circular: *82],
+    isDate: [Circular: *30],
+    isDeepStrictEqual: [Circular: *87],
+    isError: [Circular: *37],
+    isFunction: [Circular: *80],
+    isNull: [Circular: *73],
+    isNullOrUndefined: [Circular: *74],
+    isNumber: [Circular: *75],
+    isObject: [Circular: *79],
+    isPrimitive: [Circular: *81],
+    isRegExp: [Circular: *38],
+    isString: [Circular: *76],
+    isSymbol: [Circular: *77],
+    isUndefined: [Circular: *78],
+    log: [Circular: *83],
+    promisify: [Circular: *86],
+    toUSVString: [Circular: *85],
+    types: [Circular: *28]
 }
 ```
 
@@ -13323,7 +13008,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         WASI: [Circular: *2]
     }
 }
-(node:2772) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:2792) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -13746,7 +13431,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
             _reset: ƒ (length: 0) {}
         }
     },
-    codes: <ref *48> {
+    brotliCompress: <ref *48> ƒ (length: 3) {},
+    codes: <ref *49> {
         0: "Z_OK",
         1: "Z_STREAM_END",
         2: "Z_NEED_DICT",
@@ -13765,7 +13451,7 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         undefined: "Z_VERSION_ERROR",
         -5: "Z_BUF_ERROR"
     },
-    constants: <ref *49> {
+    constants: <ref *50> {
         Z_NO_FLUSH: 0,
         Z_PARTIAL_FLUSH: 1,
         Z_SYNC_FLUSH: 2,
@@ -13794,13 +13480,13 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         Z_UNKNOWN: 2,
         Z_DEFLATED: 8
     },
-    createDeflate: <ref *50> ƒ (length: 1) {},
-    createDeflateRaw: <ref *51> ƒ (length: 1) {},
-    createGunzip: <ref *52> ƒ (length: 1) {},
-    createGzip: <ref *53> ƒ (length: 1) {},
-    createInflate: <ref *54> ƒ (length: 1) {},
-    createInflateRaw: <ref *55> ƒ (length: 1) {},
-    createUnzip: <ref *56> ƒ (length: 1) {},
+    createDeflate: <ref *51> ƒ (length: 1) {},
+    createDeflateRaw: <ref *52> ƒ (length: 1) {},
+    createGunzip: <ref *53> ƒ (length: 1) {},
+    createGzip: <ref *54> ƒ (length: 1) {},
+    createInflate: <ref *55> ƒ (length: 1) {},
+    createInflateRaw: <ref *56> ƒ (length: 1) {},
+    createUnzip: <ref *57> ƒ (length: 1) {},
     default: {
         Z_NO_FLUSH: 0,
         Z_PARTIAL_FLUSH: 1,
@@ -13842,8 +13528,8 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         Z_MIN_LEVEL: -1,
         Z_MAX_LEVEL: 9,
         Z_DEFAULT_LEVEL: -1,
-        codes: [Circular: *48],
-        constants: [Circular: *49],
+        codes: [Circular: *49],
+        constants: [Circular: *50],
         Deflate: [Circular: *2],
         Inflate: [Circular: *25],
         Gzip: [Circular: *23],
@@ -13851,42 +13537,43 @@ TypeError: undefined is not an object (evaluating 'descriptor.enumerable')
         DeflateRaw: [Circular: *19],
         InflateRaw: [Circular: *27],
         Unzip: [Circular: *29],
-        createDeflate: [Circular: *50],
-        createInflate: [Circular: *54],
-        createDeflateRaw: [Circular: *51],
-        createInflateRaw: [Circular: *55],
-        createGzip: [Circular: *53],
-        createGunzip: [Circular: *52],
-        createUnzip: [Circular: *56],
-        deflate: <ref *58> ƒ (length: 3) {},
-        deflateSync: <ref *59> ƒ (length: 2) {},
-        gzip: <ref *60> ƒ (length: 3) {},
-        gzipSync: <ref *61> ƒ (length: 2) {},
-        deflateRaw: <ref *62> ƒ (length: 3) {},
-        deflateRawSync: <ref *63> ƒ (length: 2) {},
-        unzip: <ref *64> ƒ (length: 3) {},
-        unzipSync: <ref *65> ƒ (length: 2) {},
-        inflate: <ref *66> ƒ (length: 3) {},
-        inflateSync: <ref *67> ƒ (length: 2) {},
-        gunzip: <ref *68> ƒ (length: 3) {},
-        gunzipSync: <ref *69> ƒ (length: 2) {},
-        inflateRaw: <ref *70> ƒ (length: 3) {},
-        inflateRawSync: <ref *71> ƒ (length: 2) {}
+        createDeflate: [Circular: *51],
+        createInflate: [Circular: *55],
+        createDeflateRaw: [Circular: *52],
+        createInflateRaw: [Circular: *56],
+        createGzip: [Circular: *54],
+        createGunzip: [Circular: *53],
+        createUnzip: [Circular: *57],
+        deflate: <ref *59> ƒ (length: 3) {},
+        deflateSync: <ref *60> ƒ (length: 2) {},
+        gzip: <ref *61> ƒ (length: 3) {},
+        gzipSync: <ref *62> ƒ (length: 2) {},
+        deflateRaw: <ref *63> ƒ (length: 3) {},
+        deflateRawSync: <ref *64> ƒ (length: 2) {},
+        unzip: <ref *65> ƒ (length: 3) {},
+        unzipSync: <ref *66> ƒ (length: 2) {},
+        inflate: <ref *67> ƒ (length: 3) {},
+        inflateSync: <ref *68> ƒ (length: 2) {},
+        gunzip: <ref *69> ƒ (length: 3) {},
+        gunzipSync: <ref *70> ƒ (length: 2) {},
+        inflateRaw: <ref *71> ƒ (length: 3) {},
+        inflateRawSync: <ref *72> ƒ (length: 2) {},
+        brotliCompress: [Circular: *48]
     },
-    deflate: [Circular: *58],
-    deflateRaw: [Circular: *62],
-    deflateRawSync: [Circular: *63],
-    deflateSync: [Circular: *59],
-    gunzip: [Circular: *68],
-    gunzipSync: [Circular: *69],
-    gzip: [Circular: *60],
-    gzipSync: [Circular: *61],
-    inflate: [Circular: *66],
-    inflateRaw: [Circular: *70],
-    inflateRawSync: [Circular: *71],
-    inflateSync: [Circular: *67],
-    unzip: [Circular: *64],
-    unzipSync: [Circular: *65]
+    deflate: [Circular: *59],
+    deflateRaw: [Circular: *63],
+    deflateRawSync: [Circular: *64],
+    deflateSync: [Circular: *60],
+    gunzip: [Circular: *69],
+    gunzipSync: [Circular: *70],
+    gzip: [Circular: *61],
+    gzipSync: [Circular: *62],
+    inflate: [Circular: *67],
+    inflateRaw: [Circular: *71],
+    inflateRawSync: [Circular: *72],
+    inflateSync: [Circular: *68],
+    unzip: [Circular: *65],
+    unzipSync: [Circular: *66]
 }
 ```
 
