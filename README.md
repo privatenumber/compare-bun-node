@@ -6,7 +6,7 @@ The comparison is performed every week using GitHub Actions, with the latest Bun
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v18.17.1<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Aug 28, 2023 with Bun 0.8.2 Node.js v18.17.1<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -1377,17 +1377,20 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
-    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
+        defaultMaxListeners: 10
+    },
+    NativeWritable: <ref *14> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *15> ƒ PassThrough(length: 1) {
         prototype: EventEmitter {
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *17> ƒ Readable(length: 1) {
+    Readable: <ref *18> ƒ Readable(length: 1) {
         prototype: EventEmitter {
-            on: <ref *19> ƒ (length: 2) {},
+            on: <ref *20> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *22> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
             undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
@@ -1398,9 +1401,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *19],
-            removeListener: <ref *32> ƒ (length: 2) {},
-            off: [Circular: *32],
+            addListener: [Circular: *20],
+            removeListener: <ref *33> ƒ (length: 2) {},
+            off: [Circular: *33],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
@@ -1414,16 +1417,16 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *44> ƒ Stream(length: 1) {
-        prototype: <ref *45> EventEmitter {
+    Stream: <ref *45> ƒ Stream(length: 1) {
+        prototype: <ref *46> EventEmitter {
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *48> ƒ isErrored(length: 1) {},
-        isWritable: <ref *49> ƒ isWritable(length: 1) {},
-        isReadable: <ref *50> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable(length: 0) {
+        isDisturbed: <ref *48> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *49> ƒ isErrored(length: 1) {},
+        isWritable: <ref *50> ƒ isWritable(length: 1) {},
+        isReadable: <ref *51> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *18],
+        Writable: <ref *52> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -1434,7 +1437,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *21],
+                _undestroy: [Circular: *22],
                 _destroy: ƒ (length: 2) {},
                 undefined: ƒ (length: 1) {}
             },
@@ -1442,7 +1445,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *59> ƒ Transform(length: 1) {
+        Transform: <ref *60> ƒ Transform(length: 1) {
             prototype: EventEmitter {
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
@@ -1450,51 +1453,52 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *14],
-        pipeline: <ref *65> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *15],
+        pipeline: <ref *66> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *67> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *68> ƒ eos(length: 3) {
-            finished: <ref *69> ƒ finished2(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
+        addAbortSignal: <ref *68> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *69> ƒ eos(length: 3) {
+            finished: <ref *70> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *70]
         },
-        destroy: <ref *70> ƒ destroyer(length: 2) {},
-        compose: <ref *71> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *72> {
-            finished: [Circular: *69],
-            pipeline: [Circular: *66]
+        destroy: <ref *71> ƒ destroyer(length: 2) {},
+        compose: <ref *72> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *73> {
+            finished: [Circular: *70],
+            pipeline: [Circular: *67]
         },
-        Stream: [Circular: *44],
-        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *13],
-        eos: [Circular: *68],
+        Stream: [Circular: *45],
+        _isUint8Array: <ref *74> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *75> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *76> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *14],
+        eos: [Circular: *69],
+        EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
             _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *59],
-    Writable: [Circular: *51],
-    _getNativeReadableStreamPrototype: [Circular: *75],
-    _isUint8Array: [Circular: *73],
-    _uint8ArrayToBuffer: [Circular: *74],
-    addAbortSignal: [Circular: *67],
-    compose: [Circular: *71],
-    default: [Circular: *44],
+    Transform: [Circular: *60],
+    Writable: [Circular: *52],
+    _getNativeReadableStreamPrototype: [Circular: *76],
+    _isUint8Array: [Circular: *74],
+    _uint8ArrayToBuffer: [Circular: *75],
+    addAbortSignal: [Circular: *68],
+    compose: [Circular: *72],
+    default: [Circular: *45],
     defaultMaxListeners: 10,
-    destroy: [Circular: *70],
-    eos: [Circular: *68],
-    finished: [Circular: *68],
-    isDisturbed: [Circular: *47],
-    isErrored: [Circular: *48],
-    isReadable: [Circular: *50],
-    isWritable: [Circular: *49],
-    pipeline: [Circular: *65],
-    promises: [Circular: *72],
-    prototype: [Circular: *45]
+    destroy: [Circular: *71],
+    eos: [Circular: *69],
+    finished: [Circular: *69],
+    isDisturbed: [Circular: *48],
+    isErrored: [Circular: *49],
+    isReadable: [Circular: *51],
+    isWritable: [Circular: *50],
+    pipeline: [Circular: *66],
+    promises: [Circular: *73],
+    prototype: [Circular: *46]
 }
 ```
 
@@ -1528,17 +1532,20 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
-    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
+        defaultMaxListeners: 10
+    },
+    NativeWritable: <ref *14> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *15> ƒ PassThrough(length: 1) {
         prototype: EventEmitter {
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *17> ƒ Readable(length: 1) {
+    Readable: <ref *18> ƒ Readable(length: 1) {
         prototype: EventEmitter {
-            on: <ref *19> ƒ (length: 2) {},
+            on: <ref *20> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *22> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
             undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
@@ -1549,9 +1556,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *19],
-            removeListener: <ref *32> ƒ (length: 2) {},
-            off: [Circular: *32],
+            addListener: [Circular: *20],
+            removeListener: <ref *33> ƒ (length: 2) {},
+            off: [Circular: *33],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
@@ -1565,16 +1572,16 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *44> ƒ Stream(length: 1) {
-        prototype: <ref *45> EventEmitter {
+    Stream: <ref *45> ƒ Stream(length: 1) {
+        prototype: <ref *46> EventEmitter {
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *48> ƒ isErrored(length: 1) {},
-        isWritable: <ref *49> ƒ isWritable(length: 1) {},
-        isReadable: <ref *50> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable(length: 0) {
+        isDisturbed: <ref *48> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *49> ƒ isErrored(length: 1) {},
+        isWritable: <ref *50> ƒ isWritable(length: 1) {},
+        isReadable: <ref *51> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *18],
+        Writable: <ref *52> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -1585,7 +1592,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *21],
+                _undestroy: [Circular: *22],
                 _destroy: ƒ (length: 2) {},
                 undefined: ƒ (length: 1) {}
             },
@@ -1593,7 +1600,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *59> ƒ Transform(length: 1) {
+        Transform: <ref *60> ƒ Transform(length: 1) {
             prototype: EventEmitter {
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
@@ -1601,51 +1608,52 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *14],
-        pipeline: <ref *65> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *15],
+        pipeline: <ref *66> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *67> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *68> ƒ eos(length: 3) {
-            finished: <ref *69> ƒ finished2(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
+        addAbortSignal: <ref *68> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *69> ƒ eos(length: 3) {
+            finished: <ref *70> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *70]
         },
-        destroy: <ref *70> ƒ destroyer(length: 2) {},
-        compose: <ref *71> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *72> {
-            finished: [Circular: *69],
-            pipeline: [Circular: *66]
+        destroy: <ref *71> ƒ destroyer(length: 2) {},
+        compose: <ref *72> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *73> {
+            finished: [Circular: *70],
+            pipeline: [Circular: *67]
         },
-        Stream: [Circular: *44],
-        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *13],
-        eos: [Circular: *68],
+        Stream: [Circular: *45],
+        _isUint8Array: <ref *74> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *75> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *76> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *14],
+        eos: [Circular: *69],
+        EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
             _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *59],
-    Writable: [Circular: *51],
-    _getNativeReadableStreamPrototype: [Circular: *75],
-    _isUint8Array: [Circular: *73],
-    _uint8ArrayToBuffer: [Circular: *74],
-    addAbortSignal: [Circular: *67],
-    compose: [Circular: *71],
-    default: [Circular: *44],
+    Transform: [Circular: *60],
+    Writable: [Circular: *52],
+    _getNativeReadableStreamPrototype: [Circular: *76],
+    _isUint8Array: [Circular: *74],
+    _uint8ArrayToBuffer: [Circular: *75],
+    addAbortSignal: [Circular: *68],
+    compose: [Circular: *72],
+    default: [Circular: *45],
     defaultMaxListeners: 10,
-    destroy: [Circular: *70],
-    eos: [Circular: *68],
-    finished: [Circular: *68],
-    isDisturbed: [Circular: *47],
-    isErrored: [Circular: *48],
-    isReadable: [Circular: *50],
-    isWritable: [Circular: *49],
-    pipeline: [Circular: *65],
-    promises: [Circular: *72],
-    prototype: [Circular: *45]
+    destroy: [Circular: *71],
+    eos: [Circular: *69],
+    finished: [Circular: *69],
+    isDisturbed: [Circular: *48],
+    isErrored: [Circular: *49],
+    isReadable: [Circular: *51],
+    isWritable: [Circular: *50],
+    pipeline: [Circular: *66],
+    promises: [Circular: *73],
+    prototype: [Circular: *46]
 }
 ```
 
@@ -1692,17 +1700,20 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
-    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
+        defaultMaxListeners: 10
+    },
+    NativeWritable: <ref *14> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *15> ƒ PassThrough(length: 1) {
         prototype: EventEmitter {
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *17> ƒ Readable(length: 1) {
+    Readable: <ref *18> ƒ Readable(length: 1) {
         prototype: EventEmitter {
-            on: <ref *19> ƒ (length: 2) {},
+            on: <ref *20> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *22> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
             undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
@@ -1713,9 +1724,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *19],
-            removeListener: <ref *32> ƒ (length: 2) {},
-            off: [Circular: *32],
+            addListener: [Circular: *20],
+            removeListener: <ref *33> ƒ (length: 2) {},
+            off: [Circular: *33],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
@@ -1729,16 +1740,16 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *44> ƒ Stream(length: 1) {
-        prototype: <ref *45> EventEmitter {
+    Stream: <ref *45> ƒ Stream(length: 1) {
+        prototype: <ref *46> EventEmitter {
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *48> ƒ isErrored(length: 1) {},
-        isWritable: <ref *49> ƒ isWritable(length: 1) {},
-        isReadable: <ref *50> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable(length: 0) {
+        isDisturbed: <ref *48> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *49> ƒ isErrored(length: 1) {},
+        isWritable: <ref *50> ƒ isWritable(length: 1) {},
+        isReadable: <ref *51> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *18],
+        Writable: <ref *52> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -1749,7 +1760,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *21],
+                _undestroy: [Circular: *22],
                 _destroy: ƒ (length: 2) {},
                 undefined: ƒ (length: 1) {}
             },
@@ -1757,7 +1768,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *59> ƒ Transform(length: 1) {
+        Transform: <ref *60> ƒ Transform(length: 1) {
             prototype: EventEmitter {
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
@@ -1765,51 +1776,52 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *14],
-        pipeline: <ref *65> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *15],
+        pipeline: <ref *66> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *67> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *68> ƒ eos(length: 3) {
-            finished: <ref *69> ƒ finished2(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
+        addAbortSignal: <ref *68> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *69> ƒ eos(length: 3) {
+            finished: <ref *70> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *70]
         },
-        destroy: <ref *70> ƒ destroyer(length: 2) {},
-        compose: <ref *71> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *72> {
-            finished: [Circular: *69],
-            pipeline: [Circular: *66]
+        destroy: <ref *71> ƒ destroyer(length: 2) {},
+        compose: <ref *72> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *73> {
+            finished: [Circular: *70],
+            pipeline: [Circular: *67]
         },
-        Stream: [Circular: *44],
-        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *13],
-        eos: [Circular: *68],
+        Stream: [Circular: *45],
+        _isUint8Array: <ref *74> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *75> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *76> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *14],
+        eos: [Circular: *69],
+        EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
             _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *59],
-    Writable: [Circular: *51],
-    _getNativeReadableStreamPrototype: [Circular: *75],
-    _isUint8Array: [Circular: *73],
-    _uint8ArrayToBuffer: [Circular: *74],
-    addAbortSignal: [Circular: *67],
-    compose: [Circular: *71],
-    default: [Circular: *44],
+    Transform: [Circular: *60],
+    Writable: [Circular: *52],
+    _getNativeReadableStreamPrototype: [Circular: *76],
+    _isUint8Array: [Circular: *74],
+    _uint8ArrayToBuffer: [Circular: *75],
+    addAbortSignal: [Circular: *68],
+    compose: [Circular: *72],
+    default: [Circular: *45],
     defaultMaxListeners: 10,
-    destroy: [Circular: *70],
-    eos: [Circular: *68],
-    finished: [Circular: *68],
-    isDisturbed: [Circular: *47],
-    isErrored: [Circular: *48],
-    isReadable: [Circular: *50],
-    isWritable: [Circular: *49],
-    pipeline: [Circular: *65],
-    promises: [Circular: *72],
-    prototype: [Circular: *45]
+    destroy: [Circular: *71],
+    eos: [Circular: *69],
+    finished: [Circular: *69],
+    isDisturbed: [Circular: *48],
+    isErrored: [Circular: *49],
+    isReadable: [Circular: *51],
+    isWritable: [Circular: *50],
+    pipeline: [Circular: *66],
+    promises: [Circular: *73],
+    prototype: [Circular: *46]
 }
 ```
 
@@ -1843,17 +1855,20 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
-    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
+        defaultMaxListeners: 10
+    },
+    NativeWritable: <ref *14> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *15> ƒ PassThrough(length: 1) {
         prototype: EventEmitter {
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *17> ƒ Readable(length: 1) {
+    Readable: <ref *18> ƒ Readable(length: 1) {
         prototype: EventEmitter {
-            on: <ref *19> ƒ (length: 2) {},
+            on: <ref *20> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *22> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
             undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
@@ -1864,9 +1879,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *19],
-            removeListener: <ref *32> ƒ (length: 2) {},
-            off: [Circular: *32],
+            addListener: [Circular: *20],
+            removeListener: <ref *33> ƒ (length: 2) {},
+            off: [Circular: *33],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
@@ -1880,16 +1895,16 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *44> ƒ Stream(length: 1) {
-        prototype: <ref *45> EventEmitter {
+    Stream: <ref *45> ƒ Stream(length: 1) {
+        prototype: <ref *46> EventEmitter {
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *48> ƒ isErrored(length: 1) {},
-        isWritable: <ref *49> ƒ isWritable(length: 1) {},
-        isReadable: <ref *50> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable(length: 0) {
+        isDisturbed: <ref *48> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *49> ƒ isErrored(length: 1) {},
+        isWritable: <ref *50> ƒ isWritable(length: 1) {},
+        isReadable: <ref *51> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *18],
+        Writable: <ref *52> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -1900,7 +1915,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *21],
+                _undestroy: [Circular: *22],
                 _destroy: ƒ (length: 2) {},
                 undefined: ƒ (length: 1) {}
             },
@@ -1908,7 +1923,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *59> ƒ Transform(length: 1) {
+        Transform: <ref *60> ƒ Transform(length: 1) {
             prototype: EventEmitter {
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
@@ -1916,51 +1931,52 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *14],
-        pipeline: <ref *65> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *15],
+        pipeline: <ref *66> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *67> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *68> ƒ eos(length: 3) {
-            finished: <ref *69> ƒ finished2(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
+        addAbortSignal: <ref *68> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *69> ƒ eos(length: 3) {
+            finished: <ref *70> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *70]
         },
-        destroy: <ref *70> ƒ destroyer(length: 2) {},
-        compose: <ref *71> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *72> {
-            finished: [Circular: *69],
-            pipeline: [Circular: *66]
+        destroy: <ref *71> ƒ destroyer(length: 2) {},
+        compose: <ref *72> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *73> {
+            finished: [Circular: *70],
+            pipeline: [Circular: *67]
         },
-        Stream: [Circular: *44],
-        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *13],
-        eos: [Circular: *68],
+        Stream: [Circular: *45],
+        _isUint8Array: <ref *74> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *75> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *76> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *14],
+        eos: [Circular: *69],
+        EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
             _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *59],
-    Writable: [Circular: *51],
-    _getNativeReadableStreamPrototype: [Circular: *75],
-    _isUint8Array: [Circular: *73],
-    _uint8ArrayToBuffer: [Circular: *74],
-    addAbortSignal: [Circular: *67],
-    compose: [Circular: *71],
-    default: [Circular: *44],
+    Transform: [Circular: *60],
+    Writable: [Circular: *52],
+    _getNativeReadableStreamPrototype: [Circular: *76],
+    _isUint8Array: [Circular: *74],
+    _uint8ArrayToBuffer: [Circular: *75],
+    addAbortSignal: [Circular: *68],
+    compose: [Circular: *72],
+    default: [Circular: *45],
     defaultMaxListeners: 10,
-    destroy: [Circular: *70],
-    eos: [Circular: *68],
-    finished: [Circular: *68],
-    isDisturbed: [Circular: *47],
-    isErrored: [Circular: *48],
-    isReadable: [Circular: *50],
-    isWritable: [Circular: *49],
-    pipeline: [Circular: *65],
-    promises: [Circular: *72],
-    prototype: [Circular: *45]
+    destroy: [Circular: *71],
+    eos: [Circular: *69],
+    finished: [Circular: *69],
+    isDisturbed: [Circular: *48],
+    isErrored: [Circular: *49],
+    isReadable: [Circular: *51],
+    isWritable: [Circular: *50],
+    pipeline: [Circular: *66],
+    promises: [Circular: *73],
+    prototype: [Circular: *46]
 }
 ```
 
@@ -1974,7 +1990,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:1994) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2070) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -1996,17 +2012,20 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
-    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
+        defaultMaxListeners: 10
+    },
+    NativeWritable: <ref *14> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *15> ƒ PassThrough(length: 1) {
         prototype: EventEmitter {
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *17> ƒ Readable(length: 1) {
+    Readable: <ref *18> ƒ Readable(length: 1) {
         prototype: EventEmitter {
-            on: <ref *19> ƒ (length: 2) {},
+            on: <ref *20> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *22> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
             undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
@@ -2017,9 +2036,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *19],
-            removeListener: <ref *32> ƒ (length: 2) {},
-            off: [Circular: *32],
+            addListener: [Circular: *20],
+            removeListener: <ref *33> ƒ (length: 2) {},
+            off: [Circular: *33],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
@@ -2033,16 +2052,16 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *44> ƒ Stream(length: 1) {
-        prototype: <ref *45> EventEmitter {
+    Stream: <ref *45> ƒ Stream(length: 1) {
+        prototype: <ref *46> EventEmitter {
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *48> ƒ isErrored(length: 1) {},
-        isWritable: <ref *49> ƒ isWritable(length: 1) {},
-        isReadable: <ref *50> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable(length: 0) {
+        isDisturbed: <ref *48> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *49> ƒ isErrored(length: 1) {},
+        isWritable: <ref *50> ƒ isWritable(length: 1) {},
+        isReadable: <ref *51> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *18],
+        Writable: <ref *52> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -2053,7 +2072,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *21],
+                _undestroy: [Circular: *22],
                 _destroy: ƒ (length: 2) {},
                 undefined: ƒ (length: 1) {}
             },
@@ -2061,7 +2080,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *59> ƒ Transform(length: 1) {
+        Transform: <ref *60> ƒ Transform(length: 1) {
             prototype: EventEmitter {
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
@@ -2069,51 +2088,52 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *14],
-        pipeline: <ref *65> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *15],
+        pipeline: <ref *66> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *67> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *68> ƒ eos(length: 3) {
-            finished: <ref *69> ƒ finished2(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
+        addAbortSignal: <ref *68> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *69> ƒ eos(length: 3) {
+            finished: <ref *70> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *70]
         },
-        destroy: <ref *70> ƒ destroyer(length: 2) {},
-        compose: <ref *71> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *72> {
-            finished: [Circular: *69],
-            pipeline: [Circular: *66]
+        destroy: <ref *71> ƒ destroyer(length: 2) {},
+        compose: <ref *72> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *73> {
+            finished: [Circular: *70],
+            pipeline: [Circular: *67]
         },
-        Stream: [Circular: *44],
-        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *13],
-        eos: [Circular: *68],
+        Stream: [Circular: *45],
+        _isUint8Array: <ref *74> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *75> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *76> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *14],
+        eos: [Circular: *69],
+        EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
             _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *59],
-    Writable: [Circular: *51],
-    _getNativeReadableStreamPrototype: [Circular: *75],
-    _isUint8Array: [Circular: *73],
-    _uint8ArrayToBuffer: [Circular: *74],
-    addAbortSignal: [Circular: *67],
-    compose: [Circular: *71],
-    default: [Circular: *44],
+    Transform: [Circular: *60],
+    Writable: [Circular: *52],
+    _getNativeReadableStreamPrototype: [Circular: *76],
+    _isUint8Array: [Circular: *74],
+    _uint8ArrayToBuffer: [Circular: *75],
+    addAbortSignal: [Circular: *68],
+    compose: [Circular: *72],
+    default: [Circular: *45],
     defaultMaxListeners: 10,
-    destroy: [Circular: *70],
-    eos: [Circular: *68],
-    finished: [Circular: *68],
-    isDisturbed: [Circular: *47],
-    isErrored: [Circular: *48],
-    isReadable: [Circular: *50],
-    isWritable: [Circular: *49],
-    pipeline: [Circular: *65],
-    promises: [Circular: *72],
-    prototype: [Circular: *45]
+    destroy: [Circular: *71],
+    eos: [Circular: *69],
+    finished: [Circular: *69],
+    isDisturbed: [Circular: *48],
+    isErrored: [Circular: *49],
+    isReadable: [Circular: *51],
+    isWritable: [Circular: *50],
+    pipeline: [Circular: *66],
+    promises: [Circular: *73],
+    prototype: [Circular: *46]
 }
 ```
 
@@ -2154,17 +2174,20 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
-    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
+        defaultMaxListeners: 10
+    },
+    NativeWritable: <ref *14> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *15> ƒ PassThrough(length: 1) {
         prototype: EventEmitter {
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *17> ƒ Readable(length: 1) {
+    Readable: <ref *18> ƒ Readable(length: 1) {
         prototype: EventEmitter {
-            on: <ref *19> ƒ (length: 2) {},
+            on: <ref *20> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *22> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
             undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
@@ -2175,9 +2198,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *19],
-            removeListener: <ref *32> ƒ (length: 2) {},
-            off: [Circular: *32],
+            addListener: [Circular: *20],
+            removeListener: <ref *33> ƒ (length: 2) {},
+            off: [Circular: *33],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
@@ -2191,16 +2214,16 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *44> ƒ Stream(length: 1) {
-        prototype: <ref *45> EventEmitter {
+    Stream: <ref *45> ƒ Stream(length: 1) {
+        prototype: <ref *46> EventEmitter {
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *48> ƒ isErrored(length: 1) {},
-        isWritable: <ref *49> ƒ isWritable(length: 1) {},
-        isReadable: <ref *50> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable(length: 0) {
+        isDisturbed: <ref *48> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *49> ƒ isErrored(length: 1) {},
+        isWritable: <ref *50> ƒ isWritable(length: 1) {},
+        isReadable: <ref *51> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *18],
+        Writable: <ref *52> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -2211,7 +2234,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *21],
+                _undestroy: [Circular: *22],
                 _destroy: ƒ (length: 2) {},
                 undefined: ƒ (length: 1) {}
             },
@@ -2219,7 +2242,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *59> ƒ Transform(length: 1) {
+        Transform: <ref *60> ƒ Transform(length: 1) {
             prototype: EventEmitter {
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
@@ -2227,51 +2250,52 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *14],
-        pipeline: <ref *65> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *15],
+        pipeline: <ref *66> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *67> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *68> ƒ eos(length: 3) {
-            finished: <ref *69> ƒ finished2(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
+        addAbortSignal: <ref *68> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *69> ƒ eos(length: 3) {
+            finished: <ref *70> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *70]
         },
-        destroy: <ref *70> ƒ destroyer(length: 2) {},
-        compose: <ref *71> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *72> {
-            finished: [Circular: *69],
-            pipeline: [Circular: *66]
+        destroy: <ref *71> ƒ destroyer(length: 2) {},
+        compose: <ref *72> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *73> {
+            finished: [Circular: *70],
+            pipeline: [Circular: *67]
         },
-        Stream: [Circular: *44],
-        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *13],
-        eos: [Circular: *68],
+        Stream: [Circular: *45],
+        _isUint8Array: <ref *74> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *75> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *76> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *14],
+        eos: [Circular: *69],
+        EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
             _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *59],
-    Writable: [Circular: *51],
-    _getNativeReadableStreamPrototype: [Circular: *75],
-    _isUint8Array: [Circular: *73],
-    _uint8ArrayToBuffer: [Circular: *74],
-    addAbortSignal: [Circular: *67],
-    compose: [Circular: *71],
-    default: [Circular: *44],
+    Transform: [Circular: *60],
+    Writable: [Circular: *52],
+    _getNativeReadableStreamPrototype: [Circular: *76],
+    _isUint8Array: [Circular: *74],
+    _uint8ArrayToBuffer: [Circular: *75],
+    addAbortSignal: [Circular: *68],
+    compose: [Circular: *72],
+    default: [Circular: *45],
     defaultMaxListeners: 10,
-    destroy: [Circular: *70],
-    eos: [Circular: *68],
-    finished: [Circular: *68],
-    isDisturbed: [Circular: *47],
-    isErrored: [Circular: *48],
-    isReadable: [Circular: *50],
-    isWritable: [Circular: *49],
-    pipeline: [Circular: *65],
-    promises: [Circular: *72],
-    prototype: [Circular: *45]
+    destroy: [Circular: *71],
+    eos: [Circular: *69],
+    finished: [Circular: *69],
+    isDisturbed: [Circular: *48],
+    isErrored: [Circular: *49],
+    isReadable: [Circular: *51],
+    isWritable: [Circular: *50],
+    pipeline: [Circular: *66],
+    promises: [Circular: *73],
+    prototype: [Circular: *46]
 }
 ```
 
@@ -3213,33 +3237,33 @@ _Last updated on <!-- lastUpdated:start -->Aug 21, 2023 with Bun 0.7.4 Node.js v
         toBuffer: ƒ toBuffer(length: 1) {},
         isEncoding: ƒ isEncoding(length: 1) {}
     },
-    File: [Circular: *2],
+    File: <ref *14> ƒ File(length: 2) {},
     INSPECT_MAX_BYTES: 50,
-    SlowBuffer: <ref *14> ƒ SlowBuffer(length: 0) {},
-    atob: <ref *15> ƒ atob(length: 1) {},
-    btoa: <ref *16> ƒ btoa(length: 1) {},
-    constants: <ref *17> {
+    SlowBuffer: <ref *15> ƒ SlowBuffer(length: 0) {},
+    atob: <ref *16> ƒ atob(length: 1) {},
+    btoa: <ref *17> ƒ btoa(length: 1) {},
+    constants: <ref *18> {
         MAX_LENGTH: 4294967296,
         MAX_STRING_LENGTH: 536870888
     },
     default: {
         Buffer: [Circular: *3],
-        SlowBuffer: [Circular: *14],
+        SlowBuffer: [Circular: *15],
         Blob: [Circular: *2],
-        File: [Circular: *2],
+        File: [Circular: *14],
         INSPECT_MAX_BYTES: 50,
         kMaxLength: 4294967296,
         kStringMaxLength: 536870888,
-        constants: [Circular: *17],
-        atob: [Circular: *15],
-        btoa: [Circular: *16],
+        constants: [Circular: *18],
+        atob: [Circular: *16],
+        btoa: [Circular: *17],
         transcode: [Unexpected Error: [object Function] (type "undefined")],
         resolveObjectURL: [Unexpected Error: [object Function] (type "undefined")],
-        isAscii: <ref *19> ƒ isAscii(length: 1) {},
-        isUtf8: <ref *20> ƒ isUtf8(length: 1) {}
+        isAscii: <ref *20> ƒ isAscii(length: 1) {},
+        isUtf8: <ref *21> ƒ isUtf8(length: 1) {}
     },
-    isAscii: [Circular: *19],
-    isUtf8: [Circular: *20],
+    isAscii: [Circular: *20],
+    isUtf8: [Circular: *21],
     kMaxLength: 4294967296,
     kStringMaxLength: 536870888,
     resolveObjectURL: [Unexpected Error: [object Function] (type "undefined")],
@@ -4718,11 +4742,11 @@ TypeError: Attempted to assign to readonly property.
       at Duplex (node:stream:3128:38)
       at Transform (node:stream:3186:44)
       at get (node:crypto:1169:22)
-      at inspect (/tmp/fs-fixture-1692576673352-1/inspect.mjs:72:14)
-      at /tmp/fs-fixture-1692576673352-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1693181488969-1/inspect.mjs:72:14)
+      at /tmp/fs-fixture-1693181488969-1/inspect.mjs:99:6
       at map (:1:20)
-      at inspect (/tmp/fs-fixture-1692576673352-1/inspect.mjs:80:19)
-      at /tmp/fs-fixture-1692576673352-1/inspect.mjs:99:6
+      at inspect (/tmp/fs-fixture-1693181488969-1/inspect.mjs:80:19)
+      at /tmp/fs-fixture-1693181488969-1/inspect.mjs:99:6
       at map (:1:20)
 ```
 
@@ -6859,10 +6883,14 @@ TypeError: Attempted to assign to readonly property.
 
 ```js
 {
-    Http2ServerRequest: <ref *2> ƒ Http2ServerRequest(length: 0) {},
-    Http2ServerResponse: <ref *3> ƒ Http2ServerResponse(length: 0) {},
-    connect: <ref *4> ƒ connect(length: 0) {},
-    constants: <ref *5> {
+    Http2ServerRequest: <ref *2> ƒ Http2ServerRequest(length: 0) {
+        prototype: {}
+    },
+    Http2ServerResponse: <ref *4> ƒ Http2ServerResponse(length: 0) {
+        prototype: {}
+    },
+    connect: <ref *6> ƒ connect(length: 0) {},
+    constants: <ref *7> {
         NGHTTP2_ERR_FRAME_SIZE_ERROR: -522,
         NGHTTP2_SESSION_SERVER: 0,
         NGHTTP2_SESSION_CLIENT: 1,
@@ -7104,23 +7132,23 @@ TypeError: Attempted to assign to readonly property.
         HTTP_STATUS_NOT_EXTENDED: 510,
         HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED: 511
     },
-    createSecureServer: <ref *6> ƒ createSecureServer(length: 0) {},
-    createServer: <ref *7> ƒ createServer(length: 0) {},
+    createSecureServer: <ref *8> ƒ createSecureServer(length: 0) {},
+    createServer: <ref *9> ƒ createServer(length: 0) {},
     default: {
-        constants: [Circular: *5],
-        createServer: [Circular: *7],
-        createSecureServer: [Circular: *6],
-        getDefaultSettings: <ref *9> ƒ getDefaultSettings(length: 0) {},
-        getPackedSettings: <ref *10> ƒ getPackedSettings(length: 0) {},
-        getUnpackedSettings: <ref *11> ƒ getUnpackedSettings(length: 0) {},
+        constants: [Circular: *7],
+        createServer: [Circular: *9],
+        createSecureServer: [Circular: *8],
+        getDefaultSettings: <ref *11> ƒ getDefaultSettings(length: 0) {},
+        getPackedSettings: <ref *12> ƒ getPackedSettings(length: 0) {},
+        getUnpackedSettings: <ref *13> ƒ getUnpackedSettings(length: 0) {},
         sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders),
         Http2ServerRequest: [Circular: *2],
-        Http2ServerResponse: [Circular: *3],
-        connect: [Circular: *4]
+        Http2ServerResponse: [Circular: *4],
+        connect: [Circular: *6]
     },
-    getDefaultSettings: [Circular: *9],
-    getPackedSettings: [Circular: *10],
-    getUnpackedSettings: [Circular: *11],
+    getDefaultSettings: [Circular: *11],
+    getPackedSettings: [Circular: *12],
+    getUnpackedSettings: [Circular: *13],
     sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders)
 }
 ```
@@ -7551,7 +7579,7 @@ TypeError: Attempted to assign to readonly property.
         ],
         _cache: <ref *4> [Object: null prototype] {},
         _pathCache: <ref *5> [Object: null prototype] {
-            /tmp/fs-fixture-1692576673352-1/module.mjs: "/tmp/fs-fixture-1692576673352-1/module.mjs"
+            /tmp/fs-fixture-1693181488969-1/module.mjs: "/tmp/fs-fixture-1693181488969-1/module.mjs"
         },
         _extensions: <ref *6> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -7635,13 +7663,13 @@ TypeError: Attempted to assign to readonly property.
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1692576673352-1/module.mjs: {
+            /tmp/fs-fixture-1693181488969-1/module.mjs: {
                 exports: {}
             },
             node:module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1692576673352-1/inspect.mjs: {
+            /tmp/fs-fixture-1693181488969-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -8666,7 +8694,7 @@ TypeError: Attempted to assign to readonly property.
             now: ƒ now(length: 0) {},
             mark: <ref *8> ƒ noopNotImplemented(length: 0) {},
             measure: [Circular: *8],
-            timeOrigin: 1692576675748.0781
+            timeOrigin: 1693181490864.9717
         },
         constants: [Circular: *4],
         PerformanceEntry: [Circular: *2],
@@ -8899,7 +8927,7 @@ TypeError: Attempted to assign to readonly property.
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/18.17.1/x64/bin/node",
-        "/tmp/fs-fixture-1692576673352-1/process.mjs"
+        "/tmp/fs-fixture-1693181488969-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -9940,7 +9968,7 @@ TypeError: Attempted to assign to readonly property.
         setgid: <ref *104> ƒ (length: 1) {},
         setuid: <ref *105> ƒ (length: 1) {},
         env: <ref *106>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_f21c0261-af7d-4d29-b873-8b095afd4903",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_e87fd6c1-9516-4b61-9d1e-f66ba6775a27",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -9949,7 +9977,7 @@ TypeError: Attempted to assign to readonly property.
             npm_config_user_agent: "pnpm/7.33.6 npm/? node/v18.17.1 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_f21c0261-af7d-4d29-b873-8b095afd4903",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_e87fd6c1-9516-4b61-9d1e-f66ba6775a27",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/18.17.1/x64/bin/node",
@@ -9962,7 +9990,7 @@ TypeError: Attempted to assign to readonly property.
             PIPX_BIN_DIR: "/opt/pipx_bin",
             GITHUB_REPOSITORY_OWNER: "privatenumber",
             npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
-            GRADLE_HOME: "/usr/share/gradle-8.2.1",
+            GRADLE_HOME: "/usr/share/gradle-8.3",
             ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
             STATS_RDCL: "true",
             GITHUB_RETENTION_DAYS: "90",
@@ -9970,14 +9998,14 @@ TypeError: Attempted to assign to readonly property.
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "660",
+            SYSTEMD_EXEC_PID: "675",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.7/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.0/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20230814.1.0",
+            ImageVersion: "20230821.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -9985,16 +10013,16 @@ TypeError: Attempted to assign to readonly property.
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:17031",
+            JOURNAL_STREAM: "8:16235",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
-            GITHUB_RUN_ID: "5920376038",
+            GITHUB_RUN_ID: "5993979753",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "4990db287f6707e2f99d40015f94710a9e3b10f1",
+            GITHUB_WORKFLOW_SHA: "49c612f6d4f3cc6861b149ed841e5acbd05c9ba8",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -10006,13 +10034,13 @@ TypeError: Attempted to assign to readonly property.
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_8a9d3b11-136b-4e6e-a373-8a9797765f33",
-            INVOCATION_ID: "6e3605bc3b574aa28d37b65a045cf714",
+            RUNNER_TRACKING_ID: "github_0fffe845-70bf-4c7e-832f-3b87172fb023",
+            INVOCATION_ID: "11e91ecf74da40209becf94e88922b67",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             GOROOT_1_19_X64: "/opt/hostedtoolcache/go/1.19.12/x64",
             NODE: "/opt/hostedtoolcache/node/18.17.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "36",
+            GITHUB_RUN_NUMBER: "37",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10035,6 +10063,7 @@ TypeError: Attempted to assign to readonly property.
             DEBIAN_FRONTEND: "noninteractive",
             GITHUB_REPOSITORY_ID: "622996871",
             GITHUB_ACTIONS: "true",
+            STATS_NM: "true",
             NODE_PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.12.6/node_modules/tsx/d…",
             npm_package_devDependencies_fs_fixture: "^1.2.0",
             npm_lifecycle_event: "start",
@@ -10046,7 +10075,7 @@ TypeError: Attempted to assign to readonly property.
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "4990db287f6707e2f99d40015f94710a9e3b10f1",
+            GITHUB_SHA: "49c612f6d4f3cc6861b149ed841e5acbd05c9ba8",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -10054,7 +10083,7 @@ TypeError: Attempted to assign to readonly property.
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_f21c0261-af7d-4d29-b873-8b095afd4903",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_e87fd6c1-9516-4b61-9d1e-f66ba6775a27",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -10069,7 +10098,7 @@ TypeError: Attempted to assign to readonly property.
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_f21c0261-af7d-4d29-b873-8b095afd4903",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_e87fd6c1-9516-4b61-9d1e-f66ba6775a27",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -10082,15 +10111,15 @@ TypeError: Attempted to assign to readonly property.
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.154/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_f21c0261-af7d-4d29-b873-8b095afd4903",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_e87fd6c1-9516-4b61-9d1e-f66ba6775a27",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *107> [],
-        pid: 2473,
-        ppid: 1870,
+        pid: 2642,
+        ppid: 1930,
         execPath: "/opt/hostedtoolcache/node/18.17.1/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -10133,9 +10162,9 @@ TypeError: Attempted to assign to readonly property.
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *64],
     openStdin: [Circular: *54],
-    pid: 2473,
+    pid: 2642,
     platform: "linux",
-    ppid: 1870,
+    ppid: 1930,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *108],
@@ -10536,9 +10565,9 @@ ENXIO: No such device or address
       at new  (node:tty:22:50)
       at node:tty:22:50
       at getStdioWriteStream (:1:20)
-      at /tmp/fs-fixture-1692576673352-1/inspect.mjs:82:24
+      at /tmp/fs-fixture-1693181488969-1/inspect.mjs:82:24
       at map (:1:20)
-      at inspect (/tmp/fs-fixture-1692576673352-1/inspect.mjs:80:19)
+      at inspect (/tmp/fs-fixture-1693181488969-1/inspect.mjs:80:19)
 ```
 
 </td></tr></table>
@@ -10637,17 +10666,20 @@ ENXIO: No such device or address
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    NativeWritable: <ref *13> ƒ NativeWritable2(length: 1) {},
-    PassThrough: <ref *14> ƒ PassThrough(length: 1) {
+    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
+        defaultMaxListeners: 10
+    },
+    NativeWritable: <ref *14> ƒ NativeWritable2(length: 1) {},
+    PassThrough: <ref *15> ƒ PassThrough(length: 1) {
         prototype: EventEmitter {
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *17> ƒ Readable(length: 1) {
+    Readable: <ref *18> ƒ Readable(length: 1) {
         prototype: EventEmitter {
-            on: <ref *19> ƒ (length: 2) {},
+            on: <ref *20> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *21> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *22> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
             undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
@@ -10658,9 +10690,9 @@ ENXIO: No such device or address
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *19],
-            removeListener: <ref *32> ƒ (length: 2) {},
-            off: [Circular: *32],
+            addListener: [Circular: *20],
+            removeListener: <ref *33> ƒ (length: 2) {},
+            off: [Circular: *33],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
@@ -10674,16 +10706,16 @@ ENXIO: No such device or address
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *44> ƒ Stream(length: 1) {
-        prototype: <ref *45> EventEmitter {
+    Stream: <ref *45> ƒ Stream(length: 1) {
+        prototype: <ref *46> EventEmitter {
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *47> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *48> ƒ isErrored(length: 1) {},
-        isWritable: <ref *49> ƒ isWritable(length: 1) {},
-        isReadable: <ref *50> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *17],
-        Writable: <ref *51> ƒ Writable(length: 0) {
+        isDisturbed: <ref *48> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *49> ƒ isErrored(length: 1) {},
+        isWritable: <ref *50> ƒ isWritable(length: 1) {},
+        isReadable: <ref *51> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *18],
+        Writable: <ref *52> ƒ Writable(length: 0) {
             prototype: EventEmitter {
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
@@ -10694,7 +10726,7 @@ ENXIO: No such device or address
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *21],
+                _undestroy: [Circular: *22],
                 _destroy: ƒ (length: 2) {},
                 undefined: ƒ (length: 1) {}
             },
@@ -10702,7 +10734,7 @@ ENXIO: No such device or address
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *59> ƒ Transform(length: 1) {
+        Transform: <ref *60> ƒ Transform(length: 1) {
             prototype: EventEmitter {
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
@@ -10710,51 +10742,52 @@ ENXIO: No such device or address
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *14],
-        pipeline: <ref *65> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *66> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *15],
+        pipeline: <ref *66> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *67> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *67> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *68> ƒ eos(length: 3) {
-            finished: <ref *69> ƒ finished2(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *69]
+        addAbortSignal: <ref *68> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *69> ƒ eos(length: 3) {
+            finished: <ref *70> ƒ finished2(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *70]
         },
-        destroy: <ref *70> ƒ destroyer(length: 2) {},
-        compose: <ref *71> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *72> {
-            finished: [Circular: *69],
-            pipeline: [Circular: *66]
+        destroy: <ref *71> ƒ destroyer(length: 2) {},
+        compose: <ref *72> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *73> {
+            finished: [Circular: *70],
+            pipeline: [Circular: *67]
         },
-        Stream: [Circular: *44],
-        _isUint8Array: <ref *73> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *74> ƒ _uint8ArrayToBuffer(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *75> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *13],
-        eos: [Circular: *68],
+        Stream: [Circular: *45],
+        _isUint8Array: <ref *74> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *75> ƒ _uint8ArrayToBuffer(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *76> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *14],
+        eos: [Circular: *69],
+        EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
             _ReadableFromWebForUndici: ƒ ReadableFromWeb(length: 2) {}
         }
     },
-    Transform: [Circular: *59],
-    Writable: [Circular: *51],
-    _getNativeReadableStreamPrototype: [Circular: *75],
-    _isUint8Array: [Circular: *73],
-    _uint8ArrayToBuffer: [Circular: *74],
-    addAbortSignal: [Circular: *67],
-    compose: [Circular: *71],
-    default: [Circular: *44],
+    Transform: [Circular: *60],
+    Writable: [Circular: *52],
+    _getNativeReadableStreamPrototype: [Circular: *76],
+    _isUint8Array: [Circular: *74],
+    _uint8ArrayToBuffer: [Circular: *75],
+    addAbortSignal: [Circular: *68],
+    compose: [Circular: *72],
+    default: [Circular: *45],
     defaultMaxListeners: 10,
-    destroy: [Circular: *70],
-    eos: [Circular: *68],
-    finished: [Circular: *68],
-    isDisturbed: [Circular: *47],
-    isErrored: [Circular: *48],
-    isReadable: [Circular: *50],
-    isWritable: [Circular: *49],
-    pipeline: [Circular: *65],
-    promises: [Circular: *72],
-    prototype: [Circular: *45]
+    destroy: [Circular: *71],
+    eos: [Circular: *69],
+    finished: [Circular: *69],
+    isDisturbed: [Circular: *48],
+    isErrored: [Circular: *49],
+    isReadable: [Circular: *51],
+    isWritable: [Circular: *50],
+    pipeline: [Circular: *66],
+    promises: [Circular: *73],
+    prototype: [Circular: *46]
 }
 ```
 
@@ -10882,13 +10915,17 @@ ENXIO: No such device or address
 ```js
 {
     ByteLengthQueuingStrategy: <ref *2> ƒ ByteLengthQueuingStrategy(length: 1) {},
+    CompressionStream: undefined,
     CountQueuingStrategy: <ref *3> ƒ CountQueuingStrategy(length: 1) {},
+    DecompressionStream: undefined,
     ReadableByteStreamController: <ref *4> ƒ ReadableByteStreamController(length: 3) {},
     ReadableStream: <ref *5> ƒ ReadableStream(length: 0) {},
     ReadableStreamBYOBReader: <ref *6> ƒ ReadableStreamBYOBReader(length: 1) {},
     ReadableStreamBYOBRequest: <ref *7> ƒ ReadableStreamBYOBRequest(length: 2) {},
     ReadableStreamDefaultController: <ref *8> ƒ ReadableStreamDefaultController(length: 4) {},
     ReadableStreamDefaultReader: <ref *9> ƒ ReadableStreamDefaultReader(length: 1) {},
+    TextDecoderStream: undefined,
+    TextEncoderStream: undefined,
     TransformStream: <ref *10> ƒ TransformStream(length: 0) {},
     TransformStreamDefaultController: <ref *11> ƒ TransformStreamDefaultController(length: 0) {},
     WritableStream: <ref *12> ƒ WritableStream(length: 0) {},
@@ -10907,7 +10944,11 @@ ENXIO: No such device or address
         WritableStreamDefaultWriter: [Circular: *14],
         WritableStreamDefaultController: [Circular: *13],
         ByteLengthQueuingStrategy: [Circular: *2],
-        CountQueuingStrategy: [Circular: *3]
+        CountQueuingStrategy: [Circular: *3],
+        TextEncoderStream: undefined,
+        TextDecoderStream: undefined,
+        CompressionStream: undefined,
+        DecompressionStream: undefined
     }
 }
 ```
@@ -11271,7 +11312,7 @@ ENXIO: No such device or address
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2627) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2838) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -13008,7 +13049,7 @@ ENXIO: No such device or address
         WASI: [Circular: *2]
     }
 }
-(node:2792) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3002) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
