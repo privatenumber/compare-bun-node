@@ -1,8 +1,21 @@
-# Bun & Node.js comparison
+# [Bun](https://bun.sh) & [Node.js](https://nodejs.org) API comparison
 
-This repository provides a comparative overview of the [Bun](https://bun.sh) and [Node.js](https://nodejs.org) APIs. Making it easy to see what's available in Bun, what's not, and how they differ. The goal of this comparison is to help you determine if Bun is ready for adoption.
+#### Why?
+Have you wondered how Bun's `import 'fs'` differs from Node's?
 
-The comparison is performed every week using GitHub Actions, with the latest Bun Canary and Node.js LTS versions. For more details, refer to the Actions tab.
+This repository provides a comparative overview of the [Bun](https://bun.sh) and [Node.js](https://nodejs.org) runtime API.
+
+Scrolling down, you should be able to see what's available in Bun, what's not, and how they differ.
+
+The goal of this comparison is to help you determine if Bun is ready for adoption.
+
+#### Self-maintaining repo
+
+The comparison is [automatically performed every week using GitHub Actions](/.github/workflows/compare.yml), with the latest _Bun Canary_ and _Node.js LTS_.
+
+For more details, refer to the Actions tab.
+
+#### Contribute to Bun!
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
