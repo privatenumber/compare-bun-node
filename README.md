@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v20.11.1<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Mar 11, 2024 with Bun 1.0.30 Node.js v20.11.1<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -157,7 +157,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
     IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
-        prototype: EventEmitter {
+        prototype: IncomingMessage {
+            constructor: [Circular: *4],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
@@ -200,7 +201,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         "UNSUBSCRIBE"
     ],
     OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
-        prototype: EventEmitter {
+        prototype: OutgoingMessage {
+            constructor: [Circular: *10],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -280,7 +282,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         511: "Network Authentication Required"
     },
     Server: <ref *24> ƒ Server(length: 2) {
-        prototype: EventEmitter2 {
+        prototype: Server {
+            constructor: [Circular: *24],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -292,7 +295,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
-        prototype: EventEmitter {
+        prototype: ServerResponse {
+            constructor: [Circular: *34],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -386,7 +390,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
     IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
-        prototype: EventEmitter {
+        prototype: IncomingMessage {
+            constructor: [Circular: *4],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
@@ -429,7 +434,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         "UNSUBSCRIBE"
     ],
     OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
-        prototype: EventEmitter {
+        prototype: OutgoingMessage {
+            constructor: [Circular: *10],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -509,7 +515,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         511: "Network Authentication Required"
     },
     Server: <ref *24> ƒ Server(length: 2) {
-        prototype: EventEmitter2 {
+        prototype: Server {
+            constructor: [Circular: *24],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -521,7 +528,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
-        prototype: EventEmitter {
+        prototype: ServerResponse {
+            constructor: [Circular: *34],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -692,7 +700,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
     IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
-        prototype: EventEmitter {
+        prototype: IncomingMessage {
+            constructor: [Circular: *4],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
@@ -735,7 +744,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         "UNSUBSCRIBE"
     ],
     OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
-        prototype: EventEmitter {
+        prototype: OutgoingMessage {
+            constructor: [Circular: *10],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -815,7 +825,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         511: "Network Authentication Required"
     },
     Server: <ref *24> ƒ Server(length: 2) {
-        prototype: EventEmitter2 {
+        prototype: Server {
+            constructor: [Circular: *24],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -827,7 +838,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
-        prototype: EventEmitter {
+        prototype: ServerResponse {
+            constructor: [Circular: *34],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -925,7 +937,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
     IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
-        prototype: EventEmitter {
+        prototype: IncomingMessage {
+            constructor: [Circular: *4],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
@@ -968,7 +981,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         "UNSUBSCRIBE"
     ],
     OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
-        prototype: EventEmitter {
+        prototype: OutgoingMessage {
+            constructor: [Circular: *10],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -1048,7 +1062,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         511: "Network Authentication Required"
     },
     Server: <ref *24> ƒ Server(length: 2) {
-        prototype: EventEmitter2 {
+        prototype: Server {
+            constructor: [Circular: *24],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -1060,7 +1075,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
-        prototype: EventEmitter {
+        prototype: ServerResponse {
+            constructor: [Circular: *34],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1164,7 +1180,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
     IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
-        prototype: EventEmitter {
+        prototype: IncomingMessage {
+            constructor: [Circular: *4],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
@@ -1207,7 +1224,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         "UNSUBSCRIBE"
     ],
     OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
-        prototype: EventEmitter {
+        prototype: OutgoingMessage {
+            constructor: [Circular: *10],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -1287,7 +1305,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         511: "Network Authentication Required"
     },
     Server: <ref *24> ƒ Server(length: 2) {
-        prototype: EventEmitter2 {
+        prototype: Server {
+            constructor: [Circular: *24],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -1299,7 +1318,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
-        prototype: EventEmitter {
+        prototype: ServerResponse {
+            constructor: [Circular: *34],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1473,7 +1493,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
     IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
-        prototype: EventEmitter {
+        prototype: IncomingMessage {
+            constructor: [Circular: *4],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
@@ -1516,7 +1537,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         "UNSUBSCRIBE"
     ],
     OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
-        prototype: EventEmitter {
+        prototype: OutgoingMessage {
+            constructor: [Circular: *10],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -1596,7 +1618,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         511: "Network Authentication Required"
     },
     Server: <ref *24> ƒ Server(length: 2) {
-        prototype: EventEmitter2 {
+        prototype: Server {
+            constructor: [Circular: *24],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -1608,7 +1631,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
-        prototype: EventEmitter {
+        prototype: ServerResponse {
+            constructor: [Circular: *34],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1704,7 +1728,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
 ```js
 {
     Duplex: <ref *2> ƒ Duplex(length: 1) {
-        prototype: EventEmitter {
+        prototype: Duplex {
+            constructor: [Circular: *2],
             write: <ref *4> ƒ (length: 3) {},
             cork: <ref *5> ƒ (length: 0) {},
             uncork: <ref *6> ƒ (length: 0) {},
@@ -1721,7 +1746,7 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         defaultMaxListeners: 10
     },
     NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Writable {
             write: ƒ NativeWritablePrototypeWrite(length: 4) {},
             end: ƒ end(length: 4) {},
             ref: ƒ ref(length: 0) {},
@@ -1729,12 +1754,14 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     PassThrough: <ref *20> ƒ PassThrough(length: 1) {
-        prototype: EventEmitter {
+        prototype: PassThrough {
+            constructor: [Circular: *20],
             _transform: ƒ (length: 3) {}
         }
     },
     Readable: <ref *23> ƒ Readable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Readable {
+            constructor: [Circular: *23],
             on: <ref *25> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
             _undestroy: <ref *27> ƒ undestroy(length: 0) {},
@@ -1765,7 +1792,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         wrap: ƒ (length: 2) {}
     },
     Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> EventEmitter {
+        prototype: <ref *51> Stream {
+            constructor: [Circular: *50],
             pipe: ƒ (length: 2) {}
         },
         isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
@@ -1774,7 +1802,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         isReadable: <ref *56> ƒ isReadable(length: 1) {},
         Readable: [Circular: *23],
         Writable: <ref *57> ƒ Writable(length: 0) {
-            prototype: EventEmitter {
+            prototype: Writable {
+                constructor: [Circular: *57],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -1793,7 +1822,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         },
         Duplex: [Circular: *2],
         Transform: <ref *65> ƒ Transform(length: 1) {
-            prototype: EventEmitter {
+            prototype: Transform {
+                constructor: [Circular: *65],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
@@ -1866,7 +1896,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
 ```js
 {
     Duplex: <ref *2> ƒ Duplex(length: 1) {
-        prototype: EventEmitter {
+        prototype: Duplex {
+            constructor: [Circular: *2],
             write: <ref *4> ƒ (length: 3) {},
             cork: <ref *5> ƒ (length: 0) {},
             uncork: <ref *6> ƒ (length: 0) {},
@@ -1883,7 +1914,7 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         defaultMaxListeners: 10
     },
     NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Writable {
             write: ƒ NativeWritablePrototypeWrite(length: 4) {},
             end: ƒ end(length: 4) {},
             ref: ƒ ref(length: 0) {},
@@ -1891,12 +1922,14 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     PassThrough: <ref *20> ƒ PassThrough(length: 1) {
-        prototype: EventEmitter {
+        prototype: PassThrough {
+            constructor: [Circular: *20],
             _transform: ƒ (length: 3) {}
         }
     },
     Readable: <ref *23> ƒ Readable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Readable {
+            constructor: [Circular: *23],
             on: <ref *25> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
             _undestroy: <ref *27> ƒ undestroy(length: 0) {},
@@ -1927,7 +1960,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         wrap: ƒ (length: 2) {}
     },
     Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> EventEmitter {
+        prototype: <ref *51> Stream {
+            constructor: [Circular: *50],
             pipe: ƒ (length: 2) {}
         },
         isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
@@ -1936,7 +1970,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         isReadable: <ref *56> ƒ isReadable(length: 1) {},
         Readable: [Circular: *23],
         Writable: <ref *57> ƒ Writable(length: 0) {
-            prototype: EventEmitter {
+            prototype: Writable {
+                constructor: [Circular: *57],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -1955,7 +1990,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         },
         Duplex: [Circular: *2],
         Transform: <ref *65> ƒ Transform(length: 1) {
-            prototype: EventEmitter {
+            prototype: Transform {
+                constructor: [Circular: *65],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
@@ -2041,7 +2077,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
 ```js
 {
     Duplex: <ref *2> ƒ Duplex(length: 1) {
-        prototype: EventEmitter {
+        prototype: Duplex {
+            constructor: [Circular: *2],
             write: <ref *4> ƒ (length: 3) {},
             cork: <ref *5> ƒ (length: 0) {},
             uncork: <ref *6> ƒ (length: 0) {},
@@ -2058,7 +2095,7 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         defaultMaxListeners: 10
     },
     NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Writable {
             write: ƒ NativeWritablePrototypeWrite(length: 4) {},
             end: ƒ end(length: 4) {},
             ref: ƒ ref(length: 0) {},
@@ -2066,12 +2103,14 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     PassThrough: <ref *20> ƒ PassThrough(length: 1) {
-        prototype: EventEmitter {
+        prototype: PassThrough {
+            constructor: [Circular: *20],
             _transform: ƒ (length: 3) {}
         }
     },
     Readable: <ref *23> ƒ Readable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Readable {
+            constructor: [Circular: *23],
             on: <ref *25> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
             _undestroy: <ref *27> ƒ undestroy(length: 0) {},
@@ -2102,7 +2141,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         wrap: ƒ (length: 2) {}
     },
     Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> EventEmitter {
+        prototype: <ref *51> Stream {
+            constructor: [Circular: *50],
             pipe: ƒ (length: 2) {}
         },
         isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
@@ -2111,7 +2151,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         isReadable: <ref *56> ƒ isReadable(length: 1) {},
         Readable: [Circular: *23],
         Writable: <ref *57> ƒ Writable(length: 0) {
-            prototype: EventEmitter {
+            prototype: Writable {
+                constructor: [Circular: *57],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -2130,7 +2171,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         },
         Duplex: [Circular: *2],
         Transform: <ref *65> ƒ Transform(length: 1) {
-            prototype: EventEmitter {
+            prototype: Transform {
+                constructor: [Circular: *65],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
@@ -2203,7 +2245,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
 ```js
 {
     Duplex: <ref *2> ƒ Duplex(length: 1) {
-        prototype: EventEmitter {
+        prototype: Duplex {
+            constructor: [Circular: *2],
             write: <ref *4> ƒ (length: 3) {},
             cork: <ref *5> ƒ (length: 0) {},
             uncork: <ref *6> ƒ (length: 0) {},
@@ -2220,7 +2263,7 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         defaultMaxListeners: 10
     },
     NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Writable {
             write: ƒ NativeWritablePrototypeWrite(length: 4) {},
             end: ƒ end(length: 4) {},
             ref: ƒ ref(length: 0) {},
@@ -2228,12 +2271,14 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     PassThrough: <ref *20> ƒ PassThrough(length: 1) {
-        prototype: EventEmitter {
+        prototype: PassThrough {
+            constructor: [Circular: *20],
             _transform: ƒ (length: 3) {}
         }
     },
     Readable: <ref *23> ƒ Readable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Readable {
+            constructor: [Circular: *23],
             on: <ref *25> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
             _undestroy: <ref *27> ƒ undestroy(length: 0) {},
@@ -2264,7 +2309,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         wrap: ƒ (length: 2) {}
     },
     Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> EventEmitter {
+        prototype: <ref *51> Stream {
+            constructor: [Circular: *50],
             pipe: ƒ (length: 2) {}
         },
         isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
@@ -2273,7 +2319,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         isReadable: <ref *56> ƒ isReadable(length: 1) {},
         Readable: [Circular: *23],
         Writable: <ref *57> ƒ Writable(length: 0) {
-            prototype: EventEmitter {
+            prototype: Writable {
+                constructor: [Circular: *57],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -2292,7 +2339,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         },
         Duplex: [Circular: *2],
         Transform: <ref *65> ƒ Transform(length: 1) {
-            prototype: EventEmitter {
+            prototype: Transform {
+                constructor: [Circular: *65],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
@@ -2358,7 +2406,7 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2069) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2097) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -2367,7 +2415,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
 ```js
 {
     Duplex: <ref *2> ƒ Duplex(length: 1) {
-        prototype: EventEmitter {
+        prototype: Duplex {
+            constructor: [Circular: *2],
             write: <ref *4> ƒ (length: 3) {},
             cork: <ref *5> ƒ (length: 0) {},
             uncork: <ref *6> ƒ (length: 0) {},
@@ -2384,7 +2433,7 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         defaultMaxListeners: 10
     },
     NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Writable {
             write: ƒ NativeWritablePrototypeWrite(length: 4) {},
             end: ƒ end(length: 4) {},
             ref: ƒ ref(length: 0) {},
@@ -2392,12 +2441,14 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     PassThrough: <ref *20> ƒ PassThrough(length: 1) {
-        prototype: EventEmitter {
+        prototype: PassThrough {
+            constructor: [Circular: *20],
             _transform: ƒ (length: 3) {}
         }
     },
     Readable: <ref *23> ƒ Readable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Readable {
+            constructor: [Circular: *23],
             on: <ref *25> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
             _undestroy: <ref *27> ƒ undestroy(length: 0) {},
@@ -2428,7 +2479,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         wrap: ƒ (length: 2) {}
     },
     Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> EventEmitter {
+        prototype: <ref *51> Stream {
+            constructor: [Circular: *50],
             pipe: ƒ (length: 2) {}
         },
         isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
@@ -2437,7 +2489,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         isReadable: <ref *56> ƒ isReadable(length: 1) {},
         Readable: [Circular: *23],
         Writable: <ref *57> ƒ Writable(length: 0) {
-            prototype: EventEmitter {
+            prototype: Writable {
+                constructor: [Circular: *57],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -2456,7 +2509,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         },
         Duplex: [Circular: *2],
         Transform: <ref *65> ƒ Transform(length: 1) {
-            prototype: EventEmitter {
+            prototype: Transform {
+                constructor: [Circular: *65],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
@@ -2536,7 +2590,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
 ```js
 {
     Duplex: <ref *2> ƒ Duplex(length: 1) {
-        prototype: EventEmitter {
+        prototype: Duplex {
+            constructor: [Circular: *2],
             write: <ref *4> ƒ (length: 3) {},
             cork: <ref *5> ƒ (length: 0) {},
             uncork: <ref *6> ƒ (length: 0) {},
@@ -2553,7 +2608,7 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         defaultMaxListeners: 10
     },
     NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Writable {
             write: ƒ NativeWritablePrototypeWrite(length: 4) {},
             end: ƒ end(length: 4) {},
             ref: ƒ ref(length: 0) {},
@@ -2561,12 +2616,14 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         }
     },
     PassThrough: <ref *20> ƒ PassThrough(length: 1) {
-        prototype: EventEmitter {
+        prototype: PassThrough {
+            constructor: [Circular: *20],
             _transform: ƒ (length: 3) {}
         }
     },
     Readable: <ref *23> ƒ Readable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Readable {
+            constructor: [Circular: *23],
             on: <ref *25> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
             _undestroy: <ref *27> ƒ undestroy(length: 0) {},
@@ -2597,7 +2654,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         wrap: ƒ (length: 2) {}
     },
     Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> EventEmitter {
+        prototype: <ref *51> Stream {
+            constructor: [Circular: *50],
             pipe: ƒ (length: 2) {}
         },
         isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
@@ -2606,7 +2664,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         isReadable: <ref *56> ƒ isReadable(length: 1) {},
         Readable: [Circular: *23],
         Writable: <ref *57> ƒ Writable(length: 0) {
-            prototype: EventEmitter {
+            prototype: Writable {
+                constructor: [Circular: *57],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -2625,7 +2684,8 @@ _Last updated on <!-- lastUpdated:start -->Mar 4, 2024 with Bun 1.0.30 Node.js v
         },
         Duplex: [Circular: *2],
         Transform: <ref *65> ƒ Transform(length: 1) {
-            prototype: EventEmitter {
+            prototype: Transform {
+                constructor: [Circular: *65],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
@@ -5115,11 +5175,11 @@ TypeError: Attempted to assign to readonly property.
       at Duplex (node:stream:3176:39)
       at Transform (node:stream:3234:45)
       at get (node:crypto:1281:23)
-      at inspect (/tmp/fs-fixture-1709511134999-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1709511134999-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1710115922266-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1710115922266-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1709511134999-1/inspect.mjs:80:20)
-      at /tmp/fs-fixture-1709511134999-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1710115922266-1/inspect.mjs:80:20)
+      at /tmp/fs-fixture-1710115922266-1/inspect.mjs:99:7
       at map (:1:21)
 ```
 
@@ -6127,7 +6187,7 @@ TypeError: Attempted to assign to readonly property.
     },
     Stats: <ref *6> ƒ Stats(length: 0) {},
     WriteStream: <ref *7> ƒ WriteStream2(length: 1) {
-        prototype: EventEmitter {
+        prototype: Writable {
             destroySoon: ƒ end(length: 4) {},
             open: ƒ open3(length: 0) {},
             isBunFastPathEnabled: ƒ isBunFastPathEnabled(length: 0) {},
@@ -6912,7 +6972,8 @@ TypeError: Attempted to assign to readonly property.
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
     IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
-        prototype: EventEmitter {
+        prototype: IncomingMessage {
+            constructor: [Circular: *4],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
@@ -6955,7 +7016,8 @@ TypeError: Attempted to assign to readonly property.
         "UNSUBSCRIBE"
     ],
     OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
-        prototype: EventEmitter {
+        prototype: OutgoingMessage {
+            constructor: [Circular: *10],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -7035,7 +7097,8 @@ TypeError: Attempted to assign to readonly property.
         511: "Network Authentication Required"
     },
     Server: <ref *24> ƒ Server(length: 2) {
-        prototype: EventEmitter2 {
+        prototype: Server {
+            constructor: [Circular: *24],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -7047,7 +7110,8 @@ TypeError: Attempted to assign to readonly property.
         }
     },
     ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
-        prototype: EventEmitter {
+        prototype: ServerResponse {
+            constructor: [Circular: *34],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -7734,7 +7798,8 @@ TypeError: Attempted to assign to readonly property.
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
     IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
-        prototype: EventEmitter {
+        prototype: IncomingMessage {
+            constructor: [Circular: *4],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
@@ -7777,7 +7842,8 @@ TypeError: Attempted to assign to readonly property.
         "UNSUBSCRIBE"
     ],
     OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
-        prototype: EventEmitter {
+        prototype: OutgoingMessage {
+            constructor: [Circular: *10],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -7857,7 +7923,8 @@ TypeError: Attempted to assign to readonly property.
         511: "Network Authentication Required"
     },
     Server: <ref *24> ƒ Server(length: 2) {
-        prototype: EventEmitter2 {
+        prototype: Server {
+            constructor: [Circular: *24],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -7869,7 +7936,8 @@ TypeError: Attempted to assign to readonly property.
         }
     },
     ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
-        prototype: EventEmitter {
+        prototype: ServerResponse {
+            constructor: [Circular: *34],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -8262,7 +8330,7 @@ TypeError: Attempted to assign to readonly property.
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1709511134999-1/module.mjs: "/tmp/fs-fixture-1709511134999-1/module.mjs"
+            /tmp/fs-fixture-1710115922266-1/module.mjs: "/tmp/fs-fixture-1710115922266-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -8424,13 +8492,13 @@ TypeError: Attempted to assign to readonly property.
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1709511134999-1/module.mjs: {
+            /tmp/fs-fixture-1710115922266-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1709511134999-1/inspect.mjs: {
+            /tmp/fs-fixture-1710115922266-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -9489,14 +9557,14 @@ TypeError: Attempted to assign to readonly property.
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1709511136133.775,
+            timeOrigin: 1710115923353.2222,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: undefined,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1709511136133.775,
-                nodeStart: 1709511136133.775,
-                environment: 1709511136133.775,
-                bootstrapComplete: 1709511136133.775,
+                v8Start: 1710115923353.2222,
+                nodeStart: 1710115923353.2222,
+                environment: 1710115923353.2222,
+                bootstrapComplete: 1710115923353.2222,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -9764,7 +9832,7 @@ TypeError: Attempted to assign to readonly property.
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
-        "/tmp/fs-fixture-1709511134999-1/process.mjs"
+        "/tmp/fs-fixture-1710115922266-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -10640,7 +10708,7 @@ TypeError: Attempted to assign to readonly property.
         setgid: <ref *99> ƒ (length: 1) {},
         setuid: <ref *100> ƒ (length: 1) {},
         env: <ref *101>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_f2430c91-6777-4f21-97dd-cd648c30b165",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_bfcf688f-f862-4b78-bd53-f5d4ac96f6c8",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -10649,7 +10717,7 @@ TypeError: Attempted to assign to readonly property.
             npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.11.1 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_f2430c91-6777-4f21-97dd-cd648c30b165",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_bfcf688f-f862-4b78-bd53-f5d4ac96f6c8",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
@@ -10671,14 +10739,14 @@ TypeError: Attempted to assign to readonly property.
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "593",
+            SYSTEMD_EXEC_PID: "607",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.7/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20240225.1.0",
+            ImageVersion: "20240304.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -10687,17 +10755,17 @@ TypeError: Attempted to assign to readonly property.
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:17293",
+            JOURNAL_STREAM: "8:18318",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
-            GITHUB_RUN_ID: "8134026589",
+            GITHUB_RUN_ID: "8225748335",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "f6ae0f17da4bf89d95ca5a5ba80303849b0d126a",
+            GITHUB_WORKFLOW_SHA: "2e4b85cb91932480344f29aabe675128210845ae",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -10709,12 +10777,12 @@ TypeError: Attempted to assign to readonly property.
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_cf1672c6-3b2b-4ada-b6f0-d21379a5979c",
-            INVOCATION_ID: "760135aef5fb40f7b03b6b9873fcb160",
+            RUNNER_TRACKING_ID: "github_53c9f505-e8a2-4f73-94c0-febf68b93495",
+            INVOCATION_ID: "066e750b3cd64a428803dffac78e3894",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "65",
+            GITHUB_RUN_NUMBER: "66",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10724,7 +10792,7 @@ TypeError: Attempted to assign to readonly property.
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             npm_package_devDependencies_eslint: "^8.37.0",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 7",
+            RUNNER_NAME: "GitHub Actions 12",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
@@ -10748,7 +10816,7 @@ TypeError: Attempted to assign to readonly property.
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "f6ae0f17da4bf89d95ca5a5ba80303849b0d126a",
+            GITHUB_SHA: "2e4b85cb91932480344f29aabe675128210845ae",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -10756,7 +10824,7 @@ TypeError: Attempted to assign to readonly property.
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_f2430c91-6777-4f21-97dd-cd648c30b165",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_bfcf688f-f862-4b78-bd53-f5d4ac96f6c8",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -10771,7 +10839,7 @@ TypeError: Attempted to assign to readonly property.
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_f2430c91-6777-4f21-97dd-cd648c30b165",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_bfcf688f-f862-4b78-bd53-f5d4ac96f6c8",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -10784,15 +10852,15 @@ TypeError: Attempted to assign to readonly property.
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.154/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_f2430c91-6777-4f21-97dd-cd648c30b165",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_bfcf688f-f862-4b78-bd53-f5d4ac96f6c8",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *102> [],
-        pid: 2755,
-        ppid: 1870,
+        pid: 2817,
+        ppid: 1930,
         execPath: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -10834,9 +10902,9 @@ TypeError: Attempted to assign to readonly property.
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *64],
     openStdin: [Circular: *54],
-    pid: 2755,
+    pid: 2817,
     platform: "linux",
-    ppid: 1870,
+    ppid: 1930,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *103],
@@ -10882,7 +10950,7 @@ TypeError: Attempted to assign to readonly property.
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1709511134999-1/process.mjs"
+        "/tmp/fs-fixture-1710115922266-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -10921,7 +10989,7 @@ TypeError: Attempted to assign to readonly property.
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
             [get/set] NODE_ENV: "development",
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_f2430c91-6777-4f21-97dd-cd648c30b165",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_bfcf688f-f862-4b78-bd53-f5d4ac96f6c8",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -10930,7 +10998,7 @@ TypeError: Attempted to assign to readonly property.
             [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.11.1 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_f2430c91-6777-4f21-97dd-cd648c30b165",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_bfcf688f-f862-4b78-bd53-f5d4ac96f6c8",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_package_devDependencies_execa: "^7.1.1",
             [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
@@ -10952,14 +11020,14 @@ TypeError: Attempted to assign to readonly property.
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "593",
+            [get/set] SYSTEMD_EXEC_PID: "607",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.7/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20240225.1.0",
+            [get/set] ImageVersion: "20240304.1.0",
             [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
@@ -10968,17 +11036,17 @@ TypeError: Attempted to assign to readonly property.
             [get/set] RUNNER_USER: "runner",
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] JOURNAL_STREAM: "8:17293",
+            [get/set] JOURNAL_STREAM: "8:18318",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
             [get/set] npm_package_scripts_lint: "eslint --cache .",
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
-            [get/set] GITHUB_RUN_ID: "8134026589",
+            [get/set] GITHUB_RUN_ID: "8225748335",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "f6ae0f17da4bf89d95ca5a5ba80303849b0d126a",
+            [get/set] GITHUB_WORKFLOW_SHA: "2e4b85cb91932480344f29aabe675128210845ae",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu22",
             [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -10990,12 +11058,12 @@ TypeError: Attempted to assign to readonly property.
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_cf1672c6-3b2b-4ada-b6f0-d21379a5979c",
-            [get/set] INVOCATION_ID: "760135aef5fb40f7b03b6b9873fcb160",
+            [get/set] RUNNER_TRACKING_ID: "github_53c9f505-e8a2-4f73-94c0-febf68b93495",
+            [get/set] INVOCATION_ID: "066e750b3cd64a428803dffac78e3894",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             [get/set] NODE: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "65",
+            [get/set] GITHUB_RUN_NUMBER: "66",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11005,7 +11073,7 @@ TypeError: Attempted to assign to readonly property.
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] npm_package_devDependencies_eslint: "^8.37.0",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 7",
+            [get/set] RUNNER_NAME: "GitHub Actions 12",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
@@ -11029,7 +11097,7 @@ TypeError: Attempted to assign to readonly property.
             [get/set] GITHUB_JOB: "build",
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] GITHUB_SHA: "f6ae0f17da4bf89d95ca5a5ba80303849b0d126a",
+            [get/set] GITHUB_SHA: "2e4b85cb91932480344f29aabe675128210845ae",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] GITHUB_REF: "refs/heads/master",
             [get/set] GITHUB_ACTOR: "privatenumber",
@@ -11037,7 +11105,7 @@ TypeError: Attempted to assign to readonly property.
             [get/set] npm_package_license: "MIT",
             [get/set] LEIN_HOME: "/usr/local/lib/lein",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_f2430c91-6777-4f21-97dd-cd648c30b165",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_bfcf688f-f862-4b78-bd53-f5d4ac96f6c8",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -11052,7 +11120,7 @@ TypeError: Attempted to assign to readonly property.
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_f2430c91-6777-4f21-97dd-cd648c30b165",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_bfcf688f-f862-4b78-bd53-f5d4ac96f6c8",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -11065,7 +11133,7 @@ TypeError: Attempted to assign to readonly property.
             [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.154/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_f2430c91-6777-4f21-97dd-cd648c30b165",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_bfcf688f-f862-4b78-bd53-f5d4ac96f6c8",
             [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
@@ -11097,9 +11165,9 @@ TypeError: Attempted to assign to readonly property.
         moduleLoadList: <ref *40> [],
         nextTick: <ref *41> ƒ nextTick(length: 2) {},
         openStdin: <ref *42> ƒ openStdin(length: 0) {},
-        pid: 2775,
+        pid: 2829,
         platform: "linux",
-        ppid: 1870,
+        ppid: 1930,
         reallyExit: <ref *43> ƒ reallyExit(length: 1) {},
         release: <ref *44> {
             name: "node",
@@ -11114,10 +11182,10 @@ TypeError: Attempted to assign to readonly property.
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "49ccad9367b0a30158dbb03ff00bc9a523d43c14",
+        revision: "44959e6826e5675a5543e731f2fa1c1bc68532e2",
         setSourceMapsEnabled: <ref *48> ƒ setSourceMapsEnabled(length: 1) {},
         send: undefined,
-        stderr: <ref *49> EventEmitter {
+        stderr: <ref *49> Writable {
             _writableState: {
                 objectMode: false,
                 highWaterMark: 16384,
@@ -11207,7 +11275,7 @@ TypeError: Attempted to assign to readonly property.
             Symbol(Bun.NodeReadStreamPathOrFd): 0,
             Symbol(Bun.Node.readStreamPathFastPath): true
         },
-        stdout: <ref *72> EventEmitter {
+        stdout: <ref *72> Writable {
             _writableState: {
                 objectMode: false,
                 highWaterMark: 16384,
@@ -11279,13 +11347,13 @@ TypeError: Attempted to assign to readonly property.
             libarchive: "dc321febde83dd0f31158e1be61a7aedda65e7a2",
             mimalloc: "7968d4285043401bb36573374710d47a4081a063",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "49ccad9367b0a30158dbb03ff00bc9a523d43c14",
+            uwebsockets: "44959e6826e5675a5543e731f2fa1c1bc68532e2",
             zig: "0.12.0-dev.1828+225fe6ddb",
             zlib: "885674026394870b7e7a05b7bf1ec5eb7bd8a9c0",
             tinycc: "2d3ad9e0d32194ad7fd867b66ebe218dcc8cb5cd",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "0e7a5dee0fbb04080750cf6eabbe89d8bae87faa",
-            usockets: "49ccad9367b0a30158dbb03ff00bc9a523d43c14",
+            usockets: "44959e6826e5675a5543e731f2fa1c1bc68532e2",
             v8: "11.3.244.8-node.15",
             uv: "1.46.0",
             napi: "9",
@@ -11341,9 +11409,9 @@ TypeError: Attempted to assign to readonly property.
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *42],
-    pid: 2775,
+    pid: 2829,
     platform: "linux",
-    ppid: 1870,
+    ppid: 1930,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -11352,7 +11420,7 @@ TypeError: Attempted to assign to readonly property.
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *45],
-    revision: "49ccad9367b0a30158dbb03ff00bc9a523d43c14",
+    revision: "44959e6826e5675a5543e731f2fa1c1bc68532e2",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *48],
@@ -11720,13 +11788,13 @@ NotImplementedError: node:repl is not yet implemented in Bun.
       at new NotImplementedError (internal:shared:19:27)
       at internal:shared:2:69
       at get (node:repl:76:15)
-      at inspect (/tmp/fs-fixture-1709511134999-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1709511134999-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1710115922266-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1710115922266-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1709511134999-1/inspect.mjs:80:20)
-      at /tmp/fs-fixture-1709511134999-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1710115922266-1/inspect.mjs:80:20)
+      at /tmp/fs-fixture-1710115922266-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1709511134999-1/inspect.mjs:80:20)
+      at inspect (/tmp/fs-fixture-1710115922266-1/inspect.mjs:80:20)
 ```
 
 </td></tr></table>
@@ -11812,7 +11880,8 @@ NotImplementedError: node:repl is not yet implemented in Bun.
 ```js
 {
     Duplex: <ref *2> ƒ Duplex(length: 1) {
-        prototype: EventEmitter {
+        prototype: Duplex {
+            constructor: [Circular: *2],
             write: <ref *4> ƒ (length: 3) {},
             cork: <ref *5> ƒ (length: 0) {},
             uncork: <ref *6> ƒ (length: 0) {},
@@ -11829,7 +11898,7 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         defaultMaxListeners: 10
     },
     NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Writable {
             write: ƒ NativeWritablePrototypeWrite(length: 4) {},
             end: ƒ end(length: 4) {},
             ref: ƒ ref(length: 0) {},
@@ -11837,12 +11906,14 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         }
     },
     PassThrough: <ref *20> ƒ PassThrough(length: 1) {
-        prototype: EventEmitter {
+        prototype: PassThrough {
+            constructor: [Circular: *20],
             _transform: ƒ (length: 3) {}
         }
     },
     Readable: <ref *23> ƒ Readable(length: 1) {
-        prototype: EventEmitter {
+        prototype: Readable {
+            constructor: [Circular: *23],
             on: <ref *25> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
             _undestroy: <ref *27> ƒ undestroy(length: 0) {},
@@ -11873,7 +11944,8 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         wrap: ƒ (length: 2) {}
     },
     Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> EventEmitter {
+        prototype: <ref *51> Stream {
+            constructor: [Circular: *50],
             pipe: ƒ (length: 2) {}
         },
         isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
@@ -11882,7 +11954,8 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         isReadable: <ref *56> ƒ isReadable(length: 1) {},
         Readable: [Circular: *23],
         Writable: <ref *57> ƒ Writable(length: 0) {
-            prototype: EventEmitter {
+            prototype: Writable {
+                constructor: [Circular: *57],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -11901,7 +11974,8 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         },
         Duplex: [Circular: *2],
         Transform: <ref *65> ƒ Transform(length: 1) {
-            prototype: EventEmitter {
+            prototype: Transform {
+                constructor: [Circular: *65],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
@@ -12480,7 +12554,7 @@ NotImplementedError: node:repl is not yet implemented in Bun.
     transferableAbortSignal: [Circular: *86],
     types: [Circular: *88]
 }
-(node:2982) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:3035) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -12763,7 +12837,8 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         isDeepStrictEqual: <ref *118> ƒ isDeepStrictEqual(length: 2) {},
         TextDecoder: [Circular: *2],
         TextEncoder: [Circular: *3],
-        parseArgs: <ref *119> ƒ parseArgs(length: 1) {}
+        parseArgs: <ref *119> ƒ parseArgs(length: 1) {},
+        styleText: <ref *120> ƒ styleText(length: 2) {}
     },
     deprecate: [Circular: *11],
     format: [Circular: *8],
@@ -12790,6 +12865,7 @@ NotImplementedError: node:repl is not yet implemented in Bun.
     parseArgs: [Circular: *119],
     promisify: [Circular: *117],
     stripVTControlCharacters: [Circular: *10],
+    styleText: [Circular: *120],
     toUSVString: [Circular: *116],
     types: [Circular: *59]
 }
@@ -13338,7 +13414,7 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         }
     },
     WriteStream: <ref *5> ƒ WriteStream(length: 1) {
-        [get/set] prototype: EventEmitter {
+        [get/set] prototype: Writable {
             destroySoon: ƒ end(length: 4) {},
             open: ƒ open3(length: 0) {},
             isBunFastPathEnabled: ƒ isBunFastPathEnabled(length: 0) {},
@@ -13440,8 +13516,12 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         URL: [Circular: *2],
         pathToFileURL: <ref *19> ƒ pathToFileURL(length: 1) {},
         fileURLToPath: <ref *20> ƒ fileURLToPath(length: 1) {},
-        urlToHttpOptions: <ref *21> ƒ urlToHttpOptions(length: 1) {}
+        urlToHttpOptions: <ref *21> ƒ urlToHttpOptions(length: 1) {},
+        domainToASCII: <ref *22> ƒ domainToASCII(length: 1) {},
+        domainToUnicode: <ref *23> ƒ domainToUnicode(length: 1) {}
     },
+    domainToASCII: [Circular: *22],
+    domainToUnicode: [Circular: *23],
     fileURLToPath: [Circular: *20],
     format: [Circular: *18],
     parse: [Circular: *15],
@@ -14066,7 +14146,8 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         isDeepStrictEqual: <ref *118> ƒ isDeepStrictEqual(length: 2) {},
         TextDecoder: [Circular: *2],
         TextEncoder: [Circular: *3],
-        parseArgs: <ref *119> ƒ parseArgs(length: 1) {}
+        parseArgs: <ref *119> ƒ parseArgs(length: 1) {},
+        styleText: <ref *120> ƒ styleText(length: 2) {}
     },
     deprecate: [Circular: *11],
     format: [Circular: *8],
@@ -14093,6 +14174,7 @@ NotImplementedError: node:repl is not yet implemented in Bun.
     parseArgs: [Circular: *119],
     promisify: [Circular: *117],
     stripVTControlCharacters: [Circular: *10],
+    styleText: [Circular: *120],
     toUSVString: [Circular: *116],
     types: [Circular: *59]
 }
@@ -14479,7 +14561,7 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         WASI: [Circular: *2]
     }
 }
-(node:3181) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3241) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -14802,8 +14884,9 @@ NotImplementedError: node:repl is not yet implemented in Bun.
     BrotliDecompress: <ref *3> ƒ (length: 3) {},
     Deflate: <ref *4> ƒ Deflate(length: 1) {
         super_: <ref *5> ƒ Zlib(length: 2) {
-            super_: ƒ Transform(length: 1) {
-                prototype: EventEmitter {
+            super_: <ref *6> ƒ Transform(length: 1) {
+                prototype: Transform {
+                    constructor: [Circular: *6],
                     _final: ƒ final(length: 1) {},
                     _transform: ƒ (length: 3) {},
                     _write: ƒ (length: 3) {},
