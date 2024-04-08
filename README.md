@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Apr 1, 2024 with Bun 1.1.0 Node.js v20.11.1<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Apr 8, 2024 with Bun 1.1.2 Node.js v20.12.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -1161,15 +1161,19 @@ _Last updated on <!-- lastUpdated:start -->Apr 1, 2024 with Bun 1.1.0 Node.js v2
         kHighWaterMark: Symbol(kHighWaterMark),
         kUniqueHeaders: Symbol(kUniqueHeaders),
         parseUniqueHeadersOption: <ref *4> ƒ parseUniqueHeadersOption(length: 1) {},
-        validateHeaderName: <ref *5> ƒ __node_internal_(length: 2) {},
-        validateHeaderValue: <ref *6> ƒ __node_internal_(length: 2) {},
+        validateHeaderName: <ref *5> ƒ wrappedFn(length: 0) {
+            withoutStackTrace: ƒ (length: 2) {}
+        },
+        validateHeaderValue: <ref *7> ƒ wrappedFn(length: 0) {
+            withoutStackTrace: ƒ (length: 2) {}
+        },
         OutgoingMessage: [Circular: *2]
     },
     kHighWaterMark: Symbol(kHighWaterMark),
     kUniqueHeaders: Symbol(kUniqueHeaders),
     parseUniqueHeadersOption: [Circular: *4],
     validateHeaderName: [Circular: *5],
-    validateHeaderValue: [Circular: *6]
+    validateHeaderValue: [Circular: *7]
 }
 ```
 
@@ -2426,7 +2430,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 1, 2024 with Bun 1.1.0 Node.js v2
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2099) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2073) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -3547,8 +3551,7 @@ _Last updated on <!-- lastUpdated:start -->Apr 1, 2024 with Bun 1.1.0 Node.js v2
         SCRYPTREQUEST: 55,
         SIGNREQUEST: 56,
         TLSWRAP: 57,
-        VERIFYREQUEST: 58,
-        INSPECTORJSBINDING: 59
+        VERIFYREQUEST: 58
     },
     createHook: <ref *5> ƒ createHook(length: 1) {},
     default: {
@@ -5130,6 +5133,7 @@ Cluster {
         getFips: <ref *65> ƒ getFips(length: 0) {},
         setFips: <ref *66> ƒ setFips(length: 1) {},
         verify: <ref *67> ƒ verifyOneShot(length: 5) {},
+        hash: <ref *68> ƒ hash(length: 2) {},
         Certificate: [Circular: *2],
         Cipher: [Circular: *6],
         Cipheriv: [Circular: *7],
@@ -5144,11 +5148,11 @@ Cluster {
         Sign: [Circular: *17],
         Verify: [Circular: *18],
         X509Certificate: [Circular: *19],
-        secureHeapUsed: <ref *68> ƒ secureHeapUsed(length: 0) {},
+        secureHeapUsed: <ref *69> ƒ secureHeapUsed(length: 0) {},
         constants: [Circular: *22],
-        [get/set] webcrypto: <ref *69> Crypto {},
-        [get/set] subtle: <ref *70> SubtleCrypto {},
-        [get/set] getRandomValues: <ref *71> ƒ getRandomValues(length: 1) {}
+        [get/set] webcrypto: <ref *70> Crypto {},
+        [get/set] subtle: <ref *71> SubtleCrypto {},
+        [get/set] getRandomValues: <ref *72> ƒ getRandomValues(length: 1) {}
     },
     diffieHellman: [Circular: *36],
     generateKey: [Circular: *49],
@@ -5163,7 +5167,8 @@ Cluster {
     getDiffieHellman: [Circular: *26],
     getFips: [Circular: *65],
     getHashes: [Circular: *42],
-    getRandomValues: [Circular: *71],
+    getRandomValues: [Circular: *72],
+    hash: [Circular: *68],
     hkdf: [Circular: *43],
     hkdfSync: [Circular: *44],
     pbkdf2: [Circular: *45],
@@ -5179,14 +5184,14 @@ Cluster {
     randomUUID: [Circular: *59],
     scrypt: [Circular: *60],
     scryptSync: [Circular: *61],
-    secureHeapUsed: [Circular: *68],
+    secureHeapUsed: [Circular: *69],
     setEngine: [Circular: *63],
     setFips: [Circular: *66],
     sign: [Circular: *62],
-    subtle: [Circular: *70],
+    subtle: [Circular: *71],
     timingSafeEqual: [Circular: *64],
     verify: [Circular: *67],
-    webcrypto: [Circular: *69]
+    webcrypto: [Circular: *70]
 }
 ```
 
@@ -5205,11 +5210,11 @@ TypeError: Attempted to assign to readonly property.
       at Duplex (node:stream:3199:39)
       at Transform (node:stream:3257:45)
       at get (node:crypto:1294:23)
-      at inspect (/tmp/fs-fixture-1711930418698-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1711930418698-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1712535140027-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1712535140027-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1711930418698-1/inspect.mjs:80:20)
-      at /tmp/fs-fixture-1711930418698-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1712535140027-1/inspect.mjs:80:20)
+      at /tmp/fs-fixture-1712535140027-1/inspect.mjs:99:7
       at map (:1:21)
 ```
 
@@ -6953,13 +6958,17 @@ TypeError: Attempted to assign to readonly property.
         Server: [Circular: *8],
         ServerResponse: [Circular: *9],
         createServer: [Circular: *11],
-        validateHeaderName: <ref *13> ƒ __node_internal_(length: 2) {},
-        validateHeaderValue: <ref *14> ƒ __node_internal_(length: 2) {},
-        get: <ref *15> ƒ get(length: 3) {},
-        request: <ref *16> ƒ request(length: 3) {},
-        setMaxIdleHTTPParsers: <ref *17> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        validateHeaderName: <ref *13> ƒ wrappedFn(length: 0) {
+            withoutStackTrace: ƒ (length: 2) {}
+        },
+        validateHeaderValue: <ref *15> ƒ wrappedFn(length: 0) {
+            withoutStackTrace: ƒ (length: 2) {}
+        },
+        get: <ref *17> ƒ get(length: 3) {},
+        request: <ref *18> ƒ request(length: 3) {},
+        setMaxIdleHTTPParsers: <ref *19> ƒ setMaxIdleHTTPParsers(length: 1) {},
         [get/set] maxHeaderSize: 16384,
-        [get/set] globalAgent: <ref *18> Agent {
+        [get/set] globalAgent: <ref *20> Agent {
             _events: [Object: null prototype] {
                 free: ƒ (length: 2) {},
                 newListener: ƒ maybeEnableKeylog(length: 1) {}
@@ -6989,13 +6998,13 @@ TypeError: Attempted to assign to readonly property.
             Symbol(kCapture): false
         }
     },
-    get: [Circular: *15],
-    globalAgent: [Circular: *18],
+    get: [Circular: *17],
+    globalAgent: [Circular: *20],
     maxHeaderSize: 16384,
-    request: [Circular: *16],
-    setMaxIdleHTTPParsers: [Circular: *17],
+    request: [Circular: *18],
+    setMaxIdleHTTPParsers: [Circular: *19],
     validateHeaderName: [Circular: *13],
-    validateHeaderValue: [Circular: *14]
+    validateHeaderValue: [Circular: *15]
 }
 ```
 
@@ -7480,6 +7489,7 @@ TypeError: Attempted to assign to readonly property.
         getDefaultSettings: <ref *9> ƒ getDefaultSettings(length: 0) {},
         getPackedSettings: <ref *10> ƒ getPackedSettings(length: 1) {},
         getUnpackedSettings: <ref *11> ƒ getUnpackedSettings(length: 1) {},
+        performServerHandshake: <ref *12> ƒ performServerHandshake(length: 1) {},
         sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders),
         Http2ServerRequest: [Circular: *2],
         Http2ServerResponse: [Circular: *3]
@@ -7487,6 +7497,7 @@ TypeError: Attempted to assign to readonly property.
     getDefaultSettings: [Circular: *9],
     getPackedSettings: [Circular: *10],
     getUnpackedSettings: [Circular: *11],
+    performServerHandshake: [Circular: *12],
     sensitiveHeaders: Symbol(nodejs.http2.sensitiveHeaders)
 }
 ```
@@ -8364,7 +8375,7 @@ TypeError: Attempted to assign to readonly property.
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1711930418698-1/module.mjs: "/tmp/fs-fixture-1711930418698-1/module.mjs"
+            /tmp/fs-fixture-1712535140027-1/module.mjs: "/tmp/fs-fixture-1712535140027-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -8388,7 +8399,7 @@ TypeError: Attempted to assign to readonly property.
             "/home/runner/setup-pnpm/node_modules/pnpm/node_modules",
             "/home/runner/.node_modules",
             "/home/runner/.node_libraries",
-            "/opt/hostedtoolcache/node/20.11.1/x64/lib/node"
+            "/opt/hostedtoolcache/node/20.12.0/x64/lib/node"
         ],
         _debug: <ref *10> ƒ deprecated(length: 0) {},
         isBuiltin: <ref *11> ƒ isBuiltin(length: 1) {},
@@ -8526,13 +8537,13 @@ TypeError: Attempted to assign to readonly property.
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1711930418698-1/module.mjs: {
+            /tmp/fs-fixture-1712535140027-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1711930418698-1/inspect.mjs: {
+            /tmp/fs-fixture-1712535140027-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -8890,38 +8901,41 @@ TypeError: Attempted to assign to readonly property.
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
         getPriority: <ref *17> ƒ getPriority(length: 1) {},
-        homedir: <ref *18> ƒ __node_internal_checkError(length: 0) {
+        homedir: <ref *18> ƒ wrappedFn(length: 0) {
+            withoutStackTrace: ƒ checkError(length: 0) {},
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
-        hostname: <ref *20> ƒ __node_internal_checkError(length: 0) {
+        hostname: <ref *21> ƒ wrappedFn(length: 0) {
+            withoutStackTrace: ƒ checkError(length: 0) {},
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
-        loadavg: <ref *22> ƒ loadavg(length: 0) {},
-        networkInterfaces: <ref *23> ƒ networkInterfaces(length: 0) {},
-        platform: <ref *24> ƒ platform(length: 0) {
+        loadavg: <ref *24> ƒ loadavg(length: 0) {},
+        networkInterfaces: <ref *25> ƒ networkInterfaces(length: 0) {},
+        platform: <ref *26> ƒ platform(length: 0) {
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
-        release: <ref *26> ƒ getOSRelease(length: 0) {
+        release: <ref *28> ƒ getOSRelease(length: 0) {
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
-        setPriority: <ref *28> ƒ setPriority(length: 2) {},
-        tmpdir: <ref *29> ƒ tmpdir(length: 0) {
+        setPriority: <ref *30> ƒ setPriority(length: 2) {},
+        tmpdir: <ref *31> ƒ tmpdir(length: 0) {
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
-        totalmem: <ref *31> ƒ getTotalMem(length: 0) {
+        totalmem: <ref *33> ƒ getTotalMem(length: 0) {
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
-        type: <ref *33> ƒ getOSType(length: 0) {
+        type: <ref *35> ƒ getOSType(length: 0) {
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
-        userInfo: <ref *35> ƒ userInfo(length: 1) {},
-        uptime: <ref *36> ƒ __node_internal_checkError(length: 0) {
+        userInfo: <ref *37> ƒ userInfo(length: 1) {},
+        uptime: <ref *38> ƒ wrappedFn(length: 0) {
+            withoutStackTrace: ƒ checkError(length: 0) {},
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
-        version: <ref *38> ƒ getOSVersion(length: 0) {
+        version: <ref *41> ƒ getOSVersion(length: 0) {
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
-        machine: <ref *40> ƒ getMachine(length: 0) {
+        machine: <ref *43> ƒ getMachine(length: 0) {
             Symbol(Symbol.toPrimitive): ƒ (length: 0) {}
         },
         constants: [Circular: *6],
@@ -8933,19 +8947,19 @@ TypeError: Attempted to assign to readonly property.
     freemem: [Circular: *15],
     getPriority: [Circular: *17],
     homedir: [Circular: *18],
-    hostname: [Circular: *20],
-    loadavg: [Circular: *22],
-    machine: [Circular: *40],
-    networkInterfaces: [Circular: *23],
-    platform: [Circular: *24],
-    release: [Circular: *26],
-    setPriority: [Circular: *28],
-    tmpdir: [Circular: *29],
-    totalmem: [Circular: *31],
-    type: [Circular: *33],
-    uptime: [Circular: *36],
-    userInfo: [Circular: *35],
-    version: [Circular: *38]
+    hostname: [Circular: *21],
+    loadavg: [Circular: *24],
+    machine: [Circular: *43],
+    networkInterfaces: [Circular: *25],
+    platform: [Circular: *26],
+    release: [Circular: *28],
+    setPriority: [Circular: *30],
+    tmpdir: [Circular: *31],
+    totalmem: [Circular: *33],
+    type: [Circular: *35],
+    uptime: [Circular: *38],
+    userInfo: [Circular: *37],
+    version: [Circular: *41]
 }
 ```
 
@@ -9591,14 +9605,14 @@ TypeError: Attempted to assign to readonly property.
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1711930419734.1128,
+            timeOrigin: 1712535141031.487,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: undefined,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1711930419734.1128,
-                nodeStart: 1711930419734.1128,
-                environment: 1711930419734.1128,
-                bootstrapComplete: 1711930419734.1128,
+                v8Start: 1712535141031.487,
+                nodeStart: 1712535141031.487,
+                environment: 1712535141031.487,
+                bootstrapComplete: 1712535141031.487,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -9657,9 +9671,6 @@ TypeError: Attempted to assign to readonly property.
     allowedNodeEnvironmentFlags: <ref *20> NodeEnvironmentFlagsSet {
         Symbol(internal properties): {
             array: [
-                "--preserve-symlinks-main",
-                "--no-preserve-symlinks-main",
-                "--allow-fs-write",
                 "--tls-max-v1.3",
                 "--no-tls-max-v1.3",
                 "--pending-deprecation",
@@ -9702,11 +9713,14 @@ TypeError: Attempted to assign to readonly property.
                 "--experimental-wasi-unstable-preview1",
                 "--input-type",
                 "--jitless",
-                "--experimental-repl-await",
-                "--no-experimental-repl-await",
-                "--stack-trace-limit",
-                "--extra-info-on-fatal-exception",
-                "--no-extra-info-on-fatal-exception",
+                "--enable-source-maps",
+                "--no-enable-source-maps",
+                "--http-parser",
+                "--experimental-fetch",
+                "--no-experimental-fetch",
+                "--experimental-policy",
+                "--track-heap-objects",
+                "--no-track-heap-objects",
                 "--watch",
                 "--no-watch",
                 "--experimental-default-type",
@@ -9718,6 +9732,9 @@ TypeError: Attempted to assign to readonly property.
                 "--no-throw-deprecation",
                 "--experimental-vm-modules",
                 "--no-experimental-vm-modules",
+                "--preserve-symlinks-main",
+                "--no-preserve-symlinks-main",
+                "--allow-fs-write",
                 "--global-search-paths",
                 "--no-global-search-paths",
                 "--experimental-global-customevent",
@@ -9732,6 +9749,7 @@ TypeError: Attempted to assign to readonly property.
                 "--no-zero-fill-buffers",
                 "--require",
                 "--experimental-top-level-await",
+                "--napi-modules",
                 "--openssl-legacy-provider",
                 "--no-openssl-legacy-provider",
                 "--v8-pool-size",
@@ -9739,10 +9757,10 @@ TypeError: Attempted to assign to readonly property.
                 "--no-force-fips",
                 "--experimental-shadow-realm",
                 "--no-experimental-shadow-realm",
-                "--preserve-symlinks",
-                "--no-preserve-symlinks",
                 "--experimental-global-webcrypto",
                 "--no-experimental-global-webcrypto",
+                "--preserve-symlinks",
+                "--no-preserve-symlinks",
                 "--secure-heap-min",
                 "--abort-on-uncaught-exception",
                 "--trace-event-categories",
@@ -9755,16 +9773,11 @@ TypeError: Attempted to assign to readonly property.
                 "--node-snapshot",
                 "--no-node-snapshot",
                 "--icu-data-dir",
-                "--trace-uncaught",
-                "--no-trace-uncaught",
-                "--openssl-config",
                 "--experimental-abortcontroller",
                 "--report-filename",
                 "--experimental-permission",
                 "--no-experimental-permission",
                 "--interpreted-frames-native-stack",
-                "--experimental-import-meta-resolve",
-                "--no-experimental-import-meta-resolve",
                 "--experimental-worker",
                 "--use-bundled-ca",
                 "--no-use-bundled-ca",
@@ -9773,6 +9786,14 @@ TypeError: Attempted to assign to readonly property.
                 "--test-reporter",
                 "--secure-heap",
                 "--experimental-loader",
+                "--extra-info-on-fatal-exception",
+                "--no-extra-info-on-fatal-exception",
+                "--stack-trace-limit",
+                "--openssl-config",
+                "--trace-uncaught",
+                "--no-trace-uncaught",
+                "--experimental-repl-await",
+                "--no-experimental-repl-await",
                 "--trace-tls",
                 "--no-trace-tls",
                 "--tls-max-v1.2",
@@ -9809,7 +9830,10 @@ TypeError: Attempted to assign to readonly property.
                 "--inspect-brk",
                 "--no-inspect-brk",
                 "--inspect-publish-uid",
-                "--napi-modules",
+                "--trace-promises",
+                "--no-trace-promises",
+                "--experimental-import-meta-resolve",
+                "--no-experimental-import-meta-resolve",
                 "--experimental-modules",
                 "--experimental-report",
                 "--allow-child-process",
@@ -9817,6 +9841,8 @@ TypeError: Attempted to assign to readonly property.
                 "--allow-fs-read",
                 "--verify-base-objects",
                 "--no-verify-base-objects",
+                "--allow-addons",
+                "--no-allow-addons",
                 "--trace-atomics-wait",
                 "--no-trace-atomics-wait",
                 "--policy-integrity",
@@ -9835,20 +9861,12 @@ TypeError: Attempted to assign to readonly property.
                 "--experimental-wasm-modules",
                 "--no-experimental-wasm-modules",
                 "--inspect-port",
-                "--enable-fips",
-                "--no-enable-fips",
                 "--experimental-websocket",
                 "--no-experimental-websocket",
+                "--enable-fips",
+                "--no-enable-fips",
                 "--tls-min-v1.3",
                 "--no-tls-min-v1.3",
-                "--experimental-policy",
-                "--track-heap-objects",
-                "--no-track-heap-objects",
-                "--experimental-fetch",
-                "--no-experimental-fetch",
-                "--http-parser",
-                "--enable-source-maps",
-                "--no-enable-source-maps",
                 "--debug-port",
                 "--inspect",
                 "--inspect-brk",
@@ -9865,8 +9883,8 @@ TypeError: Attempted to assign to readonly property.
     },
     arch: "x64",
     argv: <ref *23> [
-        "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
-        "/tmp/fs-fixture-1711930418698-1/process.mjs"
+        "/opt/hostedtoolcache/node/20.12.0/x64/bin/node",
+        "/tmp/fs-fixture-1712535140027-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -9897,12 +9915,12 @@ TypeError: Attempted to assign to readonly property.
             force_dynamic_crt: 0,
             gas_version: "2.35",
             host_arch: "x64",
-            icu_data_in: "../../deps/icu-tmp/icudt73l.dat",
+            icu_data_in: "../../deps/icu-tmp/icudt74l.dat",
             icu_endianness: "l",
             icu_gyp_path: "tools/icu/icu-generic.gyp",
             icu_path: "deps/icu-small",
             icu_small: false,
-            icu_ver_major: "73",
+            icu_ver_major: "74",
             is_debug: 0,
             libdir: "lib",
             llvm_version: "0.0",
@@ -10213,6 +10231,7 @@ TypeError: Attempted to assign to readonly property.
                 "lib/readline.js",
                 "lib/readline/promises.js",
                 "lib/repl.js",
+                "lib/sea.js",
                 "lib/stream.js",
                 "lib/stream/consumers.js",
                 "lib/stream/promises.js",
@@ -10266,6 +10285,7 @@ TypeError: Attempted to assign to readonly property.
             shlib_suffix: "so.115",
             single_executable_application: true,
             target_arch: "x64",
+            use_prefix_to_find_headers: false,
             v8_enable_31bit_smis_on_64bit_arch: 0,
             v8_enable_extensible_ro_snapshot: 0,
             v8_enable_gdbjit: 0,
@@ -10295,44 +10315,45 @@ TypeError: Attempted to assign to readonly property.
     cwd: <ref *38> ƒ wrappedCwd(length: 0) {},
     debugPort: 9229,
     default: process {
-        version: "v20.11.1",
+        version: "v20.12.0",
         versions: <ref *40> {
-            node: "20.11.1",
-            acorn: "8.11.2",
-            ada: "2.7.4",
-            ares: "1.20.1",
-            base64: "0.5.1",
-            brotli: "1.0.9",
+            node: "20.12.0",
+            acorn: "8.11.3",
+            ada: "2.7.6",
+            ares: "1.27.0",
+            base64: "0.5.2",
+            brotli: "1.1.0",
             cjs_module_lexer: "1.2.2",
-            cldr: "43.1",
-            icu: "73.2",
+            cldr: "44.1",
+            icu: "74.2",
             llhttp: "8.1.1",
             modules: "115",
             napi: "9",
-            nghttp2: "1.58.0",
+            nghttp2: "1.60.0",
             nghttp3: "0.7.0",
             ngtcp2: "0.8.1",
             openssl: "3.0.13+quic",
-            simdutf: "4.0.4",
-            tz: "2023c",
+            simdutf: "4.0.8",
+            tz: "2024a",
             undici: "5.28.3",
-            unicode: "15.0",
+            unicode: "15.1",
             uv: "1.46.0",
-            uvwasi: "0.0.19",
-            v8: "11.3.244.8-node.17",
-            zlib: "1.2.13.1-motley-5daffc7"
+            uvwasi: "0.0.20",
+            v8: "11.3.244.8-node.19",
+            zlib: "1.3.0.1-motley-40e35a7"
         },
         arch: "x64",
         platform: "linux",
         release: <ref *41> {
             name: "node",
             lts: "Iron",
-            sourceUrl: "https://nodejs.org/download/release/v20.11.1/node-v20.11.1.tar.gz",
-            headersUrl: "https://nodejs.org/download/release/v20.11.1/node-v20.11.1-headers.tar.gz"
+            sourceUrl: "https://nodejs.org/download/release/v20.12.0/node-v20.12.0.tar.gz",
+            headersUrl: "https://nodejs.org/download/release/v20.12.0/node-v20.12.0-headers.tar.gz"
         },
         _rawDebug: [Circular: *15],
         moduleLoadList: <ref *42> [
             "Internal Binding builtins",
+            "Internal Binding module_wrap",
             "Internal Binding errors",
             "NativeModule internal/assert",
             "Internal Binding util",
@@ -10347,6 +10368,7 @@ TypeError: Attempted to assign to readonly property.
             "Internal Binding types",
             "Internal Binding options",
             "NativeModule internal/options",
+            "Internal Binding string_decoder",
             "NativeModule internal/util",
             "NativeModule internal/util/types",
             "NativeModule internal/validators",
@@ -10358,11 +10380,20 @@ TypeError: Attempted to assign to readonly property.
             "NativeModule internal/timers",
             "NativeModule events",
             "Internal Binding buffer",
-            "Internal Binding string_decoder",
             "NativeModule internal/buffer",
             "NativeModule buffer",
             "Internal Binding messaging",
             "NativeModule internal/worker/js_transferable",
+            "Internal Binding permission",
+            "NativeModule internal/constants",
+            "NativeModule path",
+            "NativeModule internal/process/permission",
+            "NativeModule internal/querystring",
+            "NativeModule querystring",
+            "Internal Binding url",
+            "NativeModule internal/url",
+            "Internal Binding encoding_binding",
+            "NativeModule internal/fs/utils",
             "Internal Binding process_methods",
             "NativeModule internal/process/per_thread",
             "Internal Binding credentials",
@@ -10372,21 +10403,13 @@ TypeError: Attempted to assign to readonly property.
             "NativeModule internal/process/task_queues",
             "NativeModule timers",
             "Internal Binding trace_events",
-            "NativeModule internal/constants",
-            "NativeModule path",
             "Internal Binding contextify",
             "NativeModule internal/vm",
             "NativeModule internal/process/execution",
             "NativeModule internal/process/warning",
-            "NativeModule internal/querystring",
-            "NativeModule querystring",
-            "Internal Binding url",
-            "NativeModule internal/url",
             "NativeModule internal/source_map/source_map_cache",
             "NativeModule internal/console/constructor",
             "NativeModule internal/console/global",
-            "Internal Binding permission",
-            "NativeModule internal/process/permission",
             "NativeModule internal/util/inspector",
             "Internal Binding inspector",
             "NativeModule util",
@@ -10395,28 +10418,24 @@ TypeError: Attempted to assign to readonly property.
             "NativeModule internal/perf/utils",
             "NativeModule internal/event_target",
             "Internal Binding blob",
+            "Internal Binding wasm_web_api",
             "Internal Binding mksnapshot",
             "NativeModule internal/v8/startup_snapshot",
             "NativeModule internal/process/signal",
             "Internal Binding fs",
-            "Internal Binding encoding_binding",
             "NativeModule internal/encoding",
             "NativeModule internal/webstreams/util",
             "NativeModule internal/webstreams/queuingstrategies",
             "NativeModule internal/blob",
-            "NativeModule internal/fs/utils",
             "NativeModule fs",
             "NativeModule internal/idna",
             "NativeModule url",
             "NativeModule internal/modules/helpers",
             "NativeModule internal/modules/package_json_reader",
-            "Internal Binding module_wrap",
             "NativeModule internal/modules/cjs/loader",
             "NativeModule internal/process/pre_execution",
             "NativeModule internal/modules/esm/utils",
-            "NativeModule internal/vm/module",
             "NativeModule internal/inspector_async_hook",
-            "Internal Binding wasm_web_api",
             "Internal Binding worker",
             "NativeModule internal/modules/run_main",
             "NativeModule internal/net",
@@ -10433,7 +10452,6 @@ TypeError: Attempted to assign to readonly property.
             "NativeModule internal/modules/esm/handle_process_exit",
             "NativeModule internal/modules/esm/module_job",
             "NativeModule internal/modules/esm/load",
-            "NativeModule internal/fs/rimraf",
             "Internal Binding fs_dir",
             "NativeModule internal/fs/dir",
             "NativeModule string_decoder",
@@ -10491,26 +10509,27 @@ TypeError: Attempted to assign to readonly property.
         getActiveResourcesInfo: <ref *45> ƒ getActiveResourcesInfo(length: 0) {},
         reallyExit: <ref *46> ƒ reallyExit(length: 0) {},
         _kill: [Circular: *12],
+        loadEnvFile: <ref *47> ƒ loadEnvFile(length: 0) {},
         cpuUsage: [Circular: *37],
-        resourceUsage: <ref *47> ƒ resourceUsage(length: 0) {},
-        memoryUsage: <ref *48> ƒ memoryUsage(length: 0) {
+        resourceUsage: <ref *48> ƒ resourceUsage(length: 0) {},
+        memoryUsage: <ref *49> ƒ memoryUsage(length: 0) {
             rss: ƒ rss(length: 0) {}
         },
         constrainedMemory: [Circular: *36],
-        kill: <ref *50> ƒ kill(length: 2) {},
-        exit: <ref *51> ƒ exit(length: 1) {},
-        hrtime: <ref *52> ƒ hrtime(length: 1) {
+        kill: <ref *51> ƒ kill(length: 2) {},
+        exit: <ref *52> ƒ exit(length: 1) {},
+        hrtime: <ref *53> ƒ hrtime(length: 1) {
             bigint: ƒ hrtimeBigInt(length: 0) {}
         },
-        openStdin: <ref *54> ƒ (length: 0) {},
-        getuid: <ref *55> ƒ getuid(length: 0) {},
-        geteuid: <ref *56> ƒ geteuid(length: 0) {},
-        getgid: <ref *57> ƒ getgid(length: 0) {},
-        getegid: <ref *58> ƒ getegid(length: 0) {},
-        getgroups: <ref *59> ƒ getgroups(length: 0) {},
+        openStdin: <ref *55> ƒ (length: 0) {},
+        getuid: <ref *56> ƒ getuid(length: 0) {},
+        geteuid: <ref *57> ƒ geteuid(length: 0) {},
+        getgid: <ref *58> ƒ getgid(length: 0) {},
+        getegid: <ref *59> ƒ getegid(length: 0) {},
+        getgroups: <ref *60> ƒ getgroups(length: 0) {},
         allowedNodeEnvironmentFlags: [Circular: *20],
         assert: [Circular: *24],
-        features: <ref *60> {
+        features: <ref *61> {
             inspector: true,
             debug: false,
             uv: true,
@@ -10522,18 +10541,18 @@ TypeError: Attempted to assign to readonly property.
             [get/set] cached_builtins: true
         },
         _fatalException: [Circular: *9],
-        setUncaughtExceptionCaptureCallback: <ref *61> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
-        hasUncaughtExceptionCaptureCallback: <ref *62> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
-        emitWarning: <ref *63> ƒ emitWarning(length: 4) {},
-        nextTick: <ref *64> ƒ nextTick(length: 1) {},
+        setUncaughtExceptionCaptureCallback: <ref *62> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
+        hasUncaughtExceptionCaptureCallback: <ref *63> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
+        emitWarning: <ref *64> ƒ emitWarning(length: 4) {},
+        nextTick: <ref *65> ƒ nextTick(length: 1) {},
         _tickCallback: [Circular: *18],
         [get/set] sourceMapsEnabled: false,
-        setSourceMapsEnabled: <ref *65> ƒ setSourceMapsEnabled(length: 1) {},
+        setSourceMapsEnabled: <ref *66> ƒ setSourceMapsEnabled(length: 1) {},
         _debugProcess: [Circular: *3],
         _debugEnd: [Circular: *2],
         _startProfilerIdleNotifier: [Circular: *16],
         _stopProfilerIdleNotifier: [Circular: *17],
-        [get/set] stdout: <ref *66> Socket {
+        [get/set] stdout: <ref *67> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -10546,7 +10565,7 @@ TypeError: Attempted to assign to readonly property.
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: <ref *68> ƒ onReadableStreamEnd(length: 0) {},
+                end: <ref *69> ƒ onReadableStreamEnd(length: 0) {},
                 readable: undefined
             },
             _readableState: ReadableState {
@@ -10581,11 +10600,11 @@ TypeError: Attempted to assign to readonly property.
             _type: "pipe",
             fd: 1,
             _isStdio: true,
-            destroySoon: <ref *74> ƒ destroy(length: 2) {},
-            _destroy: <ref *75> ƒ dummyDestroy(length: 2) {},
+            destroySoon: <ref *75> ƒ destroy(length: 2) {},
+            _destroy: <ref *76> ƒ dummyDestroy(length: 2) {},
             Symbol(async_id_symbol): 8,
             Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *66]
+                Symbol(owner_symbol): [Circular: *67]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -10600,7 +10619,7 @@ TypeError: Attempted to assign to readonly property.
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        [get/set] stdin: <ref *77> Socket {
+        [get/set] stdin: <ref *78> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -10613,7 +10632,7 @@ TypeError: Attempted to assign to readonly property.
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: [Circular: *68],
+                end: [Circular: *69],
                 readable: undefined,
                 pause: ƒ (length: 0) {}
             },
@@ -10649,7 +10668,7 @@ TypeError: Attempted to assign to readonly property.
             Symbol(async_id_symbol): 9,
             Symbol(kHandle): Pipe {
                 reading: false,
-                Symbol(owner_symbol): [Circular: *77]
+                Symbol(owner_symbol): [Circular: *78]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -10664,7 +10683,7 @@ TypeError: Attempted to assign to readonly property.
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        [get/set] stderr: <ref *86> Socket {
+        [get/set] stderr: <ref *87> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -10677,7 +10696,7 @@ TypeError: Attempted to assign to readonly property.
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: [Circular: *68],
+                end: [Circular: *69],
                 readable: undefined
             },
             _readableState: ReadableState {
@@ -10712,11 +10731,11 @@ TypeError: Attempted to assign to readonly property.
             _type: "pipe",
             fd: 2,
             _isStdio: true,
-            destroySoon: [Circular: *74],
-            _destroy: [Circular: *75],
+            destroySoon: [Circular: *75],
+            _destroy: [Circular: *76],
             Symbol(async_id_symbol): 10,
             Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *86]
+                Symbol(owner_symbol): [Circular: *87]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -10732,29 +10751,29 @@ TypeError: Attempted to assign to readonly property.
             Symbol(kBytesWritten): 0
         },
         abort: [Circular: *19],
-        umask: <ref *94> ƒ wrappedUmask(length: 1) {},
+        umask: <ref *95> ƒ wrappedUmask(length: 1) {},
         chdir: [Circular: *26],
         cwd: [Circular: *38],
-        initgroups: <ref *95> ƒ initgroups(length: 2) {},
-        setgroups: <ref *96> ƒ setgroups(length: 1) {},
-        setegid: <ref *97> ƒ (length: 1) {},
-        seteuid: <ref *98> ƒ (length: 1) {},
-        setgid: <ref *99> ƒ (length: 1) {},
-        setuid: <ref *100> ƒ (length: 1) {},
-        env: <ref *101>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_03119205-42f9-4245-9b55-7e8dbc76f2c4",
+        initgroups: <ref *96> ƒ initgroups(length: 2) {},
+        setgroups: <ref *97> ƒ setgroups(length: 1) {},
+        setegid: <ref *98> ƒ (length: 1) {},
+        seteuid: <ref *99> ƒ (length: 1) {},
+        setgid: <ref *100> ƒ (length: 1) {},
+        setuid: <ref *101> ƒ (length: 1) {},
+        env: <ref *102>  {
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_bdfd5a33-0d4f-4321-94e1-8c897f08aa64",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.11.1 linux x64",
+            npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.12.0 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_03119205-42f9-4245-9b55-7e8dbc76f2c4",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_bdfd5a33-0d4f-4321-94e1-8c897f08aa64",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
-            npm_node_execpath: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
+            npm_node_execpath: "/opt/hostedtoolcache/node/20.12.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             SHLVL: "1",
             HOME: "/home/runner",
@@ -10773,14 +10792,14 @@ TypeError: Attempted to assign to readonly property.
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "607",
+            SYSTEMD_EXEC_PID: "592",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.8/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20240324.2.0",
+            ImageVersion: "20240403.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -10789,21 +10808,22 @@ TypeError: Attempted to assign to readonly property.
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:20581",
+            JOURNAL_STREAM: "8:3028",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
-            GITHUB_RUN_ID: "8501868976",
+            STATS_D: "false",
+            GITHUB_RUN_ID: "8592586504",
+            STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "93db281d3cba996f29d7447a20030cb817f43b02",
+            GITHUB_WORKFLOW_SHA: "ae9c74a0beccbfa4252ead2d3ab4f8b07f19617d",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
-            STATS_BLT: "true",
             GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
             PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             GITHUB_ACTION_REPOSITORY: "",
@@ -10811,12 +10831,12 @@ TypeError: Attempted to assign to readonly property.
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_7960818f-9113-4c14-887c-9a96fa3d8e17",
-            INVOCATION_ID: "d3c94666af804717a0b14e528d0f7495",
+            RUNNER_TRACKING_ID: "github_9bb16b55-ad97-4946-8611-1af36c6a896f",
+            INVOCATION_ID: "f0e4d6dffe4f45ccb8bc83fb4ad16706",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            NODE: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
+            NODE: "/opt/hostedtoolcache/node/20.12.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "69",
+            GITHUB_RUN_NUMBER: "70",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10826,11 +10846,12 @@ TypeError: Attempted to assign to readonly property.
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             npm_package_devDependencies_eslint: "^8.37.0",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 8",
+            RUNNER_NAME: "GitHub Actions 18",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
+            STATS_D_D: "false",
             npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
             npm_lifecycle_script: "tsx index.ts",
             STATS_UE: "true",
@@ -10850,7 +10871,7 @@ TypeError: Attempted to assign to readonly property.
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "93db281d3cba996f29d7447a20030cb817f43b02",
+            GITHUB_SHA: "ae9c74a0beccbfa4252ead2d3ab4f8b07f19617d",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -10858,7 +10879,7 @@ TypeError: Attempted to assign to readonly property.
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_03119205-42f9-4245-9b55-7e8dbc76f2c4",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_bdfd5a33-0d4f-4321-94e1-8c897f08aa64",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -10873,7 +10894,7 @@ TypeError: Attempted to assign to readonly property.
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_03119205-42f9-4245-9b55-7e8dbc76f2c4",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_bdfd5a33-0d4f-4321-94e1-8c897f08aa64",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -10883,23 +10904,23 @@ TypeError: Attempted to assign to readonly property.
             CHROME_BIN: "/usr/bin/google-chrome",
             SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-            STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.169+2/provjobd.data",
+            STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.172+1/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_03119205-42f9-4245-9b55-7e8dbc76f2c4",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_bdfd5a33-0d4f-4321-94e1-8c897f08aa64",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
-        execArgv: <ref *102> [],
-        pid: 2768,
-        ppid: 1900,
-        execPath: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
+        execArgv: <ref *103> [],
+        pid: 2739,
+        ppid: 1866,
+        execPath: "/opt/hostedtoolcache/node/20.12.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
         _preload_modules: [Circular: *14],
-        [get/set] report: <ref *103> {
+        [get/set] report: <ref *104> {
             writeReport: ƒ writeReport(length: 2) {},
             getReport: ƒ getReport(length: 1) {},
             [get/set] directory: "",
@@ -10915,49 +10936,50 @@ TypeError: Attempted to assign to readonly property.
     },
     dlopen: [Circular: *43],
     domain: null,
-    emitWarning: [Circular: *63],
-    env: [Circular: *101],
-    execArgv: [Circular: *102],
-    execPath: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
-    exit: [Circular: *51],
+    emitWarning: [Circular: *64],
+    env: [Circular: *102],
+    execArgv: [Circular: *103],
+    execPath: "/opt/hostedtoolcache/node/20.12.0/x64/bin/node",
+    exit: [Circular: *52],
     exitCode: undefined,
-    features: [Circular: *60],
+    features: [Circular: *61],
     getActiveResourcesInfo: [Circular: *45],
-    getegid: [Circular: *58],
-    geteuid: [Circular: *56],
-    getgid: [Circular: *57],
-    getgroups: [Circular: *59],
-    getuid: [Circular: *55],
-    hasUncaughtExceptionCaptureCallback: [Circular: *62],
-    hrtime: [Circular: *52],
-    initgroups: [Circular: *95],
-    kill: [Circular: *50],
-    memoryUsage: [Circular: *48],
+    getegid: [Circular: *59],
+    geteuid: [Circular: *57],
+    getgid: [Circular: *58],
+    getgroups: [Circular: *60],
+    getuid: [Circular: *56],
+    hasUncaughtExceptionCaptureCallback: [Circular: *63],
+    hrtime: [Circular: *53],
+    initgroups: [Circular: *96],
+    kill: [Circular: *51],
+    loadEnvFile: [Circular: *47],
+    memoryUsage: [Circular: *49],
     moduleLoadList: [Circular: *42],
-    nextTick: [Circular: *64],
-    openStdin: [Circular: *54],
-    pid: 2768,
+    nextTick: [Circular: *65],
+    openStdin: [Circular: *55],
+    pid: 2739,
     platform: "linux",
-    ppid: 1900,
+    ppid: 1866,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
-    report: [Circular: *103],
-    resourceUsage: [Circular: *47],
-    setSourceMapsEnabled: [Circular: *65],
-    setUncaughtExceptionCaptureCallback: [Circular: *61],
-    setegid: [Circular: *97],
-    seteuid: [Circular: *98],
-    setgid: [Circular: *99],
-    setgroups: [Circular: *96],
-    setuid: [Circular: *100],
+    report: [Circular: *104],
+    resourceUsage: [Circular: *48],
+    setSourceMapsEnabled: [Circular: *66],
+    setUncaughtExceptionCaptureCallback: [Circular: *62],
+    setegid: [Circular: *98],
+    seteuid: [Circular: *99],
+    setgid: [Circular: *100],
+    setgroups: [Circular: *97],
+    setuid: [Circular: *101],
     sourceMapsEnabled: false,
-    stderr: [Circular: *86],
-    stdin: [Circular: *77],
-    stdout: [Circular: *66],
+    stderr: [Circular: *87],
+    stdin: [Circular: *78],
+    stdout: [Circular: *67],
     title: "node",
-    umask: [Circular: *94],
+    umask: [Circular: *95],
     uptime: [Circular: *44],
-    version: "v20.11.1",
+    version: "v20.12.0",
     versions: [Circular: *40]
 }
 ```
@@ -10984,7 +11006,7 @@ TypeError: Attempted to assign to readonly property.
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1711930418698-1/process.mjs"
+        "/tmp/fs-fixture-1712535140027-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -11022,19 +11044,19 @@ TypeError: Attempted to assign to readonly property.
         dlopen: <ref *28> ƒ dlopen(length: 1) {},
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_03119205-42f9-4245-9b55-7e8dbc76f2c4",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_bdfd5a33-0d4f-4321-94e1-8c897f08aa64",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
             [get/set] DOTNET_NOLOGO: "1",
             [get/set] USER: "runner",
-            [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.11.1 linux x64",
+            [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.12.0 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_03119205-42f9-4245-9b55-7e8dbc76f2c4",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_bdfd5a33-0d4f-4321-94e1-8c897f08aa64",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_package_devDependencies_execa: "^7.1.1",
-            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
+            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.12.0/x64/bin/node",
             [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             [get/set] SHLVL: "1",
             [get/set] HOME: "/home/runner",
@@ -11053,14 +11075,14 @@ TypeError: Attempted to assign to readonly property.
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "607",
+            [get/set] SYSTEMD_EXEC_PID: "592",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.8/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20240324.2.0",
+            [get/set] ImageVersion: "20240403.1.0",
             [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
@@ -11069,21 +11091,22 @@ TypeError: Attempted to assign to readonly property.
             [get/set] RUNNER_USER: "runner",
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] JOURNAL_STREAM: "8:20581",
+            [get/set] JOURNAL_STREAM: "8:3028",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
             [get/set] npm_package_scripts_lint: "eslint --cache .",
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
-            [get/set] GITHUB_RUN_ID: "8501868976",
+            [get/set] STATS_D: "false",
+            [get/set] GITHUB_RUN_ID: "8592586504",
+            [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "93db281d3cba996f29d7447a20030cb817f43b02",
+            [get/set] GITHUB_WORKFLOW_SHA: "ae9c74a0beccbfa4252ead2d3ab4f8b07f19617d",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu22",
             [get/set] npm_package_scripts_start: "tsx index.ts",
-            [get/set] STATS_BLT: "true",
             [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
             [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             [get/set] GITHUB_ACTION_REPOSITORY: "",
@@ -11091,12 +11114,12 @@ TypeError: Attempted to assign to readonly property.
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_7960818f-9113-4c14-887c-9a96fa3d8e17",
-            [get/set] INVOCATION_ID: "d3c94666af804717a0b14e528d0f7495",
+            [get/set] RUNNER_TRACKING_ID: "github_9bb16b55-ad97-4946-8611-1af36c6a896f",
+            [get/set] INVOCATION_ID: "f0e4d6dffe4f45ccb8bc83fb4ad16706",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            [get/set] NODE: "/opt/hostedtoolcache/node/20.11.1/x64/bin/node",
+            [get/set] NODE: "/opt/hostedtoolcache/node/20.12.0/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "69",
+            [get/set] GITHUB_RUN_NUMBER: "70",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11106,11 +11129,12 @@ TypeError: Attempted to assign to readonly property.
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] npm_package_devDependencies_eslint: "^8.37.0",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 8",
+            [get/set] RUNNER_NAME: "GitHub Actions 18",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
             [get/set] GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
+            [get/set] STATS_D_D: "false",
             [get/set] npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
             [get/set] npm_lifecycle_script: "tsx index.ts",
             [get/set] STATS_UE: "true",
@@ -11130,7 +11154,7 @@ TypeError: Attempted to assign to readonly property.
             [get/set] GITHUB_JOB: "build",
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] GITHUB_SHA: "93db281d3cba996f29d7447a20030cb817f43b02",
+            [get/set] GITHUB_SHA: "ae9c74a0beccbfa4252ead2d3ab4f8b07f19617d",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] GITHUB_REF: "refs/heads/master",
             [get/set] GITHUB_ACTOR: "privatenumber",
@@ -11138,7 +11162,7 @@ TypeError: Attempted to assign to readonly property.
             [get/set] npm_package_license: "MIT",
             [get/set] LEIN_HOME: "/usr/local/lib/lein",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_03119205-42f9-4245-9b55-7e8dbc76f2c4",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_bdfd5a33-0d4f-4321-94e1-8c897f08aa64",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -11153,7 +11177,7 @@ TypeError: Attempted to assign to readonly property.
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_03119205-42f9-4245-9b55-7e8dbc76f2c4",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_bdfd5a33-0d4f-4321-94e1-8c897f08aa64",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -11163,10 +11187,10 @@ TypeError: Attempted to assign to readonly property.
             [get/set] CHROME_BIN: "/usr/bin/google-chrome",
             [get/set] SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
             [get/set] PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-            [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.169+2/provjobd.data",
+            [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.172+1/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_03119205-42f9-4245-9b55-7e8dbc76f2c4",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_bdfd5a33-0d4f-4321-94e1-8c897f08aa64",
             [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
@@ -11198,14 +11222,14 @@ TypeError: Attempted to assign to readonly property.
         moduleLoadList: <ref *40> [],
         nextTick: <ref *41> ƒ nextTick(length: 2) {},
         openStdin: <ref *42> ƒ openStdin(length: 0) {},
-        pid: 2777,
+        pid: 2744,
         platform: "linux",
-        ppid: 1900,
+        ppid: 1866,
         reallyExit: <ref *43> ƒ reallyExit(length: 1) {},
         release: <ref *44> {
             name: "node",
             lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.0/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.2/bun-linux-x64-baseline.zip",
             headersUrl: "",
             libUrl: ""
         },
@@ -11215,7 +11239,7 @@ TypeError: Attempted to assign to readonly property.
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "f02752577bb893e0b18280c98dddbd231fd871ff",
+        revision: "d615c11a57589991206a932d27c35eee0edf08c5",
         setSourceMapsEnabled: <ref *48> ƒ setSourceMapsEnabled(length: 1) {},
         send: undefined,
         stderr: <ref *49> Writable {
@@ -11371,20 +11395,20 @@ TypeError: Attempted to assign to readonly property.
         version: "v21.6.0",
         versions: <ref *82> {
             node: "21.6.0",
-            bun: "1.1.0",
+            bun: "1.1.2",
             webkit: "a780bdf0255ae1a7ed15e4b3f31c14af705facae",
             boringssl: "b275c5ce1c88bc06f5a967026d3c0ce1df2be815",
             openssl: "1.1.0",
             libarchive: "dc321febde83dd0f31158e1be61a7aedda65e7a2",
             mimalloc: "7968d4285043401bb36573374710d47a4081a063",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "f02752577bb893e0b18280c98dddbd231fd871ff",
+            uwebsockets: "d615c11a57589991206a932d27c35eee0edf08c5",
             zig: "0.12.0-dev.1828+225fe6ddb",
             zlib: "885674026394870b7e7a05b7bf1ec5eb7bd8a9c0",
             tinycc: "2d3ad9e0d32194ad7fd867b66ebe218dcc8cb5cd",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "0e7a5dee0fbb04080750cf6eabbe89d8bae87faa",
-            usockets: "f02752577bb893e0b18280c98dddbd231fd871ff",
+            usockets: "d615c11a57589991206a932d27c35eee0edf08c5",
             v8: "11.3.244.8-node.15",
             uv: "1.46.0",
             napi: "9",
@@ -11440,9 +11464,9 @@ TypeError: Attempted to assign to readonly property.
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *42],
-    pid: 2777,
+    pid: 2744,
     platform: "linux",
-    ppid: 1900,
+    ppid: 1866,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -11451,7 +11475,7 @@ TypeError: Attempted to assign to readonly property.
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *45],
-    revision: "f02752577bb893e0b18280c98dddbd231fd871ff",
+    revision: "d615c11a57589991206a932d27c35eee0edf08c5",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *48],
@@ -11819,13 +11843,13 @@ NotImplementedError: node:repl is not yet implemented in Bun.
       at new NotImplementedError (internal:shared:19:27)
       at internal:shared:2:69
       at get (node:repl:76:15)
-      at inspect (/tmp/fs-fixture-1711930418698-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1711930418698-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1712535140027-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1712535140027-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1711930418698-1/inspect.mjs:80:20)
-      at /tmp/fs-fixture-1711930418698-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1712535140027-1/inspect.mjs:80:20)
+      at /tmp/fs-fixture-1712535140027-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1711930418698-1/inspect.mjs:80:20)
+      at inspect (/tmp/fs-fixture-1712535140027-1/inspect.mjs:80:20)
 ```
 
 </td></tr></table>
@@ -12269,8 +12293,8 @@ NotImplementedError: node:repl is not yet implemented in Bun.
     MIMEType: <ref *3> class MIMEType {},
     TextDecoder: <ref *4> class TextDecoder {},
     TextEncoder: <ref *5> class TextEncoder {},
-    _errnoException: <ref *6> ƒ __node_internal_errnoException(length: 3) {},
-    _exceptionWithHostPort: <ref *7> ƒ __node_internal_exceptionWithHostPort(length: 5) {},
+    _errnoException: <ref *6> ƒ _errnoException(length: 0) {},
+    _exceptionWithHostPort: <ref *7> ƒ _exceptionWithHostPort(length: 0) {},
     _extend: <ref *8> ƒ _extend(length: 2) {},
     aborted: <ref *9> async ƒ aborted(length: 2) {},
     callbackify: <ref *10> ƒ callbackify(length: 1) {},
@@ -12285,11 +12309,12 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         debuglog: [Circular: *11],
         deprecate: <ref *13> ƒ deprecate(length: 4) {},
         format: <ref *14> ƒ format(length: 0) {},
-        formatWithOptions: <ref *15> ƒ formatWithOptions(length: 1) {},
-        getSystemErrorMap: <ref *16> ƒ getSystemErrorMap(length: 0) {},
-        getSystemErrorName: <ref *17> ƒ getSystemErrorName(length: 1) {},
-        inherits: <ref *18> ƒ inherits(length: 2) {},
-        inspect: <ref *19> ƒ inspect(length: 2) {
+        styleText: <ref *15> ƒ styleText(length: 2) {},
+        formatWithOptions: <ref *16> ƒ formatWithOptions(length: 1) {},
+        getSystemErrorMap: <ref *17> ƒ getSystemErrorMap(length: 0) {},
+        getSystemErrorName: <ref *18> ƒ getSystemErrorName(length: 1) {},
+        inherits: <ref *19> ƒ inherits(length: 2) {},
+        inspect: <ref *20> ƒ inspect(length: 2) {
             custom: Symbol(nodejs.util.inspect.custom),
             colors: [Object: null prototype] {
                 reset: [
@@ -12483,34 +12508,34 @@ NotImplementedError: node:repl is not yet implemented in Bun.
                 module: "underline"
             }
         },
-        isArray: <ref *66> ƒ isArray(length: 1) {},
-        isBoolean: <ref *67> ƒ isBoolean(length: 1) {},
-        isBuffer: <ref *68> ƒ isBuffer(length: 1) {},
-        isDeepStrictEqual: <ref *69> ƒ isDeepStrictEqual(length: 2) {},
-        isNull: <ref *70> ƒ isNull(length: 1) {},
-        isNullOrUndefined: <ref *71> ƒ isNullOrUndefined(length: 1) {},
-        isNumber: <ref *72> ƒ isNumber(length: 1) {},
-        isString: <ref *73> ƒ isString(length: 1) {},
-        isSymbol: <ref *74> ƒ isSymbol(length: 1) {},
-        isUndefined: <ref *75> ƒ isUndefined(length: 1) {},
-        isRegExp: <ref *76> ƒ isRegExp(length: 0) {},
-        isObject: <ref *77> ƒ isObject(length: 1) {},
-        isDate: <ref *78> ƒ isDate(length: 0) {},
-        isError: <ref *79> ƒ isError(length: 1) {},
-        isFunction: <ref *80> ƒ isFunction(length: 1) {},
-        isPrimitive: <ref *81> ƒ isPrimitive(length: 1) {},
-        log: <ref *82> ƒ log(length: 0) {},
-        promisify: <ref *83> ƒ promisify(length: 1) {
+        isArray: <ref *67> ƒ isArray(length: 1) {},
+        isBoolean: <ref *68> ƒ isBoolean(length: 1) {},
+        isBuffer: <ref *69> ƒ isBuffer(length: 1) {},
+        isDeepStrictEqual: <ref *70> ƒ isDeepStrictEqual(length: 2) {},
+        isNull: <ref *71> ƒ isNull(length: 1) {},
+        isNullOrUndefined: <ref *72> ƒ isNullOrUndefined(length: 1) {},
+        isNumber: <ref *73> ƒ isNumber(length: 1) {},
+        isString: <ref *74> ƒ isString(length: 1) {},
+        isSymbol: <ref *75> ƒ isSymbol(length: 1) {},
+        isUndefined: <ref *76> ƒ isUndefined(length: 1) {},
+        isRegExp: <ref *77> ƒ isRegExp(length: 0) {},
+        isObject: <ref *78> ƒ isObject(length: 1) {},
+        isDate: <ref *79> ƒ isDate(length: 0) {},
+        isError: <ref *80> ƒ isError(length: 1) {},
+        isFunction: <ref *81> ƒ isFunction(length: 1) {},
+        isPrimitive: <ref *82> ƒ isPrimitive(length: 1) {},
+        log: <ref *83> ƒ log(length: 0) {},
+        promisify: <ref *84> ƒ promisify(length: 1) {
             custom: Symbol(nodejs.util.promisify.custom)
         },
-        stripVTControlCharacters: <ref *84> ƒ stripVTControlCharacters(length: 1) {},
-        toUSVString: <ref *85> ƒ toUSVString(length: 1) {},
-        [get/set] transferableAbortSignal: <ref *86> ƒ transferableAbortSignal(length: 1) {},
-        [get/set] transferableAbortController: <ref *87> ƒ transferableAbortController(length: 0) {},
+        stripVTControlCharacters: <ref *85> ƒ stripVTControlCharacters(length: 1) {},
+        toUSVString: <ref *86> ƒ toUSVString(length: 1) {},
+        [get/set] transferableAbortSignal: <ref *87> ƒ transferableAbortSignal(length: 1) {},
+        [get/set] transferableAbortController: <ref *88> ƒ transferableAbortController(length: 0) {},
         [get/set] aborted: [Circular: *9],
-        types: <ref *88> {
+        types: <ref *89> {
             isExternal: ƒ isExternal(length: 0) {},
-            isDate: [Circular: *78],
+            isDate: [Circular: *79],
             isArgumentsObject: ƒ isArgumentsObject(length: 0) {},
             isBigIntObject: ƒ isBigIntObject(length: 0) {},
             isBooleanObject: ƒ isBooleanObject(length: 0) {},
@@ -12518,7 +12543,7 @@ NotImplementedError: node:repl is not yet implemented in Bun.
             isStringObject: ƒ isStringObject(length: 0) {},
             isSymbolObject: ƒ isSymbolObject(length: 0) {},
             isNativeError: ƒ isNativeError(length: 0) {},
-            isRegExp: [Circular: *76],
+            isRegExp: [Circular: *77],
             isAsyncFunction: ƒ isAsyncFunction(length: 0) {},
             isGeneratorFunction: ƒ isGeneratorFunction(length: 0) {},
             isGeneratorObject: ƒ isGeneratorObject(length: 0) {},
@@ -12552,7 +12577,8 @@ NotImplementedError: node:repl is not yet implemented in Bun.
             isKeyObject: ƒ value(length: 1) {},
             isCryptoKey: ƒ value(length: 1) {}
         },
-        parseArgs: <ref *129> ƒ parseArgs(length: 0) {},
+        parseEnv: <ref *130> ƒ parseEnv(length: 1) {},
+        parseArgs: <ref *131> ƒ parseArgs(length: 0) {},
         TextDecoder: [Circular: *4],
         TextEncoder: [Circular: *5],
         MIMEType: [Circular: *3],
@@ -12560,37 +12586,39 @@ NotImplementedError: node:repl is not yet implemented in Bun.
     },
     deprecate: [Circular: *13],
     format: [Circular: *14],
-    formatWithOptions: [Circular: *15],
-    getSystemErrorMap: [Circular: *16],
-    getSystemErrorName: [Circular: *17],
-    inherits: [Circular: *18],
-    inspect: [Circular: *19],
-    isArray: [Circular: *66],
-    isBoolean: [Circular: *67],
-    isBuffer: [Circular: *68],
-    isDate: [Circular: *78],
-    isDeepStrictEqual: [Circular: *69],
-    isError: [Circular: *79],
-    isFunction: [Circular: *80],
-    isNull: [Circular: *70],
-    isNullOrUndefined: [Circular: *71],
-    isNumber: [Circular: *72],
-    isObject: [Circular: *77],
-    isPrimitive: [Circular: *81],
-    isRegExp: [Circular: *76],
-    isString: [Circular: *73],
-    isSymbol: [Circular: *74],
-    isUndefined: [Circular: *75],
-    log: [Circular: *82],
-    parseArgs: [Circular: *129],
-    promisify: [Circular: *83],
-    stripVTControlCharacters: [Circular: *84],
-    toUSVString: [Circular: *85],
-    transferableAbortController: [Circular: *87],
-    transferableAbortSignal: [Circular: *86],
-    types: [Circular: *88]
+    formatWithOptions: [Circular: *16],
+    getSystemErrorMap: [Circular: *17],
+    getSystemErrorName: [Circular: *18],
+    inherits: [Circular: *19],
+    inspect: [Circular: *20],
+    isArray: [Circular: *67],
+    isBoolean: [Circular: *68],
+    isBuffer: [Circular: *69],
+    isDate: [Circular: *79],
+    isDeepStrictEqual: [Circular: *70],
+    isError: [Circular: *80],
+    isFunction: [Circular: *81],
+    isNull: [Circular: *71],
+    isNullOrUndefined: [Circular: *72],
+    isNumber: [Circular: *73],
+    isObject: [Circular: *78],
+    isPrimitive: [Circular: *82],
+    isRegExp: [Circular: *77],
+    isString: [Circular: *74],
+    isSymbol: [Circular: *75],
+    isUndefined: [Circular: *76],
+    log: [Circular: *83],
+    parseArgs: [Circular: *131],
+    parseEnv: [Circular: *130],
+    promisify: [Circular: *84],
+    stripVTControlCharacters: [Circular: *85],
+    styleText: [Circular: *15],
+    toUSVString: [Circular: *86],
+    transferableAbortController: [Circular: *88],
+    transferableAbortSignal: [Circular: *87],
+    types: [Circular: *89]
 }
-(node:3023) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2974) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -12922,11 +12950,11 @@ NotImplementedError: node:repl is not yet implemented in Bun.
     clearTimeout: <ref *6> ƒ clearTimeout(length: 1) {},
     default: {
         setTimeout: <ref *8> ƒ setTimeout(length: 5) {
-            [get/set] Symbol(nodejs.util.promisify.custom): ƒ setTimeout(length: 2) {}
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *9> ƒ setTimeout(length: 2) {}
         },
         clearTimeout: [Circular: *6],
         setImmediate: <ref *10> ƒ setImmediate(length: 4) {
-            [get/set] Symbol(nodejs.util.promisify.custom): ƒ setImmediate(length: 1) {}
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *11> ƒ setImmediate(length: 1) {}
         },
         clearImmediate: [Circular: *4],
         setInterval: <ref *12> ƒ setInterval(length: 5) {},
@@ -12934,9 +12962,18 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         _unrefActive: [Circular: *2],
         active: [Circular: *3],
         unenroll: <ref *13> ƒ deprecated(length: 0) {},
-        enroll: <ref *14> ƒ deprecated(length: 0) {}
+        enroll: <ref *14> ƒ deprecated(length: 0) {},
+        [get/set] promises: <ref *15> {
+            setTimeout: [Circular: *9],
+            setImmediate: [Circular: *11],
+            setInterval: async ƒ setInterval(length: 2) {},
+            scheduler: Scheduler {
+                Symbol(kScheduler): true
+            }
+        }
     },
     enroll: [Circular: *14],
+    promises: [Circular: *15],
     setImmediate: [Circular: *10],
     setInterval: [Circular: *12],
     setTimeout: [Circular: *8],
@@ -13047,7 +13084,6 @@ NotImplementedError: node:repl is not yet implemented in Bun.
             "-----BEGIN CERTIFICATE-----\nMIIEMjCCAxqgAwIBAgIBATANBgkqhkiG9w0BAQUFADB7MQswCQYDVQQGEwJHQjEbMBkGA1UE…",
             "-----BEGIN CERTIFICATE-----\nMIIFtzCCA5+gAwIBAgICBQkwDQYJKoZIhvcNAQEFBQAwRTELMAkGA1UEBhMCQk0xGTAXBgNV…",
             "-----BEGIN CERTIFICATE-----\nMIIGnTCCBIWgAwIBAgICBcYwDQYJKoZIhvcNAQEFBQAwRTELMAkGA1UEBhMCQk0xGTAXBgNV…",
-            "-----BEGIN CERTIFICATE-----\nMIIDWjCCAkKgAwIBAgIBADANBgkqhkiG9w0BAQUFADBQMQswCQYDVQQGEwJKUDEYMBYGA1UE…",
             "-----BEGIN CERTIFICATE-----\nMIIEMDCCAxigAwIBAgIQUJRs7Bjq1ZxN1ZfvdY+grTANBgkqhkiG9w0BAQUFADCBgjELMAkG…",
             "-----BEGIN CERTIFICATE-----\nMIIEADCCAuigAwIBAgIBADANBgkqhkiG9w0BAQUFADBjMQswCQYDVQQGEwJVUzEhMB8GA1UE…",
             "-----BEGIN CERTIFICATE-----\nMIIEDzCCAvegAwIBAgIBADANBgkqhkiG9w0BAQUFADBoMQswCQYDVQQGEwJVUzElMCMGA1UE…",
@@ -13185,7 +13221,9 @@ NotImplementedError: node:repl is not yet implemented in Bun.
             "-----BEGIN CERTIFICATE-----\nMIICHTCCAaOgAwIBAgIUQ3CCd89NXTTxyq4yLzf39H91oJ4wCgYIKoZIzj0EAwMwTjELMAkG…",
             "-----BEGIN CERTIFICATE-----\nMIICHDCCAaOgAwIBAgIUKP2ZYEFHpgE6yhR7H+/5aAiDXX0wCgYIKoZIzj0EAwMwTjELMAkG…",
             "-----BEGIN CERTIFICATE-----\nMIIFbDCCA1SgAwIBAgIUPgNJgXUWdDGOTKvVxZAplsU5EN0wDQYJKoZIhvcNAQELBQAwTjEL…",
-            "-----BEGIN CERTIFICATE-----\nMIIFbDCCA1SgAwIBAgIUVBa/O345lXGN0aoApYYNK496BU4wDQYJKoZIhvcNAQELBQAwTjEL…"
+            "-----BEGIN CERTIFICATE-----\nMIIFbDCCA1SgAwIBAgIUVBa/O345lXGN0aoApYYNK496BU4wDQYJKoZIhvcNAQELBQAwTjEL…",
+            "-----BEGIN CERTIFICATE-----\nMIICQjCCAcmgAwIBAgIQNjqWjMlcsljN0AFdxeVXADAKBggqhkjOPQQDAzBjMQswCQYDVQQG…",
+            "-----BEGIN CERTIFICATE-----\nMIIFszCCA5ugAwIBAgIQIZxULej27HF3+k7ow3BXlzANBgkqhkiG9w0BAQwFADBjMQswCQYD…"
         ],
         convertALPNProtocols: [Circular: *7],
         checkServerIdentity: [Circular: *5],
@@ -13580,8 +13618,8 @@ NotImplementedError: node:repl is not yet implemented in Bun.
     MIMEType: <ref *3> class MIMEType {},
     TextDecoder: <ref *4> class TextDecoder {},
     TextEncoder: <ref *5> class TextEncoder {},
-    _errnoException: <ref *6> ƒ __node_internal_errnoException(length: 3) {},
-    _exceptionWithHostPort: <ref *7> ƒ __node_internal_exceptionWithHostPort(length: 5) {},
+    _errnoException: <ref *6> ƒ _errnoException(length: 0) {},
+    _exceptionWithHostPort: <ref *7> ƒ _exceptionWithHostPort(length: 0) {},
     _extend: <ref *8> ƒ _extend(length: 2) {},
     aborted: <ref *9> async ƒ aborted(length: 2) {},
     callbackify: <ref *10> ƒ callbackify(length: 1) {},
@@ -13596,11 +13634,12 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         debuglog: [Circular: *11],
         deprecate: <ref *13> ƒ deprecate(length: 4) {},
         format: <ref *14> ƒ format(length: 0) {},
-        formatWithOptions: <ref *15> ƒ formatWithOptions(length: 1) {},
-        getSystemErrorMap: <ref *16> ƒ getSystemErrorMap(length: 0) {},
-        getSystemErrorName: <ref *17> ƒ getSystemErrorName(length: 1) {},
-        inherits: <ref *18> ƒ inherits(length: 2) {},
-        inspect: <ref *19> ƒ inspect(length: 2) {
+        styleText: <ref *15> ƒ styleText(length: 2) {},
+        formatWithOptions: <ref *16> ƒ formatWithOptions(length: 1) {},
+        getSystemErrorMap: <ref *17> ƒ getSystemErrorMap(length: 0) {},
+        getSystemErrorName: <ref *18> ƒ getSystemErrorName(length: 1) {},
+        inherits: <ref *19> ƒ inherits(length: 2) {},
+        inspect: <ref *20> ƒ inspect(length: 2) {
             custom: Symbol(nodejs.util.inspect.custom),
             colors: [Object: null prototype] {
                 reset: [
@@ -13794,34 +13833,34 @@ NotImplementedError: node:repl is not yet implemented in Bun.
                 module: "underline"
             }
         },
-        isArray: <ref *66> ƒ isArray(length: 1) {},
-        isBoolean: <ref *67> ƒ isBoolean(length: 1) {},
-        isBuffer: <ref *68> ƒ isBuffer(length: 1) {},
-        isDeepStrictEqual: <ref *69> ƒ isDeepStrictEqual(length: 2) {},
-        isNull: <ref *70> ƒ isNull(length: 1) {},
-        isNullOrUndefined: <ref *71> ƒ isNullOrUndefined(length: 1) {},
-        isNumber: <ref *72> ƒ isNumber(length: 1) {},
-        isString: <ref *73> ƒ isString(length: 1) {},
-        isSymbol: <ref *74> ƒ isSymbol(length: 1) {},
-        isUndefined: <ref *75> ƒ isUndefined(length: 1) {},
-        isRegExp: <ref *76> ƒ isRegExp(length: 0) {},
-        isObject: <ref *77> ƒ isObject(length: 1) {},
-        isDate: <ref *78> ƒ isDate(length: 0) {},
-        isError: <ref *79> ƒ isError(length: 1) {},
-        isFunction: <ref *80> ƒ isFunction(length: 1) {},
-        isPrimitive: <ref *81> ƒ isPrimitive(length: 1) {},
-        log: <ref *82> ƒ log(length: 0) {},
-        promisify: <ref *83> ƒ promisify(length: 1) {
+        isArray: <ref *67> ƒ isArray(length: 1) {},
+        isBoolean: <ref *68> ƒ isBoolean(length: 1) {},
+        isBuffer: <ref *69> ƒ isBuffer(length: 1) {},
+        isDeepStrictEqual: <ref *70> ƒ isDeepStrictEqual(length: 2) {},
+        isNull: <ref *71> ƒ isNull(length: 1) {},
+        isNullOrUndefined: <ref *72> ƒ isNullOrUndefined(length: 1) {},
+        isNumber: <ref *73> ƒ isNumber(length: 1) {},
+        isString: <ref *74> ƒ isString(length: 1) {},
+        isSymbol: <ref *75> ƒ isSymbol(length: 1) {},
+        isUndefined: <ref *76> ƒ isUndefined(length: 1) {},
+        isRegExp: <ref *77> ƒ isRegExp(length: 0) {},
+        isObject: <ref *78> ƒ isObject(length: 1) {},
+        isDate: <ref *79> ƒ isDate(length: 0) {},
+        isError: <ref *80> ƒ isError(length: 1) {},
+        isFunction: <ref *81> ƒ isFunction(length: 1) {},
+        isPrimitive: <ref *82> ƒ isPrimitive(length: 1) {},
+        log: <ref *83> ƒ log(length: 0) {},
+        promisify: <ref *84> ƒ promisify(length: 1) {
             custom: Symbol(nodejs.util.promisify.custom)
         },
-        stripVTControlCharacters: <ref *84> ƒ stripVTControlCharacters(length: 1) {},
-        toUSVString: <ref *85> ƒ toUSVString(length: 1) {},
-        [get/set] transferableAbortSignal: <ref *86> ƒ transferableAbortSignal(length: 1) {},
-        [get/set] transferableAbortController: <ref *87> ƒ transferableAbortController(length: 0) {},
+        stripVTControlCharacters: <ref *85> ƒ stripVTControlCharacters(length: 1) {},
+        toUSVString: <ref *86> ƒ toUSVString(length: 1) {},
+        [get/set] transferableAbortSignal: <ref *87> ƒ transferableAbortSignal(length: 1) {},
+        [get/set] transferableAbortController: <ref *88> ƒ transferableAbortController(length: 0) {},
         [get/set] aborted: [Circular: *9],
-        types: <ref *88> {
+        types: <ref *89> {
             isExternal: ƒ isExternal(length: 0) {},
-            isDate: [Circular: *78],
+            isDate: [Circular: *79],
             isArgumentsObject: ƒ isArgumentsObject(length: 0) {},
             isBigIntObject: ƒ isBigIntObject(length: 0) {},
             isBooleanObject: ƒ isBooleanObject(length: 0) {},
@@ -13829,7 +13868,7 @@ NotImplementedError: node:repl is not yet implemented in Bun.
             isStringObject: ƒ isStringObject(length: 0) {},
             isSymbolObject: ƒ isSymbolObject(length: 0) {},
             isNativeError: ƒ isNativeError(length: 0) {},
-            isRegExp: [Circular: *76],
+            isRegExp: [Circular: *77],
             isAsyncFunction: ƒ isAsyncFunction(length: 0) {},
             isGeneratorFunction: ƒ isGeneratorFunction(length: 0) {},
             isGeneratorObject: ƒ isGeneratorObject(length: 0) {},
@@ -13863,7 +13902,8 @@ NotImplementedError: node:repl is not yet implemented in Bun.
             isKeyObject: ƒ value(length: 1) {},
             isCryptoKey: ƒ value(length: 1) {}
         },
-        parseArgs: <ref *129> ƒ parseArgs(length: 0) {},
+        parseEnv: <ref *130> ƒ parseEnv(length: 1) {},
+        parseArgs: <ref *131> ƒ parseArgs(length: 0) {},
         TextDecoder: [Circular: *4],
         TextEncoder: [Circular: *5],
         MIMEType: [Circular: *3],
@@ -13871,35 +13911,37 @@ NotImplementedError: node:repl is not yet implemented in Bun.
     },
     deprecate: [Circular: *13],
     format: [Circular: *14],
-    formatWithOptions: [Circular: *15],
-    getSystemErrorMap: [Circular: *16],
-    getSystemErrorName: [Circular: *17],
-    inherits: [Circular: *18],
-    inspect: [Circular: *19],
-    isArray: [Circular: *66],
-    isBoolean: [Circular: *67],
-    isBuffer: [Circular: *68],
-    isDate: [Circular: *78],
-    isDeepStrictEqual: [Circular: *69],
-    isError: [Circular: *79],
-    isFunction: [Circular: *80],
-    isNull: [Circular: *70],
-    isNullOrUndefined: [Circular: *71],
-    isNumber: [Circular: *72],
-    isObject: [Circular: *77],
-    isPrimitive: [Circular: *81],
-    isRegExp: [Circular: *76],
-    isString: [Circular: *73],
-    isSymbol: [Circular: *74],
-    isUndefined: [Circular: *75],
-    log: [Circular: *82],
-    parseArgs: [Circular: *129],
-    promisify: [Circular: *83],
-    stripVTControlCharacters: [Circular: *84],
-    toUSVString: [Circular: *85],
-    transferableAbortController: [Circular: *87],
-    transferableAbortSignal: [Circular: *86],
-    types: [Circular: *88]
+    formatWithOptions: [Circular: *16],
+    getSystemErrorMap: [Circular: *17],
+    getSystemErrorName: [Circular: *18],
+    inherits: [Circular: *19],
+    inspect: [Circular: *20],
+    isArray: [Circular: *67],
+    isBoolean: [Circular: *68],
+    isBuffer: [Circular: *69],
+    isDate: [Circular: *79],
+    isDeepStrictEqual: [Circular: *70],
+    isError: [Circular: *80],
+    isFunction: [Circular: *81],
+    isNull: [Circular: *71],
+    isNullOrUndefined: [Circular: *72],
+    isNumber: [Circular: *73],
+    isObject: [Circular: *78],
+    isPrimitive: [Circular: *82],
+    isRegExp: [Circular: *77],
+    isString: [Circular: *74],
+    isSymbol: [Circular: *75],
+    isUndefined: [Circular: *76],
+    log: [Circular: *83],
+    parseArgs: [Circular: *131],
+    parseEnv: [Circular: *130],
+    promisify: [Circular: *84],
+    stripVTControlCharacters: [Circular: *85],
+    styleText: [Circular: *15],
+    toUSVString: [Circular: *86],
+    transferableAbortController: [Circular: *88],
+    transferableAbortSignal: [Circular: *87],
+    types: [Circular: *89]
 }
 ```
 
@@ -14530,24 +14572,28 @@ NotImplementedError: node:repl is not yet implemented in Bun.
 [Object: null prototype] {
     Script: <ref *2> class Script extends ContextifyScript {},
     compileFunction: <ref *3> ƒ compileFunction(length: 2) {},
-    createContext: <ref *4> ƒ createContext(length: 0) {},
-    createScript: <ref *5> ƒ createScript(length: 2) {},
+    constants: <ref *4> [Object: null prototype] {
+        USE_MAIN_CONTEXT_DEFAULT_LOADER: Symbol(vm_dynamic_import_main_context_default)
+    },
+    createContext: <ref *5> ƒ createContext(length: 0) {},
+    createScript: <ref *6> ƒ createScript(length: 2) {},
     default: {
         Script: [Circular: *2],
-        createContext: [Circular: *4],
-        createScript: [Circular: *5],
-        runInContext: <ref *7> ƒ runInContext(length: 3) {},
-        runInNewContext: <ref *8> ƒ runInNewContext(length: 3) {},
-        runInThisContext: <ref *9> ƒ runInThisContext(length: 2) {},
-        isContext: <ref *10> ƒ isContext(length: 1) {},
+        createContext: [Circular: *5],
+        createScript: [Circular: *6],
+        runInContext: <ref *8> ƒ runInContext(length: 3) {},
+        runInNewContext: <ref *9> ƒ runInNewContext(length: 3) {},
+        runInThisContext: <ref *10> ƒ runInThisContext(length: 2) {},
+        isContext: <ref *11> ƒ isContext(length: 1) {},
         compileFunction: [Circular: *3],
-        measureMemory: <ref *11> ƒ measureMemory(length: 0) {}
+        measureMemory: <ref *12> ƒ measureMemory(length: 0) {},
+        constants: [Circular: *4]
     },
-    isContext: [Circular: *10],
-    measureMemory: [Circular: *11],
-    runInContext: [Circular: *7],
-    runInNewContext: [Circular: *8],
-    runInThisContext: [Circular: *9]
+    isContext: [Circular: *11],
+    measureMemory: [Circular: *12],
+    runInContext: [Circular: *8],
+    runInNewContext: [Circular: *9],
+    runInThisContext: [Circular: *10]
 }
 ```
 
@@ -14597,7 +14643,7 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         WASI: [Circular: *2]
     }
 }
-(node:3232) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3202) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -14762,7 +14808,7 @@ NotImplementedError: node:repl is not yet implemented in Bun.
         Z_RLE: 3,
         Z_FIXED: 4,
         Z_DEFAULT_STRATEGY: 0,
-        ZLIB_VERNUM: 4817,
+        ZLIB_VERNUM: 4865,
         DEFLATE: 1,
         INFLATE: 2,
         GZIP: 3,
