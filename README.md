@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v20.12.2<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v20.12.2<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -291,12 +291,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             close: ƒ (length: 1) {},
             address: ƒ (length: 0) {},
             listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {}
+            setTimeout: ƒ (length: 2) {},
+            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *34],
+            constructor: [Circular: *35],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -318,22 +319,22 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *55> ƒ createServer(length: 2) {},
+    createServer: <ref *56> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
         Server: [Circular: *24],
         METHODS: [Circular: *9],
         STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *55],
-        ServerResponse: [Circular: *34],
+        createServer: [Circular: *56],
+        ServerResponse: [Circular: *35],
         IncomingMessage: [Circular: *4],
-        request: <ref *57> ƒ request(length: 3) {},
-        get: <ref *58> ƒ get(length: 3) {},
+        request: <ref *58> ƒ request(length: 3) {},
+        get: <ref *59> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *59> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *60> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *61> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *62> Agent {
+        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *63> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -343,9 +344,9 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
                 path: null,
                 noDelay: true
             },
-            requests: <ref *65> [Object: null prototype] {},
-            sockets: [Circular: *65],
-            freeSockets: [Circular: *65],
+            requests: <ref *66> [Object: null prototype] {},
+            sockets: [Circular: *66],
+            freeSockets: [Circular: *66],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -358,13 +359,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
         ClientRequest: [Circular: *3],
         OutgoingMessage: [Circular: *10]
     },
-    get: [Circular: *58],
-    globalAgent: [Circular: *62],
+    get: [Circular: *59],
+    globalAgent: [Circular: *63],
     maxHeaderSize: 16384,
-    request: [Circular: *57],
-    setMaxIdleHTTPParsers: [Circular: *61],
-    validateHeaderName: [Circular: *59],
-    validateHeaderValue: [Circular: *60]
+    request: [Circular: *58],
+    setMaxIdleHTTPParsers: [Circular: *62],
+    validateHeaderName: [Circular: *60],
+    validateHeaderValue: [Circular: *61]
 }
 ```
 
@@ -524,12 +525,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             close: ƒ (length: 1) {},
             address: ƒ (length: 0) {},
             listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {}
+            setTimeout: ƒ (length: 2) {},
+            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *34],
+            constructor: [Circular: *35],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -551,22 +553,22 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *55> ƒ createServer(length: 2) {},
+    createServer: <ref *56> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
         Server: [Circular: *24],
         METHODS: [Circular: *9],
         STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *55],
-        ServerResponse: [Circular: *34],
+        createServer: [Circular: *56],
+        ServerResponse: [Circular: *35],
         IncomingMessage: [Circular: *4],
-        request: <ref *57> ƒ request(length: 3) {},
-        get: <ref *58> ƒ get(length: 3) {},
+        request: <ref *58> ƒ request(length: 3) {},
+        get: <ref *59> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *59> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *60> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *61> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *62> Agent {
+        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *63> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -576,9 +578,9 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
                 path: null,
                 noDelay: true
             },
-            requests: <ref *65> [Object: null prototype] {},
-            sockets: [Circular: *65],
-            freeSockets: [Circular: *65],
+            requests: <ref *66> [Object: null prototype] {},
+            sockets: [Circular: *66],
+            freeSockets: [Circular: *66],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -591,13 +593,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
         ClientRequest: [Circular: *3],
         OutgoingMessage: [Circular: *10]
     },
-    get: [Circular: *58],
-    globalAgent: [Circular: *62],
+    get: [Circular: *59],
+    globalAgent: [Circular: *63],
     maxHeaderSize: 16384,
-    request: [Circular: *57],
-    setMaxIdleHTTPParsers: [Circular: *61],
-    validateHeaderName: [Circular: *59],
-    validateHeaderValue: [Circular: *60]
+    request: [Circular: *58],
+    setMaxIdleHTTPParsers: [Circular: *62],
+    validateHeaderName: [Circular: *60],
+    validateHeaderValue: [Circular: *61]
 }
 ```
 
@@ -834,12 +836,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             close: ƒ (length: 1) {},
             address: ƒ (length: 0) {},
             listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {}
+            setTimeout: ƒ (length: 2) {},
+            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *34],
+            constructor: [Circular: *35],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -861,22 +864,22 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *55> ƒ createServer(length: 2) {},
+    createServer: <ref *56> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
         Server: [Circular: *24],
         METHODS: [Circular: *9],
         STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *55],
-        ServerResponse: [Circular: *34],
+        createServer: [Circular: *56],
+        ServerResponse: [Circular: *35],
         IncomingMessage: [Circular: *4],
-        request: <ref *57> ƒ request(length: 3) {},
-        get: <ref *58> ƒ get(length: 3) {},
+        request: <ref *58> ƒ request(length: 3) {},
+        get: <ref *59> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *59> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *60> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *61> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *62> Agent {
+        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *63> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -886,9 +889,9 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
                 path: null,
                 noDelay: true
             },
-            requests: <ref *65> [Object: null prototype] {},
-            sockets: [Circular: *65],
-            freeSockets: [Circular: *65],
+            requests: <ref *66> [Object: null prototype] {},
+            sockets: [Circular: *66],
+            freeSockets: [Circular: *66],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -901,13 +904,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
         ClientRequest: [Circular: *3],
         OutgoingMessage: [Circular: *10]
     },
-    get: [Circular: *58],
-    globalAgent: [Circular: *62],
+    get: [Circular: *59],
+    globalAgent: [Circular: *63],
     maxHeaderSize: 16384,
-    request: [Circular: *57],
-    setMaxIdleHTTPParsers: [Circular: *61],
-    validateHeaderName: [Circular: *59],
-    validateHeaderValue: [Circular: *60]
+    request: [Circular: *58],
+    setMaxIdleHTTPParsers: [Circular: *62],
+    validateHeaderName: [Circular: *60],
+    validateHeaderValue: [Circular: *61]
 }
 ```
 
@@ -1071,12 +1074,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             close: ƒ (length: 1) {},
             address: ƒ (length: 0) {},
             listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {}
+            setTimeout: ƒ (length: 2) {},
+            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *34],
+            constructor: [Circular: *35],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1098,22 +1102,22 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *55> ƒ createServer(length: 2) {},
+    createServer: <ref *56> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
         Server: [Circular: *24],
         METHODS: [Circular: *9],
         STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *55],
-        ServerResponse: [Circular: *34],
+        createServer: [Circular: *56],
+        ServerResponse: [Circular: *35],
         IncomingMessage: [Circular: *4],
-        request: <ref *57> ƒ request(length: 3) {},
-        get: <ref *58> ƒ get(length: 3) {},
+        request: <ref *58> ƒ request(length: 3) {},
+        get: <ref *59> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *59> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *60> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *61> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *62> Agent {
+        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *63> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -1123,9 +1127,9 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
                 path: null,
                 noDelay: true
             },
-            requests: <ref *65> [Object: null prototype] {},
-            sockets: [Circular: *65],
-            freeSockets: [Circular: *65],
+            requests: <ref *66> [Object: null prototype] {},
+            sockets: [Circular: *66],
+            freeSockets: [Circular: *66],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -1138,13 +1142,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
         ClientRequest: [Circular: *3],
         OutgoingMessage: [Circular: *10]
     },
-    get: [Circular: *58],
-    globalAgent: [Circular: *62],
+    get: [Circular: *59],
+    globalAgent: [Circular: *63],
     maxHeaderSize: 16384,
-    request: [Circular: *57],
-    setMaxIdleHTTPParsers: [Circular: *61],
-    validateHeaderName: [Circular: *59],
-    validateHeaderValue: [Circular: *60]
+    request: [Circular: *58],
+    setMaxIdleHTTPParsers: [Circular: *62],
+    validateHeaderName: [Circular: *60],
+    validateHeaderValue: [Circular: *61]
 }
 ```
 
@@ -1318,12 +1322,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             close: ƒ (length: 1) {},
             address: ƒ (length: 0) {},
             listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {}
+            setTimeout: ƒ (length: 2) {},
+            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *34],
+            constructor: [Circular: *35],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1345,22 +1350,22 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *55> ƒ createServer(length: 2) {},
+    createServer: <ref *56> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
         Server: [Circular: *24],
         METHODS: [Circular: *9],
         STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *55],
-        ServerResponse: [Circular: *34],
+        createServer: [Circular: *56],
+        ServerResponse: [Circular: *35],
         IncomingMessage: [Circular: *4],
-        request: <ref *57> ƒ request(length: 3) {},
-        get: <ref *58> ƒ get(length: 3) {},
+        request: <ref *58> ƒ request(length: 3) {},
+        get: <ref *59> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *59> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *60> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *61> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *62> Agent {
+        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *63> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -1370,9 +1375,9 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
                 path: null,
                 noDelay: true
             },
-            requests: <ref *65> [Object: null prototype] {},
-            sockets: [Circular: *65],
-            freeSockets: [Circular: *65],
+            requests: <ref *66> [Object: null prototype] {},
+            sockets: [Circular: *66],
+            freeSockets: [Circular: *66],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -1385,13 +1390,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
         ClientRequest: [Circular: *3],
         OutgoingMessage: [Circular: *10]
     },
-    get: [Circular: *58],
-    globalAgent: [Circular: *62],
+    get: [Circular: *59],
+    globalAgent: [Circular: *63],
     maxHeaderSize: 16384,
-    request: [Circular: *57],
-    setMaxIdleHTTPParsers: [Circular: *61],
-    validateHeaderName: [Circular: *59],
-    validateHeaderValue: [Circular: *60]
+    request: [Circular: *58],
+    setMaxIdleHTTPParsers: [Circular: *62],
+    validateHeaderName: [Circular: *60],
+    validateHeaderValue: [Circular: *61]
 }
 ```
 
@@ -1631,12 +1636,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             close: ƒ (length: 1) {},
             address: ƒ (length: 0) {},
             listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {}
+            setTimeout: ƒ (length: 2) {},
+            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *34],
+            constructor: [Circular: *35],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1658,22 +1664,22 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *55> ƒ createServer(length: 2) {},
+    createServer: <ref *56> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
         Server: [Circular: *24],
         METHODS: [Circular: *9],
         STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *55],
-        ServerResponse: [Circular: *34],
+        createServer: [Circular: *56],
+        ServerResponse: [Circular: *35],
         IncomingMessage: [Circular: *4],
-        request: <ref *57> ƒ request(length: 3) {},
-        get: <ref *58> ƒ get(length: 3) {},
+        request: <ref *58> ƒ request(length: 3) {},
+        get: <ref *59> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *59> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *60> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *61> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *62> Agent {
+        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *63> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -1683,9 +1689,9 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
                 path: null,
                 noDelay: true
             },
-            requests: <ref *65> [Object: null prototype] {},
-            sockets: [Circular: *65],
-            freeSockets: [Circular: *65],
+            requests: <ref *66> [Object: null prototype] {},
+            sockets: [Circular: *66],
+            freeSockets: [Circular: *66],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -1698,13 +1704,13 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
         ClientRequest: [Circular: *3],
         OutgoingMessage: [Circular: *10]
     },
-    get: [Circular: *58],
-    globalAgent: [Circular: *62],
+    get: [Circular: *59],
+    globalAgent: [Circular: *63],
     maxHeaderSize: 16384,
-    request: [Circular: *57],
-    setMaxIdleHTTPParsers: [Circular: *61],
-    validateHeaderName: [Circular: *59],
-    validateHeaderValue: [Circular: *60]
+    request: [Circular: *58],
+    setMaxIdleHTTPParsers: [Circular: *62],
+    validateHeaderName: [Circular: *60],
+    validateHeaderValue: [Circular: *61]
 }
 ```
 
@@ -2430,7 +2436,7 @@ _Last updated on <!-- lastUpdated:start -->May 6, 2024 with Bun 1.1.7 Node.js v2
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2073) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2076) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -5206,18 +5212,18 @@ Cluster {
 72 | 			} else if (value.constructor !== Object) {
                    ^
 TypeError: Attempted to assign to readonly property.
-      at Writable (node:stream:2520:43)
-      at Duplex (node:stream:3194:39)
-      at Transform (node:stream:3252:45)
+      at Writable (node:stream:2502:43)
+      at Duplex (node:stream:3176:39)
+      at Transform (node:stream:3234:45)
       at get (node:crypto:1294:23)
-      at inspect (/tmp/fs-fixture-1714954364750-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1714954364750-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1715559185401-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1715559185401-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1714954364750-1/inspect.mjs:80:20)
-      at /tmp/fs-fixture-1714954364750-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1715559185401-1/inspect.mjs:80:20)
+      at /tmp/fs-fixture-1715559185401-1/inspect.mjs:99:7
       at map (:1:21)
 
-Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
+Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -6246,11 +6252,22 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
 {
     Dirent: <ref *2> ƒ Dirent(length: 0) {},
     FSWatcher: <ref *3> ƒ FSWatcher(length: 3) {},
-    ReadStream: <ref *4> ƒ ReadStream3(length: 2) {
-        prototype: ReadStream2 {}
+    ReadStream: <ref *4> ƒ ReadStream(length: 2) {
+        prototype: Readable {
+            _construct: ƒ (length: 1) {},
+            _destroy: ƒ (length: 2) {},
+            close: ƒ (length: 1) {},
+            push: ƒ (length: 1) {},
+            pause: ƒ (length: 0) {},
+            resume: ƒ (length: 0) {},
+            unshift: ƒ (length: 0) {},
+            pipe: ƒ (length: 2) {},
+            Symbol(kinternalRead): ƒ (length: 1) {},
+            Symbol(kerrorOrDestroy): ƒ (length: 1) {}
+        }
     },
-    Stats: <ref *6> ƒ Stats(length: 0) {},
-    WriteStream: <ref *7> ƒ WriteStream2(length: 1) {
+    Stats: <ref *16> ƒ Stats(length: 0) {},
+    WriteStream: <ref *17> ƒ WriteStream2(length: 1) {
         prototype: Writable {
             destroySoon: ƒ end(length: 4) {},
             open: ƒ open3(length: 0) {},
@@ -6266,18 +6283,18 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             Symbol(Bun.NodeWriteStreamFastPathCall): ƒ WriteStreamPathFastPathCallSymbol(length: 2) {}
         }
     },
-    _toUnixTimestamp: <ref *19> ƒ _toUnixTimestamp(length: 1) {},
-    access: <ref *20> ƒ access2(length: 0) {},
-    accessSync: <ref *21> ƒ bound accessSync(length: 2) {},
-    appendFile: <ref *22> ƒ appendFile2(length: 0) {},
-    appendFileSync: <ref *23> ƒ bound appendFileSync(length: 3) {},
-    chmod: <ref *24> ƒ chmod2(length: 0) {},
-    chmodSync: <ref *25> ƒ bound chmodSync(length: 2) {},
-    chown: <ref *26> ƒ chown2(length: 0) {},
-    chownSync: <ref *27> ƒ bound chownSync(length: 3) {},
-    close: <ref *28> ƒ close2(length: 2) {},
-    closeSync: <ref *29> ƒ bound closeSync(length: 1) {},
-    constants: <ref *30> {
+    _toUnixTimestamp: <ref *29> ƒ _toUnixTimestamp(length: 1) {},
+    access: <ref *30> ƒ access2(length: 0) {},
+    accessSync: <ref *31> ƒ bound accessSync(length: 2) {},
+    appendFile: <ref *32> ƒ appendFile2(length: 0) {},
+    appendFileSync: <ref *33> ƒ bound appendFileSync(length: 3) {},
+    chmod: <ref *34> ƒ chmod2(length: 0) {},
+    chmodSync: <ref *35> ƒ bound chmodSync(length: 2) {},
+    chown: <ref *36> ƒ chown2(length: 0) {},
+    chownSync: <ref *37> ƒ bound chownSync(length: 3) {},
+    close: <ref *38> ƒ close2(length: 2) {},
+    closeSync: <ref *39> ƒ bound closeSync(length: 1) {},
+    constants: <ref *40> {
         UV_FS_SYMLINK_DIR: 1,
         UV_FS_SYMLINK_JUNCTION: 2,
         O_RDONLY: 0,
@@ -6335,69 +6352,69 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         UV_FS_COPYFILE_FICLONE_FORCE: 4,
         COPYFILE_FICLONE_FORCE: 4
     },
-    copyFile: <ref *31> ƒ copyFile2(length: 0) {},
-    copyFileSync: <ref *32> ƒ bound copyFileSync(length: 3) {},
-    cp: <ref *33> ƒ cp(length: 4) {},
-    cpSync: <ref *34> ƒ cpSync(length: 3) {},
-    createReadStream: <ref *35> ƒ createReadStream(length: 2) {},
-    createWriteStream: <ref *36> ƒ createWriteStream(length: 2) {},
+    copyFile: <ref *41> ƒ copyFile2(length: 0) {},
+    copyFileSync: <ref *42> ƒ bound copyFileSync(length: 3) {},
+    cp: <ref *43> ƒ cp(length: 4) {},
+    cpSync: <ref *44> ƒ cpSync(length: 3) {},
+    createReadStream: <ref *45> ƒ createReadStream(length: 2) {},
+    createWriteStream: <ref *46> ƒ createWriteStream(length: 2) {},
     default: {
         Dirent: [Circular: *2],
         FSWatcher: [Circular: *3],
         ReadStream: [Circular: *4],
-        Stats: [Circular: *6],
-        WriteStream: [Circular: *7],
-        _toUnixTimestamp: [Circular: *19],
-        access: [Circular: *20],
-        accessSync: [Circular: *21],
-        appendFile: [Circular: *22],
-        appendFileSync: [Circular: *23],
-        chmod: [Circular: *24],
-        chmodSync: [Circular: *25],
-        chown: [Circular: *26],
-        chownSync: [Circular: *27],
-        close: [Circular: *28],
-        closeSync: [Circular: *29],
-        constants: [Circular: *30],
-        copyFile: [Circular: *31],
-        copyFileSync: [Circular: *32],
-        cp: [Circular: *33],
-        cpSync: [Circular: *34],
-        createReadStream: [Circular: *35],
-        createWriteStream: [Circular: *36],
-        exists: <ref *38> ƒ exists2(length: 2) {
+        Stats: [Circular: *16],
+        WriteStream: [Circular: *17],
+        _toUnixTimestamp: [Circular: *29],
+        access: [Circular: *30],
+        accessSync: [Circular: *31],
+        appendFile: [Circular: *32],
+        appendFileSync: [Circular: *33],
+        chmod: [Circular: *34],
+        chmodSync: [Circular: *35],
+        chown: [Circular: *36],
+        chownSync: [Circular: *37],
+        close: [Circular: *38],
+        closeSync: [Circular: *39],
+        constants: [Circular: *40],
+        copyFile: [Circular: *41],
+        copyFileSync: [Circular: *42],
+        cp: [Circular: *43],
+        cpSync: [Circular: *44],
+        createReadStream: [Circular: *45],
+        createWriteStream: [Circular: *46],
+        exists: <ref *48> ƒ exists2(length: 2) {
             Symbol(nodejs.util.promisify.custom): ƒ (length: 1) {}
         },
-        existsSync: <ref *40> ƒ existsSync2(length: 0) {},
-        fchmod: <ref *41> ƒ fchmod2(length: 0) {},
-        fchmodSync: <ref *42> ƒ bound fchmodSync(length: 2) {},
-        fchown: <ref *43> ƒ fchown2(length: 0) {},
-        fchownSync: <ref *44> ƒ bound fchownSync(length: 3) {},
-        fstat: <ref *45> ƒ fstat2(length: 0) {},
-        fstatSync: <ref *46> ƒ bound fstatSync(length: 1) {},
-        fsync: <ref *47> ƒ fsync2(length: 0) {},
-        fsyncSync: <ref *48> ƒ bound fsyncSync(length: 1) {},
-        ftruncate: <ref *49> ƒ ftruncate2(length: 0) {},
-        ftruncateSync: <ref *50> ƒ bound ftruncateSync(length: 1) {},
-        futimes: <ref *51> ƒ futimes2(length: 0) {},
-        futimesSync: <ref *52> ƒ bound futimesSync(length: 3) {},
-        lchmod: <ref *53> ƒ lchmod2(length: 0) {},
-        lchmodSync: <ref *54> ƒ bound lchmodSync(length: 2) {},
-        lchown: <ref *55> ƒ lchown2(length: 0) {},
-        lchownSync: <ref *56> ƒ bound lchownSync(length: 3) {},
-        link: <ref *57> ƒ link2(length: 0) {},
-        linkSync: <ref *58> ƒ bound linkSync(length: 2) {},
-        lstat: <ref *59> ƒ lstat2(length: 0) {},
-        lstatSync: <ref *60> ƒ bound lstatSync(length: 1) {},
-        lutimes: <ref *61> ƒ lutimes2(length: 0) {},
-        lutimesSync: <ref *62> ƒ bound lutimesSync(length: 3) {},
-        mkdir: <ref *63> ƒ mkdir2(length: 0) {},
-        mkdirSync: <ref *64> ƒ bound mkdirSync(length: 2) {},
-        mkdtemp: <ref *65> ƒ mkdtemp2(length: 0) {},
-        mkdtempSync: <ref *66> ƒ bound mkdtempSync(length: 2) {},
-        open: <ref *67> ƒ open2(length: 0) {},
-        openSync: <ref *68> ƒ bound openSync(length: 3) {},
-        promises: <ref *69> {
+        existsSync: <ref *50> ƒ existsSync2(length: 0) {},
+        fchmod: <ref *51> ƒ fchmod2(length: 0) {},
+        fchmodSync: <ref *52> ƒ bound fchmodSync(length: 2) {},
+        fchown: <ref *53> ƒ fchown2(length: 0) {},
+        fchownSync: <ref *54> ƒ bound fchownSync(length: 3) {},
+        fstat: <ref *55> ƒ fstat2(length: 0) {},
+        fstatSync: <ref *56> ƒ bound fstatSync(length: 1) {},
+        fsync: <ref *57> ƒ fsync2(length: 0) {},
+        fsyncSync: <ref *58> ƒ bound fsyncSync(length: 1) {},
+        ftruncate: <ref *59> ƒ ftruncate2(length: 0) {},
+        ftruncateSync: <ref *60> ƒ bound ftruncateSync(length: 1) {},
+        futimes: <ref *61> ƒ futimes2(length: 0) {},
+        futimesSync: <ref *62> ƒ bound futimesSync(length: 3) {},
+        lchmod: <ref *63> ƒ lchmod2(length: 0) {},
+        lchmodSync: <ref *64> ƒ bound lchmodSync(length: 2) {},
+        lchown: <ref *65> ƒ lchown2(length: 0) {},
+        lchownSync: <ref *66> ƒ bound lchownSync(length: 3) {},
+        link: <ref *67> ƒ link2(length: 0) {},
+        linkSync: <ref *68> ƒ bound linkSync(length: 2) {},
+        lstat: <ref *69> ƒ lstat2(length: 0) {},
+        lstatSync: <ref *70> ƒ bound lstatSync(length: 1) {},
+        lutimes: <ref *71> ƒ lutimes2(length: 0) {},
+        lutimesSync: <ref *72> ƒ bound lutimesSync(length: 3) {},
+        mkdir: <ref *73> ƒ mkdir2(length: 0) {},
+        mkdirSync: <ref *74> ƒ bound mkdirSync(length: 2) {},
+        mkdtemp: <ref *75> ƒ mkdtemp2(length: 0) {},
+        mkdtempSync: <ref *76> ƒ bound mkdtempSync(length: 2) {},
+        open: <ref *77> ƒ open2(length: 0) {},
+        openSync: <ref *78> ƒ bound openSync(length: 3) {},
+        promises: <ref *79> {
             access: ƒ bound access(length: 3) {},
             appendFile: ƒ bound appendFile(length: 4) {},
             close: ƒ bound close(length: 1) {},
@@ -6438,136 +6455,135 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             rmdir: ƒ bound rmdir(length: 3) {},
             writev: ƒ writev(length: 3) {},
             readv: ƒ readv(length: 3) {},
-            constants: [Circular: *30],
+            constants: [Circular: *40],
             watch: ƒ watch(length: 1) {},
             opendir: ƒ opendir(length: 1) {}
         },
-        read: <ref *112> ƒ read2(length: 6) {
+        read: <ref *122> ƒ read2(length: 6) {
             Symbol(nodejs.util.promisify.custom): ƒ (length: 2) {}
         },
-        readFile: <ref *114> ƒ readFile2(length: 0) {},
-        readFileSync: <ref *115> ƒ bound readFileSync(length: 2) {},
-        readSync: <ref *116> ƒ bound readSync(length: 5) {},
-        readdir: <ref *117> ƒ readdir2(length: 0) {},
-        readdirSync: <ref *118> ƒ bound readdirSync(length: 2) {},
-        readlink: <ref *119> ƒ readlink2(length: 0) {},
-        readlinkSync: <ref *120> ƒ bound readlinkSync(length: 2) {},
-        readv: <ref *121> ƒ readv2(length: 4) {},
-        readvSync: <ref *122> ƒ bound readvSync(length: 3) {},
-        realpath: <ref *123> ƒ realpath2(length: 0) {
-            native: [Circular: *123]
+        readFile: <ref *124> ƒ readFile2(length: 0) {},
+        readFileSync: <ref *125> ƒ bound readFileSync(length: 2) {},
+        readSync: <ref *126> ƒ bound readSync(length: 5) {},
+        readdir: <ref *127> ƒ readdir2(length: 0) {},
+        readdirSync: <ref *128> ƒ bound readdirSync(length: 2) {},
+        readlink: <ref *129> ƒ readlink2(length: 0) {},
+        readlinkSync: <ref *130> ƒ bound readlinkSync(length: 2) {},
+        readv: <ref *131> ƒ readv2(length: 4) {},
+        readvSync: <ref *132> ƒ bound readvSync(length: 3) {},
+        realpath: <ref *133> ƒ realpath2(length: 0) {
+            native: [Circular: *133]
         },
-        realpathSync: <ref *124> ƒ bound realpathSync(length: 2) {
-            native: [Circular: *124]
+        realpathSync: <ref *134> ƒ bound realpathSync(length: 2) {
+            native: [Circular: *134]
         },
-        rename: <ref *125> ƒ rename2(length: 0) {},
-        renameSync: <ref *126> ƒ bound renameSync(length: 2) {},
-        rm: <ref *127> ƒ rm2(length: 0) {},
-        rmSync: <ref *128> ƒ bound rmSync(length: 2) {},
-        rmdir: <ref *129> ƒ rmdir2(length: 0) {},
-        rmdirSync: <ref *130> ƒ bound rmdirSync(length: 2) {},
-        stat: <ref *131> ƒ stat2(length: 0) {},
-        statSync: <ref *132> ƒ bound statSync(length: 1) {},
-        symlink: <ref *133> ƒ symlink2(length: 0) {},
-        symlinkSync: <ref *134> ƒ bound symlinkSync(length: 3) {},
-        truncate: <ref *135> ƒ truncate2(length: 0) {},
-        truncateSync: <ref *136> ƒ bound truncateSync(length: 2) {},
-        unlink: <ref *137> ƒ unlink2(length: 0) {},
-        unlinkSync: <ref *138> ƒ bound unlinkSync(length: 1) {},
-        unwatchFile: <ref *139> ƒ unwatchFile(length: 2) {},
-        utimes: <ref *140> ƒ utimes2(length: 0) {},
-        utimesSync: <ref *141> ƒ bound utimesSync(length: 3) {},
-        watch: <ref *142> ƒ watch2(length: 3) {},
-        watchFile: <ref *143> ƒ watchFile(length: 3) {},
-        write: <ref *144> ƒ write2(length: 0) {
+        rename: <ref *135> ƒ rename2(length: 0) {},
+        renameSync: <ref *136> ƒ bound renameSync(length: 2) {},
+        rm: <ref *137> ƒ rm2(length: 0) {},
+        rmSync: <ref *138> ƒ bound rmSync(length: 2) {},
+        rmdir: <ref *139> ƒ rmdir2(length: 0) {},
+        rmdirSync: <ref *140> ƒ bound rmdirSync(length: 2) {},
+        stat: <ref *141> ƒ stat2(length: 0) {},
+        statSync: <ref *142> ƒ bound statSync(length: 1) {},
+        symlink: <ref *143> ƒ symlink2(length: 0) {},
+        symlinkSync: <ref *144> ƒ bound symlinkSync(length: 3) {},
+        truncate: <ref *145> ƒ truncate2(length: 0) {},
+        truncateSync: <ref *146> ƒ bound truncateSync(length: 2) {},
+        unlink: <ref *147> ƒ unlink2(length: 0) {},
+        unlinkSync: <ref *148> ƒ bound unlinkSync(length: 1) {},
+        unwatchFile: <ref *149> ƒ unwatchFile(length: 2) {},
+        utimes: <ref *150> ƒ utimes2(length: 0) {},
+        utimesSync: <ref *151> ƒ bound utimesSync(length: 3) {},
+        watch: <ref *152> ƒ watch2(length: 3) {},
+        watchFile: <ref *153> ƒ watchFile(length: 3) {},
+        write: <ref *154> ƒ write2(length: 0) {
             Symbol(nodejs.util.promisify.custom): ƒ (length: 2) {}
         },
-        writeFile: <ref *146> ƒ writeFile2(length: 0) {},
-        writeFileSync: <ref *147> ƒ bound writeFileSync(length: 3) {},
-        writeSync: <ref *148> ƒ bound writeSync(length: 5) {},
-        writev: <ref *149> ƒ writev2(length: 4) {},
-        writevSync: <ref *150> ƒ bound writevSync(length: 3) {},
-        fdatasync: <ref *151> ƒ fdatasync2(length: 0) {},
-        fdatasyncSync: <ref *152> ƒ bound fdatasyncSync(length: 1) {},
-        openAsBlob: <ref *153> ƒ openAsBlob(length: 2) {},
-        opendir: <ref *154> ƒ opendir2(length: 0) {},
+        writeFile: <ref *156> ƒ writeFile2(length: 0) {},
+        writeFileSync: <ref *157> ƒ bound writeFileSync(length: 3) {},
+        writeSync: <ref *158> ƒ bound writeSync(length: 5) {},
+        writev: <ref *159> ƒ writev2(length: 4) {},
+        writevSync: <ref *160> ƒ bound writevSync(length: 3) {},
+        fdatasync: <ref *161> ƒ fdatasync2(length: 0) {},
+        fdatasyncSync: <ref *162> ƒ bound fdatasyncSync(length: 1) {},
+        openAsBlob: <ref *163> ƒ openAsBlob(length: 2) {},
+        opendir: <ref *164> ƒ opendir2(length: 0) {},
         Symbol(::bunternal::): {
-            ReadStreamClass: ƒ ReadStream2(length: 1) {},
-            WriteStreamClass: [Circular: *7]
+            WriteStreamClass: [Circular: *17]
         }
     },
-    exists: [Circular: *38],
-    existsSync: [Circular: *40],
-    fchmod: [Circular: *41],
-    fchmodSync: [Circular: *42],
-    fchown: [Circular: *43],
-    fchownSync: [Circular: *44],
-    fdatasync: [Circular: *151],
-    fdatasyncSync: [Circular: *152],
-    fstat: [Circular: *45],
-    fstatSync: [Circular: *46],
-    fsync: [Circular: *47],
-    fsyncSync: [Circular: *48],
-    ftruncate: [Circular: *49],
-    ftruncateSync: [Circular: *50],
-    futimes: [Circular: *51],
-    futimesSync: [Circular: *52],
-    lchmod: [Circular: *53],
-    lchmodSync: [Circular: *54],
-    lchown: [Circular: *55],
-    lchownSync: [Circular: *56],
-    link: [Circular: *57],
-    linkSync: [Circular: *58],
-    lstat: [Circular: *59],
-    lstatSync: [Circular: *60],
-    lutimes: [Circular: *61],
-    lutimesSync: [Circular: *62],
-    mkdir: [Circular: *63],
-    mkdirSync: [Circular: *64],
-    mkdtemp: [Circular: *65],
-    mkdtempSync: [Circular: *66],
-    open: [Circular: *67],
-    openAsBlob: [Circular: *153],
-    openSync: [Circular: *68],
-    opendir: [Circular: *154],
-    promises: [Circular: *69],
-    read: [Circular: *112],
-    readFile: [Circular: *114],
-    readFileSync: [Circular: *115],
-    readSync: [Circular: *116],
-    readdir: [Circular: *117],
-    readdirSync: [Circular: *118],
-    readlink: [Circular: *119],
-    readlinkSync: [Circular: *120],
-    readv: [Circular: *121],
-    readvSync: [Circular: *122],
-    realpath: [Circular: *123],
-    realpathSync: [Circular: *124],
-    rename: [Circular: *125],
-    renameSync: [Circular: *126],
-    rm: [Circular: *127],
-    rmSync: [Circular: *128],
-    rmdir: [Circular: *129],
-    rmdirSync: [Circular: *130],
-    stat: [Circular: *131],
-    statSync: [Circular: *132],
-    symlink: [Circular: *133],
-    symlinkSync: [Circular: *134],
-    truncate: [Circular: *135],
-    truncateSync: [Circular: *136],
-    unlink: [Circular: *137],
-    unlinkSync: [Circular: *138],
-    unwatchFile: [Circular: *139],
-    utimes: [Circular: *140],
-    utimesSync: [Circular: *141],
-    watch: [Circular: *142],
-    watchFile: [Circular: *143],
-    write: [Circular: *144],
-    writeFile: [Circular: *146],
-    writeFileSync: [Circular: *147],
-    writeSync: [Circular: *148],
-    writev: [Circular: *149],
-    writevSync: [Circular: *150]
+    exists: [Circular: *48],
+    existsSync: [Circular: *50],
+    fchmod: [Circular: *51],
+    fchmodSync: [Circular: *52],
+    fchown: [Circular: *53],
+    fchownSync: [Circular: *54],
+    fdatasync: [Circular: *161],
+    fdatasyncSync: [Circular: *162],
+    fstat: [Circular: *55],
+    fstatSync: [Circular: *56],
+    fsync: [Circular: *57],
+    fsyncSync: [Circular: *58],
+    ftruncate: [Circular: *59],
+    ftruncateSync: [Circular: *60],
+    futimes: [Circular: *61],
+    futimesSync: [Circular: *62],
+    lchmod: [Circular: *63],
+    lchmodSync: [Circular: *64],
+    lchown: [Circular: *65],
+    lchownSync: [Circular: *66],
+    link: [Circular: *67],
+    linkSync: [Circular: *68],
+    lstat: [Circular: *69],
+    lstatSync: [Circular: *70],
+    lutimes: [Circular: *71],
+    lutimesSync: [Circular: *72],
+    mkdir: [Circular: *73],
+    mkdirSync: [Circular: *74],
+    mkdtemp: [Circular: *75],
+    mkdtempSync: [Circular: *76],
+    open: [Circular: *77],
+    openAsBlob: [Circular: *163],
+    openSync: [Circular: *78],
+    opendir: [Circular: *164],
+    promises: [Circular: *79],
+    read: [Circular: *122],
+    readFile: [Circular: *124],
+    readFileSync: [Circular: *125],
+    readSync: [Circular: *126],
+    readdir: [Circular: *127],
+    readdirSync: [Circular: *128],
+    readlink: [Circular: *129],
+    readlinkSync: [Circular: *130],
+    readv: [Circular: *131],
+    readvSync: [Circular: *132],
+    realpath: [Circular: *133],
+    realpathSync: [Circular: *134],
+    rename: [Circular: *135],
+    renameSync: [Circular: *136],
+    rm: [Circular: *137],
+    rmSync: [Circular: *138],
+    rmdir: [Circular: *139],
+    rmdirSync: [Circular: *140],
+    stat: [Circular: *141],
+    statSync: [Circular: *142],
+    symlink: [Circular: *143],
+    symlinkSync: [Circular: *144],
+    truncate: [Circular: *145],
+    truncateSync: [Circular: *146],
+    unlink: [Circular: *147],
+    unlinkSync: [Circular: *148],
+    unwatchFile: [Circular: *149],
+    utimes: [Circular: *150],
+    utimesSync: [Circular: *151],
+    watch: [Circular: *152],
+    watchFile: [Circular: *153],
+    write: [Circular: *154],
+    writeFile: [Circular: *156],
+    writeFileSync: [Circular: *157],
+    writeSync: [Circular: *158],
+    writev: [Circular: *159],
+    writevSync: [Circular: *160]
 }
 ```
 
@@ -7178,12 +7194,13 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             close: ƒ (length: 1) {},
             address: ƒ (length: 0) {},
             listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {}
+            setTimeout: ƒ (length: 2) {},
+            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *34],
+            constructor: [Circular: *35],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -7205,22 +7222,22 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *55> ƒ createServer(length: 2) {},
+    createServer: <ref *56> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
         Server: [Circular: *24],
         METHODS: [Circular: *9],
         STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *55],
-        ServerResponse: [Circular: *34],
+        createServer: [Circular: *56],
+        ServerResponse: [Circular: *35],
         IncomingMessage: [Circular: *4],
-        request: <ref *57> ƒ request(length: 3) {},
-        get: <ref *58> ƒ get(length: 3) {},
+        request: <ref *58> ƒ request(length: 3) {},
+        get: <ref *59> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *59> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *60> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *61> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *62> Agent {
+        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *63> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -7230,9 +7247,9 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
                 path: null,
                 noDelay: true
             },
-            requests: <ref *65> [Object: null prototype] {},
-            sockets: [Circular: *65],
-            freeSockets: [Circular: *65],
+            requests: <ref *66> [Object: null prototype] {},
+            sockets: [Circular: *66],
+            freeSockets: [Circular: *66],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -7245,13 +7262,13 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         ClientRequest: [Circular: *3],
         OutgoingMessage: [Circular: *10]
     },
-    get: [Circular: *58],
-    globalAgent: [Circular: *62],
+    get: [Circular: *59],
+    globalAgent: [Circular: *63],
     maxHeaderSize: 16384,
-    request: [Circular: *57],
-    setMaxIdleHTTPParsers: [Circular: *61],
-    validateHeaderName: [Circular: *59],
-    validateHeaderValue: [Circular: *60]
+    request: [Circular: *58],
+    setMaxIdleHTTPParsers: [Circular: *62],
+    validateHeaderName: [Circular: *60],
+    validateHeaderValue: [Circular: *61]
 }
 ```
 
@@ -8006,12 +8023,13 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             close: ƒ (length: 1) {},
             address: ƒ (length: 0) {},
             listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {}
+            setTimeout: ƒ (length: 2) {},
+            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *34> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *34],
+            constructor: [Circular: *35],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -8033,22 +8051,22 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *55> ƒ createServer(length: 2) {},
+    createServer: <ref *56> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
         Server: [Circular: *24],
         METHODS: [Circular: *9],
         STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *55],
-        ServerResponse: [Circular: *34],
+        createServer: [Circular: *56],
+        ServerResponse: [Circular: *35],
         IncomingMessage: [Circular: *4],
-        request: <ref *57> ƒ request(length: 3) {},
-        get: <ref *58> ƒ get(length: 3) {},
+        request: <ref *58> ƒ request(length: 3) {},
+        get: <ref *59> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *59> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *60> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *61> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *62> Agent {
+        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *63> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -8058,9 +8076,9 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
                 path: null,
                 noDelay: true
             },
-            requests: <ref *65> [Object: null prototype] {},
-            sockets: [Circular: *65],
-            freeSockets: [Circular: *65],
+            requests: <ref *66> [Object: null prototype] {},
+            sockets: [Circular: *66],
+            freeSockets: [Circular: *66],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -8073,13 +8091,13 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         ClientRequest: [Circular: *3],
         OutgoingMessage: [Circular: *10]
     },
-    get: [Circular: *58],
-    globalAgent: [Circular: *62],
+    get: [Circular: *59],
+    globalAgent: [Circular: *63],
     maxHeaderSize: 16384,
-    request: [Circular: *57],
-    setMaxIdleHTTPParsers: [Circular: *61],
-    validateHeaderName: [Circular: *59],
-    validateHeaderValue: [Circular: *60]
+    request: [Circular: *58],
+    setMaxIdleHTTPParsers: [Circular: *62],
+    validateHeaderName: [Circular: *60],
+    validateHeaderValue: [Circular: *61]
 }
 ```
 
@@ -8404,7 +8422,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1714954364750-1/module.mjs: "/tmp/fs-fixture-1714954364750-1/module.mjs"
+            /tmp/fs-fixture-1715559185401-1/module.mjs: "/tmp/fs-fixture-1715559185401-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -8567,13 +8585,13 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1714954364750-1/module.mjs: {
+            /tmp/fs-fixture-1715559185401-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1714954364750-1/inspect.mjs: {
+            /tmp/fs-fixture-1715559185401-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -9674,14 +9692,14 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1714954365759.5693,
+            timeOrigin: 1715559186407.25,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: undefined,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1714954365759.5693,
-                nodeStart: 1714954365759.5693,
-                environment: 1714954365759.5693,
-                bootstrapComplete: 1714954365759.5693,
+                v8Start: 1715559186407.25,
+                nodeStart: 1715559186407.25,
+                environment: 1715559186407.25,
+                bootstrapComplete: 1715559186407.25,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -9953,7 +9971,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
-        "/tmp/fs-fixture-1714954364750-1/process.mjs"
+        "/tmp/fs-fixture-1715559185401-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -10830,7 +10848,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         setgid: <ref *100> ƒ (length: 1) {},
         setuid: <ref *101> ƒ (length: 1) {},
         env: <ref *102>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_cd14673c-ad9c-43ae-95d4-ac5c12a702e8",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_cad2c7a8-e248-44bd-b867-fa132a98720e",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -10839,7 +10857,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.12.2 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_cd14673c-ad9c-43ae-95d4-ac5c12a702e8",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_cad2c7a8-e248-44bd-b867-fa132a98720e",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
@@ -10861,7 +10879,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "601",
+            SYSTEMD_EXEC_PID: "586",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             NVM_DIR: "/home/runner/.nvm",
@@ -10877,7 +10895,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:18013",
+            JOURNAL_STREAM: "8:4031",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -10885,15 +10903,14 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "8962144058",
+            GITHUB_RUN_ID: "9055224369",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "d70894f4e764dc7aa785a2d9ae6fe70979405118",
+            GITHUB_WORKFLOW_SHA: "b5a6e1062d31695e99e79c8b2c39cec912ec66ab",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
-            STATS_BLT: "true",
             GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
             PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             GITHUB_ACTION_REPOSITORY: "",
@@ -10901,12 +10918,12 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_926e1663-28dc-481b-b401-e1f211c8a3a0",
-            INVOCATION_ID: "444e383c09354290840eb152c91972b1",
+            RUNNER_TRACKING_ID: "github_e308bc25-4be4-4174-860b-1c2d55262759",
+            INVOCATION_ID: "88b9f2cdba724084a0268c3d79f5a08f",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "74",
+            GITHUB_RUN_NUMBER: "75",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10916,7 +10933,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             npm_package_devDependencies_eslint: "^8.37.0",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 7",
+            RUNNER_NAME: "GitHub Actions 2",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
@@ -10941,7 +10958,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "d70894f4e764dc7aa785a2d9ae6fe70979405118",
+            GITHUB_SHA: "b5a6e1062d31695e99e79c8b2c39cec912ec66ab",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -10949,7 +10966,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_cd14673c-ad9c-43ae-95d4-ac5c12a702e8",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_cad2c7a8-e248-44bd-b867-fa132a98720e",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -10964,7 +10981,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_cd14673c-ad9c-43ae-95d4-ac5c12a702e8",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_cad2c7a8-e248-44bd-b867-fa132a98720e",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -10977,15 +10994,15 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.172+1/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_cd14673c-ad9c-43ae-95d4-ac5c12a702e8",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_cad2c7a8-e248-44bd-b867-fa132a98720e",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *103> [],
-        pid: 2756,
-        ppid: 1878,
+        pid: 2769,
+        ppid: 1886,
         execPath: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -11028,9 +11045,9 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
     moduleLoadList: [Circular: *42],
     nextTick: [Circular: *65],
     openStdin: [Circular: *55],
-    pid: 2756,
+    pid: 2769,
     platform: "linux",
-    ppid: 1878,
+    ppid: 1886,
     reallyExit: [Circular: *46],
     release: [Circular: *41],
     report: [Circular: *104],
@@ -11076,7 +11093,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1714954364750-1/process.mjs"
+        "/tmp/fs-fixture-1715559185401-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -11114,7 +11131,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         dlopen: <ref *28> ƒ dlopen(length: 1) {},
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_cd14673c-ad9c-43ae-95d4-ac5c12a702e8",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_cad2c7a8-e248-44bd-b867-fa132a98720e",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -11123,7 +11140,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.12.2 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_cd14673c-ad9c-43ae-95d4-ac5c12a702e8",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_cad2c7a8-e248-44bd-b867-fa132a98720e",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_package_devDependencies_execa: "^7.1.1",
             [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
@@ -11145,7 +11162,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "601",
+            [get/set] SYSTEMD_EXEC_PID: "586",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             [get/set] NVM_DIR: "/home/runner/.nvm",
@@ -11161,7 +11178,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             [get/set] RUNNER_USER: "runner",
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] JOURNAL_STREAM: "8:18013",
+            [get/set] JOURNAL_STREAM: "8:4031",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
@@ -11169,15 +11186,14 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "8962144058",
+            [get/set] GITHUB_RUN_ID: "9055224369",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "d70894f4e764dc7aa785a2d9ae6fe70979405118",
+            [get/set] GITHUB_WORKFLOW_SHA: "b5a6e1062d31695e99e79c8b2c39cec912ec66ab",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu22",
             [get/set] npm_package_scripts_start: "tsx index.ts",
-            [get/set] STATS_BLT: "true",
             [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
             [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             [get/set] GITHUB_ACTION_REPOSITORY: "",
@@ -11185,12 +11201,12 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_926e1663-28dc-481b-b401-e1f211c8a3a0",
-            [get/set] INVOCATION_ID: "444e383c09354290840eb152c91972b1",
+            [get/set] RUNNER_TRACKING_ID: "github_e308bc25-4be4-4174-860b-1c2d55262759",
+            [get/set] INVOCATION_ID: "88b9f2cdba724084a0268c3d79f5a08f",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             [get/set] NODE: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "74",
+            [get/set] GITHUB_RUN_NUMBER: "75",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11200,7 +11216,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] npm_package_devDependencies_eslint: "^8.37.0",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 7",
+            [get/set] RUNNER_NAME: "GitHub Actions 2",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
@@ -11225,7 +11241,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             [get/set] GITHUB_JOB: "build",
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] GITHUB_SHA: "d70894f4e764dc7aa785a2d9ae6fe70979405118",
+            [get/set] GITHUB_SHA: "b5a6e1062d31695e99e79c8b2c39cec912ec66ab",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] GITHUB_REF: "refs/heads/master",
             [get/set] GITHUB_ACTOR: "privatenumber",
@@ -11233,7 +11249,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             [get/set] npm_package_license: "MIT",
             [get/set] LEIN_HOME: "/usr/local/lib/lein",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_cd14673c-ad9c-43ae-95d4-ac5c12a702e8",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_cad2c7a8-e248-44bd-b867-fa132a98720e",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -11248,7 +11264,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_cd14673c-ad9c-43ae-95d4-ac5c12a702e8",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_cad2c7a8-e248-44bd-b867-fa132a98720e",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -11261,7 +11277,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.172+1/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_cd14673c-ad9c-43ae-95d4-ac5c12a702e8",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_cad2c7a8-e248-44bd-b867-fa132a98720e",
             [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
@@ -11281,39 +11297,41 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             cached_builtins: true
         },
         getActiveResourcesInfo: <ref *34> ƒ getActiveResourcesInfo(length: 0) {},
-        hrtime: <ref *35> ƒ hrtime(length: 0) {
+        hasUncaughtExceptionCaptureCallback: <ref *35> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
+        hrtime: <ref *36> ƒ hrtime(length: 0) {
             bigint: ƒ bigint(length: 0) {}
         },
         isBun: true,
-        kill: <ref *37> ƒ kill(length: 2) {},
+        kill: <ref *38> ƒ kill(length: 2) {},
         [get/set] mainModule: undefined,
-        memoryUsage: <ref *38> ƒ memoryUsage(length: 0) {
+        memoryUsage: <ref *39> ƒ memoryUsage(length: 0) {
             rss: ƒ rss(length: 0) {}
         },
-        moduleLoadList: <ref *40> [],
-        nextTick: <ref *41> ƒ nextTick(length: 2) {},
-        openStdin: <ref *42> ƒ openStdin(length: 0) {},
-        pid: 2771,
+        moduleLoadList: <ref *41> [],
+        nextTick: <ref *42> ƒ nextTick(length: 2) {},
+        openStdin: <ref *43> ƒ openStdin(length: 0) {},
+        pid: 2770,
         platform: "linux",
-        ppid: 1878,
-        reallyExit: <ref *43> ƒ reallyExit(length: 1) {},
-        release: <ref *44> {
+        ppid: 1886,
+        reallyExit: <ref *44> ƒ reallyExit(length: 1) {},
+        release: <ref *45> {
             name: "node",
             lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.7/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.8/bun-linux-x64-baseline.zip",
             headersUrl: "",
             libUrl: ""
         },
-        report: <ref *45> {
+        report: <ref *46> {
             getReport: ƒ getReport(length: 0) {},
             directory: "",
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "72bc2585e35b3f743a695f79dfb9d22937143c8f",
-        setSourceMapsEnabled: <ref *48> ƒ setSourceMapsEnabled(length: 1) {},
+        revision: "dbdc3760055bda335694e338cc35ce1730164531",
+        setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
+        setUncaughtExceptionCaptureCallback: <ref *50> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
-        stderr: <ref *49> Writable {
+        stderr: <ref *51> Writable {
             _writableState: {
                 objectMode: false,
                 highWaterMark: 16384,
@@ -11350,59 +11368,73 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
                 Symbol(kOnFinished): []
             },
             _events: EventEmitter {},
-            _construct: <ref *55> ƒ NativeWritable_internalConstruct(length: 1) {},
-            _final: <ref *56> ƒ NativeWritable_internalFinal(length: 1) {},
-            _write: <ref *57> ƒ NativeWritablePrototypeWrite(length: 3) {},
+            _construct: <ref *57> ƒ NativeWritable_internalConstruct(length: 1) {},
+            _final: <ref *58> ƒ NativeWritable_internalFinal(length: 1) {},
+            _write: <ref *59> ƒ NativeWritablePrototypeWrite(length: 3) {},
             fd: 2,
             start: undefined,
             flags: "w",
             mode: 438,
             bytesWritten: 0,
             _type: "fs",
-            destroySoon: <ref *58> ƒ (length: 2) {},
+            destroySoon: <ref *60> ƒ (length: 2) {},
             _destroy: ƒ (length: 2) {},
             _isStdio: true,
             constructed: true,
             Symbol(native): true,
             Symbol(pathOrFdOrSink): 2,
             Symbol(Bun.NodeWriteStreamFastPath): false,
-            Symbol(#fs): <ref *60> {
+            Symbol(#fs): <ref *62> {
                 write: ƒ write2(length: 0) {
                     Symbol(nodejs.util.promisify.custom): ƒ (length: 2) {}
                 },
-                close: ƒ close2(length: 2) {},
+                close: <ref *65> ƒ close2(length: 2) {},
                 open: ƒ open2(length: 0) {},
-                openSync: ƒ bound openSync(length: 3) {}
+                openSync: <ref *67> ƒ bound openSync(length: 3) {}
             },
             Symbol(kHandle): null,
             Symbol(Bun.NodeWriteStream): true,
             Symbol(kIoDone): false
         },
-        stdin: <ref *66> ReadStream2 {
+        stdin: <ref *68> Readable {
+            fd: 0,
+            bytesRead: 0,
+            autoClose: false,
             _readableState: ReadableState {
                 autoClose: true
             },
             _events: EventEmitter {},
-            file: undefined,
-            path: undefined,
-            fd: 0,
+            end: Infinity,
+            _read: ƒ (length: 1) {},
+            start: 0,
             flags: "r",
             mode: 438,
-            start: 0,
-            end: Infinity,
-            pos: 0,
-            bytesRead: 0,
-            _read: ƒ (length: 1) {},
-            autoClose: false,
             emitClose: true,
+            pos: 0,
             on: ƒ (length: 2) {},
             pause: ƒ (length: 0) {},
             resume: ƒ (length: 0) {},
+            Symbol(mfileSize): -1,
             Symbol(Bun.NodeReadStream): true,
             Symbol(Bun.NodeReadStreamPathOrFd): 0,
-            Symbol(Bun.Node.readStreamPathFastPath): false
+            Symbol(refCount): 0,
+            Symbol(constructed): false,
+            Symbol(remainingChunk): undefined,
+            Symbol(pendingRead): false,
+            Symbol(hasResized): false,
+            Symbol(highWaterMark): 65536,
+            Symbol(kHandle): null,
+            Symbol(Bun.Node.readStreamPathFastPath): false,
+            Symbol(kFs): {
+                read: ƒ read2(length: 6) {
+                    Symbol(nodejs.util.promisify.custom): ƒ (length: 2) {}
+                },
+                open: ƒ open(length: 4) {},
+                openSync: [Circular: *67],
+                close: [Circular: *65]
+            }
         },
-        stdout: <ref *73> Writable {
+        stdout: <ref *79> Writable {
             _writableState: {
                 objectMode: false,
                 highWaterMark: 16384,
@@ -11439,52 +11471,52 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
                 Symbol(kOnFinished): []
             },
             _events: EventEmitter {},
-            _construct: [Circular: *55],
-            _final: [Circular: *56],
-            _write: [Circular: *57],
+            _construct: [Circular: *57],
+            _final: [Circular: *58],
+            _write: [Circular: *59],
             fd: 1,
             start: undefined,
             flags: "w",
             mode: 438,
             bytesWritten: 0,
             _type: "fs",
-            destroySoon: [Circular: *58],
+            destroySoon: [Circular: *60],
             _destroy: ƒ (length: 2) {},
             _isStdio: true,
             constructed: true,
             Symbol(native): true,
             Symbol(pathOrFdOrSink): 1,
             Symbol(Bun.NodeWriteStreamFastPath): false,
-            Symbol(#fs): [Circular: *60],
+            Symbol(#fs): [Circular: *62],
             Symbol(kHandle): null,
             Symbol(Bun.NodeWriteStream): true,
             Symbol(kIoDone): false
         },
         [get/set] title: "bun",
-        umask: <ref *80> ƒ umask(length: 1) {},
-        uptime: <ref *81> ƒ uptime(length: 1) {},
+        umask: <ref *86> ƒ umask(length: 1) {},
+        uptime: <ref *87> ƒ uptime(length: 1) {},
         version: "v21.6.0",
-        versions: <ref *82> {
+        versions: <ref *88> {
             node: "21.6.0",
-            bun: "1.1.7",
+            bun: "1.1.8",
             webkit: "a780bdf0255ae1a7ed15e4b3f31c14af705facae",
             boringssl: "b275c5ce1c88bc06f5a967026d3c0ce1df2be815",
             openssl: "1.1.0",
             libarchive: "dc321febde83dd0f31158e1be61a7aedda65e7a2",
             mimalloc: "7968d4285043401bb36573374710d47a4081a063",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "72bc2585e35b3f743a695f79dfb9d22937143c8f",
+            uwebsockets: "dbdc3760055bda335694e338cc35ce1730164531",
             zig: "0.12.0-dev.1828+225fe6ddb",
             zlib: "885674026394870b7e7a05b7bf1ec5eb7bd8a9c0",
             tinycc: "2d3ad9e0d32194ad7fd867b66ebe218dcc8cb5cd",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "0e7a5dee0fbb04080750cf6eabbe89d8bae87faa",
-            usockets: "72bc2585e35b3f743a695f79dfb9d22937143c8f",
+            usockets: "dbdc3760055bda335694e338cc35ce1730164531",
             v8: "11.3.244.8-node.15",
             uv: "1.46.0",
             napi: "9",
-            icu: "67.1",
-            unicode: "13.0",
+            icu: "75.1",
+            unicode: "15.1",
             modules: "115"
         },
         _debugEnd: [Circular: *2],
@@ -11499,11 +11531,11 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         _stopProfilerIdleNotifier: [Circular: *12],
         _tickCallback: [Circular: *13],
         _kill: [Circular: *7],
-        getegid: <ref *83> ƒ getegid(length: 0) {},
-        geteuid: <ref *84> ƒ geteuid(length: 0) {},
-        getgid: <ref *85> ƒ getgid(length: 0) {},
-        getgroups: <ref *86> ƒ getgroups(length: 0) {},
-        getuid: <ref *87> ƒ getuid(length: 0) {},
+        getegid: <ref *89> ƒ getegid(length: 0) {},
+        geteuid: <ref *90> ƒ geteuid(length: 0) {},
+        getgid: <ref *91> ƒ getgid(length: 0) {},
+        getgroups: <ref *92> ƒ getgroups(length: 0) {},
+        getuid: <ref *93> ƒ getuid(length: 0) {},
         Symbol(Symbol.toStringTag): "process"
     },
     disconnect: undefined,
@@ -11519,47 +11551,49 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
     features: [Circular: *33],
     getActiveResourcesInfo: [Circular: *34],
     getMaxListeners: ƒ getMaxListeners(length: 0) {},
-    getegid: [Circular: *83],
-    geteuid: [Circular: *84],
-    getgid: [Circular: *85],
-    getgroups: [Circular: *86],
-    getuid: [Circular: *87],
-    hrtime: [Circular: *35],
+    getegid: [Circular: *89],
+    geteuid: [Circular: *90],
+    getgid: [Circular: *91],
+    getgroups: [Circular: *92],
+    getuid: [Circular: *93],
+    hasUncaughtExceptionCaptureCallback: [Circular: *35],
+    hrtime: [Circular: *36],
     isBun: true,
-    kill: [Circular: *37],
+    kill: [Circular: *38],
     listenerCount: ƒ listenerCount(length: 1) {},
     listeners: ƒ listeners(length: 1) {},
     mainModule: undefined,
-    memoryUsage: [Circular: *38],
-    moduleLoadList: [Circular: *40],
-    nextTick: [Circular: *41],
+    memoryUsage: [Circular: *39],
+    moduleLoadList: [Circular: *41],
+    nextTick: [Circular: *42],
     off: ƒ off(length: 2) {},
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
-    openStdin: [Circular: *42],
-    pid: 2771,
+    openStdin: [Circular: *43],
+    pid: 2770,
     platform: "linux",
-    ppid: 1878,
+    ppid: 1886,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
-    reallyExit: [Circular: *43],
-    release: [Circular: *44],
+    reallyExit: [Circular: *44],
+    release: [Circular: *45],
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
-    report: [Circular: *45],
-    revision: "72bc2585e35b3f743a695f79dfb9d22937143c8f",
+    report: [Circular: *46],
+    revision: "dbdc3760055bda335694e338cc35ce1730164531",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
-    setSourceMapsEnabled: [Circular: *48],
-    stderr: [Circular: *49],
-    stdin: [Circular: *66],
-    stdout: [Circular: *73],
+    setSourceMapsEnabled: [Circular: *49],
+    setUncaughtExceptionCaptureCallback: [Circular: *50],
+    stderr: [Circular: *51],
+    stdin: [Circular: *68],
+    stdout: [Circular: *79],
     title: "bun",
-    umask: [Circular: *80],
-    uptime: [Circular: *81],
+    umask: [Circular: *86],
+    uptime: [Circular: *87],
     version: "v21.6.0",
-    versions: [Circular: *82]
+    versions: [Circular: *88]
 }
 ```
 
@@ -11916,15 +11950,15 @@ NotImplementedError: node:repl is not yet implemented in Bun.
       at new NotImplementedError (internal:shared:19:27)
       at internal:shared:2:69
       at get (node:repl:76:15)
-      at inspect (/tmp/fs-fixture-1714954364750-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1714954364750-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1715559185401-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1715559185401-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1714954364750-1/inspect.mjs:80:20)
-      at /tmp/fs-fixture-1714954364750-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1715559185401-1/inspect.mjs:80:20)
+      at /tmp/fs-fixture-1715559185401-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1714954364750-1/inspect.mjs:80:20)
+      at inspect (/tmp/fs-fixture-1715559185401-1/inspect.mjs:80:20)
 
-Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
+Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -12693,7 +12727,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2988) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2980) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -13558,7 +13592,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
 ```js
 {
     ReadStream: <ref *2> ƒ ReadStream(length: 1) {
-        [get/set] prototype: ReadStream2 {
+        [get/set] prototype: Readable {
             setRawMode: ƒ (length: 1) {}
         }
     },
@@ -14719,7 +14753,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         WASI: [Circular: *2]
     }
 }
-(node:3212) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3216) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -15038,13 +15072,23 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
 
 ```js
 {
-    BrotliCompress: <ref *2> ƒ (length: 3) {},
-    BrotliDecompress: <ref *3> ƒ (length: 3) {},
-    Deflate: <ref *4> ƒ Deflate(length: 1) {
-        super_: <ref *5> ƒ Zlib(length: 2) {
-            super_: <ref *6> ƒ Transform(length: 1) {
+    BrotliCompress: <ref *2> ƒ BrotliCompress(length: 1) {
+        prototype: Transform {
+            _transform: ƒ _transform(length: 3) {},
+            _flush: ƒ _flush(length: 1) {}
+        }
+    },
+    BrotliDecompress: <ref *6> ƒ BrotliDecompress(length: 1) {
+        prototype: Transform {
+            _transform: ƒ (length: 3) {},
+            _flush: ƒ (length: 1) {}
+        }
+    },
+    Deflate: <ref *10> ƒ Deflate(length: 1) {
+        super_: <ref *11> ƒ Zlib(length: 2) {
+            super_: <ref *12> ƒ Transform(length: 1) {
                 prototype: Transform {
-                    constructor: [Circular: *6],
+                    constructor: [Circular: *12],
                     _final: ƒ final(length: 1) {},
                     _transform: ƒ (length: 3) {},
                     _write: ƒ (length: 3) {},
@@ -15063,30 +15107,31 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         },
         prototype: Deflate {}
     },
-    DeflateRaw: <ref *21> ƒ DeflateRaw(length: 1) {
-        super_: [Circular: *5],
+    DeflateRaw: <ref *27> ƒ DeflateRaw(length: 1) {
+        super_: [Circular: *11],
         prototype: DeflateRaw {}
     },
-    Gunzip: <ref *23> ƒ Gunzip(length: 1) {
-        super_: [Circular: *5],
+    Gunzip: <ref *29> ƒ Gunzip(length: 1) {
+        super_: [Circular: *11],
         prototype: Gunzip {}
     },
-    Gzip: <ref *25> ƒ Gzip(length: 1) {
-        super_: [Circular: *5],
+    Gzip: <ref *31> ƒ Gzip(length: 1) {
+        super_: [Circular: *11],
         prototype: Gzip {}
     },
-    Inflate: <ref *27> ƒ Inflate(length: 1) {
-        super_: [Circular: *5],
+    Inflate: <ref *33> ƒ Inflate(length: 1) {
+        super_: [Circular: *11],
         prototype: Inflate {}
     },
-    InflateRaw: <ref *29> ƒ InflateRaw(length: 1) {
-        super_: [Circular: *5],
+    InflateRaw: <ref *35> ƒ InflateRaw(length: 1) {
+        super_: [Circular: *11],
         prototype: InflateRaw {}
     },
-    Unzip: <ref *31> ƒ Unzip(length: 1) {
-        super_: [Circular: *5],
+    Unzip: <ref *37> ƒ Unzip(length: 1) {
+        super_: [Circular: *11],
         prototype: Unzip {}
     },
+    Z_ASCII: 1,
     Z_BEST_COMPRESSION: 9,
     Z_BEST_SPEED: 1,
     Z_BINARY: 0,
@@ -15110,6 +15155,7 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
     Z_MAX_LEVEL: 9,
     Z_MAX_MEMLEVEL: 9,
     Z_MAX_WINDOWBITS: 15,
+    Z_MEM_ERROR: -4,
     Z_MIN_CHUNK: 64,
     Z_MIN_LEVEL: -1,
     Z_MIN_MEMLEVEL: 1,
@@ -15126,7 +15172,8 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
     Z_TEXT: 1,
     Z_TREES: 6,
     Z_UNKNOWN: 2,
-    Zlib: <ref *33> ƒ Zlib(length: 1) {
+    Z_VERSION_ERROR: -6,
+    Zlib: <ref *39> ƒ Zlib(length: 1) {
         prototype: {
             close: ƒ (length: 0) {},
             write: ƒ (length: 7) {},
@@ -15145,11 +15192,11 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
             _reset: ƒ (length: 0) {}
         }
     },
-    brotliCompress: <ref *50> ƒ (length: 3) {},
-    brotliCompressSync: <ref *51> ƒ (length: 3) {},
-    brotliDecompress: <ref *52> ƒ (length: 3) {},
-    brotliDecompressSync: <ref *53> ƒ (length: 3) {},
-    codes: <ref *54> {
+    brotliCompress: <ref *56> ƒ brotliCompress(length: 3) {},
+    brotliCompressSync: <ref *57> ƒ brotliCompressSync(length: 2) {},
+    brotliDecompress: <ref *58> ƒ brotliDecompress(length: 3) {},
+    brotliDecompressSync: <ref *59> ƒ brotliDecompressSync(length: 2) {},
+    codes: <ref *60> {
         0: "Z_OK",
         1: "Z_STREAM_END",
         2: "Z_NEED_DICT",
@@ -15159,16 +15206,17 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         Z_ERRNO: -1,
         Z_STREAM_ERROR: -2,
         Z_DATA_ERROR: -3,
-        Z_MEM_ERROR: undefined,
+        Z_MEM_ERROR: -4,
         Z_BUF_ERROR: -5,
-        Z_VERSION_ERROR: undefined,
+        Z_VERSION_ERROR: -6,
         -1: "Z_ERRNO",
         -2: "Z_STREAM_ERROR",
         -3: "Z_DATA_ERROR",
-        undefined: "Z_VERSION_ERROR",
-        -5: "Z_BUF_ERROR"
+        -4: "Z_MEM_ERROR",
+        -5: "Z_BUF_ERROR",
+        -6: "Z_VERSION_ERROR"
     },
-    constants: <ref *55> {
+    constants: <ref *61> {
         Z_NO_FLUSH: 0,
         Z_PARTIAL_FLUSH: 1,
         Z_SYNC_FLUSH: 2,
@@ -15182,7 +15230,9 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         Z_ERRNO: -1,
         Z_STREAM_ERROR: -2,
         Z_DATA_ERROR: -3,
+        Z_MEM_ERROR: -4,
         Z_BUF_ERROR: -5,
+        Z_VERSION_ERROR: -6,
         Z_NO_COMPRESSION: 0,
         Z_BEST_SPEED: 1,
         Z_BEST_COMPRESSION: 9,
@@ -15194,18 +15244,101 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         Z_DEFAULT_STRATEGY: 0,
         Z_BINARY: 0,
         Z_TEXT: 1,
+        Z_ASCII: 1,
         Z_UNKNOWN: 2,
-        Z_DEFLATED: 8
+        Z_DEFLATED: 8,
+        DEFLATE: 1,
+        INFLATE: 2,
+        GZIP: 3,
+        GUNZIP: 4,
+        DEFLATERAW: 5,
+        INFLATERAW: 6,
+        UNZIP: 7,
+        BROTLI_DECODE: 8,
+        BROTLI_ENCODE: 9,
+        Z_MIN_WINDOWBITS: 8,
+        Z_MAX_WINDOWBITS: 15,
+        Z_DEFAULT_WINDOWBITS: 15,
+        Z_MIN_CHUNK: 64,
+        Z_MAX_CHUNK: Infinity,
+        Z_DEFAULT_CHUNK: 16384,
+        Z_MIN_MEMLEVEL: 1,
+        Z_MAX_MEMLEVEL: 9,
+        Z_DEFAULT_MEMLEVEL: 8,
+        Z_MIN_LEVEL: -1,
+        Z_MAX_LEVEL: 9,
+        Z_DEFAULT_LEVEL: -1,
+        BROTLI_OPERATION_PROCESS: 0,
+        BROTLI_OPERATION_FLUSH: 1,
+        BROTLI_OPERATION_FINISH: 2,
+        BROTLI_OPERATION_EMIT_METADATA: 3,
+        BROTLI_PARAM_MODE: 0,
+        BROTLI_MODE_GENERIC: 0,
+        BROTLI_MODE_TEXT: 1,
+        BROTLI_MODE_FONT: 2,
+        BROTLI_DEFAULT_MODE: 0,
+        BROTLI_PARAM_QUALITY: 1,
+        BROTLI_MIN_QUALITY: 0,
+        BROTLI_MAX_QUALITY: 11,
+        BROTLI_DEFAULT_QUALITY: 11,
+        BROTLI_PARAM_LGWIN: 2,
+        BROTLI_MIN_WINDOW_BITS: 10,
+        BROTLI_MAX_WINDOW_BITS: 24,
+        BROTLI_LARGE_MAX_WINDOW_BITS: 30,
+        BROTLI_DEFAULT_WINDOW: 22,
+        BROTLI_PARAM_LGBLOCK: 3,
+        BROTLI_MIN_INPUT_BLOCK_BITS: 16,
+        BROTLI_MAX_INPUT_BLOCK_BITS: 24,
+        BROTLI_PARAM_DISABLE_LITERAL_CONTEXT_MODELING: 4,
+        BROTLI_PARAM_SIZE_HINT: 5,
+        BROTLI_PARAM_LARGE_WINDOW: 6,
+        BROTLI_PARAM_NPOSTFIX: 7,
+        BROTLI_PARAM_NDIRECT: 8,
+        BROTLI_DECODER_RESULT_ERROR: 0,
+        BROTLI_DECODER_RESULT_SUCCESS: 1,
+        BROTLI_DECODER_RESULT_NEEDS_MORE_INPUT: 2,
+        BROTLI_DECODER_RESULT_NEEDS_MORE_OUTPUT: 3,
+        BROTLI_DECODER_PARAM_DISABLE_RING_BUFFER_REALLOCATION: 0,
+        BROTLI_DECODER_PARAM_LARGE_WINDOW: 1,
+        BROTLI_DECODER_NO_ERROR: 0,
+        BROTLI_DECODER_SUCCESS: 1,
+        BROTLI_DECODER_NEEDS_MORE_INPUT: 2,
+        BROTLI_DECODER_NEEDS_MORE_OUTPUT: 3,
+        BROTLI_DECODER_ERROR_FORMAT_EXUBERANT_NIBBLE: -1,
+        BROTLI_DECODER_ERROR_FORMAT_RESERVED: -2,
+        BROTLI_DECODER_ERROR_FORMAT_EXUBERANT_META_NIBBLE: -3,
+        BROTLI_DECODER_ERROR_FORMAT_SIMPLE_HUFFMAN_ALPHABET: -4,
+        BROTLI_DECODER_ERROR_FORMAT_SIMPLE_HUFFMAN_SAME: -5,
+        BROTLI_DECODER_ERROR_FORMAT_CL_SPACE: -6,
+        BROTLI_DECODER_ERROR_FORMAT_HUFFMAN_SPACE: -7,
+        BROTLI_DECODER_ERROR_FORMAT_CONTEXT_MAP_REPEAT: -8,
+        BROTLI_DECODER_ERROR_FORMAT_BLOCK_LENGTH_1: -9,
+        BROTLI_DECODER_ERROR_FORMAT_BLOCK_LENGTH_2: -10,
+        BROTLI_DECODER_ERROR_FORMAT_TRANSFORM: -11,
+        BROTLI_DECODER_ERROR_FORMAT_DICTIONARY: -12,
+        BROTLI_DECODER_ERROR_FORMAT_WINDOW_BITS: -13,
+        BROTLI_DECODER_ERROR_FORMAT_PADDING_1: -14,
+        BROTLI_DECODER_ERROR_FORMAT_PADDING_2: -15,
+        BROTLI_DECODER_ERROR_FORMAT_DISTANCE: -16,
+        BROTLI_DECODER_ERROR_DICTIONARY_NOT_SET: -19,
+        BROTLI_DECODER_ERROR_INVALID_ARGUMENTS: -20,
+        BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MODES: -21,
+        BROTLI_DECODER_ERROR_ALLOC_TREE_GROUPS: -22,
+        BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MAP: -25,
+        BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_1: -26,
+        BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_2: -27,
+        BROTLI_DECODER_ERROR_ALLOC_BLOCK_TYPE_TREES: -30,
+        BROTLI_DECODER_ERROR_UNREACHABLE: -31
     },
-    createBrotliCompress: <ref *56> ƒ (length: 3) {},
-    createBrotliDecompress: <ref *57> ƒ (length: 3) {},
-    createDeflate: <ref *58> ƒ (length: 1) {},
-    createDeflateRaw: <ref *59> ƒ (length: 1) {},
-    createGunzip: <ref *60> ƒ (length: 1) {},
-    createGzip: <ref *61> ƒ (length: 1) {},
-    createInflate: <ref *62> ƒ (length: 1) {},
-    createInflateRaw: <ref *63> ƒ (length: 1) {},
-    createUnzip: <ref *64> ƒ (length: 1) {},
+    createBrotliCompress: <ref *62> ƒ createBrotliCompress(length: 1) {},
+    createBrotliDecompress: <ref *63> ƒ createBrotliDecompress(length: 1) {},
+    createDeflate: <ref *64> ƒ (length: 1) {},
+    createDeflateRaw: <ref *65> ƒ (length: 1) {},
+    createGunzip: <ref *66> ƒ (length: 1) {},
+    createGzip: <ref *67> ƒ (length: 1) {},
+    createInflate: <ref *68> ƒ (length: 1) {},
+    createInflateRaw: <ref *69> ƒ (length: 1) {},
+    createUnzip: <ref *70> ƒ (length: 1) {},
     default: {
         Z_NO_FLUSH: 0,
         Z_PARTIAL_FLUSH: 1,
@@ -15220,7 +15353,9 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         Z_ERRNO: -1,
         Z_STREAM_ERROR: -2,
         Z_DATA_ERROR: -3,
+        Z_MEM_ERROR: -4,
         Z_BUF_ERROR: -5,
+        Z_VERSION_ERROR: -6,
         Z_NO_COMPRESSION: 0,
         Z_BEST_SPEED: 1,
         Z_BEST_COMPRESSION: 9,
@@ -15232,9 +15367,9 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         Z_DEFAULT_STRATEGY: 0,
         Z_BINARY: 0,
         Z_TEXT: 1,
+        Z_ASCII: 1,
         Z_UNKNOWN: 2,
         Z_DEFLATED: 8,
-        Zlib: [Circular: *33],
         Z_MIN_WINDOWBITS: 8,
         Z_MAX_WINDOWBITS: 15,
         Z_DEFAULT_WINDOWBITS: 15,
@@ -15247,59 +15382,60 @@ Bun v1.1.7-canary.1+72bc2585e (Linux x64 baseline)
         Z_MIN_LEVEL: -1,
         Z_MAX_LEVEL: 9,
         Z_DEFAULT_LEVEL: -1,
-        codes: [Circular: *54],
-        constants: [Circular: *55],
-        Deflate: [Circular: *4],
-        Inflate: [Circular: *27],
-        Gzip: [Circular: *25],
-        Gunzip: [Circular: *23],
-        DeflateRaw: [Circular: *21],
-        InflateRaw: [Circular: *29],
-        Unzip: [Circular: *31],
-        createDeflate: [Circular: *58],
-        createInflate: [Circular: *62],
-        createDeflateRaw: [Circular: *59],
-        createInflateRaw: [Circular: *63],
-        createGzip: [Circular: *61],
-        createGunzip: [Circular: *60],
-        createUnzip: [Circular: *64],
-        deflate: <ref *66> ƒ (length: 3) {},
-        deflateSync: <ref *67> ƒ (length: 2) {},
-        gzip: <ref *68> ƒ (length: 3) {},
-        gzipSync: <ref *69> ƒ (length: 2) {},
-        deflateRaw: <ref *70> ƒ (length: 3) {},
-        deflateRawSync: <ref *71> ƒ (length: 2) {},
-        unzip: <ref *72> ƒ (length: 3) {},
-        unzipSync: <ref *73> ƒ (length: 2) {},
-        inflate: <ref *74> ƒ (length: 3) {},
-        inflateSync: <ref *75> ƒ (length: 2) {},
-        gunzip: <ref *76> ƒ (length: 3) {},
-        gunzipSync: <ref *77> ƒ (length: 2) {},
-        inflateRaw: <ref *78> ƒ (length: 3) {},
-        inflateRawSync: <ref *79> ƒ (length: 2) {},
+        Zlib: [Circular: *39],
+        codes: [Circular: *60],
+        constants: [Circular: *61],
+        Deflate: [Circular: *10],
+        Inflate: [Circular: *33],
+        Gzip: [Circular: *31],
+        Gunzip: [Circular: *29],
+        DeflateRaw: [Circular: *27],
+        InflateRaw: [Circular: *35],
+        Unzip: [Circular: *37],
+        createDeflate: [Circular: *64],
+        createInflate: [Circular: *68],
+        createDeflateRaw: [Circular: *65],
+        createInflateRaw: [Circular: *69],
+        createGzip: [Circular: *67],
+        createGunzip: [Circular: *66],
+        createUnzip: [Circular: *70],
+        deflate: <ref *72> ƒ (length: 3) {},
+        deflateSync: <ref *73> ƒ (length: 2) {},
+        gzip: <ref *74> ƒ (length: 3) {},
+        gzipSync: <ref *75> ƒ (length: 2) {},
+        deflateRaw: <ref *76> ƒ (length: 3) {},
+        deflateRawSync: <ref *77> ƒ (length: 2) {},
+        unzip: <ref *78> ƒ (length: 3) {},
+        unzipSync: <ref *79> ƒ (length: 2) {},
+        inflate: <ref *80> ƒ (length: 3) {},
+        inflateSync: <ref *81> ƒ (length: 2) {},
+        gunzip: <ref *82> ƒ (length: 3) {},
+        gunzipSync: <ref *83> ƒ (length: 2) {},
+        inflateRaw: <ref *84> ƒ (length: 3) {},
+        inflateRawSync: <ref *85> ƒ (length: 2) {},
+        brotliCompress: [Circular: *56],
+        brotliDecompress: [Circular: *58],
+        brotliCompressSync: [Circular: *57],
+        brotliDecompressSync: [Circular: *59],
+        createBrotliCompress: [Circular: *62],
         BrotliCompress: [Circular: *2],
-        BrotliDecompress: [Circular: *3],
-        brotliCompress: [Circular: *50],
-        brotliCompressSync: [Circular: *51],
-        brotliDecompress: [Circular: *52],
-        brotliDecompressSync: [Circular: *53],
-        createBrotliCompress: [Circular: *56],
-        createBrotliDecompress: [Circular: *57]
+        createBrotliDecompress: [Circular: *63],
+        BrotliDecompress: [Circular: *6]
     },
-    deflate: [Circular: *66],
-    deflateRaw: [Circular: *70],
-    deflateRawSync: [Circular: *71],
-    deflateSync: [Circular: *67],
-    gunzip: [Circular: *76],
-    gunzipSync: [Circular: *77],
-    gzip: [Circular: *68],
-    gzipSync: [Circular: *69],
-    inflate: [Circular: *74],
-    inflateRaw: [Circular: *78],
-    inflateRawSync: [Circular: *79],
-    inflateSync: [Circular: *75],
-    unzip: [Circular: *72],
-    unzipSync: [Circular: *73]
+    deflate: [Circular: *72],
+    deflateRaw: [Circular: *76],
+    deflateRawSync: [Circular: *77],
+    deflateSync: [Circular: *73],
+    gunzip: [Circular: *82],
+    gunzipSync: [Circular: *83],
+    gzip: [Circular: *74],
+    gzipSync: [Circular: *75],
+    inflate: [Circular: *80],
+    inflateRaw: [Circular: *84],
+    inflateRawSync: [Circular: *85],
+    inflateSync: [Circular: *81],
+    unzip: [Circular: *78],
+    unzipSync: [Circular: *79]
 }
 ```
 
