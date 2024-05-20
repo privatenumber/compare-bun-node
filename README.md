@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v20.12.2<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->May 20, 2024 with Bun 1.1.9 Node.js v20.13.1<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -154,17 +154,28 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
 
 ```js
 {
-    Agent: <ref *2> ƒ Agent(length: 0) {},
-    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    Agent: <ref *2> ƒ Agent(length: 0) {
+        prototype: EventEmitter2 {
+            createConnection: ƒ (length: 0) {},
+            getName: ƒ (length: 0) {},
+            addRequest: ƒ (length: 0) {},
+            createSocket: ƒ (length: 3) {},
+            removeSocket: ƒ (length: 0) {},
+            keepSocketAlive: ƒ (length: 0) {},
+            reuseSocket: ƒ (length: 0) {},
+            destroy: ƒ (length: 0) {}
+        }
+    },
+    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *13],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
         }
     },
-    METHODS: <ref *9> [
+    METHODS: <ref *18> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -200,9 +211,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
+    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *10],
+            constructor: [Circular: *19],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -216,7 +227,7 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *23> {
+    STATUS_CODES: <ref *32> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -281,9 +292,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *24> ƒ Server(length: 2) {
+    Server: <ref *33> ƒ Server(length: 2) {
         prototype: Server {
-            constructor: [Circular: *24],
+            constructor: [Circular: *33],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -295,9 +306,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *35],
+            constructor: [Circular: *44],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -319,22 +330,22 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *56> ƒ createServer(length: 2) {},
+    createServer: <ref *65> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *24],
-        METHODS: [Circular: *9],
-        STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *56],
-        ServerResponse: [Circular: *35],
-        IncomingMessage: [Circular: *4],
-        request: <ref *58> ƒ request(length: 3) {},
-        get: <ref *59> ƒ get(length: 3) {},
+        Server: [Circular: *33],
+        METHODS: [Circular: *18],
+        STATUS_CODES: [Circular: *32],
+        createServer: [Circular: *65],
+        ServerResponse: [Circular: *44],
+        IncomingMessage: [Circular: *13],
+        request: <ref *67> ƒ request(length: 3) {},
+        get: <ref *68> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *63> Agent {
+        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *72> EventEmitter2 {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -344,9 +355,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
                 path: null,
                 noDelay: true
             },
-            requests: <ref *66> [Object: null prototype] {},
-            sockets: [Circular: *66],
-            freeSockets: [Circular: *66],
+            requests: <ref *75> [Object: null prototype] {},
+            sockets: [Circular: *75],
+            freeSockets: [Circular: *75],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -356,16 +367,16 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
-        ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *10]
+        ClientRequest: [Circular: *12],
+        OutgoingMessage: [Circular: *19]
     },
-    get: [Circular: *59],
-    globalAgent: [Circular: *63],
+    get: [Circular: *68],
+    globalAgent: [Circular: *72],
     maxHeaderSize: 16384,
-    request: [Circular: *58],
-    setMaxIdleHTTPParsers: [Circular: *62],
-    validateHeaderName: [Circular: *60],
-    validateHeaderValue: [Circular: *61]
+    request: [Circular: *67],
+    setMaxIdleHTTPParsers: [Circular: *71],
+    validateHeaderName: [Circular: *69],
+    validateHeaderValue: [Circular: *70]
 }
 ```
 
@@ -388,17 +399,28 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
 
 ```js
 {
-    Agent: <ref *2> ƒ Agent(length: 0) {},
-    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    Agent: <ref *2> ƒ Agent(length: 0) {
+        prototype: EventEmitter2 {
+            createConnection: ƒ (length: 0) {},
+            getName: ƒ (length: 0) {},
+            addRequest: ƒ (length: 0) {},
+            createSocket: ƒ (length: 3) {},
+            removeSocket: ƒ (length: 0) {},
+            keepSocketAlive: ƒ (length: 0) {},
+            reuseSocket: ƒ (length: 0) {},
+            destroy: ƒ (length: 0) {}
+        }
+    },
+    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *13],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
         }
     },
-    METHODS: <ref *9> [
+    METHODS: <ref *18> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -434,9 +456,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
+    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *10],
+            constructor: [Circular: *19],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -450,7 +472,7 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *23> {
+    STATUS_CODES: <ref *32> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -515,9 +537,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *24> ƒ Server(length: 2) {
+    Server: <ref *33> ƒ Server(length: 2) {
         prototype: Server {
-            constructor: [Circular: *24],
+            constructor: [Circular: *33],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -529,9 +551,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *35],
+            constructor: [Circular: *44],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -553,22 +575,22 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *56> ƒ createServer(length: 2) {},
+    createServer: <ref *65> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *24],
-        METHODS: [Circular: *9],
-        STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *56],
-        ServerResponse: [Circular: *35],
-        IncomingMessage: [Circular: *4],
-        request: <ref *58> ƒ request(length: 3) {},
-        get: <ref *59> ƒ get(length: 3) {},
+        Server: [Circular: *33],
+        METHODS: [Circular: *18],
+        STATUS_CODES: [Circular: *32],
+        createServer: [Circular: *65],
+        ServerResponse: [Circular: *44],
+        IncomingMessage: [Circular: *13],
+        request: <ref *67> ƒ request(length: 3) {},
+        get: <ref *68> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *63> Agent {
+        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *72> EventEmitter2 {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -578,9 +600,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
                 path: null,
                 noDelay: true
             },
-            requests: <ref *66> [Object: null prototype] {},
-            sockets: [Circular: *66],
-            freeSockets: [Circular: *66],
+            requests: <ref *75> [Object: null prototype] {},
+            sockets: [Circular: *75],
+            freeSockets: [Circular: *75],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -590,16 +612,16 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
-        ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *10]
+        ClientRequest: [Circular: *12],
+        OutgoingMessage: [Circular: *19]
     },
-    get: [Circular: *59],
-    globalAgent: [Circular: *63],
+    get: [Circular: *68],
+    globalAgent: [Circular: *72],
     maxHeaderSize: 16384,
-    request: [Circular: *58],
-    setMaxIdleHTTPParsers: [Circular: *62],
-    validateHeaderName: [Circular: *60],
-    validateHeaderValue: [Circular: *61]
+    request: [Circular: *67],
+    setMaxIdleHTTPParsers: [Circular: *71],
+    validateHeaderName: [Circular: *69],
+    validateHeaderValue: [Circular: *70]
 }
 ```
 
@@ -699,17 +721,28 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
 
 ```js
 {
-    Agent: <ref *2> ƒ Agent(length: 0) {},
-    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    Agent: <ref *2> ƒ Agent(length: 0) {
+        prototype: EventEmitter2 {
+            createConnection: ƒ (length: 0) {},
+            getName: ƒ (length: 0) {},
+            addRequest: ƒ (length: 0) {},
+            createSocket: ƒ (length: 3) {},
+            removeSocket: ƒ (length: 0) {},
+            keepSocketAlive: ƒ (length: 0) {},
+            reuseSocket: ƒ (length: 0) {},
+            destroy: ƒ (length: 0) {}
+        }
+    },
+    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *13],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
         }
     },
-    METHODS: <ref *9> [
+    METHODS: <ref *18> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -745,9 +778,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
+    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *10],
+            constructor: [Circular: *19],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -761,7 +794,7 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *23> {
+    STATUS_CODES: <ref *32> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -826,9 +859,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *24> ƒ Server(length: 2) {
+    Server: <ref *33> ƒ Server(length: 2) {
         prototype: Server {
-            constructor: [Circular: *24],
+            constructor: [Circular: *33],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -840,9 +873,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *35],
+            constructor: [Circular: *44],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -864,22 +897,22 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *56> ƒ createServer(length: 2) {},
+    createServer: <ref *65> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *24],
-        METHODS: [Circular: *9],
-        STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *56],
-        ServerResponse: [Circular: *35],
-        IncomingMessage: [Circular: *4],
-        request: <ref *58> ƒ request(length: 3) {},
-        get: <ref *59> ƒ get(length: 3) {},
+        Server: [Circular: *33],
+        METHODS: [Circular: *18],
+        STATUS_CODES: [Circular: *32],
+        createServer: [Circular: *65],
+        ServerResponse: [Circular: *44],
+        IncomingMessage: [Circular: *13],
+        request: <ref *67> ƒ request(length: 3) {},
+        get: <ref *68> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *63> Agent {
+        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *72> EventEmitter2 {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -889,9 +922,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
                 path: null,
                 noDelay: true
             },
-            requests: <ref *66> [Object: null prototype] {},
-            sockets: [Circular: *66],
-            freeSockets: [Circular: *66],
+            requests: <ref *75> [Object: null prototype] {},
+            sockets: [Circular: *75],
+            freeSockets: [Circular: *75],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -901,16 +934,16 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
-        ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *10]
+        ClientRequest: [Circular: *12],
+        OutgoingMessage: [Circular: *19]
     },
-    get: [Circular: *59],
-    globalAgent: [Circular: *63],
+    get: [Circular: *68],
+    globalAgent: [Circular: *72],
     maxHeaderSize: 16384,
-    request: [Circular: *58],
-    setMaxIdleHTTPParsers: [Circular: *62],
-    validateHeaderName: [Circular: *60],
-    validateHeaderValue: [Circular: *61]
+    request: [Circular: *67],
+    setMaxIdleHTTPParsers: [Circular: *71],
+    validateHeaderName: [Circular: *69],
+    validateHeaderValue: [Circular: *70]
 }
 ```
 
@@ -937,17 +970,28 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
 
 ```js
 {
-    Agent: <ref *2> ƒ Agent(length: 0) {},
-    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    Agent: <ref *2> ƒ Agent(length: 0) {
+        prototype: EventEmitter2 {
+            createConnection: ƒ (length: 0) {},
+            getName: ƒ (length: 0) {},
+            addRequest: ƒ (length: 0) {},
+            createSocket: ƒ (length: 3) {},
+            removeSocket: ƒ (length: 0) {},
+            keepSocketAlive: ƒ (length: 0) {},
+            reuseSocket: ƒ (length: 0) {},
+            destroy: ƒ (length: 0) {}
+        }
+    },
+    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *13],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
         }
     },
-    METHODS: <ref *9> [
+    METHODS: <ref *18> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -983,9 +1027,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
+    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *10],
+            constructor: [Circular: *19],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -999,7 +1043,7 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *23> {
+    STATUS_CODES: <ref *32> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -1064,9 +1108,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *24> ƒ Server(length: 2) {
+    Server: <ref *33> ƒ Server(length: 2) {
         prototype: Server {
-            constructor: [Circular: *24],
+            constructor: [Circular: *33],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -1078,9 +1122,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *35],
+            constructor: [Circular: *44],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1102,22 +1146,22 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *56> ƒ createServer(length: 2) {},
+    createServer: <ref *65> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *24],
-        METHODS: [Circular: *9],
-        STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *56],
-        ServerResponse: [Circular: *35],
-        IncomingMessage: [Circular: *4],
-        request: <ref *58> ƒ request(length: 3) {},
-        get: <ref *59> ƒ get(length: 3) {},
+        Server: [Circular: *33],
+        METHODS: [Circular: *18],
+        STATUS_CODES: [Circular: *32],
+        createServer: [Circular: *65],
+        ServerResponse: [Circular: *44],
+        IncomingMessage: [Circular: *13],
+        request: <ref *67> ƒ request(length: 3) {},
+        get: <ref *68> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *63> Agent {
+        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *72> EventEmitter2 {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -1127,9 +1171,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
                 path: null,
                 noDelay: true
             },
-            requests: <ref *66> [Object: null prototype] {},
-            sockets: [Circular: *66],
-            freeSockets: [Circular: *66],
+            requests: <ref *75> [Object: null prototype] {},
+            sockets: [Circular: *75],
+            freeSockets: [Circular: *75],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -1139,16 +1183,16 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
-        ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *10]
+        ClientRequest: [Circular: *12],
+        OutgoingMessage: [Circular: *19]
     },
-    get: [Circular: *59],
-    globalAgent: [Circular: *63],
+    get: [Circular: *68],
+    globalAgent: [Circular: *72],
     maxHeaderSize: 16384,
-    request: [Circular: *58],
-    setMaxIdleHTTPParsers: [Circular: *62],
-    validateHeaderName: [Circular: *60],
-    validateHeaderValue: [Circular: *61]
+    request: [Circular: *67],
+    setMaxIdleHTTPParsers: [Circular: *71],
+    validateHeaderName: [Circular: *69],
+    validateHeaderValue: [Circular: *70]
 }
 ```
 
@@ -1185,17 +1229,28 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
 
 ```js
 {
-    Agent: <ref *2> ƒ Agent(length: 0) {},
-    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    Agent: <ref *2> ƒ Agent(length: 0) {
+        prototype: EventEmitter2 {
+            createConnection: ƒ (length: 0) {},
+            getName: ƒ (length: 0) {},
+            addRequest: ƒ (length: 0) {},
+            createSocket: ƒ (length: 3) {},
+            removeSocket: ƒ (length: 0) {},
+            keepSocketAlive: ƒ (length: 0) {},
+            reuseSocket: ƒ (length: 0) {},
+            destroy: ƒ (length: 0) {}
+        }
+    },
+    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *13],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
         }
     },
-    METHODS: <ref *9> [
+    METHODS: <ref *18> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -1231,9 +1286,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
+    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *10],
+            constructor: [Circular: *19],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -1247,7 +1302,7 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *23> {
+    STATUS_CODES: <ref *32> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -1312,9 +1367,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *24> ƒ Server(length: 2) {
+    Server: <ref *33> ƒ Server(length: 2) {
         prototype: Server {
-            constructor: [Circular: *24],
+            constructor: [Circular: *33],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -1326,9 +1381,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *35],
+            constructor: [Circular: *44],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1350,22 +1405,22 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *56> ƒ createServer(length: 2) {},
+    createServer: <ref *65> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *24],
-        METHODS: [Circular: *9],
-        STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *56],
-        ServerResponse: [Circular: *35],
-        IncomingMessage: [Circular: *4],
-        request: <ref *58> ƒ request(length: 3) {},
-        get: <ref *59> ƒ get(length: 3) {},
+        Server: [Circular: *33],
+        METHODS: [Circular: *18],
+        STATUS_CODES: [Circular: *32],
+        createServer: [Circular: *65],
+        ServerResponse: [Circular: *44],
+        IncomingMessage: [Circular: *13],
+        request: <ref *67> ƒ request(length: 3) {},
+        get: <ref *68> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *63> Agent {
+        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *72> EventEmitter2 {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -1375,9 +1430,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
                 path: null,
                 noDelay: true
             },
-            requests: <ref *66> [Object: null prototype] {},
-            sockets: [Circular: *66],
-            freeSockets: [Circular: *66],
+            requests: <ref *75> [Object: null prototype] {},
+            sockets: [Circular: *75],
+            freeSockets: [Circular: *75],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -1387,16 +1442,16 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
-        ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *10]
+        ClientRequest: [Circular: *12],
+        OutgoingMessage: [Circular: *19]
     },
-    get: [Circular: *59],
-    globalAgent: [Circular: *63],
+    get: [Circular: *68],
+    globalAgent: [Circular: *72],
     maxHeaderSize: 16384,
-    request: [Circular: *58],
-    setMaxIdleHTTPParsers: [Circular: *62],
-    validateHeaderName: [Circular: *60],
-    validateHeaderValue: [Circular: *61]
+    request: [Circular: *67],
+    setMaxIdleHTTPParsers: [Circular: *71],
+    validateHeaderName: [Circular: *69],
+    validateHeaderValue: [Circular: *70]
 }
 ```
 
@@ -1499,17 +1554,28 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
 
 ```js
 {
-    Agent: <ref *2> ƒ Agent(length: 0) {},
-    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    Agent: <ref *2> ƒ Agent(length: 0) {
+        prototype: EventEmitter2 {
+            createConnection: ƒ (length: 0) {},
+            getName: ƒ (length: 0) {},
+            addRequest: ƒ (length: 0) {},
+            createSocket: ƒ (length: 3) {},
+            removeSocket: ƒ (length: 0) {},
+            keepSocketAlive: ƒ (length: 0) {},
+            reuseSocket: ƒ (length: 0) {},
+            destroy: ƒ (length: 0) {}
+        }
+    },
+    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *13],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
         }
     },
-    METHODS: <ref *9> [
+    METHODS: <ref *18> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -1545,9 +1611,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
+    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *10],
+            constructor: [Circular: *19],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -1561,7 +1627,7 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *23> {
+    STATUS_CODES: <ref *32> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -1626,9 +1692,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *24> ƒ Server(length: 2) {
+    Server: <ref *33> ƒ Server(length: 2) {
         prototype: Server {
-            constructor: [Circular: *24],
+            constructor: [Circular: *33],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -1640,9 +1706,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *35],
+            constructor: [Circular: *44],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1664,22 +1730,22 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *56> ƒ createServer(length: 2) {},
+    createServer: <ref *65> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *24],
-        METHODS: [Circular: *9],
-        STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *56],
-        ServerResponse: [Circular: *35],
-        IncomingMessage: [Circular: *4],
-        request: <ref *58> ƒ request(length: 3) {},
-        get: <ref *59> ƒ get(length: 3) {},
+        Server: [Circular: *33],
+        METHODS: [Circular: *18],
+        STATUS_CODES: [Circular: *32],
+        createServer: [Circular: *65],
+        ServerResponse: [Circular: *44],
+        IncomingMessage: [Circular: *13],
+        request: <ref *67> ƒ request(length: 3) {},
+        get: <ref *68> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *63> Agent {
+        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *72> EventEmitter2 {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -1689,9 +1755,9 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
                 path: null,
                 noDelay: true
             },
-            requests: <ref *66> [Object: null prototype] {},
-            sockets: [Circular: *66],
-            freeSockets: [Circular: *66],
+            requests: <ref *75> [Object: null prototype] {},
+            sockets: [Circular: *75],
+            freeSockets: [Circular: *75],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -1701,16 +1767,16 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
-        ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *10]
+        ClientRequest: [Circular: *12],
+        OutgoingMessage: [Circular: *19]
     },
-    get: [Circular: *59],
-    globalAgent: [Circular: *63],
+    get: [Circular: *68],
+    globalAgent: [Circular: *72],
     maxHeaderSize: 16384,
-    request: [Circular: *58],
-    setMaxIdleHTTPParsers: [Circular: *62],
-    validateHeaderName: [Circular: *60],
-    validateHeaderValue: [Circular: *61]
+    request: [Circular: *67],
+    setMaxIdleHTTPParsers: [Circular: *71],
+    validateHeaderName: [Circular: *69],
+    validateHeaderValue: [Circular: *70]
 }
 ```
 
@@ -2436,7 +2502,7 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2076) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2075) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -2816,9 +2882,8 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         prototype: TLSSocket2 {}
     },
     checkServerIdentity: <ref *6> ƒ checkServerIdentity(length: 2) {},
-    connect: <ref *7> ƒ createConnection(length: 3) {},
+    connect: <ref *7> ƒ connect(length: 0) {},
     convertALPNProtocols: <ref *8> ƒ convertALPNProtocols(length: 2) {},
-    createConnection: [Circular: *7],
     createSecureContext: <ref *9> ƒ createSecureContext(length: 1) {},
     createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
@@ -2826,7 +2891,6 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         CLIENT_RENEG_WINDOW: 600,
         connect: [Circular: *7],
         convertALPNProtocols: [Circular: *8],
-        createConnection: [Circular: *7],
         createSecureContext: [Circular: *9],
         createServer: [Circular: *10],
         DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
@@ -3026,9 +3090,8 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         prototype: TLSSocket2 {}
     },
     checkServerIdentity: <ref *6> ƒ checkServerIdentity(length: 2) {},
-    connect: <ref *7> ƒ createConnection(length: 3) {},
+    connect: <ref *7> ƒ connect(length: 0) {},
     convertALPNProtocols: <ref *8> ƒ convertALPNProtocols(length: 2) {},
-    createConnection: [Circular: *7],
     createSecureContext: <ref *9> ƒ createSecureContext(length: 1) {},
     createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
@@ -3036,7 +3099,6 @@ _Last updated on <!-- lastUpdated:start -->May 13, 2024 with Bun 1.1.8 Node.js v
         CLIENT_RENEG_WINDOW: 600,
         connect: [Circular: *7],
         convertALPNProtocols: [Circular: *8],
-        createConnection: [Circular: *7],
         createSecureContext: [Circular: *9],
         createServer: [Circular: *10],
         DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
@@ -5135,7 +5197,7 @@ Cluster {
         scryptSync: <ref *61> ƒ scryptSync(length: 3) {},
         sign: <ref *62> ƒ signOneShot(length: 4) {},
         setEngine: <ref *63> ƒ setEngine(length: 2) {},
-        timingSafeEqual: <ref *64> ƒ timingSafeEqual(length: 0) {},
+        timingSafeEqual: <ref *64> ƒ (length: 0) {},
         getFips: <ref *65> ƒ getFips(length: 0) {},
         setFips: <ref *66> ƒ setFips(length: 1) {},
         verify: <ref *67> ƒ verifyOneShot(length: 5) {},
@@ -5216,14 +5278,14 @@ TypeError: Attempted to assign to readonly property.
       at Duplex (node:stream:3176:39)
       at Transform (node:stream:3234:45)
       at get (node:crypto:1294:23)
-      at inspect (/tmp/fs-fixture-1715559185401-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1715559185401-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1716163970319-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1716163970319-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1715559185401-1/inspect.mjs:80:20)
-      at /tmp/fs-fixture-1715559185401-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1716163970319-1/inspect.mjs:80:20)
+      at /tmp/fs-fixture-1716163970319-1/inspect.mjs:99:7
       at map (:1:21)
 
-Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
+Bun v1.1.9-canary.1+16e0f6e67 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -7057,17 +7119,28 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
 
 ```js
 {
-    Agent: <ref *2> ƒ Agent(length: 0) {},
-    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    Agent: <ref *2> ƒ Agent(length: 0) {
+        prototype: EventEmitter2 {
+            createConnection: ƒ (length: 0) {},
+            getName: ƒ (length: 0) {},
+            addRequest: ƒ (length: 0) {},
+            createSocket: ƒ (length: 3) {},
+            removeSocket: ƒ (length: 0) {},
+            keepSocketAlive: ƒ (length: 0) {},
+            reuseSocket: ƒ (length: 0) {},
+            destroy: ƒ (length: 0) {}
+        }
+    },
+    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *13],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
         }
     },
-    METHODS: <ref *9> [
+    METHODS: <ref *18> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -7103,9 +7176,9 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
+    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *10],
+            constructor: [Circular: *19],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -7119,7 +7192,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *23> {
+    STATUS_CODES: <ref *32> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -7184,9 +7257,9 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *24> ƒ Server(length: 2) {
+    Server: <ref *33> ƒ Server(length: 2) {
         prototype: Server {
-            constructor: [Circular: *24],
+            constructor: [Circular: *33],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -7198,9 +7271,9 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *35],
+            constructor: [Circular: *44],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -7222,22 +7295,22 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *56> ƒ createServer(length: 2) {},
+    createServer: <ref *65> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *24],
-        METHODS: [Circular: *9],
-        STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *56],
-        ServerResponse: [Circular: *35],
-        IncomingMessage: [Circular: *4],
-        request: <ref *58> ƒ request(length: 3) {},
-        get: <ref *59> ƒ get(length: 3) {},
+        Server: [Circular: *33],
+        METHODS: [Circular: *18],
+        STATUS_CODES: [Circular: *32],
+        createServer: [Circular: *65],
+        ServerResponse: [Circular: *44],
+        IncomingMessage: [Circular: *13],
+        request: <ref *67> ƒ request(length: 3) {},
+        get: <ref *68> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *63> Agent {
+        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *72> EventEmitter2 {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -7247,9 +7320,9 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 path: null,
                 noDelay: true
             },
-            requests: <ref *66> [Object: null prototype] {},
-            sockets: [Circular: *66],
-            freeSockets: [Circular: *66],
+            requests: <ref *75> [Object: null prototype] {},
+            sockets: [Circular: *75],
+            freeSockets: [Circular: *75],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -7259,16 +7332,16 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
-        ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *10]
+        ClientRequest: [Circular: *12],
+        OutgoingMessage: [Circular: *19]
     },
-    get: [Circular: *59],
-    globalAgent: [Circular: *63],
+    get: [Circular: *68],
+    globalAgent: [Circular: *72],
     maxHeaderSize: 16384,
-    request: [Circular: *58],
-    setMaxIdleHTTPParsers: [Circular: *62],
-    validateHeaderName: [Circular: *60],
-    validateHeaderValue: [Circular: *61]
+    request: [Circular: *67],
+    setMaxIdleHTTPParsers: [Circular: *71],
+    validateHeaderName: [Circular: *69],
+    validateHeaderValue: [Circular: *70]
 }
 ```
 
@@ -7552,14 +7625,14 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
 
 ```js
 {
-    ClientHttp2Session: <ref *2> ƒ ClientHttp2Session(length: 2) {},
+    ClientHttp2Session: <ref *2> ƒ ClientHttp2Session(length: 3) {},
     Http2ServerRequest: <ref *3> ƒ Http2ServerRequest(length: 0) {
         prototype: {}
     },
     Http2ServerResponse: <ref *5> ƒ Http2ServerResponse(length: 0) {
         prototype: {}
     },
-    connect: <ref *7> ƒ connect(length: 2) {},
+    connect: <ref *7> ƒ connect(length: 3) {},
     constants: <ref *8> {
         NGHTTP2_ERR_FRAME_SIZE_ERROR: -522,
         NGHTTP2_SESSION_SERVER: 0,
@@ -7886,17 +7959,28 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
 
 ```js
 {
-    Agent: <ref *2> ƒ Agent(length: 0) {},
-    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    Agent: <ref *2> ƒ Agent(length: 0) {
+        prototype: EventEmitter2 {
+            createConnection: ƒ (length: 0) {},
+            getName: ƒ (length: 0) {},
+            addRequest: ƒ (length: 0) {},
+            createSocket: ƒ (length: 3) {},
+            removeSocket: ƒ (length: 0) {},
+            keepSocketAlive: ƒ (length: 0) {},
+            reuseSocket: ƒ (length: 0) {},
+            destroy: ƒ (length: 0) {}
+        }
+    },
+    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
+    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *13],
             _construct: ƒ (length: 1) {},
             _read: ƒ (length: 1) {},
             setTimeout: ƒ (length: 2) {}
         }
     },
-    METHODS: <ref *9> [
+    METHODS: <ref *18> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -7932,9 +8016,9 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *10> ƒ OutgoingMessage(length: 1) {
+    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *10],
+            constructor: [Circular: *19],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -7948,7 +8032,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *23> {
+    STATUS_CODES: <ref *32> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -8013,9 +8097,9 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *24> ƒ Server(length: 2) {
+    Server: <ref *33> ƒ Server(length: 2) {
         prototype: Server {
-            constructor: [Circular: *24],
+            constructor: [Circular: *33],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             closeAllConnections: ƒ (length: 0) {},
@@ -8027,9 +8111,9 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
         }
     },
-    ServerResponse: <ref *35> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *35],
+            constructor: [Circular: *44],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -8051,22 +8135,22 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *56> ƒ createServer(length: 2) {},
+    createServer: <ref *65> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *24],
-        METHODS: [Circular: *9],
-        STATUS_CODES: [Circular: *23],
-        createServer: [Circular: *56],
-        ServerResponse: [Circular: *35],
-        IncomingMessage: [Circular: *4],
-        request: <ref *58> ƒ request(length: 3) {},
-        get: <ref *59> ƒ get(length: 3) {},
+        Server: [Circular: *33],
+        METHODS: [Circular: *18],
+        STATUS_CODES: [Circular: *32],
+        createServer: [Circular: *65],
+        ServerResponse: [Circular: *44],
+        IncomingMessage: [Circular: *13],
+        request: <ref *67> ƒ request(length: 3) {},
+        get: <ref *68> ƒ get(length: 3) {},
         maxHeaderSize: 16384,
-        validateHeaderName: <ref *60> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *61> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *62> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *63> Agent {
+        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *72> EventEmitter2 {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -8076,9 +8160,9 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 path: null,
                 noDelay: true
             },
-            requests: <ref *66> [Object: null prototype] {},
-            sockets: [Circular: *66],
-            freeSockets: [Circular: *66],
+            requests: <ref *75> [Object: null prototype] {},
+            sockets: [Circular: *75],
+            freeSockets: [Circular: *75],
             keepAliveMsecs: 1000,
             keepAlive: false,
             maxSockets: Infinity,
@@ -8088,16 +8172,16 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             totalSocketCount: 0,
             Symbol(kCapture): false
         },
-        ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *10]
+        ClientRequest: [Circular: *12],
+        OutgoingMessage: [Circular: *19]
     },
-    get: [Circular: *59],
-    globalAgent: [Circular: *63],
+    get: [Circular: *68],
+    globalAgent: [Circular: *72],
     maxHeaderSize: 16384,
-    request: [Circular: *58],
-    setMaxIdleHTTPParsers: [Circular: *62],
-    validateHeaderName: [Circular: *60],
-    validateHeaderValue: [Circular: *61]
+    request: [Circular: *67],
+    setMaxIdleHTTPParsers: [Circular: *71],
+    validateHeaderName: [Circular: *69],
+    validateHeaderValue: [Circular: *70]
 }
 ```
 
@@ -8422,7 +8506,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1715559185401-1/module.mjs: "/tmp/fs-fixture-1715559185401-1/module.mjs"
+            /tmp/fs-fixture-1716163970319-1/module.mjs: "/tmp/fs-fixture-1716163970319-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -8446,7 +8530,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             "/home/runner/setup-pnpm/node_modules/pnpm/node_modules",
             "/home/runner/.node_modules",
             "/home/runner/.node_libraries",
-            "/opt/hostedtoolcache/node/20.12.2/x64/lib/node"
+            "/opt/hostedtoolcache/node/20.13.1/x64/lib/node"
         ],
         _debug: <ref *10> ƒ deprecated(length: 0) {},
         isBuiltin: <ref *11> ƒ isBuiltin(length: 1) {},
@@ -8585,13 +8669,13 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1715559185401-1/module.mjs: {
+            /tmp/fs-fixture-1716163970319-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1715559185401-1/inspect.mjs: {
+            /tmp/fs-fixture-1716163970319-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -8757,22 +8841,24 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
     Socket: <ref *4> ƒ Socket3(length: 1) {
         prototype: Socket2 {}
     },
-    connect: <ref *6> ƒ createConnection(length: 3) {},
-    createConnection: [Circular: *6],
-    createServer: <ref *7> ƒ createServer(length: 2) {},
+    _normalizeArgs: <ref *6> ƒ normalizeArgs(length: 1) {},
+    connect: <ref *7> ƒ createConnection(length: 3) {},
+    createConnection: [Circular: *7],
+    createServer: <ref *8> ƒ createServer(length: 2) {},
     default: {
-        createServer: [Circular: *7],
+        createServer: [Circular: *8],
         Server: [Circular: *3],
-        createConnection: [Circular: *6],
-        connect: [Circular: *6],
-        isIP: <ref *9> ƒ isIP(length: 1) {},
-        isIPv4: <ref *10> ƒ isIPv4(length: 1) {},
-        isIPv6: <ref *11> ƒ isIPv6(length: 1) {},
+        createConnection: [Circular: *7],
+        connect: [Circular: *7],
+        isIP: <ref *10> ƒ isIP(length: 1) {},
+        isIPv4: <ref *11> ƒ isIPv4(length: 1) {},
+        isIPv6: <ref *12> ƒ isIPv6(length: 1) {},
         Socket: [Circular: *4],
-        getDefaultAutoSelectFamily: <ref *12> ƒ getDefaultAutoSelectFamily(length: 0) {},
-        setDefaultAutoSelectFamily: <ref *13> ƒ setDefaultAutoSelectFamily(length: 1) {},
-        getDefaultAutoSelectFamilyAttemptTimeout: <ref *14> ƒ getDefaultAutoSelectFamilyAttemptTimeout(length: 0) {},
-        setDefaultAutoSelectFamilyAttemptTimeout: <ref *15> ƒ setDefaultAutoSelectFamilyAttemptTimeout(length: 1) {},
+        _normalizeArgs: [Circular: *6],
+        getDefaultAutoSelectFamily: <ref *13> ƒ getDefaultAutoSelectFamily(length: 0) {},
+        setDefaultAutoSelectFamily: <ref *14> ƒ setDefaultAutoSelectFamily(length: 1) {},
+        getDefaultAutoSelectFamilyAttemptTimeout: <ref *15> ƒ getDefaultAutoSelectFamilyAttemptTimeout(length: 0) {},
+        setDefaultAutoSelectFamilyAttemptTimeout: <ref *16> ƒ setDefaultAutoSelectFamilyAttemptTimeout(length: 1) {},
         BlockList: [Circular: *2],
         Symbol(::bunternal::): ƒ Socket2(length: 1) {
             Symbol(::bunsocket_serverhandlers::): {
@@ -8789,13 +8875,13 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             }
         }
     },
-    getDefaultAutoSelectFamily: [Circular: *12],
-    getDefaultAutoSelectFamilyAttemptTimeout: [Circular: *14],
-    isIP: [Circular: *9],
-    isIPv4: [Circular: *10],
-    isIPv6: [Circular: *11],
-    setDefaultAutoSelectFamily: [Circular: *13],
-    setDefaultAutoSelectFamilyAttemptTimeout: [Circular: *15]
+    getDefaultAutoSelectFamily: [Circular: *13],
+    getDefaultAutoSelectFamilyAttemptTimeout: [Circular: *15],
+    isIP: [Circular: *10],
+    isIPv4: [Circular: *11],
+    isIPv6: [Circular: *12],
+    setDefaultAutoSelectFamily: [Circular: *14],
+    setDefaultAutoSelectFamilyAttemptTimeout: [Circular: *16]
 }
 ```
 
@@ -9692,14 +9778,14 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1715559186407.25,
+            timeOrigin: 1716163971484.241,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: undefined,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1715559186407.25,
-                nodeStart: 1715559186407.25,
-                environment: 1715559186407.25,
-                bootstrapComplete: 1715559186407.25,
+                v8Start: 1716163971484.241,
+                nodeStart: 1716163971484.241,
+                environment: 1716163971484.241,
+                bootstrapComplete: 1716163971484.241,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -9758,10 +9844,6 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
     allowedNodeEnvironmentFlags: <ref *20> NodeEnvironmentFlagsSet {
         Symbol(internal properties): {
             array: [
-                "--tls-max-v1.3",
-                "--no-tls-max-v1.3",
-                "--pending-deprecation",
-                "--no-pending-deprecation",
                 "--dns-result-order",
                 "--test-only",
                 "--no-test-only",
@@ -9808,6 +9890,8 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "--experimental-policy",
                 "--track-heap-objects",
                 "--no-track-heap-objects",
+                "--inspect-port",
+                "--tls-keylog",
                 "--watch",
                 "--no-watch",
                 "--experimental-default-type",
@@ -9817,8 +9901,8 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "--title",
                 "--throw-deprecation",
                 "--no-throw-deprecation",
-                "--experimental-vm-modules",
-                "--no-experimental-vm-modules",
+                "--pending-deprecation",
+                "--no-pending-deprecation",
                 "--preserve-symlinks-main",
                 "--no-preserve-symlinks-main",
                 "--allow-fs-write",
@@ -9835,6 +9919,10 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "--zero-fill-buffers",
                 "--no-zero-fill-buffers",
                 "--require",
+                "--experimental-worker",
+                "--test-shard",
+                "--use-bundled-ca",
+                "--no-use-bundled-ca",
                 "--experimental-top-level-await",
                 "--napi-modules",
                 "--openssl-legacy-provider",
@@ -9848,12 +9936,21 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "--no-experimental-global-webcrypto",
                 "--preserve-symlinks",
                 "--no-preserve-symlinks",
+                "--test-reporter-destination",
+                "--trace-event-file-pattern",
                 "--secure-heap-min",
                 "--abort-on-uncaught-exception",
                 "--trace-event-categories",
-                "--report-dir",
                 "--unhandled-rejections",
                 "--snapshot-blob",
+                "--report-exclude-network",
+                "--no-report-exclude-network",
+                "--experimental-websocket",
+                "--no-experimental-websocket",
+                "--tls-min-v1.3",
+                "--no-tls-min-v1.3",
+                "--enable-fips",
+                "--no-enable-fips",
                 "--report-on-fatalerror",
                 "--no-report-on-fatalerror",
                 "--huge-max-old-generation-size",
@@ -9865,10 +9962,10 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "--experimental-permission",
                 "--no-experimental-permission",
                 "--interpreted-frames-native-stack",
-                "--experimental-worker",
-                "--use-bundled-ca",
-                "--no-use-bundled-ca",
-                "--test-shard",
+                "--experimental-wasm-modules",
+                "--no-experimental-wasm-modules",
+                "--use-openssl-ca",
+                "--no-use-openssl-ca",
                 "--use-largepages",
                 "--test-reporter",
                 "--secure-heap",
@@ -9895,8 +9992,6 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "--no-debug-arraybuffer-allocations",
                 "--trace-sync-io",
                 "--no-trace-sync-io",
-                "--trace-event-file-pattern",
-                "--test-reporter-destination",
                 "--max-http-header-size",
                 "--redirect-warnings",
                 "--enable-etw-stack-walking",
@@ -9907,7 +10002,6 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "--report-signal",
                 "--network-family-autoselection",
                 "--no-network-family-autoselection",
-                "--tls-keylog",
                 "--report-uncaught-exception",
                 "--no-report-uncaught-exception",
                 "--trace-exit",
@@ -9917,6 +10011,8 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "--inspect-brk",
                 "--no-inspect-brk",
                 "--inspect-publish-uid",
+                "--tls-max-v1.3",
+                "--no-tls-max-v1.3",
                 "--trace-promises",
                 "--no-trace-promises",
                 "--experimental-import-meta-resolve",
@@ -9941,19 +10037,12 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "--conditions",
                 "--report-on-signal",
                 "--no-report-on-signal",
+                "--experimental-vm-modules",
+                "--no-experimental-vm-modules",
+                "--report-dir",
+                "--network-family-autoselection-attempt-timeout",
                 "--inspect",
                 "--no-inspect",
-                "--use-openssl-ca",
-                "--no-use-openssl-ca",
-                "--experimental-wasm-modules",
-                "--no-experimental-wasm-modules",
-                "--inspect-port",
-                "--experimental-websocket",
-                "--no-experimental-websocket",
-                "--enable-fips",
-                "--no-enable-fips",
-                "--tls-min-v1.3",
-                "--no-tls-min-v1.3",
                 "--debug-port",
                 "--inspect",
                 "--inspect-brk",
@@ -9970,14 +10059,15 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
     },
     arch: "x64",
     argv: <ref *23> [
-        "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
-        "/tmp/fs-fixture-1715559185401-1/process.mjs"
+        "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
+        "/tmp/fs-fixture-1716163970319-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
-    binding: <ref *25> ƒ binding(length: 1) {},
-    chdir: <ref *26> ƒ wrappedChdir(length: 1) {},
-    config: <ref *27> {
+    availableMemory: <ref *25> ƒ availableMemory(length: 0) {},
+    binding: <ref *26> ƒ binding(length: 1) {},
+    chdir: <ref *27> ƒ wrappedChdir(length: 1) {},
+    config: <ref *28> {
         target_defaults: {
             cflags: [],
             default_configuration: "Release",
@@ -10002,12 +10092,12 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             force_dynamic_crt: 0,
             gas_version: "2.35",
             host_arch: "x64",
-            icu_data_in: "../../deps/icu-tmp/icudt74l.dat",
+            icu_data_in: "../../deps/icu-tmp/icudt75l.dat",
             icu_endianness: "l",
             icu_gyp_path: "tools/icu/icu-generic.gyp",
             icu_path: "deps/icu-small",
             icu_small: false,
-            icu_ver_major: "74",
+            icu_ver_major: "75",
             is_debug: 0,
             libdir: "lib",
             llvm_version: "0.0",
@@ -10122,6 +10212,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "lib/internal/error_serdes.js",
                 "lib/internal/errors.js",
                 "lib/internal/event_target.js",
+                "lib/internal/events/abort_listener.js",
                 "lib/internal/events/symbols.js",
                 "lib/internal/file.js",
                 "lib/internal/fixed_queue.js",
@@ -10169,7 +10260,6 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "lib/internal/modules/esm/fetch_module.js",
                 "lib/internal/modules/esm/formats.js",
                 "lib/internal/modules/esm/get_format.js",
-                "lib/internal/modules/esm/handle_process_exit.js",
                 "lib/internal/modules/esm/hooks.js",
                 "lib/internal/modules/esm/initialize_import_meta.js",
                 "lib/internal/modules/esm/load.js",
@@ -10204,7 +10294,6 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 "lib/internal/policy/manifest.js",
                 "lib/internal/policy/sri.js",
                 "lib/internal/priority_queue.js",
-                "lib/internal/process/esm_loader.js",
                 "lib/internal/process/execution.js",
                 "lib/internal/process/per_thread.js",
                 "lib/internal/process/permission.js",
@@ -10372,6 +10461,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             shlib_suffix: "so.115",
             single_executable_application: true,
             target_arch: "x64",
+            ubsan: 0,
             use_prefix_to_find_headers: false,
             v8_enable_31bit_smis_on_64bit_arch: 0,
             v8_enable_extensible_ro_snapshot: 0,
@@ -10397,48 +10487,48 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             want_separate_host_toolset: 0
         }
     },
-    constrainedMemory: <ref *36> ƒ constrainedMemory(length: 0) {},
-    cpuUsage: <ref *37> ƒ cpuUsage(length: 1) {},
-    cwd: <ref *38> ƒ wrappedCwd(length: 0) {},
+    constrainedMemory: <ref *37> ƒ constrainedMemory(length: 0) {},
+    cpuUsage: <ref *38> ƒ cpuUsage(length: 1) {},
+    cwd: <ref *39> ƒ wrappedCwd(length: 0) {},
     debugPort: 9229,
     default: process {
-        version: "v20.12.2",
-        versions: <ref *40> {
-            node: "20.12.2",
+        version: "v20.13.1",
+        versions: <ref *41> {
+            node: "20.13.1",
             acorn: "8.11.3",
-            ada: "2.7.6",
-            ares: "1.27.0",
+            ada: "2.7.8",
+            ares: "1.28.1",
             base64: "0.5.2",
             brotli: "1.1.0",
             cjs_module_lexer: "1.2.2",
-            cldr: "44.1",
-            icu: "74.2",
+            cldr: "45.0",
+            icu: "75.1",
             llhttp: "8.1.2",
             modules: "115",
             napi: "9",
-            nghttp2: "1.60.0",
+            nghttp2: "1.61.0",
             nghttp3: "0.7.0",
-            ngtcp2: "0.8.1",
+            ngtcp2: "1.1.0",
             openssl: "3.0.13+quic",
-            simdutf: "4.0.8",
+            simdutf: "5.2.4",
             tz: "2024a",
-            undici: "5.28.4",
+            undici: "6.13.0",
             unicode: "15.1",
             uv: "1.46.0",
             uvwasi: "0.0.20",
-            v8: "11.3.244.8-node.19",
-            zlib: "1.3.0.1-motley-40e35a7"
+            v8: "11.3.244.8-node.20",
+            zlib: "1.3.0.1-motley-7d77fb7"
         },
         arch: "x64",
         platform: "linux",
-        release: <ref *41> {
+        release: <ref *42> {
             name: "node",
             lts: "Iron",
-            sourceUrl: "https://nodejs.org/download/release/v20.12.2/node-v20.12.2.tar.gz",
-            headersUrl: "https://nodejs.org/download/release/v20.12.2/node-v20.12.2-headers.tar.gz"
+            sourceUrl: "https://nodejs.org/download/release/v20.13.1/node-v20.13.1.tar.gz",
+            headersUrl: "https://nodejs.org/download/release/v20.13.1/node-v20.13.1-headers.tar.gz"
         },
         _rawDebug: [Circular: *15],
-        moduleLoadList: <ref *42> [
+        moduleLoadList: <ref *43> [
             "Internal Binding builtins",
             "Internal Binding module_wrap",
             "Internal Binding errors",
@@ -10465,6 +10555,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             "NativeModule internal/util/inspect",
             "NativeModule internal/util/debuglog",
             "NativeModule internal/timers",
+            "NativeModule internal/events/abort_listener",
             "NativeModule events",
             "Internal Binding buffer",
             "NativeModule internal/buffer",
@@ -10528,7 +10619,6 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             "NativeModule internal/net",
             "NativeModule internal/dns/utils",
             "NativeModule internal/modules/esm/loader",
-            "NativeModule internal/process/esm_loader",
             "NativeModule internal/modules/esm/assert",
             "NativeModule internal/modules/esm/module_map",
             "NativeModule internal/modules/esm/translators",
@@ -10536,7 +10626,6 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             "NativeModule internal/modules/esm/formats",
             "NativeModule internal/modules/esm/get_format",
             "NativeModule internal/modules/esm/resolve",
-            "NativeModule internal/modules/esm/handle_process_exit",
             "NativeModule internal/modules/esm/module_job",
             "NativeModule internal/modules/esm/load",
             "Internal Binding fs_dir",
@@ -10580,7 +10669,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             "Internal Binding report",
             "NativeModule internal/process/report"
         ],
-        binding: [Circular: *25],
+        binding: [Circular: *26],
         _linkedBinding: [Circular: *13],
         _events: [Circular: *4],
         _eventsCount: 4,
@@ -10588,35 +10677,36 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         domain: null,
         [get/set] _exiting: false,
         [get/set] exitCode: undefined,
-        config: [Circular: *27],
-        dlopen: <ref *43> ƒ dlopen(length: 0) {},
-        uptime: <ref *44> ƒ uptime(length: 0) {},
+        config: [Circular: *28],
+        dlopen: <ref *44> ƒ dlopen(length: 0) {},
+        uptime: <ref *45> ƒ uptime(length: 0) {},
         _getActiveRequests: [Circular: *11],
         _getActiveHandles: [Circular: *10],
-        getActiveResourcesInfo: <ref *45> ƒ getActiveResourcesInfo(length: 0) {},
-        reallyExit: <ref *46> ƒ reallyExit(length: 0) {},
+        getActiveResourcesInfo: <ref *46> ƒ getActiveResourcesInfo(length: 0) {},
+        reallyExit: <ref *47> ƒ reallyExit(length: 0) {},
         _kill: [Circular: *12],
-        loadEnvFile: <ref *47> ƒ loadEnvFile(length: 0) {},
-        cpuUsage: [Circular: *37],
-        resourceUsage: <ref *48> ƒ resourceUsage(length: 0) {},
-        memoryUsage: <ref *49> ƒ memoryUsage(length: 0) {
+        loadEnvFile: <ref *48> ƒ loadEnvFile(length: 0) {},
+        cpuUsage: [Circular: *38],
+        resourceUsage: <ref *49> ƒ resourceUsage(length: 0) {},
+        memoryUsage: <ref *50> ƒ memoryUsage(length: 0) {
             rss: ƒ rss(length: 0) {}
         },
-        constrainedMemory: [Circular: *36],
-        kill: <ref *51> ƒ kill(length: 2) {},
-        exit: <ref *52> ƒ exit(length: 1) {},
-        hrtime: <ref *53> ƒ hrtime(length: 1) {
+        constrainedMemory: [Circular: *37],
+        availableMemory: [Circular: *25],
+        kill: <ref *52> ƒ kill(length: 2) {},
+        exit: <ref *53> ƒ exit(length: 1) {},
+        hrtime: <ref *54> ƒ hrtime(length: 1) {
             bigint: ƒ hrtimeBigInt(length: 0) {}
         },
-        openStdin: <ref *55> ƒ (length: 0) {},
-        getuid: <ref *56> ƒ getuid(length: 0) {},
-        geteuid: <ref *57> ƒ geteuid(length: 0) {},
-        getgid: <ref *58> ƒ getgid(length: 0) {},
-        getegid: <ref *59> ƒ getegid(length: 0) {},
-        getgroups: <ref *60> ƒ getgroups(length: 0) {},
+        openStdin: <ref *56> ƒ (length: 0) {},
+        getuid: <ref *57> ƒ getuid(length: 0) {},
+        geteuid: <ref *58> ƒ geteuid(length: 0) {},
+        getgid: <ref *59> ƒ getgid(length: 0) {},
+        getegid: <ref *60> ƒ getegid(length: 0) {},
+        getgroups: <ref *61> ƒ getgroups(length: 0) {},
         allowedNodeEnvironmentFlags: [Circular: *20],
         assert: [Circular: *24],
-        features: <ref *61> {
+        features: <ref *62> {
             inspector: true,
             debug: false,
             uv: true,
@@ -10628,18 +10718,18 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             [get/set] cached_builtins: true
         },
         _fatalException: [Circular: *9],
-        setUncaughtExceptionCaptureCallback: <ref *62> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
-        hasUncaughtExceptionCaptureCallback: <ref *63> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
-        emitWarning: <ref *64> ƒ emitWarning(length: 4) {},
-        nextTick: <ref *65> ƒ nextTick(length: 1) {},
+        setUncaughtExceptionCaptureCallback: <ref *63> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
+        hasUncaughtExceptionCaptureCallback: <ref *64> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
+        emitWarning: <ref *65> ƒ emitWarning(length: 4) {},
+        nextTick: <ref *66> ƒ nextTick(length: 1) {},
         _tickCallback: [Circular: *18],
         [get/set] sourceMapsEnabled: false,
-        setSourceMapsEnabled: <ref *66> ƒ setSourceMapsEnabled(length: 1) {},
+        setSourceMapsEnabled: <ref *67> ƒ setSourceMapsEnabled(length: 1) {},
         _debugProcess: [Circular: *3],
         _debugEnd: [Circular: *2],
         _startProfilerIdleNotifier: [Circular: *16],
         _stopProfilerIdleNotifier: [Circular: *17],
-        [get/set] stdout: <ref *67> Socket {
+        [get/set] stdout: <ref *68> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -10652,7 +10742,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: <ref *69> ƒ onReadableStreamEnd(length: 0) {},
+                end: <ref *70> ƒ onReadableStreamEnd(length: 0) {},
                 readable: undefined
             },
             _readableState: ReadableState {
@@ -10687,11 +10777,11 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             _type: "pipe",
             fd: 1,
             _isStdio: true,
-            destroySoon: <ref *75> ƒ destroy(length: 2) {},
-            _destroy: <ref *76> ƒ dummyDestroy(length: 2) {},
+            destroySoon: <ref *76> ƒ (length: 2) {},
+            _destroy: <ref *77> ƒ dummyDestroy(length: 2) {},
             Symbol(async_id_symbol): 8,
             Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *67]
+                Symbol(owner_symbol): [Circular: *68]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -10706,7 +10796,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        [get/set] stdin: <ref *78> Socket {
+        [get/set] stdin: <ref *79> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -10719,7 +10809,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: [Circular: *69],
+                end: [Circular: *70],
                 readable: undefined,
                 pause: ƒ (length: 0) {}
             },
@@ -10755,7 +10845,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             Symbol(async_id_symbol): 9,
             Symbol(kHandle): Pipe {
                 reading: false,
-                Symbol(owner_symbol): [Circular: *78]
+                Symbol(owner_symbol): [Circular: *79]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -10770,7 +10860,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        [get/set] stderr: <ref *87> Socket {
+        [get/set] stderr: <ref *88> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -10783,7 +10873,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: [Circular: *69],
+                end: [Circular: *70],
                 readable: undefined
             },
             _readableState: ReadableState {
@@ -10818,11 +10908,11 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             _type: "pipe",
             fd: 2,
             _isStdio: true,
-            destroySoon: [Circular: *75],
-            _destroy: [Circular: *76],
+            destroySoon: [Circular: *76],
+            _destroy: [Circular: *77],
             Symbol(async_id_symbol): 10,
             Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *87]
+                Symbol(owner_symbol): [Circular: *88]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -10838,29 +10928,29 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             Symbol(kBytesWritten): 0
         },
         abort: [Circular: *19],
-        umask: <ref *95> ƒ wrappedUmask(length: 1) {},
-        chdir: [Circular: *26],
-        cwd: [Circular: *38],
-        initgroups: <ref *96> ƒ initgroups(length: 2) {},
-        setgroups: <ref *97> ƒ setgroups(length: 1) {},
-        setegid: <ref *98> ƒ (length: 1) {},
-        seteuid: <ref *99> ƒ (length: 1) {},
-        setgid: <ref *100> ƒ (length: 1) {},
-        setuid: <ref *101> ƒ (length: 1) {},
-        env: <ref *102>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_cad2c7a8-e248-44bd-b867-fa132a98720e",
+        umask: <ref *96> ƒ wrappedUmask(length: 1) {},
+        chdir: [Circular: *27],
+        cwd: [Circular: *39],
+        initgroups: <ref *97> ƒ initgroups(length: 2) {},
+        setgroups: <ref *98> ƒ setgroups(length: 1) {},
+        setegid: <ref *99> ƒ (length: 1) {},
+        seteuid: <ref *100> ƒ (length: 1) {},
+        setgid: <ref *101> ƒ (length: 1) {},
+        setuid: <ref *102> ƒ (length: 1) {},
+        env: <ref *103>  {
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_35a0674c-d9b7-4af4-9bcb-fd48dc7efe72",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.12.2 linux x64",
+            npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.13.1 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_cad2c7a8-e248-44bd-b867-fa132a98720e",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_35a0674c-d9b7-4af4-9bcb-fd48dc7efe72",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
-            npm_node_execpath: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
+            npm_node_execpath: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             SHLVL: "1",
             HOME: "/home/runner",
@@ -10879,23 +10969,23 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "586",
+            SYSTEMD_EXEC_PID: "595",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
-            GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.9/x64",
+            GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.10/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20240422.1.0",
+            ImageVersion: "20240516.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
-            GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.2/x64",
+            GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.3/x64",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:4031",
+            JOURNAL_STREAM: "8:17978",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -10903,14 +10993,15 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "9055224369",
+            GITHUB_RUN_ID: "9151521805",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "b5a6e1062d31695e99e79c8b2c39cec912ec66ab",
+            GITHUB_WORKFLOW_SHA: "e2d1c5db977b9f92d07b48cb4ab3801dc6695ed6",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
+            STATS_BLT: "true",
             GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
             PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             GITHUB_ACTION_REPOSITORY: "",
@@ -10918,12 +11009,12 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_e308bc25-4be4-4174-860b-1c2d55262759",
-            INVOCATION_ID: "88b9f2cdba724084a0268c3d79f5a08f",
+            RUNNER_TRACKING_ID: "github_c5e15f87-d4aa-4384-96ab-ad9f996c166c",
+            INVOCATION_ID: "8376b89d8330486ea79e5dd2edbe312d",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            NODE: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
+            NODE: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "75",
+            GITHUB_RUN_NUMBER: "76",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10933,7 +11024,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             npm_package_devDependencies_eslint: "^8.37.0",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 2",
+            RUNNER_NAME: "GitHub Actions 9",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
@@ -10958,7 +11049,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "b5a6e1062d31695e99e79c8b2c39cec912ec66ab",
+            GITHUB_SHA: "e2d1c5db977b9f92d07b48cb4ab3801dc6695ed6",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -10966,7 +11057,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_cad2c7a8-e248-44bd-b867-fa132a98720e",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_35a0674c-d9b7-4af4-9bcb-fd48dc7efe72",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -10981,7 +11072,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_cad2c7a8-e248-44bd-b867-fa132a98720e",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_35a0674c-d9b7-4af4-9bcb-fd48dc7efe72",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -10994,25 +11085,26 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.172+1/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_cad2c7a8-e248-44bd-b867-fa132a98720e",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_35a0674c-d9b7-4af4-9bcb-fd48dc7efe72",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
-        execArgv: <ref *103> [],
-        pid: 2769,
-        ppid: 1886,
-        execPath: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
+        execArgv: <ref *104> [],
+        pid: 2758,
+        ppid: 1868,
+        execPath: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
         _preload_modules: [Circular: *14],
-        [get/set] report: <ref *104> {
+        [get/set] report: <ref *105> {
             writeReport: ƒ writeReport(length: 2) {},
             getReport: ƒ getReport(length: 1) {},
             [get/set] directory: "",
             [get/set] filename: "",
             [get/set] compact: false,
+            [get/set] excludeNetwork: false,
             [get/set] signal: "SIGUSR2",
             [get/set] reportOnFatalError: false,
             [get/set] reportOnSignal: false,
@@ -11021,53 +11113,53 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         Symbol(shapeMode): false,
         Symbol(kCapture): false
     },
-    dlopen: [Circular: *43],
+    dlopen: [Circular: *44],
     domain: null,
-    emitWarning: [Circular: *64],
-    env: [Circular: *102],
-    execArgv: [Circular: *103],
-    execPath: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
-    exit: [Circular: *52],
+    emitWarning: [Circular: *65],
+    env: [Circular: *103],
+    execArgv: [Circular: *104],
+    execPath: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
+    exit: [Circular: *53],
     exitCode: undefined,
-    features: [Circular: *61],
-    getActiveResourcesInfo: [Circular: *45],
-    getegid: [Circular: *59],
-    geteuid: [Circular: *57],
-    getgid: [Circular: *58],
-    getgroups: [Circular: *60],
-    getuid: [Circular: *56],
-    hasUncaughtExceptionCaptureCallback: [Circular: *63],
-    hrtime: [Circular: *53],
-    initgroups: [Circular: *96],
-    kill: [Circular: *51],
-    loadEnvFile: [Circular: *47],
-    memoryUsage: [Circular: *49],
-    moduleLoadList: [Circular: *42],
-    nextTick: [Circular: *65],
-    openStdin: [Circular: *55],
-    pid: 2769,
+    features: [Circular: *62],
+    getActiveResourcesInfo: [Circular: *46],
+    getegid: [Circular: *60],
+    geteuid: [Circular: *58],
+    getgid: [Circular: *59],
+    getgroups: [Circular: *61],
+    getuid: [Circular: *57],
+    hasUncaughtExceptionCaptureCallback: [Circular: *64],
+    hrtime: [Circular: *54],
+    initgroups: [Circular: *97],
+    kill: [Circular: *52],
+    loadEnvFile: [Circular: *48],
+    memoryUsage: [Circular: *50],
+    moduleLoadList: [Circular: *43],
+    nextTick: [Circular: *66],
+    openStdin: [Circular: *56],
+    pid: 2758,
     platform: "linux",
-    ppid: 1886,
-    reallyExit: [Circular: *46],
-    release: [Circular: *41],
-    report: [Circular: *104],
-    resourceUsage: [Circular: *48],
-    setSourceMapsEnabled: [Circular: *66],
-    setUncaughtExceptionCaptureCallback: [Circular: *62],
-    setegid: [Circular: *98],
-    seteuid: [Circular: *99],
-    setgid: [Circular: *100],
-    setgroups: [Circular: *97],
-    setuid: [Circular: *101],
+    ppid: 1868,
+    reallyExit: [Circular: *47],
+    release: [Circular: *42],
+    report: [Circular: *105],
+    resourceUsage: [Circular: *49],
+    setSourceMapsEnabled: [Circular: *67],
+    setUncaughtExceptionCaptureCallback: [Circular: *63],
+    setegid: [Circular: *99],
+    seteuid: [Circular: *100],
+    setgid: [Circular: *101],
+    setgroups: [Circular: *98],
+    setuid: [Circular: *102],
     sourceMapsEnabled: false,
-    stderr: [Circular: *87],
-    stdin: [Circular: *78],
-    stdout: [Circular: *67],
+    stderr: [Circular: *88],
+    stdin: [Circular: *79],
+    stdout: [Circular: *68],
     title: "node",
-    umask: [Circular: *95],
-    uptime: [Circular: *44],
-    version: "v20.12.2",
-    versions: [Circular: *40]
+    umask: [Circular: *96],
+    uptime: [Circular: *45],
+    version: "v20.13.1",
+    versions: [Circular: *41]
 }
 ```
 
@@ -11093,7 +11185,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1715559185401-1/process.mjs"
+        "/tmp/fs-fixture-1716163970319-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -11131,19 +11223,19 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         dlopen: <ref *28> ƒ dlopen(length: 1) {},
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_cad2c7a8-e248-44bd-b867-fa132a98720e",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_35a0674c-d9b7-4af4-9bcb-fd48dc7efe72",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
             [get/set] DOTNET_NOLOGO: "1",
             [get/set] USER: "runner",
-            [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.12.2 linux x64",
+            [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.13.1 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_cad2c7a8-e248-44bd-b867-fa132a98720e",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_35a0674c-d9b7-4af4-9bcb-fd48dc7efe72",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_package_devDependencies_execa: "^7.1.1",
-            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
+            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
             [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             [get/set] SHLVL: "1",
             [get/set] HOME: "/home/runner",
@@ -11162,23 +11254,23 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "586",
+            [get/set] SYSTEMD_EXEC_PID: "595",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
-            [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.9/x64",
+            [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.10/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20240422.1.0",
+            [get/set] ImageVersion: "20240516.1.0",
             [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
-            [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.2/x64",
+            [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.3/x64",
             [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
             [get/set] RUNNER_USER: "runner",
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] JOURNAL_STREAM: "8:4031",
+            [get/set] JOURNAL_STREAM: "8:17978",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
@@ -11186,14 +11278,15 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "9055224369",
+            [get/set] GITHUB_RUN_ID: "9151521805",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "b5a6e1062d31695e99e79c8b2c39cec912ec66ab",
+            [get/set] GITHUB_WORKFLOW_SHA: "e2d1c5db977b9f92d07b48cb4ab3801dc6695ed6",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu22",
             [get/set] npm_package_scripts_start: "tsx index.ts",
+            [get/set] STATS_BLT: "true",
             [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
             [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             [get/set] GITHUB_ACTION_REPOSITORY: "",
@@ -11201,12 +11294,12 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_e308bc25-4be4-4174-860b-1c2d55262759",
-            [get/set] INVOCATION_ID: "88b9f2cdba724084a0268c3d79f5a08f",
+            [get/set] RUNNER_TRACKING_ID: "github_c5e15f87-d4aa-4384-96ab-ad9f996c166c",
+            [get/set] INVOCATION_ID: "8376b89d8330486ea79e5dd2edbe312d",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            [get/set] NODE: "/opt/hostedtoolcache/node/20.12.2/x64/bin/node",
+            [get/set] NODE: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "75",
+            [get/set] GITHUB_RUN_NUMBER: "76",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11216,7 +11309,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] npm_package_devDependencies_eslint: "^8.37.0",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 2",
+            [get/set] RUNNER_NAME: "GitHub Actions 9",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
@@ -11241,7 +11334,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             [get/set] GITHUB_JOB: "build",
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] GITHUB_SHA: "b5a6e1062d31695e99e79c8b2c39cec912ec66ab",
+            [get/set] GITHUB_SHA: "e2d1c5db977b9f92d07b48cb4ab3801dc6695ed6",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] GITHUB_REF: "refs/heads/master",
             [get/set] GITHUB_ACTOR: "privatenumber",
@@ -11249,7 +11342,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             [get/set] npm_package_license: "MIT",
             [get/set] LEIN_HOME: "/usr/local/lib/lein",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_cad2c7a8-e248-44bd-b867-fa132a98720e",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_35a0674c-d9b7-4af4-9bcb-fd48dc7efe72",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -11264,7 +11357,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_cad2c7a8-e248-44bd-b867-fa132a98720e",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_35a0674c-d9b7-4af4-9bcb-fd48dc7efe72",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -11277,7 +11370,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.172+1/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_cad2c7a8-e248-44bd-b867-fa132a98720e",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_35a0674c-d9b7-4af4-9bcb-fd48dc7efe72",
             [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
@@ -11312,12 +11405,12 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         openStdin: <ref *43> ƒ openStdin(length: 0) {},
         pid: 2770,
         platform: "linux",
-        ppid: 1886,
+        ppid: 1868,
         reallyExit: <ref *44> ƒ reallyExit(length: 1) {},
         release: <ref *45> {
             name: "node",
             lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.8/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.9/bun-linux-x64-baseline.zip",
             headersUrl: "",
             libUrl: ""
         },
@@ -11327,7 +11420,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "dbdc3760055bda335694e338cc35ce1730164531",
+        revision: "16e0f6e671d8af5cf314428f40cbfc89ae1cb8ec",
         setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *50> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
@@ -11498,20 +11591,20 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         version: "v21.6.0",
         versions: <ref *88> {
             node: "21.6.0",
-            bun: "1.1.8",
+            bun: "1.1.9",
             webkit: "a780bdf0255ae1a7ed15e4b3f31c14af705facae",
             boringssl: "b275c5ce1c88bc06f5a967026d3c0ce1df2be815",
             openssl: "1.1.0",
             libarchive: "dc321febde83dd0f31158e1be61a7aedda65e7a2",
             mimalloc: "7968d4285043401bb36573374710d47a4081a063",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "dbdc3760055bda335694e338cc35ce1730164531",
+            uwebsockets: "16e0f6e671d8af5cf314428f40cbfc89ae1cb8ec",
             zig: "0.12.0-dev.1828+225fe6ddb",
             zlib: "885674026394870b7e7a05b7bf1ec5eb7bd8a9c0",
             tinycc: "2d3ad9e0d32194ad7fd867b66ebe218dcc8cb5cd",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "0e7a5dee0fbb04080750cf6eabbe89d8bae87faa",
-            usockets: "dbdc3760055bda335694e338cc35ce1730164531",
+            usockets: "16e0f6e671d8af5cf314428f40cbfc89ae1cb8ec",
             v8: "11.3.244.8-node.15",
             uv: "1.46.0",
             napi: "9",
@@ -11572,7 +11665,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
     openStdin: [Circular: *43],
     pid: 2770,
     platform: "linux",
-    ppid: 1886,
+    ppid: 1868,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -11581,7 +11674,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *46],
-    revision: "dbdc3760055bda335694e338cc35ce1730164531",
+    revision: "16e0f6e671d8af5cf314428f40cbfc89ae1cb8ec",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *49],
@@ -11950,15 +12043,15 @@ NotImplementedError: node:repl is not yet implemented in Bun.
       at new NotImplementedError (internal:shared:19:27)
       at internal:shared:2:69
       at get (node:repl:76:15)
-      at inspect (/tmp/fs-fixture-1715559185401-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1715559185401-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1716163970319-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1716163970319-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1715559185401-1/inspect.mjs:80:20)
-      at /tmp/fs-fixture-1715559185401-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1716163970319-1/inspect.mjs:80:20)
+      at /tmp/fs-fixture-1716163970319-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1715559185401-1/inspect.mjs:80:20)
+      at inspect (/tmp/fs-fixture-1716163970319-1/inspect.mjs:80:20)
 
-Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
+Bun v1.1.9-canary.1+16e0f6e67 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -12015,13 +12108,15 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             pipeline: [Circular: *26]
         },
         Stream: [Circular: *14],
-        _isUint8Array: <ref *35> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *36> ƒ _uint8ArrayToBuffer(length: 1) {}
+        _isArrayBufferView: <ref *35> ƒ isView(length: 1) {},
+        _isUint8Array: <ref *36> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *37> ƒ _uint8ArrayToBuffer(length: 1) {}
     },
     Transform: [Circular: *24],
     Writable: [Circular: *20],
-    _isUint8Array: [Circular: *35],
-    _uint8ArrayToBuffer: [Circular: *36],
+    _isArrayBufferView: [Circular: *35],
+    _isUint8Array: [Circular: *36],
+    _uint8ArrayToBuffer: [Circular: *37],
     addAbortSignal: [Circular: *27],
     compose: [Circular: *31],
     default: [Circular: *14],
@@ -12230,15 +12325,17 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
     arrayBuffer: <ref *2> ƒ readableStreamToArrayBuffer(length: 1) {},
     blob: <ref *3> ƒ readableStreamToBlob(length: 1) {},
     buffer: <ref *4> ƒ buffer(length: 1) {},
+    bytes: <ref *5> ƒ readableStreamToBytes(length: 1) {},
     default: {
         arrayBuffer: [Circular: *2],
-        text: <ref *6> ƒ readableStreamToText(length: 1) {},
-        json: <ref *7> ƒ json(length: 1) {},
+        bytes: [Circular: *5],
+        text: <ref *7> ƒ readableStreamToText(length: 1) {},
+        json: <ref *8> ƒ json(length: 1) {},
         buffer: [Circular: *4],
         blob: [Circular: *3]
     },
-    json: [Circular: *7],
-    text: [Circular: *6]
+    json: [Circular: *8],
+    text: [Circular: *7]
 }
 ```
 
@@ -12727,7 +12824,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2980) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2988) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -13365,9 +13462,8 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         prototype: TLSSocket2 {}
     },
     checkServerIdentity: <ref *6> ƒ checkServerIdentity(length: 2) {},
-    connect: <ref *7> ƒ createConnection(length: 3) {},
+    connect: <ref *7> ƒ connect(length: 0) {},
     convertALPNProtocols: <ref *8> ƒ convertALPNProtocols(length: 2) {},
-    createConnection: [Circular: *7],
     createSecureContext: <ref *9> ƒ createSecureContext(length: 1) {},
     createServer: <ref *10> ƒ createServer(length: 2) {},
     default: {
@@ -13375,7 +13471,6 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         CLIENT_RENEG_WINDOW: 600,
         connect: [Circular: *7],
         convertALPNProtocols: [Circular: *8],
-        createConnection: [Circular: *7],
         createSecureContext: [Circular: *9],
         createServer: [Circular: *10],
         DEFAULT_CIPHERS: "DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM…",
@@ -13654,7 +13749,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         URLSearchParams: [Circular: *6],
         domainToASCII: <ref *13> ƒ domainToASCII(length: 1) {},
         domainToUnicode: <ref *14> ƒ domainToUnicode(length: 1) {},
-        pathToFileURL: <ref *15> ƒ pathToFileURL(length: 1) {},
+        pathToFileURL: <ref *15> ƒ pathToFileURL(length: 2) {},
         fileURLToPath: <ref *16> ƒ fileURLToPath(length: 1) {},
         urlToHttpOptions: <ref *17> ƒ urlToHttpOptions(length: 1) {}
     },
@@ -14595,13 +14690,14 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
             onAfter: ƒ (length: 1) {},
             onSettled: ƒ (length: 1) {}
         },
-        startupSnapshot: <ref *25> {
+        queryObjects: <ref *25> ƒ queryObjects(length: 1) {},
+        startupSnapshot: <ref *26> {
             addDeserializeCallback: ƒ addDeserializeCallback(length: 2) {},
             addSerializeCallback: ƒ addSerializeCallback(length: 2) {},
             setDeserializeMainFunction: ƒ setDeserializeMainFunction(length: 2) {},
             isBuildingSnapshot: ƒ isBuildingSnapshot(length: 0) {}
         },
-        setHeapSnapshotNearHeapLimit: <ref *30> ƒ setHeapSnapshotNearHeapLimit(length: 1) {},
+        setHeapSnapshotNearHeapLimit: <ref *31> ƒ setHeapSnapshotNearHeapLimit(length: 1) {},
         GCProfiler: [Circular: *5]
     },
     deserialize: [Circular: *14],
@@ -14610,10 +14706,11 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
     getHeapSpaceStatistics: [Circular: *11],
     getHeapStatistics: [Circular: *10],
     promiseHooks: [Circular: *19],
+    queryObjects: [Circular: *25],
     serialize: [Circular: *17],
     setFlagsFromString: [Circular: *13],
-    setHeapSnapshotNearHeapLimit: [Circular: *30],
-    startupSnapshot: [Circular: *25],
+    setHeapSnapshotNearHeapLimit: [Circular: *31],
+    startupSnapshot: [Circular: *26],
     stopCoverage: [Circular: *16],
     takeCoverage: [Circular: *15],
     writeHeapSnapshot: [Circular: *18]
@@ -14753,7 +14850,7 @@ Bun v1.1.8-canary.1+dbdc37600 (Linux x64 baseline)
         WASI: [Circular: *2]
     }
 }
-(node:3216) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3185) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
