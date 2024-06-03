@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js v20.13.1<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jun 3, 2024 with Bun 1.1.12 Node.js v20.13.1<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -1812,16 +1812,56 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {}
+            end: <ref *9> ƒ (length: 3) {},
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
-        defaultMaxListeners: 10
+    EventEmitter: <ref *13> ƒ EventEmitter2(length: 1) {
+        prototype: EventEmitter2 {
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            constructor: [Circular: *13],
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            emit: ƒ emit(length: 1) {},
+            addListener: <ref *18> ƒ addListener(length: 2) {},
+            on: [Circular: *18],
+            prependListener: ƒ prependListener(length: 2) {},
+            once: ƒ once2(length: 2) {},
+            prependOnceListener: ƒ prependOnceListener(length: 2) {},
+            removeListener: <ref *22> ƒ removeListener(length: 2) {},
+            off: [Circular: *22],
+            removeAllListeners: ƒ removeAllListeners(length: 1) {},
+            listeners: ƒ listeners(length: 1) {},
+            rawListeners: ƒ rawListeners(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
+            eventNames: ƒ eventNames(length: 0) {},
+            Symbol(kCapture): false
+        },
+        [get/set] captureRejections: false,
+        [get/set] defaultMaxListeners: 10,
+        once: <ref *28> ƒ once(length: 3) {},
+        on: <ref *29> ƒ on(length: 2) {},
+        getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 1) {},
+        EventEmitter: [Circular: *13],
+        usingDomains: false,
+        captureRejectionSymbol: Symbol(nodejs.rejection),
+        EventEmitterAsyncResource: <ref *33> ƒ EventEmitterAsyncResource(length: 1) {},
+        errorMonitor: Symbol(events.errorMonitor),
+        addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
+        init: [Circular: *13],
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
-    NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
+    EventEmitterAsyncResource: [Circular: *33],
+    NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
         prototype: Writable {
             end: ƒ end(length: 4) {},
             _destroy: ƒ (length: 2) {},
@@ -1829,20 +1869,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             unref: ƒ unref(length: 0) {}
         }
     },
-    PassThrough: <ref *20> ƒ PassThrough(length: 1) {
+    PassThrough: <ref *42> ƒ PassThrough(length: 1) {
         prototype: PassThrough {
-            constructor: [Circular: *20],
+            constructor: [Circular: *42],
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *23> ƒ Readable(length: 1) {
+    Readable: <ref *45> ƒ Readable(length: 1) {
         prototype: Readable {
-            constructor: [Circular: *23],
-            on: <ref *25> ƒ (length: 2) {},
+            constructor: [Circular: *45],
+            on: <ref *47> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *27> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *49> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
-            undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
             unshift: ƒ (length: 2) {},
             isPaused: ƒ (length: 0) {},
@@ -1851,15 +1890,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *25],
-            removeListener: <ref *38> ƒ (length: 2) {},
-            off: [Circular: *38],
+            addListener: [Circular: *47],
+            removeListener: <ref *59> ƒ (length: 2) {},
+            off: [Circular: *59],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
             wrap: ƒ (length: 1) {},
             iterator: ƒ (length: 1) {},
+            Symbol(nodejs.rejection): ƒ (length: 1) {},
             Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        ReadableState: ƒ ReadableState(length: 3) {
+            prototype: {}
         },
         _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
@@ -1867,19 +1910,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> Stream {
-            constructor: [Circular: *50],
+    Stream: <ref *74> ƒ Stream(length: 1) {
+        prototype: <ref *75> Stream {
+            constructor: [Circular: *74],
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *54> ƒ isErrored(length: 1) {},
-        isWritable: <ref *55> ƒ isWritable(length: 1) {},
-        isReadable: <ref *56> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *23],
-        Writable: <ref *57> ƒ Writable(length: 0) {
+        isDisturbed: <ref *77> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *78> ƒ isErrored(length: 1) {},
+        isWritable: <ref *79> ƒ isWritable(length: 1) {},
+        isReadable: <ref *80> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *45],
+        Writable: <ref *81> ƒ Writable(length: 0) {
             prototype: Writable {
-                constructor: [Circular: *57],
+                constructor: [Circular: *81],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -1889,46 +1932,46 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *27],
+                _undestroy: [Circular: *49],
                 _destroy: ƒ (length: 2) {},
-                undefined: ƒ (length: 1) {}
+                Symbol(nodejs.rejection): ƒ (length: 1) {}
             },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *65> ƒ Transform(length: 1) {
+        Transform: <ref *89> ƒ Transform(length: 1) {
             prototype: Transform {
-                constructor: [Circular: *65],
+                constructor: [Circular: *89],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *20],
-        pipeline: <ref *71> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *72> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *42],
+        pipeline: <ref *95> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *96> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *73> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *74> ƒ eos(length: 3) {
-            finished: <ref *75> ƒ finished(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *75]
+        addAbortSignal: <ref *97> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *98> ƒ eos(length: 3) {
+            finished: <ref *99> ƒ finished(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *99]
         },
-        destroy: <ref *76> ƒ destroyer(length: 2) {},
-        compose: <ref *77> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *78> {
-            finished: [Circular: *75],
-            pipeline: [Circular: *72]
+        destroy: <ref *100> ƒ destroyer(length: 2) {},
+        compose: <ref *101> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *102> {
+            finished: [Circular: *99],
+            pipeline: [Circular: *96]
         },
-        Stream: [Circular: *50],
-        _isUint8Array: <ref *79> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *80> ƒ _uint8ArrayToBuffer(length: 1) {},
-        setDefaultHighWaterMark: <ref *81> ƒ setDefaultHighWaterMark(length: 2) {},
-        getDefaultHighWaterMark: <ref *82> ƒ getDefaultHighWaterMark(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *83> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *14],
-        eos: [Circular: *74],
+        Stream: [Circular: *74],
+        _isUint8Array: <ref *103> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *104> ƒ _uint8ArrayToBuffer(length: 1) {},
+        setDefaultHighWaterMark: <ref *105> ƒ setDefaultHighWaterMark(length: 2) {},
+        getDefaultHighWaterMark: <ref *106> ƒ getDefaultHighWaterMark(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *107> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *36],
+        eos: [Circular: *98],
         EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
@@ -1936,27 +1979,39 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             kEnsureConstructed: Symbol(kEnsureConstructed)
         }
     },
-    Transform: [Circular: *65],
-    Writable: [Circular: *57],
-    _getNativeReadableStreamPrototype: [Circular: *83],
-    _isUint8Array: [Circular: *79],
-    _uint8ArrayToBuffer: [Circular: *80],
-    addAbortSignal: [Circular: *73],
-    compose: [Circular: *77],
-    default: [Circular: *50],
+    Transform: [Circular: *89],
+    Writable: [Circular: *81],
+    _getNativeReadableStreamPrototype: [Circular: *107],
+    _isUint8Array: [Circular: *103],
+    _uint8ArrayToBuffer: [Circular: *104],
+    addAbortListener: [Circular: *34],
+    addAbortSignal: [Circular: *97],
+    captureRejectionSymbol: Symbol(nodejs.rejection),
+    captureRejections: false,
+    compose: [Circular: *101],
+    default: [Circular: *74],
     defaultMaxListeners: 10,
-    destroy: [Circular: *76],
-    eos: [Circular: *74],
-    finished: [Circular: *74],
-    getDefaultHighWaterMark: [Circular: *82],
-    isDisturbed: [Circular: *53],
-    isErrored: [Circular: *54],
-    isReadable: [Circular: *56],
-    isWritable: [Circular: *55],
-    pipeline: [Circular: *71],
-    promises: [Circular: *78],
-    prototype: [Circular: *51],
-    setDefaultHighWaterMark: [Circular: *81]
+    destroy: [Circular: *100],
+    eos: [Circular: *98],
+    errorMonitor: Symbol(events.errorMonitor),
+    finished: [Circular: *98],
+    getDefaultHighWaterMark: [Circular: *106],
+    getEventListeners: [Circular: *30],
+    getMaxListeners: [Circular: *31],
+    init: [Circular: *13],
+    isDisturbed: [Circular: *77],
+    isErrored: [Circular: *78],
+    isReadable: [Circular: *80],
+    isWritable: [Circular: *79],
+    listenerCount: [Circular: *35],
+    on: [Circular: *29],
+    once: [Circular: *28],
+    pipeline: [Circular: *95],
+    promises: [Circular: *102],
+    prototype: [Circular: *75],
+    setDefaultHighWaterMark: [Circular: *105],
+    setMaxListeners: [Circular: *32],
+    usingDomains: false
 }
 ```
 
@@ -1985,16 +2040,56 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {}
+            end: <ref *9> ƒ (length: 3) {},
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
-        defaultMaxListeners: 10
+    EventEmitter: <ref *13> ƒ EventEmitter2(length: 1) {
+        prototype: EventEmitter2 {
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            constructor: [Circular: *13],
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            emit: ƒ emit(length: 1) {},
+            addListener: <ref *18> ƒ addListener(length: 2) {},
+            on: [Circular: *18],
+            prependListener: ƒ prependListener(length: 2) {},
+            once: ƒ once2(length: 2) {},
+            prependOnceListener: ƒ prependOnceListener(length: 2) {},
+            removeListener: <ref *22> ƒ removeListener(length: 2) {},
+            off: [Circular: *22],
+            removeAllListeners: ƒ removeAllListeners(length: 1) {},
+            listeners: ƒ listeners(length: 1) {},
+            rawListeners: ƒ rawListeners(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
+            eventNames: ƒ eventNames(length: 0) {},
+            Symbol(kCapture): false
+        },
+        [get/set] captureRejections: false,
+        [get/set] defaultMaxListeners: 10,
+        once: <ref *28> ƒ once(length: 3) {},
+        on: <ref *29> ƒ on(length: 2) {},
+        getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 1) {},
+        EventEmitter: [Circular: *13],
+        usingDomains: false,
+        captureRejectionSymbol: Symbol(nodejs.rejection),
+        EventEmitterAsyncResource: <ref *33> ƒ EventEmitterAsyncResource(length: 1) {},
+        errorMonitor: Symbol(events.errorMonitor),
+        addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
+        init: [Circular: *13],
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
-    NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
+    EventEmitterAsyncResource: [Circular: *33],
+    NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
         prototype: Writable {
             end: ƒ end(length: 4) {},
             _destroy: ƒ (length: 2) {},
@@ -2002,20 +2097,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             unref: ƒ unref(length: 0) {}
         }
     },
-    PassThrough: <ref *20> ƒ PassThrough(length: 1) {
+    PassThrough: <ref *42> ƒ PassThrough(length: 1) {
         prototype: PassThrough {
-            constructor: [Circular: *20],
+            constructor: [Circular: *42],
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *23> ƒ Readable(length: 1) {
+    Readable: <ref *45> ƒ Readable(length: 1) {
         prototype: Readable {
-            constructor: [Circular: *23],
-            on: <ref *25> ƒ (length: 2) {},
+            constructor: [Circular: *45],
+            on: <ref *47> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *27> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *49> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
-            undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
             unshift: ƒ (length: 2) {},
             isPaused: ƒ (length: 0) {},
@@ -2024,15 +2118,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *25],
-            removeListener: <ref *38> ƒ (length: 2) {},
-            off: [Circular: *38],
+            addListener: [Circular: *47],
+            removeListener: <ref *59> ƒ (length: 2) {},
+            off: [Circular: *59],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
             wrap: ƒ (length: 1) {},
             iterator: ƒ (length: 1) {},
+            Symbol(nodejs.rejection): ƒ (length: 1) {},
             Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        ReadableState: ƒ ReadableState(length: 3) {
+            prototype: {}
         },
         _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
@@ -2040,19 +2138,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> Stream {
-            constructor: [Circular: *50],
+    Stream: <ref *74> ƒ Stream(length: 1) {
+        prototype: <ref *75> Stream {
+            constructor: [Circular: *74],
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *54> ƒ isErrored(length: 1) {},
-        isWritable: <ref *55> ƒ isWritable(length: 1) {},
-        isReadable: <ref *56> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *23],
-        Writable: <ref *57> ƒ Writable(length: 0) {
+        isDisturbed: <ref *77> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *78> ƒ isErrored(length: 1) {},
+        isWritable: <ref *79> ƒ isWritable(length: 1) {},
+        isReadable: <ref *80> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *45],
+        Writable: <ref *81> ƒ Writable(length: 0) {
             prototype: Writable {
-                constructor: [Circular: *57],
+                constructor: [Circular: *81],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -2062,46 +2160,46 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *27],
+                _undestroy: [Circular: *49],
                 _destroy: ƒ (length: 2) {},
-                undefined: ƒ (length: 1) {}
+                Symbol(nodejs.rejection): ƒ (length: 1) {}
             },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *65> ƒ Transform(length: 1) {
+        Transform: <ref *89> ƒ Transform(length: 1) {
             prototype: Transform {
-                constructor: [Circular: *65],
+                constructor: [Circular: *89],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *20],
-        pipeline: <ref *71> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *72> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *42],
+        pipeline: <ref *95> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *96> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *73> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *74> ƒ eos(length: 3) {
-            finished: <ref *75> ƒ finished(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *75]
+        addAbortSignal: <ref *97> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *98> ƒ eos(length: 3) {
+            finished: <ref *99> ƒ finished(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *99]
         },
-        destroy: <ref *76> ƒ destroyer(length: 2) {},
-        compose: <ref *77> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *78> {
-            finished: [Circular: *75],
-            pipeline: [Circular: *72]
+        destroy: <ref *100> ƒ destroyer(length: 2) {},
+        compose: <ref *101> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *102> {
+            finished: [Circular: *99],
+            pipeline: [Circular: *96]
         },
-        Stream: [Circular: *50],
-        _isUint8Array: <ref *79> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *80> ƒ _uint8ArrayToBuffer(length: 1) {},
-        setDefaultHighWaterMark: <ref *81> ƒ setDefaultHighWaterMark(length: 2) {},
-        getDefaultHighWaterMark: <ref *82> ƒ getDefaultHighWaterMark(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *83> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *14],
-        eos: [Circular: *74],
+        Stream: [Circular: *74],
+        _isUint8Array: <ref *103> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *104> ƒ _uint8ArrayToBuffer(length: 1) {},
+        setDefaultHighWaterMark: <ref *105> ƒ setDefaultHighWaterMark(length: 2) {},
+        getDefaultHighWaterMark: <ref *106> ƒ getDefaultHighWaterMark(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *107> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *36],
+        eos: [Circular: *98],
         EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
@@ -2109,27 +2207,39 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             kEnsureConstructed: Symbol(kEnsureConstructed)
         }
     },
-    Transform: [Circular: *65],
-    Writable: [Circular: *57],
-    _getNativeReadableStreamPrototype: [Circular: *83],
-    _isUint8Array: [Circular: *79],
-    _uint8ArrayToBuffer: [Circular: *80],
-    addAbortSignal: [Circular: *73],
-    compose: [Circular: *77],
-    default: [Circular: *50],
+    Transform: [Circular: *89],
+    Writable: [Circular: *81],
+    _getNativeReadableStreamPrototype: [Circular: *107],
+    _isUint8Array: [Circular: *103],
+    _uint8ArrayToBuffer: [Circular: *104],
+    addAbortListener: [Circular: *34],
+    addAbortSignal: [Circular: *97],
+    captureRejectionSymbol: Symbol(nodejs.rejection),
+    captureRejections: false,
+    compose: [Circular: *101],
+    default: [Circular: *74],
     defaultMaxListeners: 10,
-    destroy: [Circular: *76],
-    eos: [Circular: *74],
-    finished: [Circular: *74],
-    getDefaultHighWaterMark: [Circular: *82],
-    isDisturbed: [Circular: *53],
-    isErrored: [Circular: *54],
-    isReadable: [Circular: *56],
-    isWritable: [Circular: *55],
-    pipeline: [Circular: *71],
-    promises: [Circular: *78],
-    prototype: [Circular: *51],
-    setDefaultHighWaterMark: [Circular: *81]
+    destroy: [Circular: *100],
+    eos: [Circular: *98],
+    errorMonitor: Symbol(events.errorMonitor),
+    finished: [Circular: *98],
+    getDefaultHighWaterMark: [Circular: *106],
+    getEventListeners: [Circular: *30],
+    getMaxListeners: [Circular: *31],
+    init: [Circular: *13],
+    isDisturbed: [Circular: *77],
+    isErrored: [Circular: *78],
+    isReadable: [Circular: *80],
+    isWritable: [Circular: *79],
+    listenerCount: [Circular: *35],
+    on: [Circular: *29],
+    once: [Circular: *28],
+    pipeline: [Circular: *95],
+    promises: [Circular: *102],
+    prototype: [Circular: *75],
+    setDefaultHighWaterMark: [Circular: *105],
+    setMaxListeners: [Circular: *32],
+    usingDomains: false
 }
 ```
 
@@ -2171,16 +2281,56 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {}
+            end: <ref *9> ƒ (length: 3) {},
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
-        defaultMaxListeners: 10
+    EventEmitter: <ref *13> ƒ EventEmitter2(length: 1) {
+        prototype: EventEmitter2 {
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            constructor: [Circular: *13],
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            emit: ƒ emit(length: 1) {},
+            addListener: <ref *18> ƒ addListener(length: 2) {},
+            on: [Circular: *18],
+            prependListener: ƒ prependListener(length: 2) {},
+            once: ƒ once2(length: 2) {},
+            prependOnceListener: ƒ prependOnceListener(length: 2) {},
+            removeListener: <ref *22> ƒ removeListener(length: 2) {},
+            off: [Circular: *22],
+            removeAllListeners: ƒ removeAllListeners(length: 1) {},
+            listeners: ƒ listeners(length: 1) {},
+            rawListeners: ƒ rawListeners(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
+            eventNames: ƒ eventNames(length: 0) {},
+            Symbol(kCapture): false
+        },
+        [get/set] captureRejections: false,
+        [get/set] defaultMaxListeners: 10,
+        once: <ref *28> ƒ once(length: 3) {},
+        on: <ref *29> ƒ on(length: 2) {},
+        getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 1) {},
+        EventEmitter: [Circular: *13],
+        usingDomains: false,
+        captureRejectionSymbol: Symbol(nodejs.rejection),
+        EventEmitterAsyncResource: <ref *33> ƒ EventEmitterAsyncResource(length: 1) {},
+        errorMonitor: Symbol(events.errorMonitor),
+        addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
+        init: [Circular: *13],
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
-    NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
+    EventEmitterAsyncResource: [Circular: *33],
+    NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
         prototype: Writable {
             end: ƒ end(length: 4) {},
             _destroy: ƒ (length: 2) {},
@@ -2188,20 +2338,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             unref: ƒ unref(length: 0) {}
         }
     },
-    PassThrough: <ref *20> ƒ PassThrough(length: 1) {
+    PassThrough: <ref *42> ƒ PassThrough(length: 1) {
         prototype: PassThrough {
-            constructor: [Circular: *20],
+            constructor: [Circular: *42],
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *23> ƒ Readable(length: 1) {
+    Readable: <ref *45> ƒ Readable(length: 1) {
         prototype: Readable {
-            constructor: [Circular: *23],
-            on: <ref *25> ƒ (length: 2) {},
+            constructor: [Circular: *45],
+            on: <ref *47> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *27> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *49> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
-            undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
             unshift: ƒ (length: 2) {},
             isPaused: ƒ (length: 0) {},
@@ -2210,15 +2359,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *25],
-            removeListener: <ref *38> ƒ (length: 2) {},
-            off: [Circular: *38],
+            addListener: [Circular: *47],
+            removeListener: <ref *59> ƒ (length: 2) {},
+            off: [Circular: *59],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
             wrap: ƒ (length: 1) {},
             iterator: ƒ (length: 1) {},
+            Symbol(nodejs.rejection): ƒ (length: 1) {},
             Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        ReadableState: ƒ ReadableState(length: 3) {
+            prototype: {}
         },
         _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
@@ -2226,19 +2379,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> Stream {
-            constructor: [Circular: *50],
+    Stream: <ref *74> ƒ Stream(length: 1) {
+        prototype: <ref *75> Stream {
+            constructor: [Circular: *74],
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *54> ƒ isErrored(length: 1) {},
-        isWritable: <ref *55> ƒ isWritable(length: 1) {},
-        isReadable: <ref *56> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *23],
-        Writable: <ref *57> ƒ Writable(length: 0) {
+        isDisturbed: <ref *77> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *78> ƒ isErrored(length: 1) {},
+        isWritable: <ref *79> ƒ isWritable(length: 1) {},
+        isReadable: <ref *80> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *45],
+        Writable: <ref *81> ƒ Writable(length: 0) {
             prototype: Writable {
-                constructor: [Circular: *57],
+                constructor: [Circular: *81],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -2248,46 +2401,46 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *27],
+                _undestroy: [Circular: *49],
                 _destroy: ƒ (length: 2) {},
-                undefined: ƒ (length: 1) {}
+                Symbol(nodejs.rejection): ƒ (length: 1) {}
             },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *65> ƒ Transform(length: 1) {
+        Transform: <ref *89> ƒ Transform(length: 1) {
             prototype: Transform {
-                constructor: [Circular: *65],
+                constructor: [Circular: *89],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *20],
-        pipeline: <ref *71> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *72> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *42],
+        pipeline: <ref *95> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *96> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *73> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *74> ƒ eos(length: 3) {
-            finished: <ref *75> ƒ finished(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *75]
+        addAbortSignal: <ref *97> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *98> ƒ eos(length: 3) {
+            finished: <ref *99> ƒ finished(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *99]
         },
-        destroy: <ref *76> ƒ destroyer(length: 2) {},
-        compose: <ref *77> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *78> {
-            finished: [Circular: *75],
-            pipeline: [Circular: *72]
+        destroy: <ref *100> ƒ destroyer(length: 2) {},
+        compose: <ref *101> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *102> {
+            finished: [Circular: *99],
+            pipeline: [Circular: *96]
         },
-        Stream: [Circular: *50],
-        _isUint8Array: <ref *79> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *80> ƒ _uint8ArrayToBuffer(length: 1) {},
-        setDefaultHighWaterMark: <ref *81> ƒ setDefaultHighWaterMark(length: 2) {},
-        getDefaultHighWaterMark: <ref *82> ƒ getDefaultHighWaterMark(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *83> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *14],
-        eos: [Circular: *74],
+        Stream: [Circular: *74],
+        _isUint8Array: <ref *103> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *104> ƒ _uint8ArrayToBuffer(length: 1) {},
+        setDefaultHighWaterMark: <ref *105> ƒ setDefaultHighWaterMark(length: 2) {},
+        getDefaultHighWaterMark: <ref *106> ƒ getDefaultHighWaterMark(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *107> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *36],
+        eos: [Circular: *98],
         EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
@@ -2295,27 +2448,39 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             kEnsureConstructed: Symbol(kEnsureConstructed)
         }
     },
-    Transform: [Circular: *65],
-    Writable: [Circular: *57],
-    _getNativeReadableStreamPrototype: [Circular: *83],
-    _isUint8Array: [Circular: *79],
-    _uint8ArrayToBuffer: [Circular: *80],
-    addAbortSignal: [Circular: *73],
-    compose: [Circular: *77],
-    default: [Circular: *50],
+    Transform: [Circular: *89],
+    Writable: [Circular: *81],
+    _getNativeReadableStreamPrototype: [Circular: *107],
+    _isUint8Array: [Circular: *103],
+    _uint8ArrayToBuffer: [Circular: *104],
+    addAbortListener: [Circular: *34],
+    addAbortSignal: [Circular: *97],
+    captureRejectionSymbol: Symbol(nodejs.rejection),
+    captureRejections: false,
+    compose: [Circular: *101],
+    default: [Circular: *74],
     defaultMaxListeners: 10,
-    destroy: [Circular: *76],
-    eos: [Circular: *74],
-    finished: [Circular: *74],
-    getDefaultHighWaterMark: [Circular: *82],
-    isDisturbed: [Circular: *53],
-    isErrored: [Circular: *54],
-    isReadable: [Circular: *56],
-    isWritable: [Circular: *55],
-    pipeline: [Circular: *71],
-    promises: [Circular: *78],
-    prototype: [Circular: *51],
-    setDefaultHighWaterMark: [Circular: *81]
+    destroy: [Circular: *100],
+    eos: [Circular: *98],
+    errorMonitor: Symbol(events.errorMonitor),
+    finished: [Circular: *98],
+    getDefaultHighWaterMark: [Circular: *106],
+    getEventListeners: [Circular: *30],
+    getMaxListeners: [Circular: *31],
+    init: [Circular: *13],
+    isDisturbed: [Circular: *77],
+    isErrored: [Circular: *78],
+    isReadable: [Circular: *80],
+    isWritable: [Circular: *79],
+    listenerCount: [Circular: *35],
+    on: [Circular: *29],
+    once: [Circular: *28],
+    pipeline: [Circular: *95],
+    promises: [Circular: *102],
+    prototype: [Circular: *75],
+    setDefaultHighWaterMark: [Circular: *105],
+    setMaxListeners: [Circular: *32],
+    usingDomains: false
 }
 ```
 
@@ -2344,16 +2509,56 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {}
+            end: <ref *9> ƒ (length: 3) {},
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
-        defaultMaxListeners: 10
+    EventEmitter: <ref *13> ƒ EventEmitter2(length: 1) {
+        prototype: EventEmitter2 {
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            constructor: [Circular: *13],
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            emit: ƒ emit(length: 1) {},
+            addListener: <ref *18> ƒ addListener(length: 2) {},
+            on: [Circular: *18],
+            prependListener: ƒ prependListener(length: 2) {},
+            once: ƒ once2(length: 2) {},
+            prependOnceListener: ƒ prependOnceListener(length: 2) {},
+            removeListener: <ref *22> ƒ removeListener(length: 2) {},
+            off: [Circular: *22],
+            removeAllListeners: ƒ removeAllListeners(length: 1) {},
+            listeners: ƒ listeners(length: 1) {},
+            rawListeners: ƒ rawListeners(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
+            eventNames: ƒ eventNames(length: 0) {},
+            Symbol(kCapture): false
+        },
+        [get/set] captureRejections: false,
+        [get/set] defaultMaxListeners: 10,
+        once: <ref *28> ƒ once(length: 3) {},
+        on: <ref *29> ƒ on(length: 2) {},
+        getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 1) {},
+        EventEmitter: [Circular: *13],
+        usingDomains: false,
+        captureRejectionSymbol: Symbol(nodejs.rejection),
+        EventEmitterAsyncResource: <ref *33> ƒ EventEmitterAsyncResource(length: 1) {},
+        errorMonitor: Symbol(events.errorMonitor),
+        addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
+        init: [Circular: *13],
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
-    NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
+    EventEmitterAsyncResource: [Circular: *33],
+    NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
         prototype: Writable {
             end: ƒ end(length: 4) {},
             _destroy: ƒ (length: 2) {},
@@ -2361,20 +2566,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             unref: ƒ unref(length: 0) {}
         }
     },
-    PassThrough: <ref *20> ƒ PassThrough(length: 1) {
+    PassThrough: <ref *42> ƒ PassThrough(length: 1) {
         prototype: PassThrough {
-            constructor: [Circular: *20],
+            constructor: [Circular: *42],
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *23> ƒ Readable(length: 1) {
+    Readable: <ref *45> ƒ Readable(length: 1) {
         prototype: Readable {
-            constructor: [Circular: *23],
-            on: <ref *25> ƒ (length: 2) {},
+            constructor: [Circular: *45],
+            on: <ref *47> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *27> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *49> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
-            undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
             unshift: ƒ (length: 2) {},
             isPaused: ƒ (length: 0) {},
@@ -2383,15 +2587,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *25],
-            removeListener: <ref *38> ƒ (length: 2) {},
-            off: [Circular: *38],
+            addListener: [Circular: *47],
+            removeListener: <ref *59> ƒ (length: 2) {},
+            off: [Circular: *59],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
             wrap: ƒ (length: 1) {},
             iterator: ƒ (length: 1) {},
+            Symbol(nodejs.rejection): ƒ (length: 1) {},
             Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        ReadableState: ƒ ReadableState(length: 3) {
+            prototype: {}
         },
         _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
@@ -2399,19 +2607,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> Stream {
-            constructor: [Circular: *50],
+    Stream: <ref *74> ƒ Stream(length: 1) {
+        prototype: <ref *75> Stream {
+            constructor: [Circular: *74],
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *54> ƒ isErrored(length: 1) {},
-        isWritable: <ref *55> ƒ isWritable(length: 1) {},
-        isReadable: <ref *56> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *23],
-        Writable: <ref *57> ƒ Writable(length: 0) {
+        isDisturbed: <ref *77> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *78> ƒ isErrored(length: 1) {},
+        isWritable: <ref *79> ƒ isWritable(length: 1) {},
+        isReadable: <ref *80> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *45],
+        Writable: <ref *81> ƒ Writable(length: 0) {
             prototype: Writable {
-                constructor: [Circular: *57],
+                constructor: [Circular: *81],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -2421,46 +2629,46 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *27],
+                _undestroy: [Circular: *49],
                 _destroy: ƒ (length: 2) {},
-                undefined: ƒ (length: 1) {}
+                Symbol(nodejs.rejection): ƒ (length: 1) {}
             },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *65> ƒ Transform(length: 1) {
+        Transform: <ref *89> ƒ Transform(length: 1) {
             prototype: Transform {
-                constructor: [Circular: *65],
+                constructor: [Circular: *89],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *20],
-        pipeline: <ref *71> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *72> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *42],
+        pipeline: <ref *95> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *96> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *73> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *74> ƒ eos(length: 3) {
-            finished: <ref *75> ƒ finished(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *75]
+        addAbortSignal: <ref *97> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *98> ƒ eos(length: 3) {
+            finished: <ref *99> ƒ finished(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *99]
         },
-        destroy: <ref *76> ƒ destroyer(length: 2) {},
-        compose: <ref *77> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *78> {
-            finished: [Circular: *75],
-            pipeline: [Circular: *72]
+        destroy: <ref *100> ƒ destroyer(length: 2) {},
+        compose: <ref *101> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *102> {
+            finished: [Circular: *99],
+            pipeline: [Circular: *96]
         },
-        Stream: [Circular: *50],
-        _isUint8Array: <ref *79> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *80> ƒ _uint8ArrayToBuffer(length: 1) {},
-        setDefaultHighWaterMark: <ref *81> ƒ setDefaultHighWaterMark(length: 2) {},
-        getDefaultHighWaterMark: <ref *82> ƒ getDefaultHighWaterMark(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *83> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *14],
-        eos: [Circular: *74],
+        Stream: [Circular: *74],
+        _isUint8Array: <ref *103> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *104> ƒ _uint8ArrayToBuffer(length: 1) {},
+        setDefaultHighWaterMark: <ref *105> ƒ setDefaultHighWaterMark(length: 2) {},
+        getDefaultHighWaterMark: <ref *106> ƒ getDefaultHighWaterMark(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *107> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *36],
+        eos: [Circular: *98],
         EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
@@ -2468,27 +2676,39 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             kEnsureConstructed: Symbol(kEnsureConstructed)
         }
     },
-    Transform: [Circular: *65],
-    Writable: [Circular: *57],
-    _getNativeReadableStreamPrototype: [Circular: *83],
-    _isUint8Array: [Circular: *79],
-    _uint8ArrayToBuffer: [Circular: *80],
-    addAbortSignal: [Circular: *73],
-    compose: [Circular: *77],
-    default: [Circular: *50],
+    Transform: [Circular: *89],
+    Writable: [Circular: *81],
+    _getNativeReadableStreamPrototype: [Circular: *107],
+    _isUint8Array: [Circular: *103],
+    _uint8ArrayToBuffer: [Circular: *104],
+    addAbortListener: [Circular: *34],
+    addAbortSignal: [Circular: *97],
+    captureRejectionSymbol: Symbol(nodejs.rejection),
+    captureRejections: false,
+    compose: [Circular: *101],
+    default: [Circular: *74],
     defaultMaxListeners: 10,
-    destroy: [Circular: *76],
-    eos: [Circular: *74],
-    finished: [Circular: *74],
-    getDefaultHighWaterMark: [Circular: *82],
-    isDisturbed: [Circular: *53],
-    isErrored: [Circular: *54],
-    isReadable: [Circular: *56],
-    isWritable: [Circular: *55],
-    pipeline: [Circular: *71],
-    promises: [Circular: *78],
-    prototype: [Circular: *51],
-    setDefaultHighWaterMark: [Circular: *81]
+    destroy: [Circular: *100],
+    eos: [Circular: *98],
+    errorMonitor: Symbol(events.errorMonitor),
+    finished: [Circular: *98],
+    getDefaultHighWaterMark: [Circular: *106],
+    getEventListeners: [Circular: *30],
+    getMaxListeners: [Circular: *31],
+    init: [Circular: *13],
+    isDisturbed: [Circular: *77],
+    isErrored: [Circular: *78],
+    isReadable: [Circular: *80],
+    isWritable: [Circular: *79],
+    listenerCount: [Circular: *35],
+    on: [Circular: *29],
+    once: [Circular: *28],
+    pipeline: [Circular: *95],
+    promises: [Circular: *102],
+    prototype: [Circular: *75],
+    setDefaultHighWaterMark: [Circular: *105],
+    setMaxListeners: [Circular: *32],
+    usingDomains: false
 }
 ```
 
@@ -2502,7 +2722,7 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2078) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2067) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -2519,16 +2739,56 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {}
+            end: <ref *9> ƒ (length: 3) {},
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
-        defaultMaxListeners: 10
+    EventEmitter: <ref *13> ƒ EventEmitter2(length: 1) {
+        prototype: EventEmitter2 {
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            constructor: [Circular: *13],
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            emit: ƒ emit(length: 1) {},
+            addListener: <ref *18> ƒ addListener(length: 2) {},
+            on: [Circular: *18],
+            prependListener: ƒ prependListener(length: 2) {},
+            once: ƒ once2(length: 2) {},
+            prependOnceListener: ƒ prependOnceListener(length: 2) {},
+            removeListener: <ref *22> ƒ removeListener(length: 2) {},
+            off: [Circular: *22],
+            removeAllListeners: ƒ removeAllListeners(length: 1) {},
+            listeners: ƒ listeners(length: 1) {},
+            rawListeners: ƒ rawListeners(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
+            eventNames: ƒ eventNames(length: 0) {},
+            Symbol(kCapture): false
+        },
+        [get/set] captureRejections: false,
+        [get/set] defaultMaxListeners: 10,
+        once: <ref *28> ƒ once(length: 3) {},
+        on: <ref *29> ƒ on(length: 2) {},
+        getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 1) {},
+        EventEmitter: [Circular: *13],
+        usingDomains: false,
+        captureRejectionSymbol: Symbol(nodejs.rejection),
+        EventEmitterAsyncResource: <ref *33> ƒ EventEmitterAsyncResource(length: 1) {},
+        errorMonitor: Symbol(events.errorMonitor),
+        addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
+        init: [Circular: *13],
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
-    NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
+    EventEmitterAsyncResource: [Circular: *33],
+    NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
         prototype: Writable {
             end: ƒ end(length: 4) {},
             _destroy: ƒ (length: 2) {},
@@ -2536,20 +2796,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             unref: ƒ unref(length: 0) {}
         }
     },
-    PassThrough: <ref *20> ƒ PassThrough(length: 1) {
+    PassThrough: <ref *42> ƒ PassThrough(length: 1) {
         prototype: PassThrough {
-            constructor: [Circular: *20],
+            constructor: [Circular: *42],
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *23> ƒ Readable(length: 1) {
+    Readable: <ref *45> ƒ Readable(length: 1) {
         prototype: Readable {
-            constructor: [Circular: *23],
-            on: <ref *25> ƒ (length: 2) {},
+            constructor: [Circular: *45],
+            on: <ref *47> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *27> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *49> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
-            undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
             unshift: ƒ (length: 2) {},
             isPaused: ƒ (length: 0) {},
@@ -2558,15 +2817,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *25],
-            removeListener: <ref *38> ƒ (length: 2) {},
-            off: [Circular: *38],
+            addListener: [Circular: *47],
+            removeListener: <ref *59> ƒ (length: 2) {},
+            off: [Circular: *59],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
             wrap: ƒ (length: 1) {},
             iterator: ƒ (length: 1) {},
+            Symbol(nodejs.rejection): ƒ (length: 1) {},
             Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        ReadableState: ƒ ReadableState(length: 3) {
+            prototype: {}
         },
         _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
@@ -2574,19 +2837,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> Stream {
-            constructor: [Circular: *50],
+    Stream: <ref *74> ƒ Stream(length: 1) {
+        prototype: <ref *75> Stream {
+            constructor: [Circular: *74],
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *54> ƒ isErrored(length: 1) {},
-        isWritable: <ref *55> ƒ isWritable(length: 1) {},
-        isReadable: <ref *56> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *23],
-        Writable: <ref *57> ƒ Writable(length: 0) {
+        isDisturbed: <ref *77> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *78> ƒ isErrored(length: 1) {},
+        isWritable: <ref *79> ƒ isWritable(length: 1) {},
+        isReadable: <ref *80> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *45],
+        Writable: <ref *81> ƒ Writable(length: 0) {
             prototype: Writable {
-                constructor: [Circular: *57],
+                constructor: [Circular: *81],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -2596,46 +2859,46 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *27],
+                _undestroy: [Circular: *49],
                 _destroy: ƒ (length: 2) {},
-                undefined: ƒ (length: 1) {}
+                Symbol(nodejs.rejection): ƒ (length: 1) {}
             },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *65> ƒ Transform(length: 1) {
+        Transform: <ref *89> ƒ Transform(length: 1) {
             prototype: Transform {
-                constructor: [Circular: *65],
+                constructor: [Circular: *89],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *20],
-        pipeline: <ref *71> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *72> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *42],
+        pipeline: <ref *95> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *96> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *73> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *74> ƒ eos(length: 3) {
-            finished: <ref *75> ƒ finished(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *75]
+        addAbortSignal: <ref *97> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *98> ƒ eos(length: 3) {
+            finished: <ref *99> ƒ finished(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *99]
         },
-        destroy: <ref *76> ƒ destroyer(length: 2) {},
-        compose: <ref *77> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *78> {
-            finished: [Circular: *75],
-            pipeline: [Circular: *72]
+        destroy: <ref *100> ƒ destroyer(length: 2) {},
+        compose: <ref *101> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *102> {
+            finished: [Circular: *99],
+            pipeline: [Circular: *96]
         },
-        Stream: [Circular: *50],
-        _isUint8Array: <ref *79> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *80> ƒ _uint8ArrayToBuffer(length: 1) {},
-        setDefaultHighWaterMark: <ref *81> ƒ setDefaultHighWaterMark(length: 2) {},
-        getDefaultHighWaterMark: <ref *82> ƒ getDefaultHighWaterMark(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *83> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *14],
-        eos: [Circular: *74],
+        Stream: [Circular: *74],
+        _isUint8Array: <ref *103> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *104> ƒ _uint8ArrayToBuffer(length: 1) {},
+        setDefaultHighWaterMark: <ref *105> ƒ setDefaultHighWaterMark(length: 2) {},
+        getDefaultHighWaterMark: <ref *106> ƒ getDefaultHighWaterMark(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *107> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *36],
+        eos: [Circular: *98],
         EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
@@ -2643,27 +2906,39 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             kEnsureConstructed: Symbol(kEnsureConstructed)
         }
     },
-    Transform: [Circular: *65],
-    Writable: [Circular: *57],
-    _getNativeReadableStreamPrototype: [Circular: *83],
-    _isUint8Array: [Circular: *79],
-    _uint8ArrayToBuffer: [Circular: *80],
-    addAbortSignal: [Circular: *73],
-    compose: [Circular: *77],
-    default: [Circular: *50],
+    Transform: [Circular: *89],
+    Writable: [Circular: *81],
+    _getNativeReadableStreamPrototype: [Circular: *107],
+    _isUint8Array: [Circular: *103],
+    _uint8ArrayToBuffer: [Circular: *104],
+    addAbortListener: [Circular: *34],
+    addAbortSignal: [Circular: *97],
+    captureRejectionSymbol: Symbol(nodejs.rejection),
+    captureRejections: false,
+    compose: [Circular: *101],
+    default: [Circular: *74],
     defaultMaxListeners: 10,
-    destroy: [Circular: *76],
-    eos: [Circular: *74],
-    finished: [Circular: *74],
-    getDefaultHighWaterMark: [Circular: *82],
-    isDisturbed: [Circular: *53],
-    isErrored: [Circular: *54],
-    isReadable: [Circular: *56],
-    isWritable: [Circular: *55],
-    pipeline: [Circular: *71],
-    promises: [Circular: *78],
-    prototype: [Circular: *51],
-    setDefaultHighWaterMark: [Circular: *81]
+    destroy: [Circular: *100],
+    eos: [Circular: *98],
+    errorMonitor: Symbol(events.errorMonitor),
+    finished: [Circular: *98],
+    getDefaultHighWaterMark: [Circular: *106],
+    getEventListeners: [Circular: *30],
+    getMaxListeners: [Circular: *31],
+    init: [Circular: *13],
+    isDisturbed: [Circular: *77],
+    isErrored: [Circular: *78],
+    isReadable: [Circular: *80],
+    isWritable: [Circular: *79],
+    listenerCount: [Circular: *35],
+    on: [Circular: *29],
+    once: [Circular: *28],
+    pipeline: [Circular: *95],
+    promises: [Circular: *102],
+    prototype: [Circular: *75],
+    setDefaultHighWaterMark: [Circular: *105],
+    setMaxListeners: [Circular: *32],
+    usingDomains: false
 }
 ```
 
@@ -2699,16 +2974,56 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {}
+            end: <ref *9> ƒ (length: 3) {},
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
-        defaultMaxListeners: 10
+    EventEmitter: <ref *13> ƒ EventEmitter2(length: 1) {
+        prototype: EventEmitter2 {
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            constructor: [Circular: *13],
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            emit: ƒ emit(length: 1) {},
+            addListener: <ref *18> ƒ addListener(length: 2) {},
+            on: [Circular: *18],
+            prependListener: ƒ prependListener(length: 2) {},
+            once: ƒ once2(length: 2) {},
+            prependOnceListener: ƒ prependOnceListener(length: 2) {},
+            removeListener: <ref *22> ƒ removeListener(length: 2) {},
+            off: [Circular: *22],
+            removeAllListeners: ƒ removeAllListeners(length: 1) {},
+            listeners: ƒ listeners(length: 1) {},
+            rawListeners: ƒ rawListeners(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
+            eventNames: ƒ eventNames(length: 0) {},
+            Symbol(kCapture): false
+        },
+        [get/set] captureRejections: false,
+        [get/set] defaultMaxListeners: 10,
+        once: <ref *28> ƒ once(length: 3) {},
+        on: <ref *29> ƒ on(length: 2) {},
+        getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 1) {},
+        EventEmitter: [Circular: *13],
+        usingDomains: false,
+        captureRejectionSymbol: Symbol(nodejs.rejection),
+        EventEmitterAsyncResource: <ref *33> ƒ EventEmitterAsyncResource(length: 1) {},
+        errorMonitor: Symbol(events.errorMonitor),
+        addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
+        init: [Circular: *13],
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
-    NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
+    EventEmitterAsyncResource: [Circular: *33],
+    NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
         prototype: Writable {
             end: ƒ end(length: 4) {},
             _destroy: ƒ (length: 2) {},
@@ -2716,20 +3031,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             unref: ƒ unref(length: 0) {}
         }
     },
-    PassThrough: <ref *20> ƒ PassThrough(length: 1) {
+    PassThrough: <ref *42> ƒ PassThrough(length: 1) {
         prototype: PassThrough {
-            constructor: [Circular: *20],
+            constructor: [Circular: *42],
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *23> ƒ Readable(length: 1) {
+    Readable: <ref *45> ƒ Readable(length: 1) {
         prototype: Readable {
-            constructor: [Circular: *23],
-            on: <ref *25> ƒ (length: 2) {},
+            constructor: [Circular: *45],
+            on: <ref *47> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *27> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *49> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
-            undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
             unshift: ƒ (length: 2) {},
             isPaused: ƒ (length: 0) {},
@@ -2738,15 +3052,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *25],
-            removeListener: <ref *38> ƒ (length: 2) {},
-            off: [Circular: *38],
+            addListener: [Circular: *47],
+            removeListener: <ref *59> ƒ (length: 2) {},
+            off: [Circular: *59],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
             wrap: ƒ (length: 1) {},
             iterator: ƒ (length: 1) {},
+            Symbol(nodejs.rejection): ƒ (length: 1) {},
             Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        ReadableState: ƒ ReadableState(length: 3) {
+            prototype: {}
         },
         _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
@@ -2754,19 +3072,19 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> Stream {
-            constructor: [Circular: *50],
+    Stream: <ref *74> ƒ Stream(length: 1) {
+        prototype: <ref *75> Stream {
+            constructor: [Circular: *74],
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *54> ƒ isErrored(length: 1) {},
-        isWritable: <ref *55> ƒ isWritable(length: 1) {},
-        isReadable: <ref *56> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *23],
-        Writable: <ref *57> ƒ Writable(length: 0) {
+        isDisturbed: <ref *77> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *78> ƒ isErrored(length: 1) {},
+        isWritable: <ref *79> ƒ isWritable(length: 1) {},
+        isReadable: <ref *80> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *45],
+        Writable: <ref *81> ƒ Writable(length: 0) {
             prototype: Writable {
-                constructor: [Circular: *57],
+                constructor: [Circular: *81],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -2776,46 +3094,46 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *27],
+                _undestroy: [Circular: *49],
                 _destroy: ƒ (length: 2) {},
-                undefined: ƒ (length: 1) {}
+                Symbol(nodejs.rejection): ƒ (length: 1) {}
             },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *65> ƒ Transform(length: 1) {
+        Transform: <ref *89> ƒ Transform(length: 1) {
             prototype: Transform {
-                constructor: [Circular: *65],
+                constructor: [Circular: *89],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *20],
-        pipeline: <ref *71> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *72> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *42],
+        pipeline: <ref *95> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *96> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *73> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *74> ƒ eos(length: 3) {
-            finished: <ref *75> ƒ finished(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *75]
+        addAbortSignal: <ref *97> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *98> ƒ eos(length: 3) {
+            finished: <ref *99> ƒ finished(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *99]
         },
-        destroy: <ref *76> ƒ destroyer(length: 2) {},
-        compose: <ref *77> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *78> {
-            finished: [Circular: *75],
-            pipeline: [Circular: *72]
+        destroy: <ref *100> ƒ destroyer(length: 2) {},
+        compose: <ref *101> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *102> {
+            finished: [Circular: *99],
+            pipeline: [Circular: *96]
         },
-        Stream: [Circular: *50],
-        _isUint8Array: <ref *79> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *80> ƒ _uint8ArrayToBuffer(length: 1) {},
-        setDefaultHighWaterMark: <ref *81> ƒ setDefaultHighWaterMark(length: 2) {},
-        getDefaultHighWaterMark: <ref *82> ƒ getDefaultHighWaterMark(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *83> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *14],
-        eos: [Circular: *74],
+        Stream: [Circular: *74],
+        _isUint8Array: <ref *103> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *104> ƒ _uint8ArrayToBuffer(length: 1) {},
+        setDefaultHighWaterMark: <ref *105> ƒ setDefaultHighWaterMark(length: 2) {},
+        getDefaultHighWaterMark: <ref *106> ƒ getDefaultHighWaterMark(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *107> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *36],
+        eos: [Circular: *98],
         EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
@@ -2823,27 +3141,39 @@ _Last updated on <!-- lastUpdated:start -->May 27, 2024 with Bun 1.1.10 Node.js 
             kEnsureConstructed: Symbol(kEnsureConstructed)
         }
     },
-    Transform: [Circular: *65],
-    Writable: [Circular: *57],
-    _getNativeReadableStreamPrototype: [Circular: *83],
-    _isUint8Array: [Circular: *79],
-    _uint8ArrayToBuffer: [Circular: *80],
-    addAbortSignal: [Circular: *73],
-    compose: [Circular: *77],
-    default: [Circular: *50],
+    Transform: [Circular: *89],
+    Writable: [Circular: *81],
+    _getNativeReadableStreamPrototype: [Circular: *107],
+    _isUint8Array: [Circular: *103],
+    _uint8ArrayToBuffer: [Circular: *104],
+    addAbortListener: [Circular: *34],
+    addAbortSignal: [Circular: *97],
+    captureRejectionSymbol: Symbol(nodejs.rejection),
+    captureRejections: false,
+    compose: [Circular: *101],
+    default: [Circular: *74],
     defaultMaxListeners: 10,
-    destroy: [Circular: *76],
-    eos: [Circular: *74],
-    finished: [Circular: *74],
-    getDefaultHighWaterMark: [Circular: *82],
-    isDisturbed: [Circular: *53],
-    isErrored: [Circular: *54],
-    isReadable: [Circular: *56],
-    isWritable: [Circular: *55],
-    pipeline: [Circular: *71],
-    promises: [Circular: *78],
-    prototype: [Circular: *51],
-    setDefaultHighWaterMark: [Circular: *81]
+    destroy: [Circular: *100],
+    eos: [Circular: *98],
+    errorMonitor: Symbol(events.errorMonitor),
+    finished: [Circular: *98],
+    getDefaultHighWaterMark: [Circular: *106],
+    getEventListeners: [Circular: *30],
+    getMaxListeners: [Circular: *31],
+    init: [Circular: *13],
+    isDisturbed: [Circular: *77],
+    isErrored: [Circular: *78],
+    isReadable: [Circular: *80],
+    isWritable: [Circular: *79],
+    listenerCount: [Circular: *35],
+    on: [Circular: *29],
+    once: [Circular: *28],
+    pipeline: [Circular: *95],
+    promises: [Circular: *102],
+    prototype: [Circular: *75],
+    setDefaultHighWaterMark: [Circular: *105],
+    setMaxListeners: [Circular: *32],
+    usingDomains: false
 }
 ```
 
@@ -3959,7 +4289,7 @@ Cluster {
     },
     emit: ƒ emit(length: 1) {},
     eventNames: ƒ eventNames(length: 0) {},
-    getMaxListeners: ƒ getMaxListeners(length: 0) {},
+    getMaxListeners: ƒ getMaxListeners2(length: 0) {},
     isMaster: true,
     isPrimary: true,
     isWorker: false,
@@ -5266,26 +5596,26 @@ Cluster {
 </td><td valign="top">
 
 ```js
-67 | 						functionType = `async ${functionType}`;
-68 | 					}
-69 | 
-70 | 					serialized += `${functionType} ${value.name || ''}(length: ${value.length}) `;
-71 | 				}
-72 | 			} else if (value.constructor !== Object) {
-                   ^
-TypeError: Attempted to assign to readonly property.
-      at Writable (node:stream:2502:43)
-      at Duplex (node:stream:3176:39)
-      at Transform (node:stream:3234:45)
+1791 |       closeEmitted: makeBitMapDescriptor(kCloseEmitted),
+1792 |       multiAwaitDrain: makeBitMapDescriptor(kMultiAwaitDrain),
+1793 |       readingMore: makeBitMapDescriptor(kReadingMore),
+1794 |       dataEmitted: makeBitMapDescriptor(kDataEmitted)
+1795 |     });
+1796 |     function Readable(options) {
+                                                 ^
+RangeError: Maximum call stack size exceeded.
+      at Readable (node:stream:1796:43)
+      at Duplex (node:stream:3287:39)
+      at Transform (node:stream:3345:45)
       at get (node:crypto:1294:23)
-      at inspect (/tmp/fs-fixture-1716768802142-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1716768802142-1/inspect.mjs:99:7
-      at map (:1:21)
-      at inspect (/tmp/fs-fixture-1716768802142-1/inspect.mjs:80:20)
-      at /tmp/fs-fixture-1716768802142-1/inspect.mjs:99:7
-      at map (:1:21)
+      at EventEmitter2 (node:events:164:1363)
+      at Stream (node:stream:1544:39)
+      at Readable (node:stream:1796:43)
+      at Duplex (node:stream:3287:39)
+      at Transform (node:stream:3345:45)
+      at get (node:crypto:1294:23)
 
-Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
+Bun v1.1.12-canary.1+7fb25acf5 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -5945,7 +6275,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             _maxListeners: undefined,
             setMaxListeners: ƒ setMaxListeners2(length: 1) {},
             constructor: [Circular: *2],
-            getMaxListeners: ƒ getMaxListeners(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *7> ƒ addListener(length: 2) {},
             on: [Circular: *7],
@@ -5966,28 +6296,32 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
         once: <ref *17> ƒ once(length: 3) {},
         on: <ref *18> ƒ on(length: 2) {},
         getEventListeners: <ref *19> ƒ getEventListeners(length: 2) {},
-        setMaxListeners: <ref *20> ƒ setMaxListeners(length: 1) {},
+        getMaxListeners: <ref *20> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *21> ƒ setMaxListeners(length: 1) {},
         EventEmitter: [Circular: *2],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
-        EventEmitterAsyncResource: <ref *21> ƒ EventEmitterAsyncResource(length: 1) {},
+        EventEmitterAsyncResource: <ref *22> ƒ EventEmitterAsyncResource(length: 1) {},
         errorMonitor: Symbol(events.errorMonitor),
+        addAbortListener: <ref *23> ƒ addAbortListener(length: 2) {},
         init: [Circular: *2],
-        listenerCount: <ref *22> ƒ listenerCount(length: 2) {}
+        listenerCount: <ref *24> ƒ listenerCount(length: 2) {}
     },
-    EventEmitterAsyncResource: [Circular: *21],
+    EventEmitterAsyncResource: [Circular: *22],
+    addAbortListener: [Circular: *23],
     captureRejectionSymbol: Symbol(nodejs.rejection),
     captureRejections: false,
     default: [Circular: *2],
     defaultMaxListeners: 10,
     errorMonitor: Symbol(events.errorMonitor),
     getEventListeners: [Circular: *19],
+    getMaxListeners: [Circular: *20],
     init: [Circular: *2],
-    listenerCount: [Circular: *22],
+    listenerCount: [Circular: *24],
     on: [Circular: *18],
     once: [Circular: *17],
     prototype: [Circular: *3],
-    setMaxListeners: [Circular: *20],
+    setMaxListeners: [Circular: *21],
     usingDomains: false
 }
 ```
@@ -8506,7 +8840,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1716768802142-1/module.mjs: "/tmp/fs-fixture-1716768802142-1/module.mjs"
+            /tmp/fs-fixture-1717373596155-1/module.mjs: "/tmp/fs-fixture-1717373596155-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -8669,13 +9003,13 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1716768802142-1/module.mjs: {
+            /tmp/fs-fixture-1717373596155-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1716768802142-1/inspect.mjs: {
+            /tmp/fs-fixture-1717373596155-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -9778,14 +10112,14 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1716768803181.942,
+            timeOrigin: 1717373597204.6714,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: undefined,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1716768803181.942,
-                nodeStart: 1716768803181.942,
-                environment: 1716768803181.942,
-                bootstrapComplete: 1716768803181.942,
+                v8Start: 1717373597204.6714,
+                nodeStart: 1717373597204.6714,
+                environment: 1717373597204.6714,
+                bootstrapComplete: 1717373597204.6714,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -10060,7 +10394,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
     arch: "x64",
     argv: <ref *23> [
         "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
-        "/tmp/fs-fixture-1716768802142-1/process.mjs"
+        "/tmp/fs-fixture-1717373596155-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *24> ƒ deprecated(length: 0) {},
@@ -10938,7 +11272,8 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
         setgid: <ref *101> ƒ (length: 1) {},
         setuid: <ref *102> ƒ (length: 1) {},
         env: <ref *103>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_66acbb5e-2294-4de6-bf01-1ae9a8337341",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_09f32ae8-dc23-458d-9d30-6adc5b88768a",
+            GIT_CLONE_PROTECTION_ACTIVE: "false",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -10947,7 +11282,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.13.1 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_66acbb5e-2294-4de6-bf01-1ae9a8337341",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_09f32ae8-dc23-458d-9d30-6adc5b88768a",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
@@ -10969,14 +11304,14 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "592",
+            SYSTEMD_EXEC_PID: "597",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.10/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20240516.1.0",
+            ImageVersion: "20240526.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -10985,7 +11320,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:19374",
+            JOURNAL_STREAM: "8:16013",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -10993,11 +11328,11 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "9247198017",
+            GITHUB_RUN_ID: "9342231124",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "e88f793bfb3e88defa6637c7f75ef9ddfb7cf46a",
+            GITHUB_WORKFLOW_SHA: "14d5bd5a2a79afe9bbad1d36ebf95ac4aec960db",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -11009,12 +11344,12 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_7fb3e80f-a167-413b-879c-6c76c31245f5",
-            INVOCATION_ID: "d61bd9e40b514aa9ac20401cc330b536",
+            RUNNER_TRACKING_ID: "github_7e1cb907-ad25-43f3-868c-3eab8a900cc6",
+            INVOCATION_ID: "8ed1cc598df143ee86ebee4c452b75bb",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "77",
+            GITHUB_RUN_NUMBER: "78",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11049,7 +11384,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "e88f793bfb3e88defa6637c7f75ef9ddfb7cf46a",
+            GITHUB_SHA: "14d5bd5a2a79afe9bbad1d36ebf95ac4aec960db",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -11057,7 +11392,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_66acbb5e-2294-4de6-bf01-1ae9a8337341",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_09f32ae8-dc23-458d-9d30-6adc5b88768a",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -11072,7 +11407,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_66acbb5e-2294-4de6-bf01-1ae9a8337341",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_09f32ae8-dc23-458d-9d30-6adc5b88768a",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -11082,18 +11417,18 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             CHROME_BIN: "/usr/bin/google-chrome",
             SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-            STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.172+1/provjobd.data",
+            STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.181+6/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_66acbb5e-2294-4de6-bf01-1ae9a8337341",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_09f32ae8-dc23-458d-9d30-6adc5b88768a",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *23],
         execArgv: <ref *104> [],
-        pid: 2774,
-        ppid: 1893,
+        pid: 2763,
+        ppid: 1867,
         execPath: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -11137,9 +11472,9 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
     moduleLoadList: [Circular: *43],
     nextTick: [Circular: *66],
     openStdin: [Circular: *56],
-    pid: 2774,
+    pid: 2763,
     platform: "linux",
-    ppid: 1893,
+    ppid: 1867,
     reallyExit: [Circular: *47],
     release: [Circular: *42],
     report: [Circular: *105],
@@ -11185,7 +11520,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1716768802142-1/process.mjs"
+        "/tmp/fs-fixture-1717373596155-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -11223,7 +11558,8 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
         dlopen: <ref *28> ƒ dlopen(length: 1) {},
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_66acbb5e-2294-4de6-bf01-1ae9a8337341",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_09f32ae8-dc23-458d-9d30-6adc5b88768a",
+            [get/set] GIT_CLONE_PROTECTION_ACTIVE: "false",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -11232,7 +11568,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.13.1 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_66acbb5e-2294-4de6-bf01-1ae9a8337341",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_09f32ae8-dc23-458d-9d30-6adc5b88768a",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_package_devDependencies_execa: "^7.1.1",
             [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
@@ -11254,14 +11590,14 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "592",
+            [get/set] SYSTEMD_EXEC_PID: "597",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.10/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20240516.1.0",
+            [get/set] ImageVersion: "20240526.1.0",
             [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
@@ -11270,7 +11606,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             [get/set] RUNNER_USER: "runner",
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] JOURNAL_STREAM: "8:19374",
+            [get/set] JOURNAL_STREAM: "8:16013",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
@@ -11278,11 +11614,11 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "9247198017",
+            [get/set] GITHUB_RUN_ID: "9342231124",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "e88f793bfb3e88defa6637c7f75ef9ddfb7cf46a",
+            [get/set] GITHUB_WORKFLOW_SHA: "14d5bd5a2a79afe9bbad1d36ebf95ac4aec960db",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu22",
             [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -11294,12 +11630,12 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_7fb3e80f-a167-413b-879c-6c76c31245f5",
-            [get/set] INVOCATION_ID: "d61bd9e40b514aa9ac20401cc330b536",
+            [get/set] RUNNER_TRACKING_ID: "github_7e1cb907-ad25-43f3-868c-3eab8a900cc6",
+            [get/set] INVOCATION_ID: "8ed1cc598df143ee86ebee4c452b75bb",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             [get/set] NODE: "/opt/hostedtoolcache/node/20.13.1/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "77",
+            [get/set] GITHUB_RUN_NUMBER: "78",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11334,7 +11670,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             [get/set] GITHUB_JOB: "build",
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] GITHUB_SHA: "e88f793bfb3e88defa6637c7f75ef9ddfb7cf46a",
+            [get/set] GITHUB_SHA: "14d5bd5a2a79afe9bbad1d36ebf95ac4aec960db",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] GITHUB_REF: "refs/heads/master",
             [get/set] GITHUB_ACTOR: "privatenumber",
@@ -11342,7 +11678,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             [get/set] npm_package_license: "MIT",
             [get/set] LEIN_HOME: "/usr/local/lib/lein",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_66acbb5e-2294-4de6-bf01-1ae9a8337341",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_09f32ae8-dc23-458d-9d30-6adc5b88768a",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -11357,7 +11693,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_66acbb5e-2294-4de6-bf01-1ae9a8337341",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_09f32ae8-dc23-458d-9d30-6adc5b88768a",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -11367,10 +11703,10 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             [get/set] CHROME_BIN: "/usr/bin/google-chrome",
             [get/set] SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
             [get/set] PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-            [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.172+1/provjobd.data",
+            [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.181+6/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_66acbb5e-2294-4de6-bf01-1ae9a8337341",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_09f32ae8-dc23-458d-9d30-6adc5b88768a",
             [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
@@ -11403,14 +11739,14 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
         moduleLoadList: <ref *41> [],
         nextTick: <ref *42> ƒ nextTick(length: 2) {},
         openStdin: <ref *43> ƒ openStdin(length: 0) {},
-        pid: 2776,
+        pid: 2773,
         platform: "linux",
-        ppid: 1893,
+        ppid: 1867,
         reallyExit: <ref *44> ƒ reallyExit(length: 1) {},
         release: <ref *45> {
             name: "node",
             lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.10/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.12/bun-linux-x64-baseline.zip",
             headersUrl: "",
             libUrl: ""
         },
@@ -11420,7 +11756,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "af4e844b621e8c889d2d73c2cd12a7426516ebbf",
+        revision: "7fb25acf5f8dc9b7fa695cb29a3b2c6048494dd7",
         setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *50> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
@@ -11460,7 +11796,9 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
                 closeEmitted: false,
                 Symbol(kOnFinished): []
             },
-            _events: EventEmitter {},
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
             _construct: <ref *57> ƒ NativeWritable_internalConstruct(length: 1) {},
             _final: <ref *58> ƒ NativeWritable_internalFinal(length: 1) {},
             _write: <ref *59> ƒ NativeWritablePrototypeWrite(length: 3) {},
@@ -11474,6 +11812,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             _destroy: ƒ (length: 2) {},
             _isStdio: true,
             constructed: true,
+            Symbol(kCapture): false,
             Symbol(native): true,
             Symbol(pathOrFdOrSink): 2,
             Symbol(Bun.NodeWriteStreamFastPath): false,
@@ -11493,10 +11832,36 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             fd: 0,
             bytesRead: 0,
             autoClose: false,
-            _readableState: ReadableState {
-                autoClose: true
+            _readableState: {
+                state: 6192,
+                highWaterMark: 65536,
+                buffer: BufferList {
+                    length: 0
+                },
+                length: 0,
+                pipes: [],
+                flowing: null,
+                errored: null,
+                defaultEncoding: "utf8",
+                awaitDrainWriters: null,
+                decoder: null,
+                encoding: null,
+                autoClose: true,
+                Symbol(kPaused): null
             },
-            _events: EventEmitter {},
+            _events: [Object: null prototype] {
+                resume: [
+                    ƒ (length: 0) {}
+                ],
+                pause: [
+                    ƒ (length: 0) {}
+                ],
+                close: [
+                    ƒ (length: 0) {}
+                ]
+            },
+            _eventsCount: 3,
+            _maxListeners: undefined,
             end: Infinity,
             _read: ƒ (length: 1) {},
             start: 0,
@@ -11515,6 +11880,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             Symbol(remainingChunk): undefined,
             Symbol(pendingRead): false,
             Symbol(hasResized): false,
+            Symbol(kCapture): false,
             Symbol(highWaterMark): 65536,
             Symbol(kHandle): null,
             Symbol(Bun.Node.readStreamPathFastPath): false,
@@ -11527,7 +11893,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
                 close: [Circular: *65]
             }
         },
-        stdout: <ref *79> Writable {
+        stdout: <ref *87> Writable {
             _writableState: {
                 objectMode: false,
                 highWaterMark: 16384,
@@ -11563,7 +11929,9 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
                 closeEmitted: false,
                 Symbol(kOnFinished): []
             },
-            _events: EventEmitter {},
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
             _construct: [Circular: *57],
             _final: [Circular: *58],
             _write: [Circular: *59],
@@ -11577,6 +11945,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             _destroy: ƒ (length: 2) {},
             _isStdio: true,
             constructed: true,
+            Symbol(kCapture): false,
             Symbol(native): true,
             Symbol(pathOrFdOrSink): 1,
             Symbol(Bun.NodeWriteStreamFastPath): false,
@@ -11586,25 +11955,25 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             Symbol(kIoDone): false
         },
         [get/set] title: "bun",
-        umask: <ref *86> ƒ umask(length: 1) {},
-        uptime: <ref *87> ƒ uptime(length: 1) {},
+        umask: <ref *94> ƒ umask(length: 1) {},
+        uptime: <ref *95> ƒ uptime(length: 1) {},
         version: "v22.2.0",
-        versions: <ref *88> {
+        versions: <ref *96> {
             node: "22.2.0",
-            bun: "1.1.10",
+            bun: "1.1.12",
             webkit: "a780bdf0255ae1a7ed15e4b3f31c14af705facae",
             boringssl: "b275c5ce1c88bc06f5a967026d3c0ce1df2be815",
             openssl: "1.1.0",
             libarchive: "dc321febde83dd0f31158e1be61a7aedda65e7a2",
             mimalloc: "7968d4285043401bb36573374710d47a4081a063",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "af4e844b621e8c889d2d73c2cd12a7426516ebbf",
+            uwebsockets: "7fb25acf5f8dc9b7fa695cb29a3b2c6048494dd7",
             zig: "0.12.0-dev.1828+225fe6ddb",
             zlib: "885674026394870b7e7a05b7bf1ec5eb7bd8a9c0",
             tinycc: "2d3ad9e0d32194ad7fd867b66ebe218dcc8cb5cd",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "0e7a5dee0fbb04080750cf6eabbe89d8bae87faa",
-            usockets: "af4e844b621e8c889d2d73c2cd12a7426516ebbf",
+            usockets: "7fb25acf5f8dc9b7fa695cb29a3b2c6048494dd7",
             v8: "11.3.244.8-node.15",
             uv: "1.46.0",
             napi: "9",
@@ -11624,11 +11993,11 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
         _stopProfilerIdleNotifier: [Circular: *12],
         _tickCallback: [Circular: *13],
         _kill: [Circular: *7],
-        getegid: <ref *89> ƒ getegid(length: 0) {},
-        geteuid: <ref *90> ƒ geteuid(length: 0) {},
-        getgid: <ref *91> ƒ getgid(length: 0) {},
-        getgroups: <ref *92> ƒ getgroups(length: 0) {},
-        getuid: <ref *93> ƒ getuid(length: 0) {},
+        getegid: <ref *97> ƒ getegid(length: 0) {},
+        geteuid: <ref *98> ƒ geteuid(length: 0) {},
+        getgid: <ref *99> ƒ getgid(length: 0) {},
+        getgroups: <ref *100> ƒ getgroups(length: 0) {},
+        getuid: <ref *101> ƒ getuid(length: 0) {},
         Symbol(Symbol.toStringTag): "process"
     },
     disconnect: undefined,
@@ -11644,11 +12013,11 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
     features: [Circular: *33],
     getActiveResourcesInfo: [Circular: *34],
     getMaxListeners: ƒ getMaxListeners(length: 0) {},
-    getegid: [Circular: *89],
-    geteuid: [Circular: *90],
-    getgid: [Circular: *91],
-    getgroups: [Circular: *92],
-    getuid: [Circular: *93],
+    getegid: [Circular: *97],
+    geteuid: [Circular: *98],
+    getgid: [Circular: *99],
+    getgroups: [Circular: *100],
+    getuid: [Circular: *101],
     hasUncaughtExceptionCaptureCallback: [Circular: *35],
     hrtime: [Circular: *36],
     isBun: true,
@@ -11663,9 +12032,9 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *43],
-    pid: 2776,
+    pid: 2773,
     platform: "linux",
-    ppid: 1893,
+    ppid: 1867,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -11674,19 +12043,19 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *46],
-    revision: "af4e844b621e8c889d2d73c2cd12a7426516ebbf",
+    revision: "7fb25acf5f8dc9b7fa695cb29a3b2c6048494dd7",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *49],
     setUncaughtExceptionCaptureCallback: [Circular: *50],
     stderr: [Circular: *51],
     stdin: [Circular: *68],
-    stdout: [Circular: *79],
+    stdout: [Circular: *87],
     title: "bun",
-    umask: [Circular: *86],
-    uptime: [Circular: *87],
+    umask: [Circular: *94],
+    uptime: [Circular: *95],
     version: "v22.2.0",
-    versions: [Circular: *88]
+    versions: [Circular: *96]
 }
 ```
 
@@ -12030,28 +12399,26 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
 </td><td valign="top">
 
 ```js
-14 |   warned.add(feature), console.warn(new NotImplementedError(feature, issue));
-15 | }, $;
-16 | 
-17 | class NotImplementedError extends Error {
-18 |   code;
-19 |   constructor(feature, issue) {
-                               ^
+67 | 						functionType = `async ${functionType}`;
+68 | 					}
+69 | 
+70 | 					serialized += `${functionType} ${value.name || ''}(length: ${value.length}) `;
+71 | 				}
+72 | 			} else if (value.constructor !== Object) {
+                   ^
 NotImplementedError: node:repl is not yet implemented in Bun.
  code: "ERR_NOT_IMPLEMENTED"
 
-      at new NotImplementedError (internal:shared:19:27)
-      at internal:shared:2:69
       at get (node:repl:76:15)
-      at inspect (/tmp/fs-fixture-1716768802142-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1716768802142-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1717373596155-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1717373596155-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1716768802142-1/inspect.mjs:80:20)
-      at /tmp/fs-fixture-1716768802142-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1717373596155-1/inspect.mjs:80:20)
+      at /tmp/fs-fixture-1717373596155-1/inspect.mjs:99:7
       at map (:1:21)
-      at inspect (/tmp/fs-fixture-1716768802142-1/inspect.mjs:80:20)
+      at inspect (/tmp/fs-fixture-1717373596155-1/inspect.mjs:80:20)
 
-Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
+Bun v1.1.12-canary.1+7fb25acf5 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -12147,16 +12514,56 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {}
+            end: <ref *9> ƒ (length: 3) {},
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
         from: ƒ (length: 1) {}
     },
-    EventEmitter: <ref *13> ƒ EventEmitter(length: 0) {
-        defaultMaxListeners: 10
+    EventEmitter: <ref *13> ƒ EventEmitter2(length: 1) {
+        prototype: EventEmitter2 {
+            _events: undefined,
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            constructor: [Circular: *13],
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            emit: ƒ emit(length: 1) {},
+            addListener: <ref *18> ƒ addListener(length: 2) {},
+            on: [Circular: *18],
+            prependListener: ƒ prependListener(length: 2) {},
+            once: ƒ once2(length: 2) {},
+            prependOnceListener: ƒ prependOnceListener(length: 2) {},
+            removeListener: <ref *22> ƒ removeListener(length: 2) {},
+            off: [Circular: *22],
+            removeAllListeners: ƒ removeAllListeners(length: 1) {},
+            listeners: ƒ listeners(length: 1) {},
+            rawListeners: ƒ rawListeners(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
+            eventNames: ƒ eventNames(length: 0) {},
+            Symbol(kCapture): false
+        },
+        [get/set] captureRejections: false,
+        [get/set] defaultMaxListeners: 10,
+        once: <ref *28> ƒ once(length: 3) {},
+        on: <ref *29> ƒ on(length: 2) {},
+        getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 1) {},
+        EventEmitter: [Circular: *13],
+        usingDomains: false,
+        captureRejectionSymbol: Symbol(nodejs.rejection),
+        EventEmitterAsyncResource: <ref *33> ƒ EventEmitterAsyncResource(length: 1) {},
+        errorMonitor: Symbol(events.errorMonitor),
+        addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
+        init: [Circular: *13],
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
-    NativeWritable: <ref *14> ƒ NativeWritable(length: 1) {
+    EventEmitterAsyncResource: [Circular: *33],
+    NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
         prototype: Writable {
             end: ƒ end(length: 4) {},
             _destroy: ƒ (length: 2) {},
@@ -12164,20 +12571,19 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             unref: ƒ unref(length: 0) {}
         }
     },
-    PassThrough: <ref *20> ƒ PassThrough(length: 1) {
+    PassThrough: <ref *42> ƒ PassThrough(length: 1) {
         prototype: PassThrough {
-            constructor: [Circular: *20],
+            constructor: [Circular: *42],
             _transform: ƒ (length: 3) {}
         }
     },
-    Readable: <ref *23> ƒ Readable(length: 1) {
+    Readable: <ref *45> ƒ Readable(length: 1) {
         prototype: Readable {
-            constructor: [Circular: *23],
-            on: <ref *25> ƒ (length: 2) {},
+            constructor: [Circular: *45],
+            on: <ref *47> ƒ (length: 2) {},
             destroy: ƒ destroy2(length: 2) {},
-            _undestroy: <ref *27> ƒ undestroy(length: 0) {},
+            _undestroy: <ref *49> ƒ undestroy(length: 0) {},
             _destroy: ƒ (length: 2) {},
-            undefined: ƒ (length: 1) {},
             push: ƒ (length: 2) {},
             unshift: ƒ (length: 2) {},
             isPaused: ƒ (length: 0) {},
@@ -12186,15 +12592,19 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             _read: ƒ (length: 1) {},
             pipe: ƒ (length: 2) {},
             unpipe: ƒ (length: 1) {},
-            addListener: [Circular: *25],
-            removeListener: <ref *38> ƒ (length: 2) {},
-            off: [Circular: *38],
+            addListener: [Circular: *47],
+            removeListener: <ref *59> ƒ (length: 2) {},
+            off: [Circular: *59],
             removeAllListeners: ƒ (length: 1) {},
             resume: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
             wrap: ƒ (length: 1) {},
             iterator: ƒ (length: 1) {},
+            Symbol(nodejs.rejection): ƒ (length: 1) {},
             Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
+        },
+        ReadableState: ƒ ReadableState(length: 3) {
+            prototype: {}
         },
         _fromList: ƒ fromList(length: 2) {},
         from: ƒ (length: 2) {},
@@ -12202,19 +12612,19 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
         toWeb: ƒ (length: 2) {},
         wrap: ƒ (length: 2) {}
     },
-    Stream: <ref *50> ƒ Stream(length: 1) {
-        prototype: <ref *51> Stream {
-            constructor: [Circular: *50],
+    Stream: <ref *74> ƒ Stream(length: 1) {
+        prototype: <ref *75> Stream {
+            constructor: [Circular: *74],
             pipe: ƒ (length: 2) {}
         },
-        isDisturbed: <ref *53> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *54> ƒ isErrored(length: 1) {},
-        isWritable: <ref *55> ƒ isWritable(length: 1) {},
-        isReadable: <ref *56> ƒ isReadable(length: 1) {},
-        Readable: [Circular: *23],
-        Writable: <ref *57> ƒ Writable(length: 0) {
+        isDisturbed: <ref *77> ƒ isDisturbed(length: 1) {},
+        isErrored: <ref *78> ƒ isErrored(length: 1) {},
+        isWritable: <ref *79> ƒ isWritable(length: 1) {},
+        isReadable: <ref *80> ƒ isReadable(length: 1) {},
+        Readable: [Circular: *45],
+        Writable: <ref *81> ƒ Writable(length: 0) {
             prototype: Writable {
-                constructor: [Circular: *57],
+                constructor: [Circular: *81],
                 pipe: ƒ (length: 0) {},
                 write: [Circular: *4],
                 cork: [Circular: *5],
@@ -12224,46 +12634,46 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
                 _writev: null,
                 end: [Circular: *9],
                 destroy: ƒ (length: 2) {},
-                _undestroy: [Circular: *27],
+                _undestroy: [Circular: *49],
                 _destroy: ƒ (length: 2) {},
-                undefined: ƒ (length: 1) {}
+                Symbol(nodejs.rejection): ƒ (length: 1) {}
             },
             fromWeb: ƒ (length: 2) {},
             toWeb: ƒ (length: 1) {}
         },
         Duplex: [Circular: *2],
-        Transform: <ref *65> ƒ Transform(length: 1) {
+        Transform: <ref *89> ƒ Transform(length: 1) {
             prototype: Transform {
-                constructor: [Circular: *65],
+                constructor: [Circular: *89],
                 _final: ƒ final(length: 1) {},
                 _transform: ƒ (length: 3) {},
                 _write: ƒ (length: 3) {},
                 _read: ƒ (length: 0) {}
             }
         },
-        PassThrough: [Circular: *20],
-        pipeline: <ref *71> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *72> ƒ pipeline(length: 0) {}
+        PassThrough: [Circular: *42],
+        pipeline: <ref *95> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *96> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *73> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *74> ƒ eos(length: 3) {
-            finished: <ref *75> ƒ finished(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *75]
+        addAbortSignal: <ref *97> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *98> ƒ eos(length: 3) {
+            finished: <ref *99> ƒ finished(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *99]
         },
-        destroy: <ref *76> ƒ destroyer(length: 2) {},
-        compose: <ref *77> ƒ compose(length: 0) {},
-        [get/set] promises: <ref *78> {
-            finished: [Circular: *75],
-            pipeline: [Circular: *72]
+        destroy: <ref *100> ƒ destroyer(length: 2) {},
+        compose: <ref *101> ƒ compose(length: 0) {},
+        [get/set] promises: <ref *102> {
+            finished: [Circular: *99],
+            pipeline: [Circular: *96]
         },
-        Stream: [Circular: *50],
-        _isUint8Array: <ref *79> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *80> ƒ _uint8ArrayToBuffer(length: 1) {},
-        setDefaultHighWaterMark: <ref *81> ƒ setDefaultHighWaterMark(length: 2) {},
-        getDefaultHighWaterMark: <ref *82> ƒ getDefaultHighWaterMark(length: 1) {},
-        _getNativeReadableStreamPrototype: <ref *83> ƒ getNativeReadableStreamPrototype(length: 2) {},
-        NativeWritable: [Circular: *14],
-        eos: [Circular: *74],
+        Stream: [Circular: *74],
+        _isUint8Array: <ref *103> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *104> ƒ _uint8ArrayToBuffer(length: 1) {},
+        setDefaultHighWaterMark: <ref *105> ƒ setDefaultHighWaterMark(length: 2) {},
+        getDefaultHighWaterMark: <ref *106> ƒ getDefaultHighWaterMark(length: 1) {},
+        _getNativeReadableStreamPrototype: <ref *107> ƒ getNativeReadableStreamPrototype(length: 2) {},
+        NativeWritable: [Circular: *36],
+        eos: [Circular: *98],
         EventEmitter: [Circular: *13],
         Symbol(::bunternal::): {
             _ReadableFromWeb: ƒ newStreamReadableFromReadableStream(length: 1) {},
@@ -12271,27 +12681,39 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
             kEnsureConstructed: Symbol(kEnsureConstructed)
         }
     },
-    Transform: [Circular: *65],
-    Writable: [Circular: *57],
-    _getNativeReadableStreamPrototype: [Circular: *83],
-    _isUint8Array: [Circular: *79],
-    _uint8ArrayToBuffer: [Circular: *80],
-    addAbortSignal: [Circular: *73],
-    compose: [Circular: *77],
-    default: [Circular: *50],
+    Transform: [Circular: *89],
+    Writable: [Circular: *81],
+    _getNativeReadableStreamPrototype: [Circular: *107],
+    _isUint8Array: [Circular: *103],
+    _uint8ArrayToBuffer: [Circular: *104],
+    addAbortListener: [Circular: *34],
+    addAbortSignal: [Circular: *97],
+    captureRejectionSymbol: Symbol(nodejs.rejection),
+    captureRejections: false,
+    compose: [Circular: *101],
+    default: [Circular: *74],
     defaultMaxListeners: 10,
-    destroy: [Circular: *76],
-    eos: [Circular: *74],
-    finished: [Circular: *74],
-    getDefaultHighWaterMark: [Circular: *82],
-    isDisturbed: [Circular: *53],
-    isErrored: [Circular: *54],
-    isReadable: [Circular: *56],
-    isWritable: [Circular: *55],
-    pipeline: [Circular: *71],
-    promises: [Circular: *78],
-    prototype: [Circular: *51],
-    setDefaultHighWaterMark: [Circular: *81]
+    destroy: [Circular: *100],
+    eos: [Circular: *98],
+    errorMonitor: Symbol(events.errorMonitor),
+    finished: [Circular: *98],
+    getDefaultHighWaterMark: [Circular: *106],
+    getEventListeners: [Circular: *30],
+    getMaxListeners: [Circular: *31],
+    init: [Circular: *13],
+    isDisturbed: [Circular: *77],
+    isErrored: [Circular: *78],
+    isReadable: [Circular: *80],
+    isWritable: [Circular: *79],
+    listenerCount: [Circular: *35],
+    on: [Circular: *29],
+    once: [Circular: *28],
+    pipeline: [Circular: *95],
+    promises: [Circular: *102],
+    prototype: [Circular: *75],
+    setDefaultHighWaterMark: [Circular: *105],
+    setMaxListeners: [Circular: *32],
+    usingDomains: false
 }
 ```
 
@@ -12824,7 +13246,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:3006) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2976) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -14854,7 +15276,7 @@ Bun v1.1.10-canary.1+af4e844b6 (Linux x64 baseline)
         WASI: [Circular: *2]
     }
 }
-(node:3229) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3196) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
