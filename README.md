@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jun 24, 2024 with Bun 1.1.17 Node.js v20.14.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jul 1, 2024 with Bun 1.1.18 Node.js v20.15.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -2722,7 +2722,7 @@ _Last updated on <!-- lastUpdated:start -->Jun 24, 2024 with Bun 1.1.17 Node.js 
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2077) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2091) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -4341,22 +4341,22 @@ Cluster {
     default: {
         log: <ref *11> ƒ log(length: 0) {},
         warn: <ref *12> ƒ warn(length: 0) {},
-        dir: <ref *13> ƒ dir(length: 0) {},
-        time: <ref *14> ƒ time(length: 0) {},
-        timeEnd: <ref *15> ƒ timeEnd(length: 0) {},
-        timeLog: <ref *16> ƒ timeLog(length: 0) {},
-        trace: <ref *17> ƒ trace(length: 0) {},
+        error: <ref *13> ƒ error(length: 0) {},
+        dir: <ref *14> ƒ dir(length: 0) {},
+        time: <ref *15> ƒ time(length: 0) {},
+        timeEnd: <ref *16> ƒ timeEnd(length: 0) {},
+        timeLog: <ref *17> ƒ timeLog(length: 0) {},
+        trace: <ref *18> ƒ trace(length: 0) {},
         assert: [Circular: *3],
         clear: [Circular: *4],
         count: [Circular: *6],
         countReset: [Circular: *7],
-        group: <ref *18> ƒ group(length: 0) {},
-        groupEnd: <ref *19> ƒ groupEnd(length: 0) {},
-        table: <ref *20> ƒ table(length: 0) {},
+        group: <ref *19> ƒ group(length: 0) {},
+        groupEnd: <ref *20> ƒ groupEnd(length: 0) {},
+        table: <ref *21> ƒ table(length: 0) {},
         debug: [Circular: *9],
-        info: <ref *21> ƒ info(length: 0) {},
-        dirxml: <ref *22> ƒ dirxml(length: 0) {},
-        error: <ref *23> ƒ error(length: 0) {},
+        info: <ref *22> ƒ info(length: 0) {},
+        dirxml: <ref *23> ƒ dirxml(length: 0) {},
         groupCollapsed: <ref *24> ƒ groupCollapsed(length: 0) {},
         Console: [Circular: *2],
         profile: <ref *25> ƒ profile(length: 0) {},
@@ -4365,22 +4365,22 @@ Cluster {
         context: [Circular: *5],
         createTask: [Circular: *8]
     },
-    dir: [Circular: *13],
-    dirxml: [Circular: *22],
-    error: [Circular: *23],
-    group: [Circular: *18],
+    dir: [Circular: *14],
+    dirxml: [Circular: *23],
+    error: [Circular: *13],
+    group: [Circular: *19],
     groupCollapsed: [Circular: *24],
-    groupEnd: [Circular: *19],
-    info: [Circular: *21],
+    groupEnd: [Circular: *20],
+    info: [Circular: *22],
     log: [Circular: *11],
     profile: [Circular: *25],
     profileEnd: [Circular: *26],
-    table: [Circular: *20],
-    time: [Circular: *14],
-    timeEnd: [Circular: *15],
-    timeLog: [Circular: *16],
+    table: [Circular: *21],
+    time: [Circular: *15],
+    timeEnd: [Circular: *16],
+    timeLog: [Circular: *17],
     timeStamp: [Circular: *27],
-    trace: [Circular: *17],
+    trace: [Circular: *18],
     warn: [Circular: *12]
 }
 ```
@@ -5539,7 +5539,7 @@ Cluster {
         scryptSync: <ref *61> ƒ scryptSync(length: 3) {},
         sign: <ref *62> ƒ signOneShot(length: 4) {},
         setEngine: <ref *63> ƒ setEngine(length: 2) {},
-        timingSafeEqual: <ref *64> ƒ (length: 0) {},
+        timingSafeEqual: <ref *64> ƒ timingSafeEqual(length: 0) {},
         getFips: <ref *65> ƒ getFips(length: 0) {},
         setFips: <ref *66> ƒ setFips(length: 1) {},
         verify: <ref *67> ƒ verifyOneShot(length: 5) {},
@@ -5608,14 +5608,15 @@ Cluster {
 </td><td valign="top">
 
 ```js
-3282 |       }, d;
-3283 |     }
-3284 |   }
-3285 | }), require_duplex = __commonJS({
-3286 |   "node_modules/readable-stream/lib/internal/streams/duplex.js"(exports, module) {
-3287 |     function Duplex(options) {
-                          ^
+1791 |       closed: makeBitMapDescriptor(kClosed),
+1792 |       closeEmitted: makeBitMapDescriptor(kCloseEmitted),
+1793 |       multiAwaitDrain: makeBitMapDescriptor(kMultiAwaitDrain),
+1794 |       readingMore: makeBitMapDescriptor(kReadingMore),
+1795 |       dataEmitted: makeBitMapDescriptor(kDataEmitted)
+1796 |     function Readable(options) {
+                            ^
 RangeError: Maximum call stack size exceeded.
+      at Readable (node:stream:1796:22)
       at Duplex (node:stream:3287:20)
       at Transform (node:stream:3345:23)
       at get (node:crypto:1316:12)
@@ -5625,9 +5626,8 @@ RangeError: Maximum call stack size exceeded.
       at Duplex (node:stream:3287:20)
       at Transform (node:stream:3345:23)
       at get (node:crypto:1316:12)
-      at EventEmitter2 (node:events:164:682)
 
-Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
+Bun v1.1.18-canary.1+861be5560 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -8852,7 +8852,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1719188058528-1/module.mjs: "/tmp/fs-fixture-1719188058528-1/module.mjs"
+            /tmp/fs-fixture-1719792922521-1/module.mjs: "/tmp/fs-fixture-1719792922521-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -8876,7 +8876,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             "/home/runner/setup-pnpm/node_modules/pnpm/node_modules",
             "/home/runner/.node_modules",
             "/home/runner/.node_libraries",
-            "/opt/hostedtoolcache/node/20.14.0/x64/lib/node"
+            "/opt/hostedtoolcache/node/20.15.0/x64/lib/node"
         ],
         _debug: <ref *10> ƒ deprecated(length: 0) {},
         isBuiltin: <ref *11> ƒ isBuiltin(length: 1) {},
@@ -9015,13 +9015,13 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1719188058528-1/module.mjs: {
+            /tmp/fs-fixture-1719792922521-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1719188058528-1/inspect.mjs: {
+            /tmp/fs-fixture-1719792922521-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -10124,14 +10124,14 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1719188059536.953,
+            timeOrigin: 1719792923557.1472,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: undefined,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1719188059536.953,
-                nodeStart: 1719188059536.953,
-                environment: 1719188059536.953,
-                bootstrapComplete: 1719188059536.953,
+                v8Start: 1719792923557.1472,
+                nodeStart: 1719792923557.1472,
+                environment: 1719792923557.1472,
+                bootstrapComplete: 1719792923557.1472,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -10168,30 +10168,34 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
     _debugEnd: <ref *2> ƒ _debugEnd(length: 0) {},
     _debugProcess: <ref *3> ƒ _debugProcess(length: 0) {},
     _events: <ref *4> [Object: null prototype] {
-        newListener: ƒ startListeningIfSignal(length: 1) {},
-        removeListener: ƒ stopListeningIfSignal(length: 1) {},
+        newListener: [
+            ƒ (length: 1) {},
+            ƒ startListeningIfSignal(length: 1) {}
+        ],
+        removeListener: [
+            ƒ (length: 1) {},
+            ƒ stopListeningIfSignal(length: 1) {}
+        ],
         warning: ƒ onWarning(length: 1) {},
         exit: ƒ handleProcessExit(length: 0) {}
     },
     _eventsCount: 4,
     _exiting: false,
-    _fatalException: <ref *9> ƒ (length: 2) {},
-    _getActiveHandles: <ref *10> ƒ _getActiveHandles(length: 0) {},
-    _getActiveRequests: <ref *11> ƒ _getActiveRequests(length: 0) {},
-    _kill: <ref *12> ƒ _kill(length: 0) {},
-    _linkedBinding: <ref *13> ƒ _linkedBinding(length: 1) {},
+    _fatalException: <ref *13> ƒ (length: 2) {},
+    _getActiveHandles: <ref *14> ƒ _getActiveHandles(length: 0) {},
+    _getActiveRequests: <ref *15> ƒ _getActiveRequests(length: 0) {},
+    _kill: <ref *16> ƒ _kill(length: 0) {},
+    _linkedBinding: <ref *17> ƒ _linkedBinding(length: 1) {},
     _maxListeners: undefined,
-    _preload_modules: <ref *14> [],
-    _rawDebug: <ref *15> ƒ _rawDebug(length: 0) {},
-    _startProfilerIdleNotifier: <ref *16> ƒ (length: 0) {},
-    _stopProfilerIdleNotifier: <ref *17> ƒ (length: 0) {},
-    _tickCallback: <ref *18> ƒ runNextTicks(length: 0) {},
-    abort: <ref *19> ƒ abort(length: 0) {},
-    allowedNodeEnvironmentFlags: <ref *20> NodeEnvironmentFlagsSet {
+    _preload_modules: <ref *18> [],
+    _rawDebug: <ref *19> ƒ _rawDebug(length: 0) {},
+    _startProfilerIdleNotifier: <ref *20> ƒ (length: 0) {},
+    _stopProfilerIdleNotifier: <ref *21> ƒ (length: 0) {},
+    _tickCallback: <ref *22> ƒ runNextTicks(length: 0) {},
+    abort: <ref *23> ƒ abort(length: 0) {},
+    allowedNodeEnvironmentFlags: <ref *24> NodeEnvironmentFlagsSet {
         Symbol(internal properties): {
             array: [
-                "--tls-min-v1.2",
-                "--no-tls-min-v1.2",
                 "--force-context-aware",
                 "--no-force-context-aware",
                 "--max-semi-space-size",
@@ -10236,7 +10240,6 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
                 "--inspect-port",
                 "--inspect",
                 "--no-inspect",
-                "--tls-keylog",
                 "--watch",
                 "--no-watch",
                 "--experimental-default-type",
@@ -10248,6 +10251,8 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
                 "--no-throw-deprecation",
                 "--pending-deprecation",
                 "--no-pending-deprecation",
+                "--tls-min-v1.2",
+                "--no-tls-min-v1.2",
                 "--preserve-symlinks-main",
                 "--no-preserve-symlinks-main",
                 "--allow-fs-write",
@@ -10286,6 +10291,10 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
                 "--secure-heap-min",
                 "--abort-on-uncaught-exception",
                 "--trace-event-categories",
+                "--network-family-autoselection-attempt-timeout",
+                "--report-dir",
+                "--disable-wasm-trap-handler",
+                "--no-disable-wasm-trap-handler",
                 "--unhandled-rejections",
                 "--snapshot-blob",
                 "--report-exclude-network",
@@ -10315,6 +10324,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
                 "--test-reporter",
                 "--secure-heap",
                 "--experimental-loader",
+                "--tls-keylog",
                 "--extra-info-on-fatal-exception",
                 "--no-extra-info-on-fatal-exception",
                 "--stack-trace-limit",
@@ -10327,7 +10337,6 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
                 "--no-trace-tls",
                 "--tls-max-v1.2",
                 "--no-tls-max-v1.2",
-                "--perf-prof",
                 "--force-node-api-uncaught-exceptions-policy",
                 "--no-force-node-api-uncaught-exceptions-policy",
                 "--perf-basic-prof-only-functions",
@@ -10352,6 +10361,9 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
                 "--no-network-family-autoselection",
                 "--report-uncaught-exception",
                 "--no-report-uncaught-exception",
+                "--inspect-wait",
+                "--no-inspect-wait",
+                "--perf-prof",
                 "--trace-exit",
                 "--no-trace-exit",
                 "--frozen-intrinsics",
@@ -10387,15 +10399,14 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
                 "--no-report-on-signal",
                 "--experimental-vm-modules",
                 "--no-experimental-vm-modules",
-                "--report-dir",
-                "--network-family-autoselection-attempt-timeout",
                 "--debug-port",
                 "--inspect",
                 "--inspect-brk",
+                "--inspect-wait",
                 "-C",
                 "--enable-network-family-autoselection",
-                "--loader",
                 "--prof-process",
+                "--loader",
                 "-r",
                 "--trace-events-enabled",
                 "--es-module-specifier-resolution",
@@ -10404,16 +10415,16 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
         }
     },
     arch: "x64",
-    argv: <ref *23> [
-        "/opt/hostedtoolcache/node/20.14.0/x64/bin/node",
-        "/tmp/fs-fixture-1719188058528-1/process.mjs"
+    argv: <ref *27> [
+        "/opt/hostedtoolcache/node/20.15.0/x64/bin/node",
+        "/tmp/fs-fixture-1719792922521-1/process.mjs"
     ],
     argv0: "node",
-    assert: <ref *24> ƒ deprecated(length: 0) {},
-    availableMemory: <ref *25> ƒ availableMemory(length: 0) {},
-    binding: <ref *26> ƒ binding(length: 1) {},
-    chdir: <ref *27> ƒ wrappedChdir(length: 1) {},
-    config: <ref *28> {
+    assert: <ref *28> ƒ deprecated(length: 0) {},
+    availableMemory: <ref *29> ƒ availableMemory(length: 0) {},
+    binding: <ref *30> ƒ binding(length: 1) {},
+    chdir: <ref *31> ƒ wrappedChdir(length: 1) {},
+    config: <ref *32> {
         target_defaults: {
             cflags: [],
             default_configuration: "Release",
@@ -10782,6 +10793,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             node_release_urlbase: "https://nodejs.org/download/release/",
             node_section_ordering_info: "",
             node_shared: false,
+            node_shared_ada: false,
             node_shared_brotli: false,
             node_shared_cares: false,
             node_shared_http_parser: false,
@@ -10790,6 +10802,8 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             node_shared_nghttp3: false,
             node_shared_ngtcp2: false,
             node_shared_openssl: false,
+            node_shared_simdjson: false,
+            node_shared_simdutf: false,
             node_shared_zlib: false,
             node_tag: "",
             node_target_type: "executable",
@@ -10833,14 +10847,14 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             want_separate_host_toolset: 0
         }
     },
-    constrainedMemory: <ref *37> ƒ constrainedMemory(length: 0) {},
-    cpuUsage: <ref *38> ƒ cpuUsage(length: 1) {},
-    cwd: <ref *39> ƒ wrappedCwd(length: 0) {},
+    constrainedMemory: <ref *41> ƒ constrainedMemory(length: 0) {},
+    cpuUsage: <ref *42> ƒ cpuUsage(length: 1) {},
+    cwd: <ref *43> ƒ wrappedCwd(length: 0) {},
     debugPort: 9229,
     default: process {
-        version: "v20.14.0",
-        versions: <ref *41> {
-            node: "20.14.0",
+        version: "v20.15.0",
+        versions: <ref *45> {
+            node: "20.15.0",
             acorn: "8.11.3",
             ada: "2.7.8",
             ares: "1.28.1",
@@ -10867,14 +10881,14 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
         },
         arch: "x64",
         platform: "linux",
-        release: <ref *42> {
+        release: <ref *46> {
             name: "node",
             lts: "Iron",
-            sourceUrl: "https://nodejs.org/download/release/v20.14.0/node-v20.14.0.tar.gz",
-            headersUrl: "https://nodejs.org/download/release/v20.14.0/node-v20.14.0-headers.tar.gz"
+            sourceUrl: "https://nodejs.org/download/release/v20.15.0/node-v20.15.0.tar.gz",
+            headersUrl: "https://nodejs.org/download/release/v20.15.0/node-v20.15.0-headers.tar.gz"
         },
-        _rawDebug: [Circular: *15],
-        moduleLoadList: <ref *43> [
+        _rawDebug: [Circular: *19],
+        moduleLoadList: <ref *47> [
             "Internal Binding builtins",
             "Internal Binding module_wrap",
             "Internal Binding errors",
@@ -10932,11 +10946,11 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             "NativeModule internal/process/execution",
             "NativeModule internal/process/warning",
             "NativeModule internal/source_map/source_map_cache",
+            "NativeModule util",
             "NativeModule internal/console/constructor",
             "NativeModule internal/console/global",
             "NativeModule internal/util/inspector",
             "Internal Binding inspector",
-            "NativeModule util",
             "NativeModule internal/webidl",
             "Internal Binding performance",
             "NativeModule internal/perf/utils",
@@ -11015,44 +11029,44 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             "Internal Binding report",
             "NativeModule internal/process/report"
         ],
-        binding: [Circular: *26],
-        _linkedBinding: [Circular: *13],
+        binding: [Circular: *30],
+        _linkedBinding: [Circular: *17],
         _events: [Circular: *4],
         _eventsCount: 4,
         _maxListeners: undefined,
         domain: null,
         [get/set] _exiting: false,
         [get/set] exitCode: undefined,
-        config: [Circular: *28],
-        dlopen: <ref *44> ƒ dlopen(length: 0) {},
-        uptime: <ref *45> ƒ uptime(length: 0) {},
-        _getActiveRequests: [Circular: *11],
-        _getActiveHandles: [Circular: *10],
-        getActiveResourcesInfo: <ref *46> ƒ getActiveResourcesInfo(length: 0) {},
-        reallyExit: <ref *47> ƒ reallyExit(length: 0) {},
-        _kill: [Circular: *12],
-        loadEnvFile: <ref *48> ƒ loadEnvFile(length: 0) {},
-        cpuUsage: [Circular: *38],
-        resourceUsage: <ref *49> ƒ resourceUsage(length: 0) {},
-        memoryUsage: <ref *50> ƒ memoryUsage(length: 0) {
+        config: [Circular: *32],
+        dlopen: <ref *48> ƒ dlopen(length: 0) {},
+        uptime: <ref *49> ƒ uptime(length: 0) {},
+        _getActiveRequests: [Circular: *15],
+        _getActiveHandles: [Circular: *14],
+        getActiveResourcesInfo: <ref *50> ƒ getActiveResourcesInfo(length: 0) {},
+        reallyExit: <ref *51> ƒ reallyExit(length: 0) {},
+        _kill: [Circular: *16],
+        loadEnvFile: <ref *52> ƒ loadEnvFile(length: 0) {},
+        cpuUsage: [Circular: *42],
+        resourceUsage: <ref *53> ƒ resourceUsage(length: 0) {},
+        memoryUsage: <ref *54> ƒ memoryUsage(length: 0) {
             rss: ƒ rss(length: 0) {}
         },
-        constrainedMemory: [Circular: *37],
-        availableMemory: [Circular: *25],
-        kill: <ref *52> ƒ kill(length: 2) {},
-        exit: <ref *53> ƒ exit(length: 1) {},
-        hrtime: <ref *54> ƒ hrtime(length: 1) {
+        constrainedMemory: [Circular: *41],
+        availableMemory: [Circular: *29],
+        kill: <ref *56> ƒ kill(length: 2) {},
+        exit: <ref *57> ƒ exit(length: 1) {},
+        hrtime: <ref *58> ƒ hrtime(length: 1) {
             bigint: ƒ hrtimeBigInt(length: 0) {}
         },
-        openStdin: <ref *56> ƒ (length: 0) {},
-        getuid: <ref *57> ƒ getuid(length: 0) {},
-        geteuid: <ref *58> ƒ geteuid(length: 0) {},
-        getgid: <ref *59> ƒ getgid(length: 0) {},
-        getegid: <ref *60> ƒ getegid(length: 0) {},
-        getgroups: <ref *61> ƒ getgroups(length: 0) {},
-        allowedNodeEnvironmentFlags: [Circular: *20],
-        assert: [Circular: *24],
-        features: <ref *62> {
+        openStdin: <ref *60> ƒ (length: 0) {},
+        getuid: <ref *61> ƒ getuid(length: 0) {},
+        geteuid: <ref *62> ƒ geteuid(length: 0) {},
+        getgid: <ref *63> ƒ getgid(length: 0) {},
+        getegid: <ref *64> ƒ getegid(length: 0) {},
+        getgroups: <ref *65> ƒ getgroups(length: 0) {},
+        allowedNodeEnvironmentFlags: [Circular: *24],
+        assert: [Circular: *28],
+        features: <ref *66> {
             inspector: true,
             debug: false,
             uv: true,
@@ -11063,19 +11077,19 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             tls: true,
             [get/set] cached_builtins: true
         },
-        _fatalException: [Circular: *9],
-        setUncaughtExceptionCaptureCallback: <ref *63> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
-        hasUncaughtExceptionCaptureCallback: <ref *64> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
-        emitWarning: <ref *65> ƒ emitWarning(length: 4) {},
-        nextTick: <ref *66> ƒ nextTick(length: 1) {},
-        _tickCallback: [Circular: *18],
+        _fatalException: [Circular: *13],
+        setUncaughtExceptionCaptureCallback: <ref *67> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
+        hasUncaughtExceptionCaptureCallback: <ref *68> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
+        emitWarning: <ref *69> ƒ emitWarning(length: 4) {},
+        nextTick: <ref *70> ƒ nextTick(length: 1) {},
+        _tickCallback: [Circular: *22],
         [get/set] sourceMapsEnabled: false,
-        setSourceMapsEnabled: <ref *67> ƒ setSourceMapsEnabled(length: 1) {},
+        setSourceMapsEnabled: <ref *71> ƒ setSourceMapsEnabled(length: 1) {},
         _debugProcess: [Circular: *3],
         _debugEnd: [Circular: *2],
-        _startProfilerIdleNotifier: [Circular: *16],
-        _stopProfilerIdleNotifier: [Circular: *17],
-        [get/set] stdout: <ref *68> Socket {
+        _startProfilerIdleNotifier: [Circular: *20],
+        _stopProfilerIdleNotifier: [Circular: *21],
+        [get/set] stdout: <ref *72> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -11088,7 +11102,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: <ref *70> ƒ onReadableStreamEnd(length: 0) {},
+                end: <ref *74> ƒ onReadableStreamEnd(length: 0) {},
                 readable: undefined
             },
             _readableState: ReadableState {
@@ -11123,11 +11137,11 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             _type: "pipe",
             fd: 1,
             _isStdio: true,
-            destroySoon: <ref *76> ƒ (length: 2) {},
-            _destroy: <ref *77> ƒ dummyDestroy(length: 2) {},
+            destroySoon: <ref *80> ƒ (length: 2) {},
+            _destroy: <ref *81> ƒ dummyDestroy(length: 2) {},
             Symbol(async_id_symbol): 8,
             Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *68]
+                Symbol(owner_symbol): [Circular: *72]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -11142,7 +11156,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        [get/set] stdin: <ref *79> Socket {
+        [get/set] stdin: <ref *83> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -11155,7 +11169,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: [Circular: *70],
+                end: [Circular: *74],
                 readable: undefined,
                 pause: ƒ (length: 0) {}
             },
@@ -11191,7 +11205,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             Symbol(async_id_symbol): 9,
             Symbol(kHandle): Pipe {
                 reading: false,
-                Symbol(owner_symbol): [Circular: *79]
+                Symbol(owner_symbol): [Circular: *83]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -11206,7 +11220,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        [get/set] stderr: <ref *88> Socket {
+        [get/set] stderr: <ref *92> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -11219,7 +11233,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: [Circular: *70],
+                end: [Circular: *74],
                 readable: undefined
             },
             _readableState: ReadableState {
@@ -11254,11 +11268,11 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             _type: "pipe",
             fd: 2,
             _isStdio: true,
-            destroySoon: [Circular: *76],
-            _destroy: [Circular: *77],
+            destroySoon: [Circular: *80],
+            _destroy: [Circular: *81],
             Symbol(async_id_symbol): 10,
             Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *88]
+                Symbol(owner_symbol): [Circular: *92]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -11273,30 +11287,30 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        abort: [Circular: *19],
-        umask: <ref *96> ƒ wrappedUmask(length: 1) {},
-        chdir: [Circular: *27],
-        cwd: [Circular: *39],
-        initgroups: <ref *97> ƒ initgroups(length: 2) {},
-        setgroups: <ref *98> ƒ setgroups(length: 1) {},
-        setegid: <ref *99> ƒ (length: 1) {},
-        seteuid: <ref *100> ƒ (length: 1) {},
-        setgid: <ref *101> ƒ (length: 1) {},
-        setuid: <ref *102> ƒ (length: 1) {},
-        env: <ref *103>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_5ea8b5e7-ea89-48ab-9948-ce274e95a916",
+        abort: [Circular: *23],
+        umask: <ref *100> ƒ wrappedUmask(length: 1) {},
+        chdir: [Circular: *31],
+        cwd: [Circular: *43],
+        initgroups: <ref *101> ƒ initgroups(length: 2) {},
+        setgroups: <ref *102> ƒ setgroups(length: 1) {},
+        setegid: <ref *103> ƒ (length: 1) {},
+        seteuid: <ref *104> ƒ (length: 1) {},
+        setgid: <ref *105> ƒ (length: 1) {},
+        setuid: <ref *106> ƒ (length: 1) {},
+        env: <ref *107>  {
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_91665497-3346-4aa3-9329-6e006df09a7b",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.14.0 linux x64",
+            npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.15.0 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_5ea8b5e7-ea89-48ab-9948-ce274e95a916",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_91665497-3346-4aa3-9329-6e006df09a7b",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
-            npm_node_execpath: "/opt/hostedtoolcache/node/20.14.0/x64/bin/node",
+            npm_node_execpath: "/opt/hostedtoolcache/node/20.15.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             SHLVL: "1",
             HOME: "/home/runner",
@@ -11315,14 +11329,14 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "594",
+            SYSTEMD_EXEC_PID: "599",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.11/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20240616.1.0",
+            ImageVersion: "20240624.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -11331,7 +11345,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:18943",
+            JOURNAL_STREAM: "8:17926",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -11339,11 +11353,11 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "9637455758",
+            GITHUB_RUN_ID: "9736013872",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "b8804de41f1c08a6027e8d7e3378b7d9ba43973d",
+            GITHUB_WORKFLOW_SHA: "fa70e2dbc8d6c8bf3ad024de3c89dc1e18163445",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -11355,12 +11369,12 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_a5a99da7-b335-4a42-9c21-314831dd9a2b",
-            INVOCATION_ID: "89c48d59cab04928800b2c17539b05ef",
+            RUNNER_TRACKING_ID: "github_6d7d2a25-2f0a-4c7a-9358-701125a95267",
+            INVOCATION_ID: "592054dd32aa465399d3d62c463264d5",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            NODE: "/opt/hostedtoolcache/node/20.14.0/x64/bin/node",
+            NODE: "/opt/hostedtoolcache/node/20.15.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "81",
+            GITHUB_RUN_NUMBER: "82",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11370,7 +11384,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             npm_package_devDependencies_eslint: "^8.37.0",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 19",
+            RUNNER_NAME: "GitHub Actions 8",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
@@ -11395,7 +11409,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "b8804de41f1c08a6027e8d7e3378b7d9ba43973d",
+            GITHUB_SHA: "fa70e2dbc8d6c8bf3ad024de3c89dc1e18163445",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -11403,7 +11417,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_5ea8b5e7-ea89-48ab-9948-ce274e95a916",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_91665497-3346-4aa3-9329-6e006df09a7b",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -11418,7 +11432,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_5ea8b5e7-ea89-48ab-9948-ce274e95a916",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_91665497-3346-4aa3-9329-6e006df09a7b",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -11431,20 +11445,20 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.181+6/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_5ea8b5e7-ea89-48ab-9948-ce274e95a916",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_91665497-3346-4aa3-9329-6e006df09a7b",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
-        argv: [Circular: *23],
-        execArgv: <ref *104> [],
-        pid: 2763,
-        ppid: 1892,
-        execPath: "/opt/hostedtoolcache/node/20.14.0/x64/bin/node",
+        argv: [Circular: *27],
+        execArgv: <ref *108> [],
+        pid: 2792,
+        ppid: 1888,
+        execPath: "/opt/hostedtoolcache/node/20.15.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
-        _preload_modules: [Circular: *14],
-        [get/set] report: <ref *105> {
+        _preload_modules: [Circular: *18],
+        [get/set] report: <ref *109> {
             writeReport: ƒ writeReport(length: 2) {},
             getReport: ƒ getReport(length: 1) {},
             [get/set] directory: "",
@@ -11459,53 +11473,53 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
         Symbol(shapeMode): false,
         Symbol(kCapture): false
     },
-    dlopen: [Circular: *44],
+    dlopen: [Circular: *48],
     domain: null,
-    emitWarning: [Circular: *65],
-    env: [Circular: *103],
-    execArgv: [Circular: *104],
-    execPath: "/opt/hostedtoolcache/node/20.14.0/x64/bin/node",
-    exit: [Circular: *53],
+    emitWarning: [Circular: *69],
+    env: [Circular: *107],
+    execArgv: [Circular: *108],
+    execPath: "/opt/hostedtoolcache/node/20.15.0/x64/bin/node",
+    exit: [Circular: *57],
     exitCode: undefined,
-    features: [Circular: *62],
-    getActiveResourcesInfo: [Circular: *46],
-    getegid: [Circular: *60],
-    geteuid: [Circular: *58],
-    getgid: [Circular: *59],
-    getgroups: [Circular: *61],
-    getuid: [Circular: *57],
-    hasUncaughtExceptionCaptureCallback: [Circular: *64],
-    hrtime: [Circular: *54],
-    initgroups: [Circular: *97],
-    kill: [Circular: *52],
-    loadEnvFile: [Circular: *48],
-    memoryUsage: [Circular: *50],
-    moduleLoadList: [Circular: *43],
-    nextTick: [Circular: *66],
-    openStdin: [Circular: *56],
-    pid: 2763,
+    features: [Circular: *66],
+    getActiveResourcesInfo: [Circular: *50],
+    getegid: [Circular: *64],
+    geteuid: [Circular: *62],
+    getgid: [Circular: *63],
+    getgroups: [Circular: *65],
+    getuid: [Circular: *61],
+    hasUncaughtExceptionCaptureCallback: [Circular: *68],
+    hrtime: [Circular: *58],
+    initgroups: [Circular: *101],
+    kill: [Circular: *56],
+    loadEnvFile: [Circular: *52],
+    memoryUsage: [Circular: *54],
+    moduleLoadList: [Circular: *47],
+    nextTick: [Circular: *70],
+    openStdin: [Circular: *60],
+    pid: 2792,
     platform: "linux",
-    ppid: 1892,
-    reallyExit: [Circular: *47],
-    release: [Circular: *42],
-    report: [Circular: *105],
-    resourceUsage: [Circular: *49],
-    setSourceMapsEnabled: [Circular: *67],
-    setUncaughtExceptionCaptureCallback: [Circular: *63],
-    setegid: [Circular: *99],
-    seteuid: [Circular: *100],
-    setgid: [Circular: *101],
-    setgroups: [Circular: *98],
-    setuid: [Circular: *102],
+    ppid: 1888,
+    reallyExit: [Circular: *51],
+    release: [Circular: *46],
+    report: [Circular: *109],
+    resourceUsage: [Circular: *53],
+    setSourceMapsEnabled: [Circular: *71],
+    setUncaughtExceptionCaptureCallback: [Circular: *67],
+    setegid: [Circular: *103],
+    seteuid: [Circular: *104],
+    setgid: [Circular: *105],
+    setgroups: [Circular: *102],
+    setuid: [Circular: *106],
     sourceMapsEnabled: false,
-    stderr: [Circular: *88],
-    stdin: [Circular: *79],
-    stdout: [Circular: *68],
+    stderr: [Circular: *92],
+    stdin: [Circular: *83],
+    stdout: [Circular: *72],
     title: "node",
-    umask: [Circular: *96],
-    uptime: [Circular: *45],
-    version: "v20.14.0",
-    versions: [Circular: *41]
+    umask: [Circular: *100],
+    uptime: [Circular: *49],
+    version: "v20.15.0",
+    versions: [Circular: *45]
 }
 ```
 
@@ -11531,7 +11545,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1719188058528-1/process.mjs"
+        "/tmp/fs-fixture-1719792922521-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -11569,19 +11583,19 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
         dlopen: <ref *28> ƒ dlopen(length: 1) {},
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_5ea8b5e7-ea89-48ab-9948-ce274e95a916",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_91665497-3346-4aa3-9329-6e006df09a7b",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
             [get/set] DOTNET_NOLOGO: "1",
             [get/set] USER: "runner",
-            [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.14.0 linux x64",
+            [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.15.0 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_5ea8b5e7-ea89-48ab-9948-ce274e95a916",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_91665497-3346-4aa3-9329-6e006df09a7b",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_package_devDependencies_execa: "^7.1.1",
-            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.14.0/x64/bin/node",
+            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.15.0/x64/bin/node",
             [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             [get/set] SHLVL: "1",
             [get/set] HOME: "/home/runner",
@@ -11600,14 +11614,14 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "594",
+            [get/set] SYSTEMD_EXEC_PID: "599",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.11/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20240616.1.0",
+            [get/set] ImageVersion: "20240624.1.0",
             [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
@@ -11616,7 +11630,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             [get/set] RUNNER_USER: "runner",
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] JOURNAL_STREAM: "8:18943",
+            [get/set] JOURNAL_STREAM: "8:17926",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
@@ -11624,11 +11638,11 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "9637455758",
+            [get/set] GITHUB_RUN_ID: "9736013872",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "b8804de41f1c08a6027e8d7e3378b7d9ba43973d",
+            [get/set] GITHUB_WORKFLOW_SHA: "fa70e2dbc8d6c8bf3ad024de3c89dc1e18163445",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu22",
             [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -11640,12 +11654,12 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_a5a99da7-b335-4a42-9c21-314831dd9a2b",
-            [get/set] INVOCATION_ID: "89c48d59cab04928800b2c17539b05ef",
+            [get/set] RUNNER_TRACKING_ID: "github_6d7d2a25-2f0a-4c7a-9358-701125a95267",
+            [get/set] INVOCATION_ID: "592054dd32aa465399d3d62c463264d5",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            [get/set] NODE: "/opt/hostedtoolcache/node/20.14.0/x64/bin/node",
+            [get/set] NODE: "/opt/hostedtoolcache/node/20.15.0/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "81",
+            [get/set] GITHUB_RUN_NUMBER: "82",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11655,7 +11669,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] npm_package_devDependencies_eslint: "^8.37.0",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 19",
+            [get/set] RUNNER_NAME: "GitHub Actions 8",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
@@ -11680,7 +11694,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             [get/set] GITHUB_JOB: "build",
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] GITHUB_SHA: "b8804de41f1c08a6027e8d7e3378b7d9ba43973d",
+            [get/set] GITHUB_SHA: "fa70e2dbc8d6c8bf3ad024de3c89dc1e18163445",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] GITHUB_REF: "refs/heads/master",
             [get/set] GITHUB_ACTOR: "privatenumber",
@@ -11688,7 +11702,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             [get/set] npm_package_license: "MIT",
             [get/set] LEIN_HOME: "/usr/local/lib/lein",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_5ea8b5e7-ea89-48ab-9948-ce274e95a916",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_91665497-3346-4aa3-9329-6e006df09a7b",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -11703,7 +11717,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_5ea8b5e7-ea89-48ab-9948-ce274e95a916",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_91665497-3346-4aa3-9329-6e006df09a7b",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -11716,7 +11730,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.181+6/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_5ea8b5e7-ea89-48ab-9948-ce274e95a916",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_91665497-3346-4aa3-9329-6e006df09a7b",
             [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
@@ -11749,14 +11763,14 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
         moduleLoadList: <ref *41> [],
         nextTick: <ref *42> ƒ nextTick(length: 2) {},
         openStdin: <ref *43> ƒ openStdin(length: 0) {},
-        pid: 2776,
+        pid: 2795,
         platform: "linux",
-        ppid: 1892,
+        ppid: 1888,
         reallyExit: <ref *44> ƒ reallyExit(length: 1) {},
         release: <ref *45> {
             name: "node",
             lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.17/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.18/bun-linux-x64-baseline.zip",
             headersUrl: "",
             libUrl: ""
         },
@@ -11766,7 +11780,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "314666d8ae67e5cb9f1e1e565062466e76dddfbd",
+        revision: "861be5560ec776ea1a737b360cde2544a71b37c9",
         setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *50> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
@@ -11967,23 +11981,23 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
         [get/set] title: "bun",
         umask: <ref *94> ƒ umask(length: 1) {},
         uptime: <ref *95> ƒ uptime(length: 1) {},
-        version: "v22.2.0",
+        version: "v22.3.0",
         versions: <ref *96> {
-            node: "22.2.0",
-            bun: "1.1.17",
+            node: "22.3.0",
+            bun: "1.1.18",
             boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
             openssl: "1.1.0",
             libarchive: "313aa1fa10b657de791e3202c168a6c833bc3543",
             mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "314666d8ae67e5cb9f1e1e565062466e76dddfbd",
+            uwebsockets: "861be5560ec776ea1a737b360cde2544a71b37c9",
             webkit: "64d04ec1a65d91326c5f2298b9c7d05b56125252",
             zig: "0.13.0",
             zlib: "886098f3f339617b4243b286f5ed364b9989e245",
             tinycc: "ab631362d839333660a265d3084d8ff060b96753",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
-            usockets: "314666d8ae67e5cb9f1e1e565062466e76dddfbd",
+            usockets: "861be5560ec776ea1a737b360cde2544a71b37c9",
             lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
             zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
             v8: "12.4.254.14-node.12",
@@ -12044,9 +12058,9 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *43],
-    pid: 2776,
+    pid: 2795,
     platform: "linux",
-    ppid: 1892,
+    ppid: 1888,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -12055,7 +12069,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *46],
-    revision: "314666d8ae67e5cb9f1e1e565062466e76dddfbd",
+    revision: "861be5560ec776ea1a737b360cde2544a71b37c9",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *49],
@@ -12066,7 +12080,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
     title: "bun",
     umask: [Circular: *94],
     uptime: [Circular: *95],
-    version: "v22.2.0",
+    version: "v22.3.0",
     versions: [Circular: *96]
 }
 ```
@@ -12422,15 +12436,15 @@ NotImplementedError: node:repl is not yet implemented in Bun.
  code: "ERR_NOT_IMPLEMENTED"
 
       at get (node:repl:76:8)
-      at inspect (/tmp/fs-fixture-1719188058528-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1719188058528-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1719792922521-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1719792922521-1/inspect.mjs:99:7
       at map (:1:11)
-      at inspect (/tmp/fs-fixture-1719188058528-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1719188058528-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1719792922521-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1719792922521-1/inspect.mjs:99:7
       at map (:1:11)
-      at inspect (/tmp/fs-fixture-1719188058528-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1719792922521-1/inspect.mjs:80:43)
 
-Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
+Bun v1.1.18-canary.1+861be5560 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -15294,7 +15308,7 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
         WASI: [Circular: *2]
     }
 }
-(node:3232) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3221) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -15543,16 +15557,18 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
         BROTLI_DECODER_ERROR_ALLOC_BLOCK_TYPE_TREES: -30,
         BROTLI_DECODER_ERROR_UNREACHABLE: -31
     },
-    createBrotliCompress: <ref *17> ƒ value(length: 1) {},
-    createBrotliDecompress: <ref *18> ƒ value(length: 1) {},
-    createDeflate: <ref *19> ƒ value(length: 1) {},
-    createDeflateRaw: <ref *20> ƒ value(length: 1) {},
-    createGunzip: <ref *21> ƒ value(length: 1) {},
-    createGzip: <ref *22> ƒ value(length: 1) {},
-    createInflate: <ref *23> ƒ value(length: 1) {},
-    createInflateRaw: <ref *24> ƒ value(length: 1) {},
-    createUnzip: <ref *25> ƒ value(length: 1) {},
+    crc32: <ref *17> ƒ crc32(length: 1) {},
+    createBrotliCompress: <ref *18> ƒ value(length: 1) {},
+    createBrotliDecompress: <ref *19> ƒ value(length: 1) {},
+    createDeflate: <ref *20> ƒ value(length: 1) {},
+    createDeflateRaw: <ref *21> ƒ value(length: 1) {},
+    createGunzip: <ref *22> ƒ value(length: 1) {},
+    createGzip: <ref *23> ƒ value(length: 1) {},
+    createInflate: <ref *24> ƒ value(length: 1) {},
+    createInflateRaw: <ref *25> ƒ value(length: 1) {},
+    createUnzip: <ref *26> ƒ value(length: 1) {},
     default: {
+        crc32: [Circular: *17],
         Deflate: [Circular: *4],
         Inflate: [Circular: *8],
         Gzip: [Circular: *7],
@@ -15562,50 +15578,50 @@ Bun v1.1.17-canary.1+314666d8a (Linux x64 baseline)
         Unzip: [Circular: *10],
         BrotliCompress: [Circular: *2],
         BrotliDecompress: [Circular: *3],
-        deflate: <ref *27> ƒ asyncBufferWrapper(length: 3) {},
-        deflateSync: <ref *28> ƒ syncBufferWrapper(length: 2) {},
-        gzip: <ref *29> ƒ asyncBufferWrapper(length: 3) {},
-        gzipSync: <ref *30> ƒ syncBufferWrapper(length: 2) {},
-        deflateRaw: <ref *31> ƒ asyncBufferWrapper(length: 3) {},
-        deflateRawSync: <ref *32> ƒ syncBufferWrapper(length: 2) {},
-        unzip: <ref *33> ƒ asyncBufferWrapper(length: 3) {},
-        unzipSync: <ref *34> ƒ syncBufferWrapper(length: 2) {},
-        inflate: <ref *35> ƒ asyncBufferWrapper(length: 3) {},
-        inflateSync: <ref *36> ƒ syncBufferWrapper(length: 2) {},
-        gunzip: <ref *37> ƒ asyncBufferWrapper(length: 3) {},
-        gunzipSync: <ref *38> ƒ syncBufferWrapper(length: 2) {},
-        inflateRaw: <ref *39> ƒ asyncBufferWrapper(length: 3) {},
-        inflateRawSync: <ref *40> ƒ syncBufferWrapper(length: 2) {},
+        deflate: <ref *28> ƒ asyncBufferWrapper(length: 3) {},
+        deflateSync: <ref *29> ƒ syncBufferWrapper(length: 2) {},
+        gzip: <ref *30> ƒ asyncBufferWrapper(length: 3) {},
+        gzipSync: <ref *31> ƒ syncBufferWrapper(length: 2) {},
+        deflateRaw: <ref *32> ƒ asyncBufferWrapper(length: 3) {},
+        deflateRawSync: <ref *33> ƒ syncBufferWrapper(length: 2) {},
+        unzip: <ref *34> ƒ asyncBufferWrapper(length: 3) {},
+        unzipSync: <ref *35> ƒ syncBufferWrapper(length: 2) {},
+        inflate: <ref *36> ƒ asyncBufferWrapper(length: 3) {},
+        inflateSync: <ref *37> ƒ syncBufferWrapper(length: 2) {},
+        gunzip: <ref *38> ƒ asyncBufferWrapper(length: 3) {},
+        gunzipSync: <ref *39> ƒ syncBufferWrapper(length: 2) {},
+        inflateRaw: <ref *40> ƒ asyncBufferWrapper(length: 3) {},
+        inflateRawSync: <ref *41> ƒ syncBufferWrapper(length: 2) {},
         brotliCompress: [Circular: *11],
         brotliCompressSync: [Circular: *12],
         brotliDecompress: [Circular: *13],
         brotliDecompressSync: [Circular: *14],
-        createDeflate: [Circular: *19],
-        createInflate: [Circular: *23],
-        createDeflateRaw: [Circular: *20],
-        createInflateRaw: [Circular: *24],
-        createGzip: [Circular: *22],
-        createGunzip: [Circular: *21],
-        createUnzip: [Circular: *25],
-        createBrotliCompress: [Circular: *17],
-        createBrotliDecompress: [Circular: *18],
+        createDeflate: [Circular: *20],
+        createInflate: [Circular: *24],
+        createDeflateRaw: [Circular: *21],
+        createInflateRaw: [Circular: *25],
+        createGzip: [Circular: *23],
+        createGunzip: [Circular: *22],
+        createUnzip: [Circular: *26],
+        createBrotliCompress: [Circular: *18],
+        createBrotliDecompress: [Circular: *19],
         constants: [Circular: *16],
         codes: [Circular: *15]
     },
-    deflate: [Circular: *27],
-    deflateRaw: [Circular: *31],
-    deflateRawSync: [Circular: *32],
-    deflateSync: [Circular: *28],
-    gunzip: [Circular: *37],
-    gunzipSync: [Circular: *38],
-    gzip: [Circular: *29],
-    gzipSync: [Circular: *30],
-    inflate: [Circular: *35],
-    inflateRaw: [Circular: *39],
-    inflateRawSync: [Circular: *40],
-    inflateSync: [Circular: *36],
-    unzip: [Circular: *33],
-    unzipSync: [Circular: *34]
+    deflate: [Circular: *28],
+    deflateRaw: [Circular: *32],
+    deflateRawSync: [Circular: *33],
+    deflateSync: [Circular: *29],
+    gunzip: [Circular: *38],
+    gunzipSync: [Circular: *39],
+    gzip: [Circular: *30],
+    gzipSync: [Circular: *31],
+    inflate: [Circular: *36],
+    inflateRaw: [Circular: *40],
+    inflateRawSync: [Circular: *41],
+    inflateSync: [Circular: *37],
+    unzip: [Circular: *34],
+    unzipSync: [Circular: *35]
 }
 ```
 
