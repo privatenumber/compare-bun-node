@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jul 22, 2024 with Bun 1.1.21 Node.js v20.15.1<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jul 29, 2024 with Bun 1.1.22 Node.js v20.15.1<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -153,231 +153,26 @@ _Last updated on <!-- lastUpdated:start -->Jul 22, 2024 with Bun 1.1.21 Node.js 
 </td><td valign="top">
 
 ```js
-{
-    Agent: <ref *2> ƒ Agent(length: 0) {
-        prototype: EventEmitter2 {
-            createConnection: ƒ (length: 0) {},
-            getName: ƒ (length: 0) {},
-            addRequest: ƒ (length: 0) {},
-            createSocket: ƒ (length: 3) {},
-            removeSocket: ƒ (length: 0) {},
-            keepSocketAlive: ƒ (length: 0) {},
-            reuseSocket: ƒ (length: 0) {},
-            destroy: ƒ (length: 0) {}
-        }
-    },
-    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
-        prototype: IncomingMessage {
-            constructor: [Circular: *13],
-            _construct: ƒ (length: 1) {},
-            _read: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    METHODS: <ref *18> [
-        "ACL",
-        "BIND",
-        "CHECKOUT",
-        "CONNECT",
-        "COPY",
-        "DELETE",
-        "GET",
-        "HEAD",
-        "LINK",
-        "LOCK",
-        "M-SEARCH",
-        "MERGE",
-        "MKACTIVITY",
-        "MKCALENDAR",
-        "MKCOL",
-        "MOVE",
-        "NOTIFY",
-        "OPTIONS",
-        "PATCH",
-        "POST",
-        "PROPFIND",
-        "PROPPATCH",
-        "PURGE",
-        "PUT",
-        "REBIND",
-        "REPORT",
-        "SEARCH",
-        "SOURCE",
-        "SUBSCRIBE",
-        "TRACE",
-        "UNBIND",
-        "UNLINK",
-        "UNLOCK",
-        "UNSUBSCRIBE"
-    ],
-    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
-        prototype: OutgoingMessage {
-            constructor: [Circular: *19],
-            _implicitHeader: ƒ (length: 0) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            addTrailers: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    STATUS_CODES: <ref *32> {
-        100: "Continue",
-        101: "Switching Protocols",
-        102: "Processing",
-        103: "Early Hints",
-        200: "OK",
-        201: "Created",
-        202: "Accepted",
-        203: "Non-Authoritative Information",
-        204: "No Content",
-        205: "Reset Content",
-        206: "Partial Content",
-        207: "Multi-Status",
-        208: "Already Reported",
-        226: "IM Used",
-        300: "Multiple Choices",
-        301: "Moved Permanently",
-        302: "Found",
-        303: "See Other",
-        304: "Not Modified",
-        305: "Use Proxy",
-        307: "Temporary Redirect",
-        308: "Permanent Redirect",
-        400: "Bad Request",
-        401: "Unauthorized",
-        402: "Payment Required",
-        403: "Forbidden",
-        404: "Not Found",
-        405: "Method Not Allowed",
-        406: "Not Acceptable",
-        407: "Proxy Authentication Required",
-        408: "Request Timeout",
-        409: "Conflict",
-        410: "Gone",
-        411: "Length Required",
-        412: "Precondition Failed",
-        413: "Payload Too Large",
-        414: "URI Too Long",
-        415: "Unsupported Media Type",
-        416: "Range Not Satisfiable",
-        417: "Expectation Failed",
-        418: "I'm a Teapot",
-        421: "Misdirected Request",
-        422: "Unprocessable Entity",
-        423: "Locked",
-        424: "Failed Dependency",
-        425: "Too Early",
-        426: "Upgrade Required",
-        428: "Precondition Required",
-        429: "Too Many Requests",
-        431: "Request Header Fields Too Large",
-        451: "Unavailable For Legal Reasons",
-        500: "Internal Server Error",
-        501: "Not Implemented",
-        502: "Bad Gateway",
-        503: "Service Unavailable",
-        504: "Gateway Timeout",
-        505: "HTTP Version Not Supported",
-        506: "Variant Also Negotiates",
-        507: "Insufficient Storage",
-        508: "Loop Detected",
-        509: "Bandwidth Limit Exceeded",
-        510: "Not Extended",
-        511: "Network Authentication Required"
-    },
-    Server: <ref *33> ƒ Server(length: 2) {
-        prototype: Server {
-            constructor: [Circular: *33],
-            ref: ƒ (length: 0) {},
-            unref: ƒ (length: 0) {},
-            closeAllConnections: ƒ (length: 0) {},
-            closeIdleConnections: ƒ (length: 0) {},
-            close: ƒ (length: 1) {},
-            address: ƒ (length: 0) {},
-            listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {},
-            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
-        }
-    },
-    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
-        prototype: ServerResponse {
-            constructor: [Circular: *44],
-            _implicitHeader: ƒ (length: 0) {},
-            _write: ƒ (length: 3) {},
-            _writev: ƒ (length: 2) {},
-            _final: ƒ (length: 1) {},
-            writeProcessing: ƒ (length: 0) {},
-            addTrailers: ƒ (length: 1) {},
-            assignSocket: ƒ (length: 1) {},
-            detachSocket: ƒ (length: 1) {},
-            writeContinue: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            writeHead: ƒ (length: 3) {}
-        }
-    },
-    createServer: <ref *65> ƒ createServer(length: 2) {},
-    default: {
-        Agent: [Circular: *2],
-        Server: [Circular: *33],
-        METHODS: [Circular: *18],
-        STATUS_CODES: [Circular: *32],
-        createServer: [Circular: *65],
-        ServerResponse: [Circular: *44],
-        IncomingMessage: [Circular: *13],
-        request: <ref *67> ƒ request(length: 3) {},
-        get: <ref *68> ƒ get(length: 3) {},
-        maxHeaderSize: 16384,
-        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *72> EventEmitter2 {
-            _events: [Object: null prototype] {},
-            _eventsCount: 0,
-            _maxListeners: undefined,
-            defaultPort: 80,
-            protocol: "http:",
-            options: {
-                path: null,
-                noDelay: true
-            },
-            requests: <ref *75> [Object: null prototype] {},
-            sockets: [Circular: *75],
-            freeSockets: [Circular: *75],
-            keepAliveMsecs: 1000,
-            keepAlive: false,
-            maxSockets: Infinity,
-            maxFreeSockets: 256,
-            scheduling: "lifo",
-            maxTotalSockets: undefined,
-            totalSocketCount: 0,
-            Symbol(kCapture): false
-        },
-        ClientRequest: [Circular: *12],
-        OutgoingMessage: [Circular: *19]
-    },
-    get: [Circular: *68],
-    globalAgent: [Circular: *72],
-    maxHeaderSize: 16384,
-    request: [Circular: *67],
-    setMaxIdleHTTPParsers: [Circular: *71],
-    validateHeaderName: [Circular: *69],
-    validateHeaderValue: [Circular: *70]
-}
+90 | 					}
+91 | 					if ('set' in descriptor) {
+92 | 						getSet.push('set');
+93 | 					}
+94 | 
+95 | 					const propertyValue = value[key];
+                                ^
+TypeError: undefined is not an object
+      at node:http:600:17
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:95:28
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+
+Bun v1.1.22-canary.1+4199fd451 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -398,231 +193,26 @@ _Last updated on <!-- lastUpdated:start -->Jul 22, 2024 with Bun 1.1.21 Node.js 
 </td><td valign="top">
 
 ```js
-{
-    Agent: <ref *2> ƒ Agent(length: 0) {
-        prototype: EventEmitter2 {
-            createConnection: ƒ (length: 0) {},
-            getName: ƒ (length: 0) {},
-            addRequest: ƒ (length: 0) {},
-            createSocket: ƒ (length: 3) {},
-            removeSocket: ƒ (length: 0) {},
-            keepSocketAlive: ƒ (length: 0) {},
-            reuseSocket: ƒ (length: 0) {},
-            destroy: ƒ (length: 0) {}
-        }
-    },
-    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
-        prototype: IncomingMessage {
-            constructor: [Circular: *13],
-            _construct: ƒ (length: 1) {},
-            _read: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    METHODS: <ref *18> [
-        "ACL",
-        "BIND",
-        "CHECKOUT",
-        "CONNECT",
-        "COPY",
-        "DELETE",
-        "GET",
-        "HEAD",
-        "LINK",
-        "LOCK",
-        "M-SEARCH",
-        "MERGE",
-        "MKACTIVITY",
-        "MKCALENDAR",
-        "MKCOL",
-        "MOVE",
-        "NOTIFY",
-        "OPTIONS",
-        "PATCH",
-        "POST",
-        "PROPFIND",
-        "PROPPATCH",
-        "PURGE",
-        "PUT",
-        "REBIND",
-        "REPORT",
-        "SEARCH",
-        "SOURCE",
-        "SUBSCRIBE",
-        "TRACE",
-        "UNBIND",
-        "UNLINK",
-        "UNLOCK",
-        "UNSUBSCRIBE"
-    ],
-    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
-        prototype: OutgoingMessage {
-            constructor: [Circular: *19],
-            _implicitHeader: ƒ (length: 0) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            addTrailers: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    STATUS_CODES: <ref *32> {
-        100: "Continue",
-        101: "Switching Protocols",
-        102: "Processing",
-        103: "Early Hints",
-        200: "OK",
-        201: "Created",
-        202: "Accepted",
-        203: "Non-Authoritative Information",
-        204: "No Content",
-        205: "Reset Content",
-        206: "Partial Content",
-        207: "Multi-Status",
-        208: "Already Reported",
-        226: "IM Used",
-        300: "Multiple Choices",
-        301: "Moved Permanently",
-        302: "Found",
-        303: "See Other",
-        304: "Not Modified",
-        305: "Use Proxy",
-        307: "Temporary Redirect",
-        308: "Permanent Redirect",
-        400: "Bad Request",
-        401: "Unauthorized",
-        402: "Payment Required",
-        403: "Forbidden",
-        404: "Not Found",
-        405: "Method Not Allowed",
-        406: "Not Acceptable",
-        407: "Proxy Authentication Required",
-        408: "Request Timeout",
-        409: "Conflict",
-        410: "Gone",
-        411: "Length Required",
-        412: "Precondition Failed",
-        413: "Payload Too Large",
-        414: "URI Too Long",
-        415: "Unsupported Media Type",
-        416: "Range Not Satisfiable",
-        417: "Expectation Failed",
-        418: "I'm a Teapot",
-        421: "Misdirected Request",
-        422: "Unprocessable Entity",
-        423: "Locked",
-        424: "Failed Dependency",
-        425: "Too Early",
-        426: "Upgrade Required",
-        428: "Precondition Required",
-        429: "Too Many Requests",
-        431: "Request Header Fields Too Large",
-        451: "Unavailable For Legal Reasons",
-        500: "Internal Server Error",
-        501: "Not Implemented",
-        502: "Bad Gateway",
-        503: "Service Unavailable",
-        504: "Gateway Timeout",
-        505: "HTTP Version Not Supported",
-        506: "Variant Also Negotiates",
-        507: "Insufficient Storage",
-        508: "Loop Detected",
-        509: "Bandwidth Limit Exceeded",
-        510: "Not Extended",
-        511: "Network Authentication Required"
-    },
-    Server: <ref *33> ƒ Server(length: 2) {
-        prototype: Server {
-            constructor: [Circular: *33],
-            ref: ƒ (length: 0) {},
-            unref: ƒ (length: 0) {},
-            closeAllConnections: ƒ (length: 0) {},
-            closeIdleConnections: ƒ (length: 0) {},
-            close: ƒ (length: 1) {},
-            address: ƒ (length: 0) {},
-            listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {},
-            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
-        }
-    },
-    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
-        prototype: ServerResponse {
-            constructor: [Circular: *44],
-            _implicitHeader: ƒ (length: 0) {},
-            _write: ƒ (length: 3) {},
-            _writev: ƒ (length: 2) {},
-            _final: ƒ (length: 1) {},
-            writeProcessing: ƒ (length: 0) {},
-            addTrailers: ƒ (length: 1) {},
-            assignSocket: ƒ (length: 1) {},
-            detachSocket: ƒ (length: 1) {},
-            writeContinue: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            writeHead: ƒ (length: 3) {}
-        }
-    },
-    createServer: <ref *65> ƒ createServer(length: 2) {},
-    default: {
-        Agent: [Circular: *2],
-        Server: [Circular: *33],
-        METHODS: [Circular: *18],
-        STATUS_CODES: [Circular: *32],
-        createServer: [Circular: *65],
-        ServerResponse: [Circular: *44],
-        IncomingMessage: [Circular: *13],
-        request: <ref *67> ƒ request(length: 3) {},
-        get: <ref *68> ƒ get(length: 3) {},
-        maxHeaderSize: 16384,
-        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *72> EventEmitter2 {
-            _events: [Object: null prototype] {},
-            _eventsCount: 0,
-            _maxListeners: undefined,
-            defaultPort: 80,
-            protocol: "http:",
-            options: {
-                path: null,
-                noDelay: true
-            },
-            requests: <ref *75> [Object: null prototype] {},
-            sockets: [Circular: *75],
-            freeSockets: [Circular: *75],
-            keepAliveMsecs: 1000,
-            keepAlive: false,
-            maxSockets: Infinity,
-            maxFreeSockets: 256,
-            scheduling: "lifo",
-            maxTotalSockets: undefined,
-            totalSocketCount: 0,
-            Symbol(kCapture): false
-        },
-        ClientRequest: [Circular: *12],
-        OutgoingMessage: [Circular: *19]
-    },
-    get: [Circular: *68],
-    globalAgent: [Circular: *72],
-    maxHeaderSize: 16384,
-    request: [Circular: *67],
-    setMaxIdleHTTPParsers: [Circular: *71],
-    validateHeaderName: [Circular: *69],
-    validateHeaderValue: [Circular: *70]
-}
+90 | 					}
+91 | 					if ('set' in descriptor) {
+92 | 						getSet.push('set');
+93 | 					}
+94 | 
+95 | 					const propertyValue = value[key];
+                                ^
+TypeError: undefined is not an object
+      at node:http:600:17
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:95:28
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+
+Bun v1.1.22-canary.1+4199fd451 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -720,231 +310,26 @@ _Last updated on <!-- lastUpdated:start -->Jul 22, 2024 with Bun 1.1.21 Node.js 
 </td><td valign="top">
 
 ```js
-{
-    Agent: <ref *2> ƒ Agent(length: 0) {
-        prototype: EventEmitter2 {
-            createConnection: ƒ (length: 0) {},
-            getName: ƒ (length: 0) {},
-            addRequest: ƒ (length: 0) {},
-            createSocket: ƒ (length: 3) {},
-            removeSocket: ƒ (length: 0) {},
-            keepSocketAlive: ƒ (length: 0) {},
-            reuseSocket: ƒ (length: 0) {},
-            destroy: ƒ (length: 0) {}
-        }
-    },
-    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
-        prototype: IncomingMessage {
-            constructor: [Circular: *13],
-            _construct: ƒ (length: 1) {},
-            _read: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    METHODS: <ref *18> [
-        "ACL",
-        "BIND",
-        "CHECKOUT",
-        "CONNECT",
-        "COPY",
-        "DELETE",
-        "GET",
-        "HEAD",
-        "LINK",
-        "LOCK",
-        "M-SEARCH",
-        "MERGE",
-        "MKACTIVITY",
-        "MKCALENDAR",
-        "MKCOL",
-        "MOVE",
-        "NOTIFY",
-        "OPTIONS",
-        "PATCH",
-        "POST",
-        "PROPFIND",
-        "PROPPATCH",
-        "PURGE",
-        "PUT",
-        "REBIND",
-        "REPORT",
-        "SEARCH",
-        "SOURCE",
-        "SUBSCRIBE",
-        "TRACE",
-        "UNBIND",
-        "UNLINK",
-        "UNLOCK",
-        "UNSUBSCRIBE"
-    ],
-    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
-        prototype: OutgoingMessage {
-            constructor: [Circular: *19],
-            _implicitHeader: ƒ (length: 0) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            addTrailers: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    STATUS_CODES: <ref *32> {
-        100: "Continue",
-        101: "Switching Protocols",
-        102: "Processing",
-        103: "Early Hints",
-        200: "OK",
-        201: "Created",
-        202: "Accepted",
-        203: "Non-Authoritative Information",
-        204: "No Content",
-        205: "Reset Content",
-        206: "Partial Content",
-        207: "Multi-Status",
-        208: "Already Reported",
-        226: "IM Used",
-        300: "Multiple Choices",
-        301: "Moved Permanently",
-        302: "Found",
-        303: "See Other",
-        304: "Not Modified",
-        305: "Use Proxy",
-        307: "Temporary Redirect",
-        308: "Permanent Redirect",
-        400: "Bad Request",
-        401: "Unauthorized",
-        402: "Payment Required",
-        403: "Forbidden",
-        404: "Not Found",
-        405: "Method Not Allowed",
-        406: "Not Acceptable",
-        407: "Proxy Authentication Required",
-        408: "Request Timeout",
-        409: "Conflict",
-        410: "Gone",
-        411: "Length Required",
-        412: "Precondition Failed",
-        413: "Payload Too Large",
-        414: "URI Too Long",
-        415: "Unsupported Media Type",
-        416: "Range Not Satisfiable",
-        417: "Expectation Failed",
-        418: "I'm a Teapot",
-        421: "Misdirected Request",
-        422: "Unprocessable Entity",
-        423: "Locked",
-        424: "Failed Dependency",
-        425: "Too Early",
-        426: "Upgrade Required",
-        428: "Precondition Required",
-        429: "Too Many Requests",
-        431: "Request Header Fields Too Large",
-        451: "Unavailable For Legal Reasons",
-        500: "Internal Server Error",
-        501: "Not Implemented",
-        502: "Bad Gateway",
-        503: "Service Unavailable",
-        504: "Gateway Timeout",
-        505: "HTTP Version Not Supported",
-        506: "Variant Also Negotiates",
-        507: "Insufficient Storage",
-        508: "Loop Detected",
-        509: "Bandwidth Limit Exceeded",
-        510: "Not Extended",
-        511: "Network Authentication Required"
-    },
-    Server: <ref *33> ƒ Server(length: 2) {
-        prototype: Server {
-            constructor: [Circular: *33],
-            ref: ƒ (length: 0) {},
-            unref: ƒ (length: 0) {},
-            closeAllConnections: ƒ (length: 0) {},
-            closeIdleConnections: ƒ (length: 0) {},
-            close: ƒ (length: 1) {},
-            address: ƒ (length: 0) {},
-            listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {},
-            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
-        }
-    },
-    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
-        prototype: ServerResponse {
-            constructor: [Circular: *44],
-            _implicitHeader: ƒ (length: 0) {},
-            _write: ƒ (length: 3) {},
-            _writev: ƒ (length: 2) {},
-            _final: ƒ (length: 1) {},
-            writeProcessing: ƒ (length: 0) {},
-            addTrailers: ƒ (length: 1) {},
-            assignSocket: ƒ (length: 1) {},
-            detachSocket: ƒ (length: 1) {},
-            writeContinue: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            writeHead: ƒ (length: 3) {}
-        }
-    },
-    createServer: <ref *65> ƒ createServer(length: 2) {},
-    default: {
-        Agent: [Circular: *2],
-        Server: [Circular: *33],
-        METHODS: [Circular: *18],
-        STATUS_CODES: [Circular: *32],
-        createServer: [Circular: *65],
-        ServerResponse: [Circular: *44],
-        IncomingMessage: [Circular: *13],
-        request: <ref *67> ƒ request(length: 3) {},
-        get: <ref *68> ƒ get(length: 3) {},
-        maxHeaderSize: 16384,
-        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *72> EventEmitter2 {
-            _events: [Object: null prototype] {},
-            _eventsCount: 0,
-            _maxListeners: undefined,
-            defaultPort: 80,
-            protocol: "http:",
-            options: {
-                path: null,
-                noDelay: true
-            },
-            requests: <ref *75> [Object: null prototype] {},
-            sockets: [Circular: *75],
-            freeSockets: [Circular: *75],
-            keepAliveMsecs: 1000,
-            keepAlive: false,
-            maxSockets: Infinity,
-            maxFreeSockets: 256,
-            scheduling: "lifo",
-            maxTotalSockets: undefined,
-            totalSocketCount: 0,
-            Symbol(kCapture): false
-        },
-        ClientRequest: [Circular: *12],
-        OutgoingMessage: [Circular: *19]
-    },
-    get: [Circular: *68],
-    globalAgent: [Circular: *72],
-    maxHeaderSize: 16384,
-    request: [Circular: *67],
-    setMaxIdleHTTPParsers: [Circular: *71],
-    validateHeaderName: [Circular: *69],
-    validateHeaderValue: [Circular: *70]
-}
+90 | 					}
+91 | 					if ('set' in descriptor) {
+92 | 						getSet.push('set');
+93 | 					}
+94 | 
+95 | 					const propertyValue = value[key];
+                                ^
+TypeError: undefined is not an object
+      at node:http:600:17
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:95:28
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+
+Bun v1.1.22-canary.1+4199fd451 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -969,231 +354,26 @@ _Last updated on <!-- lastUpdated:start -->Jul 22, 2024 with Bun 1.1.21 Node.js 
 </td><td valign="top">
 
 ```js
-{
-    Agent: <ref *2> ƒ Agent(length: 0) {
-        prototype: EventEmitter2 {
-            createConnection: ƒ (length: 0) {},
-            getName: ƒ (length: 0) {},
-            addRequest: ƒ (length: 0) {},
-            createSocket: ƒ (length: 3) {},
-            removeSocket: ƒ (length: 0) {},
-            keepSocketAlive: ƒ (length: 0) {},
-            reuseSocket: ƒ (length: 0) {},
-            destroy: ƒ (length: 0) {}
-        }
-    },
-    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
-        prototype: IncomingMessage {
-            constructor: [Circular: *13],
-            _construct: ƒ (length: 1) {},
-            _read: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    METHODS: <ref *18> [
-        "ACL",
-        "BIND",
-        "CHECKOUT",
-        "CONNECT",
-        "COPY",
-        "DELETE",
-        "GET",
-        "HEAD",
-        "LINK",
-        "LOCK",
-        "M-SEARCH",
-        "MERGE",
-        "MKACTIVITY",
-        "MKCALENDAR",
-        "MKCOL",
-        "MOVE",
-        "NOTIFY",
-        "OPTIONS",
-        "PATCH",
-        "POST",
-        "PROPFIND",
-        "PROPPATCH",
-        "PURGE",
-        "PUT",
-        "REBIND",
-        "REPORT",
-        "SEARCH",
-        "SOURCE",
-        "SUBSCRIBE",
-        "TRACE",
-        "UNBIND",
-        "UNLINK",
-        "UNLOCK",
-        "UNSUBSCRIBE"
-    ],
-    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
-        prototype: OutgoingMessage {
-            constructor: [Circular: *19],
-            _implicitHeader: ƒ (length: 0) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            addTrailers: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    STATUS_CODES: <ref *32> {
-        100: "Continue",
-        101: "Switching Protocols",
-        102: "Processing",
-        103: "Early Hints",
-        200: "OK",
-        201: "Created",
-        202: "Accepted",
-        203: "Non-Authoritative Information",
-        204: "No Content",
-        205: "Reset Content",
-        206: "Partial Content",
-        207: "Multi-Status",
-        208: "Already Reported",
-        226: "IM Used",
-        300: "Multiple Choices",
-        301: "Moved Permanently",
-        302: "Found",
-        303: "See Other",
-        304: "Not Modified",
-        305: "Use Proxy",
-        307: "Temporary Redirect",
-        308: "Permanent Redirect",
-        400: "Bad Request",
-        401: "Unauthorized",
-        402: "Payment Required",
-        403: "Forbidden",
-        404: "Not Found",
-        405: "Method Not Allowed",
-        406: "Not Acceptable",
-        407: "Proxy Authentication Required",
-        408: "Request Timeout",
-        409: "Conflict",
-        410: "Gone",
-        411: "Length Required",
-        412: "Precondition Failed",
-        413: "Payload Too Large",
-        414: "URI Too Long",
-        415: "Unsupported Media Type",
-        416: "Range Not Satisfiable",
-        417: "Expectation Failed",
-        418: "I'm a Teapot",
-        421: "Misdirected Request",
-        422: "Unprocessable Entity",
-        423: "Locked",
-        424: "Failed Dependency",
-        425: "Too Early",
-        426: "Upgrade Required",
-        428: "Precondition Required",
-        429: "Too Many Requests",
-        431: "Request Header Fields Too Large",
-        451: "Unavailable For Legal Reasons",
-        500: "Internal Server Error",
-        501: "Not Implemented",
-        502: "Bad Gateway",
-        503: "Service Unavailable",
-        504: "Gateway Timeout",
-        505: "HTTP Version Not Supported",
-        506: "Variant Also Negotiates",
-        507: "Insufficient Storage",
-        508: "Loop Detected",
-        509: "Bandwidth Limit Exceeded",
-        510: "Not Extended",
-        511: "Network Authentication Required"
-    },
-    Server: <ref *33> ƒ Server(length: 2) {
-        prototype: Server {
-            constructor: [Circular: *33],
-            ref: ƒ (length: 0) {},
-            unref: ƒ (length: 0) {},
-            closeAllConnections: ƒ (length: 0) {},
-            closeIdleConnections: ƒ (length: 0) {},
-            close: ƒ (length: 1) {},
-            address: ƒ (length: 0) {},
-            listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {},
-            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
-        }
-    },
-    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
-        prototype: ServerResponse {
-            constructor: [Circular: *44],
-            _implicitHeader: ƒ (length: 0) {},
-            _write: ƒ (length: 3) {},
-            _writev: ƒ (length: 2) {},
-            _final: ƒ (length: 1) {},
-            writeProcessing: ƒ (length: 0) {},
-            addTrailers: ƒ (length: 1) {},
-            assignSocket: ƒ (length: 1) {},
-            detachSocket: ƒ (length: 1) {},
-            writeContinue: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            writeHead: ƒ (length: 3) {}
-        }
-    },
-    createServer: <ref *65> ƒ createServer(length: 2) {},
-    default: {
-        Agent: [Circular: *2],
-        Server: [Circular: *33],
-        METHODS: [Circular: *18],
-        STATUS_CODES: [Circular: *32],
-        createServer: [Circular: *65],
-        ServerResponse: [Circular: *44],
-        IncomingMessage: [Circular: *13],
-        request: <ref *67> ƒ request(length: 3) {},
-        get: <ref *68> ƒ get(length: 3) {},
-        maxHeaderSize: 16384,
-        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *72> EventEmitter2 {
-            _events: [Object: null prototype] {},
-            _eventsCount: 0,
-            _maxListeners: undefined,
-            defaultPort: 80,
-            protocol: "http:",
-            options: {
-                path: null,
-                noDelay: true
-            },
-            requests: <ref *75> [Object: null prototype] {},
-            sockets: [Circular: *75],
-            freeSockets: [Circular: *75],
-            keepAliveMsecs: 1000,
-            keepAlive: false,
-            maxSockets: Infinity,
-            maxFreeSockets: 256,
-            scheduling: "lifo",
-            maxTotalSockets: undefined,
-            totalSocketCount: 0,
-            Symbol(kCapture): false
-        },
-        ClientRequest: [Circular: *12],
-        OutgoingMessage: [Circular: *19]
-    },
-    get: [Circular: *68],
-    globalAgent: [Circular: *72],
-    maxHeaderSize: 16384,
-    request: [Circular: *67],
-    setMaxIdleHTTPParsers: [Circular: *71],
-    validateHeaderName: [Circular: *69],
-    validateHeaderValue: [Circular: *70]
-}
+90 | 					}
+91 | 					if ('set' in descriptor) {
+92 | 						getSet.push('set');
+93 | 					}
+94 | 
+95 | 					const propertyValue = value[key];
+                                ^
+TypeError: undefined is not an object
+      at node:http:600:17
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:95:28
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+
+Bun v1.1.22-canary.1+4199fd451 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -1228,231 +408,26 @@ _Last updated on <!-- lastUpdated:start -->Jul 22, 2024 with Bun 1.1.21 Node.js 
 </td><td valign="top">
 
 ```js
-{
-    Agent: <ref *2> ƒ Agent(length: 0) {
-        prototype: EventEmitter2 {
-            createConnection: ƒ (length: 0) {},
-            getName: ƒ (length: 0) {},
-            addRequest: ƒ (length: 0) {},
-            createSocket: ƒ (length: 3) {},
-            removeSocket: ƒ (length: 0) {},
-            keepSocketAlive: ƒ (length: 0) {},
-            reuseSocket: ƒ (length: 0) {},
-            destroy: ƒ (length: 0) {}
-        }
-    },
-    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
-        prototype: IncomingMessage {
-            constructor: [Circular: *13],
-            _construct: ƒ (length: 1) {},
-            _read: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    METHODS: <ref *18> [
-        "ACL",
-        "BIND",
-        "CHECKOUT",
-        "CONNECT",
-        "COPY",
-        "DELETE",
-        "GET",
-        "HEAD",
-        "LINK",
-        "LOCK",
-        "M-SEARCH",
-        "MERGE",
-        "MKACTIVITY",
-        "MKCALENDAR",
-        "MKCOL",
-        "MOVE",
-        "NOTIFY",
-        "OPTIONS",
-        "PATCH",
-        "POST",
-        "PROPFIND",
-        "PROPPATCH",
-        "PURGE",
-        "PUT",
-        "REBIND",
-        "REPORT",
-        "SEARCH",
-        "SOURCE",
-        "SUBSCRIBE",
-        "TRACE",
-        "UNBIND",
-        "UNLINK",
-        "UNLOCK",
-        "UNSUBSCRIBE"
-    ],
-    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
-        prototype: OutgoingMessage {
-            constructor: [Circular: *19],
-            _implicitHeader: ƒ (length: 0) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            addTrailers: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    STATUS_CODES: <ref *32> {
-        100: "Continue",
-        101: "Switching Protocols",
-        102: "Processing",
-        103: "Early Hints",
-        200: "OK",
-        201: "Created",
-        202: "Accepted",
-        203: "Non-Authoritative Information",
-        204: "No Content",
-        205: "Reset Content",
-        206: "Partial Content",
-        207: "Multi-Status",
-        208: "Already Reported",
-        226: "IM Used",
-        300: "Multiple Choices",
-        301: "Moved Permanently",
-        302: "Found",
-        303: "See Other",
-        304: "Not Modified",
-        305: "Use Proxy",
-        307: "Temporary Redirect",
-        308: "Permanent Redirect",
-        400: "Bad Request",
-        401: "Unauthorized",
-        402: "Payment Required",
-        403: "Forbidden",
-        404: "Not Found",
-        405: "Method Not Allowed",
-        406: "Not Acceptable",
-        407: "Proxy Authentication Required",
-        408: "Request Timeout",
-        409: "Conflict",
-        410: "Gone",
-        411: "Length Required",
-        412: "Precondition Failed",
-        413: "Payload Too Large",
-        414: "URI Too Long",
-        415: "Unsupported Media Type",
-        416: "Range Not Satisfiable",
-        417: "Expectation Failed",
-        418: "I'm a Teapot",
-        421: "Misdirected Request",
-        422: "Unprocessable Entity",
-        423: "Locked",
-        424: "Failed Dependency",
-        425: "Too Early",
-        426: "Upgrade Required",
-        428: "Precondition Required",
-        429: "Too Many Requests",
-        431: "Request Header Fields Too Large",
-        451: "Unavailable For Legal Reasons",
-        500: "Internal Server Error",
-        501: "Not Implemented",
-        502: "Bad Gateway",
-        503: "Service Unavailable",
-        504: "Gateway Timeout",
-        505: "HTTP Version Not Supported",
-        506: "Variant Also Negotiates",
-        507: "Insufficient Storage",
-        508: "Loop Detected",
-        509: "Bandwidth Limit Exceeded",
-        510: "Not Extended",
-        511: "Network Authentication Required"
-    },
-    Server: <ref *33> ƒ Server(length: 2) {
-        prototype: Server {
-            constructor: [Circular: *33],
-            ref: ƒ (length: 0) {},
-            unref: ƒ (length: 0) {},
-            closeAllConnections: ƒ (length: 0) {},
-            closeIdleConnections: ƒ (length: 0) {},
-            close: ƒ (length: 1) {},
-            address: ƒ (length: 0) {},
-            listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {},
-            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
-        }
-    },
-    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
-        prototype: ServerResponse {
-            constructor: [Circular: *44],
-            _implicitHeader: ƒ (length: 0) {},
-            _write: ƒ (length: 3) {},
-            _writev: ƒ (length: 2) {},
-            _final: ƒ (length: 1) {},
-            writeProcessing: ƒ (length: 0) {},
-            addTrailers: ƒ (length: 1) {},
-            assignSocket: ƒ (length: 1) {},
-            detachSocket: ƒ (length: 1) {},
-            writeContinue: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            writeHead: ƒ (length: 3) {}
-        }
-    },
-    createServer: <ref *65> ƒ createServer(length: 2) {},
-    default: {
-        Agent: [Circular: *2],
-        Server: [Circular: *33],
-        METHODS: [Circular: *18],
-        STATUS_CODES: [Circular: *32],
-        createServer: [Circular: *65],
-        ServerResponse: [Circular: *44],
-        IncomingMessage: [Circular: *13],
-        request: <ref *67> ƒ request(length: 3) {},
-        get: <ref *68> ƒ get(length: 3) {},
-        maxHeaderSize: 16384,
-        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *72> EventEmitter2 {
-            _events: [Object: null prototype] {},
-            _eventsCount: 0,
-            _maxListeners: undefined,
-            defaultPort: 80,
-            protocol: "http:",
-            options: {
-                path: null,
-                noDelay: true
-            },
-            requests: <ref *75> [Object: null prototype] {},
-            sockets: [Circular: *75],
-            freeSockets: [Circular: *75],
-            keepAliveMsecs: 1000,
-            keepAlive: false,
-            maxSockets: Infinity,
-            maxFreeSockets: 256,
-            scheduling: "lifo",
-            maxTotalSockets: undefined,
-            totalSocketCount: 0,
-            Symbol(kCapture): false
-        },
-        ClientRequest: [Circular: *12],
-        OutgoingMessage: [Circular: *19]
-    },
-    get: [Circular: *68],
-    globalAgent: [Circular: *72],
-    maxHeaderSize: 16384,
-    request: [Circular: *67],
-    setMaxIdleHTTPParsers: [Circular: *71],
-    validateHeaderName: [Circular: *69],
-    validateHeaderValue: [Circular: *70]
-}
+90 | 					}
+91 | 					if ('set' in descriptor) {
+92 | 						getSet.push('set');
+93 | 					}
+94 | 
+95 | 					const propertyValue = value[key];
+                                ^
+TypeError: undefined is not an object
+      at node:http:600:17
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:95:28
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+
+Bun v1.1.22-canary.1+4199fd451 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -1553,231 +528,26 @@ _Last updated on <!-- lastUpdated:start -->Jul 22, 2024 with Bun 1.1.21 Node.js 
 </td><td valign="top">
 
 ```js
-{
-    Agent: <ref *2> ƒ Agent(length: 0) {
-        prototype: EventEmitter2 {
-            createConnection: ƒ (length: 0) {},
-            getName: ƒ (length: 0) {},
-            addRequest: ƒ (length: 0) {},
-            createSocket: ƒ (length: 3) {},
-            removeSocket: ƒ (length: 0) {},
-            keepSocketAlive: ƒ (length: 0) {},
-            reuseSocket: ƒ (length: 0) {},
-            destroy: ƒ (length: 0) {}
-        }
-    },
-    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
-        prototype: IncomingMessage {
-            constructor: [Circular: *13],
-            _construct: ƒ (length: 1) {},
-            _read: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    METHODS: <ref *18> [
-        "ACL",
-        "BIND",
-        "CHECKOUT",
-        "CONNECT",
-        "COPY",
-        "DELETE",
-        "GET",
-        "HEAD",
-        "LINK",
-        "LOCK",
-        "M-SEARCH",
-        "MERGE",
-        "MKACTIVITY",
-        "MKCALENDAR",
-        "MKCOL",
-        "MOVE",
-        "NOTIFY",
-        "OPTIONS",
-        "PATCH",
-        "POST",
-        "PROPFIND",
-        "PROPPATCH",
-        "PURGE",
-        "PUT",
-        "REBIND",
-        "REPORT",
-        "SEARCH",
-        "SOURCE",
-        "SUBSCRIBE",
-        "TRACE",
-        "UNBIND",
-        "UNLINK",
-        "UNLOCK",
-        "UNSUBSCRIBE"
-    ],
-    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
-        prototype: OutgoingMessage {
-            constructor: [Circular: *19],
-            _implicitHeader: ƒ (length: 0) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            addTrailers: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    STATUS_CODES: <ref *32> {
-        100: "Continue",
-        101: "Switching Protocols",
-        102: "Processing",
-        103: "Early Hints",
-        200: "OK",
-        201: "Created",
-        202: "Accepted",
-        203: "Non-Authoritative Information",
-        204: "No Content",
-        205: "Reset Content",
-        206: "Partial Content",
-        207: "Multi-Status",
-        208: "Already Reported",
-        226: "IM Used",
-        300: "Multiple Choices",
-        301: "Moved Permanently",
-        302: "Found",
-        303: "See Other",
-        304: "Not Modified",
-        305: "Use Proxy",
-        307: "Temporary Redirect",
-        308: "Permanent Redirect",
-        400: "Bad Request",
-        401: "Unauthorized",
-        402: "Payment Required",
-        403: "Forbidden",
-        404: "Not Found",
-        405: "Method Not Allowed",
-        406: "Not Acceptable",
-        407: "Proxy Authentication Required",
-        408: "Request Timeout",
-        409: "Conflict",
-        410: "Gone",
-        411: "Length Required",
-        412: "Precondition Failed",
-        413: "Payload Too Large",
-        414: "URI Too Long",
-        415: "Unsupported Media Type",
-        416: "Range Not Satisfiable",
-        417: "Expectation Failed",
-        418: "I'm a Teapot",
-        421: "Misdirected Request",
-        422: "Unprocessable Entity",
-        423: "Locked",
-        424: "Failed Dependency",
-        425: "Too Early",
-        426: "Upgrade Required",
-        428: "Precondition Required",
-        429: "Too Many Requests",
-        431: "Request Header Fields Too Large",
-        451: "Unavailable For Legal Reasons",
-        500: "Internal Server Error",
-        501: "Not Implemented",
-        502: "Bad Gateway",
-        503: "Service Unavailable",
-        504: "Gateway Timeout",
-        505: "HTTP Version Not Supported",
-        506: "Variant Also Negotiates",
-        507: "Insufficient Storage",
-        508: "Loop Detected",
-        509: "Bandwidth Limit Exceeded",
-        510: "Not Extended",
-        511: "Network Authentication Required"
-    },
-    Server: <ref *33> ƒ Server(length: 2) {
-        prototype: Server {
-            constructor: [Circular: *33],
-            ref: ƒ (length: 0) {},
-            unref: ƒ (length: 0) {},
-            closeAllConnections: ƒ (length: 0) {},
-            closeIdleConnections: ƒ (length: 0) {},
-            close: ƒ (length: 1) {},
-            address: ƒ (length: 0) {},
-            listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {},
-            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
-        }
-    },
-    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
-        prototype: ServerResponse {
-            constructor: [Circular: *44],
-            _implicitHeader: ƒ (length: 0) {},
-            _write: ƒ (length: 3) {},
-            _writev: ƒ (length: 2) {},
-            _final: ƒ (length: 1) {},
-            writeProcessing: ƒ (length: 0) {},
-            addTrailers: ƒ (length: 1) {},
-            assignSocket: ƒ (length: 1) {},
-            detachSocket: ƒ (length: 1) {},
-            writeContinue: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            writeHead: ƒ (length: 3) {}
-        }
-    },
-    createServer: <ref *65> ƒ createServer(length: 2) {},
-    default: {
-        Agent: [Circular: *2],
-        Server: [Circular: *33],
-        METHODS: [Circular: *18],
-        STATUS_CODES: [Circular: *32],
-        createServer: [Circular: *65],
-        ServerResponse: [Circular: *44],
-        IncomingMessage: [Circular: *13],
-        request: <ref *67> ƒ request(length: 3) {},
-        get: <ref *68> ƒ get(length: 3) {},
-        maxHeaderSize: 16384,
-        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *72> EventEmitter2 {
-            _events: [Object: null prototype] {},
-            _eventsCount: 0,
-            _maxListeners: undefined,
-            defaultPort: 80,
-            protocol: "http:",
-            options: {
-                path: null,
-                noDelay: true
-            },
-            requests: <ref *75> [Object: null prototype] {},
-            sockets: [Circular: *75],
-            freeSockets: [Circular: *75],
-            keepAliveMsecs: 1000,
-            keepAlive: false,
-            maxSockets: Infinity,
-            maxFreeSockets: 256,
-            scheduling: "lifo",
-            maxTotalSockets: undefined,
-            totalSocketCount: 0,
-            Symbol(kCapture): false
-        },
-        ClientRequest: [Circular: *12],
-        OutgoingMessage: [Circular: *19]
-    },
-    get: [Circular: *68],
-    globalAgent: [Circular: *72],
-    maxHeaderSize: 16384,
-    request: [Circular: *67],
-    setMaxIdleHTTPParsers: [Circular: *71],
-    validateHeaderName: [Circular: *69],
-    validateHeaderValue: [Circular: *70]
-}
+90 | 					}
+91 | 					if ('set' in descriptor) {
+92 | 						getSet.push('set');
+93 | 					}
+94 | 
+95 | 					const propertyValue = value[key];
+                                ^
+TypeError: undefined is not an object
+      at node:http:600:17
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:95:28
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+
+Bun v1.1.22-canary.1+4199fd451 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -2722,7 +1492,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 22, 2024 with Bun 1.1.21 Node.js 
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2067) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2124) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -4131,8 +2901,8 @@ _Last updated on <!-- lastUpdated:start -->Jul 22, 2024 with Bun 1.1.21 Node.js 
         byteLength: ƒ byteLength(length: 2) {},
         compare: ƒ compare(length: 2) {},
         concat: ƒ concat(length: 2) {},
-        from: ƒ from(length: 1) {},
-        isBuffer: ƒ isBuffer(length: 1) {},
+        from: ƒ (length: 1) {},
+        isBuffer: ƒ (length: 1) {},
         isEncoding: ƒ isEncoding(length: 1) {}
     },
     File: <ref *13> ƒ File(length: 2) {},
@@ -4444,7 +3214,7 @@ Cluster {
         record: <ref *42> ƒ record(length: 0) {},
         recordEnd: <ref *43> ƒ recordEnd(length: 0) {},
         screenshot: <ref *44> ƒ screenshot(length: 0) {},
-        write: <ref *45> ƒ write(length: 1) {},
+        write: <ref *45> ƒ (length: 1) {},
         Console: [Circular: *2],
         Symbol(Symbol.asyncIterator): ƒ [Symbol.asyncIterator](length: 0) {}
     },
@@ -5608,26 +4378,26 @@ Cluster {
 </td><td valign="top">
 
 ```js
-3282 |       }, d;
-3283 |     }
-3284 |   }
-3285 | }), require_duplex = __commonJS({
-3286 |   "node_modules/readable-stream/lib/internal/streams/duplex.js"(exports, module) {
-3287 |     function Duplex(options) {
-                          ^
+1311 |       "writableNeedDrain",
+1312 |       "writableObjectMode",
+1313 |       "write"
+1314 |     ];
+1315 |     for (let method of triggerMethods)
+1316 |         get() {
+                  ^
 RangeError: Maximum call stack size exceeded.
-      at Duplex (node:stream:3287:20)
-      at Transform (node:stream:3345:23)
       at get (node:crypto:1316:12)
-      at EventEmitter2 (node:events:164:682)
+      at EventEmitter2 (node:events:164:684)
       at Stream (node:stream:1544:20)
       at Readable (node:stream:1796:22)
       at Duplex (node:stream:3287:20)
       at Transform (node:stream:3345:23)
       at get (node:crypto:1316:12)
-      at EventEmitter2 (node:events:164:682)
+      at EventEmitter2 (node:events:164:684)
+      at Stream (node:stream:1544:20)
+      at Readable (node:stream:1796:22)
 
-Bun v1.1.21 (Linux x64 baseline)
+Bun v1.1.22-canary.1+4199fd451 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -7464,231 +6234,26 @@ Bun v1.1.21 (Linux x64 baseline)
 </td><td valign="top">
 
 ```js
-{
-    Agent: <ref *2> ƒ Agent(length: 0) {
-        prototype: EventEmitter2 {
-            createConnection: ƒ (length: 0) {},
-            getName: ƒ (length: 0) {},
-            addRequest: ƒ (length: 0) {},
-            createSocket: ƒ (length: 3) {},
-            removeSocket: ƒ (length: 0) {},
-            keepSocketAlive: ƒ (length: 0) {},
-            reuseSocket: ƒ (length: 0) {},
-            destroy: ƒ (length: 0) {}
-        }
-    },
-    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
-        prototype: IncomingMessage {
-            constructor: [Circular: *13],
-            _construct: ƒ (length: 1) {},
-            _read: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    METHODS: <ref *18> [
-        "ACL",
-        "BIND",
-        "CHECKOUT",
-        "CONNECT",
-        "COPY",
-        "DELETE",
-        "GET",
-        "HEAD",
-        "LINK",
-        "LOCK",
-        "M-SEARCH",
-        "MERGE",
-        "MKACTIVITY",
-        "MKCALENDAR",
-        "MKCOL",
-        "MOVE",
-        "NOTIFY",
-        "OPTIONS",
-        "PATCH",
-        "POST",
-        "PROPFIND",
-        "PROPPATCH",
-        "PURGE",
-        "PUT",
-        "REBIND",
-        "REPORT",
-        "SEARCH",
-        "SOURCE",
-        "SUBSCRIBE",
-        "TRACE",
-        "UNBIND",
-        "UNLINK",
-        "UNLOCK",
-        "UNSUBSCRIBE"
-    ],
-    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
-        prototype: OutgoingMessage {
-            constructor: [Circular: *19],
-            _implicitHeader: ƒ (length: 0) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            addTrailers: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    STATUS_CODES: <ref *32> {
-        100: "Continue",
-        101: "Switching Protocols",
-        102: "Processing",
-        103: "Early Hints",
-        200: "OK",
-        201: "Created",
-        202: "Accepted",
-        203: "Non-Authoritative Information",
-        204: "No Content",
-        205: "Reset Content",
-        206: "Partial Content",
-        207: "Multi-Status",
-        208: "Already Reported",
-        226: "IM Used",
-        300: "Multiple Choices",
-        301: "Moved Permanently",
-        302: "Found",
-        303: "See Other",
-        304: "Not Modified",
-        305: "Use Proxy",
-        307: "Temporary Redirect",
-        308: "Permanent Redirect",
-        400: "Bad Request",
-        401: "Unauthorized",
-        402: "Payment Required",
-        403: "Forbidden",
-        404: "Not Found",
-        405: "Method Not Allowed",
-        406: "Not Acceptable",
-        407: "Proxy Authentication Required",
-        408: "Request Timeout",
-        409: "Conflict",
-        410: "Gone",
-        411: "Length Required",
-        412: "Precondition Failed",
-        413: "Payload Too Large",
-        414: "URI Too Long",
-        415: "Unsupported Media Type",
-        416: "Range Not Satisfiable",
-        417: "Expectation Failed",
-        418: "I'm a Teapot",
-        421: "Misdirected Request",
-        422: "Unprocessable Entity",
-        423: "Locked",
-        424: "Failed Dependency",
-        425: "Too Early",
-        426: "Upgrade Required",
-        428: "Precondition Required",
-        429: "Too Many Requests",
-        431: "Request Header Fields Too Large",
-        451: "Unavailable For Legal Reasons",
-        500: "Internal Server Error",
-        501: "Not Implemented",
-        502: "Bad Gateway",
-        503: "Service Unavailable",
-        504: "Gateway Timeout",
-        505: "HTTP Version Not Supported",
-        506: "Variant Also Negotiates",
-        507: "Insufficient Storage",
-        508: "Loop Detected",
-        509: "Bandwidth Limit Exceeded",
-        510: "Not Extended",
-        511: "Network Authentication Required"
-    },
-    Server: <ref *33> ƒ Server(length: 2) {
-        prototype: Server {
-            constructor: [Circular: *33],
-            ref: ƒ (length: 0) {},
-            unref: ƒ (length: 0) {},
-            closeAllConnections: ƒ (length: 0) {},
-            closeIdleConnections: ƒ (length: 0) {},
-            close: ƒ (length: 1) {},
-            address: ƒ (length: 0) {},
-            listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {},
-            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
-        }
-    },
-    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
-        prototype: ServerResponse {
-            constructor: [Circular: *44],
-            _implicitHeader: ƒ (length: 0) {},
-            _write: ƒ (length: 3) {},
-            _writev: ƒ (length: 2) {},
-            _final: ƒ (length: 1) {},
-            writeProcessing: ƒ (length: 0) {},
-            addTrailers: ƒ (length: 1) {},
-            assignSocket: ƒ (length: 1) {},
-            detachSocket: ƒ (length: 1) {},
-            writeContinue: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            writeHead: ƒ (length: 3) {}
-        }
-    },
-    createServer: <ref *65> ƒ createServer(length: 2) {},
-    default: {
-        Agent: [Circular: *2],
-        Server: [Circular: *33],
-        METHODS: [Circular: *18],
-        STATUS_CODES: [Circular: *32],
-        createServer: [Circular: *65],
-        ServerResponse: [Circular: *44],
-        IncomingMessage: [Circular: *13],
-        request: <ref *67> ƒ request(length: 3) {},
-        get: <ref *68> ƒ get(length: 3) {},
-        maxHeaderSize: 16384,
-        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *72> EventEmitter2 {
-            _events: [Object: null prototype] {},
-            _eventsCount: 0,
-            _maxListeners: undefined,
-            defaultPort: 80,
-            protocol: "http:",
-            options: {
-                path: null,
-                noDelay: true
-            },
-            requests: <ref *75> [Object: null prototype] {},
-            sockets: [Circular: *75],
-            freeSockets: [Circular: *75],
-            keepAliveMsecs: 1000,
-            keepAlive: false,
-            maxSockets: Infinity,
-            maxFreeSockets: 256,
-            scheduling: "lifo",
-            maxTotalSockets: undefined,
-            totalSocketCount: 0,
-            Symbol(kCapture): false
-        },
-        ClientRequest: [Circular: *12],
-        OutgoingMessage: [Circular: *19]
-    },
-    get: [Circular: *68],
-    globalAgent: [Circular: *72],
-    maxHeaderSize: 16384,
-    request: [Circular: *67],
-    setMaxIdleHTTPParsers: [Circular: *71],
-    validateHeaderName: [Circular: *69],
-    validateHeaderValue: [Circular: *70]
-}
+90 | 					}
+91 | 					if ('set' in descriptor) {
+92 | 						getSet.push('set');
+93 | 					}
+94 | 
+95 | 					const propertyValue = value[key];
+                                ^
+TypeError: undefined is not an object
+      at node:http:600:17
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:95:28
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+
+Bun v1.1.22-canary.1+4199fd451 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -8304,231 +6869,26 @@ Bun v1.1.21 (Linux x64 baseline)
 </td><td valign="top">
 
 ```js
-{
-    Agent: <ref *2> ƒ Agent(length: 0) {
-        prototype: EventEmitter2 {
-            createConnection: ƒ (length: 0) {},
-            getName: ƒ (length: 0) {},
-            addRequest: ƒ (length: 0) {},
-            createSocket: ƒ (length: 3) {},
-            removeSocket: ƒ (length: 0) {},
-            keepSocketAlive: ƒ (length: 0) {},
-            reuseSocket: ƒ (length: 0) {},
-            destroy: ƒ (length: 0) {}
-        }
-    },
-    ClientRequest: <ref *12> ƒ ClientRequest(length: 3) {},
-    IncomingMessage: <ref *13> ƒ IncomingMessage(length: 2) {
-        prototype: IncomingMessage {
-            constructor: [Circular: *13],
-            _construct: ƒ (length: 1) {},
-            _read: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    METHODS: <ref *18> [
-        "ACL",
-        "BIND",
-        "CHECKOUT",
-        "CONNECT",
-        "COPY",
-        "DELETE",
-        "GET",
-        "HEAD",
-        "LINK",
-        "LOCK",
-        "M-SEARCH",
-        "MERGE",
-        "MKACTIVITY",
-        "MKCALENDAR",
-        "MKCOL",
-        "MOVE",
-        "NOTIFY",
-        "OPTIONS",
-        "PATCH",
-        "POST",
-        "PROPFIND",
-        "PROPPATCH",
-        "PURGE",
-        "PUT",
-        "REBIND",
-        "REPORT",
-        "SEARCH",
-        "SOURCE",
-        "SUBSCRIBE",
-        "TRACE",
-        "UNBIND",
-        "UNLINK",
-        "UNLOCK",
-        "UNSUBSCRIBE"
-    ],
-    OutgoingMessage: <ref *19> ƒ OutgoingMessage(length: 1) {
-        prototype: OutgoingMessage {
-            constructor: [Circular: *19],
-            _implicitHeader: ƒ (length: 0) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            addTrailers: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {}
-        }
-    },
-    STATUS_CODES: <ref *32> {
-        100: "Continue",
-        101: "Switching Protocols",
-        102: "Processing",
-        103: "Early Hints",
-        200: "OK",
-        201: "Created",
-        202: "Accepted",
-        203: "Non-Authoritative Information",
-        204: "No Content",
-        205: "Reset Content",
-        206: "Partial Content",
-        207: "Multi-Status",
-        208: "Already Reported",
-        226: "IM Used",
-        300: "Multiple Choices",
-        301: "Moved Permanently",
-        302: "Found",
-        303: "See Other",
-        304: "Not Modified",
-        305: "Use Proxy",
-        307: "Temporary Redirect",
-        308: "Permanent Redirect",
-        400: "Bad Request",
-        401: "Unauthorized",
-        402: "Payment Required",
-        403: "Forbidden",
-        404: "Not Found",
-        405: "Method Not Allowed",
-        406: "Not Acceptable",
-        407: "Proxy Authentication Required",
-        408: "Request Timeout",
-        409: "Conflict",
-        410: "Gone",
-        411: "Length Required",
-        412: "Precondition Failed",
-        413: "Payload Too Large",
-        414: "URI Too Long",
-        415: "Unsupported Media Type",
-        416: "Range Not Satisfiable",
-        417: "Expectation Failed",
-        418: "I'm a Teapot",
-        421: "Misdirected Request",
-        422: "Unprocessable Entity",
-        423: "Locked",
-        424: "Failed Dependency",
-        425: "Too Early",
-        426: "Upgrade Required",
-        428: "Precondition Required",
-        429: "Too Many Requests",
-        431: "Request Header Fields Too Large",
-        451: "Unavailable For Legal Reasons",
-        500: "Internal Server Error",
-        501: "Not Implemented",
-        502: "Bad Gateway",
-        503: "Service Unavailable",
-        504: "Gateway Timeout",
-        505: "HTTP Version Not Supported",
-        506: "Variant Also Negotiates",
-        507: "Insufficient Storage",
-        508: "Loop Detected",
-        509: "Bandwidth Limit Exceeded",
-        510: "Not Extended",
-        511: "Network Authentication Required"
-    },
-    Server: <ref *33> ƒ Server(length: 2) {
-        prototype: Server {
-            constructor: [Circular: *33],
-            ref: ƒ (length: 0) {},
-            unref: ƒ (length: 0) {},
-            closeAllConnections: ƒ (length: 0) {},
-            closeIdleConnections: ƒ (length: 0) {},
-            close: ƒ (length: 1) {},
-            address: ƒ (length: 0) {},
-            listen: ƒ (length: 4) {},
-            setTimeout: ƒ (length: 2) {},
-            Symbol(Symbol.asyncDispose): ƒ (length: 0) {}
-        }
-    },
-    ServerResponse: <ref *44> ƒ ServerResponse(length: 2) {
-        prototype: ServerResponse {
-            constructor: [Circular: *44],
-            _implicitHeader: ƒ (length: 0) {},
-            _write: ƒ (length: 3) {},
-            _writev: ƒ (length: 2) {},
-            _final: ƒ (length: 1) {},
-            writeProcessing: ƒ (length: 0) {},
-            addTrailers: ƒ (length: 1) {},
-            assignSocket: ƒ (length: 1) {},
-            detachSocket: ƒ (length: 1) {},
-            writeContinue: ƒ (length: 1) {},
-            setTimeout: ƒ (length: 2) {},
-            appendHeader: ƒ (length: 2) {},
-            flushHeaders: ƒ (length: 0) {},
-            getHeader: ƒ (length: 1) {},
-            getHeaders: ƒ (length: 0) {},
-            getHeaderNames: ƒ (length: 0) {},
-            removeHeader: ƒ (length: 1) {},
-            setHeader: ƒ (length: 2) {},
-            hasHeader: ƒ (length: 1) {},
-            writeHead: ƒ (length: 3) {}
-        }
-    },
-    createServer: <ref *65> ƒ createServer(length: 2) {},
-    default: {
-        Agent: [Circular: *2],
-        Server: [Circular: *33],
-        METHODS: [Circular: *18],
-        STATUS_CODES: [Circular: *32],
-        createServer: [Circular: *65],
-        ServerResponse: [Circular: *44],
-        IncomingMessage: [Circular: *13],
-        request: <ref *67> ƒ request(length: 3) {},
-        get: <ref *68> ƒ get(length: 3) {},
-        maxHeaderSize: 16384,
-        validateHeaderName: <ref *69> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *70> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *71> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *72> EventEmitter2 {
-            _events: [Object: null prototype] {},
-            _eventsCount: 0,
-            _maxListeners: undefined,
-            defaultPort: 80,
-            protocol: "http:",
-            options: {
-                path: null,
-                noDelay: true
-            },
-            requests: <ref *75> [Object: null prototype] {},
-            sockets: [Circular: *75],
-            freeSockets: [Circular: *75],
-            keepAliveMsecs: 1000,
-            keepAlive: false,
-            maxSockets: Infinity,
-            maxFreeSockets: 256,
-            scheduling: "lifo",
-            maxTotalSockets: undefined,
-            totalSocketCount: 0,
-            Symbol(kCapture): false
-        },
-        ClientRequest: [Circular: *12],
-        OutgoingMessage: [Circular: *19]
-    },
-    get: [Circular: *68],
-    globalAgent: [Circular: *72],
-    maxHeaderSize: 16384,
-    request: [Circular: *67],
-    setMaxIdleHTTPParsers: [Circular: *71],
-    validateHeaderName: [Circular: *69],
-    validateHeaderValue: [Circular: *70]
-}
+90 | 					}
+91 | 					if ('set' in descriptor) {
+92 | 						getSet.push('set');
+93 | 					}
+94 | 
+95 | 					const propertyValue = value[key];
+                                ^
+TypeError: undefined is not an object
+      at node:http:600:17
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:95:28
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+
+Bun v1.1.22-canary.1+4199fd451 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -8613,7 +6973,7 @@ Bun v1.1.21 (Linux x64 baseline)
         record: <ref *28> ƒ record(length: 0) {},
         recordEnd: <ref *29> ƒ recordEnd(length: 0) {},
         screenshot: <ref *30> ƒ screenshot(length: 0) {},
-        write: <ref *31> ƒ write(length: 1) {},
+        write: <ref *31> ƒ (length: 1) {},
         Console: <ref *32> ƒ Console(length: 1) {
             prototype: {
                 log: <ref *34> ƒ log(length: 0) {},
@@ -8768,7 +7128,7 @@ Bun v1.1.21 (Linux x64 baseline)
         record: <ref *28> ƒ record(length: 0) {},
         recordEnd: <ref *29> ƒ recordEnd(length: 0) {},
         screenshot: <ref *30> ƒ screenshot(length: 0) {},
-        write: <ref *31> ƒ write(length: 1) {},
+        write: <ref *31> ƒ (length: 1) {},
         Console: <ref *32> ƒ Console(length: 1) {
             prototype: {
                 log: <ref *34> ƒ log(length: 0) {},
@@ -8852,7 +7212,7 @@ Bun v1.1.21 (Linux x64 baseline)
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1721607245183-1/module.mjs: "/tmp/fs-fixture-1721607245183-1/module.mjs"
+            /tmp/fs-fixture-1722212053902-1/module.mjs: "/tmp/fs-fixture-1722212053902-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -9009,13 +7369,13 @@ Bun v1.1.21 (Linux x64 baseline)
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1721607245183-1/module.mjs: {
+            /tmp/fs-fixture-1722212053902-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1721607245183-1/inspect.mjs: {
+            /tmp/fs-fixture-1722212053902-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -10118,14 +8478,14 @@ Bun v1.1.21 (Linux x64 baseline)
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1721607246186.7327,
+            timeOrigin: 1722212054884.0088,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: undefined,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1721607246186.7327,
-                nodeStart: 1721607246186.7327,
-                environment: 1721607246186.7327,
-                bootstrapComplete: 1721607246186.7327,
+                v8Start: 1722212054884.0088,
+                nodeStart: 1722212054884.0088,
+                environment: 1722212054884.0088,
+                bootstrapComplete: 1722212054884.0088,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -10411,7 +8771,7 @@ Bun v1.1.21 (Linux x64 baseline)
     arch: "x64",
     argv: <ref *27> [
         "/opt/hostedtoolcache/node/20.15.1/x64/bin/node",
-        "/tmp/fs-fixture-1721607245183-1/process.mjs"
+        "/tmp/fs-fixture-1722212053902-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *28> ƒ deprecated(length: 0) {},
@@ -11292,7 +9652,7 @@ Bun v1.1.21 (Linux x64 baseline)
         setgid: <ref *105> ƒ (length: 1) {},
         setuid: <ref *106> ƒ (length: 1) {},
         env: <ref *107>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_be3d6263-ae92-42d5-9783-afe71f26259f",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_7ab7dabb-5249-4ebc-9d46-88aff40e02ef",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -11301,7 +9661,7 @@ Bun v1.1.21 (Linux x64 baseline)
             npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.15.1 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_be3d6263-ae92-42d5-9783-afe71f26259f",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_7ab7dabb-5249-4ebc-9d46-88aff40e02ef",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/20.15.1/x64/bin/node",
@@ -11323,14 +9683,14 @@ Bun v1.1.21 (Linux x64 baseline)
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "602",
+            SYSTEMD_EXEC_PID: "598",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.12/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20240714.1.0",
+            ImageVersion: "20240721.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -11339,7 +9699,7 @@ Bun v1.1.21 (Linux x64 baseline)
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:19593",
+            JOURNAL_STREAM: "8:17244",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -11347,11 +9707,11 @@ Bun v1.1.21 (Linux x64 baseline)
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "10032420727",
+            GITHUB_RUN_ID: "10135855913",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "1875e8f11503b0600a6f1401e79566627d6e0338",
+            GITHUB_WORKFLOW_SHA: "7311a86752cc661d089ed32dcb963c034e89b2d6",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -11362,12 +9722,12 @@ Bun v1.1.21 (Linux x64 baseline)
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_6e41bef9-3dbc-4bd1-88ce-e63f72f4051b",
-            INVOCATION_ID: "b293b571636c40858db0b0aa3c755679",
+            RUNNER_TRACKING_ID: "github_9b4d35c1-a443-4fee-93d0-d9eda4f9d754",
+            INVOCATION_ID: "94e649af251a4e2fbe9d1eb5bcd2ac44",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/20.15.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "85",
+            GITHUB_RUN_NUMBER: "86",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11377,7 +9737,7 @@ Bun v1.1.21 (Linux x64 baseline)
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             npm_package_devDependencies_eslint: "^8.37.0",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 15",
+            RUNNER_NAME: "GitHub Actions 1",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
@@ -11402,7 +9762,7 @@ Bun v1.1.21 (Linux x64 baseline)
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "1875e8f11503b0600a6f1401e79566627d6e0338",
+            GITHUB_SHA: "7311a86752cc661d089ed32dcb963c034e89b2d6",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -11410,7 +9770,7 @@ Bun v1.1.21 (Linux x64 baseline)
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_be3d6263-ae92-42d5-9783-afe71f26259f",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_7ab7dabb-5249-4ebc-9d46-88aff40e02ef",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -11425,7 +9785,7 @@ Bun v1.1.21 (Linux x64 baseline)
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_be3d6263-ae92-42d5-9783-afe71f26259f",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_7ab7dabb-5249-4ebc-9d46-88aff40e02ef",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -11438,15 +9798,15 @@ Bun v1.1.21 (Linux x64 baseline)
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.181+6/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_be3d6263-ae92-42d5-9783-afe71f26259f",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_7ab7dabb-5249-4ebc-9d46-88aff40e02ef",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *27],
         execArgv: <ref *108> [],
-        pid: 2760,
-        ppid: 1871,
+        pid: 2816,
+        ppid: 1945,
         execPath: "/opt/hostedtoolcache/node/20.15.1/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -11490,9 +9850,9 @@ Bun v1.1.21 (Linux x64 baseline)
     moduleLoadList: [Circular: *47],
     nextTick: [Circular: *70],
     openStdin: [Circular: *60],
-    pid: 2760,
+    pid: 2816,
     platform: "linux",
-    ppid: 1871,
+    ppid: 1945,
     reallyExit: [Circular: *51],
     release: [Circular: *46],
     report: [Circular: *109],
@@ -11538,7 +9898,7 @@ Bun v1.1.21 (Linux x64 baseline)
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1721607245183-1/process.mjs"
+        "/tmp/fs-fixture-1722212053902-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -11576,7 +9936,7 @@ Bun v1.1.21 (Linux x64 baseline)
         dlopen: <ref *28> ƒ dlopen(length: 1) {},
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_be3d6263-ae92-42d5-9783-afe71f26259f",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_7ab7dabb-5249-4ebc-9d46-88aff40e02ef",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -11585,7 +9945,7 @@ Bun v1.1.21 (Linux x64 baseline)
             [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.15.1 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_be3d6263-ae92-42d5-9783-afe71f26259f",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_7ab7dabb-5249-4ebc-9d46-88aff40e02ef",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_package_devDependencies_execa: "^7.1.1",
             [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.15.1/x64/bin/node",
@@ -11607,14 +9967,14 @@ Bun v1.1.21 (Linux x64 baseline)
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "602",
+            [get/set] SYSTEMD_EXEC_PID: "598",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.12/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20240714.1.0",
+            [get/set] ImageVersion: "20240721.1.0",
             [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
@@ -11623,7 +9983,7 @@ Bun v1.1.21 (Linux x64 baseline)
             [get/set] RUNNER_USER: "runner",
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] JOURNAL_STREAM: "8:19593",
+            [get/set] JOURNAL_STREAM: "8:17244",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
@@ -11631,11 +9991,11 @@ Bun v1.1.21 (Linux x64 baseline)
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "10032420727",
+            [get/set] GITHUB_RUN_ID: "10135855913",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "1875e8f11503b0600a6f1401e79566627d6e0338",
+            [get/set] GITHUB_WORKFLOW_SHA: "7311a86752cc661d089ed32dcb963c034e89b2d6",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu22",
             [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -11646,12 +10006,12 @@ Bun v1.1.21 (Linux x64 baseline)
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_6e41bef9-3dbc-4bd1-88ce-e63f72f4051b",
-            [get/set] INVOCATION_ID: "b293b571636c40858db0b0aa3c755679",
+            [get/set] RUNNER_TRACKING_ID: "github_9b4d35c1-a443-4fee-93d0-d9eda4f9d754",
+            [get/set] INVOCATION_ID: "94e649af251a4e2fbe9d1eb5bcd2ac44",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             [get/set] NODE: "/opt/hostedtoolcache/node/20.15.1/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "85",
+            [get/set] GITHUB_RUN_NUMBER: "86",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11661,7 +10021,7 @@ Bun v1.1.21 (Linux x64 baseline)
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] npm_package_devDependencies_eslint: "^8.37.0",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 15",
+            [get/set] RUNNER_NAME: "GitHub Actions 1",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
@@ -11686,7 +10046,7 @@ Bun v1.1.21 (Linux x64 baseline)
             [get/set] GITHUB_JOB: "build",
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] GITHUB_SHA: "1875e8f11503b0600a6f1401e79566627d6e0338",
+            [get/set] GITHUB_SHA: "7311a86752cc661d089ed32dcb963c034e89b2d6",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] GITHUB_REF: "refs/heads/master",
             [get/set] GITHUB_ACTOR: "privatenumber",
@@ -11694,7 +10054,7 @@ Bun v1.1.21 (Linux x64 baseline)
             [get/set] npm_package_license: "MIT",
             [get/set] LEIN_HOME: "/usr/local/lib/lein",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_be3d6263-ae92-42d5-9783-afe71f26259f",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_7ab7dabb-5249-4ebc-9d46-88aff40e02ef",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -11709,7 +10069,7 @@ Bun v1.1.21 (Linux x64 baseline)
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_be3d6263-ae92-42d5-9783-afe71f26259f",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_7ab7dabb-5249-4ebc-9d46-88aff40e02ef",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -11722,14 +10082,14 @@ Bun v1.1.21 (Linux x64 baseline)
             [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.181+6/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/25.2.9519653",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_be3d6263-ae92-42d5-9783-afe71f26259f",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_7ab7dabb-5249-4ebc-9d46-88aff40e02ef",
             [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         execArgv: <ref *31> [],
         execPath: "/home/runner/.bun/bin/bun",
         exit: <ref *32> ƒ exit(length: 1) {},
-        [get/set] exitCode: 0,
+        [get/set] exitCode: undefined,
         features: <ref *33> {
             inspector: true,
             debug: false,
@@ -11755,14 +10115,14 @@ Bun v1.1.21 (Linux x64 baseline)
         moduleLoadList: <ref *41> [],
         nextTick: <ref *42> ƒ nextTick(length: 2) {},
         openStdin: <ref *43> ƒ openStdin(length: 0) {},
-        pid: 2768,
+        pid: 2828,
         platform: "linux",
-        ppid: 1871,
+        ppid: 1945,
         reallyExit: <ref *44> ƒ reallyExit(length: 1) {},
         release: <ref *45> {
             name: "node",
             lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.21/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.22/bun-linux-x64-baseline.zip",
             headersUrl: "",
             libUrl: ""
         },
@@ -11772,7 +10132,7 @@ Bun v1.1.21 (Linux x64 baseline)
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "822b725beca5efb63b34bfe6e0b2567ccf68d5d1",
+        revision: "4199fd4515f9f611bdc8b354231fd2aab2f90605",
         setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *50> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
@@ -11974,20 +10334,21 @@ Bun v1.1.21 (Linux x64 baseline)
         version: "v22.3.0",
         versions: <ref *96> {
             node: "22.3.0",
-            bun: "1.1.21",
+            bun: "1.1.22",
             boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
             openssl: "1.1.0",
             libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
             mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "822b725beca5efb63b34bfe6e0b2567ccf68d5d1",
-            webkit: "dac47fbd5444cbd4e3568267099ae276c547e897",
+            uwebsockets: "4199fd4515f9f611bdc8b354231fd2aab2f90605",
+            webkit: "f9a0fda2d2b2fd001a00bfcf8e7917a56b382516",
             zig: "0.13.0",
             zlib: "886098f3f339617b4243b286f5ed364b9989e245",
             tinycc: "ab631362d839333660a265d3084d8ff060b96753",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
-            usockets: "822b725beca5efb63b34bfe6e0b2567ccf68d5d1",
+            libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+            usockets: "4199fd4515f9f611bdc8b354231fd2aab2f90605",
             lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
             zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
             v8: "12.4.254.14-node.12",
@@ -12025,7 +10386,7 @@ Bun v1.1.21 (Linux x64 baseline)
     execArgv: [Circular: *31],
     execPath: "/home/runner/.bun/bin/bun",
     exit: [Circular: *32],
-    exitCode: 0,
+    exitCode: undefined,
     features: [Circular: *33],
     getActiveResourcesInfo: [Circular: *34],
     getMaxListeners: ƒ getMaxListeners(length: 0) {},
@@ -12048,9 +10409,9 @@ Bun v1.1.21 (Linux x64 baseline)
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *43],
-    pid: 2768,
+    pid: 2828,
     platform: "linux",
-    ppid: 1871,
+    ppid: 1945,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -12059,7 +10420,7 @@ Bun v1.1.21 (Linux x64 baseline)
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *46],
-    revision: "822b725beca5efb63b34bfe6e0b2567ccf68d5d1",
+    revision: "4199fd4515f9f611bdc8b354231fd2aab2f90605",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *49],
@@ -12426,15 +10787,15 @@ NotImplementedError: node:repl is not yet implemented in Bun.
  code: "ERR_NOT_IMPLEMENTED"
 
       at get (node:repl:76:8)
-      at inspect (/tmp/fs-fixture-1721607245183-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1721607245183-1/inspect.mjs:99:7
-      at map (:1:11)
-      at inspect (/tmp/fs-fixture-1721607245183-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1721607245183-1/inspect.mjs:99:7
-      at map (:1:11)
-      at inspect (/tmp/fs-fixture-1721607245183-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1722212053902-1/inspect.mjs:99:7
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1722212053902-1/inspect.mjs:80:43)
 
-Bun v1.1.21 (Linux x64 baseline)
+Bun v1.1.22-canary.1+4199fd451 (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -12760,14 +11121,14 @@ Bun v1.1.21 (Linux x64 baseline)
 
 ```js
 {
-    arrayBuffer: <ref *2> ƒ readableStreamToArrayBuffer(length: 1) {},
-    blob: <ref *3> ƒ readableStreamToBlob(length: 1) {},
+    arrayBuffer: <ref *2> ƒ (length: 1) {},
+    blob: <ref *3> ƒ (length: 1) {},
     buffer: <ref *4> ƒ buffer(length: 1) {},
-    bytes: <ref *5> ƒ readableStreamToBytes(length: 1) {},
+    bytes: <ref *5> ƒ (length: 1) {},
     default: {
         arrayBuffer: [Circular: *2],
         bytes: [Circular: *5],
-        text: <ref *7> ƒ readableStreamToText(length: 1) {},
+        text: <ref *7> ƒ (length: 1) {},
         json: <ref *8> ƒ json(length: 1) {},
         buffer: [Circular: *4],
         blob: [Circular: *3]
@@ -13262,7 +11623,7 @@ Bun v1.1.21 (Linux x64 baseline)
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2966) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:3050) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -13548,11 +11909,13 @@ Bun v1.1.21 (Linux x64 baseline)
         TextDecoder: [Circular: *2],
         TextEncoder: [Circular: *3],
         parseArgs: <ref *119> ƒ parseArgs(length: 1) {},
-        styleText: <ref *120> ƒ styleText(length: 2) {}
+        styleText: <ref *120> ƒ styleText(length: 2) {},
+        getSystemErrorName: <ref *121> ƒ getSystemErrorName(length: 1) {}
     },
     deprecate: [Circular: *11],
     format: [Circular: *8],
     formatWithOptions: [Circular: *9],
+    getSystemErrorName: [Circular: *121],
     inherits: [Circular: *115],
     inspect: [Circular: *12],
     isArray: [Circular: *102],
@@ -14878,11 +13241,13 @@ Bun v1.1.21 (Linux x64 baseline)
         TextDecoder: [Circular: *2],
         TextEncoder: [Circular: *3],
         parseArgs: <ref *119> ƒ parseArgs(length: 1) {},
-        styleText: <ref *120> ƒ styleText(length: 2) {}
+        styleText: <ref *120> ƒ styleText(length: 2) {},
+        getSystemErrorName: <ref *121> ƒ getSystemErrorName(length: 1) {}
     },
     deprecate: [Circular: *11],
     format: [Circular: *8],
     formatWithOptions: [Circular: *9],
+    getSystemErrorName: [Circular: *121],
     inherits: [Circular: *115],
     inspect: [Circular: *12],
     isArray: [Circular: *102],
@@ -15298,7 +13663,7 @@ Bun v1.1.21 (Linux x64 baseline)
         WASI: [Circular: *2]
     }
 }
-(node:3209) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3285) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
