@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Sep 2, 2024 with Bun 1.1.27 Node.js v20.17.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Sep 9, 2024 with Bun 1.1.28 Node.js v20.17.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -161,18 +161,18 @@ _Last updated on <!-- lastUpdated:start -->Sep 2, 2024 with Bun 1.1.27 Node.js v
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:629:17
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:95:28
+      at node:http:673:17
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
 
-Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
+Bun v1.1.28-canary.4+a0939ca4f (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -201,18 +201,18 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:629:17
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:95:28
+      at node:http:673:17
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
 
-Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
+Bun v1.1.28-canary.4+a0939ca4f (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -318,18 +318,18 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:629:17
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:95:28
+      at node:http:673:17
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
 
-Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
+Bun v1.1.28-canary.4+a0939ca4f (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -362,18 +362,18 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:629:17
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:95:28
+      at node:http:673:17
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
 
-Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
+Bun v1.1.28-canary.4+a0939ca4f (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -416,18 +416,18 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:629:17
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:95:28
+      at node:http:673:17
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
 
-Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
+Bun v1.1.28-canary.4+a0939ca4f (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -536,18 +536,18 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:629:17
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:95:28
+      at node:http:673:17
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
 
-Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
+Bun v1.1.28-canary.4+a0939ca4f (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -1492,7 +1492,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2136) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2074) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -2976,7 +2976,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 
 ```js
 {
-    ChildProcess: <ref *2> ƒ ChildProcess(length: 0) {},
+    ChildProcess: <ref *2> class ChildProcess extends EventEmitter {},
     default: {
         ChildProcess: [Circular: *2],
         spawn: <ref *4> ƒ spawn(length: 3) {},
@@ -4435,26 +4435,26 @@ EventEmitter2 {
 </td><td valign="top">
 
 ```js
-3282 |       }, d;
-3283 |     }
-3284 |   }
-3285 | }), require_duplex = __commonJS({
-3286 |   "node_modules/readable-stream/lib/internal/streams/duplex.js"(exports, module) {
-3287 |     function Duplex(options) {
-                          ^
+3357 |       return duplexify(body, "body");
+3358 |     };
+3359 |   }
+3360 | }), Duplex = require_duplex(), require_transform = __commonJS({
+3361 |   "node_modules/readable-stream/lib/internal/streams/transform.js"(exports, module) {
+3362 |     function Transform(options) {
+                             ^
 RangeError: Maximum call stack size exceeded.
-      at Duplex (node:stream:3287:20)
-      at Transform (node:stream:3345:23)
-      at get (node:crypto:1323:12)
-      at EventEmitter2 (node:events:165:684)
-      at Stream (node:stream:1544:20)
-      at Readable (node:stream:1796:22)
-      at Duplex (node:stream:3287:20)
-      at Transform (node:stream:3345:23)
-      at get (node:crypto:1323:12)
-      at EventEmitter2 (node:events:165:684)
+      at Transform (node:stream:3362:23)
+      at get (node:crypto:1358:12)
+      at EventEmitter2 (node:events:185:685)
+      at Stream (node:stream:1559:20)
+      at Readable (node:stream:1811:22)
+      at Duplex (node:stream:3304:20)
+      at Transform (node:stream:3362:23)
+      at get (node:crypto:1358:12)
+      at EventEmitter2 (node:events:185:685)
+      at Stream (node:stream:1559:20)
 
-Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
+Bun v1.1.28-canary.4+a0939ca4f (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -6307,18 +6307,18 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:629:17
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:95:28
+      at node:http:673:17
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
 
-Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
+Bun v1.1.28-canary.4+a0939ca4f (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -6934,26 +6934,65 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 </td><td valign="top">
 
 ```js
-90 | 					}
-91 | 					if ('set' in descriptor) {
-92 | 						getSet.push('set');
-93 | 					}
-94 | 
-95 | 					const propertyValue = value[key];
-                                ^
-TypeError: undefined is not an object
-      at node:http:629:17
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:95:28
-      at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
-      at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
-      at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-
-Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
+{
+    Agent: <ref *2> ƒ Agent(length: 1) {
+        prototype: EventEmitter2 {
+            createConnection: undefined
+        }
+    },
+    Server: <ref *4> ƒ Server(length: 2) {
+        prototype: Server {
+            ref: ƒ ref(length: 0) {},
+            unref: ƒ unref(length: 0) {},
+            closeAllConnections: ƒ closeAllConnections(length: 0) {},
+            closeIdleConnections: ƒ closeIdleConnections(length: 0) {},
+            close: ƒ close(length: 1) {},
+            address: ƒ address(length: 0) {},
+            listen: ƒ listen(length: 0) {},
+            setTimeout: ƒ setTimeout(length: 2) {},
+            constructor: [Circular: *4],
+            Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
+            Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
+        }
+    },
+    createServer: <ref *16> ƒ createServer(length: 2) {},
+    default: {
+        Agent: [Circular: *2],
+        globalAgent: <ref *18> EventEmitter2 {
+            _events: [Object: null prototype] {},
+            _eventsCount: 0,
+            _maxListeners: undefined,
+            defaultPort: 443,
+            protocol: "https:",
+            options: {
+                keepAlive: true,
+                scheduling: "lifo",
+                timeout: 5000,
+                path: null,
+                noDelay: true
+            },
+            requests: [Object: null prototype] {},
+            sockets: [Object: null prototype] {},
+            freeSockets: [Object: null prototype] {},
+            keepAliveMsecs: 1000,
+            keepAlive: true,
+            maxSockets: Infinity,
+            maxFreeSockets: 256,
+            scheduling: "lifo",
+            maxTotalSockets: undefined,
+            totalSocketCount: 0,
+            maxCachedSessions: 100,
+            Symbol(kCapture): false
+        },
+        Server: [Circular: *4],
+        createServer: [Circular: *16],
+        get: <ref *24> ƒ get(length: 3) {},
+        request: <ref *25> ƒ request(length: 0) {}
+    },
+    get: [Circular: *24],
+    globalAgent: [Circular: *18],
+    request: [Circular: *25]
+}
 ```
 
 </td></tr></table>
@@ -7277,7 +7316,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1725236100683-1/module.mjs: "/tmp/fs-fixture-1725236100683-1/module.mjs"
+            /tmp/fs-fixture-1725840947699-1/module.mjs: "/tmp/fs-fixture-1725840947699-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -7434,13 +7473,13 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1725236100683-1/module.mjs: {
+            /tmp/fs-fixture-1725840947699-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1725236100683-1/inspect.mjs: {
+            /tmp/fs-fixture-1725840947699-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -8554,14 +8593,14 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1725236101689.2065,
+            timeOrigin: 1725840948701.6826,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: undefined,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1725236101689.2065,
-                nodeStart: 1725236101689.2065,
-                environment: 1725236101689.2065,
-                bootstrapComplete: 1725236101689.2065,
+                v8Start: 1725840948701.6826,
+                nodeStart: 1725840948701.6826,
+                environment: 1725840948701.6826,
+                bootstrapComplete: 1725840948701.6826,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -8853,7 +8892,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
     arch: "x64",
     argv: <ref *27> [
         "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
-        "/tmp/fs-fixture-1725236100683-1/process.mjs"
+        "/tmp/fs-fixture-1725840947699-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *28> ƒ deprecated(length: 0) {},
@@ -9738,7 +9777,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
         setgid: <ref *106> ƒ (length: 1) {},
         setuid: <ref *107> ƒ (length: 1) {},
         env: <ref *108>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_0c693af3-f6b1-4390-a3fc-1d2740bd0930",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_9a7f5b19-bb61-431b-944b-a23e0a35c3a8",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -9747,7 +9786,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.17.0 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_0c693af3-f6b1-4390-a3fc-1d2740bd0930",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_9a7f5b19-bb61-431b-944b-a23e0a35c3a8",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
@@ -9769,14 +9808,14 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "599",
+            SYSTEMD_EXEC_PID: "591",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20240825.1.0",
+            ImageVersion: "20240901.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -9785,7 +9824,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:19696",
+            JOURNAL_STREAM: "8:19820",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9793,14 +9832,15 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "10658519579",
+            GITHUB_RUN_ID: "10764239033",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "aaf98fe2abe755bc719e335b0cfef538b752e42f",
+            GITHUB_WORKFLOW_SHA: "73b9a0e2c17cae7f4cca287285aa71b657bc149a",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
+            STATS_BLT: "true",
             GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
             PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             GITHUB_ACTION_REPOSITORY: "",
@@ -9808,12 +9848,12 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_5187e0f7-398e-4c7f-9f6d-ac7280aa0908",
-            INVOCATION_ID: "94c1ad43390d4f12a414bea921b757c2",
+            RUNNER_TRACKING_ID: "github_22f51c37-10af-4440-9f8b-a9638e36ad99",
+            INVOCATION_ID: "91cdc55d7e8c434a911a78b93377949f",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "91",
+            GITHUB_RUN_NUMBER: "92",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9823,7 +9863,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             npm_package_devDependencies_eslint: "^8.37.0",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 5",
+            RUNNER_NAME: "GitHub Actions 15",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
@@ -9848,7 +9888,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "aaf98fe2abe755bc719e335b0cfef538b752e42f",
+            GITHUB_SHA: "73b9a0e2c17cae7f4cca287285aa71b657bc149a",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
@@ -9856,7 +9896,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_0c693af3-f6b1-4390-a3fc-1d2740bd0930",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_9a7f5b19-bb61-431b-944b-a23e0a35c3a8",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9871,7 +9911,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_0c693af3-f6b1-4390-a3fc-1d2740bd0930",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_9a7f5b19-bb61-431b-944b-a23e0a35c3a8",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -9884,15 +9924,15 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.181+6/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.0.12077973",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_0c693af3-f6b1-4390-a3fc-1d2740bd0930",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_9a7f5b19-bb61-431b-944b-a23e0a35c3a8",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *27],
         execArgv: <ref *109> [],
-        pid: 2842,
-        ppid: 1944,
+        pid: 2768,
+        ppid: 1873,
         execPath: "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -9937,9 +9977,9 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
     moduleLoadList: [Circular: *47],
     nextTick: [Circular: *70],
     openStdin: [Circular: *60],
-    pid: 2842,
+    pid: 2768,
     platform: "linux",
-    ppid: 1944,
+    ppid: 1873,
     reallyExit: [Circular: *51],
     release: [Circular: *46],
     report: [Circular: *110],
@@ -9985,7 +10025,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1725236100683-1/process.mjs"
+        "/tmp/fs-fixture-1725840947699-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -10026,7 +10066,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
         dlopen: <ref *28> ƒ dlopen(length: 1) {},
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_0c693af3-f6b1-4390-a3fc-1d2740bd0930",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_9a7f5b19-bb61-431b-944b-a23e0a35c3a8",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -10035,7 +10075,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.17.0 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_0c693af3-f6b1-4390-a3fc-1d2740bd0930",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_9a7f5b19-bb61-431b-944b-a23e0a35c3a8",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_package_devDependencies_execa: "^7.1.1",
             [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
@@ -10057,14 +10097,14 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "599",
+            [get/set] SYSTEMD_EXEC_PID: "591",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20240825.1.0",
+            [get/set] ImageVersion: "20240901.1.0",
             [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
@@ -10073,7 +10113,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             [get/set] RUNNER_USER: "runner",
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] JOURNAL_STREAM: "8:19696",
+            [get/set] JOURNAL_STREAM: "8:19820",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
@@ -10081,14 +10121,15 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "10658519579",
+            [get/set] GITHUB_RUN_ID: "10764239033",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "aaf98fe2abe755bc719e335b0cfef538b752e42f",
+            [get/set] GITHUB_WORKFLOW_SHA: "73b9a0e2c17cae7f4cca287285aa71b657bc149a",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu22",
             [get/set] npm_package_scripts_start: "tsx index.ts",
+            [get/set] STATS_BLT: "true",
             [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
             [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
             [get/set] GITHUB_ACTION_REPOSITORY: "",
@@ -10096,12 +10137,12 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_5187e0f7-398e-4c7f-9f6d-ac7280aa0908",
-            [get/set] INVOCATION_ID: "94c1ad43390d4f12a414bea921b757c2",
+            [get/set] RUNNER_TRACKING_ID: "github_22f51c37-10af-4440-9f8b-a9638e36ad99",
+            [get/set] INVOCATION_ID: "91cdc55d7e8c434a911a78b93377949f",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             [get/set] NODE: "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "91",
+            [get/set] GITHUB_RUN_NUMBER: "92",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10111,7 +10152,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] npm_package_devDependencies_eslint: "^8.37.0",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 5",
+            [get/set] RUNNER_NAME: "GitHub Actions 15",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
@@ -10136,7 +10177,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             [get/set] GITHUB_JOB: "build",
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] GITHUB_SHA: "aaf98fe2abe755bc719e335b0cfef538b752e42f",
+            [get/set] GITHUB_SHA: "73b9a0e2c17cae7f4cca287285aa71b657bc149a",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] GITHUB_REF: "refs/heads/master",
             [get/set] GITHUB_ACTOR: "privatenumber",
@@ -10144,7 +10185,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             [get/set] npm_package_license: "MIT",
             [get/set] LEIN_HOME: "/usr/local/lib/lein",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_0c693af3-f6b1-4390-a3fc-1d2740bd0930",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_9a7f5b19-bb61-431b-944b-a23e0a35c3a8",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -10159,7 +10200,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_0c693af3-f6b1-4390-a3fc-1d2740bd0930",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_9a7f5b19-bb61-431b-944b-a23e0a35c3a8",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -10172,7 +10213,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-0.5.181+6/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.0.12077973",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_0c693af3-f6b1-4390-a3fc-1d2740bd0930",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_9a7f5b19-bb61-431b-944b-a23e0a35c3a8",
             [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
@@ -10205,14 +10246,14 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
         moduleLoadList: <ref *41> [],
         nextTick: <ref *42> ƒ nextTick(length: 2) {},
         openStdin: <ref *43> ƒ openStdin(length: 0) {},
-        pid: 2845,
+        pid: 2771,
         platform: "linux",
-        ppid: 1944,
+        ppid: 1873,
         reallyExit: <ref *44> ƒ reallyExit(length: 1) {},
         release: <ref *45> {
             name: "node",
             lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.27/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.28/bun-linux-x64-baseline.zip",
             headersUrl: "",
             libUrl: ""
         },
@@ -10222,7 +10263,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "f123814d8752dbc19c33776c567224c2890fd432",
+        revision: "a0939ca4f12e8ce4c34e8e810c164e45dcdb380c",
         setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *50> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
@@ -10424,13 +10465,13 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
         version: "v22.6.0",
         versions: <ref *96> {
             node: "22.6.0",
-            bun: "1.1.27",
+            bun: "1.1.28",
             boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
             openssl: "1.1.0",
             libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
             mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "f123814d8752dbc19c33776c567224c2890fd432",
+            uwebsockets: "a0939ca4f12e8ce4c34e8e810c164e45dcdb380c",
             webkit: "13bb88da0b791154dca60910f301dcd70c321f72",
             zig: "0.13.0",
             zlib: "886098f3f339617b4243b286f5ed364b9989e245",
@@ -10438,7 +10479,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
             libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-            usockets: "f123814d8752dbc19c33776c567224c2890fd432",
+            usockets: "a0939ca4f12e8ce4c34e8e810c164e45dcdb380c",
             lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
             zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
             v8: "12.4.254.14-node.12",
@@ -10499,9 +10540,9 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *43],
-    pid: 2845,
+    pid: 2771,
     platform: "linux",
-    ppid: 1944,
+    ppid: 1873,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -10510,7 +10551,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *46],
-    revision: "f123814d8752dbc19c33776c567224c2890fd432",
+    revision: "a0939ca4f12e8ce4c34e8e810c164e45dcdb380c",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *49],
@@ -10877,15 +10918,15 @@ NotImplementedError: node:repl is not yet implemented in Bun.
  code: "ERR_NOT_IMPLEMENTED"
 
       at get (node:repl:76:8)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1725236100683-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1725840947699-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1725236100683-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1725840947699-1/inspect.mjs:80:43)
 
-Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
+Bun v1.1.28-canary.4+a0939ca4f (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -11715,7 +11756,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:3065) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:3003) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -13635,8 +13676,8 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 
 ```js
 {
-    DefaultDeserializer: <ref *2> ƒ ::bunternal::(length: 0) {},
-    DefaultSerializer: <ref *3> ƒ ::bunternal::(length: 0) {},
+    DefaultDeserializer: <ref *2> class DefaultDeserializer extends Deserializer {},
+    DefaultSerializer: <ref *3> class DefaultSerializer extends Serializer {},
     Deserializer: <ref *4> ƒ ::bunternal::(length: 0) {},
     Serializer: <ref *5> ƒ ::bunternal::(length: 0) {},
     cachedDataVersionTag: <ref *6> ƒ ::bunternal::(length: 0) {},
@@ -13768,7 +13809,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
         WASI: [Circular: *2]
     }
 }
-(node:3282) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3214) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -14090,130 +14131,37 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
 ```js
 {
     BrotliCompress: <ref *2> ƒ BrotliCompress(length: 1) {
-        prototype: Transform {
-            _transform: ƒ _transform(length: 3) {},
-            _flush: ƒ _flush(length: 1) {}
-        }
+        prototype: Transform {}
     },
-    BrotliDecompress: <ref *6> ƒ BrotliDecompress(length: 1) {
-        prototype: Transform {
-            _transform: ƒ (length: 3) {},
-            _flush: ƒ (length: 1) {}
-        }
+    BrotliDecompress: <ref *4> ƒ BrotliDecompress(length: 1) {
+        prototype: Transform {}
     },
-    Deflate: <ref *10> ƒ Deflate(length: 1) {
-        prototype: Transform {},
-        super_: <ref *12> ƒ Zlib(length: 2) {
-            prototype: Transform {
-                params: ƒ (length: 3) {},
-                reset: ƒ (length: 0) {},
-                _flush: ƒ (length: 1) {},
-                flush: ƒ (length: 2) {},
-                close: ƒ (length: 1) {},
-                _transform: ƒ (length: 3) {},
-                _processChunk: ƒ (length: 3) {}
-            },
-            super_: <ref *21> ƒ Transform(length: 1) {
-                prototype: Transform {
-                    constructor: [Circular: *21],
-                    _final: ƒ final(length: 1) {},
-                    _transform: ƒ (length: 3) {},
-                    _write: ƒ (length: 3) {},
-                    _read: ƒ (length: 0) {}
-                }
-            }
-        }
+    Deflate: <ref *6> ƒ Deflate(length: 1) {
+        prototype: Transform {}
     },
-    DeflateRaw: <ref *27> ƒ DeflateRaw(length: 1) {
-        prototype: Transform {},
-        super_: [Circular: *12]
+    DeflateRaw: <ref *8> ƒ DeflateRaw(length: 1) {
+        prototype: Transform {}
     },
-    Gunzip: <ref *29> ƒ Gunzip(length: 1) {
-        prototype: Transform {},
-        super_: [Circular: *12]
+    Gunzip: <ref *10> ƒ Gunzip(length: 1) {
+        prototype: Transform {}
     },
-    Gzip: <ref *31> ƒ Gzip(length: 1) {
-        prototype: Transform {},
-        super_: [Circular: *12]
+    Gzip: <ref *12> ƒ Gzip(length: 1) {
+        prototype: Transform {}
     },
-    Inflate: <ref *33> ƒ Inflate(length: 1) {
-        prototype: Transform {},
-        super_: [Circular: *12]
+    Inflate: <ref *14> ƒ Inflate(length: 1) {
+        prototype: Transform {}
     },
-    InflateRaw: <ref *35> ƒ InflateRaw(length: 1) {
-        prototype: Transform {},
-        super_: [Circular: *12]
+    InflateRaw: <ref *16> ƒ InflateRaw(length: 1) {
+        prototype: Transform {}
     },
-    Unzip: <ref *37> ƒ Unzip(length: 1) {
-        prototype: Transform {},
-        super_: [Circular: *12]
+    Unzip: <ref *18> ƒ Unzip(length: 1) {
+        prototype: Transform {}
     },
-    Z_ASCII: 1,
-    Z_BEST_COMPRESSION: 9,
-    Z_BEST_SPEED: 1,
-    Z_BINARY: 0,
-    Z_BLOCK: 5,
-    Z_BUF_ERROR: -5,
-    Z_DATA_ERROR: -3,
-    Z_DEFAULT_CHUNK: 16384,
-    Z_DEFAULT_COMPRESSION: -1,
-    Z_DEFAULT_LEVEL: -1,
-    Z_DEFAULT_MEMLEVEL: 8,
-    Z_DEFAULT_STRATEGY: 0,
-    Z_DEFAULT_WINDOWBITS: 15,
-    Z_DEFLATED: 8,
-    Z_ERRNO: -1,
-    Z_FILTERED: 1,
-    Z_FINISH: 4,
-    Z_FIXED: 4,
-    Z_FULL_FLUSH: 3,
-    Z_HUFFMAN_ONLY: 2,
-    Z_MAX_CHUNK: Infinity,
-    Z_MAX_LEVEL: 9,
-    Z_MAX_MEMLEVEL: 9,
-    Z_MAX_WINDOWBITS: 15,
-    Z_MEM_ERROR: -4,
-    Z_MIN_CHUNK: 64,
-    Z_MIN_LEVEL: -1,
-    Z_MIN_MEMLEVEL: 1,
-    Z_MIN_WINDOWBITS: 8,
-    Z_NEED_DICT: 2,
-    Z_NO_COMPRESSION: 0,
-    Z_NO_FLUSH: 0,
-    Z_OK: 0,
-    Z_PARTIAL_FLUSH: 1,
-    Z_RLE: 3,
-    Z_STREAM_END: 1,
-    Z_STREAM_ERROR: -2,
-    Z_SYNC_FLUSH: 2,
-    Z_TEXT: 1,
-    Z_TREES: 6,
-    Z_UNKNOWN: 2,
-    Z_VERSION_ERROR: -6,
-    Zlib: <ref *39> ƒ Zlib(length: 1) {
-        prototype: {
-            close: ƒ (length: 0) {},
-            write: ƒ (length: 7) {},
-            writeSync: ƒ (length: 7) {},
-            _write: ƒ (length: 8) {},
-            _afterSync: ƒ (length: 0) {},
-            _process: ƒ (length: 0) {},
-            _checkError: ƒ (length: 0) {},
-            _after: ƒ (length: 0) {},
-            _error: ƒ (length: 1) {},
-            init: ƒ (length: 5) {},
-            params: ƒ (length: 0) {},
-            reset: ƒ (length: 0) {},
-            _init: ƒ (length: 5) {},
-            _setDictionary: ƒ (length: 0) {},
-            _reset: ƒ (length: 0) {}
-        }
-    },
-    brotliCompress: <ref *56> ƒ brotliCompress(length: 3) {},
-    brotliCompressSync: <ref *57> ƒ brotliCompressSync(length: 2) {},
-    brotliDecompress: <ref *58> ƒ brotliDecompress(length: 3) {},
-    brotliDecompressSync: <ref *59> ƒ brotliDecompressSync(length: 2) {},
-    codes: <ref *60> {
+    brotliCompress: <ref *20> ƒ brotliCompress(length: 3) {},
+    brotliCompressSync: <ref *21> ƒ brotliCompressSync(length: 2) {},
+    brotliDecompress: <ref *22> ƒ brotliDecompress(length: 3) {},
+    brotliDecompressSync: <ref *23> ƒ brotliDecompressSync(length: 2) {},
+    codes: <ref *24> {
         0: "Z_OK",
         1: "Z_STREAM_END",
         2: "Z_NEED_DICT",
@@ -14233,7 +14181,7 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
         -5: "Z_BUF_ERROR",
         -6: "Z_VERSION_ERROR"
     },
-    constants: <ref *61> {
+    constants: <ref *25> {
         Z_NO_FLUSH: 0,
         Z_PARTIAL_FLUSH: 1,
         Z_SYNC_FLUSH: 2,
@@ -14347,112 +14295,71 @@ Bun v1.1.27-canary.61+f123814d8 (Linux x64 baseline)
         BROTLI_DECODER_ERROR_ALLOC_BLOCK_TYPE_TREES: -30,
         BROTLI_DECODER_ERROR_UNREACHABLE: -31
     },
-    createBrotliCompress: <ref *62> ƒ createBrotliCompress(length: 1) {},
-    createBrotliDecompress: <ref *63> ƒ createBrotliDecompress(length: 1) {},
-    createDeflate: <ref *64> ƒ (length: 1) {},
-    createDeflateRaw: <ref *65> ƒ (length: 1) {},
-    createGunzip: <ref *66> ƒ (length: 1) {},
-    createGzip: <ref *67> ƒ (length: 1) {},
-    createInflate: <ref *68> ƒ (length: 1) {},
-    createInflateRaw: <ref *69> ƒ (length: 1) {},
-    createUnzip: <ref *70> ƒ (length: 1) {},
+    crc32: <ref *26> ƒ crc32(length: 1) {},
+    createBrotliCompress: <ref *27> ƒ createBrotliCompress(length: 1) {},
+    createBrotliDecompress: <ref *28> ƒ createBrotliDecompress(length: 1) {},
+    createDeflate: <ref *29> ƒ createDeflate(length: 1) {},
+    createDeflateRaw: <ref *30> ƒ createDeflateRaw(length: 1) {},
+    createGunzip: <ref *31> ƒ createGunzip(length: 1) {},
+    createGzip: <ref *32> ƒ createGzip(length: 1) {},
+    createInflate: <ref *33> ƒ createInflate(length: 1) {},
+    createInflateRaw: <ref *34> ƒ createInflateRaw(length: 1) {},
+    createUnzip: <ref *35> ƒ createUnzip(length: 1) {},
     default: {
-        Z_NO_FLUSH: 0,
-        Z_PARTIAL_FLUSH: 1,
-        Z_SYNC_FLUSH: 2,
-        Z_FULL_FLUSH: 3,
-        Z_FINISH: 4,
-        Z_BLOCK: 5,
-        Z_TREES: 6,
-        Z_OK: 0,
-        Z_STREAM_END: 1,
-        Z_NEED_DICT: 2,
-        Z_ERRNO: -1,
-        Z_STREAM_ERROR: -2,
-        Z_DATA_ERROR: -3,
-        Z_MEM_ERROR: -4,
-        Z_BUF_ERROR: -5,
-        Z_VERSION_ERROR: -6,
-        Z_NO_COMPRESSION: 0,
-        Z_BEST_SPEED: 1,
-        Z_BEST_COMPRESSION: 9,
-        Z_DEFAULT_COMPRESSION: -1,
-        Z_FILTERED: 1,
-        Z_HUFFMAN_ONLY: 2,
-        Z_RLE: 3,
-        Z_FIXED: 4,
-        Z_DEFAULT_STRATEGY: 0,
-        Z_BINARY: 0,
-        Z_TEXT: 1,
-        Z_ASCII: 1,
-        Z_UNKNOWN: 2,
-        Z_DEFLATED: 8,
-        Z_MIN_WINDOWBITS: 8,
-        Z_MAX_WINDOWBITS: 15,
-        Z_DEFAULT_WINDOWBITS: 15,
-        Z_MIN_CHUNK: 64,
-        Z_MAX_CHUNK: Infinity,
-        Z_DEFAULT_CHUNK: 16384,
-        Z_MIN_MEMLEVEL: 1,
-        Z_MAX_MEMLEVEL: 9,
-        Z_DEFAULT_MEMLEVEL: 8,
-        Z_MIN_LEVEL: -1,
-        Z_MAX_LEVEL: 9,
-        Z_DEFAULT_LEVEL: -1,
-        Zlib: [Circular: *39],
-        codes: [Circular: *60],
-        constants: [Circular: *61],
-        Deflate: [Circular: *10],
-        Inflate: [Circular: *33],
-        Gzip: [Circular: *31],
-        Gunzip: [Circular: *29],
-        DeflateRaw: [Circular: *27],
-        InflateRaw: [Circular: *35],
-        Unzip: [Circular: *37],
-        createDeflate: [Circular: *64],
-        createInflate: [Circular: *68],
-        createDeflateRaw: [Circular: *65],
-        createInflateRaw: [Circular: *69],
-        createGzip: [Circular: *67],
-        createGunzip: [Circular: *66],
-        createUnzip: [Circular: *70],
-        deflate: <ref *72> ƒ (length: 3) {},
-        deflateSync: <ref *73> ƒ (length: 2) {},
-        gzip: <ref *74> ƒ (length: 3) {},
-        gzipSync: <ref *75> ƒ (length: 2) {},
-        deflateRaw: <ref *76> ƒ (length: 3) {},
-        deflateRawSync: <ref *77> ƒ (length: 2) {},
-        unzip: <ref *78> ƒ (length: 3) {},
-        unzipSync: <ref *79> ƒ (length: 2) {},
-        inflate: <ref *80> ƒ (length: 3) {},
-        inflateSync: <ref *81> ƒ (length: 2) {},
-        gunzip: <ref *82> ƒ (length: 3) {},
-        gunzipSync: <ref *83> ƒ (length: 2) {},
-        inflateRaw: <ref *84> ƒ (length: 3) {},
-        inflateRawSync: <ref *85> ƒ (length: 2) {},
-        brotliCompress: [Circular: *56],
-        brotliDecompress: [Circular: *58],
-        brotliCompressSync: [Circular: *57],
-        brotliDecompressSync: [Circular: *59],
-        createBrotliCompress: [Circular: *62],
+        Deflate: [Circular: *6],
+        Inflate: [Circular: *14],
+        Gzip: [Circular: *12],
+        Gunzip: [Circular: *10],
+        DeflateRaw: [Circular: *8],
+        InflateRaw: [Circular: *16],
+        Unzip: [Circular: *18],
         BrotliCompress: [Circular: *2],
-        createBrotliDecompress: [Circular: *63],
-        BrotliDecompress: [Circular: *6]
+        BrotliDecompress: [Circular: *4],
+        crc32: [Circular: *26],
+        deflate: <ref *37> ƒ deflate(length: 3) {},
+        deflateSync: <ref *38> ƒ deflateSync(length: 2) {},
+        gzip: <ref *39> ƒ gzip(length: 3) {},
+        gzipSync: <ref *40> ƒ gzipSync(length: 2) {},
+        deflateRaw: <ref *41> ƒ deflateRaw(length: 3) {},
+        deflateRawSync: <ref *42> ƒ deflateRawSync(length: 2) {},
+        unzip: <ref *43> ƒ unzip(length: 3) {},
+        unzipSync: <ref *44> ƒ unzipSync(length: 2) {},
+        inflate: <ref *45> ƒ inflate(length: 3) {},
+        inflateSync: <ref *46> ƒ inflateSync(length: 2) {},
+        gunzip: <ref *47> ƒ gunzip(length: 3) {},
+        gunzipSync: <ref *48> ƒ gunzipSync(length: 2) {},
+        inflateRaw: <ref *49> ƒ inflateRaw(length: 3) {},
+        inflateRawSync: <ref *50> ƒ inflateRawSync(length: 2) {},
+        brotliCompress: [Circular: *20],
+        brotliCompressSync: [Circular: *21],
+        brotliDecompress: [Circular: *22],
+        brotliDecompressSync: [Circular: *23],
+        createDeflate: [Circular: *29],
+        createInflate: [Circular: *33],
+        createDeflateRaw: [Circular: *30],
+        createInflateRaw: [Circular: *34],
+        createGzip: [Circular: *32],
+        createGunzip: [Circular: *31],
+        createUnzip: [Circular: *35],
+        createBrotliCompress: [Circular: *27],
+        createBrotliDecompress: [Circular: *28],
+        constants: [Circular: *25],
+        codes: [Circular: *24]
     },
-    deflate: [Circular: *72],
-    deflateRaw: [Circular: *76],
-    deflateRawSync: [Circular: *77],
-    deflateSync: [Circular: *73],
-    gunzip: [Circular: *82],
-    gunzipSync: [Circular: *83],
-    gzip: [Circular: *74],
-    gzipSync: [Circular: *75],
-    inflate: [Circular: *80],
-    inflateRaw: [Circular: *84],
-    inflateRawSync: [Circular: *85],
-    inflateSync: [Circular: *81],
-    unzip: [Circular: *78],
-    unzipSync: [Circular: *79]
+    deflate: [Circular: *37],
+    deflateRaw: [Circular: *41],
+    deflateRawSync: [Circular: *42],
+    deflateSync: [Circular: *38],
+    gunzip: [Circular: *47],
+    gunzipSync: [Circular: *48],
+    gzip: [Circular: *39],
+    gzipSync: [Circular: *40],
+    inflate: [Circular: *45],
+    inflateRaw: [Circular: *49],
+    inflateRawSync: [Circular: *50],
+    inflateSync: [Circular: *46],
+    unzip: [Circular: *43],
+    unzipSync: [Circular: *44]
 }
 ```
 
