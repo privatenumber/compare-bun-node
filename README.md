@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Oct 7, 2024 with Bun 1.1.30 Node.js v20.17.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Oct 14, 2024 with Bun 1.1.31 Node.js v20.17.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -161,18 +161,18 @@ _Last updated on <!-- lastUpdated:start -->Oct 7, 2024 with Bun 1.1.30 Node.js v
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:668:17
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:95:28
+      at node:http:526:17
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
 
-Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
+Bun v1.1.31-canary.37+47ff4748b (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -201,18 +201,18 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:668:17
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:95:28
+      at node:http:526:17
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
 
-Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
+Bun v1.1.31-canary.37+47ff4748b (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -318,18 +318,18 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:668:17
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:95:28
+      at node:http:526:17
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
 
-Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
+Bun v1.1.31-canary.37+47ff4748b (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -362,18 +362,18 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:668:17
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:95:28
+      at node:http:526:17
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
 
-Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
+Bun v1.1.31-canary.37+47ff4748b (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -416,18 +416,18 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:668:17
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:95:28
+      at node:http:526:17
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
 
-Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
+Bun v1.1.31-canary.37+47ff4748b (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -536,18 +536,18 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:668:17
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:95:28
+      at node:http:526:17
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
 
-Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
+Bun v1.1.31-canary.37+47ff4748b (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -596,31 +596,31 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once2(length: 2) {},
+            once: ƒ once(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount2(length: 1) {},
+            listenerCount: ƒ listenerCount(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once(length: 3) {},
+        once: <ref *28> ƒ once2(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -628,7 +628,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -824,31 +824,31 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once2(length: 2) {},
+            once: ƒ once(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount2(length: 1) {},
+            listenerCount: ƒ listenerCount(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once(length: 3) {},
+        once: <ref *28> ƒ once2(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -856,7 +856,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -1065,31 +1065,31 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once2(length: 2) {},
+            once: ƒ once(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount2(length: 1) {},
+            listenerCount: ƒ listenerCount(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once(length: 3) {},
+        once: <ref *28> ƒ once2(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -1097,7 +1097,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -1293,31 +1293,31 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once2(length: 2) {},
+            once: ƒ once(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount2(length: 1) {},
+            listenerCount: ƒ listenerCount(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once(length: 3) {},
+        once: <ref *28> ƒ once2(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -1325,7 +1325,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -1492,7 +1492,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2083) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2318) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -1523,31 +1523,31 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once2(length: 2) {},
+            once: ƒ once(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount2(length: 1) {},
+            listenerCount: ƒ listenerCount(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once(length: 3) {},
+        once: <ref *28> ƒ once2(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -1555,7 +1555,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -1758,31 +1758,31 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once2(length: 2) {},
+            once: ƒ once(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount2(length: 1) {},
+            listenerCount: ƒ listenerCount(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once(length: 3) {},
+        once: <ref *28> ƒ once2(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -1790,7 +1790,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -1976,7 +1976,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_MAX_VERSION: "TLSv1.3",
     DEFAULT_MIN_VERSION: "TLSv1.2",
-    SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
+    SecureContext: <ref *2> ƒ SecureContext2(length: 1) {},
     Server: <ref *3> ƒ Server(length: 2) {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {
         prototype: TLSSocket2 {}
@@ -2195,7 +2195,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_MAX_VERSION: "TLSv1.3",
     DEFAULT_MIN_VERSION: "TLSv1.2",
-    SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
+    SecureContext: <ref *2> ƒ SecureContext2(length: 1) {},
     Server: <ref *3> ƒ Server(length: 2) {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {
         prototype: TLSSocket2 {}
@@ -3077,31 +3077,31 @@ EventEmitter2 {
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: <ref *14> ƒ setMaxListeners2(length: 1) {},
+            setMaxListeners: <ref *14> ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *12],
-            getMaxListeners: <ref *15> ƒ getMaxListeners2(length: 0) {},
+            getMaxListeners: <ref *15> ƒ getMaxListeners(length: 0) {},
             emit: <ref *16> ƒ emit(length: 1) {},
             addListener: [Circular: *11],
             on: [Circular: *11],
             prependListener: <ref *17> ƒ prependListener(length: 2) {},
-            once: <ref *18> ƒ once2(length: 2) {},
+            once: <ref *18> ƒ once(length: 2) {},
             prependOnceListener: <ref *19> ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *20> ƒ removeListener(length: 2) {},
             off: [Circular: *20],
             removeAllListeners: <ref *21> ƒ removeAllListeners(length: 1) {},
             listeners: <ref *22> ƒ listeners(length: 1) {},
             rawListeners: <ref *23> ƒ rawListeners(length: 1) {},
-            listenerCount: <ref *24> ƒ listenerCount2(length: 1) {},
+            listenerCount: <ref *24> ƒ listenerCount(length: 1) {},
             eventNames: <ref *25> ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: ƒ once(length: 3) {},
+        once: ƒ once2(length: 3) {},
         on: ƒ on(length: 2) {},
         getEventListeners: ƒ getEventListeners(length: 2) {},
-        getMaxListeners: ƒ getMaxListeners(length: 1) {},
-        setMaxListeners: ƒ setMaxListeners(length: 0) {},
+        getMaxListeners: ƒ getMaxListeners2(length: 1) {},
+        setMaxListeners: ƒ setMaxListeners2(length: 0) {},
         EventEmitter: [Circular: *12],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -3109,7 +3109,7 @@ EventEmitter2 {
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: ƒ addAbortListener(length: 2) {},
         init: [Circular: *12],
-        listenerCount: ƒ listenerCount(length: 2) {}
+        listenerCount: ƒ listenerCount2(length: 2) {}
     },
     default: EventEmitter2 {
         _events: [Circular: *10],
@@ -4443,26 +4443,26 @@ EventEmitter2 {
 </td><td valign="top">
 
 ```js
-3169 |       }, d;
-3170 |     }
-3171 |   }
-3172 | }), require_duplex = __commonJS({
-3173 |   "node_modules/readable-stream/lib/internal/streams/duplex.js"(exports, module) {
-3174 |     function Duplex(options) {
+1262 |       errorOrDestroy
+1263 |     };
+1264 |   }
+1265 | }), require_legacy = __commonJS({
+1266 |   "node_modules/readable-stream/lib/internal/streams/legacy.js"(exports, module) {
+1267 |     function Stream(options) {
                           ^
 RangeError: Maximum call stack size exceeded.
-      at Duplex (node:stream:3174:20)
-      at Transform (node:stream:3232:23)
-      at get (node:crypto:1364:12)
-      at EventEmitter2 (node:events:167:825)
-      at Stream (node:stream:1465:20)
-      at Readable (node:stream:1681:22)
-      at Duplex (node:stream:3174:20)
-      at Transform (node:stream:3232:23)
-      at get (node:crypto:1364:12)
-      at EventEmitter2 (node:events:167:825)
+      at Stream (node:stream:1267:20)
+      at Readable (node:stream:1508:22)
+      at Duplex (node:stream:3001:20)
+      at Transform (node:stream:3059:23)
+      at get (node:crypto:1236:12)
+      at EventEmitter2 (node:events:2:825)
+      at Stream (node:stream:1267:20)
+      at Readable (node:stream:1508:22)
+      at Duplex (node:stream:3001:20)
+      at Transform (node:stream:3059:23)
 
-Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
+Bun v1.1.31-canary.37+47ff4748b (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -4757,8 +4757,8 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     NOTIMP: "DNS_ENOTIMP",
     NOTINITIALIZED: "DNS_ENOTINITIALIZED",
     REFUSED: "DNS_EREFUSED",
-    Resolver: <ref *2> ƒ Resolver(length: 1) {
-        prototype: Resolver2 {}
+    Resolver: <ref *2> ƒ Resolver2(length: 1) {
+        prototype: Resolver {}
     },
     SERVFAIL: "DNS_ESERVFAIL",
     TIMEOUT: "DNS_ETIMEOUT",
@@ -5120,31 +5120,31 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *2],
-            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *7> ƒ addListener(length: 2) {},
             on: [Circular: *7],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once2(length: 2) {},
+            once: ƒ once(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *11> ƒ removeListener(length: 2) {},
             off: [Circular: *11],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount2(length: 1) {},
+            listenerCount: ƒ listenerCount(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *17> ƒ once(length: 3) {},
+        once: <ref *17> ƒ once2(length: 3) {},
         on: <ref *18> ƒ on(length: 2) {},
         getEventListeners: <ref *19> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *20> ƒ getMaxListeners(length: 1) {},
-        setMaxListeners: <ref *21> ƒ setMaxListeners(length: 0) {},
+        getMaxListeners: <ref *20> ƒ getMaxListeners2(length: 1) {},
+        setMaxListeners: <ref *21> ƒ setMaxListeners2(length: 0) {},
         EventEmitter: [Circular: *2],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -5152,7 +5152,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *23> ƒ addAbortListener(length: 2) {},
         init: [Circular: *2],
-        listenerCount: <ref *24> ƒ listenerCount(length: 2) {}
+        listenerCount: <ref *24> ƒ listenerCount2(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *22],
     addAbortListener: [Circular: *23],
@@ -6319,18 +6319,18 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
 95 | 					const propertyValue = value[key];
                                 ^
 TypeError: undefined is not an object
-      at node:http:668:17
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:95:28
+      at node:http:526:17
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:95:28
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
 
-Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
+Bun v1.1.31-canary.37+47ff4748b (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -7328,7 +7328,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1728260172444-1/module.mjs: "/tmp/fs-fixture-1728260172444-1/module.mjs"
+            /tmp/fs-fixture-1728864970867-1/module.mjs: "/tmp/fs-fixture-1728864970867-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -7468,13 +7468,13 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1728260172444-1/module.mjs: {
+            /tmp/fs-fixture-1728864970867-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1728260172444-1/inspect.mjs: {
+            /tmp/fs-fixture-1728864970867-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -8645,14 +8645,14 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1728260173564.3147,
+            timeOrigin: 1728864971853.7236,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: undefined,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1728260173564.3147,
-                nodeStart: 1728260173564.3147,
-                environment: 1728260173564.3147,
-                bootstrapComplete: 1728260173564.3147,
+                v8Start: 1728864971853.7236,
+                nodeStart: 1728864971853.7236,
+                environment: 1728864971853.7236,
+                bootstrapComplete: 1728864971853.7236,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -8944,7 +8944,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     arch: "x64",
     argv: <ref *27> [
         "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
-        "/tmp/fs-fixture-1728260172444-1/process.mjs"
+        "/tmp/fs-fixture-1728864970867-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *28> ƒ deprecated(length: 0) {},
@@ -9829,7 +9829,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         setgid: <ref *106> ƒ (length: 1) {},
         setuid: <ref *107> ƒ (length: 1) {},
         env: <ref *108>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_56f43eb2-59d6-452d-8118-96774654cff9",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_9c3fa9e2-7634-457d-8b32-ee851641139b",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -9838,7 +9838,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.17.0 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_56f43eb2-59d6-452d-8118-96774654cff9",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_9c3fa9e2-7634-457d-8b32-ee851641139b",
             PIPX_HOME: "/opt/pipx",
             npm_package_devDependencies_execa: "^7.1.1",
             npm_node_execpath: "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
@@ -9851,46 +9851,46 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             PIPX_BIN_DIR: "/opt/pipx_bin",
             GITHUB_REPOSITORY_OWNER: "privatenumber",
             npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
-            GRADLE_HOME: "/usr/share/gradle-8.10.1",
+            GRADLE_HOME: "/usr/share/gradle-8.10.2",
             ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
             JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
             STATS_RDCL: "true",
             GITHUB_RETENTION_DAYS: "90",
             GITHUB_REPOSITORY_OWNER_ID: "1075694",
-            POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
+            POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "605",
+            SYSTEMD_EXEC_PID: "824",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-            GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
-            NVM_DIR: "/home/runner/.nvm",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20240922.1.0",
+            ImageVersion: "20241006.1.0",
             npm_package_eslintConfig_ignorePatterns_0: "README.md",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
-            GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.7/x64",
+            GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.8/x64",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "8:6356",
+            GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.2/x64",
+            JOURNAL_STREAM: "8:5881",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
+            MEMORY_PRESSURE_WATCH: "/sys/fs/cgroup/system.slice/runner-provisioner.service/memory.pressure",
             npm_package_scripts_lint: "eslint --cache .",
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "11206358023",
+            GITHUB_RUN_ID: "11318859190",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "064ad504002601379b3787e9f2bf7ad24f69d0b5",
+            GITHUB_WORKFLOW_SHA: "68ad4e9001cce34086360b7bd5ef3ee1be1fa59d",
             GITHUB_BASE_REF: "",
-            ImageOS: "ubuntu22",
+            ImageOS: "ubuntu24",
             npm_package_scripts_start: "tsx index.ts",
             GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
             PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
@@ -9899,12 +9899,12 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_3b9024c6-009e-46c7-9446-66c834953d55",
-            INVOCATION_ID: "87f0404838ad4ca192b4005351e62a1f",
+            RUNNER_TRACKING_ID: "github_347e590f-c00c-4a23-bd88-c1f23f5e02bd",
+            INVOCATION_ID: "dd162adf98da4a0fab1a6c4f39c0e10d",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "96",
+            GITHUB_RUN_NUMBER: "97",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9914,7 +9914,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             npm_package_devDependencies_eslint: "^8.37.0",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 18",
+            RUNNER_NAME: "GitHub Actions 2",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
@@ -9939,16 +9939,15 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             GITHUB_JOB: "build",
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            GITHUB_SHA: "064ad504002601379b3787e9f2bf7ad24f69d0b5",
+            GITHUB_SHA: "68ad4e9001cce34086360b7bd5ef3ee1be1fa59d",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
-            LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_56f43eb2-59d6-452d-8118-96774654cff9",
-            JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_9c3fa9e2-7634-457d-8b32-ee851641139b",
+            JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
             RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
@@ -9960,9 +9959,8 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             ANDROID_HOME: "/usr/local/lib/android/sdk",
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
-            LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_56f43eb2-59d6-452d-8118-96774654cff9",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_9c3fa9e2-7634-457d-8b32-ee851641139b",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -9971,19 +9969,20 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             SGX_AESM_ADDR: "1",
             CHROME_BIN: "/usr/bin/google-chrome",
             SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
+            MEMORY_PRESSURE_WRITE: "c29tZSAyMDAwMDAgMjAwMDAwMAA=",
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
             npm_package_lint_staged____ts_js_: "eslint --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_56f43eb2-59d6-452d-8118-96774654cff9",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_9c3fa9e2-7634-457d-8b32-ee851641139b",
             npm_package_eslintConfig_extends: "@pvtnbr",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *27],
         execArgv: <ref *109> [],
-        pid: 2773,
-        ppid: 1899,
+        pid: 2995,
+        ppid: 2131,
         execPath: "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -10028,9 +10027,9 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     moduleLoadList: [Circular: *47],
     nextTick: [Circular: *70],
     openStdin: [Circular: *60],
-    pid: 2773,
+    pid: 2995,
     platform: "linux",
-    ppid: 1899,
+    ppid: 2131,
     reallyExit: [Circular: *51],
     release: [Circular: *46],
     report: [Circular: *110],
@@ -10077,7 +10076,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1728260172444-1/process.mjs"
+        "/tmp/fs-fixture-1728864970867-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -10119,7 +10118,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         dlopen: <ref *28> ƒ dlopen(length: 1) {},
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_56f43eb2-59d6-452d-8118-96774654cff9",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_9c3fa9e2-7634-457d-8b32-ee851641139b",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -10128,7 +10127,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             [get/set] npm_config_user_agent: "pnpm/7.33.7 npm/? node/v20.17.0 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_56f43eb2-59d6-452d-8118-96774654cff9",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_9c3fa9e2-7634-457d-8b32-ee851641139b",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_package_devDependencies_execa: "^7.1.1",
             [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
@@ -10141,46 +10140,46 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
             [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
             [get/set] npm_package_devDependencies__pvtnbr_eslint_config: "^0.33.0",
-            [get/set] GRADLE_HOME: "/usr/share/gradle-8.10.1",
+            [get/set] GRADLE_HOME: "/usr/share/gradle-8.10.2",
             [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
             [get/set] JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
             [get/set] STATS_RDCL: "true",
             [get/set] GITHUB_RETENTION_DAYS: "90",
             [get/set] GITHUB_REPOSITORY_OWNER_ID: "1075694",
-            [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
+            [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "605",
+            [get/set] SYSTEMD_EXEC_PID: "824",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-            [get/set] GOROOT_1_20_X64: "/opt/hostedtoolcache/go/1.20.14/x64",
-            [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20240922.1.0",
+            [get/set] ImageVersion: "20241006.1.0",
             [get/set] npm_package_eslintConfig_ignorePatterns_0: "README.md",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
-            [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.7/x64",
+            [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.8/x64",
             [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
             [get/set] RUNNER_USER: "runner",
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] JOURNAL_STREAM: "8:6356",
+            [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.2/x64",
+            [get/set] JOURNAL_STREAM: "8:5881",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
+            [get/set] MEMORY_PRESSURE_WATCH: "/sys/fs/cgroup/system.slice/runner-provisioner.service/memory.pressure",
             [get/set] npm_package_scripts_lint: "eslint --cache .",
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "11206358023",
+            [get/set] GITHUB_RUN_ID: "11318859190",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "064ad504002601379b3787e9f2bf7ad24f69d0b5",
+            [get/set] GITHUB_WORKFLOW_SHA: "68ad4e9001cce34086360b7bd5ef3ee1be1fa59d",
             [get/set] GITHUB_BASE_REF: "",
-            [get/set] ImageOS: "ubuntu22",
+            [get/set] ImageOS: "ubuntu24",
             [get/set] npm_package_scripts_start: "tsx index.ts",
             [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
             [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
@@ -10189,12 +10188,12 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_3b9024c6-009e-46c7-9446-66c834953d55",
-            [get/set] INVOCATION_ID: "87f0404838ad4ca192b4005351e62a1f",
+            [get/set] RUNNER_TRACKING_ID: "github_347e590f-c00c-4a23-bd88-c1f23f5e02bd",
+            [get/set] INVOCATION_ID: "dd162adf98da4a0fab1a6c4f39c0e10d",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             [get/set] NODE: "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "96",
+            [get/set] GITHUB_RUN_NUMBER: "97",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10204,7 +10203,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] npm_package_devDependencies_eslint: "^8.37.0",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 18",
+            [get/set] RUNNER_NAME: "GitHub Actions 2",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
@@ -10229,16 +10228,15 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             [get/set] GITHUB_JOB: "build",
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] GITHUB_SHA: "064ad504002601379b3787e9f2bf7ad24f69d0b5",
+            [get/set] GITHUB_SHA: "68ad4e9001cce34086360b7bd5ef3ee1be1fa59d",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] GITHUB_REF: "refs/heads/master",
             [get/set] GITHUB_ACTOR: "privatenumber",
             [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             [get/set] npm_package_license: "MIT",
-            [get/set] LEIN_HOME: "/usr/local/lib/lein",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_56f43eb2-59d6-452d-8118-96774654cff9",
-            [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_9c3fa9e2-7634-457d-8b32-ee851641139b",
+            [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
             [get/set] RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
@@ -10250,9 +10248,8 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             [get/set] ANDROID_HOME: "/usr/local/lib/android/sdk",
             [get/set] GITHUB_SERVER_URL: "https://github.com",
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
-            [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_56f43eb2-59d6-452d-8118-96774654cff9",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_9c3fa9e2-7634-457d-8b32-ee851641139b",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -10261,11 +10258,12 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             [get/set] SGX_AESM_ADDR: "1",
             [get/set] CHROME_BIN: "/usr/bin/google-chrome",
             [get/set] SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
+            [get/set] MEMORY_PRESSURE_WRITE: "c29tZSAyMDAwMDAgMjAwMDAwMAA=",
             [get/set] PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "eslint --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_56f43eb2-59d6-452d-8118-96774654cff9",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_9c3fa9e2-7634-457d-8b32-ee851641139b",
             [get/set] npm_package_eslintConfig_extends: "@pvtnbr",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
@@ -10298,14 +10296,14 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         moduleLoadList: <ref *41> [],
         nextTick: <ref *42> ƒ nextTick(length: 2) {},
         openStdin: <ref *43> ƒ openStdin(length: 0) {},
-        pid: 2783,
+        pid: 3009,
         platform: "linux",
-        ppid: 1899,
+        ppid: 2131,
         reallyExit: <ref *44> ƒ reallyExit(length: 1) {},
         release: <ref *45> {
             name: "node",
             lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.30/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.31/bun-linux-x64-baseline.zip",
             headersUrl: "",
             libUrl: ""
         },
@@ -10315,7 +10313,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "65a68030936e10642e59cea894d49933e90b4d0f",
+        revision: "47ff4748bd03aef9583b8d7bf9d503a8f3db599d",
         setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *50> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
@@ -10517,21 +10515,21 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         version: "v22.6.0",
         versions: <ref *96> {
             node: "22.6.0",
-            bun: "1.1.30",
+            bun: "1.1.31",
             boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
             openssl: "1.1.0",
             libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
             mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "65a68030936e10642e59cea894d49933e90b4d0f",
-            webkit: "0a0a3838e5fab36b579df26620237bb62ed6d950",
+            uwebsockets: "47ff4748bd03aef9583b8d7bf9d503a8f3db599d",
+            webkit: "01ac6a63449713c5b7cf38fb03628283041f63be",
             zig: "0.13.0",
             zlib: "886098f3f339617b4243b286f5ed364b9989e245",
             tinycc: "ab631362d839333660a265d3084d8ff060b96753",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
             libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-            usockets: "65a68030936e10642e59cea894d49933e90b4d0f",
+            usockets: "47ff4748bd03aef9583b8d7bf9d503a8f3db599d",
             lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
             zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
             v8: "12.4.254.14-node.12",
@@ -10592,9 +10590,9 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *43],
-    pid: 2783,
+    pid: 3009,
     platform: "linux",
-    ppid: 1899,
+    ppid: 2131,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -10603,7 +10601,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *46],
-    revision: "65a68030936e10642e59cea894d49933e90b4d0f",
+    revision: "47ff4748bd03aef9583b8d7bf9d503a8f3db599d",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *49],
@@ -10758,8 +10756,8 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
 
 ```js
 {
-    Interface: <ref *2> ƒ Interface(length: 4) {
-        prototype: Interface2 {
+    Interface: <ref *2> ƒ Interface2(length: 4) {
+        prototype: Interface {
             question: ƒ question(length: 3) {
                 Symbol(nodejs.util.promisify.custom): ƒ question2(length: 2) {}
             },
@@ -10970,15 +10968,15 @@ NotImplementedError: node:repl is not yet implemented in Bun.
  code: "ERR_NOT_IMPLEMENTED"
 
       at get (node:repl:76:8)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:72:15)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:72:15)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
-      at /tmp/fs-fixture-1728260172444-1/inspect.mjs:99:7
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
+      at /tmp/fs-fixture-1728864970867-1/inspect.mjs:99:7
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1728260172444-1/inspect.mjs:80:43)
+      at inspect (/tmp/fs-fixture-1728864970867-1/inspect.mjs:80:43)
 
-Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
+Bun v1.1.31-canary.37+47ff4748b (Linux x64 baseline)
 ```
 
 </td></tr></table>
@@ -11090,31 +11088,31 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once2(length: 2) {},
+            once: ƒ once(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount2(length: 1) {},
+            listenerCount: ƒ listenerCount(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once(length: 3) {},
+        once: <ref *28> ƒ once2(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -11122,7 +11120,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -11808,7 +11806,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:2991) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:3227) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -12463,7 +12461,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
     DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_MAX_VERSION: "TLSv1.3",
     DEFAULT_MIN_VERSION: "TLSv1.2",
-    SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
+    SecureContext: <ref *2> ƒ SecureContext2(length: 1) {},
     Server: <ref *3> ƒ Server(length: 2) {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {
         prototype: TLSSocket2 {}
@@ -13886,7 +13884,7 @@ Bun v1.1.30-canary.137+65a680309 (Linux x64 baseline)
         WASI: [Circular: *2]
     }
 }
-(node:3206) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3445) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
