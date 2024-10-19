@@ -2,7 +2,7 @@ name: Compare Bun and Node.js
 
 on:
   schedule:
-    - cron: '0 0 * * MON' # Every Monday
+    - cron: "0 0 * * MON" # Every Monday
   push:
     branches: [master]
   workflow_dispatch:
@@ -18,31 +18,31 @@ jobs:
 
     steps:
 
-    - name: Checkout
-      uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Install Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: 'lts/*'
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
 
-    - name: Install Bun
-      uses: oven-sh/setup-bun@v2
-      with:
-        bun-version: canary
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: canary
 
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v4
-      with:
-        run_install: true
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: true
 
-    - name: Benchmark
-      run: pnpm start
+      - name: Benchmark
+        run: pnpm start
 
-    - name: Commit readme.md
-      run: |
-        git config user.name 'Hiroki Osame'
-        git config user.email 'hiroki.osame@gmail.com'
-        git add README.md
-        git commit -nm "chore: updated readme"
-        git push
+      - name: Commit readme.md
+        run: |
+          git config user.name 'Hiroki Osame'
+          git config user.email 'hiroki.osame@gmail.com'
+          git add README.md
+          git commit -nm "chore: updated readme"
+          git push

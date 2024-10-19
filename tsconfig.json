@@ -2,8 +2,8 @@
 	"compilerOptions": {
 		"lib": ["ESNext"],
 		"moduleResolution": "node",
-		"isolatedModules": true,
-		"esModuleInterop": true,
 		"strict": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
 	},
 }

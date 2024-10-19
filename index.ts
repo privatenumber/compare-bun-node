@@ -11,23 +11,24 @@ const table = (
 	disableHeaders?: boolean,
 ) => {
 	let html = '<table>';
-	
+
 	if (!disableHeaders) {
-		const headers = rows.shift()!.map((cell) => `<th>${cell}</th>`).join('');
+		const headers = rows.shift()!.map(cell => `<th>${cell}</th>`).join('');
 		html += `<tr>${headers}</tr>`;
 	}
 
 	html += rows.map(
-		(columns) => `<tr>${columns.map((cell) => `<td valign="top">\n\n${cell}\n\n</td>`).join('')
-	}</tr>`).join('\n')
-	
-	return html + '</table>';	
+		columns => `<tr>${columns.map(cell => `<td valign="top">\n\n${cell}\n\n</td>`).join('')
+	}</tr>`,
+	).join('\n');
+
+	return `${html}</table>`;
 };
 
 (async () => {
 	const files = builtinModules.map(
-		(m) => [
-			m.replace(/\//g, '_') + '.mjs',
+		m => [
+			`${m.replaceAll('/', '_')}.mjs`,
 			`
 			import * as all from '${m}';
 			import { inspect } from './inspect.mjs';
@@ -51,7 +52,7 @@ const table = (
 
 			const [
 				{ all: nodeOutput },
-				{ all: bunOutput }
+				{ all: bunOutput },
 			] = await Promise.all([
 				execa('node', [file], spawnOptions),
 				execa('bun', [file], spawnOptions),
@@ -93,7 +94,11 @@ const table = (
 		execa('bun', ['--version']),
 	]);
 
-	const date = (new Date()).toLocaleDateString('en-US', { year:"numeric", month:"short", day: 'numeric' });
+	const date = (new Date()).toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+	});
 
 	readme = commentMark(readme, {
 		lastUpdated: `${date} with Bun ${bunVersion} Node.js ${nodeVersion}`,

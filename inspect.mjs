@@ -70,10 +70,10 @@ export const inspect = (
 					serialized += `${functionType} ${value.name || ''}(length: ${value.length}) `;
 				}
 			} else if (value.constructor !== Object) {
-				if (!value.constructor) {
-					serialized += '[Object: null prototype] ';
-				} else {
+				if (value.constructor) {
 					serialized += `${value.constructor.name} `;
+				} else {
+					serialized += '[Object: null prototype] ';
 				}
 			}
 
