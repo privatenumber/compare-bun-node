@@ -19,93 +19,17 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js v20.18.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js v20.16.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
-<table><tr><td valign="top">
-
-- [`_http_agent`](#_http_agent)
-- [`_http_client`](#_http_client)
-- [`_http_common`](#_http_common)
-- [`_http_incoming`](#_http_incoming)
-- [`_http_outgoing`](#_http_outgoing)
-- [`_http_server`](#_http_server)
-- [`_stream_duplex`](#_stream_duplex)
-- [`_stream_passthrough`](#_stream_passthrough)
-- [`_stream_readable`](#_stream_readable)
-- [`_stream_transform`](#_stream_transform)
-- [`_stream_wrap`](#_stream_wrap)
-- [`_stream_writable`](#_stream_writable)
-- [`_tls_common`](#_tls_common)
-- [`_tls_wrap`](#_tls_wrap)
-- [`assert`](#assert)
-- [`assert/strict`](#assertstrict)
-- [`async_hooks`](#async_hooks)
-- [`buffer`](#buffer)
-- [`child_process`](#child_process)
-- [`cluster`](#cluster)
-- [`console`](#console)
-- [`constants`](#constants)
-
-</td><td valign="top">
-
-- [`crypto`](#crypto)
-- [`dgram`](#dgram)
-- [`diagnostics_channel`](#diagnostics_channel)
-- [`dns`](#dns)
-- [`dns/promises`](#dnspromises)
-- [`domain`](#domain)
-- [`events`](#events)
-- [`fs`](#fs)
-- [`fs/promises`](#fspromises)
-- [`http`](#http)
-- [`http2`](#http2)
-- [`https`](#https)
-- [`inspector`](#inspector)
-- [`inspector/promises`](#inspectorpromises)
-- [`module`](#module)
-- [`net`](#net)
-- [`os`](#os)
-- [`path`](#path)
-- [`path/posix`](#pathposix)
-- [`path/win32`](#pathwin32)
-- [`perf_hooks`](#perf_hooks)
-- [`process`](#process)
-
-</td><td valign="top">
-
-- [`punycode`](#punycode)
-- [`querystring`](#querystring)
-- [`readline`](#readline)
-- [`readline/promises`](#readlinepromises)
-- [`repl`](#repl)
-- [`stream`](#stream)
-- [`stream/consumers`](#streamconsumers)
-- [`stream/promises`](#streampromises)
-- [`stream/web`](#streamweb)
-- [`string_decoder`](#string_decoder)
-- [`sys`](#sys)
-- [`timers`](#timers)
-- [`timers/promises`](#timerspromises)
-- [`tls`](#tls)
-- [`trace_events`](#trace_events)
-- [`tty`](#tty)
-- [`url`](#url)
-- [`util`](#util)
-- [`util/types`](#utiltypes)
-- [`v8`](#v8)
-- [`vm`](#vm)
-- [`wasi`](#wasi)
-- [`worker_threads`](#worker_threads)
-- [`zlib`](#zlib)
-
-</td></tr></table>
 <!-- builtins:end -->
 
 
 <!-- comparison:start -->
-## _http_agent
+<details>
+				<summary><code>_http_agent</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -454,8 +378,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _http_client
+<details>
+				<summary><code>_http_client</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -772,8 +699,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _http_common
+<details>
+				<summary><code>_http_common</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -1167,8 +1097,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _http_incoming
+<details>
+				<summary><code>_http_incoming</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -1489,8 +1422,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _http_outgoing
+<details>
+				<summary><code>_http_outgoing</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -1821,8 +1757,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _http_server
+<details>
+				<summary><code>_http_server</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -2219,8 +2158,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _stream_duplex
+<details>
+				<summary><code>_stream_duplex</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -2264,31 +2206,31 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once(length: 2) {},
+            once: ƒ once2(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once2(length: 3) {},
+        once: <ref *28> ƒ once(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -2296,7 +2238,7 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -2454,8 +2396,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _stream_passthrough
+<details>
+				<summary><code>_stream_passthrough</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -2492,31 +2437,31 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once(length: 2) {},
+            once: ƒ once2(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once2(length: 3) {},
+        once: <ref *28> ƒ once(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -2524,7 +2469,7 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -2682,8 +2627,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _stream_readable
+<details>
+				<summary><code>_stream_readable</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -2733,31 +2681,31 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once(length: 2) {},
+            once: ƒ once2(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once2(length: 3) {},
+        once: <ref *28> ƒ once(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -2765,7 +2713,7 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -2923,8 +2871,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _stream_transform
+<details>
+				<summary><code>_stream_transform</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -2961,31 +2912,31 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once(length: 2) {},
+            once: ƒ once2(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once2(length: 3) {},
+        once: <ref *28> ƒ once(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -2993,7 +2944,7 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -3151,8 +3102,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _stream_wrap
+<details>
+				<summary><code>_stream_wrap</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -3160,7 +3114,7 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2160) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:84130) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -3191,31 +3145,31 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once(length: 2) {},
+            once: ƒ once2(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once2(length: 3) {},
+        once: <ref *28> ƒ once(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -3223,7 +3177,7 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -3381,8 +3335,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _stream_writable
+<details>
+				<summary><code>_stream_writable</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -3426,31 +3383,31 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once(length: 2) {},
+            once: ƒ once2(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once2(length: 3) {},
+        once: <ref *28> ƒ once(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -3458,7 +3415,7 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -3616,8 +3573,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _tls_common
+<details>
+				<summary><code>_tls_common</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -3644,7 +3604,7 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
     DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_MAX_VERSION: "TLSv1.3",
     DEFAULT_MIN_VERSION: "TLSv1.2",
-    SecureContext: <ref *2> ƒ SecureContext2(length: 1) {},
+    SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
     Server: <ref *3> ƒ Server(length: 2) {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {
         prototype: TLSSocket2 {}
@@ -3833,8 +3793,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## _tls_wrap
+<details>
+				<summary><code>_tls_wrap</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -3863,7 +3826,7 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
     DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_MAX_VERSION: "TLSv1.3",
     DEFAULT_MIN_VERSION: "TLSv1.2",
-    SecureContext: <ref *2> ƒ SecureContext2(length: 1) {},
+    SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
     Server: <ref *3> ƒ Server(length: 2) {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {
         prototype: TLSSocket2 {}
@@ -4052,8 +4015,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## assert
+<details>
+				<summary><code>assert</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -4197,8 +4163,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## assert/strict
+<details>
+				<summary><code>assert/strict</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -4341,8 +4310,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## async_hooks
+<details>
+				<summary><code>async_hooks</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -4510,8 +4482,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## buffer
+<details>
+				<summary><code>buffer</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -4620,8 +4595,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## child_process
+<details>
+				<summary><code>child_process</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -4676,8 +4654,11 @@ _Last updated on <!-- lastUpdated:start -->Oct 19, 2024 with Bun 1.1.31 Node.js 
 ```
 
 </td></tr></table>
+			</details>
 
-## cluster
+<details>
+				<summary><code>cluster</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -4747,31 +4728,31 @@ EventEmitter2 {
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: <ref *14> ƒ setMaxListeners(length: 1) {},
+            setMaxListeners: <ref *14> ƒ setMaxListeners2(length: 1) {},
             constructor: [Circular: *12],
-            getMaxListeners: <ref *15> ƒ getMaxListeners(length: 0) {},
+            getMaxListeners: <ref *15> ƒ getMaxListeners2(length: 0) {},
             emit: <ref *16> ƒ emit(length: 1) {},
             addListener: [Circular: *11],
             on: [Circular: *11],
             prependListener: <ref *17> ƒ prependListener(length: 2) {},
-            once: <ref *18> ƒ once(length: 2) {},
+            once: <ref *18> ƒ once2(length: 2) {},
             prependOnceListener: <ref *19> ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *20> ƒ removeListener(length: 2) {},
             off: [Circular: *20],
             removeAllListeners: <ref *21> ƒ removeAllListeners(length: 1) {},
             listeners: <ref *22> ƒ listeners(length: 1) {},
             rawListeners: <ref *23> ƒ rawListeners(length: 1) {},
-            listenerCount: <ref *24> ƒ listenerCount(length: 1) {},
+            listenerCount: <ref *24> ƒ listenerCount2(length: 1) {},
             eventNames: <ref *25> ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: ƒ once2(length: 3) {},
+        once: ƒ once(length: 3) {},
         on: ƒ on(length: 2) {},
         getEventListeners: ƒ getEventListeners(length: 2) {},
-        getMaxListeners: ƒ getMaxListeners2(length: 1) {},
-        setMaxListeners: ƒ setMaxListeners2(length: 0) {},
+        getMaxListeners: ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: ƒ setMaxListeners(length: 0) {},
         EventEmitter: [Circular: *12],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -4779,7 +4760,7 @@ EventEmitter2 {
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: ƒ addAbortListener(length: 2) {},
         init: [Circular: *12],
-        listenerCount: ƒ listenerCount2(length: 2) {}
+        listenerCount: ƒ listenerCount(length: 2) {}
     },
     default: EventEmitter2 {
         _events: [Circular: *10],
@@ -4828,8 +4809,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## console
+<details>
+				<summary><code>console</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -4979,8 +4963,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## constants
+<details>
+				<summary><code>constants</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -4995,44 +4982,44 @@ EventEmitter2 {
     DH_UNABLE_TO_CHECK_GENERATOR: 4,
     E2BIG: 7,
     EACCES: 13,
-    EADDRINUSE: 98,
-    EADDRNOTAVAIL: 99,
-    EAFNOSUPPORT: 97,
-    EAGAIN: 11,
-    EALREADY: 114,
+    EADDRINUSE: 48,
+    EADDRNOTAVAIL: 49,
+    EAFNOSUPPORT: 47,
+    EAGAIN: 35,
+    EALREADY: 37,
     EBADF: 9,
-    EBADMSG: 74,
+    EBADMSG: 94,
     EBUSY: 16,
-    ECANCELED: 125,
+    ECANCELED: 89,
     ECHILD: 10,
-    ECONNABORTED: 103,
-    ECONNREFUSED: 111,
-    ECONNRESET: 104,
-    EDEADLK: 35,
-    EDESTADDRREQ: 89,
+    ECONNABORTED: 53,
+    ECONNREFUSED: 61,
+    ECONNRESET: 54,
+    EDEADLK: 11,
+    EDESTADDRREQ: 39,
     EDOM: 33,
-    EDQUOT: 122,
+    EDQUOT: 69,
     EEXIST: 17,
     EFAULT: 14,
     EFBIG: 27,
-    EHOSTUNREACH: 113,
-    EIDRM: 43,
-    EILSEQ: 84,
-    EINPROGRESS: 115,
+    EHOSTUNREACH: 65,
+    EIDRM: 90,
+    EILSEQ: 92,
+    EINPROGRESS: 36,
     EINTR: 4,
     EINVAL: 22,
     EIO: 5,
-    EISCONN: 106,
+    EISCONN: 56,
     EISDIR: 21,
-    ELOOP: 40,
+    ELOOP: 62,
     EMFILE: 24,
     EMLINK: 31,
-    EMSGSIZE: 90,
-    EMULTIHOP: 72,
-    ENAMETOOLONG: 36,
-    ENETDOWN: 100,
-    ENETRESET: 102,
-    ENETUNREACH: 101,
+    EMSGSIZE: 40,
+    EMULTIHOP: 95,
+    ENAMETOOLONG: 63,
+    ENETDOWN: 50,
+    ENETRESET: 52,
+    ENETUNREACH: 51,
     ENFILE: 23,
     ENGINE_METHOD_ALL: 65535,
     ENGINE_METHOD_CIPHERS: 64,
@@ -5045,62 +5032,61 @@ EventEmitter2 {
     ENGINE_METHOD_PKEY_METHS: 512,
     ENGINE_METHOD_RAND: 8,
     ENGINE_METHOD_RSA: 1,
-    ENOBUFS: 105,
-    ENODATA: 61,
+    ENOBUFS: 55,
+    ENODATA: 96,
     ENODEV: 19,
     ENOENT: 2,
     ENOEXEC: 8,
-    ENOLCK: 37,
-    ENOLINK: 67,
+    ENOLCK: 77,
+    ENOLINK: 97,
     ENOMEM: 12,
-    ENOMSG: 42,
-    ENOPROTOOPT: 92,
+    ENOMSG: 91,
+    ENOPROTOOPT: 42,
     ENOSPC: 28,
-    ENOSR: 63,
-    ENOSTR: 60,
-    ENOSYS: 38,
-    ENOTCONN: 107,
+    ENOSR: 98,
+    ENOSTR: 99,
+    ENOSYS: 78,
+    ENOTCONN: 57,
     ENOTDIR: 20,
-    ENOTEMPTY: 39,
-    ENOTSOCK: 88,
-    ENOTSUP: 95,
+    ENOTEMPTY: 66,
+    ENOTSOCK: 38,
+    ENOTSUP: 45,
     ENOTTY: 25,
     ENXIO: 6,
-    EOPNOTSUPP: 95,
-    EOVERFLOW: 75,
+    EOPNOTSUPP: 102,
+    EOVERFLOW: 84,
     EPERM: 1,
     EPIPE: 32,
-    EPROTO: 71,
-    EPROTONOSUPPORT: 93,
-    EPROTOTYPE: 91,
+    EPROTO: 100,
+    EPROTONOSUPPORT: 43,
+    EPROTOTYPE: 41,
     ERANGE: 34,
     EROFS: 30,
     ESPIPE: 29,
     ESRCH: 3,
-    ESTALE: 116,
-    ETIME: 62,
-    ETIMEDOUT: 110,
+    ESTALE: 70,
+    ETIME: 101,
+    ETIMEDOUT: 60,
     ETXTBSY: 26,
-    EWOULDBLOCK: 11,
+    EWOULDBLOCK: 35,
     EXDEV: 18,
     EXTENSIONLESS_FORMAT_JAVASCRIPT: 0,
     EXTENSIONLESS_FORMAT_WASM: 1,
     F_OK: 0,
     OPENSSL_VERSION_NUMBER: 805306576,
-    O_APPEND: 1024,
-    O_CREAT: 64,
-    O_DIRECT: 16384,
-    O_DIRECTORY: 65536,
-    O_DSYNC: 4096,
-    O_EXCL: 128,
-    O_NOATIME: 262144,
-    O_NOCTTY: 256,
-    O_NOFOLLOW: 131072,
-    O_NONBLOCK: 2048,
+    O_APPEND: 8,
+    O_CREAT: 512,
+    O_DIRECTORY: 1048576,
+    O_DSYNC: 4194304,
+    O_EXCL: 2048,
+    O_NOCTTY: 131072,
+    O_NOFOLLOW: 256,
+    O_NONBLOCK: 4,
     O_RDONLY: 0,
     O_RDWR: 2,
-    O_SYNC: 1052672,
-    O_TRUNC: 512,
+    O_SYMLINK: 2097152,
+    O_SYNC: 128,
+    O_TRUNC: 1024,
     O_WRONLY: 1,
     POINT_CONVERSION_COMPRESSED: 2,
     POINT_CONVERSION_HYBRID: 6,
@@ -5119,41 +5105,38 @@ EventEmitter2 {
     RSA_PSS_SALTLEN_DIGEST: -1,
     RSA_PSS_SALTLEN_MAX_SIGN: -2,
     RSA_X931_PADDING: 5,
-    RTLD_DEEPBIND: 8,
-    RTLD_GLOBAL: 256,
+    RTLD_GLOBAL: 8,
     RTLD_LAZY: 1,
-    RTLD_LOCAL: 0,
+    RTLD_LOCAL: 4,
     RTLD_NOW: 2,
     R_OK: 4,
     SIGABRT: 6,
     SIGALRM: 14,
-    SIGBUS: 7,
-    SIGCHLD: 17,
-    SIGCONT: 18,
+    SIGBUS: 10,
+    SIGCHLD: 20,
+    SIGCONT: 19,
     SIGFPE: 8,
     SIGHUP: 1,
     SIGILL: 4,
+    SIGINFO: 29,
     SIGINT: 2,
-    SIGIO: 29,
+    SIGIO: 23,
     SIGIOT: 6,
     SIGKILL: 9,
     SIGPIPE: 13,
-    SIGPOLL: 29,
     SIGPROF: 27,
-    SIGPWR: 30,
     SIGQUIT: 3,
     SIGSEGV: 11,
-    SIGSTKFLT: 16,
-    SIGSTOP: 19,
-    SIGSYS: 31,
+    SIGSTOP: 17,
+    SIGSYS: 12,
     SIGTERM: 15,
     SIGTRAP: 5,
-    SIGTSTP: 20,
+    SIGTSTP: 18,
     SIGTTIN: 21,
     SIGTTOU: 22,
-    SIGURG: 23,
-    SIGUSR1: 10,
-    SIGUSR2: 12,
+    SIGURG: 16,
+    SIGUSR1: 30,
+    SIGUSR2: 31,
     SIGVTALRM: 26,
     SIGWINCH: 28,
     SIGXCPU: 24,
@@ -5224,87 +5207,86 @@ EventEmitter2 {
     default: {
         RTLD_LAZY: 1,
         RTLD_NOW: 2,
-        RTLD_GLOBAL: 256,
-        RTLD_LOCAL: 0,
-        RTLD_DEEPBIND: 8,
+        RTLD_GLOBAL: 8,
+        RTLD_LOCAL: 4,
         E2BIG: 7,
         EACCES: 13,
-        EADDRINUSE: 98,
-        EADDRNOTAVAIL: 99,
-        EAFNOSUPPORT: 97,
-        EAGAIN: 11,
-        EALREADY: 114,
+        EADDRINUSE: 48,
+        EADDRNOTAVAIL: 49,
+        EAFNOSUPPORT: 47,
+        EAGAIN: 35,
+        EALREADY: 37,
         EBADF: 9,
-        EBADMSG: 74,
+        EBADMSG: 94,
         EBUSY: 16,
-        ECANCELED: 125,
+        ECANCELED: 89,
         ECHILD: 10,
-        ECONNABORTED: 103,
-        ECONNREFUSED: 111,
-        ECONNRESET: 104,
-        EDEADLK: 35,
-        EDESTADDRREQ: 89,
+        ECONNABORTED: 53,
+        ECONNREFUSED: 61,
+        ECONNRESET: 54,
+        EDEADLK: 11,
+        EDESTADDRREQ: 39,
         EDOM: 33,
-        EDQUOT: 122,
+        EDQUOT: 69,
         EEXIST: 17,
         EFAULT: 14,
         EFBIG: 27,
-        EHOSTUNREACH: 113,
-        EIDRM: 43,
-        EILSEQ: 84,
-        EINPROGRESS: 115,
+        EHOSTUNREACH: 65,
+        EIDRM: 90,
+        EILSEQ: 92,
+        EINPROGRESS: 36,
         EINTR: 4,
         EINVAL: 22,
         EIO: 5,
-        EISCONN: 106,
+        EISCONN: 56,
         EISDIR: 21,
-        ELOOP: 40,
+        ELOOP: 62,
         EMFILE: 24,
         EMLINK: 31,
-        EMSGSIZE: 90,
-        EMULTIHOP: 72,
-        ENAMETOOLONG: 36,
-        ENETDOWN: 100,
-        ENETRESET: 102,
-        ENETUNREACH: 101,
+        EMSGSIZE: 40,
+        EMULTIHOP: 95,
+        ENAMETOOLONG: 63,
+        ENETDOWN: 50,
+        ENETRESET: 52,
+        ENETUNREACH: 51,
         ENFILE: 23,
-        ENOBUFS: 105,
-        ENODATA: 61,
+        ENOBUFS: 55,
+        ENODATA: 96,
         ENODEV: 19,
         ENOENT: 2,
         ENOEXEC: 8,
-        ENOLCK: 37,
-        ENOLINK: 67,
+        ENOLCK: 77,
+        ENOLINK: 97,
         ENOMEM: 12,
-        ENOMSG: 42,
-        ENOPROTOOPT: 92,
+        ENOMSG: 91,
+        ENOPROTOOPT: 42,
         ENOSPC: 28,
-        ENOSR: 63,
-        ENOSTR: 60,
-        ENOSYS: 38,
-        ENOTCONN: 107,
+        ENOSR: 98,
+        ENOSTR: 99,
+        ENOSYS: 78,
+        ENOTCONN: 57,
         ENOTDIR: 20,
-        ENOTEMPTY: 39,
-        ENOTSOCK: 88,
-        ENOTSUP: 95,
+        ENOTEMPTY: 66,
+        ENOTSOCK: 38,
+        ENOTSUP: 45,
         ENOTTY: 25,
         ENXIO: 6,
-        EOPNOTSUPP: 95,
-        EOVERFLOW: 75,
+        EOPNOTSUPP: 102,
+        EOVERFLOW: 84,
         EPERM: 1,
         EPIPE: 32,
-        EPROTO: 71,
-        EPROTONOSUPPORT: 93,
-        EPROTOTYPE: 91,
+        EPROTO: 100,
+        EPROTONOSUPPORT: 43,
+        EPROTOTYPE: 41,
         ERANGE: 34,
         EROFS: 30,
         ESPIPE: 29,
         ESRCH: 3,
-        ESTALE: 116,
-        ETIME: 62,
-        ETIMEDOUT: 110,
+        ESTALE: 70,
+        ETIME: 101,
+        ETIMEDOUT: 60,
         ETXTBSY: 26,
-        EWOULDBLOCK: 11,
+        EWOULDBLOCK: 35,
         EXDEV: 18,
         PRIORITY_LOW: 19,
         PRIORITY_BELOW_NORMAL: 10,
@@ -5319,32 +5301,30 @@ EventEmitter2 {
         SIGTRAP: 5,
         SIGABRT: 6,
         SIGIOT: 6,
-        SIGBUS: 7,
+        SIGBUS: 10,
         SIGFPE: 8,
         SIGKILL: 9,
-        SIGUSR1: 10,
+        SIGUSR1: 30,
         SIGSEGV: 11,
-        SIGUSR2: 12,
+        SIGUSR2: 31,
         SIGPIPE: 13,
         SIGALRM: 14,
         SIGTERM: 15,
-        SIGCHLD: 17,
-        SIGSTKFLT: 16,
-        SIGCONT: 18,
-        SIGSTOP: 19,
-        SIGTSTP: 20,
+        SIGCHLD: 20,
+        SIGCONT: 19,
+        SIGSTOP: 17,
+        SIGTSTP: 18,
         SIGTTIN: 21,
         SIGTTOU: 22,
-        SIGURG: 23,
+        SIGURG: 16,
         SIGXCPU: 24,
         SIGXFSZ: 25,
         SIGVTALRM: 26,
         SIGPROF: 27,
         SIGWINCH: 28,
-        SIGIO: 29,
-        SIGPOLL: 29,
-        SIGPWR: 30,
-        SIGSYS: 31,
+        SIGIO: 23,
+        SIGINFO: 29,
+        SIGSYS: 12,
         UV_FS_SYMLINK_DIR: 1,
         UV_FS_SYMLINK_JUNCTION: 2,
         O_RDONLY: 0,
@@ -5368,19 +5348,18 @@ EventEmitter2 {
         S_IFIFO: 4096,
         S_IFLNK: 40960,
         S_IFSOCK: 49152,
-        O_CREAT: 64,
-        O_EXCL: 128,
+        O_CREAT: 512,
+        O_EXCL: 2048,
         UV_FS_O_FILEMAP: 0,
-        O_NOCTTY: 256,
-        O_TRUNC: 512,
-        O_APPEND: 1024,
-        O_DIRECTORY: 65536,
-        O_NOATIME: 262144,
-        O_NOFOLLOW: 131072,
-        O_SYNC: 1052672,
-        O_DSYNC: 4096,
-        O_DIRECT: 16384,
-        O_NONBLOCK: 2048,
+        O_NOCTTY: 131072,
+        O_TRUNC: 1024,
+        O_APPEND: 8,
+        O_DIRECTORY: 1048576,
+        O_NOFOLLOW: 256,
+        O_SYNC: 128,
+        O_DSYNC: 4194304,
+        O_SYMLINK: 2097152,
+        O_NONBLOCK: 4,
         S_IRWXU: 448,
         S_IRUSR: 256,
         S_IWUSR: 128,
@@ -5476,99 +5455,98 @@ EventEmitter2 {
     DH_UNABLE_TO_CHECK_GENERATOR: 4,
     E2BIG: 7,
     EACCES: 13,
-    EADDRINUSE: 98,
-    EADDRNOTAVAIL: 99,
-    EAFNOSUPPORT: 97,
-    EAGAIN: 11,
-    EALREADY: 114,
+    EADDRINUSE: 48,
+    EADDRNOTAVAIL: 49,
+    EAFNOSUPPORT: 47,
+    EAGAIN: 35,
+    EALREADY: 37,
     EBADF: 9,
-    EBADMSG: 74,
+    EBADMSG: 94,
     EBUSY: 16,
-    ECANCELED: 125,
+    ECANCELED: 89,
     ECHILD: 10,
-    ECONNABORTED: 103,
-    ECONNREFUSED: 111,
-    ECONNRESET: 104,
-    EDEADLK: 35,
-    EDESTADDRREQ: 89,
+    ECONNABORTED: 53,
+    ECONNREFUSED: 61,
+    ECONNRESET: 54,
+    EDEADLK: 11,
+    EDESTADDRREQ: 39,
     EDOM: 33,
-    EDQUOT: 122,
+    EDQUOT: 69,
     EEXIST: 17,
     EFAULT: 14,
     EFBIG: 27,
-    EHOSTUNREACH: 113,
-    EIDRM: 43,
-    EILSEQ: 84,
-    EINPROGRESS: 115,
+    EHOSTUNREACH: 65,
+    EIDRM: 90,
+    EILSEQ: 92,
+    EINPROGRESS: 36,
     EINTR: 4,
     EINVAL: 22,
     EIO: 5,
-    EISCONN: 106,
+    EISCONN: 56,
     EISDIR: 21,
-    ELOOP: 40,
+    ELOOP: 62,
     EMFILE: 24,
     EMLINK: 31,
-    EMSGSIZE: 90,
-    EMULTIHOP: 72,
-    ENAMETOOLONG: 36,
-    ENETDOWN: 100,
-    ENETRESET: 102,
-    ENETUNREACH: 101,
+    EMSGSIZE: 40,
+    EMULTIHOP: 95,
+    ENAMETOOLONG: 63,
+    ENETDOWN: 50,
+    ENETRESET: 52,
+    ENETUNREACH: 51,
     ENFILE: 23,
-    ENOBUFS: 105,
-    ENODATA: 61,
+    ENOBUFS: 55,
+    ENODATA: 96,
     ENODEV: 19,
     ENOENT: 2,
     ENOEXEC: 8,
-    ENOLCK: 37,
-    ENOLINK: 67,
+    ENOLCK: 77,
+    ENOLINK: 97,
     ENOMEM: 12,
-    ENOMSG: 42,
-    ENOPROTOOPT: 92,
+    ENOMSG: 91,
+    ENOPROTOOPT: 42,
     ENOSPC: 28,
-    ENOSR: 63,
-    ENOSTR: 60,
-    ENOSYS: 38,
-    ENOTCONN: 107,
+    ENOSR: 98,
+    ENOSTR: 99,
+    ENOSYS: 78,
+    ENOTCONN: 57,
     ENOTDIR: 20,
-    ENOTEMPTY: 39,
-    ENOTSOCK: 88,
-    ENOTSUP: 95,
+    ENOTEMPTY: 66,
+    ENOTSOCK: 38,
+    ENOTSUP: 45,
     ENOTTY: 25,
     ENXIO: 6,
-    EOPNOTSUPP: 95,
-    EOVERFLOW: 75,
+    EOPNOTSUPP: 102,
+    EOVERFLOW: 84,
     EPERM: 1,
     EPIPE: 32,
-    EPROTO: 71,
-    EPROTONOSUPPORT: 93,
-    EPROTOTYPE: 91,
+    EPROTO: 100,
+    EPROTONOSUPPORT: 43,
+    EPROTOTYPE: 41,
     ERANGE: 34,
     EROFS: 30,
     ESPIPE: 29,
     ESRCH: 3,
-    ESTALE: 116,
-    ETIME: 62,
-    ETIMEDOUT: 110,
+    ESTALE: 70,
+    ETIME: 101,
+    ETIMEDOUT: 60,
     ETXTBSY: 26,
-    EWOULDBLOCK: 11,
+    EWOULDBLOCK: 35,
     EXDEV: 18,
     F_OK: 0,
     OPENSSL_VERSION_NUMBER: 269488255,
-    O_APPEND: 1024,
-    O_CREAT: 64,
-    O_DIRECT: 16384,
-    O_DIRECTORY: 65536,
-    O_DSYNC: 4096,
-    O_EXCL: 128,
-    O_NOATIME: 262144,
-    O_NOCTTY: 256,
-    O_NOFOLLOW: 131072,
-    O_NONBLOCK: 2048,
+    O_APPEND: 8,
+    O_CREAT: 512,
+    O_DIRECTORY: 1048576,
+    O_DSYNC: 4194304,
+    O_EXCL: 2048,
+    O_NOCTTY: 131072,
+    O_NOFOLLOW: 256,
+    O_NONBLOCK: 4,
     O_RDONLY: 0,
     O_RDWR: 2,
-    O_SYNC: 1052672,
-    O_TRUNC: 512,
+    O_SYMLINK: 2097152,
+    O_SYNC: 128,
+    O_TRUNC: 1024,
     O_WRONLY: 1,
     POINT_CONVERSION_COMPRESSED: 2,
     POINT_CONVERSION_HYBRID: 6,
@@ -5583,41 +5561,38 @@ EventEmitter2 {
     RSA_PKCS1_OAEP_PADDING: 4,
     RSA_PKCS1_PADDING: 1,
     RSA_PKCS1_PSS_PADDING: 6,
-    RTLD_DEEPBIND: 8,
-    RTLD_GLOBAL: 256,
+    RTLD_GLOBAL: 8,
     RTLD_LAZY: 1,
-    RTLD_LOCAL: 0,
+    RTLD_LOCAL: 4,
     RTLD_NOW: 2,
     R_OK: 4,
     SIGABRT: 6,
     SIGALRM: 14,
-    SIGBUS: 7,
-    SIGCHLD: 17,
-    SIGCONT: 18,
+    SIGBUS: 10,
+    SIGCHLD: 20,
+    SIGCONT: 19,
     SIGFPE: 8,
     SIGHUP: 1,
     SIGILL: 4,
+    SIGINFO: 29,
     SIGINT: 2,
-    SIGIO: 29,
+    SIGIO: 23,
     SIGIOT: 6,
     SIGKILL: 9,
     SIGPIPE: 13,
-    SIGPOLL: 29,
     SIGPROF: 27,
-    SIGPWR: 30,
     SIGQUIT: 3,
     SIGSEGV: 11,
-    SIGSTKFLT: 16,
-    SIGSTOP: 19,
-    SIGSYS: 31,
+    SIGSTOP: 17,
+    SIGSYS: 12,
     SIGTERM: 15,
     SIGTRAP: 5,
-    SIGTSTP: 20,
+    SIGTSTP: 18,
     SIGTTIN: 21,
     SIGTTOU: 22,
-    SIGURG: 23,
-    SIGUSR1: 10,
-    SIGUSR2: 12,
+    SIGURG: 16,
+    SIGUSR1: 30,
+    SIGUSR2: 31,
     SIGVTALRM: 26,
     SIGWINCH: 28,
     SIGXCPU: 24,
@@ -5682,87 +5657,86 @@ EventEmitter2 {
     default: {
         RTLD_LAZY: 1,
         RTLD_NOW: 2,
-        RTLD_GLOBAL: 256,
-        RTLD_LOCAL: 0,
-        RTLD_DEEPBIND: 8,
+        RTLD_GLOBAL: 8,
+        RTLD_LOCAL: 4,
         E2BIG: 7,
         EACCES: 13,
-        EADDRINUSE: 98,
-        EADDRNOTAVAIL: 99,
-        EAFNOSUPPORT: 97,
-        EAGAIN: 11,
-        EALREADY: 114,
+        EADDRINUSE: 48,
+        EADDRNOTAVAIL: 49,
+        EAFNOSUPPORT: 47,
+        EAGAIN: 35,
+        EALREADY: 37,
         EBADF: 9,
-        EBADMSG: 74,
+        EBADMSG: 94,
         EBUSY: 16,
-        ECANCELED: 125,
+        ECANCELED: 89,
         ECHILD: 10,
-        ECONNABORTED: 103,
-        ECONNREFUSED: 111,
-        ECONNRESET: 104,
-        EDEADLK: 35,
-        EDESTADDRREQ: 89,
+        ECONNABORTED: 53,
+        ECONNREFUSED: 61,
+        ECONNRESET: 54,
+        EDEADLK: 11,
+        EDESTADDRREQ: 39,
         EDOM: 33,
-        EDQUOT: 122,
+        EDQUOT: 69,
         EEXIST: 17,
         EFAULT: 14,
         EFBIG: 27,
-        EHOSTUNREACH: 113,
-        EIDRM: 43,
-        EILSEQ: 84,
-        EINPROGRESS: 115,
+        EHOSTUNREACH: 65,
+        EIDRM: 90,
+        EILSEQ: 92,
+        EINPROGRESS: 36,
         EINTR: 4,
         EINVAL: 22,
         EIO: 5,
-        EISCONN: 106,
+        EISCONN: 56,
         EISDIR: 21,
-        ELOOP: 40,
+        ELOOP: 62,
         EMFILE: 24,
         EMLINK: 31,
-        EMSGSIZE: 90,
-        EMULTIHOP: 72,
-        ENAMETOOLONG: 36,
-        ENETDOWN: 100,
-        ENETRESET: 102,
-        ENETUNREACH: 101,
+        EMSGSIZE: 40,
+        EMULTIHOP: 95,
+        ENAMETOOLONG: 63,
+        ENETDOWN: 50,
+        ENETRESET: 52,
+        ENETUNREACH: 51,
         ENFILE: 23,
-        ENOBUFS: 105,
-        ENODATA: 61,
+        ENOBUFS: 55,
+        ENODATA: 96,
         ENODEV: 19,
         ENOENT: 2,
         ENOEXEC: 8,
-        ENOLCK: 37,
-        ENOLINK: 67,
+        ENOLCK: 77,
+        ENOLINK: 97,
         ENOMEM: 12,
-        ENOMSG: 42,
-        ENOPROTOOPT: 92,
+        ENOMSG: 91,
+        ENOPROTOOPT: 42,
         ENOSPC: 28,
-        ENOSR: 63,
-        ENOSTR: 60,
-        ENOSYS: 38,
-        ENOTCONN: 107,
+        ENOSR: 98,
+        ENOSTR: 99,
+        ENOSYS: 78,
+        ENOTCONN: 57,
         ENOTDIR: 20,
-        ENOTEMPTY: 39,
-        ENOTSOCK: 88,
-        ENOTSUP: 95,
+        ENOTEMPTY: 66,
+        ENOTSOCK: 38,
+        ENOTSUP: 45,
         ENOTTY: 25,
         ENXIO: 6,
-        EOPNOTSUPP: 95,
-        EOVERFLOW: 75,
+        EOPNOTSUPP: 102,
+        EOVERFLOW: 84,
         EPERM: 1,
         EPIPE: 32,
-        EPROTO: 71,
-        EPROTONOSUPPORT: 93,
-        EPROTOTYPE: 91,
+        EPROTO: 100,
+        EPROTONOSUPPORT: 43,
+        EPROTOTYPE: 41,
         ERANGE: 34,
         EROFS: 30,
         ESPIPE: 29,
         ESRCH: 3,
-        ESTALE: 116,
-        ETIME: 62,
-        ETIMEDOUT: 110,
+        ESTALE: 70,
+        ETIME: 101,
+        ETIMEDOUT: 60,
         ETXTBSY: 26,
-        EWOULDBLOCK: 11,
+        EWOULDBLOCK: 35,
         EXDEV: 18,
         PRIORITY_LOW: 19,
         PRIORITY_BELOW_NORMAL: 10,
@@ -5777,32 +5751,30 @@ EventEmitter2 {
         SIGTRAP: 5,
         SIGABRT: 6,
         SIGIOT: 6,
-        SIGBUS: 7,
+        SIGBUS: 10,
         SIGFPE: 8,
         SIGKILL: 9,
-        SIGUSR1: 10,
+        SIGUSR1: 30,
         SIGSEGV: 11,
-        SIGUSR2: 12,
+        SIGUSR2: 31,
         SIGPIPE: 13,
         SIGALRM: 14,
         SIGTERM: 15,
-        SIGCHLD: 17,
-        SIGSTKFLT: 16,
-        SIGCONT: 18,
-        SIGSTOP: 19,
-        SIGTSTP: 20,
+        SIGCHLD: 20,
+        SIGCONT: 19,
+        SIGSTOP: 17,
+        SIGTSTP: 18,
         SIGTTIN: 21,
         SIGTTOU: 22,
-        SIGURG: 23,
+        SIGURG: 16,
         SIGXCPU: 24,
         SIGXFSZ: 25,
         SIGVTALRM: 26,
         SIGPROF: 27,
         SIGWINCH: 28,
-        SIGIO: 29,
-        SIGPOLL: 29,
-        SIGPWR: 30,
-        SIGSYS: 31,
+        SIGIO: 23,
+        SIGINFO: 29,
+        SIGSYS: 12,
         UV_FS_SYMLINK_DIR: 1,
         UV_FS_SYMLINK_JUNCTION: 2,
         O_RDONLY: 0,
@@ -5824,19 +5796,18 @@ EventEmitter2 {
         S_IFIFO: 4096,
         S_IFLNK: 40960,
         S_IFSOCK: 49152,
-        O_CREAT: 64,
-        O_EXCL: 128,
+        O_CREAT: 512,
+        O_EXCL: 2048,
         UV_FS_O_FILEMAP: 0,
-        O_NOCTTY: 256,
-        O_TRUNC: 512,
-        O_APPEND: 1024,
-        O_DIRECTORY: 65536,
-        O_NOATIME: 262144,
-        O_NOFOLLOW: 131072,
-        O_SYNC: 1052672,
-        O_DSYNC: 4096,
-        O_DIRECT: 16384,
-        O_NONBLOCK: 2048,
+        O_NOCTTY: 131072,
+        O_TRUNC: 1024,
+        O_APPEND: 8,
+        O_DIRECTORY: 1048576,
+        O_NOFOLLOW: 256,
+        O_SYNC: 128,
+        O_DSYNC: 4194304,
+        O_SYMLINK: 2097152,
+        O_NONBLOCK: 4,
         S_IRWXU: 448,
         S_IRUSR: 256,
         S_IWUSR: 128,
@@ -5901,8 +5872,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## crypto
+<details>
+				<summary><code>crypto</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -6318,8 +6292,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## dgram
+<details>
+				<summary><code>dgram</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -6379,8 +6356,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## diagnostics_channel
+<details>
+				<summary><code>diagnostics_channel</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -6425,16 +6405,19 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## dns
+<details>
+				<summary><code>dns</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
 ```js
 [Object: null prototype] {
-    ADDRCONFIG: 32,
+    ADDRCONFIG: 1024,
     ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
-    ALL: 16,
+    ALL: 256,
     BADFAMILY: "EBADFAMILY",
     BADFLAGS: "EBADFLAGS",
     BADHINTS: "EBADHINTS",
@@ -6459,7 +6442,7 @@ EventEmitter2 {
     Resolver: <ref *2> class Resolver extends ResolverBase {},
     SERVFAIL: "ESERVFAIL",
     TIMEOUT: "ETIMEOUT",
-    V4MAPPED: 8,
+    V4MAPPED: 2048,
     default: {
         lookup: <ref *4> ƒ lookup(length: 3) {},
         lookupService: <ref *5> ƒ lookupService(length: 3) {},
@@ -6467,9 +6450,9 @@ EventEmitter2 {
         getDefaultResultOrder: <ref *6> ƒ getDefaultResultOrder(length: 0) {},
         setDefaultResultOrder: <ref *7> ƒ setDefaultResultOrder(length: 1) {},
         setServers: <ref *8> ƒ defaultResolverSetServers(length: 1) {},
-        ADDRCONFIG: 32,
-        ALL: 16,
-        V4MAPPED: 8,
+        ADDRCONFIG: 1024,
+        ALL: 256,
+        V4MAPPED: 2048,
         NODATA: "ENODATA",
         FORMERR: "EFORMERR",
         SERVFAIL: "ESERVFAIL",
@@ -6609,8 +6592,8 @@ EventEmitter2 {
     NOTIMP: "DNS_ENOTIMP",
     NOTINITIALIZED: "DNS_ENOTINITIALIZED",
     REFUSED: "DNS_EREFUSED",
-    Resolver: <ref *2> ƒ Resolver2(length: 1) {
-        prototype: Resolver {}
+    Resolver: <ref *2> ƒ Resolver(length: 1) {
+        prototype: Resolver2 {}
     },
     SERVFAIL: "DNS_ESERVFAIL",
     TIMEOUT: "DNS_ETIMEOUT",
@@ -6739,8 +6722,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## dns/promises
+<details>
+				<summary><code>dns/promises</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -6885,8 +6871,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## domain
+<details>
+				<summary><code>domain</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -6921,8 +6910,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## events
+<details>
+				<summary><code>events</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -6972,31 +6964,31 @@ EventEmitter2 {
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
             constructor: [Circular: *2],
-            getMaxListeners: ƒ getMaxListeners(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *7> ƒ addListener(length: 2) {},
             on: [Circular: *7],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once(length: 2) {},
+            once: ƒ once2(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *11> ƒ removeListener(length: 2) {},
             off: [Circular: *11],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *17> ƒ once2(length: 3) {},
+        once: <ref *17> ƒ once(length: 3) {},
         on: <ref *18> ƒ on(length: 2) {},
         getEventListeners: <ref *19> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *20> ƒ getMaxListeners2(length: 1) {},
-        setMaxListeners: <ref *21> ƒ setMaxListeners2(length: 0) {},
+        getMaxListeners: <ref *20> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *21> ƒ setMaxListeners(length: 0) {},
         EventEmitter: [Circular: *2],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -7004,7 +6996,7 @@ EventEmitter2 {
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *23> ƒ addAbortListener(length: 2) {},
         init: [Circular: *2],
-        listenerCount: <ref *24> ƒ listenerCount2(length: 2) {}
+        listenerCount: <ref *24> ƒ listenerCount(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *22],
     addAbortListener: [Circular: *23],
@@ -7026,8 +7018,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## fs
+<details>
+				<summary><code>fs</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -7079,19 +7074,18 @@ EventEmitter2 {
         S_IFIFO: 4096,
         S_IFLNK: 40960,
         S_IFSOCK: 49152,
-        O_CREAT: 64,
-        O_EXCL: 128,
+        O_CREAT: 512,
+        O_EXCL: 2048,
         UV_FS_O_FILEMAP: 0,
-        O_NOCTTY: 256,
-        O_TRUNC: 512,
-        O_APPEND: 1024,
-        O_DIRECTORY: 65536,
-        O_NOATIME: 262144,
-        O_NOFOLLOW: 131072,
-        O_SYNC: 1052672,
-        O_DSYNC: 4096,
-        O_DIRECT: 16384,
-        O_NONBLOCK: 2048,
+        O_NOCTTY: 131072,
+        O_TRUNC: 1024,
+        O_APPEND: 8,
+        O_DIRECTORY: 1048576,
+        O_NOFOLLOW: 256,
+        O_SYNC: 128,
+        O_DSYNC: 4194304,
+        O_SYMLINK: 2097152,
+        O_NONBLOCK: 4,
         S_IRWXU: 448,
         S_IRUSR: 256,
         S_IWUSR: 128,
@@ -7156,64 +7150,64 @@ EventEmitter2 {
         futimesSync: <ref *41> ƒ futimesSync(length: 3) {},
         lchown: <ref *42> ƒ lchown(length: 4) {},
         lchownSync: <ref *43> ƒ lchownSync(length: 3) {},
-        lchmod: undefined,
-        lchmodSync: undefined,
-        link: <ref *44> ƒ link(length: 3) {},
-        linkSync: <ref *45> ƒ linkSync(length: 2) {},
-        lstat: <ref *46> ƒ lstat(length: 1) {},
-        lstatSync: <ref *47> ƒ lstatSync(length: 1) {},
-        lutimes: <ref *48> ƒ lutimes(length: 4) {},
-        lutimesSync: <ref *49> ƒ lutimesSync(length: 3) {},
-        mkdir: <ref *50> ƒ mkdir(length: 3) {},
-        mkdirSync: <ref *51> ƒ mkdirSync(length: 2) {},
-        mkdtemp: <ref *52> ƒ mkdtemp(length: 3) {},
-        mkdtempSync: <ref *53> ƒ mkdtempSync(length: 2) {},
-        open: <ref *54> ƒ open(length: 4) {},
-        openSync: <ref *55> ƒ openSync(length: 3) {},
-        openAsBlob: <ref *56> ƒ openAsBlob(length: 1) {},
-        readdir: <ref *57> ƒ readdir(length: 3) {},
-        readdirSync: <ref *58> ƒ readdirSync(length: 2) {},
-        read: <ref *59> ƒ read(length: 6) {},
-        readSync: <ref *60> ƒ readSync(length: 5) {},
-        readv: <ref *61> ƒ readv(length: 4) {},
-        readvSync: <ref *62> ƒ readvSync(length: 3) {},
-        readFile: <ref *63> ƒ readFile(length: 3) {},
-        readFileSync: <ref *64> ƒ readFileSync(length: 2) {},
-        readlink: <ref *65> ƒ readlink(length: 3) {},
-        readlinkSync: <ref *66> ƒ readlinkSync(length: 2) {},
-        realpath: <ref *67> ƒ realpath(length: 3) {
+        lchmod: <ref *44> ƒ lchmod(length: 3) {},
+        lchmodSync: <ref *45> ƒ lchmodSync(length: 2) {},
+        link: <ref *46> ƒ link(length: 3) {},
+        linkSync: <ref *47> ƒ linkSync(length: 2) {},
+        lstat: <ref *48> ƒ lstat(length: 1) {},
+        lstatSync: <ref *49> ƒ lstatSync(length: 1) {},
+        lutimes: <ref *50> ƒ lutimes(length: 4) {},
+        lutimesSync: <ref *51> ƒ lutimesSync(length: 3) {},
+        mkdir: <ref *52> ƒ mkdir(length: 3) {},
+        mkdirSync: <ref *53> ƒ mkdirSync(length: 2) {},
+        mkdtemp: <ref *54> ƒ mkdtemp(length: 3) {},
+        mkdtempSync: <ref *55> ƒ mkdtempSync(length: 2) {},
+        open: <ref *56> ƒ open(length: 4) {},
+        openSync: <ref *57> ƒ openSync(length: 3) {},
+        openAsBlob: <ref *58> ƒ openAsBlob(length: 1) {},
+        readdir: <ref *59> ƒ readdir(length: 3) {},
+        readdirSync: <ref *60> ƒ readdirSync(length: 2) {},
+        read: <ref *61> ƒ read(length: 6) {},
+        readSync: <ref *62> ƒ readSync(length: 5) {},
+        readv: <ref *63> ƒ readv(length: 4) {},
+        readvSync: <ref *64> ƒ readvSync(length: 3) {},
+        readFile: <ref *65> ƒ readFile(length: 3) {},
+        readFileSync: <ref *66> ƒ readFileSync(length: 2) {},
+        readlink: <ref *67> ƒ readlink(length: 3) {},
+        readlinkSync: <ref *68> ƒ readlinkSync(length: 2) {},
+        realpath: <ref *69> ƒ realpath(length: 3) {
             native: ƒ (length: 3) {}
         },
-        realpathSync: <ref *69> ƒ realpathSync(length: 2) {
+        realpathSync: <ref *71> ƒ realpathSync(length: 2) {
             native: ƒ (length: 2) {}
         },
-        rename: <ref *71> ƒ rename(length: 3) {},
-        renameSync: <ref *72> ƒ renameSync(length: 2) {},
-        rm: <ref *73> ƒ rm(length: 3) {},
-        rmSync: <ref *74> ƒ rmSync(length: 2) {},
-        rmdir: <ref *75> ƒ rmdir(length: 3) {},
-        rmdirSync: <ref *76> ƒ rmdirSync(length: 2) {},
-        stat: <ref *77> ƒ stat(length: 1) {},
-        statfs: <ref *78> ƒ statfs(length: 1) {},
-        statSync: <ref *79> ƒ statSync(length: 1) {},
-        statfsSync: <ref *80> ƒ statfsSync(length: 1) {},
-        symlink: <ref *81> ƒ symlink(length: 4) {},
-        symlinkSync: <ref *82> ƒ symlinkSync(length: 3) {},
-        truncate: <ref *83> ƒ truncate(length: 3) {},
-        truncateSync: <ref *84> ƒ truncateSync(length: 2) {},
-        unwatchFile: <ref *85> ƒ unwatchFile(length: 2) {},
-        unlink: <ref *86> ƒ unlink(length: 2) {},
-        unlinkSync: <ref *87> ƒ unlinkSync(length: 1) {},
-        utimes: <ref *88> ƒ utimes(length: 4) {},
-        utimesSync: <ref *89> ƒ utimesSync(length: 3) {},
-        watch: <ref *90> ƒ watch(length: 3) {},
-        watchFile: <ref *91> ƒ watchFile(length: 3) {},
-        writeFile: <ref *92> ƒ writeFile(length: 4) {},
-        writeFileSync: <ref *93> ƒ writeFileSync(length: 3) {},
-        write: <ref *94> ƒ write(length: 6) {},
-        writeSync: <ref *95> ƒ writeSync(length: 5) {},
-        writev: <ref *96> ƒ writev(length: 4) {},
-        writevSync: <ref *97> ƒ writevSync(length: 3) {},
+        rename: <ref *73> ƒ rename(length: 3) {},
+        renameSync: <ref *74> ƒ renameSync(length: 2) {},
+        rm: <ref *75> ƒ rm(length: 3) {},
+        rmSync: <ref *76> ƒ rmSync(length: 2) {},
+        rmdir: <ref *77> ƒ rmdir(length: 3) {},
+        rmdirSync: <ref *78> ƒ rmdirSync(length: 2) {},
+        stat: <ref *79> ƒ stat(length: 1) {},
+        statfs: <ref *80> ƒ statfs(length: 1) {},
+        statSync: <ref *81> ƒ statSync(length: 1) {},
+        statfsSync: <ref *82> ƒ statfsSync(length: 1) {},
+        symlink: <ref *83> ƒ symlink(length: 4) {},
+        symlinkSync: <ref *84> ƒ symlinkSync(length: 3) {},
+        truncate: <ref *85> ƒ truncate(length: 3) {},
+        truncateSync: <ref *86> ƒ truncateSync(length: 2) {},
+        unwatchFile: <ref *87> ƒ unwatchFile(length: 2) {},
+        unlink: <ref *88> ƒ unlink(length: 2) {},
+        unlinkSync: <ref *89> ƒ unlinkSync(length: 1) {},
+        utimes: <ref *90> ƒ utimes(length: 4) {},
+        utimesSync: <ref *91> ƒ utimesSync(length: 3) {},
+        watch: <ref *92> ƒ watch(length: 3) {},
+        watchFile: <ref *93> ƒ watchFile(length: 3) {},
+        writeFile: <ref *94> ƒ writeFile(length: 4) {},
+        writeFileSync: <ref *95> ƒ writeFileSync(length: 3) {},
+        write: <ref *96> ƒ write(length: 6) {},
+        writeSync: <ref *97> ƒ writeSync(length: 5) {},
+        writev: <ref *98> ƒ writev(length: 4) {},
+        writevSync: <ref *99> ƒ writevSync(length: 3) {},
         Dirent: [Circular: *3],
         Stats: [Circular: *6],
         [get/set] ReadStream: [Circular: *4],
@@ -7222,14 +7216,14 @@ EventEmitter2 {
         [get/set] FileWriteStream: [Circular: *5],
         _toUnixTimestamp: [Circular: *7],
         Dir: [Circular: *2],
-        opendir: <ref *98> ƒ opendir(length: 3) {},
-        opendirSync: <ref *99> ƒ opendirSync(length: 2) {},
+        opendir: <ref *100> ƒ opendir(length: 3) {},
+        opendirSync: <ref *101> ƒ opendirSync(length: 2) {},
         F_OK: 0,
         R_OK: 4,
         W_OK: 2,
         X_OK: 1,
         constants: [Circular: *18],
-        [get/set] promises: <ref *100> {
+        [get/set] promises: <ref *102> {
             access: async ƒ access(length: 1) {},
             copyFile: async ƒ copyFile(length: 3) {},
             cp: async ƒ cp(length: 3) {},
@@ -7259,7 +7253,7 @@ EventEmitter2 {
             writeFile: async ƒ writeFile(length: 3) {},
             appendFile: async ƒ appendFile(length: 3) {},
             readFile: async ƒ readFile(length: 2) {},
-            watch: async ƒ _watch(length: 1) {},
+            watch: async ƒ watch(length: 1) {},
             constants: [Circular: *18]
         }
     },
@@ -7279,65 +7273,65 @@ EventEmitter2 {
     ftruncateSync: [Circular: *39],
     futimes: [Circular: *40],
     futimesSync: [Circular: *41],
-    lchmod: undefined,
-    lchmodSync: undefined,
+    lchmod: [Circular: *44],
+    lchmodSync: [Circular: *45],
     lchown: [Circular: *42],
     lchownSync: [Circular: *43],
-    link: [Circular: *44],
-    linkSync: [Circular: *45],
-    lstat: [Circular: *46],
-    lstatSync: [Circular: *47],
-    lutimes: [Circular: *48],
-    lutimesSync: [Circular: *49],
-    mkdir: [Circular: *50],
-    mkdirSync: [Circular: *51],
-    mkdtemp: [Circular: *52],
-    mkdtempSync: [Circular: *53],
-    open: [Circular: *54],
-    openAsBlob: [Circular: *56],
-    openSync: [Circular: *55],
-    opendir: [Circular: *98],
-    opendirSync: [Circular: *99],
-    promises: [Circular: *100],
-    read: [Circular: *59],
-    readFile: [Circular: *63],
-    readFileSync: [Circular: *64],
-    readSync: [Circular: *60],
-    readdir: [Circular: *57],
-    readdirSync: [Circular: *58],
-    readlink: [Circular: *65],
-    readlinkSync: [Circular: *66],
-    readv: [Circular: *61],
-    readvSync: [Circular: *62],
-    realpath: [Circular: *67],
-    realpathSync: [Circular: *69],
-    rename: [Circular: *71],
-    renameSync: [Circular: *72],
-    rm: [Circular: *73],
-    rmSync: [Circular: *74],
-    rmdir: [Circular: *75],
-    rmdirSync: [Circular: *76],
-    stat: [Circular: *77],
-    statSync: [Circular: *79],
-    statfs: [Circular: *78],
-    statfsSync: [Circular: *80],
-    symlink: [Circular: *81],
-    symlinkSync: [Circular: *82],
-    truncate: [Circular: *83],
-    truncateSync: [Circular: *84],
-    unlink: [Circular: *86],
-    unlinkSync: [Circular: *87],
-    unwatchFile: [Circular: *85],
-    utimes: [Circular: *88],
-    utimesSync: [Circular: *89],
-    watch: [Circular: *90],
-    watchFile: [Circular: *91],
-    write: [Circular: *94],
-    writeFile: [Circular: *92],
-    writeFileSync: [Circular: *93],
-    writeSync: [Circular: *95],
-    writev: [Circular: *96],
-    writevSync: [Circular: *97]
+    link: [Circular: *46],
+    linkSync: [Circular: *47],
+    lstat: [Circular: *48],
+    lstatSync: [Circular: *49],
+    lutimes: [Circular: *50],
+    lutimesSync: [Circular: *51],
+    mkdir: [Circular: *52],
+    mkdirSync: [Circular: *53],
+    mkdtemp: [Circular: *54],
+    mkdtempSync: [Circular: *55],
+    open: [Circular: *56],
+    openAsBlob: [Circular: *58],
+    openSync: [Circular: *57],
+    opendir: [Circular: *100],
+    opendirSync: [Circular: *101],
+    promises: [Circular: *102],
+    read: [Circular: *61],
+    readFile: [Circular: *65],
+    readFileSync: [Circular: *66],
+    readSync: [Circular: *62],
+    readdir: [Circular: *59],
+    readdirSync: [Circular: *60],
+    readlink: [Circular: *67],
+    readlinkSync: [Circular: *68],
+    readv: [Circular: *63],
+    readvSync: [Circular: *64],
+    realpath: [Circular: *69],
+    realpathSync: [Circular: *71],
+    rename: [Circular: *73],
+    renameSync: [Circular: *74],
+    rm: [Circular: *75],
+    rmSync: [Circular: *76],
+    rmdir: [Circular: *77],
+    rmdirSync: [Circular: *78],
+    stat: [Circular: *79],
+    statSync: [Circular: *81],
+    statfs: [Circular: *80],
+    statfsSync: [Circular: *82],
+    symlink: [Circular: *83],
+    symlinkSync: [Circular: *84],
+    truncate: [Circular: *85],
+    truncateSync: [Circular: *86],
+    unlink: [Circular: *88],
+    unlinkSync: [Circular: *89],
+    unwatchFile: [Circular: *87],
+    utimes: [Circular: *90],
+    utimesSync: [Circular: *91],
+    watch: [Circular: *92],
+    watchFile: [Circular: *93],
+    write: [Circular: *96],
+    writeFile: [Circular: *94],
+    writeFileSync: [Circular: *95],
+    writeSync: [Circular: *97],
+    writev: [Circular: *98],
+    writevSync: [Circular: *99]
 }
 ```
 
@@ -7415,19 +7409,18 @@ EventEmitter2 {
         S_IFIFO: 4096,
         S_IFLNK: 40960,
         S_IFSOCK: 49152,
-        O_CREAT: 64,
-        O_EXCL: 128,
+        O_CREAT: 512,
+        O_EXCL: 2048,
         UV_FS_O_FILEMAP: 0,
-        O_NOCTTY: 256,
-        O_TRUNC: 512,
-        O_APPEND: 1024,
-        O_DIRECTORY: 65536,
-        O_NOATIME: 262144,
-        O_NOFOLLOW: 131072,
-        O_SYNC: 1052672,
-        O_DSYNC: 4096,
-        O_DIRECT: 16384,
-        O_NONBLOCK: 2048,
+        O_NOCTTY: 131072,
+        O_TRUNC: 1024,
+        O_APPEND: 8,
+        O_DIRECTORY: 1048576,
+        O_NOFOLLOW: 256,
+        O_SYNC: 128,
+        O_DSYNC: 4194304,
+        O_SYMLINK: 2097152,
+        O_NONBLOCK: 4,
         S_IRWXU: 448,
         S_IRUSR: 256,
         S_IWUSR: 128,
@@ -7693,8 +7686,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## fs/promises
+<details>
+				<summary><code>fs/promises</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -7728,19 +7724,18 @@ EventEmitter2 {
         S_IFIFO: 4096,
         S_IFLNK: 40960,
         S_IFSOCK: 49152,
-        O_CREAT: 64,
-        O_EXCL: 128,
+        O_CREAT: 512,
+        O_EXCL: 2048,
         UV_FS_O_FILEMAP: 0,
-        O_NOCTTY: 256,
-        O_TRUNC: 512,
-        O_APPEND: 1024,
-        O_DIRECTORY: 65536,
-        O_NOATIME: 262144,
-        O_NOFOLLOW: 131072,
-        O_SYNC: 1052672,
-        O_DSYNC: 4096,
-        O_DIRECT: 16384,
-        O_NONBLOCK: 2048,
+        O_NOCTTY: 131072,
+        O_TRUNC: 1024,
+        O_APPEND: 8,
+        O_DIRECTORY: 1048576,
+        O_NOFOLLOW: 256,
+        O_SYNC: 128,
+        O_DSYNC: 4194304,
+        O_SYMLINK: 2097152,
+        O_NONBLOCK: 4,
         S_IRWXU: 448,
         S_IRUSR: 256,
         S_IWUSR: 128,
@@ -7796,7 +7791,7 @@ EventEmitter2 {
         writeFile: <ref *31> async ƒ writeFile(length: 3) {},
         appendFile: [Circular: *3],
         readFile: <ref *32> async ƒ readFile(length: 2) {},
-        watch: <ref *33> async ƒ _watch(length: 1) {},
+        watch: <ref *33> async ƒ watch(length: 1) {},
         constants: [Circular: *6]
     },
     lchmod: [Circular: *25],
@@ -7857,19 +7852,18 @@ EventEmitter2 {
         S_IFIFO: 4096,
         S_IFLNK: 40960,
         S_IFSOCK: 49152,
-        O_CREAT: 64,
-        O_EXCL: 128,
+        O_CREAT: 512,
+        O_EXCL: 2048,
         UV_FS_O_FILEMAP: 0,
-        O_NOCTTY: 256,
-        O_TRUNC: 512,
-        O_APPEND: 1024,
-        O_DIRECTORY: 65536,
-        O_NOATIME: 262144,
-        O_NOFOLLOW: 131072,
-        O_SYNC: 1052672,
-        O_DSYNC: 4096,
-        O_DIRECT: 16384,
-        O_NONBLOCK: 2048,
+        O_NOCTTY: 131072,
+        O_TRUNC: 1024,
+        O_APPEND: 8,
+        O_DIRECTORY: 1048576,
+        O_NOFOLLOW: 256,
+        O_SYNC: 128,
+        O_DSYNC: 4194304,
+        O_SYMLINK: 2097152,
+        O_NONBLOCK: 4,
         S_IRWXU: 448,
         S_IRUSR: 256,
         S_IWUSR: 128,
@@ -7981,8 +7975,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## http
+<details>
+				<summary><code>http</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -8464,8 +8461,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## http2
+<details>
+				<summary><code>http2</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -9012,8 +9012,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## https
+<details>
+				<summary><code>https</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -9134,22 +9137,19 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## inspector
+<details>
+				<summary><code>inspector</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
 ```js
 [Object: null prototype] {
-    Network: <ref *2> {
-        requestWillBeSent: ƒ requestWillBeSent(length: 1) {},
-        responseReceived: ƒ responseReceived(length: 1) {},
-        loadingFinished: ƒ loadingFinished(length: 1) {},
-        loadingFailed: ƒ loadingFailed(length: 1) {}
-    },
-    Session: <ref *7> class Session extends EventEmitter {},
-    close: <ref *8> ƒ _debugEnd(length: 0) {},
-    console: <ref *9> {
+    Session: <ref *2> class Session extends EventEmitter {},
+    close: <ref *3> ƒ _debugEnd(length: 0) {},
+    console: <ref *4> {
         debug: ƒ debug(length: 0) {},
         error: ƒ error(length: 0) {},
         info: ƒ info(length: 0) {},
@@ -9175,17 +9175,16 @@ EventEmitter2 {
         context: ƒ context(length: 1) {}
     },
     default: {
-        open: <ref *34> ƒ inspectorOpen(length: 3) {},
-        close: [Circular: *8],
-        url: <ref *35> ƒ url(length: 0) {},
-        waitForDebugger: <ref *36> ƒ inspectorWaitForDebugger(length: 0) {},
-        console: [Circular: *9],
-        Session: [Circular: *7],
-        Network: [Circular: *2]
+        open: <ref *29> ƒ inspectorOpen(length: 3) {},
+        close: [Circular: *3],
+        url: <ref *30> ƒ url(length: 0) {},
+        waitForDebugger: <ref *31> ƒ inspectorWaitForDebugger(length: 0) {},
+        console: [Circular: *4],
+        Session: [Circular: *2]
     },
-    open: [Circular: *34],
-    url: [Circular: *35],
-    waitForDebugger: [Circular: *36]
+    open: [Circular: *29],
+    url: [Circular: *30],
+    waitForDebugger: [Circular: *31]
 }
 ```
 
@@ -9296,22 +9295,19 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## inspector/promises
+<details>
+				<summary><code>inspector/promises</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
 ```js
 [Object: null prototype] {
-    Network: <ref *2> {
-        requestWillBeSent: ƒ requestWillBeSent(length: 1) {},
-        responseReceived: ƒ responseReceived(length: 1) {},
-        loadingFinished: ƒ loadingFinished(length: 1) {},
-        loadingFailed: ƒ loadingFailed(length: 1) {}
-    },
-    Session: <ref *7> class Session extends inspector.Session {},
-    close: <ref *8> ƒ _debugEnd(length: 0) {},
-    console: <ref *9> {
+    Session: <ref *2> class Session extends inspector.Session {},
+    close: <ref *3> ƒ _debugEnd(length: 0) {},
+    console: <ref *4> {
         debug: ƒ debug(length: 0) {},
         error: ƒ error(length: 0) {},
         info: ƒ info(length: 0) {},
@@ -9337,17 +9333,16 @@ EventEmitter2 {
         context: ƒ context(length: 1) {}
     },
     default: {
-        open: <ref *34> ƒ inspectorOpen(length: 3) {},
-        close: [Circular: *8],
-        url: <ref *35> ƒ url(length: 0) {},
-        waitForDebugger: <ref *36> ƒ inspectorWaitForDebugger(length: 0) {},
-        console: [Circular: *9],
-        Session: [Circular: *7],
-        Network: [Circular: *2]
+        open: <ref *29> ƒ inspectorOpen(length: 3) {},
+        close: [Circular: *3],
+        url: <ref *30> ƒ url(length: 0) {},
+        waitForDebugger: <ref *31> ƒ inspectorWaitForDebugger(length: 0) {},
+        console: [Circular: *4],
+        Session: [Circular: *2]
     },
-    open: [Circular: *34],
-    url: [Circular: *35],
-    waitForDebugger: [Circular: *36]
+    open: [Circular: *29],
+    url: [Circular: *30],
+    waitForDebugger: [Circular: *31]
 }
 ```
 
@@ -9458,8 +9453,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## module
+<details>
+				<summary><code>module</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -9468,7 +9466,7 @@ EventEmitter2 {
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1729309188884-1/module.mjs: "/tmp/fs-fixture-1729309188884-1/module.mjs"
+            /private/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/fs-fixture-1729309507187-1/module.mjs: "/private/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/fs-fixture-1729309507187-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -9476,17 +9474,13 @@ EventEmitter2 {
             .node: ƒ (length: 2) {}
         },
         globalPaths: <ref *9> [
-            "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modules/tsx/d…",
-            "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modules/tsx/n…",
-            "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modules",
-            "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@9.12.1/node_modules/pnpm/bin/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@9.12.1/node_modules/pnpm/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@9.12.1/node_modules",
-            "/home/runner/setup-pnpm/node_modules/.pnpm/node_modules",
-            "/home/runner/.node_modules",
-            "/home/runner/.node_libraries",
-            "/opt/hostedtoolcache/node/20.18.0/x64/lib/node"
+            "/Users/osame/Developer/github/privatenumber/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modu…",
+            "/Users/osame/Developer/github/privatenumber/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modu…",
+            "/Users/osame/Developer/github/privatenumber/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modu…",
+            "/Users/osame/Developer/github/privatenumber/compare-bun-node/node_modules/.pnpm/node_modules",
+            "/Users/osame/.node_modules",
+            "/Users/osame/.node_libraries",
+            "/Users/osame/.nvm/versions/node/v20.16.0/lib/node"
         ],
         _debug: <ref *10> ƒ deprecated(length: 0) {},
         isBuiltin: <ref *11> ƒ isBuiltin(length: 1) {},
@@ -9608,13 +9602,13 @@ EventEmitter2 {
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1729309188884-1/module.mjs: {
+            /private/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/fs-fixture-1729309507187-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1729309188884-1/inspect.mjs: {
+            /private/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/fs-fixture-1729309507187-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -9767,8 +9761,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## net
+<details>
+				<summary><code>net</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -9871,8 +9868,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## os
+<details>
+				<summary><code>os</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -9890,89 +9890,88 @@ EventEmitter2 {
         dlopen: [Object: null prototype] {
             RTLD_LAZY: 1,
             RTLD_NOW: 2,
-            RTLD_GLOBAL: 256,
-            RTLD_LOCAL: 0,
-            RTLD_DEEPBIND: 8
+            RTLD_GLOBAL: 8,
+            RTLD_LOCAL: 4
         },
         errno: [Object: null prototype] {
             E2BIG: 7,
             EACCES: 13,
-            EADDRINUSE: 98,
-            EADDRNOTAVAIL: 99,
-            EAFNOSUPPORT: 97,
-            EAGAIN: 11,
-            EALREADY: 114,
+            EADDRINUSE: 48,
+            EADDRNOTAVAIL: 49,
+            EAFNOSUPPORT: 47,
+            EAGAIN: 35,
+            EALREADY: 37,
             EBADF: 9,
-            EBADMSG: 74,
+            EBADMSG: 94,
             EBUSY: 16,
-            ECANCELED: 125,
+            ECANCELED: 89,
             ECHILD: 10,
-            ECONNABORTED: 103,
-            ECONNREFUSED: 111,
-            ECONNRESET: 104,
-            EDEADLK: 35,
-            EDESTADDRREQ: 89,
+            ECONNABORTED: 53,
+            ECONNREFUSED: 61,
+            ECONNRESET: 54,
+            EDEADLK: 11,
+            EDESTADDRREQ: 39,
             EDOM: 33,
-            EDQUOT: 122,
+            EDQUOT: 69,
             EEXIST: 17,
             EFAULT: 14,
             EFBIG: 27,
-            EHOSTUNREACH: 113,
-            EIDRM: 43,
-            EILSEQ: 84,
-            EINPROGRESS: 115,
+            EHOSTUNREACH: 65,
+            EIDRM: 90,
+            EILSEQ: 92,
+            EINPROGRESS: 36,
             EINTR: 4,
             EINVAL: 22,
             EIO: 5,
-            EISCONN: 106,
+            EISCONN: 56,
             EISDIR: 21,
-            ELOOP: 40,
+            ELOOP: 62,
             EMFILE: 24,
             EMLINK: 31,
-            EMSGSIZE: 90,
-            EMULTIHOP: 72,
-            ENAMETOOLONG: 36,
-            ENETDOWN: 100,
-            ENETRESET: 102,
-            ENETUNREACH: 101,
+            EMSGSIZE: 40,
+            EMULTIHOP: 95,
+            ENAMETOOLONG: 63,
+            ENETDOWN: 50,
+            ENETRESET: 52,
+            ENETUNREACH: 51,
             ENFILE: 23,
-            ENOBUFS: 105,
-            ENODATA: 61,
+            ENOBUFS: 55,
+            ENODATA: 96,
             ENODEV: 19,
             ENOENT: 2,
             ENOEXEC: 8,
-            ENOLCK: 37,
-            ENOLINK: 67,
+            ENOLCK: 77,
+            ENOLINK: 97,
             ENOMEM: 12,
-            ENOMSG: 42,
-            ENOPROTOOPT: 92,
+            ENOMSG: 91,
+            ENOPROTOOPT: 42,
             ENOSPC: 28,
-            ENOSR: 63,
-            ENOSTR: 60,
-            ENOSYS: 38,
-            ENOTCONN: 107,
+            ENOSR: 98,
+            ENOSTR: 99,
+            ENOSYS: 78,
+            ENOTCONN: 57,
             ENOTDIR: 20,
-            ENOTEMPTY: 39,
-            ENOTSOCK: 88,
-            ENOTSUP: 95,
+            ENOTEMPTY: 66,
+            ENOTSOCK: 38,
+            ENOTSUP: 45,
             ENOTTY: 25,
             ENXIO: 6,
-            EOPNOTSUPP: 95,
-            EOVERFLOW: 75,
+            EOPNOTSUPP: 102,
+            EOVERFLOW: 84,
             EPERM: 1,
             EPIPE: 32,
-            EPROTO: 71,
-            EPROTONOSUPPORT: 93,
-            EPROTOTYPE: 91,
+            EPROTO: 100,
+            EPROTONOSUPPORT: 43,
+            EPROTOTYPE: 41,
             ERANGE: 34,
             EROFS: 30,
             ESPIPE: 29,
             ESRCH: 3,
-            ESTALE: 116,
-            ETIME: 62,
-            ETIMEDOUT: 110,
+            ESTALE: 70,
+            ETIME: 101,
+            ETIMEDOUT: 60,
             ETXTBSY: 26,
-            EWOULDBLOCK: 11,
+            EWOULDBLOCK: 35,
             EXDEV: 18
         },
         signals: [Object: null prototype] {
@@ -9983,32 +9982,30 @@ EventEmitter2 {
             SIGTRAP: 5,
             SIGABRT: 6,
             SIGIOT: 6,
-            SIGBUS: 7,
+            SIGBUS: 10,
             SIGFPE: 8,
             SIGKILL: 9,
-            SIGUSR1: 10,
+            SIGUSR1: 30,
             SIGSEGV: 11,
-            SIGUSR2: 12,
+            SIGUSR2: 31,
             SIGPIPE: 13,
             SIGALRM: 14,
             SIGTERM: 15,
-            SIGCHLD: 17,
-            SIGSTKFLT: 16,
-            SIGCONT: 18,
-            SIGSTOP: 19,
-            SIGTSTP: 20,
+            SIGCHLD: 20,
+            SIGCONT: 19,
+            SIGSTOP: 17,
+            SIGTSTP: 18,
             SIGTTIN: 21,
             SIGTTOU: 22,
-            SIGURG: 23,
+            SIGURG: 16,
             SIGXCPU: 24,
             SIGXFSZ: 25,
             SIGVTALRM: 26,
             SIGPROF: 27,
             SIGWINCH: 28,
-            SIGIO: 29,
-            SIGPOLL: 29,
-            SIGPWR: 30,
-            SIGSYS: 31
+            SIGIO: 23,
+            SIGINFO: 29,
+            SIGSYS: 12
         },
         priority: [Object: null prototype] {
             PRIORITY_LOW: 19,
@@ -10109,89 +10106,88 @@ EventEmitter2 {
         dlopen: [Object: null prototype] {
             RTLD_LAZY: 1,
             RTLD_NOW: 2,
-            RTLD_GLOBAL: 256,
-            RTLD_LOCAL: 0,
-            RTLD_DEEPBIND: 8
+            RTLD_GLOBAL: 8,
+            RTLD_LOCAL: 4
         },
         errno: [Object: null prototype] {
             E2BIG: 7,
             EACCES: 13,
-            EADDRINUSE: 98,
-            EADDRNOTAVAIL: 99,
-            EAFNOSUPPORT: 97,
-            EAGAIN: 11,
-            EALREADY: 114,
+            EADDRINUSE: 48,
+            EADDRNOTAVAIL: 49,
+            EAFNOSUPPORT: 47,
+            EAGAIN: 35,
+            EALREADY: 37,
             EBADF: 9,
-            EBADMSG: 74,
+            EBADMSG: 94,
             EBUSY: 16,
-            ECANCELED: 125,
+            ECANCELED: 89,
             ECHILD: 10,
-            ECONNABORTED: 103,
-            ECONNREFUSED: 111,
-            ECONNRESET: 104,
-            EDEADLK: 35,
-            EDESTADDRREQ: 89,
+            ECONNABORTED: 53,
+            ECONNREFUSED: 61,
+            ECONNRESET: 54,
+            EDEADLK: 11,
+            EDESTADDRREQ: 39,
             EDOM: 33,
-            EDQUOT: 122,
+            EDQUOT: 69,
             EEXIST: 17,
             EFAULT: 14,
             EFBIG: 27,
-            EHOSTUNREACH: 113,
-            EIDRM: 43,
-            EILSEQ: 84,
-            EINPROGRESS: 115,
+            EHOSTUNREACH: 65,
+            EIDRM: 90,
+            EILSEQ: 92,
+            EINPROGRESS: 36,
             EINTR: 4,
             EINVAL: 22,
             EIO: 5,
-            EISCONN: 106,
+            EISCONN: 56,
             EISDIR: 21,
-            ELOOP: 40,
+            ELOOP: 62,
             EMFILE: 24,
             EMLINK: 31,
-            EMSGSIZE: 90,
-            EMULTIHOP: 72,
-            ENAMETOOLONG: 36,
-            ENETDOWN: 100,
-            ENETRESET: 102,
-            ENETUNREACH: 101,
+            EMSGSIZE: 40,
+            EMULTIHOP: 95,
+            ENAMETOOLONG: 63,
+            ENETDOWN: 50,
+            ENETRESET: 52,
+            ENETUNREACH: 51,
             ENFILE: 23,
-            ENOBUFS: 105,
-            ENODATA: 61,
+            ENOBUFS: 55,
+            ENODATA: 96,
             ENODEV: 19,
             ENOENT: 2,
             ENOEXEC: 8,
-            ENOLCK: 37,
-            ENOLINK: 67,
+            ENOLCK: 77,
+            ENOLINK: 97,
             ENOMEM: 12,
-            ENOMSG: 42,
-            ENOPROTOOPT: 92,
+            ENOMSG: 91,
+            ENOPROTOOPT: 42,
             ENOSPC: 28,
-            ENOSR: 63,
-            ENOSTR: 60,
-            ENOSYS: 38,
-            ENOTCONN: 107,
+            ENOSR: 98,
+            ENOSTR: 99,
+            ENOSYS: 78,
+            ENOTCONN: 57,
             ENOTDIR: 20,
-            ENOTEMPTY: 39,
-            ENOTSOCK: 88,
-            ENOTSUP: 95,
+            ENOTEMPTY: 66,
+            ENOTSOCK: 38,
+            ENOTSUP: 45,
             ENOTTY: 25,
             ENXIO: 6,
-            EOPNOTSUPP: 95,
-            EOVERFLOW: 75,
+            EOPNOTSUPP: 102,
+            EOVERFLOW: 84,
             EPERM: 1,
             EPIPE: 32,
-            EPROTO: 71,
-            EPROTONOSUPPORT: 93,
-            EPROTOTYPE: 91,
+            EPROTO: 100,
+            EPROTONOSUPPORT: 43,
+            EPROTOTYPE: 41,
             ERANGE: 34,
             EROFS: 30,
             ESPIPE: 29,
             ESRCH: 3,
-            ESTALE: 116,
-            ETIME: 62,
-            ETIMEDOUT: 110,
+            ESTALE: 70,
+            ETIME: 101,
+            ETIMEDOUT: 60,
             ETXTBSY: 26,
-            EWOULDBLOCK: 11,
+            EWOULDBLOCK: 35,
             EXDEV: 18
         },
         signals: [Object: null prototype] {
@@ -10202,32 +10198,30 @@ EventEmitter2 {
             SIGTRAP: 5,
             SIGABRT: 6,
             SIGIOT: 6,
-            SIGBUS: 7,
+            SIGBUS: 10,
             SIGFPE: 8,
             SIGKILL: 9,
-            SIGUSR1: 10,
+            SIGUSR1: 30,
             SIGSEGV: 11,
-            SIGUSR2: 12,
+            SIGUSR2: 31,
             SIGPIPE: 13,
             SIGALRM: 14,
             SIGTERM: 15,
-            SIGCHLD: 17,
-            SIGSTKFLT: 16,
-            SIGCONT: 18,
-            SIGSTOP: 19,
-            SIGTSTP: 20,
+            SIGCHLD: 20,
+            SIGCONT: 19,
+            SIGSTOP: 17,
+            SIGTSTP: 18,
             SIGTTIN: 21,
             SIGTTOU: 22,
-            SIGURG: 23,
+            SIGURG: 16,
             SIGXCPU: 24,
             SIGXFSZ: 25,
             SIGVTALRM: 26,
             SIGPROF: 27,
             SIGWINCH: 28,
-            SIGIO: 29,
-            SIGPOLL: 29,
-            SIGPWR: 30,
-            SIGSYS: 31
+            SIGIO: 23,
+            SIGINFO: 29,
+            SIGSYS: 12
         },
         priority: [Object: null prototype] {
             PRIORITY_LOW: 19,
@@ -10310,8 +10304,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## path
+<details>
+				<summary><code>path</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -10331,27 +10328,25 @@ EventEmitter2 {
         extname: <ref *11> ƒ extname(length: 1) {},
         format: <ref *12> ƒ bound _format(length: 1) {},
         parse: <ref *13> ƒ parse(length: 1) {},
-        matchesGlob: <ref *14> ƒ matchesGlob(length: 2) {},
         sep: "/",
         delimiter: ":",
-        win32: <ref *15> {
+        win32: <ref *14> {
             resolve: ƒ resolve(length: 0) {},
             normalize: ƒ normalize(length: 1) {},
             isAbsolute: ƒ isAbsolute(length: 1) {},
             join: ƒ join(length: 0) {},
             relative: ƒ relative(length: 2) {},
-            toNamespacedPath: <ref *21> ƒ toNamespacedPath(length: 1) {},
+            toNamespacedPath: <ref *20> ƒ toNamespacedPath(length: 1) {},
             dirname: ƒ dirname(length: 1) {},
             basename: ƒ basename(length: 2) {},
             extname: ƒ extname(length: 1) {},
             format: ƒ bound _format(length: 1) {},
             parse: ƒ parse(length: 1) {},
-            matchesGlob: ƒ matchesGlob(length: 2) {},
             sep: "\\",
             delimiter: ";",
-            win32: [Circular: *15],
+            win32: [Circular: *14],
             posix: [Circular: *4],
-            _makeLong: [Circular: *21]
+            _makeLong: [Circular: *20]
         },
         posix: [Circular: *4],
         _makeLong: [Circular: *2]
@@ -10362,7 +10357,6 @@ EventEmitter2 {
     format: [Circular: *12],
     isAbsolute: [Circular: *7],
     join: [Circular: *8],
-    matchesGlob: [Circular: *14],
     normalize: [Circular: *6],
     parse: [Circular: *13],
     posix: [Circular: *4],
@@ -10370,7 +10364,7 @@ EventEmitter2 {
     resolve: [Circular: *5],
     sep: "/",
     toNamespacedPath: [Circular: *2],
-    win32: [Circular: *15]
+    win32: [Circular: *14]
 }
 ```
 
@@ -10433,8 +10427,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## path/posix
+<details>
+				<summary><code>path/posix</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -10454,27 +10451,25 @@ EventEmitter2 {
         extname: <ref *11> ƒ extname(length: 1) {},
         format: <ref *12> ƒ bound _format(length: 1) {},
         parse: <ref *13> ƒ parse(length: 1) {},
-        matchesGlob: <ref *14> ƒ matchesGlob(length: 2) {},
         sep: "/",
         delimiter: ":",
-        win32: <ref *15> {
+        win32: <ref *14> {
             resolve: ƒ resolve(length: 0) {},
             normalize: ƒ normalize(length: 1) {},
             isAbsolute: ƒ isAbsolute(length: 1) {},
             join: ƒ join(length: 0) {},
             relative: ƒ relative(length: 2) {},
-            toNamespacedPath: <ref *21> ƒ toNamespacedPath(length: 1) {},
+            toNamespacedPath: <ref *20> ƒ toNamespacedPath(length: 1) {},
             dirname: ƒ dirname(length: 1) {},
             basename: ƒ basename(length: 2) {},
             extname: ƒ extname(length: 1) {},
             format: ƒ bound _format(length: 1) {},
             parse: ƒ parse(length: 1) {},
-            matchesGlob: ƒ matchesGlob(length: 2) {},
             sep: "\\",
             delimiter: ";",
-            win32: [Circular: *15],
+            win32: [Circular: *14],
             posix: [Circular: *4],
-            _makeLong: [Circular: *21]
+            _makeLong: [Circular: *20]
         },
         posix: [Circular: *4],
         _makeLong: [Circular: *2]
@@ -10485,7 +10480,6 @@ EventEmitter2 {
     format: [Circular: *12],
     isAbsolute: [Circular: *7],
     join: [Circular: *8],
-    matchesGlob: [Circular: *14],
     normalize: [Circular: *6],
     parse: [Circular: *13],
     posix: [Circular: *4],
@@ -10493,7 +10487,7 @@ EventEmitter2 {
     resolve: [Circular: *5],
     sep: "/",
     toNamespacedPath: [Circular: *2],
-    win32: [Circular: *15]
+    win32: [Circular: *14]
 }
 ```
 
@@ -10556,8 +10550,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## path/win32
+<details>
+				<summary><code>path/win32</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -10577,28 +10574,26 @@ EventEmitter2 {
         extname: <ref *11> ƒ extname(length: 1) {},
         format: <ref *12> ƒ bound _format(length: 1) {},
         parse: <ref *13> ƒ parse(length: 1) {},
-        matchesGlob: <ref *14> ƒ matchesGlob(length: 2) {},
         sep: "\\",
         delimiter: ";",
         win32: [Circular: *4],
-        posix: <ref *15> {
+        posix: <ref *14> {
             resolve: ƒ resolve(length: 0) {},
             normalize: ƒ normalize(length: 1) {},
             isAbsolute: ƒ isAbsolute(length: 1) {},
             join: ƒ join(length: 0) {},
             relative: ƒ relative(length: 2) {},
-            toNamespacedPath: <ref *21> ƒ toNamespacedPath(length: 1) {},
+            toNamespacedPath: <ref *20> ƒ toNamespacedPath(length: 1) {},
             dirname: ƒ dirname(length: 1) {},
             basename: ƒ basename(length: 2) {},
             extname: ƒ extname(length: 1) {},
             format: ƒ bound _format(length: 1) {},
             parse: ƒ parse(length: 1) {},
-            matchesGlob: ƒ matchesGlob(length: 2) {},
             sep: "/",
             delimiter: ":",
             win32: [Circular: *4],
-            posix: [Circular: *15],
-            _makeLong: [Circular: *21]
+            posix: [Circular: *14],
+            _makeLong: [Circular: *20]
         },
         _makeLong: [Circular: *2]
     },
@@ -10608,10 +10603,9 @@ EventEmitter2 {
     format: [Circular: *12],
     isAbsolute: [Circular: *7],
     join: [Circular: *8],
-    matchesGlob: [Circular: *14],
     normalize: [Circular: *6],
     parse: [Circular: *13],
-    posix: [Circular: *15],
+    posix: [Circular: *14],
     relative: [Circular: *9],
     resolve: [Circular: *5],
     sep: "\\",
@@ -10679,8 +10673,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## perf_hooks
+<details>
+				<summary><code>perf_hooks</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -10785,14 +10782,14 @@ EventEmitter2 {
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1729309189933.0525,
+            timeOrigin: 1729309507619.55,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: undefined,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1729309189933.0525,
-                nodeStart: 1729309189933.0525,
-                environment: 1729309189933.0525,
-                bootstrapComplete: 1729309189933.0525,
+                v8Start: 1729309507619.55,
+                nodeStart: 1729309507619.55,
+                environment: 1729309507619.55,
+                bootstrapComplete: 1729309507619.55,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -10819,8 +10816,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## process
+<details>
+				<summary><code>process</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -10857,237 +10857,230 @@ EventEmitter2 {
     allowedNodeEnvironmentFlags: <ref *24> NodeEnvironmentFlagsSet {
         Symbol(internal properties): {
             array: [
-                "--insecure-http-parser",
-                "--no-insecure-http-parser",
-                "--watch-preserve-output",
-                "--no-watch-preserve-output",
-                "--heapsnapshot-near-heap-limit",
-                "--disable-warning",
-                "--heapsnapshot-signal",
-                "--force-async-hooks-checks",
-                "--no-force-async-hooks-checks",
-                "--diagnostic-dir",
-                "--expose-gc",
-                "--experimental-wasi-unstable-preview1",
-                "--experimental-vm-modules",
-                "--no-experimental-vm-modules",
-                "--deprecation",
-                "--no-deprecation",
-                "--tls-min-v1.0",
-                "--no-tls-min-v1.0",
-                "--allow-wasi",
-                "--no-allow-wasi",
-                "--inspect-port",
-                "--experimental-fetch",
-                "--no-experimental-fetch",
-                "--http-parser",
-                "--experimental-loader",
-                "--enable-source-maps",
-                "--no-enable-source-maps",
-                "--input-type",
-                "--jitless",
-                "--experimental-require-module",
-                "--no-experimental-require-module",
-                "--experimental-network-imports",
-                "--no-experimental-network-imports",
-                "--inspect",
-                "--no-inspect",
-                "--experimental-global-webcrypto",
-                "--no-experimental-global-webcrypto",
-                "--experimental-policy",
+                "--disable-wasm-trap-handler",
+                "--no-disable-wasm-trap-handler",
                 "--track-heap-objects",
                 "--no-track-heap-objects",
-                "--experimental-detect-module",
-                "--no-experimental-detect-module",
-                "--policy-integrity",
-                "--trace-atomics-wait",
-                "--no-trace-atomics-wait",
-                "--allow-addons",
-                "--no-allow-addons",
-                "--verify-base-objects",
-                "--no-verify-base-objects",
-                "--allow-fs-read",
-                "--watch",
-                "--no-watch",
-                "--experimental-default-type",
-                "--trace-deprecation",
-                "--no-trace-deprecation",
-                "--disallow-code-generation-from-strings",
-                "--title",
-                "--throw-deprecation",
-                "--no-throw-deprecation",
+                "--abort-on-uncaught-exception",
                 "--node-memory-debug",
-                "--experimental-specifier-resolution",
-                "--addons",
-                "--no-addons",
-                "--warnings",
-                "--no-warnings",
-                "--tls-min-v1.1",
-                "--no-tls-min-v1.1",
-                "--pending-deprecation",
-                "--no-pending-deprecation",
-                "--tls-min-v1.2",
-                "--no-tls-min-v1.2",
-                "--preserve-symlinks-main",
-                "--no-preserve-symlinks-main",
-                "--allow-fs-write",
+                "--inspect-publish-uid",
+                "--tls-keylog",
+                "--max-old-space-size",
                 "--global-search-paths",
                 "--no-global-search-paths",
-                "--experimental-global-customevent",
-                "--no-experimental-global-customevent",
-                "--import",
-                "--trace-sigint",
-                "--no-trace-sigint",
-                "--experimental-json-modules",
-                "--openssl-shared-config",
-                "--no-openssl-shared-config",
-                "--conditions",
-                "--disable-proto",
-                "--zero-fill-buffers",
-                "--no-zero-fill-buffers",
-                "--experimental-worker",
-                "--test-shard",
-                "--use-bundled-ca",
-                "--no-use-bundled-ca",
-                "--experimental-top-level-await",
-                "--openssl-legacy-provider",
-                "--no-openssl-legacy-provider",
-                "--v8-pool-size",
-                "--force-fips",
-                "--no-force-fips",
+                "--trace-exit",
+                "--no-trace-exit",
+                "--perf-basic-prof",
+                "--watch",
+                "--no-watch",
+                "--interpreted-frames-native-stack",
+                "--perf-prof-unwinding-info",
+                "--preserve-symlinks-main",
+                "--no-preserve-symlinks-main",
+                "--trace-tls",
+                "--no-trace-tls",
                 "--experimental-shadow-realm",
                 "--no-experimental-shadow-realm",
                 "--preserve-symlinks",
                 "--no-preserve-symlinks",
-                "--test-reporter-destination",
-                "--trace-event-file-pattern",
-                "--secure-heap-min",
-                "--abort-on-uncaught-exception",
-                "--trace-event-categories",
-                "--network-family-autoselection-attempt-timeout",
-                "--report-dir",
-                "--disable-wasm-trap-handler",
-                "--no-disable-wasm-trap-handler",
-                "--unhandled-rejections",
-                "--snapshot-blob",
-                "--report-exclude-network",
-                "--no-report-exclude-network",
-                "--experimental-websocket",
-                "--no-experimental-websocket",
-                "--tls-min-v1.3",
-                "--no-tls-min-v1.3",
-                "--enable-fips",
-                "--no-enable-fips",
-                "--report-on-fatalerror",
-                "--no-report-on-fatalerror",
-                "--huge-max-old-generation-size",
-                "--node-snapshot",
-                "--no-node-snapshot",
-                "--icu-data-dir",
-                "--experimental-abortcontroller",
-                "--report-filename",
-                "--experimental-permission",
-                "--no-experimental-permission",
-                "--interpreted-frames-native-stack",
-                "--tls-cipher-list",
-                "--watch-path",
-                "--experimental-wasm-modules",
-                "--no-experimental-wasm-modules",
-                "--use-openssl-ca",
-                "--no-use-openssl-ca",
-                "--use-largepages",
-                "--experimental-eventsource",
-                "--no-experimental-eventsource",
-                "--test-reporter",
-                "--secure-heap",
-                "--require",
-                "--napi-modules",
-                "--tls-keylog",
-                "--extra-info-on-fatal-exception",
-                "--no-extra-info-on-fatal-exception",
-                "--stack-trace-limit",
-                "--openssl-config",
-                "--trace-uncaught",
-                "--no-trace-uncaught",
-                "--experimental-repl-await",
-                "--no-experimental-repl-await",
-                "--trace-warnings",
-                "--no-trace-warnings",
-                "--trace-tls",
-                "--no-trace-tls",
-                "--tls-max-v1.2",
-                "--no-tls-max-v1.2",
-                "--force-node-api-uncaught-exceptions-policy",
-                "--no-force-node-api-uncaught-exceptions-policy",
-                "--perf-basic-prof-only-functions",
-                "--experimental-print-required-tla",
-                "--no-experimental-print-required-tla",
-                "--report-compact",
-                "--no-report-compact",
-                "--debug-arraybuffer-allocations",
-                "--no-debug-arraybuffer-allocations",
+                "--max-semi-space-size",
                 "--trace-sync-io",
                 "--no-trace-sync-io",
-                "--force-context-aware",
-                "--no-force-context-aware",
-                "--max-semi-space-size",
-                "--perf-prof-unwinding-info",
-                "--allow-child-process",
-                "--no-allow-child-process",
-                "--max-http-header-size",
-                "--redirect-warnings",
-                "--enable-etw-stack-walking",
-                "--perf-basic-prof",
-                "--max-old-space-size",
-                "--allow-worker",
-                "--no-allow-worker",
+                "--stack-trace-limit",
                 "--report-signal",
-                "--dns-result-order",
-                "--test-only",
-                "--no-test-only",
-                "--network-family-autoselection",
-                "--no-network-family-autoselection",
+                "--experimental-modules",
+                "--jitless",
+                "--experimental-top-level-await",
+                "--inspect-brk",
+                "--no-inspect-brk",
                 "--report-uncaught-exception",
                 "--no-report-uncaught-exception",
                 "--inspect-wait",
                 "--no-inspect-wait",
-                "--perf-prof",
-                "--trace-exit",
-                "--no-trace-exit",
-                "--frozen-intrinsics",
-                "--no-frozen-intrinsics",
-                "--inspect-brk",
-                "--no-inspect-brk",
-                "--inspect-publish-uid",
+                "--tls-max-v1.2",
+                "--no-tls-max-v1.2",
+                "--watch-path",
+                "--tls-min-v1.3",
+                "--no-tls-min-v1.3",
+                "--tls-min-v1.0",
+                "--no-tls-min-v1.0",
+                "--redirect-warnings",
+                "--disallow-code-generation-from-strings",
+                "--allow-worker",
+                "--no-allow-worker",
+                "--tls-min-v1.2",
+                "--no-tls-min-v1.2",
                 "--tls-max-v1.3",
                 "--no-tls-max-v1.3",
+                "--enable-etw-stack-walking",
+                "--verify-base-objects",
+                "--no-verify-base-objects",
+                "--diagnostic-dir",
+                "--unhandled-rejections",
+                "--report-exclude-network",
+                "--no-report-exclude-network",
+                "--experimental-wasi-unstable-preview1",
+                "--experimental-default-type",
+                "--deprecation",
+                "--no-deprecation",
+                "--trace-atomics-wait",
+                "--no-trace-atomics-wait",
+                "--throw-deprecation",
+                "--no-throw-deprecation",
                 "--report-on-signal",
                 "--no-report-on-signal",
-                "--trace-promises",
-                "--no-trace-promises",
+                "--test-shard",
+                "--max-http-header-size",
+                "--perf-prof",
+                "--experimental-network-imports",
+                "--no-experimental-network-imports",
+                "--test-only",
+                "--no-test-only",
+                "--test-reporter-destination",
+                "--perf-basic-prof-only-functions",
+                "--force-fips",
+                "--no-force-fips",
+                "--input-type",
+                "--pending-deprecation",
+                "--no-pending-deprecation",
+                "--allow-child-process",
+                "--no-allow-child-process",
+                "--require",
+                "--napi-modules",
+                "--force-context-aware",
+                "--no-force-context-aware",
+                "--disable-warning",
+                "--warnings",
+                "--no-warnings",
+                "--experimental-loader",
+                "--http-parser",
+                "--inspect",
+                "--no-inspect",
+                "--heapsnapshot-signal",
+                "--watch-preserve-output",
+                "--no-watch-preserve-output",
+                "--trace-warnings",
+                "--no-trace-warnings",
+                "--experimental-report",
+                "--experimental-json-modules",
+                "--addons",
+                "--no-addons",
+                "--policy-integrity",
+                "--trace-event-file-pattern",
+                "--trace-uncaught",
+                "--no-trace-uncaught",
+                "--experimental-wasm-modules",
+                "--no-experimental-wasm-modules",
+                "--experimental-detect-module",
+                "--no-experimental-detect-module",
+                "--experimental-global-customevent",
+                "--no-experimental-global-customevent",
+                "--network-family-autoselection",
+                "--no-network-family-autoselection",
+                "--trace-event-categories",
+                "--experimental-worker",
+                "--experimental-fetch",
+                "--no-experimental-fetch",
+                "--openssl-config",
+                "--icu-data-dir",
+                "--force-node-api-uncaught-exceptions-policy",
+                "--no-force-node-api-uncaught-exceptions-policy",
+                "--experimental-websocket",
+                "--no-experimental-websocket",
+                "--test-reporter",
+                "--dns-result-order",
+                "--extra-info-on-fatal-exception",
+                "--no-extra-info-on-fatal-exception",
+                "--allow-fs-write",
+                "--trace-sigint",
+                "--no-trace-sigint",
+                "--inspect-port",
+                "--secure-heap-min",
+                "--heapsnapshot-near-heap-limit",
+                "--experimental-permission",
+                "--no-experimental-permission",
+                "--experimental-policy",
                 "--experimental-import-meta-resolve",
                 "--no-experimental-import-meta-resolve",
-                "--experimental-modules",
-                "--experimental-report",
+                "--use-largepages",
+                "--openssl-legacy-provider",
+                "--no-openssl-legacy-provider",
+                "--enable-fips",
+                "--no-enable-fips",
+                "--enable-source-maps",
+                "--no-enable-source-maps",
+                "--insecure-http-parser",
+                "--no-insecure-http-parser",
+                "--use-openssl-ca",
+                "--no-use-openssl-ca",
+                "--v8-pool-size",
+                "--report-on-fatalerror",
+                "--no-report-on-fatalerror",
+                "--secure-heap",
+                "--experimental-specifier-resolution",
+                "--trace-deprecation",
+                "--no-trace-deprecation",
+                "--report-compact",
+                "--no-report-compact",
+                "--experimental-vm-modules",
+                "--no-experimental-vm-modules",
+                "--force-async-hooks-checks",
+                "--no-force-async-hooks-checks",
+                "--allow-wasi",
+                "--no-allow-wasi",
+                "--frozen-intrinsics",
+                "--no-frozen-intrinsics",
+                "--openssl-shared-config",
+                "--no-openssl-shared-config",
+                "--allow-addons",
+                "--no-allow-addons",
+                "--import",
+                "--zero-fill-buffers",
+                "--no-zero-fill-buffers",
+                "--use-bundled-ca",
+                "--no-use-bundled-ca",
+                "--report-dir",
+                "--experimental-global-webcrypto",
+                "--no-experimental-global-webcrypto",
+                "--tls-min-v1.1",
+                "--no-tls-min-v1.1",
+                "--report-filename",
+                "--experimental-repl-await",
+                "--no-experimental-repl-await",
+                "--title",
+                "--trace-promises",
+                "--no-trace-promises",
+                "--huge-max-old-generation-size",
+                "--disable-proto",
+                "--tls-cipher-list",
+                "--node-snapshot",
+                "--no-node-snapshot",
+                "--debug-arraybuffer-allocations",
+                "--no-debug-arraybuffer-allocations",
+                "--conditions",
+                "--experimental-abortcontroller",
+                "--allow-fs-read",
+                "--network-family-autoselection-attempt-timeout",
+                "--snapshot-blob",
                 "--debug-port",
+                "--loader",
                 "--inspect",
-                "--inspect-brk",
+                "--es-module-specifier-resolution",
                 "--inspect-wait",
+                "--prof-process",
                 "-C",
                 "--enable-network-family-autoselection",
-                "--prof-process",
-                "--loader",
+                "--inspect-brk",
+                "--report-directory",
                 "-r",
-                "--trace-events-enabled",
-                "--es-module-specifier-resolution",
-                "--report-directory"
+                "--trace-events-enabled"
             ]
         }
     },
-    arch: "x64",
+    arch: "arm64",
     argv: <ref *27> [
-        "/opt/hostedtoolcache/node/20.18.0/x64/bin/node",
-        "/tmp/fs-fixture-1729309188884-1/process.mjs"
+        "/Users/osame/.nvm/versions/node/v20.16.0/bin/node",
+        "/private/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/fs-fixture-1729309507187-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *28> ƒ deprecated(length: 0) {},
@@ -11107,8 +11100,8 @@ EventEmitter2 {
             libraries: []
         },
         variables: {
+            arm_fpu: "neon",
             asan: 0,
-            clang: 0,
             coverage: false,
             dcheck_always_on: 0,
             debug_nghttp2: false,
@@ -11118,8 +11111,7 @@ EventEmitter2 {
             enable_pgo_use: false,
             error_on_warn: false,
             force_dynamic_crt: 0,
-            gas_version: "2.35",
-            host_arch: "x64",
+            host_arch: "arm64",
             icu_data_in: "../../deps/icu-tmp/icudt75l.dat",
             icu_endianness: "l",
             icu_gyp_path: "tools/icu/icu-generic.gyp",
@@ -11128,7 +11120,7 @@ EventEmitter2 {
             icu_ver_major: "75",
             is_debug: 0,
             libdir: "lib",
-            llvm_version: "0.0",
+            llvm_version: "13.0",
             napi_build_version: "9",
             node_builtin_shareable_builtins: [
                 "deps/cjs-module-lexer/lexer.js",
@@ -11183,7 +11175,6 @@ EventEmitter2 {
                 "lib/internal/assert.js",
                 "lib/internal/assert/assertion_error.js",
                 "lib/internal/assert/calltracker.js",
-                "lib/internal/assert/utils.js",
                 "lib/internal/async_hooks.js",
                 "lib/internal/blob.js",
                 "lib/internal/blocklist.js",
@@ -11266,7 +11257,6 @@ EventEmitter2 {
                 "lib/internal/http2/util.js",
                 "lib/internal/idna.js",
                 "lib/internal/inspector_async_hook.js",
-                "lib/internal/inspector_network_tracking.js",
                 "lib/internal/js_stream_socket.js",
                 "lib/internal/legacy/processbinding.js",
                 "lib/internal/linkedlist.js",
@@ -11357,7 +11347,6 @@ EventEmitter2 {
                 "lib/internal/streams/destroy.js",
                 "lib/internal/streams/duplex.js",
                 "lib/internal/streams/duplexify.js",
-                "lib/internal/streams/duplexpair.js",
                 "lib/internal/streams/end-of-stream.js",
                 "lib/internal/streams/from.js",
                 "lib/internal/streams/lazy_transform.js",
@@ -11374,7 +11363,6 @@ EventEmitter2 {
                 "lib/internal/test/transfer.js",
                 "lib/internal/test_runner/coverage.js",
                 "lib/internal/test_runner/harness.js",
-                "lib/internal/test_runner/mock/loader.js",
                 "lib/internal/test_runner/mock/mock.js",
                 "lib/internal/test_runner/mock/mock_timers.js",
                 "lib/internal/test_runner/reporter/dot.js",
@@ -11382,7 +11370,6 @@ EventEmitter2 {
                 "lib/internal/test_runner/reporter/lcov.js",
                 "lib/internal/test_runner/reporter/spec.js",
                 "lib/internal/test_runner/reporter/tap.js",
-                "lib/internal/test_runner/reporter/utils.js",
                 "lib/internal/test_runner/reporter/v8-serializer.js",
                 "lib/internal/test_runner/runner.js",
                 "lib/internal/test_runner/test.js",
@@ -11467,7 +11454,6 @@ EventEmitter2 {
             node_no_browser_globals: false,
             node_prefix: "/",
             node_release_urlbase: "https://nodejs.org/download/release/",
-            node_section_ordering_info: "",
             node_shared: false,
             node_shared_ada: false,
             node_shared_brotli: false,
@@ -11480,7 +11466,6 @@ EventEmitter2 {
             node_shared_openssl: false,
             node_shared_simdjson: false,
             node_shared_simdutf: false,
-            node_shared_uvwasi: false,
             node_shared_zlib: false,
             node_tag: "",
             node_target_type: "executable",
@@ -11495,9 +11480,9 @@ EventEmitter2 {
             openssl_is_fips: false,
             openssl_quic: true,
             ossfuzz: false,
-            shlib_suffix: "so.115",
+            shlib_suffix: "115.dylib",
             single_executable_application: true,
-            target_arch: "x64",
+            target_arch: "arm64",
             ubsan: 0,
             use_prefix_to_find_headers: false,
             v8_enable_31bit_smis_on_64bit_arch: 0,
@@ -11511,9 +11496,7 @@ EventEmitter2 {
             v8_enable_maglev: 0,
             v8_enable_object_print: 1,
             v8_enable_pointer_compression: 0,
-            v8_enable_sandbox: 0,
             v8_enable_shared_ro_heap: 1,
-            v8_enable_short_builtin_calls: 1,
             v8_enable_v8_checks: 0,
             v8_enable_webassembly: 1,
             v8_no_strict_aliasing: 1,
@@ -11522,7 +11505,8 @@ EventEmitter2 {
             v8_random_seed: 0,
             v8_trace_maps: 0,
             v8_use_siphash: 1,
-            want_separate_host_toolset: 0
+            want_separate_host_toolset: 0,
+            xcode_version: "13.0"
         }
     },
     constrainedMemory: <ref *41> ƒ constrainedMemory(length: 0) {},
@@ -11530,15 +11514,15 @@ EventEmitter2 {
     cwd: <ref *43> ƒ wrappedCwd(length: 0) {},
     debugPort: 9229,
     default: process {
-        version: "v20.18.0",
+        version: "v20.16.0",
         versions: <ref *45> {
-            node: "20.18.0",
-            acorn: "8.12.1",
-            ada: "2.9.0",
-            ares: "1.33.1",
+            node: "20.16.0",
+            acorn: "8.11.3",
+            ada: "2.8.0",
+            ares: "1.31.0",
             base64: "0.5.2",
             brotli: "1.1.0",
-            cjs_module_lexer: "1.4.1",
+            cjs_module_lexer: "1.2.2",
             cldr: "45.0",
             icu: "75.1",
             llhttp: "8.1.2",
@@ -11548,22 +11532,22 @@ EventEmitter2 {
             nghttp3: "0.7.0",
             ngtcp2: "1.1.0",
             openssl: "3.0.13+quic",
-            simdutf: "5.5.0",
+            simdutf: "5.2.8",
             tz: "2024a",
-            undici: "6.19.8",
+            undici: "6.19.2",
             unicode: "15.1",
             uv: "1.46.0",
             uvwasi: "0.0.21",
             v8: "11.3.244.8-node.23",
-            zlib: "1.3.0.1-motley-71660e1"
+            zlib: "1.3.0.1-motley-209717d"
         },
-        arch: "x64",
-        platform: "linux",
+        arch: "arm64",
+        platform: "darwin",
         release: <ref *46> {
             name: "node",
             lts: "Iron",
-            sourceUrl: "https://nodejs.org/download/release/v20.18.0/node-v20.18.0.tar.gz",
-            headersUrl: "https://nodejs.org/download/release/v20.18.0/node-v20.18.0-headers.tar.gz"
+            sourceUrl: "https://nodejs.org/download/release/v20.16.0/node-v20.16.0.tar.gz",
+            headersUrl: "https://nodejs.org/download/release/v20.16.0/node-v20.16.0-headers.tar.gz"
         },
         _rawDebug: [Circular: *19],
         moduleLoadList: <ref *47> [
@@ -11625,7 +11609,6 @@ EventEmitter2 {
             "Internal Binding blob",
             "Internal Binding encoding_binding",
             "NativeModule internal/encoding",
-            "NativeModule internal/streams/utils",
             "NativeModule util",
             "NativeModule internal/webstreams/util",
             "NativeModule internal/webstreams/queuingstrategies",
@@ -11657,8 +11640,8 @@ EventEmitter2 {
             "NativeModule internal/modules/run_main",
             "NativeModule internal/net",
             "NativeModule internal/dns/utils",
-            "NativeModule internal/modules/esm/assert",
             "NativeModule internal/modules/esm/loader",
+            "NativeModule internal/modules/esm/assert",
             "NativeModule internal/modules/esm/module_map",
             "NativeModule internal/modules/esm/translators",
             "NativeModule internal/modules/esm/package_config",
@@ -11674,6 +11657,7 @@ EventEmitter2 {
             "Internal Binding uv",
             "NativeModule internal/fs/watchers",
             "NativeModule internal/fs/recursive_watch",
+            "NativeModule internal/streams/utils",
             "NativeModule internal/readline/utils",
             "NativeModule internal/readline/callbacks",
             "NativeModule internal/readline/interface",
@@ -11695,7 +11679,6 @@ EventEmitter2 {
             "NativeModule stream/promises",
             "NativeModule internal/streams/transform",
             "NativeModule internal/streams/passthrough",
-            "NativeModule internal/streams/duplexpair",
             "NativeModule stream",
             "Internal Binding stream_wrap",
             "Internal Binding tcp_wrap",
@@ -11978,162 +11961,118 @@ EventEmitter2 {
         setgid: <ref *106> ƒ (length: 1) {},
         setuid: <ref *107> ƒ (length: 1) {},
         env: <ref *108>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_423a2dda-004e-4ffb-843d-e8b11288cae8",
-            npm_package_devDependencies__types_node: "^18.15.11",
-            STATS_TRP: "true",
-            DEPLOYMENT_BASEPATH: "/opt/runner",
-            DOTNET_NOLOGO: "1",
-            USER: "runner",
-            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v20.18.0 linux x64",
-            CI: "true",
-            RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_423a2dda-004e-4ffb-843d-e8b11288cae8",
-            PIPX_HOME: "/opt/pipx",
-            npm_node_execpath: "/opt/hostedtoolcache/node/20.18.0/x64/bin/node",
-            JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
-            SHLVL: "1",
-            npm_package_packageManager: "pnpm@9.12.1",
-            HOME: "/home/runner",
-            RUNNER_TEMP: "/home/runner/work/_temp",
-            GITHUB_EVENT_PATH: "/home/runner/work/_temp/_github_workflow/event.json",
-            JAVA_HOME_11_X64: "/usr/lib/jvm/temurin-11-jdk-amd64",
-            PIPX_BIN_DIR: "/opt/pipx_bin",
-            GITHUB_REPOSITORY_OWNER: "privatenumber",
-            npm_package_dependencies_comment_mark: "^1.1.1",
-            GRADLE_HOME: "/usr/share/gradle-8.10.2",
-            ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-            JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
-            STATS_RDCL: "true",
-            GITHUB_RETENTION_DAYS: "90",
-            GITHUB_REPOSITORY_OWNER_ID: "1075694",
-            POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
-            AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
-            GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "601",
-            GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-            NVM_DIR: "/home/runner/.nvm",
-            npm_package_dependencies_fs_fixture: "^1.2.0",
-            DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
-            GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
-            JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20241015.1.0",
-            RUNNER_OS: "Linux",
-            GITHUB_API_URL: "https://api.github.com",
-            GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.8/x64",
-            SWIFT_PATH: "/usr/share/swift/usr/bin",
-            npm_package_devDependencies_lintroll: "^1.10.0",
-            RUNNER_USER: "runner",
-            STATS_V3PS: "true",
-            CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.2/x64",
-            JOURNAL_STREAM: "8:21561",
-            GITHUB_WORKFLOW: "Compare Bun and Node.js",
-            _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
-            npm_package_private: "true",
-            npm_package_scripts_lint: "lintroll --ignore-pattern README.md --cache .",
-            npm_config_registry: "https://registry.npmjs.org/",
-            ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
-            STATS_D: "false",
-            GITHUB_RUN_ID: "11414272503",
-            STATS_VMFE: "true",
-            GITHUB_REF_TYPE: "branch",
-            BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "91b66344ca80ae0e042ea72e4ea0c5f92fb74de8",
-            GITHUB_BASE_REF: "",
-            ImageOS: "ubuntu22",
-            npm_package_scripts_start: "tsx index.ts",
-            STATS_BLT: "true",
-            GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
-            PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
-            GITHUB_ACTION_REPOSITORY: "",
-            npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@9.12.1/node_modules/pnpm/dist/node_modules/node-gyp/…",
-            PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
-            ANT_HOME: "/usr/share/ant",
-            DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_0ff59eb4-6a4d-4c9c-be17-c488aa52adee",
-            INVOCATION_ID: "f9b706a922364253a76ebcf1147bb080",
-            RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            NODE: "/opt/hostedtoolcache/node/20.18.0/x64/bin/node",
-            GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "98",
-            GITHUB_TRIGGERING_ACTOR: "privatenumber",
-            RUNNER_ARCH: "X64",
-            XDG_RUNTIME_DIR: "/run/user/1001",
-            AGENT_TOOLSDIRECTORY: "/opt/hostedtoolcache",
-            npm_config_frozen_lockfile: "",
-            LANG: "C.UTF-8",
-            VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
-            CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 5",
-            XDG_CONFIG_HOME: "/home/runner/.config",
-            STATS_VMD: "true",
-            GITHUB_REF_NAME: "master",
-            GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
-            STATS_D_D: "false",
-            npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
-            npm_lifecycle_script: "tsx index.ts",
-            STATS_UE: "true",
-            ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-            GITHUB_ACTION_REF: "",
-            DEBIAN_FRONTEND: "noninteractive",
-            GITHUB_REPOSITORY_ID: "622996871",
-            GITHUB_ACTIONS: "true",
-            NODE_PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modules/tsx/d…",
-            npm_lifecycle_event: "start",
-            GITHUB_REF_PROTECTED: "false",
+            NVM_INC: "/Users/osame/.nvm/versions/node/v20.16.0/include/node",
             npm_package_devDependencies_lint_staged: "^13.2.0",
-            npm_package_devDependencies_simple_git_hooks: "^2.8.1",
-            GITHUB_WORKSPACE: "/home/runner/work/compare-bun-node/compare-bun-node",
-            ACCEPT_EULA: "Y",
-            GITHUB_JOB: "build",
-            RUNNER_PERFLOG: "/home/runner/perflog",
-            npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "91b66344ca80ae0e042ea72e4ea0c5f92fb74de8",
-            GITHUB_RUN_ATTEMPT: "1",
-            GITHUB_REF: "refs/heads/master",
-            GITHUB_ACTOR: "privatenumber",
-            ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
-            npm_package_license: "MIT",
-            LEIN_HOME: "/usr/local/lib/lein",
-            npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_423a2dda-004e-4ffb-843d-e8b11288cae8",
-            JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
-            PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
-            GITHUB_ACTOR_ID: "1075694",
-            RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-            npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@9.12.1/node_modules/pnpm/bin/pnpm.cjs",
-            HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
-            STATS_TIS: "mining",
-            GITHUB_EVENT_NAME: "push",
-            HOMEBREW_NO_AUTO_UPDATE: "1",
-            ANDROID_HOME: "/usr/local/lib/android/sdk",
-            GITHUB_SERVER_URL: "https://github.com",
-            GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
-            LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
-            GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_423a2dda-004e-4ffb-843d-e8b11288cae8",
-            EDGEWEBDRIVER: "/usr/local/share/edge_driver",
-            STATS_EXT: "true",
-            npm_command: "run-script",
-            PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
-            ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-            SGX_AESM_ADDR: "1",
-            CHROME_BIN: "/usr/bin/google-chrome",
-            SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
-            PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-            STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
+            COREPACK_ROOT: "/opt/homebrew/Cellar/corepack/0.29.4/libexec/lib/node_modules/corepack",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
-            ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_423a2dda-004e-4ffb-843d-e8b11288cae8",
-            INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
+            rvm_use_flag: "",
+            TERM_PROGRAM: "iTerm.app",
+            rvm_bin_path: "/Users/osame/.rvm/bin",
+            NODE: "/opt/homebrew/Cellar/node/22.9.0_1/bin/node",
+            NVM_CD_FLAGS: "-q",
+            rvm_quiet_flag: "",
+            INIT_CWD: "/Users/osame/Developer/github/privatenumber/compare-bun-node",
+            SHELL: "/bin/zsh",
+            TERM: "xterm-256color",
+            rvm_gemstone_url: "",
+            npm_package_devDependencies_lintroll: "^1.10.0",
+            TMPDIR: "/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/",
+            HOMEBREW_REPOSITORY: "/opt/homebrew",
+            rvm_docs_type: "",
+            npm_package_scripts_lint: "lintroll --ignore-pattern README.md --cache .",
+            TERM_PROGRAM_VERSION: "3.5.4",
+            TERM_SESSION_ID: "w0t18p1:A254F08D-0941-4698-80F2-8DACFAB81945",
+            rvm_hook: "",
+            npm_package_private: "true",
+            npm_config_registry: "https://registry.npmjs.org/",
+            ZSH: "/Users/osame/.oh-my-zsh",
+            PNPM_HOME: "/Users/osame/Library/pnpm",
+            npm_package_dependencies_comment_mark: "^1.1.1",
+            USER: "osame",
+            NVM_DIR: "/Users/osame/.nvm",
+            LS_COLORS: "di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43",
+            rvm_gemstone_package_file: "",
+            npm_package_license: "MIT",
+            COMMAND_MODE: "unix2003",
+            PNPM_SCRIPT_SRC_DIR: "/Users/osame/Developer/github/privatenumber/compare-bun-node",
+            rvm_path: "/Users/osame/.rvm",
+            SSH_AUTH_SOCK: "/private/tmp/com.apple.launchd.mRn862MBBr/Listeners",
+            __CF_USER_TEXT_ENCODING: "0x1F5:0x0:0x0",
+            HOMEBREW_NO_AUTO_UPDATE: "1",
+            TERM_FEATURES: "T3LrMSc7UUw9Ts3BFGsSyHNoSxF",
+            rvm_proxy: "",
+            npm_execpath: "/Users/osame/.cache/node/corepack/v1/pnpm/9.12.1/bin/pnpm.cjs",
+            PAGER: "less",
+            rvm_ruby_file: "",
+            npm_package_devDependencies_tsx: "^3.12.6",
+            npm_config_cafile: "/opt/homebrew/etc/ca-certificates/cert.pem",
+            LSCOLORS: "Gxfxcxdxbxegedabagacad",
+            npm_config_frozen_lockfile: "",
+            rvm_prefix: "/Users/osame",
+            rvm_silent_flag: "",
+            PATH: "/Users/osame/Developer/github/privatenumber/compare-bun-node/node_modules/.bin:/Users/osame/.cache/n…",
+            TERMINFO_DIRS: "/Applications/iTerm.app/Contents/Resources/terminfo:/usr/share/terminfo",
+            rvm_ruby_make: "",
+            LaunchInstanceID: "DE88AB6F-1632-4115-8720-027C8AB229AE",
+            __CFBundleIdentifier: "com.googlecode.iterm2",
+            COREPACK_ENABLE_DOWNLOAD_PROMPT: "1",
+            npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
+            PWD: "/Users/osame/Developer/github/privatenumber/compare-bun-node",
+            npm_command: "run-script",
+            npm_lifecycle_event: "start",
+            LANG: "en_US.UTF-8",
+            rvm_sdk: "",
+            npm_package_packageManager: "pnpm@9.12.1",
+            ITERM_PROFILE: "Default",
+            NODE_PATH: "/Users/osame/Developer/github/privatenumber/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modu…",
+            npm_package_scripts_start: "tsx index.ts",
+            npm_package_dependencies_fs_fixture: "^1.2.0",
+            npm_package_devDependencies_simple_git_hooks: "^2.8.1",
+            XPC_FLAGS: "0x0",
+            npm_config_node_gyp: "/Users/osame/.cache/node/corepack/v1/pnpm/9.12.1/dist/node_modules/node-gyp/bin/node-gyp.js",
+            XPC_SERVICE_NAME: "0",
+            rvm_version: "1.29.12 (latest)",
+            COLORFGBG: "7;0",
+            HOME: "/Users/osame",
+            SHLVL: "2",
+            rvm_pretty_print_flag: "",
+            rvm_script_name: "",
+            rvm_ruby_mode: "",
+            LC_TERMINAL_VERSION: "3.5.4",
+            HOMEBREW_PREFIX: "/opt/homebrew",
+            ITERM_SESSION_ID: "w0t18p1:A254F08D-0941-4698-80F2-8DACFAB81945",
+            LOGNAME: "osame",
+            LESS: "-R",
+            npm_package_dependencies_execa: "^7.1.1",
+            rvm_alias_expanded: "",
+            npm_lifecycle_script: "tsx index.ts",
+            NVM_BIN: "/Users/osame/.nvm/versions/node/v20.16.0/bin",
+            BUN_INSTALL: "/Users/osame/.bun",
+            npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
+            rvm_nightly_flag: "",
+            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.9.0 darwin arm64",
+            BEYOND_AUTH_SOCK: "/private/tmp/com.apple.launchd.NRDIOexWqR/Listeners",
+            HOMEBREW_CELLAR: "/opt/homebrew/Cellar",
+            INFOPATH: "/opt/homebrew/share/info:",
+            rvm_ruby_make_install: "",
+            npm_package_devDependencies__types_node: "^18.15.11",
+            LC_TERMINAL: "iTerm2",
+            rvm_niceness: "",
+            rvm_ruby_bits: "",
+            rvm_bin_flag: "",
+            BEYOND_CORP_TUNNEL: "/private/tmp/com.apple.launchd.vKpGYweZYe/Listeners",
+            SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS: "/Users/osame/Library/WebKit/Databases",
+            SECURITYSESSIONID: "186ab",
+            rvm_only_path_flag: "",
+            COLORTERM: "truecolor",
+            npm_node_execpath: "/opt/homebrew/Cellar/node/22.9.0_1/bin/node"
         },
         title: "node",
         argv: [Circular: *27],
         execArgv: <ref *109> [],
-        pid: 2862,
-        ppid: 1988,
-        execPath: "/opt/hostedtoolcache/node/20.18.0/x64/bin/node",
+        pid: 84411,
+        ppid: 84042,
+        execPath: "/Users/osame/.nvm/versions/node/v20.16.0/bin/node",
         debugPort: 9229,
         argv0: "node",
         _preload_modules: [Circular: *18],
@@ -12157,7 +12096,7 @@ EventEmitter2 {
     emitWarning: [Circular: *69],
     env: [Circular: *108],
     execArgv: [Circular: *109],
-    execPath: "/opt/hostedtoolcache/node/20.18.0/x64/bin/node",
+    execPath: "/Users/osame/.nvm/versions/node/v20.16.0/bin/node",
     exit: [Circular: *57],
     exitCode: undefined,
     features: [Circular: *66],
@@ -12177,9 +12116,9 @@ EventEmitter2 {
     moduleLoadList: [Circular: *47],
     nextTick: [Circular: *70],
     openStdin: [Circular: *60],
-    pid: 2862,
-    platform: "linux",
-    ppid: 1988,
+    pid: 84411,
+    platform: "darwin",
+    ppid: 84042,
     reallyExit: [Circular: *51],
     release: [Circular: *46],
     report: [Circular: *110],
@@ -12198,7 +12137,7 @@ EventEmitter2 {
     title: "node",
     umask: [Circular: *101],
     uptime: [Circular: *49],
-    version: "v20.18.0",
+    version: "v20.16.0",
     versions: [Circular: *45]
 }
 ```
@@ -12223,10 +12162,10 @@ EventEmitter2 {
     abort: <ref *14> ƒ abort(length: 1) {},
     addListener: ƒ addListener(length: 2) {},
     allowedNodeEnvironmentFlags: <ref *16> Set {},
-    arch: "x64",
+    arch: "arm64",
     argv: <ref *17> [
-        "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1729309188884-1/process.mjs"
+        "/Users/osame/.bun/bin/bun",
+        "/private/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/fs-fixture-1729309507187-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -12250,7 +12189,7 @@ EventEmitter2 {
         _exiting: false,
         abort: [Circular: *14],
         allowedNodeEnvironmentFlags: [Circular: *16],
-        arch: "x64",
+        arch: "arm64",
         argv: [Circular: *17],
         argv0: "bun",
         assert: [Circular: *18],
@@ -12268,158 +12207,114 @@ EventEmitter2 {
         dlopen: <ref *28> ƒ dlopen(length: 1) {},
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_423a2dda-004e-4ffb-843d-e8b11288cae8",
-            [get/set] npm_package_devDependencies__types_node: "^18.15.11",
-            [get/set] STATS_TRP: "true",
-            [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
-            [get/set] DOTNET_NOLOGO: "1",
-            [get/set] USER: "runner",
-            [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v20.18.0 linux x64",
-            [get/set] CI: "true",
-            [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_423a2dda-004e-4ffb-843d-e8b11288cae8",
-            [get/set] PIPX_HOME: "/opt/pipx",
-            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.18.0/x64/bin/node",
-            [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
-            [get/set] SHLVL: "1",
-            [get/set] npm_package_packageManager: "pnpm@9.12.1",
-            [get/set] HOME: "/home/runner",
-            [get/set] RUNNER_TEMP: "/home/runner/work/_temp",
-            [get/set] GITHUB_EVENT_PATH: "/home/runner/work/_temp/_github_workflow/event.json",
-            [get/set] JAVA_HOME_11_X64: "/usr/lib/jvm/temurin-11-jdk-amd64",
-            [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
-            [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
-            [get/set] npm_package_dependencies_comment_mark: "^1.1.1",
-            [get/set] GRADLE_HOME: "/usr/share/gradle-8.10.2",
-            [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-            [get/set] JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
-            [get/set] STATS_RDCL: "true",
-            [get/set] GITHUB_RETENTION_DAYS: "90",
-            [get/set] GITHUB_REPOSITORY_OWNER_ID: "1075694",
-            [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
-            [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
-            [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "601",
-            [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-            [get/set] NVM_DIR: "/home/runner/.nvm",
-            [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
-            [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
-            [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
-            [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20241015.1.0",
-            [get/set] RUNNER_OS: "Linux",
-            [get/set] GITHUB_API_URL: "https://api.github.com",
-            [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.8/x64",
-            [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
-            [get/set] npm_package_devDependencies_lintroll: "^1.10.0",
-            [get/set] RUNNER_USER: "runner",
-            [get/set] STATS_V3PS: "true",
-            [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.2/x64",
-            [get/set] JOURNAL_STREAM: "8:21561",
-            [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
-            [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
-            [get/set] npm_package_private: "true",
-            [get/set] npm_package_scripts_lint: "lintroll --ignore-pattern README.md --cache .",
-            [get/set] npm_config_registry: "https://registry.npmjs.org/",
-            [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
-            [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "11414272503",
-            [get/set] STATS_VMFE: "true",
-            [get/set] GITHUB_REF_TYPE: "branch",
-            [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "91b66344ca80ae0e042ea72e4ea0c5f92fb74de8",
-            [get/set] GITHUB_BASE_REF: "",
-            [get/set] ImageOS: "ubuntu22",
-            [get/set] npm_package_scripts_start: "tsx index.ts",
-            [get/set] STATS_BLT: "true",
-            [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
-            [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
-            [get/set] GITHUB_ACTION_REPOSITORY: "",
-            [get/set] npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@9.12.1/node_modules/pnpm/dist/node_modules/node-gyp/…",
-            [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
-            [get/set] ANT_HOME: "/usr/share/ant",
-            [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_0ff59eb4-6a4d-4c9c-be17-c488aa52adee",
-            [get/set] INVOCATION_ID: "f9b706a922364253a76ebcf1147bb080",
-            [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            [get/set] NODE: "/opt/hostedtoolcache/node/20.18.0/x64/bin/node",
-            [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "98",
-            [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
-            [get/set] RUNNER_ARCH: "X64",
-            [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
-            [get/set] AGENT_TOOLSDIRECTORY: "/opt/hostedtoolcache",
-            [get/set] npm_config_frozen_lockfile: "",
-            [get/set] LANG: "C.UTF-8",
-            [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
-            [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 5",
-            [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
-            [get/set] STATS_VMD: "true",
-            [get/set] GITHUB_REF_NAME: "master",
-            [get/set] GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
-            [get/set] STATS_D_D: "false",
-            [get/set] npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
-            [get/set] npm_lifecycle_script: "tsx index.ts",
-            [get/set] STATS_UE: "true",
-            [get/set] ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-            [get/set] GITHUB_ACTION_REF: "",
-            [get/set] DEBIAN_FRONTEND: "noninteractive",
-            [get/set] GITHUB_REPOSITORY_ID: "622996871",
-            [get/set] GITHUB_ACTIONS: "true",
-            [get/set] NODE_PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modules/tsx/d…",
-            [get/set] npm_lifecycle_event: "start",
-            [get/set] GITHUB_REF_PROTECTED: "false",
+            [get/set] NVM_INC: "/Users/osame/.nvm/versions/node/v20.16.0/include/node",
             [get/set] npm_package_devDependencies_lint_staged: "^13.2.0",
-            [get/set] npm_package_devDependencies_simple_git_hooks: "^2.8.1",
-            [get/set] GITHUB_WORKSPACE: "/home/runner/work/compare-bun-node/compare-bun-node",
-            [get/set] ACCEPT_EULA: "Y",
-            [get/set] GITHUB_JOB: "build",
-            [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
-            [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-            [get/set] npm_package_dependencies_execa: "^7.1.1",
-            [get/set] GITHUB_SHA: "91b66344ca80ae0e042ea72e4ea0c5f92fb74de8",
-            [get/set] GITHUB_RUN_ATTEMPT: "1",
-            [get/set] GITHUB_REF: "refs/heads/master",
-            [get/set] GITHUB_ACTOR: "privatenumber",
-            [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
-            [get/set] npm_package_license: "MIT",
-            [get/set] LEIN_HOME: "/usr/local/lib/lein",
-            [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_423a2dda-004e-4ffb-843d-e8b11288cae8",
-            [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
-            [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
-            [get/set] GITHUB_ACTOR_ID: "1075694",
-            [get/set] RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-            [get/set] npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@9.12.1/node_modules/pnpm/bin/pnpm.cjs",
-            [get/set] HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
-            [get/set] STATS_TIS: "mining",
-            [get/set] GITHUB_EVENT_NAME: "push",
-            [get/set] HOMEBREW_NO_AUTO_UPDATE: "1",
-            [get/set] ANDROID_HOME: "/usr/local/lib/android/sdk",
-            [get/set] GITHUB_SERVER_URL: "https://github.com",
-            [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
-            [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
-            [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_423a2dda-004e-4ffb-843d-e8b11288cae8",
-            [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
-            [get/set] STATS_EXT: "true",
-            [get/set] npm_command: "run-script",
-            [get/set] PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
-            [get/set] ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-            [get/set] SGX_AESM_ADDR: "1",
-            [get/set] CHROME_BIN: "/usr/bin/google-chrome",
-            [get/set] SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
-            [get/set] PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-            [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
+            [get/set] COREPACK_ROOT: "/opt/homebrew/Cellar/corepack/0.29.4/libexec/lib/node_modules/corepack",
             [get/set] npm_package_lint_staged____ts_js_: "lintroll --cache",
-            [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_423a2dda-004e-4ffb-843d-e8b11288cae8",
-            [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
+            [get/set] rvm_use_flag: "",
+            [get/set] TERM_PROGRAM: "iTerm.app",
+            [get/set] rvm_bin_path: "/Users/osame/.rvm/bin",
+            [get/set] NODE: "/opt/homebrew/Cellar/node/22.9.0_1/bin/node",
+            [get/set] NVM_CD_FLAGS: "-q",
+            [get/set] rvm_quiet_flag: "",
+            [get/set] INIT_CWD: "/Users/osame/Developer/github/privatenumber/compare-bun-node",
+            [get/set] SHELL: "/bin/zsh",
+            [get/set] TERM: "xterm-256color",
+            [get/set] rvm_gemstone_url: "",
+            [get/set] npm_package_devDependencies_lintroll: "^1.10.0",
+            [get/set] TMPDIR: "/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/",
+            [get/set] HOMEBREW_REPOSITORY: "/opt/homebrew",
+            [get/set] rvm_docs_type: "",
+            [get/set] npm_package_scripts_lint: "lintroll --ignore-pattern README.md --cache .",
+            [get/set] TERM_PROGRAM_VERSION: "3.5.4",
+            [get/set] TERM_SESSION_ID: "w0t18p1:A254F08D-0941-4698-80F2-8DACFAB81945",
+            [get/set] rvm_hook: "",
+            [get/set] npm_package_private: "true",
+            [get/set] npm_config_registry: "https://registry.npmjs.org/",
+            [get/set] ZSH: "/Users/osame/.oh-my-zsh",
+            [get/set] PNPM_HOME: "/Users/osame/Library/pnpm",
+            [get/set] npm_package_dependencies_comment_mark: "^1.1.1",
+            [get/set] USER: "osame",
+            [get/set] NVM_DIR: "/Users/osame/.nvm",
+            [get/set] LS_COLORS: "di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43",
+            [get/set] rvm_gemstone_package_file: "",
+            [get/set] npm_package_license: "MIT",
+            [get/set] COMMAND_MODE: "unix2003",
+            [get/set] PNPM_SCRIPT_SRC_DIR: "/Users/osame/Developer/github/privatenumber/compare-bun-node",
+            [get/set] rvm_path: "/Users/osame/.rvm",
+            [get/set] SSH_AUTH_SOCK: "/private/tmp/com.apple.launchd.mRn862MBBr/Listeners",
+            [get/set] __CF_USER_TEXT_ENCODING: "0x1F5:0x0:0x0",
+            [get/set] HOMEBREW_NO_AUTO_UPDATE: "1",
+            [get/set] TERM_FEATURES: "T3LrMSc7UUw9Ts3BFGsSyHNoSxF",
+            [get/set] rvm_proxy: "",
+            [get/set] npm_execpath: "/Users/osame/.cache/node/corepack/v1/pnpm/9.12.1/bin/pnpm.cjs",
+            [get/set] PAGER: "less",
+            [get/set] rvm_ruby_file: "",
+            [get/set] npm_package_devDependencies_tsx: "^3.12.6",
+            [get/set] npm_config_cafile: "/opt/homebrew/etc/ca-certificates/cert.pem",
+            [get/set] LSCOLORS: "Gxfxcxdxbxegedabagacad",
+            [get/set] npm_config_frozen_lockfile: "",
+            [get/set] rvm_prefix: "/Users/osame",
+            [get/set] rvm_silent_flag: "",
+            [get/set] PATH: "/Users/osame/Developer/github/privatenumber/compare-bun-node/node_modules/.bin:/Users/osame/.cache/n…",
+            [get/set] TERMINFO_DIRS: "/Applications/iTerm.app/Contents/Resources/terminfo:/usr/share/terminfo",
+            [get/set] rvm_ruby_make: "",
+            [get/set] LaunchInstanceID: "DE88AB6F-1632-4115-8720-027C8AB229AE",
+            [get/set] __CFBundleIdentifier: "com.googlecode.iterm2",
+            [get/set] COREPACK_ENABLE_DOWNLOAD_PROMPT: "1",
+            [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
+            [get/set] PWD: "/Users/osame/Developer/github/privatenumber/compare-bun-node",
+            [get/set] npm_command: "run-script",
+            [get/set] npm_lifecycle_event: "start",
+            [get/set] LANG: "en_US.UTF-8",
+            [get/set] rvm_sdk: "",
+            [get/set] npm_package_packageManager: "pnpm@9.12.1",
+            [get/set] ITERM_PROFILE: "Default",
+            [get/set] NODE_PATH: "/Users/osame/Developer/github/privatenumber/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modu…",
+            [get/set] npm_package_scripts_start: "tsx index.ts",
+            [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
+            [get/set] npm_package_devDependencies_simple_git_hooks: "^2.8.1",
+            [get/set] XPC_FLAGS: "0x0",
+            [get/set] npm_config_node_gyp: "/Users/osame/.cache/node/corepack/v1/pnpm/9.12.1/dist/node_modules/node-gyp/bin/node-gyp.js",
+            [get/set] XPC_SERVICE_NAME: "0",
+            [get/set] rvm_version: "1.29.12 (latest)",
+            [get/set] COLORFGBG: "7;0",
+            [get/set] HOME: "/Users/osame",
+            [get/set] SHLVL: "2",
+            [get/set] rvm_pretty_print_flag: "",
+            [get/set] rvm_script_name: "",
+            [get/set] rvm_ruby_mode: "",
+            [get/set] LC_TERMINAL_VERSION: "3.5.4",
+            [get/set] HOMEBREW_PREFIX: "/opt/homebrew",
+            [get/set] ITERM_SESSION_ID: "w0t18p1:A254F08D-0941-4698-80F2-8DACFAB81945",
+            [get/set] LOGNAME: "osame",
+            [get/set] LESS: "-R",
+            [get/set] npm_package_dependencies_execa: "^7.1.1",
+            [get/set] rvm_alias_expanded: "",
+            [get/set] npm_lifecycle_script: "tsx index.ts",
+            [get/set] NVM_BIN: "/Users/osame/.nvm/versions/node/v20.16.0/bin",
+            [get/set] BUN_INSTALL: "/Users/osame/.bun",
+            [get/set] npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
+            [get/set] rvm_nightly_flag: "",
+            [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.9.0 darwin arm64",
+            [get/set] BEYOND_AUTH_SOCK: "/private/tmp/com.apple.launchd.NRDIOexWqR/Listeners",
+            [get/set] HOMEBREW_CELLAR: "/opt/homebrew/Cellar",
+            [get/set] INFOPATH: "/opt/homebrew/share/info:",
+            [get/set] rvm_ruby_make_install: "",
+            [get/set] npm_package_devDependencies__types_node: "^18.15.11",
+            [get/set] LC_TERMINAL: "iTerm2",
+            [get/set] rvm_niceness: "",
+            [get/set] rvm_ruby_bits: "",
+            [get/set] rvm_bin_flag: "",
+            [get/set] BEYOND_CORP_TUNNEL: "/private/tmp/com.apple.launchd.vKpGYweZYe/Listeners",
+            [get/set] SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS: "/Users/osame/Library/WebKit/Databases",
+            [get/set] SECURITYSESSIONID: "186ab",
+            [get/set] rvm_only_path_flag: "",
+            [get/set] COLORTERM: "truecolor",
+            [get/set] npm_node_execpath: "/opt/homebrew/Cellar/node/22.9.0_1/bin/node"
         },
         execArgv: <ref *31> [],
-        execPath: "/home/runner/.bun/bin/bun",
+        execPath: "/Users/osame/.bun/bin/bun",
         exit: <ref *32> ƒ exit(length: 1) {},
         [get/set] exitCode: undefined,
         features: <ref *33> {
@@ -12447,14 +12342,14 @@ EventEmitter2 {
         moduleLoadList: <ref *41> [],
         nextTick: <ref *42> ƒ nextTick(length: 2) {},
         openStdin: <ref *43> ƒ openStdin(length: 0) {},
-        pid: 2874,
-        platform: "linux",
-        ppid: 1988,
+        pid: 84414,
+        platform: "darwin",
+        ppid: 84042,
         reallyExit: <ref *44> ƒ reallyExit(length: 1) {},
         release: <ref *45> {
             name: "node",
             lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.31/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.31/bun-darwin-aarch64.zip",
             headersUrl: "",
             libUrl: ""
         },
@@ -12464,7 +12359,7 @@ EventEmitter2 {
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "bf8a75a63fbd7043e1fe8178f61d798064dcab51",
+        revision: "e448c4cc3bf43fc67e39799d34c4ed70b8037509",
         setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *50> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
@@ -12672,7 +12567,7 @@ EventEmitter2 {
             libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
             mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "bf8a75a63fbd7043e1fe8178f61d798064dcab51",
+            uwebsockets: "e448c4cc3bf43fc67e39799d34c4ed70b8037509",
             webkit: "12e2f46fb01f7c5cf5a992b9414ddfaab32b7110",
             zig: "0.13.0",
             zlib: "886098f3f339617b4243b286f5ed364b9989e245",
@@ -12680,13 +12575,13 @@ EventEmitter2 {
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
             libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-            usockets: "bf8a75a63fbd7043e1fe8178f61d798064dcab51",
+            usockets: "e448c4cc3bf43fc67e39799d34c4ed70b8037509",
             lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
             zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
             v8: "12.4.254.14-node.12",
             uv: "1.48.0",
             napi: "9",
-            icu: "75.1",
+            icu: "74.1",
             unicode: "15.1",
             modules: "127"
         },
@@ -12716,7 +12611,7 @@ EventEmitter2 {
     env: [Circular: *30],
     eventNames: ƒ eventNames(length: 0) {},
     execArgv: [Circular: *31],
-    execPath: "/home/runner/.bun/bin/bun",
+    execPath: "/Users/osame/.bun/bin/bun",
     exit: [Circular: *32],
     exitCode: undefined,
     features: [Circular: *33],
@@ -12741,9 +12636,9 @@ EventEmitter2 {
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *43],
-    pid: 2874,
-    platform: "linux",
-    ppid: 1988,
+    pid: 84414,
+    platform: "darwin",
+    ppid: 84042,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -12752,7 +12647,7 @@ EventEmitter2 {
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *46],
-    revision: "bf8a75a63fbd7043e1fe8178f61d798064dcab51",
+    revision: "e448c4cc3bf43fc67e39799d34c4ed70b8037509",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *49],
@@ -12769,8 +12664,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## punycode
+<details>
+				<summary><code>punycode</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -12821,8 +12719,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## querystring
+<details>
+				<summary><code>querystring</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -12871,8 +12772,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## readline
+<details>
+				<summary><code>readline</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -12907,8 +12811,8 @@ EventEmitter2 {
 
 ```js
 {
-    Interface: <ref *2> ƒ Interface2(length: 4) {
-        prototype: Interface {
+    Interface: <ref *2> ƒ Interface(length: 4) {
+        prototype: Interface2 {
             question: ƒ question(length: 3) {
                 Symbol(nodejs.util.promisify.custom): ƒ question2(length: 2) {}
             },
@@ -12975,8 +12879,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## readline/promises
+<details>
+				<summary><code>readline/promises</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -13009,8 +12916,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## repl
+<details>
+				<summary><code>repl</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -13206,155 +13116,111 @@ EventEmitter2 {
                 escape: ƒ escape(length: 1) {},
                 Symbol(cwd): undefined,
                 Symbol(env): <ref *32> {
-                    [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_423a2dda-004e-4ffb-843d-e8b11288cae8",
-                    [get/set] npm_package_devDependencies__types_node: "^18.15.11",
-                    [get/set] STATS_TRP: "true",
-                    [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
-                    [get/set] DOTNET_NOLOGO: "1",
-                    [get/set] USER: "runner",
-                    [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v20.18.0 linux x64",
-                    [get/set] CI: "true",
-                    [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-                    [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_423a2dda-004e-4ffb-843d-e8b11288cae8",
-                    [get/set] PIPX_HOME: "/opt/pipx",
-                    [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/20.18.0/x64/bin/node",
-                    [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
-                    [get/set] SHLVL: "1",
-                    [get/set] npm_package_packageManager: "pnpm@9.12.1",
-                    [get/set] HOME: "/home/runner",
-                    [get/set] RUNNER_TEMP: "/home/runner/work/_temp",
-                    [get/set] GITHUB_EVENT_PATH: "/home/runner/work/_temp/_github_workflow/event.json",
-                    [get/set] JAVA_HOME_11_X64: "/usr/lib/jvm/temurin-11-jdk-amd64",
-                    [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
-                    [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
-                    [get/set] npm_package_dependencies_comment_mark: "^1.1.1",
-                    [get/set] GRADLE_HOME: "/usr/share/gradle-8.10.2",
-                    [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-                    [get/set] JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
-                    [get/set] STATS_RDCL: "true",
-                    [get/set] GITHUB_RETENTION_DAYS: "90",
-                    [get/set] GITHUB_REPOSITORY_OWNER_ID: "1075694",
-                    [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
-                    [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
-                    [get/set] GITHUB_HEAD_REF: "",
-                    [get/set] SYSTEMD_EXEC_PID: "601",
-                    [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
-                    [get/set] NVM_DIR: "/home/runner/.nvm",
-                    [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
-                    [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
-                    [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
-                    [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-                    [get/set] ImageVersion: "20241015.1.0",
-                    [get/set] RUNNER_OS: "Linux",
-                    [get/set] GITHUB_API_URL: "https://api.github.com",
-                    [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.8/x64",
-                    [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
-                    [get/set] npm_package_devDependencies_lintroll: "^1.10.0",
-                    [get/set] RUNNER_USER: "runner",
-                    [get/set] STATS_V3PS: "true",
-                    [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-                    [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.2/x64",
-                    [get/set] JOURNAL_STREAM: "8:21561",
-                    [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
-                    [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
-                    [get/set] npm_package_private: "true",
-                    [get/set] npm_package_scripts_lint: "lintroll --ignore-pattern README.md --cache .",
-                    [get/set] npm_config_registry: "https://registry.npmjs.org/",
-                    [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
-                    [get/set] STATS_D: "false",
-                    [get/set] GITHUB_RUN_ID: "11414272503",
-                    [get/set] STATS_VMFE: "true",
-                    [get/set] GITHUB_REF_TYPE: "branch",
-                    [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-                    [get/set] GITHUB_WORKFLOW_SHA: "91b66344ca80ae0e042ea72e4ea0c5f92fb74de8",
-                    [get/set] GITHUB_BASE_REF: "",
-                    [get/set] ImageOS: "ubuntu22",
-                    [get/set] npm_package_scripts_start: "tsx index.ts",
-                    [get/set] STATS_BLT: "true",
-                    [get/set] GITHUB_WORKFLOW_REF: "privatenumber/compare-bun-node/.github/workflows/compare.yml@refs/heads/master",
-                    [get/set] PERFLOG_LOCATION_SETTING: "RUNNER_PERFLOG",
-                    [get/set] GITHUB_ACTION_REPOSITORY: "",
-                    [get/set] npm_config_node_gyp: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@9.12.1/node_modules/pnpm/dist/node_modules/node-gyp/…",
-                    [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
-                    [get/set] ANT_HOME: "/usr/share/ant",
-                    [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-                    [get/set] RUNNER_TRACKING_ID: "github_0ff59eb4-6a4d-4c9c-be17-c488aa52adee",
-                    [get/set] INVOCATION_ID: "f9b706a922364253a76ebcf1147bb080",
-                    [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-                    [get/set] NODE: "/opt/hostedtoolcache/node/20.18.0/x64/bin/node",
-                    [get/set] GITHUB_ACTION: "__run",
-                    [get/set] GITHUB_RUN_NUMBER: "98",
-                    [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
-                    [get/set] RUNNER_ARCH: "X64",
-                    [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
-                    [get/set] AGENT_TOOLSDIRECTORY: "/opt/hostedtoolcache",
-                    [get/set] npm_config_frozen_lockfile: "",
-                    [get/set] LANG: "C.UTF-8",
-                    [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
-                    [get/set] CONDA: "/usr/share/miniconda",
-                    [get/set] RUNNER_NAME: "GitHub Actions 5",
-                    [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
-                    [get/set] STATS_VMD: "true",
-                    [get/set] GITHUB_REF_NAME: "master",
-                    [get/set] GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
-                    [get/set] STATS_D_D: "false",
-                    [get/set] npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
-                    [get/set] npm_lifecycle_script: "tsx index.ts",
-                    [get/set] STATS_UE: "true",
-                    [get/set] ANDROID_NDK_ROOT: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-                    [get/set] GITHUB_ACTION_REF: "",
-                    [get/set] DEBIAN_FRONTEND: "noninteractive",
-                    [get/set] GITHUB_REPOSITORY_ID: "622996871",
-                    [get/set] GITHUB_ACTIONS: "true",
-                    [get/set] NODE_PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modules/tsx/d…",
-                    [get/set] npm_lifecycle_event: "start",
-                    [get/set] GITHUB_REF_PROTECTED: "false",
+                    [get/set] NVM_INC: "/Users/osame/.nvm/versions/node/v20.16.0/include/node",
                     [get/set] npm_package_devDependencies_lint_staged: "^13.2.0",
-                    [get/set] npm_package_devDependencies_simple_git_hooks: "^2.8.1",
-                    [get/set] GITHUB_WORKSPACE: "/home/runner/work/compare-bun-node/compare-bun-node",
-                    [get/set] ACCEPT_EULA: "Y",
-                    [get/set] GITHUB_JOB: "build",
-                    [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
-                    [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
-                    [get/set] npm_package_dependencies_execa: "^7.1.1",
-                    [get/set] GITHUB_SHA: "91b66344ca80ae0e042ea72e4ea0c5f92fb74de8",
-                    [get/set] GITHUB_RUN_ATTEMPT: "1",
-                    [get/set] GITHUB_REF: "refs/heads/master",
-                    [get/set] GITHUB_ACTOR: "privatenumber",
-                    [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
-                    [get/set] npm_package_license: "MIT",
-                    [get/set] LEIN_HOME: "/usr/local/lib/lein",
-                    [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-                    [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_423a2dda-004e-4ffb-843d-e8b11288cae8",
-                    [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
-                    [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
-                    [get/set] GITHUB_ACTOR_ID: "1075694",
-                    [get/set] RUNNER_WORKSPACE: "/home/runner/work/compare-bun-node",
-                    [get/set] npm_execpath: "/home/runner/setup-pnpm/node_modules/.pnpm/pnpm@9.12.1/node_modules/pnpm/bin/pnpm.cjs",
-                    [get/set] HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS: "3650",
-                    [get/set] STATS_TIS: "mining",
-                    [get/set] GITHUB_EVENT_NAME: "push",
-                    [get/set] HOMEBREW_NO_AUTO_UPDATE: "1",
-                    [get/set] ANDROID_HOME: "/usr/local/lib/android/sdk",
-                    [get/set] GITHUB_SERVER_URL: "https://github.com",
-                    [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
-                    [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
-                    [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-                    [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_423a2dda-004e-4ffb-843d-e8b11288cae8",
-                    [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
-                    [get/set] STATS_EXT: "true",
-                    [get/set] npm_command: "run-script",
-                    [get/set] PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
-                    [get/set] ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-                    [get/set] SGX_AESM_ADDR: "1",
-                    [get/set] CHROME_BIN: "/usr/bin/google-chrome",
-                    [get/set] SELENIUM_JAR_PATH: "/usr/share/java/selenium-server.jar",
-                    [get/set] PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
-                    [get/set] STATS_EXTP: "https://provjobdsettingscdn.blob.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
+                    [get/set] COREPACK_ROOT: "/opt/homebrew/Cellar/corepack/0.29.4/libexec/lib/node_modules/corepack",
                     [get/set] npm_package_lint_staged____ts_js_: "lintroll --cache",
-                    [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.1.12297006",
-                    [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_423a2dda-004e-4ffb-843d-e8b11288cae8",
-                    [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
+                    [get/set] rvm_use_flag: "",
+                    [get/set] TERM_PROGRAM: "iTerm.app",
+                    [get/set] rvm_bin_path: "/Users/osame/.rvm/bin",
+                    [get/set] NODE: "/opt/homebrew/Cellar/node/22.9.0_1/bin/node",
+                    [get/set] NVM_CD_FLAGS: "-q",
+                    [get/set] rvm_quiet_flag: "",
+                    [get/set] INIT_CWD: "/Users/osame/Developer/github/privatenumber/compare-bun-node",
+                    [get/set] SHELL: "/bin/zsh",
+                    [get/set] TERM: "xterm-256color",
+                    [get/set] rvm_gemstone_url: "",
+                    [get/set] npm_package_devDependencies_lintroll: "^1.10.0",
+                    [get/set] TMPDIR: "/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/",
+                    [get/set] HOMEBREW_REPOSITORY: "/opt/homebrew",
+                    [get/set] rvm_docs_type: "",
+                    [get/set] npm_package_scripts_lint: "lintroll --ignore-pattern README.md --cache .",
+                    [get/set] TERM_PROGRAM_VERSION: "3.5.4",
+                    [get/set] TERM_SESSION_ID: "w0t18p1:A254F08D-0941-4698-80F2-8DACFAB81945",
+                    [get/set] rvm_hook: "",
+                    [get/set] npm_package_private: "true",
+                    [get/set] npm_config_registry: "https://registry.npmjs.org/",
+                    [get/set] ZSH: "/Users/osame/.oh-my-zsh",
+                    [get/set] PNPM_HOME: "/Users/osame/Library/pnpm",
+                    [get/set] npm_package_dependencies_comment_mark: "^1.1.1",
+                    [get/set] USER: "osame",
+                    [get/set] NVM_DIR: "/Users/osame/.nvm",
+                    [get/set] LS_COLORS: "di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43",
+                    [get/set] rvm_gemstone_package_file: "",
+                    [get/set] npm_package_license: "MIT",
+                    [get/set] COMMAND_MODE: "unix2003",
+                    [get/set] PNPM_SCRIPT_SRC_DIR: "/Users/osame/Developer/github/privatenumber/compare-bun-node",
+                    [get/set] rvm_path: "/Users/osame/.rvm",
+                    [get/set] SSH_AUTH_SOCK: "/private/tmp/com.apple.launchd.mRn862MBBr/Listeners",
+                    [get/set] __CF_USER_TEXT_ENCODING: "0x1F5:0x0:0x0",
+                    [get/set] HOMEBREW_NO_AUTO_UPDATE: "1",
+                    [get/set] TERM_FEATURES: "T3LrMSc7UUw9Ts3BFGsSyHNoSxF",
+                    [get/set] rvm_proxy: "",
+                    [get/set] npm_execpath: "/Users/osame/.cache/node/corepack/v1/pnpm/9.12.1/bin/pnpm.cjs",
+                    [get/set] PAGER: "less",
+                    [get/set] rvm_ruby_file: "",
+                    [get/set] npm_package_devDependencies_tsx: "^3.12.6",
+                    [get/set] npm_config_cafile: "/opt/homebrew/etc/ca-certificates/cert.pem",
+                    [get/set] LSCOLORS: "Gxfxcxdxbxegedabagacad",
+                    [get/set] npm_config_frozen_lockfile: "",
+                    [get/set] rvm_prefix: "/Users/osame",
+                    [get/set] rvm_silent_flag: "",
+                    [get/set] PATH: "/Users/osame/Developer/github/privatenumber/compare-bun-node/node_modules/.bin:/Users/osame/.cache/n…",
+                    [get/set] TERMINFO_DIRS: "/Applications/iTerm.app/Contents/Resources/terminfo:/usr/share/terminfo",
+                    [get/set] rvm_ruby_make: "",
+                    [get/set] LaunchInstanceID: "DE88AB6F-1632-4115-8720-027C8AB229AE",
+                    [get/set] __CFBundleIdentifier: "com.googlecode.iterm2",
+                    [get/set] COREPACK_ENABLE_DOWNLOAD_PROMPT: "1",
+                    [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
+                    [get/set] PWD: "/Users/osame/Developer/github/privatenumber/compare-bun-node",
+                    [get/set] npm_command: "run-script",
+                    [get/set] npm_lifecycle_event: "start",
+                    [get/set] LANG: "en_US.UTF-8",
+                    [get/set] rvm_sdk: "",
+                    [get/set] npm_package_packageManager: "pnpm@9.12.1",
+                    [get/set] ITERM_PROFILE: "Default",
+                    [get/set] NODE_PATH: "/Users/osame/Developer/github/privatenumber/compare-bun-node/node_modules/.pnpm/tsx@3.14.0/node_modu…",
+                    [get/set] npm_package_scripts_start: "tsx index.ts",
+                    [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
+                    [get/set] npm_package_devDependencies_simple_git_hooks: "^2.8.1",
+                    [get/set] XPC_FLAGS: "0x0",
+                    [get/set] npm_config_node_gyp: "/Users/osame/.cache/node/corepack/v1/pnpm/9.12.1/dist/node_modules/node-gyp/bin/node-gyp.js",
+                    [get/set] XPC_SERVICE_NAME: "0",
+                    [get/set] rvm_version: "1.29.12 (latest)",
+                    [get/set] COLORFGBG: "7;0",
+                    [get/set] HOME: "/Users/osame",
+                    [get/set] SHLVL: "2",
+                    [get/set] rvm_pretty_print_flag: "",
+                    [get/set] rvm_script_name: "",
+                    [get/set] rvm_ruby_mode: "",
+                    [get/set] LC_TERMINAL_VERSION: "3.5.4",
+                    [get/set] HOMEBREW_PREFIX: "/opt/homebrew",
+                    [get/set] ITERM_SESSION_ID: "w0t18p1:A254F08D-0941-4698-80F2-8DACFAB81945",
+                    [get/set] LOGNAME: "osame",
+                    [get/set] LESS: "-R",
+                    [get/set] npm_package_dependencies_execa: "^7.1.1",
+                    [get/set] rvm_alias_expanded: "",
+                    [get/set] npm_lifecycle_script: "tsx index.ts",
+                    [get/set] NVM_BIN: "/Users/osame/.nvm/versions/node/v20.16.0/bin",
+                    [get/set] BUN_INSTALL: "/Users/osame/.bun",
+                    [get/set] npm_package_simple_git_hooks_pre_commit: "pnpm lint-staged",
+                    [get/set] rvm_nightly_flag: "",
+                    [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.9.0 darwin arm64",
+                    [get/set] BEYOND_AUTH_SOCK: "/private/tmp/com.apple.launchd.NRDIOexWqR/Listeners",
+                    [get/set] HOMEBREW_CELLAR: "/opt/homebrew/Cellar",
+                    [get/set] INFOPATH: "/opt/homebrew/share/info:",
+                    [get/set] rvm_ruby_make_install: "",
+                    [get/set] npm_package_devDependencies__types_node: "^18.15.11",
+                    [get/set] LC_TERMINAL: "iTerm2",
+                    [get/set] rvm_niceness: "",
+                    [get/set] rvm_ruby_bits: "",
+                    [get/set] rvm_bin_flag: "",
+                    [get/set] BEYOND_CORP_TUNNEL: "/private/tmp/com.apple.launchd.vKpGYweZYe/Listeners",
+                    [get/set] SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS: "/Users/osame/Library/WebKit/Databases",
+                    [get/set] SECURITYSESSIONID: "186ab",
+                    [get/set] rvm_only_path_flag: "",
+                    [get/set] COLORTERM: "truecolor",
+                    [get/set] npm_node_execpath: "/opt/homebrew/Cellar/node/22.9.0_1/bin/node"
                 },
                 Symbol(throws): true
             },
@@ -13448,8 +13314,8 @@ EventEmitter2 {
             embeddedFiles: [],
             allocUnsafe: ƒ allocUnsafe(length: 1) {},
             argv: [
-                "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1729309188884-1/repl.mjs"
+                "/Users/osame/.bun/bin/bun",
+                "/private/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/fs-fixture-1729309507187-1/repl.mjs"
             ],
             build: ƒ build(length: 1) {},
             concatArrayBuffers: ƒ concatArrayBuffers(length: 3) {},
@@ -13507,12 +13373,12 @@ EventEmitter2 {
             isMainThread: true,
             listen: ƒ listen(length: 1) {},
             udpSocket: ƒ udpSocket(length: 1) {},
-            main: "/tmp/fs-fixture-1729309188884-1/repl.mjs",
+            main: "/private/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/fs-fixture-1729309507187-1/repl.mjs",
             mmap: ƒ mmap(length: 1) {},
             nanoseconds: ƒ nanoseconds(length: 0) {},
             openInEditor: ƒ openInEditor(length: 1) {},
             origin: "",
-            version_with_sha: "v1.1.31-canary.9 (bf8a75a6)",
+            version_with_sha: "v1.1.31 (e448c4cc)",
             password: {
                 hash: ƒ hash(length: 2) {},
                 hashSync: ƒ hashSync(length: 2) {},
@@ -13535,7 +13401,7 @@ EventEmitter2 {
             readableStreamToText: ƒ (length: 1) {},
             resolve: ƒ resolve(length: 1) {},
             resolveSync: ƒ resolveSync(length: 1) {},
-            revision: "bf8a75a63fbd7043e1fe8178f61d798064dcab51",
+            revision: "e448c4cc3bf43fc67e39799d34c4ed70b8037509",
             semver: {
                 satisfies: ƒ satisfies(length: 2) {},
                 order: ƒ order(length: 2) {}
@@ -13566,20 +13432,20 @@ EventEmitter2 {
         },
         navigator: {
             userAgent: "Bun/1.1.31",
-            platform: "Linux x86_64",
-            hardwareConcurrency: 4
+            platform: "MacIntel",
+            hardwareConcurrency: 12
         },
         performance: Performance {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1729309190034.3066
+            timeOrigin: 1729309507663.967
         },
         process: EventEmitter {
             abort: ƒ abort(length: 1) {},
             allowedNodeEnvironmentFlags: Set {},
-            arch: "x64",
+            arch: "arm64",
             argv: [
-                "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1729309188884-1/repl.mjs"
+                "/Users/osame/.bun/bin/bun",
+                "/private/var/folders/vf/b_h76qmn0wl_q4_5j017tn2w0000gn/T/fs-fixture-1729309507187-1/repl.mjs"
             ],
             argv0: "bun",
             assert: ƒ assert(length: 1) {},
@@ -13604,7 +13470,7 @@ EventEmitter2 {
             emitWarning: ƒ emitWarning(length: 1) {},
             env: [Circular: *32],
             execArgv: [],
-            execPath: "/home/runner/.bun/bin/bun",
+            execPath: "/Users/osame/.bun/bin/bun",
             exit: ƒ exit(length: 1) {},
             [get/set] exitCode: undefined,
             features: {
@@ -13632,14 +13498,14 @@ EventEmitter2 {
             moduleLoadList: [],
             nextTick: ƒ nextTick(length: 2) {},
             openStdin: ƒ openStdin(length: 0) {},
-            pid: 2960,
-            platform: "linux",
-            ppid: 1988,
+            pid: 84454,
+            platform: "darwin",
+            ppid: 84042,
             reallyExit: ƒ reallyExit(length: 1) {},
             release: {
                 name: "node",
                 lts: false,
-                sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.31/bun-linux-x64-baseline.zip",
+                sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.31/bun-darwin-aarch64.zip",
                 headersUrl: "",
                 libUrl: ""
             },
@@ -13649,7 +13515,7 @@ EventEmitter2 {
                 filename: "",
                 writeReport: ƒ writeReport(length: 1) {}
             },
-            revision: "bf8a75a63fbd7043e1fe8178f61d798064dcab51",
+            revision: "e448c4cc3bf43fc67e39799d34c4ed70b8037509",
             setSourceMapsEnabled: ƒ setSourceMapsEnabled(length: 1) {},
             setUncaughtExceptionCaptureCallback: ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
             send: undefined,
@@ -13872,7 +13738,7 @@ EventEmitter2 {
                 libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
                 mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
                 picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-                uwebsockets: "bf8a75a63fbd7043e1fe8178f61d798064dcab51",
+                uwebsockets: "e448c4cc3bf43fc67e39799d34c4ed70b8037509",
                 webkit: "12e2f46fb01f7c5cf5a992b9414ddfaab32b7110",
                 zig: "0.13.0",
                 zlib: "886098f3f339617b4243b286f5ed364b9989e245",
@@ -13880,13 +13746,13 @@ EventEmitter2 {
                 lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
                 ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
                 libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-                usockets: "bf8a75a63fbd7043e1fe8178f61d798064dcab51",
+                usockets: "e448c4cc3bf43fc67e39799d34c4ed70b8037509",
                 lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
                 zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
                 v8: "12.4.254.14-node.12",
                 uv: "1.48.0",
                 napi: "9",
-                icu: "75.1",
+                icu: "74.1",
                 unicode: "15.1",
                 modules: "127"
             },
@@ -14087,8 +13953,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## stream
+<details>
+				<summary><code>stream</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -14123,48 +13992,46 @@ EventEmitter2 {
         Duplex: [Circular: *2],
         Transform: <ref *24> ƒ Transform(length: 1) {},
         PassThrough: [Circular: *6],
-        duplexPair: <ref *25> ƒ duplexPair(length: 1) {},
-        pipeline: <ref *26> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *27> ƒ pipeline(length: 0) {}
+        pipeline: <ref *25> ƒ pipeline(length: 0) {
+            [get/set] Symbol(nodejs.util.promisify.custom): <ref *26> ƒ pipeline(length: 0) {}
         },
-        addAbortSignal: <ref *28> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *29> ƒ eos(length: 3) {
-            finished: <ref *30> ƒ finished(length: 2) {},
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *30]
+        addAbortSignal: <ref *27> ƒ addAbortSignal(length: 2) {},
+        finished: <ref *28> ƒ eos(length: 3) {
+            finished: <ref *29> ƒ finished(length: 2) {},
+            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *29]
         },
-        destroy: <ref *31> ƒ destroyer(length: 2) {},
-        compose: <ref *32> ƒ compose(length: 0) {},
-        setDefaultHighWaterMark: <ref *33> ƒ setDefaultHighWaterMark(length: 2) {},
-        getDefaultHighWaterMark: <ref *34> ƒ getDefaultHighWaterMark(length: 1) {},
-        [get/set] promises: <ref *35> {
-            finished: [Circular: *30],
-            pipeline: [Circular: *27]
+        destroy: <ref *30> ƒ destroyer(length: 2) {},
+        compose: <ref *31> ƒ compose(length: 0) {},
+        setDefaultHighWaterMark: <ref *32> ƒ setDefaultHighWaterMark(length: 2) {},
+        getDefaultHighWaterMark: <ref *33> ƒ getDefaultHighWaterMark(length: 1) {},
+        [get/set] promises: <ref *34> {
+            finished: [Circular: *29],
+            pipeline: [Circular: *26]
         },
         Stream: [Circular: *14],
-        _isArrayBufferView: <ref *36> ƒ isView(length: 1) {},
-        _isUint8Array: <ref *37> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *38> ƒ _uint8ArrayToBuffer(length: 1) {}
+        _isArrayBufferView: <ref *35> ƒ isView(length: 1) {},
+        _isUint8Array: <ref *36> ƒ isUint8Array(length: 1) {},
+        _uint8ArrayToBuffer: <ref *37> ƒ _uint8ArrayToBuffer(length: 1) {}
     },
     Transform: [Circular: *24],
     Writable: [Circular: *20],
-    _isArrayBufferView: [Circular: *36],
-    _isUint8Array: [Circular: *37],
-    _uint8ArrayToBuffer: [Circular: *38],
-    addAbortSignal: [Circular: *28],
-    compose: [Circular: *32],
+    _isArrayBufferView: [Circular: *35],
+    _isUint8Array: [Circular: *36],
+    _uint8ArrayToBuffer: [Circular: *37],
+    addAbortSignal: [Circular: *27],
+    compose: [Circular: *31],
     default: [Circular: *14],
-    destroy: [Circular: *31],
-    duplexPair: [Circular: *25],
-    finished: [Circular: *29],
-    getDefaultHighWaterMark: [Circular: *34],
+    destroy: [Circular: *30],
+    finished: [Circular: *28],
+    getDefaultHighWaterMark: [Circular: *33],
     isDestroyed: [Circular: *15],
     isDisturbed: [Circular: *16],
     isErrored: [Circular: *17],
     isReadable: [Circular: *18],
     isWritable: [Circular: *19],
-    pipeline: [Circular: *26],
-    promises: [Circular: *35],
-    setDefaultHighWaterMark: [Circular: *33]
+    pipeline: [Circular: *25],
+    promises: [Circular: *34],
+    setDefaultHighWaterMark: [Circular: *32]
 }
 ```
 
@@ -14195,31 +14062,31 @@ EventEmitter2 {
             _events: undefined,
             _eventsCount: 0,
             _maxListeners: undefined,
-            setMaxListeners: ƒ setMaxListeners(length: 1) {},
+            setMaxListeners: ƒ setMaxListeners2(length: 1) {},
             constructor: [Circular: *13],
-            getMaxListeners: ƒ getMaxListeners(length: 0) {},
+            getMaxListeners: ƒ getMaxListeners2(length: 0) {},
             emit: ƒ emit(length: 1) {},
             addListener: <ref *18> ƒ addListener(length: 2) {},
             on: [Circular: *18],
             prependListener: ƒ prependListener(length: 2) {},
-            once: ƒ once(length: 2) {},
+            once: ƒ once2(length: 2) {},
             prependOnceListener: ƒ prependOnceListener(length: 2) {},
             removeListener: <ref *22> ƒ removeListener(length: 2) {},
             off: [Circular: *22],
             removeAllListeners: ƒ removeAllListeners(length: 1) {},
             listeners: ƒ listeners(length: 1) {},
             rawListeners: ƒ rawListeners(length: 1) {},
-            listenerCount: ƒ listenerCount(length: 1) {},
+            listenerCount: ƒ listenerCount2(length: 1) {},
             eventNames: ƒ eventNames(length: 0) {},
             Symbol(kCapture): false
         },
         [get/set] captureRejections: false,
         [get/set] defaultMaxListeners: 10,
-        once: <ref *28> ƒ once2(length: 3) {},
+        once: <ref *28> ƒ once(length: 3) {},
         on: <ref *29> ƒ on(length: 2) {},
         getEventListeners: <ref *30> ƒ getEventListeners(length: 2) {},
-        getMaxListeners: <ref *31> ƒ getMaxListeners2(length: 1) {},
-        setMaxListeners: <ref *32> ƒ setMaxListeners2(length: 0) {},
+        getMaxListeners: <ref *31> ƒ getMaxListeners(length: 1) {},
+        setMaxListeners: <ref *32> ƒ setMaxListeners(length: 0) {},
         EventEmitter: [Circular: *13],
         usingDomains: false,
         captureRejectionSymbol: Symbol(nodejs.rejection),
@@ -14227,7 +14094,7 @@ EventEmitter2 {
         errorMonitor: Symbol(events.errorMonitor),
         addAbortListener: <ref *34> ƒ addAbortListener(length: 2) {},
         init: [Circular: *13],
-        listenerCount: <ref *35> ƒ listenerCount2(length: 2) {}
+        listenerCount: <ref *35> ƒ listenerCount(length: 2) {}
     },
     EventEmitterAsyncResource: [Circular: *33],
     NativeWritable: <ref *36> ƒ NativeWritable(length: 1) {
@@ -14385,8 +14252,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## stream/consumers
+<details>
+				<summary><code>stream/consumers</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -14429,8 +14299,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## stream/promises
+<details>
+				<summary><code>stream/promises</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -14459,8 +14332,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## stream/web
+<details>
+				<summary><code>stream/web</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -14551,8 +14427,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## string_decoder
+<details>
+				<summary><code>string_decoder</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -14577,8 +14456,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## sys
+<details>
+				<summary><code>sys</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -14840,7 +14722,9 @@ EventEmitter2 {
             isNativeError: ƒ isNativeError(length: 0) {},
             isRegExp: [Circular: *77],
             isAsyncFunction: ƒ isAsyncFunction(length: 0) {},
-            isGeneratorFunction: ƒ isGeneratorFunction(length: 0) {},
+            isGeneratorFunction: ƒ isGe(node:84499) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+neratorFunction(length: 0) {},
             isGeneratorObject: ƒ isGeneratorObject(length: 0) {},
             isPromise: ƒ isPromise(length: 0) {},
             isMap: ƒ isMap(length: 0) {},
@@ -14913,8 +14797,6 @@ EventEmitter2 {
     transferableAbortSignal: [Circular: *87],
     types: [Circular: *89]
 }
-(node:3073) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
-(Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
 </td><td valign="top">
@@ -15238,8 +15120,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## timers
+<details>
+				<summary><code>timers</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -15321,8 +15206,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## timers/promises
+<details>
+				<summary><code>timers/promises</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -15364,8 +15252,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## tls
+<details>
+				<summary><code>tls</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -15568,7 +15459,7 @@ EventEmitter2 {
     DEFAULT_ECDH_CURVE: "auto",
     DEFAULT_MAX_VERSION: "TLSv1.3",
     DEFAULT_MIN_VERSION: "TLSv1.2",
-    SecureContext: <ref *2> ƒ SecureContext2(length: 1) {},
+    SecureContext: <ref *2> ƒ SecureContext(length: 1) {},
     Server: <ref *3> ƒ Server(length: 2) {},
     TLSSocket: <ref *4> ƒ Socket(length: 1) {
         prototype: TLSSocket2 {}
@@ -15757,8 +15648,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## trace_events
+<details>
+				<summary><code>trace_events</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -15787,8 +15681,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## tty
+<details>
+				<summary><code>tty</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -15848,44 +15745,46 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## url
+<details>
+				<summary><code>url</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
 ```js
 [Object: null prototype] {
     URL: <ref *2> class URL {
-        parse: ƒ parse(length: 1) {},
         canParse: ƒ canParse(length: 1) {},
         createObjectURL: ƒ createObjectURL(length: 1) {},
         revokeObjectURL: ƒ revokeObjectURL(length: 1) {}
     },
-    URLSearchParams: <ref *7> class URLSearchParams {},
-    Url: <ref *8> ƒ Url(length: 0) {},
+    URLSearchParams: <ref *6> class URLSearchParams {},
+    Url: <ref *7> ƒ Url(length: 0) {},
     default: {
-        Url: [Circular: *8],
-        parse: <ref *10> ƒ urlParse(length: 3) {},
-        resolve: <ref *11> ƒ urlResolve(length: 2) {},
-        resolveObject: <ref *12> ƒ urlResolveObject(length: 2) {},
-        format: <ref *13> ƒ urlFormat(length: 2) {},
+        Url: [Circular: *7],
+        parse: <ref *9> ƒ urlParse(length: 3) {},
+        resolve: <ref *10> ƒ urlResolve(length: 2) {},
+        resolveObject: <ref *11> ƒ urlResolveObject(length: 2) {},
+        format: <ref *12> ƒ urlFormat(length: 2) {},
         URL: [Circular: *2],
-        URLSearchParams: [Circular: *7],
-        domainToASCII: <ref *14> ƒ domainToASCII(length: 1) {},
-        domainToUnicode: <ref *15> ƒ domainToUnicode(length: 1) {},
-        pathToFileURL: <ref *16> ƒ pathToFileURL(length: 2) {},
-        fileURLToPath: <ref *17> ƒ fileURLToPath(length: 1) {},
-        urlToHttpOptions: <ref *18> ƒ urlToHttpOptions(length: 1) {}
+        URLSearchParams: [Circular: *6],
+        domainToASCII: <ref *13> ƒ domainToASCII(length: 1) {},
+        domainToUnicode: <ref *14> ƒ domainToUnicode(length: 1) {},
+        pathToFileURL: <ref *15> ƒ pathToFileURL(length: 2) {},
+        fileURLToPath: <ref *16> ƒ fileURLToPath(length: 1) {},
+        urlToHttpOptions: <ref *17> ƒ urlToHttpOptions(length: 1) {}
     },
-    domainToASCII: [Circular: *14],
-    domainToUnicode: [Circular: *15],
-    fileURLToPath: [Circular: *17],
-    format: [Circular: *13],
-    parse: [Circular: *10],
-    pathToFileURL: [Circular: *16],
-    resolve: [Circular: *11],
-    resolveObject: [Circular: *12],
-    urlToHttpOptions: [Circular: *18]
+    domainToASCII: [Circular: *13],
+    domainToUnicode: [Circular: *14],
+    fileURLToPath: [Circular: *16],
+    format: [Circular: *12],
+    parse: [Circular: *9],
+    pathToFileURL: [Circular: *15],
+    resolve: [Circular: *10],
+    resolveObject: [Circular: *11],
+    urlToHttpOptions: [Circular: *17]
 }
 ```
 
@@ -15936,8 +15835,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## util
+<details>
+				<summary><code>util</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -16595,8 +16497,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## util/types
+<details>
+				<summary><code>util/types</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -16787,8 +16692,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## v8
+<details>
+				<summary><code>v8</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -16907,8 +16815,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## vm
+<details>
+				<summary><code>vm</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -16917,8 +16828,7 @@ EventEmitter2 {
     Script: <ref *2> class Script extends ContextifyScript {},
     compileFunction: <ref *3> ƒ compileFunction(length: 2) {},
     constants: <ref *4> [Object: null prototype] {
-        USE_MAIN_CONTEXT_DEFAULT_LOADER: Symbol(vm_dynamic_import_main_context_default),
-        DONT_CONTEXTIFY: Symbol(vm_context_no_contextify)
+        USE_MAIN_CONTEXT_DEFAULT_LOADER: Symbol(vm_dynamic_import_main_context_default)
     },
     createContext: <ref *5> ƒ createContext(length: 0) {},
     createScript: <ref *6> ƒ createScript(length: 2) {},
@@ -16981,8 +16891,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## wasi
+<details>
+				<summary><code>wasi</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -16993,7 +16906,7 @@ EventEmitter2 {
         WASI: [Circular: *2]
     }
 }
-(node:3307) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:84587) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -17009,8 +16922,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## worker_threads
+<details>
+				<summary><code>worker_threads</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -17093,8 +17009,11 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 
-## zlib
+<details>
+				<summary><code>zlib</code></summary>
+				<br>
 
 <table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
 
@@ -17543,4 +17462,5 @@ EventEmitter2 {
 ```
 
 </td></tr></table>
+			</details>
 <!-- comparison:end -->

@@ -58,14 +58,19 @@ const table = (
 				execa('bun', [file], spawnOptions),
 			]);
 
-			return `## ${
-				builtinModules[index]
-			}\n\n${
-				table([
-					['Node.js', 'Bun'],
-					[code(nodeOutput!), code(bunOutput!)],
-				])
-			}`;
+			return `
+			<details>
+				<summary><code>${
+					builtinModules[index]
+				}</code></summary>
+				<br>\n\n${
+					table([
+						['Node.js', 'Bun'],
+						[code(nodeOutput!), code(bunOutput!)],
+					])
+				}
+			</details>
+			`.trim();
 		}),
 	);
 
@@ -75,16 +80,16 @@ const table = (
 
 	const builtinsList = builtinModules.map(m => `- [\`${m}\`](#${m.replaceAll('/', '')})`);
 	const divide = Math.floor(builtinsList.length / 3);
-	const builtins = table(
-		[
-			[
-				builtinsList.slice(0, divide).join('\n'),
-				builtinsList.slice(divide, divide * 2).join('\n'),
-				builtinsList.slice(divide * 2).join('\n'),
-			],
-		],
-		true,
-	);
+	// const builtins = table(
+	// 	[
+	// 		[
+	// 			builtinsList.slice(0, divide).join('\n'),
+	// 			builtinsList.slice(divide, divide * 2).join('\n'),
+	// 			builtinsList.slice(divide * 2).join('\n'),
+	// 		],
+	// 	],
+	// 	true,
+	// );
 
 	const [
 		{ stdout: nodeVersion },
@@ -102,7 +107,7 @@ const table = (
 
 	readme = commentMark(readme, {
 		lastUpdated: `${date} with Bun ${bunVersion} Node.js ${nodeVersion}`,
-		builtins,
+		// builtins,
 		comparison: output.join('\n\n'),
 	});
 
