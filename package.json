@@ -28,5 +28,6 @@
 		"ignorePatterns": [
 			"README.md"
 		]
-	}
+	},
+	"packageManager": "pnpm@9.12.1"
 }
