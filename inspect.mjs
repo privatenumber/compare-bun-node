@@ -77,6 +77,7 @@ export const inspect = (
 				}
 			}
 
+			serialized += '{';
 			const entries = Reflect.ownKeys(value).map(
 				(key) => {
 					const descriptor = Object.getOwnPropertyDescriptor(value, key);
@@ -92,16 +93,18 @@ export const inspect = (
 						getSet.push('set');
 					}
 
-					const propertyValue = value[key];
-					return `${indentLevel}${indentation}${
-						getSet.length > 0 ? `[${getSet.join('/')}] ` : ''
-					}${key.toString()}: ${
-						inspect(propertyValue, indentLevel + indentation, cache).trim()
-					}`;
+					try {
+						const propertyValue = value[key];
+						return `${indentLevel}${indentation}${
+							getSet.length > 0 ? `[${getSet.join('/')}] ` : ''
+						}${key.toString()}: ${
+							inspect(propertyValue, indentLevel + indentation, cache).trim()
+						}`;	
+					} catch (error) {
+						return `${indentLevel}${indentation}${key.toString()}: [Error accessing: ${error.message}]`;
+					}
 				},
 			).filter(Boolean);
-
-			serialized += '{';
 
 			if (entries.length > 0) {
 				serialized += `\n${entries.join(',\n')}\n${indentLevel}`;
