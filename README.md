@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Nov 18, 2024 with Bun 1.1.35 Node.js v22.11.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Nov 25, 2024 with Bun 1.1.37 Node.js v22.11.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -3028,7 +3028,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 18, 2024 with Bun 1.1.35 Node.js 
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2068) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2084) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -9371,7 +9371,7 @@ EventEmitter {
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1731889023574-1/module.mjs: "/tmp/fs-fixture-1731889023574-1/module.mjs"
+            /tmp/fs-fixture-1732493817295-1/module.mjs: "/tmp/fs-fixture-1732493817295-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -9526,13 +9526,13 @@ EventEmitter {
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1731889023574-1/module.mjs: {
+            /tmp/fs-fixture-1732493817295-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1731889023574-1/inspect.mjs: {
+            /tmp/fs-fixture-1732493817295-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -10679,7 +10679,8 @@ EventEmitter {
     PerformanceObserver: <ref *7> ƒ PerformanceObserver(length: 1) {
         supportedEntryTypes: [
             "mark",
-            "measure"
+            "measure",
+            "resource"
         ]
     },
     PerformanceObserverEntryList: <ref *9> ƒ PerformanceObserverEntryList(length: 0) {},
@@ -10721,14 +10722,14 @@ EventEmitter {
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1731889024725.6895,
+            timeOrigin: 1732493818273.1628,
             toJSON: ƒ toJSON(length: 1) {},
-            onresourcetimingbufferfull: undefined,
+            onresourcetimingbufferfull: null,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1731889024725.6895,
-                nodeStart: 1731889024725.6895,
-                environment: 1731889024725.6895,
-                bootstrapComplete: 1731889024725.6895,
+                v8Start: 1732493818273.1628,
+                nodeStart: 1732493818273.1628,
+                environment: 1732493818273.1628,
+                bootstrapComplete: 1732493818273.1628,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -11043,7 +11044,7 @@ EventEmitter {
     arch: "x64",
     argv: <ref *26> [
         "/opt/hostedtoolcache/node/22.11.0/x64/bin/node",
-        "/tmp/fs-fixture-1731889023574-1/process.mjs"
+        "/tmp/fs-fixture-1732493817295-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *27> ƒ deprecated(length: 0) {},
@@ -11965,7 +11966,7 @@ EventEmitter {
         setgid: <ref *114> ƒ (length: 1) {},
         setuid: <ref *115> ƒ (length: 1) {},
         env: <ref *116>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_394c9486-251d-4ba5-9a21-027282841144",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -11974,7 +11975,7 @@ EventEmitter {
             npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.11.0 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_394c9486-251d-4ba5-9a21-027282841144",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
             PIPX_HOME: "/opt/pipx",
             npm_node_execpath: "/opt/hostedtoolcache/node/22.11.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -11996,14 +11997,14 @@ EventEmitter {
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "611",
+            SYSTEMD_EXEC_PID: "599",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20241112.1.0",
+            ImageVersion: "20241117.1.0",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
             GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.9/x64",
@@ -12013,7 +12014,7 @@ EventEmitter {
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
             GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.3/x64",
-            JOURNAL_STREAM: "8:17166",
+            JOURNAL_STREAM: "8:19020",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -12021,11 +12022,11 @@ EventEmitter {
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "11883435870",
+            GITHUB_RUN_ID: "12000850491",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "cfa8fdb09814bc72108b5d6f78223d069c184fab",
+            GITHUB_WORKFLOW_SHA: "b43c298359dff6c5e5ebe0589f343f4eabffeea1",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu22",
             npm_package_scripts_start: "tsx index.ts",
@@ -12036,12 +12037,12 @@ EventEmitter {
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_6c818444-59ac-4555-8cfb-330e20fa725c",
-            INVOCATION_ID: "82948c8d2d2946138e689a333db7342b",
+            RUNNER_TRACKING_ID: "github_849a0f61-5877-4c73-9e8b-18643baf42cb",
+            INVOCATION_ID: "183199b4a75f448cb1f5ef8cd6881fda",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/22.11.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "104",
+            GITHUB_RUN_NUMBER: "105",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -12050,7 +12051,7 @@ EventEmitter {
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 12",
+            RUNNER_NAME: "GitHub Actions 2",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
@@ -12076,15 +12077,16 @@ EventEmitter {
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "cfa8fdb09814bc72108b5d6f78223d069c184fab",
+            GITHUB_SHA: "b43c298359dff6c5e5ebe0589f343f4eabffeea1",
             GITHUB_RUN_ATTEMPT: "1",
+            STATS_D_TC: "true",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             LEIN_HOME: "/usr/local/lib/lein",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_394c9486-251d-4ba5-9a21-027282841144",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
             JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -12099,7 +12101,7 @@ EventEmitter {
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_394c9486-251d-4ba5-9a21-027282841144",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -12112,14 +12114,14 @@ EventEmitter {
             STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_394c9486-251d-4ba5-9a21-027282841144",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *26],
         execArgv: <ref *117> [],
-        pid: 2756,
-        ppid: 1886,
+        pid: 2750,
+        ppid: 1884,
         execPath: "/opt/hostedtoolcache/node/22.11.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -12165,9 +12167,9 @@ EventEmitter {
     moduleLoadList: [Circular: *51],
     nextTick: [Circular: *78],
     openStdin: [Circular: *68],
-    pid: 2756,
+    pid: 2750,
     platform: "linux",
-    ppid: 1886,
+    ppid: 1884,
     reallyExit: [Circular: *55],
     release: [Circular: *50],
     report: [Circular: *118],
@@ -12214,7 +12216,7 @@ EventEmitter {
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1731889023574-1/process.mjs"
+        "/tmp/fs-fixture-1732493817295-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -12256,7 +12258,7 @@ EventEmitter {
         dlopen: <ref *28> ƒ dlopen(length: 1) {},
         emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
         env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_394c9486-251d-4ba5-9a21-027282841144",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -12265,7 +12267,7 @@ EventEmitter {
             [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.11.0 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_394c9486-251d-4ba5-9a21-027282841144",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/22.11.0/x64/bin/node",
             [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -12287,14 +12289,14 @@ EventEmitter {
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "611",
+            [get/set] SYSTEMD_EXEC_PID: "599",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20241112.1.0",
+            [get/set] ImageVersion: "20241117.1.0",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
             [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.9/x64",
@@ -12304,7 +12306,7 @@ EventEmitter {
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
             [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.3/x64",
-            [get/set] JOURNAL_STREAM: "8:17166",
+            [get/set] JOURNAL_STREAM: "8:19020",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
@@ -12312,11 +12314,11 @@ EventEmitter {
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "11883435870",
+            [get/set] GITHUB_RUN_ID: "12000850491",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "cfa8fdb09814bc72108b5d6f78223d069c184fab",
+            [get/set] GITHUB_WORKFLOW_SHA: "b43c298359dff6c5e5ebe0589f343f4eabffeea1",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu22",
             [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -12327,12 +12329,12 @@ EventEmitter {
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_6c818444-59ac-4555-8cfb-330e20fa725c",
-            [get/set] INVOCATION_ID: "82948c8d2d2946138e689a333db7342b",
+            [get/set] RUNNER_TRACKING_ID: "github_849a0f61-5877-4c73-9e8b-18643baf42cb",
+            [get/set] INVOCATION_ID: "183199b4a75f448cb1f5ef8cd6881fda",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             [get/set] NODE: "/opt/hostedtoolcache/node/22.11.0/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "104",
+            [get/set] GITHUB_RUN_NUMBER: "105",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -12341,7 +12343,7 @@ EventEmitter {
             [get/set] LANG: "C.UTF-8",
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 12",
+            [get/set] RUNNER_NAME: "GitHub Actions 2",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
@@ -12367,15 +12369,16 @@ EventEmitter {
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             [get/set] npm_package_dependencies_execa: "^7.1.1",
-            [get/set] GITHUB_SHA: "cfa8fdb09814bc72108b5d6f78223d069c184fab",
+            [get/set] GITHUB_SHA: "b43c298359dff6c5e5ebe0589f343f4eabffeea1",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
+            [get/set] STATS_D_TC: "true",
             [get/set] GITHUB_REF: "refs/heads/master",
             [get/set] GITHUB_ACTOR: "privatenumber",
             [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             [get/set] npm_package_license: "MIT",
             [get/set] LEIN_HOME: "/usr/local/lib/lein",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_394c9486-251d-4ba5-9a21-027282841144",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -12390,7 +12393,7 @@ EventEmitter {
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_394c9486-251d-4ba5-9a21-027282841144",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -12403,7 +12406,7 @@ EventEmitter {
             [get/set] STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "lintroll --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_394c9486-251d-4ba5-9a21-027282841144",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         execArgv: <ref *31> [],
@@ -12435,14 +12438,14 @@ EventEmitter {
         moduleLoadList: <ref *41> [],
         nextTick: <ref *42> ƒ nextTick(length: 2) {},
         openStdin: <ref *43> ƒ openStdin(length: 0) {},
-        pid: 2771,
+        pid: 2775,
         platform: "linux",
-        ppid: 1886,
+        ppid: 1884,
         reallyExit: <ref *44> ƒ reallyExit(length: 1) {},
         release: <ref *45> {
             name: "node",
             lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.35/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.37/bun-linux-x64-baseline.zip",
             headersUrl: "",
             libUrl: ""
         },
@@ -12452,7 +12455,7 @@ EventEmitter {
             filename: "",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "a5a0539f265c22b670e22d17cf12d9e90435b2bf",
+        revision: "618d2cb3ac15b68b82c1a7b903987eaca96288e9",
         setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *50> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
@@ -12654,21 +12657,21 @@ EventEmitter {
         version: "v22.6.0",
         versions: <ref *96> {
             node: "22.6.0",
-            bun: "1.1.35",
+            bun: "1.1.37",
             boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
             openssl: "1.1.0",
             libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
             mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "a5a0539f265c22b670e22d17cf12d9e90435b2bf",
-            webkit: "3bc4abf2d5875baf500b4687ef869987f6d19e00",
+            uwebsockets: "618d2cb3ac15b68b82c1a7b903987eaca96288e9",
+            webkit: "8f9ae4f01a047c666ef548864294e01df731d4ea",
             zig: "0.13.0",
             zlib: "886098f3f339617b4243b286f5ed364b9989e245",
             tinycc: "ab631362d839333660a265d3084d8ff060b96753",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
             libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-            usockets: "a5a0539f265c22b670e22d17cf12d9e90435b2bf",
+            usockets: "618d2cb3ac15b68b82c1a7b903987eaca96288e9",
             lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
             zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
             v8: "12.4.254.14-node.12",
@@ -12729,9 +12732,9 @@ EventEmitter {
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *43],
-    pid: 2771,
+    pid: 2775,
     platform: "linux",
-    ppid: 1886,
+    ppid: 1884,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -12740,7 +12743,7 @@ EventEmitter {
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *46],
-    revision: "a5a0539f265c22b670e22d17cf12d9e90435b2bf",
+    revision: "618d2cb3ac15b68b82c1a7b903987eaca96288e9",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *49],
@@ -12785,7 +12788,7 @@ EventEmitter {
     ucs2: [Circular: *4],
     version: "2.1.0"
 }
-(node:2789) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:2781) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -13211,7 +13214,7 @@ EventEmitter {
                 escape: ƒ escape(length: 1) {},
                 Symbol(cwd): undefined,
                 Symbol(env): <ref *32> {
-                    [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_394c9486-251d-4ba5-9a21-027282841144",
+                    [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
                     [get/set] npm_package_devDependencies__types_node: "^18.15.11",
                     [get/set] STATS_TRP: "true",
                     [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -13220,7 +13223,7 @@ EventEmitter {
                     [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.11.0 linux x64",
                     [get/set] CI: "true",
                     [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-                    [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_394c9486-251d-4ba5-9a21-027282841144",
+                    [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
                     [get/set] PIPX_HOME: "/opt/pipx",
                     [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/22.11.0/x64/bin/node",
                     [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -13242,14 +13245,14 @@ EventEmitter {
                     [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu22",
                     [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
                     [get/set] GITHUB_HEAD_REF: "",
-                    [get/set] SYSTEMD_EXEC_PID: "611",
+                    [get/set] SYSTEMD_EXEC_PID: "599",
                     [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
                     [get/set] NVM_DIR: "/home/runner/.nvm",
                     [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
                     [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
                     [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
                     [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-                    [get/set] ImageVersion: "20241112.1.0",
+                    [get/set] ImageVersion: "20241117.1.0",
                     [get/set] RUNNER_OS: "Linux",
                     [get/set] GITHUB_API_URL: "https://api.github.com",
                     [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.9/x64",
@@ -13259,7 +13262,7 @@ EventEmitter {
                     [get/set] STATS_V3PS: "true",
                     [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
                     [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.3/x64",
-                    [get/set] JOURNAL_STREAM: "8:17166",
+                    [get/set] JOURNAL_STREAM: "8:19020",
                     [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
                     [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
                     [get/set] npm_package_private: "true",
@@ -13267,11 +13270,11 @@ EventEmitter {
                     [get/set] npm_config_registry: "https://registry.npmjs.org/",
                     [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
                     [get/set] STATS_D: "false",
-                    [get/set] GITHUB_RUN_ID: "11883435870",
+                    [get/set] GITHUB_RUN_ID: "12000850491",
                     [get/set] STATS_VMFE: "true",
                     [get/set] GITHUB_REF_TYPE: "branch",
                     [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-                    [get/set] GITHUB_WORKFLOW_SHA: "cfa8fdb09814bc72108b5d6f78223d069c184fab",
+                    [get/set] GITHUB_WORKFLOW_SHA: "b43c298359dff6c5e5ebe0589f343f4eabffeea1",
                     [get/set] GITHUB_BASE_REF: "",
                     [get/set] ImageOS: "ubuntu22",
                     [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -13282,12 +13285,12 @@ EventEmitter {
                     [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
                     [get/set] ANT_HOME: "/usr/share/ant",
                     [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-                    [get/set] RUNNER_TRACKING_ID: "github_6c818444-59ac-4555-8cfb-330e20fa725c",
-                    [get/set] INVOCATION_ID: "82948c8d2d2946138e689a333db7342b",
+                    [get/set] RUNNER_TRACKING_ID: "github_849a0f61-5877-4c73-9e8b-18643baf42cb",
+                    [get/set] INVOCATION_ID: "183199b4a75f448cb1f5ef8cd6881fda",
                     [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
                     [get/set] NODE: "/opt/hostedtoolcache/node/22.11.0/x64/bin/node",
                     [get/set] GITHUB_ACTION: "__run",
-                    [get/set] GITHUB_RUN_NUMBER: "104",
+                    [get/set] GITHUB_RUN_NUMBER: "105",
                     [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
                     [get/set] RUNNER_ARCH: "X64",
                     [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -13296,7 +13299,7 @@ EventEmitter {
                     [get/set] LANG: "C.UTF-8",
                     [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
                     [get/set] CONDA: "/usr/share/miniconda",
-                    [get/set] RUNNER_NAME: "GitHub Actions 12",
+                    [get/set] RUNNER_NAME: "GitHub Actions 2",
                     [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
                     [get/set] STATS_VMD: "true",
                     [get/set] GITHUB_REF_NAME: "master",
@@ -13322,15 +13325,16 @@ EventEmitter {
                     [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
                     [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
                     [get/set] npm_package_dependencies_execa: "^7.1.1",
-                    [get/set] GITHUB_SHA: "cfa8fdb09814bc72108b5d6f78223d069c184fab",
+                    [get/set] GITHUB_SHA: "b43c298359dff6c5e5ebe0589f343f4eabffeea1",
                     [get/set] GITHUB_RUN_ATTEMPT: "1",
+                    [get/set] STATS_D_TC: "true",
                     [get/set] GITHUB_REF: "refs/heads/master",
                     [get/set] GITHUB_ACTOR: "privatenumber",
                     [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
                     [get/set] npm_package_license: "MIT",
                     [get/set] LEIN_HOME: "/usr/local/lib/lein",
                     [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-                    [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_394c9486-251d-4ba5-9a21-027282841144",
+                    [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
                     [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-11-jdk-amd64",
                     [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
                     [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -13345,7 +13349,7 @@ EventEmitter {
                     [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
                     [get/set] LEIN_JAR: "/usr/local/lib/lein/self-installs/leiningen-2.11.2-standalone.jar",
                     [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-                    [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_394c9486-251d-4ba5-9a21-027282841144",
+                    [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
                     [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
                     [get/set] STATS_EXT: "true",
                     [get/set] npm_command: "run-script",
@@ -13358,7 +13362,7 @@ EventEmitter {
                     [get/set] STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
                     [get/set] npm_package_lint_staged____ts_js_: "lintroll --cache",
                     [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-                    [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_394c9486-251d-4ba5-9a21-027282841144",
+                    [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_3e423c1c-e7c4-4db5-9f07-1503649ecf60",
                     [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
                 },
                 Symbol(throws): true
@@ -13454,7 +13458,7 @@ EventEmitter {
             allocUnsafe: ƒ allocUnsafe(length: 1) {},
             argv: [
                 "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1731889023574-1/repl.mjs"
+                "/tmp/fs-fixture-1732493817295-1/repl.mjs"
             ],
             build: ƒ build(length: 1) {},
             concatArrayBuffers: ƒ concatArrayBuffers(length: 3) {},
@@ -13512,12 +13516,12 @@ EventEmitter {
             isMainThread: true,
             listen: ƒ listen(length: 1) {},
             udpSocket: ƒ udpSocket(length: 1) {},
-            main: "/tmp/fs-fixture-1731889023574-1/repl.mjs",
+            main: "/tmp/fs-fixture-1732493817295-1/repl.mjs",
             mmap: ƒ mmap(length: 1) {},
             nanoseconds: ƒ nanoseconds(length: 0) {},
             openInEditor: ƒ openInEditor(length: 1) {},
             origin: "",
-            version_with_sha: "v1.1.35-canary.66 (a5a0539f)",
+            version_with_sha: "v1.1.37-canary.46 (618d2cb3)",
             password: {
                 hash: ƒ hash(length: 2) {},
                 hashSync: ƒ hashSync(length: 2) {},
@@ -13541,7 +13545,7 @@ EventEmitter {
             readableStreamToText: ƒ (length: 1) {},
             resolve: ƒ resolve(length: 1) {},
             resolveSync: ƒ resolveSync(length: 1) {},
-            revision: "a5a0539f265c22b670e22d17cf12d9e90435b2bf",
+            revision: "618d2cb3ac15b68b82c1a7b903987eaca96288e9",
             semver: {
                 satisfies: ƒ satisfies(length: 2) {},
                 order: ƒ order(length: 2) {}
@@ -13563,7 +13567,7 @@ EventEmitter {
                 arrayBufferToString: ƒ arrayBufferToString(length: 1) {},
                 mimallocDump: ƒ mimallocDump(length: 1) {}
             },
-            version: "1.1.35",
+            version: "1.1.37",
             which: ƒ which(length: 1) {},
             write: ƒ write(length: 1) {}
         },
@@ -13572,13 +13576,13 @@ EventEmitter {
             subtle: SubtleCrypto {}
         },
         navigator: {
-            userAgent: "Bun/1.1.35",
+            userAgent: "Bun/1.1.37",
             platform: "Linux x86_64",
             hardwareConcurrency: 4
         },
         performance: Performance {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1731889024838.3464
+            timeOrigin: 1732493818389.4114
         },
         process: EventEmitter {
             abort: ƒ abort(length: 1) {},
@@ -13586,7 +13590,7 @@ EventEmitter {
             arch: "x64",
             argv: [
                 "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1731889023574-1/repl.mjs"
+                "/tmp/fs-fixture-1732493817295-1/repl.mjs"
             ],
             argv0: "bun",
             assert: ƒ assert(length: 1) {},
@@ -13639,14 +13643,14 @@ EventEmitter {
             moduleLoadList: [],
             nextTick: ƒ nextTick(length: 2) {},
             openStdin: ƒ openStdin(length: 0) {},
-            pid: 2860,
+            pid: 2867,
             platform: "linux",
-            ppid: 1886,
+            ppid: 1884,
             reallyExit: ƒ reallyExit(length: 1) {},
             release: {
                 name: "node",
                 lts: false,
-                sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.35/bun-linux-x64-baseline.zip",
+                sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.37/bun-linux-x64-baseline.zip",
                 headersUrl: "",
                 libUrl: ""
             },
@@ -13656,7 +13660,7 @@ EventEmitter {
                 filename: "",
                 writeReport: ƒ writeReport(length: 1) {}
             },
-            revision: "a5a0539f265c22b670e22d17cf12d9e90435b2bf",
+            revision: "618d2cb3ac15b68b82c1a7b903987eaca96288e9",
             setSourceMapsEnabled: ƒ setSourceMapsEnabled(length: 1) {},
             setUncaughtExceptionCaptureCallback: ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
             send: undefined,
@@ -13873,21 +13877,21 @@ EventEmitter {
             version: "v22.6.0",
             versions: {
                 node: "22.6.0",
-                bun: "1.1.35",
+                bun: "1.1.37",
                 boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
                 openssl: "1.1.0",
                 libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
                 mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
                 picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-                uwebsockets: "a5a0539f265c22b670e22d17cf12d9e90435b2bf",
-                webkit: "3bc4abf2d5875baf500b4687ef869987f6d19e00",
+                uwebsockets: "618d2cb3ac15b68b82c1a7b903987eaca96288e9",
+                webkit: "8f9ae4f01a047c666ef548864294e01df731d4ea",
                 zig: "0.13.0",
                 zlib: "886098f3f339617b4243b286f5ed364b9989e245",
                 tinycc: "ab631362d839333660a265d3084d8ff060b96753",
                 lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
                 ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
                 libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-                usockets: "a5a0539f265c22b670e22d17cf12d9e90435b2bf",
+                usockets: "618d2cb3ac15b68b82c1a7b903987eaca96288e9",
                 lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
                 zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
                 v8: "12.4.254.14-node.12",
@@ -14005,10 +14009,14 @@ EventEmitter {
         PerformanceObserver: ƒ PerformanceObserver(length: 1) {
             supportedEntryTypes: [
                 "mark",
-                "measure"
+                "measure",
+                "resource"
             ]
         },
         PerformanceObserverEntryList: ƒ PerformanceObserverEntryList(length: 0) {},
+        PerformanceResourceTiming: ƒ PerformanceResourceTiming(length: 0) {},
+        PerformanceServerTiming: ƒ PerformanceServerTiming(length: 0) {},
+        PerformanceTiming: ƒ PerformanceTiming(length: 0) {},
         ReadableByteStreamController: ƒ ReadableByteStreamController(length: 3) {},
         ReadableStream: ƒ ReadableStream(length: 0) {},
         ReadableStreamBYOBReader: ƒ ReadableStreamBYOBReader(length: 1) {},
@@ -14016,9 +14024,9 @@ EventEmitter {
         ReadableStreamDefaultController: ƒ ReadableStreamDefaultController(length: 4) {},
         ReadableStreamDefaultReader: ƒ ReadableStreamDefaultReader(length: 1) {},
         SubtleCrypto: ƒ SubtleCrypto(length: 0) {},
+        TextDecoderStream: ƒ TextDecoderStream(length: 0) {},
         TextEncoder: ƒ TextEncoder(length: 0) {},
         TextEncoderStream: ƒ TextEncoderStream(length: 0) {},
-        TextDecoderStream: ƒ TextDecoderStream(length: 0) {},
         TransformStream: ƒ TransformStream(length: 0) {},
         TransformStreamDefaultController: ƒ TransformStreamDefaultController(length: 0) {},
         URL: ƒ URL(length: 1) {
@@ -14045,7 +14053,7 @@ EventEmitter {
     crlfDelay: 100,
     cursor: 0,
     default: {
-        lines: <ref *363> [],
+        lines: <ref *366> [],
         context: [Circular: *4],
         historyIndex: -1,
         cursor: 0,
@@ -14053,12 +14061,12 @@ EventEmitter {
         removeHistoryDuplicates: false,
         crlfDelay: 100,
         completer: [Circular: *3],
-        history: <ref *364> [],
+        history: <ref *367> [],
         _initialPrompt: "> ",
         terminal: true,
         input: [Error accessing: node:repl is not yet implemented in Bun.],
         line: "",
-        eval: <ref *366> ƒ eval(length: 0) {},
+        eval: <ref *369> ƒ eval(length: 0) {},
         isCompletionEnabled: true,
         escapeCodeTimeout: 500,
         tabSize: 8,
@@ -14074,16 +14082,16 @@ EventEmitter {
         builtinModules: [Circular: *2]
     },
     escapeCodeTimeout: 500,
-    eval: [Circular: *366],
-    history: [Circular: *364],
+    eval: [Circular: *369],
+    history: [Circular: *367],
     historyIndex: -1,
     historySize: 1000,
-    input: [Circular: *365],
+    input: [Circular: *368],
     isCompletionEnabled: true,
     last: undefined,
     line: "",
-    lines: [Circular: *363],
-    output: [Circular: *367],
+    lines: [Circular: *366],
+    output: [Circular: *370],
     removeHistoryDuplicates: false,
     tabSize: 8,
     terminal: true,
@@ -14933,7 +14941,7 @@ EventEmitter {
     transferableAbortSignal: [Circular: *88],
     types: [Circular: *90]
 }
-(node:2954) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2978) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -17048,7 +17056,7 @@ EventEmitter {
         WASI: [Circular: *2]
     }
 }
-(node:3193) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3215) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
