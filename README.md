@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v22.12.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jan 13, 2025 with Bun 1.1.44 Node.js v22.12.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -2134,10 +2134,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {},
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined
+            end: <ref *9> ƒ (length: 3) {}
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -2145,9 +2142,6 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
     },
     EventEmitter: <ref *13> ƒ EventEmitter(length: 1) {
         prototype: EventEmitter {
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined,
             setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
             getMaxListeners: ƒ getMaxListeners(length: 0) {},
@@ -2358,10 +2352,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {},
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined
+            end: <ref *9> ƒ (length: 3) {}
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -2369,9 +2360,6 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
     },
     EventEmitter: <ref *13> ƒ EventEmitter(length: 1) {
         prototype: EventEmitter {
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined,
             setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
             getMaxListeners: ƒ getMaxListeners(length: 0) {},
@@ -2595,10 +2583,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {},
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined
+            end: <ref *9> ƒ (length: 3) {}
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -2606,9 +2591,6 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
     },
     EventEmitter: <ref *13> ƒ EventEmitter(length: 1) {
         prototype: EventEmitter {
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined,
             setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
             getMaxListeners: ƒ getMaxListeners(length: 0) {},
@@ -2819,10 +2801,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {},
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined
+            end: <ref *9> ƒ (length: 3) {}
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -2830,9 +2809,6 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
     },
     EventEmitter: <ref *13> ƒ EventEmitter(length: 1) {
         prototype: EventEmitter {
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined,
             setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
             getMaxListeners: ƒ getMaxListeners(length: 0) {},
@@ -3028,7 +3004,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2188) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2192) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -3045,10 +3021,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {},
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined
+            end: <ref *9> ƒ (length: 3) {}
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -3056,9 +3029,6 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
     },
     EventEmitter: <ref *13> ƒ EventEmitter(length: 1) {
         prototype: EventEmitter {
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined,
             setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
             getMaxListeners: ƒ getMaxListeners(length: 0) {},
@@ -3276,10 +3246,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {},
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined
+            end: <ref *9> ƒ (length: 3) {}
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -3287,9 +3254,6 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
     },
     EventEmitter: <ref *13> ƒ EventEmitter(length: 1) {
         prototype: EventEmitter {
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined,
             setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
             getMaxListeners: ƒ getMaxListeners(length: 0) {},
@@ -3995,70 +3959,72 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
 
 ```js
 {
-    AssertionError: <ref *2> ƒ AssertionError2(length: 1) {
-        prototype: AssertionError2 {}
-    },
-    CallTracker: <ref *4> ƒ CallTracker(length: 0) {},
-    deepEqual: <ref *5> ƒ deepEqual(length: 3) {},
-    deepStrictEqual: <ref *6> ƒ deepStrictEqual(length: 3) {},
-    default: <ref *7> ƒ ok(length: 0) {
-        fail: <ref *8> ƒ fail(length: 5) {},
-        AssertionError: [Circular: *2],
-        ok: [Circular: *7],
-        equal: <ref *9> ƒ equal(length: 3) {},
-        notEqual: <ref *10> ƒ notEqual(length: 3) {},
-        deepEqual: [Circular: *5],
-        notDeepEqual: <ref *11> ƒ notDeepEqual(length: 3) {},
-        deepStrictEqual: [Circular: *6],
-        notDeepStrictEqual: <ref *12> ƒ notDeepStrictEqual(length: 3) {},
-        strictEqual: <ref *13> ƒ strictEqual(length: 3) {},
-        notStrictEqual: <ref *14> ƒ notStrictEqual(length: 3) {},
-        doesNotMatch: <ref *15> ƒ doesNotMatch(length: 3) {},
-        match: <ref *16> ƒ match(length: 3) {},
-        throws: <ref *17> ƒ throws(length: 1) {},
-        rejects: <ref *18> ƒ rejects(length: 1) {},
-        doesNotThrow: <ref *19> ƒ doesNotThrow(length: 1) {},
-        doesNotReject: <ref *20> ƒ doesNotReject(length: 1) {},
-        ifError: <ref *21> ƒ ifError(length: 1) {},
+    AssertionError: <ref *2> class AssertionError extends Error {},
+    CallTracker: <ref *3> ƒ deprecated(length: 0) {},
+    deepEqual: <ref *4> ƒ deepEqual(length: 3) {},
+    deepStrictEqual: <ref *5> ƒ deepStrictEqual(length: 3) {},
+    default: <ref *6> ƒ ok(length: 0) {
+        fail: <ref *7> ƒ fail(length: 5) {},
+        [get/set] AssertionError: [Circular: *2],
+        ok: [Circular: *6],
+        equal: <ref *8> ƒ equal(length: 3) {},
+        notEqual: <ref *9> ƒ notEqual(length: 3) {},
+        deepEqual: [Circular: *4],
+        notDeepEqual: <ref *10> ƒ notDeepEqual(length: 3) {},
+        deepStrictEqual: [Circular: *5],
+        notDeepStrictEqual: <ref *11> ƒ notDeepStrictEqual(length: 3) {},
+        strictEqual: <ref *12> ƒ strictEqual(length: 3) {},
+        notStrictEqual: <ref *13> ƒ notStrictEqual(length: 3) {},
+        partialDeepStrictEqual: <ref *14> ƒ partialDeepStrictEqual(length: 3) {},
+        throws: <ref *15> ƒ throws(length: 1) {},
+        rejects: <ref *16> async ƒ rejects(length: 1) {},
+        doesNotThrow: <ref *17> ƒ doesNotThrow(length: 1) {},
+        doesNotReject: <ref *18> async ƒ doesNotReject(length: 1) {},
+        ifError: <ref *19> ƒ ifError(length: 1) {},
+        match: <ref *20> ƒ match(length: 3) {},
+        doesNotMatch: <ref *21> ƒ doesNotMatch(length: 3) {},
+        [get/set] CallTracker: [Circular: *3],
         strict: <ref *22> ƒ strict(length: 0) {
-            fail: [Circular: *8],
+            fail: [Circular: *7],
             AssertionError: [Circular: *2],
-            ok: [Circular: *7],
-            equal: [Circular: *13],
-            notEqual: [Circular: *14],
-            deepEqual: [Circular: *6],
-            notDeepEqual: [Circular: *12],
-            deepStrictEqual: [Circular: *6],
-            notDeepStrictEqual: [Circular: *12],
-            strictEqual: [Circular: *13],
-            notStrictEqual: [Circular: *14],
-            doesNotMatch: [Circular: *15],
-            match: [Circular: *16],
-            throws: [Circular: *17],
-            rejects: [Circular: *18],
-            doesNotThrow: [Circular: *19],
-            doesNotReject: [Circular: *20],
-            ifError: [Circular: *21],
+            ok: [Circular: *6],
+            equal: [Circular: *12],
+            notEqual: [Circular: *13],
+            deepEqual: [Circular: *5],
+            notDeepEqual: [Circular: *11],
+            deepStrictEqual: [Circular: *5],
+            notDeepStrictEqual: [Circular: *11],
+            strictEqual: [Circular: *12],
+            notStrictEqual: [Circular: *13],
+            partialDeepStrictEqual: [Circular: *14],
+            throws: [Circular: *15],
+            rejects: [Circular: *16],
+            doesNotThrow: [Circular: *17],
+            doesNotReject: [Circular: *18],
+            ifError: [Circular: *19],
+            match: [Circular: *20],
+            doesNotMatch: [Circular: *21],
+            CallTracker: [Circular: *3],
             strict: [Circular: *22]
-        },
-        CallTracker: [Circular: *4]
+        }
     },
-    doesNotMatch: [Circular: *15],
-    doesNotReject: [Circular: *20],
-    doesNotThrow: [Circular: *19],
-    equal: [Circular: *9],
-    fail: [Circular: *8],
-    ifError: [Circular: *21],
-    match: [Circular: *16],
-    notDeepEqual: [Circular: *11],
-    notDeepStrictEqual: [Circular: *12],
-    notEqual: [Circular: *10],
-    notStrictEqual: [Circular: *14],
-    ok: [Circular: *7],
-    rejects: [Circular: *18],
+    doesNotMatch: [Circular: *21],
+    doesNotReject: [Circular: *18],
+    doesNotThrow: [Circular: *17],
+    equal: [Circular: *8],
+    fail: [Circular: *7],
+    ifError: [Circular: *19],
+    match: [Circular: *20],
+    notDeepEqual: [Circular: *10],
+    notDeepStrictEqual: [Circular: *11],
+    notEqual: [Circular: *9],
+    notStrictEqual: [Circular: *13],
+    ok: [Circular: *6],
+    partialDeepStrictEqual: [Circular: *14],
+    rejects: [Circular: *16],
     strict: [Circular: *22],
-    strictEqual: [Circular: *13],
-    throws: [Circular: *17]
+    strictEqual: [Circular: *12],
+    throws: [Circular: *15]
 }
 ```
 
@@ -4143,9 +4109,8 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
 
 ```js
 {
-    AssertionError: <ref *2> ƒ AssertionError2(length: 1) {
-        prototype: AssertionError2 {}
-    },
+    AssertionError: <ref *2> class AssertionError extends Error {},
+    CallTracker: <ref *3> ƒ deprecated(length: 0) {},
     deepEqual: <ref *4> ƒ deepStrictEqual(length: 3) {},
     deepStrictEqual: [Circular: *4],
     default: <ref *5> ƒ strict(length: 0) {
@@ -4153,7 +4118,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
         AssertionError: [Circular: *2],
         ok: <ref *7> ƒ ok(length: 0) {
             fail: [Circular: *6],
-            AssertionError: [Circular: *2],
+            [get/set] AssertionError: [Circular: *2],
             ok: [Circular: *7],
             equal: ƒ equal(length: 3) {},
             notEqual: ƒ notEqual(length: 3) {},
@@ -4163,15 +4128,16 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
             notDeepStrictEqual: <ref *12> ƒ notDeepStrictEqual(length: 3) {},
             strictEqual: <ref *13> ƒ strictEqual(length: 3) {},
             notStrictEqual: <ref *14> ƒ notStrictEqual(length: 3) {},
-            doesNotMatch: <ref *15> ƒ doesNotMatch(length: 3) {},
-            match: <ref *16> ƒ match(length: 3) {},
-            throws: <ref *17> ƒ throws(length: 1) {},
-            rejects: <ref *18> ƒ rejects(length: 1) {},
-            doesNotThrow: <ref *19> ƒ doesNotThrow(length: 1) {},
-            doesNotReject: <ref *20> ƒ doesNotReject(length: 1) {},
-            ifError: <ref *21> ƒ ifError(length: 1) {},
-            strict: [Circular: *5],
-            CallTracker: ƒ CallTracker(length: 0) {}
+            partialDeepStrictEqual: <ref *15> ƒ partialDeepStrictEqual(length: 3) {},
+            throws: <ref *16> ƒ throws(length: 1) {},
+            rejects: <ref *17> async ƒ rejects(length: 1) {},
+            doesNotThrow: <ref *18> ƒ doesNotThrow(length: 1) {},
+            doesNotReject: <ref *19> async ƒ doesNotReject(length: 1) {},
+            ifError: <ref *20> ƒ ifError(length: 1) {},
+            match: <ref *21> ƒ match(length: 3) {},
+            doesNotMatch: <ref *22> ƒ doesNotMatch(length: 3) {},
+            [get/set] CallTracker: [Circular: *3],
+            strict: [Circular: *5]
         },
         equal: [Circular: *13],
         notEqual: [Circular: *14],
@@ -4181,31 +4147,34 @@ _Last updated on <!-- lastUpdated:start -->Jan 6, 2025 with Bun 1.1.43 Node.js v
         notDeepStrictEqual: [Circular: *12],
         strictEqual: [Circular: *13],
         notStrictEqual: [Circular: *14],
-        doesNotMatch: [Circular: *15],
-        match: [Circular: *16],
-        throws: [Circular: *17],
-        rejects: [Circular: *18],
-        doesNotThrow: [Circular: *19],
-        doesNotReject: [Circular: *20],
-        ifError: [Circular: *21],
+        partialDeepStrictEqual: [Circular: *15],
+        throws: [Circular: *16],
+        rejects: [Circular: *17],
+        doesNotThrow: [Circular: *18],
+        doesNotReject: [Circular: *19],
+        ifError: [Circular: *20],
+        match: [Circular: *21],
+        doesNotMatch: [Circular: *22],
+        CallTracker: [Circular: *3],
         strict: [Circular: *5]
     },
-    doesNotMatch: [Circular: *15],
-    doesNotReject: [Circular: *20],
-    doesNotThrow: [Circular: *19],
+    doesNotMatch: [Circular: *22],
+    doesNotReject: [Circular: *19],
+    doesNotThrow: [Circular: *18],
     equal: [Circular: *13],
     fail: [Circular: *6],
-    ifError: [Circular: *21],
-    match: [Circular: *16],
+    ifError: [Circular: *20],
+    match: [Circular: *21],
     notDeepEqual: [Circular: *12],
     notDeepStrictEqual: [Circular: *12],
     notEqual: [Circular: *14],
     notStrictEqual: [Circular: *14],
     ok: [Circular: *7],
-    rejects: [Circular: *18],
+    partialDeepStrictEqual: [Circular: *15],
+    rejects: [Circular: *17],
     strict: [Circular: *5],
     strictEqual: [Circular: *13],
-    throws: [Circular: *17]
+    throws: [Circular: *16]
 }
 ```
 
@@ -4620,9 +4589,6 @@ EventEmitter {
     addListener: <ref *4> ƒ addListener(length: 2) {},
     constructor: <ref *5> ƒ EventEmitter(length: 1) {
         prototype: EventEmitter {
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined,
             setMaxListeners: <ref *7> ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *5],
             getMaxListeners: <ref *8> ƒ getMaxListeners(length: 0) {},
@@ -6481,64 +6447,64 @@ EventEmitter {
 
 ```js
 {
-    ADDRCONFIG: 0,
-    ADDRGETNETWORKPARAMS: "DNS_EADDRGETNETWORKPARAMS",
-    ALL: 1,
-    BADFAMILY: "DNS_EBADFAMILY",
-    BADFLAGS: "DNS_EBADFLAGS",
-    BADHINTS: "DNS_EBADHINTS",
-    BADNAME: "DNS_EBADNAME",
-    BADQUERY: "DNS_EBADQUERY",
-    BADRESP: "DNS_EBADRESP",
-    BADSTR: "DNS_EBADSTR",
-    CANCELLED: "DNS_ECANCELLED",
-    CONNREFUSED: "DNS_ECONNREFUSED",
-    DESTRUCTION: "DNS_EDESTRUCTION",
-    EOF: "DNS_EOF",
-    FILE: "DNS_EFILE",
-    FORMERR: "DNS_EFORMERR",
-    LOADIPHLPAPI: "DNS_ELOADIPHLPAPI",
-    NODATA: "DNS_ENODATA",
-    NOMEM: "DNS_ENOMEM",
-    NONAME: "DNS_ENONAME",
-    NOTFOUND: "DNS_ENOTFOUND",
-    NOTIMP: "DNS_ENOTIMP",
-    NOTINITIALIZED: "DNS_ENOTINITIALIZED",
-    REFUSED: "DNS_EREFUSED",
+    ADDRCONFIG: 32,
+    ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
+    ALL: 16,
+    BADFAMILY: "EBADFAMILY",
+    BADFLAGS: "EBADFLAGS",
+    BADHINTS: "EBADHINTS",
+    BADNAME: "EBADNAME",
+    BADQUERY: "EBADQUERY",
+    BADRESP: "EBADRESP",
+    BADSTR: "EBADSTR",
+    CANCELLED: "ECANCELLED",
+    CONNREFUSED: "ECONNREFUSED",
+    DESTRUCTION: "EDESTRUCTION",
+    EOF: "EOF",
+    FILE: "EFILE",
+    FORMERR: "EFORMERR",
+    LOADIPHLPAPI: "ELOADIPHLPAPI",
+    NODATA: "ENODATA",
+    NOMEM: "ENOMEM",
+    NONAME: "ENONAME",
+    NOTFOUND: "ENOTFOUND",
+    NOTIMP: "ENOTIMP",
+    NOTINITIALIZED: "ENOTINITIALIZED",
+    REFUSED: "EREFUSED",
     Resolver: <ref *2> ƒ Resolver2(length: 1) {
         prototype: Resolver {}
     },
-    SERVFAIL: "DNS_ESERVFAIL",
-    TIMEOUT: "DNS_ETIMEOUT",
-    V4MAPPED: 2,
+    SERVFAIL: "ESERVFAIL",
+    TIMEOUT: "ETIMEOUT",
+    V4MAPPED: 8,
     default: {
-        ADDRCONFIG: 0,
-        ALL: 1,
-        V4MAPPED: 2,
-        NODATA: "DNS_ENODATA",
-        FORMERR: "DNS_EFORMERR",
-        SERVFAIL: "DNS_ESERVFAIL",
-        NOTFOUND: "DNS_ENOTFOUND",
-        NOTIMP: "DNS_ENOTIMP",
-        REFUSED: "DNS_EREFUSED",
-        BADQUERY: "DNS_EBADQUERY",
-        BADNAME: "DNS_EBADNAME",
-        BADFAMILY: "DNS_EBADFAMILY",
-        BADRESP: "DNS_EBADRESP",
-        CONNREFUSED: "DNS_ECONNREFUSED",
-        TIMEOUT: "DNS_ETIMEOUT",
-        EOF: "DNS_EOF",
-        FILE: "DNS_EFILE",
-        NOMEM: "DNS_ENOMEM",
-        DESTRUCTION: "DNS_EDESTRUCTION",
-        BADSTR: "DNS_EBADSTR",
-        BADFLAGS: "DNS_EBADFLAGS",
-        NONAME: "DNS_ENONAME",
-        BADHINTS: "DNS_EBADHINTS",
-        NOTINITIALIZED: "DNS_ENOTINITIALIZED",
-        LOADIPHLPAPI: "DNS_ELOADIPHLPAPI",
-        ADDRGETNETWORKPARAMS: "DNS_EADDRGETNETWORKPARAMS",
-        CANCELLED: "DNS_ECANCELLED",
+        ADDRCONFIG: 32,
+        ALL: 16,
+        V4MAPPED: 8,
+        NODATA: "ENODATA",
+        FORMERR: "EFORMERR",
+        SERVFAIL: "ESERVFAIL",
+        NOTFOUND: "ENOTFOUND",
+        NOTIMP: "ENOTIMP",
+        REFUSED: "EREFUSED",
+        BADQUERY: "EBADQUERY",
+        BADNAME: "EBADNAME",
+        BADFAMILY: "EBADFAMILY",
+        BADRESP: "EBADRESP",
+        CONNREFUSED: "ECONNREFUSED",
+        TIMEOUT: "ETIMEOUT",
+        EOF: "EOF",
+        FILE: "EFILE",
+        NOMEM: "ENOMEM",
+        DESTRUCTION: "EDESTRUCTION",
+        BADSTR: "EBADSTR",
+        BADFLAGS: "EBADFLAGS",
+        NONAME: "ENONAME",
+        BADHINTS: "EBADHINTS",
+        NOTINITIALIZED: "ENOTINITIALIZED",
+        LOADIPHLPAPI: "ELOADIPHLPAPI",
+        ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
+        CANCELLED: "ECANCELLED",
         lookup: <ref *5> ƒ lookup(length: 3) {
             Symbol(nodejs.util.promisify.custom): <ref *6> ƒ lookup(length: 2) {}
         },
@@ -6546,89 +6512,117 @@ EventEmitter {
             Symbol(nodejs.util.promisify.custom): <ref *8> ƒ lookupService(length: 2) {}
         },
         Resolver: [Circular: *2],
-        setServers: <ref *9> ƒ setServers(length: 0) {},
-        setDefaultResultOrder: <ref *10> ƒ setDefaultResultOrder(length: 0) {},
-        resolve: <ref *11> ƒ resolve(length: 3) {
-            Symbol(nodejs.util.promisify.custom): <ref *12> ƒ resolve(length: 2) {}
+        setServers: <ref *9> ƒ setServers(length: 1) {},
+        setDefaultResultOrder: <ref *10> ƒ setDefaultResultOrder(length: 1) {},
+        getDefaultResultOrder: <ref *11> ƒ getDefaultResultOrder(length: 0) {},
+        resolve: <ref *12> ƒ resolve(length: 3) {
+            Symbol(nodejs.util.promisify.custom): <ref *13> ƒ resolve(length: 2) {}
         },
-        reverse: <ref *13> ƒ reverse(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *14> ƒ reverse(length: 1) {}
+        reverse: <ref *14> ƒ reverse(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *15> ƒ reverse(length: 1) {}
         },
-        resolve4: <ref *15> ƒ resolve4(length: 3) {
-            Symbol(nodejs.util.promisify.custom): <ref *16> ƒ resolve4(length: 2) {}
+        resolve4: <ref *16> ƒ resolve4(length: 3) {
+            Symbol(nodejs.util.promisify.custom): <ref *17> ƒ resolve4(length: 2) {}
         },
-        resolve6: <ref *17> ƒ resolve6(length: 3) {
-            Symbol(nodejs.util.promisify.custom): <ref *18> ƒ resolve6(length: 2) {}
+        resolve6: <ref *18> ƒ resolve6(length: 3) {
+            Symbol(nodejs.util.promisify.custom): <ref *19> ƒ resolve6(length: 2) {}
         },
-        resolveAny: <ref *19> ƒ resolveAny(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *20> ƒ (length: 0) {}
+        resolveAny: <ref *20> ƒ resolveAny(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *21> ƒ resolveAny(length: 1) {}
         },
-        resolveCname: <ref *21> ƒ resolveCname(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *22> ƒ resolveCname(length: 1) {}
+        resolveCname: <ref *22> ƒ resolveCname(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *23> ƒ resolveCname(length: 1) {}
         },
-        resolveCaa: <ref *23> ƒ resolveCaa(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *24> ƒ resolveCaa(length: 1) {}
+        resolveCaa: <ref *24> ƒ resolveCaa(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *25> ƒ resolveCaa(length: 1) {}
         },
-        resolveMx: <ref *25> ƒ resolveMx(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *26> ƒ resolveMx(length: 1) {}
+        resolveMx: <ref *26> ƒ resolveMx(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *27> ƒ resolveMx(length: 1) {}
         },
-        resolveNs: <ref *27> ƒ resolveNs(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *28> ƒ resolveNs(length: 1) {}
+        resolveNs: <ref *28> ƒ resolveNs(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *29> ƒ resolveNs(length: 1) {}
         },
-        resolvePtr: <ref *29> ƒ resolvePtr(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *30> ƒ resolvePtr(length: 1) {}
+        resolvePtr: <ref *30> ƒ resolvePtr(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *31> ƒ resolvePtr(length: 1) {}
         },
-        resolveSoa: <ref *31> ƒ resolveSoa(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *32> ƒ resolveSoa(length: 1) {}
+        resolveSoa: <ref *32> ƒ resolveSoa(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *33> ƒ resolveSoa(length: 1) {}
         },
-        resolveSrv: <ref *33> ƒ resolveSrv(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *34> ƒ resolveSrv(length: 1) {}
+        resolveSrv: <ref *34> ƒ resolveSrv(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *35> ƒ resolveSrv(length: 1) {}
         },
-        resolveTxt: <ref *35> ƒ resolveTxt(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *36> ƒ resolveTxt(length: 1) {}
+        resolveTxt: <ref *36> ƒ resolveTxt(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *37> ƒ resolveTxt(length: 1) {}
         },
-        resolveNaptr: <ref *37> ƒ resolveNaptr(length: 2) {
-            Symbol(nodejs.util.promisify.custom): <ref *38> ƒ resolveNaptr(length: 1) {}
+        resolveNaptr: <ref *38> ƒ resolveNaptr(length: 2) {
+            Symbol(nodejs.util.promisify.custom): <ref *39> ƒ resolveNaptr(length: 1) {}
         },
-        promises: <ref *39> {
+        promises: <ref *40> {
+            NODATA: "ENODATA",
+            FORMERR: "EFORMERR",
+            SERVFAIL: "ESERVFAIL",
+            NOTFOUND: "ENOTFOUND",
+            NOTIMP: "ENOTIMP",
+            REFUSED: "EREFUSED",
+            BADQUERY: "EBADQUERY",
+            BADNAME: "EBADNAME",
+            BADFAMILY: "EBADFAMILY",
+            BADRESP: "EBADRESP",
+            CONNREFUSED: "ECONNREFUSED",
+            TIMEOUT: "ETIMEOUT",
+            EOF: "EOF",
+            FILE: "EFILE",
+            NOMEM: "ENOMEM",
+            DESTRUCTION: "EDESTRUCTION",
+            BADSTR: "EBADSTR",
+            BADFLAGS: "EBADFLAGS",
+            NONAME: "ENONAME",
+            BADHINTS: "EBADHINTS",
+            NOTINITIALIZED: "ENOTINITIALIZED",
+            LOADIPHLPAPI: "ELOADIPHLPAPI",
+            ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
+            CANCELLED: "ECANCELLED",
             lookup: [Circular: *6],
             lookupService: [Circular: *8],
-            resolve: [Circular: *12],
-            resolve4: [Circular: *16],
-            resolve6: [Circular: *18],
-            resolveSrv: [Circular: *34],
-            resolveTxt: [Circular: *36],
-            resolveSoa: [Circular: *32],
-            resolveNaptr: [Circular: *38],
-            resolveMx: [Circular: *26],
-            resolveCaa: [Circular: *24],
-            resolveNs: [Circular: *28],
-            resolvePtr: [Circular: *30],
-            resolveCname: [Circular: *22],
-            reverse: [Circular: *14],
+            resolve: [Circular: *13],
+            resolve4: [Circular: *17],
+            resolve6: [Circular: *19],
+            resolveAny: [Circular: *21],
+            resolveSrv: [Circular: *35],
+            resolveTxt: [Circular: *37],
+            resolveSoa: [Circular: *33],
+            resolveNaptr: [Circular: *39],
+            resolveMx: [Circular: *27],
+            resolveCaa: [Circular: *25],
+            resolveNs: [Circular: *29],
+            resolvePtr: [Circular: *31],
+            resolveCname: [Circular: *23],
+            reverse: [Circular: *15],
             Resolver: class Resolver3 {},
-            resolveAny: [Circular: *20]
+            setDefaultResultOrder: [Circular: *10],
+            setServers: [Circular: *9]
         },
-        getServers: <ref *41> ƒ getServers(length: 0) {}
+        getServers: <ref *42> ƒ getServers(length: 0) {}
     },
-    getServers: [Circular: *41],
+    getDefaultResultOrder: [Circular: *11],
+    getServers: [Circular: *42],
     lookup: [Circular: *5],
     lookupService: [Circular: *7],
-    promises: [Circular: *39],
-    resolve: [Circular: *11],
-    resolve4: [Circular: *15],
-    resolve6: [Circular: *17],
-    resolveAny: [Circular: *19],
-    resolveCaa: [Circular: *23],
-    resolveCname: [Circular: *21],
-    resolveMx: [Circular: *25],
-    resolveNaptr: [Circular: *37],
-    resolveNs: [Circular: *27],
-    resolvePtr: [Circular: *29],
-    resolveSoa: [Circular: *31],
-    resolveSrv: [Circular: *33],
-    resolveTxt: [Circular: *35],
-    reverse: [Circular: *13],
+    promises: [Circular: *40],
+    resolve: [Circular: *12],
+    resolve4: [Circular: *16],
+    resolve6: [Circular: *18],
+    resolveAny: [Circular: *20],
+    resolveCaa: [Circular: *24],
+    resolveCname: [Circular: *22],
+    resolveMx: [Circular: *26],
+    resolveNaptr: [Circular: *38],
+    resolveNs: [Circular: *28],
+    resolvePtr: [Circular: *30],
+    resolveSoa: [Circular: *32],
+    resolveSrv: [Circular: *34],
+    resolveTxt: [Circular: *36],
+    reverse: [Circular: *14],
     setDefaultResultOrder: [Circular: *10],
     setServers: [Circular: *9]
 }
@@ -6744,42 +6738,94 @@ EventEmitter {
 
 ```js
 {
+    ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
+    BADFAMILY: "EBADFAMILY",
+    BADFLAGS: "EBADFLAGS",
+    BADHINTS: "EBADHINTS",
+    BADNAME: "EBADNAME",
+    BADQUERY: "EBADQUERY",
+    BADRESP: "EBADRESP",
+    BADSTR: "EBADSTR",
+    CANCELLED: "ECANCELLED",
+    CONNREFUSED: "ECONNREFUSED",
+    DESTRUCTION: "EDESTRUCTION",
+    EOF: "EOF",
+    FILE: "EFILE",
+    FORMERR: "EFORMERR",
+    LOADIPHLPAPI: "ELOADIPHLPAPI",
+    NODATA: "ENODATA",
+    NOMEM: "ENOMEM",
+    NONAME: "ENONAME",
+    NOTFOUND: "ENOTFOUND",
+    NOTIMP: "ENOTIMP",
+    NOTINITIALIZED: "ENOTINITIALIZED",
+    REFUSED: "EREFUSED",
     Resolver: <ref *2> class Resolver3 {},
+    SERVFAIL: "ESERVFAIL",
+    TIMEOUT: "ETIMEOUT",
     default: {
+        NODATA: "ENODATA",
+        FORMERR: "EFORMERR",
+        SERVFAIL: "ESERVFAIL",
+        NOTFOUND: "ENOTFOUND",
+        NOTIMP: "ENOTIMP",
+        REFUSED: "EREFUSED",
+        BADQUERY: "EBADQUERY",
+        BADNAME: "EBADNAME",
+        BADFAMILY: "EBADFAMILY",
+        BADRESP: "EBADRESP",
+        CONNREFUSED: "ECONNREFUSED",
+        TIMEOUT: "ETIMEOUT",
+        EOF: "EOF",
+        FILE: "EFILE",
+        NOMEM: "ENOMEM",
+        DESTRUCTION: "EDESTRUCTION",
+        BADSTR: "EBADSTR",
+        BADFLAGS: "EBADFLAGS",
+        NONAME: "ENONAME",
+        BADHINTS: "EBADHINTS",
+        NOTINITIALIZED: "ENOTINITIALIZED",
+        LOADIPHLPAPI: "ELOADIPHLPAPI",
+        ADDRGETNETWORKPARAMS: "EADDRGETNETWORKPARAMS",
+        CANCELLED: "ECANCELLED",
         lookup: <ref *4> ƒ lookup(length: 2) {},
         lookupService: <ref *5> ƒ lookupService(length: 2) {},
         resolve: <ref *6> ƒ resolve(length: 2) {},
         resolve4: <ref *7> ƒ resolve4(length: 2) {},
         resolve6: <ref *8> ƒ resolve6(length: 2) {},
-        resolveSrv: <ref *9> ƒ resolveSrv(length: 1) {},
-        resolveTxt: <ref *10> ƒ resolveTxt(length: 1) {},
-        resolveSoa: <ref *11> ƒ resolveSoa(length: 1) {},
-        resolveNaptr: <ref *12> ƒ resolveNaptr(length: 1) {},
-        resolveMx: <ref *13> ƒ resolveMx(length: 1) {},
-        resolveCaa: <ref *14> ƒ resolveCaa(length: 1) {},
-        resolveNs: <ref *15> ƒ resolveNs(length: 1) {},
-        resolvePtr: <ref *16> ƒ resolvePtr(length: 1) {},
-        resolveCname: <ref *17> ƒ resolveCname(length: 1) {},
-        reverse: <ref *18> ƒ reverse(length: 1) {},
+        resolveAny: <ref *9> ƒ resolveAny(length: 1) {},
+        resolveSrv: <ref *10> ƒ resolveSrv(length: 1) {},
+        resolveTxt: <ref *11> ƒ resolveTxt(length: 1) {},
+        resolveSoa: <ref *12> ƒ resolveSoa(length: 1) {},
+        resolveNaptr: <ref *13> ƒ resolveNaptr(length: 1) {},
+        resolveMx: <ref *14> ƒ resolveMx(length: 1) {},
+        resolveCaa: <ref *15> ƒ resolveCaa(length: 1) {},
+        resolveNs: <ref *16> ƒ resolveNs(length: 1) {},
+        resolvePtr: <ref *17> ƒ resolvePtr(length: 1) {},
+        resolveCname: <ref *18> ƒ resolveCname(length: 1) {},
+        reverse: <ref *19> ƒ reverse(length: 1) {},
         Resolver: [Circular: *2],
-        resolveAny: <ref *19> ƒ (length: 0) {}
+        setDefaultResultOrder: <ref *20> ƒ setDefaultResultOrder(length: 1) {},
+        setServers: <ref *21> ƒ setServers(length: 1) {}
     },
     lookup: [Circular: *4],
     lookupService: [Circular: *5],
     resolve: [Circular: *6],
     resolve4: [Circular: *7],
     resolve6: [Circular: *8],
-    resolveAny: [Circular: *19],
-    resolveCaa: [Circular: *14],
-    resolveCname: [Circular: *17],
-    resolveMx: [Circular: *13],
-    resolveNaptr: [Circular: *12],
-    resolveNs: [Circular: *15],
-    resolvePtr: [Circular: *16],
-    resolveSoa: [Circular: *11],
-    resolveSrv: [Circular: *9],
-    resolveTxt: [Circular: *10],
-    reverse: [Circular: *18]
+    resolveAny: [Circular: *9],
+    resolveCaa: [Circular: *15],
+    resolveCname: [Circular: *18],
+    resolveMx: [Circular: *14],
+    resolveNaptr: [Circular: *13],
+    resolveNs: [Circular: *16],
+    resolvePtr: [Circular: *17],
+    resolveSoa: [Circular: *12],
+    resolveSrv: [Circular: *10],
+    resolveTxt: [Circular: *11],
+    reverse: [Circular: *19],
+    setDefaultResultOrder: [Circular: *20],
+    setServers: [Circular: *21]
 }
 ```
 
@@ -6874,9 +6920,6 @@ EventEmitter {
 {
     EventEmitter: <ref *2> ƒ EventEmitter(length: 1) {
         prototype: <ref *3> EventEmitter {
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined,
             setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *2],
             getMaxListeners: ƒ getMaxListeners(length: 0) {},
@@ -9373,7 +9416,7 @@ EventEmitter {
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1736122599654-1/module.mjs: "/tmp/fs-fixture-1736122599654-1/module.mjs"
+            /tmp/fs-fixture-1736727429718-1/module.mjs: "/tmp/fs-fixture-1736727429718-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -9529,13 +9572,13 @@ EventEmitter {
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1736122599654-1/module.mjs: {
+            /tmp/fs-fixture-1736727429718-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1736122599654-1/inspect.mjs: {
+            /tmp/fs-fixture-1736727429718-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -10340,10 +10383,12 @@ EventEmitter {
             delimiter: ";",
             win32: [Circular: *14],
             posix: [Circular: *4],
-            _makeLong: [Circular: *20]
+            _makeLong: [Circular: *20],
+            matchesGlob: ƒ bound matchesGlob(length: 2) {}
         },
         posix: [Circular: *4],
-        _makeLong: [Circular: *2]
+        _makeLong: [Circular: *2],
+        matchesGlob: <ref *27> ƒ bound matchesGlob(length: 2) {}
     },
     delimiter: ":",
     dirname: [Circular: *10],
@@ -10351,6 +10396,7 @@ EventEmitter {
     format: [Circular: *12],
     isAbsolute: [Circular: *7],
     join: [Circular: *8],
+    matchesGlob: [Circular: *27],
     normalize: [Circular: *6],
     parse: [Circular: *13],
     posix: [Circular: *4],
@@ -10466,10 +10512,12 @@ EventEmitter {
             delimiter: ";",
             win32: [Circular: *14],
             posix: [Circular: *4],
-            _makeLong: [Circular: *20]
+            _makeLong: [Circular: *20],
+            matchesGlob: ƒ bound matchesGlob(length: 2) {}
         },
         posix: [Circular: *4],
-        _makeLong: [Circular: *2]
+        _makeLong: [Circular: *2],
+        matchesGlob: <ref *27> ƒ bound matchesGlob(length: 2) {}
     },
     delimiter: ":",
     dirname: [Circular: *10],
@@ -10477,6 +10525,7 @@ EventEmitter {
     format: [Circular: *12],
     isAbsolute: [Circular: *7],
     join: [Circular: *8],
+    matchesGlob: [Circular: *27],
     normalize: [Circular: *6],
     parse: [Circular: *13],
     posix: [Circular: *4],
@@ -10593,9 +10642,11 @@ EventEmitter {
             delimiter: ":",
             win32: [Circular: *4],
             posix: [Circular: *14],
-            _makeLong: [Circular: *20]
+            _makeLong: [Circular: *20],
+            matchesGlob: ƒ bound matchesGlob(length: 2) {}
         },
-        _makeLong: [Circular: *2]
+        _makeLong: [Circular: *2],
+        matchesGlob: <ref *27> ƒ bound matchesGlob(length: 2) {}
     },
     delimiter: ";",
     dirname: [Circular: *10],
@@ -10603,6 +10654,7 @@ EventEmitter {
     format: [Circular: *12],
     isAbsolute: [Circular: *7],
     join: [Circular: *8],
+    matchesGlob: [Circular: *27],
     normalize: [Circular: *6],
     parse: [Circular: *13],
     posix: [Circular: *14],
@@ -10725,14 +10777,14 @@ EventEmitter {
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1736122600689.04,
+            timeOrigin: 1736727430838.3381,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: null,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1736122600689.04,
-                nodeStart: 1736122600689.04,
-                environment: 1736122600689.04,
-                bootstrapComplete: 1736122600689.04,
+                v8Start: 1736727430838.3381,
+                nodeStart: 1736727430838.3381,
+                environment: 1736727430838.3381,
+                bootstrapComplete: 1736727430838.3381,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -11052,7 +11104,7 @@ EventEmitter {
     arch: "x64",
     argv: <ref *26> [
         "/opt/hostedtoolcache/node/22.12.0/x64/bin/node",
-        "/tmp/fs-fixture-1736122599654-1/process.mjs"
+        "/tmp/fs-fixture-1736727429718-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *27> ƒ deprecated(length: 0) {},
@@ -11975,7 +12027,7 @@ EventEmitter {
         setgid: <ref *114> ƒ (length: 1) {},
         setuid: <ref *115> ƒ (length: 1) {},
         env: <ref *116>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -11984,7 +12036,7 @@ EventEmitter {
             npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.12.0 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
             PIPX_HOME: "/opt/pipx",
             npm_node_execpath: "/opt/hostedtoolcache/node/22.12.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -11997,7 +12049,7 @@ EventEmitter {
             PIPX_BIN_DIR: "/opt/pipx_bin",
             GITHUB_REPOSITORY_OWNER: "privatenumber",
             npm_package_dependencies_comment_mark: "^1.1.1",
-            GRADLE_HOME: "/usr/share/gradle-8.11.1",
+            GRADLE_HOME: "/usr/share/gradle-8.12",
             ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
             JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
             STATS_RDCL: "true",
@@ -12006,14 +12058,14 @@ EventEmitter {
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "829",
+            SYSTEMD_EXEC_PID: "830",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20241215.1.0",
+            ImageVersion: "20250105.1.0",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
             GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.10/x64",
@@ -12023,7 +12075,7 @@ EventEmitter {
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
             GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.4/x64",
-            JOURNAL_STREAM: "8:8427",
+            JOURNAL_STREAM: "8:1769",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -12032,11 +12084,11 @@ EventEmitter {
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "12624180265",
+            GITHUB_RUN_ID: "12738355747",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "bf2819bcbb6a17343d574b4b525ddc4a015fa257",
+            GITHUB_WORKFLOW_SHA: "cff8c7fe84c015e18efa90fdee4573f4ec080800",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
             npm_package_scripts_start: "tsx index.ts",
@@ -12047,12 +12099,12 @@ EventEmitter {
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_b31fb678-a85e-493b-96e7-ba21ba7f920c",
-            INVOCATION_ID: "adcd62e7a9c7432094c4e4318f11f87e",
+            RUNNER_TRACKING_ID: "github_f8acfe41-a084-4ad6-adc7-2e7a779d2739",
+            INVOCATION_ID: "b7d0b2ca4eb74edd8f0bdba22d3ea920",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/22.12.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "111",
+            GITHUB_RUN_NUMBER: "112",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -12061,7 +12113,7 @@ EventEmitter {
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 17",
+            RUNNER_NAME: "GitHub Actions 19",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
@@ -12087,7 +12139,7 @@ EventEmitter {
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "bf2819bcbb6a17343d574b4b525ddc4a015fa257",
+            GITHUB_SHA: "cff8c7fe84c015e18efa90fdee4573f4ec080800",
             GITHUB_RUN_ATTEMPT: "1",
             STATS_D_TC: "true",
             GITHUB_REF: "refs/heads/master",
@@ -12095,7 +12147,7 @@ EventEmitter {
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -12109,7 +12161,7 @@ EventEmitter {
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -12123,14 +12175,14 @@ EventEmitter {
             STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *26],
         execArgv: <ref *117> [],
-        pid: 2874,
-        ppid: 1991,
+        pid: 2884,
+        ppid: 1999,
         execPath: "/opt/hostedtoolcache/node/22.12.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -12176,9 +12228,9 @@ EventEmitter {
     moduleLoadList: [Circular: *51],
     nextTick: [Circular: *78],
     openStdin: [Circular: *68],
-    pid: 2874,
+    pid: 2884,
     platform: "linux",
-    ppid: 1991,
+    ppid: 1999,
     reallyExit: [Circular: *55],
     release: [Circular: *50],
     report: [Circular: *118],
@@ -12225,15 +12277,16 @@ EventEmitter {
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1736122599654-1/process.mjs"
+        "/tmp/fs-fixture-1736727429718-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
-    binding: <ref *19> ƒ binding(length: 1) {},
+    availableMemory: <ref *19> ƒ availableMemory(length: 0) {},
+    binding: <ref *20> ƒ binding(length: 1) {},
     browser: false,
     channel: undefined,
-    chdir: <ref *20> ƒ chdir(length: 1) {},
-    config: <ref *21> {
+    chdir: <ref *21> ƒ chdir(length: 1) {},
+    config: <ref *22> {
         target_defaults: {},
         variables: {
             v8_enable_i8n_support: 1,
@@ -12241,9 +12294,9 @@ EventEmitter {
         }
     },
     connected: false,
-    constrainedMemory: <ref *24> ƒ constrainedMemory(length: 0) {},
-    cpuUsage: <ref *25> ƒ cpuUsage(length: 1) {},
-    cwd: <ref *26> ƒ cwd(length: 1) {},
+    constrainedMemory: <ref *25> ƒ constrainedMemory(length: 0) {},
+    cpuUsage: <ref *26> ƒ cpuUsage(length: 1) {},
+    cwd: <ref *27> ƒ cwd(length: 1) {},
     debugPort: 9229,
     default: EventEmitter {
         _exiting: false,
@@ -12253,21 +12306,22 @@ EventEmitter {
         argv: [Circular: *17],
         argv0: "bun",
         assert: [Circular: *18],
-        binding: [Circular: *19],
+        availableMemory: [Circular: *19],
+        binding: [Circular: *20],
         browser: false,
-        chdir: [Circular: *20],
+        chdir: [Circular: *21],
         channel: undefined,
-        config: [Circular: *21],
+        config: [Circular: *22],
         [get/set] connected: false,
-        constrainedMemory: [Circular: *24],
-        cpuUsage: [Circular: *25],
-        cwd: [Circular: *26],
+        constrainedMemory: [Circular: *25],
+        cpuUsage: [Circular: *26],
+        cwd: [Circular: *27],
         [get/set] debugPort: 9229,
         disconnect: undefined,
-        dlopen: <ref *28> ƒ dlopen(length: 1) {},
-        emitWarning: <ref *29> ƒ emitWarning(length: 1) {},
-        env: <ref *30> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+        dlopen: <ref *29> ƒ dlopen(length: 1) {},
+        emitWarning: <ref *30> ƒ emitWarning(length: 1) {},
+        env: <ref *31> {
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -12276,7 +12330,7 @@ EventEmitter {
             [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.12.0 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/22.12.0/x64/bin/node",
             [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -12289,7 +12343,7 @@ EventEmitter {
             [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
             [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
             [get/set] npm_package_dependencies_comment_mark: "^1.1.1",
-            [get/set] GRADLE_HOME: "/usr/share/gradle-8.11.1",
+            [get/set] GRADLE_HOME: "/usr/share/gradle-8.12",
             [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
             [get/set] JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
             [get/set] STATS_RDCL: "true",
@@ -12298,14 +12352,14 @@ EventEmitter {
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "829",
+            [get/set] SYSTEMD_EXEC_PID: "830",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20241215.1.0",
+            [get/set] ImageVersion: "20250105.1.0",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
             [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.10/x64",
@@ -12315,7 +12369,7 @@ EventEmitter {
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
             [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.4/x64",
-            [get/set] JOURNAL_STREAM: "8:8427",
+            [get/set] JOURNAL_STREAM: "8:1769",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
@@ -12324,11 +12378,11 @@ EventEmitter {
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "12624180265",
+            [get/set] GITHUB_RUN_ID: "12738355747",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "bf2819bcbb6a17343d574b4b525ddc4a015fa257",
+            [get/set] GITHUB_WORKFLOW_SHA: "cff8c7fe84c015e18efa90fdee4573f4ec080800",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu24",
             [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -12339,12 +12393,12 @@ EventEmitter {
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_b31fb678-a85e-493b-96e7-ba21ba7f920c",
-            [get/set] INVOCATION_ID: "adcd62e7a9c7432094c4e4318f11f87e",
+            [get/set] RUNNER_TRACKING_ID: "github_f8acfe41-a084-4ad6-adc7-2e7a779d2739",
+            [get/set] INVOCATION_ID: "b7d0b2ca4eb74edd8f0bdba22d3ea920",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             [get/set] NODE: "/opt/hostedtoolcache/node/22.12.0/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "111",
+            [get/set] GITHUB_RUN_NUMBER: "112",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -12353,7 +12407,7 @@ EventEmitter {
             [get/set] LANG: "C.UTF-8",
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 17",
+            [get/set] RUNNER_NAME: "GitHub Actions 19",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
@@ -12379,7 +12433,7 @@ EventEmitter {
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             [get/set] npm_package_dependencies_execa: "^7.1.1",
-            [get/set] GITHUB_SHA: "bf2819bcbb6a17343d574b4b525ddc4a015fa257",
+            [get/set] GITHUB_SHA: "cff8c7fe84c015e18efa90fdee4573f4ec080800",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] STATS_D_TC: "true",
             [get/set] GITHUB_REF: "refs/heads/master",
@@ -12387,7 +12441,7 @@ EventEmitter {
             [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             [get/set] npm_package_license: "MIT",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -12401,7 +12455,7 @@ EventEmitter {
             [get/set] GITHUB_SERVER_URL: "https://github.com",
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -12415,14 +12469,14 @@ EventEmitter {
             [get/set] STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "lintroll --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
-        execArgv: <ref *31> [],
+        execArgv: <ref *32> [],
         execPath: "/home/runner/.bun/bin/bun",
-        exit: <ref *32> ƒ exit(length: 1) {},
+        exit: <ref *33> ƒ exit(length: 1) {},
         [get/set] exitCode: undefined,
-        features: <ref *33> {
+        features: <ref *34> {
             inspector: true,
             debug: false,
             uv: true,
@@ -12433,42 +12487,46 @@ EventEmitter {
             tls: true,
             cached_builtins: true
         },
-        getActiveResourcesInfo: <ref *34> ƒ getActiveResourcesInfo(length: 0) {},
-        hasUncaughtExceptionCaptureCallback: <ref *35> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
-        hrtime: <ref *36> ƒ hrtime(length: 0) {
+        getActiveResourcesInfo: <ref *35> ƒ getActiveResourcesInfo(length: 0) {},
+        hasUncaughtExceptionCaptureCallback: <ref *36> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
+        hrtime: <ref *37> ƒ hrtime(length: 0) {
             bigint: ƒ bigint(length: 0) {}
         },
         isBun: true,
-        kill: <ref *38> ƒ kill(length: 2) {},
+        kill: <ref *39> ƒ kill(length: 2) {},
         [get/set] mainModule: undefined,
-        memoryUsage: <ref *39> ƒ memoryUsage(length: 0) {
+        memoryUsage: <ref *40> ƒ memoryUsage(length: 0) {
             rss: ƒ rss(length: 0) {}
         },
-        moduleLoadList: <ref *41> [],
-        nextTick: <ref *42> ƒ nextTick(length: 2) {},
-        openStdin: <ref *43> ƒ openStdin(length: 0) {},
-        pid: 2889,
+        moduleLoadList: <ref *42> [],
+        nextTick: <ref *43> ƒ nextTick(length: 2) {},
+        [get/set] noDeprecation: false,
+        openStdin: <ref *44> ƒ openStdin(length: 0) {},
+        pid: 2892,
         platform: "linux",
-        ppid: 1991,
-        reallyExit: <ref *44> ƒ reallyExit(length: 1) {},
-        release: <ref *45> {
+        ppid: 1999,
+        reallyExit: <ref *45> ƒ reallyExit(length: 1) {},
+        release: <ref *46> {
             name: "node",
-            lts: false,
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.43/bun-linux-x64-baseline.zip",
-            headersUrl: "",
-            libUrl: ""
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.44/bun-linux-x64-baseline.zip",
+            headersUrl: "https://nodejs.org/download/release/v22.6.0/node-v22.6.0-headers.tar.gz"
         },
-        report: <ref *46> {
-            getReport: ƒ getReport(length: 0) {},
+        report: <ref *47> {
+            compact: false,
             directory: "",
             filename: "",
+            getReport: ƒ getReport(length: 0) {},
+            reportOnFatalError: false,
+            reportOnSignal: false,
+            reportOnUncaughtException: false,
+            excludeEnv: "SIGUSR2",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "8a469cce7eabe17fab58a1a84013945053a3310e",
-        setSourceMapsEnabled: <ref *49> ƒ setSourceMapsEnabled(length: 1) {},
-        setUncaughtExceptionCaptureCallback: <ref *50> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
+        revision: "e87200aaadd5d1d8594f261f516f0549ce051708",
+        setSourceMapsEnabled: <ref *50> ƒ setSourceMapsEnabled(length: 1) {},
+        setUncaughtExceptionCaptureCallback: <ref *51> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
-        stderr: <ref *51> WriteStream {
+        stderr: <ref *52> WriteStream {
             _writableState: {
                 objectMode: false,
                 highWaterMark: 16384,
@@ -12507,16 +12565,16 @@ EventEmitter {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
-            _construct: <ref *57> ƒ NativeWritable_internalConstruct(length: 1) {},
-            _final: <ref *58> ƒ NativeWritable_internalFinal(length: 1) {},
-            _write: <ref *59> ƒ NativeWritablePrototypeWrite(length: 3) {},
+            _construct: <ref *58> ƒ NativeWritable_internalConstruct(length: 1) {},
+            _final: <ref *59> ƒ NativeWritable_internalFinal(length: 1) {},
+            _write: <ref *60> ƒ NativeWritablePrototypeWrite(length: 3) {},
             fd: 2,
             start: undefined,
             flags: "w",
             mode: 438,
             bytesWritten: 0,
             _type: "fs",
-            destroySoon: <ref *60> ƒ (length: 2) {},
+            destroySoon: <ref *61> ƒ (length: 2) {},
             _destroy: ƒ (length: 2) {},
             _isStdio: true,
             constructed: true,
@@ -12524,19 +12582,19 @@ EventEmitter {
             Symbol(native): true,
             Symbol(pathOrFdOrSink): 2,
             Symbol(Bun.NodeWriteStreamFastPath): false,
-            Symbol(#fs): <ref *62> {
+            Symbol(#fs): <ref *63> {
                 write: ƒ write(length: 6) {
                     Symbol(nodejs.util.promisify.custom): async ƒ (length: 2) {}
                 },
-                close: <ref *65> ƒ close(length: 2) {},
+                close: <ref *66> ƒ close(length: 2) {},
                 open: ƒ open(length: 4) {},
-                openSync: <ref *67> ƒ openSync(length: 3) {}
+                openSync: <ref *68> ƒ openSync(length: 3) {}
             },
             Symbol(kHandle): null,
             Symbol(Bun.NodeWriteStream): true,
             Symbol(kIoDone): false
         },
-        stdin: <ref *68> ReadStream {
+        stdin: <ref *69> ReadStream {
             fd: 0,
             bytesRead: 0,
             autoClose: false,
@@ -12575,8 +12633,8 @@ EventEmitter {
             mode: 438,
             emitClose: true,
             pos: 0,
-            on: <ref *80> ƒ (length: 2) {},
-            addListener: [Circular: *80],
+            on: <ref *81> ƒ (length: 2) {},
+            addListener: [Circular: *81],
             pause: ƒ (length: 0) {},
             resume: ƒ (length: 0) {},
             Symbol(mfileSize): -1,
@@ -12596,11 +12654,11 @@ EventEmitter {
                     Symbol(nodejs.util.promisify.custom): async ƒ (length: 2) {}
                 },
                 open: ƒ open(length: 4) {},
-                openSync: [Circular: *67],
-                close: [Circular: *65]
+                openSync: [Circular: *68],
+                close: [Circular: *66]
             }
         },
-        stdout: <ref *87> WriteStream {
+        stdout: <ref *88> WriteStream {
             _writableState: {
                 objectMode: false,
                 highWaterMark: 16384,
@@ -12639,16 +12697,16 @@ EventEmitter {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
-            _construct: [Circular: *57],
-            _final: [Circular: *58],
-            _write: [Circular: *59],
+            _construct: [Circular: *58],
+            _final: [Circular: *59],
+            _write: [Circular: *60],
             fd: 1,
             start: undefined,
             flags: "w",
             mode: 438,
             bytesWritten: 0,
             _type: "fs",
-            destroySoon: [Circular: *60],
+            destroySoon: [Circular: *61],
             _destroy: ƒ (length: 2) {},
             _isStdio: true,
             constructed: true,
@@ -12656,24 +12714,25 @@ EventEmitter {
             Symbol(native): true,
             Symbol(pathOrFdOrSink): 1,
             Symbol(Bun.NodeWriteStreamFastPath): false,
-            Symbol(#fs): [Circular: *62],
+            Symbol(#fs): [Circular: *63],
             Symbol(kHandle): null,
             Symbol(Bun.NodeWriteStream): true,
             Symbol(kIoDone): false
         },
+        [get/set] throwDeprecation: false,
         [get/set] title: "bun",
-        umask: <ref *94> ƒ umask(length: 1) {},
-        uptime: <ref *95> ƒ uptime(length: 1) {},
+        umask: <ref *95> ƒ umask(length: 1) {},
+        uptime: <ref *96> ƒ uptime(length: 1) {},
         version: "v22.6.0",
-        versions: <ref *96> {
+        versions: <ref *97> {
             node: "22.6.0",
-            bun: "1.1.43",
+            bun: "1.1.44",
             boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
             openssl: "1.1.0",
             libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
             mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "8a469cce7eabe17fab58a1a84013945053a3310e",
+            uwebsockets: "e87200aaadd5d1d8594f261f516f0549ce051708",
             webkit: "e1a802a2287edfe7f4046a9dd8307c8b59f5d816",
             zig: "0.13.0",
             zlib: "886098f3f339617b4243b286f5ed364b9989e245",
@@ -12681,7 +12740,7 @@ EventEmitter {
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
             libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-            usockets: "8a469cce7eabe17fab58a1a84013945053a3310e",
+            usockets: "e87200aaadd5d1d8594f261f516f0549ce051708",
             lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
             zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
             v8: "12.4.254.14-node.12",
@@ -12703,69 +12762,81 @@ EventEmitter {
         _stopProfilerIdleNotifier: [Circular: *12],
         _tickCallback: [Circular: *13],
         _kill: [Circular: *7],
-        getegid: <ref *97> ƒ getegid(length: 0) {},
-        geteuid: <ref *98> ƒ geteuid(length: 0) {},
-        getgid: <ref *99> ƒ getgid(length: 0) {},
-        getgroups: <ref *100> ƒ getgroups(length: 0) {},
-        getuid: <ref *101> ƒ getuid(length: 0) {},
+        getegid: <ref *98> ƒ getegid(length: 0) {},
+        geteuid: <ref *99> ƒ geteuid(length: 0) {},
+        getgid: <ref *100> ƒ getgid(length: 0) {},
+        getgroups: <ref *101> ƒ getgroups(length: 0) {},
+        getuid: <ref *102> ƒ getuid(length: 0) {},
+        setegid: <ref *103> ƒ setegid(length: 1) {},
+        seteuid: <ref *104> ƒ seteuid(length: 1) {},
+        setgid: <ref *105> ƒ setgid(length: 1) {},
+        setgroups: <ref *106> ƒ setgroups(length: 1) {},
+        setuid: <ref *107> ƒ setuid(length: 1) {},
         Symbol(Symbol.toStringTag): "process"
     },
     disconnect: undefined,
-    dlopen: [Circular: *28],
+    dlopen: [Circular: *29],
     emit: ƒ emit(length: 1) {},
-    emitWarning: [Circular: *29],
-    env: [Circular: *30],
+    emitWarning: [Circular: *30],
+    env: [Circular: *31],
     eventNames: ƒ eventNames(length: 0) {},
-    execArgv: [Circular: *31],
+    execArgv: [Circular: *32],
     execPath: "/home/runner/.bun/bin/bun",
-    exit: [Circular: *32],
+    exit: [Circular: *33],
     exitCode: undefined,
-    features: [Circular: *33],
-    getActiveResourcesInfo: [Circular: *34],
+    features: [Circular: *34],
+    getActiveResourcesInfo: [Circular: *35],
     getMaxListeners: ƒ getMaxListeners(length: 0) {},
-    getegid: [Circular: *97],
-    geteuid: [Circular: *98],
-    getgid: [Circular: *99],
-    getgroups: [Circular: *100],
-    getuid: [Circular: *101],
-    hasUncaughtExceptionCaptureCallback: [Circular: *35],
-    hrtime: [Circular: *36],
+    getegid: [Circular: *98],
+    geteuid: [Circular: *99],
+    getgid: [Circular: *100],
+    getgroups: [Circular: *101],
+    getuid: [Circular: *102],
+    hasUncaughtExceptionCaptureCallback: [Circular: *36],
+    hrtime: [Circular: *37],
     isBun: true,
-    kill: [Circular: *38],
+    kill: [Circular: *39],
     listenerCount: ƒ listenerCount(length: 1) {},
     listeners: ƒ listeners(length: 1) {},
     mainModule: undefined,
-    memoryUsage: [Circular: *39],
-    moduleLoadList: [Circular: *41],
-    nextTick: [Circular: *42],
+    memoryUsage: [Circular: *40],
+    moduleLoadList: [Circular: *42],
+    nextTick: [Circular: *43],
+    noDeprecation: false,
     off: ƒ off(length: 2) {},
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
-    openStdin: [Circular: *43],
-    pid: 2889,
+    openStdin: [Circular: *44],
+    pid: 2892,
     platform: "linux",
-    ppid: 1991,
+    ppid: 1999,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
-    reallyExit: [Circular: *44],
-    release: [Circular: *45],
+    reallyExit: [Circular: *45],
+    release: [Circular: *46],
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
-    report: [Circular: *46],
-    revision: "8a469cce7eabe17fab58a1a84013945053a3310e",
+    report: [Circular: *47],
+    revision: "e87200aaadd5d1d8594f261f516f0549ce051708",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
-    setSourceMapsEnabled: [Circular: *49],
-    setUncaughtExceptionCaptureCallback: [Circular: *50],
-    stderr: [Circular: *51],
-    stdin: [Circular: *68],
-    stdout: [Circular: *87],
+    setSourceMapsEnabled: [Circular: *50],
+    setUncaughtExceptionCaptureCallback: [Circular: *51],
+    setegid: [Circular: *103],
+    seteuid: [Circular: *104],
+    setgid: [Circular: *105],
+    setgroups: [Circular: *106],
+    setuid: [Circular: *107],
+    stderr: [Circular: *52],
+    stdin: [Circular: *69],
+    stdout: [Circular: *88],
+    throwDeprecation: false,
     title: "bun",
-    umask: [Circular: *94],
-    uptime: [Circular: *95],
+    umask: [Circular: *95],
+    uptime: [Circular: *96],
     version: "v22.6.0",
-    versions: [Circular: *96]
+    versions: [Circular: *97]
 }
 ```
 
@@ -12798,7 +12869,7 @@ EventEmitter {
     ucs2: [Circular: *4],
     version: "2.1.0"
 }
-(node:2902) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:2897) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -13224,7 +13295,7 @@ EventEmitter {
                 escape: ƒ escape(length: 1) {},
                 Symbol(cwd): undefined,
                 Symbol(env): <ref *32> {
-                    [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+                    [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
                     [get/set] npm_package_devDependencies__types_node: "^18.15.11",
                     [get/set] STATS_TRP: "true",
                     [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -13233,7 +13304,7 @@ EventEmitter {
                     [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.12.0 linux x64",
                     [get/set] CI: "true",
                     [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-                    [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+                    [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
                     [get/set] PIPX_HOME: "/opt/pipx",
                     [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/22.12.0/x64/bin/node",
                     [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -13246,7 +13317,7 @@ EventEmitter {
                     [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
                     [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
                     [get/set] npm_package_dependencies_comment_mark: "^1.1.1",
-                    [get/set] GRADLE_HOME: "/usr/share/gradle-8.11.1",
+                    [get/set] GRADLE_HOME: "/usr/share/gradle-8.12",
                     [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
                     [get/set] JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
                     [get/set] STATS_RDCL: "true",
@@ -13255,14 +13326,14 @@ EventEmitter {
                     [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
                     [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
                     [get/set] GITHUB_HEAD_REF: "",
-                    [get/set] SYSTEMD_EXEC_PID: "829",
+                    [get/set] SYSTEMD_EXEC_PID: "830",
                     [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
                     [get/set] NVM_DIR: "/home/runner/.nvm",
                     [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
                     [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
                     [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
                     [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-                    [get/set] ImageVersion: "20241215.1.0",
+                    [get/set] ImageVersion: "20250105.1.0",
                     [get/set] RUNNER_OS: "Linux",
                     [get/set] GITHUB_API_URL: "https://api.github.com",
                     [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.10/x64",
@@ -13272,7 +13343,7 @@ EventEmitter {
                     [get/set] STATS_V3PS: "true",
                     [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
                     [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.4/x64",
-                    [get/set] JOURNAL_STREAM: "8:8427",
+                    [get/set] JOURNAL_STREAM: "8:1769",
                     [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
                     [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
                     [get/set] npm_package_private: "true",
@@ -13281,11 +13352,11 @@ EventEmitter {
                     [get/set] npm_config_registry: "https://registry.npmjs.org/",
                     [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
                     [get/set] STATS_D: "false",
-                    [get/set] GITHUB_RUN_ID: "12624180265",
+                    [get/set] GITHUB_RUN_ID: "12738355747",
                     [get/set] STATS_VMFE: "true",
                     [get/set] GITHUB_REF_TYPE: "branch",
                     [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-                    [get/set] GITHUB_WORKFLOW_SHA: "bf2819bcbb6a17343d574b4b525ddc4a015fa257",
+                    [get/set] GITHUB_WORKFLOW_SHA: "cff8c7fe84c015e18efa90fdee4573f4ec080800",
                     [get/set] GITHUB_BASE_REF: "",
                     [get/set] ImageOS: "ubuntu24",
                     [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -13296,12 +13367,12 @@ EventEmitter {
                     [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
                     [get/set] ANT_HOME: "/usr/share/ant",
                     [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-                    [get/set] RUNNER_TRACKING_ID: "github_b31fb678-a85e-493b-96e7-ba21ba7f920c",
-                    [get/set] INVOCATION_ID: "adcd62e7a9c7432094c4e4318f11f87e",
+                    [get/set] RUNNER_TRACKING_ID: "github_f8acfe41-a084-4ad6-adc7-2e7a779d2739",
+                    [get/set] INVOCATION_ID: "b7d0b2ca4eb74edd8f0bdba22d3ea920",
                     [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
                     [get/set] NODE: "/opt/hostedtoolcache/node/22.12.0/x64/bin/node",
                     [get/set] GITHUB_ACTION: "__run",
-                    [get/set] GITHUB_RUN_NUMBER: "111",
+                    [get/set] GITHUB_RUN_NUMBER: "112",
                     [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
                     [get/set] RUNNER_ARCH: "X64",
                     [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -13310,7 +13381,7 @@ EventEmitter {
                     [get/set] LANG: "C.UTF-8",
                     [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
                     [get/set] CONDA: "/usr/share/miniconda",
-                    [get/set] RUNNER_NAME: "GitHub Actions 17",
+                    [get/set] RUNNER_NAME: "GitHub Actions 19",
                     [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
                     [get/set] STATS_VMD: "true",
                     [get/set] GITHUB_REF_NAME: "master",
@@ -13336,7 +13407,7 @@ EventEmitter {
                     [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
                     [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
                     [get/set] npm_package_dependencies_execa: "^7.1.1",
-                    [get/set] GITHUB_SHA: "bf2819bcbb6a17343d574b4b525ddc4a015fa257",
+                    [get/set] GITHUB_SHA: "cff8c7fe84c015e18efa90fdee4573f4ec080800",
                     [get/set] GITHUB_RUN_ATTEMPT: "1",
                     [get/set] STATS_D_TC: "true",
                     [get/set] GITHUB_REF: "refs/heads/master",
@@ -13344,7 +13415,7 @@ EventEmitter {
                     [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
                     [get/set] npm_package_license: "MIT",
                     [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-                    [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+                    [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
                     [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
                     [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
                     [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -13358,7 +13429,7 @@ EventEmitter {
                     [get/set] GITHUB_SERVER_URL: "https://github.com",
                     [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
                     [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-                    [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+                    [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
                     [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
                     [get/set] STATS_EXT: "true",
                     [get/set] npm_command: "run-script",
@@ -13372,7 +13443,7 @@ EventEmitter {
                     [get/set] STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
                     [get/set] npm_package_lint_staged____ts_js_: "lintroll --cache",
                     [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-                    [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_1b5953ea-66af-4a94-bc74-05494bbeb5c8",
+                    [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_df5496a4-be75-49ba-a83b-01b6cbae8d9d",
                     [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
                 },
                 Symbol(throws): true
@@ -13465,10 +13536,20 @@ EventEmitter {
             },
             Transpiler: ƒ Transpiler(length: 0) {},
             embeddedFiles: [],
+            S3Client: ƒ S3Client(length: 0) {
+                delete: ƒ delete(length: 2) {},
+                exists: ƒ exists(length: 2) {},
+                file: ƒ file(length: 2) {},
+                presign: ƒ presign(length: 2) {},
+                size: ƒ size(length: 2) {},
+                stat: ƒ stat(length: 2) {},
+                unlink: ƒ unlink(length: 2) {},
+                write: ƒ write(length: 2) {}
+            },
             allocUnsafe: ƒ allocUnsafe(length: 1) {},
             argv: [
                 "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1736122599654-1/repl.mjs"
+                "/tmp/fs-fixture-1736727429718-1/repl.mjs"
             ],
             build: ƒ build(length: 1) {},
             concatArrayBuffers: ƒ concatArrayBuffers(length: 3) {},
@@ -13489,11 +13570,16 @@ EventEmitter {
                 resolveNs: ƒ resolveNs(length: 2) {},
                 resolvePtr: ƒ resolvePtr(length: 2) {},
                 resolveCname: ƒ resolveCname(length: 2) {},
+                resolveAny: ƒ resolveAny(length: 2) {},
                 getServers: ƒ getServers(length: 2) {},
+                setServers: ƒ setServers(length: 2) {},
                 reverse: ƒ reverse(length: 2) {},
                 lookupService: ƒ lookupService(length: 2) {},
                 prefetch: ƒ prefetch(length: 2) {},
-                getCacheStats: ƒ getCacheStats(length: 0) {}
+                getCacheStats: ƒ getCacheStats(length: 0) {},
+                ADDRCONFIG: 32,
+                ALL: 16,
+                V4MAPPED: 8
             },
             enableANSIColors: false,
             env: [Circular: *32],
@@ -13526,12 +13612,12 @@ EventEmitter {
             isMainThread: true,
             listen: ƒ listen(length: 1) {},
             udpSocket: ƒ udpSocket(length: 1) {},
-            main: "/tmp/fs-fixture-1736122599654-1/repl.mjs",
+            main: "/tmp/fs-fixture-1736727429718-1/repl.mjs",
             mmap: ƒ mmap(length: 1) {},
             nanoseconds: ƒ nanoseconds(length: 0) {},
             openInEditor: ƒ openInEditor(length: 1) {},
             origin: "",
-            version_with_sha: "v1.1.43-canary.81 (8a469cce)",
+            version_with_sha: "v1.1.44-canary.36 (e87200aa)",
             password: {
                 hash: ƒ hash(length: 2) {},
                 hashSync: ƒ hashSync(length: 2) {},
@@ -13555,13 +13641,12 @@ EventEmitter {
             readableStreamToText: ƒ (length: 1) {},
             resolve: ƒ resolve(length: 1) {},
             resolveSync: ƒ resolveSync(length: 1) {},
-            revision: "8a469cce7eabe17fab58a1a84013945053a3310e",
+            revision: "e87200aaadd5d1d8594f261f516f0549ce051708",
             semver: {
                 satisfies: ƒ satisfies(length: 2) {},
                 order: ƒ order(length: 2) {}
             },
             s3: ƒ s3(length: 1) {},
-            S3: ƒ S3(length: 1) {},
             sql: ƒ sql(length: 1) {},
             serve: ƒ serve(length: 1) {},
             sha: ƒ sha(length: 1) {},
@@ -13579,7 +13664,7 @@ EventEmitter {
                 arrayBufferToString: ƒ arrayBufferToString(length: 1) {},
                 mimallocDump: ƒ mimallocDump(length: 1) {}
             },
-            version: "1.1.43",
+            version: "1.1.44",
             which: ƒ which(length: 1) {},
             write: ƒ write(length: 1) {}
         },
@@ -13588,13 +13673,13 @@ EventEmitter {
             subtle: SubtleCrypto {}
         },
         navigator: {
-            userAgent: "Bun/1.1.43",
+            userAgent: "Bun/1.1.44",
             platform: "Linux x86_64",
             hardwareConcurrency: 4
         },
         performance: Performance {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1736122600804.438
+            timeOrigin: 1736727430962.2341
         },
         process: EventEmitter {
             abort: ƒ abort(length: 1) {},
@@ -13602,10 +13687,11 @@ EventEmitter {
             arch: "x64",
             argv: [
                 "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1736122599654-1/repl.mjs"
+                "/tmp/fs-fixture-1736727429718-1/repl.mjs"
             ],
             argv0: "bun",
             assert: ƒ assert(length: 1) {},
+            availableMemory: ƒ availableMemory(length: 0) {},
             binding: ƒ binding(length: 1) {},
             browser: false,
             chdir: ƒ chdir(length: 1) {},
@@ -13654,25 +13740,29 @@ EventEmitter {
             },
             moduleLoadList: [],
             nextTick: ƒ nextTick(length: 2) {},
+            [get/set] noDeprecation: false,
             openStdin: ƒ openStdin(length: 0) {},
-            pid: 2979,
+            pid: 2993,
             platform: "linux",
-            ppid: 1991,
+            ppid: 1999,
             reallyExit: ƒ reallyExit(length: 1) {},
             release: {
                 name: "node",
-                lts: false,
-                sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.43/bun-linux-x64-baseline.zip",
-                headersUrl: "",
-                libUrl: ""
+                sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.1.44/bun-linux-x64-baseline.zip",
+                headersUrl: "https://nodejs.org/download/release/v22.6.0/node-v22.6.0-headers.tar.gz"
             },
             report: {
-                getReport: ƒ getReport(length: 0) {},
+                compact: false,
                 directory: "",
                 filename: "",
+                getReport: ƒ getReport(length: 0) {},
+                reportOnFatalError: false,
+                reportOnSignal: false,
+                reportOnUncaughtException: false,
+                excludeEnv: "SIGUSR2",
                 writeReport: ƒ writeReport(length: 1) {}
             },
-            revision: "8a469cce7eabe17fab58a1a84013945053a3310e",
+            revision: "e87200aaadd5d1d8594f261f516f0549ce051708",
             setSourceMapsEnabled: ƒ setSourceMapsEnabled(length: 1) {},
             setUncaughtExceptionCaptureCallback: ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
             send: undefined,
@@ -13721,29 +13811,29 @@ EventEmitter {
                 },
                 _eventsCount: 1,
                 _maxListeners: undefined,
-                _construct: <ref *228> ƒ NativeWritable_internalConstruct(length: 1) {},
-                _final: <ref *229> ƒ NativeWritable_internalFinal(length: 1) {},
-                _write: <ref *230> ƒ NativeWritablePrototypeWrite(length: 3) {},
+                _construct: <ref *239> ƒ NativeWritable_internalConstruct(length: 1) {},
+                _final: <ref *240> ƒ NativeWritable_internalFinal(length: 1) {},
+                _write: <ref *241> ƒ NativeWritablePrototypeWrite(length: 3) {},
                 fd: 2,
                 start: undefined,
                 flags: "w",
                 mode: 438,
                 bytesWritten: 0,
                 _type: "fs",
-                destroySoon: <ref *231> ƒ (length: 2) {},
+                destroySoon: <ref *242> ƒ (length: 2) {},
                 _destroy: ƒ (length: 2) {},
                 _isStdio: true,
                 Symbol(kCapture): false,
                 Symbol(native): true,
                 Symbol(pathOrFdOrSink): 2,
                 Symbol(Bun.NodeWriteStreamFastPath): false,
-                Symbol(#fs): <ref *233> {
+                Symbol(#fs): <ref *244> {
                     write: ƒ write(length: 6) {
                         Symbol(nodejs.util.promisify.custom): async ƒ (length: 2) {}
                     },
-                    close: <ref *236> ƒ close(length: 2) {},
+                    close: <ref *247> ƒ close(length: 2) {},
                     open: ƒ open(length: 4) {},
-                    openSync: <ref *238> ƒ openSync(length: 3) {}
+                    openSync: <ref *249> ƒ openSync(length: 3) {}
                 },
                 Symbol(kHandle): null,
                 Symbol(Bun.NodeWriteStream): true,
@@ -13793,8 +13883,8 @@ EventEmitter {
                 mode: 438,
                 emitClose: true,
                 pos: 0,
-                on: <ref *254> ƒ (length: 2) {},
-                addListener: [Circular: *254],
+                on: <ref *265> ƒ (length: 2) {},
+                addListener: [Circular: *265],
                 pause: ƒ (length: 0) {},
                 resume: ƒ (length: 0) {},
                 Symbol(mfileSize): -1,
@@ -13814,8 +13904,8 @@ EventEmitter {
                         Symbol(nodejs.util.promisify.custom): async ƒ (length: 2) {}
                     },
                     open: ƒ open(length: 4) {},
-                    openSync: [Circular: *238],
-                    close: [Circular: *236]
+                    openSync: [Circular: *249],
+                    close: [Circular: *247]
                 }
             },
             stdout: WriteStream {
@@ -13863,40 +13953,41 @@ EventEmitter {
                 },
                 _eventsCount: 1,
                 _maxListeners: undefined,
-                _construct: [Circular: *228],
-                _final: [Circular: *229],
-                _write: [Circular: *230],
+                _construct: [Circular: *239],
+                _final: [Circular: *240],
+                _write: [Circular: *241],
                 fd: 1,
                 start: undefined,
                 flags: "w",
                 mode: 438,
                 bytesWritten: 0,
                 _type: "fs",
-                destroySoon: [Circular: *231],
+                destroySoon: [Circular: *242],
                 _destroy: ƒ (length: 2) {},
                 _isStdio: true,
                 Symbol(kCapture): false,
                 Symbol(native): true,
                 Symbol(pathOrFdOrSink): 1,
                 Symbol(Bun.NodeWriteStreamFastPath): false,
-                Symbol(#fs): [Circular: *233],
+                Symbol(#fs): [Circular: *244],
                 Symbol(kHandle): null,
                 Symbol(Bun.NodeWriteStream): true,
                 Symbol(kIoDone): false
             },
+            [get/set] throwDeprecation: false,
             [get/set] title: "bun",
             umask: ƒ umask(length: 1) {},
             uptime: ƒ uptime(length: 1) {},
             version: "v22.6.0",
             versions: {
                 node: "22.6.0",
-                bun: "1.1.43",
+                bun: "1.1.44",
                 boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
                 openssl: "1.1.0",
                 libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
                 mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
                 picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-                uwebsockets: "8a469cce7eabe17fab58a1a84013945053a3310e",
+                uwebsockets: "e87200aaadd5d1d8594f261f516f0549ce051708",
                 webkit: "e1a802a2287edfe7f4046a9dd8307c8b59f5d816",
                 zig: "0.13.0",
                 zlib: "886098f3f339617b4243b286f5ed364b9989e245",
@@ -13904,7 +13995,7 @@ EventEmitter {
                 lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
                 ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
                 libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-                usockets: "8a469cce7eabe17fab58a1a84013945053a3310e",
+                usockets: "e87200aaadd5d1d8594f261f516f0549ce051708",
                 lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
                 zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
                 v8: "12.4.254.14-node.12",
@@ -13931,6 +14022,11 @@ EventEmitter {
             getgid: ƒ getgid(length: 0) {},
             getgroups: ƒ getgroups(length: 0) {},
             getuid: ƒ getuid(length: 0) {},
+            setegid: ƒ setegid(length: 1) {},
+            seteuid: ƒ seteuid(length: 1) {},
+            setgid: ƒ setgid(length: 1) {},
+            setgroups: ƒ setgroups(length: 1) {},
+            setuid: ƒ setuid(length: 1) {},
             _exiting: false,
             Symbol(Symbol.toStringTag): "process"
         },
@@ -13948,13 +14044,13 @@ EventEmitter {
             isEncoding: ƒ isEncoding(length: 1) {},
             poolSize: 8192
         },
-        BuildError: <ref *303> ƒ BuildMessage(length: 0) {},
-        BuildMessage: [Circular: *303],
+        BuildError: <ref *319> ƒ BuildMessage(length: 0) {},
+        BuildMessage: [Circular: *319],
         Crypto: ƒ Crypto(length: 0) {},
         HTMLRewriter: ƒ HTMLRewriter(length: 0) {},
         Request: ƒ Request(length: 0) {},
-        ResolveError: <ref *307> ƒ ResolveMessage(length: 0) {},
-        ResolveMessage: [Circular: *307],
+        ResolveError: <ref *323> ƒ ResolveMessage(length: 0) {},
+        ResolveMessage: [Circular: *323],
         Response: ƒ Response(length: 0) {
             error: ƒ error(length: 0) {},
             json: ƒ json(length: 0) {},
@@ -14066,7 +14162,7 @@ EventEmitter {
     crlfDelay: 100,
     cursor: 0,
     default: {
-        lines: <ref *368> [],
+        lines: <ref *384> [],
         context: [Circular: *4],
         historyIndex: -1,
         cursor: 0,
@@ -14074,12 +14170,12 @@ EventEmitter {
         removeHistoryDuplicates: false,
         crlfDelay: 100,
         completer: [Circular: *3],
-        history: <ref *369> [],
+        history: <ref *385> [],
         _initialPrompt: "> ",
         terminal: true,
         input: [Error accessing: node:repl is not yet implemented in Bun.],
         line: "",
-        eval: <ref *371> ƒ eval(length: 0) {},
+        eval: <ref *387> ƒ eval(length: 0) {},
         isCompletionEnabled: true,
         escapeCodeTimeout: 500,
         tabSize: 8,
@@ -14095,16 +14191,16 @@ EventEmitter {
         builtinModules: [Circular: *2]
     },
     escapeCodeTimeout: 500,
-    eval: [Circular: *371],
-    history: [Circular: *369],
+    eval: [Circular: *387],
+    history: [Circular: *385],
     historyIndex: -1,
     historySize: 1000,
-    input: [Circular: *370],
+    input: [Circular: *386],
     isCompletionEnabled: true,
     last: undefined,
     line: "",
-    lines: [Circular: *368],
-    output: [Circular: *372],
+    lines: [Circular: *384],
+    output: [Circular: *388],
     removeHistoryDuplicates: false,
     tabSize: 8,
     terminal: true,
@@ -14212,10 +14308,7 @@ EventEmitter {
             setDefaultEncoding: <ref *7> ƒ setDefaultEncoding(length: 1) {},
             _write: <ref *8> ƒ (length: 3) {},
             _writev: null,
-            end: <ref *9> ƒ (length: 3) {},
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined
+            end: <ref *9> ƒ (length: 3) {}
         },
         fromWeb: ƒ (length: 2) {},
         toWeb: ƒ (length: 1) {},
@@ -14223,9 +14316,6 @@ EventEmitter {
     },
     EventEmitter: <ref *13> ƒ EventEmitter(length: 1) {
         prototype: EventEmitter {
-            _events: undefined,
-            _eventsCount: 0,
-            _maxListeners: undefined,
             setMaxListeners: ƒ setMaxListeners(length: 1) {},
             constructor: [Circular: *13],
             getMaxListeners: ƒ getMaxListeners(length: 0) {},
@@ -14958,7 +15048,7 @@ EventEmitter {
     transferableAbortSignal: [Circular: *90],
     types: [Circular: *92]
 }
-(node:3093) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:3112) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -17086,7 +17176,7 @@ EventEmitter {
         WASI: [Circular: *2]
     }
 }
-(node:3299) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3326) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
