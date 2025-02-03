@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v22.13.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Feb 3, 2025 with Bun 1.2.2 Node.js v22.13.1<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -80,14 +80,15 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
 {
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    CloseEvent: <ref *4> ƒ CloseEvent(length: 1) {},
+    IncomingMessage: <ref *5> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *5],
             _construct: ƒ _construct(length: 1) {},
             _read: ƒ _read(length: 1) {},
             _destroy: ƒ _destroy(length: 2) {},
             [get/set] aborted: undefined,
-            [get/set] connection: <ref *9> Socket {
+            [get/set] connection: <ref *10> Socket {
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -136,10 +137,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             [get/set] rawTrailers: [],
             [get/set] trailers: [Object: null prototype] {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] socket: [Circular: *9]
+            [get/set] socket: [Circular: *10]
         }
     },
-    METHODS: <ref *19> [
+    METHODS: <ref *20> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -175,9 +176,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *20> ƒ OutgoingMessage(length: 1) {
+    MessageEvent: <ref *21> ƒ MessageEvent(length: 1) {},
+    OutgoingMessage: <ref *22> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *20],
+            constructor: [Circular: *22],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -191,7 +193,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *33> {
+    STATUS_CODES: <ref *35> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -256,7 +258,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *34> ƒ Server(length: 2) {
+    Server: <ref *36> ƒ Server(length: 2) {
         prototype: Server {
             ref: ƒ ref(length: 0) {},
             unref: ƒ unref(length: 0) {},
@@ -266,14 +268,14 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             address: ƒ address(length: 0) {},
             listen: ƒ listen(length: 0) {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            constructor: [Circular: *34],
+            constructor: [Circular: *36],
             Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
             Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
         }
     },
-    ServerResponse: <ref *46> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *48> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *46],
+            constructor: [Circular: *48],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -295,22 +297,28 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *67> ƒ createServer(length: 2) {},
+    WebSocket: <ref *69> ƒ WebSocket(length: 1) {
+        CONNECTING: 0,
+        OPEN: 1,
+        CLOSING: 2,
+        CLOSED: 3
+    },
+    createServer: <ref *70> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *34],
-        METHODS: [Circular: *19],
-        STATUS_CODES: [Circular: *33],
-        createServer: [Circular: *67],
-        ServerResponse: [Circular: *46],
-        IncomingMessage: [Circular: *4],
-        request: <ref *69> ƒ request(length: 3) {},
-        get: <ref *70> ƒ get(length: 3) {},
+        Server: [Circular: *36],
+        METHODS: [Circular: *20],
+        STATUS_CODES: [Circular: *35],
+        createServer: [Circular: *70],
+        ServerResponse: [Circular: *48],
+        IncomingMessage: [Circular: *5],
+        request: <ref *72> ƒ request(length: 3) {},
+        get: <ref *73> ƒ get(length: 3) {},
         [get/set] maxHeaderSize: 16384,
-        validateHeaderName: <ref *71> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *72> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *73> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *74> Agent {
+        validateHeaderName: <ref *74> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *75> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *76> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *77> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -333,15 +341,18 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *20]
+        OutgoingMessage: [Circular: *22],
+        WebSocket: [Circular: *69],
+        CloseEvent: [Circular: *4],
+        MessageEvent: [Circular: *21]
     },
-    get: [Circular: *70],
-    globalAgent: [Circular: *74],
+    get: [Circular: *73],
+    globalAgent: [Circular: *77],
     maxHeaderSize: 16384,
-    request: [Circular: *69],
-    setMaxIdleHTTPParsers: [Circular: *73],
-    validateHeaderName: [Circular: *71],
-    validateHeaderValue: [Circular: *72]
+    request: [Circular: *72],
+    setMaxIdleHTTPParsers: [Circular: *76],
+    validateHeaderName: [Circular: *74],
+    validateHeaderValue: [Circular: *75]
 }
 ```
 
@@ -369,14 +380,15 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
 {
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    CloseEvent: <ref *4> ƒ CloseEvent(length: 1) {},
+    IncomingMessage: <ref *5> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *5],
             _construct: ƒ _construct(length: 1) {},
             _read: ƒ _read(length: 1) {},
             _destroy: ƒ _destroy(length: 2) {},
             [get/set] aborted: undefined,
-            [get/set] connection: <ref *9> Socket {
+            [get/set] connection: <ref *10> Socket {
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -425,10 +437,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             [get/set] rawTrailers: [],
             [get/set] trailers: [Object: null prototype] {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] socket: [Circular: *9]
+            [get/set] socket: [Circular: *10]
         }
     },
-    METHODS: <ref *19> [
+    METHODS: <ref *20> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -464,9 +476,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *20> ƒ OutgoingMessage(length: 1) {
+    MessageEvent: <ref *21> ƒ MessageEvent(length: 1) {},
+    OutgoingMessage: <ref *22> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *20],
+            constructor: [Circular: *22],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -480,7 +493,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *33> {
+    STATUS_CODES: <ref *35> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -545,7 +558,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *34> ƒ Server(length: 2) {
+    Server: <ref *36> ƒ Server(length: 2) {
         prototype: Server {
             ref: ƒ ref(length: 0) {},
             unref: ƒ unref(length: 0) {},
@@ -555,14 +568,14 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             address: ƒ address(length: 0) {},
             listen: ƒ listen(length: 0) {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            constructor: [Circular: *34],
+            constructor: [Circular: *36],
             Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
             Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
         }
     },
-    ServerResponse: <ref *46> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *48> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *46],
+            constructor: [Circular: *48],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -584,22 +597,28 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *67> ƒ createServer(length: 2) {},
+    WebSocket: <ref *69> ƒ WebSocket(length: 1) {
+        CONNECTING: 0,
+        OPEN: 1,
+        CLOSING: 2,
+        CLOSED: 3
+    },
+    createServer: <ref *70> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *34],
-        METHODS: [Circular: *19],
-        STATUS_CODES: [Circular: *33],
-        createServer: [Circular: *67],
-        ServerResponse: [Circular: *46],
-        IncomingMessage: [Circular: *4],
-        request: <ref *69> ƒ request(length: 3) {},
-        get: <ref *70> ƒ get(length: 3) {},
+        Server: [Circular: *36],
+        METHODS: [Circular: *20],
+        STATUS_CODES: [Circular: *35],
+        createServer: [Circular: *70],
+        ServerResponse: [Circular: *48],
+        IncomingMessage: [Circular: *5],
+        request: <ref *72> ƒ request(length: 3) {},
+        get: <ref *73> ƒ get(length: 3) {},
         [get/set] maxHeaderSize: 16384,
-        validateHeaderName: <ref *71> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *72> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *73> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *74> Agent {
+        validateHeaderName: <ref *74> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *75> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *76> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *77> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -622,15 +641,18 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *20]
+        OutgoingMessage: [Circular: *22],
+        WebSocket: [Circular: *69],
+        CloseEvent: [Circular: *4],
+        MessageEvent: [Circular: *21]
     },
-    get: [Circular: *70],
-    globalAgent: [Circular: *74],
+    get: [Circular: *73],
+    globalAgent: [Circular: *77],
     maxHeaderSize: 16384,
-    request: [Circular: *69],
-    setMaxIdleHTTPParsers: [Circular: *73],
-    validateHeaderName: [Circular: *71],
-    validateHeaderValue: [Circular: *72]
+    request: [Circular: *72],
+    setMaxIdleHTTPParsers: [Circular: *76],
+    validateHeaderName: [Circular: *74],
+    validateHeaderValue: [Circular: *75]
 }
 ```
 
@@ -743,14 +765,15 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
 {
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    CloseEvent: <ref *4> ƒ CloseEvent(length: 1) {},
+    IncomingMessage: <ref *5> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *5],
             _construct: ƒ _construct(length: 1) {},
             _read: ƒ _read(length: 1) {},
             _destroy: ƒ _destroy(length: 2) {},
             [get/set] aborted: undefined,
-            [get/set] connection: <ref *9> Socket {
+            [get/set] connection: <ref *10> Socket {
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -799,10 +822,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             [get/set] rawTrailers: [],
             [get/set] trailers: [Object: null prototype] {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] socket: [Circular: *9]
+            [get/set] socket: [Circular: *10]
         }
     },
-    METHODS: <ref *19> [
+    METHODS: <ref *20> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -838,9 +861,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *20> ƒ OutgoingMessage(length: 1) {
+    MessageEvent: <ref *21> ƒ MessageEvent(length: 1) {},
+    OutgoingMessage: <ref *22> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *20],
+            constructor: [Circular: *22],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -854,7 +878,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *33> {
+    STATUS_CODES: <ref *35> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -919,7 +943,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *34> ƒ Server(length: 2) {
+    Server: <ref *36> ƒ Server(length: 2) {
         prototype: Server {
             ref: ƒ ref(length: 0) {},
             unref: ƒ unref(length: 0) {},
@@ -929,14 +953,14 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             address: ƒ address(length: 0) {},
             listen: ƒ listen(length: 0) {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            constructor: [Circular: *34],
+            constructor: [Circular: *36],
             Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
             Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
         }
     },
-    ServerResponse: <ref *46> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *48> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *46],
+            constructor: [Circular: *48],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -958,22 +982,28 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *67> ƒ createServer(length: 2) {},
+    WebSocket: <ref *69> ƒ WebSocket(length: 1) {
+        CONNECTING: 0,
+        OPEN: 1,
+        CLOSING: 2,
+        CLOSED: 3
+    },
+    createServer: <ref *70> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *34],
-        METHODS: [Circular: *19],
-        STATUS_CODES: [Circular: *33],
-        createServer: [Circular: *67],
-        ServerResponse: [Circular: *46],
-        IncomingMessage: [Circular: *4],
-        request: <ref *69> ƒ request(length: 3) {},
-        get: <ref *70> ƒ get(length: 3) {},
+        Server: [Circular: *36],
+        METHODS: [Circular: *20],
+        STATUS_CODES: [Circular: *35],
+        createServer: [Circular: *70],
+        ServerResponse: [Circular: *48],
+        IncomingMessage: [Circular: *5],
+        request: <ref *72> ƒ request(length: 3) {},
+        get: <ref *73> ƒ get(length: 3) {},
         [get/set] maxHeaderSize: 16384,
-        validateHeaderName: <ref *71> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *72> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *73> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *74> Agent {
+        validateHeaderName: <ref *74> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *75> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *76> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *77> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -996,15 +1026,18 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *20]
+        OutgoingMessage: [Circular: *22],
+        WebSocket: [Circular: *69],
+        CloseEvent: [Circular: *4],
+        MessageEvent: [Circular: *21]
     },
-    get: [Circular: *70],
-    globalAgent: [Circular: *74],
+    get: [Circular: *73],
+    globalAgent: [Circular: *77],
     maxHeaderSize: 16384,
-    request: [Circular: *69],
-    setMaxIdleHTTPParsers: [Circular: *73],
-    validateHeaderName: [Circular: *71],
-    validateHeaderValue: [Circular: *72]
+    request: [Circular: *72],
+    setMaxIdleHTTPParsers: [Circular: *76],
+    validateHeaderName: [Circular: *74],
+    validateHeaderValue: [Circular: *75]
 }
 ```
 
@@ -1036,14 +1069,15 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
 {
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    CloseEvent: <ref *4> ƒ CloseEvent(length: 1) {},
+    IncomingMessage: <ref *5> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *5],
             _construct: ƒ _construct(length: 1) {},
             _read: ƒ _read(length: 1) {},
             _destroy: ƒ _destroy(length: 2) {},
             [get/set] aborted: undefined,
-            [get/set] connection: <ref *9> Socket {
+            [get/set] connection: <ref *10> Socket {
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -1092,10 +1126,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             [get/set] rawTrailers: [],
             [get/set] trailers: [Object: null prototype] {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] socket: [Circular: *9]
+            [get/set] socket: [Circular: *10]
         }
     },
-    METHODS: <ref *19> [
+    METHODS: <ref *20> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -1131,9 +1165,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *20> ƒ OutgoingMessage(length: 1) {
+    MessageEvent: <ref *21> ƒ MessageEvent(length: 1) {},
+    OutgoingMessage: <ref *22> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *20],
+            constructor: [Circular: *22],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -1147,7 +1182,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *33> {
+    STATUS_CODES: <ref *35> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -1212,7 +1247,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *34> ƒ Server(length: 2) {
+    Server: <ref *36> ƒ Server(length: 2) {
         prototype: Server {
             ref: ƒ ref(length: 0) {},
             unref: ƒ unref(length: 0) {},
@@ -1222,14 +1257,14 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             address: ƒ address(length: 0) {},
             listen: ƒ listen(length: 0) {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            constructor: [Circular: *34],
+            constructor: [Circular: *36],
             Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
             Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
         }
     },
-    ServerResponse: <ref *46> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *48> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *46],
+            constructor: [Circular: *48],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1251,22 +1286,28 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *67> ƒ createServer(length: 2) {},
+    WebSocket: <ref *69> ƒ WebSocket(length: 1) {
+        CONNECTING: 0,
+        OPEN: 1,
+        CLOSING: 2,
+        CLOSED: 3
+    },
+    createServer: <ref *70> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *34],
-        METHODS: [Circular: *19],
-        STATUS_CODES: [Circular: *33],
-        createServer: [Circular: *67],
-        ServerResponse: [Circular: *46],
-        IncomingMessage: [Circular: *4],
-        request: <ref *69> ƒ request(length: 3) {},
-        get: <ref *70> ƒ get(length: 3) {},
+        Server: [Circular: *36],
+        METHODS: [Circular: *20],
+        STATUS_CODES: [Circular: *35],
+        createServer: [Circular: *70],
+        ServerResponse: [Circular: *48],
+        IncomingMessage: [Circular: *5],
+        request: <ref *72> ƒ request(length: 3) {},
+        get: <ref *73> ƒ get(length: 3) {},
         [get/set] maxHeaderSize: 16384,
-        validateHeaderName: <ref *71> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *72> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *73> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *74> Agent {
+        validateHeaderName: <ref *74> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *75> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *76> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *77> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -1289,15 +1330,18 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *20]
+        OutgoingMessage: [Circular: *22],
+        WebSocket: [Circular: *69],
+        CloseEvent: [Circular: *4],
+        MessageEvent: [Circular: *21]
     },
-    get: [Circular: *70],
-    globalAgent: [Circular: *74],
+    get: [Circular: *73],
+    globalAgent: [Circular: *77],
     maxHeaderSize: 16384,
-    request: [Circular: *69],
-    setMaxIdleHTTPParsers: [Circular: *73],
-    validateHeaderName: [Circular: *71],
-    validateHeaderValue: [Circular: *72]
+    request: [Circular: *72],
+    setMaxIdleHTTPParsers: [Circular: *76],
+    validateHeaderName: [Circular: *74],
+    validateHeaderValue: [Circular: *75]
 }
 ```
 
@@ -1339,14 +1383,15 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
 {
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    CloseEvent: <ref *4> ƒ CloseEvent(length: 1) {},
+    IncomingMessage: <ref *5> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *5],
             _construct: ƒ _construct(length: 1) {},
             _read: ƒ _read(length: 1) {},
             _destroy: ƒ _destroy(length: 2) {},
             [get/set] aborted: undefined,
-            [get/set] connection: <ref *9> Socket {
+            [get/set] connection: <ref *10> Socket {
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -1395,10 +1440,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             [get/set] rawTrailers: [],
             [get/set] trailers: [Object: null prototype] {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] socket: [Circular: *9]
+            [get/set] socket: [Circular: *10]
         }
     },
-    METHODS: <ref *19> [
+    METHODS: <ref *20> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -1434,9 +1479,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *20> ƒ OutgoingMessage(length: 1) {
+    MessageEvent: <ref *21> ƒ MessageEvent(length: 1) {},
+    OutgoingMessage: <ref *22> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *20],
+            constructor: [Circular: *22],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -1450,7 +1496,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *33> {
+    STATUS_CODES: <ref *35> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -1515,7 +1561,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *34> ƒ Server(length: 2) {
+    Server: <ref *36> ƒ Server(length: 2) {
         prototype: Server {
             ref: ƒ ref(length: 0) {},
             unref: ƒ unref(length: 0) {},
@@ -1525,14 +1571,14 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             address: ƒ address(length: 0) {},
             listen: ƒ listen(length: 0) {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            constructor: [Circular: *34],
+            constructor: [Circular: *36],
             Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
             Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
         }
     },
-    ServerResponse: <ref *46> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *48> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *46],
+            constructor: [Circular: *48],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1554,22 +1600,28 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *67> ƒ createServer(length: 2) {},
+    WebSocket: <ref *69> ƒ WebSocket(length: 1) {
+        CONNECTING: 0,
+        OPEN: 1,
+        CLOSING: 2,
+        CLOSED: 3
+    },
+    createServer: <ref *70> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *34],
-        METHODS: [Circular: *19],
-        STATUS_CODES: [Circular: *33],
-        createServer: [Circular: *67],
-        ServerResponse: [Circular: *46],
-        IncomingMessage: [Circular: *4],
-        request: <ref *69> ƒ request(length: 3) {},
-        get: <ref *70> ƒ get(length: 3) {},
+        Server: [Circular: *36],
+        METHODS: [Circular: *20],
+        STATUS_CODES: [Circular: *35],
+        createServer: [Circular: *70],
+        ServerResponse: [Circular: *48],
+        IncomingMessage: [Circular: *5],
+        request: <ref *72> ƒ request(length: 3) {},
+        get: <ref *73> ƒ get(length: 3) {},
         [get/set] maxHeaderSize: 16384,
-        validateHeaderName: <ref *71> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *72> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *73> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *74> Agent {
+        validateHeaderName: <ref *74> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *75> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *76> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *77> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -1592,15 +1644,18 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *20]
+        OutgoingMessage: [Circular: *22],
+        WebSocket: [Circular: *69],
+        CloseEvent: [Circular: *4],
+        MessageEvent: [Circular: *21]
     },
-    get: [Circular: *70],
-    globalAgent: [Circular: *74],
+    get: [Circular: *73],
+    globalAgent: [Circular: *77],
     maxHeaderSize: 16384,
-    request: [Circular: *69],
-    setMaxIdleHTTPParsers: [Circular: *73],
-    validateHeaderName: [Circular: *71],
-    validateHeaderValue: [Circular: *72]
+    request: [Circular: *72],
+    setMaxIdleHTTPParsers: [Circular: *76],
+    validateHeaderName: [Circular: *74],
+    validateHeaderValue: [Circular: *75]
 }
 ```
 
@@ -1708,14 +1763,15 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
 {
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    CloseEvent: <ref *4> ƒ CloseEvent(length: 1) {},
+    IncomingMessage: <ref *5> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *5],
             _construct: ƒ _construct(length: 1) {},
             _read: ƒ _read(length: 1) {},
             _destroy: ƒ _destroy(length: 2) {},
             [get/set] aborted: undefined,
-            [get/set] connection: <ref *9> Socket {
+            [get/set] connection: <ref *10> Socket {
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -1764,10 +1820,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             [get/set] rawTrailers: [],
             [get/set] trailers: [Object: null prototype] {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] socket: [Circular: *9]
+            [get/set] socket: [Circular: *10]
         }
     },
-    METHODS: <ref *19> [
+    METHODS: <ref *20> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -1803,9 +1859,10 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *20> ƒ OutgoingMessage(length: 1) {
+    MessageEvent: <ref *21> ƒ MessageEvent(length: 1) {},
+    OutgoingMessage: <ref *22> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *20],
+            constructor: [Circular: *22],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -1819,7 +1876,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *33> {
+    STATUS_CODES: <ref *35> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -1884,7 +1941,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *34> ƒ Server(length: 2) {
+    Server: <ref *36> ƒ Server(length: 2) {
         prototype: Server {
             ref: ƒ ref(length: 0) {},
             unref: ƒ unref(length: 0) {},
@@ -1894,14 +1951,14 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             address: ƒ address(length: 0) {},
             listen: ƒ listen(length: 0) {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            constructor: [Circular: *34],
+            constructor: [Circular: *36],
             Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
             Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
         }
     },
-    ServerResponse: <ref *46> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *48> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *46],
+            constructor: [Circular: *48],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -1923,22 +1980,28 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *67> ƒ createServer(length: 2) {},
+    WebSocket: <ref *69> ƒ WebSocket(length: 1) {
+        CONNECTING: 0,
+        OPEN: 1,
+        CLOSING: 2,
+        CLOSED: 3
+    },
+    createServer: <ref *70> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *34],
-        METHODS: [Circular: *19],
-        STATUS_CODES: [Circular: *33],
-        createServer: [Circular: *67],
-        ServerResponse: [Circular: *46],
-        IncomingMessage: [Circular: *4],
-        request: <ref *69> ƒ request(length: 3) {},
-        get: <ref *70> ƒ get(length: 3) {},
+        Server: [Circular: *36],
+        METHODS: [Circular: *20],
+        STATUS_CODES: [Circular: *35],
+        createServer: [Circular: *70],
+        ServerResponse: [Circular: *48],
+        IncomingMessage: [Circular: *5],
+        request: <ref *72> ƒ request(length: 3) {},
+        get: <ref *73> ƒ get(length: 3) {},
         [get/set] maxHeaderSize: 16384,
-        validateHeaderName: <ref *71> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *72> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *73> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *74> Agent {
+        validateHeaderName: <ref *74> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *75> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *76> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *77> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -1961,15 +2024,18 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *20]
+        OutgoingMessage: [Circular: *22],
+        WebSocket: [Circular: *69],
+        CloseEvent: [Circular: *4],
+        MessageEvent: [Circular: *21]
     },
-    get: [Circular: *70],
-    globalAgent: [Circular: *74],
+    get: [Circular: *73],
+    globalAgent: [Circular: *77],
     maxHeaderSize: 16384,
-    request: [Circular: *69],
-    setMaxIdleHTTPParsers: [Circular: *73],
-    validateHeaderName: [Circular: *71],
-    validateHeaderValue: [Circular: *72]
+    request: [Circular: *72],
+    setMaxIdleHTTPParsers: [Circular: *76],
+    validateHeaderName: [Circular: *74],
+    validateHeaderValue: [Circular: *75]
 }
 ```
 
@@ -2393,7 +2459,7 @@ _Last updated on <!-- lastUpdated:start -->Jan 27, 2025 with Bun 1.2.1 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2187) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2228) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -6546,7 +6612,7 @@ EventEmitter {
 ```js
 {
     Dir: <ref *2> class Dir {},
-    Dirent: <ref *3> ƒ Dirent(length: 0) {},
+    Dirent: <ref *3> ƒ Dirent(length: 3) {},
     F_OK: 0,
     FileReadStream: undefined,
     FileWriteStream: undefined,
@@ -6668,70 +6734,72 @@ EventEmitter {
         ftruncateSync: <ref *40> ƒ ftruncateSync(length: 1) {},
         futimes: <ref *41> ƒ futimes(length: 4) {},
         futimesSync: <ref *42> ƒ futimesSync(length: 3) {},
-        lchown: <ref *43> ƒ lchown(length: 4) {},
-        lchownSync: <ref *44> ƒ lchownSync(length: 3) {},
+        glob: <ref *43> ƒ glob(length: 3) {},
+        globSync: <ref *44> ƒ globSync(length: 2) {},
+        lchown: <ref *45> ƒ lchown(length: 4) {},
+        lchownSync: <ref *46> ƒ lchownSync(length: 3) {},
         lchmod: undefined,
         lchmodSync: undefined,
-        link: <ref *45> ƒ link(length: 3) {},
-        linkSync: <ref *46> ƒ linkSync(length: 2) {},
-        lstat: <ref *47> ƒ lstat(length: 3) {},
-        lstatSync: <ref *48> ƒ lstatSync(length: 1) {},
-        lutimes: <ref *49> ƒ lutimes(length: 4) {},
-        lutimesSync: <ref *50> ƒ lutimesSync(length: 3) {},
-        mkdir: <ref *51> ƒ mkdir(length: 3) {},
-        mkdirSync: <ref *52> ƒ mkdirSync(length: 2) {},
-        mkdtemp: <ref *53> ƒ mkdtemp(length: 3) {},
-        mkdtempSync: <ref *54> ƒ mkdtempSync(length: 2) {},
-        open: <ref *55> ƒ open(length: 4) {},
-        openSync: <ref *56> ƒ openSync(length: 3) {},
-        read: <ref *57> ƒ read(length: 6) {},
-        readFile: <ref *58> ƒ readFile(length: 3) {},
-        readFileSync: <ref *59> ƒ readFileSync(length: 2) {},
-        readSync: <ref *60> ƒ readSync(length: 5) {},
-        readdir: <ref *61> ƒ readdir(length: 3) {},
-        readdirSync: <ref *62> ƒ readdirSync(length: 2) {},
-        readlink: <ref *63> ƒ readlink(length: 3) {},
-        readlinkSync: <ref *64> ƒ readlinkSync(length: 2) {},
-        readv: <ref *65> ƒ readv(length: 4) {},
-        readvSync: <ref *66> ƒ readvSync(length: 3) {},
-        realpath: <ref *67> ƒ realpath(length: 3) {
+        link: <ref *47> ƒ link(length: 3) {},
+        linkSync: <ref *48> ƒ linkSync(length: 2) {},
+        lstat: <ref *49> ƒ lstat(length: 3) {},
+        lstatSync: <ref *50> ƒ lstatSync(length: 1) {},
+        lutimes: <ref *51> ƒ lutimes(length: 4) {},
+        lutimesSync: <ref *52> ƒ lutimesSync(length: 3) {},
+        mkdir: <ref *53> ƒ mkdir(length: 3) {},
+        mkdirSync: <ref *54> ƒ mkdirSync(length: 2) {},
+        mkdtemp: <ref *55> ƒ mkdtemp(length: 3) {},
+        mkdtempSync: <ref *56> ƒ mkdtempSync(length: 2) {},
+        open: <ref *57> ƒ open(length: 4) {},
+        openSync: <ref *58> ƒ openSync(length: 3) {},
+        read: <ref *59> ƒ read(length: 6) {},
+        readFile: <ref *60> ƒ readFile(length: 3) {},
+        readFileSync: <ref *61> ƒ readFileSync(length: 2) {},
+        readSync: <ref *62> ƒ readSync(length: 5) {},
+        readdir: <ref *63> ƒ readdir(length: 3) {},
+        readdirSync: <ref *64> ƒ readdirSync(length: 2) {},
+        readlink: <ref *65> ƒ readlink(length: 3) {},
+        readlinkSync: <ref *66> ƒ readlinkSync(length: 2) {},
+        readv: <ref *67> ƒ readv(length: 4) {},
+        readvSync: <ref *68> ƒ readvSync(length: 3) {},
+        realpath: <ref *69> ƒ realpath(length: 3) {
             native: ƒ realpath4(length: 3) {}
         },
-        realpathSync: <ref *69> ƒ realpathSync(length: 2) {
+        realpathSync: <ref *71> ƒ realpathSync(length: 2) {
             native: ƒ bound realpathNativeSync(length: 3) {}
         },
-        rename: <ref *71> ƒ rename(length: 3) {},
-        renameSync: <ref *72> ƒ renameSync(length: 2) {},
-        rm: <ref *73> ƒ rm(length: 3) {},
-        rmSync: <ref *74> ƒ rmSync(length: 2) {},
-        rmdir: <ref *75> ƒ rmdir(length: 3) {},
-        rmdirSync: <ref *76> ƒ rmdirSync(length: 2) {},
-        stat: <ref *77> ƒ stat(length: 3) {},
-        statfs: <ref *78> ƒ statfs(length: 3) {},
-        statSync: <ref *79> ƒ statSync(length: 1) {},
-        statfsSync: <ref *80> ƒ statfsSync(length: 2) {},
-        symlink: <ref *81> ƒ symlink(length: 4) {},
-        symlinkSync: <ref *82> ƒ symlinkSync(length: 3) {},
-        truncate: <ref *83> ƒ truncate(length: 3) {},
-        truncateSync: <ref *84> ƒ truncateSync(length: 2) {},
-        unlink: <ref *85> ƒ unlink(length: 2) {},
-        unlinkSync: <ref *86> ƒ unlinkSync(length: 1) {},
-        unwatchFile: <ref *87> ƒ unwatchFile(length: 2) {},
-        utimes: <ref *88> ƒ utimes(length: 4) {},
-        utimesSync: <ref *89> ƒ utimesSync(length: 3) {},
-        watch: <ref *90> ƒ watch(length: 3) {},
-        watchFile: <ref *91> ƒ watchFile(length: 3) {},
-        write: <ref *92> ƒ write(length: 6) {},
-        writeFile: <ref *93> ƒ writeFile(length: 4) {},
-        writeFileSync: <ref *94> ƒ writeFileSync(length: 3) {},
-        writeSync: <ref *95> ƒ writeSync(length: 5) {},
-        writev: <ref *96> ƒ writev(length: 4) {},
-        writevSync: <ref *97> ƒ writevSync(length: 3) {},
+        rename: <ref *73> ƒ rename(length: 3) {},
+        renameSync: <ref *74> ƒ renameSync(length: 2) {},
+        rm: <ref *75> ƒ rm(length: 3) {},
+        rmSync: <ref *76> ƒ rmSync(length: 2) {},
+        rmdir: <ref *77> ƒ rmdir(length: 3) {},
+        rmdirSync: <ref *78> ƒ rmdirSync(length: 2) {},
+        stat: <ref *79> ƒ stat(length: 3) {},
+        statfs: <ref *80> ƒ statfs(length: 3) {},
+        statSync: <ref *81> ƒ statSync(length: 1) {},
+        statfsSync: <ref *82> ƒ statfsSync(length: 2) {},
+        symlink: <ref *83> ƒ symlink(length: 4) {},
+        symlinkSync: <ref *84> ƒ symlinkSync(length: 3) {},
+        truncate: <ref *85> ƒ truncate(length: 3) {},
+        truncateSync: <ref *86> ƒ truncateSync(length: 2) {},
+        unlink: <ref *87> ƒ unlink(length: 2) {},
+        unlinkSync: <ref *88> ƒ unlinkSync(length: 1) {},
+        unwatchFile: <ref *89> ƒ unwatchFile(length: 2) {},
+        utimes: <ref *90> ƒ utimes(length: 4) {},
+        utimesSync: <ref *91> ƒ utimesSync(length: 3) {},
+        watch: <ref *92> ƒ watch(length: 3) {},
+        watchFile: <ref *93> ƒ watchFile(length: 3) {},
+        write: <ref *94> ƒ write(length: 6) {},
+        writeFile: <ref *95> ƒ writeFile(length: 4) {},
+        writeFileSync: <ref *96> ƒ writeFileSync(length: 3) {},
+        writeSync: <ref *97> ƒ writeSync(length: 5) {},
+        writev: <ref *98> ƒ writev(length: 4) {},
+        writevSync: <ref *99> ƒ writevSync(length: 3) {},
         _toUnixTimestamp: [Circular: *7],
-        openAsBlob: <ref *98> ƒ openAsBlob(length: 2) {},
+        openAsBlob: <ref *100> ƒ openAsBlob(length: 2) {},
         Dirent: [Circular: *3],
-        opendir: <ref *99> ƒ opendir(length: 3) {},
-        opendirSync: <ref *100> ƒ opendirSync(length: 2) {},
+        opendir: <ref *101> ƒ opendir(length: 3) {},
+        opendirSync: <ref *102> ƒ opendirSync(length: 2) {},
         F_OK: 0,
         R_OK: 4,
         W_OK: 2,
@@ -6743,7 +6811,7 @@ EventEmitter {
         WriteStream: [Circular: *6],
         FileReadStream: undefined,
         FileWriteStream: undefined,
-        promises: <ref *101> {
+        promises: <ref *103> {
             access: async ƒ access(length: 3) {},
             appendFile: async ƒ appendFile(length: 1) {},
             close: async ƒ close(length: 1) {},
@@ -6759,6 +6827,7 @@ EventEmitter {
             fdatasync: async ƒ fdatasync(length: 2) {},
             ftruncate: async ƒ ftruncate(length: 1) {},
             futimes: async ƒ futimes(length: 4) {},
+            glob: async ƒ glob(length: 2) {},
             lchmod: async ƒ lchmod(length: 3) {},
             lchown: async ƒ lchown(length: 4) {},
             link: async ƒ link(length: 3) {},
@@ -6806,65 +6875,67 @@ EventEmitter {
     ftruncateSync: [Circular: *40],
     futimes: [Circular: *41],
     futimesSync: [Circular: *42],
+    glob: [Circular: *43],
+    globSync: [Circular: *44],
     lchmod: undefined,
     lchmodSync: undefined,
-    lchown: [Circular: *43],
-    lchownSync: [Circular: *44],
-    link: [Circular: *45],
-    linkSync: [Circular: *46],
-    lstat: [Circular: *47],
-    lstatSync: [Circular: *48],
-    lutimes: [Circular: *49],
-    lutimesSync: [Circular: *50],
-    mkdir: [Circular: *51],
-    mkdirSync: [Circular: *52],
-    mkdtemp: [Circular: *53],
-    mkdtempSync: [Circular: *54],
-    open: [Circular: *55],
-    openAsBlob: [Circular: *98],
-    openSync: [Circular: *56],
-    opendir: [Circular: *99],
-    opendirSync: [Circular: *100],
-    promises: [Circular: *101],
-    read: [Circular: *57],
-    readFile: [Circular: *58],
-    readFileSync: [Circular: *59],
-    readSync: [Circular: *60],
-    readdir: [Circular: *61],
-    readdirSync: [Circular: *62],
-    readlink: [Circular: *63],
-    readlinkSync: [Circular: *64],
-    readv: [Circular: *65],
-    readvSync: [Circular: *66],
-    realpath: [Circular: *67],
-    realpathSync: [Circular: *69],
-    rename: [Circular: *71],
-    renameSync: [Circular: *72],
-    rm: [Circular: *73],
-    rmSync: [Circular: *74],
-    rmdir: [Circular: *75],
-    rmdirSync: [Circular: *76],
-    stat: [Circular: *77],
-    statSync: [Circular: *79],
-    statfs: [Circular: *78],
-    statfsSync: [Circular: *80],
-    symlink: [Circular: *81],
-    symlinkSync: [Circular: *82],
-    truncate: [Circular: *83],
-    truncateSync: [Circular: *84],
-    unlink: [Circular: *85],
-    unlinkSync: [Circular: *86],
-    unwatchFile: [Circular: *87],
-    utimes: [Circular: *88],
-    utimesSync: [Circular: *89],
-    watch: [Circular: *90],
-    watchFile: [Circular: *91],
-    write: [Circular: *92],
-    writeFile: [Circular: *93],
-    writeFileSync: [Circular: *94],
-    writeSync: [Circular: *95],
-    writev: [Circular: *96],
-    writevSync: [Circular: *97]
+    lchown: [Circular: *45],
+    lchownSync: [Circular: *46],
+    link: [Circular: *47],
+    linkSync: [Circular: *48],
+    lstat: [Circular: *49],
+    lstatSync: [Circular: *50],
+    lutimes: [Circular: *51],
+    lutimesSync: [Circular: *52],
+    mkdir: [Circular: *53],
+    mkdirSync: [Circular: *54],
+    mkdtemp: [Circular: *55],
+    mkdtempSync: [Circular: *56],
+    open: [Circular: *57],
+    openAsBlob: [Circular: *100],
+    openSync: [Circular: *58],
+    opendir: [Circular: *101],
+    opendirSync: [Circular: *102],
+    promises: [Circular: *103],
+    read: [Circular: *59],
+    readFile: [Circular: *60],
+    readFileSync: [Circular: *61],
+    readSync: [Circular: *62],
+    readdir: [Circular: *63],
+    readdirSync: [Circular: *64],
+    readlink: [Circular: *65],
+    readlinkSync: [Circular: *66],
+    readv: [Circular: *67],
+    readvSync: [Circular: *68],
+    realpath: [Circular: *69],
+    realpathSync: [Circular: *71],
+    rename: [Circular: *73],
+    renameSync: [Circular: *74],
+    rm: [Circular: *75],
+    rmSync: [Circular: *76],
+    rmdir: [Circular: *77],
+    rmdirSync: [Circular: *78],
+    stat: [Circular: *79],
+    statSync: [Circular: *81],
+    statfs: [Circular: *80],
+    statfsSync: [Circular: *82],
+    symlink: [Circular: *83],
+    symlinkSync: [Circular: *84],
+    truncate: [Circular: *85],
+    truncateSync: [Circular: *86],
+    unlink: [Circular: *87],
+    unlinkSync: [Circular: *88],
+    unwatchFile: [Circular: *89],
+    utimes: [Circular: *90],
+    utimesSync: [Circular: *91],
+    watch: [Circular: *92],
+    watchFile: [Circular: *93],
+    write: [Circular: *94],
+    writeFile: [Circular: *95],
+    writeFileSync: [Circular: *96],
+    writeSync: [Circular: *97],
+    writev: [Circular: *98],
+    writevSync: [Circular: *99]
 }
 ```
 
@@ -7094,35 +7165,36 @@ EventEmitter {
         fdatasync: <ref *16> async ƒ fdatasync(length: 2) {},
         ftruncate: <ref *17> async ƒ ftruncate(length: 1) {},
         futimes: <ref *18> async ƒ futimes(length: 4) {},
-        lchmod: <ref *19> async ƒ lchmod(length: 3) {},
-        lchown: <ref *20> async ƒ lchown(length: 4) {},
-        link: <ref *21> async ƒ link(length: 3) {},
-        lstat: <ref *22> async ƒ lstat(length: 1) {},
-        mkdir: <ref *23> async ƒ mkdir(length: 3) {},
-        mkdtemp: <ref *24> async ƒ mkdtemp(length: 3) {},
-        statfs: <ref *25> async ƒ statfs(length: 2) {},
-        open: <ref *26> async ƒ open(length: 1) {},
-        read: <ref *27> async ƒ read(length: 6) {},
-        write: <ref *28> async ƒ write(length: 6) {},
-        readdir: <ref *29> async ƒ readdir(length: 3) {},
-        readFile: <ref *30> async ƒ readFile(length: 1) {},
-        writeFile: <ref *31> async ƒ writeFile(length: 1) {},
-        readlink: <ref *32> async ƒ readlink(length: 3) {},
-        realpath: <ref *33> async ƒ realpath(length: 3) {},
-        rename: <ref *34> async ƒ rename(length: 3) {},
-        stat: <ref *35> async ƒ stat(length: 1) {},
-        symlink: <ref *36> async ƒ symlink(length: 4) {},
-        truncate: <ref *37> async ƒ truncate(length: 3) {},
-        unlink: <ref *38> async ƒ unlink(length: 2) {},
-        utimes: <ref *39> async ƒ utimes(length: 4) {},
-        lutimes: <ref *40> async ƒ lutimes(length: 4) {},
-        rm: <ref *41> async ƒ rm(length: 3) {},
-        rmdir: <ref *42> async ƒ rmdir(length: 3) {},
-        writev: <ref *43> async ƒ writev(length: 3) {},
-        readv: <ref *44> async ƒ readv(length: 3) {},
+        glob: <ref *19> async ƒ glob(length: 2) {},
+        lchmod: <ref *20> async ƒ lchmod(length: 3) {},
+        lchown: <ref *21> async ƒ lchown(length: 4) {},
+        link: <ref *22> async ƒ link(length: 3) {},
+        lstat: <ref *23> async ƒ lstat(length: 1) {},
+        mkdir: <ref *24> async ƒ mkdir(length: 3) {},
+        mkdtemp: <ref *25> async ƒ mkdtemp(length: 3) {},
+        statfs: <ref *26> async ƒ statfs(length: 2) {},
+        open: <ref *27> async ƒ open(length: 1) {},
+        read: <ref *28> async ƒ read(length: 6) {},
+        write: <ref *29> async ƒ write(length: 6) {},
+        readdir: <ref *30> async ƒ readdir(length: 3) {},
+        readFile: <ref *31> async ƒ readFile(length: 1) {},
+        writeFile: <ref *32> async ƒ writeFile(length: 1) {},
+        readlink: <ref *33> async ƒ readlink(length: 3) {},
+        realpath: <ref *34> async ƒ realpath(length: 3) {},
+        rename: <ref *35> async ƒ rename(length: 3) {},
+        stat: <ref *36> async ƒ stat(length: 1) {},
+        symlink: <ref *37> async ƒ symlink(length: 4) {},
+        truncate: <ref *38> async ƒ truncate(length: 3) {},
+        unlink: <ref *39> async ƒ unlink(length: 2) {},
+        utimes: <ref *40> async ƒ utimes(length: 4) {},
+        lutimes: <ref *41> async ƒ lutimes(length: 4) {},
+        rm: <ref *42> async ƒ rm(length: 3) {},
+        rmdir: <ref *43> async ƒ rmdir(length: 3) {},
+        writev: <ref *44> async ƒ writev(length: 3) {},
+        readv: <ref *45> async ƒ readv(length: 3) {},
         constants: [Circular: *7],
-        watch: <ref *45> ƒ watch(length: 1) {},
-        opendir: <ref *46> async ƒ opendir(length: 2) {}
+        watch: <ref *46> ƒ watch(length: 1) {},
+        opendir: <ref *47> async ƒ opendir(length: 2) {}
     },
     exists: [Circular: *11],
     fchmod: [Circular: *12],
@@ -7132,34 +7204,35 @@ EventEmitter {
     fsync: [Circular: *15],
     ftruncate: [Circular: *17],
     futimes: [Circular: *18],
-    lchmod: [Circular: *19],
-    lchown: [Circular: *20],
-    link: [Circular: *21],
-    lstat: [Circular: *22],
-    lutimes: [Circular: *40],
-    mkdir: [Circular: *23],
-    mkdtemp: [Circular: *24],
-    open: [Circular: *26],
-    opendir: [Circular: *46],
-    read: [Circular: *27],
-    readFile: [Circular: *30],
-    readdir: [Circular: *29],
-    readlink: [Circular: *32],
-    readv: [Circular: *44],
-    realpath: [Circular: *33],
-    rename: [Circular: *34],
-    rm: [Circular: *41],
-    rmdir: [Circular: *42],
-    stat: [Circular: *35],
-    statfs: [Circular: *25],
-    symlink: [Circular: *36],
-    truncate: [Circular: *37],
-    unlink: [Circular: *38],
-    utimes: [Circular: *39],
-    watch: [Circular: *45],
-    write: [Circular: *28],
-    writeFile: [Circular: *31],
-    writev: [Circular: *43]
+    glob: [Circular: *19],
+    lchmod: [Circular: *20],
+    lchown: [Circular: *21],
+    link: [Circular: *22],
+    lstat: [Circular: *23],
+    lutimes: [Circular: *41],
+    mkdir: [Circular: *24],
+    mkdtemp: [Circular: *25],
+    open: [Circular: *27],
+    opendir: [Circular: *47],
+    read: [Circular: *28],
+    readFile: [Circular: *31],
+    readdir: [Circular: *30],
+    readlink: [Circular: *33],
+    readv: [Circular: *45],
+    realpath: [Circular: *34],
+    rename: [Circular: *35],
+    rm: [Circular: *42],
+    rmdir: [Circular: *43],
+    stat: [Circular: *36],
+    statfs: [Circular: *26],
+    symlink: [Circular: *37],
+    truncate: [Circular: *38],
+    unlink: [Circular: *39],
+    utimes: [Circular: *40],
+    watch: [Circular: *46],
+    write: [Circular: *29],
+    writeFile: [Circular: *32],
+    writev: [Circular: *44]
 }
 ```
 
@@ -7364,14 +7437,15 @@ EventEmitter {
 {
     Agent: <ref *2> ƒ Agent(length: 0) {},
     ClientRequest: <ref *3> class ClientRequest extends OutgoingMessage {},
-    IncomingMessage: <ref *4> ƒ IncomingMessage(length: 2) {
+    CloseEvent: <ref *4> ƒ CloseEvent(length: 1) {},
+    IncomingMessage: <ref *5> ƒ IncomingMessage(length: 2) {
         prototype: IncomingMessage {
-            constructor: [Circular: *4],
+            constructor: [Circular: *5],
             _construct: ƒ _construct(length: 1) {},
             _read: ƒ _read(length: 1) {},
             _destroy: ƒ _destroy(length: 2) {},
             [get/set] aborted: undefined,
-            [get/set] connection: <ref *9> Socket {
+            [get/set] connection: <ref *10> Socket {
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -7420,10 +7494,10 @@ EventEmitter {
             [get/set] rawTrailers: [],
             [get/set] trailers: [Object: null prototype] {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] socket: [Circular: *9]
+            [get/set] socket: [Circular: *10]
         }
     },
-    METHODS: <ref *19> [
+    METHODS: <ref *20> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -7459,9 +7533,10 @@ EventEmitter {
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    OutgoingMessage: <ref *20> ƒ OutgoingMessage(length: 1) {
+    MessageEvent: <ref *21> ƒ MessageEvent(length: 1) {},
+    OutgoingMessage: <ref *22> ƒ OutgoingMessage(length: 1) {
         prototype: OutgoingMessage {
-            constructor: [Circular: *20],
+            constructor: [Circular: *22],
             _implicitHeader: ƒ (length: 0) {},
             appendHeader: ƒ (length: 2) {},
             flushHeaders: ƒ (length: 0) {},
@@ -7475,7 +7550,7 @@ EventEmitter {
             setTimeout: ƒ (length: 2) {}
         }
     },
-    STATUS_CODES: <ref *33> {
+    STATUS_CODES: <ref *35> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -7540,7 +7615,7 @@ EventEmitter {
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *34> ƒ Server(length: 2) {
+    Server: <ref *36> ƒ Server(length: 2) {
         prototype: Server {
             ref: ƒ ref(length: 0) {},
             unref: ƒ unref(length: 0) {},
@@ -7550,14 +7625,14 @@ EventEmitter {
             address: ƒ address(length: 0) {},
             listen: ƒ listen(length: 0) {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            constructor: [Circular: *34],
+            constructor: [Circular: *36],
             Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
             Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
         }
     },
-    ServerResponse: <ref *46> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *48> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *46],
+            constructor: [Circular: *48],
             _implicitHeader: ƒ (length: 0) {},
             _write: ƒ (length: 3) {},
             _writev: ƒ (length: 2) {},
@@ -7579,22 +7654,28 @@ EventEmitter {
             writeHead: ƒ (length: 3) {}
         }
     },
-    createServer: <ref *67> ƒ createServer(length: 2) {},
+    WebSocket: <ref *69> ƒ WebSocket(length: 1) {
+        CONNECTING: 0,
+        OPEN: 1,
+        CLOSING: 2,
+        CLOSED: 3
+    },
+    createServer: <ref *70> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *34],
-        METHODS: [Circular: *19],
-        STATUS_CODES: [Circular: *33],
-        createServer: [Circular: *67],
-        ServerResponse: [Circular: *46],
-        IncomingMessage: [Circular: *4],
-        request: <ref *69> ƒ request(length: 3) {},
-        get: <ref *70> ƒ get(length: 3) {},
+        Server: [Circular: *36],
+        METHODS: [Circular: *20],
+        STATUS_CODES: [Circular: *35],
+        createServer: [Circular: *70],
+        ServerResponse: [Circular: *48],
+        IncomingMessage: [Circular: *5],
+        request: <ref *72> ƒ request(length: 3) {},
+        get: <ref *73> ƒ get(length: 3) {},
         [get/set] maxHeaderSize: 16384,
-        validateHeaderName: <ref *71> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *72> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *73> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *74> Agent {
+        validateHeaderName: <ref *74> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *75> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *76> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *77> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -7617,15 +7698,18 @@ EventEmitter {
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *20]
+        OutgoingMessage: [Circular: *22],
+        WebSocket: [Circular: *69],
+        CloseEvent: [Circular: *4],
+        MessageEvent: [Circular: *21]
     },
-    get: [Circular: *70],
-    globalAgent: [Circular: *74],
+    get: [Circular: *73],
+    globalAgent: [Circular: *77],
     maxHeaderSize: 16384,
-    request: [Circular: *69],
-    setMaxIdleHTTPParsers: [Circular: *73],
-    validateHeaderName: [Circular: *71],
-    validateHeaderValue: [Circular: *72]
+    request: [Circular: *72],
+    setMaxIdleHTTPParsers: [Circular: *76],
+    validateHeaderName: [Circular: *74],
+    validateHeaderValue: [Circular: *75]
 }
 ```
 
@@ -8645,7 +8729,7 @@ EventEmitter {
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1737936957863-1/module.mjs: "/tmp/fs-fixture-1737936957863-1/module.mjs"
+            /tmp/fs-fixture-1738541765934-1/module.mjs: "/tmp/fs-fixture-1738541765934-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -8664,7 +8748,7 @@ EventEmitter {
             "/home/runner/setup-pnpm/node_modules/.pnpm/node_modules",
             "/home/runner/.node_modules",
             "/home/runner/.node_libraries",
-            "/opt/hostedtoolcache/node/22.13.0/x64/lib/node"
+            "/opt/hostedtoolcache/node/22.13.1/x64/lib/node"
         ],
         _debug: <ref *11> ƒ deprecated(length: 0) {},
         isBuiltin: <ref *12> ƒ isBuiltin(length: 1) {},
@@ -8803,13 +8887,13 @@ EventEmitter {
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1737936957863-1/module.mjs: {
+            /tmp/fs-fixture-1738541765934-1/module.mjs: {
                 exports: {}
             },
             module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1737936957863-1/inspect.mjs: {
+            /tmp/fs-fixture-1738541765934-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -10008,14 +10092,14 @@ EventEmitter {
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1737936959042.4402,
+            timeOrigin: 1738541766974.0637,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: null,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1737936959042.4402,
-                nodeStart: 1737936959042.4402,
-                environment: 1737936959042.4402,
-                bootstrapComplete: 1737936959042.4402,
+                v8Start: 1738541766974.0637,
+                nodeStart: 1738541766974.0637,
+                environment: 1738541766974.0637,
+                bootstrapComplete: 1738541766974.0637,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -10344,8 +10428,8 @@ EventEmitter {
     },
     arch: "x64",
     argv: <ref *26> [
-        "/opt/hostedtoolcache/node/22.13.0/x64/bin/node",
-        "/tmp/fs-fixture-1737936957863-1/process.mjs"
+        "/opt/hostedtoolcache/node/22.13.1/x64/bin/node",
+        "/tmp/fs-fixture-1738541765934-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *27> ƒ deprecated(length: 0) {},
@@ -10809,9 +10893,9 @@ EventEmitter {
     cwd: <ref *47> ƒ wrappedCwd(length: 0) {},
     debugPort: 9229,
     default: process {
-        version: "v22.13.0",
+        version: "v22.13.1",
         versions: <ref *49> {
-            node: "22.13.0",
+            node: "22.13.1",
             acorn: "8.14.0",
             ada: "2.9.2",
             amaro: "0.2.0",
@@ -10833,7 +10917,7 @@ EventEmitter {
             simdutf: "5.6.4",
             sqlite: "3.47.2",
             tz: "2024b",
-            undici: "6.21.0",
+            undici: "6.21.1",
             unicode: "16.0",
             uv: "1.49.2",
             uvwasi: "0.0.21",
@@ -10845,8 +10929,8 @@ EventEmitter {
         release: <ref *50> {
             name: "node",
             lts: "Jod",
-            sourceUrl: "https://nodejs.org/download/release/v22.13.0/node-v22.13.0.tar.gz",
-            headersUrl: "https://nodejs.org/download/release/v22.13.0/node-v22.13.0-headers.tar.gz"
+            sourceUrl: "https://nodejs.org/download/release/v22.13.1/node-v22.13.1.tar.gz",
+            headersUrl: "https://nodejs.org/download/release/v22.13.1/node-v22.13.1-headers.tar.gz"
         },
         _rawDebug: [Circular: *18],
         moduleLoadList: <ref *51> [
@@ -11274,18 +11358,18 @@ EventEmitter {
         setgid: <ref *114> ƒ (length: 1) {},
         setuid: <ref *115> ƒ (length: 1) {},
         env: <ref *116>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.13.0 linux x64",
+            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.13.1 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
             PIPX_HOME: "/opt/pipx",
-            npm_node_execpath: "/opt/hostedtoolcache/node/22.13.0/x64/bin/node",
+            npm_node_execpath: "/opt/hostedtoolcache/node/22.13.1/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             SHLVL: "1",
             npm_package_packageManager: "pnpm@9.12.1",
@@ -11296,7 +11380,7 @@ EventEmitter {
             PIPX_BIN_DIR: "/opt/pipx_bin",
             GITHUB_REPOSITORY_OWNER: "privatenumber",
             npm_package_dependencies_comment_mark: "^1.1.1",
-            GRADLE_HOME: "/usr/share/gradle-8.12",
+            GRADLE_HOME: "/usr/share/gradle-8.12.1",
             ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
             JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
             STATS_RDCL: "true",
@@ -11305,24 +11389,24 @@ EventEmitter {
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "833",
+            SYSTEMD_EXEC_PID: "832",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20250120.5.0",
+            ImageVersion: "20250126.1.0",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
-            GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.10/x64",
+            GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.11/x64",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             npm_package_devDependencies_lintroll: "^1.10.0",
             RUNNER_USER: "runner",
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.4/x64",
-            JOURNAL_STREAM: "8:7361",
+            GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.5/x64",
+            JOURNAL_STREAM: "8:7551",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -11331,11 +11415,11 @@ EventEmitter {
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "12979644696",
+            GITHUB_RUN_ID: "13103830732",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "152bdaf5d77e7318b6b7fddbabc9619892480a27",
+            GITHUB_WORKFLOW_SHA: "b89d2deb7d95f4c7c1528d0a78b516ab15298aa6",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
             npm_package_scripts_start: "tsx index.ts",
@@ -11346,12 +11430,12 @@ EventEmitter {
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_ced8e576-c018-4e20-9f31-84009745b772",
-            INVOCATION_ID: "1dadac765d8444d19304971f3b493591",
+            RUNNER_TRACKING_ID: "github_6d78bf36-3b4e-4144-8309-00809e35c3b9",
+            INVOCATION_ID: "ece5a1cfb4f54b3797fc8887af9a0d69",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            NODE: "/opt/hostedtoolcache/node/22.13.0/x64/bin/node",
+            NODE: "/opt/hostedtoolcache/node/22.13.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "114",
+            GITHUB_RUN_NUMBER: "115",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11386,7 +11470,7 @@ EventEmitter {
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "152bdaf5d77e7318b6b7fddbabc9619892480a27",
+            GITHUB_SHA: "b89d2deb7d95f4c7c1528d0a78b516ab15298aa6",
             GITHUB_RUN_ATTEMPT: "1",
             STATS_D_TC: "true",
             GITHUB_REF: "refs/heads/master",
@@ -11394,7 +11478,7 @@ EventEmitter {
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -11408,7 +11492,7 @@ EventEmitter {
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -11422,15 +11506,15 @@ EventEmitter {
             STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *26],
         execArgv: <ref *117> [],
-        pid: 2890,
-        ppid: 2002,
-        execPath: "/opt/hostedtoolcache/node/22.13.0/x64/bin/node",
+        pid: 2919,
+        ppid: 2038,
+        execPath: "/opt/hostedtoolcache/node/22.13.1/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
         _preload_modules: [Circular: *17],
@@ -11455,7 +11539,7 @@ EventEmitter {
     emitWarning: [Circular: *77],
     env: [Circular: *116],
     execArgv: [Circular: *117],
-    execPath: "/opt/hostedtoolcache/node/22.13.0/x64/bin/node",
+    execPath: "/opt/hostedtoolcache/node/22.13.1/x64/bin/node",
     exit: [Circular: *61],
     exitCode: undefined,
     features: [Circular: *74],
@@ -11476,9 +11560,9 @@ EventEmitter {
     moduleLoadList: [Circular: *51],
     nextTick: [Circular: *78],
     openStdin: [Circular: *68],
-    pid: 2890,
+    pid: 2919,
     platform: "linux",
-    ppid: 2002,
+    ppid: 2038,
     reallyExit: [Circular: *55],
     release: [Circular: *50],
     report: [Circular: *118],
@@ -11497,7 +11581,7 @@ EventEmitter {
     title: "node",
     umask: [Circular: *109],
     uptime: [Circular: *53],
-    version: "v22.13.0",
+    version: "v22.13.1",
     versions: [Circular: *49]
 }
 ```
@@ -11525,7 +11609,7 @@ EventEmitter {
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1737936957863-1/process.mjs"
+        "/tmp/fs-fixture-1738541765934-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -11569,18 +11653,18 @@ EventEmitter {
         dlopen: <ref *29> ƒ dlopen(length: 1) {},
         emitWarning: <ref *30> ƒ emitWarning(length: 1) {},
         env: <ref *31> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
             [get/set] DOTNET_NOLOGO: "1",
             [get/set] USER: "runner",
-            [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.13.0 linux x64",
+            [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.13.1 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
             [get/set] PIPX_HOME: "/opt/pipx",
-            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/22.13.0/x64/bin/node",
+            [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/22.13.1/x64/bin/node",
             [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             [get/set] SHLVL: "1",
             [get/set] npm_package_packageManager: "pnpm@9.12.1",
@@ -11591,7 +11675,7 @@ EventEmitter {
             [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
             [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
             [get/set] npm_package_dependencies_comment_mark: "^1.1.1",
-            [get/set] GRADLE_HOME: "/usr/share/gradle-8.12",
+            [get/set] GRADLE_HOME: "/usr/share/gradle-8.12.1",
             [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
             [get/set] JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
             [get/set] STATS_RDCL: "true",
@@ -11600,24 +11684,24 @@ EventEmitter {
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "833",
+            [get/set] SYSTEMD_EXEC_PID: "832",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20250120.5.0",
+            [get/set] ImageVersion: "20250126.1.0",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
-            [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.10/x64",
+            [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.11/x64",
             [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
             [get/set] npm_package_devDependencies_lintroll: "^1.10.0",
             [get/set] RUNNER_USER: "runner",
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.4/x64",
-            [get/set] JOURNAL_STREAM: "8:7361",
+            [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.5/x64",
+            [get/set] JOURNAL_STREAM: "8:7551",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
@@ -11626,11 +11710,11 @@ EventEmitter {
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "12979644696",
+            [get/set] GITHUB_RUN_ID: "13103830732",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "152bdaf5d77e7318b6b7fddbabc9619892480a27",
+            [get/set] GITHUB_WORKFLOW_SHA: "b89d2deb7d95f4c7c1528d0a78b516ab15298aa6",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu24",
             [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -11641,12 +11725,12 @@ EventEmitter {
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_ced8e576-c018-4e20-9f31-84009745b772",
-            [get/set] INVOCATION_ID: "1dadac765d8444d19304971f3b493591",
+            [get/set] RUNNER_TRACKING_ID: "github_6d78bf36-3b4e-4144-8309-00809e35c3b9",
+            [get/set] INVOCATION_ID: "ece5a1cfb4f54b3797fc8887af9a0d69",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            [get/set] NODE: "/opt/hostedtoolcache/node/22.13.0/x64/bin/node",
+            [get/set] NODE: "/opt/hostedtoolcache/node/22.13.1/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "114",
+            [get/set] GITHUB_RUN_NUMBER: "115",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11681,7 +11765,7 @@ EventEmitter {
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             [get/set] npm_package_dependencies_execa: "^7.1.1",
-            [get/set] GITHUB_SHA: "152bdaf5d77e7318b6b7fddbabc9619892480a27",
+            [get/set] GITHUB_SHA: "b89d2deb7d95f4c7c1528d0a78b516ab15298aa6",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] STATS_D_TC: "true",
             [get/set] GITHUB_REF: "refs/heads/master",
@@ -11689,7 +11773,7 @@ EventEmitter {
             [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             [get/set] npm_package_license: "MIT",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -11703,7 +11787,7 @@ EventEmitter {
             [get/set] GITHUB_SERVER_URL: "https://github.com",
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -11717,7 +11801,7 @@ EventEmitter {
             [get/set] STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "lintroll --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         execArgv: <ref *32> [],
@@ -11750,13 +11834,13 @@ EventEmitter {
         nextTick: <ref *43> ƒ nextTick(length: 2) {},
         [get/set] noDeprecation: false,
         openStdin: <ref *44> ƒ openStdin(length: 0) {},
-        pid: 2902,
+        pid: 2924,
         platform: "linux",
-        ppid: 2002,
+        ppid: 2038,
         reallyExit: <ref *45> ƒ reallyExit(length: 1) {},
         release: <ref *46> {
             name: "node",
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.2.1/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.2.2/bun-linux-x64-baseline.zip",
             headersUrl: "https://nodejs.org/download/release/v22.6.0/node-v22.6.0-headers.tar.gz"
         },
         report: <ref *47> {
@@ -11770,7 +11854,7 @@ EventEmitter {
             excludeEnv: "SIGUSR2",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "7410da9c717adc6cc117c855e78cd04c1c087144",
+        revision: "cc68f4f025b00856bd01926b783eaa9044385c7c",
         setSourceMapsEnabled: <ref *50> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *51> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
         send: undefined,
@@ -11843,6 +11927,8 @@ EventEmitter {
                 ftruncateSync: ƒ ftruncateSync(length: 1) {},
                 futimes: ƒ futimes(length: 4) {},
                 futimesSync: ƒ futimesSync(length: 3) {},
+                glob: ƒ glob(length: 3) {},
+                globSync: ƒ globSync(length: 2) {},
                 lchown: ƒ lchown(length: 4) {},
                 lchownSync: ƒ lchownSync(length: 3) {},
                 lchmod: undefined,
@@ -11904,14 +11990,14 @@ EventEmitter {
                 writevSync: ƒ writevSync(length: 3) {},
                 _toUnixTimestamp: ƒ _toUnixTimestamp(length: 1) {},
                 openAsBlob: ƒ openAsBlob(length: 2) {},
-                Dirent: ƒ Dirent(length: 0) {},
+                Dirent: ƒ Dirent(length: 3) {},
                 opendir: ƒ opendir(length: 3) {},
                 opendirSync: ƒ opendirSync(length: 2) {},
                 F_OK: 0,
                 R_OK: 4,
                 W_OK: 2,
                 X_OK: 1,
-                constants: <ref *154> [Object: null prototype] {
+                constants: <ref *156> [Object: null prototype] {
                     UV_FS_SYMLINK_DIR: 1,
                     UV_FS_SYMLINK_JUNCTION: 2,
                     O_RDONLY: 0,
@@ -11993,6 +12079,7 @@ EventEmitter {
                     fdatasync: async ƒ fdatasync(length: 2) {},
                     ftruncate: async ƒ ftruncate(length: 1) {},
                     futimes: async ƒ futimes(length: 4) {},
+                    glob: async ƒ glob(length: 2) {},
                     lchmod: async ƒ lchmod(length: 3) {},
                     lchown: async ƒ lchown(length: 4) {},
                     link: async ƒ link(length: 3) {},
@@ -12019,7 +12106,7 @@ EventEmitter {
                     rmdir: async ƒ rmdir(length: 3) {},
                     writev: async ƒ writev(length: 3) {},
                     readv: async ƒ readv(length: 3) {},
-                    constants: [Circular: *154],
+                    constants: [Circular: *156],
                     watch: ƒ watch(length: 1) {},
                     opendir: async ƒ opendir(length: 2) {}
                 }
@@ -12027,7 +12114,7 @@ EventEmitter {
             Symbol(kWriteStreamFastPath): FileSink {},
             Symbol(kCapture): false
         },
-        stdin: <ref *204> ReadStream {
+        stdin: <ref *207> ReadStream {
             fd: 0,
             start: 0,
             end: Infinity,
@@ -12059,8 +12146,8 @@ EventEmitter {
             },
             _maxListeners: undefined,
             _eventsCount: NaN,
-            on: <ref *215> ƒ (length: 2) {},
-            addListener: [Circular: *215],
+            on: <ref *218> ƒ (length: 2) {},
+            addListener: [Circular: *218],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
@@ -12070,7 +12157,7 @@ EventEmitter {
             Symbol(kReadStreamFastPath): false,
             Symbol(kCapture): false
         },
-        stdout: <ref *221> WriteStream {
+        stdout: <ref *224> WriteStream {
             fd: 1,
             _writev: undefined,
             flush: false,
@@ -12110,26 +12197,26 @@ EventEmitter {
         },
         [get/set] throwDeprecation: false,
         [get/set] title: "bun",
-        umask: <ref *227> ƒ umask(length: 1) {},
-        uptime: <ref *228> ƒ uptime(length: 1) {},
+        umask: <ref *230> ƒ umask(length: 1) {},
+        uptime: <ref *231> ƒ uptime(length: 1) {},
         version: "v22.6.0",
-        versions: <ref *229> {
+        versions: <ref *232> {
             node: "22.6.0",
-            bun: "1.2.1",
+            bun: "1.2.2",
             boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
             openssl: "1.1.0",
             libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
             mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "7410da9c717adc6cc117c855e78cd04c1c087144",
-            webkit: "9e3b60e4a6438d20ee6f8aa5bec6b71d2b7d213f",
-            zig: "0.13.0",
+            uwebsockets: "cc68f4f025b00856bd01926b783eaa9044385c7c",
+            webkit: "e32c6356625cfacebff0c61d182f759abf6f508a",
+            zig: "0.14.0-dev.2987+183bb8b08",
             zlib: "886098f3f339617b4243b286f5ed364b9989e245",
             tinycc: "ab631362d839333660a265d3084d8ff060b96753",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
             libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-            usockets: "7410da9c717adc6cc117c855e78cd04c1c087144",
+            usockets: "cc68f4f025b00856bd01926b783eaa9044385c7c",
             lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
             zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
             v8: "12.4.254.14-node.12",
@@ -12151,16 +12238,16 @@ EventEmitter {
         _stopProfilerIdleNotifier: [Circular: *12],
         _tickCallback: [Circular: *13],
         _kill: [Circular: *7],
-        getegid: <ref *230> ƒ getegid(length: 0) {},
-        geteuid: <ref *231> ƒ geteuid(length: 0) {},
-        getgid: <ref *232> ƒ getgid(length: 0) {},
-        getgroups: <ref *233> ƒ getgroups(length: 0) {},
-        getuid: <ref *234> ƒ getuid(length: 0) {},
-        setegid: <ref *235> ƒ setegid(length: 1) {},
-        seteuid: <ref *236> ƒ seteuid(length: 1) {},
-        setgid: <ref *237> ƒ setgid(length: 1) {},
-        setgroups: <ref *238> ƒ setgroups(length: 1) {},
-        setuid: <ref *239> ƒ setuid(length: 1) {},
+        getegid: <ref *233> ƒ getegid(length: 0) {},
+        geteuid: <ref *234> ƒ geteuid(length: 0) {},
+        getgid: <ref *235> ƒ getgid(length: 0) {},
+        getgroups: <ref *236> ƒ getgroups(length: 0) {},
+        getuid: <ref *237> ƒ getuid(length: 0) {},
+        setegid: <ref *238> ƒ setegid(length: 1) {},
+        seteuid: <ref *239> ƒ seteuid(length: 1) {},
+        setgid: <ref *240> ƒ setgid(length: 1) {},
+        setgroups: <ref *241> ƒ setgroups(length: 1) {},
+        setuid: <ref *242> ƒ setuid(length: 1) {},
         Symbol(Symbol.toStringTag): "process"
     },
     disconnect: undefined,
@@ -12176,11 +12263,11 @@ EventEmitter {
     features: [Circular: *34],
     getActiveResourcesInfo: [Circular: *35],
     getMaxListeners: ƒ getMaxListeners(length: 0) {},
-    getegid: [Circular: *230],
-    geteuid: [Circular: *231],
-    getgid: [Circular: *232],
-    getgroups: [Circular: *233],
-    getuid: [Circular: *234],
+    getegid: [Circular: *233],
+    geteuid: [Circular: *234],
+    getgid: [Circular: *235],
+    getgroups: [Circular: *236],
+    getuid: [Circular: *237],
     hasUncaughtExceptionCaptureCallback: [Circular: *36],
     hrtime: [Circular: *37],
     isBun: true,
@@ -12196,9 +12283,9 @@ EventEmitter {
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *44],
-    pid: 2902,
+    pid: 2924,
     platform: "linux",
-    ppid: 2002,
+    ppid: 2038,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -12207,25 +12294,25 @@ EventEmitter {
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *47],
-    revision: "7410da9c717adc6cc117c855e78cd04c1c087144",
+    revision: "cc68f4f025b00856bd01926b783eaa9044385c7c",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *50],
     setUncaughtExceptionCaptureCallback: [Circular: *51],
-    setegid: [Circular: *235],
-    seteuid: [Circular: *236],
-    setgid: [Circular: *237],
-    setgroups: [Circular: *238],
-    setuid: [Circular: *239],
+    setegid: [Circular: *238],
+    seteuid: [Circular: *239],
+    setgid: [Circular: *240],
+    setgroups: [Circular: *241],
+    setuid: [Circular: *242],
     stderr: [Circular: *52],
-    stdin: [Circular: *204],
-    stdout: [Circular: *221],
+    stdin: [Circular: *207],
+    stdout: [Circular: *224],
     throwDeprecation: false,
     title: "bun",
-    umask: [Circular: *227],
-    uptime: [Circular: *228],
+    umask: [Circular: *230],
+    uptime: [Circular: *231],
     version: "v22.6.0",
-    versions: [Circular: *229]
+    versions: [Circular: *232]
 }
 ```
 
@@ -12258,7 +12345,7 @@ EventEmitter {
     ucs2: [Circular: *4],
     version: "2.1.0"
 }
-(node:2906) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:2935) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -12684,18 +12771,18 @@ EventEmitter {
                 escape: ƒ escape(length: 1) {},
                 Symbol(cwd): undefined,
                 Symbol(env): <ref *32> {
-                    [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+                    [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
                     [get/set] npm_package_devDependencies__types_node: "^18.15.11",
                     [get/set] STATS_TRP: "true",
                     [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
                     [get/set] DOTNET_NOLOGO: "1",
                     [get/set] USER: "runner",
-                    [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.13.0 linux x64",
+                    [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.13.1 linux x64",
                     [get/set] CI: "true",
                     [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-                    [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+                    [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
                     [get/set] PIPX_HOME: "/opt/pipx",
-                    [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/22.13.0/x64/bin/node",
+                    [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/22.13.1/x64/bin/node",
                     [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
                     [get/set] SHLVL: "1",
                     [get/set] npm_package_packageManager: "pnpm@9.12.1",
@@ -12706,7 +12793,7 @@ EventEmitter {
                     [get/set] PIPX_BIN_DIR: "/opt/pipx_bin",
                     [get/set] GITHUB_REPOSITORY_OWNER: "privatenumber",
                     [get/set] npm_package_dependencies_comment_mark: "^1.1.1",
-                    [get/set] GRADLE_HOME: "/usr/share/gradle-8.12",
+                    [get/set] GRADLE_HOME: "/usr/share/gradle-8.12.1",
                     [get/set] ANDROID_NDK_LATEST_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
                     [get/set] JAVA_HOME_21_X64: "/usr/lib/jvm/temurin-21-jdk-amd64",
                     [get/set] STATS_RDCL: "true",
@@ -12715,24 +12802,24 @@ EventEmitter {
                     [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
                     [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
                     [get/set] GITHUB_HEAD_REF: "",
-                    [get/set] SYSTEMD_EXEC_PID: "833",
+                    [get/set] SYSTEMD_EXEC_PID: "832",
                     [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
                     [get/set] NVM_DIR: "/home/runner/.nvm",
                     [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
                     [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
                     [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
                     [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-                    [get/set] ImageVersion: "20250120.5.0",
+                    [get/set] ImageVersion: "20250126.1.0",
                     [get/set] RUNNER_OS: "Linux",
                     [get/set] GITHUB_API_URL: "https://api.github.com",
-                    [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.10/x64",
+                    [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.11/x64",
                     [get/set] SWIFT_PATH: "/usr/share/swift/usr/bin",
                     [get/set] npm_package_devDependencies_lintroll: "^1.10.0",
                     [get/set] RUNNER_USER: "runner",
                     [get/set] STATS_V3PS: "true",
                     [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-                    [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.4/x64",
-                    [get/set] JOURNAL_STREAM: "8:7361",
+                    [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.5/x64",
+                    [get/set] JOURNAL_STREAM: "8:7551",
                     [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
                     [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
                     [get/set] npm_package_private: "true",
@@ -12741,11 +12828,11 @@ EventEmitter {
                     [get/set] npm_config_registry: "https://registry.npmjs.org/",
                     [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
                     [get/set] STATS_D: "false",
-                    [get/set] GITHUB_RUN_ID: "12979644696",
+                    [get/set] GITHUB_RUN_ID: "13103830732",
                     [get/set] STATS_VMFE: "true",
                     [get/set] GITHUB_REF_TYPE: "branch",
                     [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-                    [get/set] GITHUB_WORKFLOW_SHA: "152bdaf5d77e7318b6b7fddbabc9619892480a27",
+                    [get/set] GITHUB_WORKFLOW_SHA: "b89d2deb7d95f4c7c1528d0a78b516ab15298aa6",
                     [get/set] GITHUB_BASE_REF: "",
                     [get/set] ImageOS: "ubuntu24",
                     [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -12756,12 +12843,12 @@ EventEmitter {
                     [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
                     [get/set] ANT_HOME: "/usr/share/ant",
                     [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-                    [get/set] RUNNER_TRACKING_ID: "github_ced8e576-c018-4e20-9f31-84009745b772",
-                    [get/set] INVOCATION_ID: "1dadac765d8444d19304971f3b493591",
+                    [get/set] RUNNER_TRACKING_ID: "github_6d78bf36-3b4e-4144-8309-00809e35c3b9",
+                    [get/set] INVOCATION_ID: "ece5a1cfb4f54b3797fc8887af9a0d69",
                     [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-                    [get/set] NODE: "/opt/hostedtoolcache/node/22.13.0/x64/bin/node",
+                    [get/set] NODE: "/opt/hostedtoolcache/node/22.13.1/x64/bin/node",
                     [get/set] GITHUB_ACTION: "__run",
-                    [get/set] GITHUB_RUN_NUMBER: "114",
+                    [get/set] GITHUB_RUN_NUMBER: "115",
                     [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
                     [get/set] RUNNER_ARCH: "X64",
                     [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -12796,7 +12883,7 @@ EventEmitter {
                     [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
                     [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
                     [get/set] npm_package_dependencies_execa: "^7.1.1",
-                    [get/set] GITHUB_SHA: "152bdaf5d77e7318b6b7fddbabc9619892480a27",
+                    [get/set] GITHUB_SHA: "b89d2deb7d95f4c7c1528d0a78b516ab15298aa6",
                     [get/set] GITHUB_RUN_ATTEMPT: "1",
                     [get/set] STATS_D_TC: "true",
                     [get/set] GITHUB_REF: "refs/heads/master",
@@ -12804,7 +12891,7 @@ EventEmitter {
                     [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
                     [get/set] npm_package_license: "MIT",
                     [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-                    [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+                    [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
                     [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
                     [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
                     [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -12818,7 +12905,7 @@ EventEmitter {
                     [get/set] GITHUB_SERVER_URL: "https://github.com",
                     [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
                     [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-                    [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+                    [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
                     [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
                     [get/set] STATS_EXT: "true",
                     [get/set] npm_command: "run-script",
@@ -12832,7 +12919,7 @@ EventEmitter {
                     [get/set] STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
                     [get/set] npm_package_lint_staged____ts_js_: "lintroll --cache",
                     [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-                    [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_c4aa36da-7a69-4beb-b139-b2f7c4e39437",
+                    [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_4dcd4728-a0c9-472b-ad27-c4c06d09e64b",
                     [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
                 },
                 Symbol(throws): true
@@ -12939,7 +13026,7 @@ EventEmitter {
             allocUnsafe: ƒ allocUnsafe(length: 1) {},
             argv: [
                 "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1737936957863-1/repl.mjs"
+                "/tmp/fs-fixture-1738541765934-1/repl.mjs"
             ],
             build: ƒ build(length: 1) {},
             concatArrayBuffers: ƒ concatArrayBuffers(length: 3) {},
@@ -13005,12 +13092,10 @@ EventEmitter {
             isMainThread: true,
             listen: ƒ listen(length: 1) {},
             udpSocket: ƒ udpSocket(length: 1) {},
-            main: "/tmp/fs-fixture-1737936957863-1/repl.mjs",
+            main: "/tmp/fs-fixture-1738541765934-1/repl.mjs",
             mmap: ƒ mmap(length: 1) {},
             nanoseconds: ƒ nanoseconds(length: 0) {},
             openInEditor: ƒ openInEditor(length: 1) {},
-            origin: "",
-            version_with_sha: "v1.2.1-canary.42 (7410da9c)",
             password: {
                 hash: ƒ hash(length: 2) {},
                 hashSync: ƒ hashSync(length: 2) {},
@@ -13034,7 +13119,7 @@ EventEmitter {
             readableStreamToText: ƒ (length: 1) {},
             resolve: ƒ resolve(length: 1) {},
             resolveSync: ƒ resolveSync(length: 1) {},
-            revision: "7410da9c717adc6cc117c855e78cd04c1c087144",
+            revision: "cc68f4f025b00856bd01926b783eaa9044385c7c",
             semver: {
                 satisfies: ƒ satisfies(length: 2) {},
                 order: ƒ order(length: 2) {}
@@ -13071,7 +13156,7 @@ EventEmitter {
                 arrayBufferToString: ƒ arrayBufferToString(length: 1) {},
                 mimallocDump: ƒ mimallocDump(length: 1) {}
             },
-            version: "1.2.1",
+            version: "1.2.2",
             which: ƒ which(length: 1) {},
             write: ƒ write(length: 1) {}
         },
@@ -13080,13 +13165,13 @@ EventEmitter {
             subtle: SubtleCrypto {}
         },
         navigator: {
-            userAgent: "Bun/1.2.1",
+            userAgent: "Bun/1.2.2",
             platform: "Linux x86_64",
             hardwareConcurrency: 4
         },
         performance: Performance {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1737936959184.6365
+            timeOrigin: 1738541767087.969
         },
         process: EventEmitter {
             abort: ƒ abort(length: 1) {},
@@ -13094,7 +13179,7 @@ EventEmitter {
             arch: "x64",
             argv: [
                 "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1737936957863-1/repl.mjs"
+                "/tmp/fs-fixture-1738541765934-1/repl.mjs"
             ],
             argv0: "bun",
             assert: ƒ assert(length: 1) {},
@@ -13149,13 +13234,13 @@ EventEmitter {
             nextTick: ƒ nextTick(length: 2) {},
             [get/set] noDeprecation: false,
             openStdin: ƒ openStdin(length: 0) {},
-            pid: 2993,
+            pid: 3028,
             platform: "linux",
-            ppid: 2002,
+            ppid: 2038,
             reallyExit: ƒ reallyExit(length: 1) {},
             release: {
                 name: "node",
-                sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.2.1/bun-linux-x64-baseline.zip",
+                sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.2.2/bun-linux-x64-baseline.zip",
                 headersUrl: "https://nodejs.org/download/release/v22.6.0/node-v22.6.0-headers.tar.gz"
             },
             report: {
@@ -13169,7 +13254,7 @@ EventEmitter {
                 excludeEnv: "SIGUSR2",
                 writeReport: ƒ writeReport(length: 1) {}
             },
-            revision: "7410da9c717adc6cc117c855e78cd04c1c087144",
+            revision: "cc68f4f025b00856bd01926b783eaa9044385c7c",
             setSourceMapsEnabled: ƒ setSourceMapsEnabled(length: 1) {},
             setUncaughtExceptionCaptureCallback: ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
             send: undefined,
@@ -13247,6 +13332,8 @@ EventEmitter {
                     ftruncateSync: ƒ ftruncateSync(length: 1) {},
                     futimes: ƒ futimes(length: 4) {},
                     futimesSync: ƒ futimesSync(length: 3) {},
+                    glob: ƒ glob(length: 3) {},
+                    globSync: ƒ globSync(length: 2) {},
                     lchown: ƒ lchown(length: 4) {},
                     lchownSync: ƒ lchownSync(length: 3) {},
                     lchmod: undefined,
@@ -13308,14 +13395,14 @@ EventEmitter {
                     writevSync: ƒ writevSync(length: 3) {},
                     _toUnixTimestamp: ƒ _toUnixTimestamp(length: 1) {},
                     openAsBlob: ƒ openAsBlob(length: 2) {},
-                    Dirent: ƒ Dirent(length: 0) {},
+                    Dirent: ƒ Dirent(length: 3) {},
                     opendir: ƒ opendir(length: 3) {},
                     opendirSync: ƒ opendirSync(length: 2) {},
                     F_OK: 0,
                     R_OK: 4,
                     W_OK: 2,
                     X_OK: 1,
-                    constants: <ref *348> [Object: null prototype] {
+                    constants: <ref *350> [Object: null prototype] {
                         UV_FS_SYMLINK_DIR: 1,
                         UV_FS_SYMLINK_JUNCTION: 2,
                         O_RDONLY: 0,
@@ -13397,6 +13484,7 @@ EventEmitter {
                         fdatasync: async ƒ fdatasync(length: 2) {},
                         ftruncate: async ƒ ftruncate(length: 1) {},
                         futimes: async ƒ futimes(length: 4) {},
+                        glob: async ƒ glob(length: 2) {},
                         lchmod: async ƒ lchmod(length: 3) {},
                         lchown: async ƒ lchown(length: 4) {},
                         link: async ƒ link(length: 3) {},
@@ -13423,7 +13511,7 @@ EventEmitter {
                         rmdir: async ƒ rmdir(length: 3) {},
                         writev: async ƒ writev(length: 3) {},
                         readv: async ƒ readv(length: 3) {},
-                        constants: [Circular: *348],
+                        constants: [Circular: *350],
                         watch: ƒ watch(length: 1) {},
                         opendir: async ƒ opendir(length: 2) {}
                     }
@@ -13468,8 +13556,8 @@ EventEmitter {
                 },
                 _maxListeners: undefined,
                 _eventsCount: NaN,
-                on: <ref *412> ƒ (length: 2) {},
-                addListener: [Circular: *412],
+                on: <ref *415> ƒ (length: 2) {},
+                addListener: [Circular: *415],
                 ref: ƒ (length: 0) {},
                 unref: ƒ (length: 0) {},
                 pause: ƒ (length: 0) {},
@@ -13529,21 +13617,21 @@ EventEmitter {
             version: "v22.6.0",
             versions: {
                 node: "22.6.0",
-                bun: "1.2.1",
+                bun: "1.2.2",
                 boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
                 openssl: "1.1.0",
                 libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
                 mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
                 picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-                uwebsockets: "7410da9c717adc6cc117c855e78cd04c1c087144",
-                webkit: "9e3b60e4a6438d20ee6f8aa5bec6b71d2b7d213f",
-                zig: "0.13.0",
+                uwebsockets: "cc68f4f025b00856bd01926b783eaa9044385c7c",
+                webkit: "e32c6356625cfacebff0c61d182f759abf6f508a",
+                zig: "0.14.0-dev.2987+183bb8b08",
                 zlib: "886098f3f339617b4243b286f5ed364b9989e245",
                 tinycc: "ab631362d839333660a265d3084d8ff060b96753",
                 lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
                 ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
                 libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-                usockets: "7410da9c717adc6cc117c855e78cd04c1c087144",
+                usockets: "cc68f4f025b00856bd01926b783eaa9044385c7c",
                 lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
                 zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
                 v8: "12.4.254.14-node.12",
@@ -13592,13 +13680,13 @@ EventEmitter {
             isEncoding: ƒ isEncoding(length: 1) {},
             poolSize: 8192
         },
-        BuildError: <ref *464> ƒ BuildMessage(length: 0) {},
-        BuildMessage: [Circular: *464],
+        BuildError: <ref *467> ƒ BuildMessage(length: 0) {},
+        BuildMessage: [Circular: *467],
         Crypto: ƒ Crypto(length: 0) {},
         HTMLRewriter: ƒ HTMLRewriter(length: 0) {},
         Request: ƒ Request(length: 0) {},
-        ResolveError: <ref *468> ƒ ResolveMessage(length: 0) {},
-        ResolveMessage: [Circular: *468],
+        ResolveError: <ref *471> ƒ ResolveMessage(length: 0) {},
+        ResolveMessage: [Circular: *471],
         Response: ƒ Response(length: 0) {
             error: ƒ error(length: 0) {},
             json: ƒ json(length: 0) {},
@@ -13710,7 +13798,7 @@ EventEmitter {
     crlfDelay: 100,
     cursor: 0,
     default: {
-        lines: <ref *529> [],
+        lines: <ref *532> [],
         context: [Circular: *4],
         historyIndex: -1,
         cursor: 0,
@@ -13718,12 +13806,12 @@ EventEmitter {
         removeHistoryDuplicates: false,
         crlfDelay: 100,
         completer: [Circular: *3],
-        history: <ref *530> [],
+        history: <ref *533> [],
         _initialPrompt: "> ",
         terminal: true,
         input: [Error accessing: node:repl is not yet implemented in Bun.],
         line: "",
-        eval: <ref *532> ƒ eval(length: 0) {},
+        eval: <ref *535> ƒ eval(length: 0) {},
         isCompletionEnabled: true,
         escapeCodeTimeout: 500,
         tabSize: 8,
@@ -13739,16 +13827,16 @@ EventEmitter {
         builtinModules: [Circular: *2]
     },
     escapeCodeTimeout: 500,
-    eval: [Circular: *532],
-    history: [Circular: *530],
+    eval: [Circular: *535],
+    history: [Circular: *533],
     historyIndex: -1,
     historySize: 1000,
-    input: [Circular: *531],
+    input: [Circular: *534],
     isCompletionEnabled: true,
     last: undefined,
     line: "",
-    lines: [Circular: *529],
-    output: [Circular: *533],
+    lines: [Circular: *532],
+    output: [Circular: *536],
     removeHistoryDuplicates: false,
     tabSize: 8,
     terminal: true,
@@ -14537,7 +14625,7 @@ EventEmitter {
     transferableAbortSignal: [Circular: *90],
     types: [Circular: *92]
 }
-(node:3115) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:3152) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -16657,7 +16745,7 @@ EventEmitter {
         WASI: [Circular: *2]
     }
 }
-(node:3317) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3358) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
