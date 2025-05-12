@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->May 5, 2025 with Bun 1.2.13 Node.js v22.15.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->May 12, 2025 with Bun 1.2.14 Node.js v22.15.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -468,6 +468,7 @@ _Last updated on <!-- lastUpdated:start -->May 5, 2025 with Bun 1.2.13 Node.js v
             _removedConnection: false,
             usesChunkedEncodingByDefault: true,
             _closed: false,
+            [get/set] _headerNames: [Object: null prototype] {},
             appendHeader: ƒ appendHeader(length: 2) {},
             _implicitHeader: ƒ _implicitHeader(length: 0) {},
             flushHeaders: ƒ flushHeaders(length: 0) {},
@@ -483,7 +484,7 @@ _Last updated on <!-- lastUpdated:start -->May 5, 2025 with Bun 1.2.13 Node.js v
             [get/set] headers: [Object: null prototype] {},
             addTrailers: ƒ addTrailers(length: 1) {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] connection: <ref *22> Socket {
+            [get/set] connection: <ref *23> Socket {
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -526,7 +527,7 @@ _Last updated on <!-- lastUpdated:start -->May 5, 2025 with Bun 1.2.13 Node.js v
                 Symbol(kCapture): false,
                 Symbol(::bunternal::): undefined
             },
-            [get/set] socket: [Circular: *22],
+            [get/set] socket: [Circular: *23],
             [get/set] chunkedEncoding: false,
             [get/set] writableObjectMode: false,
             [get/set] writableLength: 0,
@@ -537,6 +538,9 @@ _Last updated on <!-- lastUpdated:start -->May 5, 2025 with Bun 1.2.13 Node.js v
             _send: ƒ _send(length: 4) {},
             _writeRaw: ƒ _writeRaw(length: 4) {},
             end: ƒ end(length: 3) {},
+            [get/set] writableCorked: 0,
+            cork: ƒ cork(length: 0) {},
+            uncork: ƒ uncork(length: 0) {},
             destroy: ƒ destroy(length: 1) {}
         }
     },
@@ -547,6 +551,19 @@ _Last updated on <!-- lastUpdated:start -->May 5, 2025 with Bun 1.2.13 Node.js v
         OutgoingMessagePrototype: [Circular: *4]
     }
 }
+DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
+ code: "DEP0066"
+
+      at <anonymous> (node:util:16:30)
+      at deprecated (node:util:27:29)
+      at <anonymous> (/tmp/fs-fixture-1747009136499-1/inspect.mjs:97:29)
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1747009136499-1/inspect.mjs:81:43)
+      at <anonymous> (/tmp/fs-fixture-1747009136499-1/inspect.mjs:101:8)
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1747009136499-1/inspect.mjs:81:43)
+      at <anonymous> (/tmp/fs-fixture-1747009136499-1/inspect.mjs:101:8)
+
 ```
 
 </td></tr></table>
@@ -665,13 +682,14 @@ _Last updated on <!-- lastUpdated:start -->May 5, 2025 with Bun 1.2.13 Node.js v
             Symbol(IncomingMessage): undefined,
             Symbol(ServerResponse): undefined,
             Symbol(http.server.connectionsCheckingInterval): undefined,
+            Symbol(nodejs.rejection): ƒ [nodejs.rejection](length: 2) {},
             Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
             Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
         }
     },
-    ServerResponse: <ref *14> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *15> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *14],
+            constructor: [Circular: *15],
             _removedConnection: false,
             _removedContLen: false,
             _hasBody: true,
@@ -690,11 +708,11 @@ _Last updated on <!-- lastUpdated:start -->May 5, 2025 with Bun 1.2.13 Node.js v
             _implicitHeader: ƒ _implicitHeader(length: 0) {},
             [get/set] writableNeedDrain: true,
             [get/set] writableFinished: false,
-            [get/set] writableLength: 16384,
+            [get/set] writableLength: 0,
             [get/set] writableHighWaterMark: 65536,
             [get/set] closed: false,
             _send: ƒ _send(length: 4) {},
-            writeHead: <ref *27> ƒ writeHead(length: 3) {},
+            writeHead: <ref *28> ƒ writeHead(length: 3) {},
             assignSocket: ƒ assignSocket(length: 1) {},
             statusMessage: undefined,
             statusCode: 200,
@@ -704,13 +722,13 @@ _Last updated on <!-- lastUpdated:start -->May 5, 2025 with Bun 1.2.13 Node.js v
             destroy: ƒ destroy(length: 1) {},
             emit: ƒ emit(length: 1) {},
             flushHeaders: ƒ flushHeaders(length: 0) {},
-            writeHeader: [Circular: *27],
+            writeHeader: [Circular: *28],
             Symbol(kRejectNonStandardBodyWrites): undefined
         }
     },
     default: {
         Server: [Circular: *2],
-        ServerResponse: [Circular: *14],
+        ServerResponse: [Circular: *15],
         kConnectionsCheckingInterval: Symbol(http.server.connectionsCheckingInterval)
     },
     kConnectionsCheckingInterval: Symbol(http.server.connectionsCheckingInterval)
@@ -866,7 +884,7 @@ _Last updated on <!-- lastUpdated:start -->May 5, 2025 with Bun 1.2.13 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2201) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2358) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -4797,7 +4815,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         createReadStream: [Circular: *23],
         createWriteStream: [Circular: *24],
         exists: <ref *26> ƒ exists(length: 2) {
-            Symbol(nodejs.util.promisify.custom): ƒ (length: 1) {}
+            Symbol(nodejs.util.promisify.custom): ƒ exists(length: 1) {}
         },
         existsSync: <ref *28> ƒ existsSync(length: 0) {},
         fchown: <ref *29> ƒ fchown(length: 4) {},
@@ -5646,6 +5664,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             _removedConnection: false,
             usesChunkedEncodingByDefault: true,
             _closed: false,
+            [get/set] _headerNames: [Object: null prototype] {},
             appendHeader: ƒ appendHeader(length: 2) {},
             _implicitHeader: ƒ _implicitHeader(length: 0) {},
             flushHeaders: ƒ flushHeaders(length: 0) {},
@@ -5661,7 +5680,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] headers: [Circular: *22],
             addTrailers: ƒ addTrailers(length: 1) {},
             setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] connection: <ref *44> Socket {
+            [get/set] connection: <ref *45> Socket {
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -5704,7 +5723,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 Symbol(kCapture): false,
                 Symbol(::bunternal::): undefined
             },
-            [get/set] socket: [Circular: *44],
+            [get/set] socket: [Circular: *45],
             [get/set] chunkedEncoding: false,
             [get/set] writableObjectMode: false,
             [get/set] writableLength: 0,
@@ -5715,10 +5734,13 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             _send: ƒ _send(length: 4) {},
             _writeRaw: ƒ _writeRaw(length: 4) {},
             end: ƒ end(length: 3) {},
+            [get/set] writableCorked: 0,
+            cork: ƒ cork(length: 0) {},
+            uncork: ƒ uncork(length: 0) {},
             destroy: ƒ destroy(length: 1) {}
         }
     },
-    STATUS_CODES: <ref *56> {
+    STATUS_CODES: <ref *59> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -5783,9 +5805,9 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *57> ƒ Server(length: 2) {
+    Server: <ref *60> ƒ Server(length: 2) {
         prototype: Server {
-            constructor: [Circular: *57],
+            constructor: [Circular: *60],
             ref: ƒ ref(length: 0) {},
             unref: ƒ unref(length: 0) {},
             closeAllConnections: ƒ closeAllConnections(length: 0) {},
@@ -5797,13 +5819,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             Symbol(IncomingMessage): undefined,
             Symbol(ServerResponse): undefined,
             Symbol(http.server.connectionsCheckingInterval): undefined,
+            Symbol(nodejs.rejection): ƒ [nodejs.rejection](length: 2) {},
             Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
             Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
         }
     },
-    ServerResponse: <ref *69> ƒ ServerResponse(length: 2) {
+    ServerResponse: <ref *73> ƒ ServerResponse(length: 2) {
         prototype: ServerResponse {
-            constructor: [Circular: *69],
+            constructor: [Circular: *73],
             _removedConnection: false,
             _removedContLen: false,
             _hasBody: true,
@@ -5822,11 +5845,11 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             _implicitHeader: ƒ _implicitHeader(length: 0) {},
             [get/set] writableNeedDrain: true,
             [get/set] writableFinished: false,
-            [get/set] writableLength: 16384,
+            [get/set] writableLength: 0,
             [get/set] writableHighWaterMark: 65536,
             [get/set] closed: false,
             _send: ƒ _send(length: 4) {},
-            writeHead: <ref *82> ƒ writeHead(length: 3) {},
+            writeHead: <ref *86> ƒ writeHead(length: 3) {},
             assignSocket: ƒ assignSocket(length: 1) {},
             statusMessage: undefined,
             statusCode: 200,
@@ -5836,32 +5859,32 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             destroy: ƒ destroy(length: 1) {},
             emit: ƒ emit(length: 1) {},
             flushHeaders: ƒ flushHeaders(length: 0) {},
-            writeHeader: [Circular: *82],
+            writeHeader: [Circular: *86],
             Symbol(kRejectNonStandardBodyWrites): undefined
         }
     },
-    WebSocket: <ref *87> ƒ WebSocket(length: 1) {
+    WebSocket: <ref *91> ƒ WebSocket(length: 1) {
         CONNECTING: 0,
         OPEN: 1,
         CLOSING: 2,
         CLOSED: 3
     },
-    createServer: <ref *88> ƒ createServer(length: 2) {},
+    createServer: <ref *92> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *57],
+        Server: [Circular: *60],
         METHODS: [Circular: *24],
-        STATUS_CODES: [Circular: *56],
-        createServer: [Circular: *88],
-        ServerResponse: [Circular: *69],
+        STATUS_CODES: [Circular: *59],
+        createServer: [Circular: *92],
+        ServerResponse: [Circular: *73],
         IncomingMessage: [Circular: *6],
-        request: <ref *90> ƒ request(length: 3) {},
-        get: <ref *91> ƒ get(length: 3) {},
+        request: <ref *94> ƒ request(length: 3) {},
+        get: <ref *95> ƒ get(length: 3) {},
         [get/set] maxHeaderSize: 16384,
-        validateHeaderName: <ref *92> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *93> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *94> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *95> Agent {
+        validateHeaderName: <ref *96> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *97> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *98> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        globalAgent: <ref *99> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -5885,18 +5908,31 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         },
         ClientRequest: [Circular: *3],
         OutgoingMessage: [Circular: *26],
-        WebSocket: [Circular: *87],
+        WebSocket: [Circular: *91],
         CloseEvent: [Circular: *5],
         MessageEvent: [Circular: *25]
     },
-    get: [Circular: *91],
-    globalAgent: [Circular: *95],
+    get: [Circular: *95],
+    globalAgent: [Circular: *99],
     maxHeaderSize: 16384,
-    request: [Circular: *90],
-    setMaxIdleHTTPParsers: [Circular: *94],
-    validateHeaderName: [Circular: *92],
-    validateHeaderValue: [Circular: *93]
+    request: [Circular: *94],
+    setMaxIdleHTTPParsers: [Circular: *98],
+    validateHeaderName: [Circular: *96],
+    validateHeaderValue: [Circular: *97]
 }
+DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
+ code: "DEP0066"
+
+      at <anonymous> (node:util:16:30)
+      at deprecated (node:util:27:29)
+      at <anonymous> (/tmp/fs-fixture-1747009136499-1/inspect.mjs:97:29)
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1747009136499-1/inspect.mjs:81:43)
+      at <anonymous> (/tmp/fs-fixture-1747009136499-1/inspect.mjs:101:8)
+      at map (1:11)
+      at inspect (/tmp/fs-fixture-1747009136499-1/inspect.mjs:81:43)
+      at <anonymous> (/tmp/fs-fixture-1747009136499-1/inspect.mjs:101:8)
+
 ```
 
 </td></tr></table>
@@ -6530,14 +6566,15 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             Symbol(IncomingMessage): undefined,
             Symbol(ServerResponse): undefined,
             Symbol(http.server.connectionsCheckingInterval): undefined,
+            Symbol(nodejs.rejection): ƒ [nodejs.rejection](length: 2) {},
             Symbol(Symbol.asyncDispose): ƒ [Symbol.asyncDispose](length: 0) {},
             Symbol(kRealListen): ƒ [kRealListen](length: 6) {}
         }
     },
-    createServer: <ref *15> ƒ createServer(length: 2) {},
+    createServer: <ref *16> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        globalAgent: <ref *17> Agent {
+        globalAgent: <ref *18> Agent {
             _events: [Object: null prototype] {},
             _eventsCount: 0,
             _maxListeners: undefined,
@@ -6564,13 +6601,13 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             Symbol(kCapture): false
         },
         Server: [Circular: *3],
-        createServer: [Circular: *15],
-        get: <ref *23> ƒ get(length: 3) {},
-        request: <ref *24> ƒ request(length: 0) {}
+        createServer: [Circular: *16],
+        get: <ref *24> ƒ get(length: 3) {},
+        request: <ref *25> ƒ request(length: 0) {}
     },
-    get: [Circular: *23],
-    globalAgent: [Circular: *17],
-    request: [Circular: *24]
+    get: [Circular: *24],
+    globalAgent: [Circular: *18],
+    request: [Circular: *25]
 }
 ```
 
@@ -6918,7 +6955,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1746404335077-1/module.mjs: "/tmp/fs-fixture-1746404335077-1/module.mjs"
+            /tmp/fs-fixture-1747009136499-1/module.mjs: "/tmp/fs-fixture-1747009136499-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -7083,13 +7120,13 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             bun:main: {
                 exports: {}
             },
-            /tmp/fs-fixture-1746404335077-1/module.mjs: {
+            /tmp/fs-fixture-1747009136499-1/module.mjs: {
                 exports: {}
             },
             node:module: {
                 exports: [Circular: *1]
             },
-            /tmp/fs-fixture-1746404335077-1/inspect.mjs: {
+            /tmp/fs-fixture-1747009136499-1/inspect.mjs: {
                 exports: {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -8289,14 +8326,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1746404336114.0981,
+            timeOrigin: 1747009137463.2798,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: null,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1746404336114.0981,
-                nodeStart: 1746404336114.0981,
-                environment: 1746404336114.0981,
-                bootstrapComplete: 1746404336114.0981,
+                v8Start: 1747009137463.2798,
+                nodeStart: 1747009137463.2798,
+                environment: 1747009137463.2798,
+                bootstrapComplete: 1747009137463.2798,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -8635,7 +8672,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     arch: "x64",
     argv: <ref *26> [
         "/opt/hostedtoolcache/node/22.15.0/x64/bin/node",
-        "/tmp/fs-fixture-1746404335077-1/process.mjs"
+        "/tmp/fs-fixture-1747009136499-1/process.mjs"
     ],
     argv0: "node",
     assert: <ref *27> ƒ deprecated(length: 0) {},
@@ -9608,7 +9645,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         setgid: <ref *118> ƒ (length: 1) {},
         setuid: <ref *119> ƒ (length: 1) {},
         env: <ref *120>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_beccafbf-82e6-48e2-8f66-0cc28337c755",
             npm_package_devDependencies__types_node: "^18.15.11",
             STATS_TRP: "true",
             DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -9617,7 +9654,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.15.0 linux x64",
             CI: "true",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_beccafbf-82e6-48e2-8f66-0cc28337c755",
             PIPX_HOME: "/opt/pipx",
             npm_node_execpath: "/opt/hostedtoolcache/node/22.15.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -9639,14 +9676,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "838",
+            SYSTEMD_EXEC_PID: "850",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20250427.1.0",
+            ImageVersion: "20250504.1.0",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
             GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.12/x64",
@@ -9656,7 +9693,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             STATS_V3PS: "true",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
             GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.8/x64",
-            JOURNAL_STREAM: "9:8397",
+            JOURNAL_STREAM: "9:4796",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9665,11 +9702,11 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             STATS_D: "false",
-            GITHUB_RUN_ID: "14826609600",
+            GITHUB_RUN_ID: "14961126872",
             STATS_VMFE: "true",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "5f325d1146d1d3f249e5afc252920696c69d8d04",
+            GITHUB_WORKFLOW_SHA: "405776d628c0752ebfae583dd46c0d3877c39381",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
             npm_package_scripts_start: "tsx index.ts",
@@ -9680,12 +9717,12 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_c331cfa6-f461-4d16-9fae-43f0f8e06cef",
-            INVOCATION_ID: "abc37a8c6c97496f851d998ce5388cc6",
+            RUNNER_TRACKING_ID: "github_6c5ab438-816d-430e-aca7-f32ce66998df",
+            INVOCATION_ID: "430fb31feef342ea8b36224943df2b19",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/22.15.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "128",
+            GITHUB_RUN_NUMBER: "129",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9694,7 +9731,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000001374",
+            RUNNER_NAME: "GitHub Actions 1000001411",
             XDG_CONFIG_HOME: "/home/runner/.config",
             STATS_VMD: "true",
             GITHUB_REF_NAME: "master",
@@ -9720,7 +9757,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             RUNNER_PERFLOG: "/home/runner/perflog",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "5f325d1146d1d3f249e5afc252920696c69d8d04",
+            GITHUB_SHA: "405776d628c0752ebfae583dd46c0d3877c39381",
             GITHUB_RUN_ATTEMPT: "1",
             STATS_D_TC: "true",
             GITHUB_REF: "refs/heads/master",
@@ -9728,7 +9765,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_beccafbf-82e6-48e2-8f66-0cc28337c755",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9742,7 +9779,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_beccafbf-82e6-48e2-8f66-0cc28337c755",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             STATS_EXT: "true",
             npm_command: "run-script",
@@ -9756,14 +9793,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_beccafbf-82e6-48e2-8f66-0cc28337c755",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *26],
         execArgv: <ref *121> [],
-        pid: 2882,
-        ppid: 1998,
+        pid: 3033,
+        ppid: 2162,
         execPath: "/opt/hostedtoolcache/node/22.15.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -9811,9 +9848,9 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     moduleLoadList: [Circular: *52],
     nextTick: [Circular: *82],
     openStdin: [Circular: *72],
-    pid: 2882,
+    pid: 3033,
     platform: "linux",
-    ppid: 1998,
+    ppid: 2162,
     reallyExit: [Circular: *56],
     ref: [Circular: *64],
     release: [Circular: *51],
@@ -9862,7 +9899,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1746404335077-1/process.mjs"
+        "/tmp/fs-fixture-1747009136499-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -9886,6 +9923,18 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     debugPort: 9229,
     default: EventEmitter {
         _exiting: false,
+        _debugEnd: [Circular: *2],
+        _debugProcess: [Circular: *3],
+        _fatalException: [Circular: *4],
+        _getActiveHandles: [Circular: *5],
+        _getActiveRequests: [Circular: *6],
+        _kill: [Circular: *7],
+        _linkedBinding: [Circular: *8],
+        _preload_modules: [Circular: *9],
+        _rawDebug: [Circular: *10],
+        _startProfilerIdleNotifier: [Circular: *11],
+        _stopProfilerIdleNotifier: [Circular: *12],
+        _tickCallback: [Circular: *13],
         abort: [Circular: *14],
         allowedNodeEnvironmentFlags: [Circular: *16],
         arch: "x64",
@@ -9895,8 +9944,8 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         availableMemory: [Circular: *19],
         binding: [Circular: *20],
         browser: false,
-        chdir: [Circular: *21],
         channel: undefined,
+        chdir: [Circular: *21],
         config: [Circular: *22],
         [get/set] connected: false,
         constrainedMemory: [Circular: *25],
@@ -9907,7 +9956,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         dlopen: <ref *29> ƒ dlopen(length: 1) {},
         emitWarning: <ref *30> ƒ emitWarning(length: 1) {},
         env: <ref *31> {
-            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+            [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_beccafbf-82e6-48e2-8f66-0cc28337c755",
             [get/set] npm_package_devDependencies__types_node: "^18.15.11",
             [get/set] STATS_TRP: "true",
             [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -9916,7 +9965,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.15.0 linux x64",
             [get/set] CI: "true",
             [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+            [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_beccafbf-82e6-48e2-8f66-0cc28337c755",
             [get/set] PIPX_HOME: "/opt/pipx",
             [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/22.15.0/x64/bin/node",
             [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -9938,14 +9987,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
             [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             [get/set] GITHUB_HEAD_REF: "",
-            [get/set] SYSTEMD_EXEC_PID: "838",
+            [get/set] SYSTEMD_EXEC_PID: "850",
             [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             [get/set] NVM_DIR: "/home/runner/.nvm",
             [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
             [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
             [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            [get/set] ImageVersion: "20250427.1.0",
+            [get/set] ImageVersion: "20250504.1.0",
             [get/set] RUNNER_OS: "Linux",
             [get/set] GITHUB_API_URL: "https://api.github.com",
             [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.12/x64",
@@ -9955,7 +10004,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] STATS_V3PS: "true",
             [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
             [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.8/x64",
-            [get/set] JOURNAL_STREAM: "9:8397",
+            [get/set] JOURNAL_STREAM: "9:4796",
             [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
             [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             [get/set] npm_package_private: "true",
@@ -9964,11 +10013,11 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] npm_config_registry: "https://registry.npmjs.org/",
             [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             [get/set] STATS_D: "false",
-            [get/set] GITHUB_RUN_ID: "14826609600",
+            [get/set] GITHUB_RUN_ID: "14961126872",
             [get/set] STATS_VMFE: "true",
             [get/set] GITHUB_REF_TYPE: "branch",
             [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            [get/set] GITHUB_WORKFLOW_SHA: "5f325d1146d1d3f249e5afc252920696c69d8d04",
+            [get/set] GITHUB_WORKFLOW_SHA: "405776d628c0752ebfae583dd46c0d3877c39381",
             [get/set] GITHUB_BASE_REF: "",
             [get/set] ImageOS: "ubuntu24",
             [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -9979,12 +10028,12 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             [get/set] ANT_HOME: "/usr/share/ant",
             [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-            [get/set] RUNNER_TRACKING_ID: "github_c331cfa6-f461-4d16-9fae-43f0f8e06cef",
-            [get/set] INVOCATION_ID: "abc37a8c6c97496f851d998ce5388cc6",
+            [get/set] RUNNER_TRACKING_ID: "github_6c5ab438-816d-430e-aca7-f32ce66998df",
+            [get/set] INVOCATION_ID: "430fb31feef342ea8b36224943df2b19",
             [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             [get/set] NODE: "/opt/hostedtoolcache/node/22.15.0/x64/bin/node",
             [get/set] GITHUB_ACTION: "__run",
-            [get/set] GITHUB_RUN_NUMBER: "128",
+            [get/set] GITHUB_RUN_NUMBER: "129",
             [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
             [get/set] RUNNER_ARCH: "X64",
             [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9993,7 +10042,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] LANG: "C.UTF-8",
             [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             [get/set] CONDA: "/usr/share/miniconda",
-            [get/set] RUNNER_NAME: "GitHub Actions 1000001374",
+            [get/set] RUNNER_NAME: "GitHub Actions 1000001411",
             [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
             [get/set] STATS_VMD: "true",
             [get/set] GITHUB_REF_NAME: "master",
@@ -10019,7 +10068,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
             [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             [get/set] npm_package_dependencies_execa: "^7.1.1",
-            [get/set] GITHUB_SHA: "5f325d1146d1d3f249e5afc252920696c69d8d04",
+            [get/set] GITHUB_SHA: "405776d628c0752ebfae583dd46c0d3877c39381",
             [get/set] GITHUB_RUN_ATTEMPT: "1",
             [get/set] STATS_D_TC: "true",
             [get/set] GITHUB_REF: "refs/heads/master",
@@ -10027,7 +10076,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             [get/set] npm_package_license: "MIT",
             [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+            [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_beccafbf-82e6-48e2-8f66-0cc28337c755",
             [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -10041,7 +10090,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] GITHUB_SERVER_URL: "https://github.com",
             [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+            [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_beccafbf-82e6-48e2-8f66-0cc28337c755",
             [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             [get/set] STATS_EXT: "true",
             [get/set] npm_command: "run-script",
@@ -10055,7 +10104,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             [get/set] STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
             [get/set] npm_package_lint_staged____ts_js_: "lintroll --cache",
             [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+            [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_beccafbf-82e6-48e2-8f66-0cc28337c755",
             [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         [get/set] execArgv: <ref *32> [],
@@ -10074,31 +10123,32 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             cached_builtins: true
         },
         getActiveResourcesInfo: <ref *35> ƒ getActiveResourcesInfo(length: 0) {},
-        hasUncaughtExceptionCaptureCallback: <ref *36> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
-        hrtime: <ref *37> ƒ hrtime(length: 0) {
+        getBuiltinModule: <ref *36> ƒ getBuiltinModule(length: 1) {},
+        hasUncaughtExceptionCaptureCallback: <ref *37> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
+        hrtime: <ref *38> ƒ hrtime(length: 0) {
             bigint: ƒ bigint(length: 0) {}
         },
         isBun: true,
-        kill: <ref *39> ƒ kill(length: 2) {},
+        kill: <ref *40> ƒ kill(length: 2) {},
         [get/set] mainModule: undefined,
-        memoryUsage: <ref *40> ƒ memoryUsage(length: 0) {
+        memoryUsage: <ref *41> ƒ memoryUsage(length: 0) {
             rss: ƒ rss(length: 0) {}
         },
-        moduleLoadList: <ref *42> [],
-        nextTick: <ref *43> ƒ nextTick(length: 1) {},
+        moduleLoadList: <ref *43> [],
+        nextTick: <ref *44> ƒ nextTick(length: 1) {},
         [get/set] noDeprecation: false,
-        openStdin: <ref *44> ƒ openStdin(length: 0) {},
-        pid: 2884,
+        openStdin: <ref *45> ƒ openStdin(length: 0) {},
+        pid: 3037,
         platform: "linux",
-        ppid: 1998,
-        reallyExit: <ref *45> ƒ reallyExit(length: 1) {},
-        ref: <ref *46> ƒ ref(length: 1) {},
-        release: <ref *47> {
+        ppid: 2162,
+        reallyExit: <ref *46> ƒ reallyExit(length: 1) {},
+        ref: <ref *47> ƒ ref(length: 1) {},
+        release: <ref *48> {
             name: "node",
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.2.13/bun-linux-x64-baseline.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.2.14/bun-linux-x64-baseline.zip",
             headersUrl: "https://nodejs.org/download/release/v22.6.0/node-v22.6.0-headers.tar.gz"
         },
-        report: <ref *48> {
+        report: <ref *49> {
             compact: false,
             directory: "",
             filename: "",
@@ -10109,19 +10159,20 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             excludeEnv: "SIGUSR2",
             writeReport: ƒ writeReport(length: 1) {}
         },
-        revision: "d69bd36c905f0344263489495258046f18c7040a",
-        setSourceMapsEnabled: <ref *51> ƒ setSourceMapsEnabled(length: 1) {},
-        setUncaughtExceptionCaptureCallback: <ref *52> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
+        resourceUsage: <ref *52> ƒ resourceUsage(length: 0) {},
+        revision: "0a0205be6e181aa1afc702c00a452146e70d1059",
         send: undefined,
-        stderr: <ref *53> WriteStream {
+        setSourceMapsEnabled: <ref *53> ƒ setSourceMapsEnabled(length: 1) {},
+        setUncaughtExceptionCaptureCallback: <ref *54> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
+        stderr: <ref *55> WriteStream {
             fd: 2,
             _writev: undefined,
             flush: false,
             start: undefined,
             pos: undefined,
             bytesWritten: 0,
-            _write: <ref *54> ƒ underscoreWriteFast(length: 3) {},
-            write: <ref *55> ƒ writeFast(length: 3) {},
+            _write: <ref *56> ƒ underscoreWriteFast(length: 3) {},
+            write: <ref *57> ƒ writeFast(length: 3) {},
             _events: {
                 close: undefined,
                 error: undefined,
@@ -10144,10 +10195,10 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             _eventsCount: NaN,
             readable: false,
             _type: "fs",
-            destroySoon: <ref *59> ƒ (length: 2) {},
+            destroySoon: <ref *61> ƒ (length: 2) {},
             _destroy: ƒ (length: 2) {},
             _isStdio: true,
-            Symbol(kFs): <ref *61> {
+            Symbol(kFs): <ref *63> {
                 appendFile: ƒ appendFile(length: 4) {},
                 appendFileSync: ƒ appendFileSync(length: 3) {},
                 access: ƒ access(length: 3) {},
@@ -10165,7 +10216,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 createReadStream: ƒ createReadStream(length: 2) {},
                 createWriteStream: ƒ createWriteStream(length: 2) {},
                 exists: ƒ exists(length: 2) {
-                    Symbol(nodejs.util.promisify.custom): ƒ (length: 1) {}
+                    Symbol(nodejs.util.promisify.custom): ƒ exists(length: 1) {}
                 },
                 existsSync: ƒ existsSync(length: 0) {},
                 fchown: ƒ fchown(length: 4) {},
@@ -10252,7 +10303,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 R_OK: 4,
                 W_OK: 2,
                 X_OK: 1,
-                constants: <ref *157> [Object: null prototype] {
+                constants: <ref *159> [Object: null prototype] {
                     UV_FS_SYMLINK_DIR: 1,
                     UV_FS_SYMLINK_JUNCTION: 2,
                     O_RDONLY: 0,
@@ -10314,10 +10365,10 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 },
                 Dir: class Dir {},
                 Stats: ƒ Stats(length: 0) {},
-                ReadStream: <ref *160> ƒ ReadStream(length: 2) {},
-                WriteStream: <ref *161> ƒ WriteStream(length: 2) {},
-                [get/set] FileReadStream: [Circular: *160],
-                [get/set] FileWriteStream: [Circular: *161],
+                ReadStream: <ref *162> ƒ ReadStream(length: 2) {},
+                WriteStream: <ref *163> ƒ WriteStream(length: 2) {},
+                [get/set] FileReadStream: [Circular: *162],
+                [get/set] FileWriteStream: [Circular: *163],
                 promises: {
                     access: async ƒ access(length: 3) {},
                     appendFile: async ƒ appendFile(length: 1) {},
@@ -10361,7 +10412,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     rmdir: async ƒ rmdir(length: 3) {},
                     writev: async ƒ writev(length: 3) {},
                     readv: async ƒ readv(length: 3) {},
-                    constants: [Circular: *157],
+                    constants: [Circular: *159],
                     watch: ƒ watch(length: 1) {},
                     opendir: async ƒ opendir(length: 2) {}
                 }
@@ -10369,7 +10420,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             Symbol(kWriteStreamFastPath): FileSink {},
             Symbol(kCapture): false
         },
-        stdin: <ref *208> ReadStream {
+        stdin: <ref *210> ReadStream {
             fd: 0,
             start: 0,
             end: Infinity,
@@ -10401,26 +10452,26 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             },
             _maxListeners: undefined,
             _eventsCount: NaN,
-            on: <ref *219> ƒ (length: 2) {},
-            addListener: [Circular: *219],
+            on: <ref *221> ƒ (length: 2) {},
+            addListener: [Circular: *221],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
             resume: ƒ (length: 0) {},
             _read: ƒ triggerRead(length: 1) {},
-            Symbol(kFs): [Circular: *61],
+            Symbol(kFs): [Circular: *63],
             Symbol(kReadStreamFastPath): false,
             Symbol(kCapture): false
         },
-        stdout: <ref *225> WriteStream {
+        stdout: <ref *227> WriteStream {
             fd: 1,
             _writev: undefined,
             flush: false,
             start: undefined,
             pos: undefined,
             bytesWritten: 0,
-            _write: [Circular: *54],
-            write: [Circular: *55],
+            _write: [Circular: *56],
+            write: [Circular: *57],
             _events: {
                 close: undefined,
                 error: undefined,
@@ -10443,36 +10494,36 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             _eventsCount: NaN,
             readable: false,
             _type: "fs",
-            destroySoon: [Circular: *59],
+            destroySoon: [Circular: *61],
             _destroy: ƒ (length: 2) {},
             _isStdio: true,
-            Symbol(kFs): [Circular: *61],
+            Symbol(kFs): [Circular: *63],
             Symbol(kWriteStreamFastPath): FileSink {},
             Symbol(kCapture): false
         },
         [get/set] throwDeprecation: false,
         [get/set] title: "bun",
-        umask: <ref *231> ƒ umask(length: 1) {},
-        unref: <ref *232> ƒ unref(length: 1) {},
-        uptime: <ref *233> ƒ uptime(length: 1) {},
+        umask: <ref *233> ƒ umask(length: 1) {},
+        unref: <ref *234> ƒ unref(length: 1) {},
+        uptime: <ref *235> ƒ uptime(length: 1) {},
         version: "v22.6.0",
-        versions: <ref *234> {
+        versions: <ref *236> {
             node: "22.6.0",
-            bun: "1.2.13",
+            bun: "1.2.14",
             boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
             openssl: "1.1.0",
             libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
             mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "d69bd36c905f0344263489495258046f18c7040a",
-            webkit: "c244f567ab804c2558067d00733013c01725d824",
+            uwebsockets: "0a0205be6e181aa1afc702c00a452146e70d1059",
+            webkit: "017930ebf915121f8f593bef61cbbca82d78132d",
             zig: "0.14.0",
             zlib: "886098f3f339617b4243b286f5ed364b9989e245",
             tinycc: "ab631362d839333660a265d3084d8ff060b96753",
             lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
             ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
             libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-            usockets: "d69bd36c905f0344263489495258046f18c7040a",
+            usockets: "0a0205be6e181aa1afc702c00a452146e70d1059",
             lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
             zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
             v8: "12.4.254.14-node.12",
@@ -10482,29 +10533,16 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             unicode: "15.1",
             modules: "127"
         },
-        _debugEnd: [Circular: *2],
-        _debugProcess: [Circular: *3],
-        _fatalException: [Circular: *4],
-        _getActiveRequests: [Circular: *6],
-        _getActiveHandles: [Circular: *5],
-        _linkedBinding: [Circular: *8],
-        _preload_modules: [Circular: *9],
-        _rawDebug: [Circular: *10],
-        _startProfilerIdleNotifier: [Circular: *11],
-        _stopProfilerIdleNotifier: [Circular: *12],
-        _tickCallback: [Circular: *13],
-        _kill: [Circular: *7],
-        getBuiltinModule: <ref *235> ƒ getBuiltinModule(length: 1) {},
-        getegid: <ref *236> ƒ getegid(length: 0) {},
-        geteuid: <ref *237> ƒ geteuid(length: 0) {},
-        getgid: <ref *238> ƒ getgid(length: 0) {},
-        getgroups: <ref *239> ƒ getgroups(length: 0) {},
-        getuid: <ref *240> ƒ getuid(length: 0) {},
-        setegid: <ref *241> ƒ setegid(length: 1) {},
-        seteuid: <ref *242> ƒ seteuid(length: 1) {},
-        setgid: <ref *243> ƒ setgid(length: 1) {},
-        setgroups: <ref *244> ƒ setgroups(length: 1) {},
-        setuid: <ref *245> ƒ setuid(length: 1) {},
+        getegid: <ref *237> ƒ getegid(length: 0) {},
+        geteuid: <ref *238> ƒ geteuid(length: 0) {},
+        getgid: <ref *239> ƒ getgid(length: 0) {},
+        getgroups: <ref *240> ƒ getgroups(length: 0) {},
+        getuid: <ref *241> ƒ getuid(length: 0) {},
+        setegid: <ref *242> ƒ setegid(length: 1) {},
+        seteuid: <ref *243> ƒ seteuid(length: 1) {},
+        setgid: <ref *244> ƒ setgid(length: 1) {},
+        setgroups: <ref *245> ƒ setgroups(length: 1) {},
+        setuid: <ref *246> ƒ setuid(length: 1) {},
         Symbol(Symbol.toStringTag): "process"
     },
     disconnect: undefined,
@@ -10519,60 +10557,61 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     exitCode: undefined,
     features: [Circular: *34],
     getActiveResourcesInfo: [Circular: *35],
-    getBuiltinModule: [Circular: *235],
+    getBuiltinModule: [Circular: *36],
     getMaxListeners: ƒ getMaxListeners(length: 0) {},
-    getegid: [Circular: *236],
-    geteuid: [Circular: *237],
-    getgid: [Circular: *238],
-    getgroups: [Circular: *239],
-    getuid: [Circular: *240],
-    hasUncaughtExceptionCaptureCallback: [Circular: *36],
-    hrtime: [Circular: *37],
+    getegid: [Circular: *237],
+    geteuid: [Circular: *238],
+    getgid: [Circular: *239],
+    getgroups: [Circular: *240],
+    getuid: [Circular: *241],
+    hasUncaughtExceptionCaptureCallback: [Circular: *37],
+    hrtime: [Circular: *38],
     isBun: true,
-    kill: [Circular: *39],
+    kill: [Circular: *40],
     listenerCount: ƒ listenerCount(length: 1) {},
     listeners: ƒ listeners(length: 1) {},
     mainModule: undefined,
-    memoryUsage: [Circular: *40],
-    moduleLoadList: [Circular: *42],
-    nextTick: [Circular: *43],
+    memoryUsage: [Circular: *41],
+    moduleLoadList: [Circular: *43],
+    nextTick: [Circular: *44],
     noDeprecation: false,
     off: ƒ off(length: 2) {},
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
-    openStdin: [Circular: *44],
-    pid: 2884,
+    openStdin: [Circular: *45],
+    pid: 3037,
     platform: "linux",
-    ppid: 1998,
+    ppid: 2162,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
-    reallyExit: [Circular: *45],
-    ref: [Circular: *46],
-    release: [Circular: *47],
+    reallyExit: [Circular: *46],
+    ref: [Circular: *47],
+    release: [Circular: *48],
     removeAllListeners: ƒ removeAllListeners(length: 1) {},
     removeListener: ƒ removeListener(length: 2) {},
-    report: [Circular: *48],
-    revision: "d69bd36c905f0344263489495258046f18c7040a",
+    report: [Circular: *49],
+    resourceUsage: [Circular: *52],
+    revision: "0a0205be6e181aa1afc702c00a452146e70d1059",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
-    setSourceMapsEnabled: [Circular: *51],
-    setUncaughtExceptionCaptureCallback: [Circular: *52],
-    setegid: [Circular: *241],
-    seteuid: [Circular: *242],
-    setgid: [Circular: *243],
-    setgroups: [Circular: *244],
-    setuid: [Circular: *245],
-    stderr: [Circular: *53],
-    stdin: [Circular: *208],
-    stdout: [Circular: *225],
+    setSourceMapsEnabled: [Circular: *53],
+    setUncaughtExceptionCaptureCallback: [Circular: *54],
+    setegid: [Circular: *242],
+    seteuid: [Circular: *243],
+    setgid: [Circular: *244],
+    setgroups: [Circular: *245],
+    setuid: [Circular: *246],
+    stderr: [Circular: *55],
+    stdin: [Circular: *210],
+    stdout: [Circular: *227],
     throwDeprecation: false,
     title: "bun",
-    umask: [Circular: *231],
-    unref: [Circular: *232],
-    uptime: [Circular: *233],
+    umask: [Circular: *233],
+    unref: [Circular: *234],
+    uptime: [Circular: *235],
     version: "v22.6.0",
-    versions: [Circular: *234]
+    versions: [Circular: *236]
 }
 ```
 
@@ -10605,7 +10644,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     ucs2: [Circular: *4],
     version: "2.1.0"
 }
-(node:2897) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:3048) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -10729,7 +10768,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     Interface: <ref *2> ƒ Interface2(length: 4) {
         prototype: Interface {
             question: ƒ question(length: 3) {
-                Symbol(nodejs.util.promisify.custom): ƒ question2(length: 2) {}
+                Symbol(nodejs.util.promisify.custom): ƒ question(length: 2) {}
             },
             _setRawMode: ƒ [_setRawMode](length: 1) {},
             _onLine: ƒ [_onLine](length: 1) {},
@@ -11033,7 +11072,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 escape: ƒ escape(length: 1) {},
                 Symbol(cwd): undefined,
                 Symbol(env): <ref *33> {
-                    [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+                    [get/set] GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_beccafbf-82e6-48e2-8f66-0cc28337c755",
                     [get/set] npm_package_devDependencies__types_node: "^18.15.11",
                     [get/set] STATS_TRP: "true",
                     [get/set] DEPLOYMENT_BASEPATH: "/opt/runner",
@@ -11042,7 +11081,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     [get/set] npm_config_user_agent: "pnpm/9.12.1 npm/? node/v22.15.0 linux x64",
                     [get/set] CI: "true",
                     [get/set] RUNNER_ENVIRONMENT: "github-hosted",
-                    [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+                    [get/set] GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_beccafbf-82e6-48e2-8f66-0cc28337c755",
                     [get/set] PIPX_HOME: "/opt/pipx",
                     [get/set] npm_node_execpath: "/opt/hostedtoolcache/node/22.15.0/x64/bin/node",
                     [get/set] JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -11064,14 +11103,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     [get/set] POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
                     [get/set] AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
                     [get/set] GITHUB_HEAD_REF: "",
-                    [get/set] SYSTEMD_EXEC_PID: "838",
+                    [get/set] SYSTEMD_EXEC_PID: "850",
                     [get/set] GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
                     [get/set] NVM_DIR: "/home/runner/.nvm",
                     [get/set] npm_package_dependencies_fs_fixture: "^1.2.0",
                     [get/set] DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
                     [get/set] GOROOT_1_21_X64: "/opt/hostedtoolcache/go/1.21.13/x64",
                     [get/set] JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-                    [get/set] ImageVersion: "20250427.1.0",
+                    [get/set] ImageVersion: "20250504.1.0",
                     [get/set] RUNNER_OS: "Linux",
                     [get/set] GITHUB_API_URL: "https://api.github.com",
                     [get/set] GOROOT_1_22_X64: "/opt/hostedtoolcache/go/1.22.12/x64",
@@ -11081,7 +11120,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     [get/set] STATS_V3PS: "true",
                     [get/set] CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
                     [get/set] GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.8/x64",
-                    [get/set] JOURNAL_STREAM: "9:8397",
+                    [get/set] JOURNAL_STREAM: "9:4796",
                     [get/set] GITHUB_WORKFLOW: "Compare Bun and Node.js",
                     [get/set] _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
                     [get/set] npm_package_private: "true",
@@ -11090,11 +11129,11 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     [get/set] npm_config_registry: "https://registry.npmjs.org/",
                     [get/set] ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
                     [get/set] STATS_D: "false",
-                    [get/set] GITHUB_RUN_ID: "14826609600",
+                    [get/set] GITHUB_RUN_ID: "14961126872",
                     [get/set] STATS_VMFE: "true",
                     [get/set] GITHUB_REF_TYPE: "branch",
                     [get/set] BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-                    [get/set] GITHUB_WORKFLOW_SHA: "5f325d1146d1d3f249e5afc252920696c69d8d04",
+                    [get/set] GITHUB_WORKFLOW_SHA: "405776d628c0752ebfae583dd46c0d3877c39381",
                     [get/set] GITHUB_BASE_REF: "",
                     [get/set] ImageOS: "ubuntu24",
                     [get/set] npm_package_scripts_start: "tsx index.ts",
@@ -11105,12 +11144,12 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     [get/set] PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
                     [get/set] ANT_HOME: "/usr/share/ant",
                     [get/set] DOTNET_MULTILEVEL_LOOKUP: "0",
-                    [get/set] RUNNER_TRACKING_ID: "github_c331cfa6-f461-4d16-9fae-43f0f8e06cef",
-                    [get/set] INVOCATION_ID: "abc37a8c6c97496f851d998ce5388cc6",
+                    [get/set] RUNNER_TRACKING_ID: "github_6c5ab438-816d-430e-aca7-f32ce66998df",
+                    [get/set] INVOCATION_ID: "430fb31feef342ea8b36224943df2b19",
                     [get/set] RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
                     [get/set] NODE: "/opt/hostedtoolcache/node/22.15.0/x64/bin/node",
                     [get/set] GITHUB_ACTION: "__run",
-                    [get/set] GITHUB_RUN_NUMBER: "128",
+                    [get/set] GITHUB_RUN_NUMBER: "129",
                     [get/set] GITHUB_TRIGGERING_ACTOR: "privatenumber",
                     [get/set] RUNNER_ARCH: "X64",
                     [get/set] XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11119,7 +11158,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     [get/set] LANG: "C.UTF-8",
                     [get/set] VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
                     [get/set] CONDA: "/usr/share/miniconda",
-                    [get/set] RUNNER_NAME: "GitHub Actions 1000001374",
+                    [get/set] RUNNER_NAME: "GitHub Actions 1000001411",
                     [get/set] XDG_CONFIG_HOME: "/home/runner/.config",
                     [get/set] STATS_VMD: "true",
                     [get/set] GITHUB_REF_NAME: "master",
@@ -11145,7 +11184,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     [get/set] RUNNER_PERFLOG: "/home/runner/perflog",
                     [get/set] npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
                     [get/set] npm_package_dependencies_execa: "^7.1.1",
-                    [get/set] GITHUB_SHA: "5f325d1146d1d3f249e5afc252920696c69d8d04",
+                    [get/set] GITHUB_SHA: "405776d628c0752ebfae583dd46c0d3877c39381",
                     [get/set] GITHUB_RUN_ATTEMPT: "1",
                     [get/set] STATS_D_TC: "true",
                     [get/set] GITHUB_REF: "refs/heads/master",
@@ -11153,7 +11192,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     [get/set] ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
                     [get/set] npm_package_license: "MIT",
                     [get/set] npm_package_devDependencies_tsx: "^3.12.6",
-                    [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+                    [get/set] GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_beccafbf-82e6-48e2-8f66-0cc28337c755",
                     [get/set] JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
                     [get/set] PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
                     [get/set] GITHUB_ACTOR_ID: "1075694",
@@ -11167,7 +11206,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     [get/set] GITHUB_SERVER_URL: "https://github.com",
                     [get/set] GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
                     [get/set] GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-                    [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+                    [get/set] GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_beccafbf-82e6-48e2-8f66-0cc28337c755",
                     [get/set] EDGEWEBDRIVER: "/usr/local/share/edge_driver",
                     [get/set] STATS_EXT: "true",
                     [get/set] npm_command: "run-script",
@@ -11181,7 +11220,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     [get/set] STATS_EXTP: "https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data",
                     [get/set] npm_package_lint_staged____ts_js_: "lintroll --cache",
                     [get/set] ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.2.12479018",
-                    [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_ecf27f8f-ae16-49cd-b87c-456b03dbaf33",
+                    [get/set] GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_beccafbf-82e6-48e2-8f66-0cc28337c755",
                     [get/set] INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
                 },
                 Symbol(throws): true
@@ -11298,7 +11337,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             allocUnsafe: ƒ allocUnsafe(length: 1) {},
             argv: <ref *102> [
                 "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1746404335077-1/repl.mjs"
+                "/tmp/fs-fixture-1747009136499-1/repl.mjs"
             ],
             build: ƒ build(length: 1) {},
             concatArrayBuffers: ƒ concatArrayBuffers(length: 3) {},
@@ -11364,7 +11403,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             isMainThread: true,
             listen: ƒ listen(length: 1) {},
             udpSocket: ƒ udpSocket(length: 1) {},
-            main: "/tmp/fs-fixture-1746404335077-1/repl.mjs",
+            main: "/tmp/fs-fixture-1747009136499-1/repl.mjs",
             mmap: ƒ mmap(length: 1) {},
             nanoseconds: ƒ nanoseconds(length: 0) {},
             openInEditor: ƒ openInEditor(length: 1) {},
@@ -11391,7 +11430,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             readableStreamToText: ƒ (length: 1) {},
             resolve: ƒ resolve(length: 1) {},
             resolveSync: ƒ resolveSync(length: 1) {},
-            revision: "d69bd36c905f0344263489495258046f18c7040a",
+            revision: "0a0205be6e181aa1afc702c00a452146e70d1059",
             semver: {
                 satisfies: ƒ satisfies(length: 2) {},
                 order: ƒ order(length: 2) {}
@@ -11429,7 +11468,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 arrayBufferToString: ƒ arrayBufferToString(length: 1) {},
                 mimallocDump: ƒ mimallocDump(length: 1) {}
             },
-            version: "1.2.13",
+            version: "1.2.14",
             which: ƒ which(length: 1) {},
             RedisClient: ƒ RedisClient(length: 0) {},
             redis: RedisClient {},
@@ -11440,15 +11479,27 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             subtle: SubtleCrypto {}
         },
         navigator: {
-            userAgent: "Bun/1.2.13",
+            userAgent: "Bun/1.2.14",
             platform: "Linux x86_64",
             hardwareConcurrency: 4
         },
         performance: Performance {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1746404336242.4854
+            timeOrigin: 1747009137579.2205
         },
         process: EventEmitter {
+            _debugEnd: ƒ _debugEnd(length: 0) {},
+            _debugProcess: ƒ _debugProcess(length: 0) {},
+            _fatalException: ƒ _fatalException(length: 1) {},
+            _getActiveHandles: ƒ _getActiveHandles(length: 0) {},
+            _getActiveRequests: ƒ _getActiveRequests(length: 0) {},
+            _kill: ƒ _kill(length: 2) {},
+            _linkedBinding: ƒ _linkedBinding(length: 0) {},
+            _preload_modules: [],
+            _rawDebug: ƒ _rawDebug(length: 0) {},
+            _startProfilerIdleNotifier: ƒ _startProfilerIdleNotifier(length: 0) {},
+            _stopProfilerIdleNotifier: ƒ _stopProfilerIdleNotifier(length: 0) {},
+            _tickCallback: ƒ _tickCallback(length: 0) {},
             abort: ƒ abort(length: 1) {},
             allowedNodeEnvironmentFlags: Set {},
             arch: "x64",
@@ -11458,8 +11509,8 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             availableMemory: ƒ availableMemory(length: 0) {},
             binding: ƒ binding(length: 1) {},
             browser: false,
-            chdir: ƒ chdir(length: 1) {},
             channel: undefined,
+            chdir: ƒ chdir(length: 1) {},
             config: {
                 target_defaults: {},
                 variables: {
@@ -11493,6 +11544,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 cached_builtins: true
             },
             getActiveResourcesInfo: ƒ getActiveResourcesInfo(length: 0) {},
+            getBuiltinModule: ƒ getBuiltinModule(length: 1) {},
             hasUncaughtExceptionCaptureCallback: ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
             hrtime: ƒ hrtime(length: 0) {
                 bigint: ƒ bigint(length: 0) {}
@@ -11507,14 +11559,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             nextTick: ƒ nextTick(length: 1) {},
             [get/set] noDeprecation: false,
             openStdin: ƒ openStdin(length: 0) {},
-            pid: 2982,
+            pid: 3139,
             platform: "linux",
-            ppid: 1998,
+            ppid: 2162,
             reallyExit: ƒ reallyExit(length: 1) {},
             ref: ƒ ref(length: 1) {},
             release: {
                 name: "node",
-                sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.2.13/bun-linux-x64-baseline.zip",
+                sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.2.14/bun-linux-x64-baseline.zip",
                 headersUrl: "https://nodejs.org/download/release/v22.6.0/node-v22.6.0-headers.tar.gz"
             },
             report: {
@@ -11528,10 +11580,11 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 excludeEnv: "SIGUSR2",
                 writeReport: ƒ writeReport(length: 1) {}
             },
-            revision: "d69bd36c905f0344263489495258046f18c7040a",
+            resourceUsage: ƒ resourceUsage(length: 0) {},
+            revision: "0a0205be6e181aa1afc702c00a452146e70d1059",
+            send: undefined,
             setSourceMapsEnabled: ƒ setSourceMapsEnabled(length: 1) {},
             setUncaughtExceptionCaptureCallback: ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
-            send: undefined,
             stderr: WriteStream {
                 fd: 2,
                 _writev: undefined,
@@ -11539,8 +11592,8 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 start: undefined,
                 pos: undefined,
                 bytesWritten: 0,
-                _write: <ref *256> ƒ underscoreWriteFast(length: 3) {},
-                write: <ref *257> ƒ writeFast(length: 3) {},
+                _write: <ref *270> ƒ underscoreWriteFast(length: 3) {},
+                write: <ref *271> ƒ writeFast(length: 3) {},
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -11568,10 +11621,10 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 _eventsCount: NaN,
                 readable: false,
                 _type: "fs",
-                destroySoon: <ref *264> ƒ (length: 2) {},
+                destroySoon: <ref *278> ƒ (length: 2) {},
                 _destroy: ƒ (length: 2) {},
                 _isStdio: true,
-                Symbol(kFs): <ref *266> {
+                Symbol(kFs): <ref *280> {
                     appendFile: ƒ appendFile(length: 4) {},
                     appendFileSync: ƒ appendFileSync(length: 3) {},
                     access: ƒ access(length: 3) {},
@@ -11589,7 +11642,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     createReadStream: ƒ createReadStream(length: 2) {},
                     createWriteStream: ƒ createWriteStream(length: 2) {},
                     exists: ƒ exists(length: 2) {
-                        Symbol(nodejs.util.promisify.custom): ƒ (length: 1) {}
+                        Symbol(nodejs.util.promisify.custom): ƒ exists(length: 1) {}
                     },
                     existsSync: ƒ existsSync(length: 0) {},
                     fchown: ƒ fchown(length: 4) {},
@@ -11676,7 +11729,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     R_OK: 4,
                     W_OK: 2,
                     X_OK: 1,
-                    constants: <ref *362> [Object: null prototype] {
+                    constants: <ref *376> [Object: null prototype] {
                         UV_FS_SYMLINK_DIR: 1,
                         UV_FS_SYMLINK_JUNCTION: 2,
                         O_RDONLY: 0,
@@ -11738,10 +11791,10 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     },
                     Dir: class Dir {},
                     Stats: ƒ Stats(length: 0) {},
-                    [get/set] ReadStream: <ref *365> ƒ ReadStream(length: 2) {},
-                    WriteStream: <ref *366> ƒ WriteStream(length: 2) {},
-                    [get/set] FileReadStream: [Circular: *365],
-                    [get/set] FileWriteStream: [Circular: *366],
+                    [get/set] ReadStream: <ref *379> ƒ ReadStream(length: 2) {},
+                    WriteStream: <ref *380> ƒ WriteStream(length: 2) {},
+                    [get/set] FileReadStream: [Circular: *379],
+                    [get/set] FileWriteStream: [Circular: *380],
                     promises: {
                         access: async ƒ access(length: 3) {},
                         appendFile: async ƒ appendFile(length: 1) {},
@@ -11785,7 +11838,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                         rmdir: async ƒ rmdir(length: 3) {},
                         writev: async ƒ writev(length: 3) {},
                         readv: async ƒ readv(length: 3) {},
-                        constants: [Circular: *362],
+                        constants: [Circular: *376],
                         watch: ƒ watch(length: 1) {},
                         opendir: async ƒ opendir(length: 2) {}
                     }
@@ -11830,14 +11883,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 },
                 _maxListeners: undefined,
                 _eventsCount: NaN,
-                on: <ref *427> ƒ (length: 2) {},
-                addListener: [Circular: *427],
+                on: <ref *441> ƒ (length: 2) {},
+                addListener: [Circular: *441],
                 ref: ƒ (length: 0) {},
                 unref: ƒ (length: 0) {},
                 pause: ƒ (length: 0) {},
                 resume: ƒ (length: 0) {},
                 _read: ƒ triggerRead(length: 1) {},
-                Symbol(kFs): [Circular: *266],
+                Symbol(kFs): [Circular: *280],
                 Symbol(kReadStreamFastPath): false,
                 Symbol(kCapture): false
             },
@@ -11848,8 +11901,8 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 start: undefined,
                 pos: undefined,
                 bytesWritten: 0,
-                _write: [Circular: *256],
-                write: [Circular: *257],
+                _write: [Circular: *270],
+                write: [Circular: *271],
                 _events: {
                     close: undefined,
                     error: undefined,
@@ -11877,10 +11930,10 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 _eventsCount: NaN,
                 readable: false,
                 _type: "fs",
-                destroySoon: [Circular: *264],
+                destroySoon: [Circular: *278],
                 _destroy: ƒ (length: 2) {},
                 _isStdio: true,
-                Symbol(kFs): [Circular: *266],
+                Symbol(kFs): [Circular: *280],
                 Symbol(kWriteStreamFastPath): FileSink {},
                 Symbol(kCapture): false
             },
@@ -11892,21 +11945,21 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             version: "v22.6.0",
             versions: {
                 node: "22.6.0",
-                bun: "1.2.13",
+                bun: "1.2.14",
                 boringssl: "29a2cd359458c9384694b75456026e4b57e3e567",
                 openssl: "1.1.0",
                 libarchive: "898dc8319355b7e985f68a9819f182aaed61b53a",
                 mimalloc: "4c283af60cdae205df5a872530c77e2a6a307d43",
                 picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-                uwebsockets: "d69bd36c905f0344263489495258046f18c7040a",
-                webkit: "c244f567ab804c2558067d00733013c01725d824",
+                uwebsockets: "0a0205be6e181aa1afc702c00a452146e70d1059",
+                webkit: "017930ebf915121f8f593bef61cbbca82d78132d",
                 zig: "0.14.0",
                 zlib: "886098f3f339617b4243b286f5ed364b9989e245",
                 tinycc: "ab631362d839333660a265d3084d8ff060b96753",
                 lolhtml: "8d4c273ded322193d017042d1f48df2766b0f88b",
                 ares: "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
                 libdeflate: "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
-                usockets: "d69bd36c905f0344263489495258046f18c7040a",
+                usockets: "0a0205be6e181aa1afc702c00a452146e70d1059",
                 lshpack: "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
                 zstd: "794ea1b0afca0f020f4e57b6732332231fb23c70",
                 v8: "12.4.254.14-node.12",
@@ -11916,19 +11969,6 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 unicode: "15.1",
                 modules: "127"
             },
-            _debugEnd: ƒ _debugEnd(length: 0) {},
-            _debugProcess: ƒ _debugProcess(length: 0) {},
-            _fatalException: ƒ _fatalException(length: 1) {},
-            _getActiveRequests: ƒ _getActiveRequests(length: 0) {},
-            _getActiveHandles: ƒ _getActiveHandles(length: 0) {},
-            _linkedBinding: ƒ _linkedBinding(length: 0) {},
-            _preload_modules: [],
-            _rawDebug: ƒ _rawDebug(length: 0) {},
-            _startProfilerIdleNotifier: ƒ _startProfilerIdleNotifier(length: 0) {},
-            _stopProfilerIdleNotifier: ƒ _stopProfilerIdleNotifier(length: 0) {},
-            _tickCallback: ƒ _tickCallback(length: 0) {},
-            _kill: ƒ _kill(length: 2) {},
-            getBuiltinModule: ƒ getBuiltinModule(length: 1) {},
             getegid: ƒ getegid(length: 0) {},
             geteuid: ƒ geteuid(length: 0) {},
             getgid: ƒ getgid(length: 0) {},
@@ -11956,13 +11996,13 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             isEncoding: ƒ isEncoding(length: 1) {},
             poolSize: 8192
         },
-        BuildError: <ref *481> ƒ BuildMessage(length: 0) {},
-        BuildMessage: [Circular: *481],
+        BuildError: <ref *482> ƒ BuildMessage(length: 0) {},
+        BuildMessage: [Circular: *482],
         Crypto: ƒ Crypto(length: 0) {},
         HTMLRewriter: ƒ HTMLRewriter(length: 0) {},
         Request: ƒ Request(length: 0) {},
-        ResolveError: <ref *485> ƒ ResolveMessage(length: 0) {},
-        ResolveMessage: [Circular: *485],
+        ResolveError: <ref *486> ƒ ResolveMessage(length: 0) {},
+        ResolveMessage: [Circular: *486],
         Response: ƒ Response(length: 0) {
             error: ƒ error(length: 0) {},
             json: ƒ json(length: 0) {},
@@ -12067,7 +12107,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     crlfDelay: 100,
     cursor: 0,
     default: {
-        lines: <ref *540> [],
+        lines: <ref *541> [],
         context: [Circular: *4],
         historyIndex: -1,
         cursor: 0,
@@ -12075,12 +12115,12 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         removeHistoryDuplicates: false,
         crlfDelay: 100,
         completer: [Circular: *3],
-        history: <ref *541> [],
+        history: <ref *542> [],
         _initialPrompt: "> ",
         terminal: true,
         input: [Error accessing: node:repl is not yet implemented in Bun.],
         line: "",
-        eval: <ref *543> ƒ eval(length: 0) {},
+        eval: <ref *544> ƒ eval(length: 0) {},
         isCompletionEnabled: true,
         escapeCodeTimeout: 500,
         tabSize: 8,
@@ -12096,16 +12136,16 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         builtinModules: [Circular: *2]
     },
     escapeCodeTimeout: 500,
-    eval: [Circular: *543],
-    history: [Circular: *541],
+    eval: [Circular: *544],
+    history: [Circular: *542],
     historyIndex: -1,
     historySize: 1000,
-    input: [Circular: *542],
+    input: [Circular: *543],
     isCompletionEnabled: true,
     last: undefined,
     line: "",
-    lines: [Circular: *540],
-    output: [Circular: *544],
+    lines: [Circular: *541],
+    output: [Circular: *545],
     removeHistoryDuplicates: false,
     tabSize: 8,
     terminal: true,
@@ -12878,7 +12918,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     transferableAbortSignal: [Circular: *90],
     types: [Circular: *92]
 }
-(node:3098) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:3256) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -13274,9 +13314,9 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         clearInterval: [Circular: *4],
         clearImmediate: [Circular: *3],
         [get/set] promises: <ref *10> {
-            setTimeout: ƒ setTimeoutPromise(length: 0) {},
-            setImmediate: <ref *12> ƒ setImmediatePromise(length: 1) {},
-            setInterval: ƒ setIntervalPromise(length: 0) {},
+            setTimeout: ƒ setTimeout(length: 0) {},
+            setImmediate: <ref *12> ƒ setImmediate(length: 1) {},
+            setInterval: ƒ setInterval(length: 0) {},
             scheduler: {
                 wait: ƒ wait(length: 2) {},
                 yield: [Circular: *12]
@@ -13326,9 +13366,9 @@ DeprecationWarning: The _stream_wrap module is deprecated.
 ```js
 {
     default: {
-        setTimeout: <ref *3> ƒ setTimeoutPromise(length: 0) {},
-        setImmediate: <ref *4> ƒ setImmediatePromise(length: 1) {},
-        setInterval: <ref *5> ƒ setIntervalPromise(length: 0) {},
+        setTimeout: <ref *3> ƒ setTimeout(length: 0) {},
+        setImmediate: <ref *4> ƒ setImmediate(length: 1) {},
+        setInterval: <ref *5> ƒ setInterval(length: 0) {},
         scheduler: <ref *6> {
             wait: ƒ wait(length: 2) {},
             yield: [Circular: *4]
@@ -15015,7 +15055,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         WASI: [Circular: *2]
     }
 }
-(node:3311) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3473) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -15102,8 +15142,8 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         MessageChannel: [Circular: *3],
         BroadcastChannel: [Circular: *2],
         MessagePort: [Circular: *4],
-        getEnvironmentData: <ref *8> ƒ getEnvironmentData(length: 0) {},
-        setEnvironmentData: <ref *9> ƒ setEnvironmentData(length: 1) {},
+        getEnvironmentData: <ref *8> ƒ getEnvironmentData(length: 1) {},
+        setEnvironmentData: <ref *9> ƒ setEnvironmentData(length: 2) {},
         getHeapSnapshot: <ref *10> ƒ getHeapSnapshot(length: 0) {},
         markAsUntransferable: <ref *11> ƒ markAsUntransferable(length: 0) {},
         moveMessagePortToContext: <ref *12> ƒ moveMessagePortToContext(length: 0) {},
