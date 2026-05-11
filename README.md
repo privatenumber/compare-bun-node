@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->May 4, 2026 with Bun 1.3.14 Node.js v24.14.1<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->May 11, 2026 with Bun 1.3.14 Node.js v24.14.1<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -616,13 +616,13 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 
       at <anonymous> (internal:util/deprecate:9:30)
       at deprecated (internal:util/deprecate:20:29)
-      at <anonymous> (/tmp/fs-fixture-1777855138108-1/inspect.mjs:97:29)
+      at <anonymous> (/tmp/fs-fixture-1778460102393-1/inspect.mjs:97:29)
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1777855138108-1/inspect.mjs:81:43)
-      at <anonymous> (/tmp/fs-fixture-1777855138108-1/inspect.mjs:101:8)
+      at inspect (/tmp/fs-fixture-1778460102393-1/inspect.mjs:81:43)
+      at <anonymous> (/tmp/fs-fixture-1778460102393-1/inspect.mjs:101:8)
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1777855138108-1/inspect.mjs:81:43)
-      at <anonymous> (/tmp/fs-fixture-1777855138108-1/inspect.mjs:101:8)
+      at inspect (/tmp/fs-fixture-1778460102393-1/inspect.mjs:81:43)
+      at <anonymous> (/tmp/fs-fixture-1778460102393-1/inspect.mjs:101:8)
 
 ```
 
@@ -888,7 +888,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2641) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2607) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -5838,13 +5838,13 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 
       at <anonymous> (internal:util/deprecate:9:30)
       at deprecated (internal:util/deprecate:20:29)
-      at <anonymous> (/tmp/fs-fixture-1777855138108-1/inspect.mjs:97:29)
+      at <anonymous> (/tmp/fs-fixture-1778460102393-1/inspect.mjs:97:29)
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1777855138108-1/inspect.mjs:81:43)
-      at <anonymous> (/tmp/fs-fixture-1777855138108-1/inspect.mjs:101:8)
+      at inspect (/tmp/fs-fixture-1778460102393-1/inspect.mjs:81:43)
+      at <anonymous> (/tmp/fs-fixture-1778460102393-1/inspect.mjs:101:8)
       at map (1:11)
-      at inspect (/tmp/fs-fixture-1777855138108-1/inspect.mjs:81:43)
-      at <anonymous> (/tmp/fs-fixture-1777855138108-1/inspect.mjs:101:8)
+      at inspect (/tmp/fs-fixture-1778460102393-1/inspect.mjs:81:43)
+      at <anonymous> (/tmp/fs-fixture-1778460102393-1/inspect.mjs:101:8)
 
 ```
 
@@ -6880,7 +6880,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1777855138108-1/module.mjs: "/tmp/fs-fixture-1777855138108-1/module.mjs"
+            /tmp/fs-fixture-1778460102393-1/module.mjs: "/tmp/fs-fixture-1778460102393-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -7046,7 +7046,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 <ref *1> [Object: null prototype] {
     Module: <ref *2> ƒ Module(length: 1) {
         _cache: <ref *3> {
-            /tmp/fs-fixture-1777855138108-1/inspect.mjs: {
+            /tmp/fs-fixture-1778460102393-1/inspect.mjs: {
                 exports: [Object: null prototype] {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -8254,14 +8254,14 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1777855139203.5303,
+            timeOrigin: 1778460103577.2534,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: null,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1777855139203.5303,
-                nodeStart: 1777855139203.5303,
-                environment: 1777855139203.5303,
-                bootstrapComplete: 1777855139203.5303,
+                v8Start: 1778460103577.2534,
+                nodeStart: 1778460103577.2534,
+                environment: 1778460103577.2534,
+                bootstrapComplete: 1778460103577.2534,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -8605,7 +8605,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     arch: "x64",
     argv: <ref *26> [
         "/opt/hostedtoolcache/node/24.14.1/x64/bin/node",
-        "/tmp/fs-fixture-1777855138108-1/process.mjs"
+        "/tmp/fs-fixture-1778460102393-1/process.mjs"
     ],
     argv0: "node",
     availableMemory: <ref *27> ƒ availableMemory(length: 0) {},
@@ -9597,7 +9597,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         setgid: <ref *118> ƒ (length: 1) {},
         setuid: <ref *119> ƒ (length: 1) {},
         env: <ref *120>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_04bfdb8b-275a-4406-9552-fec481070a09",
             npm_package_devDependencies__types_node: "^18.15.11",
             DOTNET_NOLOGO: "1",
             USER: "runner",
@@ -9605,7 +9605,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             CI: "true",
             USE_BAZEL_FALLBACK_VERSION: "silent:",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_04bfdb8b-275a-4406-9552-fec481070a09",
             PIPX_HOME: "/opt/pipx",
             npm_node_execpath: "/opt/hostedtoolcache/node/24.14.1/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -9626,8 +9626,8 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "2104",
-            ACTIONS_ORCHESTRATION_ID: "25d31a3d-1d4e-4750-a4ac-e826ea225357.build.__default",
+            SYSTEMD_EXEC_PID: "2103",
+            ACTIONS_ORCHESTRATION_ID: "0b455711-960e-4978-8c47-241a72231dd9.build.__default",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
             NVM_DIR: "/home/runner/.nvm",
@@ -9643,7 +9643,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             npm_package_devDependencies_lintroll: "^1.10.0",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
             GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.12/x64",
-            JOURNAL_STREAM: "9:11168",
+            JOURNAL_STREAM: "9:14577",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9653,10 +9653,10 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.9/x64",
-            GITHUB_RUN_ID: "25295475323",
+            GITHUB_RUN_ID: "25644379664",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "6f38869818fa5937eca4504efefc19b4fc176aba",
+            GITHUB_WORKFLOW_SHA: "4dd84dd0d8c395287a4015b8cbc8ed5bdb49012f",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
             npm_package_scripts_start: "tsx index.ts",
@@ -9667,12 +9667,12 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_705cfd14-060f-4b0d-a6ae-f68b3f1d5fe2",
-            INVOCATION_ID: "48d44b8d996b445c8f022831693c3ab1",
+            RUNNER_TRACKING_ID: "github_0ecc29cb-2d92-447d-9c17-53cf46dfaedb",
+            INVOCATION_ID: "7ea5fd343d65479696df9765ed00550b",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/24.14.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "180",
+            GITHUB_RUN_NUMBER: "181",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9681,7 +9681,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000013340",
+            RUNNER_NAME: "GitHub Actions 1000013427",
             XDG_CONFIG_HOME: "/home/runner/.config",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -9703,14 +9703,14 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             GITHUB_JOB: "build",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "6f38869818fa5937eca4504efefc19b4fc176aba",
+            GITHUB_SHA: "4dd84dd0d8c395287a4015b8cbc8ed5bdb49012f",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_04bfdb8b-275a-4406-9552-fec481070a09",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9723,7 +9723,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_04bfdb8b-275a-4406-9552-fec481070a09",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
@@ -9736,14 +9736,14 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_04bfdb8b-275a-4406-9552-fec481070a09",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *26],
         execArgv: <ref *121> [],
-        pid: 3181,
-        ppid: 2481,
+        pid: 3099,
+        ppid: 2449,
         execPath: "/opt/hostedtoolcache/node/24.14.1/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -9791,9 +9791,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     moduleLoadList: [Circular: *51],
     nextTick: [Circular: *82],
     openStdin: [Circular: *72],
-    pid: 3181,
+    pid: 3099,
     platform: "linux",
-    ppid: 2481,
+    ppid: 2449,
     reallyExit: [Circular: *55],
     ref: [Circular: *64],
     release: [Circular: *50],
@@ -9844,7 +9844,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1777855138108-1/process.mjs"
+        "/tmp/fs-fixture-1778460102393-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -9919,7 +9919,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         dlopen: <ref *30> ƒ dlopen(length: 1) {},
         emitWarning: <ref *31> ƒ emitWarning(length: 1) {},
         env: <ref *32> {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_04bfdb8b-275a-4406-9552-fec481070a09",
             npm_package_devDependencies__types_node: "^18.15.11",
             DOTNET_NOLOGO: "1",
             USER: "runner",
@@ -9927,7 +9927,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             CI: "true",
             USE_BAZEL_FALLBACK_VERSION: "silent:",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_04bfdb8b-275a-4406-9552-fec481070a09",
             PIPX_HOME: "/opt/pipx",
             npm_node_execpath: "/opt/hostedtoolcache/node/24.14.1/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -9948,8 +9948,8 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "2104",
-            ACTIONS_ORCHESTRATION_ID: "25d31a3d-1d4e-4750-a4ac-e826ea225357.build.__default",
+            SYSTEMD_EXEC_PID: "2103",
+            ACTIONS_ORCHESTRATION_ID: "0b455711-960e-4978-8c47-241a72231dd9.build.__default",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
             NVM_DIR: "/home/runner/.nvm",
@@ -9965,7 +9965,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             npm_package_devDependencies_lintroll: "^1.10.0",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
             GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.12/x64",
-            JOURNAL_STREAM: "9:11168",
+            JOURNAL_STREAM: "9:14577",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9975,10 +9975,10 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.9/x64",
-            GITHUB_RUN_ID: "25295475323",
+            GITHUB_RUN_ID: "25644379664",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "6f38869818fa5937eca4504efefc19b4fc176aba",
+            GITHUB_WORKFLOW_SHA: "4dd84dd0d8c395287a4015b8cbc8ed5bdb49012f",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
             npm_package_scripts_start: "tsx index.ts",
@@ -9989,12 +9989,12 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_705cfd14-060f-4b0d-a6ae-f68b3f1d5fe2",
-            INVOCATION_ID: "48d44b8d996b445c8f022831693c3ab1",
+            RUNNER_TRACKING_ID: "github_0ecc29cb-2d92-447d-9c17-53cf46dfaedb",
+            INVOCATION_ID: "7ea5fd343d65479696df9765ed00550b",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/24.14.1/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "180",
+            GITHUB_RUN_NUMBER: "181",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10003,7 +10003,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000013340",
+            RUNNER_NAME: "GitHub Actions 1000013427",
             XDG_CONFIG_HOME: "/home/runner/.config",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -10025,14 +10025,14 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             GITHUB_JOB: "build",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "6f38869818fa5937eca4504efefc19b4fc176aba",
+            GITHUB_SHA: "4dd84dd0d8c395287a4015b8cbc8ed5bdb49012f",
             GITHUB_RUN_ATTEMPT: "1",
             GITHUB_REF: "refs/heads/master",
             GITHUB_ACTOR: "privatenumber",
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_04bfdb8b-275a-4406-9552-fec481070a09",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -10045,7 +10045,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_04bfdb8b-275a-4406-9552-fec481070a09",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
@@ -10058,7 +10058,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_04bfdb8b-275a-4406-9552-fec481070a09",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         [get/set] execArgv: <ref *33> [],
@@ -10096,9 +10096,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         nextTick: <ref *46> ƒ nextTick(length: 1) {},
         [get/set] noDeprecation: false,
         openStdin: <ref *47> ƒ openStdin(length: 0) {},
-        pid: 3194,
+        pid: 3107,
         platform: "linux",
-        [get/set] ppid: 2481,
+        [get/set] ppid: 2449,
         reallyExit: <ref *48> ƒ reallyExit(length: 1) {},
         ref: <ref *49> ƒ ref(length: 1) {},
         release: <ref *50> {
@@ -10118,7 +10118,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             writeReport: ƒ writeReport(length: 1) {}
         },
         resourceUsage: <ref *54> ƒ resourceUsage(length: 0) {},
-        revision: "797dee4d3a4415edf3aa5d97a76f5eba22a374ae",
+        revision: "03ebdf8ff3abb1c06fc2d6bba3bcd158830e3765",
         send: undefined,
         setSourceMapsEnabled: <ref *55> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *56> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
@@ -10478,15 +10478,15 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             libarchive: "ded82291ab41d5e355831b96b0e1ff49e24d8939",
             mimalloc: "f15aecb94fc8096008bf87b90c53ed682026914a",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "797dee4d3a4415edf3aa5d97a76f5eba22a374ae",
-            webkit: "39862040be27e0b6e1d103aaa5dc6796f21a581f",
+            uwebsockets: "03ebdf8ff3abb1c06fc2d6bba3bcd158830e3765",
+            webkit: "88b2f7a2159c913f7dd0d73c0e88d66138cd67ba",
             zig: "04e7f6ac1e009525bc00934f20199c68f04e0a24",
             zlib: "12731092979c6d07f42da27da673a9f6c7b13586",
             tinycc: "12882eee073cfe5c7621bcfadf679e1372d4537b",
             lolhtml: "77127cd2b8545998756e8d64e36ee2313c4bb312",
             ares: "3ac47ee46edd8ea40370222f91613fc16c434853",
             libdeflate: "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
-            usockets: "797dee4d3a4415edf3aa5d97a76f5eba22a374ae",
+            usockets: "03ebdf8ff3abb1c06fc2d6bba3bcd158830e3765",
             lshpack: "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
             zstd: "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
             v8: "13.6.233.10-node.18",
@@ -10543,9 +10543,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *47],
-    pid: 3194,
+    pid: 3107,
     platform: "linux",
-    ppid: 2481,
+    ppid: 2449,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -10556,7 +10556,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *51],
     resourceUsage: [Circular: *54],
-    revision: "797dee4d3a4415edf3aa5d97a76f5eba22a374ae",
+    revision: "03ebdf8ff3abb1c06fc2d6bba3bcd158830e3765",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *55],
@@ -10608,7 +10608,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     ucs2: [Circular: *4],
     version: "2.1.0"
 }
-(node:3195) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:3119) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -10952,7 +10952,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 escape: ƒ escape(length: 1) {},
                 Symbol(cwd): undefined,
                 Symbol(env): <ref *33> {
-                    GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+                    GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_04bfdb8b-275a-4406-9552-fec481070a09",
                     npm_package_devDependencies__types_node: "^18.15.11",
                     DOTNET_NOLOGO: "1",
                     USER: "runner",
@@ -10960,7 +10960,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     CI: "true",
                     USE_BAZEL_FALLBACK_VERSION: "silent:",
                     RUNNER_ENVIRONMENT: "github-hosted",
-                    GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+                    GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_04bfdb8b-275a-4406-9552-fec481070a09",
                     PIPX_HOME: "/opt/pipx",
                     npm_node_execpath: "/opt/hostedtoolcache/node/24.14.1/x64/bin/node",
                     JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -10981,8 +10981,8 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-ubuntu24",
                     AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
                     GITHUB_HEAD_REF: "",
-                    SYSTEMD_EXEC_PID: "2104",
-                    ACTIONS_ORCHESTRATION_ID: "25d31a3d-1d4e-4750-a4ac-e826ea225357.build.__default",
+                    SYSTEMD_EXEC_PID: "2103",
+                    ACTIONS_ORCHESTRATION_ID: "0b455711-960e-4978-8c47-241a72231dd9.build.__default",
                     GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
                     JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
                     NVM_DIR: "/home/runner/.nvm",
@@ -10998,7 +10998,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     npm_package_devDependencies_lintroll: "^1.10.0",
                     CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
                     GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.12/x64",
-                    JOURNAL_STREAM: "9:11168",
+                    JOURNAL_STREAM: "9:14577",
                     GITHUB_WORKFLOW: "Compare Bun and Node.js",
                     _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
                     npm_package_private: "true",
@@ -11008,10 +11008,10 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     npm_config_registry: "https://registry.npmjs.org/",
                     ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
                     GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.9/x64",
-                    GITHUB_RUN_ID: "25295475323",
+                    GITHUB_RUN_ID: "25644379664",
                     GITHUB_REF_TYPE: "branch",
                     BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-                    GITHUB_WORKFLOW_SHA: "6f38869818fa5937eca4504efefc19b4fc176aba",
+                    GITHUB_WORKFLOW_SHA: "4dd84dd0d8c395287a4015b8cbc8ed5bdb49012f",
                     GITHUB_BASE_REF: "",
                     ImageOS: "ubuntu24",
                     npm_package_scripts_start: "tsx index.ts",
@@ -11022,12 +11022,12 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
                     ANT_HOME: "/usr/share/ant",
                     DOTNET_MULTILEVEL_LOOKUP: "0",
-                    RUNNER_TRACKING_ID: "github_705cfd14-060f-4b0d-a6ae-f68b3f1d5fe2",
-                    INVOCATION_ID: "48d44b8d996b445c8f022831693c3ab1",
+                    RUNNER_TRACKING_ID: "github_0ecc29cb-2d92-447d-9c17-53cf46dfaedb",
+                    INVOCATION_ID: "7ea5fd343d65479696df9765ed00550b",
                     RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
                     NODE: "/opt/hostedtoolcache/node/24.14.1/x64/bin/node",
                     GITHUB_ACTION: "__run",
-                    GITHUB_RUN_NUMBER: "180",
+                    GITHUB_RUN_NUMBER: "181",
                     GITHUB_TRIGGERING_ACTOR: "privatenumber",
                     RUNNER_ARCH: "X64",
                     XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11036,7 +11036,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     LANG: "C.UTF-8",
                     VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
                     CONDA: "/usr/share/miniconda",
-                    RUNNER_NAME: "GitHub Actions 1000013340",
+                    RUNNER_NAME: "GitHub Actions 1000013427",
                     XDG_CONFIG_HOME: "/home/runner/.config",
                     GITHUB_REF_NAME: "master",
                     GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -11058,14 +11058,14 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     GITHUB_JOB: "build",
                     npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
                     npm_package_dependencies_execa: "^7.1.1",
-                    GITHUB_SHA: "6f38869818fa5937eca4504efefc19b4fc176aba",
+                    GITHUB_SHA: "4dd84dd0d8c395287a4015b8cbc8ed5bdb49012f",
                     GITHUB_RUN_ATTEMPT: "1",
                     GITHUB_REF: "refs/heads/master",
                     GITHUB_ACTOR: "privatenumber",
                     ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
                     npm_package_license: "MIT",
                     npm_package_devDependencies_tsx: "^3.12.6",
-                    GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+                    GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_04bfdb8b-275a-4406-9552-fec481070a09",
                     JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
                     PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
                     GITHUB_ACTOR_ID: "1075694",
@@ -11078,7 +11078,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     GITHUB_SERVER_URL: "https://github.com",
                     GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
                     GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-                    GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+                    GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_04bfdb8b-275a-4406-9552-fec481070a09",
                     EDGEWEBDRIVER: "/usr/local/share/edge_driver",
                     npm_command: "run-script",
                     PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
@@ -11091,7 +11091,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
                     npm_package_lint_staged____ts_js_: "lintroll --cache",
                     ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-                    GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_7f05e099-19c4-4484-a78e-fe1c30d307e5",
+                    GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_04bfdb8b-275a-4406-9552-fec481070a09",
                     INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
                 },
                 Symbol(throws): true
@@ -11239,7 +11239,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             allocUnsafe: ƒ allocUnsafe(length: 1) {},
             argv: <ref *124> [
                 "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1777855138108-1/repl.mjs"
+                "/tmp/fs-fixture-1778460102393-1/repl.mjs"
             ],
             build: ƒ build(length: 1) {},
             concatArrayBuffers: ƒ concatArrayBuffers(length: 3) {},
@@ -11310,7 +11310,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             isMainThread: true,
             listen: ƒ listen(length: 1) {},
             udpSocket: ƒ udpSocket(length: 1) {},
-            [get/set] main: "/tmp/fs-fixture-1777855138108-1/repl.mjs",
+            [get/set] main: "/tmp/fs-fixture-1778460102393-1/repl.mjs",
             mmap: ƒ mmap(length: 1) {},
             nanoseconds: ƒ nanoseconds(length: 0) {},
             openInEditor: ƒ openInEditor(length: 1) {},
@@ -11338,7 +11338,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             readableStreamToText: ƒ (length: 1) {},
             resolve: ƒ resolve(length: 1) {},
             resolveSync: ƒ resolveSync(length: 1) {},
-            revision: "797dee4d3a4415edf3aa5d97a76f5eba22a374ae",
+            revision: "03ebdf8ff3abb1c06fc2d6bba3bcd158830e3765",
             semver: {
                 satisfies: ƒ satisfies(length: 2) {},
                 order: ƒ order(length: 2) {}
@@ -11413,7 +11413,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         },
         performance: Performance {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1777855139331.4146
+            timeOrigin: 1778460103726.9966
         },
         process: EventEmitter {
             _debugEnd: ƒ _debugEnd(length: 0) {},
@@ -11509,9 +11509,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             nextTick: ƒ nextTick(length: 1) {},
             [get/set] noDeprecation: false,
             openStdin: ƒ openStdin(length: 0) {},
-            pid: 3258,
+            pid: 3209,
             platform: "linux",
-            [get/set] ppid: 2481,
+            [get/set] ppid: 2449,
             reallyExit: ƒ reallyExit(length: 1) {},
             ref: ƒ ref(length: 1) {},
             release: {
@@ -11531,7 +11531,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 writeReport: ƒ writeReport(length: 1) {}
             },
             resourceUsage: ƒ resourceUsage(length: 0) {},
-            revision: "797dee4d3a4415edf3aa5d97a76f5eba22a374ae",
+            revision: "03ebdf8ff3abb1c06fc2d6bba3bcd158830e3765",
             send: undefined,
             setSourceMapsEnabled: ƒ setSourceMapsEnabled(length: 1) {},
             setUncaughtExceptionCaptureCallback: ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
@@ -11906,15 +11906,15 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 libarchive: "ded82291ab41d5e355831b96b0e1ff49e24d8939",
                 mimalloc: "f15aecb94fc8096008bf87b90c53ed682026914a",
                 picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-                uwebsockets: "797dee4d3a4415edf3aa5d97a76f5eba22a374ae",
-                webkit: "39862040be27e0b6e1d103aaa5dc6796f21a581f",
+                uwebsockets: "03ebdf8ff3abb1c06fc2d6bba3bcd158830e3765",
+                webkit: "88b2f7a2159c913f7dd0d73c0e88d66138cd67ba",
                 zig: "04e7f6ac1e009525bc00934f20199c68f04e0a24",
                 zlib: "12731092979c6d07f42da27da673a9f6c7b13586",
                 tinycc: "12882eee073cfe5c7621bcfadf679e1372d4537b",
                 lolhtml: "77127cd2b8545998756e8d64e36ee2313c4bb312",
                 ares: "3ac47ee46edd8ea40370222f91613fc16c434853",
                 libdeflate: "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
-                usockets: "797dee4d3a4415edf3aa5d97a76f5eba22a374ae",
+                usockets: "03ebdf8ff3abb1c06fc2d6bba3bcd158830e3765",
                 lshpack: "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
                 zstd: "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
                 v8: "13.6.233.10-node.18",
@@ -12813,7 +12813,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     transferableAbortSignal: [Circular: *75],
     types: [Circular: *77]
 }
-(node:3335) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:3316) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -14917,7 +14917,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         WASI: [Circular: *2]
     }
 }
-(node:3517) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3488) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -15656,9 +15656,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 2 | 			import * as all from 'node:sea';
                             ^
 error: Could not resolve: "node:sea". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1777855138108-1/node:sea.mjs:2:25
+    at /tmp/fs-fixture-1778460102393-1/node:sea.mjs:2:25
 
-Bun v1.3.14-canary.1+797dee4d3 (Linux x64)
+Bun v1.3.14-canary.1+03ebdf8ff (Linux x64)
 ```
 
 </td></tr></table>
@@ -15731,7 +15731,7 @@ Bun v1.3.14-canary.1+797dee4d3 (Linux x64)
         backup: [Circular: *5]
     }
 }
-(node:3590) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(node:3566) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -15741,9 +15741,9 @@ Bun v1.3.14-canary.1+797dee4d3 (Linux x64)
 2 | 			import * as all from 'node:sqlite';
                             ^
 error: Could not resolve: "node:sqlite". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1777855138108-1/node:sqlite.mjs:2:25
+    at /tmp/fs-fixture-1778460102393-1/node:sqlite.mjs:2:25
 
-Bun v1.3.14-canary.1+797dee4d3 (Linux x64)
+Bun v1.3.14-canary.1+03ebdf8ff (Linux x64)
 ```
 
 </td></tr></table>
@@ -15947,9 +15947,9 @@ Bun v1.3.14-canary.1+797dee4d3 (Linux x64)
 2 | 			import * as all from 'node:test/reporters';
                             ^
 error: Could not resolve: "node:test/reporters". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1777855138108-1/node:test_reporters.mjs:2:25
+    at /tmp/fs-fixture-1778460102393-1/node:test_reporters.mjs:2:25
 
-Bun v1.3.14-canary.1+797dee4d3 (Linux x64)
+Bun v1.3.14-canary.1+03ebdf8ff (Linux x64)
 ```
 
 </td></tr></table>
