@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jun 15, 2026 with Bun 1.4.0 Node.js v24.16.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jun 22, 2026 with Bun 1.4.0 Node.js v24.16.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -118,9 +118,11 @@ _Last updated on <!-- lastUpdated:start -->Jun 15, 2026 with Bun 1.4.0 Node.js v
             totalSocketCount: 0,
             agentKeepAliveTimeoutBuffer: 1000,
             Symbol(kCapture): false
-        }
+        },
+        shouldUseEnvProxy: <ref *14> ƒ shouldUseEnvProxy(length: 0) {}
     },
-    globalAgent: [Circular: *4]
+    globalAgent: [Circular: *4],
+    shouldUseEnvProxy: [Circular: *14]
 }
 ```
 
@@ -146,28 +148,10 @@ _Last updated on <!-- lastUpdated:start -->Jun 15, 2026 with Bun 1.4.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    ClientRequest: <ref *2> ƒ ClientRequest(length: 3) {
-        prototype: ClientRequest {
-            constructor: [Circular: *2],
-            setTimeout: ƒ setTimeout(length: 2) {},
-            clearTimeout: ƒ clearTimeout(length: 1) {},
-            [get/set] path: undefined,
-            [get/set] port: undefined,
-            [get/set] method: undefined,
-            [get/set] host: undefined,
-            [get/set] protocol: undefined,
-            [get/set] agent: undefined,
-            [get/set] aborted: false,
-            [get/set] writable: true
-        }
-    },
-    abortedSymbol: Symbol(aborted),
+    ClientRequest: <ref *2> ƒ ClientRequest(length: 3) {},
     default: {
-        ClientRequest: [Circular: *2],
-        kBodyChunks: Symbol(bodyChunks),
-        abortedSymbol: Symbol(aborted)
-    },
-    kBodyChunks: Symbol(bodyChunks)
+        ClientRequest: [Circular: *2]
+    }
 }
 ```
 
@@ -361,6 +345,7 @@ _Last updated on <!-- lastUpdated:start -->Jun 15, 2026 with Bun 1.4.0 Node.js v
             list: []
         },
         kIncomingMessage: Symbol(IncomingMessage),
+        kSkipPendingData: Symbol(SkipPendingData),
         HTTPParser: [Circular: *2],
         isLenient: <ref *15> ƒ isLenient(length: 0) {},
         prepareError: <ref *16> ƒ prepareError(length: 3) {}
@@ -368,6 +353,7 @@ _Last updated on <!-- lastUpdated:start -->Jun 15, 2026 with Bun 1.4.0 Node.js v
     freeParser: [Circular: *10],
     isLenient: [Circular: *15],
     kIncomingMessage: Symbol(IncomingMessage),
+    kSkipPendingData: Symbol(SkipPendingData),
     methods: [Circular: *11],
     parsers: [Circular: *12],
     prepareError: [Circular: *16],
@@ -402,76 +388,14 @@ _Last updated on <!-- lastUpdated:start -->Jun 15, 2026 with Bun 1.4.0 Node.js v
 
 ```js
 [Object: null prototype] {
-    IncomingMessage: <ref *2> ƒ IncomingMessage(length: 1) {
-        prototype: <ref *3> IncomingMessage {
-            constructor: [Circular: *2],
-            httpVersion: "1.1",
-            _construct: ƒ _construct(length: 1) {},
-            _dump: ƒ _dump(length: 0) {},
-            _read: ƒ _read(length: 1) {},
-            _finish: ƒ _finish(length: 0) {},
-            _destroy: ƒ IncomingMessage_destroy(length: 2) {},
-            [get/set] aborted: undefined,
-            [get/set] connection: <ref *9> Socket {
-                _events: {
-                    close: undefined,
-                    error: undefined,
-                    prefinish: undefined,
-                    finish: undefined,
-                    drain: undefined,
-                    data: undefined,
-                    end: undefined,
-                    readable: undefined
-                },
-                _readableState: {
-                    highWaterMark: 65536,
-                    buffer: [],
-                    bufferIndex: 0,
-                    length: 0,
-                    pipes: [],
-                    awaitDrainWriters: null,
-                    Symbol(kState): 1052940
-                },
-                _writableState: {
-                    highWaterMark: 65536,
-                    length: 0,
-                    corked: 0,
-                    onwrite: ƒ bound onwrite(length: 1) {},
-                    writelen: 0,
-                    bufferedIndex: 0,
-                    pendingcb: 0,
-                    Symbol(kState): 17580812,
-                    Symbol(kBufferedValue): null
-                },
-                allowHalfOpen: true,
-                _maxListeners: undefined,
-                bytesRead: 0,
-                bytesWritten: 0,
-                connecting: false,
-                timeout: 0,
-                isServer: false,
-                _httpMessage: [Circular: *3],
-                _onTimeout: ƒ _onTimeout(length: 0) {},
-                Symbol(kCapture): false,
-                Symbol(::bunternal::): undefined
-            },
-            [get/set] statusCode: undefined,
-            [get/set] statusMessage: undefined,
-            [get/set] httpVersionMajor: 1,
-            [get/set] httpVersionMinor: 1,
-            [get/set] rawTrailers: [],
-            [get/set] trailers: [Object: null prototype] {},
-            setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] socket: [Circular: *9]
-        }
-    },
+    IncomingMessage: <ref *2> ƒ IncomingMessage(length: 1) {},
     default: {
-        readStop: <ref *21> ƒ readStop(length: 1) {},
-        readStart: <ref *22> ƒ readStart(length: 1) {},
+        readStop: <ref *4> ƒ readStop(length: 1) {},
+        readStart: <ref *5> ƒ readStart(length: 1) {},
         IncomingMessage: [Circular: *2]
     },
-    readStart: [Circular: *22],
-    readStop: [Circular: *21]
+    readStart: [Circular: *5],
+    readStop: [Circular: *4]
 }
 ```
 
@@ -512,118 +436,30 @@ _Last updated on <!-- lastUpdated:start -->Jun 15, 2026 with Bun 1.4.0 Node.js v
 ```js
 [Object: null prototype] {
     FakeSocket: <ref *2> class Socket extends Duplex {},
-    OutgoingMessage: <ref *3> ƒ OutgoingMessage(length: 1) {
-        prototype: <ref *4> OutgoingMessage {
-            constructor: [Circular: *3],
-            _keepAliveTimeout: 0,
-            _defaultKeepAlive: true,
-            shouldKeepAlive: true,
-            _onPendingData: ƒ nop2(length: 0) {},
-            outputSize: 0,
-            outputData: [],
-            strictContentLength: false,
-            _removedTE: false,
-            _removedContLen: false,
-            _removedConnection: false,
-            usesChunkedEncodingByDefault: true,
-            _closed: false,
-            [get/set] _headerNames: [Object: null prototype] {},
-            appendHeader: ƒ appendHeader(length: 2) {},
-            _implicitHeader: ƒ _implicitHeader(length: 0) {},
-            flushHeaders: ƒ flushHeaders(length: 0) {},
-            getHeader: ƒ getHeader(length: 1) {},
-            write: ƒ write(length: 3) {},
-            pipe: ƒ pipe(length: 0) {},
-            getHeaderNames: ƒ getHeaderNames(length: 0) {},
-            getRawHeaderNames: ƒ getRawHeaderNames(length: 0) {},
-            getHeaders: ƒ getHeaders(length: 0) {},
-            removeHeader: ƒ removeHeader(length: 1) {},
-            setHeader: ƒ setHeader(length: 2) {},
-            setHeaders: ƒ setHeaders(length: 1) {},
-            hasHeader: ƒ hasHeader(length: 1) {},
-            [get/set] headers: [Object: null prototype] {},
-            addTrailers: ƒ addTrailers(length: 1) {},
-            setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] connection: <ref *24> Socket {
-                _events: {
-                    close: undefined,
-                    error: undefined,
-                    prefinish: undefined,
-                    finish: undefined,
-                    drain: undefined,
-                    data: undefined,
-                    end: undefined,
-                    readable: undefined
-                },
-                _readableState: {
-                    highWaterMark: 65536,
-                    buffer: [],
-                    bufferIndex: 0,
-                    length: 0,
-                    pipes: [],
-                    awaitDrainWriters: null,
-                    Symbol(kState): 1052940
-                },
-                _writableState: {
-                    highWaterMark: 65536,
-                    length: 0,
-                    corked: 0,
-                    onwrite: ƒ bound onwrite(length: 1) {},
-                    writelen: 0,
-                    bufferedIndex: 0,
-                    pendingcb: 0,
-                    Symbol(kState): 17580812,
-                    Symbol(kBufferedValue): null
-                },
-                allowHalfOpen: true,
-                _maxListeners: undefined,
-                bytesRead: 0,
-                bytesWritten: 0,
-                connecting: false,
-                timeout: 0,
-                isServer: false,
-                _httpMessage: [Circular: *4],
-                _onTimeout: ƒ _onTimeout(length: 0) {},
-                Symbol(kCapture): false,
-                Symbol(::bunternal::): undefined
-            },
-            [get/set] socket: [Circular: *24],
-            [get/set] chunkedEncoding: false,
-            [get/set] writableObjectMode: false,
-            [get/set] writableLength: 0,
-            [get/set] writableHighWaterMark: 16384,
-            [get/set] writableNeedDrain: undefined,
-            [get/set] writableEnded: undefined,
-            [get/set] writableFinished: undefined,
-            _send: ƒ _send(length: 4) {},
-            _writeRaw: ƒ _writeRaw(length: 4) {},
-            end: ƒ end(length: 3) {},
-            [get/set] writableCorked: 0,
-            cork: ƒ cork(length: 0) {},
-            uncork: ƒ uncork(length: 0) {},
-            destroy: ƒ destroy(length: 1) {}
-        }
-    },
-    OutgoingMessagePrototype: [Circular: *4],
+    OutgoingMessage: <ref *3> ƒ OutgoingMessage(length: 1) {},
     default: {
+        kHighWaterMark: Symbol(kHighWaterMark),
+        kUniqueHeaders: Symbol(kUniqueHeaders),
+        kOutHeaders: Symbol(kOutHeaders),
+        kErrored: Symbol(errored),
+        kSocket: Symbol(kSocket),
+        kRejectNonStandardBodyWrites: Symbol(kRejectNonStandardBodyWrites),
+        parseUniqueHeadersOption: <ref *5> ƒ parseUniqueHeadersOption(length: 1) {},
+        validateHeaderName: <ref *6> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *7> ƒ validateHeaderValue(length: 2) {},
         OutgoingMessage: [Circular: *3],
-        FakeSocket: [Circular: *2],
-        OutgoingMessagePrototype: [Circular: *4]
-    }
+        FakeSocket: [Circular: *2]
+    },
+    kErrored: Symbol(errored),
+    kHighWaterMark: Symbol(kHighWaterMark),
+    kOutHeaders: Symbol(kOutHeaders),
+    kRejectNonStandardBodyWrites: Symbol(kRejectNonStandardBodyWrites),
+    kSocket: Symbol(kSocket),
+    kUniqueHeaders: Symbol(kUniqueHeaders),
+    parseUniqueHeadersOption: [Circular: *5],
+    validateHeaderName: [Circular: *6],
+    validateHeaderValue: [Circular: *7]
 }
-DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
- code: "DEP0066"
-
-      at <anonymous> (internal:util/deprecate:9:30)
-      at deprecated (internal:util/deprecate:20:29)
-      at <anonymous> (/tmp/fs-fixture-1781484840269-1/inspect.mjs:97:29)
-      at map (1:11)
-      at inspect (/tmp/fs-fixture-1781484840269-1/inspect.mjs:81:43)
-      at <anonymous> (/tmp/fs-fixture-1781484840269-1/inspect.mjs:101:8)
-      at map (1:11)
-      at inspect (/tmp/fs-fixture-1781484840269-1/inspect.mjs:81:43)
-      at <anonymous> (/tmp/fs-fixture-1781484840269-1/inspect.mjs:101:8)
-
 ```
 
 </td></tr></table>
@@ -767,7 +603,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 [Object: null prototype] {
     default: ƒ Duplex(length: 1) {
         fromWeb: <ref *3> ƒ (length: 2) {},
-        toWeb: <ref *4> ƒ (length: 1) {},
+        toWeb: <ref *4> ƒ (length: 2) {},
         from: <ref *5> ƒ (length: 1) {}
     },
     from: [Circular: *5],
@@ -888,7 +724,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2609) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2587) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -898,7 +734,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 [Object: null prototype] {
     Duplex: <ref *2> ƒ Duplex(length: 1) {
         fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
+        toWeb: ƒ (length: 2) {},
         from: ƒ (length: 1) {}
     },
     PassThrough: <ref *6> ƒ PassThrough(length: 1) {},
@@ -944,6 +780,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         addAbortSignal: <ref *36> ƒ addAbortSignal(length: 2) {},
         finished: <ref *37> ƒ eos(length: 3) {
             finished: <ref *38> ƒ finished(length: 2) {},
+            kEosNodeSynchronousCallback: Symbol(kEosNodeSynchronousCallback),
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *38]
         },
         destroy: <ref *39> ƒ destroyer(length: 2) {},
@@ -1112,15 +949,16 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         createServer: [Circular: *9],
         [get/set] DEFAULT_CIPHERS: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…",
         DEFAULT_ECDH_CURVE: "auto",
-        DEFAULT_MAX_VERSION: "TLSv1.3",
-        DEFAULT_MIN_VERSION: "TLSv1.2",
+        [get/set] DEFAULT_MAX_VERSION: "TLSv1.3",
+        [get/set] DEFAULT_MIN_VERSION: "TLSv1.2",
         getCiphers: <ref *11> ƒ getCiphers(length: 0) {},
-        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
+        setDefaultCACertificates: <ref *12> ƒ setDefaultCACertificates(length: 1) {},
+        parseCertString: <ref *13> ƒ parseCertString(length: 0) {},
         SecureContext: [Circular: *2],
         Server: [Circular: *3],
         TLSSocket: [Circular: *4],
         checkServerIdentity: [Circular: *5],
-        [get/set] rootCertificates: <ref *13> [
+        [get/set] rootCertificates: <ref *14> [
             "-----BEGIN CERTIFICATE-----\nMIIEkTCCA3mgAwIBAgIERWtQVDANBgkqhkiG9w0BAQUFADCBsDELMAkGA1UEBhMCVVMxFjAU…",
             "-----BEGIN CERTIFICATE-----\nMIIFtzCCA5+gAwIBAgICBQkwDQYJKoZIhvcNAQEFBQAwRTELMAkGA1UEBhMCQk0xGTAXBgNV…",
             "-----BEGIN CERTIFICATE-----\nMIIGnTCCBIWgAwIBAgICBcYwDQYJKoZIhvcNAQEFBQAwRTELMAkGA1UEBhMCQk0xGTAXBgNV…",
@@ -1267,12 +1105,13 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             "-----BEGIN CERTIFICATE-----\nMIIFgzCCA2ugAwIBAgIQVaXZZ5Qoxu0M+ifdWwFNGDANBgkqhkiG9w0BAQwFADBLMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIICzzCCAjGgAwIBAgINAOhvGHvWOWuYSkmYCjAKBggqhkjOPQQDBDB1MQswCQYDVQQGEwJI…"
         ],
-        getCACertificates: <ref *14> ƒ getCACertificates(length: 0) {}
+        getCACertificates: <ref *15> ƒ getCACertificates(length: 0) {}
     },
-    getCACertificates: [Circular: *14],
+    getCACertificates: [Circular: *15],
     getCiphers: [Circular: *11],
-    parseCertString: [Circular: *12],
-    rootCertificates: [Circular: *13]
+    parseCertString: [Circular: *13],
+    rootCertificates: [Circular: *14],
+    setDefaultCACertificates: [Circular: *12]
 }
 ```
 
@@ -2832,11 +2671,11 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     SIGWINCH: 28,
     SIGXCPU: 24,
     SIGXFSZ: 25,
-    SSL_OP_ALL: 0,
+    SSL_OP_ALL: 4,
     SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: 0,
     SSL_OP_CIPHER_SERVER_PREFERENCE: 4194304,
     SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: 0,
-    SSL_OP_LEGACY_SERVER_CONNECT: 0,
+    SSL_OP_LEGACY_SERVER_CONNECT: 4,
     SSL_OP_NO_COMPRESSION: 0,
     SSL_OP_NO_QUERY_MTU: 4096,
     SSL_OP_NO_RENEGOTIATION: 0,
@@ -3070,11 +2909,11 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         UV_FS_COPYFILE_FICLONE_FORCE: 4,
         COPYFILE_FICLONE_FORCE: 4,
         OPENSSL_VERSION_NUMBER: 269488255,
-        SSL_OP_ALL: 0,
+        SSL_OP_ALL: 4,
         SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: 0,
         SSL_OP_CIPHER_SERVER_PREFERENCE: 4194304,
         SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: 0,
-        SSL_OP_LEGACY_SERVER_CONNECT: 0,
+        SSL_OP_LEGACY_SERVER_CONNECT: 4,
         SSL_OP_NO_COMPRESSION: 0,
         SSL_OP_NO_QUERY_MTU: 4096,
         SSL_OP_NO_RENEGOTIATION: 0,
@@ -3358,7 +3197,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     checkPrimeSync: <ref *20> ƒ checkPrimeSync(length: 2) {},
     constants: <ref *21> [Object: null prototype] {
         OPENSSL_VERSION_NUMBER: 269488255,
-        SSL_OP_ALL: 0,
+        SSL_OP_ALL: 4,
         SSL_OP_ALLOW_NO_DHE_KEX: 0,
         SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: 0,
         SSL_OP_CIPHER_SERVER_PREFERENCE: 4194304,
@@ -3366,7 +3205,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         SSL_OP_COOKIE_EXCHANGE: 0,
         SSL_OP_CRYPTOPRO_TLSEXT_BUG: 0,
         SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: 0,
-        SSL_OP_LEGACY_SERVER_CONNECT: 0,
+        SSL_OP_LEGACY_SERVER_CONNECT: 4,
         SSL_OP_NO_COMPRESSION: 0,
         SSL_OP_NO_ENCRYPT_THEN_MAC: 0,
         SSL_OP_NO_QUERY_MTU: 4096,
@@ -4797,56 +4636,57 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         mkdirSync: <ref *54> ƒ mkdirSync(length: 2) {},
         mkdtemp: <ref *55> ƒ mkdtemp(length: 3) {},
         mkdtempSync: <ref *56> ƒ mkdtempSync(length: 2) {},
-        open: <ref *57> ƒ open(length: 4) {},
-        openSync: <ref *58> ƒ openSync(length: 3) {},
-        read: <ref *59> ƒ read(length: 6) {},
-        readFile: <ref *60> ƒ readFile(length: 3) {},
-        readFileSync: <ref *61> ƒ readFileSync(length: 2) {},
-        readSync: <ref *62> ƒ readSync(length: 5) {},
-        readdir: <ref *63> ƒ readdir(length: 3) {},
-        readdirSync: <ref *64> ƒ readdirSync(length: 2) {},
-        readlink: <ref *65> ƒ readlink(length: 3) {},
-        readlinkSync: <ref *66> ƒ readlinkSync(length: 2) {},
-        readv: <ref *67> ƒ readv(length: 4) {},
-        readvSync: <ref *68> ƒ readvSync(length: 3) {},
-        realpath: <ref *69> ƒ realpath(length: 3) {
+        mkdtempDisposableSync: <ref *57> ƒ mkdtempDisposableSync2(length: 2) {},
+        open: <ref *58> ƒ open(length: 4) {},
+        openSync: <ref *59> ƒ openSync(length: 3) {},
+        read: <ref *60> ƒ read(length: 6) {},
+        readFile: <ref *61> ƒ readFile(length: 3) {},
+        readFileSync: <ref *62> ƒ readFileSync(length: 2) {},
+        readSync: <ref *63> ƒ readSync(length: 5) {},
+        readdir: <ref *64> ƒ readdir(length: 3) {},
+        readdirSync: <ref *65> ƒ readdirSync(length: 2) {},
+        readlink: <ref *66> ƒ readlink(length: 3) {},
+        readlinkSync: <ref *67> ƒ readlinkSync(length: 2) {},
+        readv: <ref *68> ƒ readv(length: 4) {},
+        readvSync: <ref *69> ƒ readvSync(length: 3) {},
+        realpath: <ref *70> ƒ realpath(length: 3) {
             native: ƒ realpath4(length: 3) {}
         },
-        realpathSync: <ref *71> ƒ realpathSync(length: 2) {
+        realpathSync: <ref *72> ƒ realpathSync(length: 2) {
             native: ƒ bound realpathNativeSync(length: 3) {}
         },
-        rename: <ref *73> ƒ rename(length: 3) {},
-        renameSync: <ref *74> ƒ renameSync(length: 2) {},
-        rm: <ref *75> ƒ rm(length: 3) {},
-        rmSync: <ref *76> ƒ rmSync(length: 2) {},
-        rmdir: <ref *77> ƒ rmdir(length: 3) {},
-        rmdirSync: <ref *78> ƒ rmdirSync(length: 2) {},
-        stat: <ref *79> ƒ stat(length: 3) {},
-        statfs: <ref *80> ƒ statfs(length: 3) {},
-        statSync: <ref *81> ƒ statSync(length: 1) {},
-        statfsSync: <ref *82> ƒ statfsSync(length: 2) {},
-        symlink: <ref *83> ƒ symlink(length: 4) {},
-        symlinkSync: <ref *84> ƒ symlinkSync(length: 3) {},
-        truncate: <ref *85> ƒ truncate(length: 3) {},
-        truncateSync: <ref *86> ƒ truncateSync(length: 2) {},
-        unlink: <ref *87> ƒ unlink(length: 2) {},
-        unlinkSync: <ref *88> ƒ unlinkSync(length: 1) {},
-        unwatchFile: <ref *89> ƒ unwatchFile(length: 2) {},
-        utimes: <ref *90> ƒ utimes(length: 4) {},
-        utimesSync: <ref *91> ƒ utimesSync(length: 3) {},
-        watch: <ref *92> ƒ watch(length: 3) {},
-        watchFile: <ref *93> ƒ watchFile(length: 3) {},
-        write: <ref *94> ƒ write(length: 6) {},
-        writeFile: <ref *95> ƒ writeFile(length: 4) {},
-        writeFileSync: <ref *96> ƒ writeFileSync(length: 3) {},
-        writeSync: <ref *97> ƒ writeSync(length: 5) {},
-        writev: <ref *98> ƒ writev(length: 4) {},
-        writevSync: <ref *99> ƒ writevSync(length: 3) {},
+        rename: <ref *74> ƒ rename(length: 3) {},
+        renameSync: <ref *75> ƒ renameSync(length: 2) {},
+        rm: <ref *76> ƒ rm(length: 3) {},
+        rmSync: <ref *77> ƒ rmSync(length: 2) {},
+        rmdir: <ref *78> ƒ rmdir(length: 3) {},
+        rmdirSync: <ref *79> ƒ rmdirSync(length: 2) {},
+        stat: <ref *80> ƒ stat(length: 3) {},
+        statfs: <ref *81> ƒ statfs(length: 3) {},
+        statSync: <ref *82> ƒ statSync(length: 1) {},
+        statfsSync: <ref *83> ƒ statfsSync(length: 2) {},
+        symlink: <ref *84> ƒ symlink(length: 4) {},
+        symlinkSync: <ref *85> ƒ symlinkSync(length: 3) {},
+        truncate: <ref *86> ƒ truncate(length: 3) {},
+        truncateSync: <ref *87> ƒ truncateSync(length: 2) {},
+        unlink: <ref *88> ƒ unlink(length: 2) {},
+        unlinkSync: <ref *89> ƒ unlinkSync(length: 1) {},
+        unwatchFile: <ref *90> ƒ unwatchFile(length: 2) {},
+        utimes: <ref *91> ƒ utimes(length: 4) {},
+        utimesSync: <ref *92> ƒ utimesSync(length: 3) {},
+        watch: <ref *93> ƒ watch(length: 3) {},
+        watchFile: <ref *94> ƒ watchFile(length: 3) {},
+        write: <ref *95> ƒ write(length: 6) {},
+        writeFile: <ref *96> ƒ writeFile(length: 4) {},
+        writeFileSync: <ref *97> ƒ writeFileSync(length: 3) {},
+        writeSync: <ref *98> ƒ writeSync(length: 5) {},
+        writev: <ref *99> ƒ writev(length: 4) {},
+        writevSync: <ref *100> ƒ writevSync(length: 3) {},
         _toUnixTimestamp: [Circular: *7],
-        openAsBlob: <ref *100> ƒ openAsBlob(length: 2) {},
+        openAsBlob: <ref *101> ƒ openAsBlob(length: 2) {},
         Dirent: [Circular: *3],
-        opendir: <ref *101> ƒ opendir(length: 3) {},
-        opendirSync: <ref *102> ƒ opendirSync(length: 2) {},
+        opendir: <ref *102> ƒ opendir(length: 3) {},
+        opendirSync: <ref *103> ƒ opendirSync(length: 2) {},
         F_OK: 0,
         R_OK: 4,
         W_OK: 2,
@@ -4858,12 +4698,12 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         WriteStream: [Circular: *5],
         FileReadStream: [Circular: *4],
         FileWriteStream: [Circular: *5],
-        promises: <ref *103> {
+        promises: <ref *104> {
             access: async ƒ access(length: 3) {},
             appendFile: async ƒ appendFile(length: 1) {},
             close: async ƒ close(length: 1) {},
             copyFile: async ƒ copyFile(length: 4) {},
-            cp: ƒ cp(length: 3) {},
+            cp: async ƒ cp(length: 3) {},
             exists: async ƒ exists(length: 0) {},
             chown: async ƒ chown(length: 4) {},
             chmod: async ƒ chmod(length: 3) {},
@@ -4874,13 +4714,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             fdatasync: async ƒ fdatasync(length: 2) {},
             ftruncate: async ƒ ftruncate(length: 1) {},
             futimes: async ƒ futimes(length: 4) {},
-            glob: async ƒ glob(length: 2) {},
+            glob: ƒ glob(length: 2) {},
             lchmod: async ƒ lchmod(length: 3) {},
             lchown: async ƒ lchown(length: 4) {},
             link: async ƒ link(length: 3) {},
             lstat: async ƒ lstat(length: 1) {},
             mkdir: async ƒ mkdir(length: 3) {},
             mkdtemp: async ƒ mkdtemp(length: 3) {},
+            mkdtempDisposable: async ƒ mkdtempDisposable(length: 2) {},
             statfs: async ƒ statfs(length: 2) {},
             open: async ƒ open(length: 1) {},
             read: async ƒ read(length: 6) {},
@@ -4897,8 +4738,8 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             unlink: async ƒ unlink(length: 2) {},
             utimes: async ƒ utimes(length: 4) {},
             lutimes: async ƒ lutimes(length: 4) {},
-            rm: async ƒ rm(length: 3) {},
-            rmdir: async ƒ rmdir(length: 3) {},
+            rm: async ƒ rm(length: 2) {},
+            rmdir: async ƒ rmdir(length: 2) {},
             writev: async ƒ writev(length: 3) {},
             readv: async ƒ readv(length: 3) {},
             constants: [Circular: *18],
@@ -4937,52 +4778,53 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     mkdir: [Circular: *53],
     mkdirSync: [Circular: *54],
     mkdtemp: [Circular: *55],
+    mkdtempDisposableSync: [Circular: *57],
     mkdtempSync: [Circular: *56],
-    open: [Circular: *57],
-    openAsBlob: [Circular: *100],
-    openSync: [Circular: *58],
-    opendir: [Circular: *101],
-    opendirSync: [Circular: *102],
-    promises: [Circular: *103],
-    read: [Circular: *59],
-    readFile: [Circular: *60],
-    readFileSync: [Circular: *61],
-    readSync: [Circular: *62],
-    readdir: [Circular: *63],
-    readdirSync: [Circular: *64],
-    readlink: [Circular: *65],
-    readlinkSync: [Circular: *66],
-    readv: [Circular: *67],
-    readvSync: [Circular: *68],
-    realpath: [Circular: *69],
-    realpathSync: [Circular: *71],
-    rename: [Circular: *73],
-    renameSync: [Circular: *74],
-    rm: [Circular: *75],
-    rmSync: [Circular: *76],
-    rmdir: [Circular: *77],
-    rmdirSync: [Circular: *78],
-    stat: [Circular: *79],
-    statSync: [Circular: *81],
-    statfs: [Circular: *80],
-    statfsSync: [Circular: *82],
-    symlink: [Circular: *83],
-    symlinkSync: [Circular: *84],
-    truncate: [Circular: *85],
-    truncateSync: [Circular: *86],
-    unlink: [Circular: *87],
-    unlinkSync: [Circular: *88],
-    unwatchFile: [Circular: *89],
-    utimes: [Circular: *90],
-    utimesSync: [Circular: *91],
-    watch: [Circular: *92],
-    watchFile: [Circular: *93],
-    write: [Circular: *94],
-    writeFile: [Circular: *95],
-    writeFileSync: [Circular: *96],
-    writeSync: [Circular: *97],
-    writev: [Circular: *98],
-    writevSync: [Circular: *99]
+    open: [Circular: *58],
+    openAsBlob: [Circular: *101],
+    openSync: [Circular: *59],
+    opendir: [Circular: *102],
+    opendirSync: [Circular: *103],
+    promises: [Circular: *104],
+    read: [Circular: *60],
+    readFile: [Circular: *61],
+    readFileSync: [Circular: *62],
+    readSync: [Circular: *63],
+    readdir: [Circular: *64],
+    readdirSync: [Circular: *65],
+    readlink: [Circular: *66],
+    readlinkSync: [Circular: *67],
+    readv: [Circular: *68],
+    readvSync: [Circular: *69],
+    realpath: [Circular: *70],
+    realpathSync: [Circular: *72],
+    rename: [Circular: *74],
+    renameSync: [Circular: *75],
+    rm: [Circular: *76],
+    rmSync: [Circular: *77],
+    rmdir: [Circular: *78],
+    rmdirSync: [Circular: *79],
+    stat: [Circular: *80],
+    statSync: [Circular: *82],
+    statfs: [Circular: *81],
+    statfsSync: [Circular: *83],
+    symlink: [Circular: *84],
+    symlinkSync: [Circular: *85],
+    truncate: [Circular: *86],
+    truncateSync: [Circular: *87],
+    unlink: [Circular: *88],
+    unlinkSync: [Circular: *89],
+    unwatchFile: [Circular: *90],
+    utimes: [Circular: *91],
+    utimesSync: [Circular: *92],
+    watch: [Circular: *93],
+    watchFile: [Circular: *94],
+    write: [Circular: *95],
+    writeFile: [Circular: *96],
+    writeFileSync: [Circular: *97],
+    writeSync: [Circular: *98],
+    writev: [Circular: *99],
+    writevSync: [Circular: *100]
 }
 ```
 
@@ -5195,7 +5037,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         EXTENSIONLESS_FORMAT_WASM: 1
     },
     copyFile: <ref *8> async ƒ copyFile(length: 4) {},
-    cp: <ref *9> ƒ cp(length: 3) {},
+    cp: <ref *9> async ƒ cp(length: 3) {},
     default: {
         access: [Circular: *2],
         appendFile: [Circular: *3],
@@ -5212,36 +5054,37 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         fdatasync: <ref *16> async ƒ fdatasync(length: 2) {},
         ftruncate: <ref *17> async ƒ ftruncate(length: 1) {},
         futimes: <ref *18> async ƒ futimes(length: 4) {},
-        glob: <ref *19> async ƒ glob(length: 2) {},
+        glob: <ref *19> ƒ glob(length: 2) {},
         lchmod: <ref *20> async ƒ lchmod(length: 3) {},
         lchown: <ref *21> async ƒ lchown(length: 4) {},
         link: <ref *22> async ƒ link(length: 3) {},
         lstat: <ref *23> async ƒ lstat(length: 1) {},
         mkdir: <ref *24> async ƒ mkdir(length: 3) {},
         mkdtemp: <ref *25> async ƒ mkdtemp(length: 3) {},
-        statfs: <ref *26> async ƒ statfs(length: 2) {},
-        open: <ref *27> async ƒ open(length: 1) {},
-        read: <ref *28> async ƒ read(length: 6) {},
-        write: <ref *29> async ƒ write(length: 6) {},
-        readdir: <ref *30> async ƒ readdir(length: 3) {},
-        readFile: <ref *31> async ƒ readFile(length: 1) {},
-        writeFile: <ref *32> async ƒ writeFile(length: 1) {},
-        readlink: <ref *33> async ƒ readlink(length: 3) {},
-        realpath: <ref *34> async ƒ realpath(length: 3) {},
-        rename: <ref *35> async ƒ rename(length: 3) {},
-        stat: <ref *36> async ƒ stat(length: 1) {},
-        symlink: <ref *37> async ƒ symlink(length: 4) {},
-        truncate: <ref *38> async ƒ truncate(length: 3) {},
-        unlink: <ref *39> async ƒ unlink(length: 2) {},
-        utimes: <ref *40> async ƒ utimes(length: 4) {},
-        lutimes: <ref *41> async ƒ lutimes(length: 4) {},
-        rm: <ref *42> async ƒ rm(length: 3) {},
-        rmdir: <ref *43> async ƒ rmdir(length: 3) {},
-        writev: <ref *44> async ƒ writev(length: 3) {},
-        readv: <ref *45> async ƒ readv(length: 3) {},
+        mkdtempDisposable: <ref *26> async ƒ mkdtempDisposable(length: 2) {},
+        statfs: <ref *27> async ƒ statfs(length: 2) {},
+        open: <ref *28> async ƒ open(length: 1) {},
+        read: <ref *29> async ƒ read(length: 6) {},
+        write: <ref *30> async ƒ write(length: 6) {},
+        readdir: <ref *31> async ƒ readdir(length: 3) {},
+        readFile: <ref *32> async ƒ readFile(length: 1) {},
+        writeFile: <ref *33> async ƒ writeFile(length: 1) {},
+        readlink: <ref *34> async ƒ readlink(length: 3) {},
+        realpath: <ref *35> async ƒ realpath(length: 3) {},
+        rename: <ref *36> async ƒ rename(length: 3) {},
+        stat: <ref *37> async ƒ stat(length: 1) {},
+        symlink: <ref *38> async ƒ symlink(length: 4) {},
+        truncate: <ref *39> async ƒ truncate(length: 3) {},
+        unlink: <ref *40> async ƒ unlink(length: 2) {},
+        utimes: <ref *41> async ƒ utimes(length: 4) {},
+        lutimes: <ref *42> async ƒ lutimes(length: 4) {},
+        rm: <ref *43> async ƒ rm(length: 2) {},
+        rmdir: <ref *44> async ƒ rmdir(length: 2) {},
+        writev: <ref *45> async ƒ writev(length: 3) {},
+        readv: <ref *46> async ƒ readv(length: 3) {},
         constants: [Circular: *7],
-        watch: <ref *46> ƒ watch(length: 1) {},
-        opendir: <ref *47> async ƒ opendir(length: 2) {}
+        watch: <ref *47> ƒ watch(length: 1) {},
+        opendir: <ref *48> async ƒ opendir(length: 2) {}
     },
     exists: [Circular: *11],
     fchmod: [Circular: *12],
@@ -5256,30 +5099,31 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     lchown: [Circular: *21],
     link: [Circular: *22],
     lstat: [Circular: *23],
-    lutimes: [Circular: *41],
+    lutimes: [Circular: *42],
     mkdir: [Circular: *24],
     mkdtemp: [Circular: *25],
-    open: [Circular: *27],
-    opendir: [Circular: *47],
-    read: [Circular: *28],
-    readFile: [Circular: *31],
-    readdir: [Circular: *30],
-    readlink: [Circular: *33],
-    readv: [Circular: *45],
-    realpath: [Circular: *34],
-    rename: [Circular: *35],
-    rm: [Circular: *42],
-    rmdir: [Circular: *43],
-    stat: [Circular: *36],
-    statfs: [Circular: *26],
-    symlink: [Circular: *37],
-    truncate: [Circular: *38],
-    unlink: [Circular: *39],
-    utimes: [Circular: *40],
-    watch: [Circular: *46],
-    write: [Circular: *29],
-    writeFile: [Circular: *32],
-    writev: [Circular: *44]
+    mkdtempDisposable: [Circular: *26],
+    open: [Circular: *28],
+    opendir: [Circular: *48],
+    read: [Circular: *29],
+    readFile: [Circular: *32],
+    readdir: [Circular: *31],
+    readlink: [Circular: *34],
+    readv: [Circular: *46],
+    realpath: [Circular: *35],
+    rename: [Circular: *36],
+    rm: [Circular: *43],
+    rmdir: [Circular: *44],
+    stat: [Circular: *37],
+    statfs: [Circular: *27],
+    symlink: [Circular: *38],
+    truncate: [Circular: *39],
+    unlink: [Circular: *40],
+    utimes: [Circular: *41],
+    watch: [Circular: *47],
+    write: [Circular: *30],
+    writeFile: [Circular: *33],
+    writev: [Circular: *45]
 }
 ```
 
@@ -5489,86 +5333,10 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     Agent: <ref *2> ƒ Agent(length: 1) {
         defaultMaxSockets: Infinity
     },
-    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {
-        prototype: ClientRequest {
-            constructor: [Circular: *3],
-            setTimeout: ƒ setTimeout(length: 2) {},
-            clearTimeout: ƒ clearTimeout(length: 1) {},
-            [get/set] path: undefined,
-            [get/set] port: undefined,
-            [get/set] method: undefined,
-            [get/set] host: undefined,
-            [get/set] protocol: undefined,
-            [get/set] agent: undefined,
-            [get/set] aborted: false,
-            [get/set] writable: true
-        }
-    },
-    CloseEvent: <ref *7> ƒ CloseEvent(length: 1) {},
-    IncomingMessage: <ref *8> ƒ IncomingMessage(length: 1) {
-        prototype: <ref *9> IncomingMessage {
-            constructor: [Circular: *8],
-            httpVersion: "1.1",
-            _construct: ƒ _construct(length: 1) {},
-            _dump: ƒ _dump(length: 0) {},
-            _read: ƒ _read(length: 1) {},
-            _finish: ƒ _finish(length: 0) {},
-            _destroy: ƒ IncomingMessage_destroy(length: 2) {},
-            [get/set] aborted: undefined,
-            [get/set] connection: <ref *15> Socket {
-                _events: {
-                    close: undefined,
-                    error: undefined,
-                    prefinish: undefined,
-                    finish: undefined,
-                    drain: undefined,
-                    data: undefined,
-                    end: undefined,
-                    readable: undefined
-                },
-                _readableState: {
-                    highWaterMark: 65536,
-                    buffer: [],
-                    bufferIndex: 0,
-                    length: 0,
-                    pipes: [],
-                    awaitDrainWriters: null,
-                    Symbol(kState): 1052940
-                },
-                _writableState: {
-                    highWaterMark: 65536,
-                    length: 0,
-                    corked: 0,
-                    onwrite: ƒ bound onwrite(length: 1) {},
-                    writelen: 0,
-                    bufferedIndex: 0,
-                    pendingcb: 0,
-                    Symbol(kState): 17580812,
-                    Symbol(kBufferedValue): null
-                },
-                allowHalfOpen: true,
-                _maxListeners: undefined,
-                bytesRead: 0,
-                bytesWritten: 0,
-                connecting: false,
-                timeout: 0,
-                isServer: false,
-                _httpMessage: [Circular: *9],
-                _onTimeout: ƒ _onTimeout(length: 0) {},
-                Symbol(kCapture): false,
-                Symbol(::bunternal::): undefined
-            },
-            [get/set] statusCode: undefined,
-            [get/set] statusMessage: undefined,
-            [get/set] httpVersionMajor: 1,
-            [get/set] httpVersionMinor: 1,
-            [get/set] rawTrailers: [],
-            [get/set] trailers: <ref *24> [Object: null prototype] {},
-            setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] socket: [Circular: *15]
-        }
-    },
-    METHODS: <ref *26> [
+    ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
+    CloseEvent: <ref *4> ƒ CloseEvent(length: 1) {},
+    IncomingMessage: <ref *5> ƒ IncomingMessage(length: 1) {},
+    METHODS: <ref *6> [
         "ACL",
         "BIND",
         "CHECKOUT",
@@ -5605,100 +5373,9 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         "UNLOCK",
         "UNSUBSCRIBE"
     ],
-    MessageEvent: <ref *27> ƒ MessageEvent(length: 1) {},
-    OutgoingMessage: <ref *28> ƒ OutgoingMessage(length: 1) {
-        prototype: <ref *29> OutgoingMessage {
-            constructor: [Circular: *28],
-            _keepAliveTimeout: 0,
-            _defaultKeepAlive: true,
-            shouldKeepAlive: true,
-            _onPendingData: ƒ nop2(length: 0) {},
-            outputSize: 0,
-            outputData: [],
-            strictContentLength: false,
-            _removedTE: false,
-            _removedContLen: false,
-            _removedConnection: false,
-            usesChunkedEncodingByDefault: true,
-            _closed: false,
-            [get/set] _headerNames: [Object: null prototype] {},
-            appendHeader: ƒ appendHeader(length: 2) {},
-            _implicitHeader: ƒ _implicitHeader(length: 0) {},
-            flushHeaders: ƒ flushHeaders(length: 0) {},
-            getHeader: ƒ getHeader(length: 1) {},
-            write: ƒ write(length: 3) {},
-            pipe: ƒ pipe(length: 0) {},
-            getHeaderNames: ƒ getHeaderNames(length: 0) {},
-            getRawHeaderNames: ƒ getRawHeaderNames(length: 0) {},
-            getHeaders: ƒ getHeaders(length: 0) {},
-            removeHeader: ƒ removeHeader(length: 1) {},
-            setHeader: ƒ setHeader(length: 2) {},
-            setHeaders: ƒ setHeaders(length: 1) {},
-            hasHeader: ƒ hasHeader(length: 1) {},
-            [get/set] headers: [Circular: *24],
-            addTrailers: ƒ addTrailers(length: 1) {},
-            setTimeout: ƒ setTimeout(length: 2) {},
-            [get/set] connection: <ref *48> Socket {
-                _events: {
-                    close: undefined,
-                    error: undefined,
-                    prefinish: undefined,
-                    finish: undefined,
-                    drain: undefined,
-                    data: undefined,
-                    end: undefined,
-                    readable: undefined
-                },
-                _readableState: {
-                    highWaterMark: 65536,
-                    buffer: [],
-                    bufferIndex: 0,
-                    length: 0,
-                    pipes: [],
-                    awaitDrainWriters: null,
-                    Symbol(kState): 1052940
-                },
-                _writableState: {
-                    highWaterMark: 65536,
-                    length: 0,
-                    corked: 0,
-                    onwrite: ƒ bound onwrite(length: 1) {},
-                    writelen: 0,
-                    bufferedIndex: 0,
-                    pendingcb: 0,
-                    Symbol(kState): 17580812,
-                    Symbol(kBufferedValue): null
-                },
-                allowHalfOpen: true,
-                _maxListeners: undefined,
-                bytesRead: 0,
-                bytesWritten: 0,
-                connecting: false,
-                timeout: 0,
-                isServer: false,
-                _httpMessage: [Circular: *29],
-                _onTimeout: ƒ _onTimeout(length: 0) {},
-                Symbol(kCapture): false,
-                Symbol(::bunternal::): undefined
-            },
-            [get/set] socket: [Circular: *48],
-            [get/set] chunkedEncoding: false,
-            [get/set] writableObjectMode: false,
-            [get/set] writableLength: 0,
-            [get/set] writableHighWaterMark: 16384,
-            [get/set] writableNeedDrain: undefined,
-            [get/set] writableEnded: undefined,
-            [get/set] writableFinished: undefined,
-            _send: ƒ _send(length: 4) {},
-            _writeRaw: ƒ _writeRaw(length: 4) {},
-            end: ƒ end(length: 3) {},
-            [get/set] writableCorked: 0,
-            cork: ƒ cork(length: 0) {},
-            uncork: ƒ uncork(length: 0) {},
-            destroy: ƒ destroy(length: 1) {}
-        }
-    },
-    STATUS_CODES: <ref *62> {
+    MessageEvent: <ref *7> ƒ MessageEvent(length: 1) {},
+    OutgoingMessage: <ref *8> ƒ OutgoingMessage(length: 1) {},
+    STATUS_CODES: <ref *9> {
         100: "Continue",
         101: "Switching Protocols",
         102: "Processing",
@@ -5763,30 +5440,31 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         510: "Not Extended",
         511: "Network Authentication Required"
     },
-    Server: <ref *63> ƒ Server(length: 2) {},
-    ServerResponse: <ref *64> ƒ ServerResponse(length: 2) {},
-    WebSocket: <ref *65> ƒ WebSocket(length: 1) {
+    Server: <ref *10> ƒ Server(length: 2) {},
+    ServerResponse: <ref *11> ƒ ServerResponse(length: 2) {},
+    WebSocket: <ref *12> ƒ WebSocket(length: 1) {
         CONNECTING: 0,
         OPEN: 1,
         CLOSING: 2,
         CLOSED: 3
     },
-    createServer: <ref *66> ƒ createServer(length: 2) {},
+    createServer: <ref *13> ƒ createServer(length: 2) {},
     default: {
         Agent: [Circular: *2],
-        Server: [Circular: *63],
-        METHODS: [Circular: *26],
-        STATUS_CODES: [Circular: *62],
-        createServer: [Circular: *66],
-        ServerResponse: [Circular: *64],
-        IncomingMessage: [Circular: *8],
-        request: <ref *68> ƒ request(length: 3) {},
-        get: <ref *69> ƒ get(length: 3) {},
+        Server: [Circular: *10],
+        METHODS: [Circular: *6],
+        STATUS_CODES: [Circular: *9],
+        createServer: [Circular: *13],
+        ServerResponse: [Circular: *11],
+        IncomingMessage: [Circular: *5],
+        request: <ref *15> ƒ request(length: 3) {},
+        get: <ref *16> ƒ get(length: 3) {},
         [get/set] maxHeaderSize: 16384,
-        validateHeaderName: <ref *70> ƒ validateHeaderName(length: 2) {},
-        validateHeaderValue: <ref *71> ƒ validateHeaderValue(length: 2) {},
-        setMaxIdleHTTPParsers: <ref *72> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        globalAgent: <ref *73> Agent {
+        validateHeaderName: <ref *17> ƒ validateHeaderName(length: 2) {},
+        validateHeaderValue: <ref *18> ƒ validateHeaderValue(length: 2) {},
+        setMaxIdleHTTPParsers: <ref *19> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        setGlobalProxyFromEnv: <ref *20> ƒ setGlobalProxyFromEnv(length: 0) {},
+        [get/set] globalAgent: <ref *21> Agent {
             _events: [Object: null prototype] {
                 free: [
                     ƒ (length: 2) {}
@@ -5821,32 +5499,20 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             Symbol(kCapture): false
         },
         ClientRequest: [Circular: *3],
-        OutgoingMessage: [Circular: *28],
-        WebSocket: [Circular: *65],
-        CloseEvent: [Circular: *7],
-        MessageEvent: [Circular: *27]
+        OutgoingMessage: [Circular: *8],
+        WebSocket: [Circular: *12],
+        CloseEvent: [Circular: *4],
+        MessageEvent: [Circular: *7]
     },
-    get: [Circular: *69],
-    globalAgent: [Circular: *73],
+    get: [Circular: *16],
+    globalAgent: [Circular: *21],
     maxHeaderSize: 16384,
-    request: [Circular: *68],
-    setMaxIdleHTTPParsers: [Circular: *72],
-    validateHeaderName: [Circular: *70],
-    validateHeaderValue: [Circular: *71]
+    request: [Circular: *15],
+    setGlobalProxyFromEnv: [Circular: *20],
+    setMaxIdleHTTPParsers: [Circular: *19],
+    validateHeaderName: [Circular: *17],
+    validateHeaderValue: [Circular: *18]
 }
-DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
- code: "DEP0066"
-
-      at <anonymous> (internal:util/deprecate:9:30)
-      at deprecated (internal:util/deprecate:20:29)
-      at <anonymous> (/tmp/fs-fixture-1781484840269-1/inspect.mjs:97:29)
-      at map (1:11)
-      at inspect (/tmp/fs-fixture-1781484840269-1/inspect.mjs:81:43)
-      at <anonymous> (/tmp/fs-fixture-1781484840269-1/inspect.mjs:101:8)
-      at map (1:11)
-      at inspect (/tmp/fs-fixture-1781484840269-1/inspect.mjs:81:43)
-      at <anonymous> (/tmp/fs-fixture-1781484840269-1/inspect.mjs:101:8)
-
 ```
 
 </td></tr></table>
@@ -6391,7 +6057,18 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         Http2ServerRequest: [Circular: *3],
         Http2ServerResponse: [Circular: *4],
         connect: [Circular: *5],
-        ClientHttp2Session: [Circular: *2]
+        ClientHttp2Session: [Circular: *2],
+        Symbol(::bunhttp2internals::): {
+            core: {
+                Http2Session: class Http2Session extends EventEmitter {},
+                ServerHttp2Session: class ServerHttp2Session extends Http2Session {},
+                ClientHttp2Session: [Circular: *2],
+                Http2Stream: class Http2Stream extends Duplex {},
+                ServerHttp2Stream: class ServerHttp2Stream extends Http2Stream {},
+                ClientHttp2Stream: class ClientHttp2Stream extends Http2Stream {}
+            },
+            util: {}
+        }
     },
     getDefaultSettings: [Circular: *10],
     getPackedSettings: [Circular: *11],
@@ -6489,6 +6166,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 keepAlive: true,
                 scheduling: "lifo",
                 timeout: 5000,
+                proxyEnv: undefined,
+                defaultPort: 443,
+                protocol: "https:",
                 noDelay: true,
                 path: null
             },
@@ -6506,16 +6186,20 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             totalSocketCount: 0,
             agentKeepAliveTimeoutBuffer: 1000,
             maxCachedSessions: 100,
+            _sessionCache: {
+                map: {},
+                list: []
+            },
             Symbol(kCapture): false
         },
         Server: [Circular: *3],
         createServer: [Circular: *4],
-        get: <ref *16> ƒ get(length: 3) {},
-        request: <ref *17> ƒ request(length: 0) {}
+        get: <ref *19> ƒ get(length: 3) {},
+        request: <ref *20> ƒ request(length: 0) {}
     },
-    get: [Circular: *16],
+    get: [Circular: *19],
     globalAgent: [Circular: *6],
-    request: [Circular: *17]
+    request: [Circular: *20]
 }
 ```
 
@@ -6897,7 +6581,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1781484840269-1/module.mjs: "/tmp/fs-fixture-1781484840269-1/module.mjs"
+            /tmp/fs-fixture-1782089574734-1/module.mjs: "/tmp/fs-fixture-1782089574734-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -7063,13 +6747,13 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 <ref *1> [Object: null prototype] {
     Module: <ref *2> ƒ Module(length: 1) {
         _cache: <ref *3> {
-            /tmp/fs-fixture-1781484840269-1/inspect.mjs: {
+            node:module: {
+                exports: [Circular: *1]
+            },
+            /tmp/fs-fixture-1782089574734-1/inspect.mjs: {
                 exports: [Object: null prototype] {
                     inspect: ƒ inspect(length: 1) {}
                 }
-            },
-            node:module: {
-                exports: [Circular: *1]
             }
         },
         _debug: <ref *8> {},
@@ -8225,16 +7909,10 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     PerformanceMark: <ref *4> ƒ PerformanceMark(length: 1) {},
     PerformanceMeasure: <ref *5> ƒ PerformanceMeasure(length: 0) {},
     PerformanceNodeTiming: <ref *6> class PerformanceNodeTiming {},
-    PerformanceObserver: <ref *7> ƒ PerformanceObserver(length: 1) {
-        supportedEntryTypes: [
-            "mark",
-            "measure",
-            "resource"
-        ]
-    },
-    PerformanceObserverEntryList: <ref *9> ƒ PerformanceObserverEntryList(length: 0) {},
-    PerformanceResourceTiming: <ref *10> class PerformanceResourceTiming {},
-    constants: <ref *11> {
+    PerformanceObserver: <ref *7> class PerformanceObserverForNodeTypes extends NodePerformanceObserver {},
+    PerformanceObserverEntryList: <ref *8> ƒ PerformanceObserverEntryList(length: 0) {},
+    PerformanceResourceTiming: <ref *9> class PerformanceResourceTiming {},
+    constants: <ref *10> {
         NODE_PERFORMANCE_ENTRY_TYPE_DNS: 4,
         NODE_PERFORMANCE_ENTRY_TYPE_GC: 0,
         NODE_PERFORMANCE_ENTRY_TYPE_HTTP: 1,
@@ -8260,9 +7938,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         NODE_PERFORMANCE_MILESTONE_TIME_ORIGIN: 1,
         NODE_PERFORMANCE_MILESTONE_V8_START: 4
     },
-    createHistogram: <ref *12> ƒ createHistogram(length: 1) {},
+    createHistogram: <ref *11> ƒ createHistogram(length: 1) {},
     default: {
-        performance: <ref *14> {
+        performance: <ref *13> {
             mark: ƒ mark(length: 1) {},
             measure: ƒ measure(length: 1) {},
             clearMarks: ƒ clearMarks(length: 1) {},
@@ -8271,14 +7949,14 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1781484841298.2979,
+            timeOrigin: 1782089575880.1309,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: null,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1781484841298.2979,
-                nodeStart: 1781484841298.2979,
-                environment: 1781484841298.2979,
-                bootstrapComplete: 1781484841298.2979,
+                v8Start: 1782089575880.1309,
+                nodeStart: 1782089575880.1309,
+                environment: 1782089575880.1309,
+                bootstrapComplete: 1782089575880.1309,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -8287,20 +7965,20 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             eventLoopUtilization: ƒ eventLoopUtilization(length: 2) {},
             clearResourceTimings: ƒ clearResourceTimings(length: 0) {}
         },
-        constants: [Circular: *11],
+        constants: [Circular: *10],
         Performance: [Circular: *2],
         PerformanceEntry: [Circular: *3],
         PerformanceMark: [Circular: *4],
         PerformanceMeasure: [Circular: *5],
         PerformanceObserver: [Circular: *7],
-        PerformanceObserverEntryList: [Circular: *9],
+        PerformanceObserverEntryList: [Circular: *8],
         PerformanceNodeTiming: [Circular: *6],
-        monitorEventLoopDelay: <ref *28> ƒ monitorEventLoopDelay(length: 1) {},
-        createHistogram: [Circular: *12],
-        PerformanceResourceTiming: [Circular: *10]
+        monitorEventLoopDelay: <ref *27> ƒ monitorEventLoopDelay(length: 1) {},
+        createHistogram: [Circular: *11],
+        PerformanceResourceTiming: [Circular: *9]
     },
-    monitorEventLoopDelay: [Circular: *28],
-    performance: [Circular: *14]
+    monitorEventLoopDelay: [Circular: *27],
+    performance: [Circular: *13]
 }
 ```
 
@@ -8628,7 +8306,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     arch: "x64",
     argv: <ref *26> [
         "/opt/hostedtoolcache/node/24.16.0/x64/bin/node",
-        "/tmp/fs-fixture-1781484840269-1/process.mjs"
+        "/tmp/fs-fixture-1782089574734-1/process.mjs"
     ],
     argv0: "node",
     availableMemory: <ref *27> ƒ availableMemory(length: 0) {},
@@ -9631,7 +9309,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         setgid: <ref *118> ƒ (length: 1) {},
         setuid: <ref *119> ƒ (length: 1) {},
         env: <ref *120>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_6892caec-671c-44e8-9c34-3bfdc232b1bb",
             npm_package_devDependencies__types_node: "^18.15.11",
             DOTNET_NOLOGO: "1",
             USER: "runner",
@@ -9639,7 +9317,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             CI: "true",
             USE_BAZEL_FALLBACK_VERSION: "silent:",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_6892caec-671c-44e8-9c34-3bfdc232b1bb",
             PIPX_HOME: "/opt/pipx",
             npm_node_execpath: "/opt/hostedtoolcache/node/24.16.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -9660,15 +9338,15 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-Linux",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "2109",
-            ACTIONS_ORCHESTRATION_ID: "18036c0f-e30b-4328-b766-03cd5c782fb5.build.__default",
+            SYSTEMD_EXEC_PID: "2086",
+            ACTIONS_ORCHESTRATION_ID: "6b00f618-c118-473e-9e98-ebb3d7eec286.build.__default",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20260607.184.1",
+            ImageVersion: "20260615.205.1",
             LOGNAME: "runner",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -9677,7 +9355,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             npm_package_devDependencies_lintroll: "^1.10.0",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
             GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.12/x64",
-            JOURNAL_STREAM: "9:14733",
+            JOURNAL_STREAM: "9:14107",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9687,10 +9365,10 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.11/x64",
-            GITHUB_RUN_ID: "27517728840",
+            GITHUB_RUN_ID: "27923080608",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "0a7f14c9e35adafdd752602f428eb9a5b2570dcb",
+            GITHUB_WORKFLOW_SHA: "d7e3e1913363f7755248306a6f375880d152fd6c",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
             npm_package_scripts_start: "tsx index.ts",
@@ -9701,12 +9379,12 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_dde6d6fd-0f51-4df7-a831-4d96063032e5",
-            INVOCATION_ID: "0211604ee1384cf389de050d756ef77c",
+            RUNNER_TRACKING_ID: "github_97aa26b4-76a8-4acc-97e5-d05f11a410d1",
+            INVOCATION_ID: "37290160f9cb4e669d71b70c278b1533",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/24.16.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "186",
+            GITHUB_RUN_NUMBER: "187",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9715,7 +9393,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000015251",
+            RUNNER_NAME: "GitHub Actions 1000015517",
             XDG_CONFIG_HOME: "/home/runner/.config",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -9737,7 +9415,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             GITHUB_JOB: "build",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "0a7f14c9e35adafdd752602f428eb9a5b2570dcb",
+            GITHUB_SHA: "d7e3e1913363f7755248306a6f375880d152fd6c",
             GITHUB_RUN_ATTEMPT: "1",
             ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED: "1",
             GITHUB_REF: "refs/heads/master",
@@ -9745,7 +9423,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_6892caec-671c-44e8-9c34-3bfdc232b1bb",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9758,7 +9436,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_6892caec-671c-44e8-9c34-3bfdc232b1bb",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
@@ -9771,14 +9449,14 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_6892caec-671c-44e8-9c34-3bfdc232b1bb",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *26],
         execArgv: <ref *121> [],
-        pid: 3147,
-        ppid: 2453,
+        pid: 3118,
+        ppid: 2436,
         execPath: "/opt/hostedtoolcache/node/24.16.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -9826,9 +9504,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     moduleLoadList: [Circular: *51],
     nextTick: [Circular: *82],
     openStdin: [Circular: *72],
-    pid: 3147,
+    pid: 3118,
     platform: "linux",
-    ppid: 2453,
+    ppid: 2436,
     reallyExit: [Circular: *55],
     ref: [Circular: *64],
     release: [Circular: *50],
@@ -9879,7 +9557,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1781484840269-1/process.mjs"
+        "/tmp/fs-fixture-1782089574734-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -9893,7 +9571,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         variables: {
             v8_enable_i8n_support: 1,
             enable_lto: false,
-            node_module_version: 137,
+            enable_thin_lto: false,
+            lto_jobs: "",
+            node_module_version: 147,
             napi_build_version: 10,
             node_builtin_shareable_builtins: [],
             node_byteorder: "little",
@@ -9919,7 +9599,6 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     cwd: <ref *28> ƒ cwd(length: 1) {},
     debugPort: 0,
     default: EventEmitter {
-        _exiting: false,
         _debugEnd: [Circular: *2],
         _debugProcess: [Circular: *3],
         [get/set] _eval: undefined,
@@ -9954,7 +9633,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         dlopen: <ref *30> ƒ dlopen(length: 1) {},
         emitWarning: <ref *31> ƒ emitWarning(length: 1) {},
         env: <ref *32> {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_6892caec-671c-44e8-9c34-3bfdc232b1bb",
             npm_package_devDependencies__types_node: "^18.15.11",
             DOTNET_NOLOGO: "1",
             USER: "runner",
@@ -9962,7 +9641,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             CI: "true",
             USE_BAZEL_FALLBACK_VERSION: "silent:",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_6892caec-671c-44e8-9c34-3bfdc232b1bb",
             PIPX_HOME: "/opt/pipx",
             npm_node_execpath: "/opt/hostedtoolcache/node/24.16.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -9983,15 +9662,15 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-Linux",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "2109",
-            ACTIONS_ORCHESTRATION_ID: "18036c0f-e30b-4328-b766-03cd5c782fb5.build.__default",
+            SYSTEMD_EXEC_PID: "2086",
+            ACTIONS_ORCHESTRATION_ID: "6b00f618-c118-473e-9e98-ebb3d7eec286.build.__default",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20260607.184.1",
+            ImageVersion: "20260615.205.1",
             LOGNAME: "runner",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
@@ -10000,7 +9679,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             npm_package_devDependencies_lintroll: "^1.10.0",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
             GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.12/x64",
-            JOURNAL_STREAM: "9:14733",
+            JOURNAL_STREAM: "9:14107",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -10010,10 +9689,10 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.11/x64",
-            GITHUB_RUN_ID: "27517728840",
+            GITHUB_RUN_ID: "27923080608",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "0a7f14c9e35adafdd752602f428eb9a5b2570dcb",
+            GITHUB_WORKFLOW_SHA: "d7e3e1913363f7755248306a6f375880d152fd6c",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
             npm_package_scripts_start: "tsx index.ts",
@@ -10024,12 +9703,12 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_dde6d6fd-0f51-4df7-a831-4d96063032e5",
-            INVOCATION_ID: "0211604ee1384cf389de050d756ef77c",
+            RUNNER_TRACKING_ID: "github_97aa26b4-76a8-4acc-97e5-d05f11a410d1",
+            INVOCATION_ID: "37290160f9cb4e669d71b70c278b1533",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/24.16.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "186",
+            GITHUB_RUN_NUMBER: "187",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10038,7 +9717,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000015251",
+            RUNNER_NAME: "GitHub Actions 1000015517",
             XDG_CONFIG_HOME: "/home/runner/.config",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -10060,7 +9739,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             GITHUB_JOB: "build",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "0a7f14c9e35adafdd752602f428eb9a5b2570dcb",
+            GITHUB_SHA: "d7e3e1913363f7755248306a6f375880d152fd6c",
             GITHUB_RUN_ATTEMPT: "1",
             ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED: "1",
             GITHUB_REF: "refs/heads/master",
@@ -10068,7 +9747,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_6892caec-671c-44e8-9c34-3bfdc232b1bb",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -10081,7 +9760,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_6892caec-671c-44e8-9c34-3bfdc232b1bb",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
@@ -10094,7 +9773,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_6892caec-671c-44e8-9c34-3bfdc232b1bb",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         [get/set] execArgv: <ref *33> [],
@@ -10132,15 +9811,15 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         nextTick: <ref *46> ƒ nextTick(length: 1) {},
         [get/set] noDeprecation: false,
         openStdin: <ref *47> ƒ openStdin(length: 0) {},
-        pid: 3161,
+        pid: 3125,
         platform: "linux",
-        [get/set] ppid: 2453,
+        [get/set] ppid: 2436,
         reallyExit: <ref *48> ƒ reallyExit(length: 1) {},
         ref: <ref *49> ƒ ref(length: 1) {},
         release: <ref *50> {
             name: "node",
             sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-x64.zip",
-            headersUrl: "https://nodejs.org/download/release/v24.3.0/node-v24.3.0-headers.tar.gz"
+            headersUrl: "https://nodejs.org/download/release/v26.3.0/node-v26.3.0-headers.tar.gz"
         },
         report: <ref *51> {
             compact: false,
@@ -10154,7 +9833,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             writeReport: ƒ writeReport(length: 1) {}
         },
         resourceUsage: <ref *54> ƒ resourceUsage(length: 0) {},
-        revision: "4d79cf879a747a64ebd7e86d652f7597117fe658",
+        revision: "7a5293cef99b1c19c1de921da3c112eadaf148b1",
         send: undefined,
         setSourceMapsEnabled: <ref *55> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *56> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
@@ -10167,6 +9846,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             bytesWritten: 0,
             _write: <ref *58> ƒ underscoreWriteFast(length: 3) {},
             write: <ref *59> ƒ writeFast(length: 3) {},
+            _construct: undefined,
             _events: {
                 close: undefined,
                 error: undefined,
@@ -10186,7 +9866,6 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 Symbol(kBufferedValue): null
             },
             _maxListeners: undefined,
-            _eventsCount: NaN,
             readable: false,
             _type: "fs",
             destroySoon: <ref *63> ƒ (length: 2) {},
@@ -10244,6 +9923,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 mkdirSync: ƒ mkdirSync(length: 2) {},
                 mkdtemp: ƒ mkdtemp(length: 3) {},
                 mkdtempSync: ƒ mkdtempSync(length: 2) {},
+                mkdtempDisposableSync: ƒ mkdtempDisposableSync2(length: 2) {},
                 open: ƒ open(length: 4) {},
                 openSync: ƒ openSync(length: 3) {},
                 read: ƒ read(length: 6) {},
@@ -10298,7 +9978,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 R_OK: 4,
                 W_OK: 2,
                 X_OK: 1,
-                constants: <ref *162> [Object: null prototype] {
+                constants: <ref *163> [Object: null prototype] {
                     UV_FS_SYMLINK_DIR: 1,
                     UV_FS_SYMLINK_JUNCTION: 2,
                     O_RDONLY: 0,
@@ -10360,16 +10040,16 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 },
                 Dir: class Dir {},
                 Stats: ƒ Stats(length: 0) {},
-                ReadStream: <ref *165> ƒ ReadStream(length: 2) {},
-                WriteStream: <ref *166> ƒ WriteStream(length: 2) {},
-                [get/set] FileReadStream: [Circular: *165],
-                [get/set] FileWriteStream: [Circular: *166],
+                ReadStream: <ref *166> ƒ ReadStream(length: 2) {},
+                WriteStream: <ref *167> ƒ WriteStream(length: 2) {},
+                [get/set] FileReadStream: [Circular: *166],
+                [get/set] FileWriteStream: [Circular: *167],
                 promises: {
                     access: async ƒ access(length: 3) {},
                     appendFile: async ƒ appendFile(length: 1) {},
                     close: async ƒ close(length: 1) {},
                     copyFile: async ƒ copyFile(length: 4) {},
-                    cp: ƒ cp(length: 3) {},
+                    cp: async ƒ cp(length: 3) {},
                     exists: async ƒ exists(length: 0) {},
                     chown: async ƒ chown(length: 4) {},
                     chmod: async ƒ chmod(length: 3) {},
@@ -10380,13 +10060,14 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     fdatasync: async ƒ fdatasync(length: 2) {},
                     ftruncate: async ƒ ftruncate(length: 1) {},
                     futimes: async ƒ futimes(length: 4) {},
-                    glob: async ƒ glob(length: 2) {},
+                    glob: ƒ glob(length: 2) {},
                     lchmod: async ƒ lchmod(length: 3) {},
                     lchown: async ƒ lchown(length: 4) {},
                     link: async ƒ link(length: 3) {},
                     lstat: async ƒ lstat(length: 1) {},
                     mkdir: async ƒ mkdir(length: 3) {},
                     mkdtemp: async ƒ mkdtemp(length: 3) {},
+                    mkdtempDisposable: async ƒ mkdtempDisposable(length: 2) {},
                     statfs: async ƒ statfs(length: 2) {},
                     open: async ƒ open(length: 1) {},
                     read: async ƒ read(length: 6) {},
@@ -10403,11 +10084,11 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     unlink: async ƒ unlink(length: 2) {},
                     utimes: async ƒ utimes(length: 4) {},
                     lutimes: async ƒ lutimes(length: 4) {},
-                    rm: async ƒ rm(length: 3) {},
-                    rmdir: async ƒ rmdir(length: 3) {},
+                    rm: async ƒ rm(length: 2) {},
+                    rmdir: async ƒ rmdir(length: 2) {},
                     writev: async ƒ writev(length: 3) {},
                     readv: async ƒ readv(length: 3) {},
-                    constants: [Circular: *162],
+                    constants: [Circular: *163],
                     watch: ƒ watch(length: 1) {},
                     opendir: async ƒ opendir(length: 2) {}
                 }
@@ -10416,7 +10097,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             Symbol(kCapture): false,
             Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
         },
-        stdin: <ref *214> ReadStream {
+        stdin: <ref *216> ReadStream {
             fd: 0,
             start: undefined,
             end: Infinity,
@@ -10448,8 +10129,8 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             },
             _maxListeners: undefined,
             _eventsCount: NaN,
-            on: <ref *225> ƒ (length: 2) {},
-            addListener: [Circular: *225],
+            on: <ref *227> ƒ (length: 2) {},
+            addListener: [Circular: *227],
             ref: ƒ (length: 0) {},
             unref: ƒ (length: 0) {},
             pause: ƒ (length: 0) {},
@@ -10459,7 +10140,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             Symbol(kReadStreamFastPath): false,
             Symbol(kCapture): false
         },
-        stdout: <ref *231> WriteStream {
+        stdout: <ref *233> WriteStream {
             fd: 1,
             _writev: undefined,
             flush: false,
@@ -10468,6 +10149,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             bytesWritten: 0,
             _write: [Circular: *58],
             write: [Circular: *59],
+            _construct: undefined,
             _events: {
                 close: undefined,
                 error: undefined,
@@ -10487,7 +10169,6 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 Symbol(kBufferedValue): null
             },
             _maxListeners: undefined,
-            _eventsCount: NaN,
             readable: false,
             _type: "fs",
             destroySoon: [Circular: *63],
@@ -10501,47 +10182,48 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         },
         [get/set] throwDeprecation: false,
         [get/set] title: "bun",
-        umask: <ref *239> ƒ umask(length: 1) {},
-        unref: <ref *240> ƒ unref(length: 1) {},
-        uptime: <ref *241> ƒ uptime(length: 1) {},
-        version: "v24.3.0",
-        versions: <ref *242> {
-            node: "24.3.0",
+        umask: <ref *241> ƒ umask(length: 1) {},
+        unref: <ref *242> ƒ unref(length: 1) {},
+        uptime: <ref *243> ƒ uptime(length: 1) {},
+        version: "v26.3.0",
+        versions: <ref *244> {
+            node: "26.3.0",
             bun: "1.4.0",
-            boringssl: "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+            boringssl: "1a41b9025c2c0a37edd07ff10f6944f03e028522",
             openssl: "1.1.0",
             llhttp: "9.3.0",
             libarchive: "ded82291ab41d5e355831b96b0e1ff49e24d8939",
             mimalloc: "afb41757285694f832e7a2f164d35f5717457f96",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "4d79cf879a747a64ebd7e86d652f7597117fe658",
-            webkit: "6d586e293f008f0e74e5697611a379b1b24815c9",
+            uwebsockets: "7a5293cef99b1c19c1de921da3c112eadaf148b1",
+            webkit: "cd821fecca0d39c8bac874c283d956868c7f0de0",
             zig: "04e7f6ac1e009525bc00934f20199c68f04e0a24",
             zlib: "12731092979c6d07f42da27da673a9f6c7b13586",
             tinycc: "12882eee073cfe5c7621bcfadf679e1372d4537b",
             lolhtml: "77127cd2b8545998756e8d64e36ee2313c4bb312",
             ares: "3ac47ee46edd8ea40370222f91613fc16c434853",
             libdeflate: "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
-            usockets: "4d79cf879a747a64ebd7e86d652f7597117fe658",
+            usockets: "7a5293cef99b1c19c1de921da3c112eadaf148b1",
             lshpack: "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
             zstd: "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
-            v8: "13.6.233.10-node.18",
+            v8: "14.6.202.34-node.20",
             uv: "1.48.0",
             napi: "10",
             icu: "75.1",
             unicode: "15.1",
-            modules: "137"
+            modules: "147"
         },
-        getegid: <ref *243> ƒ getegid(length: 0) {},
-        geteuid: <ref *244> ƒ geteuid(length: 0) {},
-        getgid: <ref *245> ƒ getgid(length: 0) {},
-        getgroups: <ref *246> ƒ getgroups(length: 0) {},
-        getuid: <ref *247> ƒ getuid(length: 0) {},
-        setegid: <ref *248> ƒ setegid(length: 1) {},
-        seteuid: <ref *249> ƒ seteuid(length: 1) {},
-        setgid: <ref *250> ƒ setgid(length: 1) {},
-        setgroups: <ref *251> ƒ setgroups(length: 1) {},
-        setuid: <ref *252> ƒ setuid(length: 1) {},
+        getegid: <ref *245> ƒ getegid(length: 0) {},
+        geteuid: <ref *246> ƒ geteuid(length: 0) {},
+        getgid: <ref *247> ƒ getgid(length: 0) {},
+        getgroups: <ref *248> ƒ getgroups(length: 0) {},
+        getuid: <ref *249> ƒ getuid(length: 0) {},
+        setegid: <ref *250> ƒ setegid(length: 1) {},
+        seteuid: <ref *251> ƒ seteuid(length: 1) {},
+        setgid: <ref *252> ƒ setgid(length: 1) {},
+        setgroups: <ref *253> ƒ setgroups(length: 1) {},
+        setuid: <ref *254> ƒ setuid(length: 1) {},
+        _exiting: false,
         Symbol(Symbol.toStringTag): "process"
     },
     disconnect: undefined,
@@ -10559,11 +10241,11 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     getActiveResourcesInfo: [Circular: *37],
     getBuiltinModule: [Circular: *38],
     getMaxListeners: ƒ getMaxListeners(length: 0) {},
-    getegid: [Circular: *243],
-    geteuid: [Circular: *244],
-    getgid: [Circular: *245],
-    getgroups: [Circular: *246],
-    getuid: [Circular: *247],
+    getegid: [Circular: *245],
+    geteuid: [Circular: *246],
+    getgid: [Circular: *247],
+    getgroups: [Circular: *248],
+    getuid: [Circular: *249],
     hasUncaughtExceptionCaptureCallback: [Circular: *39],
     hrtime: [Circular: *40],
     isBun: true,
@@ -10579,9 +10261,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *47],
-    pid: 3161,
+    pid: 3125,
     platform: "linux",
-    ppid: 2453,
+    ppid: 2436,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -10592,26 +10274,26 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *51],
     resourceUsage: [Circular: *54],
-    revision: "4d79cf879a747a64ebd7e86d652f7597117fe658",
+    revision: "7a5293cef99b1c19c1de921da3c112eadaf148b1",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *55],
     setUncaughtExceptionCaptureCallback: [Circular: *56],
-    setegid: [Circular: *248],
-    seteuid: [Circular: *249],
-    setgid: [Circular: *250],
-    setgroups: [Circular: *251],
-    setuid: [Circular: *252],
+    setegid: [Circular: *250],
+    seteuid: [Circular: *251],
+    setgid: [Circular: *252],
+    setgroups: [Circular: *253],
+    setuid: [Circular: *254],
     stderr: [Circular: *57],
-    stdin: [Circular: *214],
-    stdout: [Circular: *231],
+    stdin: [Circular: *216],
+    stdout: [Circular: *233],
     throwDeprecation: false,
     title: "bun",
-    umask: [Circular: *239],
-    unref: [Circular: *240],
-    uptime: [Circular: *241],
-    version: "v24.3.0",
-    versions: [Circular: *242]
+    umask: [Circular: *241],
+    unref: [Circular: *242],
+    uptime: [Circular: *243],
+    version: "v26.3.0",
+    versions: [Circular: *244]
 }
 ```
 
@@ -10644,7 +10326,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     ucs2: [Circular: *4],
     version: "2.1.0"
 }
-(node:3173) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:3137) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -10969,7 +10651,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         },
         postMessage: ƒ postMessage(length: 1) {},
         prompt: ƒ prompt(length: 1) {},
-        queueMicrotask: ƒ queueMicrotask(length: 2) {},
+        queueMicrotask: ƒ queueMicrotask(length: 1) {},
         removeEventListener: ƒ removeEventListener(length: 2) {},
         reportError: ƒ reportError(length: 1) {},
         setImmediate: ƒ setImmediate(length: 1) {},
@@ -10988,7 +10670,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 escape: ƒ escape(length: 1) {},
                 Symbol(cwd): undefined,
                 Symbol(env): <ref *33> {
-                    GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+                    GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_6892caec-671c-44e8-9c34-3bfdc232b1bb",
                     npm_package_devDependencies__types_node: "^18.15.11",
                     DOTNET_NOLOGO: "1",
                     USER: "runner",
@@ -10996,7 +10678,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     CI: "true",
                     USE_BAZEL_FALLBACK_VERSION: "silent:",
                     RUNNER_ENVIRONMENT: "github-hosted",
-                    GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+                    GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_6892caec-671c-44e8-9c34-3bfdc232b1bb",
                     PIPX_HOME: "/opt/pipx",
                     npm_node_execpath: "/opt/hostedtoolcache/node/24.16.0/x64/bin/node",
                     JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -11017,15 +10699,15 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-Linux",
                     AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
                     GITHUB_HEAD_REF: "",
-                    SYSTEMD_EXEC_PID: "2109",
-                    ACTIONS_ORCHESTRATION_ID: "18036c0f-e30b-4328-b766-03cd5c782fb5.build.__default",
+                    SYSTEMD_EXEC_PID: "2086",
+                    ACTIONS_ORCHESTRATION_ID: "6b00f618-c118-473e-9e98-ebb3d7eec286.build.__default",
                     GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
                     JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
                     NVM_DIR: "/home/runner/.nvm",
                     npm_package_dependencies_fs_fixture: "^1.2.0",
                     DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
                     JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-                    ImageVersion: "20260607.184.1",
+                    ImageVersion: "20260615.205.1",
                     LOGNAME: "runner",
                     RUNNER_OS: "Linux",
                     GITHUB_API_URL: "https://api.github.com",
@@ -11034,7 +10716,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     npm_package_devDependencies_lintroll: "^1.10.0",
                     CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
                     GOROOT_1_23_X64: "/opt/hostedtoolcache/go/1.23.12/x64",
-                    JOURNAL_STREAM: "9:14733",
+                    JOURNAL_STREAM: "9:14107",
                     GITHUB_WORKFLOW: "Compare Bun and Node.js",
                     _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
                     npm_package_private: "true",
@@ -11044,10 +10726,10 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     npm_config_registry: "https://registry.npmjs.org/",
                     ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
                     GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.11/x64",
-                    GITHUB_RUN_ID: "27517728840",
+                    GITHUB_RUN_ID: "27923080608",
                     GITHUB_REF_TYPE: "branch",
                     BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-                    GITHUB_WORKFLOW_SHA: "0a7f14c9e35adafdd752602f428eb9a5b2570dcb",
+                    GITHUB_WORKFLOW_SHA: "d7e3e1913363f7755248306a6f375880d152fd6c",
                     GITHUB_BASE_REF: "",
                     ImageOS: "ubuntu24",
                     npm_package_scripts_start: "tsx index.ts",
@@ -11058,12 +10740,12 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
                     ANT_HOME: "/usr/share/ant",
                     DOTNET_MULTILEVEL_LOOKUP: "0",
-                    RUNNER_TRACKING_ID: "github_dde6d6fd-0f51-4df7-a831-4d96063032e5",
-                    INVOCATION_ID: "0211604ee1384cf389de050d756ef77c",
+                    RUNNER_TRACKING_ID: "github_97aa26b4-76a8-4acc-97e5-d05f11a410d1",
+                    INVOCATION_ID: "37290160f9cb4e669d71b70c278b1533",
                     RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
                     NODE: "/opt/hostedtoolcache/node/24.16.0/x64/bin/node",
                     GITHUB_ACTION: "__run",
-                    GITHUB_RUN_NUMBER: "186",
+                    GITHUB_RUN_NUMBER: "187",
                     GITHUB_TRIGGERING_ACTOR: "privatenumber",
                     RUNNER_ARCH: "X64",
                     XDG_RUNTIME_DIR: "/run/user/1001",
@@ -11072,7 +10754,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     LANG: "C.UTF-8",
                     VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
                     CONDA: "/usr/share/miniconda",
-                    RUNNER_NAME: "GitHub Actions 1000015251",
+                    RUNNER_NAME: "GitHub Actions 1000015517",
                     XDG_CONFIG_HOME: "/home/runner/.config",
                     GITHUB_REF_NAME: "master",
                     GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -11094,7 +10776,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     GITHUB_JOB: "build",
                     npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
                     npm_package_dependencies_execa: "^7.1.1",
-                    GITHUB_SHA: "0a7f14c9e35adafdd752602f428eb9a5b2570dcb",
+                    GITHUB_SHA: "d7e3e1913363f7755248306a6f375880d152fd6c",
                     GITHUB_RUN_ATTEMPT: "1",
                     ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED: "1",
                     GITHUB_REF: "refs/heads/master",
@@ -11102,7 +10784,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
                     npm_package_license: "MIT",
                     npm_package_devDependencies_tsx: "^3.12.6",
-                    GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+                    GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_6892caec-671c-44e8-9c34-3bfdc232b1bb",
                     JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
                     PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
                     GITHUB_ACTOR_ID: "1075694",
@@ -11115,7 +10797,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     GITHUB_SERVER_URL: "https://github.com",
                     GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
                     GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-                    GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+                    GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_6892caec-671c-44e8-9c34-3bfdc232b1bb",
                     EDGEWEBDRIVER: "/usr/local/share/edge_driver",
                     npm_command: "run-script",
                     PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
@@ -11128,7 +10810,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
                     npm_package_lint_staged____ts_js_: "lintroll --cache",
                     ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-                    GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_3dcc20e5-6143-4f36-aff3-1b37e56f3528",
+                    GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_6892caec-671c-44e8-9c34-3bfdc232b1bb",
                     INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
                 },
                 Symbol(throws): true
@@ -11276,7 +10958,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             allocUnsafe: ƒ allocUnsafe(length: 1) {},
             argv: <ref *124> [
                 "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1781484840269-1/repl.mjs"
+                "/tmp/fs-fixture-1782089574734-1/repl.mjs"
             ],
             build: ƒ build(length: 1) {},
             concatArrayBuffers: ƒ concatArrayBuffers(length: 3) {},
@@ -11347,7 +11029,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             isMainThread: true,
             listen: ƒ listen(length: 1) {},
             udpSocket: ƒ udpSocket(length: 1) {},
-            [get/set] main: "/tmp/fs-fixture-1781484840269-1/repl.mjs",
+            [get/set] main: "/tmp/fs-fixture-1782089574734-1/repl.mjs",
             mmap: ƒ mmap(length: 1) {},
             nanoseconds: ƒ nanoseconds(length: 0) {},
             openInEditor: ƒ openInEditor(length: 1) {},
@@ -11375,7 +11057,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             readableStreamToText: ƒ (length: 1) {},
             resolve: ƒ resolve(length: 1) {},
             resolveSync: ƒ resolveSync(length: 1) {},
-            revision: "4d79cf879a747a64ebd7e86d652f7597117fe658",
+            revision: "7a5293cef99b1c19c1de921da3c112eadaf148b1",
             semver: {
                 satisfies: ƒ satisfies(length: 2) {},
                 order: ƒ order(length: 2) {}
@@ -11445,13 +11127,13 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             subtle: SubtleCrypto {}
         },
         navigator: {
-            userAgent: "Bun/1.4.0",
-            platform: "Linux x86_64",
-            hardwareConcurrency: 4
+            [get/set] userAgent: "Bun/1.4.0",
+            [get/set] platform: "Linux x86_64",
+            [get/set] hardwareConcurrency: 4
         },
         performance: Performance {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1781484841406.7993
+            timeOrigin: 1782089576012.604
         },
         process: EventEmitter {
             _debugEnd: ƒ _debugEnd(length: 0) {},
@@ -11483,7 +11165,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 variables: {
                     v8_enable_i8n_support: 1,
                     enable_lto: false,
-                    node_module_version: 137,
+                    enable_thin_lto: false,
+                    lto_jobs: "",
+                    node_module_version: 147,
                     napi_build_version: 10,
                     node_builtin_shareable_builtins: [],
                     node_byteorder: "little",
@@ -11547,15 +11231,15 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             nextTick: ƒ nextTick(length: 1) {},
             [get/set] noDeprecation: false,
             openStdin: ƒ openStdin(length: 0) {},
-            pid: 3233,
+            pid: 3215,
             platform: "linux",
-            [get/set] ppid: 2453,
+            [get/set] ppid: 2436,
             reallyExit: ƒ reallyExit(length: 1) {},
             ref: ƒ ref(length: 1) {},
             release: {
                 name: "node",
                 sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-x64.zip",
-                headersUrl: "https://nodejs.org/download/release/v24.3.0/node-v24.3.0-headers.tar.gz"
+                headersUrl: "https://nodejs.org/download/release/v26.3.0/node-v26.3.0-headers.tar.gz"
             },
             report: {
                 compact: false,
@@ -11569,7 +11253,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 writeReport: ƒ writeReport(length: 1) {}
             },
             resourceUsage: ƒ resourceUsage(length: 0) {},
-            revision: "4d79cf879a747a64ebd7e86d652f7597117fe658",
+            revision: "7a5293cef99b1c19c1de921da3c112eadaf148b1",
             send: undefined,
             setSourceMapsEnabled: ƒ setSourceMapsEnabled(length: 1) {},
             setUncaughtExceptionCaptureCallback: ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
@@ -11582,17 +11266,13 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 bytesWritten: 0,
                 _write: <ref *318> ƒ underscoreWriteFast(length: 3) {},
                 write: <ref *319> ƒ writeFast(length: 3) {},
+                _construct: undefined,
                 _events: {
                     close: undefined,
                     error: undefined,
                     prefinish: undefined,
                     finish: undefined,
-                    drain: undefined,
-                    Symbol(kConstruct): [
-                        ƒ bound onceWrapper(length: 0) {
-                            listener: ƒ (length: 0) {}
-                        }
-                    ]
+                    drain: undefined
                 },
                 _writableState: {
                     highWaterMark: 65536,
@@ -11602,18 +11282,17 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     writelen: 0,
                     bufferedIndex: 0,
                     pendingcb: 0,
-                    Symbol(kState): 17580552,
+                    Symbol(kState): 17580808,
                     Symbol(kBufferedValue): null
                 },
                 _maxListeners: undefined,
-                _eventsCount: NaN,
                 readable: false,
                 _type: "fs",
-                destroySoon: <ref *326> ƒ (length: 2) {},
+                destroySoon: <ref *323> ƒ (length: 2) {},
                 _destroy: ƒ (length: 2) {},
                 _final: ƒ (length: 1) {},
                 _isStdio: true,
-                Symbol(kFs): <ref *329> {
+                Symbol(kFs): <ref *326> {
                     appendFile: ƒ appendFile(length: 4) {},
                     appendFileSync: ƒ appendFileSync(length: 3) {},
                     access: ƒ access(length: 3) {},
@@ -11664,6 +11343,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     mkdirSync: ƒ mkdirSync(length: 2) {},
                     mkdtemp: ƒ mkdtemp(length: 3) {},
                     mkdtempSync: ƒ mkdtempSync(length: 2) {},
+                    mkdtempDisposableSync: ƒ mkdtempDisposableSync2(length: 2) {},
                     open: ƒ open(length: 4) {},
                     openSync: ƒ openSync(length: 3) {},
                     read: ƒ read(length: 6) {},
@@ -11718,7 +11398,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     R_OK: 4,
                     W_OK: 2,
                     X_OK: 1,
-                    constants: <ref *425> [Object: null prototype] {
+                    constants: <ref *423> [Object: null prototype] {
                         UV_FS_SYMLINK_DIR: 1,
                         UV_FS_SYMLINK_JUNCTION: 2,
                         O_RDONLY: 0,
@@ -11780,16 +11460,16 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     },
                     Dir: class Dir {},
                     Stats: ƒ Stats(length: 0) {},
-                    [get/set] ReadStream: <ref *428> ƒ ReadStream(length: 2) {},
-                    WriteStream: <ref *429> ƒ WriteStream(length: 2) {},
-                    [get/set] FileReadStream: [Circular: *428],
-                    [get/set] FileWriteStream: [Circular: *429],
+                    [get/set] ReadStream: <ref *426> ƒ ReadStream(length: 2) {},
+                    WriteStream: <ref *427> ƒ WriteStream(length: 2) {},
+                    [get/set] FileReadStream: [Circular: *426],
+                    [get/set] FileWriteStream: [Circular: *427],
                     promises: {
                         access: async ƒ access(length: 3) {},
                         appendFile: async ƒ appendFile(length: 1) {},
                         close: async ƒ close(length: 1) {},
                         copyFile: async ƒ copyFile(length: 4) {},
-                        cp: ƒ cp(length: 3) {},
+                        cp: async ƒ cp(length: 3) {},
                         exists: async ƒ exists(length: 0) {},
                         chown: async ƒ chown(length: 4) {},
                         chmod: async ƒ chmod(length: 3) {},
@@ -11800,13 +11480,14 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                         fdatasync: async ƒ fdatasync(length: 2) {},
                         ftruncate: async ƒ ftruncate(length: 1) {},
                         futimes: async ƒ futimes(length: 4) {},
-                        glob: async ƒ glob(length: 2) {},
+                        glob: ƒ glob(length: 2) {},
                         lchmod: async ƒ lchmod(length: 3) {},
                         lchown: async ƒ lchown(length: 4) {},
                         link: async ƒ link(length: 3) {},
                         lstat: async ƒ lstat(length: 1) {},
                         mkdir: async ƒ mkdir(length: 3) {},
                         mkdtemp: async ƒ mkdtemp(length: 3) {},
+                        mkdtempDisposable: async ƒ mkdtempDisposable(length: 2) {},
                         statfs: async ƒ statfs(length: 2) {},
                         open: async ƒ open(length: 1) {},
                         read: async ƒ read(length: 6) {},
@@ -11823,11 +11504,11 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                         unlink: async ƒ unlink(length: 2) {},
                         utimes: async ƒ utimes(length: 4) {},
                         lutimes: async ƒ lutimes(length: 4) {},
-                        rm: async ƒ rm(length: 3) {},
-                        rmdir: async ƒ rmdir(length: 3) {},
+                        rm: async ƒ rm(length: 2) {},
+                        rmdir: async ƒ rmdir(length: 2) {},
                         writev: async ƒ writev(length: 3) {},
                         readv: async ƒ readv(length: 3) {},
-                        constants: [Circular: *425],
+                        constants: [Circular: *423],
                         watch: ƒ watch(length: 1) {},
                         opendir: async ƒ opendir(length: 2) {}
                     }
@@ -11873,14 +11554,14 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 },
                 _maxListeners: undefined,
                 _eventsCount: NaN,
-                on: <ref *491> ƒ (length: 2) {},
-                addListener: [Circular: *491],
+                on: <ref *490> ƒ (length: 2) {},
+                addListener: [Circular: *490],
                 ref: ƒ (length: 0) {},
                 unref: ƒ (length: 0) {},
                 pause: ƒ (length: 0) {},
                 resume: ƒ (length: 0) {},
                 _read: ƒ triggerRead(length: 1) {},
-                Symbol(kFs): [Circular: *329],
+                Symbol(kFs): [Circular: *326],
                 Symbol(kReadStreamFastPath): false,
                 Symbol(kCapture): false
             },
@@ -11893,17 +11574,13 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                 bytesWritten: 0,
                 _write: [Circular: *318],
                 write: [Circular: *319],
+                _construct: undefined,
                 _events: {
                     close: undefined,
                     error: undefined,
                     prefinish: undefined,
                     finish: undefined,
-                    drain: undefined,
-                    Symbol(kConstruct): [
-                        ƒ bound onceWrapper(length: 0) {
-                            listener: ƒ (length: 0) {}
-                        }
-                    ]
+                    drain: undefined
                 },
                 _writableState: {
                     highWaterMark: 65536,
@@ -11913,18 +11590,17 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
                     writelen: 0,
                     bufferedIndex: 0,
                     pendingcb: 0,
-                    Symbol(kState): 17580552,
+                    Symbol(kState): 17580808,
                     Symbol(kBufferedValue): null
                 },
                 _maxListeners: undefined,
-                _eventsCount: NaN,
                 readable: false,
                 _type: "fs",
-                destroySoon: [Circular: *326],
+                destroySoon: [Circular: *323],
                 _destroy: ƒ (length: 2) {},
                 _final: ƒ (length: 1) {},
                 _isStdio: true,
-                Symbol(kFs): [Circular: *329],
+                Symbol(kFs): [Circular: *326],
                 Symbol(kWriteStreamFastPath): FileSink {},
                 Symbol(kCapture): false,
                 Symbol(Symbol.asyncIterator): ƒ (length: 0) {}
@@ -11934,33 +11610,33 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             umask: ƒ umask(length: 1) {},
             unref: ƒ unref(length: 1) {},
             uptime: ƒ uptime(length: 1) {},
-            version: "v24.3.0",
+            version: "v26.3.0",
             versions: {
-                node: "24.3.0",
+                node: "26.3.0",
                 bun: "1.4.0",
-                boringssl: "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+                boringssl: "1a41b9025c2c0a37edd07ff10f6944f03e028522",
                 openssl: "1.1.0",
                 llhttp: "9.3.0",
                 libarchive: "ded82291ab41d5e355831b96b0e1ff49e24d8939",
                 mimalloc: "afb41757285694f832e7a2f164d35f5717457f96",
                 picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-                uwebsockets: "4d79cf879a747a64ebd7e86d652f7597117fe658",
-                webkit: "6d586e293f008f0e74e5697611a379b1b24815c9",
+                uwebsockets: "7a5293cef99b1c19c1de921da3c112eadaf148b1",
+                webkit: "cd821fecca0d39c8bac874c283d956868c7f0de0",
                 zig: "04e7f6ac1e009525bc00934f20199c68f04e0a24",
                 zlib: "12731092979c6d07f42da27da673a9f6c7b13586",
                 tinycc: "12882eee073cfe5c7621bcfadf679e1372d4537b",
                 lolhtml: "77127cd2b8545998756e8d64e36ee2313c4bb312",
                 ares: "3ac47ee46edd8ea40370222f91613fc16c434853",
                 libdeflate: "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
-                usockets: "4d79cf879a747a64ebd7e86d652f7597117fe658",
+                usockets: "7a5293cef99b1c19c1de921da3c112eadaf148b1",
                 lshpack: "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
                 zstd: "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
-                v8: "13.6.233.10-node.18",
+                v8: "14.6.202.34-node.20",
                 uv: "1.48.0",
                 napi: "10",
                 icu: "75.1",
                 unicode: "15.1",
-                modules: "137"
+                modules: "147"
             },
             getegid: ƒ getegid(length: 0) {},
             geteuid: ƒ geteuid(length: 0) {},
@@ -11989,13 +11665,13 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             isEncoding: ƒ isEncoding(length: 1) {},
             poolSize: 8192
         },
-        BuildError: <ref *534> ƒ BuildMessage(length: 0) {},
-        BuildMessage: [Circular: *534],
+        BuildError: <ref *530> ƒ BuildMessage(length: 0) {},
+        BuildMessage: [Circular: *530],
         Crypto: ƒ Crypto(length: 0) {},
         HTMLRewriter: ƒ HTMLRewriter(length: 0) {},
         Request: ƒ Request(length: 0) {},
-        ResolveError: <ref *538> ƒ ResolveMessage(length: 0) {},
-        ResolveMessage: [Circular: *538],
+        ResolveError: <ref *534> ƒ ResolveMessage(length: 0) {},
+        ResolveMessage: [Circular: *534],
         Response: ƒ Response(length: 0) {
             error: ƒ error(length: 0) {},
             json: ƒ json(length: 0) {},
@@ -12103,7 +11779,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     crlfDelay: 100,
     cursor: 0,
     default: {
-        lines: <ref *596> [],
+        lines: <ref *592> [],
         context: [Circular: *4],
         historyIndex: -1,
         cursor: 0,
@@ -12111,12 +11787,12 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         removeHistoryDuplicates: false,
         crlfDelay: 100,
         completer: [Circular: *3],
-        history: <ref *597> [],
+        history: <ref *593> [],
         _initialPrompt: "> ",
         terminal: true,
         input: [Error accessing: node:repl is not yet implemented in Bun.],
         line: "",
-        eval: <ref *599> ƒ eval(length: 0) {},
+        eval: <ref *595> ƒ eval(length: 0) {},
         isCompletionEnabled: true,
         escapeCodeTimeout: 500,
         tabSize: 8,
@@ -12132,16 +11808,16 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         builtinModules: [Circular: *2]
     },
     escapeCodeTimeout: 500,
-    eval: [Circular: *599],
-    history: [Circular: *597],
+    eval: [Circular: *595],
+    history: [Circular: *593],
     historyIndex: -1,
     historySize: 1000,
-    input: [Circular: *598],
+    input: [Circular: *594],
     isCompletionEnabled: true,
     last: undefined,
     line: "",
-    lines: [Circular: *596],
-    output: [Circular: *600],
+    lines: [Circular: *592],
+    output: [Circular: *596],
     removeHistoryDuplicates: false,
     tabSize: 8,
     terminal: true,
@@ -12241,7 +11917,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 [Object: null prototype] {
     Duplex: <ref *2> ƒ Duplex(length: 1) {
         fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 1) {},
+        toWeb: ƒ (length: 2) {},
         from: ƒ (length: 1) {}
     },
     PassThrough: <ref *6> ƒ PassThrough(length: 1) {},
@@ -12287,6 +11963,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         addAbortSignal: <ref *36> ƒ addAbortSignal(length: 2) {},
         finished: <ref *37> ƒ eos(length: 3) {
             finished: <ref *38> ƒ finished(length: 2) {},
+            kEosNodeSynchronousCallback: Symbol(kEosNodeSynchronousCallback),
             [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *38]
         },
         destroy: <ref *39> ƒ destroyer(length: 2) {},
@@ -12851,7 +12528,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
     transferableAbortSignal: [Circular: *75],
     types: [Circular: *77]
 }
-(node:3318) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:3295) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -13531,15 +13208,16 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         createServer: [Circular: *9],
         [get/set] DEFAULT_CIPHERS: "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA2…",
         DEFAULT_ECDH_CURVE: "auto",
-        DEFAULT_MAX_VERSION: "TLSv1.3",
-        DEFAULT_MIN_VERSION: "TLSv1.2",
+        [get/set] DEFAULT_MAX_VERSION: "TLSv1.3",
+        [get/set] DEFAULT_MIN_VERSION: "TLSv1.2",
         getCiphers: <ref *11> ƒ getCiphers(length: 0) {},
-        parseCertString: <ref *12> ƒ parseCertString(length: 0) {},
+        setDefaultCACertificates: <ref *12> ƒ setDefaultCACertificates(length: 1) {},
+        parseCertString: <ref *13> ƒ parseCertString(length: 0) {},
         SecureContext: [Circular: *2],
         Server: [Circular: *3],
         TLSSocket: [Circular: *4],
         checkServerIdentity: [Circular: *5],
-        [get/set] rootCertificates: <ref *13> [
+        [get/set] rootCertificates: <ref *14> [
             "-----BEGIN CERTIFICATE-----\nMIIEkTCCA3mgAwIBAgIERWtQVDANBgkqhkiG9w0BAQUFADCBsDELMAkGA1UEBhMCVVMxFjAU…",
             "-----BEGIN CERTIFICATE-----\nMIIFtzCCA5+gAwIBAgICBQkwDQYJKoZIhvcNAQEFBQAwRTELMAkGA1UEBhMCQk0xGTAXBgNV…",
             "-----BEGIN CERTIFICATE-----\nMIIGnTCCBIWgAwIBAgICBcYwDQYJKoZIhvcNAQEFBQAwRTELMAkGA1UEBhMCQk0xGTAXBgNV…",
@@ -13686,12 +13364,13 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
             "-----BEGIN CERTIFICATE-----\nMIIFgzCCA2ugAwIBAgIQVaXZZ5Qoxu0M+ifdWwFNGDANBgkqhkiG9w0BAQwFADBLMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIICzzCCAjGgAwIBAgINAOhvGHvWOWuYSkmYCjAKBggqhkjOPQQDBDB1MQswCQYDVQQGEwJI…"
         ],
-        getCACertificates: <ref *14> ƒ getCACertificates(length: 0) {}
+        getCACertificates: <ref *15> ƒ getCACertificates(length: 0) {}
     },
-    getCACertificates: [Circular: *14],
+    getCACertificates: [Circular: *15],
     getCiphers: [Circular: *11],
-    parseCertString: [Circular: *12],
-    rootCertificates: [Circular: *13]
+    parseCertString: [Circular: *13],
+    rootCertificates: [Circular: *14],
+    setDefaultCACertificates: [Circular: *12]
 }
 ```
 
@@ -14956,7 +14635,7 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
         WASI: [Circular: *2]
     }
 }
-(node:3487) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3484) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -15695,9 +15374,9 @@ DeprecationWarning: OutgoingMessage.prototype._headerNames is deprecated
 2 | 			import * as all from 'node:sea';
                             ^
 error: Could not resolve: "node:sea". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1781484840269-1/node:sea.mjs:2:25
+    at /tmp/fs-fixture-1782089574734-1/node:sea.mjs:2:25
 
-Bun v1.4.0-canary.1+4d79cf879 (Linux x64)
+Bun v1.4.0-canary.1+7a5293cef (Linux x64)
 ```
 
 </td></tr></table>
@@ -15778,9 +15457,9 @@ Bun v1.4.0-canary.1+4d79cf879 (Linux x64)
 2 | 			import * as all from 'node:sqlite';
                             ^
 error: Could not resolve: "node:sqlite". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1781484840269-1/node:sqlite.mjs:2:25
+    at /tmp/fs-fixture-1782089574734-1/node:sqlite.mjs:2:25
 
-Bun v1.4.0-canary.1+4d79cf879 (Linux x64)
+Bun v1.4.0-canary.1+7a5293cef (Linux x64)
 ```
 
 </td></tr></table>
@@ -15937,7 +15616,15 @@ Bun v1.4.0-canary.1+4d79cf879 (Linux x64)
             setResolveSnapshotPath: ƒ setResolveSnapshotPath(length: 1) {}
         },
         run: <ref *41> ƒ run(length: 0) {},
-        mock: <ref *42> ƒ mock(length: 0) {}
+        mock: <ref *42> {
+            fn: ƒ mockFn(length: 3) {},
+            method: ƒ mockMethod(length: 4) {},
+            getter: ƒ getter(length: 4) {},
+            setter: ƒ setter(length: 4) {},
+            reset: ƒ reset(length: 0) {},
+            restoreAll: ƒ restoreAll(length: 0) {},
+            module: ƒ module(length: 0) {}
+        }
     },
     describe: [Circular: *34],
     it: [Circular: *30],
@@ -15984,9 +15671,9 @@ Bun v1.4.0-canary.1+4d79cf879 (Linux x64)
 2 | 			import * as all from 'node:test/reporters';
                             ^
 error: Could not resolve: "node:test/reporters". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1781484840269-1/node:test_reporters.mjs:2:25
+    at /tmp/fs-fixture-1782089574734-1/node:test_reporters.mjs:2:25
 
-Bun v1.4.0-canary.1+4d79cf879 (Linux x64)
+Bun v1.4.0-canary.1+7a5293cef (Linux x64)
 ```
 
 </td></tr></table>
