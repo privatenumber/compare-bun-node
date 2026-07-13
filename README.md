@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Jul 6, 2026 with Bun 1.4.0 Node.js v24.18.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Jul 13, 2026 with Bun 1.4.0 Node.js v24.18.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -724,7 +724,7 @@ _Last updated on <!-- lastUpdated:start -->Jul 6, 2026 with Bun 1.4.0 Node.js v2
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2666) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2724) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -6556,7 +6556,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1783298384497-1/module.mjs: "/tmp/fs-fixture-1783298384497-1/module.mjs"
+            /tmp/fs-fixture-1783902837438-1/module.mjs: "/tmp/fs-fixture-1783902837438-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -6722,7 +6722,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
 <ref *1> [Object: null prototype] {
     Module: <ref *2> ƒ Module(length: 1) {
         _cache: <ref *3> {
-            /tmp/fs-fixture-1783298384497-1/inspect.mjs: {
+            /tmp/fs-fixture-1783902837438-1/inspect.mjs: {
                 exports: [Object: null prototype] {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -7924,14 +7924,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             getEntriesByName: ƒ getEntriesByName(length: 1) {},
             getEntriesByType: ƒ getEntriesByType(length: 1) {},
             setResourceTimingBufferSize: ƒ setResourceTimingBufferSize(length: 1) {},
-            timeOrigin: 1783298385464.0913,
+            timeOrigin: 1783902838421.5261,
             toJSON: ƒ toJSON(length: 1) {},
             onresourcetimingbufferfull: null,
             nodeTiming: PerformanceNodeTiming {
-                v8Start: 1783298385464.0913,
-                nodeStart: 1783298385464.0913,
-                environment: 1783298385464.0913,
-                bootstrapComplete: 1783298385464.0913,
+                v8Start: 1783902838421.5261,
+                nodeStart: 1783902838421.5261,
+                environment: 1783902838421.5261,
+                bootstrapComplete: 1783902838421.5261,
                 idleTime: 1,
                 loopStart: 1,
                 loopExit: -1
@@ -8281,7 +8281,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     arch: "x64",
     argv: <ref *26> [
         "/opt/hostedtoolcache/node/24.18.0/x64/bin/node",
-        "/tmp/fs-fixture-1783298384497-1/process.mjs"
+        "/tmp/fs-fixture-1783902837438-1/process.mjs"
     ],
     argv0: "node",
     availableMemory: <ref *27> ƒ availableMemory(length: 0) {},
@@ -9287,7 +9287,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         setgid: <ref *118> ƒ (length: 1) {},
         setuid: <ref *119> ƒ (length: 1) {},
         env: <ref *120>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_657bbfe3-9022-4533-9918-f3a81426ab82",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_9eaee569-acde-453d-a243-85d1e9c5dddb",
             npm_package_devDependencies__types_node: "^18.15.11",
             DOTNET_NOLOGO: "1",
             USER: "runner",
@@ -9295,7 +9295,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             CI: "true",
             USE_BAZEL_FALLBACK_VERSION: "silent:",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_657bbfe3-9022-4533-9918-f3a81426ab82",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_9eaee569-acde-453d-a243-85d1e9c5dddb",
             PIPX_HOME: "/opt/pipx",
             npm_node_execpath: "/opt/hostedtoolcache/node/24.18.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -9317,22 +9317,22 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-Linux",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "2073",
-            ACTIONS_ORCHESTRATION_ID: "0bf45b9d-4820-483c-8771-fa7c2c5acc01.build.__default",
+            SYSTEMD_EXEC_PID: "2224",
+            ACTIONS_ORCHESTRATION_ID: "5ea4d8a3-d6ea-4cb0-88ee-87e982c78e77.build.__default",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20260628.225.1",
+            ImageVersion: "20260705.232.1",
             LOGNAME: "runner",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             npm_package_devDependencies_lintroll: "^1.10.0",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "9:14088",
+            JOURNAL_STREAM: "9:14695",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9342,10 +9342,10 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.11/x64",
-            GITHUB_RUN_ID: "28760582495",
+            GITHUB_RUN_ID: "29215584485",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "7e9d2b2c6dbb6ff085085678dee91643dc2a546f",
+            GITHUB_WORKFLOW_SHA: "8a6e2ec5958af010250ffcbc0c6e483442e9ca76",
             GOROOT_1_26_X64: "/opt/hostedtoolcache/go/1.26.4/x64",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
@@ -9357,12 +9357,12 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_45d4635d-e0d8-43b7-8fdd-14138e8c8a45",
-            INVOCATION_ID: "a87e0e8a1b7d445fa4ac462666b1a77c",
+            RUNNER_TRACKING_ID: "github_e792b744-deda-4cfc-9b69-3be85f8ee56a",
+            INVOCATION_ID: "8eff0c473fbd4a0e93f63b4fcfbe107f",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/24.18.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "189",
+            GITHUB_RUN_NUMBER: "190",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9371,7 +9371,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000016359",
+            RUNNER_NAME: "GitHub Actions 1000016668",
             XDG_CONFIG_HOME: "/home/runner/.config",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -9393,7 +9393,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             GITHUB_JOB: "build",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "7e9d2b2c6dbb6ff085085678dee91643dc2a546f",
+            GITHUB_SHA: "8a6e2ec5958af010250ffcbc0c6e483442e9ca76",
             GITHUB_RUN_ATTEMPT: "1",
             ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED: "1",
             GITHUB_REF: "refs/heads/master",
@@ -9401,7 +9401,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_657bbfe3-9022-4533-9918-f3a81426ab82",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_9eaee569-acde-453d-a243-85d1e9c5dddb",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9414,7 +9414,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_657bbfe3-9022-4533-9918-f3a81426ab82",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_9eaee569-acde-453d-a243-85d1e9c5dddb",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
@@ -9427,14 +9427,14 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_657bbfe3-9022-4533-9918-f3a81426ab82",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_9eaee569-acde-453d-a243-85d1e9c5dddb",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *26],
         execArgv: <ref *121> [],
-        pid: 3205,
-        ppid: 2516,
+        pid: 3259,
+        ppid: 2577,
         execPath: "/opt/hostedtoolcache/node/24.18.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
@@ -9482,9 +9482,9 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     moduleLoadList: [Circular: *51],
     nextTick: [Circular: *82],
     openStdin: [Circular: *72],
-    pid: 3205,
+    pid: 3259,
     platform: "linux",
-    ppid: 2516,
+    ppid: 2577,
     reallyExit: [Circular: *55],
     ref: [Circular: *64],
     release: [Circular: *50],
@@ -9535,7 +9535,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1783298384497-1/process.mjs"
+        "/tmp/fs-fixture-1783902837438-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -9575,7 +9575,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     constrainedMemory: <ref *26> ƒ constrainedMemory(length: 0) {},
     cpuUsage: <ref *27> ƒ cpuUsage(length: 1) {},
     cwd: <ref *28> ƒ cwd(length: 1) {},
-    debugPort: 0,
+    debugPort: 9229,
     default: EventEmitter {
         _debugEnd: [Circular: *2],
         _debugProcess: [Circular: *3],
@@ -9606,12 +9606,12 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         constrainedMemory: [Circular: *26],
         cpuUsage: [Circular: *27],
         cwd: [Circular: *28],
-        [get/set] debugPort: 0,
+        [get/set] debugPort: 9229,
         disconnect: undefined,
         dlopen: <ref *30> ƒ dlopen(length: 1) {},
         emitWarning: <ref *31> ƒ emitWarning(length: 1) {},
         env: <ref *32> {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_657bbfe3-9022-4533-9918-f3a81426ab82",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_9eaee569-acde-453d-a243-85d1e9c5dddb",
             npm_package_devDependencies__types_node: "^18.15.11",
             DOTNET_NOLOGO: "1",
             USER: "runner",
@@ -9619,7 +9619,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             CI: "true",
             USE_BAZEL_FALLBACK_VERSION: "silent:",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_657bbfe3-9022-4533-9918-f3a81426ab82",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_9eaee569-acde-453d-a243-85d1e9c5dddb",
             PIPX_HOME: "/opt/pipx",
             npm_node_execpath: "/opt/hostedtoolcache/node/24.18.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -9641,22 +9641,22 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-Linux",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "2073",
-            ACTIONS_ORCHESTRATION_ID: "0bf45b9d-4820-483c-8771-fa7c2c5acc01.build.__default",
+            SYSTEMD_EXEC_PID: "2224",
+            ACTIONS_ORCHESTRATION_ID: "5ea4d8a3-d6ea-4cb0-88ee-87e982c78e77.build.__default",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20260628.225.1",
+            ImageVersion: "20260705.232.1",
             LOGNAME: "runner",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             npm_package_devDependencies_lintroll: "^1.10.0",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "9:14088",
+            JOURNAL_STREAM: "9:14695",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9666,10 +9666,10 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.11/x64",
-            GITHUB_RUN_ID: "28760582495",
+            GITHUB_RUN_ID: "29215584485",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "7e9d2b2c6dbb6ff085085678dee91643dc2a546f",
+            GITHUB_WORKFLOW_SHA: "8a6e2ec5958af010250ffcbc0c6e483442e9ca76",
             GOROOT_1_26_X64: "/opt/hostedtoolcache/go/1.26.4/x64",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
@@ -9681,12 +9681,12 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_45d4635d-e0d8-43b7-8fdd-14138e8c8a45",
-            INVOCATION_ID: "a87e0e8a1b7d445fa4ac462666b1a77c",
+            RUNNER_TRACKING_ID: "github_e792b744-deda-4cfc-9b69-3be85f8ee56a",
+            INVOCATION_ID: "8eff0c473fbd4a0e93f63b4fcfbe107f",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
             NODE: "/opt/hostedtoolcache/node/24.18.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "189",
+            GITHUB_RUN_NUMBER: "190",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9695,7 +9695,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000016359",
+            RUNNER_NAME: "GitHub Actions 1000016668",
             XDG_CONFIG_HOME: "/home/runner/.config",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -9717,7 +9717,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             GITHUB_JOB: "build",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "7e9d2b2c6dbb6ff085085678dee91643dc2a546f",
+            GITHUB_SHA: "8a6e2ec5958af010250ffcbc0c6e483442e9ca76",
             GITHUB_RUN_ATTEMPT: "1",
             ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED: "1",
             GITHUB_REF: "refs/heads/master",
@@ -9725,7 +9725,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_657bbfe3-9022-4533-9918-f3a81426ab82",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_9eaee569-acde-453d-a243-85d1e9c5dddb",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9738,7 +9738,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_657bbfe3-9022-4533-9918-f3a81426ab82",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_9eaee569-acde-453d-a243-85d1e9c5dddb",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
@@ -9751,7 +9751,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_657bbfe3-9022-4533-9918-f3a81426ab82",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_9eaee569-acde-453d-a243-85d1e9c5dddb",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         [get/set] execArgv: <ref *33> [],
@@ -9789,9 +9789,9 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         nextTick: <ref *46> ƒ nextTick(length: 1) {},
         [get/set] noDeprecation: false,
         openStdin: <ref *47> ƒ openStdin(length: 0) {},
-        pid: 3212,
+        pid: 3268,
         platform: "linux",
-        [get/set] ppid: 2516,
+        [get/set] ppid: 2577,
         reallyExit: <ref *48> ƒ reallyExit(length: 1) {},
         ref: <ref *49> ƒ ref(length: 1) {},
         release: <ref *50> {
@@ -9811,7 +9811,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             writeReport: ƒ writeReport(length: 1) {}
         },
         resourceUsage: <ref *54> ƒ resourceUsage(length: 0) {},
-        revision: "d37f52067bc8824e3606cf31e3bde031cdde2afe",
+        revision: "2e2230a81f7c28b606ba9daf8fd5679511a64464",
         send: undefined,
         setSourceMapsEnabled: <ref *55> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *56> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
@@ -10118,7 +10118,6 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             read: ƒ (length: 1) {},
             _read: ƒ triggerRead(length: 1) {},
             Symbol(kFs): [Circular: *66],
-            Symbol(kReadStreamFastPath): false,
             Symbol(kCapture): false
         },
         stdout: <ref *236> WriteStream {
@@ -10176,7 +10175,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             libarchive: "ded82291ab41d5e355831b96b0e1ff49e24d8939",
             mimalloc: "afb41757285694f832e7a2f164d35f5717457f96",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "d37f52067bc8824e3606cf31e3bde031cdde2afe",
+            uwebsockets: "2e2230a81f7c28b606ba9daf8fd5679511a64464",
             webkit: "c9ad5813fd23bd8b98b0738abc3d037ec716aa92",
             zig: "04e7f6ac1e009525bc00934f20199c68f04e0a24",
             zlib: "12731092979c6d07f42da27da673a9f6c7b13586",
@@ -10184,7 +10183,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             lolhtml: "77127cd2b8545998756e8d64e36ee2313c4bb312",
             ares: "3ac47ee46edd8ea40370222f91613fc16c434853",
             libdeflate: "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
-            usockets: "d37f52067bc8824e3606cf31e3bde031cdde2afe",
+            usockets: "2e2230a81f7c28b606ba9daf8fd5679511a64464",
             lshpack: "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
             zstd: "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
             v8: "14.6.202.34-node.20",
@@ -10242,9 +10241,9 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *47],
-    pid: 3212,
+    pid: 3268,
     platform: "linux",
-    ppid: 2516,
+    ppid: 2577,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -10255,7 +10254,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *51],
     resourceUsage: [Circular: *54],
-    revision: "d37f52067bc8824e3606cf31e3bde031cdde2afe",
+    revision: "2e2230a81f7c28b606ba9daf8fd5679511a64464",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *55],
@@ -10307,7 +10306,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     ucs2: [Circular: *4],
     version: "2.1.0"
 }
-(node:3228) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:3275) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -10651,7 +10650,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 escape: ƒ escape(length: 1) {},
                 Symbol(cwd): undefined,
                 Symbol(env): <ref *33> {
-                    GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_657bbfe3-9022-4533-9918-f3a81426ab82",
+                    GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_9eaee569-acde-453d-a243-85d1e9c5dddb",
                     npm_package_devDependencies__types_node: "^18.15.11",
                     DOTNET_NOLOGO: "1",
                     USER: "runner",
@@ -10659,7 +10658,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     CI: "true",
                     USE_BAZEL_FALLBACK_VERSION: "silent:",
                     RUNNER_ENVIRONMENT: "github-hosted",
-                    GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_657bbfe3-9022-4533-9918-f3a81426ab82",
+                    GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_9eaee569-acde-453d-a243-85d1e9c5dddb",
                     PIPX_HOME: "/opt/pipx",
                     npm_node_execpath: "/opt/hostedtoolcache/node/24.18.0/x64/bin/node",
                     JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
@@ -10681,22 +10680,22 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-Linux",
                     AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
                     GITHUB_HEAD_REF: "",
-                    SYSTEMD_EXEC_PID: "2073",
-                    ACTIONS_ORCHESTRATION_ID: "0bf45b9d-4820-483c-8771-fa7c2c5acc01.build.__default",
+                    SYSTEMD_EXEC_PID: "2224",
+                    ACTIONS_ORCHESTRATION_ID: "5ea4d8a3-d6ea-4cb0-88ee-87e982c78e77.build.__default",
                     GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
                     JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
                     NVM_DIR: "/home/runner/.nvm",
                     npm_package_dependencies_fs_fixture: "^1.2.0",
                     DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
                     JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-                    ImageVersion: "20260628.225.1",
+                    ImageVersion: "20260705.232.1",
                     LOGNAME: "runner",
                     RUNNER_OS: "Linux",
                     GITHUB_API_URL: "https://api.github.com",
                     SWIFT_PATH: "/usr/share/swift/usr/bin",
                     npm_package_devDependencies_lintroll: "^1.10.0",
                     CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-                    JOURNAL_STREAM: "9:14088",
+                    JOURNAL_STREAM: "9:14695",
                     GITHUB_WORKFLOW: "Compare Bun and Node.js",
                     _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
                     npm_package_private: "true",
@@ -10706,10 +10705,10 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     npm_config_registry: "https://registry.npmjs.org/",
                     ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
                     GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.11/x64",
-                    GITHUB_RUN_ID: "28760582495",
+                    GITHUB_RUN_ID: "29215584485",
                     GITHUB_REF_TYPE: "branch",
                     BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-                    GITHUB_WORKFLOW_SHA: "7e9d2b2c6dbb6ff085085678dee91643dc2a546f",
+                    GITHUB_WORKFLOW_SHA: "8a6e2ec5958af010250ffcbc0c6e483442e9ca76",
                     GOROOT_1_26_X64: "/opt/hostedtoolcache/go/1.26.4/x64",
                     GITHUB_BASE_REF: "",
                     ImageOS: "ubuntu24",
@@ -10721,12 +10720,12 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
                     ANT_HOME: "/usr/share/ant",
                     DOTNET_MULTILEVEL_LOOKUP: "0",
-                    RUNNER_TRACKING_ID: "github_45d4635d-e0d8-43b7-8fdd-14138e8c8a45",
-                    INVOCATION_ID: "a87e0e8a1b7d445fa4ac462666b1a77c",
+                    RUNNER_TRACKING_ID: "github_e792b744-deda-4cfc-9b69-3be85f8ee56a",
+                    INVOCATION_ID: "8eff0c473fbd4a0e93f63b4fcfbe107f",
                     RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
                     NODE: "/opt/hostedtoolcache/node/24.18.0/x64/bin/node",
                     GITHUB_ACTION: "__run",
-                    GITHUB_RUN_NUMBER: "189",
+                    GITHUB_RUN_NUMBER: "190",
                     GITHUB_TRIGGERING_ACTOR: "privatenumber",
                     RUNNER_ARCH: "X64",
                     XDG_RUNTIME_DIR: "/run/user/1001",
@@ -10735,7 +10734,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     LANG: "C.UTF-8",
                     VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
                     CONDA: "/usr/share/miniconda",
-                    RUNNER_NAME: "GitHub Actions 1000016359",
+                    RUNNER_NAME: "GitHub Actions 1000016668",
                     XDG_CONFIG_HOME: "/home/runner/.config",
                     GITHUB_REF_NAME: "master",
                     GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -10757,7 +10756,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     GITHUB_JOB: "build",
                     npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
                     npm_package_dependencies_execa: "^7.1.1",
-                    GITHUB_SHA: "7e9d2b2c6dbb6ff085085678dee91643dc2a546f",
+                    GITHUB_SHA: "8a6e2ec5958af010250ffcbc0c6e483442e9ca76",
                     GITHUB_RUN_ATTEMPT: "1",
                     ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED: "1",
                     GITHUB_REF: "refs/heads/master",
@@ -10765,7 +10764,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
                     npm_package_license: "MIT",
                     npm_package_devDependencies_tsx: "^3.12.6",
-                    GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_657bbfe3-9022-4533-9918-f3a81426ab82",
+                    GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_9eaee569-acde-453d-a243-85d1e9c5dddb",
                     JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
                     PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
                     GITHUB_ACTOR_ID: "1075694",
@@ -10778,7 +10777,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     GITHUB_SERVER_URL: "https://github.com",
                     GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
                     GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-                    GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_657bbfe3-9022-4533-9918-f3a81426ab82",
+                    GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_9eaee569-acde-453d-a243-85d1e9c5dddb",
                     EDGEWEBDRIVER: "/usr/local/share/edge_driver",
                     npm_command: "run-script",
                     PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
@@ -10791,7 +10790,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                     PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
                     npm_package_lint_staged____ts_js_: "lintroll --cache",
                     ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-                    GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_657bbfe3-9022-4533-9918-f3a81426ab82",
+                    GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_9eaee569-acde-453d-a243-85d1e9c5dddb",
                     INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
                 },
                 Symbol(throws): true
@@ -10939,7 +10938,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             allocUnsafe: ƒ allocUnsafe(length: 1) {},
             argv: <ref *124> [
                 "/home/runner/.bun/bin/bun",
-                "/tmp/fs-fixture-1783298384497-1/repl.mjs"
+                "/tmp/fs-fixture-1783902837438-1/repl.mjs"
             ],
             build: ƒ build(length: 1) {},
             concatArrayBuffers: ƒ concatArrayBuffers(length: 3) {},
@@ -11011,7 +11010,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             isStandaloneExecutable: false,
             listen: ƒ listen(length: 1) {},
             udpSocket: ƒ udpSocket(length: 1) {},
-            [get/set] main: "/tmp/fs-fixture-1783298384497-1/repl.mjs",
+            [get/set] main: "/tmp/fs-fixture-1783902837438-1/repl.mjs",
             mmap: ƒ mmap(length: 1) {},
             nanoseconds: ƒ nanoseconds(length: 0) {},
             openInEditor: ƒ openInEditor(length: 1) {},
@@ -11039,7 +11038,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             readableStreamToText: ƒ readableStreamToText(length: 1) {},
             resolve: ƒ resolve(length: 1) {},
             resolveSync: ƒ resolveSync(length: 1) {},
-            revision: "d37f52067bc8824e3606cf31e3bde031cdde2afe",
+            revision: "2e2230a81f7c28b606ba9daf8fd5679511a64464",
             semver: {
                 satisfies: ƒ satisfies(length: 2) {},
                 order: ƒ order(length: 2) {}
@@ -11115,7 +11114,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         },
         performance: Performance {
             now: ƒ now(length: 0) {},
-            timeOrigin: 1783298385554.248
+            timeOrigin: 1783902838550.5168
         },
         process: EventEmitter {
             _debugEnd: ƒ _debugEnd(length: 0) {},
@@ -11173,7 +11172,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             constrainedMemory: ƒ constrainedMemory(length: 0) {},
             cpuUsage: ƒ cpuUsage(length: 1) {},
             cwd: ƒ cwd(length: 1) {},
-            [get/set] debugPort: 0,
+            [get/set] debugPort: 9229,
             disconnect: undefined,
             dlopen: ƒ dlopen(length: 1) {},
             emitWarning: ƒ emitWarning(length: 1) {},
@@ -11213,9 +11212,9 @@ DeprecationWarning: The _stream_wrap module is deprecated.
             nextTick: ƒ nextTick(length: 1) {},
             [get/set] noDeprecation: false,
             openStdin: ƒ openStdin(length: 0) {},
-            pid: 3285,
+            pid: 3363,
             platform: "linux",
-            [get/set] ppid: 2516,
+            [get/set] ppid: 2577,
             reallyExit: ƒ reallyExit(length: 1) {},
             ref: ƒ ref(length: 1) {},
             release: {
@@ -11235,7 +11234,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 writeReport: ƒ writeReport(length: 1) {}
             },
             resourceUsage: ƒ resourceUsage(length: 0) {},
-            revision: "d37f52067bc8824e3606cf31e3bde031cdde2afe",
+            revision: "2e2230a81f7c28b606ba9daf8fd5679511a64464",
             send: undefined,
             setSourceMapsEnabled: ƒ setSourceMapsEnabled(length: 1) {},
             setUncaughtExceptionCaptureCallback: ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
@@ -11547,7 +11546,6 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 read: ƒ (length: 1) {},
                 _read: ƒ triggerRead(length: 1) {},
                 Symbol(kFs): [Circular: *326],
-                Symbol(kReadStreamFastPath): false,
                 Symbol(kCapture): false
             },
             stdout: WriteStream {
@@ -11605,7 +11603,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 libarchive: "ded82291ab41d5e355831b96b0e1ff49e24d8939",
                 mimalloc: "afb41757285694f832e7a2f164d35f5717457f96",
                 picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-                uwebsockets: "d37f52067bc8824e3606cf31e3bde031cdde2afe",
+                uwebsockets: "2e2230a81f7c28b606ba9daf8fd5679511a64464",
                 webkit: "c9ad5813fd23bd8b98b0738abc3d037ec716aa92",
                 zig: "04e7f6ac1e009525bc00934f20199c68f04e0a24",
                 zlib: "12731092979c6d07f42da27da673a9f6c7b13586",
@@ -11613,7 +11611,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
                 lolhtml: "77127cd2b8545998756e8d64e36ee2313c4bb312",
                 ares: "3ac47ee46edd8ea40370222f91613fc16c434853",
                 libdeflate: "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
-                usockets: "d37f52067bc8824e3606cf31e3bde031cdde2afe",
+                usockets: "2e2230a81f7c28b606ba9daf8fd5679511a64464",
                 lshpack: "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
                 zstd: "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
                 v8: "14.6.202.34-node.20",
@@ -12502,7 +12500,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
     transferableAbortSignal: [Circular: *75],
     types: [Circular: *77]
 }
-(node:3387) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:3432) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -14563,7 +14561,7 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         WASI: [Circular: *2]
     }
 }
-(node:3563) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3617) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -14651,28 +14649,36 @@ DeprecationWarning: The _stream_wrap module is deprecated.
         parentPort: null,
         resourceLimits: <ref *7> {},
         isMainThread: true,
+        isInternalThread: false,
         MessageChannel: [Circular: *3],
         BroadcastChannel: [Circular: *2],
         MessagePort: [Circular: *4],
         getEnvironmentData: <ref *8> ƒ getEnvironmentData(length: 1) {},
         setEnvironmentData: <ref *9> ƒ setEnvironmentData(length: 2) {},
-        getHeapSnapshot: <ref *10> ƒ getHeapSnapshot(length: 0) {},
-        markAsUntransferable: <ref *11> ƒ markAsUntransferable(length: 0) {},
-        moveMessagePortToContext: <ref *12> ƒ moveMessagePortToContext(length: 0) {},
-        receiveMessageOnPort: <ref *13> ƒ receiveMessageOnPort(length: 1) {},
+        markAsUntransferable: <ref *10> ƒ markAsUntransferable(length: 1) {},
+        markAsUncloneable: <ref *11> ƒ markAsUncloneable(length: 1) {},
+        isMarkedAsUntransferable: <ref *12> ƒ isMarkedAsUntransferable(length: 1) {},
+        moveMessagePortToContext: <ref *13> ƒ moveMessagePortToContext(length: 2) {},
+        postMessageToThread: <ref *14> async ƒ postMessageToThread(length: 4) {},
+        receiveMessageOnPort: <ref *15> ƒ receiveMessageOnPort(length: 1) {},
         SHARE_ENV: Symbol(nodejs.worker_threads.SHARE_ENV),
-        threadId: 0
+        threadId: 0,
+        threadName: ""
     },
     getEnvironmentData: [Circular: *8],
-    getHeapSnapshot: [Circular: *10],
+    isInternalThread: false,
     isMainThread: true,
-    markAsUntransferable: [Circular: *11],
-    moveMessagePortToContext: [Circular: *12],
+    isMarkedAsUntransferable: [Circular: *12],
+    markAsUncloneable: [Circular: *11],
+    markAsUntransferable: [Circular: *10],
+    moveMessagePortToContext: [Circular: *13],
     parentPort: null,
-    receiveMessageOnPort: [Circular: *13],
+    postMessageToThread: [Circular: *14],
+    receiveMessageOnPort: [Circular: *15],
     resourceLimits: [Circular: *7],
     setEnvironmentData: [Circular: *9],
     threadId: 0,
+    threadName: "",
     workerData: null
 }
 ```
@@ -15302,9 +15308,9 @@ DeprecationWarning: The _stream_wrap module is deprecated.
 2 | 			import * as all from 'node:sea';
                             ^
 error: Could not resolve: "node:sea". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1783298384497-1/node:sea.mjs:2:25
+    at /tmp/fs-fixture-1783902837438-1/node:sea.mjs:2:25
 
-Bun v1.4.0-canary.1+d37f52067 (Linux x64)
+Bun v1.4.0-canary.1+2e2230a81 (Linux x64)
 ```
 
 </td></tr></table>
@@ -15385,9 +15391,9 @@ Bun v1.4.0-canary.1+d37f52067 (Linux x64)
 2 | 			import * as all from 'node:sqlite';
                             ^
 error: Could not resolve: "node:sqlite". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1783298384497-1/node:sqlite.mjs:2:25
+    at /tmp/fs-fixture-1783902837438-1/node:sqlite.mjs:2:25
 
-Bun v1.4.0-canary.1+d37f52067 (Linux x64)
+Bun v1.4.0-canary.1+2e2230a81 (Linux x64)
 ```
 
 </td></tr></table>
@@ -15599,9 +15605,9 @@ Bun v1.4.0-canary.1+d37f52067 (Linux x64)
 2 | 			import * as all from 'node:test/reporters';
                             ^
 error: Could not resolve: "node:test/reporters". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1783298384497-1/node:test_reporters.mjs:2:25
+    at /tmp/fs-fixture-1783902837438-1/node:test_reporters.mjs:2:25
 
-Bun v1.4.0-canary.1+d37f52067 (Linux x64)
+Bun v1.4.0-canary.1+2e2230a81 (Linux x64)
 ```
 
 </td></tr></table>
