@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v24.19.0<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Sep 7, 2026 with Bun 1.4.3 Node.js v24.20.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -379,9 +379,11 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     IncomingMessage: <ref *2> ƒ IncomingMessage(length: 1) {},
     default: {
         IncomingMessage: [Circular: *2],
+        kDetachAbortSignal: Symbol(kDetachAbortSignal),
         readStart: <ref *4> ƒ readStart(length: 1) {},
         readStop: <ref *5> ƒ readStop(length: 1) {}
     },
+    kDetachAbortSignal: Symbol(kDetachAbortSignal),
     readStart: [Circular: *4],
     readStop: [Circular: *5]
 }
@@ -729,7 +731,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
 [Object: null prototype] {
     default: class JSStreamSocket extends Socket {}
 }
-(node:2575) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2327) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -821,7 +823,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     promises: [Circular: *43],
     setDefaultHighWaterMark: [Circular: *41]
 }
-(node:2577) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(node:2328) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
 (Use `bun --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -902,7 +904,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     },
     translatePeerCertificate: [Circular: *5]
 }
-(node:2593) [DEP0192] DeprecationWarning: The _tls_common module is deprecated. Use `node:tls` instead.
+(node:2348) [DEP0192] DeprecationWarning: The _tls_common module is deprecated. Use `node:tls` instead.
 (Use `bun --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -945,7 +947,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         connect: [Circular: *4]
     }
 }
-(node:2609) [DEP0192] DeprecationWarning: The _tls_wrap module is deprecated. Use `node:tls` instead.
+(node:2356) [DEP0192] DeprecationWarning: The _tls_wrap module is deprecated. Use `node:tls` instead.
 (Use `bun --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -2027,6 +2029,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     RSA_PSS_SALTLEN_AUTO: -2,
     RSA_PSS_SALTLEN_DIGEST: -1,
     RSA_PSS_SALTLEN_MAX_SIGN: -2,
+    RSA_SSLV23_PADDING: 2,
     RSA_X931_PADDING: 5,
     RTLD_DEEPBIND: 8,
     RTLD_GLOBAL: 256,
@@ -2350,6 +2353,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         DH_UNABLE_TO_CHECK_GENERATOR: 4,
         DH_NOT_SUITABLE_GENERATOR: 8,
         RSA_PKCS1_PADDING: 1,
+        RSA_SSLV23_PADDING: 2,
         RSA_NO_PADDING: 3,
         RSA_PKCS1_OAEP_PADDING: 4,
         RSA_X931_PADDING: 5,
@@ -2959,6 +2963,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         DH_UNABLE_TO_CHECK_GENERATOR: 4,
         DH_NOT_SUITABLE_GENERATOR: 8,
         RSA_PKCS1_PADDING: 1,
+        RSA_SSLV23_PADDING: 2,
         RSA_NO_PADDING: 3,
         RSA_PKCS1_OAEP_PADDING: 4,
         RSA_X931_PADDING: 5,
@@ -6529,7 +6534,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1788136197911-1/module.mjs: "/tmp/fs-fixture-1788136197911-1/module.mjs"
+            /tmp/fs-fixture-1788740968254-1/module.mjs: "/tmp/fs-fixture-1788740968254-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -6547,7 +6552,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             "/home/runner/setup-pnpm/node_modules/.pnpm/node_modules",
             "/home/runner/.node_modules",
             "/home/runner/.node_libraries",
-            "/opt/hostedtoolcache/node/24.19.0/x64/lib/node"
+            "/opt/hostedtoolcache/node/24.20.0/x64/lib/node"
         ],
         _debug: <ref *10> ƒ deprecated(length: 0) {},
         isBuiltin: <ref *11> ƒ isBuiltin(length: 1) {},
@@ -6695,7 +6700,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
 [Object: null prototype] {
     Module: <ref *2> ƒ Module(length: 1) {
         _cache: <ref *3> {
-            /tmp/fs-fixture-1788136197911-1/inspect.mjs: {
+            /tmp/fs-fixture-1788740968254-1/inspect.mjs: {
                 exports: [Object: null prototype] {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -7950,16 +7955,18 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     allowedNodeEnvironmentFlags: <ref *23> NodeEnvironmentFlagsSet {
         Symbol(internal properties): {
             array: [
-                "--test-skip-pattern",
-                "--use-env-proxy",
-                "--no-use-env-proxy",
-                "--experimental-report",
-                "--experimental-modules",
-                "--experimental-addon-modules",
-                "--no-experimental-addon-modules",
                 "--test-coverage-functions",
                 "--heapsnapshot-signal",
+                "--report-exclude-env",
+                "--no-report-exclude-env",
+                "--global-search-paths",
+                "--no-global-search-paths",
+                "--experimental-global-customevent",
                 "--test-coverage-exclude",
+                "--experimental-stream-iter",
+                "--no-experimental-stream-iter",
+                "--require-module",
+                "--no-require-module",
                 "--trace-env",
                 "--no-trace-env",
                 "--test-rerun-failures",
@@ -7967,11 +7974,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "--no-experimental-detect-module",
                 "--allow-addons",
                 "--no-allow-addons",
+                "--experimental-package-map",
+                "--allow-fs-read",
                 "--experimental-abortcontroller",
-                "--trace-promises",
-                "--no-trace-promises",
-                "--experimental-import-text",
-                "--no-experimental-import-text",
                 "--force-context-aware",
                 "--no-force-context-aware",
                 "--max-semi-space-size",
@@ -7996,11 +8001,15 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "--no-strip-types",
                 "--experimental-sqlite",
                 "--no-experimental-sqlite",
-                "--require-module",
-                "--no-require-module",
                 "--allow-inspector",
                 "--no-allow-inspector",
-                "--allow-fs-read",
+                "--trace-promises",
+                "--no-trace-promises",
+                "--experimental-import-meta-resolve",
+                "--no-experimental-import-meta-resolve",
+                "--trace-require-module",
+                "--experimental-import-text",
+                "--no-experimental-import-text",
                 "--preserve-symlinks-main",
                 "--no-preserve-symlinks-main",
                 "--allow-fs-write",
@@ -8008,9 +8017,6 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "--no-allow-child-process",
                 "--allow-worker",
                 "--no-allow-worker",
-                "--experimental-vm-modules",
-                "--no-experimental-vm-modules",
-                "--experimental-wasi-unstable-preview1",
                 "--inspect-publish-uid",
                 "--inspect-brk",
                 "--no-inspect-brk",
@@ -8036,6 +8042,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "--enable-source-maps",
                 "--no-enable-source-maps",
                 "--max-old-space-size-percentage",
+                "--extra-info-on-fatal-exception",
+                "--no-extra-info-on-fatal-exception",
+                "--stack-trace-limit",
                 "--test-only",
                 "--no-test-only",
                 "--dns-result-order",
@@ -8050,6 +8059,8 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "--interpreted-frames-native-stack",
                 "--experimental-require-module",
                 "--no-experimental-require-module",
+                "--inspect",
+                "--no-inspect",
                 "--test-coverage-lines",
                 "--trace-env-native-stack",
                 "--no-trace-env-native-stack",
@@ -8060,10 +8071,6 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "--trace-deprecation",
                 "--no-trace-deprecation",
                 "--heap-prof-dir",
-                "--disable-wasm-trap-handler",
-                "--no-disable-wasm-trap-handler",
-                "--snapshot-blob",
-                "--unhandled-rejections",
                 "--test-randomize",
                 "--no-test-randomize",
                 "--test-isolation",
@@ -8106,17 +8113,16 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "--no-addons",
                 "--node-memory-debug",
                 "--experimental-specifier-resolution",
-                "--network-family-autoselection-attempt-timeout",
-                "--report-dir",
-                "--global-search-paths",
-                "--no-global-search-paths",
-                "--experimental-global-customevent",
                 "--trace-sync-io",
                 "--no-trace-sync-io",
-                "--debug-arraybuffer-allocations",
-                "--no-debug-arraybuffer-allocations",
                 "--report-compact",
                 "--no-report-compact",
+                "--debug-arraybuffer-allocations",
+                "--no-debug-arraybuffer-allocations",
+                "--test-coverage-branches",
+                "--trace-warnings",
+                "--no-trace-warnings",
+                "--watch-kill-signal",
                 "--experimental-repl-await",
                 "--no-experimental-repl-await",
                 "--tls-min-v1.3",
@@ -8134,39 +8140,21 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "--report-filename",
                 "--tls-cipher-list",
                 "--watch-path",
-                "--trace-require-module",
-                "--experimental-import-meta-resolve",
-                "--no-experimental-import-meta-resolve",
                 "--experimental-wasm-modules",
                 "--use-openssl-ca",
                 "--no-use-openssl-ca",
-                "--perf-basic-prof-only-functions",
-                "--experimental-print-required-tla",
-                "--no-experimental-print-required-tla",
+                "--experimental-addon-modules",
+                "--no-experimental-addon-modules",
                 "--experimental-worker",
                 "--use-bundled-ca",
                 "--no-use-bundled-ca",
                 "--test-shard",
-                "--experimental-global-navigator",
-                "--no-experimental-global-navigator",
                 "--tls-min-v1.1",
                 "--no-tls-min-v1.1",
-                "--use-system-ca",
-                "--no-use-system-ca",
-                "--warnings",
-                "--no-warnings",
+                "--experimental-global-navigator",
+                "--no-experimental-global-navigator",
                 "--test-name-pattern",
-                "--verify-base-objects",
-                "--no-verify-base-objects",
                 "--use-largepages",
-                "--experimental-eventsource",
-                "--no-experimental-eventsource",
-                "--test-reporter",
-                "--secure-heap",
-                "--trace-warnings",
-                "--no-trace-warnings",
-                "--watch-kill-signal",
-                "--test-coverage-branches",
                 "--test-random-seed",
                 "--redirect-warnings",
                 "--max-http-header-size",
@@ -8181,13 +8169,33 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "--no-preserve-symlinks",
                 "--tls-max-v1.3",
                 "--no-tls-max-v1.3",
+                "--test-reporter",
+                "--secure-heap",
+                "--experimental-eventsource",
+                "--no-experimental-eventsource",
+                "--use-env-proxy",
+                "--no-use-env-proxy",
+                "--test-skip-pattern",
+                "--experimental-report",
+                "--experimental-modules",
+                "--permission-audit",
+                "--no-permission-audit",
+                "--experimental-vm-modules",
+                "--no-experimental-vm-modules",
+                "--report-dir",
+                "--network-family-autoselection-attempt-timeout",
                 "--heap-prof-name",
                 "--frozen-intrinsics",
                 "--no-frozen-intrinsics",
-                "--report-exclude-env",
-                "--no-report-exclude-env",
+                "--disable-wasm-trap-handler",
+                "--no-disable-wasm-trap-handler",
+                "--snapshot-blob",
+                "--unhandled-rejections",
+                "--verify-base-objects",
+                "--no-verify-base-objects",
                 "--watch",
                 "--no-watch",
+                "--experimental-wasi-unstable-preview1",
                 "--force-node-api-uncaught-exceptions-policy",
                 "--no-force-node-api-uncaught-exceptions-policy",
                 "--watch-preserve-output",
@@ -8198,23 +8206,25 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "--napi-modules",
                 "--tls-max-v1.2",
                 "--no-tls-max-v1.2",
-                "--stack-trace-limit",
-                "--extra-info-on-fatal-exception",
-                "--no-extra-info-on-fatal-exception",
                 "--disable-warning",
                 "--heapsnapshot-near-heap-limit",
                 "--title",
                 "--disallow-code-generation-from-strings",
+                "--perf-basic-prof-only-functions",
+                "--experimental-print-required-tla",
+                "--no-experimental-print-required-tla",
+                "--warnings",
+                "--no-warnings",
+                "--use-system-ca",
+                "--no-use-system-ca",
                 "--tls-keylog",
                 "--tls-min-v1.2",
                 "--no-tls-min-v1.2",
                 "--pending-deprecation",
                 "--no-pending-deprecation",
-                "--cpu-prof-name",
                 "--report-uncaught-exception",
                 "--no-report-uncaught-exception",
-                "--inspect",
-                "--no-inspect",
+                "--cpu-prof-name",
                 "--prof-process",
                 "-C",
                 "--experimental-strip-types",
@@ -8234,8 +8244,8 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     },
     arch: "x64",
     argv: <ref *26> [
-        "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
-        "/tmp/fs-fixture-1788136197911-1/process.mjs"
+        "/opt/hostedtoolcache/node/24.20.0/x64/bin/node",
+        "/tmp/fs-fixture-1788740968254-1/process.mjs"
     ],
     argv0: "node",
     availableMemory: <ref *27> ƒ availableMemory(length: 0) {},
@@ -8332,6 +8342,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "lib/internal/async_hooks.js",
                 "lib/internal/async_local_storage/async_context_frame.js",
                 "lib/internal/async_local_storage/async_hooks.js",
+                "lib/internal/async_local_storage/run_scope.js",
                 "lib/internal/blob.js",
                 "lib/internal/blocklist.js",
                 "lib/internal/bootstrap/node.js",
@@ -8468,6 +8479,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "lib/internal/modules/esm/worker.js",
                 "lib/internal/modules/helpers.js",
                 "lib/internal/modules/package_json_reader.js",
+                "lib/internal/modules/package_map.js",
                 "lib/internal/modules/run_main.js",
                 "lib/internal/modules/typescript.js",
                 "lib/internal/navigator.js",
@@ -8500,6 +8512,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "lib/internal/process/worker_thread_only.js",
                 "lib/internal/promise_hooks.js",
                 "lib/internal/querystring.js",
+                "lib/internal/quic/diagnostics.js",
                 "lib/internal/quic/quic.js",
                 "lib/internal/quic/state.js",
                 "lib/internal/quic/stats.js",
@@ -8530,6 +8543,18 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "lib/internal/streams/end-of-stream.js",
                 "lib/internal/streams/fast-utf8-stream.js",
                 "lib/internal/streams/from.js",
+                "lib/internal/streams/iter/broadcast.js",
+                "lib/internal/streams/iter/classic.js",
+                "lib/internal/streams/iter/consumers.js",
+                "lib/internal/streams/iter/duplex.js",
+                "lib/internal/streams/iter/from.js",
+                "lib/internal/streams/iter/pull.js",
+                "lib/internal/streams/iter/push.js",
+                "lib/internal/streams/iter/ringbuffer.js",
+                "lib/internal/streams/iter/share.js",
+                "lib/internal/streams/iter/transform.js",
+                "lib/internal/streams/iter/types.js",
+                "lib/internal/streams/iter/utils.js",
                 "lib/internal/streams/lazy_transform.js",
                 "lib/internal/streams/legacy.js",
                 "lib/internal/streams/operators.js",
@@ -8622,6 +8647,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "lib/sqlite.js",
                 "lib/stream.js",
                 "lib/stream/consumers.js",
+                "lib/stream/iter.js",
                 "lib/stream/promises.js",
                 "lib/stream/web.js",
                 "lib/string_decoder.js",
@@ -8640,7 +8666,8 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "lib/vm.js",
                 "lib/wasi.js",
                 "lib/worker_threads.js",
-                "lib/zlib.js"
+                "lib/zlib.js",
+                "lib/zlib/iter.js"
             ],
             node_cctest_sources: [
                 "test/cctest/inspector/test_network_requests_buffer.cc",
@@ -8672,6 +8699,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
                 "test/cctest/test_quic_cid.cc",
                 "test/cctest/test_quic_error.cc",
                 "test/cctest/test_quic_preferredaddress.cc",
+                "test/cctest/test_quic_tokenbucket.cc",
                 "test/cctest/test_quic_tokens.cc",
                 "test/cctest/test_report.cc",
                 "test/cctest/test_sockaddr.cc",
@@ -8731,6 +8759,8 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             openssl_is_fips: false,
             node_fipsinstall: false,
             node_without_node_options: false,
+            openssl_version: 810549375,
+            openssl_is_boringssl: false,
             node_use_quic: false,
             icu_small: false,
             v8_enable_i18n_support: 1,
@@ -8773,13 +8803,13 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     cwd: <ref *47> ƒ wrappedCwd(length: 0) {},
     debugPort: 9229,
     default: process {
-        version: "v24.19.0",
+        version: "v24.20.0",
         versions: <ref *49> {
-            node: "24.19.0",
-            acorn: "8.17.0",
-            ada: "3.4.4",
-            amaro: "1.1.10",
-            ares: "1.34.6",
+            node: "24.20.0",
+            acorn: "8.18.0",
+            ada: "4.0.0",
+            amaro: "1.1.11",
+            ares: "1.34.8",
             brotli: "1.2.0",
             cldr: "48.0",
             icu: "78.3",
@@ -8789,20 +8819,20 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             napi: "10",
             nbytes: "0.1.4",
             ncrypto: "0.0.1",
-            nghttp2: "1.69.0",
+            nghttp2: "1.70.0",
             nghttp3: "",
             ngtcp2: "",
             openssl: "3.5.7",
-            simdjson: "4.6.4",
+            simdjson: "4.6.6",
             simdutf: "6.4.0",
-            sqlite: "3.53.3",
-            tz: "2026b",
+            sqlite: "3.53.4",
+            tz: "2026c",
             undici: "7.29.0",
             unicode: "17.0",
             uv: "1.52.1",
             uvwasi: "0.0.23",
-            v8: "13.6.233.17-node.51",
-            zlib: "1.3.2.1-motley-3246f1b",
+            v8: "13.6.233.17-node.53",
+            zlib: "1.3.2.1-motley-42c2f19",
             zstd: "1.5.7"
         },
         arch: "x64",
@@ -8810,8 +8840,8 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         release: <ref *50> {
             name: "node",
             lts: "Krypton",
-            sourceUrl: "https://nodejs.org/download/release/v24.19.0/node-v24.19.0.tar.gz",
-            headersUrl: "https://nodejs.org/download/release/v24.19.0/node-v24.19.0-headers.tar.gz"
+            sourceUrl: "https://nodejs.org/download/release/v24.20.0/node-v24.20.0.tar.gz",
+            headersUrl: "https://nodejs.org/download/release/v24.20.0/node-v24.20.0-headers.tar.gz"
         },
         _rawDebug: [Circular: *18],
         moduleLoadList: <ref *51> [
@@ -8823,8 +8853,8 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             "NativeModule internal/errors",
             "Internal Binding config",
             "Internal Binding timers",
-            "Internal Binding async_wrap",
             "Internal Binding task_queue",
+            "Internal Binding async_wrap",
             "Internal Binding symbols",
             "NativeModule internal/async_hooks",
             "Internal Binding constants",
@@ -8907,6 +8937,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             "NativeModule url",
             "NativeModule internal/modules/customization_hooks",
             "NativeModule internal/modules/package_json_reader",
+            "NativeModule internal/modules/package_map",
             "NativeModule internal/modules/cjs/loader",
             "NativeModule internal/modules/esm/assert",
             "NativeModule internal/modules/esm/module_map",
@@ -9242,17 +9273,17 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         setgid: <ref *118> ƒ (length: 1) {},
         setuid: <ref *119> ƒ (length: 1) {},
         env: <ref *120>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_bfc75944-45e1-45ff-90e8-96cec8129c04",
             npm_package_devDependencies__types_node: "^18.15.11",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v24.19.0 linux x64",
+            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v24.20.0 linux x64",
             CI: "true",
             USE_BAZEL_FALLBACK_VERSION: "silent:",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_bfc75944-45e1-45ff-90e8-96cec8129c04",
             PIPX_HOME: "/opt/pipx",
-            npm_node_execpath: "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+            npm_node_execpath: "/opt/hostedtoolcache/node/24.20.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             SHLVL: "1",
             HCA_CLOUD_PROVIDER: "azure",
@@ -9272,23 +9303,23 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-Linux",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "2023",
-            ACTIONS_ORCHESTRATION_ID: "d898bcf2-a2f0-4f5b-9ac3-8d68f1ca974e.build.__default",
+            SYSTEMD_EXEC_PID: "1809",
+            ACTIONS_ORCHESTRATION_ID: "f16de6ae-141e-423d-acba-3d4f04ef6c04.build.__default",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20260823.283.1",
+            ImageVersion: "20260831.293.1",
             LOGNAME: "runner",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
-            GITHUB_ARTIFACTS: "/home/runner/work/_temp/_runner_file_commands/artifacts_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_ARTIFACTS: "/home/runner/work/_temp/_runner_file_commands/artifacts_bfc75944-45e1-45ff-90e8-96cec8129c04",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             npm_package_devDependencies_lintroll: "^1.10.0",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "9:13027",
+            JOURNAL_STREAM: "9:9115",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9298,10 +9329,10 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.14/x64",
-            GITHUB_RUN_ID: "33344735842",
+            GITHUB_RUN_ID: "34069962802",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "0668d73a211aa13f358249200c42a4ce4bf6d863",
+            GITHUB_WORKFLOW_SHA: "251a8bb2f28fb007e10503d6522b3ade421dd997",
             GOROOT_1_26_X64: "/opt/hostedtoolcache/go/1.26.7/x64",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
@@ -9313,12 +9344,12 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_a5c0acdf-2762-404d-ba0c-fbe0c373725b",
-            INVOCATION_ID: "cc91cafcb57b42b593c848fab2ec22c0",
+            RUNNER_TRACKING_ID: "github_92f12571-f650-49a7-9c78-b49766c44cd0",
+            INVOCATION_ID: "7866b91ec1b441998a1e041ffd7036d9",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            NODE: "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+            NODE: "/opt/hostedtoolcache/node/24.20.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "197",
+            GITHUB_RUN_NUMBER: "198",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9327,7 +9358,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000018004",
+            RUNNER_NAME: "GitHub Actions 1000018482",
             XDG_CONFIG_HOME: "/home/runner/.config",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -9349,7 +9380,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             GITHUB_JOB: "build",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "0668d73a211aa13f358249200c42a4ce4bf6d863",
+            GITHUB_SHA: "251a8bb2f28fb007e10503d6522b3ade421dd997",
             GITHUB_RUN_ATTEMPT: "1",
             ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED: "1",
             GITHUB_REF: "refs/heads/master",
@@ -9357,7 +9388,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_bfc75944-45e1-45ff-90e8-96cec8129c04",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9370,12 +9401,12 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_bfc75944-45e1-45ff-90e8-96cec8129c04",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
             ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_ARTIFACTS_LIST: "/home/runner/work/_temp/_runner_file_commands/artifacts_list_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_ARTIFACTS_LIST: "/home/runner/work/_temp/_runner_file_commands/artifacts_list_bfc75944-45e1-45ff-90e8-96cec8129c04",
             SGX_AESM_ADDR: "1",
             PSModulePath: "/root/.local/share/powershell/Modules:/usr/local/share/powershell/Modules:/opt/microsoft/powershell/…",
             CHROME_BIN: "/usr/bin/google-chrome",
@@ -9384,15 +9415,15 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_bfc75944-45e1-45ff-90e8-96cec8129c04",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
         argv: [Circular: *26],
         execArgv: <ref *121> [],
-        pid: 3003,
-        ppid: 2444,
-        execPath: "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+        pid: 2768,
+        ppid: 2184,
+        execPath: "/opt/hostedtoolcache/node/24.20.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
         _preload_modules: [Circular: *17],
@@ -9417,7 +9448,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     emitWarning: [Circular: *81],
     env: [Circular: *120],
     execArgv: [Circular: *121],
-    execPath: "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+    execPath: "/opt/hostedtoolcache/node/24.20.0/x64/bin/node",
     execve: [Circular: *63],
     exit: [Circular: *62],
     exitCode: undefined,
@@ -9439,9 +9470,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     moduleLoadList: [Circular: *51],
     nextTick: [Circular: *82],
     openStdin: [Circular: *72],
-    pid: 3003,
+    pid: 2768,
     platform: "linux",
-    ppid: 2444,
+    ppid: 2184,
     reallyExit: [Circular: *55],
     ref: [Circular: *64],
     release: [Circular: *50],
@@ -9463,7 +9494,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     umask: [Circular: *113],
     unref: [Circular: *65],
     uptime: [Circular: *53],
-    version: "v24.19.0",
+    version: "v24.20.0",
     versions: [Circular: *49]
 }
 ```
@@ -9492,7 +9523,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1788136197911-1/process.mjs"
+        "/tmp/fs-fixture-1788740968254-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -9571,17 +9602,17 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         dlopen: <ref *36> ƒ dlopen(length: 1) {},
         emitWarning: <ref *37> ƒ emitWarning(length: 1) {},
         env: <ref *38> {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_bfc75944-45e1-45ff-90e8-96cec8129c04",
             npm_package_devDependencies__types_node: "^18.15.11",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v24.19.0 linux x64",
+            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v24.20.0 linux x64",
             CI: "true",
             USE_BAZEL_FALLBACK_VERSION: "silent:",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_bfc75944-45e1-45ff-90e8-96cec8129c04",
             PIPX_HOME: "/opt/pipx",
-            npm_node_execpath: "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+            npm_node_execpath: "/opt/hostedtoolcache/node/24.20.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             SHLVL: "1",
             HCA_CLOUD_PROVIDER: "azure",
@@ -9601,23 +9632,23 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-Linux",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "2023",
-            ACTIONS_ORCHESTRATION_ID: "d898bcf2-a2f0-4f5b-9ac3-8d68f1ca974e.build.__default",
+            SYSTEMD_EXEC_PID: "1809",
+            ACTIONS_ORCHESTRATION_ID: "f16de6ae-141e-423d-acba-3d4f04ef6c04.build.__default",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20260823.283.1",
+            ImageVersion: "20260831.293.1",
             LOGNAME: "runner",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
-            GITHUB_ARTIFACTS: "/home/runner/work/_temp/_runner_file_commands/artifacts_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_ARTIFACTS: "/home/runner/work/_temp/_runner_file_commands/artifacts_bfc75944-45e1-45ff-90e8-96cec8129c04",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             npm_package_devDependencies_lintroll: "^1.10.0",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "9:13027",
+            JOURNAL_STREAM: "9:9115",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9627,10 +9658,10 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.14/x64",
-            GITHUB_RUN_ID: "33344735842",
+            GITHUB_RUN_ID: "34069962802",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "0668d73a211aa13f358249200c42a4ce4bf6d863",
+            GITHUB_WORKFLOW_SHA: "251a8bb2f28fb007e10503d6522b3ade421dd997",
             GOROOT_1_26_X64: "/opt/hostedtoolcache/go/1.26.7/x64",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
@@ -9642,12 +9673,12 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_a5c0acdf-2762-404d-ba0c-fbe0c373725b",
-            INVOCATION_ID: "cc91cafcb57b42b593c848fab2ec22c0",
+            RUNNER_TRACKING_ID: "github_92f12571-f650-49a7-9c78-b49766c44cd0",
+            INVOCATION_ID: "7866b91ec1b441998a1e041ffd7036d9",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            NODE: "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+            NODE: "/opt/hostedtoolcache/node/24.20.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "197",
+            GITHUB_RUN_NUMBER: "198",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9656,7 +9687,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000018004",
+            RUNNER_NAME: "GitHub Actions 1000018482",
             XDG_CONFIG_HOME: "/home/runner/.config",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -9678,7 +9709,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             GITHUB_JOB: "build",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "0668d73a211aa13f358249200c42a4ce4bf6d863",
+            GITHUB_SHA: "251a8bb2f28fb007e10503d6522b3ade421dd997",
             GITHUB_RUN_ATTEMPT: "1",
             ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED: "1",
             GITHUB_REF: "refs/heads/master",
@@ -9686,7 +9717,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_bfc75944-45e1-45ff-90e8-96cec8129c04",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9699,12 +9730,12 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_bfc75944-45e1-45ff-90e8-96cec8129c04",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
             ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_ARTIFACTS_LIST: "/home/runner/work/_temp/_runner_file_commands/artifacts_list_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_ARTIFACTS_LIST: "/home/runner/work/_temp/_runner_file_commands/artifacts_list_bfc75944-45e1-45ff-90e8-96cec8129c04",
             SGX_AESM_ADDR: "1",
             PSModulePath: "/root/.local/share/powershell/Modules:/usr/local/share/powershell/Modules:/opt/microsoft/powershell/…",
             CHROME_BIN: "/usr/bin/google-chrome",
@@ -9713,7 +9744,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_13c8b102-09d4-4b01-8648-05db5785802c",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_bfc75944-45e1-45ff-90e8-96cec8129c04",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         [get/set] execArgv: <ref *39> [],
@@ -9752,14 +9783,14 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         moduleLoadList: <ref *51> [],
         nextTick: <ref *52> ƒ nextTick(length: 1) {},
         openStdin: <ref *53> ƒ openStdin(length: 0) {},
-        pid: 3014,
+        pid: 2775,
         platform: "linux",
-        [get/set] ppid: 2444,
+        [get/set] ppid: 2184,
         reallyExit: <ref *54> ƒ reallyExit(length: 1) {},
         ref: <ref *55> ƒ ref(length: 1) {},
         release: <ref *56> {
             name: "node",
-            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.4.1/bun-linux-x64.zip",
+            sourceUrl: "https://github.com/oven-sh/bun/releases/download/bun-v1.4.3/bun-linux-x64.zip",
             headersUrl: "https://nodejs.org/download/release/v26.3.0/node-v26.3.0-headers.tar.gz"
         },
         report: <ref *57> {
@@ -9774,7 +9805,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             writeReport: ƒ writeReport(length: 1) {}
         },
         resourceUsage: <ref *60> ƒ resourceUsage(length: 0) {},
-        revision: "16a30126f67f5f2405f89b43b4bec5f0c19517a6",
+        revision: "d316760e8cae0d69ae927898d5afc933ecf34671",
         send: undefined,
         setSourceMapsEnabled: <ref *61> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *62> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
@@ -10131,22 +10162,22 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         version: "v26.3.0",
         versions: <ref *252> {
             node: "26.3.0",
-            bun: "1.4.1",
+            bun: "1.4.3",
             boringssl: "41bf9b59c2ebf277a7aa427e1ecad5cc80dd4d4f",
             openssl: "1.1.0",
             llhttp: "9.3.0",
             libarchive: "ded82291ab41d5e355831b96b0e1ff49e24d8939",
-            mimalloc: "942b8342575bdece649438ca76f32276a019c51e",
+            mimalloc: "6a64e1ba7f5b2130d4efccb67ec87fd0003f0f6a",
             picohttpparser: "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
-            uwebsockets: "16a30126f67f5f2405f89b43b4bec5f0c19517a6",
-            webkit: "d71031a973e6f8838a1b10282dbe332ff012f04a",
+            uwebsockets: "d316760e8cae0d69ae927898d5afc933ecf34671",
+            webkit: "2e2aa2290fac856d6f451ceacb58f7f5b44dd057",
             zig: "04e7f6ac1e009525bc00934f20199c68f04e0a24",
             zlib: "12731092979c6d07f42da27da673a9f6c7b13586",
             tinycc: "05f0fafaa3be31e31d7b4b5c17dc60f62c991171",
             lolhtml: "725ce499aa9b71e38b7a2d0a9fbb6d7294a4079e",
             ares: "c7a3138dcfe3bb0eaaf10c0c24c36dc66dc790ab",
             libdeflate: "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
-            usockets: "16a30126f67f5f2405f89b43b4bec5f0c19517a6",
+            usockets: "d316760e8cae0d69ae927898d5afc933ecf34671",
             lshpack: "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
             zstd: "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
             v8: "14.6.202.34-node.20",
@@ -10212,9 +10243,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     on: ƒ on(length: 2) {},
     once: ƒ once(length: 2) {},
     openStdin: [Circular: *53],
-    pid: 3014,
+    pid: 2775,
     platform: "linux",
-    ppid: 2444,
+    ppid: 2184,
     prependListener: ƒ prependListener(length: 2) {},
     prependOnceListener: ƒ prependOnceListener(length: 2) {},
     rawListeners: ƒ rawListeners(length: 1) {},
@@ -10225,7 +10256,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     removeListener: ƒ removeListener(length: 2) {},
     report: [Circular: *57],
     resourceUsage: [Circular: *60],
-    revision: "16a30126f67f5f2405f89b43b4bec5f0c19517a6",
+    revision: "d316760e8cae0d69ae927898d5afc933ecf34671",
     send: undefined,
     setMaxListeners: ƒ setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *61],
@@ -10277,7 +10308,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     ucs2: [Circular: *4],
     version: "2.1.0"
 }
-(node:3020) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:2784) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -11215,8 +11246,8 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             isFloat64Array: ƒ isFloat64Array(length: 1) {},
             isBigInt64Array: ƒ isBigInt64Array(length: 1) {},
             isBigUint64Array: ƒ isBigUint64Array(length: 1) {},
-            isKeyObject: ƒ value(length: 1) {},
-            isCryptoKey: ƒ value(length: 1) {}
+            isKeyObject: ƒ isKeyObject(length: 1) {},
+            isCryptoKey: ƒ isCryptoKey(length: 1) {}
         },
         parseEnv: <ref *121> ƒ parseEnv(length: 1) {},
         parseArgs: <ref *122> ƒ parseArgs(length: 0) {},
@@ -11250,7 +11281,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
     transferableAbortSignal: [Circular: *75],
     types: [Circular: *77]
 }
-(node:3158) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2922) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -11766,7 +11797,6 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         getCiphers: <ref *11> ƒ (length: 0) {},
         getCertificateCompressionAlgorithms: <ref *12> ƒ (length: 0) {},
         [get/set] rootCertificates: <ref *13> [
-            "-----BEGIN CERTIFICATE-----\nMIIEkTCCA3mgAwIBAgIERWtQVDANBgkqhkiG9w0BAQUFADCBsDELMAkGA1UEBhMCVVMxFjAU…",
             "-----BEGIN CERTIFICATE-----\nMIICiTCCAg+gAwIBAgIQH0evqmIAcFBUTAGem2OZKjAKBggqhkjOPQQDAzCBhTELMAkGA1UE…",
             "-----BEGIN CERTIFICATE-----\nMIIFsDCCA5igAwIBAgIQFci9ZUdcr7iXAF7kBtK8nTANBgkqhkiG9w0BAQUFADBeMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIIEFTCCAv2gAwIBAgIGSUEs5AAQMA0GCSqGSIb3DQEBCwUAMIGnMQswCQYDVQQGEwJIVTER…",
@@ -11875,7 +11905,6 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             "-----BEGIN CERTIFICATE-----\nMIICQjCCAcmgAwIBAgIQNjqWjMlcsljN0AFdxeVXADAKBggqhkjOPQQDAzBjMQswCQYDVQQG…",
             "-----BEGIN CERTIFICATE-----\nMIIFszCCA5ugAwIBAgIQIZxULej27HF3+k7ow3BXlzANBgkqhkiG9w0BAQwFADBjMQswCQYD…",
             "-----BEGIN CERTIFICATE-----\nMIIFjTCCA3WgAwIBAgIQQAE0jMIAAAAAAAAAATzyxjANBgkqhkiG9w0BAQwFADBQMQswCQYD…",
-            "-----BEGIN CERTIFICATE-----\nMIIDcjCCAlqgAwIBAgIUZvnHwa/swlG07VOX5uaCwysckBYwDQYJKoZIhvcNAQELBQAwUTEL…",
             "-----BEGIN CERTIFICATE-----\nMIIFcjCCA1qgAwIBAgIUZNtaDCBO6Ncpd8hQJ6JaJ90t8sswDQYJKoZIhvcNAQEMBQAwUTEL…",
             "-----BEGIN CERTIFICATE-----\nMIICIzCCAamgAwIBAgIUFhXHw9hJp75pDIqI7fBw+d23PocwCgYIKoZIzj0EAwMwUTELMAkG…",
             "-----BEGIN CERTIFICATE-----\nMIIFqTCCA5GgAwIBAgIQczswBEhb2U14LnNLyaHcZjANBgkqhkiG9w0BAQ0FADBIMQswCQYD…",
@@ -12555,8 +12584,8 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
             isFloat64Array: ƒ isFloat64Array(length: 1) {},
             isBigInt64Array: ƒ isBigInt64Array(length: 1) {},
             isBigUint64Array: ƒ isBigUint64Array(length: 1) {},
-            isKeyObject: ƒ value(length: 1) {},
-            isCryptoKey: ƒ value(length: 1) {}
+            isKeyObject: ƒ isKeyObject(length: 1) {},
+            isCryptoKey: ƒ isCryptoKey(length: 1) {}
         },
         parseEnv: <ref *121> ƒ parseEnv(length: 1) {},
         parseArgs: <ref *122> ƒ parseArgs(length: 0) {},
@@ -12992,8 +13021,8 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         isFloat64Array: <ref *41> ƒ isFloat64Array(length: 1) {},
         isBigInt64Array: <ref *42> ƒ isBigInt64Array(length: 1) {},
         isBigUint64Array: <ref *43> ƒ isBigUint64Array(length: 1) {},
-        isKeyObject: <ref *44> ƒ value(length: 1) {},
-        isCryptoKey: <ref *45> ƒ value(length: 1) {}
+        isKeyObject: <ref *44> ƒ isKeyObject(length: 1) {},
+        isCryptoKey: <ref *45> ƒ isCryptoKey(length: 1) {}
     },
     isAnyArrayBuffer: [Circular: *27],
     isArgumentsObject: [Circular: *3],
@@ -13366,7 +13395,7 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         WASI: [Circular: *2]
     }
 }
-(node:3301) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3060) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -13707,17 +13736,17 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
         ZSTD_error_noForwardProgress_inputEmpty: 82
     },
     crc32: <ref *19> ƒ crc32(length: 1) {},
-    createBrotliCompress: <ref *20> ƒ value(length: 1) {},
-    createBrotliDecompress: <ref *21> ƒ value(length: 1) {},
-    createDeflate: <ref *22> ƒ value(length: 1) {},
-    createDeflateRaw: <ref *23> ƒ value(length: 1) {},
-    createGunzip: <ref *24> ƒ value(length: 1) {},
-    createGzip: <ref *25> ƒ value(length: 1) {},
-    createInflate: <ref *26> ƒ value(length: 1) {},
-    createInflateRaw: <ref *27> ƒ value(length: 1) {},
-    createUnzip: <ref *28> ƒ value(length: 1) {},
-    createZstdCompress: <ref *29> ƒ value(length: 1) {},
-    createZstdDecompress: <ref *30> ƒ value(length: 1) {},
+    createBrotliCompress: <ref *20> ƒ createBrotliCompress(length: 1) {},
+    createBrotliDecompress: <ref *21> ƒ createBrotliDecompress(length: 1) {},
+    createDeflate: <ref *22> ƒ createDeflate(length: 1) {},
+    createDeflateRaw: <ref *23> ƒ createDeflateRaw(length: 1) {},
+    createGunzip: <ref *24> ƒ createGunzip(length: 1) {},
+    createGzip: <ref *25> ƒ createGzip(length: 1) {},
+    createInflate: <ref *26> ƒ createInflate(length: 1) {},
+    createInflateRaw: <ref *27> ƒ createInflateRaw(length: 1) {},
+    createUnzip: <ref *28> ƒ createUnzip(length: 1) {},
+    createZstdCompress: <ref *29> ƒ createZstdCompress(length: 1) {},
+    createZstdDecompress: <ref *30> ƒ createZstdDecompress(length: 1) {},
     default: {
         crc32: [Circular: *19],
         Deflate: [Circular: *4],
@@ -14113,9 +14142,9 @@ _Last updated on <!-- lastUpdated:start -->Aug 31, 2026 with Bun 1.4.1 Node.js v
 2 | 			import * as all from 'node:sea';
                             ^
 error: Could not resolve: "node:sea". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1788136197911-1/node:sea.mjs:2:25
+    at /tmp/fs-fixture-1788740968254-1/node:sea.mjs:2:25
 
-Bun v1.4.1-canary.1+16a30126f (Linux x64)
+Bun v1.4.3-canary.1+d316760e8 (Linux x64)
 ```
 
 </td></tr></table>
@@ -14421,9 +14450,9 @@ Bun v1.4.1-canary.1+16a30126f (Linux x64)
     default: {
         [get/set] dot: <ref *3> async ƒ dot(length: 1) {},
         [get/set] junit: <ref *4> async ƒ junitReporter(length: 1) {},
-        spec: <ref *5> ƒ value(length: 0) {},
+        spec: <ref *5> ƒ spec(length: 0) {},
         [get/set] tap: <ref *6> async ƒ tapReporter(length: 1) {},
-        lcov: <ref *7> ƒ value(length: 0) {}
+        lcov: <ref *7> ƒ lcov(length: 0) {}
     },
     dot: [Circular: *3],
     junit: [Circular: *4],
@@ -14439,9 +14468,9 @@ Bun v1.4.1-canary.1+16a30126f (Linux x64)
 2 | 			import * as all from 'node:test/reporters';
                             ^
 error: Could not resolve: "node:test/reporters". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1788136197911-1/node:test_reporters.mjs:2:25
+    at /tmp/fs-fixture-1788740968254-1/node:test_reporters.mjs:2:25
 
-Bun v1.4.1-canary.1+16a30126f (Linux x64)
+Bun v1.4.3-canary.1+d316760e8 (Linux x64)
 ```
 
 </td></tr></table>
