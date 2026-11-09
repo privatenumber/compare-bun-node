@@ -19,7 +19,7 @@ For more details, refer to the Actions tab.
 
 Bun is a rapidly maturing project and offers excellent opportunities for contributions. If you would like to help improve any aspect of Bun, please visit the [Bun repository](https://github.com/oven-sh/bun).
 
-_Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v24.22.1<!-- lastUpdated:end -->._
+_Last updated on <!-- lastUpdated:start -->Nov 9, 2026 with Bun 1.4.4 Node.js v26.13.0<!-- lastUpdated:end -->._
 
 ## [Node.js APIs](https://nodejs.org/api/) compared
 <!-- builtins:start -->
@@ -379,15 +379,21 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
 ```js
 [Object: null prototype] {
     IncomingMessage: <ref *2> ƒ IncomingMessage(length: 1) {},
+    asciiEqualIgnoreCase: <ref *3> ƒ asciiEqualIgnoreCase(length: 2) {},
     default: {
         IncomingMessage: [Circular: *2],
         kDetachAbortSignal: Symbol(kDetachAbortSignal),
-        readStart: <ref *4> ƒ readStart(length: 1) {},
-        readStop: <ref *5> ƒ readStop(length: 1) {}
+        kHeadersCount: Symbol(kHeadersCount),
+        asciiEqualIgnoreCase: [Circular: *3],
+        getRawHeader: <ref *5> ƒ getRawHeader(length: 3) {},
+        readStart: <ref *6> ƒ readStart(length: 1) {},
+        readStop: <ref *7> ƒ readStop(length: 1) {}
     },
+    getRawHeader: [Circular: *5],
     kDetachAbortSignal: Symbol(kDetachAbortSignal),
-    readStart: [Circular: *4],
-    readStop: [Circular: *5]
+    kHeadersCount: Symbol(kHeadersCount),
+    readStart: [Circular: *6],
+    readStop: [Circular: *7]
 }
 ```
 
@@ -424,19 +430,23 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         kHighWaterMark: Symbol(kHighWaterMark),
         kUniqueHeaders: Symbol(kUniqueHeaders),
         parseUniqueHeadersOption: <ref *4> ƒ parseUniqueHeadersOption(length: 1) {},
-        validateHeaderName: <ref *5> ƒ validateHeaderName(length: 0) {
+        isValidHeaderName: <ref *5> ƒ isValidHeaderName(length: 1) {},
+        isValidHeaderValue: <ref *6> ƒ isValidHeaderValue(length: 2) {},
+        validateHeaderName: <ref *7> ƒ validateHeaderName(length: 0) {
             withoutStackTrace: ƒ (length: 2) {}
         },
-        validateHeaderValue: <ref *7> ƒ validateHeaderValue(length: 0) {
+        validateHeaderValue: <ref *9> ƒ validateHeaderValue(length: 0) {
             withoutStackTrace: ƒ (length: 3) {}
         },
         OutgoingMessage: [Circular: *2]
     },
+    isValidHeaderName: [Circular: *5],
+    isValidHeaderValue: [Circular: *6],
     kHighWaterMark: Symbol(kHighWaterMark),
     kUniqueHeaders: Symbol(kUniqueHeaders),
     parseUniqueHeadersOption: [Circular: *4],
-    validateHeaderName: [Circular: *5],
-    validateHeaderValue: [Circular: *7]
+    validateHeaderName: [Circular: *7],
+    validateHeaderValue: [Circular: *9]
 }
 ```
 
@@ -588,293 +598,6 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
 			</details>
 
 <details>
-				<summary><code>_stream_duplex</code></summary>
-				<br>
-
-<table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
-
-```js
-[Object: null prototype] {
-    default: ƒ Duplex(length: 1) {
-        fromWeb: <ref *3> ƒ (length: 2) {},
-        toWeb: <ref *4> ƒ (length: 2) {},
-        from: <ref *5> ƒ (length: 1) {}
-    },
-    from: [Circular: *5],
-    fromWeb: [Circular: *3],
-    toWeb: [Circular: *4]
-}
-```
-
-</td><td valign="top">
-
-```js
-[Object: null prototype] {
-    default: ƒ Duplex(length: 1) {
-        fromWeb: <ref *3> ƒ (length: 2) {},
-        toWeb: <ref *4> ƒ (length: 2) {},
-        from: <ref *5> ƒ (length: 1) {}
-    },
-    from: [Circular: *5],
-    fromWeb: [Circular: *3],
-    toWeb: [Circular: *4]
-}
-```
-
-</td></tr></table>
-			</details>
-
-<details>
-				<summary><code>_stream_passthrough</code></summary>
-				<br>
-
-<table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
-
-```js
-[Object: null prototype] {
-    default: ƒ PassThrough(length: 1) {}
-}
-```
-
-</td><td valign="top">
-
-```js
-[Object: null prototype] {
-    default: ƒ PassThrough(length: 1) {}
-}
-```
-
-</td></tr></table>
-			</details>
-
-<details>
-				<summary><code>_stream_readable</code></summary>
-				<br>
-
-<table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
-
-```js
-[Object: null prototype] {
-    ReadableState: <ref *2> ƒ ReadableState(length: 3) {},
-    _fromList: <ref *3> ƒ fromList(length: 2) {},
-    default: ƒ Readable(length: 1) {
-        ReadableState: [Circular: *2],
-        _fromList: [Circular: *3],
-        from: <ref *5> ƒ (length: 2) {},
-        fromWeb: <ref *6> ƒ (length: 2) {},
-        toWeb: <ref *7> ƒ (length: 2) {},
-        wrap: <ref *8> ƒ (length: 2) {}
-    },
-    from: [Circular: *5],
-    fromWeb: [Circular: *6],
-    toWeb: [Circular: *7],
-    wrap: [Circular: *8]
-}
-```
-
-</td><td valign="top">
-
-```js
-[Object: null prototype] {
-    ReadableState: <ref *2> ƒ ReadableState(length: 3) {
-        prototype: {
-            Symbol(kOnConstructed): ƒ onConstructed(length: 1) {}
-        }
-    },
-    _fromList: <ref *5> ƒ fromList(length: 2) {},
-    default: ƒ Readable(length: 1) {
-        ReadableState: [Circular: *2],
-        _fromList: [Circular: *5],
-        from: <ref *7> ƒ (length: 2) {},
-        fromWeb: <ref *8> ƒ (length: 2) {},
-        toWeb: <ref *9> ƒ (length: 2) {},
-        wrap: <ref *10> ƒ (length: 2) {}
-    },
-    from: [Circular: *7],
-    fromWeb: [Circular: *8],
-    toWeb: [Circular: *9],
-    wrap: [Circular: *10]
-}
-```
-
-</td></tr></table>
-			</details>
-
-<details>
-				<summary><code>_stream_transform</code></summary>
-				<br>
-
-<table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
-
-```js
-[Object: null prototype] {
-    default: ƒ Transform(length: 1) {}
-}
-```
-
-</td><td valign="top">
-
-```js
-[Object: null prototype] {
-    default: ƒ Transform(length: 1) {}
-}
-```
-
-</td></tr></table>
-			</details>
-
-<details>
-				<summary><code>_stream_wrap</code></summary>
-				<br>
-
-<table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
-
-```js
-[Object: null prototype] {
-    default: class JSStreamSocket extends Socket {}
-}
-(node:2413) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
-(Use `node --trace-deprecation ...` to show where the warning was created)
-```
-
-</td><td valign="top">
-
-```js
-[Object: null prototype] {
-    Duplex: <ref *2> ƒ Duplex(length: 1) {
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 2) {},
-        from: ƒ (length: 1) {}
-    },
-    PassThrough: <ref *6> ƒ PassThrough(length: 1) {},
-    Readable: <ref *7> ƒ Readable(length: 1) {
-        ReadableState: ƒ ReadableState(length: 3) {
-            prototype: {
-                Symbol(kOnConstructed): ƒ onConstructed(length: 1) {}
-            }
-        },
-        _fromList: ƒ fromList(length: 2) {},
-        from: ƒ (length: 2) {},
-        fromWeb: ƒ (length: 2) {},
-        toWeb: ƒ (length: 2) {},
-        wrap: ƒ (length: 2) {}
-    },
-    Stream: <ref *16> ƒ Stream(length: 1) {
-        _isArrayBufferView: <ref *17> ƒ isArrayBufferView(length: 1) {},
-        _isUint8Array: <ref *18> ƒ isUint8Array(length: 1) {},
-        _uint8ArrayToBuffer: <ref *19> ƒ _uint8ArrayToBuffer(length: 1) {},
-        isDestroyed: <ref *20> ƒ isDestroyed(length: 1) {},
-        isDisturbed: <ref *21> ƒ isDisturbed(length: 1) {},
-        isErrored: <ref *22> ƒ isErrored(length: 1) {},
-        isReadable: <ref *23> ƒ isReadable(length: 1) {},
-        isWritable: <ref *24> ƒ isWritable(length: 1) {},
-        Readable: [Circular: *7],
-        Writable: <ref *25> ƒ Writable(length: 1) {
-            WritableState: ƒ WritableState(length: 3) {
-                prototype: {
-                    getBuffer: ƒ getBuffer(length: 0) {},
-                    Symbol(kOnConstructed): ƒ onConstructed(length: 1) {}
-                }
-            },
-            fromWeb: ƒ (length: 2) {},
-            toWeb: ƒ (length: 1) {}
-        },
-        Duplex: [Circular: *2],
-        Transform: <ref *32> ƒ Transform(length: 1) {},
-        PassThrough: [Circular: *6],
-        duplexPair: <ref *33> ƒ duplexPair(length: 1) {},
-        pipeline: <ref *34> ƒ pipeline(length: 0) {
-            [get/set] Symbol(nodejs.util.promisify.custom): <ref *35> ƒ pipeline(length: 0) {}
-        },
-        addAbortSignal: <ref *36> ƒ addAbortSignal(length: 2) {},
-        finished: <ref *37> ƒ eos(length: 3) {
-            finished: <ref *38> ƒ finished(length: 2) {},
-            kEosNodeSynchronousCallback: Symbol(kEosNodeSynchronousCallback),
-            [get/set] Symbol(nodejs.util.promisify.custom): [Circular: *38]
-        },
-        destroy: <ref *39> ƒ destroyer(length: 2) {},
-        compose: <ref *40> ƒ compose(length: 0) {},
-        setDefaultHighWaterMark: <ref *41> ƒ setDefaultHighWaterMark(length: 2) {},
-        getDefaultHighWaterMark: <ref *42> ƒ getDefaultHighWaterMark(length: 0) {},
-        [get/set] promises: <ref *43> {
-            finished: [Circular: *38],
-            pipeline: [Circular: *35]
-        },
-        Stream: [Circular: *16],
-        eos: [Circular: *37]
-    },
-    Transform: [Circular: *32],
-    Writable: [Circular: *25],
-    _isArrayBufferView: [Circular: *17],
-    _isUint8Array: [Circular: *18],
-    _uint8ArrayToBuffer: [Circular: *19],
-    addAbortSignal: [Circular: *36],
-    compose: [Circular: *40],
-    default: [Circular: *16],
-    destroy: [Circular: *39],
-    duplexPair: [Circular: *33],
-    eos: [Circular: *37],
-    finished: [Circular: *37],
-    getDefaultHighWaterMark: [Circular: *42],
-    isDestroyed: [Circular: *20],
-    isDisturbed: [Circular: *21],
-    isErrored: [Circular: *22],
-    isReadable: [Circular: *23],
-    isWritable: [Circular: *24],
-    pipeline: [Circular: *34],
-    promises: [Circular: *43],
-    setDefaultHighWaterMark: [Circular: *41]
-}
-(node:2426) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
-(Use `bun --trace-warnings ...` to show where the warning was created)
-```
-
-</td></tr></table>
-			</details>
-
-<details>
-				<summary><code>_stream_writable</code></summary>
-				<br>
-
-<table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
-
-```js
-[Object: null prototype] {
-    WritableState: <ref *2> ƒ WritableState(length: 3) {},
-    default: ƒ Writable(length: 1) {
-        WritableState: [Circular: *2],
-        fromWeb: <ref *4> ƒ (length: 2) {},
-        toWeb: <ref *5> ƒ (length: 1) {}
-    },
-    fromWeb: [Circular: *4],
-    toWeb: [Circular: *5]
-}
-```
-
-</td><td valign="top">
-
-```js
-[Object: null prototype] {
-    WritableState: <ref *2> ƒ WritableState(length: 3) {
-        prototype: {
-            getBuffer: ƒ getBuffer(length: 0) {},
-            Symbol(kOnConstructed): ƒ onConstructed(length: 1) {}
-        }
-    },
-    default: ƒ Writable(length: 1) {
-        WritableState: [Circular: *2],
-        fromWeb: <ref *7> ƒ (length: 2) {},
-        toWeb: <ref *8> ƒ (length: 1) {}
-    },
-    fromWeb: [Circular: *7],
-    toWeb: [Circular: *8]
-}
-```
-
-</td></tr></table>
-			</details>
-
-<details>
 				<summary><code>_tls_common</code></summary>
 				<br>
 
@@ -891,6 +614,8 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     },
     translatePeerCertificate: [Circular: *5]
 }
+(node:2355) [DEP0192] DeprecationWarning: The _tls_common module is deprecated. Use `node:tls` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
 </td><td valign="top">
@@ -908,7 +633,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     },
     translatePeerCertificate: [Circular: *6]
 }
-(node:2453) [DEP0192] DeprecationWarning: The _tls_common module is deprecated. Use `node:tls` instead.
+(node:2364) [DEP0192] DeprecationWarning: The _tls_common module is deprecated. Use `node:tls` instead.
 (Use `bun --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -934,6 +659,8 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         connect: [Circular: *4]
     }
 }
+(node:2365) [DEP0192] DeprecationWarning: The _tls_wrap module is deprecated. Use `node:tls` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
 </td><td valign="top">
@@ -951,7 +678,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         connect: [Circular: *4]
     }
 }
-(node:2469) [DEP0192] DeprecationWarning: The _tls_wrap module is deprecated. Use `node:tls` instead.
+(node:2368) [DEP0192] DeprecationWarning: The _tls_wrap module is deprecated. Use `node:tls` instead.
 (Use `bun --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -968,25 +695,23 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
 [Object: null prototype] {
     Assert: <ref *2> ƒ Assert(length: 1) {},
     AssertionError: <ref *3> class AssertionError extends Error {},
-    CallTracker: <ref *4> ƒ deprecated(length: 0) {},
-    deepEqual: <ref *5> ƒ deepEqual(length: 3) {},
-    deepStrictEqual: <ref *6> ƒ deepStrictEqual(length: 3) {},
-    default: <ref *7> ƒ ok(length: 0) {
+    deepEqual: <ref *4> ƒ deepEqual(length: 2) {},
+    deepStrictEqual: <ref *5> ƒ deepStrictEqual(length: 2) {},
+    default: ƒ assert(length: 0) {
         AssertionError: [Circular: *3],
-        CallTracker: [Circular: *4],
-        ok: [Circular: *7],
-        fail: <ref *8> ƒ fail(length: 5) {},
-        equal: <ref *9> ƒ equal(length: 3) {},
-        notEqual: <ref *10> ƒ notEqual(length: 3) {},
-        deepEqual: [Circular: *5],
-        notDeepEqual: <ref *11> ƒ notDeepEqual(length: 3) {},
-        deepStrictEqual: [Circular: *6],
-        notDeepStrictEqual: <ref *12> ƒ notDeepStrictEqual(length: 3) {},
-        strictEqual: <ref *13> ƒ strictEqual(length: 3) {},
-        notStrictEqual: <ref *14> ƒ notStrictEqual(length: 3) {},
-        partialDeepStrictEqual: <ref *15> ƒ partialDeepStrictEqual(length: 3) {},
-        match: <ref *16> ƒ match(length: 3) {},
-        doesNotMatch: <ref *17> ƒ doesNotMatch(length: 3) {},
+        ok: <ref *7> ƒ ok(length: 0) {},
+        fail: <ref *8> ƒ fail(length: 1) {},
+        equal: <ref *9> ƒ equal(length: 2) {},
+        notEqual: <ref *10> ƒ notEqual(length: 2) {},
+        deepEqual: [Circular: *4],
+        notDeepEqual: <ref *11> ƒ notDeepEqual(length: 2) {},
+        deepStrictEqual: [Circular: *5],
+        notDeepStrictEqual: <ref *12> ƒ notDeepStrictEqual(length: 2) {},
+        strictEqual: <ref *13> ƒ strictEqual(length: 2) {},
+        notStrictEqual: <ref *14> ƒ notStrictEqual(length: 2) {},
+        partialDeepStrictEqual: <ref *15> ƒ partialDeepStrictEqual(length: 2) {},
+        match: <ref *16> ƒ match(length: 2) {},
+        doesNotMatch: <ref *17> ƒ doesNotMatch(length: 2) {},
         throws: <ref *18> ƒ throws(length: 1) {},
         rejects: <ref *19> async ƒ rejects(length: 1) {},
         doesNotThrow: <ref *20> ƒ doesNotThrow(length: 1) {},
@@ -994,14 +719,13 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         ifError: <ref *22> ƒ ifError(length: 1) {},
         strict: <ref *23> ƒ strict(length: 0) {
             AssertionError: [Circular: *3],
-            CallTracker: [Circular: *4],
             ok: [Circular: *7],
             fail: [Circular: *8],
             equal: [Circular: *13],
             notEqual: [Circular: *14],
-            deepEqual: [Circular: *6],
+            deepEqual: [Circular: *5],
             notDeepEqual: [Circular: *12],
-            deepStrictEqual: [Circular: *6],
+            deepStrictEqual: [Circular: *5],
             notDeepStrictEqual: [Circular: *12],
             strictEqual: [Circular: *13],
             notStrictEqual: [Circular: *14],
@@ -1148,73 +872,48 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
 [Object: null prototype] {
     Assert: <ref *2> ƒ Assert(length: 1) {},
     AssertionError: <ref *3> class AssertionError extends Error {},
-    CallTracker: <ref *4> ƒ deprecated(length: 0) {},
-    deepEqual: <ref *5> ƒ deepStrictEqual(length: 3) {},
-    deepStrictEqual: [Circular: *5],
-    default: <ref *6> ƒ strict(length: 0) {
+    deepEqual: <ref *4> ƒ deepStrictEqual(length: 2) {},
+    deepStrictEqual: [Circular: *4],
+    default: <ref *5> ƒ strict(length: 0) {
         AssertionError: [Circular: *3],
-        CallTracker: [Circular: *4],
-        ok: <ref *7> ƒ ok(length: 0) {
-            AssertionError: [Circular: *3],
-            CallTracker: [Circular: *4],
-            ok: [Circular: *7],
-            fail: <ref *8> ƒ fail(length: 5) {},
-            equal: ƒ equal(length: 3) {},
-            notEqual: ƒ notEqual(length: 3) {},
-            deepEqual: ƒ deepEqual(length: 3) {},
-            notDeepEqual: ƒ notDeepEqual(length: 3) {},
-            deepStrictEqual: [Circular: *5],
-            notDeepStrictEqual: <ref *13> ƒ notDeepStrictEqual(length: 3) {},
-            strictEqual: <ref *14> ƒ strictEqual(length: 3) {},
-            notStrictEqual: <ref *15> ƒ notStrictEqual(length: 3) {},
-            partialDeepStrictEqual: <ref *16> ƒ partialDeepStrictEqual(length: 3) {},
-            match: <ref *17> ƒ match(length: 3) {},
-            doesNotMatch: <ref *18> ƒ doesNotMatch(length: 3) {},
-            throws: <ref *19> ƒ throws(length: 1) {},
-            rejects: <ref *20> async ƒ rejects(length: 1) {},
-            doesNotThrow: <ref *21> ƒ doesNotThrow(length: 1) {},
-            doesNotReject: <ref *22> async ƒ doesNotReject(length: 1) {},
-            ifError: <ref *23> ƒ ifError(length: 1) {},
-            strict: [Circular: *6],
-            Assert: [Circular: *2]
-        },
-        fail: [Circular: *8],
-        equal: [Circular: *14],
-        notEqual: [Circular: *15],
-        deepEqual: [Circular: *5],
-        notDeepEqual: [Circular: *13],
-        deepStrictEqual: [Circular: *5],
-        notDeepStrictEqual: [Circular: *13],
-        strictEqual: [Circular: *14],
-        notStrictEqual: [Circular: *15],
-        partialDeepStrictEqual: [Circular: *16],
-        match: [Circular: *17],
-        doesNotMatch: [Circular: *18],
-        throws: [Circular: *19],
-        rejects: [Circular: *20],
-        doesNotThrow: [Circular: *21],
-        doesNotReject: [Circular: *22],
-        ifError: [Circular: *23],
+        ok: <ref *6> ƒ ok(length: 0) {},
+        fail: <ref *7> ƒ fail(length: 1) {},
+        equal: <ref *8> ƒ strictEqual(length: 2) {},
+        notEqual: <ref *9> ƒ notStrictEqual(length: 2) {},
+        deepEqual: [Circular: *4],
+        notDeepEqual: <ref *10> ƒ notDeepStrictEqual(length: 2) {},
+        deepStrictEqual: [Circular: *4],
+        notDeepStrictEqual: [Circular: *10],
+        strictEqual: [Circular: *8],
+        notStrictEqual: [Circular: *9],
+        partialDeepStrictEqual: <ref *11> ƒ partialDeepStrictEqual(length: 2) {},
+        match: <ref *12> ƒ match(length: 2) {},
+        doesNotMatch: <ref *13> ƒ doesNotMatch(length: 2) {},
+        throws: <ref *14> ƒ throws(length: 1) {},
+        rejects: <ref *15> async ƒ rejects(length: 1) {},
+        doesNotThrow: <ref *16> ƒ doesNotThrow(length: 1) {},
+        doesNotReject: <ref *17> async ƒ doesNotReject(length: 1) {},
+        ifError: <ref *18> ƒ ifError(length: 1) {},
         Assert: [Circular: *2],
-        strict: [Circular: *6]
+        strict: [Circular: *5]
     },
-    doesNotMatch: [Circular: *18],
-    doesNotReject: [Circular: *22],
-    doesNotThrow: [Circular: *21],
-    equal: [Circular: *14],
-    fail: [Circular: *8],
-    ifError: [Circular: *23],
-    match: [Circular: *17],
-    notDeepEqual: [Circular: *13],
-    notDeepStrictEqual: [Circular: *13],
-    notEqual: [Circular: *15],
-    notStrictEqual: [Circular: *15],
-    ok: [Circular: *7],
-    partialDeepStrictEqual: [Circular: *16],
-    rejects: [Circular: *20],
-    strict: [Circular: *6],
-    strictEqual: [Circular: *14],
-    throws: [Circular: *19]
+    doesNotMatch: [Circular: *13],
+    doesNotReject: [Circular: *17],
+    doesNotThrow: [Circular: *16],
+    equal: [Circular: *8],
+    fail: [Circular: *7],
+    ifError: [Circular: *18],
+    match: [Circular: *12],
+    notDeepEqual: [Circular: *10],
+    notDeepStrictEqual: [Circular: *10],
+    notEqual: [Circular: *9],
+    notStrictEqual: [Circular: *9],
+    ok: [Circular: *6],
+    partialDeepStrictEqual: [Circular: *11],
+    rejects: [Circular: *15],
+    strict: [Circular: *5],
+    strictEqual: [Circular: *8],
+    throws: [Circular: *14]
 }
 ```
 
@@ -1326,54 +1025,55 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         HTTPINCOMINGMESSAGE: 17,
         HTTPCLIENTREQUEST: 18,
         LOCKS: 19,
-        JSSTREAM: 20,
-        JSUDPWRAP: 21,
-        MESSAGEPORT: 22,
-        PIPECONNECTWRAP: 23,
-        PIPESERVERWRAP: 24,
-        PIPEWRAP: 25,
-        PROCESSWRAP: 26,
-        PROMISE: 27,
-        QUERYWRAP: 28,
-        QUIC_ENDPOINT: 29,
-        QUIC_LOGSTREAM: 30,
-        QUIC_SESSION: 31,
-        QUIC_STREAM: 32,
-        QUIC_UDP: 33,
-        SHUTDOWNWRAP: 34,
-        SIGNALWRAP: 35,
-        STATWATCHER: 36,
-        STREAMPIPE: 37,
-        TCPCONNECTWRAP: 38,
-        TCPSERVERWRAP: 39,
-        TCPWRAP: 40,
-        TTYWRAP: 41,
-        UDPSENDWRAP: 42,
-        UDPWRAP: 43,
-        SIGINTWATCHDOG: 44,
-        WORKER: 45,
-        WORKERCPUPROFILE: 46,
-        WORKERCPUUSAGE: 47,
-        WORKERHEAPPROFILE: 48,
-        WORKERHEAPSNAPSHOT: 49,
-        WORKERHEAPSTATISTICS: 50,
-        WRITEWRAP: 51,
-        ZLIB: 52,
-        CHECKPRIMEREQUEST: 53,
-        PBKDF2REQUEST: 54,
-        KEYPAIRGENREQUEST: 55,
-        KEYGENREQUEST: 56,
-        KEYEXPORTREQUEST: 57,
-        ARGON2REQUEST: 58,
-        CIPHERREQUEST: 59,
-        DERIVEBITSREQUEST: 60,
-        HASHREQUEST: 61,
-        RANDOMBYTESREQUEST: 62,
-        RANDOMPRIMEREQUEST: 63,
-        SCRYPTREQUEST: 64,
-        SIGNREQUEST: 65,
-        TLSWRAP: 66,
-        VERIFYREQUEST: 67
+        DTLS_ENDPOINT: 20,
+        DTLS_SESSION: 21,
+        JSSTREAM: 22,
+        MESSAGEPORT: 23,
+        PIPECONNECTWRAP: 24,
+        PIPESERVERWRAP: 25,
+        PIPEWRAP: 26,
+        PROCESSWRAP: 27,
+        PROMISE: 28,
+        QUERYWRAP: 29,
+        QUIC_ENDPOINT: 30,
+        QUIC_LOGSTREAM: 31,
+        QUIC_SESSION: 32,
+        QUIC_STREAM: 33,
+        QUIC_UDP: 34,
+        SHUTDOWNWRAP: 35,
+        SIGNALWRAP: 36,
+        STATWATCHER: 37,
+        STREAMPIPE: 38,
+        TCPCONNECTWRAP: 39,
+        TCPSERVERWRAP: 40,
+        TCPWRAP: 41,
+        TTYWRAP: 42,
+        UDPSENDWRAP: 43,
+        UDPWRAP: 44,
+        SIGINTWATCHDOG: 45,
+        WORKER: 46,
+        WORKERCPUPROFILE: 47,
+        WORKERCPUUSAGE: 48,
+        WORKERHEAPPROFILE: 49,
+        WORKERHEAPSNAPSHOT: 50,
+        WORKERHEAPSTATISTICS: 51,
+        WRITEWRAP: 52,
+        ZLIB: 53,
+        CHECKPRIMEREQUEST: 54,
+        PBKDF2REQUEST: 55,
+        KEYPAIRGENREQUEST: 56,
+        KEYGENREQUEST: 57,
+        KEYEXPORTREQUEST: 58,
+        ARGON2REQUEST: 59,
+        CIPHERREQUEST: 60,
+        DERIVEBITSREQUEST: 61,
+        HASHREQUEST: 62,
+        RANDOMBYTESREQUEST: 63,
+        RANDOMPRIMEREQUEST: 64,
+        SCRYPTREQUEST: 65,
+        SIGNREQUEST: 66,
+        TLSWRAP: 67,
+        VERIFYREQUEST: 68
     },
     createHook: <ref *5> ƒ createHook(length: 1) {},
     default: {
@@ -1491,18 +1191,18 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         copyBytesFrom: ƒ copyBytesFrom(length: 3) {},
         of: ƒ of(length: 0) {},
         alloc: ƒ alloc(length: 3) {},
-        allocUnsafe: ƒ allocUnsafe(length: 1) {},
-        allocUnsafeSlow: ƒ allocUnsafeSlow(length: 1) {},
+        allocUnsafe: ƒ allocUnsafe(length: 2) {},
+        allocUnsafeSlow: ƒ allocUnsafeSlow(length: 2) {},
         isBuffer: ƒ isBuffer(length: 1) {},
         compare: ƒ compare(length: 2) {},
         isEncoding: <ref *12> ƒ isEncoding(length: 1) {},
         concat: ƒ concat(length: 2) {},
         byteLength: ƒ byteLength(length: 2) {},
+        stringLength: ƒ stringLength(length: 1) {},
         Symbol(kIsEncodingSymbol): [Circular: *12]
     },
-    File: <ref *15> class File extends Blob {},
+    File: <ref *16> class File extends Blob {},
     INSPECT_MAX_BYTES: 50,
-    SlowBuffer: <ref *16> ƒ deprecated(length: 1) {},
     atob: <ref *17> ƒ atob(length: 1) {},
     btoa: <ref *18> ƒ btoa(length: 1) {},
     constants: <ref *19> {
@@ -1511,10 +1211,10 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     },
     default: {
         Buffer: [Circular: *3],
-        SlowBuffer: [Circular: *16],
         transcode: <ref *21> ƒ transcode(length: 3) {},
         isUtf8: <ref *22> ƒ isUtf8(length: 1) {},
         isAscii: <ref *23> ƒ isAscii(length: 1) {},
+        isLatin1: <ref *24> ƒ isLatin1(length: 1) {},
         kMaxLength: 9007199254740991,
         kStringMaxLength: 536870888,
         btoa: [Circular: *18],
@@ -1522,14 +1222,15 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         constants: [Circular: *19],
         [get/set] INSPECT_MAX_BYTES: 50,
         Blob: [Circular: *2],
-        resolveObjectURL: <ref *24> ƒ resolveObjectURL(length: 1) {},
-        File: [Circular: *15]
+        resolveObjectURL: <ref *25> ƒ resolveObjectURL(length: 1) {},
+        File: [Circular: *16]
     },
     isAscii: [Circular: *23],
+    isLatin1: [Circular: *24],
     isUtf8: [Circular: *22],
     kMaxLength: 9007199254740991,
     kStringMaxLength: 536870888,
-    resolveObjectURL: [Circular: *24],
+    resolveObjectURL: [Circular: *25],
     transcode: [Circular: *21]
 }
 ```
@@ -3029,7 +2730,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         generatePrime: <ref *39> ƒ generatePrime(length: 3) {},
         generatePrimeSync: <ref *40> ƒ generatePrimeSync(length: 1) {},
         getCiphers: <ref *41> ƒ (length: 0) {},
-        getCipherInfo: <ref *42> ƒ getCipherInfo(length: 2) {},
+        getCipherInfo: <ref *42> ƒ getCipherInfo(length: 1) {},
         getCurves: <ref *43> ƒ (length: 0) {},
         getDiffieHellman: [Circular: *26],
         getHashes: <ref *44> ƒ (length: 0) {},
@@ -3241,7 +2942,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     createSign: <ref *33> ƒ createSign(length: 2) {},
     createVerify: <ref *34> ƒ createVerify(length: 2) {},
     default: {
-        getRandomValues: <ref *36> ƒ (length: 1) {},
+        getRandomValues: <ref *36> ƒ getRandomValues(length: 1) {},
         constants: [Circular: *23],
         KeyObject: [Circular: *15],
         generateKey: <ref *37> ƒ generateKey(length: 3) {},
@@ -3251,7 +2952,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         createSecretKey: [Circular: *32],
         createPublicKey: [Circular: *31],
         createPrivateKey: [Circular: *30],
-        hash: <ref *41> ƒ hash(length: 2) {},
+        hash: <ref *41> ƒ hash(length: 3) {},
         pbkdf2: <ref *42> ƒ pbkdf2(length: 6) {},
         pbkdf2Sync: <ref *43> ƒ pbkdf2Sync(length: 5) {},
         hkdf: <ref *44> ƒ hkdf(length: 6) {},
@@ -3364,11 +3065,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
 ```js
 [Object: null prototype] {
     Socket: <ref *2> ƒ Socket(length: 2) {},
-    _createSocketHandle: <ref *3> ƒ deprecated(length: 5) {},
-    createSocket: <ref *4> ƒ createSocket(length: 2) {},
+    createSocket: <ref *3> ƒ createSocket(length: 2) {},
     default: {
-        _createSocketHandle: [Circular: *3],
-        createSocket: [Circular: *4],
+        createSocket: [Circular: *3],
         Socket: [Circular: *2]
     }
 }
@@ -3398,20 +3097,24 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
 
 ```js
 [Object: null prototype] {
-    Channel: <ref *2> class Channel {},
-    channel: <ref *3> ƒ channel(length: 1) {},
+    BoundedChannel: <ref *2> class BoundedChannel {},
+    Channel: <ref *3> class Channel {},
+    boundedChannel: <ref *4> ƒ boundedChannel(length: 1) {},
+    channel: <ref *5> ƒ channel(length: 1) {},
     default: {
-        channel: [Circular: *3],
-        hasSubscribers: <ref *5> ƒ hasSubscribers(length: 1) {},
-        subscribe: <ref *6> ƒ subscribe(length: 2) {},
-        tracingChannel: <ref *7> ƒ tracingChannel(length: 1) {},
-        unsubscribe: <ref *8> ƒ unsubscribe(length: 2) {},
-        Channel: [Circular: *2]
+        channel: [Circular: *5],
+        hasSubscribers: <ref *7> ƒ hasSubscribers(length: 1) {},
+        subscribe: <ref *8> ƒ subscribe(length: 2) {},
+        tracingChannel: <ref *9> ƒ tracingChannel(length: 1) {},
+        unsubscribe: <ref *10> ƒ unsubscribe(length: 2) {},
+        boundedChannel: [Circular: *4],
+        Channel: [Circular: *3],
+        BoundedChannel: [Circular: *2]
     },
-    hasSubscribers: [Circular: *5],
-    subscribe: [Circular: *6],
-    tracingChannel: [Circular: *7],
-    unsubscribe: [Circular: *8]
+    hasSubscribers: [Circular: *7],
+    subscribe: [Circular: *8],
+    tracingChannel: [Circular: *9],
+    unsubscribe: [Circular: *10]
 }
 ```
 
@@ -4156,7 +3859,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     FileReadStream: <ref *4> ƒ ReadStream(length: 2) {},
     FileWriteStream: <ref *5> ƒ WriteStream(length: 2) {},
     ReadStream: [Circular: *4],
-    Stats: <ref *6> ƒ deprecated(length: 14) {},
+    Stats: <ref *6> ƒ deprecated(length: 18) {},
     Utf8Stream: <ref *7> class Utf8Stream extends EventEmitter {},
     WriteStream: [Circular: *5],
     _toUnixTimestamp: <ref *8> ƒ toUnixTimestamp(length: 1) {},
@@ -4291,49 +3994,50 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         open: <ref *58> ƒ open(length: 4) {},
         openSync: <ref *59> ƒ openSync(length: 3) {},
         openAsBlob: <ref *60> ƒ openAsBlob(length: 1) {},
-        readdir: <ref *61> ƒ readdir(length: 3) {},
-        readdirSync: <ref *62> ƒ readdirSync(length: 2) {},
-        read: <ref *63> ƒ read(length: 6) {},
-        readSync: <ref *64> ƒ readSync(length: 5) {},
-        readv: <ref *65> ƒ readv(length: 4) {},
-        readvSync: <ref *66> ƒ readvSync(length: 3) {},
-        readFile: <ref *67> ƒ readFile(length: 3) {},
-        readFileSync: <ref *68> ƒ readFileSync(length: 2) {},
-        readlink: <ref *69> ƒ readlink(length: 3) {},
-        readlinkSync: <ref *70> ƒ readlinkSync(length: 2) {},
-        realpath: <ref *71> ƒ realpath(length: 3) {
+        openAsBlobSync: <ref *61> ƒ openAsBlobSync(length: 1) {},
+        readdir: <ref *62> ƒ readdir(length: 3) {},
+        readdirSync: <ref *63> ƒ readdirSync(length: 2) {},
+        read: <ref *64> ƒ read(length: 6) {},
+        readSync: <ref *65> ƒ readSync(length: 5) {},
+        readv: <ref *66> ƒ readv(length: 4) {},
+        readvSync: <ref *67> ƒ readvSync(length: 3) {},
+        readFile: <ref *68> ƒ readFile(length: 3) {},
+        readFileSync: <ref *69> ƒ readFileSync(length: 2) {},
+        readlink: <ref *70> ƒ readlink(length: 3) {},
+        readlinkSync: <ref *71> ƒ readlinkSync(length: 2) {},
+        realpath: <ref *72> ƒ realpath(length: 3) {
             native: ƒ (length: 3) {}
         },
-        realpathSync: <ref *73> ƒ realpathSync(length: 2) {
+        realpathSync: <ref *74> ƒ realpathSync(length: 2) {
             native: ƒ (length: 2) {}
         },
-        rename: <ref *75> ƒ rename(length: 3) {},
-        renameSync: <ref *76> ƒ renameSync(length: 2) {},
-        rm: <ref *77> ƒ rm(length: 3) {},
-        rmSync: <ref *78> ƒ rmSync(length: 2) {},
-        rmdir: <ref *79> ƒ rmdir(length: 3) {},
-        rmdirSync: <ref *80> ƒ rmdirSync(length: 2) {},
-        stat: <ref *81> ƒ stat(length: 1) {},
-        statfs: <ref *82> ƒ statfs(length: 1) {},
-        statSync: <ref *83> ƒ statSync(length: 1) {},
-        statfsSync: <ref *84> ƒ statfsSync(length: 1) {},
-        symlink: <ref *85> ƒ symlink(length: 4) {},
-        symlinkSync: <ref *86> ƒ symlinkSync(length: 3) {},
-        truncate: <ref *87> ƒ truncate(length: 3) {},
-        truncateSync: <ref *88> ƒ truncateSync(length: 2) {},
-        unwatchFile: <ref *89> ƒ unwatchFile(length: 2) {},
-        unlink: <ref *90> ƒ unlink(length: 2) {},
-        unlinkSync: <ref *91> ƒ unlinkSync(length: 1) {},
-        utimes: <ref *92> ƒ utimes(length: 4) {},
-        utimesSync: <ref *93> ƒ utimesSync(length: 3) {},
-        watch: <ref *94> ƒ watch(length: 3) {},
-        watchFile: <ref *95> ƒ watchFile(length: 3) {},
-        writeFile: <ref *96> ƒ writeFile(length: 4) {},
-        writeFileSync: <ref *97> ƒ writeFileSync(length: 3) {},
-        write: <ref *98> ƒ write(length: 6) {},
-        writeSync: <ref *99> ƒ writeSync(length: 5) {},
-        writev: <ref *100> ƒ writev(length: 4) {},
-        writevSync: <ref *101> ƒ writevSync(length: 3) {},
+        rename: <ref *76> ƒ rename(length: 3) {},
+        renameSync: <ref *77> ƒ renameSync(length: 2) {},
+        rm: <ref *78> ƒ rm(length: 3) {},
+        rmSync: <ref *79> ƒ rmSync(length: 2) {},
+        rmdir: <ref *80> ƒ rmdir(length: 3) {},
+        rmdirSync: <ref *81> ƒ rmdirSync(length: 2) {},
+        stat: <ref *82> ƒ stat(length: 1) {},
+        statfs: <ref *83> ƒ statfs(length: 1) {},
+        statSync: <ref *84> ƒ statSync(length: 1) {},
+        statfsSync: <ref *85> ƒ statfsSync(length: 1) {},
+        symlink: <ref *86> ƒ symlink(length: 4) {},
+        symlinkSync: <ref *87> ƒ symlinkSync(length: 3) {},
+        truncate: <ref *88> ƒ truncate(length: 3) {},
+        truncateSync: <ref *89> ƒ truncateSync(length: 2) {},
+        unwatchFile: <ref *90> ƒ unwatchFile(length: 2) {},
+        unlink: <ref *91> ƒ unlink(length: 2) {},
+        unlinkSync: <ref *92> ƒ unlinkSync(length: 1) {},
+        utimes: <ref *93> ƒ utimes(length: 4) {},
+        utimesSync: <ref *94> ƒ utimesSync(length: 3) {},
+        watch: <ref *95> ƒ watch(length: 3) {},
+        watchFile: <ref *96> ƒ watchFile(length: 3) {},
+        writeFile: <ref *97> ƒ writeFile(length: 4) {},
+        writeFileSync: <ref *98> ƒ writeFileSync(length: 3) {},
+        write: <ref *99> ƒ write(length: 6) {},
+        writeSync: <ref *100> ƒ writeSync(length: 5) {},
+        writev: <ref *101> ƒ writev(length: 4) {},
+        writevSync: <ref *102> ƒ writevSync(length: 3) {},
         Dirent: [Circular: *3],
         Stats: [Circular: *6],
         [get/set] ReadStream: [Circular: *4],
@@ -4343,10 +4047,10 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         [get/set] Utf8Stream: [Circular: *7],
         _toUnixTimestamp: [Circular: *8],
         Dir: [Circular: *2],
-        opendir: <ref *102> ƒ opendir(length: 3) {},
-        opendirSync: <ref *103> ƒ opendirSync(length: 2) {},
+        opendir: <ref *103> ƒ opendir(length: 3) {},
+        opendirSync: <ref *104> ƒ opendirSync(length: 2) {},
         constants: [Circular: *19],
-        [get/set] promises: <ref *104> {
+        [get/set] promises: <ref *105> {
             access: async ƒ access(length: 1) {},
             copyFile: async ƒ copyFile(length: 3) {},
             cp: async ƒ cp(length: 3) {},
@@ -4417,49 +4121,50 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     mkdtempSync: [Circular: *56],
     open: [Circular: *58],
     openAsBlob: [Circular: *60],
+    openAsBlobSync: [Circular: *61],
     openSync: [Circular: *59],
-    opendir: [Circular: *102],
-    opendirSync: [Circular: *103],
-    promises: [Circular: *104],
-    read: [Circular: *63],
-    readFile: [Circular: *67],
-    readFileSync: [Circular: *68],
-    readSync: [Circular: *64],
-    readdir: [Circular: *61],
-    readdirSync: [Circular: *62],
-    readlink: [Circular: *69],
-    readlinkSync: [Circular: *70],
-    readv: [Circular: *65],
-    readvSync: [Circular: *66],
-    realpath: [Circular: *71],
-    realpathSync: [Circular: *73],
-    rename: [Circular: *75],
-    renameSync: [Circular: *76],
-    rm: [Circular: *77],
-    rmSync: [Circular: *78],
-    rmdir: [Circular: *79],
-    rmdirSync: [Circular: *80],
-    stat: [Circular: *81],
-    statSync: [Circular: *83],
-    statfs: [Circular: *82],
-    statfsSync: [Circular: *84],
-    symlink: [Circular: *85],
-    symlinkSync: [Circular: *86],
-    truncate: [Circular: *87],
-    truncateSync: [Circular: *88],
-    unlink: [Circular: *90],
-    unlinkSync: [Circular: *91],
-    unwatchFile: [Circular: *89],
-    utimes: [Circular: *92],
-    utimesSync: [Circular: *93],
-    watch: [Circular: *94],
-    watchFile: [Circular: *95],
-    write: [Circular: *98],
-    writeFile: [Circular: *96],
-    writeFileSync: [Circular: *97],
-    writeSync: [Circular: *99],
-    writev: [Circular: *100],
-    writevSync: [Circular: *101]
+    opendir: [Circular: *103],
+    opendirSync: [Circular: *104],
+    promises: [Circular: *105],
+    read: [Circular: *64],
+    readFile: [Circular: *68],
+    readFileSync: [Circular: *69],
+    readSync: [Circular: *65],
+    readdir: [Circular: *62],
+    readdirSync: [Circular: *63],
+    readlink: [Circular: *70],
+    readlinkSync: [Circular: *71],
+    readv: [Circular: *66],
+    readvSync: [Circular: *67],
+    realpath: [Circular: *72],
+    realpathSync: [Circular: *74],
+    rename: [Circular: *76],
+    renameSync: [Circular: *77],
+    rm: [Circular: *78],
+    rmSync: [Circular: *79],
+    rmdir: [Circular: *80],
+    rmdirSync: [Circular: *81],
+    stat: [Circular: *82],
+    statSync: [Circular: *84],
+    statfs: [Circular: *83],
+    statfsSync: [Circular: *85],
+    symlink: [Circular: *86],
+    symlinkSync: [Circular: *87],
+    truncate: [Circular: *88],
+    truncateSync: [Circular: *89],
+    unlink: [Circular: *91],
+    unlinkSync: [Circular: *92],
+    unwatchFile: [Circular: *90],
+    utimes: [Circular: *93],
+    utimesSync: [Circular: *94],
+    watch: [Circular: *95],
+    watchFile: [Circular: *96],
+    write: [Circular: *99],
+    writeFile: [Circular: *97],
+    writeFileSync: [Circular: *98],
+    writeSync: [Circular: *100],
+    writev: [Circular: *101],
+    writevSync: [Circular: *102]
 }
 ```
 
@@ -5118,7 +4823,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         defaultMaxSockets: Infinity
     },
     ClientRequest: <ref *3> ƒ ClientRequest(length: 3) {},
-    CloseEvent: <ref *4> class _CloseEvent extends Event {},
+    CloseEvent: <ref *4> class extends Event {},
     IncomingMessage: <ref *5> ƒ IncomingMessage(length: 1) {},
     METHODS: <ref *6> [
         "ACL",
@@ -5245,18 +4950,22 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         Server: [Circular: *10],
         ServerResponse: [Circular: *11],
         createServer: [Circular: *14],
-        validateHeaderName: <ref *16> ƒ validateHeaderName(length: 0) {
+        isValidHeaderName: <ref *16> ƒ isValidHeaderName(length: 1) {},
+        isValidHeaderValue: <ref *17> ƒ isValidHeaderValue(length: 2) {},
+        validateHeaderName: <ref *18> ƒ validateHeaderName(length: 0) {
             withoutStackTrace: ƒ (length: 2) {}
         },
-        validateHeaderValue: <ref *18> ƒ validateHeaderValue(length: 0) {
+        validateHeaderValue: <ref *20> ƒ validateHeaderValue(length: 0) {
             withoutStackTrace: ƒ (length: 3) {}
         },
-        get: <ref *20> ƒ get(length: 3) {},
-        request: <ref *21> ƒ request(length: 3) {},
-        setMaxIdleHTTPParsers: <ref *22> ƒ setMaxIdleHTTPParsers(length: 1) {},
-        setGlobalProxyFromEnv: <ref *23> ƒ setGlobalProxyFromEnv(length: 0) {},
+        get: <ref *22> ƒ get(length: 3) {},
+        request: <ref *23> ƒ request(length: 3) {},
+        setMaxIdleHTTPParsers: <ref *24> ƒ setMaxIdleHTTPParsers(length: 1) {},
+        setGlobalProxyFromEnv: <ref *25> ƒ setGlobalProxyFromEnv(length: 0) {},
+        websocketMask: <ref *26> ƒ websocketMask(length: 5) {},
+        websocketUnmask: <ref *27> ƒ websocketUnmask(length: 2) {},
         [get/set] maxHeaderSize: 16384,
-        [get/set] globalAgent: <ref *24> Agent {
+        [get/set] globalAgent: <ref *28> Agent {
             _events: [Object: null prototype] {
                 free: ƒ (length: 2) {},
                 newListener: ƒ maybeEnableKeylog(length: 1) {}
@@ -5291,14 +5000,18 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         [get/set] CloseEvent: [Circular: *4],
         [get/set] MessageEvent: [Circular: *7]
     },
-    get: [Circular: *20],
-    globalAgent: [Circular: *24],
+    get: [Circular: *22],
+    globalAgent: [Circular: *28],
+    isValidHeaderName: [Circular: *16],
+    isValidHeaderValue: [Circular: *17],
     maxHeaderSize: 16384,
-    request: [Circular: *21],
-    setGlobalProxyFromEnv: [Circular: *23],
-    setMaxIdleHTTPParsers: [Circular: *22],
-    validateHeaderName: [Circular: *16],
-    validateHeaderValue: [Circular: *18]
+    request: [Circular: *23],
+    setGlobalProxyFromEnv: [Circular: *25],
+    setMaxIdleHTTPParsers: [Circular: *24],
+    validateHeaderName: [Circular: *18],
+    validateHeaderValue: [Circular: *20],
+    websocketMask: [Circular: *26],
+    websocketUnmask: [Circular: *27]
 }
 ```
 
@@ -6560,7 +6273,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     Module: <ref *2> ƒ Module(length: 0) {
         _cache: <ref *3> [Object: null prototype] {},
         _pathCache: <ref *4> [Object: null prototype] {
-            /tmp/fs-fixture-1793578670244-1/module.mjs: "/tmp/fs-fixture-1793578670244-1/module.mjs"
+            /tmp/fs-fixture-1794183483920-1/module.mjs: "/tmp/fs-fixture-1794183483920-1/module.mjs"
         },
         _extensions: <ref *5> [Object: null prototype] {
             .js: ƒ (length: 2) {},
@@ -6578,34 +6291,27 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             "/home/runner/setup-pnpm/node_modules/.pnpm/node_modules",
             "/home/runner/.node_modules",
             "/home/runner/.node_libraries",
-            "/opt/hostedtoolcache/node/24.22.1/x64/lib/node"
+            "/opt/hostedtoolcache/node/26.13.0/x64/lib/node"
         ],
-        _debug: <ref *10> ƒ deprecated(length: 0) {},
-        isBuiltin: <ref *11> ƒ isBuiltin(length: 1) {},
-        _findPath: <ref *12> ƒ (length: 3) {},
-        _nodeModulePaths: <ref *13> ƒ (length: 1) {},
-        _resolveLookupPaths: <ref *14> ƒ (length: 2) {},
-        _load: <ref *15> ƒ (length: 3) {},
-        _resolveFilename: <ref *16> ƒ (length: 4) {},
-        createRequire: <ref *17> ƒ createRequire(length: 1) {},
-        _initPaths: <ref *18> ƒ (length: 0) {},
-        _preloadModules: <ref *19> ƒ (length: 1) {},
-        syncBuiltinESMExports: <ref *20> ƒ syncBuiltinESMExports(length: 0) {},
+        isBuiltin: <ref *10> ƒ isBuiltin(length: 1) {},
+        _findPath: <ref *11> ƒ (length: 3) {},
+        _nodeModulePaths: <ref *12> ƒ (length: 1) {},
+        _resolveLookupPaths: <ref *13> ƒ (length: 2) {},
+        _load: <ref *14> ƒ (length: 3) {},
+        _resolveFilename: <ref *15> ƒ (length: 4) {},
+        createRequire: <ref *16> ƒ createRequire(length: 1) {},
+        _initPaths: <ref *17> ƒ (length: 0) {},
+        _preloadModules: <ref *18> ƒ (length: 1) {},
+        syncBuiltinESMExports: <ref *19> ƒ syncBuiltinESMExports(length: 0) {},
         Module: [Circular: *2],
-        registerHooks: <ref *21> ƒ registerHooks(length: 1) {},
-        builtinModules: <ref *22> [
+        registerHooks: <ref *20> ƒ registerHooks(length: 1) {},
+        builtinModules: <ref *21> [
             "_http_agent",
             "_http_client",
             "_http_common",
             "_http_incoming",
             "_http_outgoing",
             "_http_server",
-            "_stream_duplex",
-            "_stream_passthrough",
-            "_stream_readable",
-            "_stream_transform",
-            "_stream_wrap",
-            "_stream_writable",
             "_tls_common",
             "_tls_wrap",
             "assert",
@@ -6662,14 +6368,15 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             "wasi",
             "worker_threads",
             "zlib",
+            "node:ffi",
             "node:sea",
             "node:sqlite",
             "node:test",
             "node:test/reporters"
         ],
-        runMain: <ref *23> ƒ executeUserEntryPoint(length: 0) {},
-        register: <ref *24> ƒ register(length: 1) {},
-        constants: <ref *25> [Object: null prototype] {
+        runMain: <ref *22> ƒ executeUserEntryPoint(length: 0) {},
+        register: <ref *23> ƒ register(length: 1) {},
+        constants: <ref *24> [Object: null prototype] {
             compileCacheStatus: [Object: null prototype] {
                 FAILED: 0,
                 ENABLED: 1,
@@ -6677,46 +6384,45 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 DISABLED: 3
             }
         },
-        enableCompileCache: <ref *27> ƒ enableCompileCache(length: 1) {},
-        findPackageJSON: <ref *28> ƒ findPackageJSON(length: 1) {},
-        flushCompileCache: <ref *29> ƒ flushCompileCache(length: 0) {},
-        getCompileCacheDir: <ref *30> ƒ getCompileCacheDir(length: 0) {},
-        stripTypeScriptTypes: <ref *31> ƒ stripTypeScriptTypes(length: 1) {},
-        findSourceMap: <ref *32> ƒ findSourceMap(length: 1) {},
-        SourceMap: <ref *33> class SourceMap {},
-        getSourceMapsSupport: <ref *34> ƒ getSourceMapsSupport(length: 0) {},
-        setSourceMapsSupport: <ref *35> ƒ setSourceMapsSupport(length: 1) {}
+        enableCompileCache: <ref *26> ƒ enableCompileCache(length: 1) {},
+        findPackageJSON: <ref *27> ƒ findPackageJSON(length: 1) {},
+        flushCompileCache: <ref *28> ƒ flushCompileCache(length: 0) {},
+        getCompileCacheDir: <ref *29> ƒ getCompileCacheDir(length: 0) {},
+        stripTypeScriptTypes: <ref *30> ƒ stripTypeScriptTypes(length: 1) {},
+        findSourceMap: <ref *31> ƒ findSourceMap(length: 1) {},
+        SourceMap: <ref *32> class SourceMap {},
+        getSourceMapsSupport: <ref *33> ƒ getSourceMapsSupport(length: 0) {},
+        setSourceMapsSupport: <ref *34> ƒ setSourceMapsSupport(length: 1) {}
     },
-    SourceMap: [Circular: *33],
+    SourceMap: [Circular: *32],
     _cache: [Circular: *3],
-    _debug: [Circular: *10],
     _extensions: [Circular: *5],
-    _findPath: [Circular: *12],
-    _initPaths: [Circular: *18],
-    _load: [Circular: *15],
-    _nodeModulePaths: [Circular: *13],
+    _findPath: [Circular: *11],
+    _initPaths: [Circular: *17],
+    _load: [Circular: *14],
+    _nodeModulePaths: [Circular: *12],
     _pathCache: [Circular: *4],
-    _preloadModules: [Circular: *19],
-    _resolveFilename: [Circular: *16],
-    _resolveLookupPaths: [Circular: *14],
-    builtinModules: [Circular: *22],
-    constants: [Circular: *25],
-    createRequire: [Circular: *17],
+    _preloadModules: [Circular: *18],
+    _resolveFilename: [Circular: *15],
+    _resolveLookupPaths: [Circular: *13],
+    builtinModules: [Circular: *21],
+    constants: [Circular: *24],
+    createRequire: [Circular: *16],
     default: [Circular: *2],
-    enableCompileCache: [Circular: *27],
-    findPackageJSON: [Circular: *28],
-    findSourceMap: [Circular: *32],
-    flushCompileCache: [Circular: *29],
-    getCompileCacheDir: [Circular: *30],
-    getSourceMapsSupport: [Circular: *34],
+    enableCompileCache: [Circular: *26],
+    findPackageJSON: [Circular: *27],
+    findSourceMap: [Circular: *31],
+    flushCompileCache: [Circular: *28],
+    getCompileCacheDir: [Circular: *29],
+    getSourceMapsSupport: [Circular: *33],
     globalPaths: [Circular: *9],
-    isBuiltin: [Circular: *11],
-    register: [Circular: *24],
-    registerHooks: [Circular: *21],
-    runMain: [Circular: *23],
-    setSourceMapsSupport: [Circular: *35],
-    stripTypeScriptTypes: [Circular: *31],
-    syncBuiltinESMExports: [Circular: *20]
+    isBuiltin: [Circular: *10],
+    register: [Circular: *23],
+    registerHooks: [Circular: *20],
+    runMain: [Circular: *22],
+    setSourceMapsSupport: [Circular: *34],
+    stripTypeScriptTypes: [Circular: *30],
+    syncBuiltinESMExports: [Circular: *19]
 }
 ```
 
@@ -6726,7 +6432,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
 [Object: null prototype] {
     Module: <ref *2> ƒ Module(length: 1) {
         _cache: <ref *3> {
-            /tmp/fs-fixture-1793578670244-1/inspect.mjs: {
+            /tmp/fs-fixture-1794183483920-1/inspect.mjs: {
                 exports: [Object: null prototype] {
                     inspect: ƒ inspect(length: 1) {}
                 }
@@ -7971,59 +7677,35 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     _debugEnd: <ref *2> ƒ _debugEnd(length: 0) {},
     _debugProcess: <ref *3> ƒ _debugProcess(length: 0) {},
     _events: <ref *4> [Object: null prototype] {
-        newListener: [
-            ƒ (length: 1) {},
-            ƒ startListeningIfSignal(length: 1) {}
-        ],
-        removeListener: [
-            ƒ (length: 1) {},
-            ƒ stopListeningIfSignal(length: 1) {}
-        ],
+        newListener: ƒ startListeningIfSignal(length: 1) {},
+        removeListener: ƒ stopListeningIfSignal(length: 1) {},
         warning: ƒ onWarning(length: 1) {}
     },
     _eventsCount: 3,
     _exiting: false,
-    _fatalException: <ref *12> ƒ (length: 2) {},
-    _getActiveHandles: <ref *13> ƒ _getActiveHandles(length: 0) {},
-    _getActiveRequests: <ref *14> ƒ _getActiveRequests(length: 0) {},
-    _kill: <ref *15> ƒ _kill(length: 0) {},
-    _linkedBinding: <ref *16> ƒ _linkedBinding(length: 1) {},
+    _fatalException: <ref *8> ƒ (length: 2) {},
+    _getActiveHandles: <ref *9> ƒ _getActiveHandles(length: 0) {},
+    _getActiveRequests: <ref *10> ƒ _getActiveRequests(length: 0) {},
+    _kill: <ref *11> ƒ _kill(length: 0) {},
+    _linkedBinding: <ref *12> ƒ _linkedBinding(length: 1) {},
     _maxListeners: undefined,
-    _preload_modules: <ref *17> [],
-    _rawDebug: <ref *18> ƒ _rawDebug(length: 0) {},
-    _startProfilerIdleNotifier: <ref *19> ƒ (length: 0) {},
-    _stopProfilerIdleNotifier: <ref *20> ƒ (length: 0) {},
-    _tickCallback: <ref *21> ƒ runNextTicks(length: 0) {},
-    abort: <ref *22> ƒ abort(length: 0) {},
-    allowedNodeEnvironmentFlags: <ref *23> NodeEnvironmentFlagsSet {
+    _preload_modules: <ref *13> [],
+    _rawDebug: <ref *14> ƒ _rawDebug(length: 0) {},
+    _startProfilerIdleNotifier: <ref *15> ƒ (length: 0) {},
+    _stopProfilerIdleNotifier: <ref *16> ƒ (length: 0) {},
+    _tickCallback: <ref *17> ƒ runNextTicks(length: 0) {},
+    abort: <ref *18> ƒ abort(length: 0) {},
+    addUncaughtExceptionCaptureCallback: <ref *19> ƒ addUncaughtExceptionCaptureCallback(length: 1) {},
+    allowedNodeEnvironmentFlags: <ref *20> NodeEnvironmentFlagsSet {
         Symbol(internal properties): {
             array: [
-                "--test-coverage-functions",
-                "--heapsnapshot-signal",
-                "--addons",
-                "--no-addons",
-                "--node-memory-debug",
-                "--experimental-specifier-resolution",
-                "--report-exclude-env",
-                "--no-report-exclude-env",
-                "--global-search-paths",
-                "--no-global-search-paths",
-                "--experimental-global-customevent",
-                "--test-coverage-exclude",
-                "--experimental-stream-iter",
-                "--no-experimental-stream-iter",
-                "--require-module",
-                "--no-require-module",
-                "--trace-env",
-                "--no-trace-env",
-                "--test-rerun-failures",
-                "--experimental-detect-module",
-                "--no-experimental-detect-module",
                 "--allow-addons",
                 "--no-allow-addons",
                 "--experimental-package-map",
                 "--allow-fs-read",
                 "--experimental-abortcontroller",
+                "--experimental-report",
+                "--experimental-modules",
                 "--force-context-aware",
                 "--no-force-context-aware",
                 "--max-semi-space-size",
@@ -8035,37 +7717,55 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "--no-disable-sigusr1",
                 "--allow-wasi",
                 "--no-allow-wasi",
-                "--experimental-loader",
-                "--trace-tls",
-                "--no-trace-tls",
-                "--permission",
-                "--no-permission",
-                "--expose-gc",
-                "--diagnostic-dir",
-                "--force-async-hooks-checks",
-                "--no-force-async-hooks-checks",
-                "--strip-types",
-                "--no-strip-types",
+                "--input-type",
+                "--jitless",
                 "--experimental-sqlite",
                 "--no-experimental-sqlite",
                 "--allow-inspector",
                 "--no-allow-inspector",
-                "--trace-promises",
-                "--no-trace-promises",
-                "--experimental-import-meta-resolve",
-                "--no-experimental-import-meta-resolve",
-                "--trace-require-module",
-                "--experimental-import-text",
-                "--no-experimental-import-text",
+                "--experimental-web-worker",
+                "--no-experimental-web-worker",
+                "--experimental-addon-modules",
+                "--no-experimental-addon-modules",
+                "--test-coverage-functions",
+                "--expose-gc",
+                "--experimental-loader",
+                "--allow-net",
+                "--no-allow-net",
+                "--experimental-require-module",
+                "--no-experimental-require-module",
+                "--watch",
+                "--no-watch",
+                "--bench-reporter",
                 "--preserve-symlinks-main",
                 "--no-preserve-symlinks-main",
                 "--allow-fs-write",
                 "--allow-child-process",
                 "--no-allow-child-process",
+                "--allow-ffi",
+                "--no-allow-ffi",
+                "--permission-audit",
+                "--no-permission-audit",
+                "--trace-require-module",
+                "--experimental-import-meta-resolve",
+                "--no-experimental-import-meta-resolve",
+                "--allow-worker",
+                "--no-allow-worker",
+                "--experimental-vm-modules",
+                "--no-experimental-vm-modules",
+                "--experimental-ffi",
+                "--no-experimental-ffi",
+                "--experimental-wasi-unstable-preview1",
+                "--test-randomize",
+                "--no-test-randomize",
+                "--test-coverage-include",
+                "--test-coverage-exclude",
                 "--inspect-publish-uid",
                 "--inspect-brk",
                 "--no-inspect-brk",
                 "--inspect-port",
+                "--trace-exit",
+                "--no-trace-exit",
                 "--experimental-top-level-await",
                 "--report-on-signal",
                 "--no-report-on-signal",
@@ -8076,70 +7776,93 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "--perf-basic-prof",
                 "--inspect-wait",
                 "--no-inspect-wait",
-                "--experimental-transform-types",
-                "--no-experimental-transform-types",
                 "--perf-prof",
                 "--track-heap-objects",
                 "--no-track-heap-objects",
                 "--max-heap-size",
-                "--jitless",
-                "--input-type",
-                "--enable-source-maps",
-                "--no-enable-source-maps",
+                "--worker-snapshot",
+                "--no-worker-snapshot",
+                "--experimental-dtls",
+                "--watch-path",
                 "--max-old-space-size-percentage",
                 "--extra-info-on-fatal-exception",
                 "--no-extra-info-on-fatal-exception",
                 "--stack-trace-limit",
-                "--test-only",
-                "--no-test-only",
-                "--dns-result-order",
                 "--network-family-autoselection",
                 "--no-network-family-autoselection",
                 "--report-signal",
-                "--allow-worker",
-                "--no-allow-worker",
                 "--abort-on-uncaught-exception",
-                "--deprecation",
-                "--no-deprecation",
+                "--test-random-seed",
                 "--tls-min-v1.0",
                 "--no-tls-min-v1.0",
                 "--interpreted-frames-native-stack",
-                "--experimental-require-module",
-                "--no-experimental-require-module",
                 "--inspect",
                 "--no-inspect",
                 "--report-uncaught-exception",
                 "--no-report-uncaught-exception",
                 "--cpu-prof-name",
-                "--test-coverage-lines",
+                "--tls-min-v1.2",
+                "--no-tls-min-v1.2",
+                "--experimental-import-text",
+                "--no-experimental-import-text",
+                "--trace-promises",
+                "--no-trace-promises",
+                "--tls-keylog",
+                "--async-context-frame",
+                "--no-async-context-frame",
+                "--experimental-shadow-realm",
+                "--no-experimental-shadow-realm",
+                "--experimental-print-required-tla",
+                "--no-experimental-print-required-tla",
+                "--use-system-ca",
+                "--no-use-system-ca",
+                "--warnings",
+                "--no-warnings",
+                "--perf-basic-prof-only-functions",
+                "--tls-max-v1.3",
+                "--no-tls-max-v1.3",
+                "--experimental-repl-await",
+                "--no-experimental-repl-await",
+                "--test-coverage-include-all",
+                "--no-test-coverage-include-all",
                 "--trace-env-native-stack",
                 "--no-trace-env-native-stack",
                 "--report-exclude-network",
                 "--no-report-exclude-network",
-                "--throw-deprecation",
-                "--no-throw-deprecation",
-                "--trace-deprecation",
-                "--no-trace-deprecation",
                 "--heap-prof-dir",
-                "--test-randomize",
-                "--no-test-randomize",
-                "--secure-heap-min",
-                "--enable-fips-indicator-events",
-                "--no-enable-fips-indicator-events",
-                "--test-isolation",
-                "--entry-url",
-                "--no-entry-url",
-                "--openssl-shared-config",
-                "--no-openssl-shared-config",
-                "--conditions",
-                "--heap-prof-interval",
-                "--cpu-prof-interval",
-                "--disable-proto",
-                "--test-coverage-include",
+                "--allow-fs-vfs",
+                "--no-allow-fs-vfs",
+                "--bench-samples",
+                "--test-coverage-lines",
+                "--bench-name-pattern",
+                "--disallow-code-generation-from-strings",
+                "--title",
+                "--use-largepages",
+                "--import",
                 "--localstorage-file",
                 "--trace-sigint",
                 "--no-trace-sigint",
-                "--import",
+                "--experimental-bench",
+                "--no-experimental-bench",
+                "--secure-heap-min",
+                "--enable-fips-indicator-events",
+                "--no-enable-fips-indicator-events",
+                "--allow-openssl-store",
+                "--no-allow-openssl-store",
+                "--redirect-warnings",
+                "--max-http-header-size",
+                "--test-name-pattern",
+                "--test-isolation",
+                "--entry-url",
+                "--no-entry-url",
+                "--test-rerun-failures",
+                "--trace-env",
+                "--no-trace-env",
+                "--openssl-shared-config",
+                "--no-openssl-shared-config",
+                "--heap-prof-interval",
+                "--cpu-prof-interval",
+                "--disable-proto",
                 "--cpu-prof",
                 "--no-cpu-prof",
                 "--zero-fill-buffers",
@@ -8148,21 +7871,16 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "--trace-event-categories",
                 "--force-fips",
                 "--no-force-fips",
-                "--experimental-webstorage",
-                "--no-experimental-webstorage",
-                "--openssl-legacy-provider",
-                "--no-openssl-legacy-provider",
-                "--v8-pool-size",
-                "--experimental-shadow-realm",
-                "--no-experimental-shadow-realm",
-                "--async-context-frame",
-                "--no-async-context-frame",
                 "--trace-sync-io",
                 "--no-trace-sync-io",
-                "--debug-arraybuffer-allocations",
-                "--no-debug-arraybuffer-allocations",
                 "--report-compact",
                 "--no-report-compact",
+                "--debug-arraybuffer-allocations",
+                "--no-debug-arraybuffer-allocations",
+                "--addons",
+                "--no-addons",
+                "--node-memory-debug",
+                "--experimental-specifier-resolution",
                 "--test-reporter-destination",
                 "--trace-event-file-pattern",
                 "--trace-env-js-stack",
@@ -8172,11 +7890,8 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "--snapshot-blob",
                 "--unhandled-rejections",
                 "--test-coverage-branches",
-                "--trace-warnings",
-                "--no-trace-warnings",
-                "--watch-kill-signal",
-                "--experimental-repl-await",
-                "--no-experimental-repl-await",
+                "--network-family-autoselection-attempt-timeout",
+                "--report-dir",
                 "--tls-min-v1.3",
                 "--no-tls-min-v1.3",
                 "--experimental-websocket",
@@ -8186,17 +7901,18 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "--test-global-setup",
                 "--report-on-fatalerror",
                 "--no-report-on-fatalerror",
+                "--diagnostic-dir",
                 "--trace-uncaught",
                 "--no-trace-uncaught",
                 "--openssl-config",
+                "--bench-warmup",
+                "--enable-source-maps",
+                "--no-enable-source-maps",
                 "--report-filename",
                 "--tls-cipher-list",
-                "--watch-path",
                 "--experimental-wasm-modules",
                 "--use-openssl-ca",
                 "--no-use-openssl-ca",
-                "--experimental-addon-modules",
-                "--no-experimental-addon-modules",
                 "--experimental-worker",
                 "--use-bundled-ca",
                 "--no-use-bundled-ca",
@@ -8205,120 +7921,130 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "--no-tls-min-v1.1",
                 "--experimental-global-navigator",
                 "--no-experimental-global-navigator",
-                "--test-name-pattern",
-                "--use-largepages",
-                "--test-random-seed",
-                "--redirect-warnings",
-                "--max-http-header-size",
-                "--allow-openssl-store",
-                "--no-allow-openssl-store",
                 "--heap-prof",
                 "--no-heap-prof",
-                "--trace-exit",
-                "--no-trace-exit",
                 "--node-snapshot",
                 "--no-node-snapshot",
                 "--icu-data-dir",
+                "--frozen-intrinsics",
+                "--no-frozen-intrinsics",
+                "--heap-prof-name",
                 "--preserve-symlinks",
                 "--no-preserve-symlinks",
-                "--tls-max-v1.3",
-                "--no-tls-max-v1.3",
-                "--test-reporter",
                 "--secure-heap",
+                "--test-reporter",
                 "--experimental-eventsource",
                 "--no-experimental-eventsource",
                 "--use-env-proxy",
                 "--no-use-env-proxy",
                 "--test-skip-pattern",
-                "--experimental-report",
-                "--experimental-modules",
-                "--permission-audit",
-                "--no-permission-audit",
-                "--experimental-vm-modules",
-                "--no-experimental-vm-modules",
-                "--report-dir",
-                "--network-family-autoselection-attempt-timeout",
-                "--heap-prof-name",
-                "--frozen-intrinsics",
-                "--no-frozen-intrinsics",
-                "--verify-base-objects",
-                "--no-verify-base-objects",
-                "--watch",
-                "--no-watch",
-                "--experimental-wasi-unstable-preview1",
                 "--force-node-api-uncaught-exceptions-policy",
                 "--no-force-node-api-uncaught-exceptions-policy",
-                "--watch-preserve-output",
-                "--no-watch-preserve-output",
+                "--deprecation",
+                "--no-deprecation",
+                "--global-search-paths",
+                "--no-global-search-paths",
+                "--watch-kill-signal",
+                "--trace-warnings",
+                "--no-trace-warnings",
                 "--insecure-http-parser",
                 "--no-insecure-http-parser",
-                "--require",
-                "--napi-modules",
-                "--tls-max-v1.2",
-                "--no-tls-max-v1.2",
+                "--watch-preserve-output",
+                "--no-watch-preserve-output",
+                "--bench-isolation",
                 "--disable-warning",
                 "--heapsnapshot-near-heap-limit",
-                "--title",
-                "--disallow-code-generation-from-strings",
-                "--perf-basic-prof-only-functions",
-                "--warnings",
-                "--no-warnings",
-                "--use-system-ca",
-                "--no-use-system-ca",
-                "--experimental-print-required-tla",
-                "--no-experimental-print-required-tla",
-                "--tls-keylog",
-                "--tls-min-v1.2",
-                "--no-tls-min-v1.2",
+                "--heapsnapshot-signal",
+                "--openssl-legacy-provider",
+                "--no-openssl-legacy-provider",
+                "--v8-pool-size",
+                "--experimental-webstorage",
+                "--no-experimental-webstorage",
+                "--experimental-vfs",
+                "--no-experimental-vfs",
+                "--report-exclude-env",
+                "--no-report-exclude-env",
+                "--experimental-global-customevent",
+                "--bench-reporter-destination",
+                "--force-async-hooks-checks",
+                "--no-force-async-hooks-checks",
+                "--strip-types",
+                "--no-strip-types",
                 "--pending-deprecation",
                 "--no-pending-deprecation",
-                "--prof-process",
-                "-C",
-                "--experimental-strip-types",
-                "--inspect-wait",
-                "--inspect-brk",
-                "--inspect",
-                "--loader",
-                "--debug-port",
-                "--trace-events-enabled",
-                "--es-module-specifier-resolution",
+                "--dns-result-order",
+                "--test-only",
+                "--no-test-only",
+                "--require-module",
+                "--no-require-module",
+                "--experimental-stream-iter",
+                "--no-experimental-stream-iter",
+                "--conditions",
+                "--experimental-detect-module",
+                "--no-experimental-detect-module",
+                "--throw-deprecation",
+                "--no-throw-deprecation",
+                "--trace-deprecation",
+                "--no-trace-deprecation",
+                "--verify-base-objects",
+                "--no-verify-base-objects",
+                "--require",
+                "--napi-modules",
+                "--trace-tls",
+                "--no-trace-tls",
+                "--permission",
+                "--no-permission",
+                "--tls-max-v1.2",
+                "--no-tls-max-v1.2",
                 "--enable-network-family-autoselection",
                 "--force-fips",
                 "--report-directory",
+                "--es-module-specifier-resolution",
+                "--inspect",
+                "--loader",
+                "--debug-port",
+                "--experimental-test-isolation",
+                "--inspect-brk",
                 "-r",
-                "--experimental-test-isolation"
+                "--trace-events-enabled",
+                "--experimental-strip-types",
+                "-C",
+                "--prof-process",
+                "--inspect-wait",
+                "--webstorage"
             ]
         }
     },
     arch: "x64",
-    argv: <ref *26> [
-        "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
-        "/tmp/fs-fixture-1793578670244-1/process.mjs"
+    argv: <ref *23> [
+        "/opt/hostedtoolcache/node/26.13.0/x64/bin/node",
+        "/tmp/fs-fixture-1794183483920-1/process.mjs"
     ],
     argv0: "node",
-    availableMemory: <ref *27> ƒ availableMemory(length: 0) {},
-    binding: <ref *28> ƒ binding(length: 1) {},
-    chdir: <ref *29> ƒ wrappedChdir(length: 1) {},
-    config: <ref *30> {
+    availableMemory: <ref *24> ƒ availableMemory(length: 0) {},
+    binding: <ref *25> ƒ binding(length: 1) {},
+    chdir: <ref *26> ƒ wrappedChdir(length: 1) {},
+    config: <ref *27> {
         variables: {
             use_ccache_win: 0,
-            clang: 0,
-            llvm_version: "0.0",
-            gas_version: "2.38",
+            clang: 1,
+            llvm_version: "20.1",
             node_enable_experimentals: false,
             node_prefix: "/",
             node_install_npm: true,
-            node_install_corepack: true,
+            node_install_corepack: false,
             control_flow_guard: false,
             node_use_amaro: true,
             debug_node: false,
             debug_symbols: false,
+            build_type%: "Release",
             error_on_warn: false,
             suppress_all_error_on_warn: false,
             use_prefix_to_find_headers: false,
             host_arch: "x64",
             target_arch: "x64",
             node_byteorder: "little",
+            cargo_rust_target: "",
             want_separate_host_toolset: 0,
             node_use_node_snapshot: true,
             node_use_node_code_cache: true,
@@ -8328,7 +8054,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             enable_pgo_use: false,
             enable_lto: false,
             enable_thin_lto: false,
+            lto_jobs: "",
             single_executable_application: true,
+            node_use_lief: true,
             node_with_ltcg: false,
             node_tag: "",
             node_release_urlbase: "https://nodejs.org/download/release/",
@@ -8337,8 +8065,8 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             node_no_browser_globals: false,
             node_shared: false,
             libdir: "lib",
-            node_module_version: 137,
-            shlib_suffix: "so.137",
+            node_module_version: 147,
+            shlib_suffix: "so.147",
             asan: 0,
             ubsan: 0,
             coverage: false,
@@ -8350,17 +8078,13 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/_http_incoming.js",
                 "lib/_http_outgoing.js",
                 "lib/_http_server.js",
-                "lib/_stream_duplex.js",
-                "lib/_stream_passthrough.js",
-                "lib/_stream_readable.js",
-                "lib/_stream_transform.js",
-                "lib/_stream_wrap.js",
-                "lib/_stream_writable.js",
                 "lib/_tls_common.js",
                 "lib/_tls_wrap.js",
                 "lib/assert.js",
                 "lib/assert/strict.js",
                 "lib/async_hooks.js",
+                "lib/bench.js",
+                "lib/bench/reporters.js",
                 "lib/buffer.js",
                 "lib/child_process.js",
                 "lib/cluster.js",
@@ -8372,7 +8096,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/dns.js",
                 "lib/dns/promises.js",
                 "lib/domain.js",
+                "lib/dtls.js",
                 "lib/events.js",
+                "lib/ffi.js",
                 "lib/fs.js",
                 "lib/fs/promises.js",
                 "lib/http.js",
@@ -8383,7 +8109,6 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/abort_controller.js",
                 "lib/internal/assert.js",
                 "lib/internal/assert/assertion_error.js",
-                "lib/internal/assert/calltracker.js",
                 "lib/internal/assert/myers_diff.js",
                 "lib/internal/assert/utils.js",
                 "lib/internal/async_context_frame.js",
@@ -8391,6 +8116,13 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/async_local_storage/async_context_frame.js",
                 "lib/internal/async_local_storage/async_hooks.js",
                 "lib/internal/async_local_storage/run_scope.js",
+                "lib/internal/bench_runner/benchmark.js",
+                "lib/internal/bench_runner/benchmarks_stream.js",
+                "lib/internal/bench_runner/cli.js",
+                "lib/internal/bench_runner/harness.js",
+                "lib/internal/bench_runner/reporter/json.js",
+                "lib/internal/bench_runner/reporter/spec.js",
+                "lib/internal/bench_runner/runner.js",
                 "lib/internal/blob.js",
                 "lib/internal/blocklist.js",
                 "lib/internal/bootstrap/node.js",
@@ -8454,6 +8186,10 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/dns/callback_resolver.js",
                 "lib/internal/dns/promises.js",
                 "lib/internal/dns/utils.js",
+                "lib/internal/dtls/dtls.js",
+                "lib/internal/dtls/state.js",
+                "lib/internal/dtls/stats.js",
+                "lib/internal/dtls/symbols.js",
                 "lib/internal/encoding.js",
                 "lib/internal/encoding/single-byte.js",
                 "lib/internal/encoding/util.js",
@@ -8463,6 +8199,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/event_target.js",
                 "lib/internal/events/abort_listener.js",
                 "lib/internal/events/symbols.js",
+                "lib/internal/ffi-shared-buffer.js",
+                "lib/internal/ffi/fast-api.js",
+                "lib/internal/ffi/vfs.js",
                 "lib/internal/file.js",
                 "lib/internal/fixed_queue.js",
                 "lib/internal/freelist.js",
@@ -8497,6 +8236,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/legacy/processbinding.js",
                 "lib/internal/linkedlist.js",
                 "lib/internal/locks.js",
+                "lib/internal/main/bench_runner.js",
                 "lib/internal/main/check_syntax.js",
                 "lib/internal/main/embedding.js",
                 "lib/internal/main/eval_stdin.js",
@@ -8517,7 +8257,6 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/modules/esm/create_dynamic_module.js",
                 "lib/internal/modules/esm/get_format.js",
                 "lib/internal/modules/esm/hooks.js",
-                "lib/internal/modules/esm/initialize_import_meta.js",
                 "lib/internal/modules/esm/load.js",
                 "lib/internal/modules/esm/loader.js",
                 "lib/internal/modules/esm/module_job.js",
@@ -8575,6 +8314,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/repl.js",
                 "lib/internal/repl/await.js",
                 "lib/internal/repl/completion.js",
+                "lib/internal/repl/highlight.js",
                 "lib/internal/repl/history.js",
                 "lib/internal/repl/utils.js",
                 "lib/internal/socket_list.js",
@@ -8605,6 +8345,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/streams/iter/transform.js",
                 "lib/internal/streams/iter/types.js",
                 "lib/internal/streams/iter/utils.js",
+                "lib/internal/streams/iter/webidl.js",
                 "lib/internal/streams/lazy_transform.js",
                 "lib/internal/streams/legacy.js",
                 "lib/internal/streams/operators.js",
@@ -8641,6 +8382,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/tls/common.js",
                 "lib/internal/tls/secure-context.js",
                 "lib/internal/tls/wrap.js",
+                "lib/internal/trace_events.js",
                 "lib/internal/trace_events_async_hooks.js",
                 "lib/internal/tty.js",
                 "lib/internal/url.js",
@@ -8657,9 +8399,30 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/util/throttle.js",
                 "lib/internal/util/trace_sigint.js",
                 "lib/internal/util/types.js",
+                "lib/internal/v8/cpu_profiler.js",
+                "lib/internal/v8/heap_profile.js",
                 "lib/internal/v8/startup_snapshot.js",
                 "lib/internal/v8_prof_polyfill.js",
                 "lib/internal/validators.js",
+                "lib/internal/vfs/dir.js",
+                "lib/internal/vfs/errors.js",
+                "lib/internal/vfs/fd.js",
+                "lib/internal/vfs/file_handle.js",
+                "lib/internal/vfs/file_system.js",
+                "lib/internal/vfs/provider.js",
+                "lib/internal/vfs/provider_registry.js",
+                "lib/internal/vfs/providers/composable.js",
+                "lib/internal/vfs/providers/memory.js",
+                "lib/internal/vfs/providers/real.js",
+                "lib/internal/vfs/providers/sea.js",
+                "lib/internal/vfs/providers/ziparchive.js",
+                "lib/internal/vfs/root.js",
+                "lib/internal/vfs/router.js",
+                "lib/internal/vfs/sea.js",
+                "lib/internal/vfs/setup.js",
+                "lib/internal/vfs/stats.js",
+                "lib/internal/vfs/streams.js",
+                "lib/internal/vfs/watcher.js",
                 "lib/internal/vm.js",
                 "lib/internal/vm/module.js",
                 "lib/internal/wasm_web_api.js",
@@ -8676,11 +8439,26 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/internal/webstreams/transformstream.js",
                 "lib/internal/webstreams/util.js",
                 "lib/internal/webstreams/writablestream.js",
+                "lib/internal/webworker.js",
                 "lib/internal/worker.js",
                 "lib/internal/worker/clone_dom_exception.js",
                 "lib/internal/worker/io.js",
                 "lib/internal/worker/js_transferable.js",
                 "lib/internal/worker/messaging.js",
+                "lib/internal/zip.js",
+                "lib/internal/zip/archive.js",
+                "lib/internal/zip/binary.js",
+                "lib/internal/zip/buffer.js",
+                "lib/internal/zip/compression.js",
+                "lib/internal/zip/constants.js",
+                "lib/internal/zip/content-size.js",
+                "lib/internal/zip/dos.js",
+                "lib/internal/zip/entry.js",
+                "lib/internal/zip/extra-fields.js",
+                "lib/internal/zip/file.js",
+                "lib/internal/zip/fs-util.js",
+                "lib/internal/zip/header-builders.js",
+                "lib/internal/zip/headers.js",
                 "lib/module.js",
                 "lib/net.js",
                 "lib/os.js",
@@ -8715,6 +8493,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "lib/util.js",
                 "lib/util/types.js",
                 "lib/v8.js",
+                "lib/vfs.js",
                 "lib/vm.js",
                 "lib/wasi.js",
                 "lib/worker_threads.js",
@@ -8732,6 +8511,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "test/cctest/test_dataqueue.cc",
                 "test/cctest/test_diagnostics_channel.cc",
                 "test/cctest/test_environment.cc",
+                "test/cctest/test_environment_shared_isolate.cc",
                 "test/cctest/test_inspector_socket.cc",
                 "test/cctest/test_inspector_socket_server.cc",
                 "test/cctest/test_json_utils.cc",
@@ -8755,6 +8535,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "test/cctest/test_report.cc",
                 "test/cctest/test_sockaddr.cc",
                 "test/cctest/test_string_bytes.cc",
+                "test/cctest/test_trace_event.cc",
                 "test/cctest/test_traced_value.cc",
                 "test/cctest/test_util.cc",
                 "test/cctest/node_test_fixture.h"
@@ -8763,20 +8544,28 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             node_shared_zlib: false,
             node_shared_http_parser: false,
             node_shared_libuv: false,
+            node_shared_abseil: false,
             node_shared_ada: false,
             node_shared_simdjson: false,
             node_shared_simdutf: false,
             node_shared_brotli: false,
             node_shared_cares: false,
+            node_shared_gtest_libraries: [],
             node_shared_gtest: false,
             node_shared_hdr_histogram: false,
+            node_shared_highway: false,
             node_shared_merve: false,
             node_shared_nbytes: false,
             node_shared_nghttp2: false,
             node_shared_nghttp3: false,
             node_shared_ngtcp2: false,
+            node_shared_lief: false,
+            node_shared_perfetto: false,
             node_use_sqlite: true,
             node_shared_sqlite: false,
+            node_use_ffi: true,
+            node_shared_ffi: false,
+            node_shared_temporal_capi: false,
             node_shared_uvwasi: false,
             node_shared_zstd: false,
             v8_enable_webassembly: 1,
@@ -8796,12 +8585,15 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             v8_enable_external_code_space: 0,
             v8_enable_31bit_smis_on_64bit_arch: 0,
             v8_enable_extensible_ro_snapshot: 0,
+            v8_enable_temporal_support: 1,
             v8_trace_maps: 0,
+            v8_use_perfetto: 0,
             node_use_v8_platform: true,
             node_use_bundled_v8: true,
             force_dynamic_crt: 0,
             node_enable_d8: false,
             node_enable_v8windbg: false,
+            node_enable_v8debughelper: false,
             v8_enable_hugepage: 0,
             v8_enable_short_builtin_calls: 1,
             v8_enable_wasm_simd256_revec: 1,
@@ -8813,7 +8605,10 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             openssl_version: 810549407,
             openssl_is_boringssl: false,
             node_use_quic: false,
+            node_use_dtls: false,
             icu_small: false,
+            icu_system: false,
+            v8_enable_temporal_systemicu: 1,
             v8_enable_i18n_support: 1,
             icu_gyp_path: "tools/icu/icu-generic.gyp",
             icu_path: "deps/icu-small",
@@ -8826,7 +8621,8 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "deps/undici/undici.js",
                 "deps/amaro/dist/index.js"
             ],
-            ossfuzz: false
+            ossfuzz: false,
+            v8_enable_v8_checks: 0
         },
         target_defaults: {
             include_dirs: [],
@@ -8836,37 +8632,34 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 "ICU_NO_USER_DATA_OVERRIDE"
             ],
             cflags: [],
+            conditions: [],
             default_configuration: "Release",
             configurations: {
-                Release: {
-                    variables: {},
-                    v8_enable_v8_checks: 0
-                },
-                Debug: {
-                    variables: {},
-                    v8_enable_v8_checks: 1
-                }
+                Release: {},
+                Debug: {}
             }
         }
     },
-    constrainedMemory: <ref *45> ƒ constrainedMemory(length: 0) {},
-    cpuUsage: <ref *46> ƒ cpuUsage(length: 1) {},
-    cwd: <ref *47> ƒ wrappedCwd(length: 0) {},
+    constrainedMemory: <ref *42> ƒ constrainedMemory(length: 0) {},
+    cpuUsage: <ref *43> ƒ cpuUsage(length: 1) {},
+    cwd: <ref *44> ƒ wrappedCwd(length: 0) {},
     debugPort: 9229,
     default: process {
-        version: "v24.22.1",
-        versions: <ref *49> {
-            node: "24.22.1",
-            acorn: "8.18.0",
+        version: "v26.13.0",
+        versions: <ref *46> {
+            node: "26.13.0",
+            acorn: "8.19.0",
             ada: "4.0.0",
             amaro: "1.1.11",
             ares: "1.34.9",
             brotli: "1.2.0",
             cldr: "48.0",
             icu: "78.3",
+            libffi: "3.8.0",
+            lief: "1.0.0",
             llhttp: "9.4.3",
             merve: "1.2.2",
-            modules: "137",
+            modules: "147",
             napi: "10",
             nbytes: "0.1.4",
             ncrypto: "0.0.1",
@@ -8874,28 +8667,28 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             nghttp3: "",
             ngtcp2: "",
             openssl: "3.5.9",
-            simdjson: "4.6.11",
-            simdutf: "6.4.0",
-            sqlite: "3.53.4",
+            simdjson: "5.0.3",
+            simdutf: "7.7.0",
+            sqlite: "3.54.0",
             tz: "2026e",
-            undici: "7.30.1",
+            undici: "8.12.2",
             unicode: "17.0",
             uv: "1.52.1",
             uvwasi: "0.0.23",
-            v8: "13.6.233.17-node.58",
-            zlib: "1.3.2.1-motley-285e94b",
+            v8: "14.6.202.34-node.40",
+            zlib: "1.3.2.1-motley-456ae73",
             zstd: "1.5.7"
         },
         arch: "x64",
         platform: "linux",
-        release: <ref *50> {
+        release: <ref *47> {
             name: "node",
-            lts: "Krypton",
-            sourceUrl: "https://nodejs.org/download/release/v24.22.1/node-v24.22.1.tar.gz",
-            headersUrl: "https://nodejs.org/download/release/v24.22.1/node-v24.22.1-headers.tar.gz"
+            lts: "Lithium",
+            sourceUrl: "https://nodejs.org/download/release/v26.13.0/node-v26.13.0.tar.gz",
+            headersUrl: "https://nodejs.org/download/release/v26.13.0/node-v26.13.0-headers.tar.gz"
         },
-        _rawDebug: [Circular: *18],
-        moduleLoadList: <ref *51> [
+        _rawDebug: [Circular: *14],
+        moduleLoadList: <ref *48> [
             "Internal Binding builtins",
             "Internal Binding module_wrap",
             "Internal Binding errors",
@@ -8920,8 +8713,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             "NativeModule internal/priority_queue",
             "Internal Binding icu",
             "NativeModule internal/util/inspect",
-            "NativeModule internal/constants",
             "Internal Binding trace_events",
+            "NativeModule internal/constants",
+            "NativeModule internal/trace_events",
             "NativeModule internal/util/debuglog",
             "Internal Binding async_context_frame",
             "NativeModule internal/async_context_frame",
@@ -8950,29 +8744,20 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             "NativeModule path",
             "Internal Binding url_pattern",
             "NativeModule internal/querystring",
-            "NativeModule internal/mime",
-            "NativeModule internal/data_url",
             "NativeModule querystring",
             "Internal Binding url",
             "NativeModule internal/url",
-            "Internal Binding modules",
-            "NativeModule internal/modules/typescript",
             "Internal Binding contextify",
             "NativeModule internal/vm",
             "NativeModule internal/process/execution",
             "NativeModule internal/process/warning",
             "Internal Binding fs",
-            "Internal Binding blob",
-            "NativeModule internal/encoding/single-byte",
-            "NativeModule internal/encoding/util",
-            "Internal Binding encoding_binding",
-            "NativeModule internal/encoding",
-            "NativeModule internal/blob",
             "NativeModule internal/fs/utils",
             "Internal Binding permission",
             "NativeModule internal/process/permission",
             "NativeModule fs",
             "NativeModule internal/source_map/source_map_cache",
+            "Internal Binding modules",
             "NativeModule internal/modules/helpers",
             "NativeModule internal/console/constructor",
             "NativeModule internal/console/global",
@@ -8983,28 +8768,37 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             "Internal Binding performance",
             "NativeModule internal/perf/utils",
             "NativeModule internal/event_target",
+            "Internal Binding blob",
             "Internal Binding wasm_web_api",
             "NativeModule internal/process/signal",
-            "NativeModule url",
             "NativeModule internal/modules/customization_hooks",
             "NativeModule internal/modules/package_json_reader",
             "NativeModule internal/modules/package_map",
             "NativeModule internal/modules/cjs/loader",
+            "NativeModule internal/modules/esm/utils",
+            "Internal Binding encoding_binding",
+            "NativeModule url",
             "NativeModule internal/modules/esm/assert",
             "NativeModule internal/modules/esm/module_map",
             "NativeModule internal/modules/esm/module_job",
-            "NativeModule internal/modules/esm/utils",
             "NativeModule internal/modules/esm/get_format",
             "NativeModule internal/modules/esm/load",
             "Internal Binding cjs_lexer",
             "NativeModule internal/modules/esm/translators",
             "NativeModule internal/modules/esm/resolve",
             "NativeModule internal/modules/esm/loader",
+            "NativeModule internal/mime",
+            "NativeModule internal/data_url",
+            "NativeModule internal/modules/typescript",
+            "NativeModule internal/encoding/single-byte",
+            "NativeModule internal/encoding/util",
+            "NativeModule internal/encoding",
+            "NativeModule internal/blob",
+            "NativeModule internal/net",
+            "NativeModule internal/dns/utils",
             "NativeModule internal/inspector_async_hook",
             "Internal Binding worker",
             "NativeModule internal/modules/run_main",
-            "NativeModule internal/net",
-            "NativeModule internal/dns/utils",
             "NativeModule internal/process/pre_execution",
             "NativeModule process",
             "NativeModule internal/process/finalization",
@@ -9039,52 +8833,52 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             "Internal Binding report",
             "NativeModule internal/process/report"
         ],
-        binding: [Circular: *28],
-        _linkedBinding: [Circular: *16],
+        binding: [Circular: *25],
+        _linkedBinding: [Circular: *12],
         _events: [Circular: *4],
         _eventsCount: 3,
         _maxListeners: undefined,
         domain: null,
         [get/set] _exiting: false,
         [get/set] exitCode: undefined,
-        config: [Circular: *30],
-        dlopen: <ref *52> ƒ dlopen(length: 0) {},
-        uptime: <ref *53> ƒ uptime(length: 0) {},
-        _getActiveRequests: [Circular: *14],
-        _getActiveHandles: [Circular: *13],
-        getActiveResourcesInfo: <ref *54> ƒ getActiveResourcesInfo(length: 0) {},
-        reallyExit: <ref *55> ƒ reallyExit(length: 0) {},
-        _kill: [Circular: *15],
-        loadEnvFile: <ref *56> ƒ loadEnvFile(length: 0) {},
-        cpuUsage: [Circular: *46],
-        threadCpuUsage: <ref *57> ƒ threadCpuUsage(length: 1) {},
-        resourceUsage: <ref *58> ƒ resourceUsage(length: 0) {},
-        memoryUsage: <ref *59> ƒ memoryUsage(length: 0) {
+        config: [Circular: *27],
+        dlopen: <ref *49> ƒ dlopen(length: 0) {},
+        uptime: <ref *50> ƒ uptime(length: 0) {},
+        _getActiveRequests: [Circular: *10],
+        _getActiveHandles: [Circular: *9],
+        getActiveResourcesInfo: <ref *51> ƒ getActiveResourcesInfo(length: 0) {},
+        reallyExit: <ref *52> ƒ reallyExit(length: 0) {},
+        _kill: [Circular: *11],
+        loadEnvFile: <ref *53> ƒ loadEnvFile(length: 0) {},
+        cpuUsage: [Circular: *43],
+        threadCpuUsage: <ref *54> ƒ threadCpuUsage(length: 1) {},
+        resourceUsage: <ref *55> ƒ resourceUsage(length: 0) {},
+        memoryUsage: <ref *56> ƒ memoryUsage(length: 0) {
             rss: ƒ rss(length: 0) {}
         },
-        constrainedMemory: [Circular: *45],
-        availableMemory: [Circular: *27],
-        kill: <ref *61> ƒ kill(length: 2) {},
-        exit: <ref *62> ƒ exit(length: 1) {},
-        execve: <ref *63> ƒ execve(length: 1) {},
-        ref: <ref *64> ƒ ref(length: 1) {},
-        unref: <ref *65> ƒ unref(length: 1) {},
-        [get/set] finalization: <ref *66> {
+        constrainedMemory: [Circular: *42],
+        availableMemory: [Circular: *24],
+        kill: <ref *58> ƒ kill(length: 2) {},
+        exit: <ref *59> ƒ exit(length: 1) {},
+        execve: <ref *60> ƒ execve(length: 1) {},
+        ref: <ref *61> ƒ ref(length: 1) {},
+        unref: <ref *62> ƒ unref(length: 1) {},
+        [get/set] finalization: <ref *63> {
             register: ƒ register(length: 2) {},
             registerBeforeExit: ƒ registerBeforeExit(length: 2) {},
             unregister: ƒ unregister(length: 1) {}
         },
-        hrtime: <ref *70> ƒ hrtime(length: 1) {
+        hrtime: <ref *67> ƒ hrtime(length: 1) {
             bigint: ƒ hrtimeBigInt(length: 0) {}
         },
-        openStdin: <ref *72> ƒ (length: 0) {},
-        getuid: <ref *73> ƒ getuid(length: 0) {},
-        geteuid: <ref *74> ƒ geteuid(length: 0) {},
-        getgid: <ref *75> ƒ getgid(length: 0) {},
-        getegid: <ref *76> ƒ getegid(length: 0) {},
-        getgroups: <ref *77> ƒ getgroups(length: 0) {},
-        allowedNodeEnvironmentFlags: [Circular: *23],
-        features: <ref *78> {
+        openStdin: <ref *69> ƒ (length: 0) {},
+        getuid: <ref *70> ƒ getuid(length: 0) {},
+        geteuid: <ref *71> ƒ geteuid(length: 0) {},
+        getgid: <ref *72> ƒ getgid(length: 0) {},
+        getegid: <ref *73> ƒ getegid(length: 0) {},
+        getgroups: <ref *74> ƒ getgroups(length: 0) {},
+        allowedNodeEnvironmentFlags: [Circular: *20],
+        features: <ref *75> {
             inspector: true,
             debug: false,
             uv: true,
@@ -9096,23 +8890,25 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             openssl_is_boringssl: false,
             [get/set] cached_builtins: true,
             [get/set] require_module: true,
+            [get/set] dtls: false,
             [get/set] quic: false,
             [get/set] typescript: "strip"
         },
-        _fatalException: [Circular: *12],
-        setUncaughtExceptionCaptureCallback: <ref *79> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
-        hasUncaughtExceptionCaptureCallback: <ref *80> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
-        emitWarning: <ref *81> ƒ emitWarning(length: 4) {},
-        nextTick: <ref *82> ƒ nextTick(length: 1) {},
-        _tickCallback: [Circular: *21],
+        _fatalException: [Circular: *8],
+        setUncaughtExceptionCaptureCallback: <ref *76> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
+        addUncaughtExceptionCaptureCallback: [Circular: *19],
+        hasUncaughtExceptionCaptureCallback: <ref *77> ƒ hasUncaughtExceptionCaptureCallback(length: 0) {},
+        emitWarning: <ref *78> ƒ emitWarning(length: 4) {},
+        nextTick: <ref *79> ƒ nextTick(length: 1) {},
+        _tickCallback: [Circular: *17],
         [get/set] sourceMapsEnabled: false,
-        setSourceMapsEnabled: <ref *83> ƒ setSourceMapsEnabled(length: 1) {},
-        getBuiltinModule: <ref *84> ƒ getBuiltinModule(length: 1) {},
+        setSourceMapsEnabled: <ref *80> ƒ setSourceMapsEnabled(length: 1) {},
+        getBuiltinModule: <ref *81> ƒ getBuiltinModule(length: 1) {},
         _debugProcess: [Circular: *3],
         _debugEnd: [Circular: *2],
-        _startProfilerIdleNotifier: [Circular: *19],
-        _stopProfilerIdleNotifier: [Circular: *20],
-        [get/set] stdout: <ref *85> Socket {
+        _startProfilerIdleNotifier: [Circular: *15],
+        _stopProfilerIdleNotifier: [Circular: *16],
+        [get/set] stdout: <ref *82> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -9125,7 +8921,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: <ref *87> ƒ onReadableStreamEnd(length: 0) {},
+                end: <ref *84> ƒ onReadableStreamEnd(length: 0) {},
                 readable: undefined
             },
             _readableState: ReadableState {
@@ -9133,6 +8929,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 buffer: [],
                 bufferIndex: 0,
                 length: 0,
+                fastChunk: null,
+                pipeOnData: null,
+                pipePause: null,
                 pipes: [],
                 awaitDrainWriters: null,
                 readable: false,
@@ -9160,11 +8959,11 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             _type: "pipe",
             fd: 1,
             _isStdio: true,
-            destroySoon: <ref *93> ƒ (length: 2) {},
-            _destroy: <ref *94> ƒ dummyDestroy(length: 2) {},
+            destroySoon: <ref *90> ƒ (length: 2) {},
+            _destroy: <ref *91> ƒ dummyDestroy(length: 2) {},
             Symbol(async_id_symbol): 2,
             Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *85]
+                Symbol(owner_symbol): [Circular: *82]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -9180,7 +8979,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        [get/set] stdin: <ref *96> Socket {
+        [get/set] stdin: <ref *93> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -9193,7 +8992,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: [Circular: *87],
+                end: [Circular: *84],
                 readable: undefined,
                 pause: ƒ (length: 0) {}
             },
@@ -9202,6 +9001,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 buffer: [],
                 bufferIndex: 0,
                 length: 0,
+                fastChunk: null,
+                pipeOnData: null,
+                pipePause: null,
                 pipes: [],
                 awaitDrainWriters: null,
                 Symbol(kState): 1052932
@@ -9229,7 +9031,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             Symbol(async_id_symbol): 3,
             Symbol(kHandle): Pipe {
                 reading: false,
-                Symbol(owner_symbol): [Circular: *96]
+                Symbol(owner_symbol): [Circular: *93]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -9245,7 +9047,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        [get/set] stderr: <ref *105> Socket {
+        [get/set] stderr: <ref *102> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -9258,7 +9060,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 finish: undefined,
                 drain: undefined,
                 data: undefined,
-                end: [Circular: *87],
+                end: [Circular: *84],
                 readable: undefined
             },
             _readableState: ReadableState {
@@ -9266,6 +9068,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 buffer: [],
                 bufferIndex: 0,
                 length: 0,
+                fastChunk: null,
+                pipeOnData: null,
+                pipePause: null,
                 pipes: [],
                 awaitDrainWriters: null,
                 readable: false,
@@ -9293,11 +9098,11 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             _type: "pipe",
             fd: 2,
             _isStdio: true,
-            destroySoon: [Circular: *93],
-            _destroy: [Circular: *94],
+            destroySoon: [Circular: *90],
+            _destroy: [Circular: *91],
             Symbol(async_id_symbol): 4,
             Symbol(kHandle): Pipe {
-                Symbol(owner_symbol): [Circular: *105]
+                Symbol(owner_symbol): [Circular: *102]
             },
             Symbol(lastWriteQueueSize): 0,
             Symbol(timeout): null,
@@ -9313,28 +9118,28 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             Symbol(kBytesRead): 0,
             Symbol(kBytesWritten): 0
         },
-        abort: [Circular: *22],
-        umask: <ref *113> ƒ wrappedUmask(length: 1) {},
-        chdir: [Circular: *29],
-        cwd: [Circular: *47],
-        initgroups: <ref *114> ƒ initgroups(length: 2) {},
-        setgroups: <ref *115> ƒ setgroups(length: 1) {},
-        setegid: <ref *116> ƒ (length: 1) {},
-        seteuid: <ref *117> ƒ (length: 1) {},
-        setgid: <ref *118> ƒ (length: 1) {},
-        setuid: <ref *119> ƒ (length: 1) {},
-        env: <ref *120>  {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+        abort: [Circular: *18],
+        umask: <ref *110> ƒ wrappedUmask(length: 1) {},
+        chdir: [Circular: *26],
+        cwd: [Circular: *44],
+        initgroups: <ref *111> ƒ initgroups(length: 2) {},
+        setgroups: <ref *112> ƒ setgroups(length: 1) {},
+        setegid: <ref *113> ƒ (length: 1) {},
+        seteuid: <ref *114> ƒ (length: 1) {},
+        setgid: <ref *115> ƒ (length: 1) {},
+        setuid: <ref *116> ƒ (length: 1) {},
+        env: <ref *117>  {
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_dad2bae6-bea0-4959-bc26-feb037e385cb",
             npm_package_devDependencies__types_node: "^18.15.11",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v24.22.1 linux x64",
+            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v26.13.0 linux x64",
             CI: "true",
             USE_BAZEL_FALLBACK_VERSION: "silent:",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_dad2bae6-bea0-4959-bc26-feb037e385cb",
             PIPX_HOME: "/opt/pipx",
-            npm_node_execpath: "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
+            npm_node_execpath: "/opt/hostedtoolcache/node/26.13.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             SHLVL: "1",
             HCA_CLOUD_PROVIDER: "azure",
@@ -9354,23 +9159,23 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-Linux",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "1880",
-            ACTIONS_ORCHESTRATION_ID: "49f9f8a6-3afa-8470-86ce-ea6de9eab5a6.build.__default",
+            SYSTEMD_EXEC_PID: "1873",
+            ACTIONS_ORCHESTRATION_ID: "ace27051-ba62-8c86-9279-5173da539daf.build.__default",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20261026.354.1",
+            ImageVersion: "20261101.360.1",
             LOGNAME: "runner",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
-            GITHUB_ARTIFACTS: "/home/runner/work/_temp/_runner_file_commands/artifacts_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_ARTIFACTS: "/home/runner/work/_temp/_runner_file_commands/artifacts_dad2bae6-bea0-4959-bc26-feb037e385cb",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             npm_package_devDependencies_lintroll: "^1.10.0",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "10:14672",
+            JOURNAL_STREAM: "10:11888",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9380,10 +9185,10 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.14/x64",
-            GITHUB_RUN_ID: "41366360176",
+            GITHUB_RUN_ID: "42539407436",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "d0414af292a434f062e18d756327c344b21d9e5f",
+            GITHUB_WORKFLOW_SHA: "8f1884c5701981946ca9d74918ca5ebe732e1b6c",
             GOROOT_1_26_X64: "/opt/hostedtoolcache/go/1.26.10/x64",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
@@ -9395,12 +9200,12 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_b371db94-0ccd-4c0e-b7ee-e3824d8eb45a",
-            INVOCATION_ID: "27833e2d979442d79533066e3f6ea50d",
+            RUNNER_TRACKING_ID: "github_707aa0fa-00b3-408a-aa3b-8352e35489a3",
+            INVOCATION_ID: "7db19c7e5d864770b279edb966a0738f",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            NODE: "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
+            NODE: "/opt/hostedtoolcache/node/26.13.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "207",
+            GITHUB_RUN_NUMBER: "208",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9409,7 +9214,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000021725",
+            RUNNER_NAME: "GitHub Actions 1000023848",
             XDG_CONFIG_HOME: "/home/runner/.config",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -9431,7 +9236,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             GITHUB_JOB: "build",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "d0414af292a434f062e18d756327c344b21d9e5f",
+            GITHUB_SHA: "8f1884c5701981946ca9d74918ca5ebe732e1b6c",
             GITHUB_RUN_ATTEMPT: "1",
             ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED: "1",
             GITHUB_REF: "refs/heads/master",
@@ -9439,7 +9244,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_dad2bae6-bea0-4959-bc26-feb037e385cb",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9452,12 +9257,12 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_dad2bae6-bea0-4959-bc26-feb037e385cb",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
             ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_ARTIFACTS_LIST: "/home/runner/work/_temp/_runner_file_commands/artifacts_list_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_ARTIFACTS_LIST: "/home/runner/work/_temp/_runner_file_commands/artifacts_list_dad2bae6-bea0-4959-bc26-feb037e385cb",
             SGX_AESM_ADDR: "1",
             PSModulePath: "/root/.local/share/powershell/Modules:/usr/local/share/powershell/Modules:/opt/microsoft/powershell/…",
             CHROME_BIN: "/usr/bin/google-chrome",
@@ -9466,19 +9271,19 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_dad2bae6-bea0-4959-bc26-feb037e385cb",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         title: "node",
-        argv: [Circular: *26],
-        execArgv: <ref *121> [],
-        pid: 2872,
-        ppid: 2276,
-        execPath: "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
+        argv: [Circular: *23],
+        execArgv: <ref *118> [],
+        pid: 2796,
+        ppid: 2270,
+        execPath: "/opt/hostedtoolcache/node/26.13.0/x64/bin/node",
         debugPort: 9229,
         argv0: "node",
-        _preload_modules: [Circular: *17],
-        [get/set] report: <ref *122> {
+        _preload_modules: [Circular: *13],
+        [get/set] report: <ref *119> {
             writeReport: ƒ writeReport(length: 2) {},
             getReport: ƒ getReport(length: 1) {},
             [get/set] directory: "",
@@ -9494,59 +9299,59 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         Symbol(shapeMode): false,
         Symbol(kCapture): false
     },
-    dlopen: [Circular: *52],
+    dlopen: [Circular: *49],
     domain: null,
-    emitWarning: [Circular: *81],
-    env: [Circular: *120],
-    execArgv: [Circular: *121],
-    execPath: "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
-    execve: [Circular: *63],
-    exit: [Circular: *62],
+    emitWarning: [Circular: *78],
+    env: [Circular: *117],
+    execArgv: [Circular: *118],
+    execPath: "/opt/hostedtoolcache/node/26.13.0/x64/bin/node",
+    execve: [Circular: *60],
+    exit: [Circular: *59],
     exitCode: undefined,
-    features: [Circular: *78],
-    finalization: [Circular: *66],
-    getActiveResourcesInfo: [Circular: *54],
-    getBuiltinModule: [Circular: *84],
-    getegid: [Circular: *76],
-    geteuid: [Circular: *74],
-    getgid: [Circular: *75],
-    getgroups: [Circular: *77],
-    getuid: [Circular: *73],
-    hasUncaughtExceptionCaptureCallback: [Circular: *80],
-    hrtime: [Circular: *70],
-    initgroups: [Circular: *114],
-    kill: [Circular: *61],
-    loadEnvFile: [Circular: *56],
-    memoryUsage: [Circular: *59],
-    moduleLoadList: [Circular: *51],
-    nextTick: [Circular: *82],
-    openStdin: [Circular: *72],
-    pid: 2872,
+    features: [Circular: *75],
+    finalization: [Circular: *63],
+    getActiveResourcesInfo: [Circular: *51],
+    getBuiltinModule: [Circular: *81],
+    getegid: [Circular: *73],
+    geteuid: [Circular: *71],
+    getgid: [Circular: *72],
+    getgroups: [Circular: *74],
+    getuid: [Circular: *70],
+    hasUncaughtExceptionCaptureCallback: [Circular: *77],
+    hrtime: [Circular: *67],
+    initgroups: [Circular: *111],
+    kill: [Circular: *58],
+    loadEnvFile: [Circular: *53],
+    memoryUsage: [Circular: *56],
+    moduleLoadList: [Circular: *48],
+    nextTick: [Circular: *79],
+    openStdin: [Circular: *69],
+    pid: 2796,
     platform: "linux",
-    ppid: 2276,
-    reallyExit: [Circular: *55],
-    ref: [Circular: *64],
-    release: [Circular: *50],
-    report: [Circular: *122],
-    resourceUsage: [Circular: *58],
-    setSourceMapsEnabled: [Circular: *83],
-    setUncaughtExceptionCaptureCallback: [Circular: *79],
-    setegid: [Circular: *116],
-    seteuid: [Circular: *117],
-    setgid: [Circular: *118],
-    setgroups: [Circular: *115],
-    setuid: [Circular: *119],
+    ppid: 2270,
+    reallyExit: [Circular: *52],
+    ref: [Circular: *61],
+    release: [Circular: *47],
+    report: [Circular: *119],
+    resourceUsage: [Circular: *55],
+    setSourceMapsEnabled: [Circular: *80],
+    setUncaughtExceptionCaptureCallback: [Circular: *76],
+    setegid: [Circular: *113],
+    seteuid: [Circular: *114],
+    setgid: [Circular: *115],
+    setgroups: [Circular: *112],
+    setuid: [Circular: *116],
     sourceMapsEnabled: false,
-    stderr: [Circular: *105],
-    stdin: [Circular: *96],
-    stdout: [Circular: *85],
-    threadCpuUsage: [Circular: *57],
+    stderr: [Circular: *102],
+    stdin: [Circular: *93],
+    stdout: [Circular: *82],
+    threadCpuUsage: [Circular: *54],
     title: "node",
-    umask: [Circular: *113],
-    unref: [Circular: *65],
-    uptime: [Circular: *53],
-    version: "v24.22.1",
-    versions: [Circular: *49]
+    umask: [Circular: *110],
+    unref: [Circular: *62],
+    uptime: [Circular: *50],
+    version: "v26.13.0",
+    versions: [Circular: *46]
 }
 ```
 
@@ -9574,7 +9379,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     arch: "x64",
     argv: <ref *17> [
         "/home/runner/.bun/bin/bun",
-        "/tmp/fs-fixture-1793578670244-1/process.mjs"
+        "/tmp/fs-fixture-1794183483920-1/process.mjs"
     ],
     argv0: "bun",
     assert: <ref *18> ƒ assert(length: 1) {},
@@ -9653,17 +9458,17 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         dlopen: <ref *36> ƒ dlopen(length: 1) {},
         emitWarning: <ref *37> ƒ emitWarning(length: 1) {},
         env: <ref *38> {
-            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_STATE: "/home/runner/work/_temp/_runner_file_commands/save_state_dad2bae6-bea0-4959-bc26-feb037e385cb",
             npm_package_devDependencies__types_node: "^18.15.11",
             DOTNET_NOLOGO: "1",
             USER: "runner",
-            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v24.22.1 linux x64",
+            npm_config_user_agent: "pnpm/9.12.1 npm/? node/v26.13.0 linux x64",
             CI: "true",
             USE_BAZEL_FALLBACK_VERSION: "silent:",
             RUNNER_ENVIRONMENT: "github-hosted",
-            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_ENV: "/home/runner/work/_temp/_runner_file_commands/set_env_dad2bae6-bea0-4959-bc26-feb037e385cb",
             PIPX_HOME: "/opt/pipx",
-            npm_node_execpath: "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
+            npm_node_execpath: "/opt/hostedtoolcache/node/26.13.0/x64/bin/node",
             JAVA_HOME_8_X64: "/usr/lib/jvm/temurin-8-jdk-amd64",
             SHLVL: "1",
             HCA_CLOUD_PROVIDER: "azure",
@@ -9683,23 +9488,23 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             POWERSHELL_DISTRIBUTION_CHANNEL: "GitHub-Actions-Linux",
             AZURE_EXTENSION_DIR: "/opt/az/azcliextensions",
             GITHUB_HEAD_REF: "",
-            SYSTEMD_EXEC_PID: "1880",
-            ACTIONS_ORCHESTRATION_ID: "49f9f8a6-3afa-8470-86ce-ea6de9eab5a6.build.__default",
+            SYSTEMD_EXEC_PID: "1873",
+            ACTIONS_ORCHESTRATION_ID: "ace27051-ba62-8c86-9279-5173da539daf.build.__default",
             GITHUB_GRAPHQL_URL: "https://api.github.com/graphql",
             JAVA_HOME_25_X64: "/usr/lib/jvm/temurin-25-jdk-amd64",
             NVM_DIR: "/home/runner/.nvm",
             npm_package_dependencies_fs_fixture: "^1.2.0",
             DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1",
             JAVA_HOME_17_X64: "/usr/lib/jvm/temurin-17-jdk-amd64",
-            ImageVersion: "20261026.354.1",
+            ImageVersion: "20261101.360.1",
             LOGNAME: "runner",
             RUNNER_OS: "Linux",
             GITHUB_API_URL: "https://api.github.com",
-            GITHUB_ARTIFACTS: "/home/runner/work/_temp/_runner_file_commands/artifacts_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_ARTIFACTS: "/home/runner/work/_temp/_runner_file_commands/artifacts_dad2bae6-bea0-4959-bc26-feb037e385cb",
             SWIFT_PATH: "/usr/share/swift/usr/bin",
             npm_package_devDependencies_lintroll: "^1.10.0",
             CHROMEWEBDRIVER: "/usr/local/share/chromedriver-linux64",
-            JOURNAL_STREAM: "10:14672",
+            JOURNAL_STREAM: "10:11888",
             GITHUB_WORKFLOW: "Compare Bun and Node.js",
             _: "/home/runner/setup-pnpm/node_modules/.bin/pnpm",
             npm_package_private: "true",
@@ -9709,10 +9514,10 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             npm_config_registry: "https://registry.npmjs.org/",
             ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: "/opt/actionarchivecache",
             GOROOT_1_25_X64: "/opt/hostedtoolcache/go/1.25.14/x64",
-            GITHUB_RUN_ID: "41366360176",
+            GITHUB_RUN_ID: "42539407436",
             GITHUB_REF_TYPE: "branch",
             BOOTSTRAP_HASKELL_NONINTERACTIVE: "1",
-            GITHUB_WORKFLOW_SHA: "d0414af292a434f062e18d756327c344b21d9e5f",
+            GITHUB_WORKFLOW_SHA: "8f1884c5701981946ca9d74918ca5ebe732e1b6c",
             GOROOT_1_26_X64: "/opt/hostedtoolcache/go/1.26.10/x64",
             GITHUB_BASE_REF: "",
             ImageOS: "ubuntu24",
@@ -9724,12 +9529,12 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             PATH: "/home/runner/work/compare-bun-node/compare-bun-node/node_modules/.bin:/home/runner/setup-pnpm/node_m…",
             ANT_HOME: "/usr/share/ant",
             DOTNET_MULTILEVEL_LOOKUP: "0",
-            RUNNER_TRACKING_ID: "github_b371db94-0ccd-4c0e-b7ee-e3824d8eb45a",
-            INVOCATION_ID: "27833e2d979442d79533066e3f6ea50d",
+            RUNNER_TRACKING_ID: "github_707aa0fa-00b3-408a-aa3b-8352e35489a3",
+            INVOCATION_ID: "7db19c7e5d864770b279edb966a0738f",
             RUNNER_TOOL_CACHE: "/opt/hostedtoolcache",
-            NODE: "/opt/hostedtoolcache/node/24.22.1/x64/bin/node",
+            NODE: "/opt/hostedtoolcache/node/26.13.0/x64/bin/node",
             GITHUB_ACTION: "__run",
-            GITHUB_RUN_NUMBER: "207",
+            GITHUB_RUN_NUMBER: "208",
             GITHUB_TRIGGERING_ACTOR: "privatenumber",
             RUNNER_ARCH: "X64",
             XDG_RUNTIME_DIR: "/run/user/1001",
@@ -9738,7 +9543,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             LANG: "C.UTF-8",
             VCPKG_INSTALLATION_ROOT: "/usr/local/share/vcpkg",
             CONDA: "/usr/share/miniconda",
-            RUNNER_NAME: "GitHub Actions 1000021725",
+            RUNNER_NAME: "GitHub Actions 1000023848",
             XDG_CONFIG_HOME: "/home/runner/.config",
             GITHUB_REF_NAME: "master",
             GITHUB_REPOSITORY: "privatenumber/compare-bun-node",
@@ -9760,7 +9565,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             GITHUB_JOB: "build",
             npm_package_author: "Hiroki Osame <hiroki.osame@gmail.com>",
             npm_package_dependencies_execa: "^7.1.1",
-            GITHUB_SHA: "d0414af292a434f062e18d756327c344b21d9e5f",
+            GITHUB_SHA: "8f1884c5701981946ca9d74918ca5ebe732e1b6c",
             GITHUB_RUN_ATTEMPT: "1",
             ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED: "1",
             GITHUB_REF: "refs/heads/master",
@@ -9768,7 +9573,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             ANDROID_SDK_ROOT: "/usr/local/lib/android/sdk",
             npm_package_license: "MIT",
             npm_package_devDependencies_tsx: "^3.12.6",
-            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_PATH: "/home/runner/work/_temp/_runner_file_commands/add_path_dad2bae6-bea0-4959-bc26-feb037e385cb",
             JAVA_HOME: "/usr/lib/jvm/temurin-17-jdk-amd64",
             PWD: "/home/runner/work/compare-bun-node/compare-bun-node",
             GITHUB_ACTOR_ID: "1075694",
@@ -9781,12 +9586,12 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             GITHUB_SERVER_URL: "https://github.com",
             GECKOWEBDRIVER: "/usr/local/share/gecko_driver",
             GHCUP_INSTALL_BASE_PREFIX: "/usr/local",
-            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_OUTPUT: "/home/runner/work/_temp/_runner_file_commands/set_output_dad2bae6-bea0-4959-bc26-feb037e385cb",
             EDGEWEBDRIVER: "/usr/local/share/edge_driver",
             npm_command: "run-script",
             PNPM_SCRIPT_SRC_DIR: "/home/runner/work/compare-bun-node/compare-bun-node",
             ANDROID_NDK: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_ARTIFACTS_LIST: "/home/runner/work/_temp/_runner_file_commands/artifacts_list_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_ARTIFACTS_LIST: "/home/runner/work/_temp/_runner_file_commands/artifacts_list_dad2bae6-bea0-4959-bc26-feb037e385cb",
             SGX_AESM_ADDR: "1",
             PSModulePath: "/root/.local/share/powershell/Modules:/usr/local/share/powershell/Modules:/opt/microsoft/powershell/…",
             CHROME_BIN: "/usr/bin/google-chrome",
@@ -9795,7 +9600,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             PNPM_HOME: "/home/runner/setup-pnpm/node_modules/.bin",
             npm_package_lint_staged____ts_js_: "lintroll --cache",
             ANDROID_NDK_HOME: "/usr/local/lib/android/sdk/ndk/27.3.13750724",
-            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_e4feaf81-37cc-47cc-84ac-1468e1288afe",
+            GITHUB_STEP_SUMMARY: "/home/runner/work/_temp/_runner_file_commands/step_summary_dad2bae6-bea0-4959-bc26-feb037e385cb",
             INIT_CWD: "/home/runner/work/compare-bun-node/compare-bun-node"
         },
         execArgv: <ref *39> [],
@@ -9834,9 +9639,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         moduleLoadList: <ref *51> [],
         nextTick: <ref *52> ƒ nextTick(length: 1) {},
         openStdin: <ref *53> ƒ openStdin(length: 0) {},
-        pid: 2878,
+        pid: 2803,
         platform: "linux",
-        [get/set] ppid: 2276,
+        [get/set] ppid: 2270,
         reallyExit: <ref *54> ƒ reallyExit(length: 1) {},
         ref: <ref *55> ƒ ref(length: 1) {},
         release: <ref *56> {
@@ -9856,7 +9661,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             writeReport: ƒ writeReport(length: 1) {}
         },
         resourceUsage: <ref *60> ƒ resourceUsage(length: 0) {},
-        revision: "3f3a9ff87cdccf3d32d7ec6b648c664eddaae840",
+        revision: "2596ac5d391d47804c93a42bdbe615804aa62387",
         send: undefined,
         setSourceMapsEnabled: <ref *61> ƒ setSourceMapsEnabled(length: 1) {},
         setUncaughtExceptionCaptureCallback: <ref *62> ƒ setUncaughtExceptionCaptureCallback(length: 1) {},
@@ -10223,20 +10028,20 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         versions: <ref *256> {
             node: "26.12.1",
             bun: "1.4.4",
-            boringssl: "41bf9b59c2ebf277a7aa427e1ecad5cc80dd4d4f",
+            boringssl: "89a2ff2be775267283a2c8e35044e49ddab5e5aa",
             openssl: "1.1.0",
             llhttp: "9.4.2",
             mimalloc: "5945551d9ea1e3c83dbf5b198b00a3ec51aee395",
             picohttpparser: "f4d94b48b31e0abae029ebeafcfd9ca0680ede58",
-            uwebsockets: "3f3a9ff87cdccf3d32d7ec6b648c664eddaae840",
-            webkit: "4d45755fed4aeef19e95beb90d3d0c884a2812bd",
+            uwebsockets: "2596ac5d391d47804c93a42bdbe615804aa62387",
+            webkit: "5a61071f79134bf41844e7ea31a8449147d85dd4",
             zig: "04e7f6ac1e009525bc00934f20199c68f04e0a24",
             zlib: "12731092979c6d07f42da27da673a9f6c7b13586",
             tinycc: "05f0fafaa3be31e31d7b4b5c17dc60f62c991171",
             lolhtml: "725ce499aa9b71e38b7a2d0a9fbb6d7294a4079e",
             ares: "0b88066f79ac9745d6819899f1794df91b73c873",
             libdeflate: "92e6a0db9fa848d742f9eb286c92afc60f2c3dda",
-            usockets: "3f3a9ff87cdccf3d32d7ec6b648c664eddaae840",
+            usockets: "2596ac5d391d47804c93a42bdbe615804aa62387",
             lshpack: "cf0f70dd10b352194c97448eb5d00b4aa484f531",
             zstd: "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
             v8: "14.6.202.34-node.40",
@@ -10303,9 +10108,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     on: ƒ bound on(length: 2) {},
     once: ƒ bound once(length: 2) {},
     openStdin: [Circular: *53],
-    pid: 2878,
+    pid: 2803,
     platform: "linux",
-    ppid: 2276,
+    ppid: 2270,
     prependListener: ƒ bound prependListener(length: 2) {},
     prependOnceListener: ƒ bound prependOnceListener(length: 2) {},
     rawListeners: ƒ bound rawListeners(length: 1) {},
@@ -10316,7 +10121,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     removeListener: ƒ bound removeListener(length: 2) {},
     report: [Circular: *57],
     resourceUsage: [Circular: *60],
-    revision: "3f3a9ff87cdccf3d32d7ec6b648c664eddaae840",
+    revision: "2596ac5d391d47804c93a42bdbe615804aa62387",
     send: undefined,
     setMaxListeners: ƒ bound setMaxListeners(length: 1) {},
     setSourceMapsEnabled: [Circular: *61],
@@ -10368,7 +10173,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     ucs2: [Circular: *4],
     version: "2.1.0"
 }
-(node:2895) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:2810) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -10562,10 +10367,10 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
 
 ```js
 [Object: null prototype] {
-    REPLServer: <ref *2> ƒ REPLServer(length: 6) {},
+    REPLServer: <ref *2> class REPLServer extends Interface {},
     REPL_MODE_SLOPPY: Symbol(repl-sloppy),
     REPL_MODE_STRICT: Symbol(repl-strict),
-    Recoverable: <ref *3> ƒ Recoverable(length: 1) {},
+    Recoverable: <ref *3> class Recoverable extends SyntaxError {},
     default: {
         start: <ref *5> ƒ start(length: 6) {},
         writer: <ref *6> ƒ writer(length: 1) {
@@ -11251,22 +11056,31 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 string: "green",
                 symbol: "green",
                 date: "magenta",
-                regexp: "red",
+                regexp: ƒ highlightRegExp(length: 1) {
+                    colors: [
+                        "green",
+                        "red",
+                        "yellow",
+                        "cyan",
+                        "magenta"
+                    ]
+                },
                 module: "underline"
             }
         },
-        isArray: <ref *71> ƒ deprecated(length: 1) {},
-        isDeepStrictEqual: <ref *72> ƒ isDeepStrictEqual(length: 3) {},
-        markPromiseAsHandled: <ref *73> ƒ markPromiseAsHandled(length: 1) {},
-        promisify: <ref *74> ƒ promisify(length: 1) {
+        isArray: <ref *73> ƒ deprecated(length: 1) {},
+        isDeepStrictEqual: <ref *74> ƒ isDeepStrictEqual(length: 3) {},
+        isPartialDeepStrictEqual: <ref *75> ƒ isPartialDeepStrictEqual(length: 2) {},
+        markPromiseAsHandled: <ref *76> ƒ markPromiseAsHandled(length: 1) {},
+        promisify: <ref *77> ƒ promisify(length: 1) {
             custom: Symbol(nodejs.util.promisify.custom)
         },
-        stripVTControlCharacters: <ref *75> ƒ stripVTControlCharacters(length: 1) {},
-        toUSVString: <ref *76> ƒ toUSVString(length: 1) {},
-        [get/set] transferableAbortSignal: <ref *77> ƒ transferableAbortSignal(length: 1) {},
-        [get/set] transferableAbortController: <ref *78> ƒ transferableAbortController(length: 0) {},
+        stripVTControlCharacters: <ref *78> ƒ stripVTControlCharacters(length: 1) {},
+        toUSVString: <ref *79> ƒ toUSVString(length: 1) {},
+        [get/set] transferableAbortSignal: <ref *80> ƒ transferableAbortSignal(length: 1) {},
+        [get/set] transferableAbortController: <ref *81> ƒ transferableAbortController(length: 0) {},
         [get/set] aborted: [Circular: *9],
-        types: <ref *79> {
+        types: <ref *82> {
             isArgumentsObject: ƒ (length: 0) {},
             isArrayBuffer: ƒ (length: 0) {},
             isAsyncFunction: ƒ (length: 0) {},
@@ -11311,19 +11125,19 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             isKeyObject: ƒ isKeyObject(length: 1) {},
             isCryptoKey: ƒ isCryptoKey(length: 1) {}
         },
-        parseEnv: <ref *123> ƒ parseEnv(length: 1) {},
-        parseArgs: <ref *124> ƒ parseArgs(length: 0) {},
+        parseEnv: <ref *126> ƒ parseEnv(length: 1) {},
+        parseArgs: <ref *127> ƒ parseArgs(length: 0) {},
         TextDecoder: [Circular: *4],
         TextEncoder: [Circular: *5],
         MIMEType: [Circular: *3],
         MIMEParams: [Circular: *2],
-        diff: <ref *125> ƒ diff(length: 2) {},
+        diff: <ref *128> ƒ diff(length: 2) {},
         [get/set] debounce: [Circular: *12],
-        [get/set] throttle: <ref *126> ƒ throttle(length: 3) {},
-        setTraceSigInt: <ref *127> ƒ setTraceSigInt(length: 1) {}
+        [get/set] throttle: <ref *129> ƒ throttle(length: 3) {},
+        setTraceSigInt: <ref *130> ƒ setTraceSigInt(length: 1) {}
     },
     deprecate: [Circular: *15],
-    diff: [Circular: *125],
+    diff: [Circular: *128],
     format: [Circular: *16],
     formatWithOptions: [Circular: *18],
     getCallSites: [Circular: *19],
@@ -11332,22 +11146,23 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     getSystemErrorName: [Circular: *21],
     inherits: [Circular: *23],
     inspect: [Circular: *24],
-    isArray: [Circular: *71],
-    isDeepStrictEqual: [Circular: *72],
-    markPromiseAsHandled: [Circular: *73],
-    parseArgs: [Circular: *124],
-    parseEnv: [Circular: *123],
-    promisify: [Circular: *74],
-    setTraceSigInt: [Circular: *127],
-    stripVTControlCharacters: [Circular: *75],
+    isArray: [Circular: *73],
+    isDeepStrictEqual: [Circular: *74],
+    isPartialDeepStrictEqual: [Circular: *75],
+    markPromiseAsHandled: [Circular: *76],
+    parseArgs: [Circular: *127],
+    parseEnv: [Circular: *126],
+    promisify: [Circular: *77],
+    setTraceSigInt: [Circular: *130],
+    stripVTControlCharacters: [Circular: *78],
     styleText: [Circular: *17],
-    throttle: [Circular: *126],
-    toUSVString: [Circular: *76],
-    transferableAbortController: [Circular: *78],
-    transferableAbortSignal: [Circular: *77],
-    types: [Circular: *79]
+    throttle: [Circular: *129],
+    toUSVString: [Circular: *79],
+    transferableAbortController: [Circular: *81],
+    transferableAbortSignal: [Circular: *80],
+    types: [Circular: *82]
 }
-(node:3016) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:2923) [DEP0025] DeprecationWarning: sys is deprecated. Use `node:util` instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
@@ -12591,22 +12406,31 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
                 string: "green",
                 symbol: "green",
                 date: "magenta",
-                regexp: "red",
+                regexp: ƒ highlightRegExp(length: 1) {
+                    colors: [
+                        "green",
+                        "red",
+                        "yellow",
+                        "cyan",
+                        "magenta"
+                    ]
+                },
                 module: "underline"
             }
         },
-        isArray: <ref *71> ƒ deprecated(length: 1) {},
-        isDeepStrictEqual: <ref *72> ƒ isDeepStrictEqual(length: 3) {},
-        markPromiseAsHandled: <ref *73> ƒ markPromiseAsHandled(length: 1) {},
-        promisify: <ref *74> ƒ promisify(length: 1) {
+        isArray: <ref *73> ƒ deprecated(length: 1) {},
+        isDeepStrictEqual: <ref *74> ƒ isDeepStrictEqual(length: 3) {},
+        isPartialDeepStrictEqual: <ref *75> ƒ isPartialDeepStrictEqual(length: 2) {},
+        markPromiseAsHandled: <ref *76> ƒ markPromiseAsHandled(length: 1) {},
+        promisify: <ref *77> ƒ promisify(length: 1) {
             custom: Symbol(nodejs.util.promisify.custom)
         },
-        stripVTControlCharacters: <ref *75> ƒ stripVTControlCharacters(length: 1) {},
-        toUSVString: <ref *76> ƒ toUSVString(length: 1) {},
-        [get/set] transferableAbortSignal: <ref *77> ƒ transferableAbortSignal(length: 1) {},
-        [get/set] transferableAbortController: <ref *78> ƒ transferableAbortController(length: 0) {},
+        stripVTControlCharacters: <ref *78> ƒ stripVTControlCharacters(length: 1) {},
+        toUSVString: <ref *79> ƒ toUSVString(length: 1) {},
+        [get/set] transferableAbortSignal: <ref *80> ƒ transferableAbortSignal(length: 1) {},
+        [get/set] transferableAbortController: <ref *81> ƒ transferableAbortController(length: 0) {},
         [get/set] aborted: [Circular: *9],
-        types: <ref *79> {
+        types: <ref *82> {
             isArgumentsObject: ƒ (length: 0) {},
             isArrayBuffer: ƒ (length: 0) {},
             isAsyncFunction: ƒ (length: 0) {},
@@ -12651,19 +12475,19 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             isKeyObject: ƒ isKeyObject(length: 1) {},
             isCryptoKey: ƒ isCryptoKey(length: 1) {}
         },
-        parseEnv: <ref *123> ƒ parseEnv(length: 1) {},
-        parseArgs: <ref *124> ƒ parseArgs(length: 0) {},
+        parseEnv: <ref *126> ƒ parseEnv(length: 1) {},
+        parseArgs: <ref *127> ƒ parseArgs(length: 0) {},
         TextDecoder: [Circular: *4],
         TextEncoder: [Circular: *5],
         MIMEType: [Circular: *3],
         MIMEParams: [Circular: *2],
-        diff: <ref *125> ƒ diff(length: 2) {},
+        diff: <ref *128> ƒ diff(length: 2) {},
         [get/set] debounce: [Circular: *12],
-        [get/set] throttle: <ref *126> ƒ throttle(length: 3) {},
-        setTraceSigInt: <ref *127> ƒ setTraceSigInt(length: 1) {}
+        [get/set] throttle: <ref *129> ƒ throttle(length: 3) {},
+        setTraceSigInt: <ref *130> ƒ setTraceSigInt(length: 1) {}
     },
     deprecate: [Circular: *15],
-    diff: [Circular: *125],
+    diff: [Circular: *128],
     format: [Circular: *16],
     formatWithOptions: [Circular: *18],
     getCallSites: [Circular: *19],
@@ -12672,20 +12496,21 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     getSystemErrorName: [Circular: *21],
     inherits: [Circular: *23],
     inspect: [Circular: *24],
-    isArray: [Circular: *71],
-    isDeepStrictEqual: [Circular: *72],
-    markPromiseAsHandled: [Circular: *73],
-    parseArgs: [Circular: *124],
-    parseEnv: [Circular: *123],
-    promisify: [Circular: *74],
-    setTraceSigInt: [Circular: *127],
-    stripVTControlCharacters: [Circular: *75],
+    isArray: [Circular: *73],
+    isDeepStrictEqual: [Circular: *74],
+    isPartialDeepStrictEqual: [Circular: *75],
+    markPromiseAsHandled: [Circular: *76],
+    parseArgs: [Circular: *127],
+    parseEnv: [Circular: *126],
+    promisify: [Circular: *77],
+    setTraceSigInt: [Circular: *130],
+    stripVTControlCharacters: [Circular: *78],
     styleText: [Circular: *17],
-    throttle: [Circular: *126],
-    toUSVString: [Circular: *76],
-    transferableAbortController: [Circular: *78],
-    transferableAbortSignal: [Circular: *77],
-    types: [Circular: *79]
+    throttle: [Circular: *129],
+    toUSVString: [Circular: *79],
+    transferableAbortController: [Circular: *81],
+    transferableAbortSignal: [Circular: *80],
+    types: [Circular: *82]
 }
 ```
 
@@ -13286,9 +13111,11 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
             isBuildingSnapshot: ƒ isBuildingSnapshot(length: 0) {}
         },
         setHeapSnapshotNearHeapLimit: <ref *32> ƒ setHeapSnapshotNearHeapLimit(length: 1) {},
+        setHeapProfileNearHeapLimit: <ref *33> ƒ setHeapProfileNearHeapLimit(length: 1) {},
         GCProfiler: [Circular: *5],
-        isStringOneByteRepresentation: <ref *33> ƒ isStringOneByteRepresentation(length: 1) {},
-        startCpuProfile: <ref *34> ƒ startCpuProfile(length: 0) {}
+        isStringOneByteRepresentation: <ref *34> ƒ isStringOneByteRepresentation(length: 1) {},
+        startCpuProfile: <ref *35> ƒ startCpuProfile(length: 1) {},
+        startHeapProfile: <ref *36> ƒ startHeapProfile(length: 1) {}
     },
     deserialize: [Circular: *15],
     getCppHeapStatistics: [Circular: *13],
@@ -13296,13 +13123,15 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     getHeapSnapshot: [Circular: *9],
     getHeapSpaceStatistics: [Circular: *11],
     getHeapStatistics: [Circular: *10],
-    isStringOneByteRepresentation: [Circular: *33],
+    isStringOneByteRepresentation: [Circular: *34],
     promiseHooks: [Circular: *20],
     queryObjects: [Circular: *26],
     serialize: [Circular: *18],
     setFlagsFromString: [Circular: *14],
+    setHeapProfileNearHeapLimit: [Circular: *33],
     setHeapSnapshotNearHeapLimit: [Circular: *32],
-    startCpuProfile: [Circular: *34],
+    startCpuProfile: [Circular: *35],
+    startHeapProfile: [Circular: *36],
     startupSnapshot: [Circular: *27],
     stopCoverage: [Circular: *17],
     takeCoverage: [Circular: *16],
@@ -13465,7 +13294,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         WASI: [Circular: *2]
     }
 }
-(node:3164) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(node:3085) ExperimentalWarning: WASI is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 ```
 
@@ -13607,13 +13436,16 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
     Inflate: <ref *8> ƒ Inflate(length: 1) {},
     InflateRaw: <ref *9> ƒ InflateRaw(length: 1) {},
     Unzip: <ref *10> ƒ Unzip(length: 1) {},
-    ZstdCompress: <ref *11> class ZstdCompress extends Zstd {},
-    ZstdDecompress: <ref *12> class ZstdDecompress extends Zstd {},
-    brotliCompress: <ref *13> ƒ asyncBufferWrapper(length: 3) {},
-    brotliCompressSync: <ref *14> ƒ syncBufferWrapper(length: 2) {},
-    brotliDecompress: <ref *15> ƒ asyncBufferWrapper(length: 3) {},
-    brotliDecompressSync: <ref *16> ƒ syncBufferWrapper(length: 2) {},
-    codes: <ref *17> {
+    ZipBuffer: <ref *11> class ExperimentalZipBuffer extends ZipBuffer {},
+    ZipEntry: <ref *12> class ExperimentalZipEntry extends ZipEntry {},
+    ZipFile: <ref *13> class ExperimentalZipFile extends ZipFile {},
+    ZstdCompress: <ref *14> class ZstdCompress extends Zstd {},
+    ZstdDecompress: <ref *15> class ZstdDecompress extends Zstd {},
+    brotliCompress: <ref *16> ƒ asyncBufferWrapper(length: 3) {},
+    brotliCompressSync: <ref *17> ƒ syncBufferWrapper(length: 2) {},
+    brotliDecompress: <ref *18> ƒ asyncBufferWrapper(length: 3) {},
+    brotliDecompressSync: <ref *19> ƒ syncBufferWrapper(length: 2) {},
+    codes: <ref *20> {
         0: "Z_OK",
         1: "Z_STREAM_END",
         2: "Z_NEED_DICT",
@@ -13633,7 +13465,7 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         -5: "Z_BUF_ERROR",
         -6: "Z_VERSION_ERROR"
     },
-    constants: <ref *18> [Object: null prototype] {
+    constants: <ref *21> [Object: null prototype] {
         Z_NO_FLUSH: 0,
         Z_PARTIAL_FLUSH: 1,
         Z_SYNC_FLUSH: 2,
@@ -13806,20 +13638,22 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         ZSTD_error_noForwardProgress_destFull: 80,
         ZSTD_error_noForwardProgress_inputEmpty: 82
     },
-    crc32: <ref *19> ƒ crc32(length: 1) {},
-    createBrotliCompress: <ref *20> ƒ createBrotliCompress(length: 1) {},
-    createBrotliDecompress: <ref *21> ƒ createBrotliDecompress(length: 1) {},
-    createDeflate: <ref *22> ƒ createDeflate(length: 1) {},
-    createDeflateRaw: <ref *23> ƒ createDeflateRaw(length: 1) {},
-    createGunzip: <ref *24> ƒ createGunzip(length: 1) {},
-    createGzip: <ref *25> ƒ createGzip(length: 1) {},
-    createInflate: <ref *26> ƒ createInflate(length: 1) {},
-    createInflateRaw: <ref *27> ƒ createInflateRaw(length: 1) {},
-    createUnzip: <ref *28> ƒ createUnzip(length: 1) {},
-    createZstdCompress: <ref *29> ƒ createZstdCompress(length: 1) {},
-    createZstdDecompress: <ref *30> ƒ createZstdDecompress(length: 1) {},
+    crc32: <ref *22> ƒ crc32(length: 1) {},
+    createBrotliCompress: <ref *23> ƒ createBrotliCompress(length: 1) {},
+    createBrotliDecompress: <ref *24> ƒ createBrotliDecompress(length: 1) {},
+    createDeflate: <ref *25> ƒ createDeflate(length: 1) {},
+    createDeflateRaw: <ref *26> ƒ createDeflateRaw(length: 1) {},
+    createGunzip: <ref *27> ƒ createGunzip(length: 1) {},
+    createGzip: <ref *28> ƒ createGzip(length: 1) {},
+    createInflate: <ref *29> ƒ createInflate(length: 1) {},
+    createInflateRaw: <ref *30> ƒ createInflateRaw(length: 1) {},
+    createUnzip: <ref *31> ƒ createUnzip(length: 1) {},
+    createZipArchive: <ref *32> ƒ (length: 0) {},
+    createZipArchiveSync: <ref *33> ƒ (length: 0) {},
+    createZstdCompress: <ref *34> ƒ createZstdCompress(length: 1) {},
+    createZstdDecompress: <ref *35> ƒ createZstdDecompress(length: 1) {},
     default: {
-        crc32: [Circular: *19],
+        crc32: [Circular: *22],
         Deflate: [Circular: *4],
         Inflate: [Circular: *8],
         Gzip: [Circular: *7],
@@ -13829,62 +13663,73 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
         Unzip: [Circular: *10],
         BrotliCompress: [Circular: *2],
         BrotliDecompress: [Circular: *3],
-        ZstdCompress: [Circular: *11],
-        ZstdDecompress: [Circular: *12],
-        deflate: <ref *32> ƒ asyncBufferWrapper(length: 3) {},
-        deflateSync: <ref *33> ƒ syncBufferWrapper(length: 2) {},
-        gzip: <ref *34> ƒ asyncBufferWrapper(length: 3) {},
-        gzipSync: <ref *35> ƒ syncBufferWrapper(length: 2) {},
-        deflateRaw: <ref *36> ƒ asyncBufferWrapper(length: 3) {},
-        deflateRawSync: <ref *37> ƒ syncBufferWrapper(length: 2) {},
-        unzip: <ref *38> ƒ asyncBufferWrapper(length: 3) {},
-        unzipSync: <ref *39> ƒ syncBufferWrapper(length: 2) {},
-        inflate: <ref *40> ƒ asyncBufferWrapper(length: 3) {},
-        inflateSync: <ref *41> ƒ syncBufferWrapper(length: 2) {},
-        gunzip: <ref *42> ƒ asyncBufferWrapper(length: 3) {},
-        gunzipSync: <ref *43> ƒ syncBufferWrapper(length: 2) {},
-        inflateRaw: <ref *44> ƒ asyncBufferWrapper(length: 3) {},
-        inflateRawSync: <ref *45> ƒ syncBufferWrapper(length: 2) {},
-        brotliCompress: [Circular: *13],
-        brotliCompressSync: [Circular: *14],
-        brotliDecompress: [Circular: *15],
-        brotliDecompressSync: [Circular: *16],
-        zstdCompress: <ref *46> ƒ asyncBufferWrapper(length: 3) {},
-        zstdCompressSync: <ref *47> ƒ syncBufferWrapper(length: 2) {},
-        zstdDecompress: <ref *48> ƒ asyncBufferWrapper(length: 3) {},
-        zstdDecompressSync: <ref *49> ƒ syncBufferWrapper(length: 2) {},
-        createDeflate: [Circular: *22],
-        createInflate: [Circular: *26],
-        createDeflateRaw: [Circular: *23],
-        createInflateRaw: [Circular: *27],
-        createGzip: [Circular: *25],
-        createGunzip: [Circular: *24],
-        createUnzip: [Circular: *28],
-        createBrotliCompress: [Circular: *20],
-        createBrotliDecompress: [Circular: *21],
-        createZstdCompress: [Circular: *29],
-        createZstdDecompress: [Circular: *30],
-        constants: [Circular: *18],
-        codes: [Circular: *17]
+        ZstdCompress: [Circular: *14],
+        ZstdDecompress: [Circular: *15],
+        deflate: <ref *37> ƒ asyncBufferWrapper(length: 3) {},
+        deflateSync: <ref *38> ƒ syncBufferWrapper(length: 2) {},
+        gzip: <ref *39> ƒ asyncBufferWrapper(length: 3) {},
+        gzipSync: <ref *40> ƒ syncBufferWrapper(length: 2) {},
+        deflateRaw: <ref *41> ƒ asyncBufferWrapper(length: 3) {},
+        deflateRawSync: <ref *42> ƒ syncBufferWrapper(length: 2) {},
+        unzip: <ref *43> ƒ asyncBufferWrapper(length: 3) {},
+        unzipSync: <ref *44> ƒ syncBufferWrapper(length: 2) {},
+        inflate: <ref *45> ƒ asyncBufferWrapper(length: 3) {},
+        inflateSync: <ref *46> ƒ syncBufferWrapper(length: 2) {},
+        gunzip: <ref *47> ƒ asyncBufferWrapper(length: 3) {},
+        gunzipSync: <ref *48> ƒ syncBufferWrapper(length: 2) {},
+        inflateRaw: <ref *49> ƒ asyncBufferWrapper(length: 3) {},
+        inflateRawSync: <ref *50> ƒ syncBufferWrapper(length: 2) {},
+        brotliCompress: [Circular: *16],
+        brotliCompressSync: [Circular: *17],
+        brotliDecompress: [Circular: *18],
+        brotliDecompressSync: [Circular: *19],
+        zstdCompress: <ref *51> ƒ asyncBufferWrapper(length: 3) {},
+        zstdCompressSync: <ref *52> ƒ syncBufferWrapper(length: 2) {},
+        zstdDecompress: <ref *53> ƒ asyncBufferWrapper(length: 3) {},
+        zstdDecompressSync: <ref *54> ƒ syncBufferWrapper(length: 2) {},
+        createDeflate: [Circular: *25],
+        createInflate: [Circular: *29],
+        createDeflateRaw: [Circular: *26],
+        createInflateRaw: [Circular: *30],
+        createGzip: [Circular: *28],
+        createGunzip: [Circular: *27],
+        createUnzip: [Circular: *31],
+        createBrotliCompress: [Circular: *23],
+        createBrotliDecompress: [Circular: *24],
+        createZstdCompress: [Circular: *34],
+        createZstdDecompress: [Circular: *35],
+        constants: [Circular: *21],
+        codes: [Circular: *20],
+        ZipEntry: [Circular: *12],
+        ZipFile: [Circular: *13],
+        ZipBuffer: [Circular: *11],
+        createZipArchive: [Circular: *32],
+        createZipArchiveSync: [Circular: *33],
+        zipFiles: <ref *55> ƒ (length: 0) {},
+        getMaxZipContentSize: <ref *56> ƒ (length: 0) {},
+        setMaxZipContentSize: <ref *57> ƒ (length: 0) {}
     },
-    deflate: [Circular: *32],
-    deflateRaw: [Circular: *36],
-    deflateRawSync: [Circular: *37],
-    deflateSync: [Circular: *33],
-    gunzip: [Circular: *42],
-    gunzipSync: [Circular: *43],
-    gzip: [Circular: *34],
-    gzipSync: [Circular: *35],
-    inflate: [Circular: *40],
-    inflateRaw: [Circular: *44],
-    inflateRawSync: [Circular: *45],
-    inflateSync: [Circular: *41],
-    unzip: [Circular: *38],
-    unzipSync: [Circular: *39],
-    zstdCompress: [Circular: *46],
-    zstdCompressSync: [Circular: *47],
-    zstdDecompress: [Circular: *48],
-    zstdDecompressSync: [Circular: *49]
+    deflate: [Circular: *37],
+    deflateRaw: [Circular: *41],
+    deflateRawSync: [Circular: *42],
+    deflateSync: [Circular: *38],
+    getMaxZipContentSize: [Circular: *56],
+    gunzip: [Circular: *47],
+    gunzipSync: [Circular: *48],
+    gzip: [Circular: *39],
+    gzipSync: [Circular: *40],
+    inflate: [Circular: *45],
+    inflateRaw: [Circular: *49],
+    inflateRawSync: [Circular: *50],
+    inflateSync: [Circular: *46],
+    setMaxZipContentSize: [Circular: *57],
+    unzip: [Circular: *43],
+    unzipSync: [Circular: *44],
+    zipFiles: [Circular: *55],
+    zstdCompress: [Circular: *51],
+    zstdCompressSync: [Circular: *52],
+    zstdDecompress: [Circular: *53],
+    zstdDecompressSync: [Circular: *54]
 }
 ```
 
@@ -14186,6 +14031,126 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
 			</details>
 
 <details>
+				<summary><code>node:ffi</code></summary>
+				<br>
+
+<table><tr><th>Node.js</th><th>Bun</th></tr><tr><td valign="top">
+
+```js
+[Object: null prototype] {
+    DynamicLibrary: <ref *2> ƒ DynamicLibrary(length: 1) {},
+    default: {
+        DynamicLibrary: [Circular: *2],
+        dlopen: <ref *4> ƒ dlopen(length: 2) {},
+        dlclose: <ref *5> ƒ dlclose(length: 1) {},
+        dlsym: <ref *6> ƒ dlsym(length: 2) {},
+        exportArrayBuffer: <ref *7> ƒ exportArrayBuffer(length: 3) {},
+        exportArrayBufferView: <ref *8> ƒ exportArrayBufferView(length: 3) {},
+        exportString: <ref *9> ƒ exportString(length: 3) {},
+        exportBuffer: <ref *10> ƒ exportBuffer(length: 3) {},
+        getInt8: <ref *11> ƒ getInt8(length: 0) {},
+        getUint8: <ref *12> ƒ getUint8(length: 0) {},
+        getInt16: <ref *13> ƒ getInt16(length: 0) {},
+        getUint16: <ref *14> ƒ getUint16(length: 0) {},
+        getInt32: <ref *15> ƒ getInt32(length: 0) {},
+        getUint32: <ref *16> ƒ getUint32(length: 0) {},
+        getInt64: <ref *17> ƒ getInt64(length: 0) {},
+        getUint64: <ref *18> ƒ getUint64(length: 0) {},
+        getFloat32: <ref *19> ƒ getFloat32(length: 0) {},
+        getFloat64: <ref *20> ƒ getFloat64(length: 0) {},
+        getCurrentEventLoop: <ref *21> ƒ getCurrentEventLoop(length: 0) {},
+        getRawPointer: <ref *22> ƒ getRawPointer(length: 0) {},
+        setInt8: <ref *23> ƒ setInt8(length: 0) {},
+        setUint8: <ref *24> ƒ setUint8(length: 0) {},
+        setInt16: <ref *25> ƒ setInt16(length: 0) {},
+        setUint16: <ref *26> ƒ setUint16(length: 0) {},
+        setInt32: <ref *27> ƒ setInt32(length: 0) {},
+        setUint32: <ref *28> ƒ setUint32(length: 0) {},
+        setInt64: <ref *29> ƒ setInt64(length: 0) {},
+        setUint64: <ref *30> ƒ setUint64(length: 0) {},
+        setFloat32: <ref *31> ƒ setFloat32(length: 0) {},
+        setFloat64: <ref *32> ƒ setFloat64(length: 0) {},
+        suffix: "so",
+        toString: <ref *33> ƒ toString(length: 0) {},
+        toArrayBuffer: <ref *34> ƒ toArrayBuffer(length: 0) {},
+        toBuffer: <ref *35> ƒ toBuffer(length: 0) {},
+        types: <ref *36> [Object: null prototype] {
+            VOID: "void",
+            POINTER: "pointer",
+            BUFFER: "buffer",
+            ARRAY_BUFFER: "arraybuffer",
+            FUNCTION: "function",
+            BOOL: "bool",
+            CHAR: "char",
+            STRING: "string",
+            FLOAT: "float",
+            DOUBLE: "double",
+            INT_8: "int8",
+            UINT_8: "uint8",
+            INT_16: "int16",
+            UINT_16: "uint16",
+            INT_32: "int32",
+            UINT_32: "uint32",
+            INT_64: "int64",
+            UINT_64: "uint64",
+            FLOAT_32: "float32",
+            FLOAT_64: "float64"
+        }
+    },
+    dlclose: [Circular: *5],
+    dlopen: [Circular: *4],
+    dlsym: [Circular: *6],
+    exportArrayBuffer: [Circular: *7],
+    exportArrayBufferView: [Circular: *8],
+    exportBuffer: [Circular: *10],
+    exportString: [Circular: *9],
+    getCurrentEventLoop: [Circular: *21],
+    getFloat32: [Circular: *19],
+    getFloat64: [Circular: *20],
+    getInt16: [Circular: *13],
+    getInt32: [Circular: *15],
+    getInt64: [Circular: *17],
+    getInt8: [Circular: *11],
+    getRawPointer: [Circular: *22],
+    getUint16: [Circular: *14],
+    getUint32: [Circular: *16],
+    getUint64: [Circular: *18],
+    getUint8: [Circular: *12],
+    setFloat32: [Circular: *31],
+    setFloat64: [Circular: *32],
+    setInt16: [Circular: *25],
+    setInt32: [Circular: *27],
+    setInt64: [Circular: *29],
+    setInt8: [Circular: *23],
+    setUint16: [Circular: *26],
+    setUint32: [Circular: *28],
+    setUint64: [Circular: *30],
+    setUint8: [Circular: *24],
+    suffix: "so",
+    toArrayBuffer: [Circular: *34],
+    toBuffer: [Circular: *35],
+    toString: [Circular: *33],
+    types: [Circular: *36]
+}
+(node:3110) ExperimentalWarning: FFI is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+```
+
+</td><td valign="top">
+
+```js
+2 | 			import * as all from 'node:ffi';
+                            ^
+error: Could not resolve: "node:ffi". Maybe you need to "bun install"?
+    at /tmp/fs-fixture-1794183483920-1/node:ffi.mjs:2:25
+
+Bun v1.4.4-canary.1+2596ac5d3 (Linux x64)
+```
+
+</td></tr></table>
+			</details>
+
+<details>
 				<summary><code>node:sea</code></summary>
 				<br>
 
@@ -14214,9 +14179,9 @@ _Last updated on <!-- lastUpdated:start -->Nov 2, 2026 with Bun 1.4.4 Node.js v2
 2 | 			import * as all from 'node:sea';
                             ^
 error: Could not resolve: "node:sea". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1793578670244-1/node:sea.mjs:2:25
+    at /tmp/fs-fixture-1794183483920-1/node:sea.mjs:2:25
 
-Bun v1.4.4-canary.1+3f3a9ff87 (Linux x64)
+Bun v1.4.4-canary.1+2596ac5d3 (Linux x64)
 ```
 
 </td></tr></table>
@@ -14230,9 +14195,11 @@ Bun v1.4.4-canary.1+3f3a9ff87 (Linux x64)
 
 ```js
 [Object: null prototype] {
-    DatabaseSync: <ref *2> ƒ DatabaseSync(length: 0) {},
+    Database: <ref *2> ƒ Database(length: 0) {},
+    DatabaseSync: [Circular: *2],
     Session: <ref *3> ƒ Session(length: 0) {},
-    StatementSync: <ref *4> ƒ StatementSync(length: 0) {},
+    Statement: <ref *4> ƒ Statement(length: 0) {},
+    StatementSync: [Circular: *4],
     backup: <ref *5> ƒ backup(length: 2) {},
     constants: <ref *6> {
         SQLITE_CHANGESET_OMIT: 0,
@@ -14281,8 +14248,10 @@ Bun v1.4.4-canary.1+3f3a9ff87 (Linux x64)
         SQLITE_COPY: 0,
         SQLITE_RECURSIVE: 33
     },
-    default:  {
+    default: {
+        Database: [Circular: *2],
         DatabaseSync: [Circular: *2],
+        Statement: [Circular: *4],
         StatementSync: [Circular: *4],
         Session: [Circular: *3],
         constants: [Circular: *6],
@@ -14540,9 +14509,9 @@ Bun v1.4.4-canary.1+3f3a9ff87 (Linux x64)
 2 | 			import * as all from 'node:test/reporters';
                             ^
 error: Could not resolve: "node:test/reporters". Maybe you need to "bun install"?
-    at /tmp/fs-fixture-1793578670244-1/node:test_reporters.mjs:2:25
+    at /tmp/fs-fixture-1794183483920-1/node:test_reporters.mjs:2:25
 
-Bun v1.4.4-canary.1+3f3a9ff87 (Linux x64)
+Bun v1.4.4-canary.1+2596ac5d3 (Linux x64)
 ```
 
 </td></tr></table>
